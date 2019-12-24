@@ -1,0 +1,178 @@
+\hypertarget{structpropose_1_1blockedproposer}{}\section{propose\+:\+:blockedproposer Type Reference}
+\label{structpropose_1_1blockedproposer}\index{propose\+::blockedproposer@{propose\+::blockedproposer}}
+
+
+Inheritance diagram for propose\+:\+:blockedproposer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{structpropose_1_1blockedproposer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for propose\+:\+:blockedproposer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structpropose_1_1blockedproposer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structpropose_1_1blockedproposer_a78faf06a7c0726f9ac50749fea2cb557}{init}}
+\item 
+procedure \mbox{\hyperlink{structpropose_1_1blockedproposer_a57a3934d0d7648b37452d23c4dc1a619}{setcovariance}} =$>$ Blocked\+Proposer\+\_\+\+Set\+Covariance
+\item 
+procedure \mbox{\hyperlink{structpropose_1_1blockedproposer_a53d5ab124ff13905f244cfab73cb3d14}{getblockproposal}}
+\item 
+procedure \mbox{\hyperlink{structpropose_1_1blockedproposer_afc47cc3a1725cdfee9eb257b0beb11ab}{getproposal}}
+\item 
+procedure \mbox{\hyperlink{structpropose_1_1blockedproposer_a5ddfb268156973d4591089ef50a572d8}{getproposalslow}}
+\item 
+procedure \mbox{\hyperlink{structpropose_1_1blockedproposer_a88b274ce3ee6f6d365089293951f6165}{getproposalfast}}
+\item 
+procedure \mbox{\hyperlink{structpropose_1_1blockedproposer_a78a377174761cff07825c3340487b183}{getproposalfastdelta}}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{structpropose_1_1blockedproposer_adba94de280db481ba40efdb3bdd6e696}{nblocks}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structpropose_1_1blockedproposer_acbf4ad1e59f261b8484ac0fcef24dc6c}{indices}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structpropose_1_1blockedproposer_a5e08647dcd98493eea7eef238658dfbe}{proposerforindex}}
+\item 
+type(\mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}}) \mbox{\hyperlink{structpropose_1_1blockedproposer_acf2dbf89ad874f8a5c55fc026c12a502}{slow}}
+\item 
+type(\mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}}) \mbox{\hyperlink{structpropose_1_1blockedproposer_a1af5a32aedbd457ab3f0f645dad6ce39}{fast}}
+\item 
+type(\mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}}) \mbox{\hyperlink{structpropose_1_1blockedproposer_a52c508ece4395744d13f023471109156}{all}}
+\item 
+type(\mbox{\hyperlink{structpropose_1_1blockproposer}{blockproposer}}), dimension(\+:), allocatable \mbox{\hyperlink{structpropose_1_1blockedproposer_a32572d608cf67d16362c9040bd695f9e}{proposer}}
+\item 
+integer \mbox{\hyperlink{structpropose_1_1blockedproposer_a8f2be12bdb04bc750dfbb92227751441}{oversample\+\_\+fast}} = 1
+\item 
+real(mcp) \mbox{\hyperlink{structpropose_1_1blockedproposer_aba160a8f4e254ee9fad7e7b2681d136a}{propose\+\_\+scale}} = 2.\+4\+\_\+mcp
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer, private \mbox{\hyperlink{structpropose_1_1blockedproposer_ad026c4ad761ad38804788798286dc950}{fast\+\_\+ix}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a53d5ab124ff13905f244cfab73cb3d14}\label{structpropose_1_1blockedproposer_a53d5ab124ff13905f244cfab73cb3d14}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!getblockproposal@{getblockproposal}}
+\index{getblockproposal@{getblockproposal}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{getblockproposal()}{getblockproposal()}}
+{\footnotesize\ttfamily procedure propose\+::blockedproposer\+::getblockproposal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_afc47cc3a1725cdfee9eb257b0beb11ab}\label{structpropose_1_1blockedproposer_afc47cc3a1725cdfee9eb257b0beb11ab}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!getproposal@{getproposal}}
+\index{getproposal@{getproposal}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{getproposal()}{getproposal()}}
+{\footnotesize\ttfamily procedure propose\+::blockedproposer\+::getproposal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a88b274ce3ee6f6d365089293951f6165}\label{structpropose_1_1blockedproposer_a88b274ce3ee6f6d365089293951f6165}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!getproposalfast@{getproposalfast}}
+\index{getproposalfast@{getproposalfast}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{getproposalfast()}{getproposalfast()}}
+{\footnotesize\ttfamily procedure propose\+::blockedproposer\+::getproposalfast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a78a377174761cff07825c3340487b183}\label{structpropose_1_1blockedproposer_a78a377174761cff07825c3340487b183}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!getproposalfastdelta@{getproposalfastdelta}}
+\index{getproposalfastdelta@{getproposalfastdelta}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{getproposalfastdelta()}{getproposalfastdelta()}}
+{\footnotesize\ttfamily procedure propose\+::blockedproposer\+::getproposalfastdelta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a5ddfb268156973d4591089ef50a572d8}\label{structpropose_1_1blockedproposer_a5ddfb268156973d4591089ef50a572d8}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!getproposalslow@{getproposalslow}}
+\index{getproposalslow@{getproposalslow}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{getproposalslow()}{getproposalslow()}}
+{\footnotesize\ttfamily procedure propose\+::blockedproposer\+::getproposalslow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a78faf06a7c0726f9ac50749fea2cb557}\label{structpropose_1_1blockedproposer_a78faf06a7c0726f9ac50749fea2cb557}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!init@{init}}
+\index{init@{init}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily procedure propose\+::blockedproposer\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a57a3934d0d7648b37452d23c4dc1a619}\label{structpropose_1_1blockedproposer_a57a3934d0d7648b37452d23c4dc1a619}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!setcovariance@{setcovariance}}
+\index{setcovariance@{setcovariance}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{setcovariance()}{setcovariance()}}
+{\footnotesize\ttfamily procedure propose\+::blockedproposer\+::setcovariance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a52c508ece4395744d13f023471109156}\label{structpropose_1_1blockedproposer_a52c508ece4395744d13f023471109156}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!all@{all}}
+\index{all@{all}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{all}{all}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}}) propose\+::blockedproposer\+::all}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a1af5a32aedbd457ab3f0f645dad6ce39}\label{structpropose_1_1blockedproposer_a1af5a32aedbd457ab3f0f645dad6ce39}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!fast@{fast}}
+\index{fast@{fast}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{fast}{fast}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}}) propose\+::blockedproposer\+::fast}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_ad026c4ad761ad38804788798286dc950}\label{structpropose_1_1blockedproposer_ad026c4ad761ad38804788798286dc950}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!fast\+\_\+ix@{fast\+\_\+ix}}
+\index{fast\+\_\+ix@{fast\+\_\+ix}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{fast\+\_\+ix}{fast\_ix}}
+{\footnotesize\ttfamily integer, private propose\+::blockedproposer\+::fast\+\_\+ix = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_acbf4ad1e59f261b8484ac0fcef24dc6c}\label{structpropose_1_1blockedproposer_acbf4ad1e59f261b8484ac0fcef24dc6c}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!indices@{indices}}
+\index{indices@{indices}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{indices}{indices}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable propose\+::blockedproposer\+::indices}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_adba94de280db481ba40efdb3bdd6e696}\label{structpropose_1_1blockedproposer_adba94de280db481ba40efdb3bdd6e696}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!nblocks@{nblocks}}
+\index{nblocks@{nblocks}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{nblocks}{nblocks}}
+{\footnotesize\ttfamily integer propose\+::blockedproposer\+::nblocks}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a8f2be12bdb04bc750dfbb92227751441}\label{structpropose_1_1blockedproposer_a8f2be12bdb04bc750dfbb92227751441}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!oversample\+\_\+fast@{oversample\+\_\+fast}}
+\index{oversample\+\_\+fast@{oversample\+\_\+fast}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{oversample\+\_\+fast}{oversample\_fast}}
+{\footnotesize\ttfamily integer propose\+::blockedproposer\+::oversample\+\_\+fast = 1}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_aba160a8f4e254ee9fad7e7b2681d136a}\label{structpropose_1_1blockedproposer_aba160a8f4e254ee9fad7e7b2681d136a}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!propose\+\_\+scale@{propose\+\_\+scale}}
+\index{propose\+\_\+scale@{propose\+\_\+scale}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{propose\+\_\+scale}{propose\_scale}}
+{\footnotesize\ttfamily real(mcp) propose\+::blockedproposer\+::propose\+\_\+scale = 2.\+4\+\_\+mcp}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a32572d608cf67d16362c9040bd695f9e}\label{structpropose_1_1blockedproposer_a32572d608cf67d16362c9040bd695f9e}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!proposer@{proposer}}
+\index{proposer@{proposer}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{proposer}{proposer}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structpropose_1_1blockproposer}{blockproposer}}), dimension(\+:), allocatable propose\+::blockedproposer\+::proposer}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_a5e08647dcd98493eea7eef238658dfbe}\label{structpropose_1_1blockedproposer_a5e08647dcd98493eea7eef238658dfbe}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!proposerforindex@{proposerforindex}}
+\index{proposerforindex@{proposerforindex}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{proposerforindex}{proposerforindex}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable propose\+::blockedproposer\+::proposerforindex}
+
+\mbox{\Hypertarget{structpropose_1_1blockedproposer_acf2dbf89ad874f8a5c55fc026c12a502}\label{structpropose_1_1blockedproposer_acf2dbf89ad874f8a5c55fc026c12a502}} 
+\index{propose\+::blockedproposer@{propose\+::blockedproposer}!slow@{slow}}
+\index{slow@{slow}!propose\+::blockedproposer@{propose\+::blockedproposer}}
+\subsubsection{\texorpdfstring{slow}{slow}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}}) propose\+::blockedproposer\+::slow}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{propose_8f90}{propose.\+f90}}\end{DoxyCompactItemize}

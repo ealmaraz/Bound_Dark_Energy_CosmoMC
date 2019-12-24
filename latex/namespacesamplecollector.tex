@@ -1,0 +1,177 @@
+\hypertarget{namespacesamplecollector}{}\section{samplecollector Module Reference}
+\label{namespacesamplecollector}\index{samplecollector@{samplecollector}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}}
+\item 
+type \mbox{\hyperlink{structsamplecollector_1_1tmpidata}{tmpidata}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_ac96bef33ce0ce505eee01406eafe5149}{tmpichaincollector\+\_\+addnewweightedpoint}} (this, Cur\+Params, Cur\+Like, mult, thin\+\_\+fac)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_ac3a30bf96000547a9f7264b18de0c72a}{tmpichaincollector\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_ab16744dcc4f11cae903c0fdb4daee0fb}{tmpichaincollector\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_a7c25b3057e5a67cd55bfe6b4edecc647}{tmpichaincollector\+\_\+readstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_af8bf18826b2f8249278410b12ee73c22}{tmpichaincollector\+\_\+writecheckpoint}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_a728766fe371777731c80f0e82ccba130}{tmpichaincollector\+\_\+readcheckpoint}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_ad209f28cb743e15c21d107934917f478}{tmpichaincollector\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_a92e783bc78c7af280b704150840b84cb}{tmpichaincollector\+\_\+updatecovandcheckconverge}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_a30e39ef70fabba57b75d0ddea5f75e84}{tmpichaincollector\+\_\+addnewpoint}} (this, P, like)
+\item 
+subroutine \mbox{\hyperlink{namespacesamplecollector_aedac586422a605cbd11d9c0892242684}{convergestatus}} (is\+Done, R, Msg)
+\item 
+logical function \mbox{\hyperlink{namespacesamplecollector_aa4decfd3d422ec7bc2ca897a53e155c1}{checklimitsconverge}} (this, L, Mpi\+Covmat)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesamplecollector_a029f9e194c92603bd4274671b736f565}{chk\+\_\+id}} = 3252359
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacesamplecollector_aa4decfd3d422ec7bc2ca897a53e155c1}\label{namespacesamplecollector_aa4decfd3d422ec7bc2ca897a53e155c1}} 
+\index{samplecollector@{samplecollector}!checklimitsconverge@{checklimitsconverge}}
+\index{checklimitsconverge@{checklimitsconverge}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{checklimitsconverge()}{checklimitsconverge()}}
+{\footnotesize\ttfamily logical function samplecollector\+::checklimitsconverge (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this,  }\item[{class(tsamplelist), intent(in)}]{L,  }\item[{real(mcp), dimension(\+:,\+:), intent(in)}]{Mpi\+Covmat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References baseparameters\+::baseparams.
+
+\mbox{\Hypertarget{namespacesamplecollector_aedac586422a605cbd11d9c0892242684}\label{namespacesamplecollector_aedac586422a605cbd11d9c0892242684}} 
+\index{samplecollector@{samplecollector}!convergestatus@{convergestatus}}
+\index{convergestatus@{convergestatus}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{convergestatus()}{convergestatus()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::convergestatus (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{is\+Done,  }\item[{real(mcp), intent(in)}]{R,  }\item[{character(len=$\ast$), intent(in), optional}]{Msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tmpichaincollector\+\_\+updatecovandcheckconverge().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesamplecollector_aedac586422a605cbd11d9c0892242684_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesamplecollector_a30e39ef70fabba57b75d0ddea5f75e84}\label{namespacesamplecollector_a30e39ef70fabba57b75d0ddea5f75e84}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+addnewpoint@{tmpichaincollector\+\_\+addnewpoint}}
+\index{tmpichaincollector\+\_\+addnewpoint@{tmpichaincollector\+\_\+addnewpoint}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+addnewpoint()}{tmpichaincollector\_addnewpoint()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+addnewpoint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{real(mcp), intent(in)}]{like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References baseparameters\+::baseparams.
+
+\mbox{\Hypertarget{namespacesamplecollector_ac96bef33ce0ce505eee01406eafe5149}\label{namespacesamplecollector_ac96bef33ce0ce505eee01406eafe5149}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+addnewweightedpoint@{tmpichaincollector\+\_\+addnewweightedpoint}}
+\index{tmpichaincollector\+\_\+addnewweightedpoint@{tmpichaincollector\+\_\+addnewweightedpoint}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+addnewweightedpoint()}{tmpichaincollector\_addnewweightedpoint()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+addnewweightedpoint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this,  }\item[{class(tcalculationatparampoint), intent(in)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{real(mcp), intent(in)}]{mult,  }\item[{integer, intent(in), optional}]{thin\+\_\+fac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacesamplecollector_ad209f28cb743e15c21d107934917f478}\label{namespacesamplecollector_ad209f28cb743e15c21d107934917f478}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+clear@{tmpichaincollector\+\_\+clear}}
+\index{tmpichaincollector\+\_\+clear@{tmpichaincollector\+\_\+clear}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+clear()}{tmpichaincollector\_clear()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+clear (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by samplecollector\+::tmpichaincollector\+::tmpichaincollector\+\_\+clear().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesamplecollector_ad209f28cb743e15c21d107934917f478_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesamplecollector_a728766fe371777731c80f0e82ccba130}\label{namespacesamplecollector_a728766fe371777731c80f0e82ccba130}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+readcheckpoint@{tmpichaincollector\+\_\+readcheckpoint}}
+\index{tmpichaincollector\+\_\+readcheckpoint@{tmpichaincollector\+\_\+readcheckpoint}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+readcheckpoint()}{tmpichaincollector\_readcheckpoint()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+readcheckpoint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References chk\+\_\+id.
+
+\mbox{\Hypertarget{namespacesamplecollector_ac3a30bf96000547a9f7264b18de0c72a}\label{namespacesamplecollector_ac3a30bf96000547a9f7264b18de0c72a}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+readparams@{tmpichaincollector\+\_\+readparams}}
+\index{tmpichaincollector\+\_\+readparams@{tmpichaincollector\+\_\+readparams}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+readparams()}{tmpichaincollector\_readparams()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacesamplecollector_a7c25b3057e5a67cd55bfe6b4edecc647}\label{namespacesamplecollector_a7c25b3057e5a67cd55bfe6b4edecc647}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+readstate@{tmpichaincollector\+\_\+readstate}}
+\index{tmpichaincollector\+\_\+readstate@{tmpichaincollector\+\_\+readstate}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+readstate()}{tmpichaincollector\_readstate()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+readstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References baseparameters\+::baseparams.
+
+\mbox{\Hypertarget{namespacesamplecollector_ab16744dcc4f11cae903c0fdb4daee0fb}\label{namespacesamplecollector_ab16744dcc4f11cae903c0fdb4daee0fb}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+savestate@{tmpichaincollector\+\_\+savestate}}
+\index{tmpichaincollector\+\_\+savestate@{tmpichaincollector\+\_\+savestate}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+savestate()}{tmpichaincollector\_savestate()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacesamplecollector_a92e783bc78c7af280b704150840b84cb}\label{namespacesamplecollector_a92e783bc78c7af280b704150840b84cb}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+updatecovandcheckconverge@{tmpichaincollector\+\_\+updatecovandcheckconverge}}
+\index{tmpichaincollector\+\_\+updatecovandcheckconverge@{tmpichaincollector\+\_\+updatecovandcheckconverge}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+updatecovandcheckconverge()}{tmpichaincollector\_updatecovandcheckconverge()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+updatecovandcheckconverge (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References baseparameters\+::baseparams, convergestatus(), and samples\+::gelmanrubinevalues().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesamplecollector_a92e783bc78c7af280b704150840b84cb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesamplecollector_af8bf18826b2f8249278410b12ee73c22}\label{namespacesamplecollector_af8bf18826b2f8249278410b12ee73c22}} 
+\index{samplecollector@{samplecollector}!tmpichaincollector\+\_\+writecheckpoint@{tmpichaincollector\+\_\+writecheckpoint}}
+\index{tmpichaincollector\+\_\+writecheckpoint@{tmpichaincollector\+\_\+writecheckpoint}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+writecheckpoint()}{tmpichaincollector\_writecheckpoint()}}
+{\footnotesize\ttfamily subroutine samplecollector\+::tmpichaincollector\+\_\+writecheckpoint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector}{tmpichaincollector}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References chk\+\_\+id.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesamplecollector_a029f9e194c92603bd4274671b736f565}\label{namespacesamplecollector_a029f9e194c92603bd4274671b736f565}} 
+\index{samplecollector@{samplecollector}!chk\+\_\+id@{chk\+\_\+id}}
+\index{chk\+\_\+id@{chk\+\_\+id}!samplecollector@{samplecollector}}
+\subsubsection{\texorpdfstring{chk\+\_\+id}{chk\_id}}
+{\footnotesize\ttfamily integer, parameter samplecollector\+::chk\+\_\+id = 3252359\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tmpichaincollector\+\_\+readcheckpoint(), and tmpichaincollector\+\_\+writecheckpoint().
+

@@ -1,0 +1,158 @@
+\hypertarget{namespacegetdist_1_1kde__bandwidth}{}\section{getdist.\+kde\+\_\+bandwidth Namespace Reference}
+\label{namespacegetdist_1_1kde__bandwidth}\index{getdist.\+kde\+\_\+bandwidth@{getdist.\+kde\+\_\+bandwidth}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1kde__bandwidth_1_1KernelOptimizer2D}{Kernel\+Optimizer2D}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a17c5a5d4b6eef8e7aad98a74bc775377}{\+\_\+bandwidth\+\_\+fixed\+\_\+point}} (\mbox{\hyperlink{plotTT_8m_aed4baa87751a8ac3167e69443cdc6241}{h}}, N, I, logI, a2)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a1df6244e0384511be832a00924a1aabb}{bin\+\_\+samples}} (samples, range\+\_\+min=None, range\+\_\+max=None, nbins=2046, edge\+\_\+fac=0.\+1)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a263039d35460dd02a02948f52351bd52}{gaussian\+\_\+kde\+\_\+bandwidth}} (samples, Neff=None, range\+\_\+min=None, range\+\_\+max=None, nbins=2046)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a87c7248527d8c44ff87753be76949fde}{gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned}} (data, Neff, a=None)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a3b896a6f8b1cc4091f9453b1dee57d57}{rootpi}} = np.\+sqrt(np.\+pi)
+\item 
+int \mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a67e26ab8f1117e6d105d5669cb0794e5}{pisquared}} = np.\+pi $\ast$$\ast$ 2
+\item 
+int \mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a18140b2db4e2dd0c18a5fcb429f4ea81}{\+\_\+kde\+\_\+lmax\+\_\+bandwidth}} = 7
+\item 
+\mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_a6ccd1e18c748bab78b5e71f61be3957d}{\+\_\+kde\+\_\+consts\+\_\+1d}}
+\item 
+\mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_ae479f48a64078bb494beb949c517f991}{K}}
+\item 
+\mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth_ab44d512c76fd1b5bf5c913e7e28c4471}{Kodd}} = np.\+array(\mbox{[}1\mbox{]} + \mbox{[}np.\+prod(np.\+arange(1, 2 $\ast$ \mbox{\hyperlink{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}}, 2)) / 2. $\ast$$\ast$ (\mbox{\hyperlink{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} + 1) / np.\+sqrt(np.\+pi) for \mbox{\hyperlink{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} in range(1, 9)\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a17c5a5d4b6eef8e7aad98a74bc775377}\label{namespacegetdist_1_1kde__bandwidth_a17c5a5d4b6eef8e7aad98a74bc775377}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!\+\_\+bandwidth\+\_\+fixed\+\_\+point@{\+\_\+bandwidth\+\_\+fixed\+\_\+point}}
+\index{\+\_\+bandwidth\+\_\+fixed\+\_\+point@{\+\_\+bandwidth\+\_\+fixed\+\_\+point}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{\+\_\+bandwidth\+\_\+fixed\+\_\+point()}{\_bandwidth\_fixed\_point()}}
+{\footnotesize\ttfamily def getdist.\+kde\+\_\+bandwidth.\+\_\+bandwidth\+\_\+fixed\+\_\+point (\begin{DoxyParamCaption}\item[{}]{h,  }\item[{}]{N,  }\item[{}]{I,  }\item[{}]{logI,  }\item[{}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References copy\+Grid\+Files.\+zip.
+
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a1df6244e0384511be832a00924a1aabb}\label{namespacegetdist_1_1kde__bandwidth_a1df6244e0384511be832a00924a1aabb}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!bin\+\_\+samples@{bin\+\_\+samples}}
+\index{bin\+\_\+samples@{bin\+\_\+samples}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{bin\+\_\+samples()}{bin\_samples()}}
+{\footnotesize\ttfamily def getdist.\+kde\+\_\+bandwidth.\+bin\+\_\+samples (\begin{DoxyParamCaption}\item[{}]{samples,  }\item[{}]{range\+\_\+min = {\ttfamily None},  }\item[{}]{range\+\_\+max = {\ttfamily None},  }\item[{}]{nbins = {\ttfamily 2046},  }\item[{}]{edge\+\_\+fac = {\ttfamily 0.1} }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist.\+kde\+\_\+bandwidth.\+gaussian\+\_\+kde\+\_\+bandwidth().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegetdist_1_1kde__bandwidth_a1df6244e0384511be832a00924a1aabb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a263039d35460dd02a02948f52351bd52}\label{namespacegetdist_1_1kde__bandwidth_a263039d35460dd02a02948f52351bd52}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!gaussian\+\_\+kde\+\_\+bandwidth@{gaussian\+\_\+kde\+\_\+bandwidth}}
+\index{gaussian\+\_\+kde\+\_\+bandwidth@{gaussian\+\_\+kde\+\_\+bandwidth}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{gaussian\+\_\+kde\+\_\+bandwidth()}{gaussian\_kde\_bandwidth()}}
+{\footnotesize\ttfamily def getdist.\+kde\+\_\+bandwidth.\+gaussian\+\_\+kde\+\_\+bandwidth (\begin{DoxyParamCaption}\item[{}]{samples,  }\item[{}]{Neff = {\ttfamily None},  }\item[{}]{range\+\_\+min = {\ttfamily None},  }\item[{}]{range\+\_\+max = {\ttfamily None},  }\item[{}]{nbins = {\ttfamily 2046} }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+kde\+\_\+bandwidth.\+bin\+\_\+samples(), and getdist.\+kde\+\_\+bandwidth.\+gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegetdist_1_1kde__bandwidth_a263039d35460dd02a02948f52351bd52_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a87c7248527d8c44ff87753be76949fde}\label{namespacegetdist_1_1kde__bandwidth_a87c7248527d8c44ff87753be76949fde}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned@{gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned}}
+\index{gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned@{gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned()}{gaussian\_kde\_bandwidth\_binned()}}
+{\footnotesize\ttfamily def getdist.\+kde\+\_\+bandwidth.\+gaussian\+\_\+kde\+\_\+bandwidth\+\_\+binned (\begin{DoxyParamCaption}\item[{}]{data,  }\item[{}]{Neff,  }\item[{}]{a = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Return optimal standard kernel bandwidth assuming data is binned from Neff independent samples
+ Return value is the bandwidth in units of the range of data (i.e. multiply by max(data)-min(data))
+
+ Uses Improved Sheather-Jones algorithm from
+ Kernel density estimation via diffusion: Z. I. Botev, J. F. Grotowski, and D. P. Kroese (2010)
+ Annals of Statistics, Volume 38, Number 5, pages 2916-2957. 
+ http://arxiv.org/abs/1011.2602
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+kde\+\_\+bandwidth.\+gaussian\+\_\+kde\+\_\+bandwidth().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegetdist_1_1kde__bandwidth_a87c7248527d8c44ff87753be76949fde_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a6ccd1e18c748bab78b5e71f61be3957d}\label{namespacegetdist_1_1kde__bandwidth_a6ccd1e18c748bab78b5e71f61be3957d}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!\+\_\+kde\+\_\+consts\+\_\+1d@{\+\_\+kde\+\_\+consts\+\_\+1d}}
+\index{\+\_\+kde\+\_\+consts\+\_\+1d@{\+\_\+kde\+\_\+consts\+\_\+1d}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{\+\_\+kde\+\_\+consts\+\_\+1d}{\_kde\_consts\_1d}}
+{\footnotesize\ttfamily getdist.\+kde\+\_\+bandwidth.\+\_\+kde\+\_\+consts\+\_\+1d\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  np.array([(1 + 0.5 ** (j + 0.5)) / 3 * np.prod(np.arange(1, 2 * j, 2)) / (rootpi / np.sqrt(2.))
+2                            \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} range(\_kde\_lmax\_bandwidth - 1, 1, -1)])
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a18140b2db4e2dd0c18a5fcb429f4ea81}\label{namespacegetdist_1_1kde__bandwidth_a18140b2db4e2dd0c18a5fcb429f4ea81}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!\+\_\+kde\+\_\+lmax\+\_\+bandwidth@{\+\_\+kde\+\_\+lmax\+\_\+bandwidth}}
+\index{\+\_\+kde\+\_\+lmax\+\_\+bandwidth@{\+\_\+kde\+\_\+lmax\+\_\+bandwidth}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{\+\_\+kde\+\_\+lmax\+\_\+bandwidth}{\_kde\_lmax\_bandwidth}}
+{\footnotesize\ttfamily int getdist.\+kde\+\_\+bandwidth.\+\_\+kde\+\_\+lmax\+\_\+bandwidth = 7\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_ae479f48a64078bb494beb949c517f991}\label{namespacegetdist_1_1kde__bandwidth_ae479f48a64078bb494beb949c517f991}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!K@{K}}
+\index{K@{K}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily getdist.\+kde\+\_\+bandwidth.\+K}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  np.array(
+2     [1 / np.sqrt(2 * np.pi)] + [(-1) ** j * np.prod(np.arange(1, 2 * j, 2)) / np.sqrt(2 * np.pi) \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} 
+      range(1, 5)])
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_ab44d512c76fd1b5bf5c913e7e28c4471}\label{namespacegetdist_1_1kde__bandwidth_ab44d512c76fd1b5bf5c913e7e28c4471}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!Kodd@{Kodd}}
+\index{Kodd@{Kodd}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{Kodd}{Kodd}}
+{\footnotesize\ttfamily getdist.\+kde\+\_\+bandwidth.\+Kodd = np.\+array(\mbox{[}1\mbox{]} + \mbox{[}np.\+prod(np.\+arange(1, 2 $\ast$ \mbox{\hyperlink{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}}, 2)) / 2. $\ast$$\ast$ (\mbox{\hyperlink{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} + 1) / np.\+sqrt(np.\+pi) for \mbox{\hyperlink{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} in range(1, 9)\mbox{]})}
+
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a67e26ab8f1117e6d105d5669cb0794e5}\label{namespacegetdist_1_1kde__bandwidth_a67e26ab8f1117e6d105d5669cb0794e5}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!pisquared@{pisquared}}
+\index{pisquared@{pisquared}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{pisquared}{pisquared}}
+{\footnotesize\ttfamily int getdist.\+kde\+\_\+bandwidth.\+pisquared = np.\+pi $\ast$$\ast$ 2}
+
+\mbox{\Hypertarget{namespacegetdist_1_1kde__bandwidth_a3b896a6f8b1cc4091f9453b1dee57d57}\label{namespacegetdist_1_1kde__bandwidth_a3b896a6f8b1cc4091f9453b1dee57d57}} 
+\index{getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}!rootpi@{rootpi}}
+\index{rootpi@{rootpi}!getdist\+::kde\+\_\+bandwidth@{getdist\+::kde\+\_\+bandwidth}}
+\subsubsection{\texorpdfstring{rootpi}{rootpi}}
+{\footnotesize\ttfamily getdist.\+kde\+\_\+bandwidth.\+rootpi = np.\+sqrt(np.\+pi)}
+

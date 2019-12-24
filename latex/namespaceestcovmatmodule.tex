@@ -1,0 +1,154 @@
+\hypertarget{namespaceestcovmatmodule}{}\section{estcovmatmodule Module Reference}
+\label{namespaceestcovmatmodule}\index{estcovmatmodule@{estcovmatmodule}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp) function, dimension(num\+\_\+params\+\_\+used, num\+\_\+params\+\_\+used) \mbox{\hyperlink{namespaceestcovmatmodule_afcc46985583aeb4fed0524e52dde8c8a}{estcovmat}} (Params, bestdll\+\_\+in, sucess)
+\item 
+real(mcp) function \mbox{\hyperlink{namespaceestcovmatmodule_a2bc770f26c02a798aaf3ff8f2cc274aa}{placegrid}} (Center\+Params, parsteps, bestdll)
+\item 
+subroutine \mbox{\hyperlink{namespaceestcovmatmodule_ac80cbfe7c3c7ed84526e57a069e41ccf}{getstepsfordchisq1}} (Center\+Params, L\+Center, maxstepsizetries, parsteps, bestdll)
+\item 
+subroutine \mbox{\hyperlink{namespaceestcovmatmodule_a24745156f0a9a14a853ca7db8796afdc}{gethess}} (Center\+Params, Center\+Like, parsteps, Hess)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceestcovmatmodule_a5e47ee3f7267aa3efec263340a8244fc}{step\+\_\+positions}}
+\item 
+logical, dimension(\+:), allocatable \mbox{\hyperlink{namespaceestcovmatmodule_aae3649733742664790e565faa9dad010}{is\+\_\+weakly\+\_\+constrained}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceestcovmatmodule_afcc46985583aeb4fed0524e52dde8c8a}\label{namespaceestcovmatmodule_afcc46985583aeb4fed0524e52dde8c8a}} 
+\index{estcovmatmodule@{estcovmatmodule}!estcovmat@{estcovmat}}
+\index{estcovmat@{estcovmat}!estcovmatmodule@{estcovmatmodule}}
+\subsubsection{\texorpdfstring{estcovmat()}{estcovmat()}}
+{\footnotesize\ttfamily real(mcp) function, dimension(num\+\_\+params\+\_\+used,num\+\_\+params\+\_\+used) estcovmatmodule\+::estcovmat (\begin{DoxyParamCaption}\item[{type(paramset)}]{Params,  }\item[{real(mcp), intent(in)}]{bestdll\+\_\+in,  }\item[{integer, intent(out)}]{sucess }\end{DoxyParamCaption})}
+
+
+
+References baseparameters\+::baseparams, settings\+::feedback, gethess(), is\+\_\+weakly\+\_\+constrained, matrixutils\+::matrix\+\_\+diagonalize(), matrixutils\+::matrix\+\_\+inverse(), settings\+::num\+\_\+params\+\_\+used, settings\+::params\+\_\+used, placegrid(), and step\+\_\+positions.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceestcovmatmodule_afcc46985583aeb4fed0524e52dde8c8a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceestcovmatmodule_a24745156f0a9a14a853ca7db8796afdc}\label{namespaceestcovmatmodule_a24745156f0a9a14a853ca7db8796afdc}} 
+\index{estcovmatmodule@{estcovmatmodule}!gethess@{gethess}}
+\index{gethess@{gethess}!estcovmatmodule@{estcovmatmodule}}
+\subsubsection{\texorpdfstring{gethess()}{gethess()}}
+{\footnotesize\ttfamily subroutine estcovmatmodule\+::gethess (\begin{DoxyParamCaption}\item[{type(paramset)}]{Center\+Params,  }\item[{real(mcp)}]{Center\+Like,  }\item[{real(mcp), dimension(num\+\_\+params\+\_\+used)}]{parsteps,  }\item[{real(mcp), dimension(num\+\_\+params\+\_\+used,num\+\_\+params\+\_\+used)}]{Hess }\end{DoxyParamCaption})}
+
+
+
+References baseparameters\+::baseparams, settings\+::doabort(), settings\+::feedback, calclike\+::getloglike(), is\+\_\+weakly\+\_\+constrained, settings\+::logzero, settings\+::params\+\_\+used, and step\+\_\+positions.
+
+
+
+Referenced by estcovmat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespaceestcovmatmodule_a24745156f0a9a14a853ca7db8796afdc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceestcovmatmodule_a24745156f0a9a14a853ca7db8796afdc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceestcovmatmodule_ac80cbfe7c3c7ed84526e57a069e41ccf}\label{namespaceestcovmatmodule_ac80cbfe7c3c7ed84526e57a069e41ccf}} 
+\index{estcovmatmodule@{estcovmatmodule}!getstepsfordchisq1@{getstepsfordchisq1}}
+\index{getstepsfordchisq1@{getstepsfordchisq1}!estcovmatmodule@{estcovmatmodule}}
+\subsubsection{\texorpdfstring{getstepsfordchisq1()}{getstepsfordchisq1()}}
+{\footnotesize\ttfamily subroutine estcovmatmodule\+::getstepsfordchisq1 (\begin{DoxyParamCaption}\item[{type(paramset)}]{Center\+Params,  }\item[{real(mcp)}]{L\+Center,  }\item[{integer, intent(in)}]{maxstepsizetries,  }\item[{real(mcp), dimension(num\+\_\+params\+\_\+used)}]{parsteps,  }\item[{real(mcp)}]{bestdll }\end{DoxyParamCaption})}
+
+
+
+References baseparameters\+::baseparams, settings\+::feedback, calclike\+::getloglike(), is\+\_\+weakly\+\_\+constrained, settings\+::params\+\_\+used, and step\+\_\+positions.
+
+
+
+Referenced by placegrid().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceestcovmatmodule_ac80cbfe7c3c7ed84526e57a069e41ccf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceestcovmatmodule_ac80cbfe7c3c7ed84526e57a069e41ccf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceestcovmatmodule_a2bc770f26c02a798aaf3ff8f2cc274aa}\label{namespaceestcovmatmodule_a2bc770f26c02a798aaf3ff8f2cc274aa}} 
+\index{estcovmatmodule@{estcovmatmodule}!placegrid@{placegrid}}
+\index{placegrid@{placegrid}!estcovmatmodule@{estcovmatmodule}}
+\subsubsection{\texorpdfstring{placegrid()}{placegrid()}}
+{\footnotesize\ttfamily real(mcp) function estcovmatmodule\+::placegrid (\begin{DoxyParamCaption}\item[{type(paramset)}]{Center\+Params,  }\item[{real(mcp), dimension(num\+\_\+params\+\_\+used)}]{parsteps,  }\item[{real(mcp)}]{bestdll }\end{DoxyParamCaption})}
+
+
+
+References settings\+::doabort(), settings\+::feedback, calclike\+::getloglike(), getstepsfordchisq1(), and settings\+::logzero.
+
+
+
+Referenced by estcovmat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceestcovmatmodule_a2bc770f26c02a798aaf3ff8f2cc274aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceestcovmatmodule_a2bc770f26c02a798aaf3ff8f2cc274aa_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceestcovmatmodule_aae3649733742664790e565faa9dad010}\label{namespaceestcovmatmodule_aae3649733742664790e565faa9dad010}} 
+\index{estcovmatmodule@{estcovmatmodule}!is\+\_\+weakly\+\_\+constrained@{is\+\_\+weakly\+\_\+constrained}}
+\index{is\+\_\+weakly\+\_\+constrained@{is\+\_\+weakly\+\_\+constrained}!estcovmatmodule@{estcovmatmodule}}
+\subsubsection{\texorpdfstring{is\+\_\+weakly\+\_\+constrained}{is\_weakly\_constrained}}
+{\footnotesize\ttfamily logical, dimension(\+:), allocatable estcovmatmodule\+::is\+\_\+weakly\+\_\+constrained}
+
+
+
+Referenced by estcovmat(), gethess(), and getstepsfordchisq1().
+
+\mbox{\Hypertarget{namespaceestcovmatmodule_a5e47ee3f7267aa3efec263340a8244fc}\label{namespaceestcovmatmodule_a5e47ee3f7267aa3efec263340a8244fc}} 
+\index{estcovmatmodule@{estcovmatmodule}!step\+\_\+positions@{step\+\_\+positions}}
+\index{step\+\_\+positions@{step\+\_\+positions}!estcovmatmodule@{estcovmatmodule}}
+\subsubsection{\texorpdfstring{step\+\_\+positions}{step\_positions}}
+{\footnotesize\ttfamily integer, dimension(\+:,\+:), allocatable estcovmatmodule\+::step\+\_\+positions}
+
+
+
+Referenced by estcovmat(), gethess(), and getstepsfordchisq1().
+

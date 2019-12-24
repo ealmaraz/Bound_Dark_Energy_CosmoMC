@@ -1,0 +1,125 @@
+omegabh2      \Omega_b h^2	#physical baryon density
+omegach2      \Omega_c h^2	#physical CDM matter density
+tau           \tau
+omegak        \Omega_K
+mnu           \Sigma m_\nu    #sum of physical masses of standard neutrinos
+meffsterile   m_{\nu,{\rm{sterile}}}^{\rm{eff}}  #effective mass of sterile neutrino, \approx omeganuh2*94
+w             w                 #equation of state parameter for scalar field dark energy today
+wa            w_a       #w_a variation
+Lambdac       \Lambda_{c} #erick30.11.19 condensation scale (basic parameter in CosmoMC)
+cpot          c #erick30.11.19 constant of proportionality of the scalar potential (basic parameter in CosmoMC)
+nnu           N_{eff}   #effective number of neutrinos (only clearly defined for massless)
+yhe           Y_{He}    #Helium mass fraction (not used if bbn_consistency)
+alpha1        \alpha_{-1} #correlated CDM isocurvature
+deltazrei     {\Delta}z_{\rm re} #width of reionization
+Alens         A_{L}     #lensing potential scaled by sqrt(A_lens)
+Alensf        A^f_L     #amplitude of smoothing power from fiducial models
+fdm           \epsilon_0 f_d    #CosmoRec dark matter annihilation parameter, 0910.3663
+logA          {\rm{ln}}(10^{10} A_s)
+ns            n_s	    #beware that pivot scale can change in .ini file
+nrun          n_{\rm run}
+nrunrun       n_{\rm run, run}
+r             r #ratio of tensor to scalar primordial amplitudes at pivot scale
+nt            n_t
+ntrun         n_{t,{\rm run}}
+Aphiphi       A^{\phi\phi}_L #scaling of lensing potential power (lensed power spectra unchanged)
+H0*           H_0		#hubble parameter is H0 km/s/Mpc
+omegal*       \Omega_{\mathrm{BDE0}} #erick30.11.19 \Omega_\Lambda before
+omegam*       \Omega_m
+omegamh2*     \Omega_m h^2 #includes massive neutrinos
+omeganuh2*    \Omega_\nu h^2
+omegamh3*     \Omega_m h^3 #well determined orthogonal to degeneracy for 6-param model
+sigma8*       \sigma_8
+s8omegamp5*   \sigma_8 \Omega_m^{0.5}
+s8omegamp25*  \sigma_8 \Omega_m^{0.25}
+s8h5*         \sigma_8/h^{0.5}
+rmsdeflect*   \langle d^2\rangle^{1/2}  #rms lensing deflection in arcmin (2<=L<=2000)
+zrei*         z_{\rm re}
+ac*           a_c    #erick30.11.19 scale factor at BDE condensation
+OmegaDGc*     \Omega_{\mathrm{DGc}}  #erick30.11.19 density parameter BDE at condensation
+wx0*          w_{\mathrm{BDE0}} #erick30.11.19 EOS of BDE today
+theta*        100\theta_{MC} #100 times the ratio of the angular diameter distance to the LSS sound horizon (approx), erick30.11.19 now is derived
+xbde0001*     x(0.001)  #erick30.11.19 values of the dynamical variables x & y at selected z's
+xbde0106*     x(0.106)
+xbde015*      x(0.15)
+xbde02*       x(0.2)
+xbde032*      x(0.32)
+xbde04*       x(0.4)
+xbde05*       x(0.5)
+xbde057*      x(0.57)
+xbde07*       x(0.7)
+xbde08*       x(0.8)
+xbde09*       x(0.9)
+xbde1*        x(1)
+xbde11*       x(1.1)
+xbde12*       x(1.2)
+xbde13*       x(1.3)
+xbde14*       x(1.4)
+xbde15*       x(1.5)
+xbde16*       x(1.6)
+xbde17*       x(1.7)
+xbde18*       x(1.8)
+xbde19*       x(1.9)
+xbde2*        x(2)
+xbde21*       x(2.1)
+xbde22*       x(2.2)
+xbde23*       x(2.3)
+xbde24*       x(2.4)
+xbde25*       x(2.5)
+xbde26*       x(2.6)
+xbde27*       x(2.7)
+xbde28*       x(2.8)
+xbde29*       x(2.9)
+xbde3*        x(3)
+xbde31*       x(3.1)
+xbde32*       x(3.2)
+xbde33*       x(3.3)
+xbde34*       x(3.4)
+xbde35*       x(3.5)
+ybde0001*     y(0.001)
+ybde0106*     y(0.106)
+ybde015*      y(0.15)
+ybde02*       y(0.2)
+ybde032*      y(0.32)
+ybde04*       y(0.4)
+ybde05*       y(0.5)
+ybde057*      y(0.57)
+ybde07*       y(0.7)
+ybde08*       y(0.8)
+ybde09*       y(0.9)
+ybde1*        y(1)
+ybde11*       y(1.1)
+ybde12*       y(1.2)
+ybde13*       y(1.3)
+ybde14*       y(1.4)
+ybde15*       y(1.5)
+ybde16*       y(1.6)
+ybde17*       y(1.7)
+ybde18*       y(1.8)
+ybde19*       y(1.9)
+ybde2*        y(2)
+ybde21*       y(2.1)
+ybde22*       y(2.2)
+ybde23*       y(2.3)
+ybde24*       y(2.4)
+ybde25*       y(2.5)
+ybde26*       y(2.6)
+ybde27*       y(2.7)
+ybde28*       y(2.8)
+ybde29*       y(2.9)
+ybde3*        y(3)
+ybde31*       y(3.1)
+ybde32*       y(3.2)
+ybde33*       y(3.3)
+ybde34*       y(3.4)
+ybde35*       y(3.5)
+A*            10^9 A_s
+clamp*        10^9 A_s e^{-2\tau}   #parameter determining C_l amplitude
+DL40*         D_{40}   #L(L+1)C_L/2pi at L=40 in muK^2
+DL220*        D_{220}  #L(L+1)C_L/2pi at L=220 in muK^2
+DL810*        D_{810}  #L(L+1)C_L/2pi at L=810 in muK^2
+DL1420*       D_{1420} #L(L+1)C_L/2pi at L=1420 in muK^2
+DL2000*       D_{2000} #L(L+1)C_L/2pi at L=2000 in muK^2
+ns02*         n_{s,0.002}
+yheused*      Y_P #MCMC value or from bbn consistency (mass definition)
+YpBBN*        Y_P^{\rm{BBN}} #MCMC value or from bbn consistency (nucleon definition)

@@ -1,0 +1,1966 @@
+\hypertarget{namespacemcsamples}{}\section{mcsamples Module Reference}
+\label{namespacemcsamples}\index{mcsamples@{mcsamples}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_aa4af8bb5067761fcc26783a3198edb1a}{adjustpriors}}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_ac831b94ceae7c808b2656230727e6cdd}{mapparameters}} (invars)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a415388e77f0a5360c5a814c8ba0e4080}{coolchain}} (cool)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a35bad035408957649f1a00bc87bc798c}{deletezeros}}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_af00e1e65ba0440ba9f05136bb9219f55}{sortcoldata}} (bycol)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a1e8b234ac939c21f51884cab29fd0204}{makesinglesamples}} (\mbox{\hyperlink{namespacemcsamples_a39de2461adb48b31033a95a7d14666be}{single\+\_\+thin}})
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a98999c53910240226ec96e8ef0751a22}{writethindata}} (fname, cool)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_ad5ab7ed94d3a34782ce86ebc0d23e148}{thindata}} (fac, ix1, ix2)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a3b127162be572d0864c8bd49f3403a78}{getcovmatrix}}
+\item 
+integer function \mbox{\hyperlink{namespacemcsamples_ac9c93f48a6a5f4c22e5f35b060bcab20}{mostcorrelated2d}} (i1, i2, direc)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a45291f5f8d4db1ad22598222a511e67c}{getfractionindices}} (fraction\+\_\+indices, n)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacemcsamples_affe201ec04f01f217a706350334d21e4}{confidval}} (ix, limfrac, upper, ix1, ix2)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a54c3f403eb92b30ff78476abea37462c}{writes}} (S)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a72e8a848ae68643f3449e12e33334870}{pca}} (pars, n, param\+\_\+map, normparam\+\_\+num)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a4664c132197f4ef65fa541baac30f0f2}{getusedcols}}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a4a0eac91a04d742f776ae4f8f15d919c}{doconvergetests}} (limfrac)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a9bbfd241a96107124f0af5ef8d0fbe61}{get1ddensity}} (j)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a67c86279d2ba781324578c13807fa812}{get2dplotdata}} (j, j2)
+\item 
+logical function \mbox{\hyperlink{namespacemcsamples_a12e5ebfb72dd60020dd1aef9afa7ad2e}{plotcontmatlab}} (aunit, aroot, j, j2, Do\+Shade)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_ab0762a08afdb1f7f972b966091ef0918}{matlablabel}} (i)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a6ac9a19d5b3622b2a2dea19257a37c36}{write2dplotmatlab}} (aunit, j, j2, Do\+Labelx, Do\+Labely, hide\+\_\+ticklabels)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a22e27e5c21abdb2a3d8cf2816d2f8acb}{writeplotfileinit}} (unit, sm, subplot\+\_\+size)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_aeb1af08402647e8ef9e1d8f97e774e3a}{writeplotfileexport}} (unit, tag, plot\+\_\+col, plot\+\_\+row)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_a1084f1fea1eddc1385237c666e34115b}{quoted\+\_\+param\+\_\+name}} (j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_aaed4d229224d51b97154b233f072fae9}{quoted\+\_\+param\+\_\+name\+\_\+used}} (j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_a61ce07e713757fee14a963684c25fe12}{python\+\_\+param\+\_\+array}} (params, num)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a0a903a19ac6139be1cc98a32218ec801}{write1dplotmatlab}} (aunit, j)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a7fb178ee92298048973cca975336489e}{writematlablinelabels}} (F)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a083f4a491dcb1c55ed0f61c0e4f435b1}{edgewarning}} (param)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_a8613f88e39f47c058447963d5b9f53dc}{dat\+\_\+file\+\_\+name}} (rootname, j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_ab816e54fd85d1f1c125d828e843a2343}{dat\+\_\+file\+\_\+2d}} (rootname, j, j2)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_ad44656764a16d6b3b6acbbab57653252}{checkmatlabaxes}} (afile)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacemcsamples_af7511fd6eb58bcc6086256f9ecb5fe1c}{dinvnorm}} (p)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a97959f867d590fadb6638910b52409bd}{getchainlikesummary}} (unit)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+type(tparamnames), save \mbox{\hyperlink{namespacemcsamples_ab0b5f836670f80c8acfa3374709ddc9b}{namemapping}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a423ddd0f2de0560617b74a17231275e0}{gp}} = K\+I\+ND(1.d0)
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacemcsamples_a1d5c81cfc6a6d2a9f25c250cf8359142}{float\+\_\+format}} = \textquotesingle{}($\ast$(E16.\+7))\textquotesingle{}
+\item 
+real(\mbox{\hyperlink{namespacemcsamples_a423ddd0f2de0560617b74a17231275e0}{gp}}), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a1f7790a8989ae24a32dcef594163cfd6}{coldata}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a68af0f07bf91f81304b0a3c46c669ffc}{thin\+\_\+ix}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a868898642c4ad498fccad75315810550}{thin\+\_\+rows}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a11a673041be4c2131b8dc7a2806e6a04}{max\+\_\+rows}} = 500000
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}} = 500
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}{max\+\_\+chains}} = 100
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_aecb93fc58e3823802a4eabc86659a889}{max\+\_\+split\+\_\+tests}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}} = 5
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_af8a6d674d091942c7820c37ad6795f6b}{corr\+\_\+length\+\_\+thin}} = 0
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a7cabc6db7f9125c0af7b6de3032567f1}{corr\+\_\+length\+\_\+steps}} = 15
+\item 
+type(tdensity1d) \mbox{\hyperlink{namespacemcsamples_aa7682e36ef34bef4b8112f058f435415}{density1d}}
+\item 
+integer, dimension(\mbox{\hyperlink{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}{max\+\_\+chains}}) \mbox{\hyperlink{namespacemcsamples_a196c1e189b163a496c0da2fcc96bf1f4}{chain\+\_\+indices}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a19f7c9315f7bf1a0fdcc248d0e9b9757}{num\+\_\+chains\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_ab3c722f8f5dd4ef38228bf41b333bf36}{bestfit\+\_\+ix}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_ad9b26e8c7b01068cd5e285b2710ffff9}{meanlike}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a084bb79be779410b498f439e52a95c5e}{maxlike}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a3bf0377c41ca6723a2a682fdec7c7cba}{nrows}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a9c7a895a8bbc32cc9ec5a4e647f93842}{ncols}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a5b2ac0e6e68dd652c494d1b7bd789f96}{num\+\_\+bins}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a2adeb191d79be31ecfbaafc674ada8d1}{num\+\_\+bins\+\_\+2d}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a1c72401a481311c1c4b5b4d7c0b4b1d8}{numsamp}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a65308a62158ea3cd86ad4582d51e8cfe}{max\+\_\+mult}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a1ccd58a9a808001ffe645de8327594a2}{mean\+\_\+mult}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a76ea49efc6873b3f02d34f24ce452d5b}{nd\+\_\+cont1}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a42ec49d9a1202d3d9f840a5ae8a62420}{nd\+\_\+cont2}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a381886fbfe1702b96dbe899d11a79daa}{nd\+\_\+limit\+\_\+top}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_af6035de97e3096d7ba8ee9ac9a2d8e1b}{nd\+\_\+limit\+\_\+bot}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_aee5291f542c82e3b053eea9aa4a22eef}{covmat\+\_\+dimension}}
+\item 
+integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a16ed6273b18cc5caae328b4524db8061}{colix}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_ad2594baa1bbb61af048a932e45cd4060}{num\+\_\+vars}}
+\item 
+real(mcp), dimension(2, \mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a0902678bdbc7aa6ef8b8992ce0a19c5e}{prior\+\_\+ranges}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a770892813dc80f66c4a9d4af5df91a26}{mean}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_aacce77bfdf0523e8c96285821ce2a3f4}{sddev}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a6f7e8571ffd569f3c7538169829a9612}{corrmatrix}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a77ab102d98a4253b3213f06db7371cf9}{plot\+\_\+data\+\_\+dir}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a12247a941c9940691d984cd9596796bd}{out\+\_\+dir}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a578b65f55aa7a0d9598291d1cbd550db}{rootdirname}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a0f43faad2c6f83998962006e04268623}{in\+\_\+root}}
+\item 
+character(len=128), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_abe3835988721f0cbcb6f7c28015e95f3}{labels}}
+\item 
+character(len=128), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_ae27c34b7ef99d6a3d92c13e419fcceb1}{pname}}
+\item 
+logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_ae802de51bb481b085361a661c090d461}{has\+\_\+limits}}
+\item 
+logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a948a6bc42d1b7b001f55aeaaf2d5b3f8}{has\+\_\+limits\+\_\+top}}
+\item 
+logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_af020921aecf16dd5008460d6a82fdd64}{has\+\_\+limits\+\_\+bot}}
+\item 
+logical, dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}, \mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a22f55004d2d1debc557bf626e9b2af89}{marge\+\_\+limits\+\_\+top}}
+\item 
+logical, dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}, \mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a6c36f035fe1ec1e688afcc0ac112e425}{marge\+\_\+limits\+\_\+bot}}
+\item 
+logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a0233de8ae126379ac2ebc11c0981db61}{has\+\_\+markers}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_ad7bc69baf30e862c773070e99974d483}{markers}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_adb5eb76b1f11b911bf9e72be639d5226}{num\+\_\+contours}}
+\item 
+character(len=3) \mbox{\hyperlink{namespacemcsamples_ad18bd8eb2345c17a7aad3604eba3e3ad}{plot\+\_\+ext}} = \textquotesingle{}m\textquotesingle{}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a24dc02cd209419956007efc05c309274}{matlab\+\_\+version}}
+\item 
+character(len=3) \mbox{\hyperlink{namespacemcsamples_a4aac456ce5052be90e290891a61466f1}{plot\+\_\+output}} = \textquotesingle{}pdf\textquotesingle{}
+\item 
+real \mbox{\hyperlink{namespacemcsamples_a5c59bb75d9bde473650c9d04a44e6010}{subplot\+\_\+size\+\_\+inch}} = 3.\+0
+\item 
+real \mbox{\hyperlink{namespacemcsamples_a6dd34bac13f09636652e328d92707726}{subplot\+\_\+size\+\_\+inch2}}
+\item 
+real \mbox{\hyperlink{namespacemcsamples_ab97f8de1d5924a4908cb5b7953a30f16}{subplot\+\_\+size\+\_\+inch3}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_acd85fa3b4250ca366e08576bd4df6bd8}{matlab\+\_\+latex}} = .false.
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_ae4e5ef0996e111c2f91121884b99ccdc}{font\+\_\+scale}} = 1.
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}) \mbox{\hyperlink{namespacemcsamples_ae745525f8fef6e02d22826cd2a5f1bcc}{contours}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}) \mbox{\hyperlink{namespacemcsamples_a1db866dfd553051fc5cbd2c80bcd4c86}{max\+\_\+frac\+\_\+twotail}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a562ce4b67831be4911c45a4e08a6ef18}{indep\+\_\+thin}} = 0
+\item 
+integer, dimension(\mbox{\hyperlink{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}{max\+\_\+chains}}) \mbox{\hyperlink{namespacemcsamples_a619b6da70c38ede6a9851a3ee89b4019}{chain\+\_\+numbers}}
+\item 
+logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a6269903cd9674bdcc7c4527acdddfef3}{isused}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a5bf85772fb62752a789a1d253bd6cd5a}{force\+\_\+twotail}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a68c0597751197a26086066ed961e47ef}{plot\+\_\+meanlikes}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a42f921b7349e79466c2128ebcb06e75f}{mean\+\_\+loglikes}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad55967ca18b8319069920d6d1e772bb1}{shade\+\_\+meanlikes}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad8e59e2a5de71cff7f1241b59b058291}{make\+\_\+single\+\_\+samples}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a39de2461adb48b31033a95a7d14666be}{single\+\_\+thin}}
+\item 
+integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}} $\ast$$\ast$2) \mbox{\hyperlink{namespacemcsamples_a1831bdf8091941b6ccbd0c3fc3df90f9}{cust2dplots}}
+\item 
+integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a782e4892c659b02c05a3134ad4c32bac}{ix\+\_\+min}}
+\item 
+integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a6a48f0fe15a7b6bfe99092a09e22a218}{ix\+\_\+max}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a299522989433c1f723f9028e5f0460f9}{limmin}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a3454f7bb4ef6c4c43f38a3778b39f1ca}{limmax}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a99b1b2fc1a0d5d3e797fa8716a294f6a}{center}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a3c28ccd747cefdd44e51bee5809f7cf2}{param\+\_\+min}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a85c3a30e0056c5dcec952621d4782012}{param\+\_\+max}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_a1ad9378542a0d4ed8222e002f28b8a4f}{range\+\_\+min}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) \mbox{\hyperlink{namespacemcsamples_adb075c5195b30137b257a06000257c4a}{range\+\_\+max}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_abfadadd4fe7cc368f0f005a352298f33}{bw}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_aea44d2c9cd7dfbed7881a38450903a64}{do\+\_\+shading}}
+\item 
+type(tstringlist), save \mbox{\hyperlink{namespacemcsamples_a69983643fd9f3aed82247d3eb19d8ba0}{compareplots}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad626a7a57271fbc966f7d06ed74f68af}{prob\+\_\+label}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad6a6de60cc3e044646e884be9bdc3b67}{plots\+\_\+only}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a38fc836d9b47b5b811c875938d43d2c9}{no\+\_\+plots}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_aa4a60a69265c0e88d0f93113ca84e3bf}{smooth\+\_\+scale\+\_\+1d}} =-\/1.d0
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a303a66c9ef1a6bf38167952d63caf780}{smooth\+\_\+scale\+\_\+2d}} = 1.d0
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_ae1862ffcd750637a6e92a95ec020c591}{credible\+\_\+interval\+\_\+threshold}} = 0.\+05d0
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a72368716a8ad215156d18cf044952cdc}{boundary\+\_\+correction\+\_\+method}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemcsamples_aa4af8bb5067761fcc26783a3198edb1a}\label{namespacemcsamples_aa4af8bb5067761fcc26783a3198edb1a}} 
+\index{mcsamples@{mcsamples}!adjustpriors@{adjustpriors}}
+\index{adjustpriors@{adjustpriors}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{adjustpriors()}{adjustpriors()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::adjustpriors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{namespacemcsamples_aa4af8bb5067761fcc26783a3198edb1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_ad44656764a16d6b3b6acbbab57653252}\label{namespacemcsamples_ad44656764a16d6b3b6acbbab57653252}} 
+\index{mcsamples@{mcsamples}!checkmatlabaxes@{checkmatlabaxes}}
+\index{checkmatlabaxes@{checkmatlabaxes}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{checkmatlabaxes()}{checkmatlabaxes()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::checkmatlabaxes (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{afile }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacemcsamples_ad44656764a16d6b3b6acbbab57653252_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_affe201ec04f01f217a706350334d21e4}\label{namespacemcsamples_affe201ec04f01f217a706350334d21e4}} 
+\index{mcsamples@{mcsamples}!confidval@{confidval}}
+\index{confidval@{confidval}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{confidval()}{confidval()}}
+{\footnotesize\ttfamily real(mcp) function mcsamples\+::confidval (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ix,  }\item[{real(mcp), intent(in)}]{limfrac,  }\item[{logical, intent(in)}]{upper,  }\item[{integer, intent(in), optional}]{ix1,  }\item[{integer, intent(in), optional}]{ix2 }\end{DoxyParamCaption})}
+
+
+
+References coldata, and nrows.
+
+
+
+Referenced by doconvergetests(), get1ddensity(), and getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_affe201ec04f01f217a706350334d21e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a415388e77f0a5360c5a814c8ba0e4080}\label{namespacemcsamples_a415388e77f0a5360c5a814c8ba0e4080}} 
+\index{mcsamples@{mcsamples}!coolchain@{coolchain}}
+\index{coolchain@{coolchain}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{coolchain()}{coolchain()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::coolchain (\begin{DoxyParamCaption}\item[{real(mcp), intent(in)}]{cool }\end{DoxyParamCaption})}
+
+
+
+References coldata, and nrows.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{namespacemcsamples_a415388e77f0a5360c5a814c8ba0e4080_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_ab816e54fd85d1f1c125d828e843a2343}\label{namespacemcsamples_ab816e54fd85d1f1c125d828e843a2343}} 
+\index{mcsamples@{mcsamples}!dat\+\_\+file\+\_\+2d@{dat\+\_\+file\+\_\+2d}}
+\index{dat\+\_\+file\+\_\+2d@{dat\+\_\+file\+\_\+2d}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{dat\+\_\+file\+\_\+2d()}{dat\_file\_2d()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable mcsamples\+::dat\+\_\+file\+\_\+2d (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{rootname,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{j2 }\end{DoxyParamCaption})}
+
+
+
+References colix, and namemapping.
+
+
+
+Referenced by get2dplotdata(), and plotcontmatlab().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_ab816e54fd85d1f1c125d828e843a2343_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a8613f88e39f47c058447963d5b9f53dc}\label{namespacemcsamples_a8613f88e39f47c058447963d5b9f53dc}} 
+\index{mcsamples@{mcsamples}!dat\+\_\+file\+\_\+name@{dat\+\_\+file\+\_\+name}}
+\index{dat\+\_\+file\+\_\+name@{dat\+\_\+file\+\_\+name}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{dat\+\_\+file\+\_\+name()}{dat\_file\_name()}}
+{\footnotesize\ttfamily character(len= \+:) function, allocatable mcsamples\+::dat\+\_\+file\+\_\+name (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{rootname,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})}
+
+
+
+References colix, and namemapping.
+
+
+
+Referenced by get1ddensity(), and write1dplotmatlab().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a8613f88e39f47c058447963d5b9f53dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a35bad035408957649f1a00bc87bc798c}\label{namespacemcsamples_a35bad035408957649f1a00bc87bc798c}} 
+\index{mcsamples@{mcsamples}!deletezeros@{deletezeros}}
+\index{deletezeros@{deletezeros}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{deletezeros()}{deletezeros()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::deletezeros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References coldata, and nrows.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{namespacemcsamples_a35bad035408957649f1a00bc87bc798c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_af7511fd6eb58bcc6086256f9ecb5fe1c}\label{namespacemcsamples_af7511fd6eb58bcc6086256f9ecb5fe1c}} 
+\index{mcsamples@{mcsamples}!dinvnorm@{dinvnorm}}
+\index{dinvnorm@{dinvnorm}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{dinvnorm()}{dinvnorm()}}
+{\footnotesize\ttfamily real(mcp) function mcsamples\+::dinvnorm (\begin{DoxyParamCaption}\item[{real(mcp)}]{p }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{namespacemcsamples_af7511fd6eb58bcc6086256f9ecb5fe1c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a4a0eac91a04d742f776ae4f8f15d919c}\label{namespacemcsamples_a4a0eac91a04d742f776ae4f8f15d919c}} 
+\index{mcsamples@{mcsamples}!doconvergetests@{doconvergetests}}
+\index{doconvergetests@{doconvergetests}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{doconvergetests()}{doconvergetests()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::doconvergetests (\begin{DoxyParamCaption}\item[{real(mcp), intent(in)}]{limfrac }\end{DoxyParamCaption})}
+
+
+
+References chain\+\_\+indices, chain\+\_\+numbers, coldata, confidval(), corr\+\_\+length\+\_\+steps, corr\+\_\+length\+\_\+thin, covmat\+\_\+dimension, force\+\_\+twotail, samples\+::gelmanrubinevalues(), getfractionindices(), has\+\_\+limits, indep\+\_\+thin, isused, labels, mean\+\_\+mult, ncols, nrows, num\+\_\+chains\+\_\+used, numsamp, rootdirname, thin\+\_\+ix, thin\+\_\+rows, thindata(), and writes().
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a4a0eac91a04d742f776ae4f8f15d919c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacemcsamples_a4a0eac91a04d742f776ae4f8f15d919c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a083f4a491dcb1c55ed0f61c0e4f435b1}\label{namespacemcsamples_a083f4a491dcb1c55ed0f61c0e4f435b1}} 
+\index{mcsamples@{mcsamples}!edgewarning@{edgewarning}}
+\index{edgewarning@{edgewarning}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{edgewarning()}{edgewarning()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::edgewarning (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{param }\end{DoxyParamCaption})}
+
+
+
+References namemapping, and writes().
+
+
+
+Referenced by get1ddensity().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespacemcsamples_a083f4a491dcb1c55ed0f61c0e4f435b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a083f4a491dcb1c55ed0f61c0e4f435b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a9bbfd241a96107124f0af5ef8d0fbe61}\label{namespacemcsamples_a9bbfd241a96107124f0af5ef8d0fbe61}} 
+\index{mcsamples@{mcsamples}!get1ddensity@{get1ddensity}}
+\index{get1ddensity@{get1ddensity}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{get1ddensity()}{get1ddensity()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::get1ddensity (\begin{DoxyParamCaption}\item[{integer}]{j }\end{DoxyParamCaption})}
+
+
+
+References boundary\+\_\+correction\+\_\+method, center, coldata, colix, confidval(), dat\+\_\+file\+\_\+name(), density1d, edgewarning(), float\+\_\+format, has\+\_\+limits, has\+\_\+limits\+\_\+bot, has\+\_\+limits\+\_\+top, ix\+\_\+max, ix\+\_\+min, limmax, limmin, settings\+::logzero, max\+\_\+mult, mean\+\_\+loglikes, meanlike, namemapping, nd\+\_\+limit\+\_\+bot, nd\+\_\+limit\+\_\+top, no\+\_\+plots, nrows, num\+\_\+bins, numsamp, param\+\_\+max, param\+\_\+min, plot\+\_\+data\+\_\+dir, plot\+\_\+meanlikes, range\+\_\+max, range\+\_\+min, settings\+::rootname, sddev, and smooth\+\_\+scale\+\_\+1d.
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a9bbfd241a96107124f0af5ef8d0fbe61_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{namespacemcsamples_a9bbfd241a96107124f0af5ef8d0fbe61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a67c86279d2ba781324578c13807fa812}\label{namespacemcsamples_a67c86279d2ba781324578c13807fa812}} 
+\index{mcsamples@{mcsamples}!get2dplotdata@{get2dplotdata}}
+\index{get2dplotdata@{get2dplotdata}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{get2dplotdata()}{get2dplotdata()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::get2dplotdata (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{j2 }\end{DoxyParamCaption})}
+
+
+
+References center, coldata, colix, contours, corrmatrix, dat\+\_\+file\+\_\+2d(), float\+\_\+format, has\+\_\+limits, has\+\_\+limits\+\_\+bot, has\+\_\+limits\+\_\+top, meanlike, nrows, num\+\_\+bins\+\_\+2d, num\+\_\+contours, plot\+\_\+data\+\_\+dir, range\+\_\+max, range\+\_\+min, shade\+\_\+meanlikes, and smooth\+\_\+scale\+\_\+2d.
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a67c86279d2ba781324578c13807fa812_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{namespacemcsamples_a67c86279d2ba781324578c13807fa812_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a97959f867d590fadb6638910b52409bd}\label{namespacemcsamples_a97959f867d590fadb6638910b52409bd}} 
+\index{mcsamples@{mcsamples}!getchainlikesummary@{getchainlikesummary}}
+\index{getchainlikesummary@{getchainlikesummary}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{getchainlikesummary()}{getchainlikesummary()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::getchainlikesummary (\begin{DoxyParamCaption}\item[{integer}]{unit }\end{DoxyParamCaption})}
+
+
+
+References bestfit\+\_\+ix, coldata, maxlike, meanlike, nrows, and numsamp.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacemcsamples_a97959f867d590fadb6638910b52409bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a3b127162be572d0864c8bd49f3403a78}\label{namespacemcsamples_a3b127162be572d0864c8bd49f3403a78}} 
+\index{mcsamples@{mcsamples}!getcovmatrix@{getcovmatrix}}
+\index{getcovmatrix@{getcovmatrix}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{getcovmatrix()}{getcovmatrix()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::getcovmatrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References coldata, corrmatrix, covmat\+\_\+dimension, io\+::io\+\_\+writeproposematrix(), isused, matrixutils\+::matrix\+\_\+write(), namemapping, ncols, nrows, numsamp, plots\+\_\+only, and rootdirname.
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a3b127162be572d0864c8bd49f3403a78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{namespacemcsamples_a3b127162be572d0864c8bd49f3403a78_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a45291f5f8d4db1ad22598222a511e67c}\label{namespacemcsamples_a45291f5f8d4db1ad22598222a511e67c}} 
+\index{mcsamples@{mcsamples}!getfractionindices@{getfractionindices}}
+\index{getfractionindices@{getfractionindices}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{getfractionindices()}{getfractionindices()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::getfractionindices (\begin{DoxyParamCaption}\item[{integer, dimension($\ast$)}]{fraction\+\_\+indices,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References coldata, nrows, and numsamp.
+
+
+
+Referenced by doconvergetests().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a45291f5f8d4db1ad22598222a511e67c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a4664c132197f4ef65fa541baac30f0f2}\label{namespacemcsamples_a4664c132197f4ef65fa541baac30f0f2}} 
+\index{mcsamples@{mcsamples}!getusedcols@{getusedcols}}
+\index{getusedcols@{getusedcols}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{getusedcols()}{getusedcols()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::getusedcols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References coldata, isused, ncols, and nrows.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{namespacemcsamples_a4664c132197f4ef65fa541baac30f0f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a1e8b234ac939c21f51884cab29fd0204}\label{namespacemcsamples_a1e8b234ac939c21f51884cab29fd0204}} 
+\index{mcsamples@{mcsamples}!makesinglesamples@{makesinglesamples}}
+\index{makesinglesamples@{makesinglesamples}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{makesinglesamples()}{makesinglesamples()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::makesinglesamples (\begin{DoxyParamCaption}\item[{integer}]{single\+\_\+thin }\end{DoxyParamCaption})}
+
+
+
+References coldata, colix, settings\+::feedback, float\+\_\+format, randutils\+::initrandom(), nrows, num\+\_\+vars, plot\+\_\+data\+\_\+dir, randutils\+::ranmar(), and settings\+::rootname.
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a1e8b234ac939c21f51884cab29fd0204_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacemcsamples_a1e8b234ac939c21f51884cab29fd0204_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_ac831b94ceae7c808b2656230727e6cdd}\label{namespacemcsamples_ac831b94ceae7c808b2656230727e6cdd}} 
+\index{mcsamples@{mcsamples}!mapparameters@{mapparameters}}
+\index{mapparameters@{mapparameters}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{mapparameters()}{mapparameters()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::mapparameters (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacemcsamples_a423ddd0f2de0560617b74a17231275e0}{gp}}), dimension(1\+:\mbox{\hyperlink{namespacemcsamples_a9c7a895a8bbc32cc9ec5a4e647f93842}{ncols}})}]{invars }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{namespacemcsamples_ac831b94ceae7c808b2656230727e6cdd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_ab0762a08afdb1f7f972b966091ef0918}\label{namespacemcsamples_ab0762a08afdb1f7f972b966091ef0918}} 
+\index{mcsamples@{mcsamples}!matlablabel@{matlablabel}}
+\index{matlablabel@{matlablabel}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{matlablabel()}{matlablabel()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable mcsamples\+::matlablabel (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+
+
+References labels, and matlab\+\_\+latex.
+
+
+
+Referenced by getdist(), and write2dplotmatlab().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_ab0762a08afdb1f7f972b966091ef0918_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_ac9c93f48a6a5f4c22e5f35b060bcab20}\label{namespacemcsamples_ac9c93f48a6a5f4c22e5f35b060bcab20}} 
+\index{mcsamples@{mcsamples}!mostcorrelated2d@{mostcorrelated2d}}
+\index{mostcorrelated2d@{mostcorrelated2d}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{mostcorrelated2d()}{mostcorrelated2d()}}
+{\footnotesize\ttfamily integer function mcsamples\+::mostcorrelated2d (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(in)}]{direc }\end{DoxyParamCaption})}
+
+
+
+References colix, corrmatrix, matrixutils\+::matrix\+\_\+diagonalize(), and arrayutils\+::maxindex().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_ac9c93f48a6a5f4c22e5f35b060bcab20_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a72e8a848ae68643f3449e12e33334870}\label{namespacemcsamples_a72e8a848ae68643f3449e12e33334870}} 
+\index{mcsamples@{mcsamples}!pca@{pca}}
+\index{pca@{pca}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{pca()}{pca()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::pca (\begin{DoxyParamCaption}\item[{integer, dimension(n), intent(in)}]{pars,  }\item[{integer, intent(in)}]{n,  }\item[{character(len=$\ast$), intent(in)}]{param\+\_\+map,  }\item[{integer, intent(in)}]{normparam\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+References coldata, colix, arrayutils\+::indexof(), labels, matrixutils\+::matrix\+\_\+diagonalize(), mean, nd\+\_\+cont1, nd\+\_\+cont2, nrows, num\+\_\+vars, numsamp, rootdirname, and sddev.
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a72e8a848ae68643f3449e12e33334870_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{namespacemcsamples_a72e8a848ae68643f3449e12e33334870_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a12e5ebfb72dd60020dd1aef9afa7ad2e}\label{namespacemcsamples_a12e5ebfb72dd60020dd1aef9afa7ad2e}} 
+\index{mcsamples@{mcsamples}!plotcontmatlab@{plotcontmatlab}}
+\index{plotcontmatlab@{plotcontmatlab}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{plotcontmatlab()}{plotcontmatlab()}}
+{\footnotesize\ttfamily logical function mcsamples\+::plotcontmatlab (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{aunit,  }\item[{character(len=$\ast$), intent(in)}]{aroot,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{j2,  }\item[{logical, intent(in)}]{Do\+Shade }\end{DoxyParamCaption})}
+
+
+
+References dat\+\_\+file\+\_\+2d(), num\+\_\+contours, plot\+\_\+data\+\_\+dir, and shade\+\_\+meanlikes.
+
+
+
+Referenced by write2dplotmatlab().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a12e5ebfb72dd60020dd1aef9afa7ad2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a12e5ebfb72dd60020dd1aef9afa7ad2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a61ce07e713757fee14a963684c25fe12}\label{namespacemcsamples_a61ce07e713757fee14a963684c25fe12}} 
+\index{mcsamples@{mcsamples}!python\+\_\+param\+\_\+array@{python\+\_\+param\+\_\+array}}
+\index{python\+\_\+param\+\_\+array@{python\+\_\+param\+\_\+array}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{python\+\_\+param\+\_\+array()}{python\_param\_array()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable mcsamples\+::python\+\_\+param\+\_\+array (\begin{DoxyParamCaption}\item[{integer, dimension(\+:), intent(in)}]{params,  }\item[{integer, intent(in)}]{num }\end{DoxyParamCaption})}
+
+
+
+References quoted\+\_\+param\+\_\+name\+\_\+used().
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a61ce07e713757fee14a963684c25fe12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{namespacemcsamples_a61ce07e713757fee14a963684c25fe12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a1084f1fea1eddc1385237c666e34115b}\label{namespacemcsamples_a1084f1fea1eddc1385237c666e34115b}} 
+\index{mcsamples@{mcsamples}!quoted\+\_\+param\+\_\+name@{quoted\+\_\+param\+\_\+name}}
+\index{quoted\+\_\+param\+\_\+name@{quoted\+\_\+param\+\_\+name}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{quoted\+\_\+param\+\_\+name()}{quoted\_param\_name()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable mcsamples\+::quoted\+\_\+param\+\_\+name (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})}
+
+
+
+References namemapping.
+
+
+
+Referenced by getdist(), and quoted\+\_\+param\+\_\+name\+\_\+used().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a1084f1fea1eddc1385237c666e34115b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_aaed4d229224d51b97154b233f072fae9}\label{namespacemcsamples_aaed4d229224d51b97154b233f072fae9}} 
+\index{mcsamples@{mcsamples}!quoted\+\_\+param\+\_\+name\+\_\+used@{quoted\+\_\+param\+\_\+name\+\_\+used}}
+\index{quoted\+\_\+param\+\_\+name\+\_\+used@{quoted\+\_\+param\+\_\+name\+\_\+used}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{quoted\+\_\+param\+\_\+name\+\_\+used()}{quoted\_param\_name\_used()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable mcsamples\+::quoted\+\_\+param\+\_\+name\+\_\+used (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})}
+
+
+
+References colix, and quoted\+\_\+param\+\_\+name().
+
+
+
+Referenced by getdist(), and python\+\_\+param\+\_\+array().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_aaed4d229224d51b97154b233f072fae9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_aaed4d229224d51b97154b233f072fae9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_af00e1e65ba0440ba9f05136bb9219f55}\label{namespacemcsamples_af00e1e65ba0440ba9f05136bb9219f55}} 
+\index{mcsamples@{mcsamples}!sortcoldata@{sortcoldata}}
+\index{sortcoldata@{sortcoldata}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{sortcoldata()}{sortcoldata()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::sortcoldata (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{bycol }\end{DoxyParamCaption})}
+
+
+
+References coldata, ncols, and nrows.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{namespacemcsamples_af00e1e65ba0440ba9f05136bb9219f55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_ad5ab7ed94d3a34782ce86ebc0d23e148}\label{namespacemcsamples_ad5ab7ed94d3a34782ce86ebc0d23e148}} 
+\index{mcsamples@{mcsamples}!thindata@{thindata}}
+\index{thindata@{thindata}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{thindata()}{thindata()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::thindata (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{fac,  }\item[{integer, intent(in), optional}]{ix1,  }\item[{integer, intent(in), optional}]{ix2 }\end{DoxyParamCaption})}
+
+
+
+References coldata, nrows, numsamp, thin\+\_\+ix, and thin\+\_\+rows.
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_ad5ab7ed94d3a34782ce86ebc0d23e148_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a0a903a19ac6139be1cc98a32218ec801}\label{namespacemcsamples_a0a903a19ac6139be1cc98a32218ec801}} 
+\index{mcsamples@{mcsamples}!write1dplotmatlab@{write1dplotmatlab}}
+\index{write1dplotmatlab@{write1dplotmatlab}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{write1dplotmatlab()}{write1dplotmatlab()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::write1dplotmatlab (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{aunit,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})}
+
+
+
+References colix, compareplots, dat\+\_\+file\+\_\+name(), has\+\_\+markers, markers, plot\+\_\+data\+\_\+dir, and plot\+\_\+meanlikes.
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a0a903a19ac6139be1cc98a32218ec801_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacemcsamples_a0a903a19ac6139be1cc98a32218ec801_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a6ac9a19d5b3622b2a2dea19257a37c36}\label{namespacemcsamples_a6ac9a19d5b3622b2a2dea19257a37c36}} 
+\index{mcsamples@{mcsamples}!write2dplotmatlab@{write2dplotmatlab}}
+\index{write2dplotmatlab@{write2dplotmatlab}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{write2dplotmatlab()}{write2dplotmatlab()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::write2dplotmatlab (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{aunit,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{j2,  }\item[{logical, intent(in)}]{Do\+Labelx,  }\item[{logical, intent(in)}]{Do\+Labely,  }\item[{logical, intent(in), optional}]{hide\+\_\+ticklabels }\end{DoxyParamCaption})}
+
+
+
+References colix, compareplots, do\+\_\+shading, matlablabel(), num\+\_\+contours, and plotcontmatlab().
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a6ac9a19d5b3622b2a2dea19257a37c36_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacemcsamples_a6ac9a19d5b3622b2a2dea19257a37c36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a7fb178ee92298048973cca975336489e}\label{namespacemcsamples_a7fb178ee92298048973cca975336489e}} 
+\index{mcsamples@{mcsamples}!writematlablinelabels@{writematlablinelabels}}
+\index{writematlablinelabels@{writematlablinelabels}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{writematlablinelabels()}{writematlablinelabels()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::writematlablinelabels (\begin{DoxyParamCaption}\item[{class(ttextfile)}]{F }\end{DoxyParamCaption})}
+
+
+
+References compareplots.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespacemcsamples_a7fb178ee92298048973cca975336489e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_aeb1af08402647e8ef9e1d8f97e774e3a}\label{namespacemcsamples_aeb1af08402647e8ef9e1d8f97e774e3a}} 
+\index{mcsamples@{mcsamples}!writeplotfileexport@{writeplotfileexport}}
+\index{writeplotfileexport@{writeplotfileexport}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{writeplotfileexport()}{writeplotfileexport()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::writeplotfileexport (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{unit,  }\item[{character(len=$\ast$), intent(in)}]{tag,  }\item[{integer, intent(in)}]{plot\+\_\+col,  }\item[{integer, intent(in)}]{plot\+\_\+row }\end{DoxyParamCaption})}
+
+
+
+References plot\+\_\+ext, and plot\+\_\+output.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacemcsamples_aeb1af08402647e8ef9e1d8f97e774e3a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a22e27e5c21abdb2a3d8cf2816d2f8acb}\label{namespacemcsamples_a22e27e5c21abdb2a3d8cf2816d2f8acb}} 
+\index{mcsamples@{mcsamples}!writeplotfileinit@{writeplotfileinit}}
+\index{writeplotfileinit@{writeplotfileinit}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{writeplotfileinit()}{writeplotfileinit()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::writeplotfileinit (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{unit,  }\item[{logical, intent(in)}]{sm,  }\item[{real, intent(in)}]{subplot\+\_\+size }\end{DoxyParamCaption})}
+
+
+
+References bw, compareplots, font\+\_\+scale, matlab\+\_\+latex, out\+\_\+dir, plot\+\_\+data\+\_\+dir, plot\+\_\+ext, and plot\+\_\+meanlikes.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{namespacemcsamples_a22e27e5c21abdb2a3d8cf2816d2f8acb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a54c3f403eb92b30ff78476abea37462c}\label{namespacemcsamples_a54c3f403eb92b30ff78476abea37462c}} 
+\index{mcsamples@{mcsamples}!writes@{writes}}
+\index{writes@{writes}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{writes()}{writes()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::writes (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{S }\end{DoxyParamCaption})}
+
+
+
+Referenced by doconvergetests(), and edgewarning().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemcsamples_a54c3f403eb92b30ff78476abea37462c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemcsamples_a98999c53910240226ec96e8ef0751a22}\label{namespacemcsamples_a98999c53910240226ec96e8ef0751a22}} 
+\index{mcsamples@{mcsamples}!writethindata@{writethindata}}
+\index{writethindata@{writethindata}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{writethindata()}{writethindata()}}
+{\footnotesize\ttfamily subroutine mcsamples\+::writethindata (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{real(mcp), intent(in)}]{cool }\end{DoxyParamCaption})}
+
+
+
+References coldata, float\+\_\+format, ncols, nrows, thin\+\_\+ix, and thin\+\_\+rows.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{namespacemcsamples_a98999c53910240226ec96e8ef0751a22_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemcsamples_ab3c722f8f5dd4ef38228bf41b333bf36}\label{namespacemcsamples_ab3c722f8f5dd4ef38228bf41b333bf36}} 
+\index{mcsamples@{mcsamples}!bestfit\+\_\+ix@{bestfit\+\_\+ix}}
+\index{bestfit\+\_\+ix@{bestfit\+\_\+ix}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{bestfit\+\_\+ix}{bestfit\_ix}}
+{\footnotesize\ttfamily integer mcsamples\+::bestfit\+\_\+ix}
+
+
+
+Referenced by getchainlikesummary(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a72368716a8ad215156d18cf044952cdc}\label{namespacemcsamples_a72368716a8ad215156d18cf044952cdc}} 
+\index{mcsamples@{mcsamples}!boundary\+\_\+correction\+\_\+method@{boundary\+\_\+correction\+\_\+method}}
+\index{boundary\+\_\+correction\+\_\+method@{boundary\+\_\+correction\+\_\+method}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{boundary\+\_\+correction\+\_\+method}{boundary\_correction\_method}}
+{\footnotesize\ttfamily integer mcsamples\+::boundary\+\_\+correction\+\_\+method = 1}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_abfadadd4fe7cc368f0f005a352298f33}\label{namespacemcsamples_abfadadd4fe7cc368f0f005a352298f33}} 
+\index{mcsamples@{mcsamples}!bw@{bw}}
+\index{bw@{bw}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{bw}{bw}}
+{\footnotesize\ttfamily logical mcsamples\+::bw}
+
+
+
+Referenced by dopksmoothbspline\+\_\+(), getdist(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_a99b1b2fc1a0d5d3e797fa8716a294f6a}\label{namespacemcsamples_a99b1b2fc1a0d5d3e797fa8716a294f6a}} 
+\index{mcsamples@{mcsamples}!center@{center}}
+\index{center@{center}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::center}
+
+
+
+Referenced by get1ddensity(), and get2dplotdata().
+
+\mbox{\Hypertarget{namespacemcsamples_a196c1e189b163a496c0da2fcc96bf1f4}\label{namespacemcsamples_a196c1e189b163a496c0da2fcc96bf1f4}} 
+\index{mcsamples@{mcsamples}!chain\+\_\+indices@{chain\+\_\+indices}}
+\index{chain\+\_\+indices@{chain\+\_\+indices}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{chain\+\_\+indices}{chain\_indices}}
+{\footnotesize\ttfamily integer, dimension(\mbox{\hyperlink{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}{max\+\_\+chains}}) mcsamples\+::chain\+\_\+indices}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a619b6da70c38ede6a9851a3ee89b4019}\label{namespacemcsamples_a619b6da70c38ede6a9851a3ee89b4019}} 
+\index{mcsamples@{mcsamples}!chain\+\_\+numbers@{chain\+\_\+numbers}}
+\index{chain\+\_\+numbers@{chain\+\_\+numbers}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{chain\+\_\+numbers}{chain\_numbers}}
+{\footnotesize\ttfamily integer, dimension(\mbox{\hyperlink{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}{max\+\_\+chains}}) mcsamples\+::chain\+\_\+numbers}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a1f7790a8989ae24a32dcef594163cfd6}\label{namespacemcsamples_a1f7790a8989ae24a32dcef594163cfd6}} 
+\index{mcsamples@{mcsamples}!coldata@{coldata}}
+\index{coldata@{coldata}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{coldata}{coldata}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacemcsamples_a423ddd0f2de0560617b74a17231275e0}{gp}}), dimension(\+:,\+:), allocatable mcsamples\+::coldata}
+
+
+
+Referenced by confidval(), coolchain(), deletezeros(), doconvergetests(), get1ddensity(), get2dplotdata(), getchainlikesummary(), getcovmatrix(), getdist(), getfractionindices(), getusedcols(), makesinglesamples(), pca(), sortcoldata(), thindata(), and writethindata().
+
+\mbox{\Hypertarget{namespacemcsamples_a16ed6273b18cc5caae328b4524db8061}\label{namespacemcsamples_a16ed6273b18cc5caae328b4524db8061}} 
+\index{mcsamples@{mcsamples}!colix@{colix}}
+\index{colix@{colix}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{colix}{colix}}
+{\footnotesize\ttfamily integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::colix}
+
+
+
+Referenced by dat\+\_\+file\+\_\+2d(), dat\+\_\+file\+\_\+name(), get1ddensity(), get2dplotdata(), getdist(), makesinglesamples(), mostcorrelated2d(), pca(), quoted\+\_\+param\+\_\+name\+\_\+used(), write1dplotmatlab(), and write2dplotmatlab().
+
+\mbox{\Hypertarget{namespacemcsamples_a69983643fd9f3aed82247d3eb19d8ba0}\label{namespacemcsamples_a69983643fd9f3aed82247d3eb19d8ba0}} 
+\index{mcsamples@{mcsamples}!compareplots@{compareplots}}
+\index{compareplots@{compareplots}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{compareplots}{compareplots}}
+{\footnotesize\ttfamily type(tstringlist), save mcsamples\+::compareplots}
+
+
+
+Referenced by getdist(), write1dplotmatlab(), write2dplotmatlab(), writematlablinelabels(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_ae745525f8fef6e02d22826cd2a5f1bcc}\label{namespacemcsamples_ae745525f8fef6e02d22826cd2a5f1bcc}} 
+\index{mcsamples@{mcsamples}!contours@{contours}}
+\index{contours@{contours}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{contours}{contours}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}) mcsamples\+::contours}
+
+
+
+Referenced by get2dplotdata(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a7cabc6db7f9125c0af7b6de3032567f1}\label{namespacemcsamples_a7cabc6db7f9125c0af7b6de3032567f1}} 
+\index{mcsamples@{mcsamples}!corr\+\_\+length\+\_\+steps@{corr\+\_\+length\+\_\+steps}}
+\index{corr\+\_\+length\+\_\+steps@{corr\+\_\+length\+\_\+steps}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{corr\+\_\+length\+\_\+steps}{corr\_length\_steps}}
+{\footnotesize\ttfamily integer mcsamples\+::corr\+\_\+length\+\_\+steps = 15}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_af8a6d674d091942c7820c37ad6795f6b}\label{namespacemcsamples_af8a6d674d091942c7820c37ad6795f6b}} 
+\index{mcsamples@{mcsamples}!corr\+\_\+length\+\_\+thin@{corr\+\_\+length\+\_\+thin}}
+\index{corr\+\_\+length\+\_\+thin@{corr\+\_\+length\+\_\+thin}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{corr\+\_\+length\+\_\+thin}{corr\_length\_thin}}
+{\footnotesize\ttfamily integer mcsamples\+::corr\+\_\+length\+\_\+thin = 0}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a6f7e8571ffd569f3c7538169829a9612}\label{namespacemcsamples_a6f7e8571ffd569f3c7538169829a9612}} 
+\index{mcsamples@{mcsamples}!corrmatrix@{corrmatrix}}
+\index{corrmatrix@{corrmatrix}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{corrmatrix}{corrmatrix}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable mcsamples\+::corrmatrix}
+
+
+
+Referenced by get2dplotdata(), getcovmatrix(), getdist(), and mostcorrelated2d().
+
+\mbox{\Hypertarget{namespacemcsamples_aee5291f542c82e3b053eea9aa4a22eef}\label{namespacemcsamples_aee5291f542c82e3b053eea9aa4a22eef}} 
+\index{mcsamples@{mcsamples}!covmat\+\_\+dimension@{covmat\+\_\+dimension}}
+\index{covmat\+\_\+dimension@{covmat\+\_\+dimension}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{covmat\+\_\+dimension}{covmat\_dimension}}
+{\footnotesize\ttfamily integer mcsamples\+::covmat\+\_\+dimension}
+
+
+
+Referenced by doconvergetests(), getcovmatrix(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ae1862ffcd750637a6e92a95ec020c591}\label{namespacemcsamples_ae1862ffcd750637a6e92a95ec020c591}} 
+\index{mcsamples@{mcsamples}!credible\+\_\+interval\+\_\+threshold@{credible\+\_\+interval\+\_\+threshold}}
+\index{credible\+\_\+interval\+\_\+threshold@{credible\+\_\+interval\+\_\+threshold}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{credible\+\_\+interval\+\_\+threshold}{credible\_interval\_threshold}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::credible\+\_\+interval\+\_\+threshold = 0.\+05d0}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a1831bdf8091941b6ccbd0c3fc3df90f9}\label{namespacemcsamples_a1831bdf8091941b6ccbd0c3fc3df90f9}} 
+\index{mcsamples@{mcsamples}!cust2dplots@{cust2dplots}}
+\index{cust2dplots@{cust2dplots}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{cust2dplots}{cust2dplots}}
+{\footnotesize\ttfamily integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}$\ast$$\ast$2) mcsamples\+::cust2dplots}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_aa7682e36ef34bef4b8112f058f435415}\label{namespacemcsamples_aa7682e36ef34bef4b8112f058f435415}} 
+\index{mcsamples@{mcsamples}!density1d@{density1d}}
+\index{density1d@{density1d}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{density1d}{density1d}}
+{\footnotesize\ttfamily type(tdensity1d) mcsamples\+::density1d}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_aea44d2c9cd7dfbed7881a38450903a64}\label{namespacemcsamples_aea44d2c9cd7dfbed7881a38450903a64}} 
+\index{mcsamples@{mcsamples}!do\+\_\+shading@{do\+\_\+shading}}
+\index{do\+\_\+shading@{do\+\_\+shading}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{do\+\_\+shading}{do\_shading}}
+{\footnotesize\ttfamily logical mcsamples\+::do\+\_\+shading}
+
+
+
+Referenced by getdist(), and write2dplotmatlab().
+
+\mbox{\Hypertarget{namespacemcsamples_a1d5c81cfc6a6d2a9f25c250cf8359142}\label{namespacemcsamples_a1d5c81cfc6a6d2a9f25c250cf8359142}} 
+\index{mcsamples@{mcsamples}!float\+\_\+format@{float\+\_\+format}}
+\index{float\+\_\+format@{float\+\_\+format}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{float\+\_\+format}{float\_format}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter mcsamples\+::float\+\_\+format = \textquotesingle{}($\ast$(E16.\+7))\textquotesingle{}}
+
+
+
+Referenced by get1ddensity(), get2dplotdata(), makesinglesamples(), and writethindata().
+
+\mbox{\Hypertarget{namespacemcsamples_ae4e5ef0996e111c2f91121884b99ccdc}\label{namespacemcsamples_ae4e5ef0996e111c2f91121884b99ccdc}} 
+\index{mcsamples@{mcsamples}!font\+\_\+scale@{font\+\_\+scale}}
+\index{font\+\_\+scale@{font\+\_\+scale}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{font\+\_\+scale}{font\_scale}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::font\+\_\+scale = 1.}
+
+
+
+Referenced by getdist(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_a5bf85772fb62752a789a1d253bd6cd5a}\label{namespacemcsamples_a5bf85772fb62752a789a1d253bd6cd5a}} 
+\index{mcsamples@{mcsamples}!force\+\_\+twotail@{force\+\_\+twotail}}
+\index{force\+\_\+twotail@{force\+\_\+twotail}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{force\+\_\+twotail}{force\_twotail}}
+{\footnotesize\ttfamily logical mcsamples\+::force\+\_\+twotail}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a423ddd0f2de0560617b74a17231275e0}\label{namespacemcsamples_a423ddd0f2de0560617b74a17231275e0}} 
+\index{mcsamples@{mcsamples}!gp@{gp}}
+\index{gp@{gp}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{gp}{gp}}
+{\footnotesize\ttfamily integer, parameter mcsamples\+::gp = K\+I\+ND(1.d0)}
+
+\mbox{\Hypertarget{namespacemcsamples_ae802de51bb481b085361a661c090d461}\label{namespacemcsamples_ae802de51bb481b085361a661c090d461}} 
+\index{mcsamples@{mcsamples}!has\+\_\+limits@{has\+\_\+limits}}
+\index{has\+\_\+limits@{has\+\_\+limits}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{has\+\_\+limits}{has\_limits}}
+{\footnotesize\ttfamily logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::has\+\_\+limits}
+
+
+
+Referenced by doconvergetests(), get1ddensity(), and get2dplotdata().
+
+\mbox{\Hypertarget{namespacemcsamples_af020921aecf16dd5008460d6a82fdd64}\label{namespacemcsamples_af020921aecf16dd5008460d6a82fdd64}} 
+\index{mcsamples@{mcsamples}!has\+\_\+limits\+\_\+bot@{has\+\_\+limits\+\_\+bot}}
+\index{has\+\_\+limits\+\_\+bot@{has\+\_\+limits\+\_\+bot}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{has\+\_\+limits\+\_\+bot}{has\_limits\_bot}}
+{\footnotesize\ttfamily logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::has\+\_\+limits\+\_\+bot}
+
+
+
+Referenced by get1ddensity(), get2dplotdata(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a948a6bc42d1b7b001f55aeaaf2d5b3f8}\label{namespacemcsamples_a948a6bc42d1b7b001f55aeaaf2d5b3f8}} 
+\index{mcsamples@{mcsamples}!has\+\_\+limits\+\_\+top@{has\+\_\+limits\+\_\+top}}
+\index{has\+\_\+limits\+\_\+top@{has\+\_\+limits\+\_\+top}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{has\+\_\+limits\+\_\+top}{has\_limits\_top}}
+{\footnotesize\ttfamily logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::has\+\_\+limits\+\_\+top}
+
+
+
+Referenced by get1ddensity(), get2dplotdata(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a0233de8ae126379ac2ebc11c0981db61}\label{namespacemcsamples_a0233de8ae126379ac2ebc11c0981db61}} 
+\index{mcsamples@{mcsamples}!has\+\_\+markers@{has\+\_\+markers}}
+\index{has\+\_\+markers@{has\+\_\+markers}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{has\+\_\+markers}{has\_markers}}
+{\footnotesize\ttfamily logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::has\+\_\+markers}
+
+
+
+Referenced by getdist(), and write1dplotmatlab().
+
+\mbox{\Hypertarget{namespacemcsamples_a0f43faad2c6f83998962006e04268623}\label{namespacemcsamples_a0f43faad2c6f83998962006e04268623}} 
+\index{mcsamples@{mcsamples}!in\+\_\+root@{in\+\_\+root}}
+\index{in\+\_\+root@{in\+\_\+root}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{in\+\_\+root}{in\_root}}
+{\footnotesize\ttfamily character(len=\+:), allocatable mcsamples\+::in\+\_\+root}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a562ce4b67831be4911c45a4e08a6ef18}\label{namespacemcsamples_a562ce4b67831be4911c45a4e08a6ef18}} 
+\index{mcsamples@{mcsamples}!indep\+\_\+thin@{indep\+\_\+thin}}
+\index{indep\+\_\+thin@{indep\+\_\+thin}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{indep\+\_\+thin}{indep\_thin}}
+{\footnotesize\ttfamily integer mcsamples\+::indep\+\_\+thin = 0}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a6269903cd9674bdcc7c4527acdddfef3}\label{namespacemcsamples_a6269903cd9674bdcc7c4527acdddfef3}} 
+\index{mcsamples@{mcsamples}!isused@{isused}}
+\index{isused@{isused}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{isused}{isused}}
+{\footnotesize\ttfamily logical, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::isused}
+
+
+
+Referenced by doconvergetests(), getcovmatrix(), getdist(), and getusedcols().
+
+\mbox{\Hypertarget{namespacemcsamples_a6a48f0fe15a7b6bfe99092a09e22a218}\label{namespacemcsamples_a6a48f0fe15a7b6bfe99092a09e22a218}} 
+\index{mcsamples@{mcsamples}!ix\+\_\+max@{ix\+\_\+max}}
+\index{ix\+\_\+max@{ix\+\_\+max}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{ix\+\_\+max}{ix\_max}}
+{\footnotesize\ttfamily integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::ix\+\_\+max}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a782e4892c659b02c05a3134ad4c32bac}\label{namespacemcsamples_a782e4892c659b02c05a3134ad4c32bac}} 
+\index{mcsamples@{mcsamples}!ix\+\_\+min@{ix\+\_\+min}}
+\index{ix\+\_\+min@{ix\+\_\+min}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{ix\+\_\+min}{ix\_min}}
+{\footnotesize\ttfamily integer, dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::ix\+\_\+min}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_abe3835988721f0cbcb6f7c28015e95f3}\label{namespacemcsamples_abe3835988721f0cbcb6f7c28015e95f3}} 
+\index{mcsamples@{mcsamples}!labels@{labels}}
+\index{labels@{labels}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily character(len=128), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::labels}
+
+
+
+Referenced by doconvergetests(), getdist(), matlablabel(), and pca().
+
+\mbox{\Hypertarget{namespacemcsamples_a3454f7bb4ef6c4c43f38a3778b39f1ca}\label{namespacemcsamples_a3454f7bb4ef6c4c43f38a3778b39f1ca}} 
+\index{mcsamples@{mcsamples}!limmax@{limmax}}
+\index{limmax@{limmax}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{limmax}{limmax}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::limmax}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a299522989433c1f723f9028e5f0460f9}\label{namespacemcsamples_a299522989433c1f723f9028e5f0460f9}} 
+\index{mcsamples@{mcsamples}!limmin@{limmin}}
+\index{limmin@{limmin}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{limmin}{limmin}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::limmin}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ad8e59e2a5de71cff7f1241b59b058291}\label{namespacemcsamples_ad8e59e2a5de71cff7f1241b59b058291}} 
+\index{mcsamples@{mcsamples}!make\+\_\+single\+\_\+samples@{make\+\_\+single\+\_\+samples}}
+\index{make\+\_\+single\+\_\+samples@{make\+\_\+single\+\_\+samples}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{make\+\_\+single\+\_\+samples}{make\_single\_samples}}
+{\footnotesize\ttfamily logical mcsamples\+::make\+\_\+single\+\_\+samples}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a6c36f035fe1ec1e688afcc0ac112e425}\label{namespacemcsamples_a6c36f035fe1ec1e688afcc0ac112e425}} 
+\index{mcsamples@{mcsamples}!marge\+\_\+limits\+\_\+bot@{marge\+\_\+limits\+\_\+bot}}
+\index{marge\+\_\+limits\+\_\+bot@{marge\+\_\+limits\+\_\+bot}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{marge\+\_\+limits\+\_\+bot}{marge\_limits\_bot}}
+{\footnotesize\ttfamily logical, dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}, \mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::marge\+\_\+limits\+\_\+bot}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a22f55004d2d1debc557bf626e9b2af89}\label{namespacemcsamples_a22f55004d2d1debc557bf626e9b2af89}} 
+\index{mcsamples@{mcsamples}!marge\+\_\+limits\+\_\+top@{marge\+\_\+limits\+\_\+top}}
+\index{marge\+\_\+limits\+\_\+top@{marge\+\_\+limits\+\_\+top}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{marge\+\_\+limits\+\_\+top}{marge\_limits\_top}}
+{\footnotesize\ttfamily logical, dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}, \mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::marge\+\_\+limits\+\_\+top}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ad7bc69baf30e862c773070e99974d483}\label{namespacemcsamples_ad7bc69baf30e862c773070e99974d483}} 
+\index{mcsamples@{mcsamples}!markers@{markers}}
+\index{markers@{markers}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{markers}{markers}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::markers}
+
+
+
+Referenced by getdist(), and write1dplotmatlab().
+
+\mbox{\Hypertarget{namespacemcsamples_acd85fa3b4250ca366e08576bd4df6bd8}\label{namespacemcsamples_acd85fa3b4250ca366e08576bd4df6bd8}} 
+\index{mcsamples@{mcsamples}!matlab\+\_\+latex@{matlab\+\_\+latex}}
+\index{matlab\+\_\+latex@{matlab\+\_\+latex}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{matlab\+\_\+latex}{matlab\_latex}}
+{\footnotesize\ttfamily logical mcsamples\+::matlab\+\_\+latex = .false.}
+
+
+
+Referenced by getdist(), matlablabel(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_a24dc02cd209419956007efc05c309274}\label{namespacemcsamples_a24dc02cd209419956007efc05c309274}} 
+\index{mcsamples@{mcsamples}!matlab\+\_\+version@{matlab\+\_\+version}}
+\index{matlab\+\_\+version@{matlab\+\_\+version}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{matlab\+\_\+version}{matlab\_version}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::matlab\+\_\+version}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}\label{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}} 
+\index{mcsamples@{mcsamples}!max\+\_\+chains@{max\+\_\+chains}}
+\index{max\+\_\+chains@{max\+\_\+chains}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{max\+\_\+chains}{max\_chains}}
+{\footnotesize\ttfamily integer, parameter mcsamples\+::max\+\_\+chains = 100}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}\label{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}} 
+\index{mcsamples@{mcsamples}!max\+\_\+cols@{max\+\_\+cols}}
+\index{max\+\_\+cols@{max\+\_\+cols}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{max\+\_\+cols}{max\_cols}}
+{\footnotesize\ttfamily integer, parameter mcsamples\+::max\+\_\+cols = 500}
+
+\mbox{\Hypertarget{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}\label{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}} 
+\index{mcsamples@{mcsamples}!max\+\_\+contours@{max\+\_\+contours}}
+\index{max\+\_\+contours@{max\+\_\+contours}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{max\+\_\+contours}{max\_contours}}
+{\footnotesize\ttfamily integer, parameter mcsamples\+::max\+\_\+contours = 5}
+
+\mbox{\Hypertarget{namespacemcsamples_a1db866dfd553051fc5cbd2c80bcd4c86}\label{namespacemcsamples_a1db866dfd553051fc5cbd2c80bcd4c86}} 
+\index{mcsamples@{mcsamples}!max\+\_\+frac\+\_\+twotail@{max\+\_\+frac\+\_\+twotail}}
+\index{max\+\_\+frac\+\_\+twotail@{max\+\_\+frac\+\_\+twotail}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{max\+\_\+frac\+\_\+twotail}{max\_frac\_twotail}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{max\+\_\+contours}}) mcsamples\+::max\+\_\+frac\+\_\+twotail}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a65308a62158ea3cd86ad4582d51e8cfe}\label{namespacemcsamples_a65308a62158ea3cd86ad4582d51e8cfe}} 
+\index{mcsamples@{mcsamples}!max\+\_\+mult@{max\+\_\+mult}}
+\index{max\+\_\+mult@{max\+\_\+mult}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{max\+\_\+mult}{max\_mult}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::max\+\_\+mult}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a11a673041be4c2131b8dc7a2806e6a04}\label{namespacemcsamples_a11a673041be4c2131b8dc7a2806e6a04}} 
+\index{mcsamples@{mcsamples}!max\+\_\+rows@{max\+\_\+rows}}
+\index{max\+\_\+rows@{max\+\_\+rows}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{max\+\_\+rows}{max\_rows}}
+{\footnotesize\ttfamily integer, parameter mcsamples\+::max\+\_\+rows = 500000}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_aecb93fc58e3823802a4eabc86659a889}\label{namespacemcsamples_aecb93fc58e3823802a4eabc86659a889}} 
+\index{mcsamples@{mcsamples}!max\+\_\+split\+\_\+tests@{max\+\_\+split\+\_\+tests}}
+\index{max\+\_\+split\+\_\+tests@{max\+\_\+split\+\_\+tests}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{max\+\_\+split\+\_\+tests}{max\_split\_tests}}
+{\footnotesize\ttfamily integer, parameter mcsamples\+::max\+\_\+split\+\_\+tests = 4}
+
+\mbox{\Hypertarget{namespacemcsamples_a084bb79be779410b498f439e52a95c5e}\label{namespacemcsamples_a084bb79be779410b498f439e52a95c5e}} 
+\index{mcsamples@{mcsamples}!maxlike@{maxlike}}
+\index{maxlike@{maxlike}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{maxlike}{maxlike}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::maxlike}
+
+
+
+Referenced by getchainlikesummary().
+
+\mbox{\Hypertarget{namespacemcsamples_a770892813dc80f66c4a9d4af5df91a26}\label{namespacemcsamples_a770892813dc80f66c4a9d4af5df91a26}} 
+\index{mcsamples@{mcsamples}!mean@{mean}}
+\index{mean@{mean}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{mean}{mean}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::mean}
+
+
+
+Referenced by getdist(), and pca().
+
+\mbox{\Hypertarget{namespacemcsamples_a42f921b7349e79466c2128ebcb06e75f}\label{namespacemcsamples_a42f921b7349e79466c2128ebcb06e75f}} 
+\index{mcsamples@{mcsamples}!mean\+\_\+loglikes@{mean\+\_\+loglikes}}
+\index{mean\+\_\+loglikes@{mean\+\_\+loglikes}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{mean\+\_\+loglikes}{mean\_loglikes}}
+{\footnotesize\ttfamily logical mcsamples\+::mean\+\_\+loglikes = .false.}
+
+
+
+Referenced by get1ddensity().
+
+\mbox{\Hypertarget{namespacemcsamples_a1ccd58a9a808001ffe645de8327594a2}\label{namespacemcsamples_a1ccd58a9a808001ffe645de8327594a2}} 
+\index{mcsamples@{mcsamples}!mean\+\_\+mult@{mean\+\_\+mult}}
+\index{mean\+\_\+mult@{mean\+\_\+mult}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{mean\+\_\+mult}{mean\_mult}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::mean\+\_\+mult}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ad9b26e8c7b01068cd5e285b2710ffff9}\label{namespacemcsamples_ad9b26e8c7b01068cd5e285b2710ffff9}} 
+\index{mcsamples@{mcsamples}!meanlike@{meanlike}}
+\index{meanlike@{meanlike}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{meanlike}{meanlike}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::meanlike}
+
+
+
+Referenced by get1ddensity(), get2dplotdata(), and getchainlikesummary().
+
+\mbox{\Hypertarget{namespacemcsamples_ab0b5f836670f80c8acfa3374709ddc9b}\label{namespacemcsamples_ab0b5f836670f80c8acfa3374709ddc9b}} 
+\index{mcsamples@{mcsamples}!namemapping@{namemapping}}
+\index{namemapping@{namemapping}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{namemapping}{namemapping}}
+{\footnotesize\ttfamily type(tparamnames), save mcsamples\+::namemapping}
+
+
+
+Referenced by dat\+\_\+file\+\_\+2d(), dat\+\_\+file\+\_\+name(), edgewarning(), get1ddensity(), getcovmatrix(), getdist(), and quoted\+\_\+param\+\_\+name().
+
+\mbox{\Hypertarget{namespacemcsamples_a9c7a895a8bbc32cc9ec5a4e647f93842}\label{namespacemcsamples_a9c7a895a8bbc32cc9ec5a4e647f93842}} 
+\index{mcsamples@{mcsamples}!ncols@{ncols}}
+\index{ncols@{ncols}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{ncols}{ncols}}
+{\footnotesize\ttfamily integer mcsamples\+::ncols}
+
+
+
+Referenced by doconvergetests(), getcovmatrix(), getdist(), getusedcols(), sortcoldata(), and writethindata().
+
+\mbox{\Hypertarget{namespacemcsamples_a76ea49efc6873b3f02d34f24ce452d5b}\label{namespacemcsamples_a76ea49efc6873b3f02d34f24ce452d5b}} 
+\index{mcsamples@{mcsamples}!nd\+\_\+cont1@{nd\+\_\+cont1}}
+\index{nd\+\_\+cont1@{nd\+\_\+cont1}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{nd\+\_\+cont1}{nd\_cont1}}
+{\footnotesize\ttfamily integer mcsamples\+::nd\+\_\+cont1}
+
+
+
+Referenced by getdist(), and pca().
+
+\mbox{\Hypertarget{namespacemcsamples_a42ec49d9a1202d3d9f840a5ae8a62420}\label{namespacemcsamples_a42ec49d9a1202d3d9f840a5ae8a62420}} 
+\index{mcsamples@{mcsamples}!nd\+\_\+cont2@{nd\+\_\+cont2}}
+\index{nd\+\_\+cont2@{nd\+\_\+cont2}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{nd\+\_\+cont2}{nd\_cont2}}
+{\footnotesize\ttfamily integer mcsamples\+::nd\+\_\+cont2}
+
+
+
+Referenced by getdist(), and pca().
+
+\mbox{\Hypertarget{namespacemcsamples_af6035de97e3096d7ba8ee9ac9a2d8e1b}\label{namespacemcsamples_af6035de97e3096d7ba8ee9ac9a2d8e1b}} 
+\index{mcsamples@{mcsamples}!nd\+\_\+limit\+\_\+bot@{nd\+\_\+limit\+\_\+bot}}
+\index{nd\+\_\+limit\+\_\+bot@{nd\+\_\+limit\+\_\+bot}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{nd\+\_\+limit\+\_\+bot}{nd\_limit\_bot}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable mcsamples\+::nd\+\_\+limit\+\_\+bot}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a381886fbfe1702b96dbe899d11a79daa}\label{namespacemcsamples_a381886fbfe1702b96dbe899d11a79daa}} 
+\index{mcsamples@{mcsamples}!nd\+\_\+limit\+\_\+top@{nd\+\_\+limit\+\_\+top}}
+\index{nd\+\_\+limit\+\_\+top@{nd\+\_\+limit\+\_\+top}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{nd\+\_\+limit\+\_\+top}{nd\_limit\_top}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable mcsamples\+::nd\+\_\+limit\+\_\+top}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a38fc836d9b47b5b811c875938d43d2c9}\label{namespacemcsamples_a38fc836d9b47b5b811c875938d43d2c9}} 
+\index{mcsamples@{mcsamples}!no\+\_\+plots@{no\+\_\+plots}}
+\index{no\+\_\+plots@{no\+\_\+plots}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{no\+\_\+plots}{no\_plots}}
+{\footnotesize\ttfamily logical mcsamples\+::no\+\_\+plots}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a3bf0377c41ca6723a2a682fdec7c7cba}\label{namespacemcsamples_a3bf0377c41ca6723a2a682fdec7c7cba}} 
+\index{mcsamples@{mcsamples}!nrows@{nrows}}
+\index{nrows@{nrows}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{nrows}{nrows}}
+{\footnotesize\ttfamily integer mcsamples\+::nrows}
+
+
+
+Referenced by confidval(), coolchain(), deletezeros(), doconvergetests(), get1ddensity(), get2dplotdata(), getchainlikesummary(), getcovmatrix(), getdist(), getfractionindices(), getusedcols(), makesinglesamples(), pca(), sortcoldata(), thindata(), and writethindata().
+
+\mbox{\Hypertarget{namespacemcsamples_a5b2ac0e6e68dd652c494d1b7bd789f96}\label{namespacemcsamples_a5b2ac0e6e68dd652c494d1b7bd789f96}} 
+\index{mcsamples@{mcsamples}!num\+\_\+bins@{num\+\_\+bins}}
+\index{num\+\_\+bins@{num\+\_\+bins}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{num\+\_\+bins}{num\_bins}}
+{\footnotesize\ttfamily integer mcsamples\+::num\+\_\+bins}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a2adeb191d79be31ecfbaafc674ada8d1}\label{namespacemcsamples_a2adeb191d79be31ecfbaafc674ada8d1}} 
+\index{mcsamples@{mcsamples}!num\+\_\+bins\+\_\+2d@{num\+\_\+bins\+\_\+2d}}
+\index{num\+\_\+bins\+\_\+2d@{num\+\_\+bins\+\_\+2d}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{num\+\_\+bins\+\_\+2d}{num\_bins\_2d}}
+{\footnotesize\ttfamily integer mcsamples\+::num\+\_\+bins\+\_\+2d}
+
+
+
+Referenced by get2dplotdata(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a19f7c9315f7bf1a0fdcc248d0e9b9757}\label{namespacemcsamples_a19f7c9315f7bf1a0fdcc248d0e9b9757}} 
+\index{mcsamples@{mcsamples}!num\+\_\+chains\+\_\+used@{num\+\_\+chains\+\_\+used}}
+\index{num\+\_\+chains\+\_\+used@{num\+\_\+chains\+\_\+used}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{num\+\_\+chains\+\_\+used}{num\_chains\_used}}
+{\footnotesize\ttfamily integer mcsamples\+::num\+\_\+chains\+\_\+used}
+
+
+
+Referenced by doconvergetests(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_adb5eb76b1f11b911bf9e72be639d5226}\label{namespacemcsamples_adb5eb76b1f11b911bf9e72be639d5226}} 
+\index{mcsamples@{mcsamples}!num\+\_\+contours@{num\+\_\+contours}}
+\index{num\+\_\+contours@{num\+\_\+contours}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{num\+\_\+contours}{num\_contours}}
+{\footnotesize\ttfamily integer mcsamples\+::num\+\_\+contours}
+
+
+
+Referenced by get2dplotdata(), getdist(), plotcontmatlab(), and write2dplotmatlab().
+
+\mbox{\Hypertarget{namespacemcsamples_ad2594baa1bbb61af048a932e45cd4060}\label{namespacemcsamples_ad2594baa1bbb61af048a932e45cd4060}} 
+\index{mcsamples@{mcsamples}!num\+\_\+vars@{num\+\_\+vars}}
+\index{num\+\_\+vars@{num\+\_\+vars}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{num\+\_\+vars}{num\_vars}}
+{\footnotesize\ttfamily integer mcsamples\+::num\+\_\+vars}
+
+
+
+Referenced by getdist(), makesinglesamples(), and pca().
+
+\mbox{\Hypertarget{namespacemcsamples_a1c72401a481311c1c4b5b4d7c0b4b1d8}\label{namespacemcsamples_a1c72401a481311c1c4b5b4d7c0b4b1d8}} 
+\index{mcsamples@{mcsamples}!numsamp@{numsamp}}
+\index{numsamp@{numsamp}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{numsamp}{numsamp}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::numsamp}
+
+
+
+Referenced by doconvergetests(), get1ddensity(), getchainlikesummary(), getcovmatrix(), getdist(), getfractionindices(), pca(), and thindata().
+
+\mbox{\Hypertarget{namespacemcsamples_a12247a941c9940691d984cd9596796bd}\label{namespacemcsamples_a12247a941c9940691d984cd9596796bd}} 
+\index{mcsamples@{mcsamples}!out\+\_\+dir@{out\+\_\+dir}}
+\index{out\+\_\+dir@{out\+\_\+dir}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{out\+\_\+dir}{out\_dir}}
+{\footnotesize\ttfamily character(len=\+:), allocatable mcsamples\+::out\+\_\+dir}
+
+
+
+Referenced by getdist(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_a85c3a30e0056c5dcec952621d4782012}\label{namespacemcsamples_a85c3a30e0056c5dcec952621d4782012}} 
+\index{mcsamples@{mcsamples}!param\+\_\+max@{param\+\_\+max}}
+\index{param\+\_\+max@{param\+\_\+max}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{param\+\_\+max}{param\_max}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::param\+\_\+max}
+
+
+
+Referenced by get1ddensity().
+
+\mbox{\Hypertarget{namespacemcsamples_a3c28ccd747cefdd44e51bee5809f7cf2}\label{namespacemcsamples_a3c28ccd747cefdd44e51bee5809f7cf2}} 
+\index{mcsamples@{mcsamples}!param\+\_\+min@{param\+\_\+min}}
+\index{param\+\_\+min@{param\+\_\+min}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{param\+\_\+min}{param\_min}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::param\+\_\+min}
+
+
+
+Referenced by get1ddensity().
+
+\mbox{\Hypertarget{namespacemcsamples_a77ab102d98a4253b3213f06db7371cf9}\label{namespacemcsamples_a77ab102d98a4253b3213f06db7371cf9}} 
+\index{mcsamples@{mcsamples}!plot\+\_\+data\+\_\+dir@{plot\+\_\+data\+\_\+dir}}
+\index{plot\+\_\+data\+\_\+dir@{plot\+\_\+data\+\_\+dir}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{plot\+\_\+data\+\_\+dir}{plot\_data\_dir}}
+{\footnotesize\ttfamily character(len=\+:), allocatable mcsamples\+::plot\+\_\+data\+\_\+dir}
+
+
+
+Referenced by get1ddensity(), get2dplotdata(), getdist(), makesinglesamples(), plotcontmatlab(), write1dplotmatlab(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_ad18bd8eb2345c17a7aad3604eba3e3ad}\label{namespacemcsamples_ad18bd8eb2345c17a7aad3604eba3e3ad}} 
+\index{mcsamples@{mcsamples}!plot\+\_\+ext@{plot\+\_\+ext}}
+\index{plot\+\_\+ext@{plot\+\_\+ext}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{plot\+\_\+ext}{plot\_ext}}
+{\footnotesize\ttfamily character(len=3) mcsamples\+::plot\+\_\+ext = \textquotesingle{}m\textquotesingle{}}
+
+
+
+Referenced by getdist(), writeplotfileexport(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_a68c0597751197a26086066ed961e47ef}\label{namespacemcsamples_a68c0597751197a26086066ed961e47ef}} 
+\index{mcsamples@{mcsamples}!plot\+\_\+meanlikes@{plot\+\_\+meanlikes}}
+\index{plot\+\_\+meanlikes@{plot\+\_\+meanlikes}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{plot\+\_\+meanlikes}{plot\_meanlikes}}
+{\footnotesize\ttfamily logical mcsamples\+::plot\+\_\+meanlikes}
+
+
+
+Referenced by get1ddensity(), getdist(), write1dplotmatlab(), and writeplotfileinit().
+
+\mbox{\Hypertarget{namespacemcsamples_a4aac456ce5052be90e290891a61466f1}\label{namespacemcsamples_a4aac456ce5052be90e290891a61466f1}} 
+\index{mcsamples@{mcsamples}!plot\+\_\+output@{plot\+\_\+output}}
+\index{plot\+\_\+output@{plot\+\_\+output}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{plot\+\_\+output}{plot\_output}}
+{\footnotesize\ttfamily character(len=3) mcsamples\+::plot\+\_\+output = \textquotesingle{}pdf\textquotesingle{}}
+
+
+
+Referenced by getdist(), and writeplotfileexport().
+
+\mbox{\Hypertarget{namespacemcsamples_ad6a6de60cc3e044646e884be9bdc3b67}\label{namespacemcsamples_ad6a6de60cc3e044646e884be9bdc3b67}} 
+\index{mcsamples@{mcsamples}!plots\+\_\+only@{plots\+\_\+only}}
+\index{plots\+\_\+only@{plots\+\_\+only}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{plots\+\_\+only}{plots\_only}}
+{\footnotesize\ttfamily logical mcsamples\+::plots\+\_\+only}
+
+
+
+Referenced by getcovmatrix(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ae27c34b7ef99d6a3d92c13e419fcceb1}\label{namespacemcsamples_ae27c34b7ef99d6a3d92c13e419fcceb1}} 
+\index{mcsamples@{mcsamples}!pname@{pname}}
+\index{pname@{pname}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{pname}{pname}}
+{\footnotesize\ttfamily character(len=128), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::pname}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a0902678bdbc7aa6ef8b8992ce0a19c5e}\label{namespacemcsamples_a0902678bdbc7aa6ef8b8992ce0a19c5e}} 
+\index{mcsamples@{mcsamples}!prior\+\_\+ranges@{prior\+\_\+ranges}}
+\index{prior\+\_\+ranges@{prior\+\_\+ranges}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{prior\+\_\+ranges}{prior\_ranges}}
+{\footnotesize\ttfamily real(mcp), dimension(2,\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::prior\+\_\+ranges}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ad626a7a57271fbc966f7d06ed74f68af}\label{namespacemcsamples_ad626a7a57271fbc966f7d06ed74f68af}} 
+\index{mcsamples@{mcsamples}!prob\+\_\+label@{prob\+\_\+label}}
+\index{prob\+\_\+label@{prob\+\_\+label}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{prob\+\_\+label}{prob\_label}}
+{\footnotesize\ttfamily logical mcsamples\+::prob\+\_\+label = .false.}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_adb075c5195b30137b257a06000257c4a}\label{namespacemcsamples_adb075c5195b30137b257a06000257c4a}} 
+\index{mcsamples@{mcsamples}!range\+\_\+max@{range\+\_\+max}}
+\index{range\+\_\+max@{range\+\_\+max}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{range\+\_\+max}{range\_max}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::range\+\_\+max}
+
+
+
+Referenced by get1ddensity(), get2dplotdata(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a1ad9378542a0d4ed8222e002f28b8a4f}\label{namespacemcsamples_a1ad9378542a0d4ed8222e002f28b8a4f}} 
+\index{mcsamples@{mcsamples}!range\+\_\+min@{range\+\_\+min}}
+\index{range\+\_\+min@{range\+\_\+min}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{range\+\_\+min}{range\_min}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::range\+\_\+min}
+
+
+
+Referenced by get1ddensity(), get2dplotdata(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a578b65f55aa7a0d9598291d1cbd550db}\label{namespacemcsamples_a578b65f55aa7a0d9598291d1cbd550db}} 
+\index{mcsamples@{mcsamples}!rootdirname@{rootdirname}}
+\index{rootdirname@{rootdirname}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{rootdirname}{rootdirname}}
+{\footnotesize\ttfamily character(len=\+:), allocatable mcsamples\+::rootdirname}
+
+
+
+Referenced by doconvergetests(), getcovmatrix(), getdist(), and pca().
+
+\mbox{\Hypertarget{namespacemcsamples_aacce77bfdf0523e8c96285821ce2a3f4}\label{namespacemcsamples_aacce77bfdf0523e8c96285821ce2a3f4}} 
+\index{mcsamples@{mcsamples}!sddev@{sddev}}
+\index{sddev@{sddev}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{sddev}{sddev}}
+{\footnotesize\ttfamily real(mcp), dimension(\mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{max\+\_\+cols}}) mcsamples\+::sddev}
+
+
+
+Referenced by get1ddensity(), getdist(), and pca().
+
+\mbox{\Hypertarget{namespacemcsamples_ad55967ca18b8319069920d6d1e772bb1}\label{namespacemcsamples_ad55967ca18b8319069920d6d1e772bb1}} 
+\index{mcsamples@{mcsamples}!shade\+\_\+meanlikes@{shade\+\_\+meanlikes}}
+\index{shade\+\_\+meanlikes@{shade\+\_\+meanlikes}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{shade\+\_\+meanlikes}{shade\_meanlikes}}
+{\footnotesize\ttfamily logical mcsamples\+::shade\+\_\+meanlikes}
+
+
+
+Referenced by get2dplotdata(), getdist(), and plotcontmatlab().
+
+\mbox{\Hypertarget{namespacemcsamples_a39de2461adb48b31033a95a7d14666be}\label{namespacemcsamples_a39de2461adb48b31033a95a7d14666be}} 
+\index{mcsamples@{mcsamples}!single\+\_\+thin@{single\+\_\+thin}}
+\index{single\+\_\+thin@{single\+\_\+thin}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{single\+\_\+thin}{single\_thin}}
+{\footnotesize\ttfamily integer mcsamples\+::single\+\_\+thin}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_aa4a60a69265c0e88d0f93113ca84e3bf}\label{namespacemcsamples_aa4a60a69265c0e88d0f93113ca84e3bf}} 
+\index{mcsamples@{mcsamples}!smooth\+\_\+scale\+\_\+1d@{smooth\+\_\+scale\+\_\+1d}}
+\index{smooth\+\_\+scale\+\_\+1d@{smooth\+\_\+scale\+\_\+1d}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{smooth\+\_\+scale\+\_\+1d}{smooth\_scale\_1d}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::smooth\+\_\+scale\+\_\+1d =-\/1.d0}
+
+
+
+Referenced by get1ddensity(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a303a66c9ef1a6bf38167952d63caf780}\label{namespacemcsamples_a303a66c9ef1a6bf38167952d63caf780}} 
+\index{mcsamples@{mcsamples}!smooth\+\_\+scale\+\_\+2d@{smooth\+\_\+scale\+\_\+2d}}
+\index{smooth\+\_\+scale\+\_\+2d@{smooth\+\_\+scale\+\_\+2d}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{smooth\+\_\+scale\+\_\+2d}{smooth\_scale\_2d}}
+{\footnotesize\ttfamily real(mcp) mcsamples\+::smooth\+\_\+scale\+\_\+2d = 1.d0}
+
+
+
+Referenced by get2dplotdata(), and getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a5c59bb75d9bde473650c9d04a44e6010}\label{namespacemcsamples_a5c59bb75d9bde473650c9d04a44e6010}} 
+\index{mcsamples@{mcsamples}!subplot\+\_\+size\+\_\+inch@{subplot\+\_\+size\+\_\+inch}}
+\index{subplot\+\_\+size\+\_\+inch@{subplot\+\_\+size\+\_\+inch}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{subplot\+\_\+size\+\_\+inch}{subplot\_size\_inch}}
+{\footnotesize\ttfamily real mcsamples\+::subplot\+\_\+size\+\_\+inch = 3.\+0}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a6dd34bac13f09636652e328d92707726}\label{namespacemcsamples_a6dd34bac13f09636652e328d92707726}} 
+\index{mcsamples@{mcsamples}!subplot\+\_\+size\+\_\+inch2@{subplot\+\_\+size\+\_\+inch2}}
+\index{subplot\+\_\+size\+\_\+inch2@{subplot\+\_\+size\+\_\+inch2}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{subplot\+\_\+size\+\_\+inch2}{subplot\_size\_inch2}}
+{\footnotesize\ttfamily real mcsamples\+::subplot\+\_\+size\+\_\+inch2}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_ab97f8de1d5924a4908cb5b7953a30f16}\label{namespacemcsamples_ab97f8de1d5924a4908cb5b7953a30f16}} 
+\index{mcsamples@{mcsamples}!subplot\+\_\+size\+\_\+inch3@{subplot\+\_\+size\+\_\+inch3}}
+\index{subplot\+\_\+size\+\_\+inch3@{subplot\+\_\+size\+\_\+inch3}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{subplot\+\_\+size\+\_\+inch3}{subplot\_size\_inch3}}
+{\footnotesize\ttfamily real mcsamples\+::subplot\+\_\+size\+\_\+inch3}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacemcsamples_a68af0f07bf91f81304b0a3c46c669ffc}\label{namespacemcsamples_a68af0f07bf91f81304b0a3c46c669ffc}} 
+\index{mcsamples@{mcsamples}!thin\+\_\+ix@{thin\+\_\+ix}}
+\index{thin\+\_\+ix@{thin\+\_\+ix}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{thin\+\_\+ix}{thin\_ix}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable mcsamples\+::thin\+\_\+ix}
+
+
+
+Referenced by doconvergetests(), thindata(), and writethindata().
+
+\mbox{\Hypertarget{namespacemcsamples_a868898642c4ad498fccad75315810550}\label{namespacemcsamples_a868898642c4ad498fccad75315810550}} 
+\index{mcsamples@{mcsamples}!thin\+\_\+rows@{thin\+\_\+rows}}
+\index{thin\+\_\+rows@{thin\+\_\+rows}!mcsamples@{mcsamples}}
+\subsubsection{\texorpdfstring{thin\+\_\+rows}{thin\_rows}}
+{\footnotesize\ttfamily integer mcsamples\+::thin\+\_\+rows}
+
+
+
+Referenced by doconvergetests(), thindata(), and writethindata().
+

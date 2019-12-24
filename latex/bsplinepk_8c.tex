@@ -1,0 +1,44 @@
+\hypertarget{bsplinepk_8c}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/bsplinepk.c File Reference}
+\label{bsplinepk_8c}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/bsplinepk.\+c@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/bsplinepk.\+c}}
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$gsl/gsl\+\_\+bspline.\+h$>$}\newline
+{\ttfamily \#include $<$gsl/gsl\+\_\+multifit.\+h$>$}\newline
+{\ttfamily \#include $<$gsl/gsl\+\_\+sf\+\_\+erf.\+h$>$}\newline
+Include dependency graph for bsplinepk.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bsplinepk_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{bsplinepk_8c_ab997dcc97ee476555ca8a96c1d8dab9b}{geterf\+\_\+}} (double $\ast$xanderfx)
+\item 
+void \mbox{\hyperlink{bsplinepk_8c_a9717ff9fce1e616aaa492618a52350ac}{dopksmoothbspline\+\_\+}} (double $\ast$kvals, double $\ast$lnpklinear, double $\ast$lnpksmooth, int $\ast$npts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{bsplinepk_8c_a9717ff9fce1e616aaa492618a52350ac}\label{bsplinepk_8c_a9717ff9fce1e616aaa492618a52350ac}} 
+\index{bsplinepk.\+c@{bsplinepk.\+c}!dopksmoothbspline\+\_\+@{dopksmoothbspline\+\_\+}}
+\index{dopksmoothbspline\+\_\+@{dopksmoothbspline\+\_\+}!bsplinepk.\+c@{bsplinepk.\+c}}
+\subsubsection{\texorpdfstring{dopksmoothbspline\+\_\+()}{dopksmoothbspline\_()}}
+{\footnotesize\ttfamily void dopksmoothbspline\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{kvals,  }\item[{double $\ast$}]{lnpklinear,  }\item[{double $\ast$}]{lnpksmooth,  }\item[{int $\ast$}]{npts }\end{DoxyParamCaption})}
+
+
+
+References mcsamples\+::bw, D\+A-\/\+H-\/\+B\+A\+O\+::c, getdist.\+covcomb\+::cov, i, j, ns\+\_\+r\+\_\+inflation\+::x, Nxyl\+::xi, ns\+\_\+r\+\_\+inflation\+::y, and Nxyl\+::yi.
+
+\mbox{\Hypertarget{bsplinepk_8c_ab997dcc97ee476555ca8a96c1d8dab9b}\label{bsplinepk_8c_ab997dcc97ee476555ca8a96c1d8dab9b}} 
+\index{bsplinepk.\+c@{bsplinepk.\+c}!geterf\+\_\+@{geterf\+\_\+}}
+\index{geterf\+\_\+@{geterf\+\_\+}!bsplinepk.\+c@{bsplinepk.\+c}}
+\subsubsection{\texorpdfstring{geterf\+\_\+()}{geterf\_()}}
+{\footnotesize\ttfamily void geterf\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{xanderfx }\end{DoxyParamCaption})}
+

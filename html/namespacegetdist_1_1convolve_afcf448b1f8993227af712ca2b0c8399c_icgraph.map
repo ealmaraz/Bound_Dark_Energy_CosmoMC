@@ -1,0 +1,11 @@
+<map id="getdist.convolve.convolve1D" name="getdist.convolve.convolve1D">
+<area shape="rect" id="node2" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a53dc1a5889467700091389070326f0c9" title="getdist.mcsamples.MCSamples.get1\lDDensityGridData" alt="" coords="245,99,483,141"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a67d8f66e8c759cac71fc3c0562faa74d" title="getdist.mcsamples.MCSamples.get1\lDDensity" alt="" coords="531,70,768,111"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ae22105031ef07db6d65ce05fef3b15e8" title="getdist.mcsamples.MCSamples.\l_setDensitiesandMarge1D" alt="" coords="1078,99,1290,141"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a1d4ac9d66e1401a3a2e082cd18393f2b" title="getdist.mcsamples.MCSamples.\l_getScaleForParam" alt="" coords="817,5,1029,46"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a90a8cf01a23a304a6e5fe07db7a74e1a" title="getdist.mcsamples.MCSamples.\l_setMargeLimits" alt="" coords="817,70,1029,111"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ac23f96add8b4fc35b7dd3a922fae119f" title="getdist.mcsamples.MCSamples.get\lMargeStats" alt="" coords="1339,99,1570,141"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a2faa89318b77f8c9a09eec976272f54c" title="getdist.mcsamples.MCSamples.get\lTable" alt="" coords="1619,66,1850,107"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#aa4fc7b33808a24cb90238f2b24500899" title="getdist.mcsamples.MCSamples.get\lLatex" alt="" coords="1619,131,1850,173"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ad03ae7e378ba02de8fcecb16934b9e65" title="getdist.mcsamples.MCSamples.get\lInlineLatex" alt="" coords="1899,131,2130,173"/>
+</map>

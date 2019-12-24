@@ -1,0 +1,99 @@
+\hypertarget{namespacecmblikelihoods}{}\section{cmblikelihoods Module Reference}
+\label{namespacecmblikelihoods}\index{cmblikelihoods@{cmblikelihoods}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcmblikelihoods_1_1tcmbszlikelihood}{tcmbszlikelihood}}
+\item 
+type \mbox{\hyperlink{structcmblikelihoods_1_1twmaplikelihood}{twmaplikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecmblikelihoods_a6b235ad1e7fa8ebc5304542f01584617}{cmblikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikelihoods_ae775cfc1ab138a93684346c644269110}{tcmbszlikelihood\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikelihoods_ac2d0805940347a1cc9fc6d7ef007e082}{readsztemplate}} (this, aname, ascale)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikelihoods_a38cdfcee85309289ed17ecc5b60d5ff7}{twmaplikelihood\+\_\+readparams}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecmblikelihoods_a7c01807a08609a029a41a11b39ade069}{twmaplikelihood\+\_\+loglike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecmblikelihoods_a6b235ad1e7fa8ebc5304542f01584617}\label{namespacecmblikelihoods_a6b235ad1e7fa8ebc5304542f01584617}} 
+\index{cmblikelihoods@{cmblikelihoods}!cmblikelihood\+\_\+add@{cmblikelihood\+\_\+add}}
+\index{cmblikelihood\+\_\+add@{cmblikelihood\+\_\+add}!cmblikelihoods@{cmblikelihoods}}
+\subsubsection{\texorpdfstring{cmblikelihood\+\_\+add()}{cmblikelihood\_add()}}
+{\footnotesize\ttfamily subroutine, public cmblikelihoods\+::cmblikelihood\+\_\+add (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References cliklike\+::clik\+\_\+readparams(), and cliklike\+::use\+\_\+clik.
+
+
+
+Referenced by cmblikelihoods\+::twmaplikelihood\+::loglike(), and datalikelihoodlist\+::setdatalikelihoods().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikelihoods_a6b235ad1e7fa8ebc5304542f01584617_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikelihoods_a6b235ad1e7fa8ebc5304542f01584617_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecmblikelihoods_ac2d0805940347a1cc9fc6d7ef007e082}\label{namespacecmblikelihoods_ac2d0805940347a1cc9fc6d7ef007e082}} 
+\index{cmblikelihoods@{cmblikelihoods}!readsztemplate@{readsztemplate}}
+\index{readsztemplate@{readsztemplate}!cmblikelihoods@{cmblikelihoods}}
+\subsubsection{\texorpdfstring{readsztemplate()}{readsztemplate()}}
+{\footnotesize\ttfamily subroutine cmblikelihoods\+::readsztemplate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikelihoods_1_1tcmbszlikelihood}{tcmbszlikelihood}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(mcp), intent(in)}]{ascale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cl\+\_\+t.
+
+\mbox{\Hypertarget{namespacecmblikelihoods_ae775cfc1ab138a93684346c644269110}\label{namespacecmblikelihoods_ae775cfc1ab138a93684346c644269110}} 
+\index{cmblikelihoods@{cmblikelihoods}!tcmbszlikelihood\+\_\+readparams@{tcmbszlikelihood\+\_\+readparams}}
+\index{tcmbszlikelihood\+\_\+readparams@{tcmbszlikelihood\+\_\+readparams}!cmblikelihoods@{cmblikelihoods}}
+\subsubsection{\texorpdfstring{tcmbszlikelihood\+\_\+readparams()}{tcmbszlikelihood\_readparams()}}
+{\footnotesize\ttfamily subroutine cmblikelihoods\+::tcmbszlikelihood\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikelihoods_1_1tcmbszlikelihood}{tcmbszlikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecmblikelihoods_a7c01807a08609a029a41a11b39ade069}\label{namespacecmblikelihoods_a7c01807a08609a029a41a11b39ade069}} 
+\index{cmblikelihoods@{cmblikelihoods}!twmaplikelihood\+\_\+loglike@{twmaplikelihood\+\_\+loglike}}
+\index{twmaplikelihood\+\_\+loglike@{twmaplikelihood\+\_\+loglike}!cmblikelihoods@{cmblikelihoods}}
+\subsubsection{\texorpdfstring{twmaplikelihood\+\_\+loglike()}{twmaplikelihood\_loglike()}}
+{\footnotesize\ttfamily real(mcp) function cmblikelihoods\+::twmaplikelihood\+\_\+loglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikelihoods_1_1twmaplikelihood}{twmaplikelihood}})}]{this,  }\item[{class (cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})}
+
+
+
+References likelihood\+\_\+cosmology\+::loglike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikelihoods_a7c01807a08609a029a41a11b39ade069_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecmblikelihoods_a38cdfcee85309289ed17ecc5b60d5ff7}\label{namespacecmblikelihoods_a38cdfcee85309289ed17ecc5b60d5ff7}} 
+\index{cmblikelihoods@{cmblikelihoods}!twmaplikelihood\+\_\+readparams@{twmaplikelihood\+\_\+readparams}}
+\index{twmaplikelihood\+\_\+readparams@{twmaplikelihood\+\_\+readparams}!cmblikelihoods@{cmblikelihoods}}
+\subsubsection{\texorpdfstring{twmaplikelihood\+\_\+readparams()}{twmaplikelihood\_readparams()}}
+{\footnotesize\ttfamily subroutine cmblikelihoods\+::twmaplikelihood\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikelihoods_1_1twmaplikelihood}{twmaplikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cl\+\_\+b, cosmologytypes\+::cl\+\_\+e, and cosmologytypes\+::cl\+\_\+t.
+

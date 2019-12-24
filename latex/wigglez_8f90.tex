@@ -1,0 +1,96 @@
+\hypertarget{wigglez_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/wigglez.f90 File Reference}
+\label{wigglez_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/wigglez.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/wigglez.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structwigglez_1_1twigglezcommon}{wigglez\+::twigglezcommon}}
+\item 
+type \mbox{\hyperlink{structwigglez_1_1wigglezlikelihood}{wigglez\+::wigglezlikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacewigglezinfo}{wigglezinfo}}
+\item 
+module \mbox{\hyperlink{namespacewigglez}{wigglez}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacewigglezinfo_a7c041022fefbb50e12a454d1cc60c14f}{wigglezinfo\+::gigglezinfo\+\_\+init}} ()
+\item 
+real(mcp) function \mbox{\hyperlink{namespacewigglezinfo_aa01d4906da1313fa5a21d8f3b5029f50}{wigglezinfo\+::giggleztoicsmooth}} (k, zbin)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglezinfo_acb08f5ab3e49247de82dbfb12666f12e}{wigglezinfo\+::wigglezpowerat}} (kh, zbin, PK)
+\item 
+subroutine, public \mbox{\hyperlink{namespacewigglez_ae540392aa1fd56601b1db55cac9aaafa}{wigglez\+::wigglezlikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglez_a0ccc7d6e7495d4d98fe5df0ae058145a}{wigglez\+::twigglezcommon\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglez_ae3e0c03dabaa4af8dbaa3d5b1b2acb29}{wigglez\+::wigglez\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglez_af7eacad18112700eeba576ce8376cb89}{wigglez\+::readwigglezmatrices}} (aname, mat, num\+\_\+regions, m, n)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacewigglez_abf254c63c44f0ccf748dd90a0814a664}{wigglez\+::wigglez\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_a5ee76ba0ebd66c8881b0128f64a73b98}{wigglezinfo\+::za}} = 0.\+22d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_a0caef290cd3d8b7306771479bd8589e5}{wigglezinfo\+::zb}} = 0.\+41d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_a6079d8a819afcd264b152ce14b1c9524}{wigglezinfo\+::zc}} = 0.\+6d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_aba81e5054787627511da43db2cab3e05}{wigglezinfo\+::zd}} = 0.\+78d0
+\item 
+real(mcp), dimension(4) \mbox{\hyperlink{namespacewigglezinfo_a8d9180a8b6d6e2d0fee91ed2c96901d1}{wigglezinfo\+::zeval}}
+\item 
+type(tcubicspline), dimension(\+:), allocatable \mbox{\hyperlink{namespacewigglezinfo_a6e6d78669da0432fe3a6e39caaf60e4c}{wigglezinfo\+::gigglezpk}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacewigglezinfo_aeea1af41c9bde44daa886428c2d864af}{wigglezinfo\+::gigglez\+\_\+numk}} = 500
+\item 
+integer, parameter \mbox{\hyperlink{namespacewigglezinfo_a4a6cdfc8a72a4b74579fed9741cd9d05}{wigglezinfo\+::gigglez\+\_\+numz}} = 4
+\item 
+type(twigglezcommon), target, save \mbox{\hyperlink{namespacewigglez_a1a7784e6e8553a1ae1cf8a3eb8276341}{wigglez\+::wigglezcommon}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacewigglez_a8d5cc17b3425207c6850325bc82a93a5}{wigglez\+::max\+\_\+num\+\_\+wigglez\+\_\+regions}} = 7
+\item 
+integer \mbox{\hyperlink{namespacewigglez_af0a2aa38606b250dcb980ccb92fc11ca}{wigglez\+::num\+\_\+mpk\+\_\+points\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_ac9ec4f774e0116431ec283376d04fa35}{wigglez\+::num\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a31d03f56c463d2ce29e24a2d5b1ac7b1}{wigglez\+::num\+\_\+regions\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a958f6e7ea41ba27bf96a9d39f3a9b52b}{wigglez\+::num\+\_\+mpk\+\_\+points\+\_\+full}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_aa43acb845d2f5a4e86a07485f5d8f0f3}{wigglez\+::num\+\_\+mpk\+\_\+kbands\+\_\+full}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a5ef8736870101bebb0d86b2c5c733d8d}{wigglez\+::max\+\_\+mpk\+\_\+points\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_aaa7aa3063584475463df9bd85fceeffd}{wigglez\+::min\+\_\+mpk\+\_\+points\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a7c1d18206f96a33e914468b317457ba1}{wigglez\+::max\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a1fba40082b46206664553f88666cb6aa}{wigglez\+::min\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\item 
+logical, dimension(\+:), allocatable \mbox{\hyperlink{namespacewigglez_a4bf753383300f61cecdd5c8cd8fdaae3}{wigglez\+::regions\+\_\+active}}
+\item 
+logical \mbox{\hyperlink{namespacewigglez_ae38c8e45630d25b0d97109dd26bc3cd4}{wigglez\+::use\+\_\+scaling}}
+\item 
+logical \mbox{\hyperlink{namespacewigglez_a852cec3f5b6f650f8cfd9e8bdee9fc33}{wigglez\+::use\+\_\+gigglez}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacewigglez_aa2c47840239c6c778e9459f43cb8d02b}{wigglez\+::nonlinear\+\_\+wigglez}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacewigglez_a3827c735a7a159656e581a2e19c567a2}{wigglez\+::use\+\_\+wigglez\+\_\+mpk}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacewigglez_aa9c3ad74ce4e69f0fcccd8fdda77186e}{wigglez\+::q\+\_\+marge}}
+\item 
+logical \mbox{\hyperlink{namespacewigglez_a60066dbf058902563e14f3196a4bd03b}{wigglez\+::q\+\_\+flat}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacewigglez_a9d61faf004a432ee806221f52cbabd61}{wigglez\+::q\+\_\+mid}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacewigglez_adecc221b2b57fa0a89ada696e24823d9}{wigglez\+::q\+\_\+sigma}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacewigglez_a873b48387a22b04846288e5f2d19af1f}{wigglez\+::ag}}
+\end{DoxyCompactItemize}

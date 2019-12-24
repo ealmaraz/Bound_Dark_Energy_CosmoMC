@@ -1,0 +1,9 @@
+<map id="camb.camb.CAMBdata.calc_power_spectra" name="camb.camb.CAMBdata.calc_power_spectra">
+<area shape="rect" id="node2" href="$classcamb_1_1camb_1_1CAMBdata.html#a59d6f78493417bf69c40475e4c9a697f" title="camb.camb.CAMBdata.get\l_cmb_power_spectra" alt="" coords="254,5,434,46"/>
+<area shape="rect" id="node4" href="$classcamb_1_1camb_1_1CAMBdata.html#a6bd8c498d329e23ebefc55648ad59ab2" title="camb.camb.CAMBdata.get\l_linear_matter_power_spectrum" alt="" coords="241,70,447,111"/>
+<area shape="rect" id="node6" href="$classcamb_1_1camb_1_1CAMBdata.html#ab18c1f8670933c20948c80ecf6d89fbf" title="camb.camb.CAMBdata.get\l_matter_power_spectrum" alt="" coords="742,139,922,181"/>
+<area shape="rect" id="node3" href="$classcamb_1_1camb_1_1CAMBdata.html#a9fceb84d376ce937446c78b7e8b9034a" title="camb.camb.CAMBdata.power\l_spectra_from_transfer" alt="" coords="496,5,693,46"/>
+<area shape="rect" id="node5" href="$classcamb_1_1camb_1_1CAMBdata.html#afe7429cb1e7bf51726bd2793648b42d7" title="camb.camb.CAMBdata.\l_transfer_var" alt="" coords="513,70,676,111"/>
+<area shape="rect" id="node8" href="$classcamb_1_1camb_1_1CAMBdata.html#a360e97e0d8883903266ec0781188120c" title="camb.camb.CAMBdata.get\l_nonlinear_matter_power\l_spectrum" alt="" coords="505,135,685,191"/>
+<area shape="rect" id="node7" href="$classcamb_1_1camb_1_1CAMBdata.html#a1891baad8b4e53b2a1f2d136ddbef5e2" title="camb.camb.CAMBdata.get\l_sigma8" alt="" coords="971,139,1151,181"/>
+</map>

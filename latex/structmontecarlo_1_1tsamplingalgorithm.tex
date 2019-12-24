@@ -1,0 +1,103 @@
+\hypertarget{structmontecarlo_1_1tsamplingalgorithm}{}\section{montecarlo\+:\+:tsamplingalgorithm Type Reference}
+\label{structmontecarlo_1_1tsamplingalgorithm}\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+
+
+Inheritance diagram for montecarlo\+:\+:tsamplingalgorithm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{structmontecarlo_1_1tsamplingalgorithm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for montecarlo\+:\+:tsamplingalgorithm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{structmontecarlo_1_1tsamplingalgorithm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_ac6c103b3537eaad6741908150dd46321}{init}} =$>$ T\+Sampling\+Algorithm\+\_\+\+Init
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_a4b1c92d1161474e6e8ca5cf0dde67c11}{loglike}} =$>$ T\+Sampling\+Algorithm\+\_\+\+Log\+Like
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_afe41762da4a3e36c4e197c6ba86c65fb}{savestate}} =$>$ T\+Sampling\+Algorithm\+\_\+\+Save\+State
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_a4843ab58d081ef761a400be3e8b9e086}{loadstate}} =$>$ T\+Sampling\+Algorithm\+\_\+\+Load\+State
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_a410285b91a644097db3040f2ac41c615}{num\+\_\+sample}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_af653bf55990bb2ddc0e47445c82e616b}{maxlike}} = Log\+Zero
+\item 
+real(mcp), dimension(max\+\_\+num\+\_\+params) \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_a14476309a5a4286f22f485f7da16c6ee}{maxlikeparams}}
+\item 
+class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}}), pointer \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm_a96a8462dc05a5e209fc5ef2bab8b892e}{samplecollector}} =$>$ null()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_ac6c103b3537eaad6741908150dd46321}\label{structmontecarlo_1_1tsamplingalgorithm_ac6c103b3537eaad6741908150dd46321}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!init@{init}}
+\index{init@{init}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tsamplingalgorithm\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_a4843ab58d081ef761a400be3e8b9e086}\label{structmontecarlo_1_1tsamplingalgorithm_a4843ab58d081ef761a400be3e8b9e086}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!loadstate@{loadstate}}
+\index{loadstate@{loadstate}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{loadstate()}{loadstate()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tsamplingalgorithm\+::loadstate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_a4b1c92d1161474e6e8ca5cf0dde67c11}\label{structmontecarlo_1_1tsamplingalgorithm_a4b1c92d1161474e6e8ca5cf0dde67c11}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!loglike@{loglike}}
+\index{loglike@{loglike}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{loglike()}{loglike()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tsamplingalgorithm\+::loglike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_afe41762da4a3e36c4e197c6ba86c65fb}\label{structmontecarlo_1_1tsamplingalgorithm_afe41762da4a3e36c4e197c6ba86c65fb}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!savestate@{savestate}}
+\index{savestate@{savestate}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{savestate()}{savestate()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tsamplingalgorithm\+::savestate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_af653bf55990bb2ddc0e47445c82e616b}\label{structmontecarlo_1_1tsamplingalgorithm_af653bf55990bb2ddc0e47445c82e616b}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!maxlike@{maxlike}}
+\index{maxlike@{maxlike}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{maxlike}{maxlike}}
+{\footnotesize\ttfamily real(mcp) montecarlo\+::tsamplingalgorithm\+::maxlike = Log\+Zero\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_a14476309a5a4286f22f485f7da16c6ee}\label{structmontecarlo_1_1tsamplingalgorithm_a14476309a5a4286f22f485f7da16c6ee}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!maxlikeparams@{maxlikeparams}}
+\index{maxlikeparams@{maxlikeparams}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{maxlikeparams}{maxlikeparams}}
+{\footnotesize\ttfamily real(mcp), dimension(max\+\_\+num\+\_\+params) montecarlo\+::tsamplingalgorithm\+::maxlikeparams\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_a410285b91a644097db3040f2ac41c615}\label{structmontecarlo_1_1tsamplingalgorithm_a410285b91a644097db3040f2ac41c615}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!num\+\_\+sample@{num\+\_\+sample}}
+\index{num\+\_\+sample@{num\+\_\+sample}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{num\+\_\+sample}{num\_sample}}
+{\footnotesize\ttfamily integer montecarlo\+::tsamplingalgorithm\+::num\+\_\+sample = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tsamplingalgorithm_a96a8462dc05a5e209fc5ef2bab8b892e}\label{structmontecarlo_1_1tsamplingalgorithm_a96a8462dc05a5e209fc5ef2bab8b892e}} 
+\index{montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}!samplecollector@{samplecollector}}
+\index{samplecollector@{samplecollector}!montecarlo\+::tsamplingalgorithm@{montecarlo\+::tsamplingalgorithm}}
+\subsubsection{\texorpdfstring{samplecollector}{samplecollector}}
+{\footnotesize\ttfamily class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}}), pointer montecarlo\+::tsamplingalgorithm\+::samplecollector =$>$ null()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{MCMC_8f90}{M\+C\+M\+C.\+f90}}\end{DoxyCompactItemize}

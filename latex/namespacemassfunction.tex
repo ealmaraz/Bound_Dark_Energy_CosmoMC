@@ -1,0 +1,83 @@
+\hypertarget{namespacemassfunction}{}\section{massfunction Module Reference}
+\label{namespacemassfunction}\index{massfunction@{massfunction}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmassfunction_1_1masspar}{masspar}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) function \mbox{\hyperlink{namespacemassfunction_a7388d3e1cd459ef602a588f13111b6f4}{dndlnm}} (z, M, g)
+\item 
+subroutine \mbox{\hyperlink{namespacemassfunction_a64c53fdad2880885e6d900d266bd160e}{splintnr}} (XA, YA, Y2A, N, X, Y)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+type(\mbox{\hyperlink{structmassfunction_1_1masspar}{masspar}}) \mbox{\hyperlink{namespacemassfunction_ac3284bedbb7a589297bf6557a10e6f30}{massfnpar}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemassfunction_a7388d3e1cd459ef602a588f13111b6f4}\label{namespacemassfunction_a7388d3e1cd459ef602a588f13111b6f4}} 
+\index{massfunction@{massfunction}!dndlnm@{dndlnm}}
+\index{dndlnm@{dndlnm}!massfunction@{massfunction}}
+\subsubsection{\texorpdfstring{dndlnm()}{dndlnm()}}
+{\footnotesize\ttfamily real(dl) function massfunction\+::dndlnm (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z,  }\item[{real(dl), intent(in)}]{M,  }\item[{real(dl), intent(in)}]{g }\end{DoxyParamCaption})}
+
+
+
+References constants\+\_\+sz\+::g, massfnpar, constants\+\_\+sz\+::pi, massobservable\+::q, constants\+\_\+sz\+::rhocrit0, and splintnr().
+
+
+
+Referenced by numbercounts\+::get\+\_\+grid().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespacemassfunction_a7388d3e1cd459ef602a588f13111b6f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassfunction_a7388d3e1cd459ef602a588f13111b6f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemassfunction_a64c53fdad2880885e6d900d266bd160e}\label{namespacemassfunction_a64c53fdad2880885e6d900d266bd160e}} 
+\index{massfunction@{massfunction}!splintnr@{splintnr}}
+\index{splintnr@{splintnr}!massfunction@{massfunction}}
+\subsubsection{\texorpdfstring{splintnr()}{splintnr()}}
+{\footnotesize\ttfamily subroutine massfunction\+::splintnr (\begin{DoxyParamCaption}\item[{real(dl), dimension(n)}]{XA,  }\item[{real(dl), dimension(n)}]{YA,  }\item[{real(dl), dimension(n)}]{Y2A,  }\item[{integer}]{N,  }\item[{real(dl)}]{X,  }\item[{real(dl)}]{Y }\end{DoxyParamCaption})}
+
+
+
+Referenced by dndlnm().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassfunction_a64c53fdad2880885e6d900d266bd160e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemassfunction_ac3284bedbb7a589297bf6557a10e6f30}\label{namespacemassfunction_ac3284bedbb7a589297bf6557a10e6f30}} 
+\index{massfunction@{massfunction}!massfnpar@{massfnpar}}
+\index{massfnpar@{massfnpar}!massfunction@{massfunction}}
+\subsubsection{\texorpdfstring{massfnpar}{massfnpar}}
+{\footnotesize\ttfamily type (\mbox{\hyperlink{structmassfunction_1_1masspar}{masspar}}) massfunction\+::massfnpar}
+
+
+
+Referenced by dndlnm(), szcounts\+::sz\+\_\+init(), and szcounts\+::szlikelihood\+\_\+add().
+

@@ -1,0 +1,20 @@
+<map id="getdist.inifile.IniFile.asType" name="getdist.inifile.IniFile.asType">
+<area shape="rect" id="node2" href="$classgetdist_1_1inifile_1_1IniFile.html#ae6d8dedd31b32977a6a1340e6bbcf04f" title="getdist.inifile.IniFile.float" alt="" coords="243,15,405,41"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1inifile_1_1IniFile.html#a5b90359abae63c212ee90f077abe8ad9" title="getdist.inifile.IniFile.int" alt="" coords="248,69,400,96"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1inifile_1_1IniFile.html#ab0aec3357b710594c342466f6c12762a" title="getdist.inifile.IniFile.setAttr" alt="" coords="235,120,413,147"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1inifile_1_1IniFile.html#aaff273830dd59c896a75b71391677d99" title="getdist.inifile.IniFile.string" alt="" coords="239,221,409,248"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1inifile_1_1IniFile.html#a6ffefc5aa732378e03adde8b83e88b96" title="getdist.inifile.IniFile.array\l_float" alt="" coords="473,5,639,46"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1inifile_1_1IniFile.html#a7a2d4f1f5cd18de58f68f53e5111baf3" title="getdist.inifile.IniFile.array_int" alt="" coords="462,71,650,97"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1inifile_1_1IniFile.html#a3a4d9c8fd7a2274730473c3df2f5a44e" title="getdist.inifile.IniFile.split" alt="" coords="475,141,637,168"/>
+<area shape="rect" id="node17" href="$classgetdist_1_1inifile_1_1IniFile.html#a274b4bdc84fb9806adf1d36dd2a7d0ba" title="getdist.inifile.IniFile.array\l_string" alt="" coords="473,193,639,234"/>
+<area shape="rect" id="node18" href="$classgetdist_1_1inifile_1_1IniFile.html#aa45dd09190b83f711db6d9ab55605f50" title="getdist.inifile.IniFile.relative\lFileName" alt="" coords="466,258,646,299"/>
+<area shape="rect" id="node19" href="$classgetdist_1_1paramnames_1_1ParamInfo.html#a15bd2f5866334a64ac62a19db186ee7a" title="getdist.paramnames.Param\lInfo.__str__" alt="" coords="465,323,647,365"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1inifile_1_1IniFile.html#a3e462a0dea71c6a61530a420c38b597b" title="getdist.inifile.IniFile.bool_list" alt="" coords="699,65,885,92"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1inifile_1_1IniFile.html#ab16c07aad361f648bc04bd646ccabc68" title="getdist.inifile.IniFile.list" alt="" coords="715,116,869,143"/>
+<area shape="rect" id="node14" href="$classgetdist_1_1inifile_1_1IniFile.html#a0fe37e4aafe74c0bea80d1e7912e3d63" title="getdist.inifile.IniFile.float_list" alt="" coords="699,167,885,193"/>
+<area shape="rect" id="node15" href="$classgetdist_1_1inifile_1_1IniFile.html#a2662f801bfbe7d2a7e20c4f734318a69" title="getdist.inifile.IniFile.int_list" alt="" coords="704,217,880,244"/>
+<area shape="rect" id="node16" href="$classgetdist_1_1inifile_1_1IniFile.html#a18e5f6bbc80b9ab0b7e9ebeff9eff3ec" title="getdist.inifile.IniFile.ndarray" alt="" coords="701,316,883,343"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1inifile_1_1IniFile.html#a10320a346d83ec496b1f5afc243381c6" title="getdist.inifile.IniFile.file\lLines" alt="" coords="948,75,1103,117"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1paramnames_1_1ParamList.html#a591bf32d142f7b4f26594d509ad639a4" title="getdist.paramnames.Param\lList.listString" alt="" coords="934,141,1117,182"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1inifile_1_1IniFile.html#abeb83c5ee7c427d7d0aff5524450d539" title="getdist.inifile.IniFile.\l__str__" alt="" coords="1165,75,1304,117"/>
+</map>

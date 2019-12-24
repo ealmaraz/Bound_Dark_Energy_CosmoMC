@@ -1,0 +1,409 @@
+\hypertarget{classiniFile_1_1iniFile}{}\section{ini\+File.\+ini\+File Class Reference}
+\label{classiniFile_1_1iniFile}\index{ini\+File.\+ini\+File@{ini\+File.\+ini\+File}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a3485815795ff0a30308502cfc793d99a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, filename=None, keep\+\_\+includes=False)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_ae8d224f441caa05fe9ecad65bf2ed489}{read\+File}} (self, filename, keep\+\_\+includes=False, if\+\_\+not\+\_\+defined=False)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_aa1ad88973b6e0d72d2eb0bd4ca865206}{save\+File}} (self, filename)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a61460ca894d71e86784b1a79b244bf11}{file\+Lines}} (self)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_afd14693fddd1954ffe6c7a8157eaf2f5}{replace\+Tags}} (self, placeholder, text)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a761fc1405e7d865552a70c15bf205201}{delete\+\_\+keys}} (self, keys)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a9b2217762990e4d84c0d5f4de5fdd276}{bool}} (self, name, default=False)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a1ecee7d1dc8b4265f09528e0680cffe8}{string}} (self, name, default=None)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_ab471d92ca6e30f4df3b98f982a5656c6}{float}} (self, name, default=None)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_ade7c382459479ea30036a227764b834f}{int}} (self, name, default=None)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a23da7a086705b52cbf4d55bafbe0f3da}{array\+\_\+int}} (self, name, index=1, default=None)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a7f2eb7ebbb9192e7fb7ecefe01133444}{array\+\_\+string}} (self, name, index=1, default=None)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_abf1b3994c4b30f12a06b51562e30898f}{array\+\_\+bool}} (self, name, index=1, default=None)
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a6608bf642e15eb6992c3279c2902dc39}{array\+\_\+float}} (self, name, index=1, default=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classiniFile_1_1iniFile_a9398be892ceaca74049e1f9dfe3ce0ca}{params}}
+\item 
+\mbox{\hyperlink{classiniFile_1_1iniFile_ad6b8af421837b8b683d1634f3c156a84}{read\+Order}}
+\item 
+\mbox{\hyperlink{classiniFile_1_1iniFile_a327a685799e72ca8dd56966b0caba760}{defaults}}
+\item 
+\mbox{\hyperlink{classiniFile_1_1iniFile_aa8bf1f54f5a769b7d610248edc1ae7f3}{includes}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classiniFile_1_1iniFile_a86334cbd335c1de34ddeef62bc7d934e}{\+\_\+undefined}} (self, name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a3485815795ff0a30308502cfc793d99a}\label{classiniFile_1_1iniFile_a3485815795ff0a30308502cfc793d99a}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename = {\ttfamily None},  }\item[{}]{keep\+\_\+includes = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a86334cbd335c1de34ddeef62bc7d934e}\label{classiniFile_1_1iniFile_a86334cbd335c1de34ddeef62bc7d934e}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!\+\_\+undefined@{\+\_\+undefined}}
+\index{\+\_\+undefined@{\+\_\+undefined}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{\+\_\+undefined()}{\_undefined()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+\_\+undefined (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+inifile.\+Ini\+File.\+as\+Type(), ini\+File.\+ini\+File.\+bool(), getdist.\+inifile.\+Ini\+File.\+bool(), ini\+File.\+ini\+File.\+float(), ini\+File.\+ini\+File.\+int(), and ini\+File.\+ini\+File.\+string().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_a86334cbd335c1de34ddeef62bc7d934e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_abf1b3994c4b30f12a06b51562e30898f}\label{classiniFile_1_1iniFile_abf1b3994c4b30f12a06b51562e30898f}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!array\+\_\+bool@{array\+\_\+bool}}
+\index{array\+\_\+bool@{array\+\_\+bool}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{array\+\_\+bool()}{array\_bool()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+array\+\_\+bool (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{index = {\ttfamily 1},  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+bool().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_abf1b3994c4b30f12a06b51562e30898f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a6608bf642e15eb6992c3279c2902dc39}\label{classiniFile_1_1iniFile_a6608bf642e15eb6992c3279c2902dc39}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!array\+\_\+float@{array\+\_\+float}}
+\index{array\+\_\+float@{array\+\_\+float}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{array\+\_\+float()}{array\_float()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+array\+\_\+float (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{index = {\ttfamily 1},  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+float().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_a6608bf642e15eb6992c3279c2902dc39_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a23da7a086705b52cbf4d55bafbe0f3da}\label{classiniFile_1_1iniFile_a23da7a086705b52cbf4d55bafbe0f3da}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!array\+\_\+int@{array\+\_\+int}}
+\index{array\+\_\+int@{array\+\_\+int}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{array\+\_\+int()}{array\_int()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+array\+\_\+int (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{index = {\ttfamily 1},  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+int().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_a23da7a086705b52cbf4d55bafbe0f3da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a7f2eb7ebbb9192e7fb7ecefe01133444}\label{classiniFile_1_1iniFile_a7f2eb7ebbb9192e7fb7ecefe01133444}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!array\+\_\+string@{array\+\_\+string}}
+\index{array\+\_\+string@{array\+\_\+string}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{array\+\_\+string()}{array\_string()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+array\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{index = {\ttfamily 1},  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+string().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_a7f2eb7ebbb9192e7fb7ecefe01133444_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a9b2217762990e4d84c0d5f4de5fdd276}\label{classiniFile_1_1iniFile_a9b2217762990e4d84c0d5f4de5fdd276}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!bool@{bool}}
+\index{bool@{bool}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{bool()}{bool()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+bool (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+\_\+undefined(), ini\+File.\+ini\+File.\+params, and camb\+::cambdata.\+params.
+
+
+
+Referenced by ini\+File.\+ini\+File.\+array\+\_\+bool(), getdist.\+inifile.\+Ini\+File.\+array\+\_\+bool(), and getdist.\+inifile.\+Ini\+File.\+as\+Type().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classiniFile_1_1iniFile_a9b2217762990e4d84c0d5f4de5fdd276_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_a9b2217762990e4d84c0d5f4de5fdd276_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a761fc1405e7d865552a70c15bf205201}\label{classiniFile_1_1iniFile_a761fc1405e7d865552a70c15bf205201}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!delete\+\_\+keys@{delete\+\_\+keys}}
+\index{delete\+\_\+keys@{delete\+\_\+keys}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{delete\+\_\+keys()}{delete\_keys()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+delete\+\_\+keys (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{keys }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+params, and camb\+::cambdata.\+params.
+
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a61460ca894d71e86784b1a79b244bf11}\label{classiniFile_1_1iniFile_a61460ca894d71e86784b1a79b244bf11}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!file\+Lines@{file\+Lines}}
+\index{file\+Lines@{file\+Lines}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{file\+Lines()}{fileLines()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+file\+Lines (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+defaults, ini\+File.\+ini\+File.\+includes, ini\+File.\+ini\+File.\+params, camb\+::cambdata.\+params, ini\+File.\+ini\+File.\+read\+Order, and C\+A\+M\+B\+\_\+test\+\_\+files.\+type.
+
+
+
+Referenced by getdist.\+inifile.\+Ini\+File.\+\_\+\+\_\+str\+\_\+\+\_\+(), and ini\+File.\+ini\+File.\+save\+File().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classiniFile_1_1iniFile_a61460ca894d71e86784b1a79b244bf11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_ab471d92ca6e30f4df3b98f982a5656c6}\label{classiniFile_1_1iniFile_ab471d92ca6e30f4df3b98f982a5656c6}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!float@{float}}
+\index{float@{float}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{float()}{float()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+float (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+\_\+undefined(), ini\+File.\+ini\+File.\+params, and camb\+::cambdata.\+params.
+
+
+
+Referenced by ini\+File.\+ini\+File.\+array\+\_\+float(), and getdist.\+inifile.\+Ini\+File.\+array\+\_\+float().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classiniFile_1_1iniFile_ab471d92ca6e30f4df3b98f982a5656c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classiniFile_1_1iniFile_ab471d92ca6e30f4df3b98f982a5656c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_ade7c382459479ea30036a227764b834f}\label{classiniFile_1_1iniFile_ade7c382459479ea30036a227764b834f}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!int@{int}}
+\index{int@{int}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{int()}{int()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+int (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+\_\+undefined(), ini\+File.\+ini\+File.\+params, and camb\+::cambdata.\+params.
+
+
+
+Referenced by ini\+File.\+ini\+File.\+array\+\_\+int(), and getdist.\+inifile.\+Ini\+File.\+array\+\_\+int().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classiniFile_1_1iniFile_ade7c382459479ea30036a227764b834f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classiniFile_1_1iniFile_ade7c382459479ea30036a227764b834f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_ae8d224f441caa05fe9ecad65bf2ed489}\label{classiniFile_1_1iniFile_ae8d224f441caa05fe9ecad65bf2ed489}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!read\+File@{read\+File}}
+\index{read\+File@{read\+File}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{read\+File()}{readFile()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+read\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{keep\+\_\+includes = {\ttfamily False},  }\item[{}]{if\+\_\+not\+\_\+defined = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+defaults, ini\+File.\+ini\+File.\+includes, ini\+File.\+ini\+File.\+params, camb\+::cambdata.\+params, ini\+File.\+ini\+File.\+read\+File(), and ini\+File.\+ini\+File.\+read\+Order.
+
+
+
+Referenced by ini\+File.\+ini\+File.\+read\+File(), and getdist.\+inifile.\+Ini\+File.\+read\+File().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classiniFile_1_1iniFile_ae8d224f441caa05fe9ecad65bf2ed489_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_ae8d224f441caa05fe9ecad65bf2ed489_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_afd14693fddd1954ffe6c7a8157eaf2f5}\label{classiniFile_1_1iniFile_afd14693fddd1954ffe6c7a8157eaf2f5}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!replace\+Tags@{replace\+Tags}}
+\index{replace\+Tags@{replace\+Tags}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{replace\+Tags()}{replaceTags()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+replace\+Tags (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{placeholder,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+params, and camb\+::cambdata.\+params.
+
+\mbox{\Hypertarget{classiniFile_1_1iniFile_aa1ad88973b6e0d72d2eb0bd4ca865206}\label{classiniFile_1_1iniFile_aa1ad88973b6e0d72d2eb0bd4ca865206}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!save\+File@{save\+File}}
+\index{save\+File@{save\+File}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{save\+File()}{saveFile()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+save\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+file\+Lines(), and stringutils.\+join().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_aa1ad88973b6e0d72d2eb0bd4ca865206_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a1ecee7d1dc8b4265f09528e0680cffe8}\label{classiniFile_1_1iniFile_a1ecee7d1dc8b4265f09528e0680cffe8}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!string@{string}}
+\index{string@{string}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{string()}{string()}}
+{\footnotesize\ttfamily def ini\+File.\+ini\+File.\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References ini\+File.\+ini\+File.\+\_\+undefined(), ini\+File.\+ini\+File.\+params, and camb\+::cambdata.\+params.
+
+
+
+Referenced by getdist.\+paramnames.\+Param\+Info.\+\_\+\+\_\+str\+\_\+\+\_\+(), ini\+File.\+ini\+File.\+array\+\_\+string(), getdist.\+inifile.\+Ini\+File.\+array\+\_\+string(), getdist.\+inifile.\+Ini\+File.\+relative\+File\+Name(), and getdist.\+inifile.\+Ini\+File.\+split().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classiniFile_1_1iniFile_a1ecee7d1dc8b4265f09528e0680cffe8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classiniFile_1_1iniFile_a1ecee7d1dc8b4265f09528e0680cffe8_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a327a685799e72ca8dd56966b0caba760}\label{classiniFile_1_1iniFile_a327a685799e72ca8dd56966b0caba760}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!defaults@{defaults}}
+\index{defaults@{defaults}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{defaults}{defaults}}
+{\footnotesize\ttfamily ini\+File.\+ini\+File.\+defaults}
+
+
+
+Referenced by ini\+File.\+ini\+File.\+file\+Lines(), getdist.\+inifile.\+Ini\+File.\+file\+Lines(), ini\+File.\+ini\+File.\+read\+File(), and getdist.\+inifile.\+Ini\+File.\+read\+File().
+
+\mbox{\Hypertarget{classiniFile_1_1iniFile_aa8bf1f54f5a769b7d610248edc1ae7f3}\label{classiniFile_1_1iniFile_aa8bf1f54f5a769b7d610248edc1ae7f3}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!includes@{includes}}
+\index{includes@{includes}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{includes}{includes}}
+{\footnotesize\ttfamily ini\+File.\+ini\+File.\+includes}
+
+
+
+Referenced by ini\+File.\+ini\+File.\+file\+Lines(), getdist.\+inifile.\+Ini\+File.\+file\+Lines(), ini\+File.\+ini\+File.\+read\+File(), and getdist.\+inifile.\+Ini\+File.\+read\+File().
+
+\mbox{\Hypertarget{classiniFile_1_1iniFile_a9398be892ceaca74049e1f9dfe3ce0ca}\label{classiniFile_1_1iniFile_a9398be892ceaca74049e1f9dfe3ce0ca}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!params@{params}}
+\index{params@{params}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily ini\+File.\+ini\+File.\+params}
+
+
+
+Referenced by paramgrid.\+batchjob.\+data\+Set.\+add(), getdist.\+inifile.\+Ini\+File.\+as\+Type(), ini\+File.\+ini\+File.\+bool(), getdist.\+inifile.\+Ini\+File.\+bool(), ini\+File.\+ini\+File.\+delete\+\_\+keys(), getdist.\+inifile.\+Ini\+File.\+delete\+\_\+keys(), ini\+File.\+ini\+File.\+file\+Lines(), getdist.\+inifile.\+Ini\+File.\+file\+Lines(), ini\+File.\+ini\+File.\+float(), getdist.\+inifile.\+Ini\+File.\+get\+Attr(), getdist.\+inifile.\+Ini\+File.\+has\+Key(), ini\+File.\+ini\+File.\+int(), getdist.\+inifile.\+Ini\+File.\+is\+Set(), ini\+File.\+ini\+File.\+read\+File(), getdist.\+inifile.\+Ini\+File.\+read\+File(), ini\+File.\+ini\+File.\+replace\+Tags(), getdist.\+inifile.\+Ini\+File.\+replace\+Tags(), getdist.\+inifile.\+Ini\+File.\+split(), and ini\+File.\+ini\+File.\+string().
+
+\mbox{\Hypertarget{classiniFile_1_1iniFile_ad6b8af421837b8b683d1634f3c156a84}\label{classiniFile_1_1iniFile_ad6b8af421837b8b683d1634f3c156a84}} 
+\index{ini\+File\+::ini\+File@{ini\+File\+::ini\+File}!read\+Order@{read\+Order}}
+\index{read\+Order@{read\+Order}!ini\+File\+::ini\+File@{ini\+File\+::ini\+File}}
+\subsubsection{\texorpdfstring{read\+Order}{readOrder}}
+{\footnotesize\ttfamily ini\+File.\+ini\+File.\+read\+Order}
+
+
+
+Referenced by ini\+File.\+ini\+File.\+file\+Lines(), getdist.\+inifile.\+Ini\+File.\+file\+Lines(), ini\+File.\+ini\+File.\+read\+File(), and getdist.\+inifile.\+Ini\+File.\+read\+File().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/python/\mbox{\hyperlink{iniFile_8py}{ini\+File.\+py}}\end{DoxyCompactItemize}

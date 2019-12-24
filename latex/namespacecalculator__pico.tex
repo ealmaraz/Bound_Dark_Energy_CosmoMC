@@ -1,0 +1,105 @@
+\hypertarget{namespacecalculator__pico}{}\section{calculator\+\_\+pico Module Reference}
+\label{namespacecalculator__pico}\index{calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcalculator__pico_1_1pico__calculator}{pico\+\_\+calculator}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__pico_a3b8f1f50b300f4773dc55711f55573f6}{pico\+\_\+cmbtocamb}} (this, C\+MB, P)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__pico_a76b2c99179137a67bf5deffecbe7a883}{pico\+\_\+getnewtransferdata}} (this, C\+MB, Info, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__pico_adaa7c5af46424e51b4ff7c68520348c2}{pico\+\_\+getoutputarray}} (Theory, i, j, name)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__pico_a45cf2dcc102d6d731b105dcc2b985c04}{pico\+\_\+getnewpowerdata}} (this, C\+MB, Info, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__pico_abec990f2804cd52fd2f1c7aab45c7fe8}{pico\+\_\+gettheoryforimportance}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__pico_ad5f92039b6c79eac4c4aeb00e53da084}{pico\+\_\+versiontraceoutput}} (this, Read\+Values)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__pico_a974f29861363802129a96c29e70ea03e}{pico\+\_\+readparams}} (this, Ini)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecalculator__pico_a3b8f1f50b300f4773dc55711f55573f6}\label{namespacecalculator__pico_a3b8f1f50b300f4773dc55711f55573f6}} 
+\index{calculator\+\_\+pico@{calculator\+\_\+pico}!pico\+\_\+cmbtocamb@{pico\+\_\+cmbtocamb}}
+\index{pico\+\_\+cmbtocamb@{pico\+\_\+cmbtocamb}!calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsubsection{\texorpdfstring{pico\+\_\+cmbtocamb()}{pico\_cmbtocamb()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+pico\+::pico\+\_\+cmbtocamb (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__pico_1_1pico__calculator}{pico\+\_\+calculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{type(cambparams)}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings.
+
+\mbox{\Hypertarget{namespacecalculator__pico_a45cf2dcc102d6d731b105dcc2b985c04}\label{namespacecalculator__pico_a45cf2dcc102d6d731b105dcc2b985c04}} 
+\index{calculator\+\_\+pico@{calculator\+\_\+pico}!pico\+\_\+getnewpowerdata@{pico\+\_\+getnewpowerdata}}
+\index{pico\+\_\+getnewpowerdata@{pico\+\_\+getnewpowerdata}!calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsubsection{\texorpdfstring{pico\+\_\+getnewpowerdata()}{pico\_getnewpowerdata()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__pico_1_1pico__calculator}{pico\+\_\+calculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(ttheoryintermediatecache), pointer}]{Info,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modeldata\+::c\+\_\+e, modeldata\+::c\+\_\+temp, modelparams\+::cambparams\+\_\+set(), modelparams\+::cosmomctheta(), cosmologytypes\+::cosmosettings, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+cross, settings\+::feedback, and pico\+\_\+getoutputarray().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecalculator__pico_a45cf2dcc102d6d731b105dcc2b985c04_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecalculator__pico_a76b2c99179137a67bf5deffecbe7a883}\label{namespacecalculator__pico_a76b2c99179137a67bf5deffecbe7a883}} 
+\index{calculator\+\_\+pico@{calculator\+\_\+pico}!pico\+\_\+getnewtransferdata@{pico\+\_\+getnewtransferdata}}
+\index{pico\+\_\+getnewtransferdata@{pico\+\_\+getnewtransferdata}!calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsubsection{\texorpdfstring{pico\+\_\+getnewtransferdata()}{pico\_getnewtransferdata()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+pico\+::pico\+\_\+getnewtransferdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__pico_1_1pico__calculator}{pico\+\_\+calculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(ttheoryintermediatecache), pointer}]{Info,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__pico_adaa7c5af46424e51b4ff7c68520348c2}\label{namespacecalculator__pico_adaa7c5af46424e51b4ff7c68520348c2}} 
+\index{calculator\+\_\+pico@{calculator\+\_\+pico}!pico\+\_\+getoutputarray@{pico\+\_\+getoutputarray}}
+\index{pico\+\_\+getoutputarray@{pico\+\_\+getoutputarray}!calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsubsection{\texorpdfstring{pico\+\_\+getoutputarray()}{pico\_getoutputarray()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+pico\+::pico\+\_\+getoutputarray (\begin{DoxyParamCaption}\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{i,  }\item[{integer}]{j,  }\item[{character(len=$\ast$)}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings.
+
+
+
+Referenced by pico\+\_\+getnewpowerdata().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacecalculator__pico_adaa7c5af46424e51b4ff7c68520348c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecalculator__pico_abec990f2804cd52fd2f1c7aab45c7fe8}\label{namespacecalculator__pico_abec990f2804cd52fd2f1c7aab45c7fe8}} 
+\index{calculator\+\_\+pico@{calculator\+\_\+pico}!pico\+\_\+gettheoryforimportance@{pico\+\_\+gettheoryforimportance}}
+\index{pico\+\_\+gettheoryforimportance@{pico\+\_\+gettheoryforimportance}!calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsubsection{\texorpdfstring{pico\+\_\+gettheoryforimportance()}{pico\_gettheoryforimportance()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+pico\+::pico\+\_\+gettheoryforimportance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__pico_1_1pico__calculator}{pico\+\_\+calculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecalculator__pico_a974f29861363802129a96c29e70ea03e}\label{namespacecalculator__pico_a974f29861363802129a96c29e70ea03e}} 
+\index{calculator\+\_\+pico@{calculator\+\_\+pico}!pico\+\_\+readparams@{pico\+\_\+readparams}}
+\index{pico\+\_\+readparams@{pico\+\_\+readparams}!calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsubsection{\texorpdfstring{pico\+\_\+readparams()}{pico\_readparams()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+pico\+::pico\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__pico_1_1pico__calculator}{pico\+\_\+calculator}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecalculator__pico_ad5f92039b6c79eac4c4aeb00e53da084}\label{namespacecalculator__pico_ad5f92039b6c79eac4c4aeb00e53da084}} 
+\index{calculator\+\_\+pico@{calculator\+\_\+pico}!pico\+\_\+versiontraceoutput@{pico\+\_\+versiontraceoutput}}
+\index{pico\+\_\+versiontraceoutput@{pico\+\_\+versiontraceoutput}!calculator\+\_\+pico@{calculator\+\_\+pico}}
+\subsubsection{\texorpdfstring{pico\+\_\+versiontraceoutput()}{pico\_versiontraceoutput()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+pico\+::pico\+\_\+versiontraceoutput (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__pico_1_1pico__calculator}{pico\+\_\+calculator}})}]{this,  }\item[{class(tnamevaluelist)}]{Read\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References gaugeinterface\+::eqns\+\_\+name.
+

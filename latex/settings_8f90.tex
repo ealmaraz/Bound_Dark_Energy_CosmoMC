@@ -1,0 +1,166 @@
+\hypertarget{settings_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/settings.f90 File Reference}
+\label{settings_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/settings.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/settings.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structsettings_1_1tnamekeyinifile}{settings\+::tnamekeyinifile}}
+\item 
+type \mbox{\hyperlink{structsettings_1_1tsettingini}{settings\+::tsettingini}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacesettings}{settings}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a10f55aa94b2ab604c1c3769a46fc6981}{settings\+::initializeglobalsettingdefaults}}
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a3747d2293e80aacbc1e756c2d26fc75f}{settings\+::dostop}} (S, abort)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a6535550ffec6e7b81fcb60e053ea87b6}{settings\+::tsettingini\+\_\+failstop}} (this)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_a3b2429bfa74ea486689b09597adc9791}{settings\+::tsettingini\+\_\+replacedirs}} (this, inname, A\+Dir)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_a9fe4c031e947a169af96d96be88df87b}{settings\+::tsettingini\+\_\+readrelativefilename}} (this, key, A\+Dir, Not\+Found\+Fail)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_aa7bf4212045f11786b51f9cf5fe34ffb}{settings\+::tsettingini\+\_\+readfilename}} (this, key, A\+Dir, Not\+Found\+Fail, relative)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_ad76733b3c1bf3cec0d9401ce6d924a38}{settings\+::tsettingini\+\_\+tagvaluesforname}} (this, name, Out\+List, filename)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a25f07dfd89b1bd5d8754f0c08c0077ef}{settings\+::tsettingini\+\_\+settingvaluesfortagname}} (this, name, tag, Out\+List, filename)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_a5cc488a2d56e898983e233e99a14cee0}{settings\+::tnamekeyinifile\+\_\+namedkey}} (this, Key, Name)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a7530516bc4d95e285559b9952d6f0dc2}{settings\+::checkparamchangef}} (F)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_abd4643446df7076be97337eb9aa2f2e9}{settings\+::checkparamchange}}
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_aae1de2bfeb89f23588e7f18024be2a44}{settings\+::timer}} (Msg, start)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_afa3df86ab753e05244ab370242ab2e5a}{settings\+::doabort}} (S)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{settings\+::mcp}} = K\+I\+ND(1.\+0)
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_aa6d55f83efe636882451ee1240bf4929}{settings\+::mpi\+\_\+real\+\_\+mcp}} = M\+P\+I\+\_\+\+R\+E\+AL
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a3d81f31b9e0eef8de19fb9b016043af7}{settings\+::time\+\_\+dp}} = K\+I\+ND(1.d0)
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a57710b73441b5ec0babcaa48cd333055}{settings\+::pi}} =3.\+14159265358979323846264338328d0
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a22fb9d779d16c940a845d5da795ef6ec}{settings\+::twopi}} =2$\ast$pi
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_ad4683f1ccdfb64cdf9aa5643ce991cd5}{settings\+::fourpi}} =4$\ast$pi
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a54504c6d9151b9990bf3f15deeaa139b}{settings\+::root2}} = 1.\+41421356237309504880168872421d0
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a46452645879c3ed6edc6b31e79786d63}{settings\+::sqrt2}} = root2
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a9020a6ca0bbe74043ff8103f9f8ece1d}{settings\+::log2}} = 0.\+693147180559945309417232121458d0
+\item 
+real, parameter \mbox{\hyperlink{namespacesettings_a6fe3b2dcac06d9e51592e885f64ace1d}{settings\+::pi\+\_\+r}} = 3.\+141592653
+\item 
+real, parameter \mbox{\hyperlink{namespacesettings_a87b6f8cb970e358fc23b950e8db62257}{settings\+::twopi\+\_\+r}} = 2$\ast$pi\+\_\+r
+\item 
+real, parameter \mbox{\hyperlink{namespacesettings_a84f03a75cdf655bea4a1568443921c37}{settings\+::fourpi\+\_\+r}} = twopi\+\_\+r$\ast$2
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacesettings_a9aec23a6e1d47760b93c79084ddacd3c}{settings\+::const\+\_\+c}} = 2.\+99792458e8\+\_\+mcp
+\item 
+logical \mbox{\hyperlink{namespacesettings_ae20cda2e95f0e537dcbca3b63cb9bb0f}{settings\+::use\+\_\+fast\+\_\+slow}} = .false.
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacesettings_a572023d0201bee3f5560de0fdc96dc4e}{settings\+::cosmomc\+\_\+version}} = \textquotesingle{}Nov2016\textquotesingle{}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a493eb241cf271ca0ba4da755bc6b13d1}{settings\+::chisq\+\_\+label}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacesettings_a815a186f7293c7e58833ae29fee76454}{settings\+::accuracylevel}} = 1
+\item 
+logical \mbox{\hyperlink{namespacesettings_ae38825eb811eae327d68db37b75023aa}{settings\+::flush\+\_\+write}} = .true.
+\item 
+logical \mbox{\hyperlink{namespacesettings_ac176aa2a57ff28bd3d05a0a2f2b4defa}{settings\+::new\+\_\+chains}} = .true.
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a23df6252cfd71721b764c455de43905a}{settings\+::max\+\_\+likelihood\+\_\+functions}} = 50
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a4d2d308b7b3d47f91cd40d6c735b4d99}{settings\+::max\+\_\+data\+\_\+params}} = 200
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a7884cd47680ca4079d2177f93eb41772}{settings\+::max\+\_\+theory\+\_\+params}} = 50
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_ab891b6a835eb8706eb0477db68a2c351}{settings\+::max\+\_\+num\+\_\+params}} = max\+\_\+theory\+\_\+params + max\+\_\+data\+\_\+params
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a7fbe5e0e8194b33c8990365eafe20bed}{settings\+::sampling\+\_\+metropolis}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a3122cb465205f6e3dfbcca05cd8c4d0c}{settings\+::sampling\+\_\+slice}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_af8673aadd88b8cfe802aeb29376ec2a6}{settings\+::sampling\+\_\+fastslice}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_af39c7332606eeaed1affbeb9715b903e}{settings\+::sampling\+\_\+slowgrid}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_ab692e79a9d756d1ebf42dba033da3c9b}{settings\+::sampling\+\_\+multicanonical}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a88e45b9a2ab5447d2cb82b74672906de}{settings\+::sampling\+\_\+wang\+\_\+landau}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a9cd020650f7e83b9fda45b3bfdda34bf}{settings\+::sampling\+\_\+fast\+\_\+dragging}} = 7
+\item 
+integer \mbox{\hyperlink{namespacesettings_a01e6691ce72977baf15dd20434012f65}{settings\+::sampling\+\_\+method}} = sampling\+\_\+metropolis
+\item 
+real(mcp) \mbox{\hyperlink{namespacesettings_ab8364bc8c9e772b73f258e33676806ec}{settings\+::dragging\+\_\+steps}} = 3.\+\_\+mcp
+\item 
+logical \mbox{\hyperlink{namespacesettings_af46cd3e56cf132b962ba2a208f29b04f}{settings\+::generic\+\_\+mcmc}} = .false.
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a2deacc581b6841445fd044dab25ef389}{settings\+::datadir}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a464bacc2f6a7b48655e92110d990d457}{settings\+::localdir}}
+\item 
+type(tsettingini), save \mbox{\hyperlink{namespacesettings_a7f5934d4eca8e396a1c744c7fa88bcba}{settings\+::customparams}}
+\item 
+logical \mbox{\hyperlink{namespacesettings_a4acafe693ea8cedb2044a2ce90c9469f}{settings\+::stop\+\_\+on\+\_\+error}} = .true.
+\item 
+integer \mbox{\hyperlink{namespacesettings_a362078e6b11a6c4f0eff6aee65cf046a}{settings\+::num\+\_\+theory\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a80a8fe2bea1b08d8109b2cfcb09cb02c}{settings\+::index\+\_\+data}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a56f153f87bcbfcf9717c0efc77c20fb8}{settings\+::index\+\_\+semislow}} =-\/1
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesettings_a2d59bb48a1012143991ce9093fc76be5}{settings\+::params\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a4faf08502e49a2f851b29d8f7d5fb71d}{settings\+::num\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_ace1e5374df8682e0f85b1b7bcc21451c}{settings\+::num\+\_\+params\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a588b630a77c6cf16ccd63096b5ac4507}{settings\+::num\+\_\+data\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a004f5c3efc3e9d33a1a4526f5a20785b}{settings\+::num\+\_\+threads}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesettings_a8b396bca0192e0a92363a9cf6b942542}{settings\+::instance}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesettings_a9cb321eeb7d7d329d5d99cba2595330d}{settings\+::mpichains}} = 1
+\item 
+integer \mbox{\hyperlink{namespacesettings_ad6fd77f9480fb92754b6f5890017e594}{settings\+::mpirank}} = 0
+\item 
+real(time\+\_\+dp) \mbox{\hyperlink{namespacesettings_afe15c9b4b37c62135a2e5d12810b92bc}{settings\+::mpirun\+\_\+start\+\_\+time}}
+\item 
+logical \mbox{\hyperlink{namespacesettings_ae0817081d233f3c5d76fad556a766afb}{settings\+::checkpoint}} = .false.
+\item 
+integer \mbox{\hyperlink{namespacesettings_a8d398d8d6e0a5435eb847608d0147f12}{settings\+::output\+\_\+lines}} = 0
+\item 
+type(ttextfile), save \mbox{\hyperlink{namespacesettings_a45cb647c4940062ae812ef3a374e5e2f}{settings\+::chainoutfile}} = T\+Text\+File(Real\+Format=\textquotesingle{}($\ast$(E16.\+7))\textquotesingle{})
+\item 
+type(ttextfile), save \mbox{\hyperlink{namespacesettings_abf81803341f16be48aa42058423f085b}{settings\+::logfile}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a34e44606ac3e84f06e2696f74542f664}{settings\+::feedback}} = 0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacesettings_a057b984bb501467c33dbcc3ffc3a34d3}{settings\+::logzero}} = 1e30\+\_\+mcp
+\item 
+character(len=1024) \mbox{\hyperlink{namespacesettings_ae3545d47de8db723b192e3bc79f95e99}{settings\+::filechangeini}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len=1024) \mbox{\hyperlink{namespacesettings_aa364554c9b5868156913823eaa6b5185}{settings\+::filechangeiniall}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_aa942779910692a37fbc12dd25f62877e}{settings\+::baseroot}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a4a3bc0d40d0532bc2f7f2cc87170068a}{settings\+::rootname}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_af5b1a69ec3d96be977d23b1e59e7d36e}{settings\+::stdout}} = output\+\_\+unit
+\end{DoxyCompactItemize}

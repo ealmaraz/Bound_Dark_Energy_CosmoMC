@@ -1,0 +1,750 @@
+\hypertarget{namespacethermodata}{}\section{thermodata Module Reference}
+\label{namespacethermodata}\index{thermodata@{thermodata}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a9ff7d8c599c64921c554cbc2069b3d2b}{thermo}} (tau, cs2b, opacity, dopacity)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacethermodata_ac4c3a9846b711f25cba7ce38322ee66b}{thermo\+\_\+opacitytotime}} (opacity)
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a6d995eb9ad9f563fec198222c168e097}{inithermo}} (taumin, taumax)
+\item 
+subroutine \mbox{\hyperlink{namespacethermodata_a53958f3aa160bfde722bffb2b9d47df8}{settimesteps}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a29f627a601dcc5afc90dc9ea8e4d902a}{thermodata\+\_\+free}}
+\item 
+subroutine \mbox{\hyperlink{namespacethermodata_a1c7e7a0884bd2117c1d24a1ce8d5aaf1}{dothermospline}} (j2, tau)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_a78b5c4ff5e2d2d472df5aae9bdd02d77}{ddamping\+\_\+da}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_afdafed82de5a75a5b609d945a91836fa}{doptdepth\+\_\+dz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_a3875da8b58196788145c8f6df6ea6cfe}{optdepth}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_a3d2fe3077a350ae407ecb93f927b2cc4}{ddragoptdepth\+\_\+dz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_ac14b857825ae37eee1107a320f7d71f7}{dragoptdepth}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacethermodata_a402bcd30314032d575f841bf374ad320}{find\+\_\+z}} (func, zout)
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a94d40d05e68eca4db87b58269d19e6f3}{getbackgroundevolution}} (ntimes, times, outputs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}} =20000
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_ab667ebbdbb18924a862b09a4b328c7f2}{tb}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_abdbeec54177b30f0e0c16f4915bb6963}{cs2}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_a253c9b40af269388f742a8651d063c18}{xe}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_aca5f831d6371c97e07b745a1335c43a6}{dcs2}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_aa46effcfaebc414efc1483613c20938b}{dotmu}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_a64db577ccef33cb28a8ef97b9c49df58}{ddotmu}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_a31169ba47074359a9820a44600d7628b}{sdotmu}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_ad1bfdfc33182cbe1182c4785d88011c2}{emmu}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_a01e420c8859c753a39ea78e4afe151a4}{demmu}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_ad781349a01ad4eff9227f42ed5c67362}{dddotmu}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_a679a88090aed732261c9ca690eddfe2b}{ddddotmu}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_af11b78439f1e2243328bb5c4b111af76}{winlens}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_a52362e5ab75ec6515f8b1b142b69ed8a}{dwinlens}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) \mbox{\hyperlink{namespacethermodata_a6f460accce66697aeae2188276198cdb}{scalefactor}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a68569d7c6ff02b02a4025f86a42c0d7e}{tauminn}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a9a43caa2003542f5a28e6f2280515365}{dlntau}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a41426412f674a69c99b7756938fc4204}{maxtau}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_a14ddce36570d0e50813dc92cd05b57bf}{vis}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_a4e5d2a5cf09e04bba23defc7dcf9e967}{dvis}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_aeab1ddb31ee9b39dd71d1a5a833b85f6}{ddvis}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_ab0ba79e6faa7c3d30e4b3a029b832d81}{expmmu}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_aa627075f6104ddf2acd8968688ec6f7e}{dopac}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_af824d4275dd6ae8475c82829c96c505c}{opac}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_a60473ac86869f6f9da92e4b0f76c5b12}{lenswin}}
+\item 
+logical, parameter \mbox{\hyperlink{namespacethermodata_a4f8d2aec0f4b6bcdc91d3d574bae3ba9}{dowinlens}} = .false.
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_acef8e1b2d18a8b07922432183d4673da}{tight\+\_\+tau}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a9d1b4188f1f98683027a29df3cbdd586}{actual\+\_\+opt\+\_\+depth}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_a13e012a8b804a7e2796df4f1afc4118e}{matter\+\_\+verydom\+\_\+tau}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a75e62e760e36ea9df5293d2f0141edff}{r\+\_\+drag0}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_ac0f90be6432813abe28335a041ffd10b}{z\+\_\+star}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_a74bf8ee4af304963a6fde19400dc5931}{z\+\_\+drag}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacethermodata_a78b5c4ff5e2d2d472df5aae9bdd02d77}\label{namespacethermodata_a78b5c4ff5e2d2d472df5aae9bdd02d77}} 
+\index{thermodata@{thermodata}!ddamping\+\_\+da@{ddamping\+\_\+da}}
+\index{ddamping\+\_\+da@{ddamping\+\_\+da}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{ddamping\+\_\+da()}{ddamping\_da()}}
+{\footnotesize\ttfamily real(dl) function thermodata\+::ddamping\+\_\+da (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References dtauda(), and r\+\_\+drag0.
+
+
+
+Referenced by inithermo().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a78b5c4ff5e2d2d472df5aae9bdd02d77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a78b5c4ff5e2d2d472df5aae9bdd02d77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a3d2fe3077a350ae407ecb93f927b2cc4}\label{namespacethermodata_a3d2fe3077a350ae407ecb93f927b2cc4}} 
+\index{thermodata@{thermodata}!ddragoptdepth\+\_\+dz@{ddragoptdepth\+\_\+dz}}
+\index{ddragoptdepth\+\_\+dz@{ddragoptdepth\+\_\+dz}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{ddragoptdepth\+\_\+dz()}{ddragoptdepth\_dz()}}
+{\footnotesize\ttfamily real(dl) function thermodata\+::ddragoptdepth\+\_\+dz (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References doptdepth\+\_\+dz(), dtauda(), and r\+\_\+drag0.
+
+
+
+Referenced by dragoptdepth().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a3d2fe3077a350ae407ecb93f927b2cc4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a3d2fe3077a350ae407ecb93f927b2cc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_afdafed82de5a75a5b609d945a91836fa}\label{namespacethermodata_afdafed82de5a75a5b609d945a91836fa}} 
+\index{thermodata@{thermodata}!doptdepth\+\_\+dz@{doptdepth\+\_\+dz}}
+\index{doptdepth\+\_\+dz@{doptdepth\+\_\+dz}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{doptdepth\+\_\+dz()}{doptdepth\_dz()}}
+{\footnotesize\ttfamily real(dl) function thermodata\+::doptdepth\+\_\+dz (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References dtauda().
+
+
+
+Referenced by ddragoptdepth\+\_\+dz(), and optdepth().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_afdafed82de5a75a5b609d945a91836fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_afdafed82de5a75a5b609d945a91836fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a1c7e7a0884bd2117c1d24a1ce8d5aaf1}\label{namespacethermodata_a1c7e7a0884bd2117c1d24a1ce8d5aaf1}} 
+\index{thermodata@{thermodata}!dothermospline@{dothermospline}}
+\index{dothermospline@{dothermospline}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dothermospline()}{dothermospline()}}
+{\footnotesize\ttfamily subroutine thermodata\+::dothermospline (\begin{DoxyParamCaption}\item[{integer}]{j2,  }\item[{real(dl)}]{tau }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ddddotmu, dddotmu, ddotmu, ddvis, demmu, dlntau, dopac, dotmu, dowinlens, dvis, dwinlens, emmu, expmmu, lenswin, nthermo, opac, tauminn, vis, and winlens.
+
+
+
+Referenced by inithermo().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a1c7e7a0884bd2117c1d24a1ce8d5aaf1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_ac14b857825ae37eee1107a320f7d71f7}\label{namespacethermodata_ac14b857825ae37eee1107a320f7d71f7}} 
+\index{thermodata@{thermodata}!dragoptdepth@{dragoptdepth}}
+\index{dragoptdepth@{dragoptdepth}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dragoptdepth()}{dragoptdepth()}}
+{\footnotesize\ttfamily real(dl) function thermodata\+::dragoptdepth (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ddragoptdepth\+\_\+dz(), and rombint2().
+
+
+
+Referenced by inithermo().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_ac14b857825ae37eee1107a320f7d71f7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_ac14b857825ae37eee1107a320f7d71f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a402bcd30314032d575f841bf374ad320}\label{namespacethermodata_a402bcd30314032d575f841bf374ad320}} 
+\index{thermodata@{thermodata}!find\+\_\+z@{find\+\_\+z}}
+\index{find\+\_\+z@{find\+\_\+z}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{find\+\_\+z()}{find\_z()}}
+{\footnotesize\ttfamily subroutine thermodata\+::find\+\_\+z (\begin{DoxyParamCaption}\item[{real(dl), external}]{func,  }\item[{real(dl), intent(out)}]{zout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inithermo().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a402bcd30314032d575f841bf374ad320_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a94d40d05e68eca4db87b58269d19e6f3}\label{namespacethermodata_a94d40d05e68eca4db87b58269d19e6f3}} 
+\index{thermodata@{thermodata}!getbackgroundevolution@{getbackgroundevolution}}
+\index{getbackgroundevolution@{getbackgroundevolution}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{getbackgroundevolution()}{getbackgroundevolution()}}
+{\footnotesize\ttfamily subroutine, public thermodata\+::getbackgroundevolution (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ntimes,  }\item[{real(dl), dimension(ntimes), intent(in)}]{times,  }\item[{real(dl), dimension(4, ntimes)}]{outputs }\end{DoxyParamCaption})}
+
+
+
+References demmu, dlntau, emmu, nthermo, splder(), splini(), tauminn, thermo(), vis, and xe.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a94d40d05e68eca4db87b58269d19e6f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a6d995eb9ad9f563fec198222c168e097}\label{namespacethermodata_a6d995eb9ad9f563fec198222c168e097}} 
+\index{thermodata@{thermodata}!inithermo@{inithermo}}
+\index{inithermo@{inithermo}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{inithermo()}{inithermo()}}
+{\footnotesize\ttfamily subroutine, public thermodata\+::inithermo (\begin{DoxyParamCaption}\item[{real(dl)}]{taumin,  }\item[{real(dl)}]{taumax }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, actual\+\_\+opt\+\_\+depth, modelparams\+::adotrad, modelparams\+::akthom, modelparams\+::angulardiameterdistance(), modelparams\+::backgroundoutputs, modelparams\+::bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h(), constants\+::barssc0, constants\+::compton\+\_\+ct, modelparams\+::cp, cs2, dcs2, ddamping\+\_\+da(), ddddotmu, dddotmu, ddotmu, modelparams\+::debugmsgs, modelparams\+::deltaphysicaltimegyr(), demmu, modelparams\+::derived\+\_\+age, modelparams\+::derived\+\_\+dastar, modelparams\+::derived\+\_\+kd, modelparams\+::derived\+\_\+keq, modelparams\+::derived\+\_\+rdrag, modelparams\+::derived\+\_\+rstar, modelparams\+::derived\+\_\+theta\+\_\+rs\+\_\+eq, modelparams\+::derived\+\_\+thetad, modelparams\+::derived\+\_\+thetaeq, modelparams\+::derived\+\_\+thetastar, modelparams\+::derived\+\_\+zdrag, modelparams\+::derived\+\_\+zeq, modelparams\+::derived\+\_\+zstar, dlntau, modelparams\+::do\+\_\+bispectrum, dothermospline(), dotmu, dowinlens, dragoptdepth(), modelparams\+::dsound\+\_\+da\+\_\+exact(), dtauda(), modelparams\+::dtaurec, dwinlens, emmu, modelparams\+::feedbacklevel, find\+\_\+z(), modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhom, modelparams\+::grhormass, modelparams\+::grhornomass, modelparams\+::hard\+\_\+bispectrum, modelparams\+::hofz(), matter\+\_\+verydom\+\_\+tau, maxtau, nthermo, optdepth(), r\+\_\+drag0, rombint(), scalefactor, sdotmu, settimesteps(), splder(), splini(), modelparams\+::tau\+\_\+maxvis, tauminn, modelparams\+::taurend, modelparams\+::taurst, tb, modelparams\+::thermoderivedparams, tight\+\_\+tau, modelparams\+::timeofz(), modelparams\+::timesteps, vis, winlens, xe, z\+\_\+drag, and z\+\_\+star.
+
+
+
+Referenced by cambmain\+::initvars().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a6d995eb9ad9f563fec198222c168e097_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a6d995eb9ad9f563fec198222c168e097_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a3875da8b58196788145c8f6df6ea6cfe}\label{namespacethermodata_a3875da8b58196788145c8f6df6ea6cfe}} 
+\index{thermodata@{thermodata}!optdepth@{optdepth}}
+\index{optdepth@{optdepth}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{optdepth()}{optdepth()}}
+{\footnotesize\ttfamily real(dl) function thermodata\+::optdepth (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References doptdepth\+\_\+dz(), and rombint2().
+
+
+
+Referenced by inithermo().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a3875da8b58196788145c8f6df6ea6cfe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a3875da8b58196788145c8f6df6ea6cfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a53958f3aa160bfde722bffb2b9d47df8}\label{namespacethermodata_a53958f3aa160bfde722bffb2b9d47df8}} 
+\index{thermodata@{thermodata}!settimesteps@{settimesteps}}
+\index{settimesteps@{settimesteps}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{settimesteps()}{settimesteps()}}
+{\footnotesize\ttfamily subroutine thermodata\+::settimesteps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ddvis, dopac, dowinlens, dvis, expmmu, lenswin, maxtau, opac, and vis.
+
+
+
+Referenced by inithermo().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a53958f3aa160bfde722bffb2b9d47df8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a9ff7d8c599c64921c554cbc2069b3d2b}\label{namespacethermodata_a9ff7d8c599c64921c554cbc2069b3d2b}} 
+\index{thermodata@{thermodata}!thermo@{thermo}}
+\index{thermo@{thermo}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{thermo()}{thermo()}}
+{\footnotesize\ttfamily subroutine, public thermodata\+::thermo (\begin{DoxyParamCaption}\item[{real(dl)}]{tau,  }\item[{real(dl)}]{cs2b,  }\item[{real(dl)}]{opacity,  }\item[{real(dl), intent(out), optional}]{dopacity }\end{DoxyParamCaption})}
+
+
+
+References cs2, dcs2, dddotmu, ddotmu, dlntau, dotmu, nthermo, and tauminn.
+
+
+
+Referenced by gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), gaugeinterface\+::gaugeinterface\+\_\+evolvetens(), and getbackgroundevolution().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a9ff7d8c599c64921c554cbc2069b3d2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_ac4c3a9846b711f25cba7ce38322ee66b}\label{namespacethermodata_ac4c3a9846b711f25cba7ce38322ee66b}} 
+\index{thermodata@{thermodata}!thermo\+\_\+opacitytotime@{thermo\+\_\+opacitytotime}}
+\index{thermo\+\_\+opacitytotime@{thermo\+\_\+opacitytotime}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{thermo\+\_\+opacitytotime()}{thermo\_opacitytotime()}}
+{\footnotesize\ttfamily real(dl) function, public thermodata\+::thermo\+\_\+opacitytotime (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{opacity }\end{DoxyParamCaption})}
+
+
+
+References dlntau, dotmu, and tauminn.
+
+
+
+Referenced by dtauda(), gaugeinterface\+::initial(), and gaugeinterface\+::initialt().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_ac4c3a9846b711f25cba7ce38322ee66b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacethermodata_a29f627a601dcc5afc90dc9ea8e4d902a}\label{namespacethermodata_a29f627a601dcc5afc90dc9ea8e4d902a}} 
+\index{thermodata@{thermodata}!thermodata\+\_\+free@{thermodata\+\_\+free}}
+\index{thermodata\+\_\+free@{thermodata\+\_\+free}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{thermodata\+\_\+free()}{thermodata\_free()}}
+{\footnotesize\ttfamily subroutine, public thermodata\+::thermodata\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ddvis, dopac, dowinlens, dvis, expmmu, lenswin, opac, and vis.
+
+
+
+Referenced by camb\+::camb\+\_\+cleanup().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacethermodata_a29f627a601dcc5afc90dc9ea8e4d902a_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacethermodata_a9d1b4188f1f98683027a29df3cbdd586}\label{namespacethermodata_a9d1b4188f1f98683027a29df3cbdd586}} 
+\index{thermodata@{thermodata}!actual\+\_\+opt\+\_\+depth@{actual\+\_\+opt\+\_\+depth}}
+\index{actual\+\_\+opt\+\_\+depth@{actual\+\_\+opt\+\_\+depth}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{actual\+\_\+opt\+\_\+depth}{actual\_opt\_depth}}
+{\footnotesize\ttfamily real(dl) thermodata\+::actual\+\_\+opt\+\_\+depth\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_abdbeec54177b30f0e0c16f4915bb6963}\label{namespacethermodata_abdbeec54177b30f0e0c16f4915bb6963}} 
+\index{thermodata@{thermodata}!cs2@{cs2}}
+\index{cs2@{cs2}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{cs2}{cs2}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::cs2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), inithermo(), and thermo().
+
+\mbox{\Hypertarget{namespacethermodata_aca5f831d6371c97e07b745a1335c43a6}\label{namespacethermodata_aca5f831d6371c97e07b745a1335c43a6}} 
+\index{thermodata@{thermodata}!dcs2@{dcs2}}
+\index{dcs2@{dcs2}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dcs2}{dcs2}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::dcs2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inithermo(), and thermo().
+
+\mbox{\Hypertarget{namespacethermodata_a679a88090aed732261c9ca690eddfe2b}\label{namespacethermodata_a679a88090aed732261c9ca690eddfe2b}} 
+\index{thermodata@{thermodata}!ddddotmu@{ddddotmu}}
+\index{ddddotmu@{ddddotmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{ddddotmu}{ddddotmu}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::ddddotmu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_ad781349a01ad4eff9227f42ed5c67362}\label{namespacethermodata_ad781349a01ad4eff9227f42ed5c67362}} 
+\index{thermodata@{thermodata}!dddotmu@{dddotmu}}
+\index{dddotmu@{dddotmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dddotmu}{dddotmu}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::dddotmu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), inithermo(), and thermo().
+
+\mbox{\Hypertarget{namespacethermodata_a64db577ccef33cb28a8ef97b9c49df58}\label{namespacethermodata_a64db577ccef33cb28a8ef97b9c49df58}} 
+\index{thermodata@{thermodata}!ddotmu@{ddotmu}}
+\index{ddotmu@{ddotmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{ddotmu}{ddotmu}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::ddotmu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), inithermo(), and thermo().
+
+\mbox{\Hypertarget{namespacethermodata_aeab1ddb31ee9b39dd71d1a5a833b85f6}\label{namespacethermodata_aeab1ddb31ee9b39dd71d1a5a833b85f6}} 
+\index{thermodata@{thermodata}!ddvis@{ddvis}}
+\index{ddvis@{ddvis}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{ddvis}{ddvis}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable, public thermodata\+::ddvis}
+
+
+
+Referenced by dothermospline(), dtauda(), gaugeinterface\+::output(), gaugeinterface\+::outputt(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_a01e420c8859c753a39ea78e4afe151a4}\label{namespacethermodata_a01e420c8859c753a39ea78e4afe151a4}} 
+\index{thermodata@{thermodata}!demmu@{demmu}}
+\index{demmu@{demmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{demmu}{demmu}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::demmu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), getbackgroundevolution(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_a9a43caa2003542f5a28e6f2280515365}\label{namespacethermodata_a9a43caa2003542f5a28e6f2280515365}} 
+\index{thermodata@{thermodata}!dlntau@{dlntau}}
+\index{dlntau@{dlntau}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dlntau}{dlntau}}
+{\footnotesize\ttfamily real(dl) thermodata\+::dlntau\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), getbackgroundevolution(), inithermo(), thermo(), and thermo\+\_\+opacitytotime().
+
+\mbox{\Hypertarget{namespacethermodata_aa627075f6104ddf2acd8968688ec6f7e}\label{namespacethermodata_aa627075f6104ddf2acd8968688ec6f7e}} 
+\index{thermodata@{thermodata}!dopac@{dopac}}
+\index{dopac@{dopac}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dopac}{dopac}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable, public thermodata\+::dopac}
+
+
+
+Referenced by dothermospline(), dtauda(), gaugeinterface\+::output(), gaugeinterface\+::outputt(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_aa46effcfaebc414efc1483613c20938b}\label{namespacethermodata_aa46effcfaebc414efc1483613c20938b}} 
+\index{thermodata@{thermodata}!dotmu@{dotmu}}
+\index{dotmu@{dotmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dotmu}{dotmu}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::dotmu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), inithermo(), thermo(), and thermo\+\_\+opacitytotime().
+
+\mbox{\Hypertarget{namespacethermodata_a4f8d2aec0f4b6bcdc91d3d574bae3ba9}\label{namespacethermodata_a4f8d2aec0f4b6bcdc91d3d574bae3ba9}} 
+\index{thermodata@{thermodata}!dowinlens@{dowinlens}}
+\index{dowinlens@{dowinlens}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dowinlens}{dowinlens}}
+{\footnotesize\ttfamily logical, parameter thermodata\+::dowinlens = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), inithermo(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_a4e5d2a5cf09e04bba23defc7dcf9e967}\label{namespacethermodata_a4e5d2a5cf09e04bba23defc7dcf9e967}} 
+\index{thermodata@{thermodata}!dvis@{dvis}}
+\index{dvis@{dvis}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dvis}{dvis}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable, public thermodata\+::dvis}
+
+
+
+Referenced by dothermospline(), dtauda(), gaugeinterface\+::output(), gaugeinterface\+::outputt(), gaugeinterface\+::outputv(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_a52362e5ab75ec6515f8b1b142b69ed8a}\label{namespacethermodata_a52362e5ab75ec6515f8b1b142b69ed8a}} 
+\index{thermodata@{thermodata}!dwinlens@{dwinlens}}
+\index{dwinlens@{dwinlens}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{dwinlens}{dwinlens}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::dwinlens\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_ad1bfdfc33182cbe1182c4785d88011c2}\label{namespacethermodata_ad1bfdfc33182cbe1182c4785d88011c2}} 
+\index{thermodata@{thermodata}!emmu@{emmu}}
+\index{emmu@{emmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{emmu}{emmu}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::emmu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), getbackgroundevolution(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_ab0ba79e6faa7c3d30e4b3a029b832d81}\label{namespacethermodata_ab0ba79e6faa7c3d30e4b3a029b832d81}} 
+\index{thermodata@{thermodata}!expmmu@{expmmu}}
+\index{expmmu@{expmmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{expmmu}{expmmu}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable, public thermodata\+::expmmu}
+
+
+
+Referenced by dothermospline(), dtauda(), gaugeinterface\+::output(), gaugeinterface\+::outputt(), gaugeinterface\+::outputv(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_a60473ac86869f6f9da92e4b0f76c5b12}\label{namespacethermodata_a60473ac86869f6f9da92e4b0f76c5b12}} 
+\index{thermodata@{thermodata}!lenswin@{lenswin}}
+\index{lenswin@{lenswin}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{lenswin}{lenswin}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable, public thermodata\+::lenswin}
+
+
+
+Referenced by dothermospline(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_a13e012a8b804a7e2796df4f1afc4118e}\label{namespacethermodata_a13e012a8b804a7e2796df4f1afc4118e}} 
+\index{thermodata@{thermodata}!matter\+\_\+verydom\+\_\+tau@{matter\+\_\+verydom\+\_\+tau}}
+\index{matter\+\_\+verydom\+\_\+tau@{matter\+\_\+verydom\+\_\+tau}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{matter\+\_\+verydom\+\_\+tau}{matter\_verydom\_tau}}
+{\footnotesize\ttfamily real(dl), public thermodata\+::matter\+\_\+verydom\+\_\+tau}
+
+
+
+Referenced by dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_a41426412f674a69c99b7756938fc4204}\label{namespacethermodata_a41426412f674a69c99b7756938fc4204}} 
+\index{thermodata@{thermodata}!maxtau@{maxtau}}
+\index{maxtau@{maxtau}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{maxtau}{maxtau}}
+{\footnotesize\ttfamily real(dl) thermodata\+::maxtau\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inithermo(), and settimesteps().
+
+\mbox{\Hypertarget{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}\label{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}} 
+\index{thermodata@{thermodata}!nthermo@{nthermo}}
+\index{nthermo@{nthermo}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{nthermo}{nthermo}}
+{\footnotesize\ttfamily integer, parameter thermodata\+::nthermo =20000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), getbackgroundevolution(), inithermo(), and thermo().
+
+\mbox{\Hypertarget{namespacethermodata_af824d4275dd6ae8475c82829c96c505c}\label{namespacethermodata_af824d4275dd6ae8475c82829c96c505c}} 
+\index{thermodata@{thermodata}!opac@{opac}}
+\index{opac@{opac}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{opac}{opac}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable, public thermodata\+::opac}
+
+
+
+Referenced by dothermospline(), dtauda(), gaugeinterface\+::output(), gaugeinterface\+::outputt(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_a75e62e760e36ea9df5293d2f0141edff}\label{namespacethermodata_a75e62e760e36ea9df5293d2f0141edff}} 
+\index{thermodata@{thermodata}!r\+\_\+drag0@{r\+\_\+drag0}}
+\index{r\+\_\+drag0@{r\+\_\+drag0}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{r\+\_\+drag0}{r\_drag0}}
+{\footnotesize\ttfamily real(dl) thermodata\+::r\+\_\+drag0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ddamping\+\_\+da(), ddragoptdepth\+\_\+dz(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_a6f460accce66697aeae2188276198cdb}\label{namespacethermodata_a6f460accce66697aeae2188276198cdb}} 
+\index{thermodata@{thermodata}!scalefactor@{scalefactor}}
+\index{scalefactor@{scalefactor}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{scalefactor}{scalefactor}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::scalefactor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_a31169ba47074359a9820a44600d7628b}\label{namespacethermodata_a31169ba47074359a9820a44600d7628b}} 
+\index{thermodata@{thermodata}!sdotmu@{sdotmu}}
+\index{sdotmu@{sdotmu}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{sdotmu}{sdotmu}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::sdotmu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_a68569d7c6ff02b02a4025f86a42c0d7e}\label{namespacethermodata_a68569d7c6ff02b02a4025f86a42c0d7e}} 
+\index{thermodata@{thermodata}!tauminn@{tauminn}}
+\index{tauminn@{tauminn}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{tauminn}{tauminn}}
+{\footnotesize\ttfamily real(dl) thermodata\+::tauminn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), getbackgroundevolution(), inithermo(), thermo(), and thermo\+\_\+opacitytotime().
+
+\mbox{\Hypertarget{namespacethermodata_ab667ebbdbb18924a862b09a4b328c7f2}\label{namespacethermodata_ab667ebbdbb18924a862b09a4b328c7f2}} 
+\index{thermodata@{thermodata}!tb@{tb}}
+\index{tb@{tb}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{tb}{tb}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::tb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_acef8e1b2d18a8b07922432183d4673da}\label{namespacethermodata_acef8e1b2d18a8b07922432183d4673da}} 
+\index{thermodata@{thermodata}!tight\+\_\+tau@{tight\+\_\+tau}}
+\index{tight\+\_\+tau@{tight\+\_\+tau}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{tight\+\_\+tau}{tight\_tau}}
+{\footnotesize\ttfamily real(dl), public thermodata\+::tight\+\_\+tau}
+
+
+
+Referenced by dtauda(), inithermo(), gaugeinterface\+::initial(), and gaugeinterface\+::initialt().
+
+\mbox{\Hypertarget{namespacethermodata_a14ddce36570d0e50813dc92cd05b57bf}\label{namespacethermodata_a14ddce36570d0e50813dc92cd05b57bf}} 
+\index{thermodata@{thermodata}!vis@{vis}}
+\index{vis@{vis}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{vis}{vis}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable, public thermodata\+::vis}
+
+
+
+Referenced by dothermospline(), dtauda(), getbackgroundevolution(), inithermo(), gaugeinterface\+::output(), gaugeinterface\+::outputt(), gaugeinterface\+::outputv(), settimesteps(), and thermodata\+\_\+free().
+
+\mbox{\Hypertarget{namespacethermodata_af11b78439f1e2243328bb5c4b111af76}\label{namespacethermodata_af11b78439f1e2243328bb5c4b111af76}} 
+\index{thermodata@{thermodata}!winlens@{winlens}}
+\index{winlens@{winlens}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{winlens}{winlens}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::winlens\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dothermospline(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_a253c9b40af269388f742a8651d063c18}\label{namespacethermodata_a253c9b40af269388f742a8651d063c18}} 
+\index{thermodata@{thermodata}!xe@{xe}}
+\index{xe@{xe}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{xe}{xe}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{nthermo}}) thermodata\+::xe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getbackgroundevolution(), and inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_a74bf8ee4af304963a6fde19400dc5931}\label{namespacethermodata_a74bf8ee4af304963a6fde19400dc5931}} 
+\index{thermodata@{thermodata}!z\+\_\+drag@{z\+\_\+drag}}
+\index{z\+\_\+drag@{z\+\_\+drag}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{z\+\_\+drag}{z\_drag}}
+{\footnotesize\ttfamily real(dl), public thermodata\+::z\+\_\+drag}
+
+
+
+Referenced by inithermo().
+
+\mbox{\Hypertarget{namespacethermodata_ac0f90be6432813abe28335a041ffd10b}\label{namespacethermodata_ac0f90be6432813abe28335a041ffd10b}} 
+\index{thermodata@{thermodata}!z\+\_\+star@{z\+\_\+star}}
+\index{z\+\_\+star@{z\+\_\+star}!thermodata@{thermodata}}
+\subsubsection{\texorpdfstring{z\+\_\+star}{z\_star}}
+{\footnotesize\ttfamily real(dl), public thermodata\+::z\+\_\+star}
+
+
+
+Referenced by inithermo().
+

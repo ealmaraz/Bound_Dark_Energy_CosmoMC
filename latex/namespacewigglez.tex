@@ -1,0 +1,381 @@
+\hypertarget{namespacewigglez}{}\section{wigglez Module Reference}
+\label{namespacewigglez}\index{wigglez@{wigglez}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structwigglez_1_1twigglezcommon}{twigglezcommon}}
+\item 
+type \mbox{\hyperlink{structwigglez_1_1wigglezlikelihood}{wigglezlikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacewigglez_ae540392aa1fd56601b1db55cac9aaafa}{wigglezlikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglez_a0ccc7d6e7495d4d98fe5df0ae058145a}{twigglezcommon\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglez_ae3e0c03dabaa4af8dbaa3d5b1b2acb29}{wigglez\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglez_af7eacad18112700eeba576ce8376cb89}{readwigglezmatrices}} (aname, mat, num\+\_\+regions, m, n)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacewigglez_abf254c63c44f0ccf748dd90a0814a664}{wigglez\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+type(\mbox{\hyperlink{structwigglez_1_1twigglezcommon}{twigglezcommon}}), target, save \mbox{\hyperlink{namespacewigglez_a1a7784e6e8553a1ae1cf8a3eb8276341}{wigglezcommon}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacewigglez_a8d5cc17b3425207c6850325bc82a93a5}{max\+\_\+num\+\_\+wigglez\+\_\+regions}} = 7
+\item 
+integer \mbox{\hyperlink{namespacewigglez_af0a2aa38606b250dcb980ccb92fc11ca}{num\+\_\+mpk\+\_\+points\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_ac9ec4f774e0116431ec283376d04fa35}{num\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a31d03f56c463d2ce29e24a2d5b1ac7b1}{num\+\_\+regions\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a958f6e7ea41ba27bf96a9d39f3a9b52b}{num\+\_\+mpk\+\_\+points\+\_\+full}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_aa43acb845d2f5a4e86a07485f5d8f0f3}{num\+\_\+mpk\+\_\+kbands\+\_\+full}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a5ef8736870101bebb0d86b2c5c733d8d}{max\+\_\+mpk\+\_\+points\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_aaa7aa3063584475463df9bd85fceeffd}{min\+\_\+mpk\+\_\+points\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a7c1d18206f96a33e914468b317457ba1}{max\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\item 
+integer \mbox{\hyperlink{namespacewigglez_a1fba40082b46206664553f88666cb6aa}{min\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\item 
+logical, dimension(\+:), allocatable \mbox{\hyperlink{namespacewigglez_a4bf753383300f61cecdd5c8cd8fdaae3}{regions\+\_\+active}}
+\item 
+logical \mbox{\hyperlink{namespacewigglez_ae38c8e45630d25b0d97109dd26bc3cd4}{use\+\_\+scaling}}
+\item 
+logical \mbox{\hyperlink{namespacewigglez_a852cec3f5b6f650f8cfd9e8bdee9fc33}{use\+\_\+gigglez}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacewigglez_aa2c47840239c6c778e9459f43cb8d02b}{nonlinear\+\_\+wigglez}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacewigglez_a3827c735a7a159656e581a2e19c567a2}{use\+\_\+wigglez\+\_\+mpk}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacewigglez_aa9c3ad74ce4e69f0fcccd8fdda77186e}{q\+\_\+marge}}
+\item 
+logical \mbox{\hyperlink{namespacewigglez_a60066dbf058902563e14f3196a4bd03b}{q\+\_\+flat}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacewigglez_a9d61faf004a432ee806221f52cbabd61}{q\+\_\+mid}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacewigglez_adecc221b2b57fa0a89ada696e24823d9}{q\+\_\+sigma}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacewigglez_a873b48387a22b04846288e5f2d19af1f}{ag}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacewigglez_af7eacad18112700eeba576ce8376cb89}\label{namespacewigglez_af7eacad18112700eeba576ce8376cb89}} 
+\index{wigglez@{wigglez}!readwigglezmatrices@{readwigglezmatrices}}
+\index{readwigglezmatrices@{readwigglezmatrices}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{readwigglezmatrices()}{readwigglezmatrices()}}
+{\footnotesize\ttfamily subroutine wigglez\+::readwigglezmatrices (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(mcp), dimension(num\+\_\+regions,m,n), intent(out)}]{mat,  }\item[{integer, intent(in)}]{num\+\_\+regions,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::feedback.
+
+
+
+Referenced by wigglez\+\_\+readini().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglez_af7eacad18112700eeba576ce8376cb89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewigglez_a0ccc7d6e7495d4d98fe5df0ae058145a}\label{namespacewigglez_a0ccc7d6e7495d4d98fe5df0ae058145a}} 
+\index{wigglez@{wigglez}!twigglezcommon\+\_\+readini@{twigglezcommon\+\_\+readini}}
+\index{twigglezcommon\+\_\+readini@{twigglezcommon\+\_\+readini}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{twigglezcommon\+\_\+readini()}{twigglezcommon\_readini()}}
+{\footnotesize\ttfamily subroutine wigglez\+::twigglezcommon\+\_\+readini (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structwigglez_1_1twigglezcommon}{twigglezcommon}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ag, wigglezinfo\+::gigglezinfo\+\_\+init(), max\+\_\+mpk\+\_\+kbands\+\_\+use, max\+\_\+mpk\+\_\+points\+\_\+use, max\+\_\+num\+\_\+wigglez\+\_\+regions, min\+\_\+mpk\+\_\+kbands\+\_\+use, min\+\_\+mpk\+\_\+points\+\_\+use, nonlinear\+\_\+wigglez, num\+\_\+mpk\+\_\+kbands\+\_\+full, num\+\_\+mpk\+\_\+kbands\+\_\+use, num\+\_\+mpk\+\_\+points\+\_\+full, num\+\_\+mpk\+\_\+points\+\_\+use, num\+\_\+regions\+\_\+used, q\+\_\+flat, q\+\_\+marge, q\+\_\+mid, q\+\_\+sigma, regions\+\_\+active, use\+\_\+gigglez, use\+\_\+scaling, wigglezinfo\+::za, wigglezinfo\+::zb, wigglezinfo\+::zc, wigglezinfo\+::zd, and wigglezinfo\+::zeval.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglez_a0ccc7d6e7495d4d98fe5df0ae058145a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewigglez_abf254c63c44f0ccf748dd90a0814a664}\label{namespacewigglez_abf254c63c44f0ccf748dd90a0814a664}} 
+\index{wigglez@{wigglez}!wigglez\+\_\+lnlike@{wigglez\+\_\+lnlike}}
+\index{wigglez\+\_\+lnlike@{wigglez\+\_\+lnlike}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{wigglez\+\_\+lnlike()}{wigglez\_lnlike()}}
+{\footnotesize\ttfamily real(mcp) function wigglez\+::wigglez\+\_\+lnlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structwigglez_1_1wigglezlikelihood}{wigglezlikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ag, settings\+::feedback, settings\+::logzero, matrixutils\+::matrix\+\_\+inverse(), num\+\_\+mpk\+\_\+kbands\+\_\+use, num\+\_\+mpk\+\_\+points\+\_\+use, num\+\_\+regions\+\_\+used, q\+\_\+flat, q\+\_\+marge, q\+\_\+mid, q\+\_\+sigma, use\+\_\+gigglez, use\+\_\+scaling, and wigglezinfo\+::wigglezpowerat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglez_abf254c63c44f0ccf748dd90a0814a664_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewigglez_ae3e0c03dabaa4af8dbaa3d5b1b2acb29}\label{namespacewigglez_ae3e0c03dabaa4af8dbaa3d5b1b2acb29}} 
+\index{wigglez@{wigglez}!wigglez\+\_\+readini@{wigglez\+\_\+readini}}
+\index{wigglez\+\_\+readini@{wigglez\+\_\+readini}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{wigglez\+\_\+readini()}{wigglez\_readini()}}
+{\footnotesize\ttfamily subroutine wigglez\+::wigglez\+\_\+readini (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structwigglez_1_1wigglezlikelihood}{wigglezlikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::feedback, matrixutils\+::matrix\+\_\+inverse(), max\+\_\+mpk\+\_\+points\+\_\+use, max\+\_\+num\+\_\+wigglez\+\_\+regions, min\+\_\+mpk\+\_\+kbands\+\_\+use, min\+\_\+mpk\+\_\+points\+\_\+use, num\+\_\+mpk\+\_\+kbands\+\_\+full, num\+\_\+mpk\+\_\+kbands\+\_\+use, num\+\_\+mpk\+\_\+points\+\_\+full, num\+\_\+mpk\+\_\+points\+\_\+use, num\+\_\+regions\+\_\+used, readwigglezmatrices(), regions\+\_\+active, use\+\_\+scaling, and wigglezinfo\+::zeval.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglez_ae3e0c03dabaa4af8dbaa3d5b1b2acb29_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewigglez_ae540392aa1fd56601b1db55cac9aaafa}\label{namespacewigglez_ae540392aa1fd56601b1db55cac9aaafa}} 
+\index{wigglez@{wigglez}!wigglezlikelihood\+\_\+add@{wigglezlikelihood\+\_\+add}}
+\index{wigglezlikelihood\+\_\+add@{wigglezlikelihood\+\_\+add}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{wigglezlikelihood\+\_\+add()}{wigglezlikelihood\_add()}}
+{\footnotesize\ttfamily subroutine, public wigglez\+::wigglezlikelihood\+\_\+add (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References settings\+::feedback, nonlinear\+\_\+wigglez, use\+\_\+gigglez, use\+\_\+wigglez\+\_\+mpk, and wigglezcommon.
+
+
+
+Referenced by datalikelihoodlist\+::setdatalikelihoods().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglez_ae540392aa1fd56601b1db55cac9aaafa_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacewigglez_a873b48387a22b04846288e5f2d19af1f}\label{namespacewigglez_a873b48387a22b04846288e5f2d19af1f}} 
+\index{wigglez@{wigglez}!ag@{ag}}
+\index{ag@{ag}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{ag}{ag}}
+{\footnotesize\ttfamily real(mcp) wigglez\+::ag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacewigglez_a7c1d18206f96a33e914468b317457ba1}\label{namespacewigglez_a7c1d18206f96a33e914468b317457ba1}} 
+\index{wigglez@{wigglez}!max\+\_\+mpk\+\_\+kbands\+\_\+use@{max\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\index{max\+\_\+mpk\+\_\+kbands\+\_\+use@{max\+\_\+mpk\+\_\+kbands\+\_\+use}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{max\+\_\+mpk\+\_\+kbands\+\_\+use}{max\_mpk\_kbands\_use}}
+{\footnotesize\ttfamily integer wigglez\+::max\+\_\+mpk\+\_\+kbands\+\_\+use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a5ef8736870101bebb0d86b2c5c733d8d}\label{namespacewigglez_a5ef8736870101bebb0d86b2c5c733d8d}} 
+\index{wigglez@{wigglez}!max\+\_\+mpk\+\_\+points\+\_\+use@{max\+\_\+mpk\+\_\+points\+\_\+use}}
+\index{max\+\_\+mpk\+\_\+points\+\_\+use@{max\+\_\+mpk\+\_\+points\+\_\+use}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{max\+\_\+mpk\+\_\+points\+\_\+use}{max\_mpk\_points\_use}}
+{\footnotesize\ttfamily integer wigglez\+::max\+\_\+mpk\+\_\+points\+\_\+use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a8d5cc17b3425207c6850325bc82a93a5}\label{namespacewigglez_a8d5cc17b3425207c6850325bc82a93a5}} 
+\index{wigglez@{wigglez}!max\+\_\+num\+\_\+wigglez\+\_\+regions@{max\+\_\+num\+\_\+wigglez\+\_\+regions}}
+\index{max\+\_\+num\+\_\+wigglez\+\_\+regions@{max\+\_\+num\+\_\+wigglez\+\_\+regions}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{max\+\_\+num\+\_\+wigglez\+\_\+regions}{max\_num\_wigglez\_regions}}
+{\footnotesize\ttfamily integer, parameter wigglez\+::max\+\_\+num\+\_\+wigglez\+\_\+regions = 7\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a1fba40082b46206664553f88666cb6aa}\label{namespacewigglez_a1fba40082b46206664553f88666cb6aa}} 
+\index{wigglez@{wigglez}!min\+\_\+mpk\+\_\+kbands\+\_\+use@{min\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\index{min\+\_\+mpk\+\_\+kbands\+\_\+use@{min\+\_\+mpk\+\_\+kbands\+\_\+use}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{min\+\_\+mpk\+\_\+kbands\+\_\+use}{min\_mpk\_kbands\_use}}
+{\footnotesize\ttfamily integer wigglez\+::min\+\_\+mpk\+\_\+kbands\+\_\+use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_aaa7aa3063584475463df9bd85fceeffd}\label{namespacewigglez_aaa7aa3063584475463df9bd85fceeffd}} 
+\index{wigglez@{wigglez}!min\+\_\+mpk\+\_\+points\+\_\+use@{min\+\_\+mpk\+\_\+points\+\_\+use}}
+\index{min\+\_\+mpk\+\_\+points\+\_\+use@{min\+\_\+mpk\+\_\+points\+\_\+use}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{min\+\_\+mpk\+\_\+points\+\_\+use}{min\_mpk\_points\_use}}
+{\footnotesize\ttfamily integer wigglez\+::min\+\_\+mpk\+\_\+points\+\_\+use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_aa2c47840239c6c778e9459f43cb8d02b}\label{namespacewigglez_aa2c47840239c6c778e9459f43cb8d02b}} 
+\index{wigglez@{wigglez}!nonlinear\+\_\+wigglez@{nonlinear\+\_\+wigglez}}
+\index{nonlinear\+\_\+wigglez@{nonlinear\+\_\+wigglez}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+wigglez}{nonlinear\_wigglez}}
+{\footnotesize\ttfamily logical wigglez\+::nonlinear\+\_\+wigglez = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglezlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacewigglez_aa43acb845d2f5a4e86a07485f5d8f0f3}\label{namespacewigglez_aa43acb845d2f5a4e86a07485f5d8f0f3}} 
+\index{wigglez@{wigglez}!num\+\_\+mpk\+\_\+kbands\+\_\+full@{num\+\_\+mpk\+\_\+kbands\+\_\+full}}
+\index{num\+\_\+mpk\+\_\+kbands\+\_\+full@{num\+\_\+mpk\+\_\+kbands\+\_\+full}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{num\+\_\+mpk\+\_\+kbands\+\_\+full}{num\_mpk\_kbands\_full}}
+{\footnotesize\ttfamily integer wigglez\+::num\+\_\+mpk\+\_\+kbands\+\_\+full\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_ac9ec4f774e0116431ec283376d04fa35}\label{namespacewigglez_ac9ec4f774e0116431ec283376d04fa35}} 
+\index{wigglez@{wigglez}!num\+\_\+mpk\+\_\+kbands\+\_\+use@{num\+\_\+mpk\+\_\+kbands\+\_\+use}}
+\index{num\+\_\+mpk\+\_\+kbands\+\_\+use@{num\+\_\+mpk\+\_\+kbands\+\_\+use}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{num\+\_\+mpk\+\_\+kbands\+\_\+use}{num\_mpk\_kbands\_use}}
+{\footnotesize\ttfamily integer wigglez\+::num\+\_\+mpk\+\_\+kbands\+\_\+use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), wigglez\+\_\+lnlike(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a958f6e7ea41ba27bf96a9d39f3a9b52b}\label{namespacewigglez_a958f6e7ea41ba27bf96a9d39f3a9b52b}} 
+\index{wigglez@{wigglez}!num\+\_\+mpk\+\_\+points\+\_\+full@{num\+\_\+mpk\+\_\+points\+\_\+full}}
+\index{num\+\_\+mpk\+\_\+points\+\_\+full@{num\+\_\+mpk\+\_\+points\+\_\+full}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{num\+\_\+mpk\+\_\+points\+\_\+full}{num\_mpk\_points\_full}}
+{\footnotesize\ttfamily integer wigglez\+::num\+\_\+mpk\+\_\+points\+\_\+full\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_af0a2aa38606b250dcb980ccb92fc11ca}\label{namespacewigglez_af0a2aa38606b250dcb980ccb92fc11ca}} 
+\index{wigglez@{wigglez}!num\+\_\+mpk\+\_\+points\+\_\+use@{num\+\_\+mpk\+\_\+points\+\_\+use}}
+\index{num\+\_\+mpk\+\_\+points\+\_\+use@{num\+\_\+mpk\+\_\+points\+\_\+use}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{num\+\_\+mpk\+\_\+points\+\_\+use}{num\_mpk\_points\_use}}
+{\footnotesize\ttfamily integer wigglez\+::num\+\_\+mpk\+\_\+points\+\_\+use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), wigglez\+\_\+lnlike(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a31d03f56c463d2ce29e24a2d5b1ac7b1}\label{namespacewigglez_a31d03f56c463d2ce29e24a2d5b1ac7b1}} 
+\index{wigglez@{wigglez}!num\+\_\+regions\+\_\+used@{num\+\_\+regions\+\_\+used}}
+\index{num\+\_\+regions\+\_\+used@{num\+\_\+regions\+\_\+used}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{num\+\_\+regions\+\_\+used}{num\_regions\_used}}
+{\footnotesize\ttfamily integer wigglez\+::num\+\_\+regions\+\_\+used\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), wigglez\+\_\+lnlike(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a60066dbf058902563e14f3196a4bd03b}\label{namespacewigglez_a60066dbf058902563e14f3196a4bd03b}} 
+\index{wigglez@{wigglez}!q\+\_\+flat@{q\+\_\+flat}}
+\index{q\+\_\+flat@{q\+\_\+flat}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{q\+\_\+flat}{q\_flat}}
+{\footnotesize\ttfamily logical wigglez\+::q\+\_\+flat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacewigglez_aa9c3ad74ce4e69f0fcccd8fdda77186e}\label{namespacewigglez_aa9c3ad74ce4e69f0fcccd8fdda77186e}} 
+\index{wigglez@{wigglez}!q\+\_\+marge@{q\+\_\+marge}}
+\index{q\+\_\+marge@{q\+\_\+marge}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{q\+\_\+marge}{q\_marge}}
+{\footnotesize\ttfamily logical wigglez\+::q\+\_\+marge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacewigglez_a9d61faf004a432ee806221f52cbabd61}\label{namespacewigglez_a9d61faf004a432ee806221f52cbabd61}} 
+\index{wigglez@{wigglez}!q\+\_\+mid@{q\+\_\+mid}}
+\index{q\+\_\+mid@{q\+\_\+mid}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{q\+\_\+mid}{q\_mid}}
+{\footnotesize\ttfamily real(mcp) wigglez\+::q\+\_\+mid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacewigglez_adecc221b2b57fa0a89ada696e24823d9}\label{namespacewigglez_adecc221b2b57fa0a89ada696e24823d9}} 
+\index{wigglez@{wigglez}!q\+\_\+sigma@{q\+\_\+sigma}}
+\index{q\+\_\+sigma@{q\+\_\+sigma}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{q\+\_\+sigma}{q\_sigma}}
+{\footnotesize\ttfamily real(mcp) wigglez\+::q\+\_\+sigma\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacewigglez_a4bf753383300f61cecdd5c8cd8fdaae3}\label{namespacewigglez_a4bf753383300f61cecdd5c8cd8fdaae3}} 
+\index{wigglez@{wigglez}!regions\+\_\+active@{regions\+\_\+active}}
+\index{regions\+\_\+active@{regions\+\_\+active}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{regions\+\_\+active}{regions\_active}}
+{\footnotesize\ttfamily logical, dimension(\+:), allocatable wigglez\+::regions\+\_\+active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a852cec3f5b6f650f8cfd9e8bdee9fc33}\label{namespacewigglez_a852cec3f5b6f650f8cfd9e8bdee9fc33}} 
+\index{wigglez@{wigglez}!use\+\_\+gigglez@{use\+\_\+gigglez}}
+\index{use\+\_\+gigglez@{use\+\_\+gigglez}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{use\+\_\+gigglez}{use\_gigglez}}
+{\footnotesize\ttfamily logical wigglez\+::use\+\_\+gigglez = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), wigglez\+\_\+lnlike(), and wigglezlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacewigglez_ae38c8e45630d25b0d97109dd26bc3cd4}\label{namespacewigglez_ae38c8e45630d25b0d97109dd26bc3cd4}} 
+\index{wigglez@{wigglez}!use\+\_\+scaling@{use\+\_\+scaling}}
+\index{use\+\_\+scaling@{use\+\_\+scaling}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{use\+\_\+scaling}{use\_scaling}}
+{\footnotesize\ttfamily logical wigglez\+::use\+\_\+scaling\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by twigglezcommon\+\_\+readini(), wigglez\+\_\+lnlike(), and wigglez\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglez_a3827c735a7a159656e581a2e19c567a2}\label{namespacewigglez_a3827c735a7a159656e581a2e19c567a2}} 
+\index{wigglez@{wigglez}!use\+\_\+wigglez\+\_\+mpk@{use\+\_\+wigglez\+\_\+mpk}}
+\index{use\+\_\+wigglez\+\_\+mpk@{use\+\_\+wigglez\+\_\+mpk}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{use\+\_\+wigglez\+\_\+mpk}{use\_wigglez\_mpk}}
+{\footnotesize\ttfamily logical wigglez\+::use\+\_\+wigglez\+\_\+mpk = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by wigglezlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacewigglez_a1a7784e6e8553a1ae1cf8a3eb8276341}\label{namespacewigglez_a1a7784e6e8553a1ae1cf8a3eb8276341}} 
+\index{wigglez@{wigglez}!wigglezcommon@{wigglezcommon}}
+\index{wigglezcommon@{wigglezcommon}!wigglez@{wigglez}}
+\subsubsection{\texorpdfstring{wigglezcommon}{wigglezcommon}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structwigglez_1_1twigglezcommon}{twigglezcommon}}), target, save wigglez\+::wigglezcommon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by wigglezlikelihood\+\_\+add().
+

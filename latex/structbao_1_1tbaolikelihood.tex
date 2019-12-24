@@ -1,0 +1,151 @@
+\hypertarget{structbao_1_1tbaolikelihood}{}\section{bao\+:\+:tbaolikelihood Type Reference}
+\label{structbao_1_1tbaolikelihood}\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+
+
+Inheritance diagram for bao\+:\+:tbaolikelihood\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{structbao_1_1tbaolikelihood__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bao\+:\+:tbaolikelihood\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{structbao_1_1tbaolikelihood__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structbao_1_1tbaolikelihood_af6f6eb8529e39d993c9dca4623ba676c}{loglike}} =$>$ B\+A\+O\+\_\+\+Ln\+Like
+\item 
+procedure \mbox{\hyperlink{structbao_1_1tbaolikelihood_af30e096816d4966f0320944f74557be3}{readini}} =$>$ B\+A\+O\+\_\+\+Read\+Ini
+\item 
+procedure \mbox{\hyperlink{structbao_1_1tbaolikelihood_a4bf32fc3a456bb7d0859cd8be52a18a6}{initprobdist}} =$>$ B\+A\+O\+\_\+\+Init\+Prob\+Dist
+\item 
+procedure, private \mbox{\hyperlink{structbao_1_1tbaolikelihood_a161999edfd8d171d71a43be82d350027}{acoustic}}
+\item 
+procedure, private \mbox{\hyperlink{structbao_1_1tbaolikelihood_a46dd77488cee6b36073be2384efb6e26}{get\+\_\+rs\+\_\+drag}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{structbao_1_1tbaolikelihood_aefb092c52aa27ae4253884094450c045}{num\+\_\+bao}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structbao_1_1tbaolikelihood_a1d5539c2f8ddeaf61d71be7ad8021ea9}{type\+\_\+bao}}
+\item 
+real(mcp) \mbox{\hyperlink{structbao_1_1tbaolikelihood_a7570ca929fa00ced700ffb4e108d41bd}{rs\+\_\+rescale}} = 1.\+\_\+mcp
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbao_1_1tbaolikelihood_a76fc7e306508cd8c5916673aeafc5858}{bao\+\_\+z}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbao_1_1tbaolikelihood_a1f1e2dfd4f5d109af3ada9d862f14f91}{bao\+\_\+obs}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbao_1_1tbaolikelihood_a935bce25427286b5efe045f41d4384a9}{bao\+\_\+err}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structbao_1_1tbaolikelihood_acdc096e03d6ebe2c9c0f01c744a01594}{bao\+\_\+invcov}}
+\item 
+real(mcp) \mbox{\hyperlink{structbao_1_1tbaolikelihood_a84f1a1b4ea6cddcd6cd69c9eba1e53c8}{hrd\+\_\+fid}}
+\item 
+real(mcp) \mbox{\hyperlink{structbao_1_1tbaolikelihood_ac1af5d9f8bf442c2de67bf477ff5931b}{da\+\_\+rd\+\_\+fid}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a161999edfd8d171d71a43be82d350027}\label{structbao_1_1tbaolikelihood_a161999edfd8d171d71a43be82d350027}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!acoustic@{acoustic}}
+\index{acoustic@{acoustic}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{acoustic()}{acoustic()}}
+{\footnotesize\ttfamily procedure, private bao\+::tbaolikelihood\+::acoustic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a46dd77488cee6b36073be2384efb6e26}\label{structbao_1_1tbaolikelihood_a46dd77488cee6b36073be2384efb6e26}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!get\+\_\+rs\+\_\+drag@{get\+\_\+rs\+\_\+drag}}
+\index{get\+\_\+rs\+\_\+drag@{get\+\_\+rs\+\_\+drag}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{get\+\_\+rs\+\_\+drag()}{get\_rs\_drag()}}
+{\footnotesize\ttfamily procedure, private bao\+::tbaolikelihood\+::get\+\_\+rs\+\_\+drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a4bf32fc3a456bb7d0859cd8be52a18a6}\label{structbao_1_1tbaolikelihood_a4bf32fc3a456bb7d0859cd8be52a18a6}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!initprobdist@{initprobdist}}
+\index{initprobdist@{initprobdist}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{initprobdist()}{initprobdist()}}
+{\footnotesize\ttfamily procedure bao\+::tbaolikelihood\+::initprobdist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_af6f6eb8529e39d993c9dca4623ba676c}\label{structbao_1_1tbaolikelihood_af6f6eb8529e39d993c9dca4623ba676c}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!loglike@{loglike}}
+\index{loglike@{loglike}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{loglike()}{loglike()}}
+{\footnotesize\ttfamily procedure bao\+::tbaolikelihood\+::loglike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_af30e096816d4966f0320944f74557be3}\label{structbao_1_1tbaolikelihood_af30e096816d4966f0320944f74557be3}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!readini@{readini}}
+\index{readini@{readini}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{readini()}{readini()}}
+{\footnotesize\ttfamily procedure bao\+::tbaolikelihood\+::readini (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a935bce25427286b5efe045f41d4384a9}\label{structbao_1_1tbaolikelihood_a935bce25427286b5efe045f41d4384a9}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!bao\+\_\+err@{bao\+\_\+err}}
+\index{bao\+\_\+err@{bao\+\_\+err}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{bao\+\_\+err}{bao\_err}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable bao\+::tbaolikelihood\+::bao\+\_\+err\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_acdc096e03d6ebe2c9c0f01c744a01594}\label{structbao_1_1tbaolikelihood_acdc096e03d6ebe2c9c0f01c744a01594}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!bao\+\_\+invcov@{bao\+\_\+invcov}}
+\index{bao\+\_\+invcov@{bao\+\_\+invcov}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{bao\+\_\+invcov}{bao\_invcov}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable bao\+::tbaolikelihood\+::bao\+\_\+invcov\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a1f1e2dfd4f5d109af3ada9d862f14f91}\label{structbao_1_1tbaolikelihood_a1f1e2dfd4f5d109af3ada9d862f14f91}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!bao\+\_\+obs@{bao\+\_\+obs}}
+\index{bao\+\_\+obs@{bao\+\_\+obs}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{bao\+\_\+obs}{bao\_obs}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable bao\+::tbaolikelihood\+::bao\+\_\+obs\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a76fc7e306508cd8c5916673aeafc5858}\label{structbao_1_1tbaolikelihood_a76fc7e306508cd8c5916673aeafc5858}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!bao\+\_\+z@{bao\+\_\+z}}
+\index{bao\+\_\+z@{bao\+\_\+z}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{bao\+\_\+z}{bao\_z}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable bao\+::tbaolikelihood\+::bao\+\_\+z\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_ac1af5d9f8bf442c2de67bf477ff5931b}\label{structbao_1_1tbaolikelihood_ac1af5d9f8bf442c2de67bf477ff5931b}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!da\+\_\+rd\+\_\+fid@{da\+\_\+rd\+\_\+fid}}
+\index{da\+\_\+rd\+\_\+fid@{da\+\_\+rd\+\_\+fid}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{da\+\_\+rd\+\_\+fid}{da\_rd\_fid}}
+{\footnotesize\ttfamily real(mcp) bao\+::tbaolikelihood\+::da\+\_\+rd\+\_\+fid\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a84f1a1b4ea6cddcd6cd69c9eba1e53c8}\label{structbao_1_1tbaolikelihood_a84f1a1b4ea6cddcd6cd69c9eba1e53c8}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!hrd\+\_\+fid@{hrd\+\_\+fid}}
+\index{hrd\+\_\+fid@{hrd\+\_\+fid}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{hrd\+\_\+fid}{hrd\_fid}}
+{\footnotesize\ttfamily real(mcp) bao\+::tbaolikelihood\+::hrd\+\_\+fid\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_aefb092c52aa27ae4253884094450c045}\label{structbao_1_1tbaolikelihood_aefb092c52aa27ae4253884094450c045}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!num\+\_\+bao@{num\+\_\+bao}}
+\index{num\+\_\+bao@{num\+\_\+bao}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{num\+\_\+bao}{num\_bao}}
+{\footnotesize\ttfamily integer bao\+::tbaolikelihood\+::num\+\_\+bao\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a7570ca929fa00ced700ffb4e108d41bd}\label{structbao_1_1tbaolikelihood_a7570ca929fa00ced700ffb4e108d41bd}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!rs\+\_\+rescale@{rs\+\_\+rescale}}
+\index{rs\+\_\+rescale@{rs\+\_\+rescale}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{rs\+\_\+rescale}{rs\_rescale}}
+{\footnotesize\ttfamily real(mcp) bao\+::tbaolikelihood\+::rs\+\_\+rescale = 1.\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbao_1_1tbaolikelihood_a1d5539c2f8ddeaf61d71be7ad8021ea9}\label{structbao_1_1tbaolikelihood_a1d5539c2f8ddeaf61d71be7ad8021ea9}} 
+\index{bao\+::tbaolikelihood@{bao\+::tbaolikelihood}!type\+\_\+bao@{type\+\_\+bao}}
+\index{type\+\_\+bao@{type\+\_\+bao}!bao\+::tbaolikelihood@{bao\+::tbaolikelihood}}
+\subsubsection{\texorpdfstring{type\+\_\+bao}{type\_bao}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable bao\+::tbaolikelihood\+::type\+\_\+bao\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{bao_8f90}{bao.\+f90}}\end{DoxyCompactItemize}

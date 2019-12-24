@@ -1,0 +1,201 @@
+CAMB called 100 times; 0 errors
+CAMB called 200 times; 0 errors
+CAMB called 300 times; 0 errors
+CAMB called 400 times; 0 errors
+CAMB called 500 times; 0 errors
+CAMB called 600 times; 0 errors
+CAMB called 700 times; 0 errors
+CAMB called 800 times; 0 errors
+CAMB called 900 times; 0 errors
+ Current convergence R-1 =    4.185414      chain steps =        1441
+ slow changes         910  power changes         413
+CAMB called 1000 times; 0 errors
+CAMB called 1100 times; 0 errors
+CAMB called 1200 times; 0 errors
+CAMB called 1300 times; 0 errors
+CAMB called 1400 times; 0 errors
+CAMB called 1500 times; 0 errors
+ Current convergence R-1 =   0.1567327      chain steps =        2411
+ slow changes        1505  power changes         709
+CAMB called 1600 times; 0 errors
+CAMB called 1700 times; 0 errors
+CAMB called 1800 times; 0 errors
+CAMB called 1900 times; 0 errors
+ Current convergence R-1 =   5.1034108E-02  chain steps =        3140
+ slow changes        1958  power changes         909
+CAMB called 2000 times; 0 errors
+CAMB called 2100 times; 0 errors
+CAMB called 2200 times; 0 errors
+CAMB called 2300 times; 0 errors
+CAMB called 2400 times; 0 errors
+CAMB called 2500 times; 0 errors
+CAMB called 2600 times; 0 errors
+ Current convergence R-1 =   5.9339415E-02  chain steps =        4193
+ slow changes        2615  power changes        1213
+CAMB called 2700 times; 0 errors
+CAMB called 2800 times; 0 errors
+CAMB called 2900 times; 0 errors
+CAMB called 3000 times; 0 errors
+CAMB called 3100 times; 0 errors
+CAMB called 3200 times; 0 errors
+ Current convergence R-1 =   4.0315699E-02  chain steps =        5265
+ slow changes        3268  power changes        1510
+CAMB called 3300 times; 0 errors
+CAMB called 3400 times; 0 errors
+CAMB called 3500 times; 0 errors
+CAMB called 3600 times; 0 errors
+CAMB called 3700 times; 0 errors
+ Current convergence R-1 =   2.6775617E-02  chain steps =        6020
+ slow changes        3739  power changes        1731
+CAMB called 3800 times; 0 errors
+CAMB called 3900 times; 0 errors
+CAMB called 4000 times; 0 errors
+CAMB called 4100 times; 0 errors
+ Current convergence R-1 =   2.3050549E-02  chain steps =        6741
+ slow changes        4195  power changes        1948
+CAMB called 4200 times; 0 errors
+CAMB called 4300 times; 0 errors
+CAMB called 4400 times; 0 errors
+Re-starting from checkpoint
+Re-starting from checkpoint
+CAMB called 100 times; 0 errors
+CAMB called 200 times; 0 errors
+CAMB called 300 times; 0 errors
+CAMB called 400 times; 0 errors
+ Current convergence R-1 =   2.3356693E-02  chain steps =         668
+ slow changes         424  power changes         202
+CAMB called 500 times; 0 errors
+CAMB called 600 times; 0 errors
+CAMB called 700 times; 0 errors
+Re-starting from checkpoint
+Re-starting from checkpoint
+CAMB called 100 times; 0 errors
+CAMB called 200 times; 0 errors
+ Current convergence R-1 =   1.6292566E-02  chain steps =         405
+ slow changes         259  power changes         118
+CAMB called 300 times; 0 errors
+CAMB called 400 times; 0 errors
+CAMB called 500 times; 0 errors
+CAMB called 600 times; 0 errors
+CAMB called 700 times; 0 errors
+ Current convergence R-1 =   1.9453319E-02  chain steps =        1197
+ slow changes         736  power changes         352
+Re-starting from checkpoint
+Re-starting from checkpoint
+Re-starting from checkpoint
+CAMB called 100 times; 0 errors
+CAMB called 200 times; 0 errors
+CAMB called 300 times; 0 errors
+CAMB called 400 times; 0 errors
+CAMB called 500 times; 0 errors
+ Current convergence R-1 =   1.7065240E-02  chain steps =         860
+ slow changes         538  power changes         258
+CAMB called 600 times; 0 errors
+CAMB called 700 times; 0 errors
+CAMB called 800 times; 0 errors
+CAMB called 900 times; 0 errors
+ Current convergence R-1 =   1.8134411E-02  chain steps =        1541
+ slow changes         967  power changes         465
+CAMB called 1000 times; 0 errors
+CAMB called 1100 times; 0 errors
+CAMB called 1200 times; 0 errors
+CAMB called 1300 times; 0 errors
+CAMB called 1400 times; 0 errors
+CAMB called 1500 times; 0 errors
+CAMB called 1600 times; 0 errors
+ Current convergence R-1 =   2.1641050E-02  chain steps =        2605
+ slow changes        1614  power changes         775
+CAMB called 1700 times; 0 errors
+CAMB called 1800 times; 0 errors
+CAMB called 1900 times; 0 errors
+CAMB called 2000 times; 0 errors
+CAMB called 2100 times; 0 errors
+ Current convergence R-1 =   2.2254579E-02  chain steps =        3418
+ slow changes        2106  power changes        1006
+CAMB called 2200 times; 0 errors
+CAMB called 2300 times; 0 errors
+CAMB called 2400 times; 0 errors
+CAMB called 2500 times; 0 errors
+CAMB called 2600 times; 0 errors
+ Current convergence R-1 =   2.0266183E-02  chain steps =        4234
+ slow changes        2609  power changes        1253
+CAMB called 2700 times; 0 errors
+CAMB called 2800 times; 0 errors
+CAMB called 2900 times; 0 errors
+CAMB called 3000 times; 0 errors
+CAMB called 3100 times; 0 errors
+ Current convergence R-1 =   2.0957461E-02  chain steps =        5096
+ slow changes        3139  power changes        1497
+CAMB called 3200 times; 0 errors
+CAMB called 3300 times; 0 errors
+CAMB called 3400 times; 0 errors
+CAMB called 3500 times; 0 errors
+CAMB called 3600 times; 0 errors
+CAMB called 3700 times; 0 errors
+ Current convergence R-1 =   2.1114521E-02  chain steps =        6144
+ slow changes        3790  power changes        1791
+CAMB called 3800 times; 0 errors
+CAMB called 3900 times; 0 errors
+CAMB called 4000 times; 0 errors
+CAMB called 4100 times; 0 errors
+CAMB called 4200 times; 0 errors
+CAMB called 4300 times; 0 errors
+CAMB called 4400 times; 0 errors
+ Current convergence R-1 =   1.7876036E-02  chain steps =        7163
+ slow changes        4414  power changes        2091
+CAMB called 4500 times; 0 errors
+CAMB called 4600 times; 0 errors
+CAMB called 4700 times; 0 errors
+CAMB called 4800 times; 0 errors
+CAMB called 4900 times; 0 errors
+ Current convergence R-1 =   1.4916323E-02  chain steps =        8069
+ slow changes        4969  power changes        2355
+CAMB called 5000 times; 0 errors
+CAMB called 5100 times; 0 errors
+CAMB called 5200 times; 0 errors
+CAMB called 5300 times; 0 errors
+CAMB called 5400 times; 0 errors
+CAMB called 5500 times; 0 errors
+ Current convergence R-1 =   1.3618652E-02  chain steps =        9046
+ slow changes        5568  power changes        2640
+CAMB called 5600 times; 0 errors
+CAMB called 5700 times; 0 errors
+CAMB called 5800 times; 0 errors
+CAMB called 5900 times; 0 errors
+CAMB called 6000 times; 0 errors
+CAMB called 6100 times; 0 errors
+ Current convergence R-1 =   1.5400284E-02  chain steps =       10011
+ slow changes        6148  power changes        2904
+CAMB called 6200 times; 0 errors
+CAMB called 6300 times; 0 errors
+CAMB called 6400 times; 0 errors
+CAMB called 6500 times; 0 errors
+CAMB called 6600 times; 0 errors
+CAMB called 6700 times; 0 errors
+CAMB called 6800 times; 0 errors
+ Current convergence R-1 =   1.4438435E-02  chain steps =       11136
+ slow changes        6818  power changes        3223
+CAMB called 6900 times; 0 errors
+CAMB called 7000 times; 0 errors
+CAMB called 7100 times; 0 errors
+CAMB called 7200 times; 0 errors
+CAMB called 7300 times; 0 errors
+CAMB called 7400 times; 0 errors
+ Current convergence R-1 =   1.0123885E-02  chain steps =       12197
+ slow changes        7476  power changes        3537
+CAMB called 7500 times; 0 errors
+CAMB called 7600 times; 0 errors
+CAMB called 7700 times; 0 errors
+CAMB called 7800 times; 0 errors
+CAMB called 7900 times; 0 errors
+ Current convergence R-1 =   8.1190849E-03  chain steps =       13018
+ slow changes        7988  power changes        3786
+CAMB called 8000 times; 0 errors
+CAMB called 8100 times; 0 errors
+CAMB called 8200 times; 0 errors
+CAMB called 8300 times; 0 errors
+CAMB called 8400 times; 0 errors
+CAMB called 8500 times; 0 errors
+ Current convergence R-1 =   6.4971396E-03  chain steps =       13943
+ slow changes        8537  power changes        4041
+Current limit err = 0.1248 for ns; samps = 22892                                                                                

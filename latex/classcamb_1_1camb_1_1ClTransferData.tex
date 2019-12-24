@@ -1,0 +1,38 @@
+\hypertarget{classcamb_1_1camb_1_1ClTransferData}{}\section{camb.\+camb.\+Cl\+Transfer\+Data Class Reference}
+\label{classcamb_1_1camb_1_1ClTransferData}\index{camb.\+camb.\+Cl\+Transfer\+Data@{camb.\+camb.\+Cl\+Transfer\+Data}}
+
+
+Inheritance diagram for camb.\+camb.\+Cl\+Transfer\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcamb_1_1camb_1_1ClTransferData__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camb.\+camb.\+Cl\+Transfer\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classcamb_1_1camb_1_1ClTransferData__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}ClTransferData is the base class for storing CMB power transfer functions, as a function of q and l.
+To get an instance of this data, call :meth:`camb.CAMBdata.get_cmb_transfer_data`
+
+:ivar NumSources:  number of sources calculated (size of p index)
+:ivar q: array of q values calculated (=k in flat universe)
+:ivar l: int array of l values calculated
+:ivar delta_p_l_k: transfer functions, indexed by source, l, k
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/pycamb/camb/\mbox{\hyperlink{camb_8py}{camb.\+py}}\end{DoxyCompactItemize}

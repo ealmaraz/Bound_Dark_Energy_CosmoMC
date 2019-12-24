@@ -1,0 +1,445 @@
+\hypertarget{namespacereionization}{}\section{reionization Module Reference}
+\label{namespacereionization}\index{reionization@{reionization}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}}
+\item 
+type \mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) function \mbox{\hyperlink{namespacereionization_a2ed4204b4a8a9400f3e0b3a8f628b584}{reionization\+\_\+xe}} (a, tau, xe\+\_\+recomb)
+\item 
+integer function \mbox{\hyperlink{namespacereionization_adedd398d9dbfdc65012047bdfe5b9043}{reionization\+\_\+timesteps}} (Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a8d8a4a4fcaa0e1adc50de9a45143d2f8}{reionization\+\_\+readparams}} (Reion, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_aee52456a0e9c89ddc33d45ae3d14a484}{reionization\+\_\+setparamsforzre}} (Reion, Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a59dc84ce6904020903bfc0ae6f864a27}{reionization\+\_\+init}} (Reion, Reion\+Hist, Yhe, akthom, tau0, Feedback\+Level)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_acd4c0417f4ec9bc6d5c9b6bea2b7b035}{reionization\+\_\+setdefparams}} (Reion)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a3b0809c8b733201a4293d2bd47d81398}{reionization\+\_\+validate}} (Reion, OK)
+\item 
+real(dl) function \mbox{\hyperlink{namespacereionization_a9b89486311458d0dbd526fc233ca5ba5}{reionization\+\_\+doptdepth\+\_\+dz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacereionization_a8a3b0a917762ce13033f59ef52fad521}{reionization\+\_\+getoptdepth}} (Reion, Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a00f14156cc08a86c4b28e0d21bc7cd2e}{reionization\+\_\+zrefromoptdepth}} (Reion, Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a13fb01c3cb03034262b0447b7527aae9}{reionization\+\_\+setfromoptdepth}} (Reion, Reion\+Hist)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacereionization_a0f6786ae38db76cf41888ab5184a33e3}{reionization\+\_\+name}} = \textquotesingle{}C\+A\+M\+B\+\_\+reionization\textquotesingle{}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacereionization_a524cb51bf4f9b20d0d3e3be38d351411}{reionization\+\_\+deffraction}} = -\/1.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacereionization_a277cddc498b57445702ef3b7301c1a0d}{reionization\+\_\+accuracyboost}} = 1.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacereionization_a55530d3d422131a11f47a02e17e4aba3}{rionization\+\_\+zexp}} = 1.\+5\+\_\+dl
+\item 
+logical \mbox{\hyperlink{namespacereionization_abef718177b8ea5ca6c7ee8d1c78e60c6}{include\+\_\+helium\+\_\+fullreion}} = .true.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacereionization_a5631e22e02e0694f1813b80cdd6004c1}{reionization\+\_\+maxz}} = 50.\+\_\+dl
+\item 
+real(dl), parameter, private \mbox{\hyperlink{namespacereionization_a4d46e2413c850ed23c74c3808d8ac06b}{reionization\+\_\+tol}} = 1d-\/5
+\item 
+real(dl), external, private \mbox{\hyperlink{namespacereionization_a51d090041c100fe2820d487b4f95146d}{dtauda}}
+\item 
+real(dl), external, private \mbox{\hyperlink{namespacereionization_adb3b9c977f29d4636fa9cf724efd5979}{rombint}}
+\item 
+real(dl), external, private \mbox{\hyperlink{namespacereionization_a415cf31bf0d6b1564808bbf7ee0b2c85}{rombint2}}
+\item 
+type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}}), pointer, private \mbox{\hyperlink{namespacereionization_a3cd065cf1b3c5c33363c2d7e5d2443ba}{thisreion}}
+\item 
+type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}}), pointer, private \mbox{\hyperlink{namespacereionization_afc2b645c62db796865419a767ad68a98}{thisreionhist}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacereionization_a9b89486311458d0dbd526fc233ca5ba5}\label{namespacereionization_a9b89486311458d0dbd526fc233ca5ba5}} 
+\index{reionization@{reionization}!reionization\+\_\+doptdepth\+\_\+dz@{reionization\+\_\+doptdepth\+\_\+dz}}
+\index{reionization\+\_\+doptdepth\+\_\+dz@{reionization\+\_\+doptdepth\+\_\+dz}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+doptdepth\+\_\+dz()}{reionization\_doptdepth\_dz()}}
+{\footnotesize\ttfamily real(dl) function reionization\+::reionization\+\_\+doptdepth\+\_\+dz (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References dtauda, reionization\+\_\+xe(), and thisreionhist.
+
+
+
+Referenced by reionization\+\_\+getoptdepth().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a9b89486311458d0dbd526fc233ca5ba5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a9b89486311458d0dbd526fc233ca5ba5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_a8a3b0a917762ce13033f59ef52fad521}\label{namespacereionization_a8a3b0a917762ce13033f59ef52fad521}} 
+\index{reionization@{reionization}!reionization\+\_\+getoptdepth@{reionization\+\_\+getoptdepth}}
+\index{reionization\+\_\+getoptdepth@{reionization\+\_\+getoptdepth}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+getoptdepth()}{reionization\_getoptdepth()}}
+{\footnotesize\ttfamily real(dl) function reionization\+::reionization\+\_\+getoptdepth (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}}), target}]{Reion,  }\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}}), target}]{Reion\+Hist }\end{DoxyParamCaption})}
+
+
+
+References reionization\+\_\+doptdepth\+\_\+dz(), reionization\+\_\+maxz, reionization\+\_\+tol, rombint2, thisreion, and thisreionhist.
+
+
+
+Referenced by reionization\+\_\+init(), and reionization\+\_\+zrefromoptdepth().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a8a3b0a917762ce13033f59ef52fad521_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a8a3b0a917762ce13033f59ef52fad521_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_a59dc84ce6904020903bfc0ae6f864a27}\label{namespacereionization_a59dc84ce6904020903bfc0ae6f864a27}} 
+\index{reionization@{reionization}!reionization\+\_\+init@{reionization\+\_\+init}}
+\index{reionization\+\_\+init@{reionization\+\_\+init}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+init()}{reionization\_init()}}
+{\footnotesize\ttfamily subroutine reionization\+::reionization\+\_\+init (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}}), target}]{Reion,  }\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}}), target}]{Reion\+Hist,  }\item[{real(dl), intent(in)}]{Yhe,  }\item[{real(dl), intent(in)}]{akthom,  }\item[{real(dl), intent(in)}]{tau0,  }\item[{integer, intent(in)}]{Feedback\+Level }\end{DoxyParamCaption})}
+
+
+
+References dtauda, constants\+::mass\+\_\+ratio\+\_\+he\+\_\+h, reionization\+\_\+deffraction, reionization\+\_\+getoptdepth(), reionization\+\_\+setfromoptdepth(), reionization\+\_\+setparamsforzre(), rombint, thisreion, and thisreionhist.
+
+
+
+Referenced by modelparams\+::cambparams\+\_\+set().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a59dc84ce6904020903bfc0ae6f864a27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a59dc84ce6904020903bfc0ae6f864a27_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_a8d8a4a4fcaa0e1adc50de9a45143d2f8}\label{namespacereionization_a8d8a4a4fcaa0e1adc50de9a45143d2f8}} 
+\index{reionization@{reionization}!reionization\+\_\+readparams@{reionization\+\_\+readparams}}
+\index{reionization\+\_\+readparams@{reionization\+\_\+readparams}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+readparams()}{reionization\_readparams()}}
+{\footnotesize\ttfamily subroutine reionization\+::reionization\+\_\+readparams (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}})}]{Reion,  }\item[{type(tinifile)}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References inifile\+::ini\+\_\+read\+\_\+double\+\_\+file(), inifile\+::ini\+\_\+read\+\_\+logical\+\_\+file(), and reionization\+\_\+deffraction.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a8d8a4a4fcaa0e1adc50de9a45143d2f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_acd4c0417f4ec9bc6d5c9b6bea2b7b035}\label{namespacereionization_acd4c0417f4ec9bc6d5c9b6bea2b7b035}} 
+\index{reionization@{reionization}!reionization\+\_\+setdefparams@{reionization\+\_\+setdefparams}}
+\index{reionization\+\_\+setdefparams@{reionization\+\_\+setdefparams}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+setdefparams()}{reionization\_setdefparams()}}
+{\footnotesize\ttfamily subroutine reionization\+::reionization\+\_\+setdefparams (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}})}]{Reion }\end{DoxyParamCaption})}
+
+
+
+References reionization\+\_\+deffraction.
+
+
+
+Referenced by camb\+::camb\+\_\+setdefparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_acd4c0417f4ec9bc6d5c9b6bea2b7b035_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_a13fb01c3cb03034262b0447b7527aae9}\label{namespacereionization_a13fb01c3cb03034262b0447b7527aae9}} 
+\index{reionization@{reionization}!reionization\+\_\+setfromoptdepth@{reionization\+\_\+setfromoptdepth}}
+\index{reionization\+\_\+setfromoptdepth@{reionization\+\_\+setfromoptdepth}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+setfromoptdepth()}{reionization\_setfromoptdepth()}}
+{\footnotesize\ttfamily subroutine reionization\+::reionization\+\_\+setfromoptdepth (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}})}]{Reion,  }\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}})}]{Reion\+Hist }\end{DoxyParamCaption})}
+
+
+
+References dtauda, include\+\_\+helium\+\_\+fullreion, reionization\+\_\+accuracyboost, reionization\+\_\+zrefromoptdepth(), and thisreionhist.
+
+
+
+Referenced by reionization\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a13fb01c3cb03034262b0447b7527aae9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a13fb01c3cb03034262b0447b7527aae9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_aee52456a0e9c89ddc33d45ae3d14a484}\label{namespacereionization_aee52456a0e9c89ddc33d45ae3d14a484}} 
+\index{reionization@{reionization}!reionization\+\_\+setparamsforzre@{reionization\+\_\+setparamsforzre}}
+\index{reionization\+\_\+setparamsforzre@{reionization\+\_\+setparamsforzre}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+setparamsforzre()}{reionization\_setparamsforzre()}}
+{\footnotesize\ttfamily subroutine reionization\+::reionization\+\_\+setparamsforzre (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}}), target}]{Reion,  }\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}}), target}]{Reion\+Hist }\end{DoxyParamCaption})}
+
+
+
+References rionization\+\_\+zexp.
+
+
+
+Referenced by reionization\+\_\+init(), and reionization\+\_\+zrefromoptdepth().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_aee52456a0e9c89ddc33d45ae3d14a484_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_adedd398d9dbfdc65012047bdfe5b9043}\label{namespacereionization_adedd398d9dbfdc65012047bdfe5b9043}} 
+\index{reionization@{reionization}!reionization\+\_\+timesteps@{reionization\+\_\+timesteps}}
+\index{reionization\+\_\+timesteps@{reionization\+\_\+timesteps}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+timesteps()}{reionization\_timesteps()}}
+{\footnotesize\ttfamily integer function reionization\+::reionization\+\_\+timesteps (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}})}]{Reion\+Hist }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacereionization_a3b0809c8b733201a4293d2bd47d81398}\label{namespacereionization_a3b0809c8b733201a4293d2bd47d81398}} 
+\index{reionization@{reionization}!reionization\+\_\+validate@{reionization\+\_\+validate}}
+\index{reionization\+\_\+validate@{reionization\+\_\+validate}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+validate()}{reionization\_validate()}}
+{\footnotesize\ttfamily subroutine reionization\+::reionization\+\_\+validate (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}}), intent(in)}]{Reion,  }\item[{logical, intent(inout)}]{OK }\end{DoxyParamCaption})}
+
+
+
+References include\+\_\+helium\+\_\+fullreion, reionization\+\_\+deffraction, and reionization\+\_\+maxz.
+
+
+
+Referenced by camb\+::camb\+\_\+validateparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a3b0809c8b733201a4293d2bd47d81398_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_a2ed4204b4a8a9400f3e0b3a8f628b584}\label{namespacereionization_a2ed4204b4a8a9400f3e0b3a8f628b584}} 
+\index{reionization@{reionization}!reionization\+\_\+xe@{reionization\+\_\+xe}}
+\index{reionization\+\_\+xe@{reionization\+\_\+xe}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+xe()}{reionization\_xe()}}
+{\footnotesize\ttfamily real(dl) function reionization\+::reionization\+\_\+xe (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a,  }\item[{real(dl), intent(in), optional}]{tau,  }\item[{real(dl), intent(in), optional}]{xe\+\_\+recomb }\end{DoxyParamCaption})}
+
+
+
+References include\+\_\+helium\+\_\+fullreion, rionization\+\_\+zexp, thisreion, and thisreionhist.
+
+
+
+Referenced by reionization\+\_\+doptdepth\+\_\+dz().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a2ed4204b4a8a9400f3e0b3a8f628b584_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacereionization_a00f14156cc08a86c4b28e0d21bc7cd2e}\label{namespacereionization_a00f14156cc08a86c4b28e0d21bc7cd2e}} 
+\index{reionization@{reionization}!reionization\+\_\+zrefromoptdepth@{reionization\+\_\+zrefromoptdepth}}
+\index{reionization\+\_\+zrefromoptdepth@{reionization\+\_\+zrefromoptdepth}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+zrefromoptdepth()}{reionization\_zrefromoptdepth()}}
+{\footnotesize\ttfamily subroutine reionization\+::reionization\+\_\+zrefromoptdepth (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}})}]{Reion,  }\item[{type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}})}]{Reion\+Hist }\end{DoxyParamCaption})}
+
+
+
+References reionization\+\_\+accuracyboost, reionization\+\_\+getoptdepth(), reionization\+\_\+maxz, and reionization\+\_\+setparamsforzre().
+
+
+
+Referenced by reionization\+\_\+setfromoptdepth().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a00f14156cc08a86c4b28e0d21bc7cd2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacereionization_a00f14156cc08a86c4b28e0d21bc7cd2e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacereionization_a51d090041c100fe2820d487b4f95146d}\label{namespacereionization_a51d090041c100fe2820d487b4f95146d}} 
+\index{reionization@{reionization}!dtauda@{dtauda}}
+\index{dtauda@{dtauda}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{dtauda}{dtauda}}
+{\footnotesize\ttfamily real(dl), external, private reionization\+::dtauda\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by modelparams\+::deltatime(), modelparams\+::dsound\+\_\+da(), modelparams\+::dsound\+\_\+da\+\_\+exact(), modelparams\+::dtda(), modelparams\+::hofz(), reionization\+\_\+doptdepth\+\_\+dz(), reionization\+\_\+init(), and reionization\+\_\+setfromoptdepth().
+
+\mbox{\Hypertarget{namespacereionization_abef718177b8ea5ca6c7ee8d1c78e60c6}\label{namespacereionization_abef718177b8ea5ca6c7ee8d1c78e60c6}} 
+\index{reionization@{reionization}!include\+\_\+helium\+\_\+fullreion@{include\+\_\+helium\+\_\+fullreion}}
+\index{include\+\_\+helium\+\_\+fullreion@{include\+\_\+helium\+\_\+fullreion}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{include\+\_\+helium\+\_\+fullreion}{include\_helium\_fullreion}}
+{\footnotesize\ttfamily logical reionization\+::include\+\_\+helium\+\_\+fullreion = .true.}
+
+
+
+Referenced by reionization\+\_\+setfromoptdepth(), reionization\+\_\+validate(), and reionization\+\_\+xe().
+
+\mbox{\Hypertarget{namespacereionization_a277cddc498b57445702ef3b7301c1a0d}\label{namespacereionization_a277cddc498b57445702ef3b7301c1a0d}} 
+\index{reionization@{reionization}!reionization\+\_\+accuracyboost@{reionization\+\_\+accuracyboost}}
+\index{reionization\+\_\+accuracyboost@{reionization\+\_\+accuracyboost}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+accuracyboost}{reionization\_accuracyboost}}
+{\footnotesize\ttfamily real(dl) reionization\+::reionization\+\_\+accuracyboost = 1.\+\_\+dl}
+
+
+
+Referenced by reionization\+\_\+setfromoptdepth(), and reionization\+\_\+zrefromoptdepth().
+
+\mbox{\Hypertarget{namespacereionization_a524cb51bf4f9b20d0d3e3be38d351411}\label{namespacereionization_a524cb51bf4f9b20d0d3e3be38d351411}} 
+\index{reionization@{reionization}!reionization\+\_\+deffraction@{reionization\+\_\+deffraction}}
+\index{reionization\+\_\+deffraction@{reionization\+\_\+deffraction}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+deffraction}{reionization\_deffraction}}
+{\footnotesize\ttfamily real(dl), parameter reionization\+::reionization\+\_\+deffraction = -\/1.\+\_\+dl}
+
+
+
+Referenced by reionization\+\_\+init(), reionization\+\_\+readparams(), reionization\+\_\+setdefparams(), and reionization\+\_\+validate().
+
+\mbox{\Hypertarget{namespacereionization_a5631e22e02e0694f1813b80cdd6004c1}\label{namespacereionization_a5631e22e02e0694f1813b80cdd6004c1}} 
+\index{reionization@{reionization}!reionization\+\_\+maxz@{reionization\+\_\+maxz}}
+\index{reionization\+\_\+maxz@{reionization\+\_\+maxz}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+maxz}{reionization\_maxz}}
+{\footnotesize\ttfamily real(dl), parameter reionization\+::reionization\+\_\+maxz = 50.\+\_\+dl}
+
+
+
+Referenced by reionization\+\_\+getoptdepth(), reionization\+\_\+validate(), and reionization\+\_\+zrefromoptdepth().
+
+\mbox{\Hypertarget{namespacereionization_a0f6786ae38db76cf41888ab5184a33e3}\label{namespacereionization_a0f6786ae38db76cf41888ab5184a33e3}} 
+\index{reionization@{reionization}!reionization\+\_\+name@{reionization\+\_\+name}}
+\index{reionization\+\_\+name@{reionization\+\_\+name}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+name}{reionization\_name}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter reionization\+::reionization\+\_\+name = \textquotesingle{}C\+A\+M\+B\+\_\+reionization\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacereionization_a4d46e2413c850ed23c74c3808d8ac06b}\label{namespacereionization_a4d46e2413c850ed23c74c3808d8ac06b}} 
+\index{reionization@{reionization}!reionization\+\_\+tol@{reionization\+\_\+tol}}
+\index{reionization\+\_\+tol@{reionization\+\_\+tol}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{reionization\+\_\+tol}{reionization\_tol}}
+{\footnotesize\ttfamily real(dl), parameter, private reionization\+::reionization\+\_\+tol = 1d-\/5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by reionization\+\_\+getoptdepth().
+
+\mbox{\Hypertarget{namespacereionization_a55530d3d422131a11f47a02e17e4aba3}\label{namespacereionization_a55530d3d422131a11f47a02e17e4aba3}} 
+\index{reionization@{reionization}!rionization\+\_\+zexp@{rionization\+\_\+zexp}}
+\index{rionization\+\_\+zexp@{rionization\+\_\+zexp}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{rionization\+\_\+zexp}{rionization\_zexp}}
+{\footnotesize\ttfamily real(dl) reionization\+::rionization\+\_\+zexp = 1.\+5\+\_\+dl}
+
+
+
+Referenced by reionization\+\_\+setparamsforzre(), and reionization\+\_\+xe().
+
+\mbox{\Hypertarget{namespacereionization_adb3b9c977f29d4636fa9cf724efd5979}\label{namespacereionization_adb3b9c977f29d4636fa9cf724efd5979}} 
+\index{reionization@{reionization}!rombint@{rombint}}
+\index{rombint@{rombint}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{rombint}{rombint}}
+{\footnotesize\ttfamily real(dl), external, private reionization\+::rombint\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by modelparams\+::cosmomctheta(), modelparams\+::deltaphysicaltimegyr(), modelparams\+::deltatime(), and reionization\+\_\+init().
+
+\mbox{\Hypertarget{namespacereionization_a415cf31bf0d6b1564808bbf7ee0b2c85}\label{namespacereionization_a415cf31bf0d6b1564808bbf7ee0b2c85}} 
+\index{reionization@{reionization}!rombint2@{rombint2}}
+\index{rombint2@{rombint2}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{rombint2}{rombint2}}
+{\footnotesize\ttfamily real(dl), external, private reionization\+::rombint2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by reionization\+\_\+getoptdepth().
+
+\mbox{\Hypertarget{namespacereionization_a3cd065cf1b3c5c33363c2d7e5d2443ba}\label{namespacereionization_a3cd065cf1b3c5c33363c2d7e5d2443ba}} 
+\index{reionization@{reionization}!thisreion@{thisreion}}
+\index{thisreion@{thisreion}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{thisreion}{thisreion}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structreionization_1_1reionizationparams}{reionizationparams}}), pointer, private reionization\+::thisreion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by reionization\+\_\+getoptdepth(), reionization\+\_\+init(), and reionization\+\_\+xe().
+
+\mbox{\Hypertarget{namespacereionization_afc2b645c62db796865419a767ad68a98}\label{namespacereionization_afc2b645c62db796865419a767ad68a98}} 
+\index{reionization@{reionization}!thisreionhist@{thisreionhist}}
+\index{thisreionhist@{thisreionhist}!reionization@{reionization}}
+\subsubsection{\texorpdfstring{thisreionhist}{thisreionhist}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionizationhistory}}), pointer, private reionization\+::thisreionhist\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by reionization\+\_\+doptdepth\+\_\+dz(), reionization\+\_\+getoptdepth(), reionization\+\_\+init(), reionization\+\_\+setfromoptdepth(), and reionization\+\_\+xe().
+

@@ -1,0 +1,196 @@
+\hypertarget{classgetdist_1_1types_1_1ParamLimit}{}\section{getdist.\+types.\+Param\+Limit Class Reference}
+\label{classgetdist_1_1types_1_1ParamLimit}\index{getdist.\+types.\+Param\+Limit@{getdist.\+types.\+Param\+Limit}}
+
+
+Inheritance diagram for getdist.\+types.\+Param\+Limit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classgetdist_1_1types_1_1ParamLimit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+types.\+Param\+Limit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classgetdist_1_1types_1_1ParamLimit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_a9de61856c210782ef0863e8b7ada5f80}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, minmax, tag=\textquotesingle{}two\textquotesingle{})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_a06297a09c2c213f58005465681751d6f}{limit\+Tag}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_ae64d07650fed8969357151a0d56ffadc}{limit\+Type}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_aa66cb00086e29517f2da06bb301758c4}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_a81783a36c43cd8d9294249d03359846b}{lower}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_a5b627d1abf77bd48d7405b361867f660}{upper}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_ae19826f1e120be1bb4fd06c0d16da78b}{twotail}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_a16b6d58598ec4d4b83f063277f5fce5f}{onetail\+\_\+upper}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1ParamLimit_a13bba3761cf2bc3760b0cada43f4234c}{onetail\+\_\+lower}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Class containing information about a marginalized parameter limit.
+
+:ivar lower: lower limit
+:ivar upper: upper limit
+:ivar twotail: True if a two-tail limit, False if one-tail
+:ivar onetail_upper: True if one-tail upper limit
+:ivar ontail_lower: True if one-tail lower limit
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_a9de61856c210782ef0863e8b7ada5f80}\label{classgetdist_1_1types_1_1ParamLimit_a9de61856c210782ef0863e8b7ada5f80}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Param\+Limit.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{minmax,  }\item[{}]{tag = {\ttfamily \textquotesingle{}two\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param minmax: a [min,max] tuple with lower and upper limits. Entries be None if no limit.
+:param tag: a text tag descibing the limit, one of ['two' | '>' | '<' | 'none']
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_aa66cb00086e29517f2da06bb301758c4}\label{classgetdist_1_1types_1_1ParamLimit_aa66cb00086e29517f2da06bb301758c4}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Param\+Limit.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: string representation of lower and upper bounds, with text description of the limit type
+\end{DoxyVerb}
+ 
+
+References getdist.\+types.\+Param\+Limit.\+limit\+Tag(), getdist.\+parampriors.\+Param\+Bounds.\+lower, getdist.\+types.\+Param\+Limit.\+lower, getdist.\+parampriors.\+Param\+Bounds.\+upper, and getdist.\+types.\+Param\+Limit.\+upper.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1ParamLimit_aa66cb00086e29517f2da06bb301758c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_a06297a09c2c213f58005465681751d6f}\label{classgetdist_1_1types_1_1ParamLimit_a06297a09c2c213f58005465681751d6f}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!limit\+Tag@{limit\+Tag}}
+\index{limit\+Tag@{limit\+Tag}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{limit\+Tag()}{limitTag()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Param\+Limit.\+limit\+Tag (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: Short text tag describing the type of limit (one-tail or two tail):
+
+- *two*: two-tail limit
+- *>*: a one-tail upper limit
+- *<*: a one-tail lower limit
+- *none*: no limits (both boundaries have high probability)
+\end{DoxyVerb}
+ 
+
+References getdist.\+types.\+Param\+Limit.\+onetail\+\_\+lower, getdist.\+types.\+Param\+Limit.\+onetail\+\_\+upper, and getdist.\+types.\+Param\+Limit.\+twotail.
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1ParamLimit_a06297a09c2c213f58005465681751d6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_ae64d07650fed8969357151a0d56ffadc}\label{classgetdist_1_1types_1_1ParamLimit_ae64d07650fed8969357151a0d56ffadc}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!limit\+Type@{limit\+Type}}
+\index{limit\+Type@{limit\+Type}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{limit\+Type()}{limitType()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Param\+Limit.\+limit\+Type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: a text description of the type of limit. One of:
+ 
+    - *two tail*
+    - *one tail upper limit*
+    - *one tail lower limit*
+    - *none*
+\end{DoxyVerb}
+ 
+
+References getdist.\+types.\+Param\+Limit.\+onetail\+\_\+lower, getdist.\+types.\+Param\+Limit.\+onetail\+\_\+upper, and getdist.\+types.\+Param\+Limit.\+twotail.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_a81783a36c43cd8d9294249d03359846b}\label{classgetdist_1_1types_1_1ParamLimit_a81783a36c43cd8d9294249d03359846b}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!lower@{lower}}
+\index{lower@{lower}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{lower}{lower}}
+{\footnotesize\ttfamily getdist.\+types.\+Param\+Limit.\+lower}
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_a13bba3761cf2bc3760b0cada43f4234c}\label{classgetdist_1_1types_1_1ParamLimit_a13bba3761cf2bc3760b0cada43f4234c}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!onetail\+\_\+lower@{onetail\+\_\+lower}}
+\index{onetail\+\_\+lower@{onetail\+\_\+lower}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{onetail\+\_\+lower}{onetail\_lower}}
+{\footnotesize\ttfamily getdist.\+types.\+Param\+Limit.\+onetail\+\_\+lower}
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+limit\+Tag(), and getdist.\+types.\+Param\+Limit.\+limit\+Type().
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_a16b6d58598ec4d4b83f063277f5fce5f}\label{classgetdist_1_1types_1_1ParamLimit_a16b6d58598ec4d4b83f063277f5fce5f}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!onetail\+\_\+upper@{onetail\+\_\+upper}}
+\index{onetail\+\_\+upper@{onetail\+\_\+upper}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{onetail\+\_\+upper}{onetail\_upper}}
+{\footnotesize\ttfamily getdist.\+types.\+Param\+Limit.\+onetail\+\_\+upper}
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+limit\+Tag(), and getdist.\+types.\+Param\+Limit.\+limit\+Type().
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_ae19826f1e120be1bb4fd06c0d16da78b}\label{classgetdist_1_1types_1_1ParamLimit_ae19826f1e120be1bb4fd06c0d16da78b}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!twotail@{twotail}}
+\index{twotail@{twotail}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{twotail}{twotail}}
+{\footnotesize\ttfamily getdist.\+types.\+Param\+Limit.\+twotail}
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+limit\+Tag(), and getdist.\+types.\+Param\+Limit.\+limit\+Type().
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1ParamLimit_a5b627d1abf77bd48d7405b361867f660}\label{classgetdist_1_1types_1_1ParamLimit_a5b627d1abf77bd48d7405b361867f660}} 
+\index{getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}!upper@{upper}}
+\index{upper@{upper}!getdist\+::types\+::\+Param\+Limit@{getdist\+::types\+::\+Param\+Limit}}
+\subsubsection{\texorpdfstring{upper}{upper}}
+{\footnotesize\ttfamily getdist.\+types.\+Param\+Limit.\+upper}
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{types_8py}{types.\+py}}\end{DoxyCompactItemize}

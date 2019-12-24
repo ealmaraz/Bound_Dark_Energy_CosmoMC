@@ -1,0 +1,4 @@
+<map id="iniobjects::ini_read_string_default" name="iniobjects::ini_read_string_default">
+<area shape="rect" id="node2" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="220,5,369,32"/>
+<area shape="rect" id="node3" href="$namespacestringutils.html#a7869404fd42c1f41212cbd62a5e225f3" title="stringutils::getenvironmentvariable" alt="" coords="185,56,405,83"/>
+</map>

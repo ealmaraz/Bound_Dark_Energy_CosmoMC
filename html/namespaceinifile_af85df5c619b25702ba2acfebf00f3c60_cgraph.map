@@ -1,0 +1,10 @@
+<map id="inifile::ini_read_string_array" name="inifile::ini_read_string_array">
+<area shape="rect" id="node2" href="$namespaceinifile.html#a99383bb07cc01af1876a178e4c55a8e5" title="inifile::ini_read_string\l_array_file" alt="" coords="197,34,341,75"/>
+<area shape="rect" id="node3" href="$namespaceinifile.html#a41a20dc9e9ec4315613c4e3c23108f2e" title="inifile::ini_key_to\l_arraykey" alt="" coords="414,5,533,46"/>
+<area shape="rect" id="node4" href="$namespaceinifile.html#a83d64e9da5ab1119c623d180ebefa77f" title="inifile::ini_read_string_file" alt="" coords="389,71,557,97"/>
+<area shape="rect" id="node5" href="$namespaceinifile.html#a7381759693093e431b8e0aabf6e4b0f2" title="inifile::tnamevaluelist\l_valueof" alt="" coords="620,34,764,75"/>
+<area shape="rect" id="node6" href="$namespaceinifile.html#a71aeaf793bb8c4435154a6e8e52bdfaf" title="inifile::tnamevaluelist_add" alt="" coords="606,100,778,127"/>
+<area shape="rect" id="node7" href="$namespaceinifile.html#af36608910f6418a922996326dd9a97e3" title="inifile::tnamevaluelist\l_haskey" alt="" coords="827,59,971,101"/>
+<area shape="rect" id="node9" href="$namespaceinifile.html#a761b93f34948645a73d7311a0dd5f833" title="inifile::tnamevaluelist\l_setcapacity" alt="" coords="827,125,971,166"/>
+<area shape="rect" id="node8" href="$namespaceinifile.html#a040f1b3c4c75c262385aa1452ec39343" title="inifile::tnamevaluelist\l_indexof" alt="" coords="1019,59,1163,101"/>
+</map>

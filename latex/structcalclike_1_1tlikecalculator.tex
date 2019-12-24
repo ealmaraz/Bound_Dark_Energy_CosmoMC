@@ -1,0 +1,175 @@
+\hypertarget{structcalclike_1_1tlikecalculator}{}\section{calclike\+:\+:tlikecalculator Type Reference}
+\label{structcalclike_1_1tlikecalculator}\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+
+
+Inheritance diagram for calclike\+:\+:tlikecalculator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{structcalclike_1_1tlikecalculator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for calclike\+:\+:tlikecalculator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{structcalclike_1_1tlikecalculator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a29ce83d0be67daba46b667a4960ac20b}{addlike}}
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a6fc9a804088c7682e9752ac6fd42c8b9}{addliketemp}}
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a06a8640728762fd080c70aaef29998fc}{getloglikebounds}}
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a1c68982de09916657e7c2799ed9041b5}{getlogpriors}}
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a3bb5bdf9540fd23caa65b0a2f5ad23b0}{getloglike}}
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a5309b377f28118969e42f7a31a31f698}{getloglikemain}}
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_aef7fceb62260a719e8abb99eee739959}{readparams}} =$>$ T\+Like\+Calculator\+\_\+\+Read\+Params
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_adbe2a56a68f3b827e294db0ec5fb60e6}{testlikelihoodfunction}} =$>$ T\+Like\+Calculator\+\_\+\+Test\+Likelihood\+Function
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_abbb82fa60505c2df51325bb0f9a05782}{writeperformancestats}} =$>$ T\+Like\+Calculator\+\_\+\+Write\+Performance\+Stats
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a740651e048886393e22f7b5fab51803d}{writeparamshumantext\+\_\+unit}} =$>$ T\+Like\+Calculator\+\_\+\+Write\+Params\+Human\+Text
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_ac712abb757b7657bb0d5fce122e0da5e}{writeparamshumantext\+\_\+file}} =$>$ T\+Like\+Calculator\+\_\+\+Write\+Params\+Human\+Text\+File
+\item 
+procedure \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a21b3f63a6a6d78f36b67438c73c35cdb}{writeparampointtextdata}} =$>$ T\+Like\+Calculator\+\_\+\+Write\+Param\+Point\+Text\+Data
+\item 
+generic \mbox{\hyperlink{structcalclike_1_1tlikecalculator_af5bc42c7b077ea719921fdcab9cf096c}{writeparamshumantext}} =$>$ Write\+Params\+Human\+Text\+\_\+unit, Write\+Params\+Human\+Text\+\_\+file
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp) \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a3f654546b102cb3103e738bd65dc1fa7}{temperature}} =1
+\item 
+logical \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a288196a41cc6a6a5d4d3520bf800ebde}{test\+\_\+likelihood}} = .false.
+\item 
+logical \mbox{\hyperlink{structcalclike_1_1tlikecalculator_ac3070aaf2dfcdf6580cc18713eb15c2c}{timing}} = .false.
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structcalclike_1_1tlikecalculator_a7129a90edf0fb7b557219e30e3bd1378}{test\+\_\+cov\+\_\+matrix}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a29ce83d0be67daba46b667a4960ac20b}\label{structcalclike_1_1tlikecalculator_a29ce83d0be67daba46b667a4960ac20b}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!addlike@{addlike}}
+\index{addlike@{addlike}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{addlike()}{addlike()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::addlike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a6fc9a804088c7682e9752ac6fd42c8b9}\label{structcalclike_1_1tlikecalculator_a6fc9a804088c7682e9752ac6fd42c8b9}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!addliketemp@{addliketemp}}
+\index{addliketemp@{addliketemp}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{addliketemp()}{addliketemp()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::addliketemp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a3bb5bdf9540fd23caa65b0a2f5ad23b0}\label{structcalclike_1_1tlikecalculator_a3bb5bdf9540fd23caa65b0a2f5ad23b0}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!getloglike@{getloglike}}
+\index{getloglike@{getloglike}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{getloglike()}{getloglike()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::getloglike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a06a8640728762fd080c70aaef29998fc}\label{structcalclike_1_1tlikecalculator_a06a8640728762fd080c70aaef29998fc}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!getloglikebounds@{getloglikebounds}}
+\index{getloglikebounds@{getloglikebounds}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{getloglikebounds()}{getloglikebounds()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::getloglikebounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a5309b377f28118969e42f7a31a31f698}\label{structcalclike_1_1tlikecalculator_a5309b377f28118969e42f7a31a31f698}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!getloglikemain@{getloglikemain}}
+\index{getloglikemain@{getloglikemain}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{getloglikemain()}{getloglikemain()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::getloglikemain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a1c68982de09916657e7c2799ed9041b5}\label{structcalclike_1_1tlikecalculator_a1c68982de09916657e7c2799ed9041b5}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!getlogpriors@{getlogpriors}}
+\index{getlogpriors@{getlogpriors}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{getlogpriors()}{getlogpriors()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::getlogpriors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_aef7fceb62260a719e8abb99eee739959}\label{structcalclike_1_1tlikecalculator_aef7fceb62260a719e8abb99eee739959}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!readparams@{readparams}}
+\index{readparams@{readparams}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{readparams()}{readparams()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::readparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_adbe2a56a68f3b827e294db0ec5fb60e6}\label{structcalclike_1_1tlikecalculator_adbe2a56a68f3b827e294db0ec5fb60e6}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!testlikelihoodfunction@{testlikelihoodfunction}}
+\index{testlikelihoodfunction@{testlikelihoodfunction}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{testlikelihoodfunction()}{testlikelihoodfunction()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::testlikelihoodfunction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a21b3f63a6a6d78f36b67438c73c35cdb}\label{structcalclike_1_1tlikecalculator_a21b3f63a6a6d78f36b67438c73c35cdb}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!writeparampointtextdata@{writeparampointtextdata}}
+\index{writeparampointtextdata@{writeparampointtextdata}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{writeparampointtextdata()}{writeparampointtextdata()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::writeparampointtextdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_af5bc42c7b077ea719921fdcab9cf096c}\label{structcalclike_1_1tlikecalculator_af5bc42c7b077ea719921fdcab9cf096c}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!writeparamshumantext@{writeparamshumantext}}
+\index{writeparamshumantext@{writeparamshumantext}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{writeparamshumantext()}{writeparamshumantext()}}
+{\footnotesize\ttfamily generic calclike\+::tlikecalculator\+::writeparamshumantext (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_ac712abb757b7657bb0d5fce122e0da5e}\label{structcalclike_1_1tlikecalculator_ac712abb757b7657bb0d5fce122e0da5e}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!writeparamshumantext\+\_\+file@{writeparamshumantext\+\_\+file}}
+\index{writeparamshumantext\+\_\+file@{writeparamshumantext\+\_\+file}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{writeparamshumantext\+\_\+file()}{writeparamshumantext\_file()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::writeparamshumantext\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a740651e048886393e22f7b5fab51803d}\label{structcalclike_1_1tlikecalculator_a740651e048886393e22f7b5fab51803d}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!writeparamshumantext\+\_\+unit@{writeparamshumantext\+\_\+unit}}
+\index{writeparamshumantext\+\_\+unit@{writeparamshumantext\+\_\+unit}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{writeparamshumantext\+\_\+unit()}{writeparamshumantext\_unit()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::writeparamshumantext\+\_\+unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_abbb82fa60505c2df51325bb0f9a05782}\label{structcalclike_1_1tlikecalculator_abbb82fa60505c2df51325bb0f9a05782}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!writeperformancestats@{writeperformancestats}}
+\index{writeperformancestats@{writeperformancestats}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{writeperformancestats()}{writeperformancestats()}}
+{\footnotesize\ttfamily procedure calclike\+::tlikecalculator\+::writeperformancestats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a3f654546b102cb3103e738bd65dc1fa7}\label{structcalclike_1_1tlikecalculator_a3f654546b102cb3103e738bd65dc1fa7}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!temperature@{temperature}}
+\index{temperature@{temperature}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily real(mcp) calclike\+::tlikecalculator\+::temperature =1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a7129a90edf0fb7b557219e30e3bd1378}\label{structcalclike_1_1tlikecalculator_a7129a90edf0fb7b557219e30e3bd1378}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!test\+\_\+cov\+\_\+matrix@{test\+\_\+cov\+\_\+matrix}}
+\index{test\+\_\+cov\+\_\+matrix@{test\+\_\+cov\+\_\+matrix}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{test\+\_\+cov\+\_\+matrix}{test\_cov\_matrix}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable calclike\+::tlikecalculator\+::test\+\_\+cov\+\_\+matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_a288196a41cc6a6a5d4d3520bf800ebde}\label{structcalclike_1_1tlikecalculator_a288196a41cc6a6a5d4d3520bf800ebde}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!test\+\_\+likelihood@{test\+\_\+likelihood}}
+\index{test\+\_\+likelihood@{test\+\_\+likelihood}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{test\+\_\+likelihood}{test\_likelihood}}
+{\footnotesize\ttfamily logical calclike\+::tlikecalculator\+::test\+\_\+likelihood = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structcalclike_1_1tlikecalculator_ac3070aaf2dfcdf6580cc18713eb15c2c}\label{structcalclike_1_1tlikecalculator_ac3070aaf2dfcdf6580cc18713eb15c2c}} 
+\index{calclike\+::tlikecalculator@{calclike\+::tlikecalculator}!timing@{timing}}
+\index{timing@{timing}!calclike\+::tlikecalculator@{calclike\+::tlikecalculator}}
+\subsubsection{\texorpdfstring{timing}{timing}}
+{\footnotesize\ttfamily logical calclike\+::tlikecalculator\+::timing = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{calclike_8f90}{calclike.\+f90}}\end{DoxyCompactItemize}

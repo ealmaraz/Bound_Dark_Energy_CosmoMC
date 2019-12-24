@@ -1,0 +1,131 @@
+\hypertarget{namespacesamples}{}\section{samples Module Reference}
+\label{namespacesamples}\index{samples@{samples}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structsamples_1_1tdensity1d}{tdensity1d}}
+\item 
+type \mbox{\hyperlink{structsamples_1_1tkernel1d}{tkernel1d}}
+\item 
+type \mbox{\hyperlink{structsamples_1_1tsamplelist}{tsamplelist}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+logical function \mbox{\hyperlink{namespacesamples_abaa5a3a56f0160fff42cc0ea3ac8a928}{gelmanrubinevalues}} (cov, meanscov, evals, num)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a1c105487cb30dfdb9dc2944330277e78}{tsamplelist\+\_\+confidval}} (L, ix, limfrac, ix1, ix2, Lower, Upper)
+\item 
+real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}) function \mbox{\hyperlink{namespacesamples_afdfd2cef6249d2d52f60f3b946035016}{density1d\+\_\+prob}} (D, x)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a81e4c9e95f7f4a62799689997c7be5e7}{density1d\+\_\+init}} (D, n, spacing)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a106842e32d665154377f9c3bc1682b59}{density1d\+\_\+free}} (D)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a87a98c09efa7d17b3ff7d0db04d66b73}{density1d\+\_\+initspline}} (D)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a65a3ed5d18fe56c9dbc21e5787d86047}{density1d\+\_\+limits}} (D, p, mn, mx, lim\+\_\+bot, lim\+\_\+top)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a34bf342dd43e661799227d0101cee393}{kernel1d\+\_\+init}} (this, winw, h, has\+\_\+boundary)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}} = mcp
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacesamples_a106842e32d665154377f9c3bc1682b59}\label{namespacesamples_a106842e32d665154377f9c3bc1682b59}} 
+\index{samples@{samples}!density1d\+\_\+free@{density1d\+\_\+free}}
+\index{density1d\+\_\+free@{density1d\+\_\+free}!samples@{samples}}
+\subsubsection{\texorpdfstring{density1d\+\_\+free()}{density1d\_free()}}
+{\footnotesize\ttfamily subroutine samples\+::density1d\+\_\+free (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamples_1_1tdensity1d}{tdensity1d}})}]{D }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesamples_a81e4c9e95f7f4a62799689997c7be5e7}\label{namespacesamples_a81e4c9e95f7f4a62799689997c7be5e7}} 
+\index{samples@{samples}!density1d\+\_\+init@{density1d\+\_\+init}}
+\index{density1d\+\_\+init@{density1d\+\_\+init}!samples@{samples}}
+\subsubsection{\texorpdfstring{density1d\+\_\+init()}{density1d\_init()}}
+{\footnotesize\ttfamily subroutine samples\+::density1d\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamples_1_1tdensity1d}{tdensity1d}})}]{D,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), intent(in)}]{spacing }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesamples_a87a98c09efa7d17b3ff7d0db04d66b73}\label{namespacesamples_a87a98c09efa7d17b3ff7d0db04d66b73}} 
+\index{samples@{samples}!density1d\+\_\+initspline@{density1d\+\_\+initspline}}
+\index{density1d\+\_\+initspline@{density1d\+\_\+initspline}!samples@{samples}}
+\subsubsection{\texorpdfstring{density1d\+\_\+initspline()}{density1d\_initspline()}}
+{\footnotesize\ttfamily subroutine samples\+::density1d\+\_\+initspline (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamples_1_1tdensity1d}{tdensity1d}})}]{D }\end{DoxyParamCaption})}
+
+
+
+References spline(), and interpolation\+::spline\+\_\+dangle.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{namespacesamples_a87a98c09efa7d17b3ff7d0db04d66b73_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesamples_a65a3ed5d18fe56c9dbc21e5787d86047}\label{namespacesamples_a65a3ed5d18fe56c9dbc21e5787d86047}} 
+\index{samples@{samples}!density1d\+\_\+limits@{density1d\+\_\+limits}}
+\index{density1d\+\_\+limits@{density1d\+\_\+limits}!samples@{samples}}
+\subsubsection{\texorpdfstring{density1d\+\_\+limits()}{density1d\_limits()}}
+{\footnotesize\ttfamily subroutine samples\+::density1d\+\_\+limits (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamples_1_1tdensity1d}{tdensity1d}})}]{D,  }\item[{real(mcp), intent(in)}]{p,  }\item[{real(mcp), intent(out)}]{mn,  }\item[{real(mcp), intent(out)}]{mx,  }\item[{logical, intent(out)}]{lim\+\_\+bot,  }\item[{logical, intent(out)}]{lim\+\_\+top }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesamples_afdfd2cef6249d2d52f60f3b946035016}\label{namespacesamples_afdfd2cef6249d2d52f60f3b946035016}} 
+\index{samples@{samples}!density1d\+\_\+prob@{density1d\+\_\+prob}}
+\index{density1d\+\_\+prob@{density1d\+\_\+prob}!samples@{samples}}
+\subsubsection{\texorpdfstring{density1d\+\_\+prob()}{density1d\_prob()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}) function samples\+::density1d\+\_\+prob (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamples_1_1tdensity1d}{tdensity1d}})}]{D,  }\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), intent(in)}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesamples_abaa5a3a56f0160fff42cc0ea3ac8a928}\label{namespacesamples_abaa5a3a56f0160fff42cc0ea3ac8a928}} 
+\index{samples@{samples}!gelmanrubinevalues@{gelmanrubinevalues}}
+\index{gelmanrubinevalues@{gelmanrubinevalues}!samples@{samples}}
+\subsubsection{\texorpdfstring{gelmanrubinevalues()}{gelmanrubinevalues()}}
+{\footnotesize\ttfamily logical function samples\+::gelmanrubinevalues (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), dimension(num,num)}]{cov,  }\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), dimension(num,num)}]{meanscov,  }\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), dimension(num)}]{evals,  }\item[{integer, intent(in)}]{num }\end{DoxyParamCaption})}
+
+
+
+References objectlists\+::error(), matrixutils\+::matrix\+\_\+choleskyrootinverse(), and matrixutils\+::matrix\+\_\+diagonalize().
+
+
+
+Referenced by mcsamples\+::doconvergetests(), and samplecollector\+::tmpichaincollector\+\_\+updatecovandcheckconverge().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesamples_abaa5a3a56f0160fff42cc0ea3ac8a928_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesamples_abaa5a3a56f0160fff42cc0ea3ac8a928_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesamples_a34bf342dd43e661799227d0101cee393}\label{namespacesamples_a34bf342dd43e661799227d0101cee393}} 
+\index{samples@{samples}!kernel1d\+\_\+init@{kernel1d\+\_\+init}}
+\index{kernel1d\+\_\+init@{kernel1d\+\_\+init}!samples@{samples}}
+\subsubsection{\texorpdfstring{kernel1d\+\_\+init()}{kernel1d\_init()}}
+{\footnotesize\ttfamily subroutine samples\+::kernel1d\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamples_1_1tkernel1d}{tkernel1d}})}]{this,  }\item[{integer, intent(in)}]{winw,  }\item[{real(mcp), intent(in)}]{h,  }\item[{logical, intent(in)}]{has\+\_\+boundary }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesamples_a1c105487cb30dfdb9dc2944330277e78}\label{namespacesamples_a1c105487cb30dfdb9dc2944330277e78}} 
+\index{samples@{samples}!tsamplelist\+\_\+confidval@{tsamplelist\+\_\+confidval}}
+\index{tsamplelist\+\_\+confidval@{tsamplelist\+\_\+confidval}!samples@{samples}}
+\subsubsection{\texorpdfstring{tsamplelist\+\_\+confidval()}{tsamplelist\_confidval()}}
+{\footnotesize\ttfamily subroutine samples\+::tsamplelist\+\_\+confidval (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsamples_1_1tsamplelist}{tsamplelist}})}]{L,  }\item[{integer, intent(in)}]{ix,  }\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), intent(in)}]{limfrac,  }\item[{integer, intent(in), optional}]{ix1,  }\item[{integer, intent(in), optional}]{ix2,  }\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), intent(out), optional}]{Lower,  }\item[{real(\mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{sample\+\_\+prec}}), intent(out), optional}]{Upper }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}\label{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}} 
+\index{samples@{samples}!sample\+\_\+prec@{sample\+\_\+prec}}
+\index{sample\+\_\+prec@{sample\+\_\+prec}!samples@{samples}}
+\subsubsection{\texorpdfstring{sample\+\_\+prec}{sample\_prec}}
+{\footnotesize\ttfamily integer, parameter samples\+::sample\+\_\+prec = mcp}
+

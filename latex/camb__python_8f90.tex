@@ -1,0 +1,73 @@
+\hypertarget{camb__python_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/camb\+\_\+python.f90 File Reference}
+\label{camb__python_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/camb\+\_\+python.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/camb\+\_\+python.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structhandles_1_1c__mattertransferdata}{handles\+::c\+\_\+mattertransferdata}}
+\item 
+type \mbox{\hyperlink{structhandles_1_1c__cltransferdata}{handles\+::c\+\_\+cltransferdata}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacehandles}{handles}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a4de5423ef5a8e284a0571c62a0144917}{handles\+::cambdata\+\_\+new}} (handle)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ab179d576d5e788ddc19e8a8c841aeade}{handles\+::cambdata\+\_\+free}} (cptr)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a133fee834b72f96e030cb55f3c47d961}{handles\+::cambdata\+\_\+setparams}} (data, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a564998825329a378540701dda7e31957}{handles\+::cambdata\+\_\+getparams}} (data, handle)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a386ee0a28e6860d14047f052c918ca43}{handles\+::cambdata\+\_\+gettransfers}} (data, Params, onlytransfer)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a4bdaf08397a5abc493ea901b3a53ece5}{handles\+::cambdata\+\_\+setparamsforbackground}} (data, P)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a2c10aa9ff66a25677588584f3fc4f2a3}{handles\+::cambdata\+\_\+calcbackgroundtheory}} (data, P)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a98c230a0efe726b878c7efc4e95f6574}{handles\+::cambdata\+\_\+mattertransferdata}} (data, c\+Data)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ab0bb10def620b06fb617f4704d9342d9}{handles\+::cambdata\+\_\+cltransferdata}} (data, c\+Data, i)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_abfc0adee06cc42379adb5fee674a9611}{handles\+::convert\+\_\+cltransferdata}} (data, c\+Data)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_accd4416ff2222813d3f9784504d7e5d8}{handles\+::cambdata\+\_\+getlinearmatterpower}} (data, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a26542fd10068a2b3d57617a97f935286}{handles\+::cambdata\+\_\+getnonlinearmatterpower}} (data, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a77db4a8f3a15895102aa6f7c7e49d5f8}{handles\+::cambdata\+\_\+getmatterpower}} (data, outpower, minkh, dlnkh, npoints, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a8cc3e1b0936fd89aca15f4cead25ad9c}{handles\+::camb\+\_\+setinitialpower}} (Params, P)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_aa9ec681801ce104b28add54fd9ee3d16}{handles\+::camb\+\_\+settotcls}} (lmax, tot\+\_\+scalar\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a275c2c9c895b79f63eef42b7fe81c842}{handles\+::camb\+\_\+setunlensedcls}} (lmax, unlensed\+\_\+cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ae3fb31c2363d57d05718b6cb9bc6bf5d}{handles\+::camb\+\_\+setlenspotentialcls}} (lmax, cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a8a98a8d5a48c920afe02832367244648}{handles\+::camb\+\_\+setunlensedscalcls}} (lmax, scalar\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a670ac8cb259c4983bc0cb16b053252b7}{handles\+::camb\+\_\+setlensedscalcls}} (lmax, lensed\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a85a90c13c4ff2c1dc02dd5b6c6c8da9d}{handles\+::camb\+\_\+settensorcls}} (lmax, tensor\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ad9c5c14a68ab016e4b976c1f3f665779}{handles\+::camb\+\_\+setunlensedscalararray}} (lmax, Scalar\+Array, in, n)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a4f9beee6e16e46b574ad807258bca56c}{handles\+::camb\+\_\+setbackgroundoutputs\+\_\+z}} (redshifts, n)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a67c4066d5a6fa655910d3dc0fc295419}{handles\+::camb\+\_\+getnumbackgroundoutputs}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a8c6d226c983d217554ce7208a52f6684}{handles\+::camb\+\_\+getbackgroundoutputs}} (outputs, n)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a9622707d668c5bb52a241302010db94f}{handles\+::set\+\_\+cls\+\_\+template}} (cls\+\_\+template)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a694425016cc091db331b30804819bca8}{handles\+::camb\+\_\+primordialpower}} (Params, k, powers, n, i)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_abde0c82099eadde40e5f09d895ec6ebb}{handles\+::getoutputevolutionfork}} (EV, times, outputs)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a0d801cc8883d8e64021e9a4703f5ac63}{handles\+::camb\+\_\+timeevolution}} (nq, q, ntimes, times, noutputs, outputs)
+\end{DoxyCompactItemize}

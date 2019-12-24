@@ -1,0 +1,12 @@
+<map id="getdist.chains.WeightedSamples.getAutocorrelation" name="getdist.chains.WeightedSamples.getAutocorrelation">
+<area shape="rect" id="node2" href="$namespacegetdist_1_1convolve.html#af6628a68c41ddfddec7944d891a31800" title="getdist.convolve.autoConvolve" alt="" coords="305,16,506,43"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1chains_1_1WeightedSamples.html#adb6da75221743f7a05286cbb2b2685b0" title="getdist.chains.WeightedSamples.get_norm" alt="" coords="1207,121,1478,148"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a4a7ffc36e87801cb74f9ec78896c220b" title="getdist.chains.WeightedSamples.mean_diff" alt="" coords="571,172,845,199"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a0ee200487592ebb5723da33f43724e4f" title="getdist.chains.WeightedSamples.var" alt="" coords="288,121,523,148"/>
+<area shape="rect" id="node3" href="$namespacegetdist_1_1convolve.html#a72c0a4c9c2b191a6df8a1b6d327545b7" title="getdist.convolve.nearest\lFFTnumber" alt="" coords="626,5,790,46"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1chains_1_1WeightedSamples.html#aa5d70ded54742f3296cd856a8a1fa185" title="getdist.chains.WeightedSamples.get\lMeans" alt="" coords="901,274,1136,315"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a97daf2e7045ad90ef4ff8030b9d65740" title="getdist.chains.WeightedSamples.\l_makeParamvec" alt="" coords="1542,190,1759,231"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a72a6f011746d852ea089302d90f59159" title="getdist.chains.WeightedSamples.mean" alt="" coords="894,172,1143,199"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a977e6b59952fb92233a9e2d330c984ad" title="getdist.chains.WeightedSamples.set\lMeans" alt="" coords="1225,274,1460,315"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1chains_1_1WeightedSamples.html#afdeb6d07f1db505f36fe0ca0052528ac" title="getdist.chains.WeightedSamples.weighted_sum" alt="" coords="1192,172,1493,199"/>
+</map>

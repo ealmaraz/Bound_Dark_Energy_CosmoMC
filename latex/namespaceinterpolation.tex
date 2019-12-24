@@ -1,0 +1,1007 @@
+\hypertarget{namespaceinterpolation}{}\section{interpolation Module Reference}
+\label{namespaceinterpolation}\index{interpolation@{interpolation}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tinterpolator}{tinterpolator}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tlogregularcubicspline}{tlogregularcubicspline}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tregularcubicspline}{tregularcubicspline}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a83d34895f7c29f6feb60dee74108123a}{tinterpolator\+\_\+firstuse}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a6dbf131728b481585c45c2564ba688b3}{tinterpolator\+\_\+error}} (this, S, v1, v2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_abbd84288df284345da697e10533c07a7}{tinterpolator1d\+\_\+firstuse}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ab07350cec2d065eb2972b8dcabc45545}{tinterpolator1d\+\_\+initinterp}} (this, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a9c0d111d38654ca08fd15e627d8f8ad3}{tinterpolator1d\+\_\+initforsize}} (this, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a3842ef3937aaef204100599321d0b91f}{tinterpolator1d\+\_\+clear}} (this)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function \mbox{\hyperlink{namespaceinterpolation_a4bc299324720bbb5a8bce547f3f10c2e}{tinterpolator1d\+\_\+value}} (this, x, error)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function \mbox{\hyperlink{namespaceinterpolation_a8b3767144728c4ff1d5564b16b2b2e97}{tinterpolator1d\+\_\+intvalue}} (this, x, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a08169c4a9ace8a6318b3853d0bd9c084}{tinterpolator1d\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2e4b0cd2e1a31f06c7202669b574df13}{tinterpolator1d\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a54d9bd9ab88b402805329a4dbad1bc3d}{tspline1d\+\_\+findnext}} (this, x, llo, xlo, xhi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ac80c6bb26b81ce989cad9b77fcbd66ab}{tspline1d\+\_\+findvalue}} (this, x, llo, xlo, xhi, error)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function \mbox{\hyperlink{namespaceinterpolation_a7a675d7e22aea0d85c1c2241ee6c221f}{tspline1d\+\_\+value}} (this, x, error)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function \mbox{\hyperlink{namespaceinterpolation_aec275a9deb7e4578d9d8c310b0dea093}{tspline1d\+\_\+derivative}} (this, x, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a1bb0d4fae1b5125618e2e9f67669bd3c}{tspline1d\+\_\+arrayvalue}} (this, x, y, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aa9eedb8594564e9a0e57ee8a5282837a}{tspline1d\+\_\+intrangevalue}} (this, xmin, xmax, y, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ab31f5a781a449692250e4a0ab0ec432c}{tspline1d\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a7f58be276bbe7b10b95a7e156a4bc0b8}{tcubicspline\+\_\+initforsize}} (this, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a36b9a543d32de4944ae9289358f15a5a}{tcubicspline\+\_\+init}} (this, Xarr, values, n, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aa6887491230c995c13b123b7847269ec}{tcubicspline\+\_\+initint}} (this, Xarr, values, n, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a141de3ad802bf42f3810c24e47e31310}{tcubicspline\+\_\+initinterp}} (this, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a89e495ca87c6f696d6aac646fd227f03}{tcubicspline\+\_\+initfromfile}} (this, Filename, xcol, ycol)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aef383fa49a233bca20a6cd742319df7e}{tcubicspline\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a953dc25c7196a60416148edc8944b39e}{tcubicspline\+\_\+free}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2ffb9d3c161ab80ba29f5256b039ea57}{tcubicspline\+\_\+findnext}} (this, x, llo, xlo, xhi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_abaeaf4f39b2dbd78b28a5e1802475739}{tcubicspline\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a45a1312a778961c9e5f843e2602c83ac}{tcubicspline\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ad48c755482d305cc69ce002d8d57eb5e}{tregularcubicspline\+\_\+init}} (this, xmin, xmax, n, values, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a771257f70f21fe027a53de95c8e6454d}{tregularcubicspline\+\_\+initinterp}} (this, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a48194743476e43ec9aa03c02aab39655}{tregularcubicspline\+\_\+findnext}} (this, x, llo, xlo, xhi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a5fa8f1fc11b994b0bae323cbe4bd5512}{tregularcubicspline\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a387cdc39d5949cc2aa2e5c6f483ea76c}{tregularcubicspline\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aa2be88d51742c20455f21df95d3cb51d}{tlogregularcubicspline\+\_\+init}} (this, xmin, xmax, n, values, End1, End2)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function \mbox{\hyperlink{namespaceinterpolation_a7268d0f57d8b03233c2f2b56ac6fdc52}{tlogregularcubicspline\+\_\+value}} (this, x, error)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function \mbox{\hyperlink{namespaceinterpolation_ac23315fe4c5bc33742774f63869508b4}{tlogregularcubicspline\+\_\+derivative}} (this, x, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a5701eba38ba9b96476493a39580ebe38}{spline}} (x, y, n, d11, d1n, d2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2864cd829f018329811e906e0b258b6c}{regular\+\_\+spline}} (delta, y, n, d11, d1n, d2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a7bde4bd21a717432ca0927ec3f2393ee}{tinterpgrid2d\+\_\+initinterp}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_af4593e1e65b9137fa491cdaf9d0682a8}{tinterpgrid2d\+\_\+init}} (this, x, y, z)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aba9a8e8e9bf241c6a561b243f3e92620}{tinterpgrid2d\+\_\+initfrommatrixtextfile}} (this, Filename, colvals, rowvals)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a3420758fce41c1a63122fd3d35b973eb}{tinterpgrid2d\+\_\+initfrommatrixbinaryfile}} (this, Filename, colvals, rowvals)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aad92c485265e298041ddb85fdc576ca1}{tinterpgrid2d\+\_\+initfromfile}} (this, Filename, xcol, ycol, zcol)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a830b760c24924ee524054ca9f712d972}{tinterpgrid2d\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a05968790c56ace3a6aff6f9b81d35b0c}{tinterpgrid2d\+\_\+free}} (this)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}) function \mbox{\hyperlink{namespaceinterpolation_a77feb149313f842af954a528b8bff58e}{tinterpgrid2d\+\_\+value}} (this, x, y, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ad36dce10ba7587405b8862f7bea68d33}{tinterpgrid2d\+\_\+values}} (this, nip, x, y, z, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a44b1a5e85b19c58f04e2f7e3483cbb3f}{rgbi3p}} (Wk, md, nxd, nyd, xd, yd, zd, nip, xi, yi, zi, ier)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a1e2786e4f0a0a9dd065f757b66de84fd}{rgsf3p}} (wk, md, nxd, nyd, xd, yd, zd, nxi, xi, nyi, yi, zi, ier)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}) function \mbox{\hyperlink{namespaceinterpolation_a1046109eeab848ab2641b54b30004885}{z2f}} (xx1, xx2, zz0, zz1)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}) function \mbox{\hyperlink{namespaceinterpolation_aa80e5ef1a8e693b3c094f26f166cebf2}{z3f}} (xx1, xx2, xx3, zz0, zz1, zz2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a20aedcecd7b269f068dfe4fcce012458}{rgpd3p}} (nxd, nyd, xd, yd, zd, pdd)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2ddceaba83710295f2263bfbe4aa6924}{rglctn}} (nxd, nyd, xd, yd, nip, xi, yi, inxi, inyi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ab2d80355a943b73b1de2cef700693500}{rgplnl}} (nxd, nyd, xd, yd, zd, pdd, nip, xi, yi, inxi, inyi, zi)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}} = K\+I\+ND(1.\+0)
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), parameter, public \mbox{\hyperlink{namespaceinterpolation_a3f75fda9aed3d08991097b0d7c8fc70f}{spline\+\_\+dangle}} =1.e30\+\_\+sp\+\_\+acc
+\item 
+integer, parameter \mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}} = \mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceinterpolation_a49ff5214fde353c8438a404922ce5989}{interpolation\+\_\+version}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceinterpolation_a2864cd829f018329811e906e0b258b6c}\label{namespaceinterpolation_a2864cd829f018329811e906e0b258b6c}} 
+\index{interpolation@{interpolation}!regular\+\_\+spline@{regular\+\_\+spline}}
+\index{regular\+\_\+spline@{regular\+\_\+spline}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{regular\+\_\+spline()}{regular\_spline()}}
+{\footnotesize\ttfamily subroutine interpolation\+::regular\+\_\+spline (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{delta,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(n), intent(in)}]{y,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{d11,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{d1n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(n), intent(out)}]{d2 }\end{DoxyParamCaption})}
+
+
+
+References spline\+\_\+dangle.
+
+
+
+Referenced by tregularcubicspline\+\_\+initinterp().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a2864cd829f018329811e906e0b258b6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a44b1a5e85b19c58f04e2f7e3483cbb3f}\label{namespaceinterpolation_a44b1a5e85b19c58f04e2f7e3483cbb3f}} 
+\index{interpolation@{interpolation}!rgbi3p@{rgbi3p}}
+\index{rgbi3p@{rgbi3p}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{rgbi3p()}{rgbi3p()}}
+{\footnotesize\ttfamily subroutine interpolation\+::rgbi3p (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(3,nxd,nyd), intent(inout)}]{Wk,  }\item[{integer, intent(in)}]{md,  }\item[{integer, intent(in)}]{nxd,  }\item[{integer, intent(in)}]{nyd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd), intent(in)}]{xd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nyd), intent(in)}]{yd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd,nyd), intent(in)}]{zd,  }\item[{integer, intent(in)}]{nip,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(in)}]{xi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(in)}]{yi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(out)}]{zi,  }\item[{integer, intent(out)}]{ier }\end{DoxyParamCaption})}
+
+
+
+References rglctn(), rgpd3p(), and rgplnl().
+
+
+
+Referenced by tinterpgrid2d\+\_\+values().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a44b1a5e85b19c58f04e2f7e3483cbb3f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespaceinterpolation_a44b1a5e85b19c58f04e2f7e3483cbb3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a2ddceaba83710295f2263bfbe4aa6924}\label{namespaceinterpolation_a2ddceaba83710295f2263bfbe4aa6924}} 
+\index{interpolation@{interpolation}!rglctn@{rglctn}}
+\index{rglctn@{rglctn}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{rglctn()}{rglctn()}}
+{\footnotesize\ttfamily subroutine interpolation\+::rglctn (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nxd,  }\item[{integer, intent(in)}]{nyd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd), intent(in)}]{xd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nyd), intent(in)}]{yd,  }\item[{integer, intent(in)}]{nip,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(in)}]{xi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(in)}]{yi,  }\item[{integer, dimension(nip), intent(out)}]{inxi,  }\item[{integer, dimension(nip), intent(out)}]{inyi }\end{DoxyParamCaption})}
+
+
+
+Referenced by rgbi3p(), and rgsf3p().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a2ddceaba83710295f2263bfbe4aa6924_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a20aedcecd7b269f068dfe4fcce012458}\label{namespaceinterpolation_a20aedcecd7b269f068dfe4fcce012458}} 
+\index{interpolation@{interpolation}!rgpd3p@{rgpd3p}}
+\index{rgpd3p@{rgpd3p}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{rgpd3p()}{rgpd3p()}}
+{\footnotesize\ttfamily subroutine interpolation\+::rgpd3p (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nxd,  }\item[{integer, intent(in)}]{nyd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd), intent(in)}]{xd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nyd), intent(in)}]{yd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd,nyd), intent(in)}]{zd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(3,nxd,nyd), intent(out)}]{pdd }\end{DoxyParamCaption})}
+
+
+
+References z2f(), and z3f().
+
+
+
+Referenced by rgbi3p(), rgsf3p(), and tinterpgrid2d\+\_\+initinterp().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{namespaceinterpolation_a20aedcecd7b269f068dfe4fcce012458_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a20aedcecd7b269f068dfe4fcce012458_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_ab2d80355a943b73b1de2cef700693500}\label{namespaceinterpolation_ab2d80355a943b73b1de2cef700693500}} 
+\index{interpolation@{interpolation}!rgplnl@{rgplnl}}
+\index{rgplnl@{rgplnl}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{rgplnl()}{rgplnl()}}
+{\footnotesize\ttfamily subroutine interpolation\+::rgplnl (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nxd,  }\item[{integer, intent(in)}]{nyd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd), intent(in)}]{xd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nyd), intent(in)}]{yd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd,nyd), intent(in)}]{zd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(3,nxd,nyd), intent(in)}]{pdd,  }\item[{integer, intent(in)}]{nip,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(in)}]{xi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(in)}]{yi,  }\item[{integer, dimension(nip), intent(in)}]{inxi,  }\item[{integer, dimension(nip), intent(in)}]{inyi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nip), intent(out)}]{zi }\end{DoxyParamCaption})}
+
+
+
+Referenced by rgbi3p(), and rgsf3p().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_ab2d80355a943b73b1de2cef700693500_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a1e2786e4f0a0a9dd065f757b66de84fd}\label{namespaceinterpolation_a1e2786e4f0a0a9dd065f757b66de84fd}} 
+\index{interpolation@{interpolation}!rgsf3p@{rgsf3p}}
+\index{rgsf3p@{rgsf3p}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{rgsf3p()}{rgsf3p()}}
+{\footnotesize\ttfamily subroutine interpolation\+::rgsf3p (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(3,nxd,nyd), intent(inout)}]{wk,  }\item[{integer, intent(in)}]{md,  }\item[{integer, intent(in)}]{nxd,  }\item[{integer, intent(in)}]{nyd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd), intent(in)}]{xd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nyd), intent(in)}]{yd,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxd,nyd), intent(inout)}]{zd,  }\item[{integer, intent(in)}]{nxi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxi), intent(inout)}]{xi,  }\item[{integer, intent(in)}]{nyi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nyi), intent(in)}]{yi,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(nxi,nyi), intent(inout)}]{zi,  }\item[{integer, intent(out)}]{ier }\end{DoxyParamCaption})}
+
+
+
+References rglctn(), rgpd3p(), and rgplnl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a1e2786e4f0a0a9dd065f757b66de84fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a5701eba38ba9b96476493a39580ebe38}\label{namespaceinterpolation_a5701eba38ba9b96476493a39580ebe38}} 
+\index{interpolation@{interpolation}!spline@{spline}}
+\index{spline@{spline}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{spline()}{spline()}}
+{\footnotesize\ttfamily subroutine interpolation\+::spline (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(n), intent(in)}]{x,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(n), intent(in)}]{y,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{d11,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{d1n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(n), intent(out)}]{d2 }\end{DoxyParamCaption})}
+
+
+
+References spline\+\_\+dangle.
+
+\mbox{\Hypertarget{namespaceinterpolation_aef383fa49a233bca20a6cd742319df7e}\label{namespaceinterpolation_aef383fa49a233bca20a6cd742319df7e}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+clear@{tcubicspline\+\_\+clear}}
+\index{tcubicspline\+\_\+clear@{tcubicspline\+\_\+clear}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+clear()}{tcubicspline\_clear()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_a2ffb9d3c161ab80ba29f5256b039ea57}\label{namespaceinterpolation_a2ffb9d3c161ab80ba29f5256b039ea57}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+findnext@{tcubicspline\+\_\+findnext}}
+\index{tcubicspline\+\_\+findnext@{tcubicspline\+\_\+findnext}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+findnext()}{tcubicspline\_findnext()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+findnext (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout)}]{llo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xlo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xhi }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_a953dc25c7196a60416148edc8944b39e}\label{namespaceinterpolation_a953dc25c7196a60416148edc8944b39e}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+free@{tcubicspline\+\_\+free}}
+\index{tcubicspline\+\_\+free@{tcubicspline\+\_\+free}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+free()}{tcubicspline\_free()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+free (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this }\end{DoxyParamCaption})}
+
+
+
+Referenced by interpolation\+::tcubicspline\+::tcubicspline\+\_\+free().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a953dc25c7196a60416148edc8944b39e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a36b9a543d32de4944ae9289358f15a5a}\label{namespaceinterpolation_a36b9a543d32de4944ae9289358f15a5a}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+init@{tcubicspline\+\_\+init}}
+\index{tcubicspline\+\_\+init@{tcubicspline\+\_\+init}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+init()}{tcubicspline\_init()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(1\+:), intent(in)}]{Xarr,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(1\+:), intent(in)}]{values,  }\item[{integer, intent(in), optional}]{n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End2 }\end{DoxyParamCaption})}
+
+
+
+Referenced by interpolation\+::tcubicspline\+::init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a36b9a543d32de4944ae9289358f15a5a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a7f58be276bbe7b10b95a7e156a4bc0b8}\label{namespaceinterpolation_a7f58be276bbe7b10b95a7e156a4bc0b8}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+initforsize@{tcubicspline\+\_\+initforsize}}
+\index{tcubicspline\+\_\+initforsize@{tcubicspline\+\_\+initforsize}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+initforsize()}{tcubicspline\_initforsize()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+initforsize (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References tinterpolator1d\+\_\+initforsize().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a7f58be276bbe7b10b95a7e156a4bc0b8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a89e495ca87c6f696d6aac646fd227f03}\label{namespaceinterpolation_a89e495ca87c6f696d6aac646fd227f03}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+initfromfile@{tcubicspline\+\_\+initfromfile}}
+\index{tcubicspline\+\_\+initfromfile@{tcubicspline\+\_\+initfromfile}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+initfromfile()}{tcubicspline\_initfromfile()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+initfromfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Filename,  }\item[{integer, intent(in), optional}]{xcol,  }\item[{integer, intent(in), optional}]{ycol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_aa6887491230c995c13b123b7847269ec}\label{namespaceinterpolation_aa6887491230c995c13b123b7847269ec}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+initint@{tcubicspline\+\_\+initint}}
+\index{tcubicspline\+\_\+initint@{tcubicspline\+\_\+initint}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+initint()}{tcubicspline\_initint()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+initint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{integer, dimension(\+:), intent(in)}]{Xarr,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(\+:), intent(in)}]{values,  }\item[{integer, intent(in), optional}]{n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End2 }\end{DoxyParamCaption})}
+
+
+
+Referenced by interpolation\+::tcubicspline\+::init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_aa6887491230c995c13b123b7847269ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a141de3ad802bf42f3810c24e47e31310}\label{namespaceinterpolation_a141de3ad802bf42f3810c24e47e31310}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+initinterp@{tcubicspline\+\_\+initinterp}}
+\index{tcubicspline\+\_\+initinterp@{tcubicspline\+\_\+initinterp}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+initinterp()}{tcubicspline\_initinterp()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+initinterp (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End2 }\end{DoxyParamCaption})}
+
+
+
+References spline().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{namespaceinterpolation_a141de3ad802bf42f3810c24e47e31310_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_abaeaf4f39b2dbd78b28a5e1802475739}\label{namespaceinterpolation_abaeaf4f39b2dbd78b28a5e1802475739}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+loadstate@{tcubicspline\+\_\+loadstate}}
+\index{tcubicspline\+\_\+loadstate@{tcubicspline\+\_\+loadstate}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+loadstate()}{tcubicspline\_loadstate()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+
+
+References tinterpolator1d\+\_\+loadstate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_abaeaf4f39b2dbd78b28a5e1802475739_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a45a1312a778961c9e5f843e2602c83ac}\label{namespaceinterpolation_a45a1312a778961c9e5f843e2602c83ac}} 
+\index{interpolation@{interpolation}!tcubicspline\+\_\+savestate@{tcubicspline\+\_\+savestate}}
+\index{tcubicspline\+\_\+savestate@{tcubicspline\+\_\+savestate}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tcubicspline\+\_\+savestate()}{tcubicspline\_savestate()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tcubicspline\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tcubicspline}{tcubicspline}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+
+
+References tinterpolator1d\+\_\+savestate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a45a1312a778961c9e5f843e2602c83ac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a830b760c24924ee524054ca9f712d972}\label{namespaceinterpolation_a830b760c24924ee524054ca9f712d972}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+clear@{tinterpgrid2d\+\_\+clear}}
+\index{tinterpgrid2d\+\_\+clear@{tinterpgrid2d\+\_\+clear}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+clear()}{tinterpgrid2d\_clear()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_a05968790c56ace3a6aff6f9b81d35b0c}\label{namespaceinterpolation_a05968790c56ace3a6aff6f9b81d35b0c}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+free@{tinterpgrid2d\+\_\+free}}
+\index{tinterpgrid2d\+\_\+free@{tinterpgrid2d\+\_\+free}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+free()}{tinterpgrid2d\_free()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+free (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this }\end{DoxyParamCaption})}
+
+
+
+Referenced by interpolation\+::tinterpgrid2d\+::tinterpgrid2d\+\_\+free().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a05968790c56ace3a6aff6f9b81d35b0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_af4593e1e65b9137fa491cdaf9d0682a8}\label{namespaceinterpolation_af4593e1e65b9137fa491cdaf9d0682a8}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+init@{tinterpgrid2d\+\_\+init}}
+\index{tinterpgrid2d\+\_\+init@{tinterpgrid2d\+\_\+init}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+init()}{tinterpgrid2d\_init()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(\+:), intent(in)}]{x,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(\+:), intent(in)}]{y,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension(\+:,\+:), intent(in)}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_aad92c485265e298041ddb85fdc576ca1}\label{namespaceinterpolation_aad92c485265e298041ddb85fdc576ca1}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+initfromfile@{tinterpgrid2d\+\_\+initfromfile}}
+\index{tinterpgrid2d\+\_\+initfromfile@{tinterpgrid2d\+\_\+initfromfile}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+initfromfile()}{tinterpgrid2d\_initfromfile()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+initfromfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Filename,  }\item[{integer, intent(in), optional}]{xcol,  }\item[{integer, intent(in), optional}]{ycol,  }\item[{integer, intent(in), optional}]{zcol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_a3420758fce41c1a63122fd3d35b973eb}\label{namespaceinterpolation_a3420758fce41c1a63122fd3d35b973eb}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+initfrommatrixbinaryfile@{tinterpgrid2d\+\_\+initfrommatrixbinaryfile}}
+\index{tinterpgrid2d\+\_\+initfrommatrixbinaryfile@{tinterpgrid2d\+\_\+initfrommatrixbinaryfile}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+initfrommatrixbinaryfile()}{tinterpgrid2d\_initfrommatrixbinaryfile()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+initfrommatrixbinaryfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Filename,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(\+:), intent(in)}]{colvals,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(\+:), intent(in)}]{rowvals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_aba9a8e8e9bf241c6a561b243f3e92620}\label{namespaceinterpolation_aba9a8e8e9bf241c6a561b243f3e92620}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+initfrommatrixtextfile@{tinterpgrid2d\+\_\+initfrommatrixtextfile}}
+\index{tinterpgrid2d\+\_\+initfrommatrixtextfile@{tinterpgrid2d\+\_\+initfrommatrixtextfile}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+initfrommatrixtextfile()}{tinterpgrid2d\_initfrommatrixtextfile()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+initfrommatrixtextfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Filename,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(\+:), intent(in)}]{colvals,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(\+:), intent(in)}]{rowvals }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::file.
+
+\mbox{\Hypertarget{namespaceinterpolation_a7bde4bd21a717432ca0927ec3f2393ee}\label{namespaceinterpolation_a7bde4bd21a717432ca0927ec3f2393ee}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+initinterp@{tinterpgrid2d\+\_\+initinterp}}
+\index{tinterpgrid2d\+\_\+initinterp@{tinterpgrid2d\+\_\+initinterp}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+initinterp()}{tinterpgrid2d\_initinterp()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+initinterp (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References rgpd3p().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a7bde4bd21a717432ca0927ec3f2393ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a77feb149313f842af954a528b8bff58e}\label{namespaceinterpolation_a77feb149313f842af954a528b8bff58e}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+value@{tinterpgrid2d\+\_\+value}}
+\index{tinterpgrid2d\+\_\+value@{tinterpgrid2d\+\_\+value}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+value()}{tinterpgrid2d\_value()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}) function interpolation\+::tinterpgrid2d\+\_\+value (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{x,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{y,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::error().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a77feb149313f842af954a528b8bff58e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_ad36dce10ba7587405b8862f7bea68d33}\label{namespaceinterpolation_ad36dce10ba7587405b8862f7bea68d33}} 
+\index{interpolation@{interpolation}!tinterpgrid2d\+\_\+values@{tinterpgrid2d\+\_\+values}}
+\index{tinterpgrid2d\+\_\+values@{tinterpgrid2d\+\_\+values}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpgrid2d\+\_\+values()}{tinterpgrid2d\_values()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpgrid2d\+\_\+values (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{tinterpgrid2d}})}]{this,  }\item[{integer, intent(in)}]{nip,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension($\ast$), intent(in)}]{x,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension($\ast$), intent(in)}]{y,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), dimension($\ast$), intent(out)}]{z,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References rgbi3p().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_ad36dce10ba7587405b8862f7bea68d33_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a3842ef3937aaef204100599321d0b91f}\label{namespaceinterpolation_a3842ef3937aaef204100599321d0b91f}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+clear@{tinterpolator1d\+\_\+clear}}
+\index{tinterpolator1d\+\_\+clear@{tinterpolator1d\+\_\+clear}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+clear()}{tinterpolator1d\_clear()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator1d\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References spline\+\_\+dangle.
+
+
+
+Referenced by tspline1d\+\_\+clear().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a3842ef3937aaef204100599321d0b91f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_abbd84288df284345da697e10533c07a7}\label{namespaceinterpolation_abbd84288df284345da697e10533c07a7}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+firstuse@{tinterpolator1d\+\_\+firstuse}}
+\index{tinterpolator1d\+\_\+firstuse@{tinterpolator1d\+\_\+firstuse}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+firstuse()}{tinterpolator1d\_firstuse()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator1d\+\_\+firstuse (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_a9c0d111d38654ca08fd15e627d8f8ad3}\label{namespaceinterpolation_a9c0d111d38654ca08fd15e627d8f8ad3}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+initforsize@{tinterpolator1d\+\_\+initforsize}}
+\index{tinterpolator1d\+\_\+initforsize@{tinterpolator1d\+\_\+initforsize}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+initforsize()}{tinterpolator1d\_initforsize()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator1d\+\_\+initforsize (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+Referenced by tcubicspline\+\_\+initforsize().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a9c0d111d38654ca08fd15e627d8f8ad3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_ab07350cec2d065eb2972b8dcabc45545}\label{namespaceinterpolation_ab07350cec2d065eb2972b8dcabc45545}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+initinterp@{tinterpolator1d\+\_\+initinterp}}
+\index{tinterpolator1d\+\_\+initinterp@{tinterpolator1d\+\_\+initinterp}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+initinterp()}{tinterpolator1d\_initinterp()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator1d\+\_\+initinterp (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_a8b3767144728c4ff1d5564b16b2b2e97}\label{namespaceinterpolation_a8b3767144728c4ff1d5564b16b2b2e97}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+intvalue@{tinterpolator1d\+\_\+intvalue}}
+\index{tinterpolator1d\+\_\+intvalue@{tinterpolator1d\+\_\+intvalue}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+intvalue()}{tinterpolator1d\_intvalue()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function interpolation\+::tinterpolator1d\+\_\+intvalue (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this,  }\item[{integer, intent(in)}]{x,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+Referenced by interpolation\+::tinterpolator1d\+::initinterp().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a8b3767144728c4ff1d5564b16b2b2e97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a08169c4a9ace8a6318b3853d0bd9c084}\label{namespaceinterpolation_a08169c4a9ace8a6318b3853d0bd9c084}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+loadstate@{tinterpolator1d\+\_\+loadstate}}
+\index{tinterpolator1d\+\_\+loadstate@{tinterpolator1d\+\_\+loadstate}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+loadstate()}{tinterpolator1d\_loadstate()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator1d\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+
+
+Referenced by tcubicspline\+\_\+loadstate(), and tregularcubicspline\+\_\+loadstate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a08169c4a9ace8a6318b3853d0bd9c084_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a2e4b0cd2e1a31f06c7202669b574df13}\label{namespaceinterpolation_a2e4b0cd2e1a31f06c7202669b574df13}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+savestate@{tinterpolator1d\+\_\+savestate}}
+\index{tinterpolator1d\+\_\+savestate@{tinterpolator1d\+\_\+savestate}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+savestate()}{tinterpolator1d\_savestate()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator1d\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+
+
+References interpolation\+\_\+version.
+
+
+
+Referenced by tcubicspline\+\_\+savestate(), and tregularcubicspline\+\_\+savestate().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a2e4b0cd2e1a31f06c7202669b574df13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a4bc299324720bbb5a8bce547f3f10c2e}\label{namespaceinterpolation_a4bc299324720bbb5a8bce547f3f10c2e}} 
+\index{interpolation@{interpolation}!tinterpolator1d\+\_\+value@{tinterpolator1d\+\_\+value}}
+\index{tinterpolator1d\+\_\+value@{tinterpolator1d\+\_\+value}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+value()}{tinterpolator1d\_value()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function interpolation\+::tinterpolator1d\+\_\+value (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{tinterpolator1d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_a6dbf131728b481585c45c2564ba688b3}\label{namespaceinterpolation_a6dbf131728b481585c45c2564ba688b3}} 
+\index{interpolation@{interpolation}!tinterpolator\+\_\+error@{tinterpolator\+\_\+error}}
+\index{tinterpolator\+\_\+error@{tinterpolator\+\_\+error}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator\+\_\+error()}{tinterpolator\_error()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator\+\_\+error (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator}{tinterpolator}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{class($\ast$), intent(in), optional}]{v1,  }\item[{class($\ast$), intent(in), optional}]{v2 }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::formatstring(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a6dbf131728b481585c45c2564ba688b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a83d34895f7c29f6feb60dee74108123a}\label{namespaceinterpolation_a83d34895f7c29f6feb60dee74108123a}} 
+\index{interpolation@{interpolation}!tinterpolator\+\_\+firstuse@{tinterpolator\+\_\+firstuse}}
+\index{tinterpolator\+\_\+firstuse@{tinterpolator\+\_\+firstuse}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tinterpolator\+\_\+firstuse()}{tinterpolator\_firstuse()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tinterpolator\+\_\+firstuse (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tinterpolator}{tinterpolator}})}]{this }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_ac23315fe4c5bc33742774f63869508b4}\label{namespaceinterpolation_ac23315fe4c5bc33742774f63869508b4}} 
+\index{interpolation@{interpolation}!tlogregularcubicspline\+\_\+derivative@{tlogregularcubicspline\+\_\+derivative}}
+\index{tlogregularcubicspline\+\_\+derivative@{tlogregularcubicspline\+\_\+derivative}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tlogregularcubicspline\+\_\+derivative()}{tlogregularcubicspline\_derivative()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function interpolation\+::tlogregularcubicspline\+\_\+derivative (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tlogregularcubicspline}{tlogregularcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::error(), and tspline1d\+\_\+derivative().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_ac23315fe4c5bc33742774f63869508b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_aa2be88d51742c20455f21df95d3cb51d}\label{namespaceinterpolation_aa2be88d51742c20455f21df95d3cb51d}} 
+\index{interpolation@{interpolation}!tlogregularcubicspline\+\_\+init@{tlogregularcubicspline\+\_\+init}}
+\index{tlogregularcubicspline\+\_\+init@{tlogregularcubicspline\+\_\+init}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tlogregularcubicspline\+\_\+init()}{tlogregularcubicspline\_init()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tlogregularcubicspline\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tlogregularcubicspline}{tlogregularcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{xmin,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{xmax,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(1\+:), intent(in), optional}]{values,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End2 }\end{DoxyParamCaption})}
+
+
+
+References tregularcubicspline\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_aa2be88d51742c20455f21df95d3cb51d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a7268d0f57d8b03233c2f2b56ac6fdc52}\label{namespaceinterpolation_a7268d0f57d8b03233c2f2b56ac6fdc52}} 
+\index{interpolation@{interpolation}!tlogregularcubicspline\+\_\+value@{tlogregularcubicspline\+\_\+value}}
+\index{tlogregularcubicspline\+\_\+value@{tlogregularcubicspline\+\_\+value}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tlogregularcubicspline\+\_\+value()}{tlogregularcubicspline\_value()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function interpolation\+::tlogregularcubicspline\+\_\+value (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tlogregularcubicspline}{tlogregularcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::error(), and tspline1d\+\_\+value().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a7268d0f57d8b03233c2f2b56ac6fdc52_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a48194743476e43ec9aa03c02aab39655}\label{namespaceinterpolation_a48194743476e43ec9aa03c02aab39655}} 
+\index{interpolation@{interpolation}!tregularcubicspline\+\_\+findnext@{tregularcubicspline\+\_\+findnext}}
+\index{tregularcubicspline\+\_\+findnext@{tregularcubicspline\+\_\+findnext}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tregularcubicspline\+\_\+findnext()}{tregularcubicspline\_findnext()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tregularcubicspline\+\_\+findnext (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tregularcubicspline}{tregularcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout)}]{llo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xlo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xhi }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_ad48c755482d305cc69ce002d8d57eb5e}\label{namespaceinterpolation_ad48c755482d305cc69ce002d8d57eb5e}} 
+\index{interpolation@{interpolation}!tregularcubicspline\+\_\+init@{tregularcubicspline\+\_\+init}}
+\index{tregularcubicspline\+\_\+init@{tregularcubicspline\+\_\+init}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tregularcubicspline\+\_\+init()}{tregularcubicspline\_init()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tregularcubicspline\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tregularcubicspline}{tregularcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{xmin,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{xmax,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(1\+:), intent(in), optional}]{values,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End2 }\end{DoxyParamCaption})}
+
+
+
+Referenced by tlogregularcubicspline\+\_\+init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_ad48c755482d305cc69ce002d8d57eb5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a771257f70f21fe027a53de95c8e6454d}\label{namespaceinterpolation_a771257f70f21fe027a53de95c8e6454d}} 
+\index{interpolation@{interpolation}!tregularcubicspline\+\_\+initinterp@{tregularcubicspline\+\_\+initinterp}}
+\index{tregularcubicspline\+\_\+initinterp@{tregularcubicspline\+\_\+initinterp}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tregularcubicspline\+\_\+initinterp()}{tregularcubicspline\_initinterp()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tregularcubicspline\+\_\+initinterp (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tregularcubicspline}{tregularcubicspline}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in), optional}]{End2 }\end{DoxyParamCaption})}
+
+
+
+References regular\+\_\+spline().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a771257f70f21fe027a53de95c8e6454d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a5fa8f1fc11b994b0bae323cbe4bd5512}\label{namespaceinterpolation_a5fa8f1fc11b994b0bae323cbe4bd5512}} 
+\index{interpolation@{interpolation}!tregularcubicspline\+\_\+loadstate@{tregularcubicspline\+\_\+loadstate}}
+\index{tregularcubicspline\+\_\+loadstate@{tregularcubicspline\+\_\+loadstate}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tregularcubicspline\+\_\+loadstate()}{tregularcubicspline\_loadstate()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tregularcubicspline\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tregularcubicspline}{tregularcubicspline}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+
+
+References tinterpolator1d\+\_\+loadstate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a5fa8f1fc11b994b0bae323cbe4bd5512_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a387cdc39d5949cc2aa2e5c6f483ea76c}\label{namespaceinterpolation_a387cdc39d5949cc2aa2e5c6f483ea76c}} 
+\index{interpolation@{interpolation}!tregularcubicspline\+\_\+savestate@{tregularcubicspline\+\_\+savestate}}
+\index{tregularcubicspline\+\_\+savestate@{tregularcubicspline\+\_\+savestate}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tregularcubicspline\+\_\+savestate()}{tregularcubicspline\_savestate()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tregularcubicspline\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tregularcubicspline}{tregularcubicspline}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+
+
+References tinterpolator1d\+\_\+savestate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a387cdc39d5949cc2aa2e5c6f483ea76c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a1bb0d4fae1b5125618e2e9f67669bd3c}\label{namespaceinterpolation_a1bb0d4fae1b5125618e2e9f67669bd3c}} 
+\index{interpolation@{interpolation}!tspline1d\+\_\+arrayvalue@{tspline1d\+\_\+arrayvalue}}
+\index{tspline1d\+\_\+arrayvalue@{tspline1d\+\_\+arrayvalue}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tspline1d\+\_\+arrayvalue()}{tspline1d\_arrayvalue()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tspline1d\+\_\+arrayvalue (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(1\+:), intent(in)}]{x,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(1\+:), intent(out)}]{y,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+Referenced by interpolation\+::tspline1d\+::array().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespaceinterpolation_a1bb0d4fae1b5125618e2e9f67669bd3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_ab31f5a781a449692250e4a0ab0ec432c}\label{namespaceinterpolation_ab31f5a781a449692250e4a0ab0ec432c}} 
+\index{interpolation@{interpolation}!tspline1d\+\_\+clear@{tspline1d\+\_\+clear}}
+\index{tspline1d\+\_\+clear@{tspline1d\+\_\+clear}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tspline1d\+\_\+clear()}{tspline1d\_clear()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tspline1d\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References tinterpolator1d\+\_\+clear().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_ab31f5a781a449692250e4a0ab0ec432c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_aec275a9deb7e4578d9d8c310b0dea093}\label{namespaceinterpolation_aec275a9deb7e4578d9d8c310b0dea093}} 
+\index{interpolation@{interpolation}!tspline1d\+\_\+derivative@{tspline1d\+\_\+derivative}}
+\index{tspline1d\+\_\+derivative@{tspline1d\+\_\+derivative}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tspline1d\+\_\+derivative()}{tspline1d\_derivative()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function interpolation\+::tspline1d\+\_\+derivative (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::error().
+
+
+
+Referenced by tlogregularcubicspline\+\_\+derivative().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_aec275a9deb7e4578d9d8c310b0dea093_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_aec275a9deb7e4578d9d8c310b0dea093_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a54d9bd9ab88b402805329a4dbad1bc3d}\label{namespaceinterpolation_a54d9bd9ab88b402805329a4dbad1bc3d}} 
+\index{interpolation@{interpolation}!tspline1d\+\_\+findnext@{tspline1d\+\_\+findnext}}
+\index{tspline1d\+\_\+findnext@{tspline1d\+\_\+findnext}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tspline1d\+\_\+findnext()}{tspline1d\_findnext()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tspline1d\+\_\+findnext (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout)}]{llo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xlo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xhi }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_ac80c6bb26b81ce989cad9b77fcbd66ab}\label{namespaceinterpolation_ac80c6bb26b81ce989cad9b77fcbd66ab}} 
+\index{interpolation@{interpolation}!tspline1d\+\_\+findvalue@{tspline1d\+\_\+findvalue}}
+\index{tspline1d\+\_\+findvalue@{tspline1d\+\_\+findvalue}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tspline1d\+\_\+findvalue()}{tspline1d\_findvalue()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tspline1d\+\_\+findvalue (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(out)}]{llo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xlo,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(out)}]{xhi,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceinterpolation_aa9eedb8594564e9a0e57ee8a5282837a}\label{namespaceinterpolation_aa9eedb8594564e9a0e57ee8a5282837a}} 
+\index{interpolation@{interpolation}!tspline1d\+\_\+intrangevalue@{tspline1d\+\_\+intrangevalue}}
+\index{tspline1d\+\_\+intrangevalue@{tspline1d\+\_\+intrangevalue}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tspline1d\+\_\+intrangevalue()}{tspline1d\_intrangevalue()}}
+{\footnotesize\ttfamily subroutine interpolation\+::tspline1d\+\_\+intrangevalue (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}})}]{this,  }\item[{integer, intent(in)}]{xmin,  }\item[{integer, intent(in)}]{xmax,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(xmin\+:), intent(out)}]{y,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+Referenced by interpolation\+::tspline1d\+::array().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespaceinterpolation_aa9eedb8594564e9a0e57ee8a5282837a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a7a675d7e22aea0d85c1c2241ee6c221f}\label{namespaceinterpolation_a7a675d7e22aea0d85c1c2241ee6c221f}} 
+\index{interpolation@{interpolation}!tspline1d\+\_\+value@{tspline1d\+\_\+value}}
+\index{tspline1d\+\_\+value@{tspline1d\+\_\+value}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{tspline1d\+\_\+value()}{tspline1d\_value()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) function interpolation\+::tspline1d\+\_\+value (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structinterpolation_1_1tspline1d}{tspline1d}})}]{this,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), intent(in)}]{x,  }\item[{integer, intent(inout), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::error().
+
+
+
+Referenced by tlogregularcubicspline\+\_\+value().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a7a675d7e22aea0d85c1c2241ee6c221f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a7a675d7e22aea0d85c1c2241ee6c221f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_a1046109eeab848ab2641b54b30004885}\label{namespaceinterpolation_a1046109eeab848ab2641b54b30004885}} 
+\index{interpolation@{interpolation}!z2f@{z2f}}
+\index{z2f@{z2f}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{z2f()}{z2f()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}) function interpolation\+::z2f (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{xx1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{xx2,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{zz0,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{zz1 }\end{DoxyParamCaption})}
+
+
+
+Referenced by rgpd3p().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_a1046109eeab848ab2641b54b30004885_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinterpolation_aa80e5ef1a8e693b3c094f26f166cebf2}\label{namespaceinterpolation_aa80e5ef1a8e693b3c094f26f166cebf2}} 
+\index{interpolation@{interpolation}!z3f@{z3f}}
+\index{z3f@{z3f}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{z3f()}{z3f()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}) function interpolation\+::z3f (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{xx1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{xx2,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{xx3,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{zz0,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{zz1,  }\item[{real(\mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{gi}}), intent(in)}]{zz2 }\end{DoxyParamCaption})}
+
+
+
+Referenced by rgpd3p().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinterpolation_aa80e5ef1a8e693b3c094f26f166cebf2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}\label{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}} 
+\index{interpolation@{interpolation}!gi@{gi}}
+\index{gi@{gi}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{gi}{gi}}
+{\footnotesize\ttfamily integer, parameter interpolation\+::gi = \mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}}
+
+\mbox{\Hypertarget{namespaceinterpolation_a49ff5214fde353c8438a404922ce5989}\label{namespaceinterpolation_a49ff5214fde353c8438a404922ce5989}} 
+\index{interpolation@{interpolation}!interpolation\+\_\+version@{interpolation\+\_\+version}}
+\index{interpolation\+\_\+version@{interpolation\+\_\+version}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{interpolation\+\_\+version}{interpolation\_version}}
+{\footnotesize\ttfamily integer, parameter interpolation\+::interpolation\+\_\+version = 1}
+
+
+
+Referenced by tinterpolator1d\+\_\+savestate().
+
+\mbox{\Hypertarget{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}\label{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}} 
+\index{interpolation@{interpolation}!sp\+\_\+acc@{sp\+\_\+acc}}
+\index{sp\+\_\+acc@{sp\+\_\+acc}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{sp\+\_\+acc}{sp\_acc}}
+{\footnotesize\ttfamily integer parameter interpolation\+::sp\+\_\+acc = K\+I\+ND(1.\+0)}
+
+\mbox{\Hypertarget{namespaceinterpolation_a3f75fda9aed3d08991097b0d7c8fc70f}\label{namespaceinterpolation_a3f75fda9aed3d08991097b0d7c8fc70f}} 
+\index{interpolation@{interpolation}!spline\+\_\+dangle@{spline\+\_\+dangle}}
+\index{spline\+\_\+dangle@{spline\+\_\+dangle}!interpolation@{interpolation}}
+\subsubsection{\texorpdfstring{spline\+\_\+dangle}{spline\_dangle}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), parameter, public interpolation\+::spline\+\_\+dangle =1.e30\+\_\+sp\+\_\+acc}
+
+
+
+Referenced by samples\+::density1d\+\_\+initspline(), regular\+\_\+spline(), spline(), interpolation\+::tinterpgrid2d\+::tinterpgrid2d\+\_\+free(), and tinterpolator1d\+\_\+clear().
+

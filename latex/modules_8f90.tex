@@ -1,0 +1,621 @@
+\hypertarget{modules_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/modules.f90 File Reference}
+\label{modules_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/modules.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/modules.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmodelparams_1_1transferparams}{modelparams\+::transferparams}}
+\item 
+type \mbox{\hyperlink{structmodelparams_1_1cambparams}{modelparams\+::cambparams}}
+\item 
+type \mbox{\hyperlink{structmodelparams_1_1tbackgroundoutputs}{modelparams\+::tbackgroundoutputs}}
+\item 
+type \mbox{\hyperlink{structlvalues_1_1lsamples}{lvalues\+::lsamples}}
+\item 
+type \mbox{\hyperlink{structmodeldata_1_1limberrec}{modeldata\+::limberrec}}
+\item 
+type \mbox{\hyperlink{structmodeldata_1_1cltransferdata}{modeldata\+::cltransferdata}}
+\item 
+type \mbox{\hyperlink{structtransfer_1_1mattertransferdata}{transfer\+::mattertransferdata}}
+\item 
+type \mbox{\hyperlink{structtransfer_1_1matterpowerdata}{transfer\+::matterpowerdata}}
+\item 
+interface \mbox{\hyperlink{interfacetransfer_1_1transfer__getmatterpower}{transfer\+::transfer\+\_\+getmatterpower}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacemodelparams}{modelparams}}
+\item 
+module \mbox{\hyperlink{namespacelvalues}{lvalues}}
+\item 
+module \mbox{\hyperlink{namespacemodeldata}{modeldata}}
+\item 
+module \mbox{\hyperlink{namespacemassivenu}{massivenu}}
+\item 
+module \mbox{\hyperlink{namespacetransfer}{transfer}}
+\item 
+module \mbox{\hyperlink{namespacethermodata}{thermodata}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_a13f805ae3c4213f4c9204bf8d8f17350}{modelparams\+::cambparams\+\_\+set}} (P, error, Do\+Reion)
+\item 
+real(sp) function \mbox{\hyperlink{namespacemodelparams_a2abd5cb7bfc9c34a736d91ed5863552d}{modelparams\+::gettesttime}} ()
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a09b856ca78d2c38cb9746680ce7a4d9f}{modelparams\+::rofchi}} (Chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_af941ff2f9683e6bf6994f87b27ea9427}{modelparams\+::cosfunc}} (Chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ade19d5a5ee3bef508e781d64c8c667ae}{modelparams\+::tanfunc}} (Chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a463f6e148b9f2c45ec30cb28c29bb4e3}{modelparams\+::invsinfunc}} (x)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ad0ec1bb07f7e0295749e801b141bfc0f}{modelparams\+::f\+\_\+k}} (x)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ae583f09e6523f430605f421d2db537ae}{modelparams\+::deltatime}} (a1, a2, in\+\_\+tol)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ae8f7910867e2ed755e7f4d5eacdeee2d}{modelparams\+::timeofz}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_aa9fc9f952c72345785fa69b491e598d5}{modelparams\+::timeofzarr}} (nz, redshifts, outputs)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ac094d31babe3489387c12a3c2ab05549}{modelparams\+::deltaphysicaltimegyr}} (a1, a2, in\+\_\+tol)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a63c764e54b9b02649d00f8071cb9297f}{modelparams\+::angulardiameterdistance}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_a31cf59c4ca59e0bc5c8c2b45a8f3487e}{modelparams\+::angulardiameterdistancearr}} (arr, z, n)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a74645c7e2e48bb3d57da7da5383799ed}{modelparams\+::angulardiameterdistance2}} (z1, z2)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a40c5d69daf3f5689ecf0c29c19257028}{modelparams\+::luminositydistance}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ad0393036efc0bf4d20eba5112748a1a2}{modelparams\+::comovingradialdistance}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a0180f3c86db3b86362776831ebdb2ff2}{modelparams\+::hofz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a3a1026b2054f510f0c0dd9ee5c95e1b9}{modelparams\+::bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h}} (z, DA, Hz)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a39160c5bd9a51624f48cbef4197bb22f}{modelparams\+::bao\+\_\+d\+\_\+v}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a57d61799939e1d3d5984dba316f8cc6a}{modelparams\+::dsound\+\_\+da\+\_\+exact}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a60c72460cbce332f5142d619a906fa16}{modelparams\+::dsound\+\_\+da}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a0ab3d80c1ede505b3412f5b33bd3a202}{modelparams\+::dtda}} (a)
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_af7cba6b22f91f9428ebecb63823d451a}{modelparams\+::nxyl}} (y)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ab4a4cc860939dbbdc0236048b5f9457e}{modelparams\+::cosmomctheta}} ()
+\item 
+integer function \mbox{\hyperlink{namespacelvalues_ae29d1934474229125b75e4a609f4e81e}{lvalues\+::lvalues\+\_\+indexof}} (l\+Set, l)
+\item 
+subroutine \mbox{\hyperlink{namespacelvalues_aae4ab5512d16abd3d2f2857fe806e012}{lvalues\+::initlval}} (l\+Set, max\+\_\+l)
+\item 
+subroutine \mbox{\hyperlink{namespacelvalues_a62105cb97d67654d96481cbb8fe54240}{lvalues\+::interpolateclarr}} (l\+Set, i\+Cl, all\+\_\+\+Cl, max\+\_\+ind)
+\item 
+subroutine \mbox{\hyperlink{namespacelvalues_a0aa80e0b1f26674e19df96ec0d9c199e}{lvalues\+::interpolateclarrtemplated}} (l\+Set, i\+Cl, all\+\_\+\+Cl, max\+\_\+ind, template\+\_\+index)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_aafb7870d44b0d4146bad72673d70223f}{modeldata\+::init\+\_\+cltransfer}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_af9818c2b8e3f5e17f6d1a309726fc12e}{modeldata\+::init\+\_\+limber}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a2d6ecb98a3edf71d3e3ed3ee1ffb82d1}{modeldata\+::free\+\_\+cltransfer}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a89ab0d30547c35685982ecf01d7145bd}{modeldata\+::free\+\_\+limber}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a031eb48cced394c893960d706797a651}{modeldata\+::checkloadedhighltemplate}}
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a3b4fcde7e9343acbea6dd3d7b52aba10}{modeldata\+::init\+\_\+cls}}
+\item 
+integer function \mbox{\hyperlink{namespacemodeldata_abab5acd24b50e4d884e84682fed17a52}{modeldata\+::open\+\_\+file\+\_\+header}} (filename, Col1, Columns, n)
+\item 
+character(len=5) function \mbox{\hyperlink{namespacemodeldata_af3439e8b84f5875f131343636aa8adee}{modeldata\+::scalar\+\_\+fieldname}} (i)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_ace30b2a5cf368aaadfbdaf70dcc20a9e}{modeldata\+::output\+\_\+cl\+\_\+files}} (Scal\+File, Scal\+Cov\+File, Tens\+File, Tot\+File, Lens\+File, Lens\+Tot\+File, factor)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a3db0a7cfe521f110aeef7aaa900d1843}{modeldata\+::output\+\_\+lens\+\_\+pot\+\_\+files}} (Lens\+Pot\+File, factor)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a307b673f582637ddd1d7c8557429e040}{modeldata\+::output\+\_\+veccl\+\_\+files}} (Vec\+File, factor)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_aec1c8c9bdd2a65d1f5eec6cb91f7afa1}{modeldata\+::normalizeclsatl}} (lnorm)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a4a66d258c52f2b7639e92ce04f7047ff}{modeldata\+::modeldata\+\_\+free}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_a872d62098a8fc9b6d372d05bc210c428}{massivenu\+::sum\+\_\+mnu\+\_\+for\+\_\+m1}} (summnu, dsummnu, m1, targ, sgn)
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_acf78f8f20c4f8c680d7f239aaffbc826}{massivenu\+::nu\+\_\+init}}
+\item 
+subroutine \mbox{\hyperlink{namespacemassivenu_ae38eedf1b14513e212f542f0afcb8a7f}{massivenu\+::nurhopres}} (am, rhonu, pnu)
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_a30a55d3fc963ae76797cb114a3bd8818}{massivenu\+::nu\+\_\+background}} (am, rhonu, pnu)
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_a5e5e907b67a43f82b29065f75a696ae5}{massivenu\+::nu\+\_\+rho}} (am, rhonu)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacemassivenu_a095ca5fb68fcb4e3b808e4dcf0f2f34d}{massivenu\+::nu\+\_\+drho}} (am, adotoa, rhonu)
+\item 
+subroutine \mbox{\hyperlink{modules_8f90_aeb341c03133755d1152435fb5558adfb}{init\+\_\+massive\+\_\+nu}} (has\+\_\+massive\+\_\+nu)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_af736a104130d0ba0ffbadfa62d245747}{transfer\+::transfer\+\_\+getunsplinedpower}} (M, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a8690f3749fa31715c7729f1f934b7d91}{transfer\+::transfer\+\_\+getunsplinednonlinearpower}} (M, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a149c7870c28cd849591073c3d8f76d69}{transfer\+::transfer\+\_\+getmatterpowerdata}} (M\+Trans, P\+K\+\_\+data, power\+\_\+ix, itf\+\_\+only, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_af9f31cacfbd0270f60f1c42a0b38dd62}{transfer\+::matterpowerdata\+\_\+load}} (P\+K\+\_\+data, fname)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_ad195947cd911f4aef6edba0319f4ac2f}{transfer\+::matterpowerdata\+\_\+getsplines}} (P\+K\+\_\+data)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a113eb04b73dbf4222ca5a7e88eea5528}{transfer\+::matterpowerdata\+\_\+makenonlinear}} (P\+K\+\_\+data)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_aca3eef4bfa07144ae4db1ec793e42c70}{transfer\+::matterpowerdata\+\_\+free}} (P\+K\+\_\+data)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a890cb72b18bbeb6b973f55ac477250e2}{transfer\+::matterpowerdata\+\_\+nullify}} (P\+K\+\_\+data)
+\item 
+real(dl) function \mbox{\hyperlink{namespacetransfer_a7d7e2b6a55941b8e40b01b2cfed0af02}{transfer\+::matterpowerdata\+\_\+k}} (PK, kh, itf)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a4515b492b259544eae13a774663d6cea}{transfer\+::transfer\+\_\+getmatterpowers}} (M\+Trans, outpower, itf, in, minkh, dlnkh, npoints, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_aec77f610696b7445e8c8e070491ca238}{transfer\+::transfer\+\_\+getmatterpowerd}} (M\+Trans, outpower, itf\+\_\+\+PK, in, minkh, dlnkh, npoints, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a0b068265a029b16713e45ff26d8e6794}{transfer\+::transfer\+\_\+get\+\_\+sigmar}} (M\+Trans, R, outvals, var1, var2, power\+\_\+ix, root)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a9f16a04226ffcb97b7f2bfc5b681f3b4}{transfer\+::transfer\+\_\+getsigmararray}} (M\+Trans, R, sigmaR, redshift\+\_\+ix, var1, var2, power\+\_\+ix)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a6330289a440bd51a5c55da9c40dee8a2}{transfer\+::transfer\+\_\+get\+\_\+sigma8}} (M\+Trans, R, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a94b4673ba4b74ac5aef785afde714446}{transfer\+::transfer\+\_\+get\+\_\+sigmas}} (M\+Trans, R, var\+\_\+delta, var\+\_\+v)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a7f7da292010e79184bed8cdb24e03d2b}{transfer\+::transfer\+\_\+output\+\_\+sig8}} (M\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a687f977819e9abe471f86cff900939e7}{transfer\+::transfer\+\_\+allocate}} (M\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a0e02ff3d1ba9dd5ad8c5dcaf76987ecc}{transfer\+::transfer\+\_\+nullify}} (Mtrans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a34407967277591afeb26880a4f0926dc}{transfer\+::transfer\+\_\+free}} (M\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_ad877dbf164ab7d108432f41d21c155fd}{transfer\+::transfer\+\_\+setfornonlinearlensing}} (P)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_adc67bad9d6015b3ecd203551b927d522}{transfer\+::transfer\+\_\+savetofiles}} (M\+Trans, File\+Names)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a4204b279b39e55f31b7948dec07fd7ed}{transfer\+::transfer\+\_\+savematterpower}} (M\+Trans, File\+Names)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a138e96e5b60355e8136607e26339b2a0}{transfer\+::transfer\+\_\+sortandindexredshifts}} (P)
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a9ff7d8c599c64921c554cbc2069b3d2b}{thermodata\+::thermo}} (tau, cs2b, opacity, dopacity)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacethermodata_ac4c3a9846b711f25cba7ce38322ee66b}{thermodata\+::thermo\+\_\+opacitytotime}} (opacity)
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a6d995eb9ad9f563fec198222c168e097}{thermodata\+::inithermo}} (taumin, taumax)
+\item 
+subroutine \mbox{\hyperlink{namespacethermodata_a53958f3aa160bfde722bffb2b9d47df8}{thermodata\+::settimesteps}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a29f627a601dcc5afc90dc9ea8e4d902a}{thermodata\+::thermodata\+\_\+free}}
+\item 
+subroutine \mbox{\hyperlink{namespacethermodata_a1c7e7a0884bd2117c1d24a1ce8d5aaf1}{thermodata\+::dothermospline}} (j2, tau)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_a78b5c4ff5e2d2d472df5aae9bdd02d77}{thermodata\+::ddamping\+\_\+da}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_afdafed82de5a75a5b609d945a91836fa}{thermodata\+::doptdepth\+\_\+dz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_a3875da8b58196788145c8f6df6ea6cfe}{thermodata\+::optdepth}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_a3d2fe3077a350ae407ecb93f927b2cc4}{thermodata\+::ddragoptdepth\+\_\+dz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacethermodata_ac14b857825ae37eee1107a320f7d71f7}{thermodata\+::dragoptdepth}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacethermodata_a402bcd30314032d575f841bf374ad320}{thermodata\+::find\+\_\+z}} (func, zout)
+\item 
+subroutine, public \mbox{\hyperlink{namespacethermodata_a94d40d05e68eca4db87b58269d19e6f3}{thermodata\+::getbackgroundevolution}} (ntimes, times, outputs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacemodelparams_ae4691876bb5eed2cdd64ae8eca39dc32}{modelparams\+::version}} = \textquotesingle{}Nov16\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a403353ede075646b189fcfbae0fb3396}{modelparams\+::feedbacklevel}} = 0
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_aa59993fb52b4f0010f0587e10f27b792}{modelparams\+::output\+\_\+file\+\_\+headers}} = .true.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a2fccc38c501c6f494fa1ced55e52a983}{modelparams\+::debugmsgs}} =.false.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a69b1cd59448404e0bcd21612fb8e69c9}{modelparams\+::debugevolution}} = .false.
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a35a694469321a4414b622d9a0ec18f1f}{modelparams\+::debugparam}} = 0.\+\_\+dl
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_aa42e1180e92882f566f30d970dc110a4}{modelparams\+::do\+\_\+bispectrum}} = .false.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a0dda4d3f4b77e14c2635221cdf01de0f}{modelparams\+::hard\+\_\+bispectrum}} = .false.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a62664016ce9ca8fc8e53ebbfb8caa09c}{modelparams\+::full\+\_\+bessel\+\_\+integration}} = .false.
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a6886b2553f1b2657b012618d5377619d}{modelparams\+::nu\+\_\+int}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a31f4e37e9eb0841e803020950fe2ce52}{modelparams\+::nu\+\_\+trunc}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_ac509ce908abffae5d206533cc7eddfe9}{modelparams\+::nu\+\_\+approx}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a1da306d0a7758bf910362b6d62e6658f}{modelparams\+::nu\+\_\+best}} = 3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}{modelparams\+::max\+\_\+nu}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_abe7b8d46cfb994afa85d77bbb5b6b5d5}{modelparams\+::max\+\_\+transfer\+\_\+redshifts}} = 150
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_ac3257ef5df85ecef99f684ac5b101b71}{modelparams\+::fileio\+\_\+unit}} = 13
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a08fb4afbafc2828da55e9684f24d8d6f}{modelparams\+::outnone}} =1
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a0398b22cb85696d3eeaf76b7db97215c}{modelparams\+::max\+\_\+bessels\+\_\+l\+\_\+index}} = 1000000
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a7a677586a4085c9c337cac0d8a025dc6}{modelparams\+::max\+\_\+bessels\+\_\+etak}} = 1000000$\ast$2
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_abb77cb9ffb6e4c47f4bbb5817f675840}{modelparams\+::outputdenominator}} =twopi
+\item 
+type(regions) \mbox{\hyperlink{namespacemodelparams_ab62c122a08bce8a2c161066a3e0f83cd}{modelparams\+::timesteps}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a2e14a764fa10ffaa74cc53471510c99b}{modelparams\+::nonlinear\+\_\+none}} =0
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a7534d8ae818c3b810559177c3108c43c}{modelparams\+::nonlinear\+\_\+pk}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a0f2c57977e2bc614225a5776fbcd1efa}{modelparams\+::nonlinear\+\_\+lens}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a44142a84e66f3bd7d9feebe2abd22160}{modelparams\+::nonlinear\+\_\+both}} =3
+\item 
+type(cambparams), save \mbox{\hyperlink{namespacemodelparams_a957df29b9a56a2cfc2a8cb27d46daa2d}{modelparams\+::cp}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_adc3b09efaf8a6d37303ccd19e27ae6e3}{modelparams\+::scale}}
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_a188f571d5f56be7a62bb3079ef44c3ce}{modelparams\+::call\+\_\+again}} = .false.
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a2ef8c57ec3ca12626295c0af7c8891b9}{modelparams\+::grhom}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_adcca33df63a9b35b19c2f220028498b1}{modelparams\+::grhog}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_aad31721fc53cb058072f19818ffd7178}{modelparams\+::grhor}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a0319101f7e0e2e39563baa34b7a77453}{modelparams\+::grhob}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ae9f905639d83dffafeac77f6c039c632}{modelparams\+::grhoc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a8c39e1bc5579fca9396e8d526ccd36f7}{modelparams\+::grhov}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a4c2d2ed96d5c953938367cc867157072}{modelparams\+::grhornomass}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a01ee7412b553c0b2ab7ea2fcc5ee0a24}{modelparams\+::grhok}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_aa2deb415a6c7c9f406093a8c6853d01c}{modelparams\+::taurst}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a4c0c5110385ed23392c37abe83c629d5}{modelparams\+::dtaurec}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a914411aec3209257f74b174bae6b2a10}{modelparams\+::taurend}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a9d0fd2e2f02494b8ed27d6c924d7c494}{modelparams\+::tau\+\_\+maxvis}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a4e46748f7df40701a9962f9ddac9544e}{modelparams\+::adotrad}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a2cf17001b748d255082420e5cdcb52be}{modelparams\+::grhodgc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_adba219855fecf94eab76932919bad160}{modelparams\+::lambdac}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a0a62f172d9cb5307499eada437c8f282}{modelparams\+::alphabde}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ad94fb2bc6179da9e6382c136f6c94bfe}{modelparams\+::wdgc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a84817ace19c07faa219c6c62dbcabb87}{modelparams\+::omegadgc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ae997a7c4aa08ef8490836137c26170f1}{modelparams\+::ac}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_acb822982115ab63eb32ad1374cbc13c0}{modelparams\+::k\+\_\+phi}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a616bd55af3f7197c74b52398020f9b85}{modelparams\+::norm\+\_\+pot}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a7288612ee3d61c71a35e8504a6c6be79}{modelparams\+::fixq}} = 0.\+\_\+dl
+\item 
+real(dl), dimension(max\+\_\+nu) \mbox{\hyperlink{namespacemodelparams_aea40a307408a18a8b9e794a71c409f18}{modelparams\+::grhormass}}
+\item 
+real(dl), dimension(max\+\_\+nu) \mbox{\hyperlink{namespacemodelparams_a4cbebdfc6776f516e062c03bc9c26d7f}{modelparams\+::nu\+\_\+masses}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a5dc004ca6b9a5a2f7372357e5a481de7}{modelparams\+::akthom}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a237a630b241207072c775a0a483fccf2}{modelparams\+::fhe}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a75f2e158664252c3e9cf88ad48570e99}{modelparams\+::nnow}}
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a33c1b20cf097d69a5c7c3dfda3dab4ab}{modelparams\+::threadnum}} = 0
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_a248f1c00694dc15ba911d43021a79d6c}{modelparams\+::highaccuracydefault}} = .true.
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ab2930a201db30785a690dd81ab50f4d2}{modelparams\+::lsampleboost}} =1.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_abb9bb8b33d3369c3a551e3d4531133e1}{modelparams\+::accuracyboost}} =1.\+\_\+dl
+\item 
+real(sp) \mbox{\hyperlink{namespacemodelparams_a670eec63b2ba5b17870ecc149c352d95}{modelparams\+::laccuracyboost}} =1.
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a0a27a495392838f0bebb4cc754f548c1}{modelparams\+::limber\+\_\+phiphi}} = 0
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a6617a935c25965a12d1cfd1f3a2a3e12}{modelparams\+::num\+\_\+redshiftwindows}} = 0
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a9b9513ec2c0807b724060d4cc2b1f209}{modelparams\+::num\+\_\+extra\+\_\+redshiftwindows}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_ac592a5921d58b2abb1fb48bb520fd87b}{modelparams\+::lmin}} = 2
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_a1945ea0e00217f55d85995eeae03eb18}{modelparams\+::omegakflat}} = 5e-\/7\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_aa0d6cc3ee9273208296f9f9ee8ce821f}{modelparams\+::tol}} =1.\+0d-\/4
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_a1385cd79ec8a583c0e723a87e6dd5a78}{modelparams\+::spl\+\_\+large}} =1.e40\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_af523f2835472798b89ae123214d8fb99}{modelparams\+::l0max}} =4000
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a68d9b09cb50a8117d4eba3f1dc224627}{modelparams\+::lmax\+\_\+arr}} = l0max
+\item 
+character(len=1024) \mbox{\hyperlink{namespacemodelparams_af0393446db4ef6a4d9b6ea1e107447dd}{modelparams\+::highl\+\_\+unlensed\+\_\+cl\+\_\+template}} = \textquotesingle{}High\+L\+Extrap\+Template\+\_\+lenspotential\+Cls.\+dat\textquotesingle{}
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_a11a5af696bd0ff15b97767839562048e}{modelparams\+::use\+\_\+spline\+\_\+template}} = .true.
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a773455ee2416a2e08be5835a1c92fccd}{modelparams\+::lmax\+\_\+extrap\+\_\+highl}} = 8000
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemodelparams_ac21d168dd37c9a2ef9fef53a5ba08c3c}{modelparams\+::highl\+\_\+cl\+\_\+template}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_afcc43d2b71977053be4631323ffeafbc}{modelparams\+::derived\+\_\+age}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a179ecd2347ad710da08fc22b9d583f02}{modelparams\+::derived\+\_\+zstar}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a0a96c00fb37f393bad015179acb69747}{modelparams\+::derived\+\_\+rstar}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_af8cbef6429fb7ceac03aa8fe7d0d9875}{modelparams\+::derived\+\_\+thetastar}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a81273461b08fe58e73e36d844c62fe7f}{modelparams\+::derived\+\_\+dastar}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a9a7e7cdc5d12b5f40bff2ae559319e44}{modelparams\+::derived\+\_\+zdrag}} =6
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a902eadf9e7fd31eb1ebd3e02ac0e443b}{modelparams\+::derived\+\_\+rdrag}} =7
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a709313f88097e1ea1da03d031977d39d}{modelparams\+::derived\+\_\+kd}} =8
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_aa8c5e706aaaef69a8fa8e0230f1242d3}{modelparams\+::derived\+\_\+thetad}} =9
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a47dbe62349dd11d37540763b6dc4e630}{modelparams\+::derived\+\_\+zeq}} =10
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a9158352b05bd5c94db9c9f39b728b8af}{modelparams\+::derived\+\_\+keq}} =11
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_aa10d4b47c739162ede20adf21b82dcb7}{modelparams\+::derived\+\_\+thetaeq}} =12
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_acba5f72246541278ec6edcb88ebc2197}{modelparams\+::derived\+\_\+theta\+\_\+rs\+\_\+eq}} = 13
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a3763c4095d154f01def46dfce33faffd}{modelparams\+::nthermo\+\_\+derived}} = 13
+\item 
+real(dl), dimension(nthermo\+\_\+derived) \mbox{\hyperlink{namespacemodelparams_a81091ac7021dd731decc138dc9886329}{modelparams\+::thermoderivedparams}}
+\item 
+type(tbackgroundoutputs), save \mbox{\hyperlink{namespacemodelparams_ad4f70e5f61b1f44ff823eb7f25e96b45}{modelparams\+::backgroundoutputs}}
+\item 
+type(lsamples) \mbox{\hyperlink{namespacelvalues_ae00efa8263b3dcff6d82e34d4102a808}{lvalues\+::lsamp}}
+\item 
+logical \mbox{\hyperlink{namespacelvalues_afe164d781a115f4ab472604a3b522c6d}{lvalues\+::log\+\_\+lvalues}} = .false.
+\item 
+type(cltransferdata), target, save \mbox{\hyperlink{namespacemodeldata_a34bd8af8076e850aa1bd0bd9979be120}{modeldata\+::ctransscal}}
+\item 
+type(cltransferdata), target, save \mbox{\hyperlink{namespacemodeldata_a432da70b3966012f72663b1b37c5f44d}{modeldata\+::ctranstens}}
+\item 
+type(cltransferdata), target, save \mbox{\hyperlink{namespacemodeldata_ad30179531817ef1d8f3c57eeb179702d}{modeldata\+::ctransvec}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_ab144c0dde977b1695db87bc0a2eb3906}{modeldata\+::c\+\_\+temp}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a1697c6436c81028fc5378aa20c691bc6}{modeldata\+::c\+\_\+e}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a3b2071eab09222beb5e8e06ccd8764f3}{modeldata\+::c\+\_\+cross}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_ae74d57bf66536040e60bd4e100a29a78}{modeldata\+::c\+\_\+phi}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a55f3705dd9a17416caa44b692f8bd38c}{modeldata\+::c\+\_\+phitemp}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a0b2ffa13b78be0e1097e0696f61b3d67}{modeldata\+::c\+\_\+phie}} =6
+\item 
+integer \mbox{\hyperlink{namespacemodeldata_a775752af289f0f86e09da60b795fd542}{modeldata\+::c\+\_\+last}} = C\+\_\+\+PhiE
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a0852164e9866929946aab4fdf78ca2b2}{modeldata\+::ct\+\_\+temp}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a5fa8e9929dddc8461255d21037ce5817}{modeldata\+::ct\+\_\+e}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_ae2b16c12d10fc3ad1bf9b8bcda35fa19}{modeldata\+::ct\+\_\+b}} = 3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a76668d6bad37db06c7b9a47cdeba14dc}{modeldata\+::ct\+\_\+cross}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{modeldata\+::name\+\_\+tag\+\_\+len}} = 12
+\item 
+character(len=name\+\_\+tag\+\_\+len), dimension(c\+\_\+phie), parameter \mbox{\hyperlink{namespacemodeldata_a5d4df179847dfc001c062789b178f4d1}{modeldata\+::c\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}TE\textquotesingle{},\textquotesingle{}PP\textquotesingle{},\textquotesingle{}TP\textquotesingle{},\textquotesingle{}EP\textquotesingle{}\mbox{]}
+\item 
+character(len=name\+\_\+tag\+\_\+len), dimension(ct\+\_\+cross), parameter \mbox{\hyperlink{namespacemodeldata_add55f08ccdcc65479fca4cd2858b420d}{modeldata\+::ct\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}BB\textquotesingle{},\textquotesingle{}TE\textquotesingle{}\mbox{]}
+\item 
+character(len=name\+\_\+tag\+\_\+len), dimension(7), parameter \mbox{\hyperlink{namespacemodeldata_ac4a0361c6d9a7692c9cbf7a08dc43e49}{modeldata\+::lens\+\_\+pot\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}BB\textquotesingle{},\textquotesingle{}TE\textquotesingle{},\textquotesingle{}PP\textquotesingle{},\textquotesingle{}TP\textquotesingle{},\textquotesingle{}EP\textquotesingle{}\mbox{]}
+\item 
+logical \mbox{\hyperlink{namespacemodeldata_a446d6a37d3ee5445c94a5f0d5470021a}{modeldata\+::has\+\_\+cl\+\_\+2d\+\_\+array}} = .false.
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_a1d7527074ae8035793a2d9cf5cb4a8e8}{modeldata\+::cl\+\_\+scalar}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_a3108cab8cb9fec5823d887825efd266d}{modeldata\+::cl\+\_\+tensor}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_ab8016bbfb187a558b12d8a9c17f6b85c}{modeldata\+::cl\+\_\+vector}}
+\item 
+real(dl), dimension(\+:,\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_a24816a1c9914f5b5567b61ed37aa320b}{modeldata\+::cl\+\_\+scalar\+\_\+array}}
+\item 
+integer \mbox{\hyperlink{namespacemodeldata_a538b61c12ebffc4e237d03392898a395}{modeldata\+::lmax\+\_\+lensed}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_aa6168a25119bd0a5064f367267954562}{modeldata\+::cl\+\_\+lensed}}
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacemassivenu_a70abc43ce18c77a19a2a5a3577cdca33}{massivenu\+::const}} = 7.\+\_\+dl/120$\ast$pi$\ast$$\ast$4
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a63b8c9d69523c7f853ffbcc4d48fda0e}{massivenu\+::const2}} = 5.\+\_\+dl/7/pi$\ast$$\ast$2
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a51e0c61eba59c96a5b43e2d0c8eacd6f}{massivenu\+::zeta3}} = 1.\+2020569031595942853997\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_aee270302c33f3b6976ed226a553b26cf}{massivenu\+::zeta5}} = 1.\+0369277551433699263313\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a7d96619046ccc740edb22a9588426c34}{massivenu\+::zeta7}} = 1.\+0083492773819228268397\+\_\+dl
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacemassivenu_a12e889efae466257e45a8341a9f6150e}{massivenu\+::neutrino\+\_\+mass\+\_\+fac}} = 94.\+07\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacemassivenu_a25f2b3dce3fcea3371981c04a2ebd80c}{massivenu\+::nrhopn}} =2000
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a78f8e34c3e80b51195c21fdaa07761b1}{massivenu\+::am\+\_\+min}} = 0.\+01\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a41419034ccb5dbf62c14483531ca5fb1}{massivenu\+::am\+\_\+max}} = 600.\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a3d0cea67f62f7fd30ce0c991b6215a9b}{massivenu\+::am\+\_\+minp}} =am\+\_\+min$\ast$1.\+1
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a70711a9642331142a38cd93e15ae874a}{massivenu\+::am\+\_\+maxp}} =am\+\_\+max$\ast$0.\+9
+\item 
+real(dl) \mbox{\hyperlink{namespacemassivenu_a0bc7918cccdf1d31a74fd0b7c68f6249}{massivenu\+::dlnam}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a17286610cbb3be4f5e2e6cb9207cd3d3}{massivenu\+::r1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a1776e9b553839aa3e0328f3104c8def6}{massivenu\+::p1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a73078a1de4febfc2142d1518a0045e06}{massivenu\+::dr1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a2bf645ad1caf3996fa724d4351b0b5a8}{massivenu\+::dp1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a9d5815d7727b8913cba78eb9fb6d002c}{massivenu\+::ddr1}}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}{massivenu\+::nqmax0}} =80
+\item 
+real(dl), dimension(nqmax0), public \mbox{\hyperlink{namespacemassivenu_a12570e51825f5cec04f3e7d1fffa7702}{massivenu\+::nu\+\_\+q}}
+\item 
+real(dl), dimension(nqmax0), public \mbox{\hyperlink{namespacemassivenu_addf94ab5a9d895ca27a259f651853eb0}{massivenu\+::nu\+\_\+int\+\_\+kernel}}
+\item 
+integer, public \mbox{\hyperlink{namespacemassivenu_a95412d3036cd184190c2157292ec7732}{massivenu\+::nqmax}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a53e222aefb0911649bf35fc879a5f367}{transfer\+::transfer\+\_\+kh}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a9e67898263c714e994816a119937416f}{transfer\+::transfer\+\_\+cdm}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_ab15ebb6605b445eaddd657e94abc151b}{transfer\+::transfer\+\_\+b}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a4076f4ea08670377ed92c3a16ced89f0}{transfer\+::transfer\+\_\+g}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a55264fe59289090c8c796b22c71d5937}{transfer\+::transfer\+\_\+r}} =5
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a88f1f472755284c745f4f9627f3385f3}{transfer\+::transfer\+\_\+nu}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a96bc38e4fa7d41872d481db49a3e5f46}{transfer\+::transfer\+\_\+tot}} =7
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_aa028f75ae9a421f87ff8e2ebbfb88e73}{transfer\+::transfer\+\_\+nonu}} =8
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a3ae9f7a69bc80c029fe96b8a1de263b3}{transfer\+::transfer\+\_\+tot\+\_\+de}} =9
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_adc4f1fee4e89ed92a0865f3854118eca}{transfer\+::transfer\+\_\+weyl}} = 10
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_acac3c3e5a8b36cd08ca97ca40bd92fcc}{transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+cdm}} =11
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_acfa190894a4b625fe771219f23b9bc2f}{transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+baryon}} =12
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a355c8bcd1bf73a87d603cd7f77c702d0}{transfer\+::transfer\+\_\+vel\+\_\+baryon\+\_\+cdm}} = 13
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_ac87f6542d01968f20465ccd32f02667c}{transfer\+::transfer\+\_\+max}} = Transfer\+\_\+vel\+\_\+baryon\+\_\+cdm
+\item 
+character(len=name\+\_\+tag\+\_\+len), dimension(transfer\+\_\+max-\/1) \mbox{\hyperlink{namespacetransfer_ac02a42ae84b0dbee0b48ed2dd95b6dc8}{transfer\+::transfer\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}C\+DM \textquotesingle{}, \textquotesingle{}baryon \textquotesingle{}, \textquotesingle{}photon \textquotesingle{}, \textquotesingle{}nu \textquotesingle{}, \textquotesingle{}mass\+\_\+nu \textquotesingle{}, \textquotesingle{}total \textquotesingle{}, \textquotesingle{}no\+\_\+nu \textquotesingle{}, \textquotesingle{}total\+\_\+de\textquotesingle{}, \textquotesingle{}Weyl \textquotesingle{}, \textquotesingle{}v\+\_\+\+C\+DM \textquotesingle{}, \textquotesingle{}v\+\_\+b \textquotesingle{}, \textquotesingle{}v\+\_\+b-\/v\+\_\+c \textquotesingle{}\mbox{]}
+\item 
+logical \mbox{\hyperlink{namespacetransfer_a1dfb4e8c94804bd740e5d676a5b23d6f}{transfer\+::transfer\+\_\+interp\+\_\+matterpower}} = .true.
+\item 
+integer \mbox{\hyperlink{namespacetransfer_abd233741f7f81807122709afee55d2f2}{transfer\+::transfer\+\_\+power\+\_\+var}} = Transfer\+\_\+tot
+\item 
+logical \mbox{\hyperlink{namespacetransfer_a271d66692c1d4b207c6e033b5a8197e8}{transfer\+::get\+\_\+growth\+\_\+sigma8}} = .true.
+\item 
+type(mattertransferdata), save \mbox{\hyperlink{namespacetransfer_abf8737afeb10e8b167c70416ad103a74}{transfer\+::mt}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacethermodata_ab5a6325bede2b0cce4e867e9e1e18215}{thermodata\+::nthermo}} =20000
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_ab667ebbdbb18924a862b09a4b328c7f2}{thermodata\+::tb}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_abdbeec54177b30f0e0c16f4915bb6963}{thermodata\+::cs2}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_a253c9b40af269388f742a8651d063c18}{thermodata\+::xe}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_aca5f831d6371c97e07b745a1335c43a6}{thermodata\+::dcs2}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_aa46effcfaebc414efc1483613c20938b}{thermodata\+::dotmu}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_a64db577ccef33cb28a8ef97b9c49df58}{thermodata\+::ddotmu}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_a31169ba47074359a9820a44600d7628b}{thermodata\+::sdotmu}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_ad1bfdfc33182cbe1182c4785d88011c2}{thermodata\+::emmu}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_a01e420c8859c753a39ea78e4afe151a4}{thermodata\+::demmu}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_ad781349a01ad4eff9227f42ed5c67362}{thermodata\+::dddotmu}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_a679a88090aed732261c9ca690eddfe2b}{thermodata\+::ddddotmu}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_af11b78439f1e2243328bb5c4b111af76}{thermodata\+::winlens}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_a52362e5ab75ec6515f8b1b142b69ed8a}{thermodata\+::dwinlens}}
+\item 
+real(dl), dimension(nthermo) \mbox{\hyperlink{namespacethermodata_a6f460accce66697aeae2188276198cdb}{thermodata\+::scalefactor}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a68569d7c6ff02b02a4025f86a42c0d7e}{thermodata\+::tauminn}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a9a43caa2003542f5a28e6f2280515365}{thermodata\+::dlntau}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a41426412f674a69c99b7756938fc4204}{thermodata\+::maxtau}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_a14ddce36570d0e50813dc92cd05b57bf}{thermodata\+::vis}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_a4e5d2a5cf09e04bba23defc7dcf9e967}{thermodata\+::dvis}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_aeab1ddb31ee9b39dd71d1a5a833b85f6}{thermodata\+::ddvis}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_ab0ba79e6faa7c3d30e4b3a029b832d81}{thermodata\+::expmmu}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_aa627075f6104ddf2acd8968688ec6f7e}{thermodata\+::dopac}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_af824d4275dd6ae8475c82829c96c505c}{thermodata\+::opac}}
+\item 
+real(dl), dimension(\+:), allocatable, public \mbox{\hyperlink{namespacethermodata_a60473ac86869f6f9da92e4b0f76c5b12}{thermodata\+::lenswin}}
+\item 
+logical, parameter \mbox{\hyperlink{namespacethermodata_a4f8d2aec0f4b6bcdc91d3d574bae3ba9}{thermodata\+::dowinlens}} = .false.
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_acef8e1b2d18a8b07922432183d4673da}{thermodata\+::tight\+\_\+tau}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a9d1b4188f1f98683027a29df3cbdd586}{thermodata\+::actual\+\_\+opt\+\_\+depth}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_a13e012a8b804a7e2796df4f1afc4118e}{thermodata\+::matter\+\_\+verydom\+\_\+tau}}
+\item 
+real(dl) \mbox{\hyperlink{namespacethermodata_a75e62e760e36ea9df5293d2f0141edff}{thermodata\+::r\+\_\+drag0}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_ac0f90be6432813abe28335a041ffd10b}{thermodata\+::z\+\_\+star}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacethermodata_a74bf8ee4af304963a6fde19400dc5931}{thermodata\+::z\+\_\+drag}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{modules_8f90_aeb341c03133755d1152435fb5558adfb}\label{modules_8f90_aeb341c03133755d1152435fb5558adfb}} 
+\index{modules.\+f90@{modules.\+f90}!init\+\_\+massive\+\_\+nu@{init\+\_\+massive\+\_\+nu}}
+\index{init\+\_\+massive\+\_\+nu@{init\+\_\+massive\+\_\+nu}!modules.\+f90@{modules.\+f90}}
+\subsubsection{\texorpdfstring{init\+\_\+massive\+\_\+nu()}{init\_massive\_nu()}}
+{\footnotesize\ttfamily subroutine init\+\_\+massive\+\_\+nu (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{has\+\_\+massive\+\_\+nu }\end{DoxyParamCaption})}
+
+
+
+References massivenu\+::nu\+\_\+init(), and modelparams\+::nu\+\_\+masses.
+
+
+
+Referenced by modelparams\+::cambparams\+\_\+set().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{modules_8f90_aeb341c03133755d1152435fb5558adfb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{modules_8f90_aeb341c03133755d1152435fb5558adfb_icgraph}
+\end{center}
+\end{figure}

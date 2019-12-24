@@ -1,0 +1,7 @@
+<map id="handles::cambdata_new" name="handles::cambdata_new">
+<area shape="rect" id="node2" href="$namespacecamb.html#a64195b97e1e4c42b990076ff2bff6f1d" title="camb::camb_initcambdata" alt="" coords="219,27,394,53"/>
+<area shape="rect" id="node3" href="$namespacecamb.html#a6ce30ab6419006324d56d3e4434530f9" title="camb::camb_setdefparams" alt="" coords="217,77,397,104"/>
+<area shape="rect" id="node4" href="$namespacerecombination.html#aafff8339a994ad18b5b4187d9d4faa40" title="recombination::recombination\l_setdefparams" alt="" coords="455,5,647,46"/>
+<area shape="rect" id="node5" href="$namespacereionization.html#acd4c0417f4ec9bc6d5c9b6bea2b7b035" title="reionization::reionization\l_setdefparams" alt="" coords="469,70,632,111"/>
+<area shape="rect" id="node6" href="$namespaceinitialpower.html#a0af6f4d15e7cc386f038c557a83256e1" title="initialpower::setdefpowerparams" alt="" coords="446,136,655,163"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="nonlinear::grow" name="nonlinear::grow">
+<area shape="rect" id="node2" href="$namespacenonlinear.html#a553c7b86e3fd7c044f3fcef5b77c0a3f" title="nonlinear::find" alt="" coords="166,107,269,133"/>
+<area shape="rect" id="node3" href="$namespacenonlinear.html#ad34b8f5e3284fe90bf1e2d39ad027cc1" title="nonlinear::fit_cubic" alt="" coords="331,5,461,32"/>
+<area shape="rect" id="node4" href="$namespacenonlinear.html#a5754454991f9dfb61c4251267c2d175d" title="nonlinear::fit_line" alt="" coords="336,56,456,83"/>
+<area shape="rect" id="node5" href="$namespacenonlinear.html#ade72d40a60522b6b609687fbe7e9ddbb" title="nonlinear::fit_quadratic" alt="" coords="319,107,473,133"/>
+<area shape="rect" id="node6" href="$namespacenonlinear.html#ac344cab10a5226c8ef0147ff8f96767a" title="nonlinear::reverse" alt="" coords="333,157,459,184"/>
+<area shape="rect" id="node7" href="$namespacenonlinear.html#a9982a6cac80109ad36dd796e77f372de" title="nonlinear::table_integer" alt="" coords="318,208,474,235"/>
+<area shape="rect" id="node8" href="$namespacenonlinear.html#a623980d65535bc78bbcf5eb8f701ac42" title="nonlinear::linear_table\l_integer" alt="" coords="523,142,671,183"/>
+<area shape="rect" id="node9" href="$namespacenonlinear.html#a210b83a28f6523e35c1b2314bd38ba10" title="nonlinear::search_int" alt="" coords="526,208,669,235"/>
+<area shape="rect" id="node10" href="$namespacenonlinear.html#a0241839029c1aa4d429fb9a516577921" title="nonlinear::int_split" alt="" coords="534,259,661,285"/>
+</map>

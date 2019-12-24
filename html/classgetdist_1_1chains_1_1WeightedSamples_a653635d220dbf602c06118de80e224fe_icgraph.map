@@ -1,0 +1,7 @@
+<map id="getdist.chains.WeightedSamples.changeSamples" name="getdist.chains.WeightedSamples.changeSamples">
+<area shape="rect" id="node2" href="$classgetdist_1_1chains_1_1Chains.html#a14d289c78434f27324c29aba89ea535d" title="getdist.chains.Chains.add\lDerived" alt="" coords="369,5,543,46"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a5369d0f11ce50fafc68a3979134d3593" title="getdist.chains.WeightedSamples.delete\lFixedParams" alt="" coords="649,59,901,101"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1chains_1_1WeightedSamples.html#abebbaf7a369f8cbe63df082ba39969bb" title="getdist.chains.WeightedSamples.removeBurn" alt="" coords="313,125,599,152"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a4573e1e3c4919d77f2c9552d8e3f6ab0" title="getdist.mcsamples.MCSamples.read\lChains" alt="" coords="949,93,1187,134"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1chains_1_1Chains.html#afdf14ad21843a394732184ae26433d6e" title="getdist.chains.Chains.remove\lBurnFraction" alt="" coords="677,125,872,166"/>
+</map>

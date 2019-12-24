@@ -1,0 +1,267 @@
+\hypertarget{namespacecosmology}{}\section{cosmology Module Reference}
+\label{namespacecosmology}\index{cosmology@{cosmology}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcosmology_1_1cospar}{cospar}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_af6e96fd519aaf76a5407429172288537}{eh}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_aeef992799f00205f3a31ac86d34da7e2}{omegam}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a81af36db5e915a16bc6684c70562c2cc}{omegade}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_ac8a5367c45bf7773b9a8e27fb7ff59ec}{omegak}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a5acb8c4886ff7017542c3c1ec551f357}{r}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a9203d5591635fce503b42a2121a1dfaa}{rint}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a17233f8902b8f4b3f66ff1bfb3406c05}{da}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a38a12dc082adc18d1fc8a043bd39405c}{dvdzdo}} (z)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+type(\mbox{\hyperlink{structcosmology_1_1cospar}{cospar}}), save \mbox{\hyperlink{namespacecosmology_a58e3904346959bd5f3207f5f1f327e0e}{cosmopar}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecosmology_a17233f8902b8f4b3f66ff1bfb3406c05}\label{namespacecosmology_a17233f8902b8f4b3f66ff1bfb3406c05}} 
+\index{cosmology@{cosmology}!da@{da}}
+\index{da@{da}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{da()}{da()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::da (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References r().
+
+
+
+Referenced by massobservable\+::theta500(), and massobservable\+::y500().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_a17233f8902b8f4b3f66ff1bfb3406c05_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_a17233f8902b8f4b3f66ff1bfb3406c05_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmology_a38a12dc082adc18d1fc8a043bd39405c}\label{namespacecosmology_a38a12dc082adc18d1fc8a043bd39405c}} 
+\index{cosmology@{cosmology}!dvdzdo@{dvdzdo}}
+\index{dvdzdo@{dvdzdo}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{dvdzdo()}{dvdzdo()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::dvdzdo (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References eh(), and r().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_a38a12dc082adc18d1fc8a043bd39405c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmology_af6e96fd519aaf76a5407429172288537}\label{namespacecosmology_af6e96fd519aaf76a5407429172288537}} 
+\index{cosmology@{cosmology}!eh@{eh}}
+\index{eh@{eh}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{eh()}{eh()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::eh (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References cosmopar.
+
+
+
+Referenced by dvdzdo(), omegade(), omegam(), rint(), massobservable\+::theta500(), and massobservable\+::y500().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_af6e96fd519aaf76a5407429172288537_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmology_a81af36db5e915a16bc6684c70562c2cc}\label{namespacecosmology_a81af36db5e915a16bc6684c70562c2cc}} 
+\index{cosmology@{cosmology}!omegade@{omegade}}
+\index{omegade@{omegade}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{omegade()}{omegade()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::omegade (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References cosmopar, and eh().
+
+
+
+Referenced by power\+\_\+sz\+::ddelta(), and omegak().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{namespacecosmology_a81af36db5e915a16bc6684c70562c2cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_a81af36db5e915a16bc6684c70562c2cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmology_ac8a5367c45bf7773b9a8e27fb7ff59ec}\label{namespacecosmology_ac8a5367c45bf7773b9a8e27fb7ff59ec}} 
+\index{cosmology@{cosmology}!omegak@{omegak}}
+\index{omegak@{omegak}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{omegak()}{omegak()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::omegak (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References omegade(), and omegam().
+
+
+
+Referenced by power\+\_\+sz\+::ddelta().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_ac8a5367c45bf7773b9a8e27fb7ff59ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_ac8a5367c45bf7773b9a8e27fb7ff59ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmology_aeef992799f00205f3a31ac86d34da7e2}\label{namespacecosmology_aeef992799f00205f3a31ac86d34da7e2}} 
+\index{cosmology@{cosmology}!omegam@{omegam}}
+\index{omegam@{omegam}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{omegam()}{omegam()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::omegam (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References cosmopar, and eh().
+
+
+
+Referenced by power\+\_\+sz\+::ddelta(), power\+\_\+sz\+::growint(), and omegak().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacecosmology_aeef992799f00205f3a31ac86d34da7e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_aeef992799f00205f3a31ac86d34da7e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmology_a5acb8c4886ff7017542c3c1ec551f357}\label{namespacecosmology_a5acb8c4886ff7017542c3c1ec551f357}} 
+\index{cosmology@{cosmology}!r@{r}}
+\index{r@{r}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{r()}{r()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::r (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References cosmopar, rint(), and rombint().
+
+
+
+Referenced by da(), and dvdzdo().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_a5acb8c4886ff7017542c3c1ec551f357_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_a5acb8c4886ff7017542c3c1ec551f357_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmology_a9203d5591635fce503b42a2121a1dfaa}\label{namespacecosmology_a9203d5591635fce503b42a2121a1dfaa}} 
+\index{cosmology@{cosmology}!rint@{rint}}
+\index{rint@{rint}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{rint()}{rint()}}
+{\footnotesize\ttfamily real(dl) function cosmology\+::rint (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References eh().
+
+
+
+Referenced by r().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{namespacecosmology_a9203d5591635fce503b42a2121a1dfaa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmology_a9203d5591635fce503b42a2121a1dfaa_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecosmology_a58e3904346959bd5f3207f5f1f327e0e}\label{namespacecosmology_a58e3904346959bd5f3207f5f1f327e0e}} 
+\index{cosmology@{cosmology}!cosmopar@{cosmopar}}
+\index{cosmopar@{cosmopar}!cosmology@{cosmology}}
+\subsubsection{\texorpdfstring{cosmopar}{cosmopar}}
+{\footnotesize\ttfamily type (\mbox{\hyperlink{structcosmology_1_1cospar}{cospar}}), save cosmology\+::cosmopar}
+
+
+
+Referenced by power\+\_\+sz\+::ddelta(), power\+\_\+sz\+::delta(), eh(), power\+\_\+sz\+::growint(), omegade(), omegam(), r(), szcounts\+::szcc\+\_\+cash(), massobservable\+::theta500(), and massobservable\+::y500().
+

@@ -1,0 +1,301 @@
+\hypertarget{namespaceparamnames}{}\section{paramnames Module Reference}
+\label{namespaceparamnames}\index{paramnames@{paramnames}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structparamnames_1_1tbaseparamnames}{tbaseparamnames}}
+\item 
+type \mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+logical function \mbox{\hyperlink{namespaceparamnames_a6d210fed8da76c1fe28e96b8c0724666}{paramnames\+\_\+parseline}} (this, In\+Line, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a3e5401d3e44bed7bfdeed12938fa58fa}{paramnames\+\_\+alloc}} (this, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a0abbaf0b2bcd5b60c2d7c16746b07934}{paramnames\+\_\+dealloc}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a1e5be5e1dda784956ba3a9d7985e7f15}{paramnames\+\_\+init}} (this, filename)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a00d55ae57c0418d420115dfef427565f}{paramnames\+\_\+assignitem}} (this, Names2, n, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a962b36a1c8121b164c4206bdc3223ea7}{paramnames\+\_\+addfile}} (this, filename, check\+\_\+duplicates)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a6f6eda35d34074cc502b9beddae16e62}{paramnames\+\_\+add}} (this, Names, check\+\_\+duplicates)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a84f661e30d02319c827007cbbe6b587c}{paramnames\+\_\+setlabels}} (this, filename)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a14599044d57b0e3f49f29352409664d9}{paramnames\+\_\+setunnamed}} (this, nparams, prefix)
+\item 
+integer function \mbox{\hyperlink{namespaceparamnames_a5c76e741768703cbbdcc06df7508eb55}{paramnames\+\_\+index}} (this, name)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_a67f4dfa5bf287848c1f621644fd7d32b}{paramnames\+\_\+label}} (this, name)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_a05a1562d6920ecef38e54e88dc6aa7a3}{paramnames\+\_\+name}} (this, ix)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a1f770d70e7cc5a35f6a617f5ae2f4c07}{paramnames\+\_\+readindices}} (this, In\+Line, params, num, unknown\+\_\+value)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_a16117a38b771ac05b4b1655b1f2d78a8}{paramnames\+\_\+asstring}} (this, i, want\+\_\+comment)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a48fa130be264dd406bc64dc0c5c7c448}{paramnames\+\_\+writefile}} (this, fname, indices, add\+\_\+derived)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_aeeea5572332bd77485fd7e18d1461e56}{paramnames\+\_\+nameornumber}} (this, ix, tag\+\_\+derived)
+\item 
+integer function \mbox{\hyperlink{namespaceparamnames_a656b7952494a591736f80bb066f04db2}{paramnames\+\_\+maxnamelen}} (this)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_ad3d4b6760fe5b48b0754c2d2f7f0b909}{paramnames\+\_\+readiniforparam}} (this, Ini, Key, param)
+\item 
+logical function \mbox{\hyperlink{namespaceparamnames_aaf4fee3bb682c36fab9b19c05bf98069}{paramnames\+\_\+hasreadiniforparam}} (this, Ini, Key, param)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_ad8c375d5eebfce2aba8f0b4de825f220}{paramnames\+\_\+addderivedrange}} (this, Name, Mn, Mx)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceparamnames_a4be152acd9c1eea95bdadaf3e5493495}{paramnames\+\_\+maxlen}} = 128
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceparamnames_a6f6eda35d34074cc502b9beddae16e62}\label{namespaceparamnames_a6f6eda35d34074cc502b9beddae16e62}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+add@{paramnames\+\_\+add}}
+\index{paramnames\+\_\+add@{paramnames\+\_\+add}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+add()}{paramnames\_add()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+add (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}}), target}]{this,  }\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}}), target}]{Names,  }\item[{logical, intent(in), optional}]{check\+\_\+duplicates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_a6f6eda35d34074cc502b9beddae16e62_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_ad8c375d5eebfce2aba8f0b4de825f220}\label{namespaceparamnames_ad8c375d5eebfce2aba8f0b4de825f220}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+addderivedrange@{paramnames\+\_\+addderivedrange}}
+\index{paramnames\+\_\+addderivedrange@{paramnames\+\_\+addderivedrange}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+addderivedrange()}{paramnames\_addderivedrange()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+addderivedrange (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Name,  }\item[{real(mcp), intent(in), optional}]{Mn,  }\item[{real(mcp), intent(in), optional}]{Mx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceparamnames_a962b36a1c8121b164c4206bdc3223ea7}\label{namespaceparamnames_a962b36a1c8121b164c4206bdc3223ea7}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+addfile@{paramnames\+\_\+addfile}}
+\index{paramnames\+\_\+addfile@{paramnames\+\_\+addfile}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+addfile()}{paramnames\_addfile()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+addfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}}), target}]{this,  }\item[{character(len=$\ast$), intent(in)}]{filename,  }\item[{logical, intent(in), optional}]{check\+\_\+duplicates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_a3e5401d3e44bed7bfdeed12938fa58fa}\label{namespaceparamnames_a3e5401d3e44bed7bfdeed12938fa58fa}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+alloc@{paramnames\+\_\+alloc}}
+\index{paramnames\+\_\+alloc@{paramnames\+\_\+alloc}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+alloc()}{paramnames\_alloc()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+alloc (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_a00d55ae57c0418d420115dfef427565f}\label{namespaceparamnames_a00d55ae57c0418d420115dfef427565f}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+assignitem@{paramnames\+\_\+assignitem}}
+\index{paramnames\+\_\+assignitem@{paramnames\+\_\+assignitem}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+assignitem()}{paramnames\_assignitem()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+assignitem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}}), target}]{this,  }\item[{class(\mbox{\hyperlink{structparamnames_1_1tbaseparamnames}{tbaseparamnames}}), target}]{Names2,  }\item[{integer}]{n,  }\item[{integer}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_a16117a38b771ac05b4b1655b1f2d78a8}\label{namespaceparamnames_a16117a38b771ac05b4b1655b1f2d78a8}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+asstring@{paramnames\+\_\+asstring}}
+\index{paramnames\+\_\+asstring@{paramnames\+\_\+asstring}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+asstring()}{paramnames\_asstring()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable paramnames\+::paramnames\+\_\+asstring (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{integer, intent(in)}]{i,  }\item[{logical, intent(in), optional}]{want\+\_\+comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespaceparamnames_a16117a38b771ac05b4b1655b1f2d78a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_a0abbaf0b2bcd5b60c2d7c16746b07934}\label{namespaceparamnames_a0abbaf0b2bcd5b60c2d7c16746b07934}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+dealloc@{paramnames\+\_\+dealloc}}
+\index{paramnames\+\_\+dealloc@{paramnames\+\_\+dealloc}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+dealloc()}{paramnames\_dealloc()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+dealloc (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_aaf4fee3bb682c36fab9b19c05bf98069}\label{namespaceparamnames_aaf4fee3bb682c36fab9b19c05bf98069}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+hasreadiniforparam@{paramnames\+\_\+hasreadiniforparam}}
+\index{paramnames\+\_\+hasreadiniforparam@{paramnames\+\_\+hasreadiniforparam}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+hasreadiniforparam()}{paramnames\_hasreadiniforparam()}}
+{\footnotesize\ttfamily logical function paramnames\+::paramnames\+\_\+hasreadiniforparam (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{class(tinifile)}]{Ini,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in)}]{param }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::inttostr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_aaf4fee3bb682c36fab9b19c05bf98069_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_a5c76e741768703cbbdcc06df7508eb55}\label{namespaceparamnames_a5c76e741768703cbbdcc06df7508eb55}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+index@{paramnames\+\_\+index}}
+\index{paramnames\+\_\+index@{paramnames\+\_\+index}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+index()}{paramnames\_index()}}
+{\footnotesize\ttfamily integer function paramnames\+::paramnames\+\_\+index (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_a1e5be5e1dda784956ba3a9d7985e7f15}\label{namespaceparamnames_a1e5be5e1dda784956ba3a9d7985e7f15}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+init@{paramnames\+\_\+init}}
+\index{paramnames\+\_\+init@{paramnames\+\_\+init}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+init()}{paramnames\_init()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::concat(), fileutils\+::file, mpiutils\+::mpistop(), and stringutils\+::stringreplace().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_a1e5be5e1dda784956ba3a9d7985e7f15_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_a67f4dfa5bf287848c1f621644fd7d32b}\label{namespaceparamnames_a67f4dfa5bf287848c1f621644fd7d32b}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+label@{paramnames\+\_\+label}}
+\index{paramnames\+\_\+label@{paramnames\+\_\+label}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+label()}{paramnames\_label()}}
+{\footnotesize\ttfamily character(len = \+:) function, allocatable paramnames\+::paramnames\+\_\+label (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_a656b7952494a591736f80bb066f04db2}\label{namespaceparamnames_a656b7952494a591736f80bb066f04db2}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+maxnamelen@{paramnames\+\_\+maxnamelen}}
+\index{paramnames\+\_\+maxnamelen@{paramnames\+\_\+maxnamelen}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+maxnamelen()}{paramnames\_maxnamelen()}}
+{\footnotesize\ttfamily integer function paramnames\+::paramnames\+\_\+maxnamelen (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_a05a1562d6920ecef38e54e88dc6aa7a3}\label{namespaceparamnames_a05a1562d6920ecef38e54e88dc6aa7a3}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+name@{paramnames\+\_\+name}}
+\index{paramnames\+\_\+name@{paramnames\+\_\+name}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+name()}{paramnames\_name()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable paramnames\+::paramnames\+\_\+name (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{integer, intent(in)}]{ix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_aeeea5572332bd77485fd7e18d1461e56}\label{namespaceparamnames_aeeea5572332bd77485fd7e18d1461e56}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+nameornumber@{paramnames\+\_\+nameornumber}}
+\index{paramnames\+\_\+nameornumber@{paramnames\+\_\+nameornumber}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+nameornumber()}{paramnames\_nameornumber()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable paramnames\+::paramnames\+\_\+nameornumber (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{integer, intent(in)}]{ix,  }\item[{logical, intent(in), optional}]{tag\+\_\+derived }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse(), and stringutils\+::inttostr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_aeeea5572332bd77485fd7e18d1461e56_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_a6d210fed8da76c1fe28e96b8c0724666}\label{namespaceparamnames_a6d210fed8da76c1fe28e96b8c0724666}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+parseline@{paramnames\+\_\+parseline}}
+\index{paramnames\+\_\+parseline@{paramnames\+\_\+parseline}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+parseline()}{paramnames\_parseline()}}
+{\footnotesize\ttfamily logical function paramnames\+::paramnames\+\_\+parseline (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$)}]{In\+Line,  }\item[{integer}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::iswhitespace().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_a6d210fed8da76c1fe28e96b8c0724666_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_a1f770d70e7cc5a35f6a617f5ae2f4c07}\label{namespaceparamnames_a1f770d70e7cc5a35f6a617f5ae2f4c07}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+readindices@{paramnames\+\_\+readindices}}
+\index{paramnames\+\_\+readindices@{paramnames\+\_\+readindices}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+readindices()}{paramnames\_readindices()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+readindices (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{In\+Line,  }\item[{integer, dimension($\ast$), intent(out)}]{params,  }\item[{integer}]{num,  }\item[{integer, intent(in), optional}]{unknown\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::iswhitespace(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_a1f770d70e7cc5a35f6a617f5ae2f4c07_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_ad3d4b6760fe5b48b0754c2d2f7f0b909}\label{namespaceparamnames_ad3d4b6760fe5b48b0754c2d2f7f0b909}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+readiniforparam@{paramnames\+\_\+readiniforparam}}
+\index{paramnames\+\_\+readiniforparam@{paramnames\+\_\+readiniforparam}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+readiniforparam()}{paramnames\_readiniforparam()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable paramnames\+::paramnames\+\_\+readiniforparam (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{class(tinifile)}]{Ini,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in)}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::inttostr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_ad3d4b6760fe5b48b0754c2d2f7f0b909_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_a84f661e30d02319c827007cbbe6b587c}\label{namespaceparamnames_a84f661e30d02319c827007cbbe6b587c}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+setlabels@{paramnames\+\_\+setlabels}}
+\index{paramnames\+\_\+setlabels@{paramnames\+\_\+setlabels}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+setlabels()}{paramnames\_setlabels()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+setlabels (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceparamnames_a14599044d57b0e3f49f29352409664d9}\label{namespaceparamnames_a14599044d57b0e3f49f29352409664d9}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+setunnamed@{paramnames\+\_\+setunnamed}}
+\index{paramnames\+\_\+setunnamed@{paramnames\+\_\+setunnamed}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+setunnamed()}{paramnames\_setunnamed()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+setunnamed (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{integer, intent(in)}]{nparams,  }\item[{character(len=$\ast$), intent(in), optional}]{prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::inttostr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparamnames_a14599044d57b0e3f49f29352409664d9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparamnames_a48fa130be264dd406bc64dc0c5c7c448}\label{namespaceparamnames_a48fa130be264dd406bc64dc0c5c7c448}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+writefile@{paramnames\+\_\+writefile}}
+\index{paramnames\+\_\+writefile@{paramnames\+\_\+writefile}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+writefile()}{paramnames\_writefile()}}
+{\footnotesize\ttfamily subroutine paramnames\+::paramnames\+\_\+writefile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparamnames_1_1tparamnames}{tparamnames}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{integer, dimension(\+:), intent(in), optional}]{indices,  }\item[{logical, intent(in), optional}]{add\+\_\+derived }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceparamnames_a4be152acd9c1eea95bdadaf3e5493495}\label{namespaceparamnames_a4be152acd9c1eea95bdadaf3e5493495}} 
+\index{paramnames@{paramnames}!paramnames\+\_\+maxlen@{paramnames\+\_\+maxlen}}
+\index{paramnames\+\_\+maxlen@{paramnames\+\_\+maxlen}!paramnames@{paramnames}}
+\subsubsection{\texorpdfstring{paramnames\+\_\+maxlen}{paramnames\_maxlen}}
+{\footnotesize\ttfamily integer, parameter, public paramnames\+::paramnames\+\_\+maxlen = 128}
+
+
+
+Referenced by paramnames\+::tparamnames\+::add().
+

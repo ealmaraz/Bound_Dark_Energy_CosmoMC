@@ -1,0 +1,6 @@
+<map id="getdist.gui.mainwindow.DialogTextOutput" name="getdist.gui.mainwindow.DialogTextOutput">
+<area shape="rect" id="node3" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogConvergeStats.html" title="getdist.gui.mainwindow.Dialog\lConvergeStats" alt="" coords="385,5,583,46"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogLikeStats.html" title="getdist.gui.mainwindow.Dialog\lLikeStats" alt="" coords="385,70,583,111"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogParamTables.html" title="getdist.gui.mainwindow.Dialog\lParamTables" alt="" coords="385,135,583,177"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogPCA.html" title="getdist.gui.mainwindow.DialogPCA" alt="" coords="371,201,597,228"/>
+</map>

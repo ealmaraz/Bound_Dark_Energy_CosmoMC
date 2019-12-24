@@ -1,0 +1,416 @@
+\hypertarget{namespacecamb}{}\section{camb Module Reference}
+\label{namespacecamb}\index{camb@{camb}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1baseconfig}{baseconfig}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1bbn}{bbn}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1bispectrum}{bispectrum}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1camb}{camb}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1constants}{constants}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1initialpower}{initialpower}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1lensing}{lensing}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1model}{model}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1nonlinear}{nonlinear}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1recombination}{recombination}}
+\item 
+ \mbox{\hyperlink{namespacecamb_1_1reionization}{reionization}}
+\end{DoxyCompactItemize}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcamb_1_1cambdata}{cambdata}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_ae587b573e03da5811edb59806305b2cd}{camb\+\_\+gettransfers}} (Params, Out\+Data, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_a64195b97e1e4c42b990076ff2bff6f1d}{camb\+\_\+initcambdata}} (Dat)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_a20b57e6f6098c5800cbf374d96307d13}{camb\+\_\+freecambdata}} (Dat)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_a9fb2095034057d44dc9526dd02d60064}{camb\+\_\+transferstopowers}} (C\+Data)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_af6f4c73133d3de79ac10db3c4b2d0650}{camb\+\_\+getresults}} (Params, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_abeb0ae530a720a17a76108dbed29c1fc}{camb\+\_\+getcls}} (Cls, lmax, in, G\+C\+\_\+conventions)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecamb_a53e4d3ff396030bd7e41d606cfa458b2}{camb\+\_\+getage}} (P)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecamb_ab45910129412993d163c3d4b83e19152}{camb\+\_\+getzrefromtau}} (P, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_a6ce30ab6419006324d56d3e4434530f9}{camb\+\_\+setdefparams}} (P)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_ad303911c183f5affcdc9665c5facdd4b}{camb\+\_\+setneutrinohierarchy}} (P, omnuh2, omnuh2\+\_\+sterile, nnu, neutrino\+\_\+hierarchy, num\+\_\+massive\+\_\+neutrinos)
+\item 
+logical function \mbox{\hyperlink{namespacecamb_ae9577b86a4f0803e5754a23871a7113e}{camb\+\_\+validateparams}} (P)
+\item 
+subroutine \mbox{\hyperlink{namespacecamb_a70f3206a0056ea3ff96defbc4d2be548}{camb\+\_\+cleanup}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacecamb_a85cc16a2fbdb270667e7303f2290c3be}{\+\_\+\+\_\+author\+\_\+\+\_\+}} = \char`\"{}Antony Lewis\char`\"{}
+\item 
+string \mbox{\hyperlink{namespacecamb_af9e02319cf919d4505eab8b37179c712}{\+\_\+\+\_\+contact\+\_\+\+\_\+}} = \char`\"{}antony at cosmologist dot info\char`\"{}
+\item 
+string \mbox{\hyperlink{namespacecamb_aa9d4ea4f20e0977e7d5f5dc20b8debd6}{\+\_\+\+\_\+status\+\_\+\+\_\+}} = \char`\"{}beta\char`\"{}
+\item 
+string \mbox{\hyperlink{namespacecamb_a68e3f34837e39bb6f7e725612e4627fa}{\+\_\+\+\_\+version\+\_\+\+\_\+}} = \char`\"{}0.\+1.\+3\char`\"{}
+\item 
+\mbox{\hyperlink{namespacecamb_a8dcf37e78d4e08b70f90002000e746b8}{Thread\+Num}} = dll\+\_\+import(c\+\_\+int, \char`\"{}modelparams\char`\"{}, \char`\"{}threadnum\char`\"{})
+\item 
+\mbox{\hyperlink{namespacecamb_af98223967f3787053d42644a1ae6f785}{Do\+Tensor\+Neutrinos}} = dll\+\_\+import(c\+\_\+bool, \char`\"{}gaugeinterface\char`\"{}, \char`\"{}dotensorneutrinos\char`\"{})
+\item 
+\mbox{\hyperlink{namespacecamb_a61a5837f54fb09c486d29171a8651a91}{Magnetic}} = dll\+\_\+import(c\+\_\+double, \char`\"{}gaugeinterface\char`\"{}, \char`\"{}magnetic\char`\"{})
+\item 
+\mbox{\hyperlink{namespacecamb_a2e33f06925cf79f62b6d07d7c737217c}{vec\+\_\+sig0}} = dll\+\_\+import(c\+\_\+double, \char`\"{}gaugeinterface\char`\"{}, \char`\"{}vec\+\_\+sig0\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecamb_a70f3206a0056ea3ff96defbc4d2be548}\label{namespacecamb_a70f3206a0056ea3ff96defbc4d2be548}} 
+\index{camb@{camb}!camb\+\_\+cleanup@{camb\+\_\+cleanup}}
+\index{camb\+\_\+cleanup@{camb\+\_\+cleanup}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+cleanup()}{camb\_cleanup()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References spherbessels\+::bessels\+\_\+free(), modeldata\+::modeldata\+\_\+free(), transfer\+::mt, thermodata\+::thermodata\+\_\+free(), and transfer\+::transfer\+\_\+free().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a70f3206a0056ea3ff96defbc4d2be548_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_a20b57e6f6098c5800cbf374d96307d13}\label{namespacecamb_a20b57e6f6098c5800cbf374d96307d13}} 
+\index{camb@{camb}!camb\+\_\+freecambdata@{camb\+\_\+freecambdata}}
+\index{camb\+\_\+freecambdata@{camb\+\_\+freecambdata}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+freecambdata()}{camb\_freecambdata()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+freecambdata (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structcamb_1_1cambdata}{cambdata}})}]{Dat }\end{DoxyParamCaption})}
+
+
+
+References modeldata\+::free\+\_\+cltransfer(), and transfer\+::transfer\+\_\+free().
+
+
+
+Referenced by handles\+::cambdata\+\_\+free().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a20b57e6f6098c5800cbf374d96307d13_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a20b57e6f6098c5800cbf374d96307d13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_a53e4d3ff396030bd7e41d606cfa458b2}\label{namespacecamb_a53e4d3ff396030bd7e41d606cfa458b2}} 
+\index{camb@{camb}!camb\+\_\+getage@{camb\+\_\+getage}}
+\index{camb\+\_\+getage@{camb\+\_\+getage}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+getage()}{camb\_getage()}}
+{\footnotesize\ttfamily real(dl) function camb\+::camb\+\_\+getage (\begin{DoxyParamCaption}\item[{type(cambparams), intent(in)}]{P }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cambparams\+\_\+set(), modelparams\+::deltaphysicaltimegyr(), and initialpower\+::p.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a53e4d3ff396030bd7e41d606cfa458b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_abeb0ae530a720a17a76108dbed29c1fc}\label{namespacecamb_abeb0ae530a720a17a76108dbed29c1fc}} 
+\index{camb@{camb}!camb\+\_\+getcls@{camb\+\_\+getcls}}
+\index{camb\+\_\+getcls@{camb\+\_\+getcls}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+getcls()}{camb\_getcls()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+getcls (\begin{DoxyParamCaption}\item[{real, dimension(2\+:lmax,1\+:4), intent(out)}]{Cls,  }\item[{integer, intent(in)}]{lmax,  }\item[{integer, intent(in)}]{in,  }\item[{logical, intent(in)}]{G\+C\+\_\+conventions }\end{DoxyParamCaption})}
+
+
+
+References modeldata\+::c\+\_\+cross, modeldata\+::c\+\_\+e, modeldata\+::c\+\_\+temp, modeldata\+::cl\+\_\+lensed, modeldata\+::cl\+\_\+scalar, modeldata\+::cl\+\_\+tensor, modelparams\+::cp, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+temp, and modeldata\+::lmax\+\_\+lensed.
+
+
+
+Referenced by writefitscls().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{namespacecamb_abeb0ae530a720a17a76108dbed29c1fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_af6f4c73133d3de79ac10db3c4b2d0650}\label{namespacecamb_af6f4c73133d3de79ac10db3c4b2d0650}} 
+\index{camb@{camb}!camb\+\_\+getresults@{camb\+\_\+getresults}}
+\index{camb\+\_\+getresults@{camb\+\_\+getresults}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+getresults()}{camb\_getresults()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+getresults (\begin{DoxyParamCaption}\item[{type(cambparams)}]{Params,  }\item[{integer, optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::call\+\_\+again, modelparams\+::cambparams\+\_\+set(), cambmain\+::cmbmain(), modelparams\+::cp, modeldata\+::ctransscal, modelparams\+::do\+\_\+bispectrum, errors\+::global\+\_\+error\+\_\+flag, modelparams\+::highaccuracydefault, and lensing\+::lens\+\_\+cls().
+
+
+
+Referenced by camb\+\_\+gettransfers(), getsigma8(), and tester().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_af6f4c73133d3de79ac10db3c4b2d0650_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_af6f4c73133d3de79ac10db3c4b2d0650_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_ae587b573e03da5811edb59806305b2cd}\label{namespacecamb_ae587b573e03da5811edb59806305b2cd}} 
+\index{camb@{camb}!camb\+\_\+gettransfers@{camb\+\_\+gettransfers}}
+\index{camb\+\_\+gettransfers@{camb\+\_\+gettransfers}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+gettransfers()}{camb\_gettransfers()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+gettransfers (\begin{DoxyParamCaption}\item[{type(cambparams)}]{Params,  }\item[{type (\mbox{\hyperlink{structcamb_1_1cambdata}{cambdata}})}]{Out\+Data,  }\item[{integer}]{error }\end{DoxyParamCaption})}
+
+
+
+References camb\+\_\+getresults(), modeldata\+::ctransscal, modeldata\+::ctranstens, modeldata\+::ctransvec, modeldata\+::free\+\_\+cltransfer(), transfer\+::mt, and transfer\+::transfer\+\_\+free().
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata(), calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance(), and handles\+::cambdata\+\_\+gettransfers().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_ae587b573e03da5811edb59806305b2cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_ae587b573e03da5811edb59806305b2cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_ab45910129412993d163c3d4b83e19152}\label{namespacecamb_ab45910129412993d163c3d4b83e19152}} 
+\index{camb@{camb}!camb\+\_\+getzrefromtau@{camb\+\_\+getzrefromtau}}
+\index{camb\+\_\+getzrefromtau@{camb\+\_\+getzrefromtau}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+getzrefromtau()}{camb\_getzrefromtau()}}
+{\footnotesize\ttfamily real(dl) function camb\+::camb\+\_\+getzrefromtau (\begin{DoxyParamCaption}\item[{type(cambparams)}]{P,  }\item[{real(dl)}]{tau }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cambparams\+\_\+set(), modelparams\+::cp, and initialpower\+::p.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_ab45910129412993d163c3d4b83e19152_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_a64195b97e1e4c42b990076ff2bff6f1d}\label{namespacecamb_a64195b97e1e4c42b990076ff2bff6f1d}} 
+\index{camb@{camb}!camb\+\_\+initcambdata@{camb\+\_\+initcambdata}}
+\index{camb\+\_\+initcambdata@{camb\+\_\+initcambdata}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+initcambdata()}{camb\_initcambdata()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+initcambdata (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structcamb_1_1cambdata}{cambdata}})}]{Dat }\end{DoxyParamCaption})}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata(), calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance(), and handles\+::cambdata\+\_\+new().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a64195b97e1e4c42b990076ff2bff6f1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_a6ce30ab6419006324d56d3e4434530f9}\label{namespacecamb_a6ce30ab6419006324d56d3e4434530f9}} 
+\index{camb@{camb}!camb\+\_\+setdefparams@{camb\+\_\+setdefparams}}
+\index{camb\+\_\+setdefparams@{camb\+\_\+setdefparams}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+setdefparams()}{camb\_setdefparams()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+setdefparams (\begin{DoxyParamCaption}\item[{type(cambparams), intent(out)}]{P }\end{DoxyParamCaption})}
+
+
+
+References constants\+::cobe\+\_\+cmbtemp, constants\+::default\+\_\+nnu, gaugeinterface\+::initial\+\_\+adiabatic, modelparams\+::nonlinear\+\_\+none, modelparams\+::nu\+\_\+best, modelparams\+::outnone, recombination\+::recombination\+\_\+setdefparams(), reionization\+::reionization\+\_\+setdefparams(), and initialpower\+::setdefpowerparams().
+
+
+
+Referenced by handles\+::cambdata\+\_\+new(), getsigma8(), and tester().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a6ce30ab6419006324d56d3e4434530f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a6ce30ab6419006324d56d3e4434530f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_ad303911c183f5affcdc9665c5facdd4b}\label{namespacecamb_ad303911c183f5affcdc9665c5facdd4b}} 
+\index{camb@{camb}!camb\+\_\+setneutrinohierarchy@{camb\+\_\+setneutrinohierarchy}}
+\index{camb\+\_\+setneutrinohierarchy@{camb\+\_\+setneutrinohierarchy}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+setneutrinohierarchy()}{camb\_setneutrinohierarchy()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+setneutrinohierarchy (\begin{DoxyParamCaption}\item[{type(cambparams), intent(inout)}]{P,  }\item[{real(dl), intent(in)}]{omnuh2,  }\item[{real(dl), intent(in)}]{omnuh2\+\_\+sterile,  }\item[{real(dl), intent(in)}]{nnu,  }\item[{integer, intent(in)}]{neutrino\+\_\+hierarchy,  }\item[{integer, intent(in), optional}]{num\+\_\+massive\+\_\+neutrinos }\end{DoxyParamCaption})}
+
+
+
+References constants\+::default\+\_\+nnu, constants\+::delta\+\_\+mnu21, constants\+::delta\+\_\+mnu31, and constants\+::mnu\+\_\+min\+\_\+normal.
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+cmbtocamb().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_ad303911c183f5affcdc9665c5facdd4b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_a9fb2095034057d44dc9526dd02d60064}\label{namespacecamb_a9fb2095034057d44dc9526dd02d60064}} 
+\index{camb@{camb}!camb\+\_\+transferstopowers@{camb\+\_\+transferstopowers}}
+\index{camb\+\_\+transferstopowers@{camb\+\_\+transferstopowers}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+transferstopowers()}{camb\_transferstopowers()}}
+{\footnotesize\ttfamily subroutine camb\+::camb\+\_\+transferstopowers (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structcamb_1_1cambdata}{cambdata}})}]{C\+Data }\end{DoxyParamCaption})}
+
+
+
+References cambmain\+::cltransfertocl(), modelparams\+::cp, initialpower\+::initializepowers(), lensing\+::lens\+\_\+cls(), and transfer\+::transfer\+\_\+get\+\_\+sigmas().
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewpowerdata(), and calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a9fb2095034057d44dc9526dd02d60064_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_a9fb2095034057d44dc9526dd02d60064_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_ae9577b86a4f0803e5754a23871a7113e}\label{namespacecamb_ae9577b86a4f0803e5754a23871a7113e}} 
+\index{camb@{camb}!camb\+\_\+validateparams@{camb\+\_\+validateparams}}
+\index{camb\+\_\+validateparams@{camb\+\_\+validateparams}!camb@{camb}}
+\subsubsection{\texorpdfstring{camb\+\_\+validateparams()}{camb\_validateparams()}}
+{\footnotesize\ttfamily logical function camb\+::camb\+\_\+validateparams (\begin{DoxyParamCaption}\item[{type(cambparams), intent(in)}]{P }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::max\+\_\+transfer\+\_\+redshifts, initialpower\+::p, recombination\+::recombination\+\_\+validate(), and reionization\+::reionization\+\_\+validate().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_ae9577b86a4f0803e5754a23871a7113e_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecamb_a85cc16a2fbdb270667e7303f2290c3be}\label{namespacecamb_a85cc16a2fbdb270667e7303f2290c3be}} 
+\index{camb@{camb}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!camb@{camb}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+author\+\_\+\+\_\+}{\_\_author\_\_}}
+{\footnotesize\ttfamily string camb.\+\_\+\+\_\+author\+\_\+\+\_\+ = \char`\"{}Antony Lewis\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecamb_af9e02319cf919d4505eab8b37179c712}\label{namespacecamb_af9e02319cf919d4505eab8b37179c712}} 
+\index{camb@{camb}!\+\_\+\+\_\+contact\+\_\+\+\_\+@{\+\_\+\+\_\+contact\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+contact\+\_\+\+\_\+@{\+\_\+\+\_\+contact\+\_\+\+\_\+}!camb@{camb}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+contact\+\_\+\+\_\+}{\_\_contact\_\_}}
+{\footnotesize\ttfamily string camb.\+\_\+\+\_\+contact\+\_\+\+\_\+ = \char`\"{}antony at cosmologist dot info\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecamb_aa9d4ea4f20e0977e7d5f5dc20b8debd6}\label{namespacecamb_aa9d4ea4f20e0977e7d5f5dc20b8debd6}} 
+\index{camb@{camb}!\+\_\+\+\_\+status\+\_\+\+\_\+@{\+\_\+\+\_\+status\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+status\+\_\+\+\_\+@{\+\_\+\+\_\+status\+\_\+\+\_\+}!camb@{camb}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+status\+\_\+\+\_\+}{\_\_status\_\_}}
+{\footnotesize\ttfamily string camb.\+\_\+\+\_\+status\+\_\+\+\_\+ = \char`\"{}beta\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecamb_a68e3f34837e39bb6f7e725612e4627fa}\label{namespacecamb_a68e3f34837e39bb6f7e725612e4627fa}} 
+\index{camb@{camb}!\+\_\+\+\_\+version\+\_\+\+\_\+@{\+\_\+\+\_\+version\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+version\+\_\+\+\_\+@{\+\_\+\+\_\+version\+\_\+\+\_\+}!camb@{camb}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+version\+\_\+\+\_\+}{\_\_version\_\_}}
+{\footnotesize\ttfamily string camb.\+\_\+\+\_\+version\+\_\+\+\_\+ = \char`\"{}0.\+1.\+3\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecamb_af98223967f3787053d42644a1ae6f785}\label{namespacecamb_af98223967f3787053d42644a1ae6f785}} 
+\index{camb@{camb}!Do\+Tensor\+Neutrinos@{Do\+Tensor\+Neutrinos}}
+\index{Do\+Tensor\+Neutrinos@{Do\+Tensor\+Neutrinos}!camb@{camb}}
+\subsubsection{\texorpdfstring{Do\+Tensor\+Neutrinos}{DoTensorNeutrinos}}
+{\footnotesize\ttfamily camb.\+Do\+Tensor\+Neutrinos = dll\+\_\+import(c\+\_\+bool, \char`\"{}gaugeinterface\char`\"{}, \char`\"{}dotensorneutrinos\char`\"{})}
+
+\mbox{\Hypertarget{namespacecamb_a61a5837f54fb09c486d29171a8651a91}\label{namespacecamb_a61a5837f54fb09c486d29171a8651a91}} 
+\index{camb@{camb}!Magnetic@{Magnetic}}
+\index{Magnetic@{Magnetic}!camb@{camb}}
+\subsubsection{\texorpdfstring{Magnetic}{Magnetic}}
+{\footnotesize\ttfamily camb.\+Magnetic = dll\+\_\+import(c\+\_\+double, \char`\"{}gaugeinterface\char`\"{}, \char`\"{}magnetic\char`\"{})}
+
+\mbox{\Hypertarget{namespacecamb_a8dcf37e78d4e08b70f90002000e746b8}\label{namespacecamb_a8dcf37e78d4e08b70f90002000e746b8}} 
+\index{camb@{camb}!Thread\+Num@{Thread\+Num}}
+\index{Thread\+Num@{Thread\+Num}!camb@{camb}}
+\subsubsection{\texorpdfstring{Thread\+Num}{ThreadNum}}
+{\footnotesize\ttfamily camb.\+Thread\+Num = dll\+\_\+import(c\+\_\+int, \char`\"{}modelparams\char`\"{}, \char`\"{}threadnum\char`\"{})}
+
+\mbox{\Hypertarget{namespacecamb_a2e33f06925cf79f62b6d07d7c737217c}\label{namespacecamb_a2e33f06925cf79f62b6d07d7c737217c}} 
+\index{camb@{camb}!vec\+\_\+sig0@{vec\+\_\+sig0}}
+\index{vec\+\_\+sig0@{vec\+\_\+sig0}!camb@{camb}}
+\subsubsection{\texorpdfstring{vec\+\_\+sig0}{vec\_sig0}}
+{\footnotesize\ttfamily camb.\+vec\+\_\+sig0 = dll\+\_\+import(c\+\_\+double, \char`\"{}gaugeinterface\char`\"{}, \char`\"{}vec\+\_\+sig0\char`\"{})}
+

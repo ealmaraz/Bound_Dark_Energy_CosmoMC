@@ -1,0 +1,618 @@
+\hypertarget{plotcls_8m}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/plotcls.m File Reference}
+\label{plotcls_8m}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/plotcls.\+m@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/plotcls.\+m}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{plotcls_8m_a158d8f9dac26df954d10880a0e535166}{plotcls}} (varargin) global \mbox{\hyperlink{plotTT_8m_a202225617f824a28fbb07b976394f7d4}{l\+\_\+label}} \mbox{\hyperlink{plotpk_8m_aec70d633e7619583eb3a08a7afd638b4}{clf}}
+\item 
+\mbox{\hyperlink{plotcls_8m_a743f51bde122df72287b786719955dbc}{colnum}} (\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})
+\item 
+\mbox{\hyperlink{plotcls_8m_a5352bda76d7dfe7aa9bbd5250712e318}{if}} (\mbox{\hyperlink{plotdiffs_8m_a9cfe64de987d987c38905a9cce8c9f1f}{noB}}) \mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}
+\item 
+\mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotcls_8m_aa0e6716682fe380a74134c86381d32d6}{if}} (\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}} $>$=3000) \mbox{\hyperlink{plotTT_8m_a27ab8d0dec7c3ecd0fa9e3bfc12fb1a3}{ticks}}
+\item 
+\mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotcls_8m_a9d76a6f5deef11229be9da66e31e2552}{subplot}} (\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}, \mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}, 1)
+\item 
+\mbox{\hyperlink{plotcls_8m_ad17f6d67114179155f050889a69c5e59}{seth}} (\mbox{\hyperlink{plotTT_8m_aed4baa87751a8ac3167e69443cdc6241}{h}})
+\item 
+\mbox{\hyperlink{plotcls_8m_a2166092c16663e96e607793b632c1997}{loglog}} (\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}, \mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}}, \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}})
+\item 
+\mbox{\hyperlink{plotcls_8m_a771e68e7965ac761fbb4dd8f37f3a741}{setaxes}} (\mbox{\hyperlink{plotTT_8m_a2c4100ad4e8ebca6560c3431365b469d}{min\+TT}} $\ast$0.\+9, \mbox{\hyperlink{plotTT_8m_acb02a5b67375a104ca3ff6a0bb59d8ad}{max\+TT}} $\ast$1.\+1, \mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}}, \mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}})
+\item 
+\mbox{\hyperlink{plotcls_8m_aa23300e5e8e3493467aba67444a8a0ef}{subplot}} (\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}, \mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}, 3)
+\item 
+\mbox{\hyperlink{plotcls_8m_a7379331a745f8dd7f95322d73c2d7216}{plot}} (sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}), \mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}}, \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}})
+\item 
+\mbox{\hyperlink{plotcls_8m_a86a2477793dcf666bb35fdc81267aec6}{setaxes}} (0, \mbox{\hyperlink{plotTT_8m_acb02a5b67375a104ca3ff6a0bb59d8ad}{max\+TT}} $\ast$1.\+1, sqrt(\mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}}), sqrt(\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}}))
+\item 
+\mbox{\hyperlink{plotcls_8m_a2bb76d01489f5d09ace825be55e7e169}{set}} (gca, \textquotesingle{}X\+Tick\textquotesingle{}, sqrt(\mbox{\hyperlink{plotTT_8m_a27ab8d0dec7c3ecd0fa9e3bfc12fb1a3}{ticks}}))
+\item 
+\mbox{\hyperlink{plotcls_8m_a6304ad26cc70ee3d92d648be3ba3d4c7}{set}} (gca, \textquotesingle{}X\+Tick\+Label\textquotesingle{}, \mbox{\hyperlink{plotTT_8m_a27ab8d0dec7c3ecd0fa9e3bfc12fb1a3}{ticks}})
+\item 
+\mbox{\hyperlink{plotcls_8m_ac50b338c6addaa9e8e59f0f304dfedc3}{subplot}} (\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}, \mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}, 2)
+\item 
+\mbox{\hyperlink{plotcls_8m_ab737158cd74b9a75baaf14d29206bd8c}{loglog}} (\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}, \mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}, \mbox{[}\textquotesingle{}-\/\textquotesingle{} \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}\mbox{]})
+\item 
+\mbox{\hyperlink{plotcls_8m_a4589e1a383c0c3ac9284fca0292406c2}{setaxes}} (\mbox{\hyperlink{plotcls_8m_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{plotcls_8m_aaccc9105df5383111407fd5b41255e23}{t}}, \mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}}, \mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}})
+\item 
+\mbox{\hyperlink{plotcls_8m_a65be3e237b862bb27bdad6fb11d97564}{loglog}} (\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}, \mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}, \mbox{[}\textquotesingle{}-\/\textquotesingle{} \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}\mbox{]})
+\item 
+\mbox{\hyperlink{plotcls_8m_ab089e57ea5d513b109ce5854cc00d6e5}{loglog}} (\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}},-\/\mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}, \mbox{[}\textquotesingle{}\+:\textquotesingle{} \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}\mbox{]})
+\item 
+\mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} $\sim$\mbox{\hyperlink{plotdiffs_8m_a9cfe64de987d987c38905a9cce8c9f1f}{noB}} \mbox{\hyperlink{plotcls_8m_afa12f4646e5fb14f9994106dff005839}{loglog}} (\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}, \mbox{\hyperlink{plotdiffs_8m_afe7a8c41b6fecba77f519a64a8ac08dc}{BB}}, \mbox{[}\textquotesingle{}-\/-\/\textquotesingle{} \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}\mbox{]})
+\item 
+\mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotcls_8m_a2f358292588e27041294b2afd720c795}{subplot}} (\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}, \mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}, 4)
+\item 
+\mbox{\hyperlink{plotcls_8m_a048781af9c53b18d7f0ef1fcc87a14f2}{plot}} (sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}), \mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}, \mbox{[}\textquotesingle{}-\/\textquotesingle{} \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}\mbox{]})
+\item 
+\mbox{\hyperlink{plotcls_8m_a94d07e2cb0d95625277e890c581f770b}{plot}} (sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}), \mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}, \mbox{[}\textquotesingle{}-\/\textquotesingle{} \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}\mbox{]})
+\item 
+\mbox{\hyperlink{plotcls_8m_a282a8379b8a92280bd19bda316737c4e}{setaxes}} (\mbox{\hyperlink{plotTT_8m_aa0c4c55933beb65a62edfb61d4f76a56}{min\+TE}} $\ast$1.\+1, \mbox{\hyperlink{plotTT_8m_a553389f6c6676acc75e78551b4e45edc}{max\+TE}} $\ast$1.\+1, sqrt(\mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}}), sqrt(\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}}))
+\item 
+\mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} \mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}} \mbox{\hyperlink{plotcls_8m_a2b8fb90d948e071580b12bb3dfe1d821}{subplot}} (\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}, \mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}, 5)
+\item 
+\mbox{\hyperlink{plotcls_8m_a3c1c1b3e9d63118dc7e91bc96e366d60}{plot}} (sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}})), \mbox{\hyperlink{plotTT_8m_aeb8954bfa9f218f668ce360e54866968}{cmp}}, \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}})
+\item 
+\mbox{\hyperlink{plotcls_8m_a0343292c64e08d6e9022611349a13a09}{set}} (gca, \textquotesingle{}X\+Lim\textquotesingle{}, \mbox{[}sqrt(\mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}}) sqrt(\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}})\mbox{]})
+\item 
+\mbox{\hyperlink{plotcls_8m_a83cea63eef559edaa1cae19a5f1e944e}{ylabel}} (\textquotesingle{}\{\textbackslash{}Delta C\+\_\+l/C\+\_\+l\}(\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}})\textquotesingle{})
+\item 
+\mbox{\hyperlink{plotcls_8m_a8114dc468f69e461749a8548a03efe7c}{xlabel}} (\mbox{\hyperlink{plotTT_8m_a202225617f824a28fbb07b976394f7d4}{l\+\_\+label}})
+\item 
+\mbox{\hyperlink{plotcls_8m_af9b83b034534ca08bd4bb7a5eb7934bb}{subplot}} (\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}, \mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}, 6)
+\item 
+\mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotcls_8m_a377488273fa8c52b01b6db9ba4695c2e}{plot}} (sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}})), \mbox{\hyperlink{plotTT_8m_aeb8954bfa9f218f668ce360e54866968}{cmp}}, \mbox{[}\textquotesingle{}\+:\textquotesingle{} \mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}\mbox{]})
+\item 
+\mbox{\hyperlink{plotcls_8m_a2bd5019ab4ef969b09565ff21181f990}{ylabel}} (\textquotesingle{}\{\{\textbackslash{}Delta C\+\_\+l/C\+\_\+l\}\}(\mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}/\mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}})\textquotesingle{})
+\item 
+\mbox{\hyperlink{plotcls_8m_a398aea1bfa0aca55c9f32bc18f378026}{seth}} (\mbox{\hyperlink{plotcls_8m_a01703143a6ba4fc421f9c72c5b4d684d}{hin}})
+\item 
+id \mbox{\hyperlink{plotcls_8m_a9f94814fa3dcf274fa010dda1dfc77ec}{ps}} ()
+\item 
+function d global \mbox{\hyperlink{plotTT_8m_a202225617f824a28fbb07b976394f7d4}{l\+\_\+label}} \mbox{\hyperlink{plotcls_8m_ae2445b699d1845d6abd1418ca39394c0}{set}} (gca, \textquotesingle{}Y\+Lim\textquotesingle{}, \mbox{[}a, \mbox{\hyperlink{plotTT_8m_ac0431efac4d7c393d1e70b86115cb93f}{b}}\mbox{]}, \textquotesingle{}X\+Lim\textquotesingle{}, \mbox{[}\mbox{\hyperlink{plotTT_8m_ad9d1ac02e33c4aed62ad517a7cb8b3fb}{c}}, d\mbox{]})
+\item 
+\mbox{\hyperlink{plotcls_8m_af6593d1fcb46a99b676f61409427ac44}{ylabel}} (\textquotesingle{}l(l+1) C\+\_\+l/2\textbackslash{}pi\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{plotcls_8m_a01703143a6ba4fc421f9c72c5b4d684d}{hin}} =ishold
+\item 
+\mbox{\hyperlink{plotcls_8m_aed4baa87751a8ac3167e69443cdc6241}{h}} =false
+\item 
+\mbox{\hyperlink{plotcls_8m_ab470e425c6e2ac234bf5d5f6d8d80595}{colours}} = \textquotesingle{}krbcmgy\textquotesingle{}
+\item 
+\mbox{\hyperlink{plotcls_8m_a202225617f824a28fbb07b976394f7d4}{l\+\_\+label}} = \textquotesingle{}l\textquotesingle{}
+\item 
+\mbox{\hyperlink{plotcls_8m_a278a1f181e2be02613530daeaa8afdab}{ticks}} = \mbox{[}2 40 200 600 1200\mbox{]}
+\item 
+for \mbox{\hyperlink{plotcls_8m_a3359ed5f123e10953f77a90207beaa1b}{i}}
+\item 
+\mbox{\hyperlink{plotcls_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} =size(dats\{\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}}\})
+\item 
+\mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotcls_8m_ac09446ef18a7ceea270cfa306b1f2932}{lmin}} =2
+\item 
+\mbox{\hyperlink{plotcls_8m_af56292874bf2b7a47b26c7f7021b1e1a}{lmax}} =1
+\item 
+\mbox{\hyperlink{plotcls_8m_aa0c4c55933beb65a62edfb61d4f76a56}{min\+TE}} =1e30
+\item 
+\mbox{\hyperlink{plotcls_8m_a27d993b97d3a850c9b42c5d0ef2d6888}{min\+EE}} =1e30
+\item 
+\mbox{\hyperlink{plotcls_8m_a2c4100ad4e8ebca6560c3431365b469d}{min\+TT}} =1e30
+\item 
+\mbox{\hyperlink{plotcls_8m_a553389f6c6676acc75e78551b4e45edc}{max\+TE}} =-\/1e30
+\item 
+\mbox{\hyperlink{plotcls_8m_a307b4ab90819ccabdc57d3a5ebb432ee}{max\+EE}} =-\/1e30
+\item 
+\mbox{\hyperlink{plotcls_8m_acb02a5b67375a104ca3ff6a0bb59d8ad}{max\+TT}} =-\/1e30
+\item 
+\mbox{\hyperlink{plotcls_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}} =2
+\item 
+\mbox{\hyperlink{plotcls_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}} =2
+\item 
+\mbox{\hyperlink{plotcls_8m_a80db10ba8808399dd69164a092cf2920}{col}} =\mbox{\hyperlink{plotTT_8m_ab470e425c6e2ac234bf5d5f6d8d80595}{colours}}(\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})
+\item 
+\mbox{\hyperlink{plotcls_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}} =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,1)
+\item 
+\mbox{\hyperlink{plotcls_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}} =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,2)
+\item 
+\mbox{\hyperlink{plotcls_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}} =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,3)
+\item 
+\mbox{\hyperlink{plotcls_8m_a9cfe64de987d987c38905a9cce8c9f1f}{noB}} = \mbox{\hyperlink{plotTT_8m_a743f51bde122df72287b786719955dbc}{colnum}}(\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})==4 $\vert$$\vert$ \mbox{\hyperlink{plotTT_8m_a743f51bde122df72287b786719955dbc}{colnum}}(\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})==6
+\item 
+\mbox{\hyperlink{plotcls_8m_afe7a8c41b6fecba77f519a64a8ac08dc}{BB}} =0
+\item 
+\mbox{\hyperlink{plotcls_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}} =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,5)
+\item 
+\mbox{\hyperlink{plotcls_8m_afb6414bb33276d77977751e4aaa68cfc}{comp\+EE}} =\mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}
+\item 
+\mbox{\hyperlink{plotcls_8m_a9544ed62399e7b7f31a4373f8fcec52a}{comp\+TE}} =\mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}
+\item 
+\mbox{\hyperlink{plotcls_8m_a08a4415e9d594ff960030b921d42b91e}{e}} =\mbox{\hyperlink{plotTT_8m_a27d993b97d3a850c9b42c5d0ef2d6888}{min\+EE}}$\ast$0.\+5
+\item 
+\mbox{\hyperlink{plotcls_8m_aaccc9105df5383111407fd5b41255e23}{t}} =max(\mbox{\hyperlink{plotTT_8m_a307b4ab90819ccabdc57d3a5ebb432ee}{max\+EE}},\mbox{\hyperlink{plotTT_8m_a553389f6c6676acc75e78551b4e45edc}{max\+TE}})$\ast$2
+\item 
+hold \mbox{\hyperlink{plotcls_8m_a58ab1fd68e97078232808206b850161b}{on}}
+\item 
+\mbox{\hyperlink{plotcls_8m_af8eb7b6b6383d2289c7f930ad1e6e32a}{cmp}} = (\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}}(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}}) -\/ comp\+TT(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}})) ./ comp\+TT(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}})
+\item 
+\mbox{\hyperlink{plotcls_8m_ab2ca55966eb80a4081bc177ccf4f0e73}{maxcmp}} = max(\mbox{\hyperlink{plotTT_8m_aeb8954bfa9f218f668ce360e54866968}{cmp}})
+\item 
+for \mbox{\hyperlink{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}}
+\item 
+\mbox{\hyperlink{plotcls_8m_afb358f48b1646c750fb9da6c6585be2b}{end}}
+\item 
+function \mbox{\hyperlink{plotcls_8m_ac0431efac4d7c393d1e70b86115cb93f}{b}}
+\item 
+function \mbox{\hyperlink{plotcls_8m_ad9d1ac02e33c4aed62ad517a7cb8b3fb}{c}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{plotcls_8m_a743f51bde122df72287b786719955dbc}\label{plotcls_8m_a743f51bde122df72287b786719955dbc}} 
+\index{plotcls.\+m@{plotcls.\+m}!colnum@{colnum}}
+\index{colnum@{colnum}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{colnum()}{colnum()}}
+{\footnotesize\ttfamily colnum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a5352bda76d7dfe7aa9bbd5250712e318}\label{plotcls_8m_a5352bda76d7dfe7aa9bbd5250712e318}} 
+\index{plotcls.\+m@{plotcls.\+m}!if@{if}}
+\index{if@{if}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotdiffs_8m_a9cfe64de987d987c38905a9cce8c9f1f}{noB}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_aa0e6716682fe380a74134c86381d32d6}\label{plotcls_8m_aa0e6716682fe380a74134c86381d32d6}} 
+\index{plotcls.\+m@{plotcls.\+m}!if@{if}}
+\index{if@{if}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} if (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}} $>$=}]{3000 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a2166092c16663e96e607793b632c1997}\label{plotcls_8m_a2166092c16663e96e607793b632c1997}} 
+\index{plotcls.\+m@{plotcls.\+m}!loglog@{loglog}}
+\index{loglog@{loglog}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{loglog()}{loglog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily loglog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_ab737158cd74b9a75baaf14d29206bd8c}\label{plotcls_8m_ab737158cd74b9a75baaf14d29206bd8c}} 
+\index{plotcls.\+m@{plotcls.\+m}!loglog@{loglog}}
+\index{loglog@{loglog}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{loglog()}{loglog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily loglog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}}]{,  }\item[{\mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a65be3e237b862bb27bdad6fb11d97564}\label{plotcls_8m_a65be3e237b862bb27bdad6fb11d97564}} 
+\index{plotcls.\+m@{plotcls.\+m}!loglog@{loglog}}
+\index{loglog@{loglog}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{loglog()}{loglog()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily loglog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}}]{,  }\item[{\mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_ab089e57ea5d513b109ce5854cc00d6e5}\label{plotcls_8m_ab089e57ea5d513b109ce5854cc00d6e5}} 
+\index{plotcls.\+m@{plotcls.\+m}!loglog@{loglog}}
+\index{loglog@{loglog}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{loglog()}{loglog()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily loglog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}}]{,  }\item[{-\/}]{TE }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_afa12f4646e5fb14f9994106dff005839}\label{plotcls_8m_afa12f4646e5fb14f9994106dff005839}} 
+\index{plotcls.\+m@{plotcls.\+m}!loglog@{loglog}}
+\index{loglog@{loglog}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{loglog()}{loglog()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} $\sim$\mbox{\hyperlink{plotdiffs_8m_a9cfe64de987d987c38905a9cce8c9f1f}{noB}} loglog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}}]{,  }\item[{\mbox{\hyperlink{plotdiffs_8m_afe7a8c41b6fecba77f519a64a8ac08dc}{BB}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a7379331a745f8dd7f95322d73c2d7216}\label{plotcls_8m_a7379331a745f8dd7f95322d73c2d7216}} 
+\index{plotcls.\+m@{plotcls.\+m}!plot@{plot}}
+\index{plot@{plot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{plot()}{plot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily plot (\begin{DoxyParamCaption}\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}})}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by camb\+Plots.\+Cl\+Result\+::compare\+\_\+array\+\_\+acc(), and camb\+Plots.\+Cl\+Result\+::compare\+\_\+type\+\_\+tol().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{plotcls_8m_a7379331a745f8dd7f95322d73c2d7216_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plotcls_8m_a048781af9c53b18d7f0ef1fcc87a14f2}\label{plotcls_8m_a048781af9c53b18d7f0ef1fcc87a14f2}} 
+\index{plotcls.\+m@{plotcls.\+m}!plot@{plot}}
+\index{plot@{plot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{plot()}{plot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily plot (\begin{DoxyParamCaption}\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}})}]{,  }\item[{\mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a94d07e2cb0d95625277e890c581f770b}\label{plotcls_8m_a94d07e2cb0d95625277e890c581f770b}} 
+\index{plotcls.\+m@{plotcls.\+m}!plot@{plot}}
+\index{plot@{plot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{plot()}{plot()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily plot (\begin{DoxyParamCaption}\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}})}]{,  }\item[{\mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a3c1c1b3e9d63118dc7e91bc96e366d60}\label{plotcls_8m_a3c1c1b3e9d63118dc7e91bc96e366d60}} 
+\index{plotcls.\+m@{plotcls.\+m}!plot@{plot}}
+\index{plot@{plot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{plot()}{plot()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily plot (\begin{DoxyParamCaption}\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}}))}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_aeb8954bfa9f218f668ce360e54866968}{cmp}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a80db10ba8808399dd69164a092cf2920}{col}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a377488273fa8c52b01b6db9ba4695c2e}\label{plotcls_8m_a377488273fa8c52b01b6db9ba4695c2e}} 
+\index{plotcls.\+m@{plotcls.\+m}!plot@{plot}}
+\index{plot@{plot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{plot()}{plot()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} plot (\begin{DoxyParamCaption}\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}}))}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_aeb8954bfa9f218f668ce360e54866968}{cmp}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a158d8f9dac26df954d10880a0e535166}\label{plotcls_8m_a158d8f9dac26df954d10880a0e535166}} 
+\index{plotcls.\+m@{plotcls.\+m}!plotcls@{plotcls}}
+\index{plotcls@{plotcls}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{plotcls()}{plotcls()}}
+{\footnotesize\ttfamily function plotcls (\begin{DoxyParamCaption}\item[{varargin}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a9f94814fa3dcf274fa010dda1dfc77ec}\label{plotcls_8m_a9f94814fa3dcf274fa010dda1dfc77ec}} 
+\index{plotcls.\+m@{plotcls.\+m}!ps@{ps}}
+\index{ps@{ps}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{ps()}{ps()}}
+{\footnotesize\ttfamily id ps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{plotcls_8m_a2bb76d01489f5d09ace825be55e7e169}\label{plotcls_8m_a2bb76d01489f5d09ace825be55e7e169}} 
+\index{plotcls.\+m@{plotcls.\+m}!set@{set}}
+\index{set@{set}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{gca}]{,  }\item[{\textquotesingle{}X\+Tick\textquotesingle{}}]{,  }\item[{sqrt(\mbox{\hyperlink{plotTT_8m_a27ab8d0dec7c3ecd0fa9e3bfc12fb1a3}{ticks}})}]{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata\+::get\+\_\+background\+\_\+time\+\_\+evolution(), camb.\+camb.\+C\+A\+M\+Bdata\+::get\+\_\+time\+\_\+evolution(), paramgrid.\+batchjob.\+job\+Item\+::make\+Importance(), fileutils\+::readline(), and camb.\+camb\+::set\+\_\+params().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{plotcls_8m_a2bb76d01489f5d09ace825be55e7e169_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{plotcls_8m_a6304ad26cc70ee3d92d648be3ba3d4c7}\label{plotcls_8m_a6304ad26cc70ee3d92d648be3ba3d4c7}} 
+\index{plotcls.\+m@{plotcls.\+m}!set@{set}}
+\index{set@{set}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{gca}]{,  }\item[{\textquotesingle{}X\+Tick\+Label\textquotesingle{}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a27ab8d0dec7c3ecd0fa9e3bfc12fb1a3}{ticks}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a0343292c64e08d6e9022611349a13a09}\label{plotcls_8m_a0343292c64e08d6e9022611349a13a09}} 
+\index{plotcls.\+m@{plotcls.\+m}!set@{set}}
+\index{set@{set}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{gca}]{,  }\item[{\textquotesingle{}X\+Lim\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_ae2445b699d1845d6abd1418ca39394c0}\label{plotcls_8m_ae2445b699d1845d6abd1418ca39394c0}} 
+\index{plotcls.\+m@{plotcls.\+m}!set@{set}}
+\index{set@{set}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily function d global \mbox{\hyperlink{plotTT_8m_a202225617f824a28fbb07b976394f7d4}{l\+\_\+label}} set (\begin{DoxyParamCaption}\item[{gca}]{,  }\item[{\textquotesingle{}Y\+Lim\textquotesingle{}}]{,  }\item[{\textquotesingle{}X\+Lim\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a771e68e7965ac761fbb4dd8f37f3a741}\label{plotcls_8m_a771e68e7965ac761fbb4dd8f37f3a741}} 
+\index{plotcls.\+m@{plotcls.\+m}!setaxes@{setaxes}}
+\index{setaxes@{setaxes}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{setaxes()}{setaxes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily setaxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a2c4100ad4e8ebca6560c3431365b469d}{min\+TT}} $\ast$0.}]{9,  }\item[{\mbox{\hyperlink{plotTT_8m_acb02a5b67375a104ca3ff6a0bb59d8ad}{max\+TT}} $\ast$1.}]{1,  }\item[{\mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a86a2477793dcf666bb35fdc81267aec6}\label{plotcls_8m_a86a2477793dcf666bb35fdc81267aec6}} 
+\index{plotcls.\+m@{plotcls.\+m}!setaxes@{setaxes}}
+\index{setaxes@{setaxes}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{setaxes()}{setaxes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily setaxes (\begin{DoxyParamCaption}\item[{0}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_acb02a5b67375a104ca3ff6a0bb59d8ad}{max\+TT}} $\ast$1.}]{1,  }\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}})}]{,  }\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a4589e1a383c0c3ac9284fca0292406c2}\label{plotcls_8m_a4589e1a383c0c3ac9284fca0292406c2}} 
+\index{plotcls.\+m@{plotcls.\+m}!setaxes@{setaxes}}
+\index{setaxes@{setaxes}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{setaxes()}{setaxes()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily setaxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotcls_8m_a08a4415e9d594ff960030b921d42b91e}{e}}}]{,  }\item[{\mbox{\hyperlink{plotcls_8m_aaccc9105df5383111407fd5b41255e23}{t}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a282a8379b8a92280bd19bda316737c4e}\label{plotcls_8m_a282a8379b8a92280bd19bda316737c4e}} 
+\index{plotcls.\+m@{plotcls.\+m}!setaxes@{setaxes}}
+\index{setaxes@{setaxes}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{setaxes()}{setaxes()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily setaxes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aa0c4c55933beb65a62edfb61d4f76a56}{min\+TE}} $\ast$1.}]{1,  }\item[{\mbox{\hyperlink{plotTT_8m_a553389f6c6676acc75e78551b4e45edc}{max\+TE}} $\ast$1.}]{1,  }\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aef6a8f6b3fd299f38d7aeaa7aff6bbf3}{lmin}})}]{,  }\item[{sqrt(\mbox{\hyperlink{plotTT_8m_aa9755a1150619f3bbad65080cf613ef8}{lmax}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_ad17f6d67114179155f050889a69c5e59}\label{plotcls_8m_ad17f6d67114179155f050889a69c5e59}} 
+\index{plotcls.\+m@{plotcls.\+m}!seth@{seth}}
+\index{seth@{seth}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{seth()}{seth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily seth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_aed4baa87751a8ac3167e69443cdc6241}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a398aea1bfa0aca55c9f32bc18f378026}\label{plotcls_8m_a398aea1bfa0aca55c9f32bc18f378026}} 
+\index{plotcls.\+m@{plotcls.\+m}!seth@{seth}}
+\index{seth@{seth}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{seth()}{seth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily seth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotcls_8m_a01703143a6ba4fc421f9c72c5b4d684d}{hin}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a9d76a6f5deef11229be9da66e31e2552}\label{plotcls_8m_a9d76a6f5deef11229be9da66e31e2552}} 
+\index{plotcls.\+m@{plotcls.\+m}!subplot@{subplot}}
+\index{subplot@{subplot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{subplot()}{subplot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} subplot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}}]{,  }\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_aa23300e5e8e3493467aba67444a8a0ef}\label{plotcls_8m_aa23300e5e8e3493467aba67444a8a0ef}} 
+\index{plotcls.\+m@{plotcls.\+m}!subplot@{subplot}}
+\index{subplot@{subplot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{subplot()}{subplot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily subplot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}}]{,  }\item[{3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_ac50b338c6addaa9e8e59f0f304dfedc3}\label{plotcls_8m_ac50b338c6addaa9e8e59f0f304dfedc3}} 
+\index{plotcls.\+m@{plotcls.\+m}!subplot@{subplot}}
+\index{subplot@{subplot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{subplot()}{subplot()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily subplot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}}]{,  }\item[{2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a2f358292588e27041294b2afd720c795}\label{plotcls_8m_a2f358292588e27041294b2afd720c795}} 
+\index{plotcls.\+m@{plotcls.\+m}!subplot@{subplot}}
+\index{subplot@{subplot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{subplot()}{subplot()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} subplot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}}]{,  }\item[{4}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a2b8fb90d948e071580b12bb3dfe1d821}\label{plotcls_8m_a2b8fb90d948e071580b12bb3dfe1d821}} 
+\index{plotcls.\+m@{plotcls.\+m}!subplot@{subplot}}
+\index{subplot@{subplot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{subplot()}{subplot()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} \mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}} subplot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}}]{,  }\item[{5}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_af9b83b034534ca08bd4bb7a5eb7934bb}\label{plotcls_8m_af9b83b034534ca08bd4bb7a5eb7934bb}} 
+\index{plotcls.\+m@{plotcls.\+m}!subplot@{subplot}}
+\index{subplot@{subplot}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{subplot()}{subplot()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily subplot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a519685ca3a7d43d94e0001b237b1fdb4}{ploty}}}]{,  }\item[{\mbox{\hyperlink{plotTT_8m_a2bb484455444d16ea5dd19d5f760b99d}{plotx}}}]{,  }\item[{6}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a8114dc468f69e461749a8548a03efe7c}\label{plotcls_8m_a8114dc468f69e461749a8548a03efe7c}} 
+\index{plotcls.\+m@{plotcls.\+m}!xlabel@{xlabel}}
+\index{xlabel@{xlabel}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{xlabel()}{xlabel()}}
+{\footnotesize\ttfamily xlabel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{plotTT_8m_a202225617f824a28fbb07b976394f7d4}{l\+\_\+label}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a83cea63eef559edaa1cae19a5f1e944e}\label{plotcls_8m_a83cea63eef559edaa1cae19a5f1e944e}} 
+\index{plotcls.\+m@{plotcls.\+m}!ylabel@{ylabel}}
+\index{ylabel@{ylabel}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{ylabel()}{ylabel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ylabel (\begin{DoxyParamCaption}\item[{\textquotesingle{}\{\textbackslash{}Delta C\+\_\+l/C\+\_\+l\}(\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}})\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_a2bd5019ab4ef969b09565ff21181f990}\label{plotcls_8m_a2bd5019ab4ef969b09565ff21181f990}} 
+\index{plotcls.\+m@{plotcls.\+m}!ylabel@{ylabel}}
+\index{ylabel@{ylabel}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{ylabel()}{ylabel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily ylabel (\begin{DoxyParamCaption}\item[{\textquotesingle{}\{\{\textbackslash{}Delta C\+\_\+l/C\+\_\+l\}\}(\mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}/\mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}})\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{plotcls_8m_af6593d1fcb46a99b676f61409427ac44}\label{plotcls_8m_af6593d1fcb46a99b676f61409427ac44}} 
+\index{plotcls.\+m@{plotcls.\+m}!ylabel@{ylabel}}
+\index{ylabel@{ylabel}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{ylabel()}{ylabel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily ylabel (\begin{DoxyParamCaption}\item[{\textquotesingle{}l(l+1) C\+\_\+l/2\textbackslash{}pi\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{plotcls_8m_ac0431efac4d7c393d1e70b86115cb93f}\label{plotcls_8m_ac0431efac4d7c393d1e70b86115cb93f}} 
+\index{plotcls.\+m@{plotcls.\+m}!b@{b}}
+\index{b@{b}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily function b}
+
+\mbox{\Hypertarget{plotcls_8m_afe7a8c41b6fecba77f519a64a8ac08dc}\label{plotcls_8m_afe7a8c41b6fecba77f519a64a8ac08dc}} 
+\index{plotcls.\+m@{plotcls.\+m}!BB@{BB}}
+\index{BB@{BB}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{BB}{BB}}
+{\footnotesize\ttfamily else BB =0}
+
+\mbox{\Hypertarget{plotcls_8m_ad9d1ac02e33c4aed62ad517a7cb8b3fb}\label{plotcls_8m_ad9d1ac02e33c4aed62ad517a7cb8b3fb}} 
+\index{plotcls.\+m@{plotcls.\+m}!c@{c}}
+\index{c@{c}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily function c}
+
+\mbox{\Hypertarget{plotcls_8m_af8eb7b6b6383d2289c7f930ad1e6e32a}\label{plotcls_8m_af8eb7b6b6383d2289c7f930ad1e6e32a}} 
+\index{plotcls.\+m@{plotcls.\+m}!cmp@{cmp}}
+\index{cmp@{cmp}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{cmp}{cmp}}
+{\footnotesize\ttfamily else \mbox{\hyperlink{plotTT_8m_a398aea1bfa0aca55c9f32bc18f378026}{seth}}(\mbox{\hyperlink{plotTT_8m_aed4baa87751a8ac3167e69443cdc6241}{h}}) \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} cmp = (\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}}(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}}) -\/ comp\+TT(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}})) ./ comp\+TT(1\+:\mbox{\hyperlink{plotTT_8m_a36f4cff68f966cd6646bc53182747a19}{dm}})}
+
+\mbox{\Hypertarget{plotcls_8m_a80db10ba8808399dd69164a092cf2920}\label{plotcls_8m_a80db10ba8808399dd69164a092cf2920}} 
+\index{plotcls.\+m@{plotcls.\+m}!col@{col}}
+\index{col@{col}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily col =\mbox{\hyperlink{plotTT_8m_ab470e425c6e2ac234bf5d5f6d8d80595}{colours}}(\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})}
+
+\mbox{\Hypertarget{plotcls_8m_ab470e425c6e2ac234bf5d5f6d8d80595}\label{plotcls_8m_ab470e425c6e2ac234bf5d5f6d8d80595}} 
+\index{plotcls.\+m@{plotcls.\+m}!colours@{colours}}
+\index{colours@{colours}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{colours}{colours}}
+{\footnotesize\ttfamily colours = \textquotesingle{}krbcmgy\textquotesingle{}}
+
+\mbox{\Hypertarget{plotcls_8m_afb6414bb33276d77977751e4aaa68cfc}\label{plotcls_8m_afb6414bb33276d77977751e4aaa68cfc}} 
+\index{plotcls.\+m@{plotcls.\+m}!comp\+EE@{comp\+EE}}
+\index{comp\+EE@{comp\+EE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{comp\+EE}{compEE}}
+{\footnotesize\ttfamily comp\+EE =\mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}}}
+
+\mbox{\Hypertarget{plotcls_8m_a9544ed62399e7b7f31a4373f8fcec52a}\label{plotcls_8m_a9544ed62399e7b7f31a4373f8fcec52a}} 
+\index{plotcls.\+m@{plotcls.\+m}!comp\+TE@{comp\+TE}}
+\index{comp\+TE@{comp\+TE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{comp\+TE}{compTE}}
+{\footnotesize\ttfamily comp\+TE =\mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}}
+
+\mbox{\Hypertarget{plotcls_8m_a08a4415e9d594ff960030b921d42b91e}\label{plotcls_8m_a08a4415e9d594ff960030b921d42b91e}} 
+\index{plotcls.\+m@{plotcls.\+m}!e@{e}}
+\index{e@{e}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily e =\mbox{\hyperlink{plotTT_8m_a27d993b97d3a850c9b42c5d0ef2d6888}{min\+EE}}$\ast$0.\+5}
+
+\mbox{\Hypertarget{plotcls_8m_a6f96ba8525cc2f838c7d8b6888a1481b}\label{plotcls_8m_a6f96ba8525cc2f838c7d8b6888a1481b}} 
+\index{plotcls.\+m@{plotcls.\+m}!EE@{EE}}
+\index{EE@{EE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{EE}{EE}}
+{\footnotesize\ttfamily EE =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,3)}
+
+\mbox{\Hypertarget{plotcls_8m_afb358f48b1646c750fb9da6c6585be2b}\label{plotcls_8m_afb358f48b1646c750fb9da6c6585be2b}} 
+\index{plotcls.\+m@{plotcls.\+m}!end@{end}}
+\index{end@{end}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily end}
+
+\mbox{\Hypertarget{plotcls_8m_aed4baa87751a8ac3167e69443cdc6241}\label{plotcls_8m_aed4baa87751a8ac3167e69443cdc6241}} 
+\index{plotcls.\+m@{plotcls.\+m}!h@{h}}
+\index{h@{h}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} h =false}
+
+\mbox{\Hypertarget{plotcls_8m_a01703143a6ba4fc421f9c72c5b4d684d}\label{plotcls_8m_a01703143a6ba4fc421f9c72c5b4d684d}} 
+\index{plotcls.\+m@{plotcls.\+m}!hin@{hin}}
+\index{hin@{hin}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{hin}{hin}}
+{\footnotesize\ttfamily hin =ishold}
+
+\mbox{\Hypertarget{plotcls_8m_a3359ed5f123e10953f77a90207beaa1b}\label{plotcls_8m_a3359ed5f123e10953f77a90207beaa1b}} 
+\index{plotcls.\+m@{plotcls.\+m}!i@{i}}
+\index{i@{i}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=1:nargin
+
+dats\{\mbox{\hyperlink{plotcls_8m_a3359ed5f123e10953f77a90207beaa1b}{i}}\}=load(varargin\{\mbox{\hyperlink{plotcls_8m_a3359ed5f123e10953f77a90207beaa1b}{i}}\})
+\end{DoxyCode}
+
+
+Referenced by dopksmoothbspline\+\_\+().
+
+\mbox{\Hypertarget{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}\label{plotcls_8m_ac86694252f8dfdb19aaeadc4b7c342c6}} 
+\index{plotcls.\+m@{plotcls.\+m}!j@{j}}
+\index{j@{j}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily for j}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=1:\mbox{\hyperlink{plotdiffs_8m_ae68a9a9f4457cc47322c59e5f76b9859}{dm}}
+    \mbox{\hyperlink{plotcls_8m_af8eb7b6b6383d2289c7f930ad1e6e32a}{cmp}}= (\mbox{\hyperlink{plotcls_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}}(1:\mbox{\hyperlink{plotdiffs_8m_ae68a9a9f4457cc47322c59e5f76b9859}{dm}}) - \mbox{\hyperlink{plotcls_8m_a9544ed62399e7b7f31a4373f8fcec52a}{compTE}}(1:dm)) ./ sqrt(\mbox{\hyperlink{plotcls_8m_afb6414bb33276d77977751e4aaa68cfc}{compEE}}(1:\mbox{\hyperlink{plotdiffs_8m_ae68a9a9f4457cc47322c59e5f76b9859}{dm}}).*compTT(1:
+      \mbox{\hyperlink{plotdiffs_8m_ae68a9a9f4457cc47322c59e5f76b9859}{dm}}))
+\end{DoxyCode}
+
+
+Referenced by dopksmoothbspline\+\_\+().
+
+\mbox{\Hypertarget{plotcls_8m_a202225617f824a28fbb07b976394f7d4}\label{plotcls_8m_a202225617f824a28fbb07b976394f7d4}} 
+\index{plotcls.\+m@{plotcls.\+m}!l\+\_\+label@{l\+\_\+label}}
+\index{l\+\_\+label@{l\+\_\+label}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{l\+\_\+label}{l\_label}}
+{\footnotesize\ttfamily l\+\_\+label = \textquotesingle{}l\textquotesingle{}}
+
+\mbox{\Hypertarget{plotcls_8m_af56292874bf2b7a47b26c7f7021b1e1a}\label{plotcls_8m_af56292874bf2b7a47b26c7f7021b1e1a}} 
+\index{plotcls.\+m@{plotcls.\+m}!lmax@{lmax}}
+\index{lmax@{lmax}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{lmax}{lmax}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} \mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}} lmax =1}
+
+\mbox{\Hypertarget{plotcls_8m_ac09446ef18a7ceea270cfa306b1f2932}\label{plotcls_8m_ac09446ef18a7ceea270cfa306b1f2932}} 
+\index{plotcls.\+m@{plotcls.\+m}!lmin@{lmin}}
+\index{lmin@{lmin}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{lmin}{lmin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} lmin =2}
+
+\mbox{\Hypertarget{plotcls_8m_aac1113e50f7f1460beeaeeba69f63701}\label{plotcls_8m_aac1113e50f7f1460beeaeeba69f63701}} 
+\index{plotcls.\+m@{plotcls.\+m}!ls@{ls}}
+\index{ls@{ls}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{ls}{ls}}
+{\footnotesize\ttfamily ls =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,1)}
+
+\mbox{\Hypertarget{plotcls_8m_ab2ca55966eb80a4081bc177ccf4f0e73}\label{plotcls_8m_ab2ca55966eb80a4081bc177ccf4f0e73}} 
+\index{plotcls.\+m@{plotcls.\+m}!maxcmp@{maxcmp}}
+\index{maxcmp@{maxcmp}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{maxcmp}{maxcmp}}
+{\footnotesize\ttfamily maxcmp = max(\mbox{\hyperlink{plotTT_8m_aeb8954bfa9f218f668ce360e54866968}{cmp}})}
+
+\mbox{\Hypertarget{plotcls_8m_a307b4ab90819ccabdc57d3a5ebb432ee}\label{plotcls_8m_a307b4ab90819ccabdc57d3a5ebb432ee}} 
+\index{plotcls.\+m@{plotcls.\+m}!max\+EE@{max\+EE}}
+\index{max\+EE@{max\+EE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{max\+EE}{maxEE}}
+{\footnotesize\ttfamily max\+EE =-\/1e30}
+
+\mbox{\Hypertarget{plotcls_8m_a553389f6c6676acc75e78551b4e45edc}\label{plotcls_8m_a553389f6c6676acc75e78551b4e45edc}} 
+\index{plotcls.\+m@{plotcls.\+m}!max\+TE@{max\+TE}}
+\index{max\+TE@{max\+TE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{max\+TE}{maxTE}}
+{\footnotesize\ttfamily max\+TE =-\/1e30}
+
+\mbox{\Hypertarget{plotcls_8m_acb02a5b67375a104ca3ff6a0bb59d8ad}\label{plotcls_8m_acb02a5b67375a104ca3ff6a0bb59d8ad}} 
+\index{plotcls.\+m@{plotcls.\+m}!max\+TT@{max\+TT}}
+\index{max\+TT@{max\+TT}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{max\+TT}{maxTT}}
+{\footnotesize\ttfamily max\+TT =-\/1e30}
+
+\mbox{\Hypertarget{plotcls_8m_a27d993b97d3a850c9b42c5d0ef2d6888}\label{plotcls_8m_a27d993b97d3a850c9b42c5d0ef2d6888}} 
+\index{plotcls.\+m@{plotcls.\+m}!min\+EE@{min\+EE}}
+\index{min\+EE@{min\+EE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{min\+EE}{minEE}}
+{\footnotesize\ttfamily min\+EE =1e30}
+
+\mbox{\Hypertarget{plotcls_8m_aa0c4c55933beb65a62edfb61d4f76a56}\label{plotcls_8m_aa0c4c55933beb65a62edfb61d4f76a56}} 
+\index{plotcls.\+m@{plotcls.\+m}!min\+TE@{min\+TE}}
+\index{min\+TE@{min\+TE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{min\+TE}{minTE}}
+{\footnotesize\ttfamily min\+TE =1e30}
+
+\mbox{\Hypertarget{plotcls_8m_a2c4100ad4e8ebca6560c3431365b469d}\label{plotcls_8m_a2c4100ad4e8ebca6560c3431365b469d}} 
+\index{plotcls.\+m@{plotcls.\+m}!min\+TT@{min\+TT}}
+\index{min\+TT@{min\+TT}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{min\+TT}{minTT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_afb358f48b1646c750fb9da6c6585be2b}{end}} min\+TT =1e30}
+
+\mbox{\Hypertarget{plotcls_8m_a9cfe64de987d987c38905a9cce8c9f1f}\label{plotcls_8m_a9cfe64de987d987c38905a9cce8c9f1f}} 
+\index{plotcls.\+m@{plotcls.\+m}!noB@{noB}}
+\index{noB@{noB}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{noB}{noB}}
+{\footnotesize\ttfamily noB = \mbox{\hyperlink{plotTT_8m_a743f51bde122df72287b786719955dbc}{colnum}}(\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})==4 $\vert$$\vert$ \mbox{\hyperlink{plotTT_8m_a743f51bde122df72287b786719955dbc}{colnum}}(\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})==6}
+
+\mbox{\Hypertarget{plotcls_8m_a58ab1fd68e97078232808206b850161b}\label{plotcls_8m_a58ab1fd68e97078232808206b850161b}} 
+\index{plotcls.\+m@{plotcls.\+m}!on@{on}}
+\index{on@{on}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{on}{on}}
+{\footnotesize\ttfamily hold on}
+
+\mbox{\Hypertarget{plotcls_8m_a2bb484455444d16ea5dd19d5f760b99d}\label{plotcls_8m_a2bb484455444d16ea5dd19d5f760b99d}} 
+\index{plotcls.\+m@{plotcls.\+m}!plotx@{plotx}}
+\index{plotx@{plotx}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{plotx}{plotx}}
+{\footnotesize\ttfamily plotx =2}
+
+\mbox{\Hypertarget{plotcls_8m_a519685ca3a7d43d94e0001b237b1fdb4}\label{plotcls_8m_a519685ca3a7d43d94e0001b237b1fdb4}} 
+\index{plotcls.\+m@{plotcls.\+m}!ploty@{ploty}}
+\index{ploty@{ploty}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{ploty}{ploty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} nargin ploty =2}
+
+\mbox{\Hypertarget{plotcls_8m_aaccc9105df5383111407fd5b41255e23}\label{plotcls_8m_aaccc9105df5383111407fd5b41255e23}} 
+\index{plotcls.\+m@{plotcls.\+m}!t@{t}}
+\index{t@{t}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily t =max(\mbox{\hyperlink{plotTT_8m_a307b4ab90819ccabdc57d3a5ebb432ee}{max\+EE}},\mbox{\hyperlink{plotTT_8m_a553389f6c6676acc75e78551b4e45edc}{max\+TE}})$\ast$2}
+
+\mbox{\Hypertarget{plotcls_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}\label{plotcls_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}} 
+\index{plotcls.\+m@{plotcls.\+m}!TE@{TE}}
+\index{TE@{TE}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{TE}{TE}}
+{\footnotesize\ttfamily TE =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,5)}
+
+\mbox{\Hypertarget{plotcls_8m_a278a1f181e2be02613530daeaa8afdab}\label{plotcls_8m_a278a1f181e2be02613530daeaa8afdab}} 
+\index{plotcls.\+m@{plotcls.\+m}!ticks@{ticks}}
+\index{ticks@{ticks}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{ticks}{ticks}}
+{\footnotesize\ttfamily ticks = \mbox{[}2 40 200 600 1200\mbox{]}}
+
+\mbox{\Hypertarget{plotcls_8m_a2f803268a6367d0943978eb5f84cc62e}\label{plotcls_8m_a2f803268a6367d0943978eb5f84cc62e}} 
+\index{plotcls.\+m@{plotcls.\+m}!TT@{TT}}
+\index{TT@{TT}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{TT}{TT}}
+{\footnotesize\ttfamily TT =\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}(\+:,2)}
+
+\mbox{\Hypertarget{plotcls_8m_a9336ebf25087d91c818ee6e9ec29f8c1}\label{plotcls_8m_a9336ebf25087d91c818ee6e9ec29f8c1}} 
+\index{plotcls.\+m@{plotcls.\+m}!x@{x}}
+\index{x@{x}!plotcls.\+m@{plotcls.\+m}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily x =size(dats\{\mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}}\})}
+

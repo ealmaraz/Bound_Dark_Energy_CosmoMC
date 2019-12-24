@@ -1,0 +1,9 @@
+<map id="stringutils::formatstring" name="stringutils::formatstring">
+<area shape="rect" id="node2" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="219,5,368,32"/>
+<area shape="rect" id="node3" href="$namespacestringutils.html#aaf1a42410d8de4ec72b5f8f00f538f35" title="stringutils::stringreplace" alt="" coords="427,56,587,83"/>
+<area shape="rect" id="node4" href="$namespacestringutils.html#a052ed985538275100bc601b4bfffde94" title="stringutils::subnextformat" alt="" coords="209,107,378,133"/>
+<area shape="rect" id="node5" href="$namespacestringutils.html#af51a1a8adbae76da62979f25232bd8df" title="stringutils::strtoint" alt="" coords="443,107,570,133"/>
+<area shape="rect" id="node6" href="$namespacestringutils.html#a8308d148fc2d1fd7e23aea926bfd837f" title="stringutils::inttostr" alt="" coords="443,157,570,184"/>
+<area shape="rect" id="node7" href="$namespacestringutils.html#a19e683b9de4f769c4fe0afc48a7b45d0" title="stringutils::concat" alt="" coords="635,132,760,159"/>
+<area shape="rect" id="node8" href="$namespacestringutils.html#a921ef80710acba9d901b45479ddae08d" title="stringutils::stringappend" alt="" coords="808,157,968,184"/>
+</map>

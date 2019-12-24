@@ -1,0 +1,265 @@
+\hypertarget{namespacepropose}{}\section{propose Module Reference}
+\label{namespacepropose}\index{propose@{propose}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1blockproposer}{blockproposer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1indexcycler}{indexcycler}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1randdirectionproposer}{randdirectionproposer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1tcovmatproposer}{tcovmatproposer}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+integer function \mbox{\hyperlink{namespacepropose_a57ab2c55501784356748335378f0ca91}{next}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a3315b3e0b92d1cf9fa29628d291634de}{rotmatrix}} (M, n)
+\item 
+real(mcp) function, dimension(this\%n) \mbox{\hyperlink{namespacepropose_a2c9bb747ee6cc87964f354764f10d58c}{proposevec}} (this, wid)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacepropose_a5181089142665b7ba3e73b0e8517744c}{propose\+\_\+r}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_aee79ab6a28983b4a95931840fa5592e3}{updateparams}} (this, P, vec)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a4a4f0ef5bf70846bd7b2274da1f889cb}{init}} (this, parameter\+\_\+blocks, slow\+\_\+block\+\_\+max, oversample\+\_\+fast, propose\+\_\+scale)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_ad24a067fcde7527fedd0ecb5f3fac8c5}{blockedproposer\+\_\+setcovariance}} (this, propose\+\_\+matrix)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_ad8938d5b08fd1352284320a465fa0dd1}{getblockproposal}} (this, P, i)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_acc9c3d417d1630086e0f2e46eda9482c}{getproposal}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a593b61b41784923a7b85bc8a66c07ef8}{getproposalslow}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_ac628bde62d39c32001cbd8b6a33fb2cc}{getproposalfast}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a336c9a51cd0387485ce6184eb753c720}{getproposalfastdelta}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a8f227417f812244dfc68539ff9b75353}{tcovmatproposer\+\_\+setcovariance}} (this, propose\+\_\+matrix)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_aa4a55115a922af4c660ba77e969a2fc1}{tcovmatproposer\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a9a1013a605e00c63e36aa86ab4d4e938}{tcovmatproposer\+\_\+savestate}} (this, F)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacepropose_a8617eeb66f67fd9a772122b9d90f4a03}{propose\+\_\+rand\+\_\+directions}} = .true.
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacepropose_ad24a067fcde7527fedd0ecb5f3fac8c5}\label{namespacepropose_ad24a067fcde7527fedd0ecb5f3fac8c5}} 
+\index{propose@{propose}!blockedproposer\+\_\+setcovariance@{blockedproposer\+\_\+setcovariance}}
+\index{blockedproposer\+\_\+setcovariance@{blockedproposer\+\_\+setcovariance}!propose@{propose}}
+\subsubsection{\texorpdfstring{blockedproposer\+\_\+setcovariance()}{blockedproposer\_setcovariance()}}
+{\footnotesize\ttfamily subroutine propose\+::blockedproposer\+\_\+setcovariance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}}), target}]{this,  }\item[{real(mcp), dimension(\+:,\+:), intent(in)}]{propose\+\_\+matrix }\end{DoxyParamCaption})}
+
+
+
+References matrixutils\+::matrix\+\_\+cholesky().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepropose_ad24a067fcde7527fedd0ecb5f3fac8c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_ad8938d5b08fd1352284320a465fa0dd1}\label{namespacepropose_ad8938d5b08fd1352284320a465fa0dd1}} 
+\index{propose@{propose}!getblockproposal@{getblockproposal}}
+\index{getblockproposal@{getblockproposal}!propose@{propose}}
+\subsubsection{\texorpdfstring{getblockproposal()}{getblockproposal()}}
+{\footnotesize\ttfamily subroutine propose\+::getblockproposal (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepropose_acc9c3d417d1630086e0f2e46eda9482c}\label{namespacepropose_acc9c3d417d1630086e0f2e46eda9482c}} 
+\index{propose@{propose}!getproposal@{getproposal}}
+\index{getproposal@{getproposal}!propose@{propose}}
+\subsubsection{\texorpdfstring{getproposal()}{getproposal()}}
+{\footnotesize\ttfamily subroutine propose\+::getproposal (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P }\end{DoxyParamCaption})}
+
+
+
+References getproposalfast(), and getproposalslow().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepropose_acc9c3d417d1630086e0f2e46eda9482c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_ac628bde62d39c32001cbd8b6a33fb2cc}\label{namespacepropose_ac628bde62d39c32001cbd8b6a33fb2cc}} 
+\index{propose@{propose}!getproposalfast@{getproposalfast}}
+\index{getproposalfast@{getproposalfast}!propose@{propose}}
+\subsubsection{\texorpdfstring{getproposalfast()}{getproposalfast()}}
+{\footnotesize\ttfamily subroutine propose\+::getproposalfast (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P }\end{DoxyParamCaption})}
+
+
+
+Referenced by getproposal().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacepropose_ac628bde62d39c32001cbd8b6a33fb2cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_a336c9a51cd0387485ce6184eb753c720}\label{namespacepropose_a336c9a51cd0387485ce6184eb753c720}} 
+\index{propose@{propose}!getproposalfastdelta@{getproposalfastdelta}}
+\index{getproposalfastdelta@{getproposalfastdelta}!propose@{propose}}
+\subsubsection{\texorpdfstring{getproposalfastdelta()}{getproposalfastdelta()}}
+{\footnotesize\ttfamily subroutine propose\+::getproposalfastdelta (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepropose_a593b61b41784923a7b85bc8a66c07ef8}\label{namespacepropose_a593b61b41784923a7b85bc8a66c07ef8}} 
+\index{propose@{propose}!getproposalslow@{getproposalslow}}
+\index{getproposalslow@{getproposalslow}!propose@{propose}}
+\subsubsection{\texorpdfstring{getproposalslow()}{getproposalslow()}}
+{\footnotesize\ttfamily subroutine propose\+::getproposalslow (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P }\end{DoxyParamCaption})}
+
+
+
+Referenced by getproposal().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepropose_a593b61b41784923a7b85bc8a66c07ef8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_a4a4f0ef5bf70846bd7b2274da1f889cb}\label{namespacepropose_a4a4f0ef5bf70846bd7b2274da1f889cb}} 
+\index{propose@{propose}!init@{init}}
+\index{init@{init}!propose@{propose}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily subroutine propose\+::init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}}), target}]{this,  }\item[{type(int\+\_\+arr), dimension(\+:)}]{parameter\+\_\+blocks,  }\item[{integer, intent(in)}]{slow\+\_\+block\+\_\+max,  }\item[{integer, intent(in), optional}]{oversample\+\_\+fast,  }\item[{real(mcp), intent(in), optional}]{propose\+\_\+scale }\end{DoxyParamCaption})}
+
+
+
+References settings\+::params\+\_\+used.
+
+\mbox{\Hypertarget{namespacepropose_a57ab2c55501784356748335378f0ca91}\label{namespacepropose_a57ab2c55501784356748335378f0ca91}} 
+\index{propose@{propose}!next@{next}}
+\index{next@{next}!propose@{propose}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily integer function propose\+::next (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{cyclicindexrandomizer}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References randutils\+::randindices().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepropose_a57ab2c55501784356748335378f0ca91_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_a5181089142665b7ba3e73b0e8517744c}\label{namespacepropose_a5181089142665b7ba3e73b0e8517744c}} 
+\index{propose@{propose}!propose\+\_\+r@{propose\+\_\+r}}
+\index{propose\+\_\+r@{propose\+\_\+r}!propose@{propose}}
+\subsubsection{\texorpdfstring{propose\+\_\+r()}{propose\_r()}}
+{\footnotesize\ttfamily real(mcp) function propose\+::propose\+\_\+r (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1randdirectionproposer}{randdirectionproposer}}), intent(in)}]{this }\end{DoxyParamCaption})}
+
+
+
+References randutils\+::gaussian1(), randutils\+::randexp1(), and randutils\+::ranmar().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepropose_a5181089142665b7ba3e73b0e8517744c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_a2c9bb747ee6cc87964f354764f10d58c}\label{namespacepropose_a2c9bb747ee6cc87964f354764f10d58c}} 
+\index{propose@{propose}!proposevec@{proposevec}}
+\index{proposevec@{proposevec}!propose@{propose}}
+\subsubsection{\texorpdfstring{proposevec()}{proposevec()}}
+{\footnotesize\ttfamily real(mcp) function, dimension(this\%n) propose\+::proposevec (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1randdirectionproposer}{randdirectionproposer}})}]{this,  }\item[{real(mcp)}]{wid }\end{DoxyParamCaption})}
+
+
+
+References rotmatrix().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacepropose_a2c9bb747ee6cc87964f354764f10d58c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_a3315b3e0b92d1cf9fa29628d291634de}\label{namespacepropose_a3315b3e0b92d1cf9fa29628d291634de}} 
+\index{propose@{propose}!rotmatrix@{rotmatrix}}
+\index{rotmatrix@{rotmatrix}!propose@{propose}}
+\subsubsection{\texorpdfstring{rotmatrix()}{rotmatrix()}}
+{\footnotesize\ttfamily subroutine propose\+::rotmatrix (\begin{DoxyParamCaption}\item[{real(mcp), dimension(n,n)}]{M,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References propose\+\_\+rand\+\_\+directions.
+
+
+
+Referenced by proposevec().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacepropose_a3315b3e0b92d1cf9fa29628d291634de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepropose_aa4a55115a922af4c660ba77e969a2fc1}\label{namespacepropose_aa4a55115a922af4c660ba77e969a2fc1}} 
+\index{propose@{propose}!tcovmatproposer\+\_\+loadstate@{tcovmatproposer\+\_\+loadstate}}
+\index{tcovmatproposer\+\_\+loadstate@{tcovmatproposer\+\_\+loadstate}!propose@{propose}}
+\subsubsection{\texorpdfstring{tcovmatproposer\+\_\+loadstate()}{tcovmatproposer\_loadstate()}}
+{\footnotesize\ttfamily subroutine propose\+::tcovmatproposer\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1tcovmatproposer}{tcovmatproposer}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepropose_a9a1013a605e00c63e36aa86ab4d4e938}\label{namespacepropose_a9a1013a605e00c63e36aa86ab4d4e938}} 
+\index{propose@{propose}!tcovmatproposer\+\_\+savestate@{tcovmatproposer\+\_\+savestate}}
+\index{tcovmatproposer\+\_\+savestate@{tcovmatproposer\+\_\+savestate}!propose@{propose}}
+\subsubsection{\texorpdfstring{tcovmatproposer\+\_\+savestate()}{tcovmatproposer\_savestate()}}
+{\footnotesize\ttfamily subroutine propose\+::tcovmatproposer\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1tcovmatproposer}{tcovmatproposer}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepropose_a8f227417f812244dfc68539ff9b75353}\label{namespacepropose_a8f227417f812244dfc68539ff9b75353}} 
+\index{propose@{propose}!tcovmatproposer\+\_\+setcovariance@{tcovmatproposer\+\_\+setcovariance}}
+\index{tcovmatproposer\+\_\+setcovariance@{tcovmatproposer\+\_\+setcovariance}!propose@{propose}}
+\subsubsection{\texorpdfstring{tcovmatproposer\+\_\+setcovariance()}{tcovmatproposer\_setcovariance()}}
+{\footnotesize\ttfamily subroutine propose\+::tcovmatproposer\+\_\+setcovariance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1tcovmatproposer}{tcovmatproposer}}), target}]{this,  }\item[{real(mcp), dimension(\+:,\+:), intent(in)}]{propose\+\_\+matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepropose_aee79ab6a28983b4a95931840fa5592e3}\label{namespacepropose_aee79ab6a28983b4a95931840fa5592e3}} 
+\index{propose@{propose}!updateparams@{updateparams}}
+\index{updateparams@{updateparams}!propose@{propose}}
+\subsubsection{\texorpdfstring{updateparams()}{updateparams()}}
+{\footnotesize\ttfamily subroutine propose\+::updateparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpropose_1_1blockproposer}{blockproposer}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{real(mcp), dimension(this\%n)}]{vec }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepropose_a8617eeb66f67fd9a772122b9d90f4a03}\label{namespacepropose_a8617eeb66f67fd9a772122b9d90f4a03}} 
+\index{propose@{propose}!propose\+\_\+rand\+\_\+directions@{propose\+\_\+rand\+\_\+directions}}
+\index{propose\+\_\+rand\+\_\+directions@{propose\+\_\+rand\+\_\+directions}!propose@{propose}}
+\subsubsection{\texorpdfstring{propose\+\_\+rand\+\_\+directions}{propose\_rand\_directions}}
+{\footnotesize\ttfamily logical propose\+::propose\+\_\+rand\+\_\+directions = .true.}
+
+
+
+Referenced by rotmatrix().
+

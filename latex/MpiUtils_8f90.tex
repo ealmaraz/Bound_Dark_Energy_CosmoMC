@@ -1,0 +1,42 @@
+\hypertarget{MpiUtils_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Mpi\+Utils.f90 File Reference}
+\label{MpiUtils_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Mpi\+Utils.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Mpi\+Utils.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmpiutils_1_1ttimer}{mpiutils\+::ttimer}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacempiutils}{mpiutils}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+integer function \mbox{\hyperlink{namespacempiutils_a10119a7c6a3093e9f38566d063e88364}{mpiutils\+::getmpirank}} ()
+\item 
+logical function \mbox{\hyperlink{namespacempiutils_a8c41001658ce5aafd28c17c28e215bf6}{mpiutils\+::ismainmpi}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a23720e4e8b635dab4b67172618aa77e5}{mpiutils\+::mpistop}} (Msg)
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_af717f5183b6db768a0a9517d4737805e}{mpiutils\+::mpistat}} (Mpi\+ID, Mpi\+Size)
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a81a7de07e984011ee5f1d69d403e6006}{mpiutils\+::mpiquietwait}}
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a86ebeabf362ba28efbc4eae836b533bb}{mpiutils\+::mpiwakequietwait}}
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a09da810020699894dfe6a3da8dd985c8}{mpiutils\+::mpisharestring}} (S, from)
+\item 
+real(ttimer\+\_\+dp) function \mbox{\hyperlink{namespacempiutils_a22d9c100b7422621acc997902a9856f7}{mpiutils\+::timertime}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_af115575f9cb5cff0693d705e9f6b4704}{mpiutils\+::ttimer\+\_\+start}} (this)
+\item 
+real(ttimer\+\_\+dp) function \mbox{\hyperlink{namespacempiutils_a45301d4a23c7b66f94ef24ded2062d8d}{mpiutils\+::ttimer\+\_\+time}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_aec296fa19d748cab235ef01a63cdc289}{mpiutils\+::ttimer\+\_\+writetime}} (this, Msg, start)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacempiutils_a29264c4652e8287096a27ca2675edc26}{mpiutils\+::ttimer\+\_\+dp}} = Kind(1.d0)
+\end{DoxyCompactItemize}

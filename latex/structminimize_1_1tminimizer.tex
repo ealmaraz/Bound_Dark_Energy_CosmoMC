@@ -1,0 +1,159 @@
+\hypertarget{structminimize_1_1tminimizer}{}\section{minimize\+:\+:tminimizer Type Reference}
+\label{structminimize_1_1tminimizer}\index{minimize\+::tminimizer@{minimize\+::tminimizer}}
+
+
+Inheritance diagram for minimize\+:\+:tminimizer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{structminimize_1_1tminimizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for minimize\+:\+:tminimizer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{structminimize_1_1tminimizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structminimize_1_1tminimizer_a27d3785b4fccc31f0b16f388479e4c42}{ffn}}
+\item 
+procedure(\mbox{\hyperlink{interfaceminimize_1_1FindBestFit}{Find\+Best\+Fit}}), deferred \mbox{\hyperlink{structminimize_1_1tminimizer_a1b2dbcd57ca1341162d79727a8cba2a8}{findbestfit}}
+\item 
+procedure \mbox{\hyperlink{structminimize_1_1tminimizer_a2e7f83b0f42230f4b4628d86e2260d46}{vecttoparams}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{structminimize_1_1tminimizer_ad24885620be2a8971d453bcef4aaaad0}{uses\+\_\+mpi}} = .false.
+\item 
+type(paramset) \mbox{\hyperlink{structminimize_1_1tminimizer_a993410de4b37490f36f440b0fba3b1ca}{minparams}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a31561b98beb39c1af159226b3ebedbbe}{minimize\+\_\+indices}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a0b291333ed5b559682f422d393418339}{minimize\+\_\+indices\+\_\+used}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a9f4f5a55427b5f3b75dc5c68ed3ea73d}{used\+\_\+param\+\_\+scales}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a2c7768ce72ff58274a2ec4f6b3629163}{inv\+\_\+cov}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a9c120bd253a7165f50ba96661d82b88e}{rotatable\+\_\+params\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{structminimize_1_1tminimizer_a8d20f4b33d49474013417e55e945a196}{num\+\_\+rotatable}} = 0
+\item 
+integer \mbox{\hyperlink{structminimize_1_1tminimizer_abd977d6ec1c172b9201b0bf315f176b4}{num\+\_\+rot}} = 0
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a5c5ba6f92fec0270f2eabe77f40d8ef1}{origin}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a7ce8b4a389c371ac859441bde89f5ae7}{paramrot}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structminimize_1_1tminimizer_a7fe5fc618175b76ed0d433db8882e10b}{min\+\_\+params\+\_\+rot}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a27d3785b4fccc31f0b16f388479e4c42}\label{structminimize_1_1tminimizer_a27d3785b4fccc31f0b16f388479e4c42}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!ffn@{ffn}}
+\index{ffn@{ffn}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{ffn()}{ffn()}}
+{\footnotesize\ttfamily procedure minimize\+::tminimizer\+::ffn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a1b2dbcd57ca1341162d79727a8cba2a8}\label{structminimize_1_1tminimizer_a1b2dbcd57ca1341162d79727a8cba2a8}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!findbestfit@{findbestfit}}
+\index{findbestfit@{findbestfit}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{findbestfit()}{findbestfit()}}
+{\footnotesize\ttfamily procedure(\mbox{\hyperlink{interfaceminimize_1_1FindBestFit}{Find\+Best\+Fit}}), deferred minimize\+::tminimizer\+::findbestfit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a2e7f83b0f42230f4b4628d86e2260d46}\label{structminimize_1_1tminimizer_a2e7f83b0f42230f4b4628d86e2260d46}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!vecttoparams@{vecttoparams}}
+\index{vecttoparams@{vecttoparams}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{vecttoparams()}{vecttoparams()}}
+{\footnotesize\ttfamily procedure minimize\+::tminimizer\+::vecttoparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a2c7768ce72ff58274a2ec4f6b3629163}\label{structminimize_1_1tminimizer_a2c7768ce72ff58274a2ec4f6b3629163}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!inv\+\_\+cov@{inv\+\_\+cov}}
+\index{inv\+\_\+cov@{inv\+\_\+cov}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{inv\+\_\+cov}{inv\_cov}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable minimize\+::tminimizer\+::inv\+\_\+cov\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a7fe5fc618175b76ed0d433db8882e10b}\label{structminimize_1_1tminimizer_a7fe5fc618175b76ed0d433db8882e10b}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!min\+\_\+params\+\_\+rot@{min\+\_\+params\+\_\+rot}}
+\index{min\+\_\+params\+\_\+rot@{min\+\_\+params\+\_\+rot}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{min\+\_\+params\+\_\+rot}{min\_params\_rot}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable minimize\+::tminimizer\+::min\+\_\+params\+\_\+rot\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a31561b98beb39c1af159226b3ebedbbe}\label{structminimize_1_1tminimizer_a31561b98beb39c1af159226b3ebedbbe}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!minimize\+\_\+indices@{minimize\+\_\+indices}}
+\index{minimize\+\_\+indices@{minimize\+\_\+indices}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+indices}{minimize\_indices}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable minimize\+::tminimizer\+::minimize\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a0b291333ed5b559682f422d393418339}\label{structminimize_1_1tminimizer_a0b291333ed5b559682f422d393418339}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!minimize\+\_\+indices\+\_\+used@{minimize\+\_\+indices\+\_\+used}}
+\index{minimize\+\_\+indices\+\_\+used@{minimize\+\_\+indices\+\_\+used}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+indices\+\_\+used}{minimize\_indices\_used}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable minimize\+::tminimizer\+::minimize\+\_\+indices\+\_\+used\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a993410de4b37490f36f440b0fba3b1ca}\label{structminimize_1_1tminimizer_a993410de4b37490f36f440b0fba3b1ca}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!minparams@{minparams}}
+\index{minparams@{minparams}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{minparams}{minparams}}
+{\footnotesize\ttfamily type(paramset) minimize\+::tminimizer\+::minparams\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_abd977d6ec1c172b9201b0bf315f176b4}\label{structminimize_1_1tminimizer_abd977d6ec1c172b9201b0bf315f176b4}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!num\+\_\+rot@{num\+\_\+rot}}
+\index{num\+\_\+rot@{num\+\_\+rot}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{num\+\_\+rot}{num\_rot}}
+{\footnotesize\ttfamily integer minimize\+::tminimizer\+::num\+\_\+rot = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a8d20f4b33d49474013417e55e945a196}\label{structminimize_1_1tminimizer_a8d20f4b33d49474013417e55e945a196}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!num\+\_\+rotatable@{num\+\_\+rotatable}}
+\index{num\+\_\+rotatable@{num\+\_\+rotatable}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{num\+\_\+rotatable}{num\_rotatable}}
+{\footnotesize\ttfamily integer minimize\+::tminimizer\+::num\+\_\+rotatable = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a5c5ba6f92fec0270f2eabe77f40d8ef1}\label{structminimize_1_1tminimizer_a5c5ba6f92fec0270f2eabe77f40d8ef1}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!origin@{origin}}
+\index{origin@{origin}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{origin}{origin}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable minimize\+::tminimizer\+::origin\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a7ce8b4a389c371ac859441bde89f5ae7}\label{structminimize_1_1tminimizer_a7ce8b4a389c371ac859441bde89f5ae7}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!paramrot@{paramrot}}
+\index{paramrot@{paramrot}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{paramrot}{paramrot}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable minimize\+::tminimizer\+::paramrot\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a9c120bd253a7165f50ba96661d82b88e}\label{structminimize_1_1tminimizer_a9c120bd253a7165f50ba96661d82b88e}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!rotatable\+\_\+params\+\_\+used@{rotatable\+\_\+params\+\_\+used}}
+\index{rotatable\+\_\+params\+\_\+used@{rotatable\+\_\+params\+\_\+used}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{rotatable\+\_\+params\+\_\+used}{rotatable\_params\_used}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable minimize\+::tminimizer\+::rotatable\+\_\+params\+\_\+used\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_a9f4f5a55427b5f3b75dc5c68ed3ea73d}\label{structminimize_1_1tminimizer_a9f4f5a55427b5f3b75dc5c68ed3ea73d}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!used\+\_\+param\+\_\+scales@{used\+\_\+param\+\_\+scales}}
+\index{used\+\_\+param\+\_\+scales@{used\+\_\+param\+\_\+scales}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{used\+\_\+param\+\_\+scales}{used\_param\_scales}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable minimize\+::tminimizer\+::used\+\_\+param\+\_\+scales\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tminimizer_ad24885620be2a8971d453bcef4aaaad0}\label{structminimize_1_1tminimizer_ad24885620be2a8971d453bcef4aaaad0}} 
+\index{minimize\+::tminimizer@{minimize\+::tminimizer}!uses\+\_\+mpi@{uses\+\_\+mpi}}
+\index{uses\+\_\+mpi@{uses\+\_\+mpi}!minimize\+::tminimizer@{minimize\+::tminimizer}}
+\subsubsection{\texorpdfstring{uses\+\_\+mpi}{uses\_mpi}}
+{\footnotesize\ttfamily logical minimize\+::tminimizer\+::uses\+\_\+mpi = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{minimize_8f90}{minimize.\+f90}}\end{DoxyCompactItemize}

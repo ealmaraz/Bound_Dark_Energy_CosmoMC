@@ -1,0 +1,1699 @@
+\hypertarget{namespacematrixutils}{}\section{matrixutils Module Reference}
+\label{namespacematrixutils}\index{matrixutils@{matrixutils}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmatrixutils_1_1tmatrixtype}{tmatrixtype}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real function \mbox{\hyperlink{namespacematrixutils_a969773017c47f3dc8dfb2a18e5bc5fbd}{getmatrixtime}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a24fd4fc8dbd7eee3c9176c3f9ca634eb}{matrix\+\_\+start}} (Name)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aeb25ca6b661aed4516c029f0cd6003bc}{matrix\+\_\+end}} (Name)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a88175f31021d0939c32287595d3f5630}{matrix\+\_\+writefilerow}} (aunit, vec, n)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af21f52b4eeb7fc47bb9cd5e35cc1ebc8}{matrix\+\_\+write}} (aname, mat, forcetable, commentline)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aa5eb3cbf41718ad7ccb335e642a29174}{matrix\+\_\+write\+\_\+double}} (aname, mat, forcetable)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a5897a3508757971da56e07e3cdab7f0a}{matrix\+\_\+write\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ac49e65871c4266da9c687b474d1908d8}{matrixsym\+\_\+write\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_acbfa12c533184738072f7f9a35e7cfc7}{matrixsym\+\_\+write\+\_\+binary\+\_\+single}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a122e85102b3eac4266a8031c62de9bbf}{matrix\+\_\+writevec}} (aname, vec)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a311afaea7a3204cc1b47a2adb7bebe63}{matrix\+\_\+read\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7572f4e0a0c8b958126d5d3c8b46f16a}{matrixsym\+\_\+read\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a592726195f2a952a006391bde92cd2b0}{matrixsym\+\_\+read\+\_\+binary\+\_\+single}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ac778ea47bab010c70f3d6f00838e4668}{matrix\+\_\+read}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a6c4f5774cfa213609562eb2a5dfeca92}{matrix\+\_\+readsingle}} (aname, mat)
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function, dimension(n) \mbox{\hyperlink{namespacematrixutils_a6b563974ed42131dcdd0b7c5e009fb33}{matrix\+\_\+diag}} (M, n)
+\item 
+integer function \mbox{\hyperlink{namespacematrixutils_af41b3d5784e02032b5e22a16d76eca49}{ilaenv\+\_\+wrap}} (i, S1, S2, a, b, c, d)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aa94ed3ad0cf6b18002c5f8ca9cd8b948}{matrix\+\_\+diagonalize}} (M, diag, n)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a03b181040e90fb7d7693f10d0716a04f}{matrix\+\_\+diagonalize\+\_\+dc}} (M, diag, n)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a76928f01b83f388ddb51ee3e256cd3a5}{matrix\+\_\+root}} (M, n, pow)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a1f7b4399f422b8532d242374454b9e03}{matrix\+\_\+diagonalize\+\_\+partial}} (M, diag, n, emin, emax, nfound)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a30f09f7f2856414c7cfdc635a108039a}{matrix\+\_\+cdiagonalize\+\_\+partial}} (M, diag, n, emin, emax, nfound)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a29011a04a13e1b49c36d226591b3e5a4}{matrix\+\_\+cdiagonalize}} (M, diag, n)
+\item 
+complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function \mbox{\hyperlink{namespacematrixutils_af3bd404fd6685b9f8d2863bb4a3c06e4}{matrix\+\_\+ctrace}} (M)
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function \mbox{\hyperlink{namespacematrixutils_aba34e30d438cd387bb0f57e16d60b364}{matrix\+\_\+trace}} (M)
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function \mbox{\hyperlink{namespacematrixutils_a4117e3e0068005bf79a0db9745a8dde6}{matrixsym\+\_\+logdet}} (mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a289ea264af6294e91e4906d329ab1bca}{matrix\+\_\+crotatesymm}} (Mat, U, m, Out, triangular)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aec8c0f5500ce3fccc5a427276bbc95d2}{matrix\+\_\+rotatesymm}} (Mat, U, m, Out, triangular)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a6e5b7eb3ff08d14994be069ca192ea48}{matrix\+\_\+rotateantisymm}} (Mat, U, m, Out)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a2098ca04f94da631caf2ebcce5ad7bf9}{matrix\+\_\+cmult\+\_\+symmright}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a4389445ac98a45384153fff75a6a21af}{matrix\+\_\+cmult\+\_\+symmleft}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a623ed13db8bf49d73e233e3668d3923c}{matrix\+\_\+cmult}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a061be118f549334b7196808f5ce55245}{matrix\+\_\+multsq\+\_\+repright}} (Mat, U, a)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a5db9de44653dcfa367228c2b5a077b14}{matrix\+\_\+multtri}} (Mat, L, side)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aa6a8ab9e79a8dd522f5375ebf4a50372}{matrix\+\_\+mult}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ab4f1087b56f3198b3d84c8ebf1cdd580}{matrix\+\_\+mult\+\_\+symmleft}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a97a6a772baa3485aaddba50623e50673}{matrix\+\_\+mult\+\_\+symmright}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af451dede0e0f43908b5f8fdbd6b64717}{matrix\+\_\+cmultgen}} (Mat, m, k, U, n, Out)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a6efcf6a348628fcb3694cb23761b52ec}{matrix\+\_\+multgen}} (Mat, m, k, U, n, Out)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_afdb73dd3fe4ce57e9ba27e6d3d511376}{matrix\+\_\+cmult\+\_\+nt}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a4a084a8c031469076ac26bf4e9055109}{matrix\+\_\+mult\+\_\+nt}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7c5f8b5e283bec1dcdcc4b82abbebd47}{matrix\+\_\+cmult\+\_\+tn}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a13557cd7745827af9e6873d3dbba3a1f}{matrix\+\_\+mult\+\_\+tn}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a380ecdd4310ae2f91be911a45516df12}{matrix\+\_\+cholesky}} (M, err, zeroed)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ad7a37503ef0aeeef3585caccc253c428}{matrix\+\_\+ccholesky}} (M)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_acda49677dcf7603b255acba37dda9b92}{matrix\+\_\+choleskyrootinverse}} (M, transpose, error)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a3d8668e32abacfbeeeaaca90c120a129}{matrix\+\_\+ccholeskyrootinverse}} (M, dagger)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a663d1886940de1ea811bab15859db116}{matrix\+\_\+inverse\+\_\+chol}} (M, err)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aac7ea35062daeadd8fb4ebc86cb42e7a}{matrix\+\_\+inverse}} (M)
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function \mbox{\hyperlink{namespacematrixutils_a5a3ede7fff09728b5cacb5a559ab936f}{matrix\+\_\+gaussianloglike}} (Cov, d)
+\item 
+double precision function \mbox{\hyperlink{namespacematrixutils_ab48ad701f7ef749e5bea654c83ac4544}{matrix\+\_\+gaussianloglikedouble}} (Cov, d)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af319573ea9284b8ab1e745f9610b36f6}{matrix\+\_\+inverseasymm}} (M)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7960d8813f71cc715ba85ffba471dd38}{matrix\+\_\+svd}} (Mat, m, n, D, VT)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a295b572473f10f878fb8d3fc7b8d06f1}{matrix\+\_\+svd\+\_\+vt}} (Mat, m, n, D, U)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a536eb03269736dd2f4c33b0978211583}{matrix\+\_\+csvd\+\_\+vt}} (Mat, m, n, D, U)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af38c4627b0e939eadba68b6ea264297b}{matrix\+\_\+csvd\+\_\+u}} (Mat, m, n, D, VT)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aaca4350f2cff361fd0233962eba5fdc7}{matrix\+\_\+csvd\+\_\+allvt}} (Mat, m, n, D, VT)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ac24fa96b1159f9748d7f0ea3fbdc1199}{matrix\+\_\+diagpremul}} (D, M)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_afb220a70c7ec8bcc1eb1694588300540}{matrix\+\_\+solvesymm}} (M, a, soln)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a2662807273dfd077b6501df4d09909d9}{matrix\+\_\+solveasymm}} (M, a, soln)
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function \mbox{\hyperlink{namespacematrixutils_a14ec6bb3e63d084752f528c47653f7d7}{matrix\+\_\+vecdot}} (vec1, vec2)
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function \mbox{\hyperlink{namespacematrixutils_affa7bde611de578a07d5a1bdf612f1b2}{matrix\+\_\+quadform}} (Mat, vec)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7192e418b9f0d6699a80da809931fed0}{matrix\+\_\+mulvec}} (Mat, vec, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a629395ae3092616dd7db4d401570ccd0}{matrix\+\_\+mulvecsingle}} (Mat, vec, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a4bcc2b4fc8b6f2fee0c142c280851c73}{matrix\+\_\+mulvecsymm}} (Mat, vec, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a83ffeb3e4788ff67e17e5f94b70bec3a}{matrix\+\_\+mulvecsymmsingle}} (Mat, vec, Out, a, b)
+\item 
+real function \mbox{\hyperlink{namespacematrixutils_a7c0b5ddd8a7ff3cd1231b2b56a63aefc}{matrix\+\_\+vecdotsingle}} (vec1, vec2)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ae6aceb4eee59e9d9300a4d7139011aac}{matrix\+\_\+inversearraympi}} (Arr, nmat)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical, parameter \mbox{\hyperlink{namespacematrixutils_a5c4836d18b8e1233dd130c5dc15e30fd}{matrix\+\_\+runmsgs}} = .false.
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}} = K\+I\+ND(1.\+0)
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_aacea55dcb267854e5e8df85c57122892}{mat\+\_\+f90}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_a2ff32238b426e2f5a4e9d86da72402d2}{mat\+\_\+norm}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_adc3f961dc571bc5ea1263f48e0574a79}{mat\+\_\+dc}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_a7a9a7ea3dbe2beeff5a5f32de5f21dc3}{matrix\+\_\+method}} = mat\+\_\+\+DC
+\item 
+real \mbox{\hyperlink{namespacematrixutils_ab55e44d02787c32fab67dd16c8ebddef}{matrix\+\_\+starttime}}
+\item 
+complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter \mbox{\hyperlink{namespacematrixutils_a0a58a765b3eead806d9adb27694692d8}{cone}} = (1.\+\_\+dm, 0.\+\_\+dm)
+\item 
+complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter \mbox{\hyperlink{namespacematrixutils_a61466f9df90b39a99a491000d4419d75}{czero}} = (0.\+\_\+dm, 0.\+\_\+dm)
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter \mbox{\hyperlink{namespacematrixutils_ad1137ea4186d00583875a1e7e08a721f}{rone}} = 1.\+\_\+dm
+\item 
+real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter \mbox{\hyperlink{namespacematrixutils_a0047cc2c6d161d05f23b748bb5b9a70a}{rzero}} = 0.\+\_\+dm
+\item 
+real, parameter \mbox{\hyperlink{namespacematrixutils_ae2555bb8da14eb27afe68ae794a858fb}{sone}} = 1.
+\item 
+real, parameter \mbox{\hyperlink{namespacematrixutils_ac00ea25825f3cb1ff949a87fad42094f}{szero}} = 0.
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacematrixutils_a34badd98b6ee7acb8ca038472adf2912}{matrix\+\_\+io\+\_\+fmt}} = \textquotesingle{}($\ast$(1\+E17.\+7))\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacematrixutils_a969773017c47f3dc8dfb2a18e5bc5fbd}\label{namespacematrixutils_a969773017c47f3dc8dfb2a18e5bc5fbd}} 
+\index{matrixutils@{matrixutils}!getmatrixtime@{getmatrixtime}}
+\index{getmatrixtime@{getmatrixtime}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{getmatrixtime()}{getmatrixtime()}}
+{\footnotesize\ttfamily real function matrixutils\+::getmatrixtime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by matrix\+\_\+end(), and matrix\+\_\+start().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacematrixutils_a969773017c47f3dc8dfb2a18e5bc5fbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_af41b3d5784e02032b5e22a16d76eca49}\label{namespacematrixutils_af41b3d5784e02032b5e22a16d76eca49}} 
+\index{matrixutils@{matrixutils}!ilaenv\+\_\+wrap@{ilaenv\+\_\+wrap}}
+\index{ilaenv\+\_\+wrap@{ilaenv\+\_\+wrap}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{ilaenv\+\_\+wrap()}{ilaenv\_wrap()}}
+{\footnotesize\ttfamily integer function matrixutils\+::ilaenv\+\_\+wrap (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{character(len=$\ast$), intent(in)}]{S1,  }\item[{character(len=$\ast$), intent(in)}]{S2,  }\item[{integer, intent(in)}]{a,  }\item[{integer, intent(in)}]{b,  }\item[{integer, intent(in)}]{c,  }\item[{integer, intent(in)}]{d }\end{DoxyParamCaption})}
+
+
+
+Referenced by matrix\+\_\+cdiagonalize(), and matrix\+\_\+diagonalize().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_af41b3d5784e02032b5e22a16d76eca49_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_ad7a37503ef0aeeef3585caccc253c428}\label{namespacematrixutils_ad7a37503ef0aeeef3585caccc253c428}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+ccholesky@{matrix\+\_\+ccholesky}}
+\index{matrix\+\_\+ccholesky@{matrix\+\_\+ccholesky}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+ccholesky()}{matrix\_ccholesky()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+ccholesky (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::inttostr(), and mpiutils\+::mpistop().
+
+
+
+Referenced by matrix\+\_\+ccholeskyrootinverse().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_ad7a37503ef0aeeef3585caccc253c428_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespacematrixutils_ad7a37503ef0aeeef3585caccc253c428_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a3d8668e32abacfbeeeaaca90c120a129}\label{namespacematrixutils_a3d8668e32abacfbeeeaaca90c120a129}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+ccholeskyrootinverse@{matrix\+\_\+ccholeskyrootinverse}}
+\index{matrix\+\_\+ccholeskyrootinverse@{matrix\+\_\+ccholeskyrootinverse}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+ccholeskyrootinverse()}{matrix\_ccholeskyrootinverse()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+ccholeskyrootinverse (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M,  }\item[{logical, intent(in), optional}]{dagger }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::inttostr(), matrix\+\_\+ccholesky(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a3d8668e32abacfbeeeaaca90c120a129_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a29011a04a13e1b49c36d226591b3e5a4}\label{namespacematrixutils_a29011a04a13e1b49c36d226591b3e5a4}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cdiagonalize@{matrix\+\_\+cdiagonalize}}
+\index{matrix\+\_\+cdiagonalize@{matrix\+\_\+cdiagonalize}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cdiagonalize()}{matrix\_cdiagonalize()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cdiagonalize (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n,n), intent(inout)}]{M,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n), intent(out)}]{diag,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References ilaenv\+\_\+wrap(), mat\+\_\+dc, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a29011a04a13e1b49c36d226591b3e5a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a30f09f7f2856414c7cfdc635a108039a}\label{namespacematrixutils_a30f09f7f2856414c7cfdc635a108039a}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cdiagonalize\+\_\+partial@{matrix\+\_\+cdiagonalize\+\_\+partial}}
+\index{matrix\+\_\+cdiagonalize\+\_\+partial@{matrix\+\_\+cdiagonalize\+\_\+partial}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cdiagonalize\+\_\+partial()}{matrix\_cdiagonalize\_partial()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cdiagonalize\+\_\+partial (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(out)}]{diag,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in)}]{emin,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in)}]{emax,  }\item[{integer, intent(inout)}]{nfound }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a30f09f7f2856414c7cfdc635a108039a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a380ecdd4310ae2f91be911a45516df12}\label{namespacematrixutils_a380ecdd4310ae2f91be911a45516df12}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cholesky@{matrix\+\_\+cholesky}}
+\index{matrix\+\_\+cholesky@{matrix\+\_\+cholesky}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cholesky()}{matrix\_cholesky()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cholesky (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M,  }\item[{integer, optional}]{err,  }\item[{logical, intent(in), optional}]{zeroed }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::inttostr(), and mpiutils\+::mpistop().
+
+
+
+Referenced by propose\+::blockedproposer\+\_\+setcovariance(), matrix\+\_\+choleskyrootinverse(), matrix\+\_\+gaussianloglike(), matrix\+\_\+inverse\+\_\+chol(), and matrixsym\+\_\+logdet().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a380ecdd4310ae2f91be911a45516df12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a380ecdd4310ae2f91be911a45516df12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_acda49677dcf7603b255acba37dda9b92}\label{namespacematrixutils_acda49677dcf7603b255acba37dda9b92}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+choleskyrootinverse@{matrix\+\_\+choleskyrootinverse}}
+\index{matrix\+\_\+choleskyrootinverse@{matrix\+\_\+choleskyrootinverse}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+choleskyrootinverse()}{matrix\_choleskyrootinverse()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+choleskyrootinverse (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M,  }\item[{logical, intent(in), optional}]{transpose,  }\item[{integer, intent(out), optional}]{error }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::inttostr(), matrix\+\_\+cholesky(), and mpiutils\+::mpistop().
+
+
+
+Referenced by samples\+::gelmanrubinevalues().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_acda49677dcf7603b255acba37dda9b92_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_acda49677dcf7603b255acba37dda9b92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a623ed13db8bf49d73e233e3668d3923c}\label{namespacematrixutils_a623ed13db8bf49d73e233e3668d3923c}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cmult@{matrix\+\_\+cmult}}
+\index{matrix\+\_\+cmult@{matrix\+\_\+cmult}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cmult()}{matrix\_cmult()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cmult (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a623ed13db8bf49d73e233e3668d3923c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_afdb73dd3fe4ce57e9ba27e6d3d511376}\label{namespacematrixutils_afdb73dd3fe4ce57e9ba27e6d3d511376}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cmult\+\_\+nt@{matrix\+\_\+cmult\+\_\+nt}}
+\index{matrix\+\_\+cmult\+\_\+nt@{matrix\+\_\+cmult\+\_\+nt}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cmult\+\_\+nt()}{matrix\_cmult\_nt()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cmult\+\_\+nt (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_afdb73dd3fe4ce57e9ba27e6d3d511376_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a4389445ac98a45384153fff75a6a21af}\label{namespacematrixutils_a4389445ac98a45384153fff75a6a21af}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cmult\+\_\+symmleft@{matrix\+\_\+cmult\+\_\+symmleft}}
+\index{matrix\+\_\+cmult\+\_\+symmleft@{matrix\+\_\+cmult\+\_\+symmleft}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cmult\+\_\+symmleft()}{matrix\_cmult\_symmleft()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cmult\+\_\+symmleft (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a4389445ac98a45384153fff75a6a21af_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a2098ca04f94da631caf2ebcce5ad7bf9}\label{namespacematrixutils_a2098ca04f94da631caf2ebcce5ad7bf9}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cmult\+\_\+symmright@{matrix\+\_\+cmult\+\_\+symmright}}
+\index{matrix\+\_\+cmult\+\_\+symmright@{matrix\+\_\+cmult\+\_\+symmright}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cmult\+\_\+symmright()}{matrix\_cmult\_symmright()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cmult\+\_\+symmright (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a2098ca04f94da631caf2ebcce5ad7bf9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a7c5f8b5e283bec1dcdcc4b82abbebd47}\label{namespacematrixutils_a7c5f8b5e283bec1dcdcc4b82abbebd47}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cmult\+\_\+tn@{matrix\+\_\+cmult\+\_\+tn}}
+\index{matrix\+\_\+cmult\+\_\+tn@{matrix\+\_\+cmult\+\_\+tn}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cmult\+\_\+tn()}{matrix\_cmult\_tn()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cmult\+\_\+tn (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a7c5f8b5e283bec1dcdcc4b82abbebd47_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_af451dede0e0f43908b5f8fdbd6b64717}\label{namespacematrixutils_af451dede0e0f43908b5f8fdbd6b64717}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+cmultgen@{matrix\+\_\+cmultgen}}
+\index{matrix\+\_\+cmultgen@{matrix\+\_\+cmultgen}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+cmultgen()}{matrix\_cmultgen()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+cmultgen (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{k,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{integer, intent(in)}]{n,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_af451dede0e0f43908b5f8fdbd6b64717_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a289ea264af6294e91e4906d329ab1bca}\label{namespacematrixutils_a289ea264af6294e91e4906d329ab1bca}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+crotatesymm@{matrix\+\_\+crotatesymm}}
+\index{matrix\+\_\+crotatesymm@{matrix\+\_\+crotatesymm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+crotatesymm()}{matrix\_crotatesymm()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+crotatesymm (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{integer, intent(in)}]{m,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{logical, intent(in), optional}]{triangular }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a289ea264af6294e91e4906d329ab1bca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_aaca4350f2cff361fd0233962eba5fdc7}\label{namespacematrixutils_aaca4350f2cff361fd0233962eba5fdc7}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+csvd\+\_\+allvt@{matrix\+\_\+csvd\+\_\+allvt}}
+\index{matrix\+\_\+csvd\+\_\+allvt@{matrix\+\_\+csvd\+\_\+allvt}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+csvd\+\_\+allvt()}{matrix\_csvd\_allvt()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+csvd\+\_\+allvt (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m,n), intent(inout)}]{Mat,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m), intent(out)}]{D,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n,n), intent(out)}]{VT }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+dc, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aaca4350f2cff361fd0233962eba5fdc7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_af38c4627b0e939eadba68b6ea264297b}\label{namespacematrixutils_af38c4627b0e939eadba68b6ea264297b}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+csvd\+\_\+u@{matrix\+\_\+csvd\+\_\+u}}
+\index{matrix\+\_\+csvd\+\_\+u@{matrix\+\_\+csvd\+\_\+u}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+csvd\+\_\+u()}{matrix\_csvd\_u()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+csvd\+\_\+u (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m,n), intent(inout)}]{Mat,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension($\ast$), intent(out)}]{D,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n,n), intent(out), optional}]{VT }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+dc, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_af38c4627b0e939eadba68b6ea264297b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a536eb03269736dd2f4c33b0978211583}\label{namespacematrixutils_a536eb03269736dd2f4c33b0978211583}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+csvd\+\_\+vt@{matrix\+\_\+csvd\+\_\+vt}}
+\index{matrix\+\_\+csvd\+\_\+vt@{matrix\+\_\+csvd\+\_\+vt}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+csvd\+\_\+vt()}{matrix\_csvd\_vt()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+csvd\+\_\+vt (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m,n), intent(inout)}]{Mat,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension($\ast$), intent(out)}]{D,  }\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m,m), intent(out), optional}]{U }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+dc, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a536eb03269736dd2f4c33b0978211583_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_af3bd404fd6685b9f8d2863bb4a3c06e4}\label{namespacematrixutils_af3bd404fd6685b9f8d2863bb4a3c06e4}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+ctrace@{matrix\+\_\+ctrace}}
+\index{matrix\+\_\+ctrace@{matrix\+\_\+ctrace}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+ctrace()}{matrix\_ctrace()}}
+{\footnotesize\ttfamily complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function matrixutils\+::matrix\+\_\+ctrace (\begin{DoxyParamCaption}\item[{complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{M }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacematrixutils_af3bd404fd6685b9f8d2863bb4a3c06e4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a6b563974ed42131dcdd0b7c5e009fb33}\label{namespacematrixutils_a6b563974ed42131dcdd0b7c5e009fb33}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+diag@{matrix\+\_\+diag}}
+\index{matrix\+\_\+diag@{matrix\+\_\+diag}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+diag()}{matrix\_diag()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function, dimension(n) matrixutils\+::matrix\+\_\+diag (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{M,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacematrixutils_aa94ed3ad0cf6b18002c5f8ca9cd8b948}\label{namespacematrixutils_aa94ed3ad0cf6b18002c5f8ca9cd8b948}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+diagonalize@{matrix\+\_\+diagonalize}}
+\index{matrix\+\_\+diagonalize@{matrix\+\_\+diagonalize}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+diagonalize()}{matrix\_diagonalize()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+diagonalize (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n,n), intent(inout)}]{M,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n), intent(out)}]{diag,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References ilaenv\+\_\+wrap(), matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+
+
+Referenced by cmblikes\+::cmblikes\+\_\+transform(), estcovmatmodule\+::estcovmat(), samples\+::gelmanrubinevalues(), matrix\+\_\+diagonalize\+\_\+dc(), matrix\+\_\+root(), mcsamples\+::mostcorrelated2d(), and mcsamples\+::pca().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aa94ed3ad0cf6b18002c5f8ca9cd8b948_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aa94ed3ad0cf6b18002c5f8ca9cd8b948_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a03b181040e90fb7d7693f10d0716a04f}\label{namespacematrixutils_a03b181040e90fb7d7693f10d0716a04f}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+diagonalize\+\_\+dc@{matrix\+\_\+diagonalize\+\_\+dc}}
+\index{matrix\+\_\+diagonalize\+\_\+dc@{matrix\+\_\+diagonalize\+\_\+dc}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+diagonalize\+\_\+dc()}{matrix\_diagonalize\_dc()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+diagonalize\+\_\+dc (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n,n), intent(inout)}]{M,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n), intent(out)}]{diag,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+dc, matrix\+\_\+diagonalize(), matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a03b181040e90fb7d7693f10d0716a04f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a1f7b4399f422b8532d242374454b9e03}\label{namespacematrixutils_a1f7b4399f422b8532d242374454b9e03}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+diagonalize\+\_\+partial@{matrix\+\_\+diagonalize\+\_\+partial}}
+\index{matrix\+\_\+diagonalize\+\_\+partial@{matrix\+\_\+diagonalize\+\_\+partial}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+diagonalize\+\_\+partial()}{matrix\_diagonalize\_partial()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+diagonalize\+\_\+partial (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(out)}]{diag,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in)}]{emin,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in)}]{emax,  }\item[{integer, intent(inout)}]{nfound }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a1f7b4399f422b8532d242374454b9e03_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_ac24fa96b1159f9748d7f0ea3fbdc1199}\label{namespacematrixutils_ac24fa96b1159f9748d7f0ea3fbdc1199}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+diagpremul@{matrix\+\_\+diagpremul}}
+\index{matrix\+\_\+diagpremul@{matrix\+\_\+diagpremul}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+diagpremul()}{matrix\_diagpremul()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+diagpremul (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(in)}]{D,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacematrixutils_ac24fa96b1159f9748d7f0ea3fbdc1199_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_aeb25ca6b661aed4516c029f0cd6003bc}\label{namespacematrixutils_aeb25ca6b661aed4516c029f0cd6003bc}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+end@{matrix\+\_\+end}}
+\index{matrix\+\_\+end@{matrix\+\_\+end}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+end()}{matrix\_end()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+end (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{Name }\end{DoxyParamCaption})}
+
+
+
+References getmatrixtime(), matrix\+\_\+runmsgs, and matrix\+\_\+starttime.
+
+
+
+Referenced by matrix\+\_\+cdiagonalize(), matrix\+\_\+cdiagonalize\+\_\+partial(), matrix\+\_\+cmult(), matrix\+\_\+cmult\+\_\+nt(), matrix\+\_\+cmult\+\_\+symmleft(), matrix\+\_\+cmult\+\_\+symmright(), matrix\+\_\+cmult\+\_\+tn(), matrix\+\_\+cmultgen(), matrix\+\_\+crotatesymm(), matrix\+\_\+csvd\+\_\+allvt(), matrix\+\_\+csvd\+\_\+u(), matrix\+\_\+csvd\+\_\+vt(), matrix\+\_\+diagonalize(), matrix\+\_\+diagonalize\+\_\+dc(), matrix\+\_\+diagonalize\+\_\+partial(), matrix\+\_\+gaussianloglike(), matrix\+\_\+gaussianloglikedouble(), matrix\+\_\+inverse\+\_\+chol(), matrix\+\_\+mult(), matrix\+\_\+mult\+\_\+nt(), matrix\+\_\+mult\+\_\+symmleft(), matrix\+\_\+mult\+\_\+symmright(), matrix\+\_\+mult\+\_\+tn(), matrix\+\_\+multgen(), matrix\+\_\+multtri(), matrix\+\_\+mulvec(), matrix\+\_\+mulvecsingle(), matrix\+\_\+mulvecsymm(), matrix\+\_\+mulvecsymmsingle(), matrix\+\_\+rotateantisymm(), matrix\+\_\+rotatesymm(), matrix\+\_\+solveasymm(), matrix\+\_\+solvesymm(), matrix\+\_\+svd(), and matrix\+\_\+svd\+\_\+vt().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aeb25ca6b661aed4516c029f0cd6003bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacematrixutils_aeb25ca6b661aed4516c029f0cd6003bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a5a3ede7fff09728b5cacb5a559ab936f}\label{namespacematrixutils_a5a3ede7fff09728b5cacb5a559ab936f}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+gaussianloglike@{matrix\+\_\+gaussianloglike}}
+\index{matrix\+\_\+gaussianloglike@{matrix\+\_\+gaussianloglike}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+gaussianloglike()}{matrix\_gaussianloglike()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function matrixutils\+::matrix\+\_\+gaussianloglike (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{Cov,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(in)}]{d }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+cholesky(), matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a5a3ede7fff09728b5cacb5a559ab936f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_ab48ad701f7ef749e5bea654c83ac4544}\label{namespacematrixutils_ab48ad701f7ef749e5bea654c83ac4544}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+gaussianloglikedouble@{matrix\+\_\+gaussianloglikedouble}}
+\index{matrix\+\_\+gaussianloglikedouble@{matrix\+\_\+gaussianloglikedouble}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+gaussianloglikedouble()}{matrix\_gaussianloglikedouble()}}
+{\footnotesize\ttfamily double precision function matrixutils\+::matrix\+\_\+gaussianloglikedouble (\begin{DoxyParamCaption}\item[{double precision, dimension(\+:,\+:), intent(inout)}]{Cov,  }\item[{double precision, dimension(\+:), intent(in)}]{d }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::inttostr(), matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_ab48ad701f7ef749e5bea654c83ac4544_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_aac7ea35062daeadd8fb4ebc86cb42e7a}\label{namespacematrixutils_aac7ea35062daeadd8fb4ebc86cb42e7a}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+inverse@{matrix\+\_\+inverse}}
+\index{matrix\+\_\+inverse@{matrix\+\_\+inverse}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+inverse()}{matrix\_inverse()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+inverse (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+inverse\+\_\+chol(), and mpiutils\+::mpistop().
+
+
+
+Referenced by estcovmatmodule\+::estcovmat(), matrix\+\_\+inversearraympi(), mpk\+::mpk\+\_\+lnlike(), mpk\+::mpk\+\_\+readini(), cmblikes\+::readcovmat(), wigglez\+::wigglez\+\_\+lnlike(), wigglez\+::wigglez\+\_\+readini(), and wl\+::wl\+\_\+readini().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aac7ea35062daeadd8fb4ebc86cb42e7a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aac7ea35062daeadd8fb4ebc86cb42e7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a663d1886940de1ea811bab15859db116}\label{namespacematrixutils_a663d1886940de1ea811bab15859db116}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+inverse\+\_\+chol@{matrix\+\_\+inverse\+\_\+chol}}
+\index{matrix\+\_\+inverse\+\_\+chol@{matrix\+\_\+inverse\+\_\+chol}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+inverse\+\_\+chol()}{matrix\_inverse\_chol()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+inverse\+\_\+chol (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M,  }\item[{integer, optional}]{err }\end{DoxyParamCaption})}
+
+
+
+References stringutils\+::inttostr(), matrix\+\_\+cholesky(), matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+
+
+Referenced by matrix\+\_\+inverse().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a663d1886940de1ea811bab15859db116_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a663d1886940de1ea811bab15859db116_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_ae6aceb4eee59e9d9300a4d7139011aac}\label{namespacematrixutils_ae6aceb4eee59e9d9300a4d7139011aac}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+inversearraympi@{matrix\+\_\+inversearraympi}}
+\index{matrix\+\_\+inversearraympi@{matrix\+\_\+inversearraympi}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+inversearraympi()}{matrix\_inversearraympi()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+inversearraympi (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structmatrixutils_1_1tmatrixtype}{tmatrixtype}}), dimension($\ast$), target}]{Arr,  }\item[{integer, intent(in)}]{nmat }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+inverse(), and mpiutils\+::mpistat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_ae6aceb4eee59e9d9300a4d7139011aac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_af319573ea9284b8ab1e745f9610b36f6}\label{namespacematrixutils_af319573ea9284b8ab1e745f9610b36f6}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+inverseasymm@{matrix\+\_\+inverseasymm}}
+\index{matrix\+\_\+inverseasymm@{matrix\+\_\+inverseasymm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+inverseasymm()}{matrix\_inverseasymm()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+inverseasymm (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{M }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+mult\+\_\+tn(), matrix\+\_\+svd(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_af319573ea9284b8ab1e745f9610b36f6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_aa6a8ab9e79a8dd522f5375ebf4a50372}\label{namespacematrixutils_aa6a8ab9e79a8dd522f5375ebf4a50372}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mult@{matrix\+\_\+mult}}
+\index{matrix\+\_\+mult@{matrix\+\_\+mult}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mult()}{matrix\_mult()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mult (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+
+
+Referenced by matrix\+\_\+multsq\+\_\+repright().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aa6a8ab9e79a8dd522f5375ebf4a50372_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{namespacematrixutils_aa6a8ab9e79a8dd522f5375ebf4a50372_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a4a084a8c031469076ac26bf4e9055109}\label{namespacematrixutils_a4a084a8c031469076ac26bf4e9055109}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mult\+\_\+nt@{matrix\+\_\+mult\+\_\+nt}}
+\index{matrix\+\_\+mult\+\_\+nt@{matrix\+\_\+mult\+\_\+nt}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mult\+\_\+nt()}{matrix\_mult\_nt()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mult\+\_\+nt (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a4a084a8c031469076ac26bf4e9055109_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_ab4f1087b56f3198b3d84c8ebf1cdd580}\label{namespacematrixutils_ab4f1087b56f3198b3d84c8ebf1cdd580}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mult\+\_\+symmleft@{matrix\+\_\+mult\+\_\+symmleft}}
+\index{matrix\+\_\+mult\+\_\+symmleft@{matrix\+\_\+mult\+\_\+symmleft}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mult\+\_\+symmleft()}{matrix\_mult\_symmleft()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mult\+\_\+symmleft (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References cone, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_ab4f1087b56f3198b3d84c8ebf1cdd580_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a97a6a772baa3485aaddba50623e50673}\label{namespacematrixutils_a97a6a772baa3485aaddba50623e50673}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mult\+\_\+symmright@{matrix\+\_\+mult\+\_\+symmright}}
+\index{matrix\+\_\+mult\+\_\+symmright@{matrix\+\_\+mult\+\_\+symmright}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mult\+\_\+symmright()}{matrix\_mult\_symmright()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mult\+\_\+symmright (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a97a6a772baa3485aaddba50623e50673_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a13557cd7745827af9e6873d3dbba3a1f}\label{namespacematrixutils_a13557cd7745827af9e6873d3dbba3a1f}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mult\+\_\+tn@{matrix\+\_\+mult\+\_\+tn}}
+\index{matrix\+\_\+mult\+\_\+tn@{matrix\+\_\+mult\+\_\+tn}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mult\+\_\+tn()}{matrix\_mult\_tn()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mult\+\_\+tn (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References cone, czero, mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+
+
+Referenced by matrix\+\_\+inverseasymm().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a13557cd7745827af9e6873d3dbba3a1f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacematrixutils_a13557cd7745827af9e6873d3dbba3a1f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a6efcf6a348628fcb3694cb23761b52ec}\label{namespacematrixutils_a6efcf6a348628fcb3694cb23761b52ec}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+multgen@{matrix\+\_\+multgen}}
+\index{matrix\+\_\+multgen@{matrix\+\_\+multgen}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+multgen()}{matrix\_multgen()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+multgen (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{k,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a6efcf6a348628fcb3694cb23761b52ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a061be118f549334b7196808f5ce55245}\label{namespacematrixutils_a061be118f549334b7196808f5ce55245}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+multsq\+\_\+repright@{matrix\+\_\+multsq\+\_\+repright}}
+\index{matrix\+\_\+multsq\+\_\+repright@{matrix\+\_\+multsq\+\_\+repright}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+multsq\+\_\+repright()}{matrix\_multsq\_repright()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+multsq\+\_\+repright (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{U,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+mult(), mpiutils\+::mpistop(), and rone.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a061be118f549334b7196808f5ce55245_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a5db9de44653dcfa367228c2b5a077b14}\label{namespacematrixutils_a5db9de44653dcfa367228c2b5a077b14}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+multtri@{matrix\+\_\+multtri}}
+\index{matrix\+\_\+multtri@{matrix\+\_\+multtri}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+multtri()}{matrix\_multtri()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+multtri (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(inout)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{L,  }\item[{character(len=$\ast$), intent(in)}]{side }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+end(), matrix\+\_\+start(), mpiutils\+::mpistop(), and rone.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a5db9de44653dcfa367228c2b5a077b14_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a7192e418b9f0d6699a80da809931fed0}\label{namespacematrixutils_a7192e418b9f0d6699a80da809931fed0}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mulvec@{matrix\+\_\+mulvec}}
+\index{matrix\+\_\+mulvec@{matrix\+\_\+mulvec}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mulvec()}{matrix\_mulvec()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mulvec (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:)}]{vec,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:)}]{Out,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a7192e418b9f0d6699a80da809931fed0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a629395ae3092616dd7db4d401570ccd0}\label{namespacematrixutils_a629395ae3092616dd7db4d401570ccd0}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mulvecsingle@{matrix\+\_\+mulvecsingle}}
+\index{matrix\+\_\+mulvecsingle@{matrix\+\_\+mulvecsingle}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mulvecsingle()}{matrix\_mulvecsingle()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mulvecsingle (\begin{DoxyParamCaption}\item[{real, dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real, dimension(\+:)}]{vec,  }\item[{real, dimension(\+:)}]{Out,  }\item[{real, intent(in), optional}]{a,  }\item[{real, intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), sone, and szero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a629395ae3092616dd7db4d401570ccd0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a4bcc2b4fc8b6f2fee0c142c280851c73}\label{namespacematrixutils_a4bcc2b4fc8b6f2fee0c142c280851c73}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mulvecsymm@{matrix\+\_\+mulvecsymm}}
+\index{matrix\+\_\+mulvecsymm@{matrix\+\_\+mulvecsymm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mulvecsymm()}{matrix\_mulvecsymm()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mulvecsymm (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:)}]{vec,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:)}]{Out,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+
+
+Referenced by matrix\+\_\+quadform().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a4bcc2b4fc8b6f2fee0c142c280851c73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a4bcc2b4fc8b6f2fee0c142c280851c73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a83ffeb3e4788ff67e17e5f94b70bec3a}\label{namespacematrixutils_a83ffeb3e4788ff67e17e5f94b70bec3a}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+mulvecsymmsingle@{matrix\+\_\+mulvecsymmsingle}}
+\index{matrix\+\_\+mulvecsymmsingle@{matrix\+\_\+mulvecsymmsingle}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+mulvecsymmsingle()}{matrix\_mulvecsymmsingle()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+mulvecsymmsingle (\begin{DoxyParamCaption}\item[{real, dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real, dimension(\+:)}]{vec,  }\item[{real, dimension(\+:)}]{Out,  }\item[{real, intent(in), optional}]{a,  }\item[{real, intent(in), optional}]{b }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, rzero, sone, and szero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a83ffeb3e4788ff67e17e5f94b70bec3a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_affa7bde611de578a07d5a1bdf612f1b2}\label{namespacematrixutils_affa7bde611de578a07d5a1bdf612f1b2}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+quadform@{matrix\+\_\+quadform}}
+\index{matrix\+\_\+quadform@{matrix\+\_\+quadform}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+quadform()}{matrix\_quadform()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function matrixutils\+::matrix\+\_\+quadform (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:)}]{vec }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+mulvecsymm(), and matrix\+\_\+vecdot().
+
+
+
+Referenced by bao\+::bao\+\_\+lnlike(), cmblikes\+::cmblikes\+\_\+loglike(), and wl\+::wl\+\_\+lnlike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_affa7bde611de578a07d5a1bdf612f1b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{namespacematrixutils_affa7bde611de578a07d5a1bdf612f1b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_ac778ea47bab010c70f3d6f00838e4668}\label{namespacematrixutils_ac778ea47bab010c70f3d6f00838e4668}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+read@{matrix\+\_\+read}}
+\index{matrix\+\_\+read@{matrix\+\_\+read}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+read()}{matrix\_read()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+read (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(out)}]{mat }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+
+
+Referenced by cmblikes\+::readcovmat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacematrixutils_ac778ea47bab010c70f3d6f00838e4668_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_ac778ea47bab010c70f3d6f00838e4668_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a311afaea7a3204cc1b47a2adb7bebe63}\label{namespacematrixutils_a311afaea7a3204cc1b47a2adb7bebe63}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+read\+\_\+binary@{matrix\+\_\+read\+\_\+binary}}
+\index{matrix\+\_\+read\+\_\+binary@{matrix\+\_\+read\+\_\+binary}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+read\+\_\+binary()}{matrix\_read\_binary()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+read\+\_\+binary (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(out)}]{mat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacematrixutils_a6c4f5774cfa213609562eb2a5dfeca92}\label{namespacematrixutils_a6c4f5774cfa213609562eb2a5dfeca92}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+readsingle@{matrix\+\_\+readsingle}}
+\index{matrix\+\_\+readsingle@{matrix\+\_\+readsingle}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+readsingle()}{matrix\_readsingle()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+readsingle (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real, dimension(\+:,\+:), intent(out)}]{mat }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacematrixutils_a6c4f5774cfa213609562eb2a5dfeca92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a76928f01b83f388ddb51ee3e256cd3a5}\label{namespacematrixutils_a76928f01b83f388ddb51ee3e256cd3a5}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+root@{matrix\+\_\+root}}
+\index{matrix\+\_\+root@{matrix\+\_\+root}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+root()}{matrix\_root()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+root (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n,n), intent(inout)}]{M,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), intent(in)}]{pow }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+diagonalize().
+
+
+
+Referenced by cmblikes\+::cmblikes\+\_\+readini(), cmblikes\+::cmblikes\+\_\+transform(), and cmblikes\+::exactchisq().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a76928f01b83f388ddb51ee3e256cd3a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacematrixutils_a76928f01b83f388ddb51ee3e256cd3a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a6e5b7eb3ff08d14994be069ca192ea48}\label{namespacematrixutils_a6e5b7eb3ff08d14994be069ca192ea48}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+rotateantisymm@{matrix\+\_\+rotateantisymm}}
+\index{matrix\+\_\+rotateantisymm@{matrix\+\_\+rotateantisymm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+rotateantisymm()}{matrix\_rotateantisymm()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+rotateantisymm (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{integer, intent(in)}]{m,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a6e5b7eb3ff08d14994be069ca192ea48_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_aec8c0f5500ce3fccc5a427276bbc95d2}\label{namespacematrixutils_aec8c0f5500ce3fccc5a427276bbc95d2}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+rotatesymm@{matrix\+\_\+rotatesymm}}
+\index{matrix\+\_\+rotatesymm@{matrix\+\_\+rotatesymm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+rotatesymm()}{matrix\_rotatesymm()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+rotatesymm (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{Mat,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{U,  }\item[{integer, intent(in)}]{m,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:)}]{Out,  }\item[{logical, intent(in), optional}]{triangular }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+f90, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), mpiutils\+::mpistop(), rone, and rzero.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_aec8c0f5500ce3fccc5a427276bbc95d2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a2662807273dfd077b6501df4d09909d9}\label{namespacematrixutils_a2662807273dfd077b6501df4d09909d9}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+solveasymm@{matrix\+\_\+solveasymm}}
+\index{matrix\+\_\+solveasymm@{matrix\+\_\+solveasymm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+solveasymm()}{matrix\_solveasymm()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+solveasymm (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{M,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(in)}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(out)}]{soln }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a2662807273dfd077b6501df4d09909d9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_afb220a70c7ec8bcc1eb1694588300540}\label{namespacematrixutils_afb220a70c7ec8bcc1eb1694588300540}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+solvesymm@{matrix\+\_\+solvesymm}}
+\index{matrix\+\_\+solvesymm@{matrix\+\_\+solvesymm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+solvesymm()}{matrix\_solvesymm()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+solvesymm (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{M,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(in)}]{a,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(out)}]{soln }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_afb220a70c7ec8bcc1eb1694588300540_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a24fd4fc8dbd7eee3c9176c3f9ca634eb}\label{namespacematrixutils_a24fd4fc8dbd7eee3c9176c3f9ca634eb}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+start@{matrix\+\_\+start}}
+\index{matrix\+\_\+start@{matrix\+\_\+start}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+start()}{matrix\_start()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+start (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{Name }\end{DoxyParamCaption})}
+
+
+
+References getmatrixtime(), matrix\+\_\+runmsgs, and matrix\+\_\+starttime.
+
+
+
+Referenced by matrix\+\_\+cdiagonalize(), matrix\+\_\+cdiagonalize\+\_\+partial(), matrix\+\_\+cmult(), matrix\+\_\+cmult\+\_\+nt(), matrix\+\_\+cmult\+\_\+symmleft(), matrix\+\_\+cmult\+\_\+symmright(), matrix\+\_\+cmult\+\_\+tn(), matrix\+\_\+cmultgen(), matrix\+\_\+crotatesymm(), matrix\+\_\+csvd\+\_\+allvt(), matrix\+\_\+csvd\+\_\+u(), matrix\+\_\+csvd\+\_\+vt(), matrix\+\_\+diagonalize(), matrix\+\_\+diagonalize\+\_\+dc(), matrix\+\_\+diagonalize\+\_\+partial(), matrix\+\_\+gaussianloglike(), matrix\+\_\+gaussianloglikedouble(), matrix\+\_\+inverse\+\_\+chol(), matrix\+\_\+mult(), matrix\+\_\+mult\+\_\+nt(), matrix\+\_\+mult\+\_\+symmleft(), matrix\+\_\+mult\+\_\+symmright(), matrix\+\_\+mult\+\_\+tn(), matrix\+\_\+multgen(), matrix\+\_\+multtri(), matrix\+\_\+mulvec(), matrix\+\_\+mulvecsingle(), matrix\+\_\+mulvecsymm(), matrix\+\_\+mulvecsymmsingle(), matrix\+\_\+rotateantisymm(), matrix\+\_\+rotatesymm(), matrix\+\_\+solveasymm(), matrix\+\_\+solvesymm(), matrix\+\_\+svd(), and matrix\+\_\+svd\+\_\+vt().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacematrixutils_a24fd4fc8dbd7eee3c9176c3f9ca634eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacematrixutils_a24fd4fc8dbd7eee3c9176c3f9ca634eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a7960d8813f71cc715ba85ffba471dd38}\label{namespacematrixutils_a7960d8813f71cc715ba85ffba471dd38}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+svd@{matrix\+\_\+svd}}
+\index{matrix\+\_\+svd@{matrix\+\_\+svd}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+svd()}{matrix\_svd()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+svd (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m,n), intent(inout)}]{Mat,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n), intent(out)}]{D,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n,n), intent(out)}]{VT }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+end(), matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+
+
+Referenced by matrix\+\_\+inverseasymm().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a7960d8813f71cc715ba85ffba471dd38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacematrixutils_a7960d8813f71cc715ba85ffba471dd38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a295b572473f10f878fb8d3fc7b8d06f1}\label{namespacematrixutils_a295b572473f10f878fb8d3fc7b8d06f1}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+svd\+\_\+vt@{matrix\+\_\+svd\+\_\+vt}}
+\index{matrix\+\_\+svd\+\_\+vt@{matrix\+\_\+svd\+\_\+vt}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+svd\+\_\+vt()}{matrix\_svd\_vt()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+svd\+\_\+vt (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m,n), intent(inout)}]{Mat,  }\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension($\ast$), intent(out)}]{D,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(m,m), intent(out), optional}]{U }\end{DoxyParamCaption})}
+
+
+
+References mat\+\_\+dc, matrix\+\_\+end(), matrix\+\_\+method, matrix\+\_\+start(), and mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a295b572473f10f878fb8d3fc7b8d06f1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_aba34e30d438cd387bb0f57e16d60b364}\label{namespacematrixutils_aba34e30d438cd387bb0f57e16d60b364}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+trace@{matrix\+\_\+trace}}
+\index{matrix\+\_\+trace@{matrix\+\_\+trace}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+trace()}{matrix\_trace()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function matrixutils\+::matrix\+\_\+trace (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{M }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+
+
+Referenced by cmblikes\+::exactchisq().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacematrixutils_aba34e30d438cd387bb0f57e16d60b364_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacematrixutils_aba34e30d438cd387bb0f57e16d60b364_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a14ec6bb3e63d084752f528c47653f7d7}\label{namespacematrixutils_a14ec6bb3e63d084752f528c47653f7d7}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+vecdot@{matrix\+\_\+vecdot}}
+\index{matrix\+\_\+vecdot@{matrix\+\_\+vecdot}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+vecdot()}{matrix\_vecdot()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function matrixutils\+::matrix\+\_\+vecdot (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:)}]{vec1,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:)}]{vec2 }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+
+
+Referenced by matrix\+\_\+quadform().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacematrixutils_a14ec6bb3e63d084752f528c47653f7d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a14ec6bb3e63d084752f528c47653f7d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a7c0b5ddd8a7ff3cd1231b2b56a63aefc}\label{namespacematrixutils_a7c0b5ddd8a7ff3cd1231b2b56a63aefc}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+vecdotsingle@{matrix\+\_\+vecdotsingle}}
+\index{matrix\+\_\+vecdotsingle@{matrix\+\_\+vecdotsingle}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+vecdotsingle()}{matrix\_vecdotsingle()}}
+{\footnotesize\ttfamily real function matrixutils\+::matrix\+\_\+vecdotsingle (\begin{DoxyParamCaption}\item[{real, dimension(\+:)}]{vec1,  }\item[{real, dimension(\+:)}]{vec2 }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacematrixutils_a7c0b5ddd8a7ff3cd1231b2b56a63aefc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_af21f52b4eeb7fc47bb9cd5e35cc1ebc8}\label{namespacematrixutils_af21f52b4eeb7fc47bb9cd5e35cc1ebc8}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+write@{matrix\+\_\+write}}
+\index{matrix\+\_\+write@{matrix\+\_\+write}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+write()}{matrix\_write()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+write (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{mat,  }\item[{logical, intent(in), optional}]{forcetable,  }\item[{character(len=$\ast$), intent(in), optional}]{commentline }\end{DoxyParamCaption})}
+
+
+
+Referenced by mcsamples\+::getcovmatrix(), and io\+::io\+\_\+writeproposematrix().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_af21f52b4eeb7fc47bb9cd5e35cc1ebc8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a5897a3508757971da56e07e3cdab7f0a}\label{namespacematrixutils_a5897a3508757971da56e07e3cdab7f0a}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+write\+\_\+binary@{matrix\+\_\+write\+\_\+binary}}
+\index{matrix\+\_\+write\+\_\+binary@{matrix\+\_\+write\+\_\+binary}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+write\+\_\+binary()}{matrix\_write\_binary()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+write\+\_\+binary (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{mat }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacematrixutils_aa5eb3cbf41718ad7ccb335e642a29174}\label{namespacematrixutils_aa5eb3cbf41718ad7ccb335e642a29174}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+write\+\_\+double@{matrix\+\_\+write\+\_\+double}}
+\index{matrix\+\_\+write\+\_\+double@{matrix\+\_\+write\+\_\+double}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+write\+\_\+double()}{matrix\_write\_double()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+write\+\_\+double (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{double precision, dimension(\+:,\+:), intent(in)}]{mat,  }\item[{logical, intent(in), optional}]{forcetable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacematrixutils_a88175f31021d0939c32287595d3f5630}\label{namespacematrixutils_a88175f31021d0939c32287595d3f5630}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+writefilerow@{matrix\+\_\+writefilerow}}
+\index{matrix\+\_\+writefilerow@{matrix\+\_\+writefilerow}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+writefilerow()}{matrix\_writefilerow()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+writefilerow (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{aunit,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(n)}]{vec,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+io\+\_\+fmt.
+
+\mbox{\Hypertarget{namespacematrixutils_a122e85102b3eac4266a8031c62de9bbf}\label{namespacematrixutils_a122e85102b3eac4266a8031c62de9bbf}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+writevec@{matrix\+\_\+writevec}}
+\index{matrix\+\_\+writevec@{matrix\+\_\+writevec}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+writevec()}{matrix\_writevec()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrix\+\_\+writevec (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:), intent(in)}]{vec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacematrixutils_a4117e3e0068005bf79a0db9745a8dde6}\label{namespacematrixutils_a4117e3e0068005bf79a0db9745a8dde6}} 
+\index{matrixutils@{matrixutils}!matrixsym\+\_\+logdet@{matrixsym\+\_\+logdet}}
+\index{matrixsym\+\_\+logdet@{matrixsym\+\_\+logdet}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrixsym\+\_\+logdet()}{matrixsym\_logdet()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}) function matrixutils\+::matrixsym\+\_\+logdet (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{mat }\end{DoxyParamCaption})}
+
+
+
+References matrix\+\_\+cholesky(), and mpiutils\+::mpistop().
+
+
+
+Referenced by cmblikes\+::exactchisq().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacematrixutils_a4117e3e0068005bf79a0db9745a8dde6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacematrixutils_a4117e3e0068005bf79a0db9745a8dde6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a7572f4e0a0c8b958126d5d3c8b46f16a}\label{namespacematrixutils_a7572f4e0a0c8b958126d5d3c8b46f16a}} 
+\index{matrixutils@{matrixutils}!matrixsym\+\_\+read\+\_\+binary@{matrixsym\+\_\+read\+\_\+binary}}
+\index{matrixsym\+\_\+read\+\_\+binary@{matrixsym\+\_\+read\+\_\+binary}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrixsym\+\_\+read\+\_\+binary()}{matrixsym\_read\_binary()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrixsym\+\_\+read\+\_\+binary (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(out)}]{mat }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+
+
+Referenced by cmblikes\+::readcovmat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacematrixutils_a7572f4e0a0c8b958126d5d3c8b46f16a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespacematrixutils_a7572f4e0a0c8b958126d5d3c8b46f16a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_a592726195f2a952a006391bde92cd2b0}\label{namespacematrixutils_a592726195f2a952a006391bde92cd2b0}} 
+\index{matrixutils@{matrixutils}!matrixsym\+\_\+read\+\_\+binary\+\_\+single@{matrixsym\+\_\+read\+\_\+binary\+\_\+single}}
+\index{matrixsym\+\_\+read\+\_\+binary\+\_\+single@{matrixsym\+\_\+read\+\_\+binary\+\_\+single}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrixsym\+\_\+read\+\_\+binary\+\_\+single()}{matrixsym\_read\_binary\_single()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrixsym\+\_\+read\+\_\+binary\+\_\+single (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real, dimension(\+:,\+:), intent(out)}]{mat }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacematrixutils_a592726195f2a952a006391bde92cd2b0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_ac49e65871c4266da9c687b474d1908d8}\label{namespacematrixutils_ac49e65871c4266da9c687b474d1908d8}} 
+\index{matrixutils@{matrixutils}!matrixsym\+\_\+write\+\_\+binary@{matrixsym\+\_\+write\+\_\+binary}}
+\index{matrixsym\+\_\+write\+\_\+binary@{matrixsym\+\_\+write\+\_\+binary}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrixsym\+\_\+write\+\_\+binary()}{matrixsym\_write\_binary()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrixsym\+\_\+write\+\_\+binary (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{mat }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacematrixutils_ac49e65871c4266da9c687b474d1908d8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacematrixutils_acbfa12c533184738072f7f9a35e7cfc7}\label{namespacematrixutils_acbfa12c533184738072f7f9a35e7cfc7}} 
+\index{matrixutils@{matrixutils}!matrixsym\+\_\+write\+\_\+binary\+\_\+single@{matrixsym\+\_\+write\+\_\+binary\+\_\+single}}
+\index{matrixsym\+\_\+write\+\_\+binary\+\_\+single@{matrixsym\+\_\+write\+\_\+binary\+\_\+single}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrixsym\+\_\+write\+\_\+binary\+\_\+single()}{matrixsym\_write\_binary\_single()}}
+{\footnotesize\ttfamily subroutine matrixutils\+::matrixsym\+\_\+write\+\_\+binary\+\_\+single (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), dimension(\+:,\+:), intent(in)}]{mat }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacematrixutils_acbfa12c533184738072f7f9a35e7cfc7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacematrixutils_a0a58a765b3eead806d9adb27694692d8}\label{namespacematrixutils_a0a58a765b3eead806d9adb27694692d8}} 
+\index{matrixutils@{matrixutils}!cone@{cone}}
+\index{cone@{cone}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{cone}{cone}}
+{\footnotesize\ttfamily complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter matrixutils\+::cone = (1.\+\_\+dm, 0.\+\_\+dm)}
+
+
+
+Referenced by matrix\+\_\+cmult(), matrix\+\_\+cmult\+\_\+nt(), matrix\+\_\+cmult\+\_\+symmleft(), matrix\+\_\+cmult\+\_\+symmright(), matrix\+\_\+cmult\+\_\+tn(), matrix\+\_\+cmultgen(), matrix\+\_\+crotatesymm(), matrix\+\_\+mult\+\_\+symmleft(), and matrix\+\_\+mult\+\_\+tn().
+
+\mbox{\Hypertarget{namespacematrixutils_a61466f9df90b39a99a491000d4419d75}\label{namespacematrixutils_a61466f9df90b39a99a491000d4419d75}} 
+\index{matrixutils@{matrixutils}!czero@{czero}}
+\index{czero@{czero}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{czero}{czero}}
+{\footnotesize\ttfamily complex(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter matrixutils\+::czero = (0.\+\_\+dm, 0.\+\_\+dm)}
+
+
+
+Referenced by matrix\+\_\+cmult(), matrix\+\_\+cmult\+\_\+nt(), matrix\+\_\+cmult\+\_\+symmleft(), matrix\+\_\+cmult\+\_\+symmright(), matrix\+\_\+cmult\+\_\+tn(), matrix\+\_\+cmultgen(), matrix\+\_\+crotatesymm(), and matrix\+\_\+mult\+\_\+tn().
+
+\mbox{\Hypertarget{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}\label{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}} 
+\index{matrixutils@{matrixutils}!dm@{dm}}
+\index{dm@{dm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{dm}{dm}}
+{\footnotesize\ttfamily integer parameter matrixutils\+::dm = K\+I\+ND(1.\+0)}
+
+\mbox{\Hypertarget{namespacematrixutils_adc3f961dc571bc5ea1263f48e0574a79}\label{namespacematrixutils_adc3f961dc571bc5ea1263f48e0574a79}} 
+\index{matrixutils@{matrixutils}!mat\+\_\+dc@{mat\+\_\+dc}}
+\index{mat\+\_\+dc@{mat\+\_\+dc}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{mat\+\_\+dc}{mat\_dc}}
+{\footnotesize\ttfamily integer, parameter matrixutils\+::mat\+\_\+dc =3}
+
+
+
+Referenced by matrix\+\_\+cdiagonalize(), matrix\+\_\+csvd\+\_\+allvt(), matrix\+\_\+csvd\+\_\+u(), matrix\+\_\+csvd\+\_\+vt(), matrix\+\_\+diagonalize\+\_\+dc(), and matrix\+\_\+svd\+\_\+vt().
+
+\mbox{\Hypertarget{namespacematrixutils_aacea55dcb267854e5e8df85c57122892}\label{namespacematrixutils_aacea55dcb267854e5e8df85c57122892}} 
+\index{matrixutils@{matrixutils}!mat\+\_\+f90@{mat\+\_\+f90}}
+\index{mat\+\_\+f90@{mat\+\_\+f90}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{mat\+\_\+f90}{mat\_f90}}
+{\footnotesize\ttfamily integer, parameter matrixutils\+::mat\+\_\+f90 =1}
+
+
+
+Referenced by matrix\+\_\+cmult(), matrix\+\_\+cmult\+\_\+nt(), matrix\+\_\+cmult\+\_\+symmleft(), matrix\+\_\+cmult\+\_\+symmright(), matrix\+\_\+cmult\+\_\+tn(), matrix\+\_\+cmultgen(), matrix\+\_\+crotatesymm(), matrix\+\_\+mult(), matrix\+\_\+mult\+\_\+nt(), matrix\+\_\+mult\+\_\+symmleft(), matrix\+\_\+mult\+\_\+symmright(), matrix\+\_\+mult\+\_\+tn(), matrix\+\_\+multgen(), matrix\+\_\+mulvec(), matrix\+\_\+mulvecsingle(), matrix\+\_\+mulvecsymm(), matrix\+\_\+mulvecsymmsingle(), matrix\+\_\+rotateantisymm(), and matrix\+\_\+rotatesymm().
+
+\mbox{\Hypertarget{namespacematrixutils_a2ff32238b426e2f5a4e9d86da72402d2}\label{namespacematrixutils_a2ff32238b426e2f5a4e9d86da72402d2}} 
+\index{matrixutils@{matrixutils}!mat\+\_\+norm@{mat\+\_\+norm}}
+\index{mat\+\_\+norm@{mat\+\_\+norm}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{mat\+\_\+norm}{mat\_norm}}
+{\footnotesize\ttfamily integer, parameter matrixutils\+::mat\+\_\+norm =2}
+
+\mbox{\Hypertarget{namespacematrixutils_a34badd98b6ee7acb8ca038472adf2912}\label{namespacematrixutils_a34badd98b6ee7acb8ca038472adf2912}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+io\+\_\+fmt@{matrix\+\_\+io\+\_\+fmt}}
+\index{matrix\+\_\+io\+\_\+fmt@{matrix\+\_\+io\+\_\+fmt}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+io\+\_\+fmt}{matrix\_io\_fmt}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter matrixutils\+::matrix\+\_\+io\+\_\+fmt = \textquotesingle{}($\ast$(1\+E17.\+7))\textquotesingle{}}
+
+
+
+Referenced by matrix\+\_\+writefilerow().
+
+\mbox{\Hypertarget{namespacematrixutils_a7a9a7ea3dbe2beeff5a5f32de5f21dc3}\label{namespacematrixutils_a7a9a7ea3dbe2beeff5a5f32de5f21dc3}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+method@{matrix\+\_\+method}}
+\index{matrix\+\_\+method@{matrix\+\_\+method}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+method}{matrix\_method}}
+{\footnotesize\ttfamily integer, parameter matrixutils\+::matrix\+\_\+method = mat\+\_\+\+DC}
+
+
+
+Referenced by matrix\+\_\+cdiagonalize(), matrix\+\_\+cmult(), matrix\+\_\+cmult\+\_\+nt(), matrix\+\_\+cmult\+\_\+symmleft(), matrix\+\_\+cmult\+\_\+symmright(), matrix\+\_\+cmult\+\_\+tn(), matrix\+\_\+cmultgen(), matrix\+\_\+crotatesymm(), matrix\+\_\+csvd\+\_\+allvt(), matrix\+\_\+csvd\+\_\+u(), matrix\+\_\+csvd\+\_\+vt(), matrix\+\_\+diagonalize\+\_\+dc(), matrix\+\_\+mult(), matrix\+\_\+mult\+\_\+nt(), matrix\+\_\+mult\+\_\+symmleft(), matrix\+\_\+mult\+\_\+symmright(), matrix\+\_\+mult\+\_\+tn(), matrix\+\_\+multgen(), matrix\+\_\+mulvec(), matrix\+\_\+mulvecsingle(), matrix\+\_\+mulvecsymm(), matrix\+\_\+mulvecsymmsingle(), matrix\+\_\+rotateantisymm(), matrix\+\_\+rotatesymm(), and matrix\+\_\+svd\+\_\+vt().
+
+\mbox{\Hypertarget{namespacematrixutils_a5c4836d18b8e1233dd130c5dc15e30fd}\label{namespacematrixutils_a5c4836d18b8e1233dd130c5dc15e30fd}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+runmsgs@{matrix\+\_\+runmsgs}}
+\index{matrix\+\_\+runmsgs@{matrix\+\_\+runmsgs}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+runmsgs}{matrix\_runmsgs}}
+{\footnotesize\ttfamily logical, parameter matrixutils\+::matrix\+\_\+runmsgs = .false.}
+
+
+
+Referenced by matrix\+\_\+end(), and matrix\+\_\+start().
+
+\mbox{\Hypertarget{namespacematrixutils_ab55e44d02787c32fab67dd16c8ebddef}\label{namespacematrixutils_ab55e44d02787c32fab67dd16c8ebddef}} 
+\index{matrixutils@{matrixutils}!matrix\+\_\+starttime@{matrix\+\_\+starttime}}
+\index{matrix\+\_\+starttime@{matrix\+\_\+starttime}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{matrix\+\_\+starttime}{matrix\_starttime}}
+{\footnotesize\ttfamily real matrixutils\+::matrix\+\_\+starttime}
+
+
+
+Referenced by matrix\+\_\+end(), and matrix\+\_\+start().
+
+\mbox{\Hypertarget{namespacematrixutils_ad1137ea4186d00583875a1e7e08a721f}\label{namespacematrixutils_ad1137ea4186d00583875a1e7e08a721f}} 
+\index{matrixutils@{matrixutils}!rone@{rone}}
+\index{rone@{rone}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{rone}{rone}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter matrixutils\+::rone = 1.\+\_\+dm}
+
+
+
+Referenced by matrix\+\_\+mult(), matrix\+\_\+mult\+\_\+nt(), matrix\+\_\+mult\+\_\+symmleft(), matrix\+\_\+mult\+\_\+symmright(), matrix\+\_\+mult\+\_\+tn(), matrix\+\_\+multgen(), matrix\+\_\+multsq\+\_\+repright(), matrix\+\_\+multtri(), matrix\+\_\+mulvec(), matrix\+\_\+mulvecsymm(), matrix\+\_\+mulvecsymmsingle(), matrix\+\_\+rotateantisymm(), and matrix\+\_\+rotatesymm().
+
+\mbox{\Hypertarget{namespacematrixutils_a0047cc2c6d161d05f23b748bb5b9a70a}\label{namespacematrixutils_a0047cc2c6d161d05f23b748bb5b9a70a}} 
+\index{matrixutils@{matrixutils}!rzero@{rzero}}
+\index{rzero@{rzero}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{rzero}{rzero}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{dm}}), parameter matrixutils\+::rzero = 0.\+\_\+dm}
+
+
+
+Referenced by matrix\+\_\+mult(), matrix\+\_\+mult\+\_\+nt(), matrix\+\_\+mult\+\_\+symmleft(), matrix\+\_\+mult\+\_\+symmright(), matrix\+\_\+mult\+\_\+tn(), matrix\+\_\+multgen(), matrix\+\_\+mulvec(), matrix\+\_\+mulvecsymm(), matrix\+\_\+mulvecsymmsingle(), matrix\+\_\+rotateantisymm(), and matrix\+\_\+rotatesymm().
+
+\mbox{\Hypertarget{namespacematrixutils_ae2555bb8da14eb27afe68ae794a858fb}\label{namespacematrixutils_ae2555bb8da14eb27afe68ae794a858fb}} 
+\index{matrixutils@{matrixutils}!sone@{sone}}
+\index{sone@{sone}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{sone}{sone}}
+{\footnotesize\ttfamily real, parameter matrixutils\+::sone = 1.}
+
+
+
+Referenced by matrix\+\_\+mulvecsingle(), and matrix\+\_\+mulvecsymmsingle().
+
+\mbox{\Hypertarget{namespacematrixutils_ac00ea25825f3cb1ff949a87fad42094f}\label{namespacematrixutils_ac00ea25825f3cb1ff949a87fad42094f}} 
+\index{matrixutils@{matrixutils}!szero@{szero}}
+\index{szero@{szero}!matrixutils@{matrixutils}}
+\subsubsection{\texorpdfstring{szero}{szero}}
+{\footnotesize\ttfamily real, parameter matrixutils\+::szero = 0.}
+
+
+
+Referenced by matrix\+\_\+mulvecsingle(), and matrix\+\_\+mulvecsymmsingle().
+

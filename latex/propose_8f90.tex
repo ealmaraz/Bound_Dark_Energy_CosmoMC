@@ -1,0 +1,60 @@
+\hypertarget{propose_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/propose.f90 File Reference}
+\label{propose_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/propose.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/propose.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structpropose_1_1indexcycler}{propose\+::indexcycler}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1cyclicindexrandomizer}{propose\+::cyclicindexrandomizer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1randdirectionproposer}{propose\+::randdirectionproposer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1blockproposer}{propose\+::blockproposer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1tcovmatproposer}{propose\+::tcovmatproposer}}
+\item 
+type \mbox{\hyperlink{structpropose_1_1blockedproposer}{propose\+::blockedproposer}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacepropose}{propose}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+integer function \mbox{\hyperlink{namespacepropose_a57ab2c55501784356748335378f0ca91}{propose\+::next}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a3315b3e0b92d1cf9fa29628d291634de}{propose\+::rotmatrix}} (M, n)
+\item 
+real(mcp) function, dimension(this\%n) \mbox{\hyperlink{namespacepropose_a2c9bb747ee6cc87964f354764f10d58c}{propose\+::proposevec}} (this, wid)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacepropose_a5181089142665b7ba3e73b0e8517744c}{propose\+::propose\+\_\+r}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_aee79ab6a28983b4a95931840fa5592e3}{propose\+::updateparams}} (this, P, vec)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a4a4f0ef5bf70846bd7b2274da1f889cb}{propose\+::init}} (this, parameter\+\_\+blocks, slow\+\_\+block\+\_\+max, oversample\+\_\+fast, propose\+\_\+scale)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_ad24a067fcde7527fedd0ecb5f3fac8c5}{propose\+::blockedproposer\+\_\+setcovariance}} (this, propose\+\_\+matrix)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_ad8938d5b08fd1352284320a465fa0dd1}{propose\+::getblockproposal}} (this, P, i)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_acc9c3d417d1630086e0f2e46eda9482c}{propose\+::getproposal}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a593b61b41784923a7b85bc8a66c07ef8}{propose\+::getproposalslow}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_ac628bde62d39c32001cbd8b6a33fb2cc}{propose\+::getproposalfast}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a336c9a51cd0387485ce6184eb753c720}{propose\+::getproposalfastdelta}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a8f227417f812244dfc68539ff9b75353}{propose\+::tcovmatproposer\+\_\+setcovariance}} (this, propose\+\_\+matrix)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_aa4a55115a922af4c660ba77e969a2fc1}{propose\+::tcovmatproposer\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacepropose_a9a1013a605e00c63e36aa86ab4d4e938}{propose\+::tcovmatproposer\+\_\+savestate}} (this, F)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacepropose_a8617eeb66f67fd9a772122b9d90f4a03}{propose\+::propose\+\_\+rand\+\_\+directions}} = .true.
+\end{DoxyCompactItemize}

@@ -1,0 +1,193 @@
+\hypertarget{equations__bde__v3_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/equations\+\_\+bde\+\_\+v3.f90 File Reference}
+\label{equations__bde__v3_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/equations\+\_\+bde\+\_\+v3.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/equations\+\_\+bde\+\_\+v3.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{gaugeinterface\+::evolutionvars}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacelambdageneral}{lambdageneral}}
+\item 
+module \mbox{\hyperlink{namespacequint}{quint}}
+\item 
+module \mbox{\hyperlink{namespacegaugeinterface}{gaugeinterface}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacelambdageneral_a780328d728ca15af725d6f53b2fa54d1}{lambdageneral\+::darkenergy\+\_\+readparams}} (Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a90306420209b7de0bec2152dd1e024bb}{quint\+::bde\+\_\+nxyl}}
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a37db272f12e135ca0061bd66bfccab65}{quint\+::bde\+\_\+xylata}} (a, x, y, l)
+\item 
+subroutine \mbox{\hyperlink{namespacequint_aab2e2c5f2a7e9e56f0852539b0933259}{quint\+::bde\+\_\+wde0}} (P, w\+B\+D\+E0)
+\item 
+subroutine \mbox{\hyperlink{namespacequint_aa2daf9edc78c79ba058ae4833682c9a8}{quint\+::bde\+\_\+h0}} (P, H0)
+\item 
+real(dl) function \mbox{\hyperlink{namespacequint_ae1b7ac10a36d63310cbfe418b53b9684}{quint\+::bde\+\_\+omegade0}} (x, y, l)
+\item 
+real(dl) function \mbox{\hyperlink{namespacequint_aeb3b6422b8cc4a091d00b74a6c2d6bf6}{quint\+::vofphi}} (phi, deriv)
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a6a96dda084f9c9c3188eaa2576b9bfe2}{quint\+::bde\+\_\+background}}
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a4f9009a5b36a9b95e58f74d25e1bb1b7}{quint\+::quint\+\_\+valsata}} (a, aphi, aphidot)
+\item 
+real(dl) function \mbox{\hyperlink{equations__bde__v3_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6}{getomegak}} ()
+\item 
+subroutine \mbox{\hyperlink{equations__bde__v3_8f90_a47540f6082acc64c78a1daac45637fd6}{init\+\_\+background}}
+\item 
+real(dl) function \mbox{\hyperlink{equations__bde__v3_8f90_a1c228811398a4401bb57d778911a13df}{dtauda}} (a)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac02938234bdca8dcd23649b1abb34ab3}{gaugeinterface\+::gaugeinterface\+\_\+scalev}} (EV, y, tau, tauend, tol1, ind, c, w)
+\item 
+integer function \mbox{\hyperlink{namespacegaugeinterface_ae317d979138ff46a65c14f787c0d749c}{gaugeinterface\+::next\+\_\+nu\+\_\+nq}} (nq)
+\item 
+recursive subroutine \mbox{\hyperlink{namespacegaugeinterface_a11f5c8bd6a22537e4a85362dc8dbf3af}{gaugeinterface\+::gaugeinterface\+\_\+evolvescal}} (EV, tau, y, tauend, tol1, ind, c, w)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a048447959e15ae6dd9e887a61e135d0c}{gaugeinterface\+::gaugeinterface\+\_\+evolvetens}} (EV, tau, y, tauend, tol1, ind, c, w)
+\item 
+real(dl) function \mbox{\hyperlink{namespacegaugeinterface_aaf1e4804f8b140406e78f53f199433fa}{gaugeinterface\+::deltatimemaxed}} (a1, a2, tol)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a59182efb978c657918dd88675b2ab0ef}{gaugeinterface\+::gaugeinterface\+\_\+init}}
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a50a72debb65475527ccc7e76af616083}{gaugeinterface\+::setupscalararrayindices}} (EV, max\+\_\+num\+\_\+eqns)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a8565dc876beb9e4339c005a72333f31f}{gaugeinterface\+::copyscalarvariablearray}} (y, yout, EV, E\+Vout)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a21f6d1e93445d43fc8247f57dce52716}{gaugeinterface\+::setuptensorarrayindices}} (EV, maxeq)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ab306d2378bd6f559471a11afc145621c}{gaugeinterface\+::copytensorvariablearray}} (y, yout, EV, E\+Vout)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ad273d68dadb4d4fcc10422fed213ca25}{gaugeinterface\+::getnumeqns}} (EV)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac7f67b6e2bc871b4eb1a6d3453f796a3}{gaugeinterface\+::switchtomassivenuapprox}} (EV, y, nu\+\_\+i)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac756539212eaeba8021159b26d1d2881}{gaugeinterface\+::massivenuvarsout}} (EV, y, yprime, a, grho, gpres, dgrho, dgq, dgpi, gdpi\+\_\+diff, pidot\+\_\+sum, clxnu\+\_\+all)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aaf5da349a1adc87f4c62f51f1e0c0371}{gaugeinterface\+::nu\+\_\+integrate\+\_\+l012}} (EV, y, a, nu\+\_\+i, drhonu, fnu, dpnu, pinu)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_acba44d8f8f824999640418908be29b9b}{gaugeinterface\+::nu\+\_\+pinudot}} (EV, y, ydot, a, adotoa, nu\+\_\+i, pinudot)
+\item 
+real(dl) function \mbox{\hyperlink{namespacegaugeinterface_a33373e2888fd46e2c443d7e8c2785639}{gaugeinterface\+::nu\+\_\+pi}} (EV, y, a, nu\+\_\+i)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a2e8822823d298cb0912b5ec22ea4a6ff}{gaugeinterface\+::nu\+\_\+intvsq}} (EV, y, a, nu\+\_\+i, G11, G30)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ae4228ed9cfb9382025eb84617b0ed091}{gaugeinterface\+::massivenuvars}} (EV, y, a, grho, gpres, dgrho, dgq, wnu\+\_\+arr)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac370c67bc9750bf5749a69531fe3ffc1}{gaugeinterface\+::output}} (EV, y, j, tau, sources)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a5235d59ec77fa4b3a41d9754c8e447ca}{gaugeinterface\+::outputt}} (EV, yt, n, j, tau, dt, dte, dtb)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ad9126befa5df67da981345f6230fede4}{gaugeinterface\+::outputv}} (EV, yv, n, j, tau, dt, dte, dtb)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aa05aaad2bec1907778ea8eae3a7ba521}{gaugeinterface\+::initial}} (EV, y, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_afbc0a211756e4b923725483b6c961e75}{gaugeinterface\+::initialt}} (EV, yt, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aeed464df3ecab21d57bcb789fe3b1a22}{gaugeinterface\+::initialv}} (EV, yv, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ae920635485c908177072c6cad0d49f59}{gaugeinterface\+::outtransf}} (EV, y, tau, Arr)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a1d317261c83f3b5e84fe401ac2436d44}{gaugeinterface\+::derivs}} (EV, n, tau, ay, ayprime)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a25ee0c9e055aabce6b7eb205e65f9804}{gaugeinterface\+::derivsv}} (EV, n, tau, yv, yvprime)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ab2ff4cd74364457862a7ff44fb2ca978}{gaugeinterface\+::derivst}} (EV, n, tau, ayt, aytprime)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacelambdageneral_a089643a9b64fa595564ae2a20a525c0a}{lambdageneral\+::quintessence}} = .true.
+\item 
+integer, parameter \mbox{\hyperlink{namespacequint_ab17aada00a312b3af2e4e191fdf3e50e}{quint\+::numpoints}} = 10000
+\item 
+integer, parameter \mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{quint\+::numpointsex}} =Num\+Points+2
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_a061343360883da6eebfdb61cdfba449c}{quint\+::phi\+\_\+a}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_a8719904f4c91dac880cb839088a69ca9}{quint\+::phidot\+\_\+a}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_adb002db0bc26b007d62ea6582a5fc58f}{quint\+::ddphi\+\_\+a}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_a4dd7a485719c132a01ed439f30c1f866}{quint\+::ddphidot\+\_\+a}}
+\item 
+real(dl) \mbox{\hyperlink{namespacequint_a7992ff4df2efe5528a1a109c6d0533db}{quint\+::initial\+\_\+phi}}
+\item 
+real(dl) \mbox{\hyperlink{namespacequint_af323f47cbdf135c3f3f626b07465f347}{quint\+::dn}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_a32c8893957513fe23c9798bd01dd57bd}{quint\+::abde}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_a772dd6340b969931fd8b4cc796e2ecee}{quint\+::nbde}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_ac5553ef581fd33330e83b1849b3c90ff}{quint\+::xbde}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_af164f7d3b20eb2e0ad7449519ada6734}{quint\+::ybde}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_aea928c2d627a7d5001dfe09a898d0c21}{quint\+::lbde}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_adc4851c280622a1d594cbcc28e15aba1}{quint\+::ddxbde}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_a10a79a1d7070650f6f67d1de7fa4b34a}{quint\+::ddybde}}
+\item 
+real(dl), dimension(numpointsex) \mbox{\hyperlink{namespacequint_a64e99c9feaf4cb920180f5be428745a6}{quint\+::ddlbde}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{equations__bde__v3_8f90_a1c228811398a4401bb57d778911a13df}\label{equations__bde__v3_8f90_a1c228811398a4401bb57d778911a13df}} 
+\index{equations\+\_\+bde\+\_\+v3.\+f90@{equations\+\_\+bde\+\_\+v3.\+f90}!dtauda@{dtauda}}
+\index{dtauda@{dtauda}!equations\+\_\+bde\+\_\+v3.\+f90@{equations\+\_\+bde\+\_\+v3.\+f90}}
+\subsubsection{\texorpdfstring{dtauda()}{dtauda()}}
+{\footnotesize\ttfamily real(dl) function dtauda (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::ac, modelparams\+::accuracyboost, modelparams\+::adotrad, modelparams\+::alphabde, gaugeinterface\+::basic\+\_\+num\+\_\+eqns, gaugeinterface\+::copyscalarvariablearray(), gaugeinterface\+::copytensorvariablearray(), modelparams\+::cosfunc(), modelparams\+::cp, thermodata\+::cs2, lambdageneral\+::cs2\+\_\+lam, modeldata\+::ctransscal, thermodata\+::ddvis, modelparams\+::deltatime(), gaugeinterface\+::deltatimemaxed(), gaugeinterface\+::denl, gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), gaugeinterface\+::dolateradtruncation, thermodata\+::dopac, gaugeinterface\+::dotensorneutrinos, dtauda(), dverk(), thermodata\+::dvis, gaugeinterface\+::ep0, gaugeinterface\+::epsw, errors\+::error\+\_\+evolution, constants\+::ev, thermodata\+::expmmu, modelparams\+::f\+\_\+k(), modelparams\+::fixq, gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), gaugeinterface\+::gaugeinterface\+\_\+scalev(), errors\+::global\+\_\+error\+\_\+flag, errors\+::globalerror(), modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhodgc, modelparams\+::grhog, modelparams\+::grhok, modelparams\+::grhormass, modelparams\+::grhornomass, modelparams\+::grhov, modelparams\+::highaccuracydefault, gaugeinterface\+::initial\+\_\+adiabatic, gaugeinterface\+::initial\+\_\+iso\+\_\+baryon, gaugeinterface\+::initial\+\_\+iso\+\_\+neutrino, gaugeinterface\+::initial\+\_\+iso\+\_\+neutrino\+\_\+vel, gaugeinterface\+::initial\+\_\+nummodes, gaugeinterface\+::initial\+\_\+vector, modelparams\+::l0max, modelparams\+::laccuracyboost, modelparams\+::lambdac, gaugeinterface\+::lmaxnu\+\_\+high\+\_\+ktau, gaugeinterface\+::magnetic, gaugeinterface\+::massivenuvars(), gaugeinterface\+::massivenuvarsout(), thermodata\+::matter\+\_\+verydom\+\_\+tau, gaugeinterface\+::max\+\_\+l\+\_\+evolve, gaugeinterface\+::next\+\_\+nu\+\_\+nq(), massivenu\+::nqmax, massivenu\+::nu\+\_\+background(), modelparams\+::nu\+\_\+best, massivenu\+::nu\+\_\+drho(), massivenu\+::nu\+\_\+int\+\_\+kernel, gaugeinterface\+::nu\+\_\+integrate\+\_\+l012(), gaugeinterface\+::nu\+\_\+intvsq(), modelparams\+::nu\+\_\+masses, gaugeinterface\+::nu\+\_\+pi(), gaugeinterface\+::nu\+\_\+pinudot(), massivenu\+::nu\+\_\+q, massivenu\+::nu\+\_\+rho(), gaugeinterface\+::nu\+\_\+tau\+\_\+massive, gaugeinterface\+::nu\+\_\+tau\+\_\+nonrelativistic, gaugeinterface\+::nu\+\_\+tau\+\_\+notmassless, modelparams\+::nu\+\_\+trunc, thermodata\+::opac, gaugeinterface\+::polfac, quint\+::quint\+\_\+valsata(), lambdageneral\+::quintessence, modelparams\+::rofchi(), gaugeinterface\+::second\+\_\+order\+\_\+tightcoupling, gaugeinterface\+::setupscalararrayindices(), gaugeinterface\+::setuptensorarrayindices(), gaugeinterface\+::switchtomassivenuapprox(), modelparams\+::tanfunc(), modelparams\+::tau\+\_\+maxvis, modelparams\+::taurend, thermodata\+::thermo(), thermodata\+::thermo\+\_\+opacitytotime(), thermodata\+::tight\+\_\+tau, modelparams\+::tol, transfer\+::transfer\+\_\+b, transfer\+::transfer\+\_\+cdm, transfer\+::transfer\+\_\+g, transfer\+::transfer\+\_\+kh, transfer\+::transfer\+\_\+max, transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+baryon, transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+cdm, transfer\+::transfer\+\_\+nonu, transfer\+::transfer\+\_\+nu, transfer\+::transfer\+\_\+r, transfer\+::transfer\+\_\+tot, transfer\+::transfer\+\_\+tot\+\_\+de, transfer\+::transfer\+\_\+vel\+\_\+baryon\+\_\+cdm, transfer\+::transfer\+\_\+weyl, gaugeinterface\+::vec\+\_\+sig0, gaugeinterface\+::vecfac, gaugeinterface\+::vecfacpol, thermodata\+::vis, quint\+::vofphi(), lambdageneral\+::w\+\_\+lam, lambdageneral\+::w\+\_\+perturb, and modelparams\+::wdgc.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{equations__bde__v3_8f90_a1c228811398a4401bb57d778911a13df_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{equations__bde__v3_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6}\label{equations__bde__v3_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6}} 
+\index{equations\+\_\+bde\+\_\+v3.\+f90@{equations\+\_\+bde\+\_\+v3.\+f90}!getomegak@{getomegak}}
+\index{getomegak@{getomegak}!equations\+\_\+bde\+\_\+v3.\+f90@{equations\+\_\+bde\+\_\+v3.\+f90}}
+\subsubsection{\texorpdfstring{getomegak()}{getomegak()}}
+{\footnotesize\ttfamily real(dl) function getomegak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and getomegak().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{equations__bde__v3_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{equations__bde__v3_8f90_a47540f6082acc64c78a1daac45637fd6}\label{equations__bde__v3_8f90_a47540f6082acc64c78a1daac45637fd6}} 
+\index{equations\+\_\+bde\+\_\+v3.\+f90@{equations\+\_\+bde\+\_\+v3.\+f90}!init\+\_\+background@{init\+\_\+background}}
+\index{init\+\_\+background@{init\+\_\+background}!equations\+\_\+bde\+\_\+v3.\+f90@{equations\+\_\+bde\+\_\+v3.\+f90}}
+\subsubsection{\texorpdfstring{init\+\_\+background()}{init\_background()}}
+{\footnotesize\ttfamily subroutine init\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References quint\+::bde\+\_\+background().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{equations__bde__v3_8f90_a47540f6082acc64c78a1daac45637fd6_cgraph}
+\end{center}
+\end{figure}

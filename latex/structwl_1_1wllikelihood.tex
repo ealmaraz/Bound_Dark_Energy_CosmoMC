@@ -1,0 +1,191 @@
+\hypertarget{structwl_1_1wllikelihood}{}\section{wl\+:\+:wllikelihood Type Reference}
+\label{structwl_1_1wllikelihood}\index{wl\+::wllikelihood@{wl\+::wllikelihood}}
+
+
+Inheritance diagram for wl\+:\+:wllikelihood\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{structwl_1_1wllikelihood__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for wl\+:\+:wllikelihood\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{structwl_1_1wllikelihood__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structwl_1_1wllikelihood_a40cc5b8116c8da58fc3605fc83ac3c7b}{loglike}} =$>$ W\+L\+\_\+\+Ln\+Like
+\item 
+procedure \mbox{\hyperlink{structwl_1_1wllikelihood_a1952a1f37ed036397786170da28a71e9}{readini}} =$>$ W\+L\+\_\+\+Read\+Ini
+\item 
+procedure, private \mbox{\hyperlink{structwl_1_1wllikelihood_aff83b8f5d3ccb318cedfa679b62e48fa}{get\+\_\+convergence}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_a90c91fa62549d08474e536b6c3d105b3}{wl\+\_\+invcov}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_af27fede71b68ea45ccd44eff4571dc1b}{wl\+\_\+cov}}
+\item 
+integer \mbox{\hyperlink{structwl_1_1wllikelihood_ac85405c1637c007a476626c475e01b91}{num\+\_\+z\+\_\+bins}}
+\item 
+integer \mbox{\hyperlink{structwl_1_1wllikelihood_abbc71af7b630e7a9bffdc8c2afcdb8b6}{num\+\_\+theta\+\_\+bins}}
+\item 
+integer \mbox{\hyperlink{structwl_1_1wllikelihood_a7312a8efc03e9580b451151c03119571}{num\+\_\+mask}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_aef7e170301ecfa24f9c7a29cd1823ca5}{theta\+\_\+bins}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_a4d8bb3c571d3e503c238785fda7c1287}{z\+\_\+bins}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_af668ca5bc35acc0964269bda5fc8d20f}{xi\+\_\+obs}}
+\item 
+integer \mbox{\hyperlink{structwl_1_1wllikelihood_a9c1b24eeb1b81776bf43297bf0a39431}{num\+\_\+z\+\_\+p}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_aeeb6c56e9c81d50326040ccbad1f5cab}{p}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_ad2fdfc1eec8b08f6b5b70315922f7c43}{z\+\_\+p}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structwl_1_1wllikelihood_aa789f2c1917699231f07a4105e5e4ceb}{mask\+\_\+indices}}
+\item 
+real(mcp) \mbox{\hyperlink{structwl_1_1wllikelihood_a6d25c5bd105d44bf3c211d85af017163}{ah\+\_\+factor}}
+\item 
+logical \mbox{\hyperlink{structwl_1_1wllikelihood_af67f93141f7d6cf500adf424dec4dde6}{cut\+\_\+theta}}
+\item 
+logical \mbox{\hyperlink{structwl_1_1wllikelihood_aa1a9c592e094a1d46c93de88c5354fc8}{use\+\_\+non\+\_\+linear}}
+\item 
+logical \mbox{\hyperlink{structwl_1_1wllikelihood_a572af041b68968ed8b60952c77ae0b8c}{use\+\_\+weyl}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structwl_1_1wllikelihood_aff83b8f5d3ccb318cedfa679b62e48fa}\label{structwl_1_1wllikelihood_aff83b8f5d3ccb318cedfa679b62e48fa}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!get\+\_\+convergence@{get\+\_\+convergence}}
+\index{get\+\_\+convergence@{get\+\_\+convergence}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{get\+\_\+convergence()}{get\_convergence()}}
+{\footnotesize\ttfamily procedure, private wl\+::wllikelihood\+::get\+\_\+convergence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a40cc5b8116c8da58fc3605fc83ac3c7b}\label{structwl_1_1wllikelihood_a40cc5b8116c8da58fc3605fc83ac3c7b}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!loglike@{loglike}}
+\index{loglike@{loglike}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{loglike()}{loglike()}}
+{\footnotesize\ttfamily procedure wl\+::wllikelihood\+::loglike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a1952a1f37ed036397786170da28a71e9}\label{structwl_1_1wllikelihood_a1952a1f37ed036397786170da28a71e9}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!readini@{readini}}
+\index{readini@{readini}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{readini()}{readini()}}
+{\footnotesize\ttfamily procedure wl\+::wllikelihood\+::readini (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a6d25c5bd105d44bf3c211d85af017163}\label{structwl_1_1wllikelihood_a6d25c5bd105d44bf3c211d85af017163}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!ah\+\_\+factor@{ah\+\_\+factor}}
+\index{ah\+\_\+factor@{ah\+\_\+factor}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{ah\+\_\+factor}{ah\_factor}}
+{\footnotesize\ttfamily real(mcp) wl\+::wllikelihood\+::ah\+\_\+factor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_af67f93141f7d6cf500adf424dec4dde6}\label{structwl_1_1wllikelihood_af67f93141f7d6cf500adf424dec4dde6}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!cut\+\_\+theta@{cut\+\_\+theta}}
+\index{cut\+\_\+theta@{cut\+\_\+theta}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{cut\+\_\+theta}{cut\_theta}}
+{\footnotesize\ttfamily logical wl\+::wllikelihood\+::cut\+\_\+theta\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_aa789f2c1917699231f07a4105e5e4ceb}\label{structwl_1_1wllikelihood_aa789f2c1917699231f07a4105e5e4ceb}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!mask\+\_\+indices@{mask\+\_\+indices}}
+\index{mask\+\_\+indices@{mask\+\_\+indices}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{mask\+\_\+indices}{mask\_indices}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable wl\+::wllikelihood\+::mask\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a7312a8efc03e9580b451151c03119571}\label{structwl_1_1wllikelihood_a7312a8efc03e9580b451151c03119571}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!num\+\_\+mask@{num\+\_\+mask}}
+\index{num\+\_\+mask@{num\+\_\+mask}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{num\+\_\+mask}{num\_mask}}
+{\footnotesize\ttfamily integer wl\+::wllikelihood\+::num\+\_\+mask\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_abbc71af7b630e7a9bffdc8c2afcdb8b6}\label{structwl_1_1wllikelihood_abbc71af7b630e7a9bffdc8c2afcdb8b6}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!num\+\_\+theta\+\_\+bins@{num\+\_\+theta\+\_\+bins}}
+\index{num\+\_\+theta\+\_\+bins@{num\+\_\+theta\+\_\+bins}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{num\+\_\+theta\+\_\+bins}{num\_theta\_bins}}
+{\footnotesize\ttfamily integer wl\+::wllikelihood\+::num\+\_\+theta\+\_\+bins\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_ac85405c1637c007a476626c475e01b91}\label{structwl_1_1wllikelihood_ac85405c1637c007a476626c475e01b91}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!num\+\_\+z\+\_\+bins@{num\+\_\+z\+\_\+bins}}
+\index{num\+\_\+z\+\_\+bins@{num\+\_\+z\+\_\+bins}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{num\+\_\+z\+\_\+bins}{num\_z\_bins}}
+{\footnotesize\ttfamily integer wl\+::wllikelihood\+::num\+\_\+z\+\_\+bins\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a9c1b24eeb1b81776bf43297bf0a39431}\label{structwl_1_1wllikelihood_a9c1b24eeb1b81776bf43297bf0a39431}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!num\+\_\+z\+\_\+p@{num\+\_\+z\+\_\+p}}
+\index{num\+\_\+z\+\_\+p@{num\+\_\+z\+\_\+p}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{num\+\_\+z\+\_\+p}{num\_z\_p}}
+{\footnotesize\ttfamily integer wl\+::wllikelihood\+::num\+\_\+z\+\_\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_aeeb6c56e9c81d50326040ccbad1f5cab}\label{structwl_1_1wllikelihood_aeeb6c56e9c81d50326040ccbad1f5cab}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!p@{p}}
+\index{p@{p}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable wl\+::wllikelihood\+::p\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_aef7e170301ecfa24f9c7a29cd1823ca5}\label{structwl_1_1wllikelihood_aef7e170301ecfa24f9c7a29cd1823ca5}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!theta\+\_\+bins@{theta\+\_\+bins}}
+\index{theta\+\_\+bins@{theta\+\_\+bins}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{theta\+\_\+bins}{theta\_bins}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable wl\+::wllikelihood\+::theta\+\_\+bins\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_aa1a9c592e094a1d46c93de88c5354fc8}\label{structwl_1_1wllikelihood_aa1a9c592e094a1d46c93de88c5354fc8}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!use\+\_\+non\+\_\+linear@{use\+\_\+non\+\_\+linear}}
+\index{use\+\_\+non\+\_\+linear@{use\+\_\+non\+\_\+linear}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{use\+\_\+non\+\_\+linear}{use\_non\_linear}}
+{\footnotesize\ttfamily logical wl\+::wllikelihood\+::use\+\_\+non\+\_\+linear\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a572af041b68968ed8b60952c77ae0b8c}\label{structwl_1_1wllikelihood_a572af041b68968ed8b60952c77ae0b8c}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!use\+\_\+weyl@{use\+\_\+weyl}}
+\index{use\+\_\+weyl@{use\+\_\+weyl}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{use\+\_\+weyl}{use\_weyl}}
+{\footnotesize\ttfamily logical wl\+::wllikelihood\+::use\+\_\+weyl\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_af27fede71b68ea45ccd44eff4571dc1b}\label{structwl_1_1wllikelihood_af27fede71b68ea45ccd44eff4571dc1b}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!wl\+\_\+cov@{wl\+\_\+cov}}
+\index{wl\+\_\+cov@{wl\+\_\+cov}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{wl\+\_\+cov}{wl\_cov}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable wl\+::wllikelihood\+::wl\+\_\+cov\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a90c91fa62549d08474e536b6c3d105b3}\label{structwl_1_1wllikelihood_a90c91fa62549d08474e536b6c3d105b3}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!wl\+\_\+invcov@{wl\+\_\+invcov}}
+\index{wl\+\_\+invcov@{wl\+\_\+invcov}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{wl\+\_\+invcov}{wl\_invcov}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable wl\+::wllikelihood\+::wl\+\_\+invcov\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_af668ca5bc35acc0964269bda5fc8d20f}\label{structwl_1_1wllikelihood_af668ca5bc35acc0964269bda5fc8d20f}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!xi\+\_\+obs@{xi\+\_\+obs}}
+\index{xi\+\_\+obs@{xi\+\_\+obs}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{xi\+\_\+obs}{xi\_obs}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable wl\+::wllikelihood\+::xi\+\_\+obs\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_a4d8bb3c571d3e503c238785fda7c1287}\label{structwl_1_1wllikelihood_a4d8bb3c571d3e503c238785fda7c1287}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!z\+\_\+bins@{z\+\_\+bins}}
+\index{z\+\_\+bins@{z\+\_\+bins}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{z\+\_\+bins}{z\_bins}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable wl\+::wllikelihood\+::z\+\_\+bins\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structwl_1_1wllikelihood_ad2fdfc1eec8b08f6b5b70315922f7c43}\label{structwl_1_1wllikelihood_ad2fdfc1eec8b08f6b5b70315922f7c43}} 
+\index{wl\+::wllikelihood@{wl\+::wllikelihood}!z\+\_\+p@{z\+\_\+p}}
+\index{z\+\_\+p@{z\+\_\+p}!wl\+::wllikelihood@{wl\+::wllikelihood}}
+\subsubsection{\texorpdfstring{z\+\_\+p}{z\_p}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable wl\+::wllikelihood\+::z\+\_\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{wl_8f90}{wl.\+f90}}\end{DoxyCompactItemize}

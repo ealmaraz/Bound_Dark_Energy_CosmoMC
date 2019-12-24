@@ -1,0 +1,90 @@
+\hypertarget{CMBlikes_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+C\+M\+Blikes.f90 File Reference}
+\label{CMBlikes_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+C\+M\+Blikes.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+C\+M\+Blikes.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tsqmatrix}{cmblikes\+::tsqmatrix}}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tbinwindows}{cmblikes\+::tbinwindows}}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tmapcrosspowerspectrum}{cmblikes\+::tmapcrosspowerspectrum}}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tcmblikes}{cmblikes\+::tcmblikes}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacecmblikes}{cmblikes}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+integer function \mbox{\hyperlink{namespacecmblikes_a957c1b188c2225799d8fb439858c73d6}{cmblikes\+::typeindex}} (C)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_ae22eb6439b51b993d560298fa0c2ebd8}{cmblikes\+::cmblikes\+\_\+readclarr}} (this, Ini, basename, Cl, has\+Key)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a41e3ac813ae7de0d8a76ffdd669077f1}{cmblikes\+::pairstringtomapindices}} (this, S, i1, i2)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_af5bfde8e9716fa2038de9aec00e88699}{cmblikes\+::pairstringtousedmapindices}} (this, used\+\_\+index, S, i1, i2)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a6ccd97b88f377eae282aaa60c1661b49}{cmblikes\+::usestring\+\_\+to\+\_\+cols}} (this, S, cols)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_aacd5ae93afb3acb0e509842bbfeb7e4e}{cmblikes\+::usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j}} (this, S, used\+\_\+index, cl\+\_\+i\+\_\+j)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a160df8f7d35a11fb589fee16adc7675b}{cmblikes\+::mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j}} (this, order, i1, i2, i, j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacecmblikes_aed345a121b78d08d7aa703636785f56b}{cmblikes\+::cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name}} (this, i, j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacecmblikes_a44a1c6a75608d89a037ffc9ea4571aa3}{cmblikes\+::cl\+\_\+i\+\_\+j\+\_\+name}} (this, names, i, j)
+\item 
+integer function \mbox{\hyperlink{namespacecmblikes_a114579c77c600f40b2354a47106bde81}{cmblikes\+::getcolsfromorder}} (this, Order, cols)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a44827afcb3b8cf727e566cb8919f7e0e}{cmblikes\+::readbinwindows}} (this, Ini, bin\+\_\+type, bin\+Windows)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a0a856ee69d8586f1b224e56f86016346}{cmblikes\+::cmblikes\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a53d98d3cf4a8d20dca8c46be7bd33329}{cmblikes\+::readcovmat}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a94f791a78bfa0b35f813dc792796de0d}{cmblikes\+::cmblikes\+\_\+transform}} (this, C, Chat, Cf\+Half, C\+Offset)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a16be2c18f3fecf43964ef1f2995dcd4e}{cmblikes\+::matrixtoelements}} (this, M, X)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a908a9bb9c69b1ef3a8b7df6519fd4641}{cmblikes\+::matrixtoelementsint}} (this, M, X)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a2ae7731bcaed3a30ef1314fdb6c7718e}{cmblikes\+::elementstomatrix}} (this, X, M)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecmblikes_a5ece500a732974850cb05902f8df7f16}{cmblikes\+::exactchisq}} (this, C, Chat, l)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_aeac358ca50ccdbdddc8f40af418cc6e5}{cmblikes\+::getbinnedmapcls}} (this, Map\+Cls, C, bin)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a324d03e811c50f8dcc382819daa2adac}{cmblikes\+::initmapcls}} (this, Cls, nmaps, order)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a887e1b2647525630e45abcf6e96ffb13}{cmblikes\+::gettheorymapcls}} (this, Theory, Cls, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a6653a1b9a17f3c0c4d5025a40de7d134}{cmblikes\+::addforegrounds}} (this, Cls, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a3015ed6ed745619906f28edd67ff390c}{cmblikes\+::adapttheoryformaps}} (this, Cls, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a9befa7145c3914eb9bdd86699681274c}{cmblikes\+::cmblikes\+\_\+writelikelihooddata}} (this, Theory, Data\+Params, root)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecmblikes_a97fb12e9b7c8a1059a8443b1b0423c24}{cmblikes\+::cmblikes\+\_\+loglike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a84faea71532b47138544e07bf77a7fb0}{cmblikes\+::tbinwindows\+\_\+bin}} (this, Theory\+Cls, Cls, bin)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical, parameter \mbox{\hyperlink{namespacecmblikes_a109d8823809382a8545c68b8598c8a06}{cmblikes\+::bin\+\_\+test}} = .false.
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacecmblikes_a55c986dc536bdd0894cd5bf2fb584f70}{cmblikes\+::cross\+\_\+separators}} = \textquotesingle{}x\textquotesingle{}
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_a9a7a0c55bde53b41f76027a48c8eb811}{cmblikes\+::tot\+\_\+theory\+\_\+fields}} = len(C\+M\+B\+\_\+\+C\+L\+\_\+\+Fields)
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_a9177762dd30aeda08fb17357714b0157}{cmblikes\+::like\+\_\+approx\+\_\+hl}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_abf83af8cd899e4118189181fe7290a44}{cmblikes\+::like\+\_\+approx\+\_\+fid\+\_\+gaussian}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_ae1ff0c9c884675bf7a8de01c01e5b082}{cmblikes\+::like\+\_\+approx\+\_\+fullsky\+\_\+exact}} =3
+\item 
+character(len=ini\+\_\+enumeration\+\_\+len), dimension(3), parameter, public \mbox{\hyperlink{namespacecmblikes_abc590f6fd0bd85c7afe4fed208f61b3e}{cmblikes\+::cmblikes\+\_\+like\+\_\+names}} = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}HL\textquotesingle{},\textquotesingle{}gaussian\textquotesingle{},\textquotesingle{}exact\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}

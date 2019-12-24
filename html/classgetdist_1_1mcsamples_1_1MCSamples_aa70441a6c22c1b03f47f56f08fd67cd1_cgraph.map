@@ -1,0 +1,14 @@
+<map id="getdist.mcsamples.MCSamples.PCA" name="getdist.mcsamples.MCSamples.PCA">
+<area shape="rect" id="node2" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a6b6dd422ba0e76f758c0ac875ea6ad74" title="getdist.mcsamples.MCSamples.\l_initParamRanges" alt="" coords="313,19,525,61"/>
+<area shape="rect" id="node7" href="$namespacestringutils.html#a29f32cf04e0c44fc8ee8dfa9819b915d" title="stringutils::join" alt="" coords="365,85,472,112"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a72a6f011746d852ea089302d90f59159" title="getdist.chains.WeightedSamples.mean" alt="" coords="294,136,543,163"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#aec090ebdf609820d084391a9901f0214" title="getdist.mcsamples.MCSamples.par\lLabel" alt="" coords="303,187,534,229"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ab6b6a1e603f89d1266dd7d2f5e6ae51c" title="getdist.mcsamples.MCSamples.\l_initParam" alt="" coords="622,19,834,61"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1chains_1_1WeightedSamples.html#aafea7daa99724b91392e41c4157a29a0" title="getdist.chains.WeightedSamples.confidence" alt="" coords="912,5,1192,32"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1chains_1_1WeightedSamples.html#af09edaafcc644533d7c24107f2daec81" title="getdist.chains.WeightedSamples.init\lParamConfidenceData" alt="" coords="1273,49,1508,90"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a97daf2e7045ad90ef4ff8030b9d65740" title="getdist.chains.WeightedSamples.\l_makeParamvec" alt="" coords="1590,97,1807,138"/>
+<area shape="rect" id="node8" href="$namespacestringutils.html#ac5e67eb0a4de77625ac1447804e1f934" title="stringutils::stringtrimmed" alt="" coords="645,85,811,112"/>
+<area shape="rect" id="node9" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="977,107,1127,133"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1chains_1_1WeightedSamples.html#adb6da75221743f7a05286cbb2b2685b0" title="getdist.chains.WeightedSamples.get_norm" alt="" coords="593,136,863,163"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1chains_1_1WeightedSamples.html#afdeb6d07f1db505f36fe0ca0052528ac" title="getdist.chains.WeightedSamples.weighted_sum" alt="" coords="1240,151,1541,177"/>
+</map>

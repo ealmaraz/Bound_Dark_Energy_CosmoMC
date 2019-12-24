@@ -1,0 +1,50 @@
+\hypertarget{namespacegetdist_1_1densities}{}\section{getdist.\+densities Namespace Reference}
+\label{namespacegetdist_1_1densities}\index{getdist.\+densities@{getdist.\+densities}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1densities_1_1DensitiesError}{Densities\+Error}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1densities_1_1Density1D}{Density1D}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D}{Density2D}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1densities_1_1DensityND}{Density\+ND}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity}{Grid\+Density}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1densities_a71719515c275dc72aa2d93ae32e2dbeb}{get\+Contour\+Levels}} (inbins, contours=\mbox{\hyperlink{namespacegetdist_1_1densities_a93d19accaa564f6252d80ae48a40ae3b}{default\+Contours}}, missing\+\_\+norm=0, half\+\_\+edge=True)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacegetdist_1_1densities_a93d19accaa564f6252d80ae48a40ae3b}{default\+Contours}} = \mbox{[}0.\+68, 0.\+95\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1densities_a71719515c275dc72aa2d93ae32e2dbeb}\label{namespacegetdist_1_1densities_a71719515c275dc72aa2d93ae32e2dbeb}} 
+\index{getdist\+::densities@{getdist\+::densities}!get\+Contour\+Levels@{get\+Contour\+Levels}}
+\index{get\+Contour\+Levels@{get\+Contour\+Levels}!getdist\+::densities@{getdist\+::densities}}
+\subsubsection{\texorpdfstring{get\+Contour\+Levels()}{getContourLevels()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+get\+Contour\+Levels (\begin{DoxyParamCaption}\item[{}]{inbins,  }\item[{}]{contours = {\ttfamily \mbox{\hyperlink{namespacegetdist_1_1densities_a93d19accaa564f6252d80ae48a40ae3b}{default\+Contours}}},  }\item[{}]{missing\+\_\+norm = {\ttfamily 0},  }\item[{}]{half\+\_\+edge = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Get contour levels enclosing "contours" fraction of the probability, for any dimension bins array
+ 
+ :param inbins: binned density. 
+ :param contours: list of confidence contours to calculate, default [0.68, 0.95]
+ :param missing_norm: accounts of any points not included in inbins (e.g. points in far tails that are not in inbins) 
+ :param half_edge: If True, edge bins are only half integrated over in each direction.
+ :return: list of density levels\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1densities_a93d19accaa564f6252d80ae48a40ae3b}\label{namespacegetdist_1_1densities_a93d19accaa564f6252d80ae48a40ae3b}} 
+\index{getdist\+::densities@{getdist\+::densities}!default\+Contours@{default\+Contours}}
+\index{default\+Contours@{default\+Contours}!getdist\+::densities@{getdist\+::densities}}
+\subsubsection{\texorpdfstring{default\+Contours}{defaultContours}}
+{\footnotesize\ttfamily list getdist.\+densities.\+default\+Contours = \mbox{[}0.\+68, 0.\+95\mbox{]}}
+

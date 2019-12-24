@@ -1,0 +1,113 @@
+\hypertarget{namespacecliklike}{}\section{cliklike Module Reference}
+\label{namespacecliklike}\index{cliklike@{cliklike}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcliklike_1_1cliklensinglikelihood}{cliklensinglikelihood}}
+\item 
+type \mbox{\hyperlink{structcliklike_1_1cliklikelihood}{cliklikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecliklike_afd6ed043a70bb783b9840d5569cb85bb}{clik\+\_\+readparams}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecliklike_a093a22f8a8a490ec917ebc7a92c27c2b}{clik\+\_\+likeinit}} (this, fname)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecliklike_a8fa2426732ea59e352d0c0e13011fe62}{clik\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecliklike_ab304afaa9dfed7a5bfa3d0827bce1b4d}{do\+\_\+checks}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecliklike_af1724949f007a273de7b121db709494d}{clik\+\_\+lensing\+\_\+likeinit}} (this, fname)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecliklike_ad4622dfac7ccf0cffb96b6b9d1e097d9}{clik\+\_\+lensing\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical, public \mbox{\hyperlink{namespacecliklike_ab3a813fb756b21053772e9783f44ee73}{use\+\_\+clik}} = .false.
+\item 
+integer, parameter \mbox{\hyperlink{namespacecliklike_a809e60ab23d53a4785481b88524bf355}{dp}} = kind(1.d0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecliklike_af1724949f007a273de7b121db709494d}\label{namespacecliklike_af1724949f007a273de7b121db709494d}} 
+\index{cliklike@{cliklike}!clik\+\_\+lensing\+\_\+likeinit@{clik\+\_\+lensing\+\_\+likeinit}}
+\index{clik\+\_\+lensing\+\_\+likeinit@{clik\+\_\+lensing\+\_\+likeinit}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{clik\+\_\+lensing\+\_\+likeinit()}{clik\_lensing\_likeinit()}}
+{\footnotesize\ttfamily subroutine cliklike\+::clik\+\_\+lensing\+\_\+likeinit (\begin{DoxyParamCaption}\item[{class (\mbox{\hyperlink{structcliklike_1_1cliklensinglikelihood}{cliklensinglikelihood}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecliklike_ad4622dfac7ccf0cffb96b6b9d1e097d9}\label{namespacecliklike_ad4622dfac7ccf0cffb96b6b9d1e097d9}} 
+\index{cliklike@{cliklike}!clik\+\_\+lensing\+\_\+lnlike@{clik\+\_\+lensing\+\_\+lnlike}}
+\index{clik\+\_\+lensing\+\_\+lnlike@{clik\+\_\+lensing\+\_\+lnlike}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{clik\+\_\+lensing\+\_\+lnlike()}{clik\_lensing\_lnlike()}}
+{\footnotesize\ttfamily real(mcp) function cliklike\+::clik\+\_\+lensing\+\_\+lnlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcliklike_1_1cliklensinglikelihood}{cliklensinglikelihood}})}]{this,  }\item[{class (cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecliklike_a093a22f8a8a490ec917ebc7a92c27c2b}\label{namespacecliklike_a093a22f8a8a490ec917ebc7a92c27c2b}} 
+\index{cliklike@{cliklike}!clik\+\_\+likeinit@{clik\+\_\+likeinit}}
+\index{clik\+\_\+likeinit@{clik\+\_\+likeinit}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{clik\+\_\+likeinit()}{clik\_likeinit()}}
+{\footnotesize\ttfamily subroutine cliklike\+::clik\+\_\+likeinit (\begin{DoxyParamCaption}\item[{class (\mbox{\hyperlink{structcliklike_1_1cliklikelihood}{cliklikelihood}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cl\+\_\+b, cosmologytypes\+::cl\+\_\+e, cosmologytypes\+::cl\+\_\+t, settings\+::feedback, and settings\+::mpirank.
+
+\mbox{\Hypertarget{namespacecliklike_a8fa2426732ea59e352d0c0e13011fe62}\label{namespacecliklike_a8fa2426732ea59e352d0c0e13011fe62}} 
+\index{cliklike@{cliklike}!clik\+\_\+lnlike@{clik\+\_\+lnlike}}
+\index{clik\+\_\+lnlike@{clik\+\_\+lnlike}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{clik\+\_\+lnlike()}{clik\_lnlike()}}
+{\footnotesize\ttfamily real(mcp) function cliklike\+::clik\+\_\+lnlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcliklike_1_1cliklikelihood}{cliklikelihood}})}]{this,  }\item[{class (cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::feedback.
+
+\mbox{\Hypertarget{namespacecliklike_afd6ed043a70bb783b9840d5569cb85bb}\label{namespacecliklike_afd6ed043a70bb783b9840d5569cb85bb}} 
+\index{cliklike@{cliklike}!clik\+\_\+readparams@{clik\+\_\+readparams}}
+\index{clik\+\_\+readparams@{clik\+\_\+readparams}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{clik\+\_\+readparams()}{clik\_readparams()}}
+{\footnotesize\ttfamily subroutine, public cliklike\+::clik\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References settings\+::feedback, and settings\+::mpirank.
+
+
+
+Referenced by cliklike\+::cliklensinglikelihood\+::clik\+\_\+likeinit(), and cmblikelihoods\+::cmblikelihood\+\_\+add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecliklike_afd6ed043a70bb783b9840d5569cb85bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecliklike_ab304afaa9dfed7a5bfa3d0827bce1b4d}\label{namespacecliklike_ab304afaa9dfed7a5bfa3d0827bce1b4d}} 
+\index{cliklike@{cliklike}!do\+\_\+checks@{do\+\_\+checks}}
+\index{do\+\_\+checks@{do\+\_\+checks}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{do\+\_\+checks()}{do\_checks()}}
+{\footnotesize\ttfamily subroutine cliklike\+::do\+\_\+checks (\begin{DoxyParamCaption}\item[{class (\mbox{\hyperlink{structcliklike_1_1cliklikelihood}{cliklikelihood}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecliklike_a809e60ab23d53a4785481b88524bf355}\label{namespacecliklike_a809e60ab23d53a4785481b88524bf355}} 
+\index{cliklike@{cliklike}!dp@{dp}}
+\index{dp@{dp}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{dp}{dp}}
+{\footnotesize\ttfamily integer, parameter cliklike\+::dp = kind(1.d0)}
+
+\mbox{\Hypertarget{namespacecliklike_ab3a813fb756b21053772e9783f44ee73}\label{namespacecliklike_ab3a813fb756b21053772e9783f44ee73}} 
+\index{cliklike@{cliklike}!use\+\_\+clik@{use\+\_\+clik}}
+\index{use\+\_\+clik@{use\+\_\+clik}!cliklike@{cliklike}}
+\subsubsection{\texorpdfstring{use\+\_\+clik}{use\_clik}}
+{\footnotesize\ttfamily logical, public cliklike\+::use\+\_\+clik = .false.}
+
+
+
+Referenced by cliklike\+::cliklensinglikelihood\+::clik\+\_\+likeinit(), and cmblikelihoods\+::cmblikelihood\+\_\+add().
+

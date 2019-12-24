@@ -1,0 +1,64 @@
+\hypertarget{bao_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/bao.f90 File Reference}
+\label{bao_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/bao.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/bao.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structbao_1_1tbaolikelihood}{bao\+::tbaolikelihood}}
+\item 
+type \mbox{\hyperlink{structbao_1_1dr1xlikelihood}{bao\+::dr1xlikelihood}}
+\item 
+type \mbox{\hyperlink{structbao_1_1mgslikelihood}{bao\+::mgslikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacebao}{bao}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacebao_a1e83b8129197b47271286760d4c11866}{bao\+::baolikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_af2e429eb5aae0de7f70a321537f77861}{bao\+::bao\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_a42ad1b0022e37bb1e4457c7a4e329b12}{bao\+::bao\+\_\+initprobdist}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_af2ea26ba323749ae85e04fe46904d115}{bao\+::get\+\_\+rs\+\_\+drag}} (this, Theory)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_a42575daf8f5c1b68a1a7ddf8bd087988}{bao\+::acoustic}} (this, C\+MB, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_a9a4c24c4606056286bb571c62350ccb3}{bao\+::bao\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_a01a1351c073ed9d3a96aece01f8c368b}{bao\+::bao\+\_\+dr1x\+\_\+initprobdist}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_a566724d43b5fe7348c615930295ffefb}{bao\+::bao\+\_\+dr1x\+\_\+loglike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_aec7bdc5f03a9da432a0345932d1401bd}{bao\+::bao\+\_\+mgs\+\_\+initprobdist}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_aa39f8163fd5d4a39d7d83bab1a485ee2}{bao\+::bao\+\_\+mgs\+\_\+loglike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len=ini\+\_\+enumeration\+\_\+len), dimension(9), parameter \mbox{\hyperlink{namespacebao_a5a7cbf786aa65368c32203dfb9b72991}{bao\+::measurement\+\_\+types}} = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}Az\textquotesingle{},\textquotesingle{}D\+V\+\_\+over\+\_\+rs\textquotesingle{},\textquotesingle{}rs\+\_\+over\+\_\+\+DV\textquotesingle{},\textquotesingle{}D\+A\+\_\+over\+\_\+rs\textquotesingle{}, \textquotesingle{}F\+\_\+\+AP\textquotesingle{}, \textquotesingle{}f\+\_\+sigma8\textquotesingle{},\textquotesingle{}bao\+\_\+\+Hz\+\_\+rs\textquotesingle{},\textquotesingle{}bao\+\_\+\+Hz\+\_\+rs\+\_\+103\textquotesingle{},\textquotesingle{}dilation\textquotesingle{}\mbox{]}
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_ab53a2d435899a21c918a07f7243d2a9f}{bao\+::bao\+\_\+az}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a0524be8a1cd6362d8c5e0cc628384991}{bao\+::bao\+\_\+dv\+\_\+over\+\_\+rs}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_aadd8d344c5506828f10eed295270faf7}{bao\+::bao\+\_\+rs\+\_\+over\+\_\+dv}} = 3
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a5856a51527a41fd49a3222f83de0f1da}{bao\+::bao\+\_\+da\+\_\+over\+\_\+rs}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a90e9d6d857982260b5025f4778bf0a4d}{bao\+::f\+\_\+ap}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_aaa65837538ed00f6c87276b81b451c45}{bao\+::f\+\_\+sigma8}} =6
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a5d192049c79a222547036308959868c2}{bao\+::bao\+\_\+hz\+\_\+rs}} = 7
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_aad05aa1882f8f917547a2919bb25db43}{bao\+::bao\+\_\+hz\+\_\+rs\+\_\+103}} = 8
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a9bc55477c817a8204a8dd45a73ab6faa}{bao\+::dilation}} = 9
+\item 
+real(mcp) \mbox{\hyperlink{namespacebao_a4f0a92dc313e31a91e5edb5e2ef09fec}{bao\+::bao\+\_\+fixed\+\_\+rs}} = -\/1.\+\_\+mcp
+\end{DoxyCompactItemize}

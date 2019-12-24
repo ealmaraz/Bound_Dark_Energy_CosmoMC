@@ -1,0 +1,9 @@
+<map id="transfer::transfer_free" name="transfer::transfer_free">
+<area shape="rect" id="node2" href="$namespacecamb.html#a70f3206a0056ea3ff96defbc4d2be548" title="camb::camb_cleanup" alt="" coords="217,5,364,32"/>
+<area shape="rect" id="node3" href="$namespacecamb.html#a20b57e6f6098c5800cbf374d96307d13" title="camb::camb_freecambdata" alt="" coords="201,56,381,83"/>
+<area shape="rect" id="node5" href="$namespacecamb.html#ae587b573e03da5811edb59806305b2cd" title="camb::camb_gettransfers" alt="" coords="205,143,376,169"/>
+<area shape="rect" id="node4" href="$namespacehandles.html#ab179d576d5e788ddc19e8a8c841aeade" title="handles::cambdata_free" alt="" coords="453,37,614,64"/>
+<area shape="rect" id="node6" href="$namespacecalculator__camb.html#a9e8887a3ae9da2bb092aac4285234df4" title="calculator_camb::cambcalc\l_getnewtransferdata" alt="" coords="443,89,624,130"/>
+<area shape="rect" id="node7" href="$namespacecalculator__camb.html#a46bd33ed008e289fb5cb08f6feb86419" title="calculator_camb::cambcalc\l_gettheoryforimportance" alt="" coords="443,154,624,195"/>
+<area shape="rect" id="node8" href="$namespacehandles.html#a386ee0a28e6860d14047f052c918ca43" title="handles::cambdata_gettransfers" alt="" coords="429,220,637,247"/>
+</map>

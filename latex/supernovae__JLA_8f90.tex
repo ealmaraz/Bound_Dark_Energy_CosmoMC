@@ -1,0 +1,154 @@
+\hypertarget{supernovae__JLA_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/supernovae\+\_\+\+J\+LA.f90 File Reference}
+\label{supernovae__JLA_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/supernovae\+\_\+\+J\+L\+A.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/supernovae\+\_\+\+J\+L\+A.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structjla_1_1jlalikelihood}{jla\+::jlalikelihood}}
+\item 
+type \mbox{\hyperlink{structjla_1_1supernova}{jla\+::supernova}}
+\item 
+type \mbox{\hyperlink{structjla_1_1supernova__absdist}{jla\+::supernova\+\_\+absdist}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacejla}{jla}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_a76279ec95aebe74a01796fb5d2734d94}{jla\+::jlalikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_a2b7997e55b705956940cd1729f2a6e93}{jla\+::count\+\_\+lines}} (lun, lines, noncommentlines)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_ae2ea921f1a8597682a71a793dc11bbe7}{jla\+::read\+\_\+cov\+\_\+matrix}} (filename, mat, n)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_aadb5af8cc4301188cd29adc8b94a5bb0}{jla\+::read\+\_\+jla\+\_\+lc\+\_\+data}} (lun, nlines, nnoncommentlines, sndata)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_ad1ad5e96f9f9f225249edadd8b348012}{jla\+::read\+\_\+jla\+\_\+absdist\+\_\+data}} (lun, nlines, nnoncommentlines, snabsdist)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_af2e3afa13e8cf5731d6cf06c1ddaf31a}{jla\+::match\+\_\+jla\+\_\+absdist\+\_\+indices}} (sndata, snabsdist)
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_a3a08d66a30f511b1a63b006b9c1fac53}{jla\+::read\+\_\+jla\+\_\+dataset}} (filename)
+\item 
+subroutine \mbox{\hyperlink{namespacejla_a212c8dceda3061fd0e44c6a2834a4196}{jla\+::invert\+\_\+covariance\+\_\+matrix}} (invcovmat, alpha, beta, status)
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_a840bbaee909bef635242328944cb1a14}{jla\+::jla\+\_\+prep}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_abe626bf6278990fc57f73440426b3740}{jla\+::jla\+\_\+cleanup}}
+\item 
+real(mcp) function \mbox{\hyperlink{namespacejla_aaf4f263910da5f17d55cd63613847567}{jla\+::jla\+\_\+alpha\+\_\+beta\+\_\+like}} (alpha, beta, lumdists)
+\item 
+real(mcp) function, public \mbox{\hyperlink{namespacejla_a9a536b5f47c5314d3099af7ca66ec027}{jla\+::jla\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacejla_af9daaf320a7953866d9f29f7f569fbe4}{jla\+::jla\+\_\+marginalize}} = .false.
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacejla_a9dc22edc44b8361f9204d217df48cd90}{jla\+::jla\+\_\+marge\+\_\+grid}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacejla_a1b7511f05dabf960a434da4444f44b88}{jla\+::alpha\+\_\+grid}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacejla_a105d58f143e8da2dc75625cfaeed54e7}{jla\+::beta\+\_\+grid}}
+\item 
+integer \mbox{\hyperlink{namespacejla_abdf521613e95b6b0873dc07e2182f08c}{jla\+::jla\+\_\+marge\+\_\+steps}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{namespacejla_a1b8ab5c356e2c83f267f757196a4a1d2}{jla\+::jla\+\_\+step\+\_\+width\+\_\+alpha}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacejla_adbfc26690b5ccc65be262cc876cb3bc0}{jla\+::jla\+\_\+step\+\_\+width\+\_\+beta}}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacejla_a4556268c3d45127055caae2fcea446fc}{jla\+::jla\+\_\+alpha\+\_\+center}} = 0.\+14
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacejla_a9a9c2c6948ab744eed4e350dad8715bc}{jla\+::jla\+\_\+beta\+\_\+center}} = 3.\+123
+\item 
+integer \mbox{\hyperlink{namespacejla_a11ab12ec846d481127e505fb14a88ab3}{jla\+::jla\+\_\+int\+\_\+points}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{jla\+::dl}} = mcp
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacejla_a9facfef6576a64d9e5b180caec42ea7d}{jla\+::jla\+\_\+version}} = \textquotesingle{}December\+\_\+2013\textquotesingle{}
+\item 
+logical, parameter \mbox{\hyperlink{namespacejla_a5032684691d0e984e5aa1cbdc55795f7}{jla\+::allow\+\_\+inv\+\_\+cache}} = .false.
+\item 
+real(dl), parameter, private \mbox{\hyperlink{namespacejla_a3f2ed7b8048c2f4dd93374020335944f}{jla\+::inv\+\_\+twopi}} = 1.\+0\+\_\+dl / twopi
+\item 
+character, parameter, private \mbox{\hyperlink{namespacejla_ae9dda5d2cfb1fec80f10dea135ea407e}{jla\+::uplo}} = \textquotesingle{}U\textquotesingle{}
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacejla_a15038ba72bb06d328f2c43f0d0dd5a53}{jla\+::max\+\_\+idisp\+\_\+datasets}} = 10
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacejla_a211c3f57dbbc51d6959058d935cc0fb6}{jla\+::snnamelen}} = 12
+\item 
+real(dl), parameter, private \mbox{\hyperlink{namespacejla_ac0c65fbeb2a567849038727459759c29}{jla\+::h0cfac}} = 5$\ast$L\+O\+G10( 100.\+0/299792.\+458 )
+\item 
+real(dl), parameter, private \mbox{\hyperlink{namespacejla_a0298c9010520a99e272978ce5f61a83a}{jla\+::alphatol}} = 1\+E-\/10\+\_\+dl
+\item 
+real(dl), parameter, private \mbox{\hyperlink{namespacejla_a5ef48a10dbf7795c2f5d30b11434bbd4}{jla\+::betatol}} = 1\+E-\/10\+\_\+dl
+\item 
+character(len=30), private \mbox{\hyperlink{namespacejla_a344f6058fc2504417d29ec6990051554}{jla\+::name}}
+\item 
+real(dl), private \mbox{\hyperlink{namespacejla_a5f4aaf92cb5a44de1cce93628083b789}{jla\+::pecz}}
+\item 
+real(dl), dimension(max\+\_\+idisp\+\_\+datasets) \mbox{\hyperlink{namespacejla_a20678b08d3fa64ee1a64c9ff41d1cdf9}{jla\+::intrinsicdisp}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a6aade81a34ccb4e5795d2141aeace91d}{jla\+::twoscriptmfit}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a340aa04c1acf8e62ad8fe9261de0ad91}{jla\+::has\+\_\+thirdvar}}
+\item 
+real(dl), private \mbox{\hyperlink{namespacejla_af11758b53916846ed4875f3664797cb4}{jla\+::scriptmcut}}
+\item 
+integer, public \mbox{\hyperlink{namespacejla_aff413afd9288880fbc89d3a1f24f60eb}{jla\+::nsn}}
+\item 
+type(supernova), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_a9e2b90e3f1e2fbd40d61e0ad31bb2684}{jla\+::sndata}}
+\item 
+real(dl), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_aa01e50e6176267ba591eec0a0f61bfa2}{jla\+::pre\+\_\+vars}}
+\item 
+real(dl), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_af953b413735d88b2fb4acce3a491e092}{jla\+::a1}}
+\item 
+real(dl), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_a4745bbeba0b176717566b37123f5a538}{jla\+::a2}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_ab5b550ee0d2130dd40e4e517860a32e3}{jla\+::diag\+\_\+errors}} = .T\+R\+U\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a59c3668ae4a232ee84a102f4ea2515c1}{jla\+::has\+\_\+mag\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a41c379420fdf30a15f9f79533c2e9172}{jla\+::has\+\_\+stretch\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a5f77e309102810deed32022b4986fcd7}{jla\+::has\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a5b83e1587462131ae02f6c91ac9831f3}{jla\+::has\+\_\+mag\+\_\+stretch\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_aab6bb8e29688907bcdf528d8aeb19f04}{jla\+::has\+\_\+mag\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a32dbd6f4ba90d52437050c67650569cc}{jla\+::has\+\_\+stretch\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a337800de4314f7309ac0d0fb2f7a0278}{jla\+::alphabeta\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+real(dl), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a268b540e94d941747a6f2a4ae9db5fc6}{jla\+::mag\+\_\+covmat}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a7244bc3fbb6a94e6d1fe9d0e1fbaaef8}{jla\+::stretch\+\_\+covmat}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a3b95b3e7a5ea31feba90bf7c9b9e8fc6}{jla\+::colour\+\_\+covmat}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a6d4dd0b09a0e00323bc4f74df2235901}{jla\+::mag\+\_\+stretch\+\_\+covmat}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a0eab7a6fccee7c07f28748c3bcb2c260}{jla\+::mag\+\_\+colour\+\_\+covmat}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a22070c0614b05ee2b305729eddeb3d9d}{jla\+::stretch\+\_\+colour\+\_\+covmat}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a2eb95509fe329afa263dcfa2727d6b41}{jla\+::has\+\_\+absdist}} = .F\+A\+L\+S\+E.
+\item 
+integer, private \mbox{\hyperlink{namespacejla_ac196ce11e9bc46a1f0f7190de071358a}{jla\+::nabsdist}} = 0
+\item 
+type(supernova\+\_\+absdist), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_ac714ae18a12d4b4a726b05c017fd1e92}{jla\+::snabsdist}}
+\item 
+real(dl), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_a488389e4c0ef651c499c3c48d6bee7ef}{jla\+::lumdists}}
+\item 
+real(dl), private \mbox{\hyperlink{namespacejla_ade47fc5cee67934ebf1deb3f971e55ba}{jla\+::alpha\+\_\+prev}}
+\item 
+real(dl), private \mbox{\hyperlink{namespacejla_a6ce045a151cda5e7f1d37adeac58eb4d}{jla\+::beta\+\_\+prev}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a7e32750158b057376c58db729873f935}{jla\+::first\+\_\+inversion}}
+\item 
+logical, public \mbox{\hyperlink{namespacejla_a408c4f01bb785e06e2a2555aa770e090}{jla\+::jla\+\_\+read}} = .F\+A\+L\+S\+E.
+\item 
+logical, public \mbox{\hyperlink{namespacejla_a8a48484fda3925329cb345d9b671b56b}{jla\+::jla\+\_\+prepped}} = .F\+A\+L\+S\+E.
+\end{DoxyCompactItemize}

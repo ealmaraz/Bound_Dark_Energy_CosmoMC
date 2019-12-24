@@ -1,0 +1,80 @@
+\hypertarget{bessels_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/bessels.f90 File Reference}
+\label{bessels_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/bessels.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/bessels.\+f90}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacespherbessels}{spherbessels}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_ab479fd257b8fa714e8a3522ab65e11af}{spherbessels\+::initspherbessels}}
+\item 
+subroutine \mbox{\hyperlink{namespacespherbessels_a94dad04f4df289878f0e038437916427}{spherbessels\+::generatebessels}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_a0abb3ebb234b8547151b14c0cdb439be}{spherbessels\+::bessels\+\_\+free}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_a1619c25c91b245252b30a3da4d640050}{spherbessels\+::bjl}} (L, X, JL)
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_a19f6db59afef649058999b63f9ab8f65}{spherbessels\+::uspherbesselwithderiv}} (closed, Chi, l, beta, y1, y2)
+\item 
+subroutine \mbox{\hyperlink{namespacespherbessels_a0d5dede9bff52decb1e7fb2d2df35d3a}{spherbessels\+::phi\+\_\+small\+\_\+closed\+\_\+int}} (l, beta, chi, y1, y2)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacespherbessels_ac2bed68bb6862f56c27d5a5cfc5fd94d}{spherbessels\+::phi\+\_\+recurs}} (l, K, beta, chi)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacespherbessels_ac93cf86caa7e4d63b164799492196aba}{spherbessels\+::phi\+\_\+langer}} (l, K, beta, chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_ae89051535f9e9606be1ab046f5a77854}{spherbessels\+::qintegral}} (sin\+\_\+K, alpha, K)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_a4a053c46f90faa3400f9619fc31cbd1d}{spherbessels\+::airy\+\_\+ai}} (x)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_afef9b0d68efd18edac5580591a39f7ba}{spherbessels\+::polevl}} (x, coef, N)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_a193e3d6761bf168624e2532123ccec2b}{spherbessels\+::p1evl}} (x, coef, N)
+\item 
+subroutine \mbox{\hyperlink{bessels_8f90_ac428f01b558b9ca2410cf327ca24ee7f}{bjl\+\_\+external}} (L, X, JL)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, public \mbox{\hyperlink{namespacespherbessels_ad90cf19f2544f8107ae70ec1b4cd64e0}{spherbessels\+::ajl}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, public \mbox{\hyperlink{namespacespherbessels_aafb6422b5aab90f84fdb3a955c129874}{spherbessels\+::ajlpr}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, public \mbox{\hyperlink{namespacespherbessels_a90a7acde21383c40c841e0a11e87526f}{spherbessels\+::ddajlpr}}
+\item 
+integer \mbox{\hyperlink{namespacespherbessels_af8cc74b859928826e087b37b4c365afa}{spherbessels\+::num\+\_\+xx}}
+\item 
+integer \mbox{\hyperlink{namespacespherbessels_acaac392a6ea328fe36eff8c422ff06ea}{spherbessels\+::kmaxfile}}
+\item 
+integer \mbox{\hyperlink{namespacespherbessels_ab9b99f417336f962381e26fc7611affa}{spherbessels\+::file\+\_\+numl}}
+\item 
+integer, dimension(lmax\+\_\+arr) \mbox{\hyperlink{namespacespherbessels_abe559ecdb38e3d5173cbf2c709b7a694}{spherbessels\+::file\+\_\+l}}
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacespherbessels_a7609b1d2bbb03aefd6c6f47a69538eed}{spherbessels\+::xlimmin}} =35.\+\_\+dl
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacespherbessels_a07d278e5f2a51b79893a106358cb1afc}{spherbessels\+::xlimfrac}} = 0.\+05\+\_\+dl
+\item 
+type(regions), public \mbox{\hyperlink{namespacespherbessels_a3ae9c132f8c8a13f8d061492485272b8}{spherbessels\+::bessranges}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{bessels_8f90_ac428f01b558b9ca2410cf327ca24ee7f}\label{bessels_8f90_ac428f01b558b9ca2410cf327ca24ee7f}} 
+\index{bessels.\+f90@{bessels.\+f90}!bjl\+\_\+external@{bjl\+\_\+external}}
+\index{bjl\+\_\+external@{bjl\+\_\+external}!bessels.\+f90@{bessels.\+f90}}
+\subsubsection{\texorpdfstring{bjl\+\_\+external()}{bjl\_external()}}
+{\footnotesize\ttfamily subroutine bjl\+\_\+external (\begin{DoxyParamCaption}\item[{integer}]{L,  }\item[{real(dl)}]{X,  }\item[{real(dl)}]{JL }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References spherbessels\+::bjl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{bessels_8f90_ac428f01b558b9ca2410cf327ca24ee7f_cgraph}
+\end{center}
+\end{figure}

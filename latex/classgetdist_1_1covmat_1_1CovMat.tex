@@ -1,0 +1,254 @@
+\hypertarget{classgetdist_1_1covmat_1_1CovMat}{}\section{getdist.\+covmat.\+Cov\+Mat Class Reference}
+\label{classgetdist_1_1covmat_1_1CovMat}\index{getdist.\+covmat.\+Cov\+Mat@{getdist.\+covmat.\+Cov\+Mat}}
+
+
+Inheritance diagram for getdist.\+covmat.\+Cov\+Mat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classgetdist_1_1covmat_1_1CovMat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+covmat.\+Cov\+Mat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classgetdist_1_1covmat_1_1CovMat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_a3b43667e56d23152e5d8970bdd911623}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, filename=\textquotesingle{}\textquotesingle{}, \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_abb601a3118265f1b3284e0c270f88ee6}{matrix}}=None, \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_aeb4d5170fe2277abd0d4a77e567caad2}{param\+Names}}=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_a4565752dad2a96822320edb84eda5c09}{param\+Name\+String}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_abfc622cd1affb70314b55774500ef495}{load\+From\+File}} (self, filename)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_af22c0b0f5ef4374dc5b6e20d31f4bd4b}{save\+To\+File}} (self, filename)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_a851295e6f66d18ab8392b0a4f33fb2bf}{rescale\+Parameter}} (self, name, scale)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_ad2a276c4ce0e9aa059c9cb34790987e4}{merge\+Covmat\+Where\+New}} (self, cov2)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_a17725849ae798508a7fa2847ecb06d8c}{correlation}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_a5621f155a5025de50ea2a248811d5781}{plot}} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_abb601a3118265f1b3284e0c270f88ee6}{matrix}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_aeb4d5170fe2277abd0d4a77e567caad2}{param\+Names}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1covmat_1_1CovMat_a7af1ee8db220767ce81239a696f7b717}{size}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Class holding a covariance matrix for some named parameters
+
+:ivar matrix: the covariance matrix  (square numpy array)
+:ivar paramNames: list of parameter name strings
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_a3b43667e56d23152e5d8970bdd911623}\label{classgetdist_1_1covmat_1_1CovMat_a3b43667e56d23152e5d8970bdd911623}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{matrix = {\ttfamily None},  }\item[{}]{param\+Names = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param filename: optionally, a file name to load from\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_a17725849ae798508a7fa2847ecb06d8c}\label{classgetdist_1_1covmat_1_1CovMat_a17725849ae798508a7fa2847ecb06d8c}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!correlation@{correlation}}
+\index{correlation@{correlation}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{correlation()}{correlation()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+correlation (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the correlation matrix
+
+:return: numpy array giving the correlation matrix
+\end{DoxyVerb}
+ 
+
+References getdist.\+covmat.\+Cov\+Mat.\+matrix, and getdist.\+covmat.\+Cov\+Mat.\+size.
+
+
+
+Referenced by getdist.\+covmat.\+Cov\+Mat.\+plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1covmat_1_1CovMat_a17725849ae798508a7fa2847ecb06d8c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_abfc622cd1affb70314b55774500ef495}\label{classgetdist_1_1covmat_1_1CovMat_abfc622cd1affb70314b55774500ef495}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+load\+From\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+covmat.\+Cov\+Mat.\+matrix, getdist.\+covmat.\+Cov\+Mat.\+param\+Names, getdist.\+chains.\+Chains.\+param\+Names, and getdist.\+covmat.\+Cov\+Mat.\+size.
+
+
+
+Referenced by getdist.\+types.\+Best\+Fit.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1covmat_1_1CovMat_abfc622cd1affb70314b55774500ef495_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_ad2a276c4ce0e9aa059c9cb34790987e4}\label{classgetdist_1_1covmat_1_1CovMat_ad2a276c4ce0e9aa059c9cb34790987e4}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!merge\+Covmat\+Where\+New@{merge\+Covmat\+Where\+New}}
+\index{merge\+Covmat\+Where\+New@{merge\+Covmat\+Where\+New}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{merge\+Covmat\+Where\+New()}{mergeCovmatWhereNew()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+merge\+Covmat\+Where\+New (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cov2 }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+covmat.\+Cov\+Mat.\+matrix, getdist.\+covmat.\+Cov\+Mat.\+param\+Names, getdist.\+chains.\+Chains.\+param\+Names, and copy\+Grid\+Files.\+zip.
+
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_a4565752dad2a96822320edb84eda5c09}\label{classgetdist_1_1covmat_1_1CovMat_a4565752dad2a96822320edb84eda5c09}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!param\+Name\+String@{param\+Name\+String}}
+\index{param\+Name\+String@{param\+Name\+String}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{param\+Name\+String()}{paramNameString()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+param\+Name\+String (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+References stringutils.\+join(), getdist.\+covmat.\+Cov\+Mat.\+param\+Names, and getdist.\+chains.\+Chains.\+param\+Names.
+
+
+
+Referenced by getdist.\+covmat.\+Cov\+Mat.\+save\+To\+File().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1covmat_1_1CovMat_a4565752dad2a96822320edb84eda5c09_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1covmat_1_1CovMat_a4565752dad2a96822320edb84eda5c09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_a5621f155a5025de50ea2a248811d5781}\label{classgetdist_1_1covmat_1_1CovMat_a5621f155a5025de50ea2a248811d5781}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!plot@{plot}}
+\index{plot@{plot}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{plot()}{plot()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+plot (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Plot the correlation matrix as grid of colored squares
+\end{DoxyVerb}
+ 
+
+References getdist.\+covmat.\+Cov\+Mat.\+correlation(), getdist.\+covmat.\+Cov\+Mat.\+param\+Names, getdist.\+chains.\+Chains.\+param\+Names, and getdist.\+covmat.\+Cov\+Mat.\+size.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1covmat_1_1CovMat_a5621f155a5025de50ea2a248811d5781_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_a851295e6f66d18ab8392b0a4f33fb2bf}\label{classgetdist_1_1covmat_1_1CovMat_a851295e6f66d18ab8392b0a4f33fb2bf}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!rescale\+Parameter@{rescale\+Parameter}}
+\index{rescale\+Parameter@{rescale\+Parameter}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{rescale\+Parameter()}{rescaleParameter()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+rescale\+Parameter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{scale }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used to rescale a covariance if a parameter is renormalized
+
+:param name: parameter name to rescale
+:scale scale: value to rescale by 
+\end{DoxyVerb}
+ 
+
+References chain\+Peek.\+index, getdist.\+covmat.\+Cov\+Mat.\+matrix, getdist.\+covmat.\+Cov\+Mat.\+param\+Names, and getdist.\+chains.\+Chains.\+param\+Names.
+
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_af22c0b0f5ef4374dc5b6e20d31f4bd4b}\label{classgetdist_1_1covmat_1_1CovMat_af22c0b0f5ef4374dc5b6e20d31f4bd4b}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!save\+To\+File@{save\+To\+File}}
+\index{save\+To\+File@{save\+To\+File}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{save\+To\+File()}{saveToFile()}}
+{\footnotesize\ttfamily def getdist.\+covmat.\+Cov\+Mat.\+save\+To\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save the covariance matrix to a text file, with comment header listing the parameter names
+
+:param filename: name of file to save to (.covmat)
+\end{DoxyVerb}
+ 
+
+References getdist.\+covmat.\+Cov\+Mat.\+matrix, and getdist.\+covmat.\+Cov\+Mat.\+param\+Name\+String().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1covmat_1_1CovMat_af22c0b0f5ef4374dc5b6e20d31f4bd4b_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_abb601a3118265f1b3284e0c270f88ee6}\label{classgetdist_1_1covmat_1_1CovMat_abb601a3118265f1b3284e0c270f88ee6}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!matrix@{matrix}}
+\index{matrix@{matrix}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily getdist.\+covmat.\+Cov\+Mat.\+matrix}
+
+
+
+Referenced by getdist.\+covmat.\+Cov\+Mat.\+correlation(), getdist.\+covmat.\+Cov\+Mat.\+load\+From\+File(), getdist.\+covmat.\+Cov\+Mat.\+merge\+Covmat\+Where\+New(), getdist.\+covmat.\+Cov\+Mat.\+rescale\+Parameter(), and getdist.\+covmat.\+Cov\+Mat.\+save\+To\+File().
+
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_aeb4d5170fe2277abd0d4a77e567caad2}\label{classgetdist_1_1covmat_1_1CovMat_aeb4d5170fe2277abd0d4a77e567caad2}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!param\+Names@{param\+Names}}
+\index{param\+Names@{param\+Names}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{param\+Names}{paramNames}}
+{\footnotesize\ttfamily getdist.\+covmat.\+Cov\+Mat.\+param\+Names}
+
+
+
+Referenced by getdist.\+covmat.\+Cov\+Mat.\+load\+From\+File(), getdist.\+covmat.\+Cov\+Mat.\+merge\+Covmat\+Where\+New(), getdist.\+covmat.\+Cov\+Mat.\+param\+Name\+String(), getdist.\+covmat.\+Cov\+Mat.\+plot(), and getdist.\+covmat.\+Cov\+Mat.\+rescale\+Parameter().
+
+\mbox{\Hypertarget{classgetdist_1_1covmat_1_1CovMat_a7af1ee8db220767ce81239a696f7b717}\label{classgetdist_1_1covmat_1_1CovMat_a7af1ee8db220767ce81239a696f7b717}} 
+\index{getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}!size@{size}}
+\index{size@{size}!getdist\+::covmat\+::\+Cov\+Mat@{getdist\+::covmat\+::\+Cov\+Mat}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily getdist.\+covmat.\+Cov\+Mat.\+size}
+
+
+
+Referenced by getdist.\+covmat.\+Cov\+Mat.\+correlation(), getdist.\+covmat.\+Cov\+Mat.\+load\+From\+File(), getdist.\+covmat.\+Cov\+Mat.\+plot(), and getdist.\+gui.\+mainwindow.\+Main\+Window.\+write\+Settings().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{covmat_8py}{covmat.\+py}}\end{DoxyCompactItemize}

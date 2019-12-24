@@ -1,0 +1,22 @@
+<map id="getdist.chains.WeightedSamples.initParamConfidenceData" name="getdist.chains.WeightedSamples.initParamConfidenceData">
+<area shape="rect" id="node2" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ab6b6a1e603f89d1266dd7d2f5e6ae51c" title="getdist.mcsamples.MCSamples.\l_initParam" alt="" coords="630,167,842,209"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ae22105031ef07db6d65ce05fef3b15e8" title="getdist.mcsamples.MCSamples.\l_setDensitiesandMarge1D" alt="" coords="2030,43,2242,85"/>
+<area shape="rect" id="node20" href="$classgetdist_1_1chains_1_1WeightedSamples.html#aafea7daa99724b91392e41c4157a29a0" title="getdist.chains.WeightedSamples.confidence" alt="" coords="288,109,568,136"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a6b6dd422ba0e76f758c0ac875ea6ad74" title="getdist.mcsamples.MCSamples.\l_initParamRanges" alt="" coords="905,167,1117,209"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#aa70441a6c22c1b03f47f56f08fd67cd1" title="getdist.mcsamples.MCSamples.PCA" alt="" coords="1165,116,1405,143"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a53dc1a5889467700091389070326f0c9" title="getdist.mcsamples.MCSamples.get1\lDDensityGridData" alt="" coords="1167,167,1404,209"/>
+<area shape="rect" id="node14" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a591064d13448b148006ce8246ad4446f" title="getdist.mcsamples.MCSamples.get2\lDDensityGridData" alt="" coords="1167,233,1404,274"/>
+<area shape="rect" id="node18" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a8a54d102a9c5428e83651b3585f0e148" title="getdist.mcsamples.MCSamples.get\lRawNDDensityGridData" alt="" coords="1170,327,1401,369"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a67d8f66e8c759cac71fc3c0562faa74d" title="getdist.mcsamples.MCSamples.get1\lDDensity" alt="" coords="1455,109,1692,150"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a1d4ac9d66e1401a3a2e082cd18393f2b" title="getdist.mcsamples.MCSamples.\l_getScaleForParam" alt="" coords="1755,109,1967,150"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a90a8cf01a23a304a6e5fe07db7a74e1a" title="getdist.mcsamples.MCSamples.\l_setMargeLimits" alt="" coords="1755,43,1967,85"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ac23f96add8b4fc35b7dd3a922fae119f" title="getdist.mcsamples.MCSamples.get\lMargeStats" alt="" coords="2291,43,2522,85"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a2faa89318b77f8c9a09eec976272f54c" title="getdist.mcsamples.MCSamples.get\lTable" alt="" coords="2571,10,2802,51"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#aa4fc7b33808a24cb90238f2b24500899" title="getdist.mcsamples.MCSamples.get\lLatex" alt="" coords="2571,75,2802,117"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ad03ae7e378ba02de8fcecb16934b9e65" title="getdist.mcsamples.MCSamples.get\lInlineLatex" alt="" coords="2851,75,3082,117"/>
+<area shape="rect" id="node15" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a0987c9312d821d6916322667f208ebcf" title="getdist.mcsamples.MCSamples.get2\lDDensity" alt="" coords="1455,226,1692,267"/>
+<area shape="rect" id="node16" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a23206744ace06726c8026481294f3f63" title="getdist.mcsamples.MCSamples.write\lScriptPlots2D" alt="" coords="1453,291,1693,333"/>
+<area shape="rect" id="node17" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a658aa2c258861d420985ec8065481efa" title="getdist.mcsamples.MCSamples.write\lScriptPlots1D" alt="" coords="1741,291,1981,333"/>
+<area shape="rect" id="node19" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a35fd7d8a3b07a70a66a013e9cb265c95" title="getdist.mcsamples.MCSamples.get\lRawNDDensity" alt="" coords="1458,357,1689,398"/>
+<area shape="rect" id="node21" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a85a7b24ea47b3ff8a4f1595e026abae4" title="getdist.chains.WeightedSamples.two\lTailLimits" alt="" coords="617,102,855,143"/>
+</map>

@@ -1,0 +1,835 @@
+\hypertarget{namespacetransfer}{}\section{transfer Module Reference}
+\label{namespacetransfer}\index{transfer@{transfer}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}}
+\item 
+type \mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}
+\item 
+interface \mbox{\hyperlink{interfacetransfer_1_1transfer__getmatterpower}{transfer\+\_\+getmatterpower}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_af736a104130d0ba0ffbadfa62d245747}{transfer\+\_\+getunsplinedpower}} (M, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a8690f3749fa31715c7729f1f934b7d91}{transfer\+\_\+getunsplinednonlinearpower}} (M, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a149c7870c28cd849591073c3d8f76d69}{transfer\+\_\+getmatterpowerdata}} (M\+Trans, P\+K\+\_\+data, power\+\_\+ix, itf\+\_\+only, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_af9f31cacfbd0270f60f1c42a0b38dd62}{matterpowerdata\+\_\+load}} (P\+K\+\_\+data, fname)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_ad195947cd911f4aef6edba0319f4ac2f}{matterpowerdata\+\_\+getsplines}} (P\+K\+\_\+data)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a113eb04b73dbf4222ca5a7e88eea5528}{matterpowerdata\+\_\+makenonlinear}} (P\+K\+\_\+data)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_aca3eef4bfa07144ae4db1ec793e42c70}{matterpowerdata\+\_\+free}} (P\+K\+\_\+data)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a890cb72b18bbeb6b973f55ac477250e2}{matterpowerdata\+\_\+nullify}} (P\+K\+\_\+data)
+\item 
+real(dl) function \mbox{\hyperlink{namespacetransfer_a7d7e2b6a55941b8e40b01b2cfed0af02}{matterpowerdata\+\_\+k}} (PK, kh, itf)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a4515b492b259544eae13a774663d6cea}{transfer\+\_\+getmatterpowers}} (M\+Trans, outpower, itf, in, minkh, dlnkh, npoints, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_aec77f610696b7445e8c8e070491ca238}{transfer\+\_\+getmatterpowerd}} (M\+Trans, outpower, itf\+\_\+\+PK, in, minkh, dlnkh, npoints, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a0b068265a029b16713e45ff26d8e6794}{transfer\+\_\+get\+\_\+sigmar}} (M\+Trans, R, outvals, var1, var2, power\+\_\+ix, root)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a9f16a04226ffcb97b7f2bfc5b681f3b4}{transfer\+\_\+getsigmararray}} (M\+Trans, R, sigmaR, redshift\+\_\+ix, var1, var2, power\+\_\+ix)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a6330289a440bd51a5c55da9c40dee8a2}{transfer\+\_\+get\+\_\+sigma8}} (M\+Trans, R, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a94b4673ba4b74ac5aef785afde714446}{transfer\+\_\+get\+\_\+sigmas}} (M\+Trans, R, var\+\_\+delta, var\+\_\+v)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a7f7da292010e79184bed8cdb24e03d2b}{transfer\+\_\+output\+\_\+sig8}} (M\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a687f977819e9abe471f86cff900939e7}{transfer\+\_\+allocate}} (M\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a0e02ff3d1ba9dd5ad8c5dcaf76987ecc}{transfer\+\_\+nullify}} (Mtrans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a34407967277591afeb26880a4f0926dc}{transfer\+\_\+free}} (M\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_ad877dbf164ab7d108432f41d21c155fd}{transfer\+\_\+setfornonlinearlensing}} (P)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_adc67bad9d6015b3ecd203551b927d522}{transfer\+\_\+savetofiles}} (M\+Trans, File\+Names)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a4204b279b39e55f31b7948dec07fd7ed}{transfer\+\_\+savematterpower}} (M\+Trans, File\+Names)
+\item 
+subroutine \mbox{\hyperlink{namespacetransfer_a138e96e5b60355e8136607e26339b2a0}{transfer\+\_\+sortandindexredshifts}} (P)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a53e222aefb0911649bf35fc879a5f367}{transfer\+\_\+kh}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a9e67898263c714e994816a119937416f}{transfer\+\_\+cdm}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_ab15ebb6605b445eaddd657e94abc151b}{transfer\+\_\+b}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a4076f4ea08670377ed92c3a16ced89f0}{transfer\+\_\+g}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a55264fe59289090c8c796b22c71d5937}{transfer\+\_\+r}} =5
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a88f1f472755284c745f4f9627f3385f3}{transfer\+\_\+nu}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a96bc38e4fa7d41872d481db49a3e5f46}{transfer\+\_\+tot}} =7
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_aa028f75ae9a421f87ff8e2ebbfb88e73}{transfer\+\_\+nonu}} =8
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a3ae9f7a69bc80c029fe96b8a1de263b3}{transfer\+\_\+tot\+\_\+de}} =9
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_adc4f1fee4e89ed92a0865f3854118eca}{transfer\+\_\+weyl}} = 10
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_acac3c3e5a8b36cd08ca97ca40bd92fcc}{transfer\+\_\+newt\+\_\+vel\+\_\+cdm}} =11
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_acfa190894a4b625fe771219f23b9bc2f}{transfer\+\_\+newt\+\_\+vel\+\_\+baryon}} =12
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_a355c8bcd1bf73a87d603cd7f77c702d0}{transfer\+\_\+vel\+\_\+baryon\+\_\+cdm}} = 13
+\item 
+integer, parameter \mbox{\hyperlink{namespacetransfer_ac87f6542d01968f20465ccd32f02667c}{transfer\+\_\+max}} = Transfer\+\_\+vel\+\_\+baryon\+\_\+cdm
+\item 
+character(len=name\+\_\+tag\+\_\+len), dimension(\mbox{\hyperlink{namespacetransfer_ac87f6542d01968f20465ccd32f02667c}{transfer\+\_\+max}}-\/1) \mbox{\hyperlink{namespacetransfer_ac02a42ae84b0dbee0b48ed2dd95b6dc8}{transfer\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}C\+DM \textquotesingle{}, \textquotesingle{}baryon \textquotesingle{}, \textquotesingle{}photon \textquotesingle{}, \textquotesingle{}nu \textquotesingle{}, \textquotesingle{}mass\+\_\+nu \textquotesingle{}, \textquotesingle{}total \textquotesingle{}, \textquotesingle{}no\+\_\+nu \textquotesingle{}, \textquotesingle{}total\+\_\+de\textquotesingle{}, \textquotesingle{}Weyl \textquotesingle{}, \textquotesingle{}v\+\_\+\+C\+DM \textquotesingle{}, \textquotesingle{}v\+\_\+b \textquotesingle{}, \textquotesingle{}v\+\_\+b-\/v\+\_\+c \textquotesingle{}\mbox{]}
+\item 
+logical \mbox{\hyperlink{namespacetransfer_a1dfb4e8c94804bd740e5d676a5b23d6f}{transfer\+\_\+interp\+\_\+matterpower}} = .true.
+\item 
+integer \mbox{\hyperlink{namespacetransfer_abd233741f7f81807122709afee55d2f2}{transfer\+\_\+power\+\_\+var}} = Transfer\+\_\+tot
+\item 
+logical \mbox{\hyperlink{namespacetransfer_a271d66692c1d4b207c6e033b5a8197e8}{get\+\_\+growth\+\_\+sigma8}} = .true.
+\item 
+type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), save \mbox{\hyperlink{namespacetransfer_abf8737afeb10e8b167c70416ad103a74}{mt}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacetransfer_aca3eef4bfa07144ae4db1ec793e42c70}\label{namespacetransfer_aca3eef4bfa07144ae4db1ec793e42c70}} 
+\index{transfer@{transfer}!matterpowerdata\+\_\+free@{matterpowerdata\+\_\+free}}
+\index{matterpowerdata\+\_\+free@{matterpowerdata\+\_\+free}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{matterpowerdata\+\_\+free()}{matterpowerdata\_free()}}
+{\footnotesize\ttfamily subroutine transfer\+::matterpowerdata\+\_\+free (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{P\+K\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+References matterpowerdata\+\_\+nullify().
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnlandratios(), cambmain\+::makenonlinearsources(), lrggettheory\+::transfer\+\_\+getmatterpowerandnw(), transfer\+\_\+getmatterpowerd(), transfer\+\_\+getmatterpowerdata(), transfer\+\_\+getsigmararray(), transfer\+\_\+getunsplinednonlinearpower(), and transfer\+\_\+savematterpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_aca3eef4bfa07144ae4db1ec793e42c70_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_aca3eef4bfa07144ae4db1ec793e42c70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_ad195947cd911f4aef6edba0319f4ac2f}\label{namespacetransfer_ad195947cd911f4aef6edba0319f4ac2f}} 
+\index{transfer@{transfer}!matterpowerdata\+\_\+getsplines@{matterpowerdata\+\_\+getsplines}}
+\index{matterpowerdata\+\_\+getsplines@{matterpowerdata\+\_\+getsplines}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{matterpowerdata\+\_\+getsplines()}{matterpowerdata\_getsplines()}}
+{\footnotesize\ttfamily subroutine transfer\+::matterpowerdata\+\_\+getsplines (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{P\+K\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+References spline().
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnlandratios(), matterpowerdata\+\_\+load(), matterpowerdata\+\_\+makenonlinear(), and transfer\+\_\+getmatterpowerdata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{namespacetransfer_ad195947cd911f4aef6edba0319f4ac2f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_ad195947cd911f4aef6edba0319f4ac2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a7d7e2b6a55941b8e40b01b2cfed0af02}\label{namespacetransfer_a7d7e2b6a55941b8e40b01b2cfed0af02}} 
+\index{transfer@{transfer}!matterpowerdata\+\_\+k@{matterpowerdata\+\_\+k}}
+\index{matterpowerdata\+\_\+k@{matterpowerdata\+\_\+k}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{matterpowerdata\+\_\+k()}{matterpowerdata\_k()}}
+{\footnotesize\ttfamily real(dl) function transfer\+::matterpowerdata\+\_\+k (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{PK,  }\item[{real (dl), intent(in)}]{kh,  }\item[{integer, intent(in)}]{itf }\end{DoxyParamCaption})}
+
+
+
+Referenced by nonlinear\+::fill\+\_\+plintab(), nonlinear\+::nonlinear\+\_\+getnonlinratios(), transfer\+\_\+getsigmararray(), and nonlinear\+::wint().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a7d7e2b6a55941b8e40b01b2cfed0af02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_af9f31cacfbd0270f60f1c42a0b38dd62}\label{namespacetransfer_af9f31cacfbd0270f60f1c42a0b38dd62}} 
+\index{transfer@{transfer}!matterpowerdata\+\_\+load@{matterpowerdata\+\_\+load}}
+\index{matterpowerdata\+\_\+load@{matterpowerdata\+\_\+load}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{matterpowerdata\+\_\+load()}{matterpowerdata\_load()}}
+{\footnotesize\ttfamily subroutine transfer\+::matterpowerdata\+\_\+load (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{P\+K\+\_\+data,  }\item[{character(len=$\ast$)}]{fname }\end{DoxyParamCaption})}
+
+
+
+References matterpowerdata\+\_\+getsplines().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_af9f31cacfbd0270f60f1c42a0b38dd62_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a113eb04b73dbf4222ca5a7e88eea5528}\label{namespacetransfer_a113eb04b73dbf4222ca5a7e88eea5528}} 
+\index{transfer@{transfer}!matterpowerdata\+\_\+makenonlinear@{matterpowerdata\+\_\+makenonlinear}}
+\index{matterpowerdata\+\_\+makenonlinear@{matterpowerdata\+\_\+makenonlinear}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{matterpowerdata\+\_\+makenonlinear()}{matterpowerdata\_makenonlinear()}}
+{\footnotesize\ttfamily subroutine transfer\+::matterpowerdata\+\_\+makenonlinear (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{P\+K\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+References matterpowerdata\+\_\+getsplines(), and nonlinear\+\_\+getratios().
+
+
+
+Referenced by transfer\+\_\+savematterpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a113eb04b73dbf4222ca5a7e88eea5528_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacetransfer_a113eb04b73dbf4222ca5a7e88eea5528_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a890cb72b18bbeb6b973f55ac477250e2}\label{namespacetransfer_a890cb72b18bbeb6b973f55ac477250e2}} 
+\index{transfer@{transfer}!matterpowerdata\+\_\+nullify@{matterpowerdata\+\_\+nullify}}
+\index{matterpowerdata\+\_\+nullify@{matterpowerdata\+\_\+nullify}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{matterpowerdata\+\_\+nullify()}{matterpowerdata\_nullify()}}
+{\footnotesize\ttfamily subroutine transfer\+::matterpowerdata\+\_\+nullify (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{P\+K\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Referenced by matterpowerdata\+\_\+free().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a890cb72b18bbeb6b973f55ac477250e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a687f977819e9abe471f86cff900939e7}\label{namespacetransfer_a687f977819e9abe471f86cff900939e7}} 
+\index{transfer@{transfer}!transfer\+\_\+allocate@{transfer\+\_\+allocate}}
+\index{transfer\+\_\+allocate@{transfer\+\_\+allocate}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+allocate()}{transfer\_allocate()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+allocate (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{M\+Trans }\end{DoxyParamCaption})}
+
+
+
+References get\+\_\+growth\+\_\+sigma8, and transfer\+\_\+max.
+
+
+
+Referenced by cambmain\+::inittransfer().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a687f977819e9abe471f86cff900939e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a34407967277591afeb26880a4f0926dc}\label{namespacetransfer_a34407967277591afeb26880a4f0926dc}} 
+\index{transfer@{transfer}!transfer\+\_\+free@{transfer\+\_\+free}}
+\index{transfer\+\_\+free@{transfer\+\_\+free}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+free()}{transfer\_free()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+free (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{M\+Trans }\end{DoxyParamCaption})}
+
+
+
+References get\+\_\+growth\+\_\+sigma8, and transfer\+\_\+nullify().
+
+
+
+Referenced by camb\+::camb\+\_\+cleanup(), camb\+::camb\+\_\+freecambdata(), and camb\+::camb\+\_\+gettransfers().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{namespacetransfer_a34407967277591afeb26880a4f0926dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a34407967277591afeb26880a4f0926dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a6330289a440bd51a5c55da9c40dee8a2}\label{namespacetransfer_a6330289a440bd51a5c55da9c40dee8a2}} 
+\index{transfer@{transfer}!transfer\+\_\+get\+\_\+sigma8@{transfer\+\_\+get\+\_\+sigma8}}
+\index{transfer\+\_\+get\+\_\+sigma8@{transfer\+\_\+get\+\_\+sigma8}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+get\+\_\+sigma8()}{transfer\_get\_sigma8()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+get\+\_\+sigma8 (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{M\+Trans,  }\item[{real(dl), intent(in), optional}]{R,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2 }\end{DoxyParamCaption})}
+
+
+
+References errors\+::global\+\_\+error\+\_\+flag, and transfer\+\_\+get\+\_\+sigmar().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{namespacetransfer_a6330289a440bd51a5c55da9c40dee8a2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a0b068265a029b16713e45ff26d8e6794}\label{namespacetransfer_a0b068265a029b16713e45ff26d8e6794}} 
+\index{transfer@{transfer}!transfer\+\_\+get\+\_\+sigmar@{transfer\+\_\+get\+\_\+sigmar}}
+\index{transfer\+\_\+get\+\_\+sigmar@{transfer\+\_\+get\+\_\+sigmar}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+get\+\_\+sigmar()}{transfer\_get\_sigmar()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+get\+\_\+sigmar (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{M\+Trans,  }\item[{real(dl), intent(in)}]{R,  }\item[{real(dl), dimension(\+:), intent(out)}]{outvals,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2,  }\item[{integer, intent(in), optional}]{power\+\_\+ix,  }\item[{logical, intent(in), optional}]{root }\end{DoxyParamCaption})}
+
+
+
+References transfer\+\_\+kh, and transfer\+\_\+power\+\_\+var.
+
+
+
+Referenced by transfer\+\_\+get\+\_\+sigma8(), and transfer\+\_\+get\+\_\+sigmas().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a0b068265a029b16713e45ff26d8e6794_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a94b4673ba4b74ac5aef785afde714446}\label{namespacetransfer_a94b4673ba4b74ac5aef785afde714446}} 
+\index{transfer@{transfer}!transfer\+\_\+get\+\_\+sigmas@{transfer\+\_\+get\+\_\+sigmas}}
+\index{transfer\+\_\+get\+\_\+sigmas@{transfer\+\_\+get\+\_\+sigmas}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+get\+\_\+sigmas()}{transfer\_get\_sigmas()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+get\+\_\+sigmas (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{M\+Trans,  }\item[{real(dl), intent(in), optional}]{R,  }\item[{integer, intent(in), optional}]{var\+\_\+delta,  }\item[{integer, intent(in), optional}]{var\+\_\+v }\end{DoxyParamCaption})}
+
+
+
+References get\+\_\+growth\+\_\+sigma8, errors\+::global\+\_\+error\+\_\+flag, transfer\+\_\+get\+\_\+sigmar(), transfer\+\_\+newt\+\_\+vel\+\_\+cdm, and transfer\+\_\+power\+\_\+var.
+
+
+
+Referenced by camb\+::camb\+\_\+transferstopowers(), and cambmain\+::cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{namespacetransfer_a94b4673ba4b74ac5aef785afde714446_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a94b4673ba4b74ac5aef785afde714446_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_aec77f610696b7445e8c8e070491ca238}\label{namespacetransfer_aec77f610696b7445e8c8e070491ca238}} 
+\index{transfer@{transfer}!transfer\+\_\+getmatterpowerd@{transfer\+\_\+getmatterpowerd}}
+\index{transfer\+\_\+getmatterpowerd@{transfer\+\_\+getmatterpowerd}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+getmatterpowerd()}{transfer\_getmatterpowerd()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+getmatterpowerd (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), intent(in)}]{M\+Trans,  }\item[{real(dl), dimension(npoints), intent(out)}]{outpower,  }\item[{integer, intent(in)}]{itf\+\_\+\+PK,  }\item[{integer, intent(in)}]{in,  }\item[{real(dl), intent(in)}]{minkh,  }\item[{real(dl), intent(in)}]{dlnkh,  }\item[{integer, intent(in)}]{npoints,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2 }\end{DoxyParamCaption})}
+
+
+
+References errors\+::global\+\_\+error\+\_\+flag, matterpowerdata\+\_\+free(), nonlinear\+\_\+getratios(), spline(), transfer\+\_\+getmatterpowerdata(), transfer\+\_\+kh, and transfer\+\_\+power\+\_\+var.
+
+
+
+Referenced by handles\+::cambdata\+\_\+getmatterpower(), and transfer\+\_\+getmatterpowers().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_aec77f610696b7445e8c8e070491ca238_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_aec77f610696b7445e8c8e070491ca238_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a149c7870c28cd849591073c3d8f76d69}\label{namespacetransfer_a149c7870c28cd849591073c3d8f76d69}} 
+\index{transfer@{transfer}!transfer\+\_\+getmatterpowerdata@{transfer\+\_\+getmatterpowerdata}}
+\index{transfer\+\_\+getmatterpowerdata@{transfer\+\_\+getmatterpowerdata}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+getmatterpowerdata()}{transfer\_getmatterpowerdata()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+getmatterpowerdata (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), intent(in)}]{M\+Trans,  }\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{P\+K\+\_\+data,  }\item[{integer, intent(in), optional}]{power\+\_\+ix,  }\item[{integer, intent(in), optional}]{itf\+\_\+only,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2 }\end{DoxyParamCaption})}
+
+
+
+References errors\+::global\+\_\+error\+\_\+flag, matterpowerdata\+\_\+free(), matterpowerdata\+\_\+getsplines(), transfer\+\_\+kh, and transfer\+\_\+power\+\_\+var.
+
+
+
+Referenced by cambmain\+::makenonlinearsources(), lrggettheory\+::transfer\+\_\+getmatterpowerandnw(), transfer\+\_\+getmatterpowerd(), transfer\+\_\+getsigmararray(), transfer\+\_\+getunsplinednonlinearpower(), and transfer\+\_\+savematterpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a149c7870c28cd849591073c3d8f76d69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a149c7870c28cd849591073c3d8f76d69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a4515b492b259544eae13a774663d6cea}\label{namespacetransfer_a4515b492b259544eae13a774663d6cea}} 
+\index{transfer@{transfer}!transfer\+\_\+getmatterpowers@{transfer\+\_\+getmatterpowers}}
+\index{transfer\+\_\+getmatterpowers@{transfer\+\_\+getmatterpowers}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+getmatterpowers()}{transfer\_getmatterpowers()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+getmatterpowers (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), intent(in)}]{M\+Trans,  }\item[{real, dimension($\ast$), intent(out)}]{outpower,  }\item[{integer, intent(in)}]{itf,  }\item[{integer, intent(in)}]{in,  }\item[{real, intent(in)}]{minkh,  }\item[{real, intent(in)}]{dlnkh,  }\item[{integer, intent(in)}]{npoints,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2 }\end{DoxyParamCaption})}
+
+
+
+References transfer\+\_\+getmatterpowerd().
+
+
+
+Referenced by transfer\+\_\+savematterpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a4515b492b259544eae13a774663d6cea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{namespacetransfer_a4515b492b259544eae13a774663d6cea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a9f16a04226ffcb97b7f2bfc5b681f3b4}\label{namespacetransfer_a9f16a04226ffcb97b7f2bfc5b681f3b4}} 
+\index{transfer@{transfer}!transfer\+\_\+getsigmararray@{transfer\+\_\+getsigmararray}}
+\index{transfer\+\_\+getsigmararray@{transfer\+\_\+getsigmararray}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+getsigmararray()}{transfer\_getsigmararray()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+getsigmararray (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{M\+Trans,  }\item[{real(dl), dimension(\+:), intent(in)}]{R,  }\item[{real(dl), dimension(\+:), intent(out)}]{sigmaR,  }\item[{integer, intent(in), optional}]{redshift\+\_\+ix,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2,  }\item[{integer, intent(in), optional}]{power\+\_\+ix }\end{DoxyParamCaption})}
+
+
+
+References matterpowerdata\+\_\+free(), matterpowerdata\+\_\+k(), transfer\+\_\+getmatterpowerdata(), and transfer\+\_\+kh.
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpkfromcamb().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a9f16a04226ffcb97b7f2bfc5b681f3b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacetransfer_a9f16a04226ffcb97b7f2bfc5b681f3b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a8690f3749fa31715c7729f1f934b7d91}\label{namespacetransfer_a8690f3749fa31715c7729f1f934b7d91}} 
+\index{transfer@{transfer}!transfer\+\_\+getunsplinednonlinearpower@{transfer\+\_\+getunsplinednonlinearpower}}
+\index{transfer\+\_\+getunsplinednonlinearpower@{transfer\+\_\+getunsplinednonlinearpower}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+getunsplinednonlinearpower()}{transfer\_getunsplinednonlinearpower()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+getunsplinednonlinearpower (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), intent(in)}]{M,  }\item[{real(dl), dimension(\+:,\+:), intent(inout)}]{PK,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2,  }\item[{logical, intent(in), optional}]{hubble\+\_\+units }\end{DoxyParamCaption})}
+
+
+
+References matterpowerdata\+\_\+free(), nonlinear\+\_\+getratios(), transfer\+\_\+getmatterpowerdata(), and transfer\+\_\+getunsplinedpower().
+
+
+
+Referenced by handles\+::cambdata\+\_\+getnonlinearmatterpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a8690f3749fa31715c7729f1f934b7d91_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a8690f3749fa31715c7729f1f934b7d91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_af736a104130d0ba0ffbadfa62d245747}\label{namespacetransfer_af736a104130d0ba0ffbadfa62d245747}} 
+\index{transfer@{transfer}!transfer\+\_\+getunsplinedpower@{transfer\+\_\+getunsplinedpower}}
+\index{transfer\+\_\+getunsplinedpower@{transfer\+\_\+getunsplinedpower}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+getunsplinedpower()}{transfer\_getunsplinedpower()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+getunsplinedpower (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{M,  }\item[{real(dl), dimension(\+:,\+:), intent(inout)}]{PK,  }\item[{integer, intent(in), optional}]{var1,  }\item[{integer, intent(in), optional}]{var2,  }\item[{logical, intent(in), optional}]{hubble\+\_\+units }\end{DoxyParamCaption})}
+
+
+
+References transfer\+\_\+kh, and transfer\+\_\+power\+\_\+var.
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpkfromcamb(), handles\+::cambdata\+\_\+getlinearmatterpower(), and transfer\+\_\+getunsplinednonlinearpower().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_af736a104130d0ba0ffbadfa62d245747_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a0e02ff3d1ba9dd5ad8c5dcaf76987ecc}\label{namespacetransfer_a0e02ff3d1ba9dd5ad8c5dcaf76987ecc}} 
+\index{transfer@{transfer}!transfer\+\_\+nullify@{transfer\+\_\+nullify}}
+\index{transfer\+\_\+nullify@{transfer\+\_\+nullify}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+nullify()}{transfer\_nullify()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+nullify (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}})}]{Mtrans }\end{DoxyParamCaption})}
+
+
+
+Referenced by transfer\+\_\+free().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a0e02ff3d1ba9dd5ad8c5dcaf76987ecc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a7f7da292010e79184bed8cdb24e03d2b}\label{namespacetransfer_a7f7da292010e79184bed8cdb24e03d2b}} 
+\index{transfer@{transfer}!transfer\+\_\+output\+\_\+sig8@{transfer\+\_\+output\+\_\+sig8}}
+\index{transfer\+\_\+output\+\_\+sig8@{transfer\+\_\+output\+\_\+sig8}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+output\+\_\+sig8()}{transfer\_output\_sig8()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+output\+\_\+sig8 (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), intent(in)}]{M\+Trans }\end{DoxyParamCaption})}
+
+
+
+References get\+\_\+growth\+\_\+sigma8.
+
+\mbox{\Hypertarget{namespacetransfer_a4204b279b39e55f31b7948dec07fd7ed}\label{namespacetransfer_a4204b279b39e55f31b7948dec07fd7ed}} 
+\index{transfer@{transfer}!transfer\+\_\+savematterpower@{transfer\+\_\+savematterpower}}
+\index{transfer\+\_\+savematterpower@{transfer\+\_\+savematterpower}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+savematterpower()}{transfer\_savematterpower()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+savematterpower (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), intent(in)}]{M\+Trans,  }\item[{character(len=ini\+\_\+max\+\_\+string\+\_\+len), dimension($\ast$), intent(in)}]{File\+Names }\end{DoxyParamCaption})}
+
+
+
+References matterpowerdata\+\_\+free(), matterpowerdata\+\_\+makenonlinear(), modeldata\+::open\+\_\+file\+\_\+header(), transfer\+\_\+getmatterpowerdata(), transfer\+\_\+getmatterpowers(), transfer\+\_\+interp\+\_\+matterpower, and transfer\+\_\+kh.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a4204b279b39e55f31b7948dec07fd7ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_adc67bad9d6015b3ecd203551b927d522}\label{namespacetransfer_adc67bad9d6015b3ecd203551b927d522}} 
+\index{transfer@{transfer}!transfer\+\_\+savetofiles@{transfer\+\_\+savetofiles}}
+\index{transfer\+\_\+savetofiles@{transfer\+\_\+savetofiles}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+savetofiles()}{transfer\_savetofiles()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+savetofiles (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), intent(in)}]{M\+Trans,  }\item[{character(len=ini\+\_\+max\+\_\+string\+\_\+len), dimension($\ast$), intent(in)}]{File\+Names }\end{DoxyParamCaption})}
+
+
+
+References modeldata\+::open\+\_\+file\+\_\+header(), transfer\+\_\+kh, transfer\+\_\+max, and transfer\+\_\+name\+\_\+tags.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{namespacetransfer_adc67bad9d6015b3ecd203551b927d522_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_ad877dbf164ab7d108432f41d21c155fd}\label{namespacetransfer_ad877dbf164ab7d108432f41d21c155fd}} 
+\index{transfer@{transfer}!transfer\+\_\+setfornonlinearlensing@{transfer\+\_\+setfornonlinearlensing}}
+\index{transfer\+\_\+setfornonlinearlensing@{transfer\+\_\+setfornonlinearlensing}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+setfornonlinearlensing()}{transfer\_setfornonlinearlensing()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+setfornonlinearlensing (\begin{DoxyParamCaption}\item[{type(transferparams)}]{P }\end{DoxyParamCaption})}
+
+
+
+Referenced by handles\+::cambdata\+\_\+gettransfers().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_ad877dbf164ab7d108432f41d21c155fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacetransfer_a138e96e5b60355e8136607e26339b2a0}\label{namespacetransfer_a138e96e5b60355e8136607e26339b2a0}} 
+\index{transfer@{transfer}!transfer\+\_\+sortandindexredshifts@{transfer\+\_\+sortandindexredshifts}}
+\index{transfer\+\_\+sortandindexredshifts@{transfer\+\_\+sortandindexredshifts}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+sortandindexredshifts()}{transfer\_sortandindexredshifts()}}
+{\footnotesize\ttfamily subroutine transfer\+::transfer\+\_\+sortandindexredshifts (\begin{DoxyParamCaption}\item[{type(transferparams)}]{P }\end{DoxyParamCaption})}
+
+
+
+Referenced by handles\+::cambdata\+\_\+gettransfers().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacetransfer_a138e96e5b60355e8136607e26339b2a0_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetransfer_a271d66692c1d4b207c6e033b5a8197e8}\label{namespacetransfer_a271d66692c1d4b207c6e033b5a8197e8}} 
+\index{transfer@{transfer}!get\+\_\+growth\+\_\+sigma8@{get\+\_\+growth\+\_\+sigma8}}
+\index{get\+\_\+growth\+\_\+sigma8@{get\+\_\+growth\+\_\+sigma8}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{get\+\_\+growth\+\_\+sigma8}{get\_growth\_sigma8}}
+{\footnotesize\ttfamily logical transfer\+::get\+\_\+growth\+\_\+sigma8 = .true.}
+
+
+
+Referenced by transfer\+\_\+allocate(), transfer\+\_\+free(), transfer\+\_\+get\+\_\+sigmas(), and transfer\+\_\+output\+\_\+sig8().
+
+\mbox{\Hypertarget{namespacetransfer_abf8737afeb10e8b167c70416ad103a74}\label{namespacetransfer_abf8737afeb10e8b167c70416ad103a74}} 
+\index{transfer@{transfer}!mt@{mt}}
+\index{mt@{mt}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{mt}{mt}}
+{\footnotesize\ttfamily type (\mbox{\hyperlink{structtransfer_1_1mattertransferdata}{mattertransferdata}}), save transfer\+::mt}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), camb\+::camb\+\_\+cleanup(), camb\+::camb\+\_\+gettransfers(), cambmain\+::cmbmain(), cambmain\+::gettransfer(), cambmain\+::inittransfer(), cambmain\+::makenonlinearsources(), and cambmain\+::transferout().
+
+\mbox{\Hypertarget{namespacetransfer_ab15ebb6605b445eaddd657e94abc151b}\label{namespacetransfer_ab15ebb6605b445eaddd657e94abc151b}} 
+\index{transfer@{transfer}!transfer\+\_\+b@{transfer\+\_\+b}}
+\index{transfer\+\_\+b@{transfer\+\_\+b}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+b}{transfer\_b}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+b =3}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_a9e67898263c714e994816a119937416f}\label{namespacetransfer_a9e67898263c714e994816a119937416f}} 
+\index{transfer@{transfer}!transfer\+\_\+cdm@{transfer\+\_\+cdm}}
+\index{transfer\+\_\+cdm@{transfer\+\_\+cdm}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+cdm}{transfer\_cdm}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+cdm =2}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_a4076f4ea08670377ed92c3a16ced89f0}\label{namespacetransfer_a4076f4ea08670377ed92c3a16ced89f0}} 
+\index{transfer@{transfer}!transfer\+\_\+g@{transfer\+\_\+g}}
+\index{transfer\+\_\+g@{transfer\+\_\+g}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+g}{transfer\_g}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+g =4}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_a1dfb4e8c94804bd740e5d676a5b23d6f}\label{namespacetransfer_a1dfb4e8c94804bd740e5d676a5b23d6f}} 
+\index{transfer@{transfer}!transfer\+\_\+interp\+\_\+matterpower@{transfer\+\_\+interp\+\_\+matterpower}}
+\index{transfer\+\_\+interp\+\_\+matterpower@{transfer\+\_\+interp\+\_\+matterpower}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+interp\+\_\+matterpower}{transfer\_interp\_matterpower}}
+{\footnotesize\ttfamily logical transfer\+::transfer\+\_\+interp\+\_\+matterpower = .true.}
+
+
+
+Referenced by transfer\+\_\+savematterpower().
+
+\mbox{\Hypertarget{namespacetransfer_a53e222aefb0911649bf35fc879a5f367}\label{namespacetransfer_a53e222aefb0911649bf35fc879a5f367}} 
+\index{transfer@{transfer}!transfer\+\_\+kh@{transfer\+\_\+kh}}
+\index{transfer\+\_\+kh@{transfer\+\_\+kh}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+kh}{transfer\_kh}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+kh =1}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpkfromcamb(), gaugeinterface\+::derivs(), dtauda(), gaugeinterface\+::outtransf(), transfer\+\_\+get\+\_\+sigmar(), lrggettheory\+::transfer\+\_\+getmatterpowerandnw(), transfer\+\_\+getmatterpowerd(), transfer\+\_\+getmatterpowerdata(), transfer\+\_\+getsigmararray(), transfer\+\_\+getunsplinedpower(), transfer\+\_\+savematterpower(), and transfer\+\_\+savetofiles().
+
+\mbox{\Hypertarget{namespacetransfer_ac87f6542d01968f20465ccd32f02667c}\label{namespacetransfer_ac87f6542d01968f20465ccd32f02667c}} 
+\index{transfer@{transfer}!transfer\+\_\+max@{transfer\+\_\+max}}
+\index{transfer\+\_\+max@{transfer\+\_\+max}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+max}{transfer\_max}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+max = Transfer\+\_\+vel\+\_\+baryon\+\_\+cdm}
+
+
+
+Referenced by dtauda(), gaugeinterface\+::outtransf(), transfer\+\_\+allocate(), lrggettheory\+::transfer\+\_\+getmatterpowerandnw(), and transfer\+\_\+savetofiles().
+
+\mbox{\Hypertarget{namespacetransfer_ac02a42ae84b0dbee0b48ed2dd95b6dc8}\label{namespacetransfer_ac02a42ae84b0dbee0b48ed2dd95b6dc8}} 
+\index{transfer@{transfer}!transfer\+\_\+name\+\_\+tags@{transfer\+\_\+name\+\_\+tags}}
+\index{transfer\+\_\+name\+\_\+tags@{transfer\+\_\+name\+\_\+tags}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+name\+\_\+tags}{transfer\_name\_tags}}
+{\footnotesize\ttfamily character(len=name\+\_\+tag\+\_\+len), dimension(\mbox{\hyperlink{namespacetransfer_ac87f6542d01968f20465ccd32f02667c}{transfer\+\_\+max}}-\/1) transfer\+::transfer\+\_\+name\+\_\+tags = \mbox{[}\textquotesingle{}C\+DM \textquotesingle{}, \textquotesingle{}baryon \textquotesingle{}, \textquotesingle{}photon \textquotesingle{}, \textquotesingle{}nu \textquotesingle{}, \textquotesingle{}mass\+\_\+nu \textquotesingle{}, \textquotesingle{}total \textquotesingle{}, \textquotesingle{}no\+\_\+nu \textquotesingle{}, \textquotesingle{}total\+\_\+de\textquotesingle{}, \textquotesingle{}Weyl \textquotesingle{}, \textquotesingle{}v\+\_\+\+C\+DM \textquotesingle{}, \textquotesingle{}v\+\_\+b \textquotesingle{}, \textquotesingle{}v\+\_\+b-\/v\+\_\+c \textquotesingle{}\mbox{]}}
+
+
+
+Referenced by transfer\+\_\+savetofiles().
+
+\mbox{\Hypertarget{namespacetransfer_acfa190894a4b625fe771219f23b9bc2f}\label{namespacetransfer_acfa190894a4b625fe771219f23b9bc2f}} 
+\index{transfer@{transfer}!transfer\+\_\+newt\+\_\+vel\+\_\+baryon@{transfer\+\_\+newt\+\_\+vel\+\_\+baryon}}
+\index{transfer\+\_\+newt\+\_\+vel\+\_\+baryon@{transfer\+\_\+newt\+\_\+vel\+\_\+baryon}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+newt\+\_\+vel\+\_\+baryon}{transfer\_newt\_vel\_baryon}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+baryon =12}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_acac3c3e5a8b36cd08ca97ca40bd92fcc}\label{namespacetransfer_acac3c3e5a8b36cd08ca97ca40bd92fcc}} 
+\index{transfer@{transfer}!transfer\+\_\+newt\+\_\+vel\+\_\+cdm@{transfer\+\_\+newt\+\_\+vel\+\_\+cdm}}
+\index{transfer\+\_\+newt\+\_\+vel\+\_\+cdm@{transfer\+\_\+newt\+\_\+vel\+\_\+cdm}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+newt\+\_\+vel\+\_\+cdm}{transfer\_newt\_vel\_cdm}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+cdm =11}
+
+
+
+Referenced by gaugeinterface\+::derivs(), dtauda(), and transfer\+\_\+get\+\_\+sigmas().
+
+\mbox{\Hypertarget{namespacetransfer_aa028f75ae9a421f87ff8e2ebbfb88e73}\label{namespacetransfer_aa028f75ae9a421f87ff8e2ebbfb88e73}} 
+\index{transfer@{transfer}!transfer\+\_\+nonu@{transfer\+\_\+nonu}}
+\index{transfer\+\_\+nonu@{transfer\+\_\+nonu}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+nonu}{transfer\_nonu}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+nonu =8}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpkfromcamb(), gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_a88f1f472755284c745f4f9627f3385f3}\label{namespacetransfer_a88f1f472755284c745f4f9627f3385f3}} 
+\index{transfer@{transfer}!transfer\+\_\+nu@{transfer\+\_\+nu}}
+\index{transfer\+\_\+nu@{transfer\+\_\+nu}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+nu}{transfer\_nu}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+nu = 6}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_abd233741f7f81807122709afee55d2f2}\label{namespacetransfer_abd233741f7f81807122709afee55d2f2}} 
+\index{transfer@{transfer}!transfer\+\_\+power\+\_\+var@{transfer\+\_\+power\+\_\+var}}
+\index{transfer\+\_\+power\+\_\+var@{transfer\+\_\+power\+\_\+var}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+power\+\_\+var}{transfer\_power\_var}}
+{\footnotesize\ttfamily integer transfer\+::transfer\+\_\+power\+\_\+var = Transfer\+\_\+tot}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpkfromcamb(), transfer\+\_\+get\+\_\+sigmar(), transfer\+\_\+get\+\_\+sigmas(), lrggettheory\+::transfer\+\_\+getmatterpowerandnw(), transfer\+\_\+getmatterpowerd(), transfer\+\_\+getmatterpowerdata(), and transfer\+\_\+getunsplinedpower().
+
+\mbox{\Hypertarget{namespacetransfer_a55264fe59289090c8c796b22c71d5937}\label{namespacetransfer_a55264fe59289090c8c796b22c71d5937}} 
+\index{transfer@{transfer}!transfer\+\_\+r@{transfer\+\_\+r}}
+\index{transfer\+\_\+r@{transfer\+\_\+r}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+r}{transfer\_r}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+r =5}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_a96bc38e4fa7d41872d481db49a3e5f46}\label{namespacetransfer_a96bc38e4fa7d41872d481db49a3e5f46}} 
+\index{transfer@{transfer}!transfer\+\_\+tot@{transfer\+\_\+tot}}
+\index{transfer\+\_\+tot@{transfer\+\_\+tot}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+tot}{transfer\_tot}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+tot =7}
+
+
+
+Referenced by gaugeinterface\+::derivs(), dtauda(), and lrggettheory\+::transfer\+\_\+getmatterpowerandnw().
+
+\mbox{\Hypertarget{namespacetransfer_a3ae9f7a69bc80c029fe96b8a1de263b3}\label{namespacetransfer_a3ae9f7a69bc80c029fe96b8a1de263b3}} 
+\index{transfer@{transfer}!transfer\+\_\+tot\+\_\+de@{transfer\+\_\+tot\+\_\+de}}
+\index{transfer\+\_\+tot\+\_\+de@{transfer\+\_\+tot\+\_\+de}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+tot\+\_\+de}{transfer\_tot\_de}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+tot\+\_\+de =9}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_a355c8bcd1bf73a87d603cd7f77c702d0}\label{namespacetransfer_a355c8bcd1bf73a87d603cd7f77c702d0}} 
+\index{transfer@{transfer}!transfer\+\_\+vel\+\_\+baryon\+\_\+cdm@{transfer\+\_\+vel\+\_\+baryon\+\_\+cdm}}
+\index{transfer\+\_\+vel\+\_\+baryon\+\_\+cdm@{transfer\+\_\+vel\+\_\+baryon\+\_\+cdm}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+vel\+\_\+baryon\+\_\+cdm}{transfer\_vel\_baryon\_cdm}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+vel\+\_\+baryon\+\_\+cdm = 13}
+
+
+
+Referenced by gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacetransfer_adc4f1fee4e89ed92a0865f3854118eca}\label{namespacetransfer_adc4f1fee4e89ed92a0865f3854118eca}} 
+\index{transfer@{transfer}!transfer\+\_\+weyl@{transfer\+\_\+weyl}}
+\index{transfer\+\_\+weyl@{transfer\+\_\+weyl}!transfer@{transfer}}
+\subsubsection{\texorpdfstring{transfer\+\_\+weyl}{transfer\_weyl}}
+{\footnotesize\ttfamily integer, parameter transfer\+::transfer\+\_\+weyl = 10}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpkfromcamb(), gaugeinterface\+::derivs(), and dtauda().
+

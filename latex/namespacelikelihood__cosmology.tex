@@ -1,0 +1,113 @@
+\hypertarget{namespacelikelihood__cosmology}{}\section{likelihood\+\_\+cosmology Module Reference}
+\label{namespacelikelihood__cosmology}\index{likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structlikelihood__cosmology_1_1tcmblikelihood}{tcmblikelihood}}
+\item 
+type \mbox{\hyperlink{structlikelihood__cosmology_1_1tcosmocalclikelihood}{tcosmocalclikelihood}}
+\item 
+type \mbox{\hyperlink{structlikelihood__cosmology_1_1tcosmologylikelihood}{tcosmologylikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp) function \mbox{\hyperlink{namespacelikelihood__cosmology_a28ab9c3076608cb7b1550060aa9b450b}{getloglike}} (this, Params, Theory, Data\+Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacelikelihood__cosmology_adfac1b06d8d335f24e427fe3629f706c}{logliketheory}} (this, C\+MB)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacelikelihood__cosmology_a1b2ee95e5e883485f7ba0635f9a5beef}{loglikedataparams}} (this, C\+MB, Data\+Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacelikelihood__cosmology_ad4c3f93cdd27d0b291676092a4e2023b}{loglike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacelikelihood__cosmology_a75b0a523a1d5bbf9d32e34de5153ef36}{tcosmocalclikelihood\+\_\+initconfig}} (this, Config)
+\item 
+subroutine \mbox{\hyperlink{namespacelikelihood__cosmology_a75d41b40f363669474961a1660570174}{tcmblikelihood\+\_\+readparams}} (this, Ini)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacelikelihood__cosmology_a28ab9c3076608cb7b1550060aa9b450b}\label{namespacelikelihood__cosmology_a28ab9c3076608cb7b1550060aa9b450b}} 
+\index{likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}!getloglike@{getloglike}}
+\index{getloglike@{getloglike}!likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{getloglike()}{getloglike()}}
+{\footnotesize\ttfamily real(mcp) function likelihood\+\_\+cosmology\+::getloglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structlikelihood__cosmology_1_1tcosmologylikelihood}{tcosmologylikelihood}})}]{this,  }\item[{class(ttheoryparams)}]{Params,  }\item[{class(ttheorypredictions)}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References loglike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacelikelihood__cosmology_a28ab9c3076608cb7b1550060aa9b450b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelikelihood__cosmology_ad4c3f93cdd27d0b291676092a4e2023b}\label{namespacelikelihood__cosmology_ad4c3f93cdd27d0b291676092a4e2023b}} 
+\index{likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}!loglike@{loglike}}
+\index{loglike@{loglike}!likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{loglike()}{loglike()}}
+{\footnotesize\ttfamily real(mcp) function likelihood\+\_\+cosmology\+::loglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structlikelihood__cosmology_1_1tcosmologylikelihood}{tcosmologylikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmblikes\+::cmblikes\+\_\+loglike(), getloglike(), loglikedataparams(), logliketheory(), and cmblikelihoods\+::twmaplikelihood\+\_\+loglike().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelikelihood__cosmology_ad4c3f93cdd27d0b291676092a4e2023b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelikelihood__cosmology_a1b2ee95e5e883485f7ba0635f9a5beef}\label{namespacelikelihood__cosmology_a1b2ee95e5e883485f7ba0635f9a5beef}} 
+\index{likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}!loglikedataparams@{loglikedataparams}}
+\index{loglikedataparams@{loglikedataparams}!likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{loglikedataparams()}{loglikedataparams()}}
+{\footnotesize\ttfamily real(mcp) function likelihood\+\_\+cosmology\+::loglikedataparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structlikelihood__cosmology_1_1tcosmologylikelihood}{tcosmologylikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References loglike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacelikelihood__cosmology_a1b2ee95e5e883485f7ba0635f9a5beef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelikelihood__cosmology_adfac1b06d8d335f24e427fe3629f706c}\label{namespacelikelihood__cosmology_adfac1b06d8d335f24e427fe3629f706c}} 
+\index{likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}!logliketheory@{logliketheory}}
+\index{logliketheory@{logliketheory}!likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{logliketheory()}{logliketheory()}}
+{\footnotesize\ttfamily real(mcp) function likelihood\+\_\+cosmology\+::logliketheory (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structlikelihood__cosmology_1_1tcosmologylikelihood}{tcosmologylikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References loglike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacelikelihood__cosmology_adfac1b06d8d335f24e427fe3629f706c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelikelihood__cosmology_a75d41b40f363669474961a1660570174}\label{namespacelikelihood__cosmology_a75d41b40f363669474961a1660570174}} 
+\index{likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}!tcmblikelihood\+\_\+readparams@{tcmblikelihood\+\_\+readparams}}
+\index{tcmblikelihood\+\_\+readparams@{tcmblikelihood\+\_\+readparams}!likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{tcmblikelihood\+\_\+readparams()}{tcmblikelihood\_readparams()}}
+{\footnotesize\ttfamily subroutine likelihood\+\_\+cosmology\+::tcmblikelihood\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structlikelihood__cosmology_1_1tcmblikelihood}{tcmblikelihood}})}]{this,  }\item[{class(tsettingini)}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacelikelihood__cosmology_a75b0a523a1d5bbf9d32e34de5153ef36}\label{namespacelikelihood__cosmology_a75b0a523a1d5bbf9d32e34de5153ef36}} 
+\index{likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}!tcosmocalclikelihood\+\_\+initconfig@{tcosmocalclikelihood\+\_\+initconfig}}
+\index{tcosmocalclikelihood\+\_\+initconfig@{tcosmocalclikelihood\+\_\+initconfig}!likelihood\+\_\+cosmology@{likelihood\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{tcosmocalclikelihood\+\_\+initconfig()}{tcosmocalclikelihood\_initconfig()}}
+{\footnotesize\ttfamily subroutine likelihood\+\_\+cosmology\+::tcosmocalclikelihood\+\_\+initconfig (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structlikelihood__cosmology_1_1tcosmocalclikelihood}{tcosmocalclikelihood}})}]{this,  }\item[{class(tgeneralconfig), target}]{Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+

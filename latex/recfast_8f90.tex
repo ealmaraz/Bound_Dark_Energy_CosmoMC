@@ -1,0 +1,204 @@
+\hypertarget{recfast_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/recfast.f90 File Reference}
+\label{recfast_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/recfast.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/recfast.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structrecombination_1_1recombinationparams}{recombination\+::recombinationparams}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacerecdata}{recdata}}
+\item 
+module \mbox{\hyperlink{namespacerecombination}{recombination}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_a30d82e415adca06a256aae1be85e72a1}{recombination\+::recombination\+\_\+readparams}} (R, Ini)
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_aafff8339a994ad18b5b4187d9d4faa40}{recombination\+::recombination\+\_\+setdefparams}} (R)
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_aaaea2371b700336e16f08b64b6dd44d9}{recombination\+::recombination\+\_\+validate}} (R, OK)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a8d7b99ebe97a13f83da41d8d9b8215e2}{recombination\+::recombination\+\_\+tm}} (a)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_ae89b19e4ef4ab84e9724ee4a4d2435fc}{recombination\+::recombination\+\_\+ts}} (a)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a64de24be26a98919cba0095322731263}{recombination\+::recombination\+\_\+xe}} (a)
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_ac2325c42e3b77187a31f6810929de147}{recombination\+::recombination\+\_\+init}} (Recomb, OmegaC, OmegaB, Omegan, Omegav, h0inp, tcmb, yp, nnu)
+\item 
+subroutine \mbox{\hyperlink{namespacerecombination_a7c190d70dfd56d14181b4ae8535dcd4d}{recombination\+::get\+\_\+init}} (z, x\+\_\+\+H0, x\+\_\+\+He0, x0)
+\item 
+subroutine \mbox{\hyperlink{namespacerecombination_a5f644f40f1384d3dd16e675369854f63}{recombination\+::ion}} (Recomb, Ndim, z, Y, f)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a7445052618f5f8ed0d793a58eb66c768}{recombination\+::ddeltaxe\+\_\+dtau}} (a, Delta\+\_\+xe, Delta\+\_\+nH, Delta\+\_\+\+Tm, hdot, kvb)
+\item 
+real(dl) function \mbox{\hyperlink{namespacerecombination_abd7e507e301ec237a76ea22d6a6be0eb}{recombination\+::polevl}} (x, coef, N)
+\item 
+real(dl) function \mbox{\hyperlink{namespacerecombination_aae74849488f7c602dd70b57a9e9782f2}{recombination\+::derivpolevl}} (x, coef, N)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a6456c5ea7f228fa74eba8e54de9eded5}{recombination\+::kappa\+\_\+hh\+\_\+21cm}} (T, deriv)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_ad379abd3309c2fd3f5cacb8b614b80a5}{recombination\+::kappa\+\_\+eh\+\_\+21cm}} (T, deriv)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a27e7c8f022215a5bb27a45d2b5db20bb}{recombination\+::kappa\+\_\+ph\+\_\+21cm}} (T, deriv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a2c475bdeb3e0999a1360325ceae144c2}{recdata\+::lambda}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a5430ac96b61e841e793860353de75b94}{recdata\+::deltab}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ac9a28ec71046fead8431567d914339e5}{recdata\+::deltab\+\_\+he}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_af77171b4139af45b976e7388f08ad74a}{recdata\+::lalpha}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_af00c668a1086ccf9c6fb815e45e5c9dd}{recdata\+::mu\+\_\+h}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_afca9c6c4a945b5d2b59ca00f446f869a}{recdata\+::mu\+\_\+t}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ae9965fc6c0b6f37a85b51427e8155eb3}{recdata\+::h\+\_\+frac}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a2eac004fa1bc20ce7480574fc7e7f8ec}{recdata\+::lambda\+\_\+he}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_aef43ee94c4fd432972ea10fe6e93f8bb}{recdata\+::lalpha\+\_\+he}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a98e25aebe5900dc1cca84fe8be016dc4}{recdata\+::bfact}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a13fa08cdf3070bc28dbc41bac31f8992}{recdata\+::ck\+\_\+he}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ae811f636720451c3155e017e57bb09cf}{recdata\+::cl\+\_\+he}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ae841ee816424d8ed36613769eac72b75}{recdata\+::l\+\_\+h\+\_\+ion}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_adb25613b2cf535a5250d0040b5da8e8e}{recdata\+::l\+\_\+h\+\_\+alpha}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a88ef0c92d1cad9570136fa55d1899af0}{recdata\+::l\+\_\+he1\+\_\+ion}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a09a8999d2bef3fe3af6c0216cb534b5d}{recdata\+::l\+\_\+he2\+\_\+ion}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a92c403d880fb9d689ce3cd14be2a9419}{recdata\+::l\+\_\+he\+\_\+2s}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a2be433bb2e316e0518793af163f2d5ce}{recdata\+::l\+\_\+he\+\_\+2p}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a7e7a0ff371efd261f699832dc5f2d2a4}{recdata\+::cb1}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a0b6cc26e2d2688842af68cd27723b349}{recdata\+::cdb}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a8ab4f6bed512cd3707c9ee47b17b888c}{recdata\+::cr}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_aba2f0c8512427aa917fc8cac8bc0ec4e}{recdata\+::ck}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ab68a51a351429e593781556b05330c60}{recdata\+::cl}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a5b074d69ad1a7e5c8ec138af8ca09905}{recdata\+::ct}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a0632faea1d88dcd7d279c24c08910ed3}{recdata\+::cb1\+\_\+he1}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_af94354830fdc5a327a28087bff0bff81}{recdata\+::cb1\+\_\+he2}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a158d229f115a9b6b137ba43b674bf626}{recdata\+::cdb\+\_\+he}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a29419b5fe5c4de5d80938025601d4eb9}{recdata\+::fu}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ab0a23c356e59d53950e7536cf79fe3cd}{recdata\+::a2p\+\_\+s}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a34c7f7e2605d273b585ab3de74345d16}{recdata\+::a2p\+\_\+t}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_af22595aa05fb59f5a5b0b8d55c3c5125}{recdata\+::sigma\+\_\+he\+\_\+2ps}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a5d432a7f8ed1a614dbc48413e8c4540a}{recdata\+::sigma\+\_\+he\+\_\+2pt}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a0961b37240c725eeb78661e93ed840d5}{recdata\+::l\+\_\+he\+\_\+2pt}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a3c04537ed51f41795d984b8796437d62}{recdata\+::l\+\_\+he\+\_\+2st}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a19e8a17a31cb50954e10fa514602a043}{recdata\+::l\+\_\+he2st\+\_\+ion}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecdata_a6d6695fdf7d29c72eb628457a9d2f8e8}{recdata\+::bigh}} =100.\+0\+D3/\+Mpc
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecdata_ad6030407673dc2717b2b8fb28662bd2e}{recdata\+::sigma}} = sigma\+\_\+thomson
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecdata_affbfe58acc402b3952d720558fbd9344}{recdata\+::not4}} = mass\+\_\+ratio\+\_\+\+He\+\_\+H
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ab35ca0eb7ecb1758876e6e979df99bb9}{recdata\+::tnow}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a8f24dbf21d381a21986562167870de9b}{recdata\+::ho}}
+\item 
+integer \mbox{\hyperlink{namespacerecdata_a8ab5b420c3994ec0bbf10dd045a1c61d}{recdata\+::n\+\_\+eq}} = 3
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_ad15940a7af68a80f1c36cd8e55395adf}{recdata\+::omegak}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_a1b83b45446a75acd6c94310302246fd6}{recdata\+::omegat}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecdata_aba42d5992f637f77caa48a71505fc69d}{recdata\+::z\+\_\+eq}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a59aa3ea34247a93b4f4c11b5ca93c97c}{recombination\+::zinitial}} = 1e4\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a6c83801bcb6009615d1c1103da95f91f}{recombination\+::zfinal}} =0.\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{recombination\+::nz}} =10000
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a7f3dac9960d3b472a93e5cf800eb1538}{recombination\+::delta\+\_\+z}} = (zinitial-\/zfinal)/Nz
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecombination_a517d5a67e1e61e62f788768cb427edd2}{recombination\+::recfast\+\_\+heswitch\+\_\+default}} = 6
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_ae732fad2453ab4c2e0a7ba4c6e5cca43}{recombination\+::recfast\+\_\+fudge\+\_\+he\+\_\+default}} = 0.\+86\+\_\+dl
+\item 
+logical, parameter \mbox{\hyperlink{namespacerecombination_ab3f90d31e547798b3aa3fc1403d556fb}{recombination\+::recfast\+\_\+hswitch\+\_\+default}} = .true.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a198e64f2c7a763d928e647b4e1de4be9}{recombination\+::recfast\+\_\+fudge\+\_\+default}} = 1.\+14\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_afe0b5ce72921eaef12df437e7c994273}{recombination\+::recfast\+\_\+fudge\+\_\+default2}} = 1.\+105d0 + 0.\+02d0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a3656f16a64eb43f2c0cc9ede42d7739e}{recombination\+::agauss1}} = -\/0.\+14\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_ac630e24e5948bae78946e725278366d0}{recombination\+::agauss2}} = 0.\+079\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_aa4dbcaadd19727bcb40044d8bd9cd923}{recombination\+::zgauss1}} = 7.\+28\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a61e4b85fa7e6dbab34fdcc71cbf2ac51}{recombination\+::zgauss2}} = 6.\+73\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_ab96e636bde8533901e6404afddd90371}{recombination\+::wgauss1}} = 0.\+18\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_ae8e9ce09a4cbc8282433bb03744dee31}{recombination\+::wgauss2}} = 0.\+33\+D0
+\item 
+character(len= $\ast$), parameter, public \mbox{\hyperlink{namespacerecombination_aaaa9430d72f4f49786d010958342bc72}{recombination\+::recombination\+\_\+name}} = \textquotesingle{}Recfast\+\_\+1.\+5.\+2\textquotesingle{}
+\item 
+real(dl), dimension(nz) \mbox{\hyperlink{namespacerecombination_ace51a9fec7f3c178e99caf82c7cc6de0}{recombination\+::zrec}}
+\item 
+real(dl), dimension(nz) \mbox{\hyperlink{namespacerecombination_a43d25f6d69d2b60682ef49868e8f70cd}{recombination\+::xrec}}
+\item 
+real(dl), dimension(nz) \mbox{\hyperlink{namespacerecombination_a34b4e0fe310c9f5d1705a2e78983d9fa}{recombination\+::dxrec}}
+\item 
+real(dl), dimension(nz) \mbox{\hyperlink{namespacerecombination_aa13c7a29f1e2c1bb0db8f0f4e6c4cbaa}{recombination\+::tsrec}}
+\item 
+real(dl), dimension(nz) \mbox{\hyperlink{namespacerecombination_a05ee59d76dcf3b0345da845ed7980073}{recombination\+::dtsrec}}
+\item 
+real(dl), dimension(nz) \mbox{\hyperlink{namespacerecombination_a49d87db76377445504ec6505faa4da09}{recombination\+::tmrec}}
+\item 
+real(dl), dimension(nz) \mbox{\hyperlink{namespacerecombination_a56809fd170a698f38efdc76471379237}{recombination\+::dtmrec}}
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacerecombination_a9f9ad56161c0922d8b742775d30db0dd}{recombination\+::do21cm\+\_\+mina}} = 1/(1+900.)
+\item 
+logical, parameter \mbox{\hyperlink{namespacerecombination_ab91e25d9cc8fed5d1aa39540e9f90c59}{recombination\+::evolve\+\_\+ts}} = .false.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a78245c71ab308bd902e38d4505ff4554}{recombination\+::do21cm\+\_\+minev}} = 1/(1+400.)
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_ac87df6d66d9a2c678cf5712166b0307a}{recombination\+::b01}} = 3$\ast$B10
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a9c154008489ae26b92e9e4b41df00e80}{recombination\+::nnow}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a0bcf491993bc386ebe7e2f6fafe228a3}{recombination\+::fhe}}
+\item 
+logical, public \mbox{\hyperlink{namespacerecombination_a7789f3edc0804a55e6ad9e9ad4450848}{recombination\+::do21cm}} = .false.
+\item 
+logical, public \mbox{\hyperlink{namespacerecombination_ae0472591a7f5d7f85297b5123245e4a5}{recombination\+::dotmattspin}} = .false.
+\item 
+real(dl), public \mbox{\hyperlink{namespacerecombination_a846415ba803734dc947b1f45e5e7f5ce}{recombination\+::recombination\+\_\+saha\+\_\+z}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacerecombination_af55a05267a423d23ad90deef0980c751}{recombination\+::recombination\+\_\+saha\+\_\+tau}}
+\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="mpiutils::mpistat" name="mpiutils::mpistat">
+<area shape="rect" id="node2" href="$namespacematrixutils.html#ae6aceb4eee59e9d9300a4d7139011aac" title="matrixutils::matrix\l_inversearraympi" alt="" coords="199,5,326,46"/>
+<area shape="rect" id="node3" href="$namespacempiutils.html#a81a7de07e984011ee5f1d69d403e6006" title="mpiutils::mpiquietwait" alt="" coords="189,71,337,97"/>
+<area shape="rect" id="node4" href="$namespacempiutils.html#a86ebeabf362ba28efbc4eae836b533bb" title="mpiutils::mpiwakequietwait" alt="" coords="173,121,352,148"/>
+</map>

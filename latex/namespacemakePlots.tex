@@ -1,0 +1,214 @@
+\hypertarget{namespacemakePlots}{}\section{make\+Plots Namespace Reference}
+\label{namespacemakePlots}\index{make\+Plots@{make\+Plots}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacemakePlots_a34cc3a765a66641e1e3c206e53215a8f}{doplot}} (\mbox{\hyperlink{namespacemakePlots_aa535eb36e332d0cec6f90fa308a42c52}{roots}})
+\item 
+def \mbox{\hyperlink{namespacemakePlots_abb2409cda5200ce8d8bdd4ef76a8a2cd}{compare\+Plot}} (job\+Items)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemakePlots_aadd603ab7f6d24d6997092505872a796}{Opts}} = batchjob\+\_\+args.\+batch\+Args(\textquotesingle{}Make plots from \mbox{\hyperlink{GetDist_8f90_a78c185cfd3ac27937ede022b24ae72e9}{getdist}} outputs\textquotesingle{}, importance=True, converge=True, plots=True)
+\item 
+\mbox{\hyperlink{namespacemakePlots_ab052db806838452fcdaab72322f5dc2d}{help}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a9b640bed4260e0918152ac371f83bdb2}{nargs}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a79482c7601d11e7655849e59f8801500}{default}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a76a9445ec7aead94905940da5ccc0ad9}{action}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a3238f10f1131f7601fd8e875b7ca07b9}{None}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a174e217cb2f1b697784d34498aa61167}{type}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a62410dfcf581decbab96b59ad4b9f70d}{int}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_addc534cd9458153ac1e2d3a26f0b8cb3}{batch}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a9da25c8831150382fe5c74d311978581}{args}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_a94a6ce1910c38b0ce10380c5f4fc69ec}{g}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_aa6a6744b257462647c396e09d585774e}{outdir}} = args.\+out\+\_\+dir
+\item 
+string \mbox{\hyperlink{namespacemakePlots_a374a7cc6f2ae895a5c2912c5b9307d89}{tp}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacemakePlots_ad0950469221279c8b9cd3dba3e05a285}{data}}
+\item 
+\mbox{\hyperlink{namespacemakePlots_ac08323f0091ba3d90d098035659bdbb5}{items}} = Opts.\+sorted\+Paramtag\+Dict()
+\item 
+list \mbox{\hyperlink{namespacemakePlots_a88ed9851e2e4079a4ce7452fd12531bc}{orig\+Compare}} = \mbox{[}item for item in parambatch \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} args.\+compare\+\_\+replacing\mbox{[}0\mbox{]} in item.\+data\+\_\+set.\+names\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacemakePlots_ae8c0d6e7cc3a0a459ac3bce62ae24c15}{compares}} = \mbox{[}job\+Item.\+datatag\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacemakePlots_aa535eb36e332d0cec6f90fa308a42c52}{roots}} = \mbox{[}job\+Item.\+name\mbox{]}
+\item 
+string \mbox{\hyperlink{namespacemakePlots_a3c9805983858c38e3997774e1573274a}{output}} = job\+Item.\+name + \textquotesingle{}-\/vs-\/\textquotesingle{} + \char`\"{}-\/\char`\"{}.join(args.\+compare\+\_\+paramtag)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacemakePlots_abb2409cda5200ce8d8bdd4ef76a8a2cd}\label{namespacemakePlots_abb2409cda5200ce8d8bdd4ef76a8a2cd}} 
+\index{make\+Plots@{make\+Plots}!compare\+Plot@{compare\+Plot}}
+\index{compare\+Plot@{compare\+Plot}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{compare\+Plot()}{comparePlot()}}
+{\footnotesize\ttfamily def make\+Plots.\+compare\+Plot (\begin{DoxyParamCaption}\item[{}]{job\+Items }\end{DoxyParamCaption})}
+
+
+
+References doplot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacemakePlots_abb2409cda5200ce8d8bdd4ef76a8a2cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemakePlots_a34cc3a765a66641e1e3c206e53215a8f}\label{namespacemakePlots_a34cc3a765a66641e1e3c206e53215a8f}} 
+\index{make\+Plots@{make\+Plots}!doplot@{doplot}}
+\index{doplot@{doplot}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{doplot()}{doplot()}}
+{\footnotesize\ttfamily def make\+Plots.\+doplot (\begin{DoxyParamCaption}\item[{}]{roots }\end{DoxyParamCaption})}
+
+
+
+Referenced by compare\+Plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacemakePlots_a34cc3a765a66641e1e3c206e53215a8f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemakePlots_a76a9445ec7aead94905940da5ccc0ad9}\label{namespacemakePlots_a76a9445ec7aead94905940da5ccc0ad9}} 
+\index{make\+Plots@{make\+Plots}!action@{action}}
+\index{action@{action}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily make\+Plots.\+action}
+
+\mbox{\Hypertarget{namespacemakePlots_a9da25c8831150382fe5c74d311978581}\label{namespacemakePlots_a9da25c8831150382fe5c74d311978581}} 
+\index{make\+Plots@{make\+Plots}!args@{args}}
+\index{args@{args}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily make\+Plots.\+args}
+
+\mbox{\Hypertarget{namespacemakePlots_addc534cd9458153ac1e2d3a26f0b8cb3}\label{namespacemakePlots_addc534cd9458153ac1e2d3a26f0b8cb3}} 
+\index{make\+Plots@{make\+Plots}!batch@{batch}}
+\index{batch@{batch}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{batch}{batch}}
+{\footnotesize\ttfamily make\+Plots.\+batch}
+
+\mbox{\Hypertarget{namespacemakePlots_ae8c0d6e7cc3a0a459ac3bce62ae24c15}\label{namespacemakePlots_ae8c0d6e7cc3a0a459ac3bce62ae24c15}} 
+\index{make\+Plots@{make\+Plots}!compares@{compares}}
+\index{compares@{compares}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{compares}{compares}}
+{\footnotesize\ttfamily make\+Plots.\+compares = \mbox{[}job\+Item.\+datatag\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakePlots_ad0950469221279c8b9cd3dba3e05a285}\label{namespacemakePlots_ad0950469221279c8b9cd3dba3e05a285}} 
+\index{make\+Plots@{make\+Plots}!data@{data}}
+\index{data@{data}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily make\+Plots.\+data}
+
+
+
+Referenced by planck\+Style.\+plot\+Bounds().
+
+\mbox{\Hypertarget{namespacemakePlots_a79482c7601d11e7655849e59f8801500}\label{namespacemakePlots_a79482c7601d11e7655849e59f8801500}} 
+\index{make\+Plots@{make\+Plots}!default@{default}}
+\index{default@{default}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily make\+Plots.\+default}
+
+\mbox{\Hypertarget{namespacemakePlots_a94a6ce1910c38b0ce10380c5f4fc69ec}\label{namespacemakePlots_a94a6ce1910c38b0ce10380c5f4fc69ec}} 
+\index{make\+Plots@{make\+Plots}!g@{g}}
+\index{g@{g}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily make\+Plots.\+g}
+
+\mbox{\Hypertarget{namespacemakePlots_ab052db806838452fcdaab72322f5dc2d}\label{namespacemakePlots_ab052db806838452fcdaab72322f5dc2d}} 
+\index{make\+Plots@{make\+Plots}!help@{help}}
+\index{help@{help}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily make\+Plots.\+help}
+
+\mbox{\Hypertarget{namespacemakePlots_a62410dfcf581decbab96b59ad4b9f70d}\label{namespacemakePlots_a62410dfcf581decbab96b59ad4b9f70d}} 
+\index{make\+Plots@{make\+Plots}!int@{int}}
+\index{int@{int}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily make\+Plots.\+int}
+
+\mbox{\Hypertarget{namespacemakePlots_ac08323f0091ba3d90d098035659bdbb5}\label{namespacemakePlots_ac08323f0091ba3d90d098035659bdbb5}} 
+\index{make\+Plots@{make\+Plots}!items@{items}}
+\index{items@{items}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily make\+Plots.\+items = Opts.\+sorted\+Paramtag\+Dict()}
+
+\mbox{\Hypertarget{namespacemakePlots_a9b640bed4260e0918152ac371f83bdb2}\label{namespacemakePlots_a9b640bed4260e0918152ac371f83bdb2}} 
+\index{make\+Plots@{make\+Plots}!nargs@{nargs}}
+\index{nargs@{nargs}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily make\+Plots.\+nargs}
+
+\mbox{\Hypertarget{namespacemakePlots_a3238f10f1131f7601fd8e875b7ca07b9}\label{namespacemakePlots_a3238f10f1131f7601fd8e875b7ca07b9}} 
+\index{make\+Plots@{make\+Plots}!None@{None}}
+\index{None@{None}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{None}{None}}
+{\footnotesize\ttfamily make\+Plots.\+None}
+
+\mbox{\Hypertarget{namespacemakePlots_aadd603ab7f6d24d6997092505872a796}\label{namespacemakePlots_aadd603ab7f6d24d6997092505872a796}} 
+\index{make\+Plots@{make\+Plots}!Opts@{Opts}}
+\index{Opts@{Opts}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{Opts}{Opts}}
+{\footnotesize\ttfamily make\+Plots.\+Opts = batchjob\+\_\+args.\+batch\+Args(\textquotesingle{}Make plots from \mbox{\hyperlink{GetDist_8f90_a78c185cfd3ac27937ede022b24ae72e9}{getdist}} outputs\textquotesingle{}, importance=True, converge=True, plots=True)}
+
+\mbox{\Hypertarget{namespacemakePlots_a88ed9851e2e4079a4ce7452fd12531bc}\label{namespacemakePlots_a88ed9851e2e4079a4ce7452fd12531bc}} 
+\index{make\+Plots@{make\+Plots}!orig\+Compare@{orig\+Compare}}
+\index{orig\+Compare@{orig\+Compare}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{orig\+Compare}{origCompare}}
+{\footnotesize\ttfamily list make\+Plots.\+orig\+Compare = \mbox{[}item for item in parambatch \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} args.\+compare\+\_\+replacing\mbox{[}0\mbox{]} in item.\+data\+\_\+set.\+names\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakePlots_aa6a6744b257462647c396e09d585774e}\label{namespacemakePlots_aa6a6744b257462647c396e09d585774e}} 
+\index{make\+Plots@{make\+Plots}!outdir@{outdir}}
+\index{outdir@{outdir}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{outdir}{outdir}}
+{\footnotesize\ttfamily make\+Plots.\+outdir = args.\+out\+\_\+dir}
+
+\mbox{\Hypertarget{namespacemakePlots_a3c9805983858c38e3997774e1573274a}\label{namespacemakePlots_a3c9805983858c38e3997774e1573274a}} 
+\index{make\+Plots@{make\+Plots}!output@{output}}
+\index{output@{output}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily string make\+Plots.\+output = job\+Item.\+name + \textquotesingle{}-\/vs-\/\textquotesingle{} + \char`\"{}-\/\char`\"{}.join(args.\+compare\+\_\+paramtag)}
+
+\mbox{\Hypertarget{namespacemakePlots_aa535eb36e332d0cec6f90fa308a42c52}\label{namespacemakePlots_aa535eb36e332d0cec6f90fa308a42c52}} 
+\index{make\+Plots@{make\+Plots}!roots@{roots}}
+\index{roots@{roots}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{roots}{roots}}
+{\footnotesize\ttfamily list make\+Plots.\+roots = \mbox{[}job\+Item.\+name\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakePlots_a374a7cc6f2ae895a5c2912c5b9307d89}\label{namespacemakePlots_a374a7cc6f2ae895a5c2912c5b9307d89}} 
+\index{make\+Plots@{make\+Plots}!tp@{tp}}
+\index{tp@{tp}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{tp}{tp}}
+{\footnotesize\ttfamily make\+Plots.\+tp = \textquotesingle{}\textquotesingle{}}
+
+
+
+Referenced by getdist.\+inifile.\+Ini\+File.\+as\+Type(), paramgrid.\+jobqueue.\+get\+Defaulted(), and getdist.\+inifile.\+Ini\+File.\+split().
+
+\mbox{\Hypertarget{namespacemakePlots_a174e217cb2f1b697784d34498aa61167}\label{namespacemakePlots_a174e217cb2f1b697784d34498aa61167}} 
+\index{make\+Plots@{make\+Plots}!type@{type}}
+\index{type@{type}!make\+Plots@{make\+Plots}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily make\+Plots.\+type}
+

@@ -1,0 +1,224 @@
+\hypertarget{classgetdist_1_1parampriors_1_1ParamBounds}{}\section{getdist.\+parampriors.\+Param\+Bounds Class Reference}
+\label{classgetdist_1_1parampriors_1_1ParamBounds}\index{getdist.\+parampriors.\+Param\+Bounds@{getdist.\+parampriors.\+Param\+Bounds}}
+
+
+Inheritance diagram for getdist.\+parampriors.\+Param\+Bounds\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classgetdist_1_1parampriors_1_1ParamBounds__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+parampriors.\+Param\+Bounds\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classgetdist_1_1parampriors_1_1ParamBounds__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_a43df505fc2f7489a7f34095c8fed21d1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, file\+Name=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_af30cba6cd32f1bd0532c223b9eb8546b}{load\+From\+File}} (self, file\+Name)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_abeb92238dd9592bdc946de9c849f7275}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_a25ade484ee4e41ac3e8bca11acad8a48}{save\+To\+File}} (self, file\+Name)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_aa3a528fdbc3800f5285a839de6339c0e}{set\+Range}} (self, name, strings)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_a9b653d54efcc1d19bebd8aa0a4cb2c9a}{get\+Upper}} (self, name)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_ad03ae510837b1fccf9ff40264b2c6e90}{get\+Lower}} (self, name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_ad8019f4792977ca787a8e6aa897bce18}{names}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_ab0bb464918cd9910c1c82a662d67782c}{lower}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_a6ae31a9133ee64da00ee128feaf2a471}{upper}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1parampriors_1_1ParamBounds_ac0e21ca4d3868b24d16433732140ca89}{filename\+Loaded\+From}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Class for holding list of parameter bounds (e.g. for plotting, or hard priors). 
+A limit is None if not specified, denoted by 'N' if read from a string or file
+
+:ivar names: list of parameter names
+:ivar lower: dict of lower limits, indexed by parameter name
+:ivar upper: dict of upper limits, indexed by parameter name
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_a43df505fc2f7489a7f34095c8fed21d1}\label{classgetdist_1_1parampriors_1_1ParamBounds_a43df505fc2f7489a7f34095c8fed21d1}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+parampriors.\+Param\+Bounds.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+Name = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param fileName: optional file name to read from
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_abeb92238dd9592bdc946de9c849f7275}\label{classgetdist_1_1parampriors_1_1ParamBounds_abeb92238dd9592bdc946de9c849f7275}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def getdist.\+parampriors.\+Param\+Bounds.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+parampriors.\+Param\+Bounds.\+get\+Lower(), getdist.\+mcsamples.\+M\+C\+Samples.\+get\+Lower(), getdist.\+parampriors.\+Param\+Bounds.\+get\+Upper(), getdist.\+mcsamples.\+M\+C\+Samples.\+get\+Upper(), getdist.\+parampriors.\+Param\+Bounds.\+names, getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+names, getdist.\+paramnames.\+Param\+List.\+names, and getdist.\+paramnames.\+Param\+Names.\+names.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1parampriors_1_1ParamBounds_abeb92238dd9592bdc946de9c849f7275_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_ad03ae510837b1fccf9ff40264b2c6e90}\label{classgetdist_1_1parampriors_1_1ParamBounds_ad03ae510837b1fccf9ff40264b2c6e90}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!get\+Lower@{get\+Lower}}
+\index{get\+Lower@{get\+Lower}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{get\+Lower()}{getLower()}}
+{\footnotesize\ttfamily def getdist.\+parampriors.\+Param\+Bounds.\+get\+Lower (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param name: parameter name
+:return: lower limit, or None if not specified
+\end{DoxyVerb}
+ 
+
+References getdist.\+parampriors.\+Param\+Bounds.\+lower.
+
+
+
+Referenced by getdist.\+parampriors.\+Param\+Bounds.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1parampriors_1_1ParamBounds_ad03ae510837b1fccf9ff40264b2c6e90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_a9b653d54efcc1d19bebd8aa0a4cb2c9a}\label{classgetdist_1_1parampriors_1_1ParamBounds_a9b653d54efcc1d19bebd8aa0a4cb2c9a}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!get\+Upper@{get\+Upper}}
+\index{get\+Upper@{get\+Upper}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{get\+Upper()}{getUpper()}}
+{\footnotesize\ttfamily def getdist.\+parampriors.\+Param\+Bounds.\+get\+Upper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param name: parameter name
+:return: upper limit, or None if not specified
+\end{DoxyVerb}
+ 
+
+References getdist.\+parampriors.\+Param\+Bounds.\+upper.
+
+
+
+Referenced by getdist.\+parampriors.\+Param\+Bounds.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1parampriors_1_1ParamBounds_a9b653d54efcc1d19bebd8aa0a4cb2c9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_af30cba6cd32f1bd0532c223b9eb8546b}\label{classgetdist_1_1parampriors_1_1ParamBounds_af30cba6cd32f1bd0532c223b9eb8546b}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily def getdist.\+parampriors.\+Param\+Bounds.\+load\+From\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist.\+types.\+Best\+Fit.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1parampriors_1_1ParamBounds_af30cba6cd32f1bd0532c223b9eb8546b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_a25ade484ee4e41ac3e8bca11acad8a48}\label{classgetdist_1_1parampriors_1_1ParamBounds_a25ade484ee4e41ac3e8bca11acad8a48}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!save\+To\+File@{save\+To\+File}}
+\index{save\+To\+File@{save\+To\+File}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{save\+To\+File()}{saveToFile()}}
+{\footnotesize\ttfamily def getdist.\+parampriors.\+Param\+Bounds.\+save\+To\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+Name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save to a plain text file
+
+:param fileName: file name to save to
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_aa3a528fdbc3800f5285a839de6339c0e}\label{classgetdist_1_1parampriors_1_1ParamBounds_aa3a528fdbc3800f5285a839de6339c0e}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!set\+Range@{set\+Range}}
+\index{set\+Range@{set\+Range}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{set\+Range()}{setRange()}}
+{\footnotesize\ttfamily def getdist.\+parampriors.\+Param\+Bounds.\+set\+Range (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{strings }\end{DoxyParamCaption})}
+
+
+
+References C\+A\+M\+B\+\_\+test\+\_\+files.\+float, getdist.\+parampriors.\+Param\+Bounds.\+lower, getdist.\+parampriors.\+Param\+Bounds.\+names, getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+names, getdist.\+paramnames.\+Param\+List.\+names, getdist.\+paramnames.\+Param\+Names.\+names, and getdist.\+parampriors.\+Param\+Bounds.\+upper.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_ac0e21ca4d3868b24d16433732140ca89}\label{classgetdist_1_1parampriors_1_1ParamBounds_ac0e21ca4d3868b24d16433732140ca89}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!filename\+Loaded\+From@{filename\+Loaded\+From}}
+\index{filename\+Loaded\+From@{filename\+Loaded\+From}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{filename\+Loaded\+From}{filenameLoadedFrom}}
+{\footnotesize\ttfamily getdist.\+parampriors.\+Param\+Bounds.\+filename\+Loaded\+From}
+
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_ab0bb464918cd9910c1c82a662d67782c}\label{classgetdist_1_1parampriors_1_1ParamBounds_ab0bb464918cd9910c1c82a662d67782c}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!lower@{lower}}
+\index{lower@{lower}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{lower}{lower}}
+{\footnotesize\ttfamily getdist.\+parampriors.\+Param\+Bounds.\+lower}
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+\_\+\+\_\+str\+\_\+\+\_\+(), getdist.\+parampriors.\+Param\+Bounds.\+get\+Lower(), and getdist.\+parampriors.\+Param\+Bounds.\+set\+Range().
+
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_ad8019f4792977ca787a8e6aa897bce18}\label{classgetdist_1_1parampriors_1_1ParamBounds_ad8019f4792977ca787a8e6aa897bce18}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!names@{names}}
+\index{names@{names}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily getdist.\+parampriors.\+Param\+Bounds.\+names}
+
+
+
+Referenced by getdist.\+parampriors.\+Param\+Bounds.\+\_\+\+\_\+str\+\_\+\+\_\+(), paramgrid.\+batchjob.\+data\+Set.\+add(), paramgrid.\+batchjob.\+data\+Set.\+has\+All(), paramgrid.\+batchjob.\+data\+Set.\+has\+Name(), paramgrid.\+batchjob.\+data\+Set.\+names\+Replacing(), getdist.\+parampriors.\+Param\+Bounds.\+set\+Range(), and paramgrid.\+batchjob.\+data\+Set.\+tag\+Replacing().
+
+\mbox{\Hypertarget{classgetdist_1_1parampriors_1_1ParamBounds_a6ae31a9133ee64da00ee128feaf2a471}\label{classgetdist_1_1parampriors_1_1ParamBounds_a6ae31a9133ee64da00ee128feaf2a471}} 
+\index{getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}!upper@{upper}}
+\index{upper@{upper}!getdist\+::parampriors\+::\+Param\+Bounds@{getdist\+::parampriors\+::\+Param\+Bounds}}
+\subsubsection{\texorpdfstring{upper}{upper}}
+{\footnotesize\ttfamily getdist.\+parampriors.\+Param\+Bounds.\+upper}
+
+
+
+Referenced by getdist.\+types.\+Param\+Limit.\+\_\+\+\_\+str\+\_\+\+\_\+(), getdist.\+parampriors.\+Param\+Bounds.\+get\+Upper(), and getdist.\+parampriors.\+Param\+Bounds.\+set\+Range().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{parampriors_8py}{parampriors.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,687 @@
+\hypertarget{namespaceszcounts}{}\section{szcounts Module Reference}
+\label{namespaceszcounts}\index{szcounts@{szcounts}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structszcounts_1_1szlikelihood}{szlikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespaceszcounts_a0c8563799b2d0ed9c6c98a8164fa46b9}{szlikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespaceszcounts_afa324b0c4ff10f2122b6d75541b4e204}{sz\+\_\+init}}
+\item 
+real(mcp) function, public \mbox{\hyperlink{namespaceszcounts_abc28ab0b8d2db0b6f91aa9b99cac694f}{szcc\+\_\+cash}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespaceszcounts_a115079cdaf012d6e19dfcf1ef1d94de6}{do\+\_\+sz\+\_\+init}} = .true.
+\item 
+logical \mbox{\hyperlink{namespaceszcounts_ab9a32458d184b4ed56c53c9082c7c67a}{use\+\_\+sz}} = .false.
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_aedc8585dbbc04a06f4913d1d15752108}{sz\+\_\+num}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a2c231e5f41215024e487ea111556280a}{ny}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a5b5fcdf2152c2af5169ef6293749f467}{nz}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a7cd38bc2def0a071d9d8ccf4de51fd98}{sz\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_aeca7339cc77539d46b2ac1756c6eef3b}{nmiss\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a6def443ac3e0a9afd588d7251c768760}{errorz\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a89e748b08fe1c1bf0622bc36abb46e38}{print\+\_\+counts}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_aec365ec73a0a61aac5c8f6b386972ae3}{nmiss}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a2918e9d37a3720ad5c9d793005f4c774}{nred2}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_adbee780b7de47a7a0ed712ecf643edad}{ncat}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a0c42a07d181e073516184ad2778e1b0c}{nerf}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a1e708b5794db648704f60ff689180607}{nrows\+\_\+qa}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a439b480209d3bead1d0c7fdada2d2dda}{nrows\+\_\+erf}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_ac9b32f7b1676215c63a305f4ad36ac0a}{ylim\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a27757054150c1df2c034d1404888b01d}{for}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a9d5e47bc9753495f7e786d6a346a0430}{constant}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a2113fbfc3fd3f4f7d482dfc83ed3ce40}{ylim}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a971abc806d9e41dbb94fcf7b448b1c91}{variable}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a97eccbe43cd988a15f416908d5032a54}{dncat}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a7a9570e041772a0a85c72608e5bd79b8}{dnzcat}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_ad8ce700b221def6cc6adfbbac449cdec}{dnycat}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a169b8a0331217f4777d810a37e5459c2}{dn}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_aa90e9286036783e86cde085a3266838c}{dnz}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_aed7311f56ea05af971cdd62ed4d8ff1c}{dny}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a1bde530b627f5318a6681ddc544355d6}{z}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a42ba2df42e9722f2624e5f3e187731c3}{logy}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a237475f3cddb3344fb45713300e0fe94}{ylims}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a5717e85376dd2fd0bb2bb0eb6fb9e7fb}{thetas}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_aae1d8f46899dd92909f27129c9866db5}{skyfracs}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_abc9374ee47357a4c1c760d45a0336faf}{erf\+\_\+list}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a4aebae61d9611765edf7687fe66c383d}{qa\+\_\+ytot}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_addcf659f211cb953c4ed1510888bc24a}{szcat}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_adffd232373e78bf39d363f027f0564ff}{clash}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a1e8fc0be8d32aa9edec391fdc16f1978}{wtg}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a93fe6f6bac05415c56bdb59429db5345}{lens}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a64fdba6e458ea314da7f871a1ec879ae}{cccp}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_afd77c97be9a90a59819249f5cc73760b}{pns}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_acb8cfec6e2fe1c42d1e65aa06c0b81df}{oh2}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a162a76075580761ec2e15dd4e6d716fd}{palpha}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_af79e33e4d88161185c0ab245f42a51f2}{pystar}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a6dfdc3232342e7579dcc7dae3506d7fd}{psigma}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a195fa99a01ff79fd80fe03fb78b8b573}{pbeta}}
+\item 
+real \mbox{\hyperlink{namespaceszcounts_a8f0eaabdc83a62e45bf24daf1e820e76}{sz\+\_\+kmax}} = 4.\+0
+\item 
+character(len=256) \mbox{\hyperlink{namespaceszcounts_ad7b2b406324ec451bf7199f40411f42b}{sz\+\_\+filename}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespaceszcounts_aa726969ed60d9d595227138f6fae1b5e}{sz\+\_\+version}} = \textquotesingle{}Nov\+\_\+2014\textquotesingle{}
+\item 
+real(dl), save \mbox{\hyperlink{namespaceszcounts_ab3202a28ada73a28c4052802235a7f04}{zmaxs}}
+\item 
+real(dl), save \mbox{\hyperlink{namespaceszcounts_a2718f37c5199b68be9ce1a3298a1a64f}{z0}}
+\item 
+real(dl), save \mbox{\hyperlink{namespaceszcounts_a6a402ad033e07eecf06cdd670fabfd78}{dz}}
+\item 
+integer, save \mbox{\hyperlink{namespaceszcounts_a16edd363d924414dcf42aff90a5b5cf1}{nred}}
+\item 
+integer, save \mbox{\hyperlink{namespaceszcounts_ae530cb9d64e88dd1ab20e603295c1d7b}{nscat}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceszcounts_afa324b0c4ff10f2122b6d75541b4e204}\label{namespaceszcounts_afa324b0c4ff10f2122b6d75541b4e204}} 
+\index{szcounts@{szcounts}!sz\+\_\+init@{sz\+\_\+init}}
+\index{sz\+\_\+init@{sz\+\_\+init}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{sz\+\_\+init()}{sz\_init()}}
+{\footnotesize\ttfamily subroutine szcounts\+::sz\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+0=constant ylim, $<$0=variable ylim 
+
+References dn, dncat, dny, dnycat, dnz, dnzcat, do\+\_\+sz\+\_\+init, dz, errorz\+\_\+switch, logy, massfunction\+::massfnpar, ncat, nmiss, nmiss\+\_\+switch, nred2, nscat, ny, nz, massobservable\+::q, skyfracs, sz\+\_\+switch, szcat, thetas, ylim\+\_\+switch, ylims, z, z0, and zmaxs.
+
+
+
+Referenced by szlikelihood\+\_\+add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceszcounts_afa324b0c4ff10f2122b6d75541b4e204_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceszcounts_abc28ab0b8d2db0b6f91aa9b99cac694f}\label{namespaceszcounts_abc28ab0b8d2db0b6f91aa9b99cac694f}} 
+\index{szcounts@{szcounts}!szcc\+\_\+cash@{szcc\+\_\+cash}}
+\index{szcc\+\_\+cash@{szcc\+\_\+cash}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{szcc\+\_\+cash()}{szcc\_cash()}}
+{\footnotesize\ttfamily real(mcp) function, public szcounts\+::szcc\+\_\+cash (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structszcounts_1_1szlikelihood}{szlikelihood}})}]{this,  }\item[{class (cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})}
+
+
+
+References cccp, cosmology\+::cosmopar, numbercounts\+::deltan\+\_\+yz(), dn, dncat, dny, dnz, dnzcat, erf\+\_\+list, lens, logy, settings\+::logzero, ncat, nred2, cosmologytypes\+::ns\+\_\+index, ny, nz, oh2, palpha, pbeta, pns, print\+\_\+counts, psigma, pystar, qa\+\_\+ytot, skyfracs, sz\+\_\+switch, thetas, wtg, ylims, and z.
+
+
+
+Referenced by szcounts\+::szlikelihood\+::loglike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceszcounts_abc28ab0b8d2db0b6f91aa9b99cac694f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespaceszcounts_abc28ab0b8d2db0b6f91aa9b99cac694f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceszcounts_a0c8563799b2d0ed9c6c98a8164fa46b9}\label{namespaceszcounts_a0c8563799b2d0ed9c6c98a8164fa46b9}} 
+\index{szcounts@{szcounts}!szlikelihood\+\_\+add@{szlikelihood\+\_\+add}}
+\index{szlikelihood\+\_\+add@{szlikelihood\+\_\+add}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{szlikelihood\+\_\+add()}{szlikelihood\_add()}}
+{\footnotesize\ttfamily subroutine, public szcounts\+::szlikelihood\+\_\+add (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References cccp, clash, settings\+::datadir, lens, massfunction\+::massfnpar, oh2, palpha, pbeta, pns, print\+\_\+counts, psigma, pystar, sz\+\_\+init(), sz\+\_\+kmax, sz\+\_\+switch, sz\+\_\+version, and wtg.
+
+
+
+Referenced by szcounts\+::szlikelihood\+::loglike(), and datalikelihoodlist\+::setdatalikelihoods().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespaceszcounts_a0c8563799b2d0ed9c6c98a8164fa46b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceszcounts_a0c8563799b2d0ed9c6c98a8164fa46b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceszcounts_a64fdba6e458ea314da7f871a1ec879ae}\label{namespaceszcounts_a64fdba6e458ea314da7f871a1ec879ae}} 
+\index{szcounts@{szcounts}!cccp@{cccp}}
+\index{cccp@{cccp}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{cccp}{cccp}}
+{\footnotesize\ttfamily real(dl) szcounts\+::cccp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_adffd232373e78bf39d363f027f0564ff}\label{namespaceszcounts_adffd232373e78bf39d363f027f0564ff}} 
+\index{szcounts@{szcounts}!clash@{clash}}
+\index{clash@{clash}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{clash}{clash}}
+{\footnotesize\ttfamily real(dl) szcounts\+::clash\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a9d5e47bc9753495f7e786d6a346a0430}\label{namespaceszcounts_a9d5e47bc9753495f7e786d6a346a0430}} 
+\index{szcounts@{szcounts}!constant@{constant}}
+\index{constant@{constant}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{constant}{constant}}
+{\footnotesize\ttfamily integer szcounts\+::constant\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a169b8a0331217f4777d810a37e5459c2}\label{namespaceszcounts_a169b8a0331217f4777d810a37e5459c2}} 
+\index{szcounts@{szcounts}!dn@{dn}}
+\index{dn@{dn}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{dn}{dn}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable szcounts\+::dn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a97eccbe43cd988a15f416908d5032a54}\label{namespaceszcounts_a97eccbe43cd988a15f416908d5032a54}} 
+\index{szcounts@{szcounts}!dncat@{dncat}}
+\index{dncat@{dncat}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{dncat}{dncat}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable szcounts\+::dncat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_aed7311f56ea05af971cdd62ed4d8ff1c}\label{namespaceszcounts_aed7311f56ea05af971cdd62ed4d8ff1c}} 
+\index{szcounts@{szcounts}!dny@{dny}}
+\index{dny@{dny}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{dny}{dny}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::dny\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_ad8ce700b221def6cc6adfbbac449cdec}\label{namespaceszcounts_ad8ce700b221def6cc6adfbbac449cdec}} 
+\index{szcounts@{szcounts}!dnycat@{dnycat}}
+\index{dnycat@{dnycat}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{dnycat}{dnycat}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::dnycat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_aa90e9286036783e86cde085a3266838c}\label{namespaceszcounts_aa90e9286036783e86cde085a3266838c}} 
+\index{szcounts@{szcounts}!dnz@{dnz}}
+\index{dnz@{dnz}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{dnz}{dnz}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::dnz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a7a9570e041772a0a85c72608e5bd79b8}\label{namespaceszcounts_a7a9570e041772a0a85c72608e5bd79b8}} 
+\index{szcounts@{szcounts}!dnzcat@{dnzcat}}
+\index{dnzcat@{dnzcat}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{dnzcat}{dnzcat}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::dnzcat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a115079cdaf012d6e19dfcf1ef1d94de6}\label{namespaceszcounts_a115079cdaf012d6e19dfcf1ef1d94de6}} 
+\index{szcounts@{szcounts}!do\+\_\+sz\+\_\+init@{do\+\_\+sz\+\_\+init}}
+\index{do\+\_\+sz\+\_\+init@{do\+\_\+sz\+\_\+init}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{do\+\_\+sz\+\_\+init}{do\_sz\_init}}
+{\footnotesize\ttfamily logical szcounts\+::do\+\_\+sz\+\_\+init = .true.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_a6a402ad033e07eecf06cdd670fabfd78}\label{namespaceszcounts_a6a402ad033e07eecf06cdd670fabfd78}} 
+\index{szcounts@{szcounts}!dz@{dz}}
+\index{dz@{dz}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{dz}{dz}}
+{\footnotesize\ttfamily real(dl), save szcounts\+::dz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_abc9374ee47357a4c1c760d45a0336faf}\label{namespaceszcounts_abc9374ee47357a4c1c760d45a0336faf}} 
+\index{szcounts@{szcounts}!erf\+\_\+list@{erf\+\_\+list}}
+\index{erf\+\_\+list@{erf\+\_\+list}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{erf\+\_\+list}{erf\_list}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable szcounts\+::erf\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a6def443ac3e0a9afd588d7251c768760}\label{namespaceszcounts_a6def443ac3e0a9afd588d7251c768760}} 
+\index{szcounts@{szcounts}!errorz\+\_\+switch@{errorz\+\_\+switch}}
+\index{errorz\+\_\+switch@{errorz\+\_\+switch}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{errorz\+\_\+switch}{errorz\_switch}}
+{\footnotesize\ttfamily integer szcounts\+::errorz\+\_\+switch\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_a27757054150c1df2c034d1404888b01d}\label{namespaceszcounts_a27757054150c1df2c034d1404888b01d}} 
+\index{szcounts@{szcounts}!for@{for}}
+\index{for@{for}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{for}{for}}
+{\footnotesize\ttfamily integer szcounts\+::for\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a93fe6f6bac05415c56bdb59429db5345}\label{namespaceszcounts_a93fe6f6bac05415c56bdb59429db5345}} 
+\index{szcounts@{szcounts}!lens@{lens}}
+\index{lens@{lens}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{lens}{lens}}
+{\footnotesize\ttfamily real(dl) szcounts\+::lens\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a42ba2df42e9722f2624e5f3e187731c3}\label{namespaceszcounts_a42ba2df42e9722f2624e5f3e187731c3}} 
+\index{szcounts@{szcounts}!logy@{logy}}
+\index{logy@{logy}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{logy}{logy}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::logy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_adbee780b7de47a7a0ed712ecf643edad}\label{namespaceszcounts_adbee780b7de47a7a0ed712ecf643edad}} 
+\index{szcounts@{szcounts}!ncat@{ncat}}
+\index{ncat@{ncat}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{ncat}{ncat}}
+{\footnotesize\ttfamily integer szcounts\+::ncat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a0c42a07d181e073516184ad2778e1b0c}\label{namespaceszcounts_a0c42a07d181e073516184ad2778e1b0c}} 
+\index{szcounts@{szcounts}!nerf@{nerf}}
+\index{nerf@{nerf}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nerf}{nerf}}
+{\footnotesize\ttfamily integer szcounts\+::nerf\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_aec365ec73a0a61aac5c8f6b386972ae3}\label{namespaceszcounts_aec365ec73a0a61aac5c8f6b386972ae3}} 
+\index{szcounts@{szcounts}!nmiss@{nmiss}}
+\index{nmiss@{nmiss}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nmiss}{nmiss}}
+{\footnotesize\ttfamily integer szcounts\+::nmiss\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_aeca7339cc77539d46b2ac1756c6eef3b}\label{namespaceszcounts_aeca7339cc77539d46b2ac1756c6eef3b}} 
+\index{szcounts@{szcounts}!nmiss\+\_\+switch@{nmiss\+\_\+switch}}
+\index{nmiss\+\_\+switch@{nmiss\+\_\+switch}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nmiss\+\_\+switch}{nmiss\_switch}}
+{\footnotesize\ttfamily integer szcounts\+::nmiss\+\_\+switch\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_a16edd363d924414dcf42aff90a5b5cf1}\label{namespaceszcounts_a16edd363d924414dcf42aff90a5b5cf1}} 
+\index{szcounts@{szcounts}!nred@{nred}}
+\index{nred@{nred}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nred}{nred}}
+{\footnotesize\ttfamily integer, save szcounts\+::nred\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a2918e9d37a3720ad5c9d793005f4c774}\label{namespaceszcounts_a2918e9d37a3720ad5c9d793005f4c774}} 
+\index{szcounts@{szcounts}!nred2@{nred2}}
+\index{nred2@{nred2}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nred2}{nred2}}
+{\footnotesize\ttfamily integer szcounts\+::nred2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a439b480209d3bead1d0c7fdada2d2dda}\label{namespaceszcounts_a439b480209d3bead1d0c7fdada2d2dda}} 
+\index{szcounts@{szcounts}!nrows\+\_\+erf@{nrows\+\_\+erf}}
+\index{nrows\+\_\+erf@{nrows\+\_\+erf}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nrows\+\_\+erf}{nrows\_erf}}
+{\footnotesize\ttfamily integer szcounts\+::nrows\+\_\+erf\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a1e708b5794db648704f60ff689180607}\label{namespaceszcounts_a1e708b5794db648704f60ff689180607}} 
+\index{szcounts@{szcounts}!nrows\+\_\+qa@{nrows\+\_\+qa}}
+\index{nrows\+\_\+qa@{nrows\+\_\+qa}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nrows\+\_\+qa}{nrows\_qa}}
+{\footnotesize\ttfamily integer szcounts\+::nrows\+\_\+qa\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_ae530cb9d64e88dd1ab20e603295c1d7b}\label{namespaceszcounts_ae530cb9d64e88dd1ab20e603295c1d7b}} 
+\index{szcounts@{szcounts}!nscat@{nscat}}
+\index{nscat@{nscat}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nscat}{nscat}}
+{\footnotesize\ttfamily integer, save szcounts\+::nscat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_a2c231e5f41215024e487ea111556280a}\label{namespaceszcounts_a2c231e5f41215024e487ea111556280a}} 
+\index{szcounts@{szcounts}!ny@{ny}}
+\index{ny@{ny}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{ny}{ny}}
+{\footnotesize\ttfamily integer szcounts\+::ny\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a5b5fcdf2152c2af5169ef6293749f467}\label{namespaceszcounts_a5b5fcdf2152c2af5169ef6293749f467}} 
+\index{szcounts@{szcounts}!nz@{nz}}
+\index{nz@{nz}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{nz}{nz}}
+{\footnotesize\ttfamily integer szcounts\+::nz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_acb8cfec6e2fe1c42d1e65aa06c0b81df}\label{namespaceszcounts_acb8cfec6e2fe1c42d1e65aa06c0b81df}} 
+\index{szcounts@{szcounts}!oh2@{oh2}}
+\index{oh2@{oh2}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{oh2}{oh2}}
+{\footnotesize\ttfamily real(dl) szcounts\+::oh2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a162a76075580761ec2e15dd4e6d716fd}\label{namespaceszcounts_a162a76075580761ec2e15dd4e6d716fd}} 
+\index{szcounts@{szcounts}!palpha@{palpha}}
+\index{palpha@{palpha}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{palpha}{palpha}}
+{\footnotesize\ttfamily real(dl) szcounts\+::palpha\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a195fa99a01ff79fd80fe03fb78b8b573}\label{namespaceszcounts_a195fa99a01ff79fd80fe03fb78b8b573}} 
+\index{szcounts@{szcounts}!pbeta@{pbeta}}
+\index{pbeta@{pbeta}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{pbeta}{pbeta}}
+{\footnotesize\ttfamily real(dl) szcounts\+::pbeta\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_afd77c97be9a90a59819249f5cc73760b}\label{namespaceszcounts_afd77c97be9a90a59819249f5cc73760b}} 
+\index{szcounts@{szcounts}!pns@{pns}}
+\index{pns@{pns}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{pns}{pns}}
+{\footnotesize\ttfamily real(dl) szcounts\+::pns\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a89e748b08fe1c1bf0622bc36abb46e38}\label{namespaceszcounts_a89e748b08fe1c1bf0622bc36abb46e38}} 
+\index{szcounts@{szcounts}!print\+\_\+counts@{print\+\_\+counts}}
+\index{print\+\_\+counts@{print\+\_\+counts}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{print\+\_\+counts}{print\_counts}}
+{\footnotesize\ttfamily integer szcounts\+::print\+\_\+counts\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a6dfdc3232342e7579dcc7dae3506d7fd}\label{namespaceszcounts_a6dfdc3232342e7579dcc7dae3506d7fd}} 
+\index{szcounts@{szcounts}!psigma@{psigma}}
+\index{psigma@{psigma}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{psigma}{psigma}}
+{\footnotesize\ttfamily real(dl) szcounts\+::psigma\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_af79e33e4d88161185c0ab245f42a51f2}\label{namespaceszcounts_af79e33e4d88161185c0ab245f42a51f2}} 
+\index{szcounts@{szcounts}!pystar@{pystar}}
+\index{pystar@{pystar}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{pystar}{pystar}}
+{\footnotesize\ttfamily real(dl) szcounts\+::pystar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a4aebae61d9611765edf7687fe66c383d}\label{namespaceszcounts_a4aebae61d9611765edf7687fe66c383d}} 
+\index{szcounts@{szcounts}!qa\+\_\+ytot@{qa\+\_\+ytot}}
+\index{qa\+\_\+ytot@{qa\+\_\+ytot}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{qa\+\_\+ytot}{qa\_ytot}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable szcounts\+::qa\+\_\+ytot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_aae1d8f46899dd92909f27129c9866db5}\label{namespaceszcounts_aae1d8f46899dd92909f27129c9866db5}} 
+\index{szcounts@{szcounts}!skyfracs@{skyfracs}}
+\index{skyfracs@{skyfracs}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{skyfracs}{skyfracs}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::skyfracs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_ad7b2b406324ec451bf7199f40411f42b}\label{namespaceszcounts_ad7b2b406324ec451bf7199f40411f42b}} 
+\index{szcounts@{szcounts}!sz\+\_\+filename@{sz\+\_\+filename}}
+\index{sz\+\_\+filename@{sz\+\_\+filename}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{sz\+\_\+filename}{sz\_filename}}
+{\footnotesize\ttfamily character(len=256) szcounts\+::sz\+\_\+filename = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a8f0eaabdc83a62e45bf24daf1e820e76}\label{namespaceszcounts_a8f0eaabdc83a62e45bf24daf1e820e76}} 
+\index{szcounts@{szcounts}!sz\+\_\+kmax@{sz\+\_\+kmax}}
+\index{sz\+\_\+kmax@{sz\+\_\+kmax}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{sz\+\_\+kmax}{sz\_kmax}}
+{\footnotesize\ttfamily real szcounts\+::sz\+\_\+kmax = 4.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_aedc8585dbbc04a06f4913d1d15752108}\label{namespaceszcounts_aedc8585dbbc04a06f4913d1d15752108}} 
+\index{szcounts@{szcounts}!sz\+\_\+num@{sz\+\_\+num}}
+\index{sz\+\_\+num@{sz\+\_\+num}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{sz\+\_\+num}{sz\_num}}
+{\footnotesize\ttfamily integer szcounts\+::sz\+\_\+num\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a7cd38bc2def0a071d9d8ccf4de51fd98}\label{namespaceszcounts_a7cd38bc2def0a071d9d8ccf4de51fd98}} 
+\index{szcounts@{szcounts}!sz\+\_\+switch@{sz\+\_\+switch}}
+\index{sz\+\_\+switch@{sz\+\_\+switch}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{sz\+\_\+switch}{sz\_switch}}
+{\footnotesize\ttfamily integer szcounts\+::sz\+\_\+switch\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_aa726969ed60d9d595227138f6fae1b5e}\label{namespaceszcounts_aa726969ed60d9d595227138f6fae1b5e}} 
+\index{szcounts@{szcounts}!sz\+\_\+version@{sz\+\_\+version}}
+\index{sz\+\_\+version@{sz\+\_\+version}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{sz\+\_\+version}{sz\_version}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter szcounts\+::sz\+\_\+version = \textquotesingle{}Nov\+\_\+2014\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_addcf659f211cb953c4ed1510888bc24a}\label{namespaceszcounts_addcf659f211cb953c4ed1510888bc24a}} 
+\index{szcounts@{szcounts}!szcat@{szcat}}
+\index{szcat@{szcat}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{szcat}{szcat}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable szcounts\+::szcat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_a5717e85376dd2fd0bb2bb0eb6fb9e7fb}\label{namespaceszcounts_a5717e85376dd2fd0bb2bb0eb6fb9e7fb}} 
+\index{szcounts@{szcounts}!thetas@{thetas}}
+\index{thetas@{thetas}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{thetas}{thetas}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::thetas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_ab9a32458d184b4ed56c53c9082c7c67a}\label{namespaceszcounts_ab9a32458d184b4ed56c53c9082c7c67a}} 
+\index{szcounts@{szcounts}!use\+\_\+sz@{use\+\_\+sz}}
+\index{use\+\_\+sz@{use\+\_\+sz}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{use\+\_\+sz}{use\_sz}}
+{\footnotesize\ttfamily logical szcounts\+::use\+\_\+sz = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a971abc806d9e41dbb94fcf7b448b1c91}\label{namespaceszcounts_a971abc806d9e41dbb94fcf7b448b1c91}} 
+\index{szcounts@{szcounts}!variable@{variable}}
+\index{variable@{variable}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{variable}{variable}}
+{\footnotesize\ttfamily integer szcounts\+::variable\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_a1e8fc0be8d32aa9edec391fdc16f1978}\label{namespaceszcounts_a1e8fc0be8d32aa9edec391fdc16f1978}} 
+\index{szcounts@{szcounts}!wtg@{wtg}}
+\index{wtg@{wtg}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{wtg}{wtg}}
+{\footnotesize\ttfamily real(dl) szcounts\+::wtg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by szcc\+\_\+cash(), and szlikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespaceszcounts_a2113fbfc3fd3f4f7d482dfc83ed3ce40}\label{namespaceszcounts_a2113fbfc3fd3f4f7d482dfc83ed3ce40}} 
+\index{szcounts@{szcounts}!ylim@{ylim}}
+\index{ylim@{ylim}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{ylim}{ylim}}
+{\footnotesize\ttfamily integer szcounts\+::ylim\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceszcounts_ac9b32f7b1676215c63a305f4ad36ac0a}\label{namespaceszcounts_ac9b32f7b1676215c63a305f4ad36ac0a}} 
+\index{szcounts@{szcounts}!ylim\+\_\+switch@{ylim\+\_\+switch}}
+\index{ylim\+\_\+switch@{ylim\+\_\+switch}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{ylim\+\_\+switch}{ylim\_switch}}
+{\footnotesize\ttfamily integer szcounts\+::ylim\+\_\+switch\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_a237475f3cddb3344fb45713300e0fe94}\label{namespaceszcounts_a237475f3cddb3344fb45713300e0fe94}} 
+\index{szcounts@{szcounts}!ylims@{ylims}}
+\index{ylims@{ylims}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{ylims}{ylims}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable szcounts\+::ylims\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a1bde530b627f5318a6681ddc544355d6}\label{namespaceszcounts_a1bde530b627f5318a6681ddc544355d6}} 
+\index{szcounts@{szcounts}!z@{z}}
+\index{z@{z}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable szcounts\+::z\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init(), and szcc\+\_\+cash().
+
+\mbox{\Hypertarget{namespaceszcounts_a2718f37c5199b68be9ce1a3298a1a64f}\label{namespaceszcounts_a2718f37c5199b68be9ce1a3298a1a64f}} 
+\index{szcounts@{szcounts}!z0@{z0}}
+\index{z0@{z0}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{z0}{z0}}
+{\footnotesize\ttfamily real(dl), save szcounts\+::z0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+
+\mbox{\Hypertarget{namespaceszcounts_ab3202a28ada73a28c4052802235a7f04}\label{namespaceszcounts_ab3202a28ada73a28c4052802235a7f04}} 
+\index{szcounts@{szcounts}!zmaxs@{zmaxs}}
+\index{zmaxs@{zmaxs}!szcounts@{szcounts}}
+\subsubsection{\texorpdfstring{zmaxs}{zmaxs}}
+{\footnotesize\ttfamily real(dl), save szcounts\+::zmaxs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sz\+\_\+init().
+

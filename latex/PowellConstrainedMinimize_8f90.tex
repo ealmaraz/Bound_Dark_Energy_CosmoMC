@@ -1,0 +1,40 @@
+\hypertarget{PowellConstrainedMinimize_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Powell\+Constrained\+Minimize.f90 File Reference}
+\label{PowellConstrainedMinimize_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Powell\+Constrained\+Minimize.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Powell\+Constrained\+Minimize.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structpowell__constrainedoptimize_1_1tbobyqa}{powell\+\_\+constrainedoptimize\+::tbobyqa}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacepowell__constrainedoptimize}{powell\+\_\+constrainedoptimize}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(powell\+\_\+co\+\_\+prec) function \mbox{\hyperlink{namespacepowell__constrainedoptimize_ae7f7153e98c2ba47f65f71c04dfdc6b6}{powell\+\_\+constrainedoptimize\+::funkk}} (this, n, X)
+\item 
+logical function \mbox{\hyperlink{namespacepowell__constrainedoptimize_a18b806fe9f14b759021a23344e46743a}{powell\+\_\+constrainedoptimize\+::bobyqa}} (this, N, N\+PT, X, XL, XU, R\+H\+O\+B\+EG, R\+H\+O\+E\+ND, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN)
+\item 
+logical function \mbox{\hyperlink{namespacepowell__constrainedoptimize_a7c19fea82c74411b0aa5dc322b397049}{powell\+\_\+constrainedoptimize\+::bobyqb}} (this, N, N\+PT, X, XL, XU, R\+H\+O\+B\+EG, R\+H\+O\+E\+ND, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN, X\+B\+A\+SE, X\+PT, F\+V\+AL, X\+O\+PT, G\+O\+PT, HQ, PQ, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, X\+N\+EW, X\+A\+LT, D, V\+L\+AG, W)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_ad592264ce63370c7014ab5883330e26d}{powell\+\_\+constrainedoptimize\+::altmov}} (N, N\+PT, X\+PT, X\+O\+PT, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, K\+O\+PT, K\+N\+EW, A\+D\+E\+LT, X\+N\+EW, X\+A\+LT, A\+L\+P\+HA, C\+A\+U\+C\+HY, G\+L\+AG, H\+C\+OL, W)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8e5256bd13e2e03b0e1dda0e1ff3ef1f}{powell\+\_\+constrainedoptimize\+::prelim}} (this, N, N\+PT, X, XL, XU, R\+H\+O\+B\+EG, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN, X\+B\+A\+SE, X\+PT, F\+V\+AL, G\+O\+PT, HQ, PQ, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, NF, K\+O\+PT)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_a2a5e8cfa32743f237ece75e1b4d00469}{powell\+\_\+constrainedoptimize\+::rescue}} (this, N, N\+PT, XL, XU, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN, X\+B\+A\+SE, X\+PT, F\+V\+AL, X\+O\+PT, G\+O\+PT, HQ, PQ, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, NF, D\+E\+L\+TA, K\+O\+PT, V\+L\+AG, P\+T\+S\+A\+UX, P\+T\+S\+ID, W)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8d96126f07f9d909b52d61690eaa4c80}{powell\+\_\+constrainedoptimize\+::trsbox}} (N, N\+PT, X\+PT, X\+O\+PT, G\+O\+PT, HQ, PQ, SL, SU, D\+E\+L\+TA, X\+N\+EW, D, G\+N\+EW, X\+B\+DI, S, HS, H\+R\+ED, D\+SQ, C\+R\+V\+M\+IN)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_aea17c033c10b38991c1484dfd380b3b1}{powell\+\_\+constrainedoptimize\+::update}} (N, N\+PT, B\+M\+AT, Z\+M\+AT, N\+D\+IM, V\+L\+AG, B\+E\+TA, D\+E\+N\+OM, K\+N\+EW, W)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{powell\+\_\+constrainedoptimize\+::dp}} = K\+I\+ND(1.d0)
+\item 
+integer, parameter \mbox{\hyperlink{namespacepowell__constrainedoptimize_a09e82bbc40fa02c9929d47a2d1c56bdb}{powell\+\_\+constrainedoptimize\+::func\+\_\+dp}} = dp
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacepowell__constrainedoptimize_a18207be3e2f370a42332601cfccca22e}{powell\+\_\+constrainedoptimize\+::powell\+\_\+co\+\_\+prec}} = dp
+\end{DoxyCompactItemize}

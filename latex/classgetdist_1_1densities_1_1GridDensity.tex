@@ -1,0 +1,156 @@
+\hypertarget{classgetdist_1_1densities_1_1GridDensity}{}\section{getdist.\+densities.\+Grid\+Density Class Reference}
+\label{classgetdist_1_1densities_1_1GridDensity}\index{getdist.\+densities.\+Grid\+Density@{getdist.\+densities.\+Grid\+Density}}
+
+
+Inheritance diagram for getdist.\+densities.\+Grid\+Density\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1GridDensity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+densities.\+Grid\+Density\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classgetdist_1_1densities_1_1GridDensity__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_ae3624f9061f1aa6d8ff480e08924f15e}{normalize}} (self, by=\textquotesingle{}integral\textquotesingle{}, in\+\_\+place=False)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_a846e4c6346b0b839fbec49eab7570b3e}{setP}} (self, \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_aad3d52edbfbf1a94ecbd0c779bd39dc2}{P}}=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_a223a910e5babc635c48056695544c56b}{bounds}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_a33144fef21d2dc029492be256a2e9ee1}{get\+Contour\+Levels}} (self, contours=\mbox{\hyperlink{namespacegetdist_1_1densities_a93d19accaa564f6252d80ae48a40ae3b}{default\+Contours}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_a82560f102e430ebcd25f8ab8bf140a69}{spl}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_aad3d52edbfbf1a94ecbd0c779bd39dc2}{P}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Base class for probability density grids (normalized or not)
+
+:ivar P: array of density values
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1GridDensity_a223a910e5babc635c48056695544c56b}\label{classgetdist_1_1densities_1_1GridDensity_a223a910e5babc635c48056695544c56b}} 
+\index{getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}!bounds@{bounds}}
+\index{bounds@{bounds}!getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}}
+\subsubsection{\texorpdfstring{bounds()}{bounds()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Grid\+Density.\+bounds (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Get bounds in order x, y, z..
+
+ :return: list of (min,max) values
+\end{DoxyVerb}
+ 
+
+References getdist.\+densities.\+Density1\+D.\+axes, getdist.\+densities.\+Density2\+D.\+axes, getdist.\+densities.\+Density\+N\+D.\+axes, getdist.\+densities.\+Density1\+D.\+view\+\_\+ranges, getdist.\+densities.\+Density2\+D.\+view\+\_\+ranges, and getdist.\+densities.\+Density\+N\+D.\+view\+\_\+ranges.
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1GridDensity_a33144fef21d2dc029492be256a2e9ee1}\label{classgetdist_1_1densities_1_1GridDensity_a33144fef21d2dc029492be256a2e9ee1}} 
+\index{getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}!get\+Contour\+Levels@{get\+Contour\+Levels}}
+\index{get\+Contour\+Levels@{get\+Contour\+Levels}!getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}}
+\subsubsection{\texorpdfstring{get\+Contour\+Levels()}{getContourLevels()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Grid\+Density.\+get\+Contour\+Levels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{contours = {\ttfamily \mbox{\hyperlink{namespacegetdist_1_1densities_a93d19accaa564f6252d80ae48a40ae3b}{default\+Contours}}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get contour levels
+
+:param contours: list of confidence limits to get (default [0.68, 0.95])
+:return: list of contour levels
+\end{DoxyVerb}
+ 
+
+References getdist.\+densities.\+Grid\+Density.\+P.
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1GridDensity_ae3624f9061f1aa6d8ff480e08924f15e}\label{classgetdist_1_1densities_1_1GridDensity_ae3624f9061f1aa6d8ff480e08924f15e}} 
+\index{getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}!normalize@{normalize}}
+\index{normalize@{normalize}!getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}}
+\subsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Grid\+Density.\+normalize (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{by = {\ttfamily \textquotesingle{}integral\textquotesingle{}},  }\item[{}]{in\+\_\+place = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Normalize the density grid
+
+:param by: 'integral' for standard normalization, or 'max', to normalize so the maximum value is unity
+:param in_place: if True, normalize in place, otherwise make copy (in case self.P is used elsewhere)
+\end{DoxyVerb}
+ 
+
+References getdist.\+densities.\+Density1\+D.\+norm\+\_\+integral(), getdist.\+densities.\+Density2\+D.\+norm\+\_\+integral(), getdist.\+densities.\+Density\+N\+D.\+norm\+\_\+integral(), getdist.\+densities.\+Grid\+Density.\+P, and getdist.\+densities.\+Grid\+Density.\+set\+P().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1GridDensity_ae3624f9061f1aa6d8ff480e08924f15e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1GridDensity_a846e4c6346b0b839fbec49eab7570b3e}\label{classgetdist_1_1densities_1_1GridDensity_a846e4c6346b0b839fbec49eab7570b3e}} 
+\index{getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}!setP@{setP}}
+\index{setP@{setP}!getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}}
+\subsubsection{\texorpdfstring{set\+P()}{setP()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Grid\+Density.\+setP (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{P = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the density grid values
+
+:param P: numpy array of density values
+\end{DoxyVerb}
+ 
+
+References getdist.\+densities.\+Density1\+D.\+axes, getdist.\+densities.\+Density2\+D.\+axes, getdist.\+densities.\+Density\+N\+D.\+axes, and copy\+Grid\+Files.\+zip.
+
+
+
+Referenced by getdist.\+densities.\+Grid\+Density.\+normalize().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1GridDensity_a846e4c6346b0b839fbec49eab7570b3e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1GridDensity_aad3d52edbfbf1a94ecbd0c779bd39dc2}\label{classgetdist_1_1densities_1_1GridDensity_aad3d52edbfbf1a94ecbd0c779bd39dc2}} 
+\index{getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}!P@{P}}
+\index{P@{P}!getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}}
+\subsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily getdist.\+densities.\+Grid\+Density.\+P}
+
+
+
+Referenced by getdist.\+densities.\+Density2\+D.\+\_\+init\+Spline(), getdist.\+densities.\+Density\+N\+D.\+\_\+init\+Spline(), getdist.\+densities.\+Grid\+Density.\+get\+Contour\+Levels(), getdist.\+densities.\+Density1\+D.\+norm\+\_\+integral(), getdist.\+densities.\+Density2\+D.\+norm\+\_\+integral(), getdist.\+densities.\+Density\+N\+D.\+norm\+\_\+integral(), and getdist.\+densities.\+Grid\+Density.\+normalize().
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1GridDensity_a82560f102e430ebcd25f8ab8bf140a69}\label{classgetdist_1_1densities_1_1GridDensity_a82560f102e430ebcd25f8ab8bf140a69}} 
+\index{getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}!spl@{spl}}
+\index{spl@{spl}!getdist\+::densities\+::\+Grid\+Density@{getdist\+::densities\+::\+Grid\+Density}}
+\subsubsection{\texorpdfstring{spl}{spl}}
+{\footnotesize\ttfamily getdist.\+densities.\+Grid\+Density.\+spl}
+
+
+
+Referenced by getdist.\+densities.\+Density1\+D.\+Prob(), getdist.\+densities.\+Density2\+D.\+Prob(), and getdist.\+densities.\+Density\+N\+D.\+Prob().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{densities_8py}{densities.\+py}}\end{DoxyCompactItemize}

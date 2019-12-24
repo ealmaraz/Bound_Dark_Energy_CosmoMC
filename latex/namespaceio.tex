@@ -1,0 +1,228 @@
+\hypertarget{namespaceio}{}\section{io Module Reference}
+\label{namespaceio}\index{io@{io}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceio_a66f16ed76a4e04dc87230befac8fb1cf}{io\+\_\+writeproposematrix}} (pmat, prop\+\_\+mat, comment)
+\item 
+subroutine \mbox{\hyperlink{namespaceio_a4734dc919ea1333d891f5bc59cedfc66}{io\+\_\+readproposematrix}} (Name\+Mapping, pmat, prop\+\_\+mat)
+\item 
+subroutine \mbox{\hyperlink{namespaceio_a304998b946633408764eeaf9b32b5687}{io\+\_\+outputchainrow}} (F, mult, like, values)
+\item 
+logical function \mbox{\hyperlink{namespaceio_a2ec9ab3b6936778533ec623b98d2b7b0}{io\+\_\+readchainrow}} (F, mult, like, values, params\+\_\+used, chain\+OK, samples\+\_\+chains)
+\item 
+subroutine \mbox{\hyperlink{namespaceio_a9de0b570ee4f35ba8e729e08cd26f7fe}{io\+\_\+readlastchainparams}} (name, mult, like, values, params\+\_\+used)
+\item 
+subroutine \mbox{\hyperlink{namespaceio_aa16f5fbf54e4430bea5bda0c8ab2f40e}{io\+\_\+outputparamnames}} (Names, fname, indices, add\+\_\+derived)
+\item 
+subroutine \mbox{\hyperlink{namespaceio_a767aeea14da167ae9027cac1b5b0a021}{io\+\_\+writebounds}} (Names, fname, limmin, limmax, limbot, limtop, indices)
+\item 
+subroutine \mbox{\hyperlink{namespaceio_a5bb562a4b599ac448a717abd04d9d856}{io\+\_\+readparamnames}} (Names, in\+\_\+root, prior\+\_\+ranges)
+\item 
+logical function \mbox{\hyperlink{namespaceio_af9199bcf411dd77ceb40961983436c41}{io\+\_\+readchainrows}} (in\+\_\+root, chain\+\_\+ix, chain\+\_\+num, ignorerows, nrows, ncols, max\+\_\+rows, coldata, samples\+\_\+are\+\_\+chains, noerror)
+\item 
+subroutine \mbox{\hyperlink{namespaceio_a4e9e0bbb9fe4d25b43fe615489cdf0a2}{io\+\_\+outputmargestats}} (Names, froot, num\+\_\+vars, num\+\_\+contours, contours\+\_\+str, cont\+\_\+lines, colix, mean, sddev, has\+\_\+limits\+\_\+bot, has\+\_\+limits\+\_\+top, labels)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceio_a304998b946633408764eeaf9b32b5687}\label{namespaceio_a304998b946633408764eeaf9b32b5687}} 
+\index{io@{io}!io\+\_\+outputchainrow@{io\+\_\+outputchainrow}}
+\index{io\+\_\+outputchainrow@{io\+\_\+outputchainrow}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+outputchainrow()}{io\_outputchainrow()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+outputchainrow (\begin{DoxyParamCaption}\item[{class(tfilestream)}]{F,  }\item[{real(mcp)}]{mult,  }\item[{real(mcp)}]{like,  }\item[{real(mcp), dimension(\+:)}]{values }\end{DoxyParamCaption})}
+
+
+
+References settings\+::flush\+\_\+write.
+
+
+
+Referenced by generaltypes\+::tcalculationatparampoint\+\_\+writeparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceio_a304998b946633408764eeaf9b32b5687_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceio_a4e9e0bbb9fe4d25b43fe615489cdf0a2}\label{namespaceio_a4e9e0bbb9fe4d25b43fe615489cdf0a2}} 
+\index{io@{io}!io\+\_\+outputmargestats@{io\+\_\+outputmargestats}}
+\index{io\+\_\+outputmargestats@{io\+\_\+outputmargestats}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+outputmargestats()}{io\_outputmargestats()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+outputmargestats (\begin{DoxyParamCaption}\item[{class(tparamnames)}]{Names,  }\item[{character(len=$\ast$), intent(in)}]{froot,  }\item[{integer, intent(in)}]{num\+\_\+vars,  }\item[{integer, intent(in)}]{num\+\_\+contours,  }\item[{character(len=$\ast$), intent(in)}]{contours\+\_\+str,  }\item[{real(mcp), dimension(\+:,\+:,\+:), intent(in)}]{cont\+\_\+lines,  }\item[{integer, dimension($\ast$), intent(in)}]{colix,  }\item[{real(mcp), dimension($\ast$), intent(in)}]{mean,  }\item[{real(mcp), dimension($\ast$), intent(in)}]{sddev,  }\item[{logical, dimension(\+:,\+:), intent(in)}]{has\+\_\+limits\+\_\+bot,  }\item[{logical, dimension(\+:,\+:), intent(in)}]{has\+\_\+limits\+\_\+top,  }\item[{character(len=128), dimension($\ast$)}]{labels }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{namespaceio_a4e9e0bbb9fe4d25b43fe615489cdf0a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceio_aa16f5fbf54e4430bea5bda0c8ab2f40e}\label{namespaceio_aa16f5fbf54e4430bea5bda0c8ab2f40e}} 
+\index{io@{io}!io\+\_\+outputparamnames@{io\+\_\+outputparamnames}}
+\index{io\+\_\+outputparamnames@{io\+\_\+outputparamnames}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+outputparamnames()}{io\_outputparamnames()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+outputparamnames (\begin{DoxyParamCaption}\item[{class(tparamnames)}]{Names,  }\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{integer, dimension(\+:), intent(in), optional}]{indices,  }\item[{logical, intent(in), optional}]{add\+\_\+derived }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceio_a2ec9ab3b6936778533ec623b98d2b7b0}\label{namespaceio_a2ec9ab3b6936778533ec623b98d2b7b0}} 
+\index{io@{io}!io\+\_\+readchainrow@{io\+\_\+readchainrow}}
+\index{io\+\_\+readchainrow@{io\+\_\+readchainrow}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+readchainrow()}{io\_readchainrow()}}
+{\footnotesize\ttfamily logical function io\+::io\+\_\+readchainrow (\begin{DoxyParamCaption}\item[{class(ttextfile)}]{F,  }\item[{real(mcp), intent(out)}]{mult,  }\item[{real(mcp), intent(out)}]{like,  }\item[{real(mcp), dimension(\+:), intent(out)}]{values,  }\item[{integer, dimension(\+:), intent(in)}]{params\+\_\+used,  }\item[{logical, intent(out), optional}]{chain\+OK,  }\item[{logical, intent(in), optional}]{samples\+\_\+chains }\end{DoxyParamCaption})}
+
+
+
+References settings\+::params\+\_\+used.
+
+
+
+Referenced by io\+\_\+readchainrows(), and importancesampling\+::timportancesampler\+\_\+importancesample().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceio_a2ec9ab3b6936778533ec623b98d2b7b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceio_af9199bcf411dd77ceb40961983436c41}\label{namespaceio_af9199bcf411dd77ceb40961983436c41}} 
+\index{io@{io}!io\+\_\+readchainrows@{io\+\_\+readchainrows}}
+\index{io\+\_\+readchainrows@{io\+\_\+readchainrows}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+readchainrows()}{io\_readchainrows()}}
+{\footnotesize\ttfamily logical function io\+::io\+\_\+readchainrows (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{in\+\_\+root,  }\item[{integer, intent(in)}]{chain\+\_\+ix,  }\item[{integer, intent(in)}]{chain\+\_\+num,  }\item[{integer, intent(in)}]{ignorerows,  }\item[{integer, intent(inout)}]{nrows,  }\item[{integer, intent(in)}]{ncols,  }\item[{integer, intent(in)}]{max\+\_\+rows,  }\item[{real(kind(1.d0)), dimension(\+:,\+:), intent(inout), allocatable}]{coldata,  }\item[{logical, intent(in)}]{samples\+\_\+are\+\_\+chains,  }\item[{logical, intent(in)}]{noerror }\end{DoxyParamCaption})}
+
+
+
+References io\+\_\+readchainrow().
+
+
+
+Referenced by getdist().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{namespaceio_af9199bcf411dd77ceb40961983436c41_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{namespaceio_af9199bcf411dd77ceb40961983436c41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceio_a9de0b570ee4f35ba8e729e08cd26f7fe}\label{namespaceio_a9de0b570ee4f35ba8e729e08cd26f7fe}} 
+\index{io@{io}!io\+\_\+readlastchainparams@{io\+\_\+readlastchainparams}}
+\index{io\+\_\+readlastchainparams@{io\+\_\+readlastchainparams}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+readlastchainparams()}{io\_readlastchainparams()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+readlastchainparams (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{name,  }\item[{real(mcp), intent(out)}]{mult,  }\item[{real(mcp), intent(out)}]{like,  }\item[{real(mcp), dimension(\+:), intent(out)}]{values,  }\item[{integer, dimension(\+:), intent(in)}]{params\+\_\+used }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::file.
+
+
+
+Referenced by generalsetup\+::tsetup\+\_\+dosampling().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceio_a9de0b570ee4f35ba8e729e08cd26f7fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceio_a5bb562a4b599ac448a717abd04d9d856}\label{namespaceio_a5bb562a4b599ac448a717abd04d9d856}} 
+\index{io@{io}!io\+\_\+readparamnames@{io\+\_\+readparamnames}}
+\index{io\+\_\+readparamnames@{io\+\_\+readparamnames}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+readparamnames()}{io\_readparamnames()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+readparamnames (\begin{DoxyParamCaption}\item[{class(tparamnames)}]{Names,  }\item[{character(len=$\ast$), intent(in)}]{in\+\_\+root,  }\item[{real(mcp), dimension(\+:,\+:)}]{prior\+\_\+ranges }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::file.
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{namespaceio_a5bb562a4b599ac448a717abd04d9d856_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceio_a4734dc919ea1333d891f5bc59cedfc66}\label{namespaceio_a4734dc919ea1333d891f5bc59cedfc66}} 
+\index{io@{io}!io\+\_\+readproposematrix@{io\+\_\+readproposematrix}}
+\index{io\+\_\+readproposematrix@{io\+\_\+readproposematrix}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+readproposematrix()}{io\_readproposematrix()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+readproposematrix (\begin{DoxyParamCaption}\item[{class(tparamnames)}]{Name\+Mapping,  }\item[{real(mcp), dimension(\+:,\+:)}]{pmat,  }\item[{character(len=$\ast$), intent(in)}]{prop\+\_\+mat }\end{DoxyParamCaption})}
+
+
+
+References fileutils\+::file, settings\+::num\+\_\+params, and settings\+::num\+\_\+theory\+\_\+params.
+
+\mbox{\Hypertarget{namespaceio_a767aeea14da167ae9027cac1b5b0a021}\label{namespaceio_a767aeea14da167ae9027cac1b5b0a021}} 
+\index{io@{io}!io\+\_\+writebounds@{io\+\_\+writebounds}}
+\index{io\+\_\+writebounds@{io\+\_\+writebounds}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+writebounds()}{io\_writebounds()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+writebounds (\begin{DoxyParamCaption}\item[{class(tparamnames)}]{Names,  }\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{real(mcp), dimension(\+:), intent(in)}]{limmin,  }\item[{real(mcp), dimension(\+:), intent(in)}]{limmax,  }\item[{logical, dimension(\+:), intent(in)}]{limbot,  }\item[{logical, dimension(\+:), intent(in)}]{limtop,  }\item[{integer, dimension(\+:), intent(in)}]{indices }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{namespaceio_a767aeea14da167ae9027cac1b5b0a021_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceio_a66f16ed76a4e04dc87230befac8fb1cf}\label{namespaceio_a66f16ed76a4e04dc87230befac8fb1cf}} 
+\index{io@{io}!io\+\_\+writeproposematrix@{io\+\_\+writeproposematrix}}
+\index{io\+\_\+writeproposematrix@{io\+\_\+writeproposematrix}!io@{io}}
+\subsubsection{\texorpdfstring{io\+\_\+writeproposematrix()}{io\_writeproposematrix()}}
+{\footnotesize\ttfamily subroutine io\+::io\+\_\+writeproposematrix (\begin{DoxyParamCaption}\item[{real(mcp), dimension(\+:,\+:)}]{pmat,  }\item[{character(len=$\ast$), intent(in)}]{prop\+\_\+mat,  }\item[{character(len=$\ast$), intent(in), optional}]{comment }\end{DoxyParamCaption})}
+
+
+
+References matrixutils\+::matrix\+\_\+write().
+
+
+
+Referenced by mcsamples\+::getcovmatrix().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{namespaceio_a66f16ed76a4e04dc87230befac8fb1cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceio_a66f16ed76a4e04dc87230befac8fb1cf_icgraph}
+\end{center}
+\end{figure}

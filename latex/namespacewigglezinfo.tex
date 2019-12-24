@@ -1,0 +1,186 @@
+\hypertarget{namespacewigglezinfo}{}\section{wigglezinfo Module Reference}
+\label{namespacewigglezinfo}\index{wigglezinfo@{wigglezinfo}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacewigglezinfo_a7c041022fefbb50e12a454d1cc60c14f}{gigglezinfo\+\_\+init}} ()
+\item 
+real(mcp) function \mbox{\hyperlink{namespacewigglezinfo_aa01d4906da1313fa5a21d8f3b5029f50}{giggleztoicsmooth}} (k, zbin)
+\item 
+subroutine \mbox{\hyperlink{namespacewigglezinfo_acb08f5ab3e49247de82dbfb12666f12e}{wigglezpowerat}} (kh, zbin, PK)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_a5ee76ba0ebd66c8881b0128f64a73b98}{za}} = 0.\+22d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_a0caef290cd3d8b7306771479bd8589e5}{zb}} = 0.\+41d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_a6079d8a819afcd264b152ce14b1c9524}{zc}} = 0.\+6d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewigglezinfo_aba81e5054787627511da43db2cab3e05}{zd}} = 0.\+78d0
+\item 
+real(mcp), dimension(4) \mbox{\hyperlink{namespacewigglezinfo_a8d9180a8b6d6e2d0fee91ed2c96901d1}{zeval}}
+\item 
+type(tcubicspline), dimension(\+:), allocatable \mbox{\hyperlink{namespacewigglezinfo_a6e6d78669da0432fe3a6e39caaf60e4c}{gigglezpk}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacewigglezinfo_aeea1af41c9bde44daa886428c2d864af}{gigglez\+\_\+numk}} = 500
+\item 
+integer, parameter \mbox{\hyperlink{namespacewigglezinfo_a4a6cdfc8a72a4b74579fed9741cd9d05}{gigglez\+\_\+numz}} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacewigglezinfo_a7c041022fefbb50e12a454d1cc60c14f}\label{namespacewigglezinfo_a7c041022fefbb50e12a454d1cc60c14f}} 
+\index{wigglezinfo@{wigglezinfo}!gigglezinfo\+\_\+init@{gigglezinfo\+\_\+init}}
+\index{gigglezinfo\+\_\+init@{gigglezinfo\+\_\+init}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{gigglezinfo\+\_\+init()}{gigglezinfo\_init()}}
+{\footnotesize\ttfamily subroutine wigglezinfo\+::gigglezinfo\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References settings\+::datadir, gigglez\+\_\+numk, gigglez\+\_\+numz, and gigglezpk.
+
+
+
+Referenced by wigglez\+::twigglezcommon\+\_\+readini().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglezinfo_a7c041022fefbb50e12a454d1cc60c14f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewigglezinfo_aa01d4906da1313fa5a21d8f3b5029f50}\label{namespacewigglezinfo_aa01d4906da1313fa5a21d8f3b5029f50}} 
+\index{wigglezinfo@{wigglezinfo}!giggleztoicsmooth@{giggleztoicsmooth}}
+\index{giggleztoicsmooth@{giggleztoicsmooth}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{giggleztoicsmooth()}{giggleztoicsmooth()}}
+{\footnotesize\ttfamily real(mcp) function wigglezinfo\+::giggleztoicsmooth (\begin{DoxyParamCaption}\item[{real(mcp), intent(in)}]{k,  }\item[{integer, intent(in)}]{zbin }\end{DoxyParamCaption})}
+
+
+
+Referenced by wigglezpowerat().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglezinfo_aa01d4906da1313fa5a21d8f3b5029f50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewigglezinfo_acb08f5ab3e49247de82dbfb12666f12e}\label{namespacewigglezinfo_acb08f5ab3e49247de82dbfb12666f12e}} 
+\index{wigglezinfo@{wigglezinfo}!wigglezpowerat@{wigglezpowerat}}
+\index{wigglezpowerat@{wigglezpowerat}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{wigglezpowerat()}{wigglezpowerat()}}
+{\footnotesize\ttfamily subroutine wigglezinfo\+::wigglezpowerat (\begin{DoxyParamCaption}\item[{real(mcp), intent(in)}]{kh,  }\item[{integer, intent(in)}]{zbin,  }\item[{real(mcp), intent(inout)}]{PK }\end{DoxyParamCaption})}
+
+
+
+References gigglezpk, and giggleztoicsmooth().
+
+
+
+Referenced by wigglez\+::wigglez\+\_\+lnlike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglezinfo_acb08f5ab3e49247de82dbfb12666f12e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewigglezinfo_acb08f5ab3e49247de82dbfb12666f12e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacewigglezinfo_aeea1af41c9bde44daa886428c2d864af}\label{namespacewigglezinfo_aeea1af41c9bde44daa886428c2d864af}} 
+\index{wigglezinfo@{wigglezinfo}!gigglez\+\_\+numk@{gigglez\+\_\+numk}}
+\index{gigglez\+\_\+numk@{gigglez\+\_\+numk}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{gigglez\+\_\+numk}{gigglez\_numk}}
+{\footnotesize\ttfamily integer, parameter wigglezinfo\+::gigglez\+\_\+numk = 500}
+
+
+
+Referenced by gigglezinfo\+\_\+init().
+
+\mbox{\Hypertarget{namespacewigglezinfo_a4a6cdfc8a72a4b74579fed9741cd9d05}\label{namespacewigglezinfo_a4a6cdfc8a72a4b74579fed9741cd9d05}} 
+\index{wigglezinfo@{wigglezinfo}!gigglez\+\_\+numz@{gigglez\+\_\+numz}}
+\index{gigglez\+\_\+numz@{gigglez\+\_\+numz}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{gigglez\+\_\+numz}{gigglez\_numz}}
+{\footnotesize\ttfamily integer, parameter wigglezinfo\+::gigglez\+\_\+numz = 4}
+
+
+
+Referenced by gigglezinfo\+\_\+init().
+
+\mbox{\Hypertarget{namespacewigglezinfo_a6e6d78669da0432fe3a6e39caaf60e4c}\label{namespacewigglezinfo_a6e6d78669da0432fe3a6e39caaf60e4c}} 
+\index{wigglezinfo@{wigglezinfo}!gigglezpk@{gigglezpk}}
+\index{gigglezpk@{gigglezpk}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{gigglezpk}{gigglezpk}}
+{\footnotesize\ttfamily type(tcubicspline), dimension(\+:), allocatable wigglezinfo\+::gigglezpk}
+
+
+
+Referenced by gigglezinfo\+\_\+init(), and wigglezpowerat().
+
+\mbox{\Hypertarget{namespacewigglezinfo_a5ee76ba0ebd66c8881b0128f64a73b98}\label{namespacewigglezinfo_a5ee76ba0ebd66c8881b0128f64a73b98}} 
+\index{wigglezinfo@{wigglezinfo}!za@{za}}
+\index{za@{za}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{za}{za}}
+{\footnotesize\ttfamily real(mcp), parameter wigglezinfo\+::za = 0.\+22d0}
+
+
+
+Referenced by wigglez\+::twigglezcommon\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglezinfo_a0caef290cd3d8b7306771479bd8589e5}\label{namespacewigglezinfo_a0caef290cd3d8b7306771479bd8589e5}} 
+\index{wigglezinfo@{wigglezinfo}!zb@{zb}}
+\index{zb@{zb}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{zb}{zb}}
+{\footnotesize\ttfamily real(mcp), parameter wigglezinfo\+::zb = 0.\+41d0}
+
+
+
+Referenced by wigglez\+::twigglezcommon\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglezinfo_a6079d8a819afcd264b152ce14b1c9524}\label{namespacewigglezinfo_a6079d8a819afcd264b152ce14b1c9524}} 
+\index{wigglezinfo@{wigglezinfo}!zc@{zc}}
+\index{zc@{zc}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{zc}{zc}}
+{\footnotesize\ttfamily real(mcp), parameter wigglezinfo\+::zc = 0.\+6d0}
+
+
+
+Referenced by wigglez\+::twigglezcommon\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglezinfo_aba81e5054787627511da43db2cab3e05}\label{namespacewigglezinfo_aba81e5054787627511da43db2cab3e05}} 
+\index{wigglezinfo@{wigglezinfo}!zd@{zd}}
+\index{zd@{zd}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{zd}{zd}}
+{\footnotesize\ttfamily real(mcp), parameter wigglezinfo\+::zd = 0.\+78d0}
+
+
+
+Referenced by wigglez\+::twigglezcommon\+\_\+readini().
+
+\mbox{\Hypertarget{namespacewigglezinfo_a8d9180a8b6d6e2d0fee91ed2c96901d1}\label{namespacewigglezinfo_a8d9180a8b6d6e2d0fee91ed2c96901d1}} 
+\index{wigglezinfo@{wigglezinfo}!zeval@{zeval}}
+\index{zeval@{zeval}!wigglezinfo@{wigglezinfo}}
+\subsubsection{\texorpdfstring{zeval}{zeval}}
+{\footnotesize\ttfamily real(mcp), dimension(4) wigglezinfo\+::zeval}
+
+
+
+Referenced by wigglez\+::twigglezcommon\+\_\+readini(), and wigglez\+::wigglez\+\_\+readini().
+

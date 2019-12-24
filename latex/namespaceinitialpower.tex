@@ -1,0 +1,235 @@
+\hypertarget{namespaceinitialpower}{}\section{initialpower Module Reference}
+\label{namespaceinitialpower}\index{initialpower@{initialpower}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structinitialpower_1_1initialpowerparams}{initialpowerparams}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespaceinitialpower_a0af6f4d15e7cc386f038c557a83256e1}{setdefpowerparams}} (AP)
+\item 
+subroutine, public \mbox{\hyperlink{namespaceinitialpower_aa7485ddfdf405ed8912c8070fef8af62}{initializepowers}} (A\+Param\+Set, acurv)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespaceinitialpower_a2263ec918226f30880a9efbedf684be8}{scalarpower}} (k, ix)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespaceinitialpower_aa1fdc1f3bcc69e61d7f690fa3ffd7f02}{tensorpower}} (k, ix)
+\item 
+integer function, public \mbox{\hyperlink{namespaceinitialpower_a44d725f2b2b68cb9ea810423c9b4d8c4}{power\+\_\+descript}} (in, Scal, Tens, Keys, Vals)
+\item 
+subroutine, public \mbox{\hyperlink{namespaceinitialpower_aad1ed45315709769eb35a28cbc8731f1}{initialpower\+\_\+readparams}} (Init\+Power, Ini, Want\+Tensors)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len= $\ast$), parameter, public \mbox{\hyperlink{namespaceinitialpower_a5397e53840b8c5aa10ab09fcd8cb23b4}{power\+\_\+name}} = \textquotesingle{}power\+\_\+tilt\textquotesingle{}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a9749c023ff83f7ffa2677dc578379c10}{nnmax}} = 5
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a08c3c750bc5c8657967d99b3f0b9585e}{tensor\+\_\+param\+\_\+indeptilt}} =1
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a610fa4412cca71c3692bd468cd0df5ec}{tensor\+\_\+param\+\_\+rpivot}} = 2
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a1ab75aba3a08150a1e0c54913880e1be}{tensor\+\_\+param\+\_\+at}} = 3
+\item 
+real(dl) \mbox{\hyperlink{namespaceinitialpower_a3a06e0904c8fdd21de5ce19490bb177b}{curv}}
+\item 
+type(\mbox{\hyperlink{structinitialpower_1_1initialpowerparams}{initialpowerparams}}), save \mbox{\hyperlink{namespaceinitialpower_ace8ec05c677782ea3843bc3e85b6f42d}{p}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceinitialpower_aa7485ddfdf405ed8912c8070fef8af62}\label{namespaceinitialpower_aa7485ddfdf405ed8912c8070fef8af62}} 
+\index{initialpower@{initialpower}!initializepowers@{initializepowers}}
+\index{initializepowers@{initializepowers}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{initializepowers()}{initializepowers()}}
+{\footnotesize\ttfamily subroutine, public initialpower\+::initializepowers (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structinitialpower_1_1initialpowerparams}{initialpowerparams}})}]{A\+Param\+Set,  }\item[{real(dl)}]{acurv }\end{DoxyParamCaption})}
+
+
+
+References curv, nnmax, and p.
+
+
+
+Referenced by camb\+::camb\+\_\+transferstopowers(), and cambmain\+::cmbmain().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinitialpower_aa7485ddfdf405ed8912c8070fef8af62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinitialpower_aad1ed45315709769eb35a28cbc8731f1}\label{namespaceinitialpower_aad1ed45315709769eb35a28cbc8731f1}} 
+\index{initialpower@{initialpower}!initialpower\+\_\+readparams@{initialpower\+\_\+readparams}}
+\index{initialpower\+\_\+readparams@{initialpower\+\_\+readparams}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{initialpower\+\_\+readparams()}{initialpower\_readparams()}}
+{\footnotesize\ttfamily subroutine, public initialpower\+::initialpower\+\_\+readparams (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structinitialpower_1_1initialpowerparams}{initialpowerparams}})}]{Init\+Power,  }\item[{type(tinifile)}]{Ini,  }\item[{logical, intent(in)}]{Want\+Tensors }\end{DoxyParamCaption})}
+
+
+
+References inifile\+::ini\+\_\+read\+\_\+double\+\_\+array\+\_\+file(), inifile\+::ini\+\_\+read\+\_\+double\+\_\+file(), inifile\+::ini\+\_\+read\+\_\+int\+\_\+file(), nnmax, tensor\+\_\+param\+\_\+at, and tensor\+\_\+param\+\_\+indeptilt.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinitialpower_aad1ed45315709769eb35a28cbc8731f1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinitialpower_a44d725f2b2b68cb9ea810423c9b4d8c4}\label{namespaceinitialpower_a44d725f2b2b68cb9ea810423c9b4d8c4}} 
+\index{initialpower@{initialpower}!power\+\_\+descript@{power\+\_\+descript}}
+\index{power\+\_\+descript@{power\+\_\+descript}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{power\+\_\+descript()}{power\_descript()}}
+{\footnotesize\ttfamily integer function, public initialpower\+::power\+\_\+descript (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{in,  }\item[{logical, intent(in)}]{Scal,  }\item[{logical, intent(in)}]{Tens,  }\item[{character(len=8), dimension($\ast$), intent(out)}]{Keys,  }\item[{real(dl), dimension($\ast$), intent(out)}]{Vals }\end{DoxyParamCaption})}
+
+
+
+References p.
+
+\mbox{\Hypertarget{namespaceinitialpower_a2263ec918226f30880a9efbedf684be8}\label{namespaceinitialpower_a2263ec918226f30880a9efbedf684be8}} 
+\index{initialpower@{initialpower}!scalarpower@{scalarpower}}
+\index{scalarpower@{scalarpower}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{scalarpower()}{scalarpower()}}
+{\footnotesize\ttfamily real(dl) function, public initialpower\+::scalarpower (\begin{DoxyParamCaption}\item[{real(dl)}]{k,  }\item[{integer}]{ix }\end{DoxyParamCaption})}
+
+
+
+References p.
+
+
+
+Referenced by cambmain\+::calclimberscalcls(), cambmain\+::calcscalcls(), cambmain\+::calcscalcls2(), cambmain\+::getinitpowerarrayvec(), and tensorpower().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinitialpower_a2263ec918226f30880a9efbedf684be8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinitialpower_a0af6f4d15e7cc386f038c557a83256e1}\label{namespaceinitialpower_a0af6f4d15e7cc386f038c557a83256e1}} 
+\index{initialpower@{initialpower}!setdefpowerparams@{setdefpowerparams}}
+\index{setdefpowerparams@{setdefpowerparams}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{setdefpowerparams()}{setdefpowerparams()}}
+{\footnotesize\ttfamily subroutine, public initialpower\+::setdefpowerparams (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structinitialpower_1_1initialpowerparams}{initialpowerparams}})}]{AP }\end{DoxyParamCaption})}
+
+
+
+References tensor\+\_\+param\+\_\+indeptilt.
+
+
+
+Referenced by camb\+::camb\+\_\+setdefparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinitialpower_a0af6f4d15e7cc386f038c557a83256e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceinitialpower_aa1fdc1f3bcc69e61d7f690fa3ffd7f02}\label{namespaceinitialpower_aa1fdc1f3bcc69e61d7f690fa3ffd7f02}} 
+\index{initialpower@{initialpower}!tensorpower@{tensorpower}}
+\index{tensorpower@{tensorpower}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{tensorpower()}{tensorpower()}}
+{\footnotesize\ttfamily real(dl) function, public initialpower\+::tensorpower (\begin{DoxyParamCaption}\item[{real(dl)}]{k,  }\item[{integer}]{ix }\end{DoxyParamCaption})}
+
+
+
+References curv, p, scalarpower(), tensor\+\_\+param\+\_\+at, tensor\+\_\+param\+\_\+indeptilt, and tensor\+\_\+param\+\_\+rpivot.
+
+
+
+Referenced by cambmain\+::getinitpowerarraytens().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinitialpower_aa1fdc1f3bcc69e61d7f690fa3ffd7f02_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceinitialpower_aa1fdc1f3bcc69e61d7f690fa3ffd7f02_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceinitialpower_a3a06e0904c8fdd21de5ce19490bb177b}\label{namespaceinitialpower_a3a06e0904c8fdd21de5ce19490bb177b}} 
+\index{initialpower@{initialpower}!curv@{curv}}
+\index{curv@{curv}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{curv}{curv}}
+{\footnotesize\ttfamily real(dl) initialpower\+::curv\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by initializepowers(), and tensorpower().
+
+\mbox{\Hypertarget{namespaceinitialpower_a9749c023ff83f7ffa2677dc578379c10}\label{namespaceinitialpower_a9749c023ff83f7ffa2677dc578379c10}} 
+\index{initialpower@{initialpower}!nnmax@{nnmax}}
+\index{nnmax@{nnmax}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{nnmax}{nnmax}}
+{\footnotesize\ttfamily integer, parameter, public initialpower\+::nnmax = 5}
+
+
+
+Referenced by initializepowers(), and initialpower\+\_\+readparams().
+
+\mbox{\Hypertarget{namespaceinitialpower_ace8ec05c677782ea3843bc3e85b6f42d}\label{namespaceinitialpower_ace8ec05c677782ea3843bc3e85b6f42d}} 
+\index{initialpower@{initialpower}!p@{p}}
+\index{p@{p}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structinitialpower_1_1initialpowerparams}{initialpowerparams}}), save initialpower\+::p\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by camb\+::camb\+\_\+getage(), camb\+::camb\+\_\+getzrefromtau(), camb\+::camb\+\_\+validateparams(), initializepowers(), power\+\_\+descript(), scalarpower(), and tensorpower().
+
+\mbox{\Hypertarget{namespaceinitialpower_a5397e53840b8c5aa10ab09fcd8cb23b4}\label{namespaceinitialpower_a5397e53840b8c5aa10ab09fcd8cb23b4}} 
+\index{initialpower@{initialpower}!power\+\_\+name@{power\+\_\+name}}
+\index{power\+\_\+name@{power\+\_\+name}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{power\+\_\+name}{power\_name}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter, public initialpower\+::power\+\_\+name = \textquotesingle{}power\+\_\+tilt\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceinitialpower_a1ab75aba3a08150a1e0c54913880e1be}\label{namespaceinitialpower_a1ab75aba3a08150a1e0c54913880e1be}} 
+\index{initialpower@{initialpower}!tensor\+\_\+param\+\_\+at@{tensor\+\_\+param\+\_\+at}}
+\index{tensor\+\_\+param\+\_\+at@{tensor\+\_\+param\+\_\+at}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{tensor\+\_\+param\+\_\+at}{tensor\_param\_at}}
+{\footnotesize\ttfamily integer, parameter, public initialpower\+::tensor\+\_\+param\+\_\+at = 3}
+
+
+
+Referenced by initialpower\+\_\+readparams(), and tensorpower().
+
+\mbox{\Hypertarget{namespaceinitialpower_a08c3c750bc5c8657967d99b3f0b9585e}\label{namespaceinitialpower_a08c3c750bc5c8657967d99b3f0b9585e}} 
+\index{initialpower@{initialpower}!tensor\+\_\+param\+\_\+indeptilt@{tensor\+\_\+param\+\_\+indeptilt}}
+\index{tensor\+\_\+param\+\_\+indeptilt@{tensor\+\_\+param\+\_\+indeptilt}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{tensor\+\_\+param\+\_\+indeptilt}{tensor\_param\_indeptilt}}
+{\footnotesize\ttfamily integer, parameter, public initialpower\+::tensor\+\_\+param\+\_\+indeptilt =1}
+
+
+
+Referenced by initialpower\+\_\+readparams(), setdefpowerparams(), and tensorpower().
+
+\mbox{\Hypertarget{namespaceinitialpower_a610fa4412cca71c3692bd468cd0df5ec}\label{namespaceinitialpower_a610fa4412cca71c3692bd468cd0df5ec}} 
+\index{initialpower@{initialpower}!tensor\+\_\+param\+\_\+rpivot@{tensor\+\_\+param\+\_\+rpivot}}
+\index{tensor\+\_\+param\+\_\+rpivot@{tensor\+\_\+param\+\_\+rpivot}!initialpower@{initialpower}}
+\subsubsection{\texorpdfstring{tensor\+\_\+param\+\_\+rpivot}{tensor\_param\_rpivot}}
+{\footnotesize\ttfamily integer, parameter, public initialpower\+::tensor\+\_\+param\+\_\+rpivot = 2}
+
+
+
+Referenced by tensorpower().
+

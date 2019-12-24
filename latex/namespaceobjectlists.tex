@@ -1,0 +1,541 @@
+\hypertarget{namespaceobjectlists}{}\section{objectlists Module Reference}
+\label{namespaceobjectlists}\index{objectlists@{objectlists}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1object__array__pointer}{object\+\_\+array\+\_\+pointer}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1object__pointer}{object\+\_\+pointer}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tintegerarraylist}{tintegerarraylist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1townedintrinsiclist}{townedintrinsiclist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1trealarraylist}{trealarraylist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1trealcomparelist}{trealcomparelist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1treallist}{treallist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tsaveloadstateobject}{tsaveloadstateobject}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a48fc8838b5a4a323447fdd309cb70d4c}{loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a0524c4d9e51cce87cd2864352d116374}{savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_af7dd3c43a123562bc92cf38d6ed508cd}{clear}} (this, items\+Only)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ad1d73743c5898bdaac2a79a9ade2342c}{finalize}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a36abcb049579dcfaee4f3d38cf09b5d1}{error}} (this, msg)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a36d198e7276f781aed81d70840e2f9da}{additem}} (this, C, Object)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a20f8947e7e2c99268f61a292e215f144}{additempointer}} (this, C, Object)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a2487c78e7548dc0d57e860dc447fc9f2}{addcopy}} (this, C, Object)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a4fc2d0e75594a82db02035609ddab0d5}{assignpointers}} (this, L2, ixmin, ixmax)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a302ff79b4cac76b93d93d5ab7ea9abc4}{deltasize}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a3f4c3dd9be50ae77b46cec13a3345fad}{setcapacity}} (this, C)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a180e000881c5eca28ea4c77daec5d47b}{freeitem}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a8110526567f8e6cf9fda3be8654005ad}{deleteitem}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ac82708b7b56f4fca7c7e55d43a84ad84}{deleterange}} (this, i1, i2)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_aff0d8c1f6bf740fa33ba6c02cca08daf}{addarray}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_aff0608d072ab891a55072d2afde0b978}{checkindex}} (this, i)
+\item 
+class($\ast$) function, dimension(\+:), pointer \mbox{\hyperlink{namespaceobjectlists_a72ee9292ce07a71798b7b6ac5b3cb6c3}{arrayitem}} (this, i)
+\item 
+class($\ast$) function, pointer \mbox{\hyperlink{namespaceobjectlists_aef8a1d27db060a7e7289e5ee3849ce21}{arrayitemindex}} (this, i, j)
+\item 
+class($\ast$) function, pointer \mbox{\hyperlink{namespaceobjectlists_a9a1de7415648fec93d3d27e8b3ad053f}{tobjectlist\+\_\+object}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_abbc4a249efcc68f87936eb7e93ecffaf}{savebinary}} (this, fid)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a68cfe6fa523fb21df53a6f58e5fb498e}{readbinary}} (this, fid)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a48d7726bdf69ff2b7cb84d89d12af19d}{thin}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_afbb87b678b2aa36260efbc57bb11a45b}{swap}} (this, i, j)
+\item 
+recursive subroutine \mbox{\hyperlink{namespaceobjectlists_a663520be1986351d7c16a9fccb40b6e8}{quicksortarr}} (this, Lin, R, index)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_af5166a7a14ff75eca5eda21a454fe2a2}{sortarr}} (this, index)
+\item 
+recursive subroutine \mbox{\hyperlink{namespaceobjectlists_a3000970aec60eac0c74b465332a4fca2}{quicksort}} (this, Lin, R)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ab62cea139392ebee550346a3f36a8448}{sort}} (this)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a05b2014389dbbc09da541c24912141f8}{compare}} (this, R1, R2)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_af660367ba45ff04c784f5ea3c01560ea}{removeduplicates}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a5bd3b270e5c0f08c54a0a72838aa7b95}{tobjectlist\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a198a78c4eeeccbbfa31216f589beda86}{tobjectlist\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a7b384ff8ee40c65239ebe5c1a7d239ff}{townedintrinsiclist\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ab634ab92805c172a136d35becaf7601b}{townedintrinsiclist\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a8a73104aaeee3be757486f8ed7ecf1af}{townedintrinsiclist\+\_\+additem}} (this, C, Object)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_ac923fbeb64f1caebb0cd581988e43978}{comparereal}} (this, R1, R2)
+\item 
+real(\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function \mbox{\hyperlink{namespaceobjectlists_a7f2de098afb2605d8dccf08bd7daca10}{treallist\+\_\+item}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ae3cae7b25174f6f119f19e9c5f44dc44}{treallist\+\_\+addarrayitems}} (this, A)
+\item 
+real(kind=\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function, dimension(this\%count) \mbox{\hyperlink{namespaceobjectlists_a06b8548c6daa95a52c2c3d2a3fe587dc}{treallist\+\_\+asarray}} (this)
+\item 
+real(\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function, dimension(\+:), pointer \mbox{\hyperlink{namespaceobjectlists_afec6c1eefcdae12eeddeb762eb1e24eb}{trealarraylist\+\_\+item}} (this, i)
+\item 
+real(\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function \mbox{\hyperlink{namespaceobjectlists_a12e74f409aae2d6481803ca8e3348d2f}{trealarraylist\+\_\+value}} (this, i, j)
+\item 
+integer function, dimension(\+:), pointer \mbox{\hyperlink{namespaceobjectlists_af82a464969f9660d2a7214413b8fe757}{tintegerarraylist\+\_\+item}} (this, i)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_ab4bb3c50d65c18a798906fa87ad4a651}{tintegerarraylist\+\_\+value}} (this, i, j)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceobjectlists_ab724d2c89c530b6df64385c55bdc6377}{tstringlist\+\_\+item}} (this, i)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceobjectlists_a8003d8e93e59241bcea25f30d0b95b5a}{tstringlist\+\_\+valueof}} (this, key)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a2c19308a10df8614e054244fe735e6d1}{tstringlist\+\_\+setfromstring}} (this, S, valid\+\_\+chars\+\_\+in)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_adea8776aebb466be94d770772a73f756}{tstringlist\+\_\+readcolumnsgetarray}} (this, filename, array)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a926298e78fd013f34f503ab38a3bc496}{tstringlist\+\_\+indexof}} (this, S)
+\item 
+character function \mbox{\hyperlink{namespaceobjectlists_abe1b434a57e0d690b22c8410ca9cfff0}{tstringlist\+\_\+charat}} (this, i, j)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a2050ccdefc2f19e1dbc8fac3a91d51d0}{tstringlist\+\_\+compare}} (this, R1, R2)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a1735569cf51270522157e13dfdcedcc3}{writeitems}} (this, unit)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a4891ff4be9767fe63e6223924e02c450}{additems}} (this, List, nodups)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a53c9a728110b79f25cc56f9b63554deb}{tstringlist\+\_\+addfromfile}} (this, fname, nodups)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}} = Kind(1.\+0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceobjectlists_aff0d8c1f6bf740fa33ba6c02cca08daf}\label{namespaceobjectlists_aff0d8c1f6bf740fa33ba6c02cca08daf}} 
+\index{objectlists@{objectlists}!addarray@{addarray}}
+\index{addarray@{addarray}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{addarray()}{addarray()}}
+{\footnotesize\ttfamily subroutine objectlists\+::addarray (\begin{DoxyParamCaption}\item[{class (\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class($\ast$), dimension(\+:), intent(in), target}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by objectlists\+::tobjectlist\+::add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceobjectlists_aff0d8c1f6bf740fa33ba6c02cca08daf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceobjectlists_a2487c78e7548dc0d57e860dc447fc9f2}\label{namespaceobjectlists_a2487c78e7548dc0d57e860dc447fc9f2}} 
+\index{objectlists@{objectlists}!addcopy@{addcopy}}
+\index{addcopy@{addcopy}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{addcopy()}{addcopy()}}
+{\footnotesize\ttfamily subroutine objectlists\+::addcopy (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class($\ast$), intent(in)}]{C,  }\item[{class($\ast$), intent(in), optional}]{Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a36d198e7276f781aed81d70840e2f9da}\label{namespaceobjectlists_a36d198e7276f781aed81d70840e2f9da}} 
+\index{objectlists@{objectlists}!additem@{additem}}
+\index{additem@{additem}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{additem()}{additem()}}
+{\footnotesize\ttfamily subroutine objectlists\+::additem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class($\ast$), intent(in), target}]{C,  }\item[{class($\ast$), intent(in), optional, target}]{Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by objectlists\+::tobjectlist\+::add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceobjectlists_a36d198e7276f781aed81d70840e2f9da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceobjectlists_a20f8947e7e2c99268f61a292e215f144}\label{namespaceobjectlists_a20f8947e7e2c99268f61a292e215f144}} 
+\index{objectlists@{objectlists}!additempointer@{additempointer}}
+\index{additempointer@{additempointer}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{additempointer()}{additempointer()}}
+{\footnotesize\ttfamily subroutine objectlists\+::additempointer (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class($\ast$), intent(in), pointer}]{C,  }\item[{class($\ast$), intent(in), optional, pointer}]{Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a4891ff4be9767fe63e6223924e02c450}\label{namespaceobjectlists_a4891ff4be9767fe63e6223924e02c450}} 
+\index{objectlists@{objectlists}!additems@{additems}}
+\index{additems@{additems}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{additems()}{additems()}}
+{\footnotesize\ttfamily subroutine objectlists\+::additems (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{List,  }\item[{logical, intent(in)}]{nodups }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a72ee9292ce07a71798b7b6ac5b3cb6c3}\label{namespaceobjectlists_a72ee9292ce07a71798b7b6ac5b3cb6c3}} 
+\index{objectlists@{objectlists}!arrayitem@{arrayitem}}
+\index{arrayitem@{arrayitem}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{arrayitem()}{arrayitem()}}
+{\footnotesize\ttfamily class($\ast$) function, dimension(\+:), pointer objectlists\+::arrayitem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_aef8a1d27db060a7e7289e5ee3849ce21}\label{namespaceobjectlists_aef8a1d27db060a7e7289e5ee3849ce21}} 
+\index{objectlists@{objectlists}!arrayitemindex@{arrayitemindex}}
+\index{arrayitemindex@{arrayitemindex}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{arrayitemindex()}{arrayitemindex()}}
+{\footnotesize\ttfamily class($\ast$) function, pointer objectlists\+::arrayitemindex (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a4fc2d0e75594a82db02035609ddab0d5}\label{namespaceobjectlists_a4fc2d0e75594a82db02035609ddab0d5}} 
+\index{objectlists@{objectlists}!assignpointers@{assignpointers}}
+\index{assignpointers@{assignpointers}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{assignpointers()}{assignpointers()}}
+{\footnotesize\ttfamily subroutine objectlists\+::assignpointers (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{L2,  }\item[{integer, intent(in), optional}]{ixmin,  }\item[{integer, intent(in), optional}]{ixmax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_aff0608d072ab891a55072d2afde0b978}\label{namespaceobjectlists_aff0608d072ab891a55072d2afde0b978}} 
+\index{objectlists@{objectlists}!checkindex@{checkindex}}
+\index{checkindex@{checkindex}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{checkindex()}{checkindex()}}
+{\footnotesize\ttfamily subroutine objectlists\+::checkindex (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_af7dd3c43a123562bc92cf38d6ed508cd}\label{namespaceobjectlists_af7dd3c43a123562bc92cf38d6ed508cd}} 
+\index{objectlists@{objectlists}!clear@{clear}}
+\index{clear@{clear}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily subroutine objectlists\+::clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{logical, intent(in), optional}]{items\+Only }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+gui.\+mainwindow.\+Main\+Window\+::\+\_\+read\+Grid\+Chains(), getdist.\+gui.\+mainwindow.\+Main\+Window\+::\+\_\+update\+Combo\+Box\+Color(), getdist.\+gui.\+mainwindow.\+Main\+Window\+::\+\_\+update\+Combo\+Box\+Rootname(), getdist.\+gui.\+mainwindow.\+Main\+Window\+::clear\+Script(), and getdist.\+gui.\+mainwindow.\+Main\+Window\+::set\+Param\+Tag().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceobjectlists_af7dd3c43a123562bc92cf38d6ed508cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceobjectlists_a05b2014389dbbc09da541c24912141f8}\label{namespaceobjectlists_a05b2014389dbbc09da541c24912141f8}} 
+\index{objectlists@{objectlists}!compare@{compare}}
+\index{compare@{compare}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily integer function objectlists\+::compare (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class($\ast$)}]{R1,  }\item[{class($\ast$)}]{R2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_ac923fbeb64f1caebb0cd581988e43978}\label{namespaceobjectlists_ac923fbeb64f1caebb0cd581988e43978}} 
+\index{objectlists@{objectlists}!comparereal@{comparereal}}
+\index{comparereal@{comparereal}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{comparereal()}{comparereal()}}
+{\footnotesize\ttfamily integer function objectlists\+::comparereal (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1trealcomparelist}{trealcomparelist}})}]{this,  }\item[{class($\ast$)}]{R1,  }\item[{class($\ast$)}]{R2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a8110526567f8e6cf9fda3be8654005ad}\label{namespaceobjectlists_a8110526567f8e6cf9fda3be8654005ad}} 
+\index{objectlists@{objectlists}!deleteitem@{deleteitem}}
+\index{deleteitem@{deleteitem}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{deleteitem()}{deleteitem()}}
+{\footnotesize\ttfamily subroutine objectlists\+::deleteitem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_ac82708b7b56f4fca7c7e55d43a84ad84}\label{namespaceobjectlists_ac82708b7b56f4fca7c7e55d43a84ad84}} 
+\index{objectlists@{objectlists}!deleterange@{deleterange}}
+\index{deleterange@{deleterange}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{deleterange()}{deleterange()}}
+{\footnotesize\ttfamily subroutine objectlists\+::deleterange (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a302ff79b4cac76b93d93d5ab7ea9abc4}\label{namespaceobjectlists_a302ff79b4cac76b93d93d5ab7ea9abc4}} 
+\index{objectlists@{objectlists}!deltasize@{deltasize}}
+\index{deltasize@{deltasize}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{deltasize()}{deltasize()}}
+{\footnotesize\ttfamily integer function objectlists\+::deltasize (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a36abcb049579dcfaee4f3d38cf09b5d1}\label{namespaceobjectlists_a36abcb049579dcfaee4f3d38cf09b5d1}} 
+\index{objectlists@{objectlists}!error@{error}}
+\index{error@{error}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily subroutine objectlists\+::error (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by samples\+::gelmanrubinevalues().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceobjectlists_a36abcb049579dcfaee4f3d38cf09b5d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceobjectlists_ad1d73743c5898bdaac2a79a9ade2342c}\label{namespaceobjectlists_ad1d73743c5898bdaac2a79a9ade2342c}} 
+\index{objectlists@{objectlists}!finalize@{finalize}}
+\index{finalize@{finalize}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily subroutine objectlists\+::finalize (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by objectlists\+::tobjectlist\+::finalize().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{namespaceobjectlists_ad1d73743c5898bdaac2a79a9ade2342c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceobjectlists_a180e000881c5eca28ea4c77daec5d47b}\label{namespaceobjectlists_a180e000881c5eca28ea4c77daec5d47b}} 
+\index{objectlists@{objectlists}!freeitem@{freeitem}}
+\index{freeitem@{freeitem}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{freeitem()}{freeitem()}}
+{\footnotesize\ttfamily subroutine objectlists\+::freeitem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a48fc8838b5a4a323447fdd309cb70d4c}\label{namespaceobjectlists_a48fc8838b5a4a323447fdd309cb70d4c}} 
+\index{objectlists@{objectlists}!loadstate@{loadstate}}
+\index{loadstate@{loadstate}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{loadstate()}{loadstate()}}
+{\footnotesize\ttfamily subroutine objectlists\+::loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tsaveloadstateobject}{tsaveloadstateobject}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a3000970aec60eac0c74b465332a4fca2}\label{namespaceobjectlists_a3000970aec60eac0c74b465332a4fca2}} 
+\index{objectlists@{objectlists}!quicksort@{quicksort}}
+\index{quicksort@{quicksort}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{quicksort()}{quicksort()}}
+{\footnotesize\ttfamily recursive subroutine objectlists\+::quicksort (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{Lin,  }\item[{integer, intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a663520be1986351d7c16a9fccb40b6e8}\label{namespaceobjectlists_a663520be1986351d7c16a9fccb40b6e8}} 
+\index{objectlists@{objectlists}!quicksortarr@{quicksortarr}}
+\index{quicksortarr@{quicksortarr}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{quicksortarr()}{quicksortarr()}}
+{\footnotesize\ttfamily recursive subroutine objectlists\+::quicksortarr (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{Lin,  }\item[{integer, intent(in)}]{R,  }\item[{integer, intent(in)}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a68cfe6fa523fb21df53a6f58e5fb498e}\label{namespaceobjectlists_a68cfe6fa523fb21df53a6f58e5fb498e}} 
+\index{objectlists@{objectlists}!readbinary@{readbinary}}
+\index{readbinary@{readbinary}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{readbinary()}{readbinary()}}
+{\footnotesize\ttfamily subroutine objectlists\+::readbinary (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{fid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_af660367ba45ff04c784f5ea3c01560ea}\label{namespaceobjectlists_af660367ba45ff04c784f5ea3c01560ea}} 
+\index{objectlists@{objectlists}!removeduplicates@{removeduplicates}}
+\index{removeduplicates@{removeduplicates}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{removeduplicates()}{removeduplicates()}}
+{\footnotesize\ttfamily subroutine objectlists\+::removeduplicates (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_abbc4a249efcc68f87936eb7e93ecffaf}\label{namespaceobjectlists_abbc4a249efcc68f87936eb7e93ecffaf}} 
+\index{objectlists@{objectlists}!savebinary@{savebinary}}
+\index{savebinary@{savebinary}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{savebinary()}{savebinary()}}
+{\footnotesize\ttfamily subroutine objectlists\+::savebinary (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{fid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a0524c4d9e51cce87cd2864352d116374}\label{namespaceobjectlists_a0524c4d9e51cce87cd2864352d116374}} 
+\index{objectlists@{objectlists}!savestate@{savestate}}
+\index{savestate@{savestate}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{savestate()}{savestate()}}
+{\footnotesize\ttfamily subroutine objectlists\+::savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tsaveloadstateobject}{tsaveloadstateobject}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a3f4c3dd9be50ae77b46cec13a3345fad}\label{namespaceobjectlists_a3f4c3dd9be50ae77b46cec13a3345fad}} 
+\index{objectlists@{objectlists}!setcapacity@{setcapacity}}
+\index{setcapacity@{setcapacity}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{setcapacity()}{setcapacity()}}
+{\footnotesize\ttfamily subroutine objectlists\+::setcapacity (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_ab62cea139392ebee550346a3f36a8448}\label{namespaceobjectlists_ab62cea139392ebee550346a3f36a8448}} 
+\index{objectlists@{objectlists}!sort@{sort}}
+\index{sort@{sort}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily subroutine objectlists\+::sort (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_af5166a7a14ff75eca5eda21a454fe2a2}\label{namespaceobjectlists_af5166a7a14ff75eca5eda21a454fe2a2}} 
+\index{objectlists@{objectlists}!sortarr@{sortarr}}
+\index{sortarr@{sortarr}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{sortarr()}{sortarr()}}
+{\footnotesize\ttfamily subroutine objectlists\+::sortarr (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_afbb87b678b2aa36260efbc57bb11a45b}\label{namespaceobjectlists_afbb87b678b2aa36260efbc57bb11a45b}} 
+\index{objectlists@{objectlists}!swap@{swap}}
+\index{swap@{swap}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily subroutine objectlists\+::swap (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a48d7726bdf69ff2b7cb84d89d12af19d}\label{namespaceobjectlists_a48d7726bdf69ff2b7cb84d89d12af19d}} 
+\index{objectlists@{objectlists}!thin@{thin}}
+\index{thin@{thin}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{thin()}{thin()}}
+{\footnotesize\ttfamily subroutine objectlists\+::thin (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_af82a464969f9660d2a7214413b8fe757}\label{namespaceobjectlists_af82a464969f9660d2a7214413b8fe757}} 
+\index{objectlists@{objectlists}!tintegerarraylist\+\_\+item@{tintegerarraylist\+\_\+item}}
+\index{tintegerarraylist\+\_\+item@{tintegerarraylist\+\_\+item}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tintegerarraylist\+\_\+item()}{tintegerarraylist\_item()}}
+{\footnotesize\ttfamily integer function, dimension(\+:), pointer objectlists\+::tintegerarraylist\+\_\+item (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tintegerarraylist}{tintegerarraylist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_ab4bb3c50d65c18a798906fa87ad4a651}\label{namespaceobjectlists_ab4bb3c50d65c18a798906fa87ad4a651}} 
+\index{objectlists@{objectlists}!tintegerarraylist\+\_\+value@{tintegerarraylist\+\_\+value}}
+\index{tintegerarraylist\+\_\+value@{tintegerarraylist\+\_\+value}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tintegerarraylist\+\_\+value()}{tintegerarraylist\_value()}}
+{\footnotesize\ttfamily integer function objectlists\+::tintegerarraylist\+\_\+value (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tintegerarraylist}{tintegerarraylist}})}]{this,  }\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a198a78c4eeeccbbfa31216f589beda86}\label{namespaceobjectlists_a198a78c4eeeccbbfa31216f589beda86}} 
+\index{objectlists@{objectlists}!tobjectlist\+\_\+loadstate@{tobjectlist\+\_\+loadstate}}
+\index{tobjectlist\+\_\+loadstate@{tobjectlist\+\_\+loadstate}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tobjectlist\+\_\+loadstate()}{tobjectlist\_loadstate()}}
+{\footnotesize\ttfamily subroutine objectlists\+::tobjectlist\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a9a1de7415648fec93d3d27e8b3ad053f}\label{namespaceobjectlists_a9a1de7415648fec93d3d27e8b3ad053f}} 
+\index{objectlists@{objectlists}!tobjectlist\+\_\+object@{tobjectlist\+\_\+object}}
+\index{tobjectlist\+\_\+object@{tobjectlist\+\_\+object}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tobjectlist\+\_\+object()}{tobjectlist\_object()}}
+{\footnotesize\ttfamily class($\ast$) function, pointer objectlists\+::tobjectlist\+\_\+object (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a5bd3b270e5c0f08c54a0a72838aa7b95}\label{namespaceobjectlists_a5bd3b270e5c0f08c54a0a72838aa7b95}} 
+\index{objectlists@{objectlists}!tobjectlist\+\_\+savestate@{tobjectlist\+\_\+savestate}}
+\index{tobjectlist\+\_\+savestate@{tobjectlist\+\_\+savestate}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tobjectlist\+\_\+savestate()}{tobjectlist\_savestate()}}
+{\footnotesize\ttfamily subroutine objectlists\+::tobjectlist\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tobjectlist}{tobjectlist}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a8a73104aaeee3be757486f8ed7ecf1af}\label{namespaceobjectlists_a8a73104aaeee3be757486f8ed7ecf1af}} 
+\index{objectlists@{objectlists}!townedintrinsiclist\+\_\+additem@{townedintrinsiclist\+\_\+additem}}
+\index{townedintrinsiclist\+\_\+additem@{townedintrinsiclist\+\_\+additem}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{townedintrinsiclist\+\_\+additem()}{townedintrinsiclist\_additem()}}
+{\footnotesize\ttfamily subroutine objectlists\+::townedintrinsiclist\+\_\+additem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1townedintrinsiclist}{townedintrinsiclist}})}]{this,  }\item[{class($\ast$), intent(in), target}]{C,  }\item[{class($\ast$), intent(in), optional, target}]{Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a7b384ff8ee40c65239ebe5c1a7d239ff}\label{namespaceobjectlists_a7b384ff8ee40c65239ebe5c1a7d239ff}} 
+\index{objectlists@{objectlists}!townedintrinsiclist\+\_\+loadstate@{townedintrinsiclist\+\_\+loadstate}}
+\index{townedintrinsiclist\+\_\+loadstate@{townedintrinsiclist\+\_\+loadstate}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{townedintrinsiclist\+\_\+loadstate()}{townedintrinsiclist\_loadstate()}}
+{\footnotesize\ttfamily subroutine objectlists\+::townedintrinsiclist\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1townedintrinsiclist}{townedintrinsiclist}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_ab634ab92805c172a136d35becaf7601b}\label{namespaceobjectlists_ab634ab92805c172a136d35becaf7601b}} 
+\index{objectlists@{objectlists}!townedintrinsiclist\+\_\+savestate@{townedintrinsiclist\+\_\+savestate}}
+\index{townedintrinsiclist\+\_\+savestate@{townedintrinsiclist\+\_\+savestate}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{townedintrinsiclist\+\_\+savestate()}{townedintrinsiclist\_savestate()}}
+{\footnotesize\ttfamily subroutine objectlists\+::townedintrinsiclist\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1townedintrinsiclist}{townedintrinsiclist}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_afec6c1eefcdae12eeddeb762eb1e24eb}\label{namespaceobjectlists_afec6c1eefcdae12eeddeb762eb1e24eb}} 
+\index{objectlists@{objectlists}!trealarraylist\+\_\+item@{trealarraylist\+\_\+item}}
+\index{trealarraylist\+\_\+item@{trealarraylist\+\_\+item}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{trealarraylist\+\_\+item()}{trealarraylist\_item()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function, dimension(\+:), pointer objectlists\+::trealarraylist\+\_\+item (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1trealarraylist}{trealarraylist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a12e74f409aae2d6481803ca8e3348d2f}\label{namespaceobjectlists_a12e74f409aae2d6481803ca8e3348d2f}} 
+\index{objectlists@{objectlists}!trealarraylist\+\_\+value@{trealarraylist\+\_\+value}}
+\index{trealarraylist\+\_\+value@{trealarraylist\+\_\+value}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{trealarraylist\+\_\+value()}{trealarraylist\_value()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function objectlists\+::trealarraylist\+\_\+value (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1trealarraylist}{trealarraylist}})}]{this,  }\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_ae3cae7b25174f6f119f19e9c5f44dc44}\label{namespaceobjectlists_ae3cae7b25174f6f119f19e9c5f44dc44}} 
+\index{objectlists@{objectlists}!treallist\+\_\+addarrayitems@{treallist\+\_\+addarrayitems}}
+\index{treallist\+\_\+addarrayitems@{treallist\+\_\+addarrayitems}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{treallist\+\_\+addarrayitems()}{treallist\_addarrayitems()}}
+{\footnotesize\ttfamily subroutine objectlists\+::treallist\+\_\+addarrayitems (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1treallist}{treallist}})}]{this,  }\item[{real(kind=\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}), dimension(\+:), intent(in)}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a06b8548c6daa95a52c2c3d2a3fe587dc}\label{namespaceobjectlists_a06b8548c6daa95a52c2c3d2a3fe587dc}} 
+\index{objectlists@{objectlists}!treallist\+\_\+asarray@{treallist\+\_\+asarray}}
+\index{treallist\+\_\+asarray@{treallist\+\_\+asarray}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{treallist\+\_\+asarray()}{treallist\_asarray()}}
+{\footnotesize\ttfamily real(kind=\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function, dimension(this\%count) objectlists\+::treallist\+\_\+asarray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1treallist}{treallist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a7f2de098afb2605d8dccf08bd7daca10}\label{namespaceobjectlists_a7f2de098afb2605d8dccf08bd7daca10}} 
+\index{objectlists@{objectlists}!treallist\+\_\+item@{treallist\+\_\+item}}
+\index{treallist\+\_\+item@{treallist\+\_\+item}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{treallist\+\_\+item()}{treallist\_item()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}) function objectlists\+::treallist\+\_\+item (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1treallist}{treallist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by objectlists\+::treallist\+::item().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespaceobjectlists_a7f2de098afb2605d8dccf08bd7daca10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceobjectlists_a53c9a728110b79f25cc56f9b63554deb}\label{namespaceobjectlists_a53c9a728110b79f25cc56f9b63554deb}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+addfromfile@{tstringlist\+\_\+addfromfile}}
+\index{tstringlist\+\_\+addfromfile@{tstringlist\+\_\+addfromfile}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+addfromfile()}{tstringlist\_addfromfile()}}
+{\footnotesize\ttfamily subroutine objectlists\+::tstringlist\+\_\+addfromfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{logical, intent(in)}]{nodups }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_abe1b434a57e0d690b22c8410ca9cfff0}\label{namespaceobjectlists_abe1b434a57e0d690b22c8410ca9cfff0}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+charat@{tstringlist\+\_\+charat}}
+\index{tstringlist\+\_\+charat@{tstringlist\+\_\+charat}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+charat()}{tstringlist\_charat()}}
+{\footnotesize\ttfamily character function objectlists\+::tstringlist\+\_\+charat (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a2050ccdefc2f19e1dbc8fac3a91d51d0}\label{namespaceobjectlists_a2050ccdefc2f19e1dbc8fac3a91d51d0}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+compare@{tstringlist\+\_\+compare}}
+\index{tstringlist\+\_\+compare@{tstringlist\+\_\+compare}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+compare()}{tstringlist\_compare()}}
+{\footnotesize\ttfamily integer function objectlists\+::tstringlist\+\_\+compare (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{class($\ast$)}]{R1,  }\item[{class($\ast$)}]{R2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a926298e78fd013f34f503ab38a3bc496}\label{namespaceobjectlists_a926298e78fd013f34f503ab38a3bc496}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+indexof@{tstringlist\+\_\+indexof}}
+\index{tstringlist\+\_\+indexof@{tstringlist\+\_\+indexof}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+indexof()}{tstringlist\_indexof()}}
+{\footnotesize\ttfamily integer function objectlists\+::tstringlist\+\_\+indexof (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_ab724d2c89c530b6df64385c55bdc6377}\label{namespaceobjectlists_ab724d2c89c530b6df64385c55bdc6377}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+item@{tstringlist\+\_\+item}}
+\index{tstringlist\+\_\+item@{tstringlist\+\_\+item}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+item()}{tstringlist\_item()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer objectlists\+::tstringlist\+\_\+item (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_adea8776aebb466be94d770772a73f756}\label{namespaceobjectlists_adea8776aebb466be94d770772a73f756}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+readcolumnsgetarray@{tstringlist\+\_\+readcolumnsgetarray}}
+\index{tstringlist\+\_\+readcolumnsgetarray@{tstringlist\+\_\+readcolumnsgetarray}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+readcolumnsgetarray()}{tstringlist\_readcolumnsgetarray()}}
+{\footnotesize\ttfamily subroutine objectlists\+::tstringlist\+\_\+readcolumnsgetarray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{filename,  }\item[{real(\mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{list\+\_\+prec}}), dimension(\+:,\+:), intent(out), allocatable}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fileutils\+::file.
+
+\mbox{\Hypertarget{namespaceobjectlists_a2c19308a10df8614e054244fe735e6d1}\label{namespaceobjectlists_a2c19308a10df8614e054244fe735e6d1}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+setfromstring@{tstringlist\+\_\+setfromstring}}
+\index{tstringlist\+\_\+setfromstring@{tstringlist\+\_\+setfromstring}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+setfromstring()}{tstringlist\_setfromstring()}}
+{\footnotesize\ttfamily subroutine objectlists\+::tstringlist\+\_\+setfromstring (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{character(len=$\ast$), intent(in), optional}]{valid\+\_\+chars\+\_\+in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a8003d8e93e59241bcea25f30d0b95b5a}\label{namespaceobjectlists_a8003d8e93e59241bcea25f30d0b95b5a}} 
+\index{objectlists@{objectlists}!tstringlist\+\_\+valueof@{tstringlist\+\_\+valueof}}
+\index{tstringlist\+\_\+valueof@{tstringlist\+\_\+valueof}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{tstringlist\+\_\+valueof()}{tstringlist\_valueof()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer objectlists\+::tstringlist\+\_\+valueof (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceobjectlists_a1735569cf51270522157e13dfdcedcc3}\label{namespaceobjectlists_a1735569cf51270522157e13dfdcedcc3}} 
+\index{objectlists@{objectlists}!writeitems@{writeitems}}
+\index{writeitems@{writeitems}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{writeitems()}{writeitems()}}
+{\footnotesize\ttfamily subroutine objectlists\+::writeitems (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structobjectlists_1_1tstringlist}{tstringlist}})}]{this,  }\item[{integer, intent(in), optional}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}\label{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}} 
+\index{objectlists@{objectlists}!list\+\_\+prec@{list\+\_\+prec}}
+\index{list\+\_\+prec@{list\+\_\+prec}!objectlists@{objectlists}}
+\subsubsection{\texorpdfstring{list\+\_\+prec}{list\_prec}}
+{\footnotesize\ttfamily integer parameter public objectlists\+::list\+\_\+prec = Kind(1.\+0)}
+
+
+
+Referenced by objectlists\+::tstringlist\+::item().
+

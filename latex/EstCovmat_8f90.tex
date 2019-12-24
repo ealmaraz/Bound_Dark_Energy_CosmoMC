@@ -1,0 +1,25 @@
+\hypertarget{EstCovmat_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Est\+Covmat.f90 File Reference}
+\label{EstCovmat_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Est\+Covmat.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Est\+Covmat.\+f90}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceestcovmatmodule}{estcovmatmodule}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp) function, dimension(num\+\_\+params\+\_\+used, num\+\_\+params\+\_\+used) \mbox{\hyperlink{namespaceestcovmatmodule_afcc46985583aeb4fed0524e52dde8c8a}{estcovmatmodule\+::estcovmat}} (Params, bestdll\+\_\+in, sucess)
+\item 
+real(mcp) function \mbox{\hyperlink{namespaceestcovmatmodule_a2bc770f26c02a798aaf3ff8f2cc274aa}{estcovmatmodule\+::placegrid}} (Center\+Params, parsteps, bestdll)
+\item 
+subroutine \mbox{\hyperlink{namespaceestcovmatmodule_ac80cbfe7c3c7ed84526e57a069e41ccf}{estcovmatmodule\+::getstepsfordchisq1}} (Center\+Params, L\+Center, maxstepsizetries, parsteps, bestdll)
+\item 
+subroutine \mbox{\hyperlink{namespaceestcovmatmodule_a24745156f0a9a14a853ca7db8796afdc}{estcovmatmodule\+::gethess}} (Center\+Params, Center\+Like, parsteps, Hess)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceestcovmatmodule_a5e47ee3f7267aa3efec263340a8244fc}{estcovmatmodule\+::step\+\_\+positions}}
+\item 
+logical, dimension(\+:), allocatable \mbox{\hyperlink{namespaceestcovmatmodule_aae3649733742664790e565faa9dad010}{estcovmatmodule\+::is\+\_\+weakly\+\_\+constrained}}
+\end{DoxyCompactItemize}

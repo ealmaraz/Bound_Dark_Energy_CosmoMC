@@ -1,0 +1,469 @@
+\hypertarget{namespacestringutils}{}\section{stringutils Module Reference}
+\label{namespacestringutils}\index{stringutils@{stringutils}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interfacestringutils_1_1realtostr}{realtostr}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+logical function \mbox{\hyperlink{namespacestringutils_ae4eb174b5b8dcf64a0a61be0519ea343}{iswhitespace}} (C)
+\item 
+integer function \mbox{\hyperlink{namespacestringutils_a8837c1b537afbf19f8138389d9cdf434}{getparamcount}} ()
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a4553b9553b31c1e21fe6b70b54fde501}{getparam}} (i)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a7869404fd42c1f41212cbd62a5e225f3}{getenvironmentvariable}} (name, is\+\_\+present)
+\item 
+logical function \mbox{\hyperlink{namespacestringutils_a83f80ac2eecd8ff5e8fd18faba396ec9}{stringstarts}} (S, substring, index)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_ac5e67eb0a4de77625ac1447804e1f934}{stringtrimmed}} (S, trimmed)
+\item 
+subroutine \mbox{\hyperlink{namespacestringutils_aaf1a42410d8de4ec72b5f8f00f538f35}{stringreplace}} (FindS, RepS, S)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a077361529d56f5b3f1903f5a145a4745}{stringescape}} (S, C, escape)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a29f32cf04e0c44fc8ee8dfa9819b915d}{join}} (separator, S, S1, S2, S3, S4, S5, S6, trimmed)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_af68508e2bb36d836c0f94f476f728cb3}{numcat}} (S, num)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a8308d148fc2d1fd7e23aea926bfd837f}{inttostr}} (I, minlen)
+\item 
+integer function \mbox{\hyperlink{namespacestringutils_af51a1a8adbae76da62979f25232bd8df}{strtoint}} (S)
+\item 
+subroutine \mbox{\hyperlink{namespacestringutils_a921ef80710acba9d901b45479ddae08d}{stringappend}} (S, X)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a19e683b9de4f769c4fe0afc48a7b45d0}{concat}} (S1, S2, S3, S4, S5, S6, S7, S8)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_adb471f3dd9f3594d60675ae521b568a7}{doubletostr}} (R, figs)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a9ee073baf898c055562e20577ad27013}{singletostr}} (R, figs)
+\item 
+logical function \mbox{\hyperlink{namespacestringutils_a052ed985538275100bc601b4bfffde94}{subnextformat}} (S, X)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacestringutils_a27d23a05ef709f393291b263dbbd78c3}{formatstring}} (formatst, i1, i2, i3, i4, i5, i6, i7, i8, allow\+\_\+unused)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacestringutils_a19e683b9de4f769c4fe0afc48a7b45d0}\label{namespacestringutils_a19e683b9de4f769c4fe0afc48a7b45d0}} 
+\index{stringutils@{stringutils}!concat@{concat}}
+\index{concat@{concat}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::concat (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{S1,  }\item[{class($\ast$), intent(in)}]{S2,  }\item[{class($\ast$), intent(in), optional}]{S3,  }\item[{class($\ast$), intent(in), optional}]{S4,  }\item[{class($\ast$), intent(in), optional}]{S5,  }\item[{class($\ast$), intent(in), optional}]{S6,  }\item[{class($\ast$), intent(in), optional}]{S7,  }\item[{class($\ast$), intent(in), optional}]{S8 }\end{DoxyParamCaption})}
+
+
+
+References stringappend().
+
+
+
+Referenced by inttostr(), numcat(), and paramnames\+::paramnames\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a19e683b9de4f769c4fe0afc48a7b45d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a19e683b9de4f769c4fe0afc48a7b45d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_adb471f3dd9f3594d60675ae521b568a7}\label{namespacestringutils_adb471f3dd9f3594d60675ae521b568a7}} 
+\index{stringutils@{stringutils}!doubletostr@{doubletostr}}
+\index{doubletostr@{doubletostr}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{doubletostr()}{doubletostr()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::doubletostr (\begin{DoxyParamCaption}\item[{double precision, intent(in)}]{R,  }\item[{integer, intent(in), optional}]{figs }\end{DoxyParamCaption})}
+
+
+
+References singletostr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_adb471f3dd9f3594d60675ae521b568a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a27d23a05ef709f393291b263dbbd78c3}\label{namespacestringutils_a27d23a05ef709f393291b263dbbd78c3}} 
+\index{stringutils@{stringutils}!formatstring@{formatstring}}
+\index{formatstring@{formatstring}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{formatstring()}{formatstring()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::formatstring (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{formatst,  }\item[{class($\ast$), intent(in), optional}]{i1,  }\item[{class($\ast$), intent(in), optional}]{i2,  }\item[{class($\ast$), intent(in), optional}]{i3,  }\item[{class($\ast$), intent(in), optional}]{i4,  }\item[{class($\ast$), intent(in), optional}]{i5,  }\item[{class($\ast$), intent(in), optional}]{i6,  }\item[{class($\ast$), intent(in), optional}]{i7,  }\item[{class($\ast$), intent(in), optional}]{i8,  }\item[{logical, intent(in), optional}]{allow\+\_\+unused }\end{DoxyParamCaption})}
+
+
+
+References miscutils\+::defaultfalse(), stringreplace(), and subnextformat().
+
+
+
+Referenced by interpolation\+::tinterpolator\+\_\+error(), and fileutils\+::writeformat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a27d23a05ef709f393291b263dbbd78c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a27d23a05ef709f393291b263dbbd78c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a7869404fd42c1f41212cbd62a5e225f3}\label{namespacestringutils_a7869404fd42c1f41212cbd62a5e225f3}} 
+\index{stringutils@{stringutils}!getenvironmentvariable@{getenvironmentvariable}}
+\index{getenvironmentvariable@{getenvironmentvariable}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{getenvironmentvariable()}{getenvironmentvariable()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::getenvironmentvariable (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{name,  }\item[{logical, intent(out), optional}]{is\+\_\+present }\end{DoxyParamCaption})}
+
+
+
+Referenced by iniobjects\+::ini\+\_\+expandenvironment(), iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+default(), and initests\+::test\+\_\+read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a7869404fd42c1f41212cbd62a5e225f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a4553b9553b31c1e21fe6b70b54fde501}\label{namespacestringutils_a4553b9553b31c1e21fe6b70b54fde501}} 
+\index{stringutils@{stringutils}!getparam@{getparam}}
+\index{getparam@{getparam}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{getparam()}{getparam()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::getparam (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+
+
+References getparamcount().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a4553b9553b31c1e21fe6b70b54fde501_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a8837c1b537afbf19f8138389d9cdf434}\label{namespacestringutils_a8837c1b537afbf19f8138389d9cdf434}} 
+\index{stringutils@{stringutils}!getparamcount@{getparamcount}}
+\index{getparamcount@{getparamcount}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{getparamcount()}{getparamcount()}}
+{\footnotesize\ttfamily integer function stringutils\+::getparamcount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by getparam().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a8837c1b537afbf19f8138389d9cdf434_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a8308d148fc2d1fd7e23aea926bfd837f}\label{namespacestringutils_a8308d148fc2d1fd7e23aea926bfd837f}} 
+\index{stringutils@{stringutils}!inttostr@{inttostr}}
+\index{inttostr@{inttostr}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{inttostr()}{inttostr()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::inttostr (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{I,  }\item[{integer, intent(in), optional}]{minlen }\end{DoxyParamCaption})}
+
+
+
+References concat().
+
+
+
+Referenced by matrixutils\+::matrix\+\_\+ccholesky(), matrixutils\+::matrix\+\_\+ccholeskyrootinverse(), matrixutils\+::matrix\+\_\+cholesky(), matrixutils\+::matrix\+\_\+choleskyrootinverse(), matrixutils\+::matrix\+\_\+gaussianloglikedouble(), matrixutils\+::matrix\+\_\+inverse\+\_\+chol(), paramnames\+::paramnames\+\_\+hasreadiniforparam(), paramnames\+::paramnames\+\_\+nameornumber(), paramnames\+::paramnames\+\_\+readiniforparam(), paramnames\+::paramnames\+\_\+setunnamed(), stringappend(), and subnextformat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a8308d148fc2d1fd7e23aea926bfd837f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a8308d148fc2d1fd7e23aea926bfd837f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_ae4eb174b5b8dcf64a0a61be0519ea343}\label{namespacestringutils_ae4eb174b5b8dcf64a0a61be0519ea343}} 
+\index{stringutils@{stringutils}!iswhitespace@{iswhitespace}}
+\index{iswhitespace@{iswhitespace}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{iswhitespace()}{iswhitespace()}}
+{\footnotesize\ttfamily logical function stringutils\+::iswhitespace (\begin{DoxyParamCaption}\item[{character, intent(in)}]{C }\end{DoxyParamCaption})}
+
+
+
+Referenced by iniobjects\+::ini\+\_\+read\+\_\+enumeration\+\_\+list(), paramnames\+::paramnames\+\_\+parseline(), and paramnames\+::paramnames\+\_\+readindices().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_ae4eb174b5b8dcf64a0a61be0519ea343_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a29f32cf04e0c44fc8ee8dfa9819b915d}\label{namespacestringutils_a29f32cf04e0c44fc8ee8dfa9819b915d}} 
+\index{stringutils@{stringutils}!join@{join}}
+\index{join@{join}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::join (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{separator,  }\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{character(len=$\ast$), intent(in)}]{S1,  }\item[{character(len=$\ast$), optional}]{S2,  }\item[{character(len=$\ast$), optional}]{S3,  }\item[{character(len=$\ast$), optional}]{S4,  }\item[{character(len=$\ast$), optional}]{S5,  }\item[{character(len=$\ast$), optional}]{S6,  }\item[{logical, intent(in), optional}]{trimmed }\end{DoxyParamCaption})}
+
+
+
+References stringtrimmed().
+
+
+
+Referenced by getdist.\+inifile.\+Ini\+File\+::\+\_\+\+\_\+str\+\_\+\+\_\+(), getdist.\+types.\+Marge\+Stats\+::\+\_\+\+\_\+str\+\_\+\+\_\+(), paramgrid.\+batchjob.\+data\+Set\+::add(), copy\+Grid\+Files\+::do\+Copy(), getdist.\+gui.\+mainwindow.\+Main\+Window\+::error\+Report(), paramgrid.\+batchjob.\+data\+Set\+::extend\+For\+Importance(), C\+A\+M\+B\+\_\+test\+\_\+files\+::get\+Test\+Params(), runbatch\+::job\+Name(), getdist.\+paramnames.\+Param\+List\+::list\+String(), planck.\+plik\+\_\+postprocess\+::main\+\_\+fg2000(), paramgrid.\+batchjob.\+job\+Item\+::make\+Importance(), C\+A\+M\+B\+\_\+test\+\_\+files\+::make\+Ini\+Files(), paramgrid.\+batchjob.\+data\+Set\+::make\+Normed\+Datatag(), paramgrid.\+batchjob.\+job\+Item\+::make\+Normed\+Name(), paramgrid.\+batchjob.\+batch\+Job\+::normalize\+Data\+Tag(), C\+A\+M\+B\+\_\+test\+\_\+files\+::num\+\_\+unequal(), getdist.\+types\+::number\+Figs(), getdist.\+covmat.\+Cov\+Mat\+::param\+Name\+String(), make\+Tables\+::param\+Result\+Table(), getdist.\+mcsamples.\+M\+C\+Samples\+::\+P\+C\+A(), getdist.\+gui.\+mainwindow.\+Main\+Window\+::plot\+Data(), paramgrid.\+batchjob.\+batch\+Job\+::resolve\+Name(), plot\+\_\+directive\+::run(), bbn\+::run\+B\+B\+Nplot(), camb.\+bbn\+::run\+B\+B\+Nplot(), ini\+File.\+ini\+File\+::save\+File(), plot\+\_\+directive\+::split\+\_\+code\+\_\+at\+\_\+show(), paramgrid.\+jobqueue\+::submit\+Job(), getdist.\+types.\+Result\+Table\+::table\+Tex(), paramgrid.\+batchjob.\+data\+Set\+::tag\+Replacing(), getdist.\+types.\+Text\+File\+::write(), copy\+Grid\+Files\+::write\+Ini(), paramgrid.\+batchjob.\+job\+Item\+::write\+Ini\+Lines(), and getdist.\+mcsamples.\+M\+C\+Samples\+::write\+Script\+Plots1\+D().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a29f32cf04e0c44fc8ee8dfa9819b915d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacestringutils_a29f32cf04e0c44fc8ee8dfa9819b915d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_af68508e2bb36d836c0f94f476f728cb3}\label{namespacestringutils_af68508e2bb36d836c0f94f476f728cb3}} 
+\index{stringutils@{stringutils}!numcat@{numcat}}
+\index{numcat@{numcat}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{numcat()}{numcat()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::numcat (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{S,  }\item[{integer}]{num }\end{DoxyParamCaption})}
+
+
+
+References concat().
+
+
+
+Referenced by singletostr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_af68508e2bb36d836c0f94f476f728cb3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_af68508e2bb36d836c0f94f476f728cb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a9ee073baf898c055562e20577ad27013}\label{namespacestringutils_a9ee073baf898c055562e20577ad27013}} 
+\index{stringutils@{stringutils}!singletostr@{singletostr}}
+\index{singletostr@{singletostr}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{singletostr()}{singletostr()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::singletostr (\begin{DoxyParamCaption}\item[{real, intent(in)}]{R,  }\item[{integer, intent(in), optional}]{figs }\end{DoxyParamCaption})}
+
+
+
+References numcat().
+
+
+
+Referenced by doubletostr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a9ee073baf898c055562e20577ad27013_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacestringutils_a9ee073baf898c055562e20577ad27013_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a921ef80710acba9d901b45479ddae08d}\label{namespacestringutils_a921ef80710acba9d901b45479ddae08d}} 
+\index{stringutils@{stringutils}!stringappend@{stringappend}}
+\index{stringappend@{stringappend}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{stringappend()}{stringappend()}}
+{\footnotesize\ttfamily subroutine stringutils\+::stringappend (\begin{DoxyParamCaption}\item[{character(len=\+:), allocatable}]{S,  }\item[{class($\ast$)}]{X }\end{DoxyParamCaption})}
+
+
+
+References inttostr().
+
+
+
+Referenced by concat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a921ef80710acba9d901b45479ddae08d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a921ef80710acba9d901b45479ddae08d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a077361529d56f5b3f1903f5a145a4745}\label{namespacestringutils_a077361529d56f5b3f1903f5a145a4745}} 
+\index{stringutils@{stringutils}!stringescape@{stringescape}}
+\index{stringescape@{stringescape}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{stringescape()}{stringescape()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::stringescape (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{character, intent(in)}]{C,  }\item[{character, intent(in), optional}]{escape }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacestringutils_aaf1a42410d8de4ec72b5f8f00f538f35}\label{namespacestringutils_aaf1a42410d8de4ec72b5f8f00f538f35}} 
+\index{stringutils@{stringutils}!stringreplace@{stringreplace}}
+\index{stringreplace@{stringreplace}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{stringreplace()}{stringreplace()}}
+{\footnotesize\ttfamily subroutine stringutils\+::stringreplace (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{FindS,  }\item[{character(len=$\ast$), intent(in)}]{RepS,  }\item[{character(len=\+:), intent(inout), allocatable}]{S }\end{DoxyParamCaption})}
+
+
+
+Referenced by formatstring(), paramnames\+::paramnames\+\_\+init(), subnextformat(), settings\+::tsettingini\+\_\+readfilename(), and settings\+::tsettingini\+\_\+replacedirs().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_aaf1a42410d8de4ec72b5f8f00f538f35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a83f80ac2eecd8ff5e8fd18faba396ec9}\label{namespacestringutils_a83f80ac2eecd8ff5e8fd18faba396ec9}} 
+\index{stringutils@{stringutils}!stringstarts@{stringstarts}}
+\index{stringstarts@{stringstarts}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{stringstarts()}{stringstarts()}}
+{\footnotesize\ttfamily logical function stringutils\+::stringstarts (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{character(len=$\ast$), intent(in)}]{substring,  }\item[{integer, intent(in), optional}]{index }\end{DoxyParamCaption})}
+
+
+
+Referenced by iniobjects\+::ini\+\_\+namevalue\+\_\+addline(), iniobjects\+::ini\+\_\+open(), settings\+::tsettingini\+\_\+settingvaluesfortagname(), and settings\+::tsettingini\+\_\+tagvaluesforname().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a83f80ac2eecd8ff5e8fd18faba396ec9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_ac5e67eb0a4de77625ac1447804e1f934}\label{namespacestringutils_ac5e67eb0a4de77625ac1447804e1f934}} 
+\index{stringutils@{stringutils}!stringtrimmed@{stringtrimmed}}
+\index{stringtrimmed@{stringtrimmed}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{stringtrimmed()}{stringtrimmed()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable stringutils\+::stringtrimmed (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{logical, intent(in), optional}]{trimmed }\end{DoxyParamCaption})}
+
+
+
+References miscutils\+::defaultfalse().
+
+
+
+Referenced by join().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_ac5e67eb0a4de77625ac1447804e1f934_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacestringutils_ac5e67eb0a4de77625ac1447804e1f934_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_af51a1a8adbae76da62979f25232bd8df}\label{namespacestringutils_af51a1a8adbae76da62979f25232bd8df}} 
+\index{stringutils@{stringutils}!strtoint@{strtoint}}
+\index{strtoint@{strtoint}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{strtoint()}{strtoint()}}
+{\footnotesize\ttfamily integer function stringutils\+::strtoint (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{S }\end{DoxyParamCaption})}
+
+
+
+Referenced by subnextformat().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_af51a1a8adbae76da62979f25232bd8df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestringutils_a052ed985538275100bc601b4bfffde94}\label{namespacestringutils_a052ed985538275100bc601b4bfffde94}} 
+\index{stringutils@{stringutils}!subnextformat@{subnextformat}}
+\index{subnextformat@{subnextformat}!stringutils@{stringutils}}
+\subsubsection{\texorpdfstring{subnextformat()}{subnextformat()}}
+{\footnotesize\ttfamily logical function stringutils\+::subnextformat (\begin{DoxyParamCaption}\item[{character(len=\+:), allocatable}]{S,  }\item[{class($\ast$)}]{X }\end{DoxyParamCaption})}
+
+
+
+References inttostr(), stringreplace(), and strtoint().
+
+
+
+Referenced by formatstring().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a052ed985538275100bc601b4bfffde94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestringutils_a052ed985538275100bc601b4bfffde94_icgraph}
+\end{center}
+\end{figure}

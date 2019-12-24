@@ -1,0 +1,11 @@
+<map id="getdist.chains.WeightedSamples._setCov" name="getdist.chains.WeightedSamples._setCov">
+<area shape="rect" id="node2" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a61a1250aa6f6292f59f2e24e9df364f0" title="getdist.chains.WeightedSamples.cov" alt="" coords="273,121,511,148"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a22eba6159f13f1185d7359885a6e927c" title="getdist.chains.WeightedSamples.mean\l_diffs" alt="" coords="561,63,810,105"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1chains_1_1WeightedSamples.html#adb6da75221743f7a05286cbb2b2685b0" title="getdist.chains.WeightedSamples.get_norm" alt="" coords="1495,172,1766,199"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1chains_1_1WeightedSamples.html#aa5d70ded54742f3296cd856a8a1fa185" title="getdist.chains.WeightedSamples.get\lMeans" alt="" coords="1189,5,1424,46"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a4a7ffc36e87801cb74f9ec78896c220b" title="getdist.chains.WeightedSamples.mean_diff" alt="" coords="859,71,1133,97"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a977e6b59952fb92233a9e2d330c984ad" title="getdist.chains.WeightedSamples.set\lMeans" alt="" coords="1513,5,1748,46"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a97daf2e7045ad90ef4ff8030b9d65740" title="getdist.chains.WeightedSamples.\l_makeParamvec" alt="" coords="1830,89,2047,130"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a72a6f011746d852ea089302d90f59159" title="getdist.chains.WeightedSamples.mean" alt="" coords="1182,121,1431,148"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1chains_1_1WeightedSamples.html#afdeb6d07f1db505f36fe0ca0052528ac" title="getdist.chains.WeightedSamples.weighted_sum" alt="" coords="1480,121,1781,148"/>
+</map>

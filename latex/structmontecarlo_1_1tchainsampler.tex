@@ -1,0 +1,167 @@
+\hypertarget{structmontecarlo_1_1tchainsampler}{}\section{montecarlo\+:\+:tchainsampler Type Reference}
+\label{structmontecarlo_1_1tchainsampler}\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+
+
+Inheritance diagram for montecarlo\+:\+:tchainsampler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{structmontecarlo_1_1tchainsampler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for montecarlo\+:\+:tchainsampler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{structmontecarlo_1_1tchainsampler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a38810c14744153220394a622dd7a2ad3}{metropolisaccept}} =$>$ T\+Chain\+Sampler\+\_\+\+Metropolis\+Accept
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a6138b68a3e4b30031cf192190428c510}{movedone}} =$>$ T\+Chain\+Sampler\+\_\+\+Move\+Done
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_ab6e59061d3f9fc8a9f3326544bc02d37}{samplefrom}} =$>$ T\+Chain\+Sampler\+\_\+\+Sample\+From
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a3edd52a15829b32df264ad24e2dd171c}{getnewsample}} =$>$ T\+Chain\+Sampler\+\_\+\+Get\+New\+Sample
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_aceabb786825d8b4124bb92cf932bd202}{setcovariance}} =$>$ T\+Chain\+Sampler\+\_\+\+Set\+Covariance
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a3bd0e6012e5089f458735c5956b19368}{savestate}} =$>$ T\+Chain\+Sampler\+\_\+\+Save\+State
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_af1eb90580ce946e10dda16632c9d28b0}{loadstate}} =$>$ T\+Chain\+Sampler\+\_\+\+Load\+State
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a59abcbff08402ef3ecec5a916b2039e9}{readparams}} =$>$ T\+Chain\+Sampler\+\_\+\+Read\+Params
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a616c1617aa6842c901afbc82fcfe2222}{init}} =$>$ T\+Chain\+Sampler\+\_\+\+Init
+\item 
+procedure \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a5cd99a84af5d4b4addc5fa975c5091d5}{initwithpropose}} =$>$ T\+Chain\+Sampler\+\_\+\+Init\+With\+Propose
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a5d39cc59841817cec9b00e0299f72d9e}{oversample\+\_\+fast}} =1
+\item 
+integer \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_aab28c3963cb565088c36b6ca2357515a}{output\+\_\+thin}} =1
+\item 
+integer \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_ac0905e2e15cdb68268b305dd1071b489}{num\+\_\+accept}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a960d9a60918fbba00ce757b21ba3e3fa}{propose\+\_\+scale}} = 2.\+4\+\_\+mcp
+\item 
+integer \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a63b77bdd83f41e488dbe4f0f8102bb84}{burn\+\_\+in}} = 2
+\item 
+class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}}), pointer \mbox{\hyperlink{structmontecarlo_1_1tchainsampler_a8021f41394264a9a25162b3a7d9b1082}{proposer}} =$>$ null()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a3edd52a15829b32df264ad24e2dd171c}\label{structmontecarlo_1_1tchainsampler_a3edd52a15829b32df264ad24e2dd171c}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!getnewsample@{getnewsample}}
+\index{getnewsample@{getnewsample}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{getnewsample()}{getnewsample()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::getnewsample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a616c1617aa6842c901afbc82fcfe2222}\label{structmontecarlo_1_1tchainsampler_a616c1617aa6842c901afbc82fcfe2222}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!init@{init}}
+\index{init@{init}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a5cd99a84af5d4b4addc5fa975c5091d5}\label{structmontecarlo_1_1tchainsampler_a5cd99a84af5d4b4addc5fa975c5091d5}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!initwithpropose@{initwithpropose}}
+\index{initwithpropose@{initwithpropose}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{initwithpropose()}{initwithpropose()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::initwithpropose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_af1eb90580ce946e10dda16632c9d28b0}\label{structmontecarlo_1_1tchainsampler_af1eb90580ce946e10dda16632c9d28b0}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!loadstate@{loadstate}}
+\index{loadstate@{loadstate}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{loadstate()}{loadstate()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::loadstate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a38810c14744153220394a622dd7a2ad3}\label{structmontecarlo_1_1tchainsampler_a38810c14744153220394a622dd7a2ad3}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!metropolisaccept@{metropolisaccept}}
+\index{metropolisaccept@{metropolisaccept}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{metropolisaccept()}{metropolisaccept()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::metropolisaccept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a6138b68a3e4b30031cf192190428c510}\label{structmontecarlo_1_1tchainsampler_a6138b68a3e4b30031cf192190428c510}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!movedone@{movedone}}
+\index{movedone@{movedone}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{movedone()}{movedone()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::movedone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a59abcbff08402ef3ecec5a916b2039e9}\label{structmontecarlo_1_1tchainsampler_a59abcbff08402ef3ecec5a916b2039e9}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!readparams@{readparams}}
+\index{readparams@{readparams}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{readparams()}{readparams()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::readparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_ab6e59061d3f9fc8a9f3326544bc02d37}\label{structmontecarlo_1_1tchainsampler_ab6e59061d3f9fc8a9f3326544bc02d37}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!samplefrom@{samplefrom}}
+\index{samplefrom@{samplefrom}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{samplefrom()}{samplefrom()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::samplefrom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a3bd0e6012e5089f458735c5956b19368}\label{structmontecarlo_1_1tchainsampler_a3bd0e6012e5089f458735c5956b19368}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!savestate@{savestate}}
+\index{savestate@{savestate}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{savestate()}{savestate()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::savestate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_aceabb786825d8b4124bb92cf932bd202}\label{structmontecarlo_1_1tchainsampler_aceabb786825d8b4124bb92cf932bd202}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!setcovariance@{setcovariance}}
+\index{setcovariance@{setcovariance}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{setcovariance()}{setcovariance()}}
+{\footnotesize\ttfamily procedure montecarlo\+::tchainsampler\+::setcovariance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a63b77bdd83f41e488dbe4f0f8102bb84}\label{structmontecarlo_1_1tchainsampler_a63b77bdd83f41e488dbe4f0f8102bb84}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!burn\+\_\+in@{burn\+\_\+in}}
+\index{burn\+\_\+in@{burn\+\_\+in}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{burn\+\_\+in}{burn\_in}}
+{\footnotesize\ttfamily integer montecarlo\+::tchainsampler\+::burn\+\_\+in = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_ac0905e2e15cdb68268b305dd1071b489}\label{structmontecarlo_1_1tchainsampler_ac0905e2e15cdb68268b305dd1071b489}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!num\+\_\+accept@{num\+\_\+accept}}
+\index{num\+\_\+accept@{num\+\_\+accept}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{num\+\_\+accept}{num\_accept}}
+{\footnotesize\ttfamily integer montecarlo\+::tchainsampler\+::num\+\_\+accept = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_aab28c3963cb565088c36b6ca2357515a}\label{structmontecarlo_1_1tchainsampler_aab28c3963cb565088c36b6ca2357515a}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!output\+\_\+thin@{output\+\_\+thin}}
+\index{output\+\_\+thin@{output\+\_\+thin}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{output\+\_\+thin}{output\_thin}}
+{\footnotesize\ttfamily integer montecarlo\+::tchainsampler\+::output\+\_\+thin =1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a5d39cc59841817cec9b00e0299f72d9e}\label{structmontecarlo_1_1tchainsampler_a5d39cc59841817cec9b00e0299f72d9e}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!oversample\+\_\+fast@{oversample\+\_\+fast}}
+\index{oversample\+\_\+fast@{oversample\+\_\+fast}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{oversample\+\_\+fast}{oversample\_fast}}
+{\footnotesize\ttfamily integer montecarlo\+::tchainsampler\+::oversample\+\_\+fast =1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a960d9a60918fbba00ce757b21ba3e3fa}\label{structmontecarlo_1_1tchainsampler_a960d9a60918fbba00ce757b21ba3e3fa}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!propose\+\_\+scale@{propose\+\_\+scale}}
+\index{propose\+\_\+scale@{propose\+\_\+scale}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{propose\+\_\+scale}{propose\_scale}}
+{\footnotesize\ttfamily real(mcp) montecarlo\+::tchainsampler\+::propose\+\_\+scale = 2.\+4\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structmontecarlo_1_1tchainsampler_a8021f41394264a9a25162b3a7d9b1082}\label{structmontecarlo_1_1tchainsampler_a8021f41394264a9a25162b3a7d9b1082}} 
+\index{montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}!proposer@{proposer}}
+\index{proposer@{proposer}!montecarlo\+::tchainsampler@{montecarlo\+::tchainsampler}}
+\subsubsection{\texorpdfstring{proposer}{proposer}}
+{\footnotesize\ttfamily class(\mbox{\hyperlink{structpropose_1_1blockedproposer}{blockedproposer}}), pointer montecarlo\+::tchainsampler\+::proposer =$>$ null()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{MCMC_8f90}{M\+C\+M\+C.\+f90}}\end{DoxyCompactItemize}

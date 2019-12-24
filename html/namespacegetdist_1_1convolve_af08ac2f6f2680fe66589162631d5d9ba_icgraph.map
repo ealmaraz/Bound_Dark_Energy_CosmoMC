@@ -1,0 +1,12 @@
+<map id="getdist.convolve.convolveFFT" name="getdist.convolve.convolveFFT">
+<area shape="rect" id="node2" href="$namespacegetdist_1_1convolve.html#afcf448b1f8993227af712ca2b0c8399c" title="getdist.convolve.convolve1D" alt="" coords="251,107,442,133"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a53dc1a5889467700091389070326f0c9" title="getdist.mcsamples.MCSamples.get1\lDDensityGridData" alt="" coords="491,99,728,141"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a67d8f66e8c759cac71fc3c0562faa74d" title="getdist.mcsamples.MCSamples.get1\lDDensity" alt="" coords="776,70,1013,111"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ae22105031ef07db6d65ce05fef3b15e8" title="getdist.mcsamples.MCSamples.\l_setDensitiesandMarge1D" alt="" coords="1323,99,1535,141"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a1d4ac9d66e1401a3a2e082cd18393f2b" title="getdist.mcsamples.MCSamples.\l_getScaleForParam" alt="" coords="1062,5,1274,46"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a90a8cf01a23a304a6e5fe07db7a74e1a" title="getdist.mcsamples.MCSamples.\l_setMargeLimits" alt="" coords="1062,70,1274,111"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ac23f96add8b4fc35b7dd3a922fae119f" title="getdist.mcsamples.MCSamples.get\lMargeStats" alt="" coords="1585,99,1815,141"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a2faa89318b77f8c9a09eec976272f54c" title="getdist.mcsamples.MCSamples.get\lTable" alt="" coords="1865,66,2095,107"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#aa4fc7b33808a24cb90238f2b24500899" title="getdist.mcsamples.MCSamples.get\lLatex" alt="" coords="1865,131,2095,173"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ad03ae7e378ba02de8fcecb16934b9e65" title="getdist.mcsamples.MCSamples.get\lInlineLatex" alt="" coords="2145,131,2375,173"/>
+</map>

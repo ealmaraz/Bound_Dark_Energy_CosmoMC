@@ -1,0 +1,224 @@
+\hypertarget{szcounts_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/szcounts.f90 File Reference}
+\label{szcounts_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/szcounts.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/szcounts.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcosmology_1_1cospar}{cosmology\+::cospar}}
+\item 
+type \mbox{\hyperlink{structsurvey_1_1survpar}{survey\+::survpar}}
+\item 
+type \mbox{\hyperlink{structmassfunction_1_1masspar}{massfunction\+::masspar}}
+\item 
+type \mbox{\hyperlink{structszcounts_1_1szlikelihood}{szcounts\+::szlikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceconstants__sz}{constants\+\_\+sz}}
+\item 
+module \mbox{\hyperlink{namespacecosmology}{cosmology}}
+\item 
+module \mbox{\hyperlink{namespacesurvey}{survey}}
+\item 
+module \mbox{\hyperlink{namespacemassobservable}{massobservable}}
+\item 
+module \mbox{\hyperlink{namespacepower__sz}{power\+\_\+sz}}
+\item 
+module \mbox{\hyperlink{namespacemassfunction}{massfunction}}
+\item 
+module \mbox{\hyperlink{namespacenumbercounts}{numbercounts}}
+\item 
+module \mbox{\hyperlink{namespaceszcounts}{szcounts}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_af6e96fd519aaf76a5407429172288537}{cosmology\+::eh}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_aeef992799f00205f3a31ac86d34da7e2}{cosmology\+::omegam}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a81af36db5e915a16bc6684c70562c2cc}{cosmology\+::omegade}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_ac8a5367c45bf7773b9a8e27fb7ff59ec}{cosmology\+::omegak}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a5acb8c4886ff7017542c3c1ec551f357}{cosmology\+::r}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a9203d5591635fce503b42a2121a1dfaa}{cosmology\+::rint}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a17233f8902b8f4b3f66ff1bfb3406c05}{cosmology\+::da}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacecosmology_a38a12dc082adc18d1fc8a043bd39405c}{cosmology\+::dvdzdo}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemassobservable_a4be614d859b3c2e06a7674a7af153ff5}{massobservable\+::theta500}} (m, z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemassobservable_a4eca145d43dd43892e21b73f42ace63e}{massobservable\+::y500}} (m, z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemassobservable_ac95513e74fbf07c2becffe8985dfc31b}{massobservable\+::erf\+\_\+compl}} (y, sn, q)
+\item 
+subroutine \mbox{\hyperlink{namespacepower__sz_aba87ceb74647bba3404b96101f438d35}{power\+\_\+sz\+::inigrowth}}
+\item 
+real(dl) function \mbox{\hyperlink{namespacepower__sz_aa30236046bbf63ea0304f440bef4964d}{power\+\_\+sz\+::delta}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacepower__sz_adf64f1eb16e70afa359a6b084d2219d4}{power\+\_\+sz\+::ddelta}} (dummyr, n, a, y, yprime)
+\item 
+real(dl) function \mbox{\hyperlink{namespacepower__sz_ad0eb7df0cb325285d971ac5aa7c80754}{power\+\_\+sz\+::growint}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemassfunction_a7388d3e1cd459ef602a588f13111b6f4}{massfunction\+::dndlnm}} (z, M, g)
+\item 
+subroutine \mbox{\hyperlink{namespacemassfunction_a64c53fdad2880885e6d900d266bd160e}{massfunction\+::splintnr}} (XA, YA, Y2A, N, X, Y)
+\item 
+real(dl) function \mbox{\hyperlink{namespacenumbercounts_a9dd53df8344f5ed34b320cf13cd342b6}{numbercounts\+::next\+\_\+z}} (zi, binz)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_a7e87a46c1e125cb57eff635630c88506}{numbercounts\+::deltan\+\_\+yz}} (Z, Nz, L\+O\+GY, Ny, DN, D\+N2D, skyfracs, thetas, ylims, switch, qa\+\_\+ytot, erf\+\_\+list)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_ad089fdedf2c506bc8fc9dfb1ce45c024}{numbercounts\+::integrate\+\_\+m\+\_\+z}} (grid, skyfracs, compl, steps\+\_\+z, steps\+\_\+m, nsteps\+\_\+z, nsteps\+\_\+m, z1, z2, binz, dlnm, sum)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_ab1013e4cf6773ad5eef3b128285b1dff}{numbercounts\+::integrate\+\_\+m\+\_\+zq}} (grid, skyfracs, compl, steps\+\_\+z, steps\+\_\+m, nsteps\+\_\+z, nsteps\+\_\+m, z1, z2, binz, biny, dlnm, sum)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_a9147710c647a39e457fa04786c7c295d}{numbercounts\+::grid\+\_\+c\+\_\+2d}} (npatches, steps\+\_\+z, steps\+\_\+m, thetas, ylims, skyfracs, completeness, logy, qa\+\_\+ytot, erf\+\_\+list, iy)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_ab87ce14039efd094615930acc710e6b2}{numbercounts\+::grid\+\_\+c}} (npatches, steps\+\_\+z, steps\+\_\+m, thetas, ylims, skyfracs, completeness, qa\+\_\+ytot, erf\+\_\+list)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_a530ce747969dd91d2b57a90d658dbb62}{numbercounts\+::get\+\_\+grid}} (nz, nm, z, lnm, grid)
+\item 
+subroutine, public \mbox{\hyperlink{namespaceszcounts_a0c8563799b2d0ed9c6c98a8164fa46b9}{szcounts\+::szlikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespaceszcounts_afa324b0c4ff10f2122b6d75541b4e204}{szcounts\+::sz\+\_\+init}}
+\item 
+real(mcp) function, public \mbox{\hyperlink{namespaceszcounts_abc28ab0b8d2db0b6f91aa9b99cac694f}{szcounts\+::szcc\+\_\+cash}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespaceconstants__sz_a961cb32bc8976382938d3a7904a98a59}{constants\+\_\+sz\+::mpc}} = 3.\+08568025d22
+\item 
+real(dl), parameter \mbox{\hyperlink{namespaceconstants__sz_afc00b3b7788a7e78be7091be3734f664}{constants\+\_\+sz\+::g}} = 6.\+67300d-\/11
+\item 
+real(dl), parameter \mbox{\hyperlink{namespaceconstants__sz_adeada82443a5e762195aacb1be5b134b}{constants\+\_\+sz\+::c}} = 3.\+0d8
+\item 
+real(dl), parameter \mbox{\hyperlink{namespaceconstants__sz_a1722de599fff703c9c4ed22a8944cde8}{constants\+\_\+sz\+::msun}} = 1.\+98892d30
+\item 
+real(dl), parameter \mbox{\hyperlink{namespaceconstants__sz_a7428cc3cfaacdf588f533cb06a70822d}{constants\+\_\+sz\+::rhocrit0}} =2.\+7751973751261264d11
+\item 
+real(dl), parameter \mbox{\hyperlink{namespaceconstants__sz_a60522a8c991ef19549e52f3e2818a7b9}{constants\+\_\+sz\+::pi}} =3.\+141592653589793238463\+D0
+\item 
+type(\mbox{\hyperlink{structcosmology_1_1cospar}{cospar}}), save \mbox{\hyperlink{namespacecosmology_a58e3904346959bd5f3207f5f1f327e0e}{cosmology\+::cosmopar}}
+\item 
+type(survpar), save \mbox{\hyperlink{namespacesurvey_a4fc1eec30a42a46b8a0ea67ca671fc83}{survey\+::surveypar}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassobservable_ad190951c647b00dc7f3cd907426e73df}{massobservable\+::thetastar}} =6.\+997
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassobservable_a5a2fa41bd7c65ad6bcb80c5a33cb9b2a}{massobservable\+::alpha\+\_\+theta}} =1./3.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassobservable_adc6186979c0880b189270b9d6fa1f933}{massobservable\+::q}} =6.
+\item 
+real(dl) \mbox{\hyperlink{namespacepower__sz_a9c2a55f8b77bacfff31fc7792410a4cc}{power\+\_\+sz\+::normsig8}}
+\item 
+real(dl) \mbox{\hyperlink{namespacepower__sz_ad00d03b01e9af9747a7013d7ea680a25}{power\+\_\+sz\+::normgrowth}}
+\item 
+type(masspar) \mbox{\hyperlink{namespacemassfunction_ac3284bedbb7a589297bf6557a10e6f30}{massfunction\+::massfnpar}}
+\item 
+logical \mbox{\hyperlink{namespaceszcounts_a115079cdaf012d6e19dfcf1ef1d94de6}{szcounts\+::do\+\_\+sz\+\_\+init}} = .true.
+\item 
+logical \mbox{\hyperlink{namespaceszcounts_ab9a32458d184b4ed56c53c9082c7c67a}{szcounts\+::use\+\_\+sz}} = .false.
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_aedc8585dbbc04a06f4913d1d15752108}{szcounts\+::sz\+\_\+num}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a2c231e5f41215024e487ea111556280a}{szcounts\+::ny}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a5b5fcdf2152c2af5169ef6293749f467}{szcounts\+::nz}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a7cd38bc2def0a071d9d8ccf4de51fd98}{szcounts\+::sz\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_aeca7339cc77539d46b2ac1756c6eef3b}{szcounts\+::nmiss\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a6def443ac3e0a9afd588d7251c768760}{szcounts\+::errorz\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a89e748b08fe1c1bf0622bc36abb46e38}{szcounts\+::print\+\_\+counts}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_aec365ec73a0a61aac5c8f6b386972ae3}{szcounts\+::nmiss}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a2918e9d37a3720ad5c9d793005f4c774}{szcounts\+::nred2}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_adbee780b7de47a7a0ed712ecf643edad}{szcounts\+::ncat}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a0c42a07d181e073516184ad2778e1b0c}{szcounts\+::nerf}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a1e708b5794db648704f60ff689180607}{szcounts\+::nrows\+\_\+qa}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a439b480209d3bead1d0c7fdada2d2dda}{szcounts\+::nrows\+\_\+erf}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_ac9b32f7b1676215c63a305f4ad36ac0a}{szcounts\+::ylim\+\_\+switch}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a27757054150c1df2c034d1404888b01d}{szcounts\+::for}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a9d5e47bc9753495f7e786d6a346a0430}{szcounts\+::constant}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a2113fbfc3fd3f4f7d482dfc83ed3ce40}{szcounts\+::ylim}}
+\item 
+integer \mbox{\hyperlink{namespaceszcounts_a971abc806d9e41dbb94fcf7b448b1c91}{szcounts\+::variable}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a97eccbe43cd988a15f416908d5032a54}{szcounts\+::dncat}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a7a9570e041772a0a85c72608e5bd79b8}{szcounts\+::dnzcat}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_ad8ce700b221def6cc6adfbbac449cdec}{szcounts\+::dnycat}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a169b8a0331217f4777d810a37e5459c2}{szcounts\+::dn}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_aa90e9286036783e86cde085a3266838c}{szcounts\+::dnz}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_aed7311f56ea05af971cdd62ed4d8ff1c}{szcounts\+::dny}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a1bde530b627f5318a6681ddc544355d6}{szcounts\+::z}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a42ba2df42e9722f2624e5f3e187731c3}{szcounts\+::logy}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a237475f3cddb3344fb45713300e0fe94}{szcounts\+::ylims}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a5717e85376dd2fd0bb2bb0eb6fb9e7fb}{szcounts\+::thetas}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespaceszcounts_aae1d8f46899dd92909f27129c9866db5}{szcounts\+::skyfracs}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_abc9374ee47357a4c1c760d45a0336faf}{szcounts\+::erf\+\_\+list}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_a4aebae61d9611765edf7687fe66c383d}{szcounts\+::qa\+\_\+ytot}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceszcounts_addcf659f211cb953c4ed1510888bc24a}{szcounts\+::szcat}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_adffd232373e78bf39d363f027f0564ff}{szcounts\+::clash}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a1e8fc0be8d32aa9edec391fdc16f1978}{szcounts\+::wtg}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a93fe6f6bac05415c56bdb59429db5345}{szcounts\+::lens}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a64fdba6e458ea314da7f871a1ec879ae}{szcounts\+::cccp}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_afd77c97be9a90a59819249f5cc73760b}{szcounts\+::pns}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_acb8cfec6e2fe1c42d1e65aa06c0b81df}{szcounts\+::oh2}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a162a76075580761ec2e15dd4e6d716fd}{szcounts\+::palpha}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_af79e33e4d88161185c0ab245f42a51f2}{szcounts\+::pystar}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a6dfdc3232342e7579dcc7dae3506d7fd}{szcounts\+::psigma}}
+\item 
+real(dl) \mbox{\hyperlink{namespaceszcounts_a195fa99a01ff79fd80fe03fb78b8b573}{szcounts\+::pbeta}}
+\item 
+real \mbox{\hyperlink{namespaceszcounts_a8f0eaabdc83a62e45bf24daf1e820e76}{szcounts\+::sz\+\_\+kmax}} = 4.\+0
+\item 
+character(len=256) \mbox{\hyperlink{namespaceszcounts_ad7b2b406324ec451bf7199f40411f42b}{szcounts\+::sz\+\_\+filename}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespaceszcounts_aa726969ed60d9d595227138f6fae1b5e}{szcounts\+::sz\+\_\+version}} = \textquotesingle{}Nov\+\_\+2014\textquotesingle{}
+\item 
+real(dl), save \mbox{\hyperlink{namespaceszcounts_ab3202a28ada73a28c4052802235a7f04}{szcounts\+::zmaxs}}
+\item 
+real(dl), save \mbox{\hyperlink{namespaceszcounts_a2718f37c5199b68be9ce1a3298a1a64f}{szcounts\+::z0}}
+\item 
+real(dl), save \mbox{\hyperlink{namespaceszcounts_a6a402ad033e07eecf06cdd670fabfd78}{szcounts\+::dz}}
+\item 
+integer, save \mbox{\hyperlink{namespaceszcounts_a16edd363d924414dcf42aff90a5b5cf1}{szcounts\+::nred}}
+\item 
+integer, save \mbox{\hyperlink{namespaceszcounts_ae530cb9d64e88dd1ab20e603295c1d7b}{szcounts\+::nscat}}
+\end{DoxyCompactItemize}

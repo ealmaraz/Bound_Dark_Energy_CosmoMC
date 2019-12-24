@@ -1,0 +1,249 @@
+\hypertarget{namespacecalclike}{}\section{calclike Module Reference}
+\label{namespacecalclike}\index{calclike@{calclike}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1tgenericlikecalculator}{tgenericlikecalculator}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1tlikelihooduser}{tlikelihooduser}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1ttheorylikelihooduser}{ttheorylikelihooduser}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a36076b04960c7a7230a45fc468f9f0d6}{addlike}} (this, Current\+Like, Like\+To\+Add)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_adb9f063355d18b2a50d8e0d3c061324b}{addliketemp}} (this, Current\+Like, Like\+To\+Add)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_ae4302a1d96dcdf7816b3d66125504644}{getloglikebounds}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_ae8f9437d9cf6441647020ac8e419e424}{getlogpriors}} (this, P)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a1a9de6819dc2b41653d5bf9a36bd66a1}{getloglike}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a7f2306f2a9d2d0135d6f4852f6ed3bc2}{getloglikemain}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_af377ac1f0746c42a430094fe73246012}{tlikecalculator\+\_\+readparams}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_adb41feb15d07d744bace1629aea8a5d3}{tlikecalculator\+\_\+testlikelihoodfunction}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a5158b85ddca7d8f1b417a813bb7fe849}{tlikecalculator\+\_\+writeperformancestats}} (this, unit)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a7348b373c8c9138f0c694ad9969fcb66}{tlikecalculator\+\_\+writeparamshumantext}} (this, aunit, P, Log\+Like, weight)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_afd9d4013e29fb891f656598d4b5e1b73}{tlikecalculator\+\_\+writeparamshumantextfile}} (this, fname, P, Log\+Like, weight)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a4be845214aaba0f4348b66c67401f78b}{tlikecalculator\+\_\+writeparampointtextdata}} (this, output\+\_\+root, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_ab9a99016f525f639358a942fb9885cc7}{generic\+\_\+getloglikemain}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_ab9d66863dbce892dbee08483d9cdac50}{theorylike\+\_\+settheoryparams}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a3823367d787d17f15e903222232f4b94}{theorylike\+\_\+setnewtheoryresults}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a141801e2c0e794a0411104bca9bb6809}{theorylike\+\_\+getloglikemain}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_adffdc491632ae303d023f5e1b704eba4}{theorylike\+\_\+checkpriorcuts}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a27e62cb96ad63d0285283d1eb8dcec0c}{theorylike\+\_\+getloglikepost}} (this, Params, do\+\_\+like)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a81e2854f62abdf354c1f03fc29c05d1c}{theorylike\+\_\+loglikewiththeoryset}} (this, likelihood\+\_\+mask)
+\item 
+logical function \mbox{\hyperlink{namespacecalclike_ae7eb4423ffdbadbf2df406b9d3331346}{theorylike\+\_\+calculaterequiredtheorychanges}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_ab2d52ca5a668e5072ed6d10c161a5e88}{theorylike\+\_\+gettheoryforlike}} (this, Like)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_ab57c11043f079701db0baf858bf6315a}{theorylike\+\_\+gettheoryforimportance}} (this, Params, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_adb244129926744248e4e4f8883384b5c}{theorylike\+\_\+updatetheoryforlikelihoods}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_adb2986867dcdb441b12b98cdd46cc5b5}{theorylike\+\_\+testlikelihoodfunction}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a5c185d1a702fe31d3d1204d919b338da}{ttheorylike\+\_\+writeparamshumantext}} (this, aunit, P, Log\+Like, weight)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_acb1cb4737fc9ec3a805214e87b444b00}{ttheorylike\+\_\+writeparampointtextdata}} (this, output\+\_\+root, Params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecalclike_a36076b04960c7a7230a45fc468f9f0d6}\label{namespacecalclike_a36076b04960c7a7230a45fc468f9f0d6}} 
+\index{calclike@{calclike}!addlike@{addlike}}
+\index{addlike@{addlike}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{addlike()}{addlike()}}
+{\footnotesize\ttfamily subroutine calclike\+::addlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{real(mcp)}]{Current\+Like,  }\item[{real(mcp), intent(in)}]{Like\+To\+Add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_adb9f063355d18b2a50d8e0d3c061324b}\label{namespacecalclike_adb9f063355d18b2a50d8e0d3c061324b}} 
+\index{calclike@{calclike}!addliketemp@{addliketemp}}
+\index{addliketemp@{addliketemp}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{addliketemp()}{addliketemp()}}
+{\footnotesize\ttfamily subroutine calclike\+::addliketemp (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{real(mcp)}]{Current\+Like,  }\item[{real(mcp), intent(in)}]{Like\+To\+Add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_ab9a99016f525f639358a942fb9885cc7}\label{namespacecalclike_ab9a99016f525f639358a942fb9885cc7}} 
+\index{calclike@{calclike}!generic\+\_\+getloglikemain@{generic\+\_\+getloglikemain}}
+\index{generic\+\_\+getloglikemain@{generic\+\_\+getloglikemain}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{generic\+\_\+getloglikemain()}{generic\_getloglikemain()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::generic\+\_\+getloglikemain (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tgenericlikecalculator}{tgenericlikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a1a9de6819dc2b41653d5bf9a36bd66a1}\label{namespacecalclike_a1a9de6819dc2b41653d5bf9a36bd66a1}} 
+\index{calclike@{calclike}!getloglike@{getloglike}}
+\index{getloglike@{getloglike}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{getloglike()}{getloglike()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::getloglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by estcovmatmodule\+::gethess(), estcovmatmodule\+::getstepsfordchisq1(), and estcovmatmodule\+::placegrid().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecalclike_a1a9de6819dc2b41653d5bf9a36bd66a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecalclike_ae4302a1d96dcdf7816b3d66125504644}\label{namespacecalclike_ae4302a1d96dcdf7816b3d66125504644}} 
+\index{calclike@{calclike}!getloglikebounds@{getloglikebounds}}
+\index{getloglikebounds@{getloglikebounds}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{getloglikebounds()}{getloglikebounds()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::getloglikebounds (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References baseparameters\+::baseparams.
+
+\mbox{\Hypertarget{namespacecalclike_a7f2306f2a9d2d0135d6f4852f6ed3bc2}\label{namespacecalclike_a7f2306f2a9d2d0135d6f4852f6ed3bc2}} 
+\index{calclike@{calclike}!getloglikemain@{getloglikemain}}
+\index{getloglikemain@{getloglikemain}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{getloglikemain()}{getloglikemain()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::getloglikemain (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_ae8f9437d9cf6441647020ac8e419e424}\label{namespacecalclike_ae8f9437d9cf6441647020ac8e419e424}} 
+\index{calclike@{calclike}!getlogpriors@{getlogpriors}}
+\index{getlogpriors@{getlogpriors}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{getlogpriors()}{getlogpriors()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::getlogpriors (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{real(mcp), dimension(num\+\_\+params), intent(in)}]{P }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References baseparameters\+::baseparams.
+
+\mbox{\Hypertarget{namespacecalclike_ae7eb4423ffdbadbf2df406b9d3331346}\label{namespacecalclike_ae7eb4423ffdbadbf2df406b9d3331346}} 
+\index{calclike@{calclike}!theorylike\+\_\+calculaterequiredtheorychanges@{theorylike\+\_\+calculaterequiredtheorychanges}}
+\index{theorylike\+\_\+calculaterequiredtheorychanges@{theorylike\+\_\+calculaterequiredtheorychanges}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+calculaterequiredtheorychanges()}{theorylike\_calculaterequiredtheorychanges()}}
+{\footnotesize\ttfamily logical function calclike\+::theorylike\+\_\+calculaterequiredtheorychanges (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_adffdc491632ae303d023f5e1b704eba4}\label{namespacecalclike_adffdc491632ae303d023f5e1b704eba4}} 
+\index{calclike@{calclike}!theorylike\+\_\+checkpriorcuts@{theorylike\+\_\+checkpriorcuts}}
+\index{theorylike\+\_\+checkpriorcuts@{theorylike\+\_\+checkpriorcuts}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+checkpriorcuts()}{theorylike\_checkpriorcuts()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::theorylike\+\_\+checkpriorcuts (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a141801e2c0e794a0411104bca9bb6809}\label{namespacecalclike_a141801e2c0e794a0411104bca9bb6809}} 
+\index{calclike@{calclike}!theorylike\+\_\+getloglikemain@{theorylike\+\_\+getloglikemain}}
+\index{theorylike\+\_\+getloglikemain@{theorylike\+\_\+getloglikemain}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+getloglikemain()}{theorylike\_getloglikemain()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::theorylike\+\_\+getloglikemain (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a27e62cb96ad63d0285283d1eb8dcec0c}\label{namespacecalclike_a27e62cb96ad63d0285283d1eb8dcec0c}} 
+\index{calclike@{calclike}!theorylike\+\_\+getloglikepost@{theorylike\+\_\+getloglikepost}}
+\index{theorylike\+\_\+getloglikepost@{theorylike\+\_\+getloglikepost}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+getloglikepost()}{theorylike\_getloglikepost()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::theorylike\+\_\+getloglikepost (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params,  }\item[{logical, dimension(datalikelihoods\%count), intent(in), optional}]{do\+\_\+like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_ab57c11043f079701db0baf858bf6315a}\label{namespacecalclike_ab57c11043f079701db0baf858bf6315a}} 
+\index{calclike@{calclike}!theorylike\+\_\+gettheoryforimportance@{theorylike\+\_\+gettheoryforimportance}}
+\index{theorylike\+\_\+gettheoryforimportance@{theorylike\+\_\+gettheoryforimportance}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+gettheoryforimportance()}{theorylike\_gettheoryforimportance()}}
+{\footnotesize\ttfamily subroutine calclike\+::theorylike\+\_\+gettheoryforimportance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint), target}]{Params,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_ab2d52ca5a668e5072ed6d10c161a5e88}\label{namespacecalclike_ab2d52ca5a668e5072ed6d10c161a5e88}} 
+\index{calclike@{calclike}!theorylike\+\_\+gettheoryforlike@{theorylike\+\_\+gettheoryforlike}}
+\index{theorylike\+\_\+gettheoryforlike@{theorylike\+\_\+gettheoryforlike}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+gettheoryforlike()}{theorylike\_gettheoryforlike()}}
+{\footnotesize\ttfamily subroutine calclike\+::theorylike\+\_\+gettheoryforlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tdatalikelihood), pointer}]{Like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a81e2854f62abdf354c1f03fc29c05d1c}\label{namespacecalclike_a81e2854f62abdf354c1f03fc29c05d1c}} 
+\index{calclike@{calclike}!theorylike\+\_\+loglikewiththeoryset@{theorylike\+\_\+loglikewiththeoryset}}
+\index{theorylike\+\_\+loglikewiththeoryset@{theorylike\+\_\+loglikewiththeoryset}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+loglikewiththeoryset()}{theorylike\_loglikewiththeoryset()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::theorylike\+\_\+loglikewiththeoryset (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{logical, dimension(datalikelihoods\%count), intent(in), optional}]{likelihood\+\_\+mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a3823367d787d17f15e903222232f4b94}\label{namespacecalclike_a3823367d787d17f15e903222232f4b94}} 
+\index{calclike@{calclike}!theorylike\+\_\+setnewtheoryresults@{theorylike\+\_\+setnewtheoryresults}}
+\index{theorylike\+\_\+setnewtheoryresults@{theorylike\+\_\+setnewtheoryresults}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+setnewtheoryresults()}{theorylike\_setnewtheoryresults()}}
+{\footnotesize\ttfamily subroutine calclike\+::theorylike\+\_\+setnewtheoryresults (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_ab9d66863dbce892dbee08483d9cdac50}\label{namespacecalclike_ab9d66863dbce892dbee08483d9cdac50}} 
+\index{calclike@{calclike}!theorylike\+\_\+settheoryparams@{theorylike\+\_\+settheoryparams}}
+\index{theorylike\+\_\+settheoryparams@{theorylike\+\_\+settheoryparams}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+settheoryparams()}{theorylike\_settheoryparams()}}
+{\footnotesize\ttfamily subroutine calclike\+::theorylike\+\_\+settheoryparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint), target}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_adb2986867dcdb441b12b98cdd46cc5b5}\label{namespacecalclike_adb2986867dcdb441b12b98cdd46cc5b5}} 
+\index{calclike@{calclike}!theorylike\+\_\+testlikelihoodfunction@{theorylike\+\_\+testlikelihoodfunction}}
+\index{theorylike\+\_\+testlikelihoodfunction@{theorylike\+\_\+testlikelihoodfunction}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+testlikelihoodfunction()}{theorylike\_testlikelihoodfunction()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::theorylike\+\_\+testlikelihoodfunction (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_adb244129926744248e4e4f8883384b5c}\label{namespacecalclike_adb244129926744248e4e4f8883384b5c}} 
+\index{calclike@{calclike}!theorylike\+\_\+updatetheoryforlikelihoods@{theorylike\+\_\+updatetheoryforlikelihoods}}
+\index{theorylike\+\_\+updatetheoryforlikelihoods@{theorylike\+\_\+updatetheoryforlikelihoods}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{theorylike\+\_\+updatetheoryforlikelihoods()}{theorylike\_updatetheoryforlikelihoods()}}
+{\footnotesize\ttfamily subroutine calclike\+::theorylike\+\_\+updatetheoryforlikelihoods (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_af377ac1f0746c42a430094fe73246012}\label{namespacecalclike_af377ac1f0746c42a430094fe73246012}} 
+\index{calclike@{calclike}!tlikecalculator\+\_\+readparams@{tlikecalculator\+\_\+readparams}}
+\index{tlikecalculator\+\_\+readparams@{tlikecalculator\+\_\+readparams}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{tlikecalculator\+\_\+readparams()}{tlikecalculator\_readparams()}}
+{\footnotesize\ttfamily subroutine calclike\+::tlikecalculator\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{class(tsettingini)}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_adb41feb15d07d744bace1629aea8a5d3}\label{namespacecalclike_adb41feb15d07d744bace1629aea8a5d3}} 
+\index{calclike@{calclike}!tlikecalculator\+\_\+testlikelihoodfunction@{tlikecalculator\+\_\+testlikelihoodfunction}}
+\index{tlikecalculator\+\_\+testlikelihoodfunction@{tlikecalculator\+\_\+testlikelihoodfunction}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{tlikecalculator\+\_\+testlikelihoodfunction()}{tlikecalculator\_testlikelihoodfunction()}}
+{\footnotesize\ttfamily real(mcp) function calclike\+::tlikecalculator\+\_\+testlikelihoodfunction (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a4be845214aaba0f4348b66c67401f78b}\label{namespacecalclike_a4be845214aaba0f4348b66c67401f78b}} 
+\index{calclike@{calclike}!tlikecalculator\+\_\+writeparampointtextdata@{tlikecalculator\+\_\+writeparampointtextdata}}
+\index{tlikecalculator\+\_\+writeparampointtextdata@{tlikecalculator\+\_\+writeparampointtextdata}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{tlikecalculator\+\_\+writeparampointtextdata()}{tlikecalculator\_writeparampointtextdata()}}
+{\footnotesize\ttfamily subroutine calclike\+::tlikecalculator\+\_\+writeparampointtextdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{output\+\_\+root,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a7348b373c8c9138f0c694ad9969fcb66}\label{namespacecalclike_a7348b373c8c9138f0c694ad9969fcb66}} 
+\index{calclike@{calclike}!tlikecalculator\+\_\+writeparamshumantext@{tlikecalculator\+\_\+writeparamshumantext}}
+\index{tlikecalculator\+\_\+writeparamshumantext@{tlikecalculator\+\_\+writeparamshumantext}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{tlikecalculator\+\_\+writeparamshumantext()}{tlikecalculator\_writeparamshumantext()}}
+{\footnotesize\ttfamily subroutine calclike\+::tlikecalculator\+\_\+writeparamshumantext (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{integer, intent(in)}]{aunit,  }\item[{class(tcalculationatparampoint)}]{P,  }\item[{real(mcp), intent(in), optional}]{Log\+Like,  }\item[{real(mcp), intent(in), optional}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_afd9d4013e29fb891f656598d4b5e1b73}\label{namespacecalclike_afd9d4013e29fb891f656598d4b5e1b73}} 
+\index{calclike@{calclike}!tlikecalculator\+\_\+writeparamshumantextfile@{tlikecalculator\+\_\+writeparamshumantextfile}}
+\index{tlikecalculator\+\_\+writeparamshumantextfile@{tlikecalculator\+\_\+writeparamshumantextfile}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{tlikecalculator\+\_\+writeparamshumantextfile()}{tlikecalculator\_writeparamshumantextfile()}}
+{\footnotesize\ttfamily subroutine calclike\+::tlikecalculator\+\_\+writeparamshumantextfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{class(tcalculationatparampoint)}]{P,  }\item[{real(mcp), intent(in), optional}]{Log\+Like,  }\item[{real(mcp), intent(in), optional}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a5158b85ddca7d8f1b417a813bb7fe849}\label{namespacecalclike_a5158b85ddca7d8f1b417a813bb7fe849}} 
+\index{calclike@{calclike}!tlikecalculator\+\_\+writeperformancestats@{tlikecalculator\+\_\+writeperformancestats}}
+\index{tlikecalculator\+\_\+writeperformancestats@{tlikecalculator\+\_\+writeperformancestats}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{tlikecalculator\+\_\+writeperformancestats()}{tlikecalculator\_writeperformancestats()}}
+{\footnotesize\ttfamily subroutine calclike\+::tlikecalculator\+\_\+writeperformancestats (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1tlikecalculator}{tlikecalculator}})}]{this,  }\item[{integer, intent(in)}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_acb1cb4737fc9ec3a805214e87b444b00}\label{namespacecalclike_acb1cb4737fc9ec3a805214e87b444b00}} 
+\index{calclike@{calclike}!ttheorylike\+\_\+writeparampointtextdata@{ttheorylike\+\_\+writeparampointtextdata}}
+\index{ttheorylike\+\_\+writeparampointtextdata@{ttheorylike\+\_\+writeparampointtextdata}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{ttheorylike\+\_\+writeparampointtextdata()}{ttheorylike\_writeparampointtextdata()}}
+{\footnotesize\ttfamily subroutine calclike\+::ttheorylike\+\_\+writeparampointtextdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{output\+\_\+root,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike_a5c185d1a702fe31d3d1204d919b338da}\label{namespacecalclike_a5c185d1a702fe31d3d1204d919b338da}} 
+\index{calclike@{calclike}!ttheorylike\+\_\+writeparamshumantext@{ttheorylike\+\_\+writeparamshumantext}}
+\index{ttheorylike\+\_\+writeparamshumantext@{ttheorylike\+\_\+writeparamshumantext}!calclike@{calclike}}
+\subsubsection{\texorpdfstring{ttheorylike\+\_\+writeparamshumantext()}{ttheorylike\_writeparamshumantext()}}
+{\footnotesize\ttfamily subroutine calclike\+::ttheorylike\+\_\+writeparamshumantext (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{ttheorylikecalculator}})}]{this,  }\item[{integer, intent(in)}]{aunit,  }\item[{class(tcalculationatparampoint)}]{P,  }\item[{real(mcp), intent(in), optional}]{Log\+Like,  }\item[{real(mcp), intent(in), optional}]{weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+

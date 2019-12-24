@@ -1,0 +1,279 @@
+\hypertarget{namespacebao}{}\section{bao Module Reference}
+\label{namespacebao}\index{bao@{bao}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structbao_1_1dr1xlikelihood}{dr1xlikelihood}}
+\item 
+type \mbox{\hyperlink{structbao_1_1mgslikelihood}{mgslikelihood}}
+\item 
+type \mbox{\hyperlink{structbao_1_1tbaolikelihood}{tbaolikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacebao_a1e83b8129197b47271286760d4c11866}{baolikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_af2e429eb5aae0de7f70a321537f77861}{bao\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_a42ad1b0022e37bb1e4457c7a4e329b12}{bao\+\_\+initprobdist}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_af2ea26ba323749ae85e04fe46904d115}{get\+\_\+rs\+\_\+drag}} (this, Theory)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_a42575daf8f5c1b68a1a7ddf8bd087988}{acoustic}} (this, C\+MB, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_a9a4c24c4606056286bb571c62350ccb3}{bao\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_a01a1351c073ed9d3a96aece01f8c368b}{bao\+\_\+dr1x\+\_\+initprobdist}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_a566724d43b5fe7348c615930295ffefb}{bao\+\_\+dr1x\+\_\+loglike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebao_aec7bdc5f03a9da432a0345932d1401bd}{bao\+\_\+mgs\+\_\+initprobdist}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacebao_aa39f8163fd5d4a39d7d83bab1a485ee2}{bao\+\_\+mgs\+\_\+loglike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len=ini\+\_\+enumeration\+\_\+len), dimension(9), parameter \mbox{\hyperlink{namespacebao_a5a7cbf786aa65368c32203dfb9b72991}{measurement\+\_\+types}} = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}Az\textquotesingle{},\textquotesingle{}D\+V\+\_\+over\+\_\+rs\textquotesingle{},\textquotesingle{}rs\+\_\+over\+\_\+\+DV\textquotesingle{},\textquotesingle{}D\+A\+\_\+over\+\_\+rs\textquotesingle{}, \textquotesingle{}F\+\_\+\+AP\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{namespacebao_aaa65837538ed00f6c87276b81b451c45}{f\+\_\+sigma8}}\textquotesingle{},\textquotesingle{}bao\+\_\+\+Hz\+\_\+rs\textquotesingle{},\textquotesingle{}bao\+\_\+\+Hz\+\_\+rs\+\_\+103\textquotesingle{},\textquotesingle{}\mbox{\hyperlink{namespacebao_a9bc55477c817a8204a8dd45a73ab6faa}{dilation}}\textquotesingle{}\mbox{]}
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_ab53a2d435899a21c918a07f7243d2a9f}{bao\+\_\+az}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a0524be8a1cd6362d8c5e0cc628384991}{bao\+\_\+dv\+\_\+over\+\_\+rs}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_aadd8d344c5506828f10eed295270faf7}{bao\+\_\+rs\+\_\+over\+\_\+dv}} = 3
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a5856a51527a41fd49a3222f83de0f1da}{bao\+\_\+da\+\_\+over\+\_\+rs}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a90e9d6d857982260b5025f4778bf0a4d}{f\+\_\+ap}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_aaa65837538ed00f6c87276b81b451c45}{f\+\_\+sigma8}} =6
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a5d192049c79a222547036308959868c2}{bao\+\_\+hz\+\_\+rs}} = 7
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_aad05aa1882f8f917547a2919bb25db43}{bao\+\_\+hz\+\_\+rs\+\_\+103}} = 8
+\item 
+integer, parameter \mbox{\hyperlink{namespacebao_a9bc55477c817a8204a8dd45a73ab6faa}{dilation}} = 9
+\item 
+real(mcp) \mbox{\hyperlink{namespacebao_a4f0a92dc313e31a91e5edb5e2ef09fec}{bao\+\_\+fixed\+\_\+rs}} = -\/1.\+\_\+mcp
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacebao_a42575daf8f5c1b68a1a7ddf8bd087988}\label{namespacebao_a42575daf8f5c1b68a1a7ddf8bd087988}} 
+\index{bao@{bao}!acoustic@{acoustic}}
+\index{acoustic@{acoustic}!bao@{bao}}
+\subsubsection{\texorpdfstring{acoustic()}{acoustic()}}
+{\footnotesize\ttfamily real(mcp) function bao\+::acoustic (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1tbaolikelihood}{tbaolikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::const\+\_\+c.
+
+\mbox{\Hypertarget{namespacebao_a01a1351c073ed9d3a96aece01f8c368b}\label{namespacebao_a01a1351c073ed9d3a96aece01f8c368b}} 
+\index{bao@{bao}!bao\+\_\+dr1x\+\_\+initprobdist@{bao\+\_\+dr1x\+\_\+initprobdist}}
+\index{bao\+\_\+dr1x\+\_\+initprobdist@{bao\+\_\+dr1x\+\_\+initprobdist}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+dr1x\+\_\+initprobdist()}{bao\_dr1x\_initprobdist()}}
+{\footnotesize\ttfamily subroutine bao\+::bao\+\_\+dr1x\+\_\+initprobdist (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1dr1xlikelihood}{dr1xlikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebao_a566724d43b5fe7348c615930295ffefb}\label{namespacebao_a566724d43b5fe7348c615930295ffefb}} 
+\index{bao@{bao}!bao\+\_\+dr1x\+\_\+loglike@{bao\+\_\+dr1x\+\_\+loglike}}
+\index{bao\+\_\+dr1x\+\_\+loglike@{bao\+\_\+dr1x\+\_\+loglike}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+dr1x\+\_\+loglike()}{bao\_dr1x\_loglike()}}
+{\footnotesize\ttfamily real (mcp) function bao\+::bao\+\_\+dr1x\+\_\+loglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1dr1xlikelihood}{dr1xlikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::logzero.
+
+\mbox{\Hypertarget{namespacebao_a42ad1b0022e37bb1e4457c7a4e329b12}\label{namespacebao_a42ad1b0022e37bb1e4457c7a4e329b12}} 
+\index{bao@{bao}!bao\+\_\+initprobdist@{bao\+\_\+initprobdist}}
+\index{bao\+\_\+initprobdist@{bao\+\_\+initprobdist}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+initprobdist()}{bao\_initprobdist()}}
+{\footnotesize\ttfamily subroutine bao\+::bao\+\_\+initprobdist (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1tbaolikelihood}{tbaolikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebao_a9a4c24c4606056286bb571c62350ccb3}\label{namespacebao_a9a4c24c4606056286bb571c62350ccb3}} 
+\index{bao@{bao}!bao\+\_\+lnlike@{bao\+\_\+lnlike}}
+\index{bao\+\_\+lnlike@{bao\+\_\+lnlike}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+lnlike()}{bao\_lnlike()}}
+{\footnotesize\ttfamily real(mcp) function bao\+::bao\+\_\+lnlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1tbaolikelihood}{tbaolikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References bao\+\_\+az, bao\+\_\+da\+\_\+over\+\_\+rs, bao\+\_\+dv\+\_\+over\+\_\+rs, bao\+\_\+hz\+\_\+rs, bao\+\_\+hz\+\_\+rs\+\_\+103, bao\+\_\+rs\+\_\+over\+\_\+dv, f\+\_\+ap, f\+\_\+sigma8, settings\+::feedback, and matrixutils\+::matrix\+\_\+quadform().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebao_a9a4c24c4606056286bb571c62350ccb3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebao_aec7bdc5f03a9da432a0345932d1401bd}\label{namespacebao_aec7bdc5f03a9da432a0345932d1401bd}} 
+\index{bao@{bao}!bao\+\_\+mgs\+\_\+initprobdist@{bao\+\_\+mgs\+\_\+initprobdist}}
+\index{bao\+\_\+mgs\+\_\+initprobdist@{bao\+\_\+mgs\+\_\+initprobdist}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+mgs\+\_\+initprobdist()}{bao\_mgs\_initprobdist()}}
+{\footnotesize\ttfamily subroutine bao\+::bao\+\_\+mgs\+\_\+initprobdist (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1mgslikelihood}{mgslikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebao_aa39f8163fd5d4a39d7d83bab1a485ee2}\label{namespacebao_aa39f8163fd5d4a39d7d83bab1a485ee2}} 
+\index{bao@{bao}!bao\+\_\+mgs\+\_\+loglike@{bao\+\_\+mgs\+\_\+loglike}}
+\index{bao\+\_\+mgs\+\_\+loglike@{bao\+\_\+mgs\+\_\+loglike}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+mgs\+\_\+loglike()}{bao\_mgs\_loglike()}}
+{\footnotesize\ttfamily real(mcp) function bao\+::bao\+\_\+mgs\+\_\+loglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1mgslikelihood}{mgslikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::logzero.
+
+\mbox{\Hypertarget{namespacebao_af2e429eb5aae0de7f70a321537f77861}\label{namespacebao_af2e429eb5aae0de7f70a321537f77861}} 
+\index{bao@{bao}!bao\+\_\+readini@{bao\+\_\+readini}}
+\index{bao\+\_\+readini@{bao\+\_\+readini}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+readini()}{bao\_readini()}}
+{\footnotesize\ttfamily subroutine bao\+::bao\+\_\+readini (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1tbaolikelihood}{tbaolikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References f\+\_\+sigma8, settings\+::feedback, measurement\+\_\+types, and settings\+::mpirank.
+
+\mbox{\Hypertarget{namespacebao_a1e83b8129197b47271286760d4c11866}\label{namespacebao_a1e83b8129197b47271286760d4c11866}} 
+\index{bao@{bao}!baolikelihood\+\_\+add@{baolikelihood\+\_\+add}}
+\index{baolikelihood\+\_\+add@{baolikelihood\+\_\+add}!bao@{bao}}
+\subsubsection{\texorpdfstring{baolikelihood\+\_\+add()}{baolikelihood\_add()}}
+{\footnotesize\ttfamily subroutine, public bao\+::baolikelihood\+\_\+add (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References bao\+\_\+fixed\+\_\+rs, and settings\+::feedback.
+
+
+
+Referenced by datalikelihoodlist\+::setdatalikelihoods().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacebao_a1e83b8129197b47271286760d4c11866_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebao_af2ea26ba323749ae85e04fe46904d115}\label{namespacebao_af2ea26ba323749ae85e04fe46904d115}} 
+\index{bao@{bao}!get\+\_\+rs\+\_\+drag@{get\+\_\+rs\+\_\+drag}}
+\index{get\+\_\+rs\+\_\+drag@{get\+\_\+rs\+\_\+drag}!bao@{bao}}
+\subsubsection{\texorpdfstring{get\+\_\+rs\+\_\+drag()}{get\_rs\_drag()}}
+{\footnotesize\ttfamily real(mcp) function bao\+::get\+\_\+rs\+\_\+drag (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbao_1_1tbaolikelihood}{tbaolikelihood}})}]{this,  }\item[{class(tcosmotheorypredictions), target}]{Theory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References bao\+\_\+fixed\+\_\+rs, and cosmologytypes\+::derived\+\_\+rdrag.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacebao_ab53a2d435899a21c918a07f7243d2a9f}\label{namespacebao_ab53a2d435899a21c918a07f7243d2a9f}} 
+\index{bao@{bao}!bao\+\_\+az@{bao\+\_\+az}}
+\index{bao\+\_\+az@{bao\+\_\+az}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+az}{bao\_az}}
+{\footnotesize\ttfamily integer, parameter bao\+::bao\+\_\+az =1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacebao_a5856a51527a41fd49a3222f83de0f1da}\label{namespacebao_a5856a51527a41fd49a3222f83de0f1da}} 
+\index{bao@{bao}!bao\+\_\+da\+\_\+over\+\_\+rs@{bao\+\_\+da\+\_\+over\+\_\+rs}}
+\index{bao\+\_\+da\+\_\+over\+\_\+rs@{bao\+\_\+da\+\_\+over\+\_\+rs}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+da\+\_\+over\+\_\+rs}{bao\_da\_over\_rs}}
+{\footnotesize\ttfamily integer, parameter bao\+::bao\+\_\+da\+\_\+over\+\_\+rs = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacebao_a0524be8a1cd6362d8c5e0cc628384991}\label{namespacebao_a0524be8a1cd6362d8c5e0cc628384991}} 
+\index{bao@{bao}!bao\+\_\+dv\+\_\+over\+\_\+rs@{bao\+\_\+dv\+\_\+over\+\_\+rs}}
+\index{bao\+\_\+dv\+\_\+over\+\_\+rs@{bao\+\_\+dv\+\_\+over\+\_\+rs}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+dv\+\_\+over\+\_\+rs}{bao\_dv\_over\_rs}}
+{\footnotesize\ttfamily integer, parameter bao\+::bao\+\_\+dv\+\_\+over\+\_\+rs = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacebao_a4f0a92dc313e31a91e5edb5e2ef09fec}\label{namespacebao_a4f0a92dc313e31a91e5edb5e2ef09fec}} 
+\index{bao@{bao}!bao\+\_\+fixed\+\_\+rs@{bao\+\_\+fixed\+\_\+rs}}
+\index{bao\+\_\+fixed\+\_\+rs@{bao\+\_\+fixed\+\_\+rs}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+fixed\+\_\+rs}{bao\_fixed\_rs}}
+{\footnotesize\ttfamily real(mcp) bao\+::bao\+\_\+fixed\+\_\+rs = -\/1.\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by baolikelihood\+\_\+add(), and get\+\_\+rs\+\_\+drag().
+
+\mbox{\Hypertarget{namespacebao_a5d192049c79a222547036308959868c2}\label{namespacebao_a5d192049c79a222547036308959868c2}} 
+\index{bao@{bao}!bao\+\_\+hz\+\_\+rs@{bao\+\_\+hz\+\_\+rs}}
+\index{bao\+\_\+hz\+\_\+rs@{bao\+\_\+hz\+\_\+rs}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+hz\+\_\+rs}{bao\_hz\_rs}}
+{\footnotesize\ttfamily integer, parameter bao\+::bao\+\_\+hz\+\_\+rs = 7\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacebao_aad05aa1882f8f917547a2919bb25db43}\label{namespacebao_aad05aa1882f8f917547a2919bb25db43}} 
+\index{bao@{bao}!bao\+\_\+hz\+\_\+rs\+\_\+103@{bao\+\_\+hz\+\_\+rs\+\_\+103}}
+\index{bao\+\_\+hz\+\_\+rs\+\_\+103@{bao\+\_\+hz\+\_\+rs\+\_\+103}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+hz\+\_\+rs\+\_\+103}{bao\_hz\_rs\_103}}
+{\footnotesize\ttfamily integer, parameter bao\+::bao\+\_\+hz\+\_\+rs\+\_\+103 = 8\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacebao_aadd8d344c5506828f10eed295270faf7}\label{namespacebao_aadd8d344c5506828f10eed295270faf7}} 
+\index{bao@{bao}!bao\+\_\+rs\+\_\+over\+\_\+dv@{bao\+\_\+rs\+\_\+over\+\_\+dv}}
+\index{bao\+\_\+rs\+\_\+over\+\_\+dv@{bao\+\_\+rs\+\_\+over\+\_\+dv}!bao@{bao}}
+\subsubsection{\texorpdfstring{bao\+\_\+rs\+\_\+over\+\_\+dv}{bao\_rs\_over\_dv}}
+{\footnotesize\ttfamily integer, parameter bao\+::bao\+\_\+rs\+\_\+over\+\_\+dv = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacebao_a9bc55477c817a8204a8dd45a73ab6faa}\label{namespacebao_a9bc55477c817a8204a8dd45a73ab6faa}} 
+\index{bao@{bao}!dilation@{dilation}}
+\index{dilation@{dilation}!bao@{bao}}
+\subsubsection{\texorpdfstring{dilation}{dilation}}
+{\footnotesize\ttfamily integer, parameter bao\+::dilation = 9\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebao_a90e9d6d857982260b5025f4778bf0a4d}\label{namespacebao_a90e9d6d857982260b5025f4778bf0a4d}} 
+\index{bao@{bao}!f\+\_\+ap@{f\+\_\+ap}}
+\index{f\+\_\+ap@{f\+\_\+ap}!bao@{bao}}
+\subsubsection{\texorpdfstring{f\+\_\+ap}{f\_ap}}
+{\footnotesize\ttfamily integer, parameter bao\+::f\+\_\+ap = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacebao_aaa65837538ed00f6c87276b81b451c45}\label{namespacebao_aaa65837538ed00f6c87276b81b451c45}} 
+\index{bao@{bao}!f\+\_\+sigma8@{f\+\_\+sigma8}}
+\index{f\+\_\+sigma8@{f\+\_\+sigma8}!bao@{bao}}
+\subsubsection{\texorpdfstring{f\+\_\+sigma8}{f\_sigma8}}
+{\footnotesize\ttfamily integer, parameter bao\+::f\+\_\+sigma8 =6\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+lnlike(), and bao\+\_\+readini().
+
+\mbox{\Hypertarget{namespacebao_a5a7cbf786aa65368c32203dfb9b72991}\label{namespacebao_a5a7cbf786aa65368c32203dfb9b72991}} 
+\index{bao@{bao}!measurement\+\_\+types@{measurement\+\_\+types}}
+\index{measurement\+\_\+types@{measurement\+\_\+types}!bao@{bao}}
+\subsubsection{\texorpdfstring{measurement\+\_\+types}{measurement\_types}}
+{\footnotesize\ttfamily character(len=ini\+\_\+enumeration\+\_\+len), dimension(9), parameter bao\+::measurement\+\_\+types = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}Az\textquotesingle{},\textquotesingle{}D\+V\+\_\+over\+\_\+rs\textquotesingle{},\textquotesingle{}rs\+\_\+over\+\_\+\+DV\textquotesingle{},\textquotesingle{}D\+A\+\_\+over\+\_\+rs\textquotesingle{}, \textquotesingle{}F\+\_\+\+AP\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{namespacebao_aaa65837538ed00f6c87276b81b451c45}{f\+\_\+sigma8}}\textquotesingle{},\textquotesingle{}bao\+\_\+\+Hz\+\_\+rs\textquotesingle{},\textquotesingle{}bao\+\_\+\+Hz\+\_\+rs\+\_\+103\textquotesingle{},\textquotesingle{}\mbox{\hyperlink{namespacebao_a9bc55477c817a8204a8dd45a73ab6faa}{dilation}}\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bao\+\_\+readini().
+

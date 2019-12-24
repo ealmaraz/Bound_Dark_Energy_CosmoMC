@@ -1,0 +1,142 @@
+\hypertarget{cmbmain_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/cmbmain.f90 File Reference}
+\label{cmbmain_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/cmbmain.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/cmbmain.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcambmain_1_1integrationvars}{cambmain\+::integrationvars}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacecambmain}{cambmain}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecambmain_a8863977991a108f96a26fc99e8c5e129}{cambmain\+::cmbmain}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecambmain_a15c0f01f07762c709f8f718935153d7a}{cambmain\+::cltransfertocl}} (C\+TransS, C\+TransT, C\+TransV)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad3f7f4af84395bc4648bcc82e81e8861}{cambmain\+::calclimberscalcls}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ae71666c61f08659e1870539ab6230f02}{cambmain\+::getlimbertransfers}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad84747dc28d2ff66a818a46c3eb5f574}{cambmain\+::sourcetotransfers}} (q\+\_\+ix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a556b6e83160b14e40cffab6e0deb6e12}{cambmain\+::inittransfer}}
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacecambmain_affb3c10eee60a6f657ccf1c0f0abd693}{cambmain\+::gettaustart}} (q)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a9ff2ea693941648b6f34d86e019f9613}{cambmain\+::dosourcek}} (EV, q\+\_\+ix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af7f170a39e21214fe3b389f74dbb183d}{cambmain\+::getsourcemem}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a47cd48fe0174b214ddc23bcdd91b6754}{cambmain\+::freesourcemem}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecambmain_a890ea024560967d80a83e411a34368ed}{cambmain\+::initvars}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a63fe5ba29fa3c5116ef8bc646e7aa09c}{cambmain\+::setkvaluesforsources}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a96c41c9fdee3e69fba450a460df25472}{cambmain\+::setclosedkvaluesfromarr}} (R, for\+Int)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a8861dfd3252de9c7b39b9c09ee415010}{cambmain\+::evolved}} (dum, num, tau, y, yprime)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ab6fa8682eb65308c413e6501a9b5417c}{cambmain\+::calcscalarsources}} (EV, taustart)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad933d804e4a0a4ae8bdf2754e608458d}{cambmain\+::calctensorsources}} (EV, taustart)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_affd6aea4c80363ff01132e154eabbb00}{cambmain\+::calcvectorsources}} (EV, taustart)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a3411884ad6ba8d1584e9dedab9fdab81}{cambmain\+::transferout}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ac9e5e052a53e579f43f980836baee5be}{cambmain\+::gettransfer}} (EV, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a5b302c437be8bf6d127dc65f638778c8}{cambmain\+::makenonlinearsources}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a4af989c7e3c97477fc61f6b31dd053e7}{cambmain\+::initsourceinterpolation}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad0f2dd9e839652502a6e34c32ec44e0d}{cambmain\+::setkvaluesforint}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a7e1e9bb292a8b4d778e9b8d218ee4036}{cambmain\+::interpolatesources}} (IV)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af5b8d9ce147ddcd3fb33ee015b43b284}{cambmain\+::integrationvars\+\_\+init}} (IV)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a89b9b0f69a8f18b112b2309db4ad29c6}{cambmain\+::dosourceintegration}} (IV)
+\item 
+logical function \mbox{\hyperlink{namespacecambmain_ad1efd57b702656e463555cccd0f1b40c}{cambmain\+::uselimber}} (l, k)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a66b6d740c5e702807d5454979eec8cde}{cambmain\+::doflatintegration}} (IV, llmax)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a74b9c41eb2501d8c0cc163ff7030a926}{cambmain\+::integratesourcesbessels}} (IV, j, l, nu)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af0980e25384f7d9b2eb64435231f3aa5}{cambmain\+::dorangeint}} (IV, chi, chi\+Disp, nstart, nend, dtau, nu, l, y1, y2, out)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af5113df414eaba3ff8913a737da72c34}{cambmain\+::dorangeinttensor}} (IV, chi, chi\+Disp, nstart, nend, dtau, nu, l, y1, y2, out)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a5fb4d38dca7390cd662572152b12f7d0}{cambmain\+::getinitpowerarrayvec}} (pows, ks, numks, pix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af4005843871d59b0973861e895fdb0d3}{cambmain\+::getinitpowerarraytens}} (pows, ks, numks, pix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a8b2cc98e7553a77d720caca21f5ae8e5}{cambmain\+::calcscalcls}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a89e57ae788ae9b3065000febda0566a5}{cambmain\+::calcscalcls2}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a412610e13dd6e264ce9d9ac33e0fbc1f}{cambmain\+::calctenscls}} (C\+Trans, Get\+Init\+Powers)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a709092859c794b6298b580be81ff9a90}{cambmain\+::calcveccls}} (C\+Trans, Get\+Init\+Powers)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a411e6e866cbb05f2ba3f7164f8e04a67}{cambmain\+::interpolatecls}} (C\+TransS, C\+TransT, C\+TransV)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacecambmain_a2ce96c9fd586b264b5601a12a8903a31}{cambmain\+::wantlatetime}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacecambmain_a2ded9daf3b231818ba6168f15ce0c90f}{cambmain\+::exactclosedsum}}
+\item 
+integer \mbox{\hyperlink{namespacecambmain_a7874020426cc2db0dd79451dce8e4476}{cambmain\+::sourcenum}}
+\item 
+real(dl), dimension(0\+:max\+\_\+transfer\+\_\+redshifts) \mbox{\hyperlink{namespacecambmain_a24c75595b15c8996bc6bc65a8bcf3cad}{cambmain\+::tautf}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a799546cf5b0652ca67395d086e02912a}{cambmain\+::src}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a3a07a99a808d7449c0ca61a9df448594}{cambmain\+::ddsrc}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_ae6d811821c995ff2a5bda416a8696ae7}{cambmain\+::icl\+\_\+scalar}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a2044e91de72f6f3c0c0e2f87ab2c6a04}{cambmain\+::icl\+\_\+vector}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_ad09fccee49c220454529f80e65beb489}{cambmain\+::icl\+\_\+tensor}}
+\item 
+real(dl), dimension(\+:,\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a34fbba5156bf16dc5e9131c1936bf47c}{cambmain\+::icl\+\_\+array}}
+\item 
+type(regions) \mbox{\hyperlink{namespacecambmain_a5ec3a97db7f68f99f47c3b077bbe3cda}{cambmain\+::evolve\+\_\+q}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacecambmain_ac2494adca6c0269bd275ac6125de266c}{cambmain\+::qmin0}} =0.\+1\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a0c8e31379dc1ff5e59d2da0bf1afcb8f}{cambmain\+::dtaurec\+\_\+q}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a5c0dcf87d7d21c1159e4eccad5b679ef}{cambmain\+::qmin}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_abb9b39e7c9db24515f7e239e94831b1b}{cambmain\+::qmax}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a16f888ec18bcb88fb88b604ee1c858de}{cambmain\+::max\+\_\+etak\+\_\+tensor}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a070e24f1ae1246e4d6b1ad8aacc87919}{cambmain\+::max\+\_\+etak\+\_\+vector}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_ac4c24515e982e0af0ef3997027302e04}{cambmain\+::max\+\_\+etak\+\_\+scalar}}
+\item 
+integer \mbox{\hyperlink{namespacecambmain_acb0277d55c225aee4dcfca123a3631a2}{cambmain\+::maximum\+\_\+l}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a538fac0cbeacb9f2daa7bd638e3ca806}{cambmain\+::maximum\+\_\+qeta}} = 3000.\+\_\+dl
+\item 
+integer \mbox{\hyperlink{namespacecambmain_a3ebcb0843a6249a58a33f83e5cf9b73b}{cambmain\+::l\+\_\+smooth\+\_\+sample}} = 3000
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a75e3aaa48b8fb5985062a5be2f05dea8}{cambmain\+::aid}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a926ceb33a98900b90f263443b550e391}{cambmain\+::dmid}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacecambmain_a5e84a7f00ba906908259607d54f9176f}{cambmain\+::alens}} = 1.\+\_\+dl
+\item 
+type(cltransferdata), pointer \mbox{\hyperlink{namespacecambmain_a48fb88bbacefa24534f688f9de4ff827}{cambmain\+::thisct}}
+\end{DoxyCompactItemize}

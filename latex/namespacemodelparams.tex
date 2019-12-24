@@ -1,0 +1,1655 @@
+\hypertarget{namespacemodelparams}{}\section{modelparams Module Reference}
+\label{namespacemodelparams}\index{modelparams@{modelparams}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmodelparams_1_1cambparams}{cambparams}}
+\item 
+type \mbox{\hyperlink{structmodelparams_1_1tbackgroundoutputs}{tbackgroundoutputs}}
+\item 
+type \mbox{\hyperlink{structmodelparams_1_1transferparams}{transferparams}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_a13f805ae3c4213f4c9204bf8d8f17350}{cambparams\+\_\+set}} (P, error, Do\+Reion)
+\item 
+real(sp) function \mbox{\hyperlink{namespacemodelparams_a2abd5cb7bfc9c34a736d91ed5863552d}{gettesttime}} ()
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a09b856ca78d2c38cb9746680ce7a4d9f}{rofchi}} (Chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_af941ff2f9683e6bf6994f87b27ea9427}{cosfunc}} (Chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ade19d5a5ee3bef508e781d64c8c667ae}{tanfunc}} (Chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a463f6e148b9f2c45ec30cb28c29bb4e3}{invsinfunc}} (x)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ad0ec1bb07f7e0295749e801b141bfc0f}{f\+\_\+k}} (x)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ae583f09e6523f430605f421d2db537ae}{deltatime}} (a1, a2, in\+\_\+tol)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ae8f7910867e2ed755e7f4d5eacdeee2d}{timeofz}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_aa9fc9f952c72345785fa69b491e598d5}{timeofzarr}} (nz, redshifts, outputs)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ac094d31babe3489387c12a3c2ab05549}{deltaphysicaltimegyr}} (a1, a2, in\+\_\+tol)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a63c764e54b9b02649d00f8071cb9297f}{angulardiameterdistance}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_a31cf59c4ca59e0bc5c8c2b45a8f3487e}{angulardiameterdistancearr}} (arr, z, n)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a74645c7e2e48bb3d57da7da5383799ed}{angulardiameterdistance2}} (z1, z2)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a40c5d69daf3f5689ecf0c29c19257028}{luminositydistance}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ad0393036efc0bf4d20eba5112748a1a2}{comovingradialdistance}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a0180f3c86db3b86362776831ebdb2ff2}{hofz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a3a1026b2054f510f0c0dd9ee5c95e1b9}{bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h}} (z, DA, Hz)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a39160c5bd9a51624f48cbef4197bb22f}{bao\+\_\+d\+\_\+v}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a57d61799939e1d3d5984dba316f8cc6a}{dsound\+\_\+da\+\_\+exact}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a60c72460cbce332f5142d619a906fa16}{dsound\+\_\+da}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_a0ab3d80c1ede505b3412f5b33bd3a202}{dtda}} (a)
+\item 
+subroutine \mbox{\hyperlink{namespacemodelparams_af7cba6b22f91f9428ebecb63823d451a}{nxyl}} (y)
+\item 
+real(dl) function \mbox{\hyperlink{namespacemodelparams_ab4a4cc860939dbbdc0236048b5f9457e}{cosmomctheta}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacemodelparams_ae4691876bb5eed2cdd64ae8eca39dc32}{version}} = \textquotesingle{}Nov16\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a403353ede075646b189fcfbae0fb3396}{feedbacklevel}} = 0
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_aa59993fb52b4f0010f0587e10f27b792}{output\+\_\+file\+\_\+headers}} = .true.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a2fccc38c501c6f494fa1ced55e52a983}{debugmsgs}} =.false.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a69b1cd59448404e0bcd21612fb8e69c9}{debugevolution}} = .false.
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a35a694469321a4414b622d9a0ec18f1f}{debugparam}} = 0.\+\_\+dl
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_aa42e1180e92882f566f30d970dc110a4}{do\+\_\+bispectrum}} = .false.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a0dda4d3f4b77e14c2635221cdf01de0f}{hard\+\_\+bispectrum}} = .false.
+\item 
+logical, parameter \mbox{\hyperlink{namespacemodelparams_a62664016ce9ca8fc8e53ebbfb8caa09c}{full\+\_\+bessel\+\_\+integration}} = .false.
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a6886b2553f1b2657b012618d5377619d}{nu\+\_\+int}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a31f4e37e9eb0841e803020950fe2ce52}{nu\+\_\+trunc}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_ac509ce908abffae5d206533cc7eddfe9}{nu\+\_\+approx}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a1da306d0a7758bf910362b6d62e6658f}{nu\+\_\+best}} = 3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}{max\+\_\+nu}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_abe7b8d46cfb994afa85d77bbb5b6b5d5}{max\+\_\+transfer\+\_\+redshifts}} = 150
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_ac3257ef5df85ecef99f684ac5b101b71}{fileio\+\_\+unit}} = 13
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a08fb4afbafc2828da55e9684f24d8d6f}{outnone}} =1
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a0398b22cb85696d3eeaf76b7db97215c}{max\+\_\+bessels\+\_\+l\+\_\+index}} = 1000000
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a7a677586a4085c9c337cac0d8a025dc6}{max\+\_\+bessels\+\_\+etak}} = 1000000$\ast$2
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_abb77cb9ffb6e4c47f4bbb5817f675840}{outputdenominator}} =twopi
+\item 
+type(regions) \mbox{\hyperlink{namespacemodelparams_ab62c122a08bce8a2c161066a3e0f83cd}{timesteps}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a2e14a764fa10ffaa74cc53471510c99b}{nonlinear\+\_\+none}} =0
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a7534d8ae818c3b810559177c3108c43c}{nonlinear\+\_\+pk}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a0f2c57977e2bc614225a5776fbcd1efa}{nonlinear\+\_\+lens}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a44142a84e66f3bd7d9feebe2abd22160}{nonlinear\+\_\+both}} =3
+\item 
+type(\mbox{\hyperlink{structmodelparams_1_1cambparams}{cambparams}}), save \mbox{\hyperlink{namespacemodelparams_a957df29b9a56a2cfc2a8cb27d46daa2d}{cp}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_adc3b09efaf8a6d37303ccd19e27ae6e3}{scale}}
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_a188f571d5f56be7a62bb3079ef44c3ce}{call\+\_\+again}} = .false.
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a2ef8c57ec3ca12626295c0af7c8891b9}{grhom}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_adcca33df63a9b35b19c2f220028498b1}{grhog}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_aad31721fc53cb058072f19818ffd7178}{grhor}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a0319101f7e0e2e39563baa34b7a77453}{grhob}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ae9f905639d83dffafeac77f6c039c632}{grhoc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a8c39e1bc5579fca9396e8d526ccd36f7}{grhov}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a4c2d2ed96d5c953938367cc867157072}{grhornomass}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a01ee7412b553c0b2ab7ea2fcc5ee0a24}{grhok}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_aa2deb415a6c7c9f406093a8c6853d01c}{taurst}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a4c0c5110385ed23392c37abe83c629d5}{dtaurec}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a914411aec3209257f74b174bae6b2a10}{taurend}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a9d0fd2e2f02494b8ed27d6c924d7c494}{tau\+\_\+maxvis}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a4e46748f7df40701a9962f9ddac9544e}{adotrad}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a2cf17001b748d255082420e5cdcb52be}{grhodgc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_adba219855fecf94eab76932919bad160}{lambdac}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a0a62f172d9cb5307499eada437c8f282}{alphabde}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ad94fb2bc6179da9e6382c136f6c94bfe}{wdgc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a84817ace19c07faa219c6c62dbcabb87}{omegadgc}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ae997a7c4aa08ef8490836137c26170f1}{ac}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_acb822982115ab63eb32ad1374cbc13c0}{k\+\_\+phi}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a616bd55af3f7197c74b52398020f9b85}{norm\+\_\+pot}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a7288612ee3d61c71a35e8504a6c6be79}{fixq}} = 0.\+\_\+dl
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}{max\+\_\+nu}}) \mbox{\hyperlink{namespacemodelparams_aea40a307408a18a8b9e794a71c409f18}{grhormass}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}{max\+\_\+nu}}) \mbox{\hyperlink{namespacemodelparams_a4cbebdfc6776f516e062c03bc9c26d7f}{nu\+\_\+masses}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a5dc004ca6b9a5a2f7372357e5a481de7}{akthom}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a237a630b241207072c775a0a483fccf2}{fhe}}
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_a75f2e158664252c3e9cf88ad48570e99}{nnow}}
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a33c1b20cf097d69a5c7c3dfda3dab4ab}{threadnum}} = 0
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_a248f1c00694dc15ba911d43021a79d6c}{highaccuracydefault}} = .true.
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_ab2930a201db30785a690dd81ab50f4d2}{lsampleboost}} =1.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacemodelparams_abb9bb8b33d3369c3a551e3d4531133e1}{accuracyboost}} =1.\+\_\+dl
+\item 
+real(sp) \mbox{\hyperlink{namespacemodelparams_a670eec63b2ba5b17870ecc149c352d95}{laccuracyboost}} =1.
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a0a27a495392838f0bebb4cc754f548c1}{limber\+\_\+phiphi}} = 0
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a6617a935c25965a12d1cfd1f3a2a3e12}{num\+\_\+redshiftwindows}} = 0
+\item 
+integer \mbox{\hyperlink{namespacemodelparams_a9b9513ec2c0807b724060d4cc2b1f209}{num\+\_\+extra\+\_\+redshiftwindows}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_ac592a5921d58b2abb1fb48bb520fd87b}{lmin}} = 2
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_a1945ea0e00217f55d85995eeae03eb18}{omegakflat}} = 5e-\/7\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_aa0d6cc3ee9273208296f9f9ee8ce821f}{tol}} =1.\+0d-\/4
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemodelparams_a1385cd79ec8a583c0e723a87e6dd5a78}{spl\+\_\+large}} =1.e40\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_af523f2835472798b89ae123214d8fb99}{l0max}} =4000
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a68d9b09cb50a8117d4eba3f1dc224627}{lmax\+\_\+arr}} = \mbox{\hyperlink{namespacemodelparams_af523f2835472798b89ae123214d8fb99}{l0max}}
+\item 
+character(len=1024) \mbox{\hyperlink{namespacemodelparams_af0393446db4ef6a4d9b6ea1e107447dd}{highl\+\_\+unlensed\+\_\+cl\+\_\+template}} = \textquotesingle{}High\+L\+Extrap\+Template\+\_\+lenspotential\+Cls.\+dat\textquotesingle{}
+\item 
+logical \mbox{\hyperlink{namespacemodelparams_a11a5af696bd0ff15b97767839562048e}{use\+\_\+spline\+\_\+template}} = .true.
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a773455ee2416a2e08be5835a1c92fccd}{lmax\+\_\+extrap\+\_\+highl}} = 8000
+\item 
+real(dl), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemodelparams_ac21d168dd37c9a2ef9fef53a5ba08c3c}{highl\+\_\+cl\+\_\+template}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_afcc43d2b71977053be4631323ffeafbc}{derived\+\_\+age}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a179ecd2347ad710da08fc22b9d583f02}{derived\+\_\+zstar}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a0a96c00fb37f393bad015179acb69747}{derived\+\_\+rstar}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_af8cbef6429fb7ceac03aa8fe7d0d9875}{derived\+\_\+thetastar}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a81273461b08fe58e73e36d844c62fe7f}{derived\+\_\+dastar}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a9a7e7cdc5d12b5f40bff2ae559319e44}{derived\+\_\+zdrag}} =6
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a902eadf9e7fd31eb1ebd3e02ac0e443b}{derived\+\_\+rdrag}} =7
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a709313f88097e1ea1da03d031977d39d}{derived\+\_\+kd}} =8
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_aa8c5e706aaaef69a8fa8e0230f1242d3}{derived\+\_\+thetad}} =9
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a47dbe62349dd11d37540763b6dc4e630}{derived\+\_\+zeq}} =10
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a9158352b05bd5c94db9c9f39b728b8af}{derived\+\_\+keq}} =11
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_aa10d4b47c739162ede20adf21b82dcb7}{derived\+\_\+thetaeq}} =12
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_acba5f72246541278ec6edcb88ebc2197}{derived\+\_\+theta\+\_\+rs\+\_\+eq}} = 13
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodelparams_a3763c4095d154f01def46dfce33faffd}{nthermo\+\_\+derived}} = 13
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacemodelparams_a3763c4095d154f01def46dfce33faffd}{nthermo\+\_\+derived}}) \mbox{\hyperlink{namespacemodelparams_a81091ac7021dd731decc138dc9886329}{thermoderivedparams}}
+\item 
+type(\mbox{\hyperlink{structmodelparams_1_1tbackgroundoutputs}{tbackgroundoutputs}}), save \mbox{\hyperlink{namespacemodelparams_ad4f70e5f61b1f44ff823eb7f25e96b45}{backgroundoutputs}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemodelparams_a63c764e54b9b02649d00f8071cb9297f}\label{namespacemodelparams_a63c764e54b9b02649d00f8071cb9297f}} 
+\index{modelparams@{modelparams}!angulardiameterdistance@{angulardiameterdistance}}
+\index{angulardiameterdistance@{angulardiameterdistance}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{angulardiameterdistance()}{angulardiameterdistance()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::angulardiameterdistance (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References comovingradialdistance(), cp, and rofchi().
+
+
+
+Referenced by angulardiameterdistancearr(), bao\+\_\+d\+\_\+v(), cosmomctheta(), thermodata\+::inithermo(), and luminositydistance().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a63c764e54b9b02649d00f8071cb9297f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a63c764e54b9b02649d00f8071cb9297f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a74645c7e2e48bb3d57da7da5383799ed}\label{namespacemodelparams_a74645c7e2e48bb3d57da7da5383799ed}} 
+\index{modelparams@{modelparams}!angulardiameterdistance2@{angulardiameterdistance2}}
+\index{angulardiameterdistance2@{angulardiameterdistance2}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{angulardiameterdistance2()}{angulardiameterdistance2()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::angulardiameterdistance2 (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z1,  }\item[{real(dl), intent(in)}]{z2 }\end{DoxyParamCaption})}
+
+
+
+References comovingradialdistance(), cp, and rofchi().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a74645c7e2e48bb3d57da7da5383799ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a31cf59c4ca59e0bc5c8c2b45a8f3487e}\label{namespacemodelparams_a31cf59c4ca59e0bc5c8c2b45a8f3487e}} 
+\index{modelparams@{modelparams}!angulardiameterdistancearr@{angulardiameterdistancearr}}
+\index{angulardiameterdistancearr@{angulardiameterdistancearr}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{angulardiameterdistancearr()}{angulardiameterdistancearr()}}
+{\footnotesize\ttfamily subroutine modelparams\+::angulardiameterdistancearr (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(out)}]{arr,  }\item[{real(dl), dimension(n), intent(in)}]{z,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References angulardiameterdistance().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a31cf59c4ca59e0bc5c8c2b45a8f3487e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a39160c5bd9a51624f48cbef4197bb22f}\label{namespacemodelparams_a39160c5bd9a51624f48cbef4197bb22f}} 
+\index{modelparams@{modelparams}!bao\+\_\+d\+\_\+v@{bao\+\_\+d\+\_\+v}}
+\index{bao\+\_\+d\+\_\+v@{bao\+\_\+d\+\_\+v}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{bao\+\_\+d\+\_\+v()}{bao\_d\_v()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::bao\+\_\+d\+\_\+v (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References angulardiameterdistance(), bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h(), and hofz().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a39160c5bd9a51624f48cbef4197bb22f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a3a1026b2054f510f0c0dd9ee5c95e1b9}\label{namespacemodelparams_a3a1026b2054f510f0c0dd9ee5c95e1b9}} 
+\index{modelparams@{modelparams}!bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h@{bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h}}
+\index{bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h@{bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h()}{bao\_d\_v\_from\_da\_h()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::bao\+\_\+d\+\_\+v\+\_\+from\+\_\+da\+\_\+h (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z,  }\item[{real(dl), intent(in)}]{DA,  }\item[{real(dl), intent(in)}]{Hz }\end{DoxyParamCaption})}
+
+
+
+Referenced by bao\+\_\+d\+\_\+v(), and thermodata\+::inithermo().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a3a1026b2054f510f0c0dd9ee5c95e1b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a13f805ae3c4213f4c9204bf8d8f17350}\label{namespacemodelparams_a13f805ae3c4213f4c9204bf8d8f17350}} 
+\index{modelparams@{modelparams}!cambparams\+\_\+set@{cambparams\+\_\+set}}
+\index{cambparams\+\_\+set@{cambparams\+\_\+set}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{cambparams\+\_\+set()}{cambparams\_set()}}
+{\footnotesize\ttfamily subroutine modelparams\+::cambparams\+\_\+set (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structmodelparams_1_1cambparams}{cambparams}}), intent(in)}]{P,  }\item[{integer, optional}]{error,  }\item[{logical, optional}]{Do\+Reion }\end{DoxyParamCaption})}
+
+
+
+References ac, adotrad, akthom, alphabde, constants\+::c, constants\+::c8pig\+\_\+evm2, call\+\_\+again, cosmomctheta(), cp, errors\+::error\+\_\+unsupported\+\_\+params, constants\+::ev, constants\+::ev2tompcm2, feedbacklevel, fhe, errors\+::global\+\_\+error\+\_\+flag, errors\+::globalerror(), grhob, grhoc, grhodgc, grhog, grhok, grhom, grhor, grhormass, grhornomass, grhov, init\+\_\+background(), init\+\_\+massive\+\_\+nu(), constants\+::k\+\_\+b, k\+\_\+phi, constants\+::kappa, lambdac, constants\+::m\+\_\+h, constants\+::mass\+\_\+ratio\+\_\+he\+\_\+h, constants\+::mpc, constants\+::mpl2, nnow, nonlinear\+\_\+both, nonlinear\+\_\+lens, norm\+\_\+pot, nu\+\_\+approx, nu\+\_\+masses, nu\+\_\+trunc, omegadgc, omegakflat, reionization\+::reionization\+\_\+init(), rofchi(), scale, constants\+::sigma\+\_\+boltz, constants\+::sigma\+\_\+thomson, timeofz(), and wdgc.
+
+
+
+Referenced by camb\+::camb\+\_\+getage(), camb\+::camb\+\_\+getresults(), camb\+::camb\+\_\+getzrefromtau(), handles\+::cambdata\+\_\+calcbackgroundtheory(), handles\+::cambdata\+\_\+setparamsforbackground(), and calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a13f805ae3c4213f4c9204bf8d8f17350_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a13f805ae3c4213f4c9204bf8d8f17350_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_ad0393036efc0bf4d20eba5112748a1a2}\label{namespacemodelparams_ad0393036efc0bf4d20eba5112748a1a2}} 
+\index{modelparams@{modelparams}!comovingradialdistance@{comovingradialdistance}}
+\index{comovingradialdistance@{comovingradialdistance}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{comovingradialdistance()}{comovingradialdistance()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::comovingradialdistance (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References deltatime().
+
+
+
+Referenced by angulardiameterdistance(), and angulardiameterdistance2().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ad0393036efc0bf4d20eba5112748a1a2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ad0393036efc0bf4d20eba5112748a1a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_af941ff2f9683e6bf6994f87b27ea9427}\label{namespacemodelparams_af941ff2f9683e6bf6994f87b27ea9427}} 
+\index{modelparams@{modelparams}!cosfunc@{cosfunc}}
+\index{cosfunc@{cosfunc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{cosfunc()}{cosfunc()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::cosfunc (\begin{DoxyParamCaption}\item[{real(dl)}]{Chi }\end{DoxyParamCaption})}
+
+
+
+References cp.
+
+
+
+Referenced by dtauda(), and gaugeinterface\+::outputt().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_af941ff2f9683e6bf6994f87b27ea9427_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_ab4a4cc860939dbbdc0236048b5f9457e}\label{namespacemodelparams_ab4a4cc860939dbbdc0236048b5f9457e}} 
+\index{modelparams@{modelparams}!cosmomctheta@{cosmomctheta}}
+\index{cosmomctheta@{cosmomctheta}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{cosmomctheta()}{cosmomctheta()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::cosmomctheta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References angulardiameterdistance(), cp, dsound\+\_\+da(), and reionization\+::rombint.
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+cmbtotheta(), cambparams\+\_\+set(), and calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ab4a4cc860939dbbdc0236048b5f9457e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ab4a4cc860939dbbdc0236048b5f9457e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_ac094d31babe3489387c12a3c2ab05549}\label{namespacemodelparams_ac094d31babe3489387c12a3c2ab05549}} 
+\index{modelparams@{modelparams}!deltaphysicaltimegyr@{deltaphysicaltimegyr}}
+\index{deltaphysicaltimegyr@{deltaphysicaltimegyr}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{deltaphysicaltimegyr()}{deltaphysicaltimegyr()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::deltaphysicaltimegyr (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a1,  }\item[{real(dl), intent(in)}]{a2,  }\item[{real(dl), intent(in), optional}]{in\+\_\+tol }\end{DoxyParamCaption})}
+
+
+
+References accuracyboost, constants\+::c, dtda(), constants\+::gyr, constants\+::mpc, and reionization\+::rombint.
+
+
+
+Referenced by camb\+::camb\+\_\+getage(), and thermodata\+::inithermo().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ac094d31babe3489387c12a3c2ab05549_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ac094d31babe3489387c12a3c2ab05549_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_ae583f09e6523f430605f421d2db537ae}\label{namespacemodelparams_ae583f09e6523f430605f421d2db537ae}} 
+\index{modelparams@{modelparams}!deltatime@{deltatime}}
+\index{deltatime@{deltatime}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{deltatime()}{deltatime()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::deltatime (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a1,  }\item[{real(dl), intent(in)}]{a2,  }\item[{real(dl), intent(in), optional}]{in\+\_\+tol }\end{DoxyParamCaption})}
+
+
+
+References accuracyboost, reionization\+::dtauda, reionization\+::rombint, and tol.
+
+
+
+Referenced by comovingradialdistance(), gaugeinterface\+::deltatimemaxed(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+init(), gaugeinterface\+::initial(), and timeofz().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ae583f09e6523f430605f421d2db537ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a60c72460cbce332f5142d619a906fa16}\label{namespacemodelparams_a60c72460cbce332f5142d619a906fa16}} 
+\index{modelparams@{modelparams}!dsound\+\_\+da@{dsound\+\_\+da}}
+\index{dsound\+\_\+da@{dsound\+\_\+da}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{dsound\+\_\+da()}{dsound\_da()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::dsound\+\_\+da (\begin{DoxyParamCaption}\item[{real(dl)}]{a }\end{DoxyParamCaption})}
+
+
+
+References cp, and reionization\+::dtauda.
+
+
+
+Referenced by cosmomctheta().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a60c72460cbce332f5142d619a906fa16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a57d61799939e1d3d5984dba316f8cc6a}\label{namespacemodelparams_a57d61799939e1d3d5984dba316f8cc6a}} 
+\index{modelparams@{modelparams}!dsound\+\_\+da\+\_\+exact@{dsound\+\_\+da\+\_\+exact}}
+\index{dsound\+\_\+da\+\_\+exact@{dsound\+\_\+da\+\_\+exact}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{dsound\+\_\+da\+\_\+exact()}{dsound\_da\_exact()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::dsound\+\_\+da\+\_\+exact (\begin{DoxyParamCaption}\item[{real(dl)}]{a }\end{DoxyParamCaption})}
+
+
+
+References reionization\+::dtauda, grhob, and grhog.
+
+
+
+Referenced by thermodata\+::inithermo().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a57d61799939e1d3d5984dba316f8cc6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a0ab3d80c1ede505b3412f5b33bd3a202}\label{namespacemodelparams_a0ab3d80c1ede505b3412f5b33bd3a202}} 
+\index{modelparams@{modelparams}!dtda@{dtda}}
+\index{dtda@{dtda}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{dtda()}{dtda()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::dtda (\begin{DoxyParamCaption}\item[{real(dl)}]{a }\end{DoxyParamCaption})}
+
+
+
+References reionization\+::dtauda.
+
+
+
+Referenced by deltaphysicaltimegyr().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a0ab3d80c1ede505b3412f5b33bd3a202_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_ad0ec1bb07f7e0295749e801b141bfc0f}\label{namespacemodelparams_ad0ec1bb07f7e0295749e801b141bfc0f}} 
+\index{modelparams@{modelparams}!f\+\_\+k@{f\+\_\+k}}
+\index{f\+\_\+k@{f\+\_\+k}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{f\+\_\+k()}{f\_k()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::f\+\_\+k (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{x }\end{DoxyParamCaption})}
+
+
+
+References cp, and rofchi().
+
+
+
+Referenced by dtauda(), and gaugeinterface\+::output().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacemodelparams_ad0ec1bb07f7e0295749e801b141bfc0f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ad0ec1bb07f7e0295749e801b141bfc0f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a2abd5cb7bfc9c34a736d91ed5863552d}\label{namespacemodelparams_a2abd5cb7bfc9c34a736d91ed5863552d}} 
+\index{modelparams@{modelparams}!gettesttime@{gettesttime}}
+\index{gettesttime@{gettesttime}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{gettesttime()}{gettesttime()}}
+{\footnotesize\ttfamily real(sp) function modelparams\+::gettesttime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::cmbmain(), lensing\+::corrfuncflatsky(), and lensing\+::corrfuncfullskyimpl().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a2abd5cb7bfc9c34a736d91ed5863552d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a0180f3c86db3b86362776831ebdb2ff2}\label{namespacemodelparams_a0180f3c86db3b86362776831ebdb2ff2}} 
+\index{modelparams@{modelparams}!hofz@{hofz}}
+\index{hofz@{hofz}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{hofz()}{hofz()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::hofz (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References reionization\+::dtauda.
+
+
+
+Referenced by bao\+\_\+d\+\_\+v(), and thermodata\+::inithermo().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a0180f3c86db3b86362776831ebdb2ff2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a463f6e148b9f2c45ec30cb28c29bb4e3}\label{namespacemodelparams_a463f6e148b9f2c45ec30cb28c29bb4e3}} 
+\index{modelparams@{modelparams}!invsinfunc@{invsinfunc}}
+\index{invsinfunc@{invsinfunc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{invsinfunc()}{invsinfunc()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::invsinfunc (\begin{DoxyParamCaption}\item[{real(dl)}]{x }\end{DoxyParamCaption})}
+
+
+
+References cp.
+
+
+
+Referenced by cambmain\+::integratesourcesbessels().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a463f6e148b9f2c45ec30cb28c29bb4e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_a40c5d69daf3f5689ecf0c29c19257028}\label{namespacemodelparams_a40c5d69daf3f5689ecf0c29c19257028}} 
+\index{modelparams@{modelparams}!luminositydistance@{luminositydistance}}
+\index{luminositydistance@{luminositydistance}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{luminositydistance()}{luminositydistance()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::luminositydistance (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References angulardiameterdistance().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a40c5d69daf3f5689ecf0c29c19257028_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_af7cba6b22f91f9428ebecb63823d451a}\label{namespacemodelparams_af7cba6b22f91f9428ebecb63823d451a}} 
+\index{modelparams@{modelparams}!nxyl@{nxyl}}
+\index{nxyl@{nxyl}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nxyl()}{nxyl()}}
+{\footnotesize\ttfamily subroutine modelparams\+::nxyl (\begin{DoxyParamCaption}\item[{real(dl), dimension(6)}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemodelparams_a09b856ca78d2c38cb9746680ce7a4d9f}\label{namespacemodelparams_a09b856ca78d2c38cb9746680ce7a4d9f}} 
+\index{modelparams@{modelparams}!rofchi@{rofchi}}
+\index{rofchi@{rofchi}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{rofchi()}{rofchi()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::rofchi (\begin{DoxyParamCaption}\item[{real(dl)}]{Chi }\end{DoxyParamCaption})}
+
+
+
+References cp.
+
+
+
+Referenced by angulardiameterdistance(), angulardiameterdistance2(), cambparams\+\_\+set(), cambmain\+::dorangeint(), cambmain\+::dorangeinttensor(), cambmain\+::dosourceintegration(), dtauda(), f\+\_\+k(), gaugeinterface\+::output(), and gaugeinterface\+::outputt().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_a09b856ca78d2c38cb9746680ce7a4d9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_ade19d5a5ee3bef508e781d64c8c667ae}\label{namespacemodelparams_ade19d5a5ee3bef508e781d64c8c667ae}} 
+\index{modelparams@{modelparams}!tanfunc@{tanfunc}}
+\index{tanfunc@{tanfunc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{tanfunc()}{tanfunc()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::tanfunc (\begin{DoxyParamCaption}\item[{real(dl)}]{Chi }\end{DoxyParamCaption})}
+
+
+
+References cp.
+
+
+
+Referenced by gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), and dtauda().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ade19d5a5ee3bef508e781d64c8c667ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_ae8f7910867e2ed755e7f4d5eacdeee2d}\label{namespacemodelparams_ae8f7910867e2ed755e7f4d5eacdeee2d}} 
+\index{modelparams@{modelparams}!timeofz@{timeofz}}
+\index{timeofz@{timeofz}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{timeofz()}{timeofz()}}
+{\footnotesize\ttfamily real(dl) function modelparams\+::timeofz (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References deltatime().
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), thermodata\+::inithermo(), cambmain\+::initvars(), and timeofzarr().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ae8f7910867e2ed755e7f4d5eacdeee2d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_ae8f7910867e2ed755e7f4d5eacdeee2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodelparams_aa9fc9f952c72345785fa69b491e598d5}\label{namespacemodelparams_aa9fc9f952c72345785fa69b491e598d5}} 
+\index{modelparams@{modelparams}!timeofzarr@{timeofzarr}}
+\index{timeofzarr@{timeofzarr}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{timeofzarr()}{timeofzarr()}}
+{\footnotesize\ttfamily subroutine modelparams\+::timeofzarr (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nz,  }\item[{real(dl), dimension(nz), intent(in)}]{redshifts,  }\item[{real(dl), dimension(nz), intent(out)}]{outputs }\end{DoxyParamCaption})}
+
+
+
+References timeofz().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodelparams_aa9fc9f952c72345785fa69b491e598d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemodelparams_ae997a7c4aa08ef8490836137c26170f1}\label{namespacemodelparams_ae997a7c4aa08ef8490836137c26170f1}} 
+\index{modelparams@{modelparams}!ac@{ac}}
+\index{ac@{ac}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{ac}{ac}}
+{\footnotesize\ttfamily real(dl) modelparams\+::ac}
+
+
+
+Referenced by quint\+::bde\+\_\+xylata(), cambmain\+::calcscalarsources(), cambparams\+\_\+set(), dtauda(), and quint\+::quint\+\_\+valsata().
+
+\mbox{\Hypertarget{namespacemodelparams_abb9bb8b33d3369c3a551e3d4531133e1}\label{namespacemodelparams_abb9bb8b33d3369c3a551e3d4531133e1}} 
+\index{modelparams@{modelparams}!accuracyboost@{accuracyboost}}
+\index{accuracyboost@{accuracyboost}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{accuracyboost}{accuracyboost}}
+{\footnotesize\ttfamily real(dl) modelparams\+::accuracyboost =1.\+\_\+dl}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calcscalarsources(), cambmain\+::calctensorsources(), cambmain\+::calcvectorsources(), calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), deltaphysicaltimegyr(), deltatime(), cambmain\+::doflatintegration(), cambmain\+::dorangeint(), cambmain\+::dorangeinttensor(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), gaugeinterface\+::gaugeinterface\+\_\+init(), spherbessels\+::generatebessels(), cambmain\+::getlimbertransfers(), handles\+::getoutputevolutionfork(), cambmain\+::gettransfer(), thermodata\+::inithermo(), gaugeinterface\+::initial(), cambmain\+::inittransfer(), cambmain\+::initvars(), cambmain\+::integratesourcesbessels(), massivenu\+::nu\+\_\+init(), cambmain\+::setkvaluesforint(), cambmain\+::setkvaluesforsources(), gaugeinterface\+::setuptensorarrayindices(), cambmain\+::uselimber(), and spherbessels\+::uspherbesselwithderiv().
+
+\mbox{\Hypertarget{namespacemodelparams_a4e46748f7df40701a9962f9ddac9544e}\label{namespacemodelparams_a4e46748f7df40701a9962f9ddac9544e}} 
+\index{modelparams@{modelparams}!adotrad@{adotrad}}
+\index{adotrad@{adotrad}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{adotrad}{adotrad}}
+{\footnotesize\ttfamily real(dl) modelparams\+::adotrad}
+
+
+
+Referenced by cambparams\+\_\+set(), dtauda(), gaugeinterface\+::getnumeqns(), cambmain\+::gettaustart(), thermodata\+::inithermo(), gaugeinterface\+::initial(), gaugeinterface\+::initialt(), and gaugeinterface\+::initialv().
+
+\mbox{\Hypertarget{namespacemodelparams_a5dc004ca6b9a5a2f7372357e5a481de7}\label{namespacemodelparams_a5dc004ca6b9a5a2f7372357e5a481de7}} 
+\index{modelparams@{modelparams}!akthom@{akthom}}
+\index{akthom@{akthom}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{akthom}{akthom}}
+{\footnotesize\ttfamily real(dl) modelparams\+::akthom}
+
+
+
+Referenced by cambparams\+\_\+set(), and thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a0a62f172d9cb5307499eada437c8f282}\label{namespacemodelparams_a0a62f172d9cb5307499eada437c8f282}} 
+\index{modelparams@{modelparams}!alphabde@{alphabde}}
+\index{alphabde@{alphabde}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{alphabde}{alphabde}}
+{\footnotesize\ttfamily real(dl) modelparams\+::alphabde}
+
+
+
+Referenced by quint\+::bde\+\_\+background(), cambmain\+::calcscalarsources(), cambparams\+\_\+set(), dtauda(), and quint\+::vofphi().
+
+\mbox{\Hypertarget{namespacemodelparams_ad4f70e5f61b1f44ff823eb7f25e96b45}\label{namespacemodelparams_ad4f70e5f61b1f44ff823eb7f25e96b45}} 
+\index{modelparams@{modelparams}!backgroundoutputs@{backgroundoutputs}}
+\index{backgroundoutputs@{backgroundoutputs}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{backgroundoutputs}{backgroundoutputs}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structmodelparams_1_1tbackgroundoutputs}{tbackgroundoutputs}}), save modelparams\+::backgroundoutputs}
+
+
+
+Referenced by handles\+::camb\+\_\+getbackgroundoutputs(), handles\+::camb\+\_\+getnumbackgroundoutputs(), handles\+::camb\+\_\+setbackgroundoutputs\+\_\+z(), calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), and thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a188f571d5f56be7a62bb3079ef44c3ce}\label{namespacemodelparams_a188f571d5f56be7a62bb3079ef44c3ce}} 
+\index{modelparams@{modelparams}!call\+\_\+again@{call\+\_\+again}}
+\index{call\+\_\+again@{call\+\_\+again}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{call\+\_\+again}{call\_again}}
+{\footnotesize\ttfamily logical modelparams\+::call\+\_\+again = .false.}
+
+
+
+Referenced by camb\+::camb\+\_\+getresults(), and cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespacemodelparams_a957df29b9a56a2cfc2a8cb27d46daa2d}\label{namespacemodelparams_a957df29b9a56a2cfc2a8cb27d46daa2d}} 
+\index{modelparams@{modelparams}!cp@{cp}}
+\index{cp@{cp}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{cp}{cp}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structmodelparams_1_1cambparams}{cambparams}}), save modelparams\+::cp}
+
+
+
+Referenced by angulardiameterdistance(), angulardiameterdistance2(), nonlinear\+::assign\+\_\+hm\+\_\+cosmology(), cambmain\+::calclimberscalcls(), cambmain\+::calcscalarsources(), cambmain\+::calcscalcls(), cambmain\+::calcscalcls2(), cambmain\+::calctenscls(), cambmain\+::calcveccls(), camb\+::camb\+\_\+getcls(), camb\+::camb\+\_\+getresults(), camb\+::camb\+\_\+getzrefromtau(), handles\+::camb\+\_\+setlensedscalcls(), handles\+::camb\+\_\+setlenspotentialcls(), handles\+::camb\+\_\+settensorcls(), handles\+::camb\+\_\+settotcls(), handles\+::camb\+\_\+setunlensedcls(), handles\+::camb\+\_\+setunlensedscalararray(), handles\+::camb\+\_\+setunlensedscalcls(), camb\+::camb\+\_\+transferstopowers(), cambparams\+\_\+set(), cambmain\+::cltransfertocl(), cambmain\+::cmbmain(), gaugeinterface\+::copyscalarvariablearray(), gaugeinterface\+::copytensorvariablearray(), lensing\+::corrfuncfullsky(), lensing\+::corrfuncfullskyimpl(), cosfunc(), cosmomctheta(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), cambmain\+::doflatintegration(), cambmain\+::dorangeint(), cambmain\+::dorangeinttensor(), cambmain\+::dosourceintegration(), cambmain\+::dosourcek(), dsound\+\_\+da(), dtauda(), f\+\_\+k(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), gaugeinterface\+::gaugeinterface\+\_\+init(), spherbessels\+::generatebessels(), cambmain\+::getlimbertransfers(), gaugeinterface\+::getnumeqns(), getomegak(), cambmain\+::getsourcemem(), cambmain\+::gettaustart(), cambmain\+::gettransfer(), modeldata\+::init\+\_\+cls(), thermodata\+::inithermo(), gaugeinterface\+::initial(), gaugeinterface\+::initialt(), gaugeinterface\+::initialv(), lvalues\+::initlval(), spherbessels\+::initspherbessels(), cambmain\+::inittransfer(), cambmain\+::initvars(), cambmain\+::integratesourcesbessels(), cambmain\+::interpolatecls(), cambmain\+::interpolatesources(), invsinfunc(), lensing\+::lens\+\_\+cls(), gaugeinterface\+::massivenuvars(), gaugeinterface\+::massivenuvarsout(), nonlinear\+::nonlinear\+\_\+getnonlinratios(), modeldata\+::normalizeclsatl(), massivenu\+::nu\+\_\+init(), gaugeinterface\+::output(), modeldata\+::output\+\_\+cl\+\_\+files(), modeldata\+::output\+\_\+lens\+\_\+pot\+\_\+files(), modeldata\+::output\+\_\+veccl\+\_\+files(), gaugeinterface\+::outputt(), gaugeinterface\+::outputv(), rofchi(), cambmain\+::setclosedkvaluesfromarr(), cambmain\+::setkvaluesforint(), cambmain\+::setkvaluesforsources(), gaugeinterface\+::setupscalararrayindices(), gaugeinterface\+::setuptensorarrayindices(), cambmain\+::sourcetotransfers(), and tanfunc().
+
+\mbox{\Hypertarget{namespacemodelparams_a69b1cd59448404e0bcd21612fb8e69c9}\label{namespacemodelparams_a69b1cd59448404e0bcd21612fb8e69c9}} 
+\index{modelparams@{modelparams}!debugevolution@{debugevolution}}
+\index{debugevolution@{debugevolution}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{debugevolution}{debugevolution}}
+{\footnotesize\ttfamily logical, parameter modelparams\+::debugevolution = .false.}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), and cambmain\+::interpolatesources().
+
+\mbox{\Hypertarget{namespacemodelparams_a2fccc38c501c6f494fa1ced55e52a983}\label{namespacemodelparams_a2fccc38c501c6f494fa1ced55e52a983}} 
+\index{modelparams@{modelparams}!debugmsgs@{debugmsgs}}
+\index{debugmsgs@{debugmsgs}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{debugmsgs}{debugmsgs}}
+{\footnotesize\ttfamily logical, parameter modelparams\+::debugmsgs =.false.}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::cltransfertocl(), cambmain\+::cmbmain(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), spherbessels\+::generatebessels(), thermodata\+::inithermo(), spherbessels\+::initspherbessels(), cambmain\+::initvars(), and cambmain\+::transferout().
+
+\mbox{\Hypertarget{namespacemodelparams_a35a694469321a4414b622d9a0ec18f1f}\label{namespacemodelparams_a35a694469321a4414b622d9a0ec18f1f}} 
+\index{modelparams@{modelparams}!debugparam@{debugparam}}
+\index{debugparam@{debugparam}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{debugparam}{debugparam}}
+{\footnotesize\ttfamily real(dl) modelparams\+::debugparam = 0.\+\_\+dl}
+
+\mbox{\Hypertarget{namespacemodelparams_afcc43d2b71977053be4631323ffeafbc}\label{namespacemodelparams_afcc43d2b71977053be4631323ffeafbc}} 
+\index{modelparams@{modelparams}!derived\+\_\+age@{derived\+\_\+age}}
+\index{derived\+\_\+age@{derived\+\_\+age}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+age}{derived\_age}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+age =1}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a81273461b08fe58e73e36d844c62fe7f}\label{namespacemodelparams_a81273461b08fe58e73e36d844c62fe7f}} 
+\index{modelparams@{modelparams}!derived\+\_\+dastar@{derived\+\_\+dastar}}
+\index{derived\+\_\+dastar@{derived\+\_\+dastar}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+dastar}{derived\_dastar}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+dastar = 5}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a709313f88097e1ea1da03d031977d39d}\label{namespacemodelparams_a709313f88097e1ea1da03d031977d39d}} 
+\index{modelparams@{modelparams}!derived\+\_\+kd@{derived\+\_\+kd}}
+\index{derived\+\_\+kd@{derived\+\_\+kd}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+kd}{derived\_kd}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+kd =8}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a9158352b05bd5c94db9c9f39b728b8af}\label{namespacemodelparams_a9158352b05bd5c94db9c9f39b728b8af}} 
+\index{modelparams@{modelparams}!derived\+\_\+keq@{derived\+\_\+keq}}
+\index{derived\+\_\+keq@{derived\+\_\+keq}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+keq}{derived\_keq}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+keq =11}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a902eadf9e7fd31eb1ebd3e02ac0e443b}\label{namespacemodelparams_a902eadf9e7fd31eb1ebd3e02ac0e443b}} 
+\index{modelparams@{modelparams}!derived\+\_\+rdrag@{derived\+\_\+rdrag}}
+\index{derived\+\_\+rdrag@{derived\+\_\+rdrag}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+rdrag}{derived\_rdrag}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+rdrag =7}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a0a96c00fb37f393bad015179acb69747}\label{namespacemodelparams_a0a96c00fb37f393bad015179acb69747}} 
+\index{modelparams@{modelparams}!derived\+\_\+rstar@{derived\+\_\+rstar}}
+\index{derived\+\_\+rstar@{derived\+\_\+rstar}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+rstar}{derived\_rstar}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+rstar =3}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_acba5f72246541278ec6edcb88ebc2197}\label{namespacemodelparams_acba5f72246541278ec6edcb88ebc2197}} 
+\index{modelparams@{modelparams}!derived\+\_\+theta\+\_\+rs\+\_\+eq@{derived\+\_\+theta\+\_\+rs\+\_\+eq}}
+\index{derived\+\_\+theta\+\_\+rs\+\_\+eq@{derived\+\_\+theta\+\_\+rs\+\_\+eq}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+theta\+\_\+rs\+\_\+eq}{derived\_theta\_rs\_eq}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+theta\+\_\+rs\+\_\+eq = 13}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_aa8c5e706aaaef69a8fa8e0230f1242d3}\label{namespacemodelparams_aa8c5e706aaaef69a8fa8e0230f1242d3}} 
+\index{modelparams@{modelparams}!derived\+\_\+thetad@{derived\+\_\+thetad}}
+\index{derived\+\_\+thetad@{derived\+\_\+thetad}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+thetad}{derived\_thetad}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+thetad =9}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_aa10d4b47c739162ede20adf21b82dcb7}\label{namespacemodelparams_aa10d4b47c739162ede20adf21b82dcb7}} 
+\index{modelparams@{modelparams}!derived\+\_\+thetaeq@{derived\+\_\+thetaeq}}
+\index{derived\+\_\+thetaeq@{derived\+\_\+thetaeq}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+thetaeq}{derived\_thetaeq}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+thetaeq =12}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_af8cbef6429fb7ceac03aa8fe7d0d9875}\label{namespacemodelparams_af8cbef6429fb7ceac03aa8fe7d0d9875}} 
+\index{modelparams@{modelparams}!derived\+\_\+thetastar@{derived\+\_\+thetastar}}
+\index{derived\+\_\+thetastar@{derived\+\_\+thetastar}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+thetastar}{derived\_thetastar}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+thetastar =4}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a9a7e7cdc5d12b5f40bff2ae559319e44}\label{namespacemodelparams_a9a7e7cdc5d12b5f40bff2ae559319e44}} 
+\index{modelparams@{modelparams}!derived\+\_\+zdrag@{derived\+\_\+zdrag}}
+\index{derived\+\_\+zdrag@{derived\+\_\+zdrag}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+zdrag}{derived\_zdrag}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+zdrag =6}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a47dbe62349dd11d37540763b6dc4e630}\label{namespacemodelparams_a47dbe62349dd11d37540763b6dc4e630}} 
+\index{modelparams@{modelparams}!derived\+\_\+zeq@{derived\+\_\+zeq}}
+\index{derived\+\_\+zeq@{derived\+\_\+zeq}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+zeq}{derived\_zeq}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+zeq =10}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a179ecd2347ad710da08fc22b9d583f02}\label{namespacemodelparams_a179ecd2347ad710da08fc22b9d583f02}} 
+\index{modelparams@{modelparams}!derived\+\_\+zstar@{derived\+\_\+zstar}}
+\index{derived\+\_\+zstar@{derived\+\_\+zstar}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{derived\+\_\+zstar}{derived\_zstar}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::derived\+\_\+zstar =2}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_aa42e1180e92882f566f30d970dc110a4}\label{namespacemodelparams_aa42e1180e92882f566f30d970dc110a4}} 
+\index{modelparams@{modelparams}!do\+\_\+bispectrum@{do\+\_\+bispectrum}}
+\index{do\+\_\+bispectrum@{do\+\_\+bispectrum}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{do\+\_\+bispectrum}{do\_bispectrum}}
+{\footnotesize\ttfamily logical modelparams\+::do\+\_\+bispectrum = .false.}
+
+
+
+Referenced by camb\+::camb\+\_\+getresults(), cambmain\+::doflatintegration(), spherbessels\+::generatebessels(), thermodata\+::inithermo(), and cambmain\+::setkvaluesforint().
+
+\mbox{\Hypertarget{namespacemodelparams_a4c0c5110385ed23392c37abe83c629d5}\label{namespacemodelparams_a4c0c5110385ed23392c37abe83c629d5}} 
+\index{modelparams@{modelparams}!dtaurec@{dtaurec}}
+\index{dtaurec@{dtaurec}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{dtaurec}{dtaurec}}
+{\footnotesize\ttfamily real(dl) modelparams\+::dtaurec}
+
+
+
+Referenced by thermodata\+::inithermo(), and cambmain\+::initvars().
+
+\mbox{\Hypertarget{namespacemodelparams_a403353ede075646b189fcfbae0fb3396}\label{namespacemodelparams_a403353ede075646b189fcfbae0fb3396}} 
+\index{modelparams@{modelparams}!feedbacklevel@{feedbacklevel}}
+\index{feedbacklevel@{feedbacklevel}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{feedbacklevel}{feedbacklevel}}
+{\footnotesize\ttfamily integer modelparams\+::feedbacklevel = 0}
+
+
+
+Referenced by lensing\+::badharmonic(), cambparams\+\_\+set(), cambmain\+::cltransfertocl(), cambmain\+::cmbmain(), spherbessels\+::generatebessels(), cambmain\+::getlimbertransfers(), thermodata\+::inithermo(), spherbessels\+::initspherbessels(), cambmain\+::initvars(), and cambmain\+::transferout().
+
+\mbox{\Hypertarget{namespacemodelparams_a237a630b241207072c775a0a483fccf2}\label{namespacemodelparams_a237a630b241207072c775a0a483fccf2}} 
+\index{modelparams@{modelparams}!fhe@{fhe}}
+\index{fhe@{fhe}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{fhe}{fhe}}
+{\footnotesize\ttfamily real(dl) modelparams\+::fhe}
+
+
+
+Referenced by cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespacemodelparams_ac3257ef5df85ecef99f684ac5b101b71}\label{namespacemodelparams_ac3257ef5df85ecef99f684ac5b101b71}} 
+\index{modelparams@{modelparams}!fileio\+\_\+unit@{fileio\+\_\+unit}}
+\index{fileio\+\_\+unit@{fileio\+\_\+unit}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{fileio\+\_\+unit}{fileio\_unit}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::fileio\+\_\+unit = 13}
+
+
+
+Referenced by modeldata\+::checkloadedhighltemplate().
+
+\mbox{\Hypertarget{namespacemodelparams_a7288612ee3d61c71a35e8504a6c6be79}\label{namespacemodelparams_a7288612ee3d61c71a35e8504a6c6be79}} 
+\index{modelparams@{modelparams}!fixq@{fixq}}
+\index{fixq@{fixq}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{fixq}{fixq}}
+{\footnotesize\ttfamily real(dl) modelparams\+::fixq = 0.\+\_\+dl}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambmain\+::dosourcek(), dtauda(), and cambmain\+::gettaustart().
+
+\mbox{\Hypertarget{namespacemodelparams_a62664016ce9ca8fc8e53ebbfb8caa09c}\label{namespacemodelparams_a62664016ce9ca8fc8e53ebbfb8caa09c}} 
+\index{modelparams@{modelparams}!full\+\_\+bessel\+\_\+integration@{full\+\_\+bessel\+\_\+integration}}
+\index{full\+\_\+bessel\+\_\+integration@{full\+\_\+bessel\+\_\+integration}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{full\+\_\+bessel\+\_\+integration}{full\_bessel\_integration}}
+{\footnotesize\ttfamily logical, parameter modelparams\+::full\+\_\+bessel\+\_\+integration = .false.}
+
+
+
+Referenced by cambmain\+::doflatintegration().
+
+\mbox{\Hypertarget{namespacemodelparams_a0319101f7e0e2e39563baa34b7a77453}\label{namespacemodelparams_a0319101f7e0e2e39563baa34b7a77453}} 
+\index{modelparams@{modelparams}!grhob@{grhob}}
+\index{grhob@{grhob}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhob}{grhob}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhob}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), dsound\+\_\+da\+\_\+exact(), dtauda(), cambmain\+::evolved(), handles\+::getoutputevolutionfork(), thermodata\+::inithermo(), gaugeinterface\+::initial(), gaugeinterface\+::initialt(), gaugeinterface\+::initialv(), and gaugeinterface\+::output().
+
+\mbox{\Hypertarget{namespacemodelparams_ae9f905639d83dffafeac77f6c039c632}\label{namespacemodelparams_ae9f905639d83dffafeac77f6c039c632}} 
+\index{modelparams@{modelparams}!grhoc@{grhoc}}
+\index{grhoc@{grhoc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhoc}{grhoc}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhoc}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), dtauda(), cambmain\+::evolved(), handles\+::getoutputevolutionfork(), thermodata\+::inithermo(), gaugeinterface\+::initial(), gaugeinterface\+::initialt(), gaugeinterface\+::initialv(), and gaugeinterface\+::output().
+
+\mbox{\Hypertarget{namespacemodelparams_a2cf17001b748d255082420e5cdcb52be}\label{namespacemodelparams_a2cf17001b748d255082420e5cdcb52be}} 
+\index{modelparams@{modelparams}!grhodgc@{grhodgc}}
+\index{grhodgc@{grhodgc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhodgc}{grhodgc}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhodgc}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), and dtauda().
+
+\mbox{\Hypertarget{namespacemodelparams_adcca33df63a9b35b19c2f220028498b1}\label{namespacemodelparams_adcca33df63a9b35b19c2f220028498b1}} 
+\index{modelparams@{modelparams}!grhog@{grhog}}
+\index{grhog@{grhog}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhog}{grhog}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhog}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), dsound\+\_\+da\+\_\+exact(), dtauda(), thermodata\+::inithermo(), gaugeinterface\+::initial(), gaugeinterface\+::initialt(), gaugeinterface\+::initialv(), and gaugeinterface\+::output().
+
+\mbox{\Hypertarget{namespacemodelparams_a01ee7412b553c0b2ab7ea2fcc5ee0a24}\label{namespacemodelparams_a01ee7412b553c0b2ab7ea2fcc5ee0a24}} 
+\index{modelparams@{modelparams}!grhok@{grhok}}
+\index{grhok@{grhok}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhok}{grhok}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhok}
+
+
+
+Referenced by cambparams\+\_\+set(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), dtauda(), and gaugeinterface\+::output().
+
+\mbox{\Hypertarget{namespacemodelparams_a2ef8c57ec3ca12626295c0af7c8891b9}\label{namespacemodelparams_a2ef8c57ec3ca12626295c0af7c8891b9}} 
+\index{modelparams@{modelparams}!grhom@{grhom}}
+\index{grhom@{grhom}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhom}{grhom}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhom}
+
+
+
+Referenced by cambparams\+\_\+set(), thermodata\+::inithermo(), and massivenu\+::nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemodelparams_aad31721fc53cb058072f19818ffd7178}\label{namespacemodelparams_aad31721fc53cb058072f19818ffd7178}} 
+\index{modelparams@{modelparams}!grhor@{grhor}}
+\index{grhor@{grhor}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhor}{grhor}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhor}
+
+
+
+Referenced by cambparams\+\_\+set(), and massivenu\+::nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemodelparams_aea40a307408a18a8b9e794a71c409f18}\label{namespacemodelparams_aea40a307408a18a8b9e794a71c409f18}} 
+\index{modelparams@{modelparams}!grhormass@{grhormass}}
+\index{grhormass@{grhormass}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhormass}{grhormass}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}{max\+\_\+nu}}) modelparams\+::grhormass}
+
+
+
+Referenced by cambparams\+\_\+set(), gaugeinterface\+::derivst(), dtauda(), thermodata\+::inithermo(), gaugeinterface\+::initial(), gaugeinterface\+::initialt(), gaugeinterface\+::massivenuvars(), and gaugeinterface\+::massivenuvarsout().
+
+\mbox{\Hypertarget{namespacemodelparams_a4c2d2ed96d5c953938367cc867157072}\label{namespacemodelparams_a4c2d2ed96d5c953938367cc867157072}} 
+\index{modelparams@{modelparams}!grhornomass@{grhornomass}}
+\index{grhornomass@{grhornomass}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhornomass}{grhornomass}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhornomass}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), dtauda(), thermodata\+::inithermo(), gaugeinterface\+::initial(), gaugeinterface\+::initialt(), gaugeinterface\+::initialv(), and gaugeinterface\+::output().
+
+\mbox{\Hypertarget{namespacemodelparams_a8c39e1bc5579fca9396e8d526ccd36f7}\label{namespacemodelparams_a8c39e1bc5579fca9396e8d526ccd36f7}} 
+\index{modelparams@{modelparams}!grhov@{grhov}}
+\index{grhov@{grhov}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{grhov}{grhov}}
+{\footnotesize\ttfamily real(dl) modelparams\+::grhov}
+
+
+
+Referenced by cambparams\+\_\+set(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), dtauda(), lambdageneral\+::grho\+\_\+de(), and gaugeinterface\+::output().
+
+\mbox{\Hypertarget{namespacemodelparams_a0dda4d3f4b77e14c2635221cdf01de0f}\label{namespacemodelparams_a0dda4d3f4b77e14c2635221cdf01de0f}} 
+\index{modelparams@{modelparams}!hard\+\_\+bispectrum@{hard\+\_\+bispectrum}}
+\index{hard\+\_\+bispectrum@{hard\+\_\+bispectrum}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{hard\+\_\+bispectrum}{hard\_bispectrum}}
+{\footnotesize\ttfamily logical, parameter modelparams\+::hard\+\_\+bispectrum = .false.}
+
+
+
+Referenced by thermodata\+::inithermo(), and cambmain\+::setkvaluesforint().
+
+\mbox{\Hypertarget{namespacemodelparams_a248f1c00694dc15ba911d43021a79d6c}\label{namespacemodelparams_a248f1c00694dc15ba911d43021a79d6c}} 
+\index{modelparams@{modelparams}!highaccuracydefault@{highaccuracydefault}}
+\index{highaccuracydefault@{highaccuracydefault}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{highaccuracydefault}{highaccuracydefault}}
+{\footnotesize\ttfamily logical modelparams\+::highaccuracydefault = .true.}
+
+
+
+Referenced by camb\+::camb\+\_\+getresults(), calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), lensing\+::corrfuncfullsky(), cambmain\+::doflatintegration(), cambmain\+::dorangeint(), dtauda(), gaugeinterface\+::getnumeqns(), gaugeinterface\+::initial(), lvalues\+::initlval(), cambmain\+::inittransfer(), cambmain\+::integratesourcesbessels(), cambmain\+::setkvaluesforint(), and cambmain\+::setkvaluesforsources().
+
+\mbox{\Hypertarget{namespacemodelparams_ac21d168dd37c9a2ef9fef53a5ba08c3c}\label{namespacemodelparams_ac21d168dd37c9a2ef9fef53a5ba08c3c}} 
+\index{modelparams@{modelparams}!highl\+\_\+cl\+\_\+template@{highl\+\_\+cl\+\_\+template}}
+\index{highl\+\_\+cl\+\_\+template@{highl\+\_\+cl\+\_\+template}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{highl\+\_\+cl\+\_\+template}{highl\_cl\_template}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable modelparams\+::highl\+\_\+cl\+\_\+template}
+
+
+
+Referenced by modeldata\+::checkloadedhighltemplate(), lensing\+::corrfuncfullskyimpl(), and lvalues\+::interpolateclarrtemplated().
+
+\mbox{\Hypertarget{namespacemodelparams_af0393446db4ef6a4d9b6ea1e107447dd}\label{namespacemodelparams_af0393446db4ef6a4d9b6ea1e107447dd}} 
+\index{modelparams@{modelparams}!highl\+\_\+unlensed\+\_\+cl\+\_\+template@{highl\+\_\+unlensed\+\_\+cl\+\_\+template}}
+\index{highl\+\_\+unlensed\+\_\+cl\+\_\+template@{highl\+\_\+unlensed\+\_\+cl\+\_\+template}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{highl\+\_\+unlensed\+\_\+cl\+\_\+template}{highl\_unlensed\_cl\_template}}
+{\footnotesize\ttfamily character(len=1024) modelparams\+::highl\+\_\+unlensed\+\_\+cl\+\_\+template = \textquotesingle{}High\+L\+Extrap\+Template\+\_\+lenspotential\+Cls.\+dat\textquotesingle{}}
+
+
+
+Referenced by modeldata\+::checkloadedhighltemplate(), and handles\+::set\+\_\+cls\+\_\+template().
+
+\mbox{\Hypertarget{namespacemodelparams_acb822982115ab63eb32ad1374cbc13c0}\label{namespacemodelparams_acb822982115ab63eb32ad1374cbc13c0}} 
+\index{modelparams@{modelparams}!k\+\_\+phi@{k\+\_\+phi}}
+\index{k\+\_\+phi@{k\+\_\+phi}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{k\+\_\+phi}{k\_phi}}
+{\footnotesize\ttfamily real(dl) modelparams\+::k\+\_\+phi}
+
+
+
+Referenced by cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespacemodelparams_af523f2835472798b89ae123214d8fb99}\label{namespacemodelparams_af523f2835472798b89ae123214d8fb99}} 
+\index{modelparams@{modelparams}!l0max@{l0max}}
+\index{l0max@{l0max}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{l0max}{l0max}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::l0max =4000}
+
+
+
+Referenced by dtauda(), and gaugeinterface\+::getnumeqns().
+
+\mbox{\Hypertarget{namespacemodelparams_a670eec63b2ba5b17870ecc149c352d95}\label{namespacemodelparams_a670eec63b2ba5b17870ecc149c352d95}} 
+\index{modelparams@{modelparams}!laccuracyboost@{laccuracyboost}}
+\index{laccuracyboost@{laccuracyboost}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{laccuracyboost}{laccuracyboost}}
+{\footnotesize\ttfamily real(sp) modelparams\+::laccuracyboost =1.}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+init(), gaugeinterface\+::getnumeqns(), gaugeinterface\+::initial(), and gaugeinterface\+::setupscalararrayindices().
+
+\mbox{\Hypertarget{namespacemodelparams_adba219855fecf94eab76932919bad160}\label{namespacemodelparams_adba219855fecf94eab76932919bad160}} 
+\index{modelparams@{modelparams}!lambdac@{lambdac}}
+\index{lambdac@{lambdac}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{lambdac}{lambdac}}
+{\footnotesize\ttfamily real(dl) modelparams\+::lambdac}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), and dtauda().
+
+\mbox{\Hypertarget{namespacemodelparams_a0a27a495392838f0bebb4cc754f548c1}\label{namespacemodelparams_a0a27a495392838f0bebb4cc754f548c1}} 
+\index{modelparams@{modelparams}!limber\+\_\+phiphi@{limber\+\_\+phiphi}}
+\index{limber\+\_\+phiphi@{limber\+\_\+phiphi}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{limber\+\_\+phiphi}{limber\_phiphi}}
+{\footnotesize\ttfamily integer modelparams\+::limber\+\_\+phiphi = 0}
+
+
+
+Referenced by cambmain\+::calclimberscalcls(), cambmain\+::calcscalcls(), cambmain\+::getlimbertransfers(), and modeldata\+::init\+\_\+limber().
+
+\mbox{\Hypertarget{namespacemodelparams_a68d9b09cb50a8117d4eba3f1dc224627}\label{namespacemodelparams_a68d9b09cb50a8117d4eba3f1dc224627}} 
+\index{modelparams@{modelparams}!lmax\+\_\+arr@{lmax\+\_\+arr}}
+\index{lmax\+\_\+arr@{lmax\+\_\+arr}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{lmax\+\_\+arr}{lmax\_arr}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::lmax\+\_\+arr = \mbox{\hyperlink{namespacemodelparams_af523f2835472798b89ae123214d8fb99}{l0max}}}
+
+\mbox{\Hypertarget{namespacemodelparams_a773455ee2416a2e08be5835a1c92fccd}\label{namespacemodelparams_a773455ee2416a2e08be5835a1c92fccd}} 
+\index{modelparams@{modelparams}!lmax\+\_\+extrap\+\_\+highl@{lmax\+\_\+extrap\+\_\+highl}}
+\index{lmax\+\_\+extrap\+\_\+highl@{lmax\+\_\+extrap\+\_\+highl}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{lmax\+\_\+extrap\+\_\+highl}{lmax\_extrap\_highl}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::lmax\+\_\+extrap\+\_\+highl = 8000}
+
+
+
+Referenced by modeldata\+::checkloadedhighltemplate(), lensing\+::corrfuncfullsky(), and lvalues\+::interpolateclarrtemplated().
+
+\mbox{\Hypertarget{namespacemodelparams_ac592a5921d58b2abb1fb48bb520fd87b}\label{namespacemodelparams_ac592a5921d58b2abb1fb48bb520fd87b}} 
+\index{modelparams@{modelparams}!lmin@{lmin}}
+\index{lmin@{lmin}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{lmin}{lmin}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::lmin = 2}
+
+
+
+Referenced by handles\+::camb\+\_\+setlensedscalcls(), handles\+::camb\+\_\+setlenspotentialcls(), handles\+::camb\+\_\+settensorcls(), handles\+::camb\+\_\+settotcls(), handles\+::camb\+\_\+setunlensedcls(), handles\+::camb\+\_\+setunlensedscalararray(), handles\+::camb\+\_\+setunlensedscalcls(), modeldata\+::checkloadedhighltemplate(), modeldata\+::init\+\_\+cls(), lvalues\+::initlval(), cambmain\+::interpolatecls(), modeldata\+::normalizeclsatl(), modeldata\+::output\+\_\+cl\+\_\+files(), modeldata\+::output\+\_\+lens\+\_\+pot\+\_\+files(), and modeldata\+::output\+\_\+veccl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodelparams_ab2930a201db30785a690dd81ab50f4d2}\label{namespacemodelparams_ab2930a201db30785a690dd81ab50f4d2}} 
+\index{modelparams@{modelparams}!lsampleboost@{lsampleboost}}
+\index{lsampleboost@{lsampleboost}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{lsampleboost}{lsampleboost}}
+{\footnotesize\ttfamily real(dl) modelparams\+::lsampleboost =1.\+\_\+dl}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), and lvalues\+::initlval().
+
+\mbox{\Hypertarget{namespacemodelparams_a7a677586a4085c9c337cac0d8a025dc6}\label{namespacemodelparams_a7a677586a4085c9c337cac0d8a025dc6}} 
+\index{modelparams@{modelparams}!max\+\_\+bessels\+\_\+etak@{max\+\_\+bessels\+\_\+etak}}
+\index{max\+\_\+bessels\+\_\+etak@{max\+\_\+bessels\+\_\+etak}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{max\+\_\+bessels\+\_\+etak}{max\_bessels\_etak}}
+{\footnotesize\ttfamily real(dl) modelparams\+::max\+\_\+bessels\+\_\+etak = 1000000$\ast$2}
+
+
+
+Referenced by cambmain\+::cmbmain(), spherbessels\+::generatebessels(), cambmain\+::getlimbertransfers(), spherbessels\+::initspherbessels(), and cambmain\+::setkvaluesforint().
+
+\mbox{\Hypertarget{namespacemodelparams_a0398b22cb85696d3eeaf76b7db97215c}\label{namespacemodelparams_a0398b22cb85696d3eeaf76b7db97215c}} 
+\index{modelparams@{modelparams}!max\+\_\+bessels\+\_\+l\+\_\+index@{max\+\_\+bessels\+\_\+l\+\_\+index}}
+\index{max\+\_\+bessels\+\_\+l\+\_\+index@{max\+\_\+bessels\+\_\+l\+\_\+index}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{max\+\_\+bessels\+\_\+l\+\_\+index}{max\_bessels\_l\_index}}
+{\footnotesize\ttfamily integer modelparams\+::max\+\_\+bessels\+\_\+l\+\_\+index = 1000000}
+
+
+
+Referenced by cambmain\+::cmbmain(), cambmain\+::doflatintegration(), spherbessels\+::generatebessels(), and cambmain\+::getlimbertransfers().
+
+\mbox{\Hypertarget{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}\label{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}} 
+\index{modelparams@{modelparams}!max\+\_\+nu@{max\+\_\+nu}}
+\index{max\+\_\+nu@{max\+\_\+nu}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{max\+\_\+nu}{max\_nu}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::max\+\_\+nu = 5}
+
+\mbox{\Hypertarget{namespacemodelparams_abe7b8d46cfb994afa85d77bbb5b6b5d5}\label{namespacemodelparams_abe7b8d46cfb994afa85d77bbb5b6b5d5}} 
+\index{modelparams@{modelparams}!max\+\_\+transfer\+\_\+redshifts@{max\+\_\+transfer\+\_\+redshifts}}
+\index{max\+\_\+transfer\+\_\+redshifts@{max\+\_\+transfer\+\_\+redshifts}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{max\+\_\+transfer\+\_\+redshifts}{max\_transfer\_redshifts}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::max\+\_\+transfer\+\_\+redshifts = 150}
+
+
+
+Referenced by camb\+::camb\+\_\+validateparams(), and calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams().
+
+\mbox{\Hypertarget{namespacemodelparams_a75f2e158664252c3e9cf88ad48570e99}\label{namespacemodelparams_a75f2e158664252c3e9cf88ad48570e99}} 
+\index{modelparams@{modelparams}!nnow@{nnow}}
+\index{nnow@{nnow}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nnow}{nnow}}
+{\footnotesize\ttfamily real(dl) modelparams\+::nnow}
+
+
+
+Referenced by cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespacemodelparams_a44142a84e66f3bd7d9feebe2abd22160}\label{namespacemodelparams_a44142a84e66f3bd7d9feebe2abd22160}} 
+\index{modelparams@{modelparams}!nonlinear\+\_\+both@{nonlinear\+\_\+both}}
+\index{nonlinear\+\_\+both@{nonlinear\+\_\+both}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+both}{nonlinear\_both}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nonlinear\+\_\+both =3}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), handles\+::cambdata\+\_\+gettransfers(), cambparams\+\_\+set(), and cambmain\+::cmbmain().
+
+\mbox{\Hypertarget{namespacemodelparams_a0f2c57977e2bc614225a5776fbcd1efa}\label{namespacemodelparams_a0f2c57977e2bc614225a5776fbcd1efa}} 
+\index{modelparams@{modelparams}!nonlinear\+\_\+lens@{nonlinear\+\_\+lens}}
+\index{nonlinear\+\_\+lens@{nonlinear\+\_\+lens}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+lens}{nonlinear\_lens}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nonlinear\+\_\+lens =2}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), handles\+::cambdata\+\_\+gettransfers(), cambparams\+\_\+set(), and cambmain\+::cmbmain().
+
+\mbox{\Hypertarget{namespacemodelparams_a2e14a764fa10ffaa74cc53471510c99b}\label{namespacemodelparams_a2e14a764fa10ffaa74cc53471510c99b}} 
+\index{modelparams@{modelparams}!nonlinear\+\_\+none@{nonlinear\+\_\+none}}
+\index{nonlinear\+\_\+none@{nonlinear\+\_\+none}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+none}{nonlinear\_none}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nonlinear\+\_\+none =0}
+
+
+
+Referenced by camb\+::camb\+\_\+setdefparams().
+
+\mbox{\Hypertarget{namespacemodelparams_a7534d8ae818c3b810559177c3108c43c}\label{namespacemodelparams_a7534d8ae818c3b810559177c3108c43c}} 
+\index{modelparams@{modelparams}!nonlinear\+\_\+pk@{nonlinear\+\_\+pk}}
+\index{nonlinear\+\_\+pk@{nonlinear\+\_\+pk}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+pk}{nonlinear\_pk}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nonlinear\+\_\+pk =1}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams().
+
+\mbox{\Hypertarget{namespacemodelparams_a616bd55af3f7197c74b52398020f9b85}\label{namespacemodelparams_a616bd55af3f7197c74b52398020f9b85}} 
+\index{modelparams@{modelparams}!norm\+\_\+pot@{norm\+\_\+pot}}
+\index{norm\+\_\+pot@{norm\+\_\+pot}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{norm\+\_\+pot}{norm\_pot}}
+{\footnotesize\ttfamily real(dl) modelparams\+::norm\+\_\+pot}
+
+
+
+Referenced by cambparams\+\_\+set(), and quint\+::vofphi().
+
+\mbox{\Hypertarget{namespacemodelparams_a3763c4095d154f01def46dfce33faffd}\label{namespacemodelparams_a3763c4095d154f01def46dfce33faffd}} 
+\index{modelparams@{modelparams}!nthermo\+\_\+derived@{nthermo\+\_\+derived}}
+\index{nthermo\+\_\+derived@{nthermo\+\_\+derived}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nthermo\+\_\+derived}{nthermo\_derived}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nthermo\+\_\+derived = 13}
+
+\mbox{\Hypertarget{namespacemodelparams_ac509ce908abffae5d206533cc7eddfe9}\label{namespacemodelparams_ac509ce908abffae5d206533cc7eddfe9}} 
+\index{modelparams@{modelparams}!nu\+\_\+approx@{nu\+\_\+approx}}
+\index{nu\+\_\+approx@{nu\+\_\+approx}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nu\+\_\+approx}{nu\_approx}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nu\+\_\+approx = 2}
+
+
+
+Referenced by cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespacemodelparams_a1da306d0a7758bf910362b6d62e6658f}\label{namespacemodelparams_a1da306d0a7758bf910362b6d62e6658f}} 
+\index{modelparams@{modelparams}!nu\+\_\+best@{nu\+\_\+best}}
+\index{nu\+\_\+best@{nu\+\_\+best}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nu\+\_\+best}{nu\_best}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nu\+\_\+best = 3}
+
+
+
+Referenced by camb\+::camb\+\_\+setdefparams(), dtauda(), and gaugeinterface\+::getnumeqns().
+
+\mbox{\Hypertarget{namespacemodelparams_a6886b2553f1b2657b012618d5377619d}\label{namespacemodelparams_a6886b2553f1b2657b012618d5377619d}} 
+\index{modelparams@{modelparams}!nu\+\_\+int@{nu\+\_\+int}}
+\index{nu\+\_\+int@{nu\+\_\+int}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nu\+\_\+int}{nu\_int}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nu\+\_\+int = 0}
+
+\mbox{\Hypertarget{namespacemodelparams_a4cbebdfc6776f516e062c03bc9c26d7f}\label{namespacemodelparams_a4cbebdfc6776f516e062c03bc9c26d7f}} 
+\index{modelparams@{modelparams}!nu\+\_\+masses@{nu\+\_\+masses}}
+\index{nu\+\_\+masses@{nu\+\_\+masses}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nu\+\_\+masses}{nu\_masses}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacemodelparams_a5e3667fcd2aae0fb15654c207fc6830e}{max\+\_\+nu}}) modelparams\+::nu\+\_\+masses}
+
+
+
+Referenced by cambparams\+\_\+set(), gaugeinterface\+::copyscalarvariablearray(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+init(), gaugeinterface\+::getnumeqns(), cambmain\+::gettaustart(), init\+\_\+massive\+\_\+nu(), gaugeinterface\+::initial(), gaugeinterface\+::massivenuvars(), gaugeinterface\+::massivenuvarsout(), massivenu\+::nu\+\_\+init(), gaugeinterface\+::nu\+\_\+integrate\+\_\+l012(), gaugeinterface\+::nu\+\_\+intvsq(), gaugeinterface\+::nu\+\_\+pi(), gaugeinterface\+::nu\+\_\+pinudot(), gaugeinterface\+::setupscalararrayindices(), and gaugeinterface\+::switchtomassivenuapprox().
+
+\mbox{\Hypertarget{namespacemodelparams_a31f4e37e9eb0841e803020950fe2ce52}\label{namespacemodelparams_a31f4e37e9eb0841e803020950fe2ce52}} 
+\index{modelparams@{modelparams}!nu\+\_\+trunc@{nu\+\_\+trunc}}
+\index{nu\+\_\+trunc@{nu\+\_\+trunc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{nu\+\_\+trunc}{nu\_trunc}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::nu\+\_\+trunc =1}
+
+
+
+Referenced by cambparams\+\_\+set(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), and gaugeinterface\+::getnumeqns().
+
+\mbox{\Hypertarget{namespacemodelparams_a9b9513ec2c0807b724060d4cc2b1f209}\label{namespacemodelparams_a9b9513ec2c0807b724060d4cc2b1f209}} 
+\index{modelparams@{modelparams}!num\+\_\+extra\+\_\+redshiftwindows@{num\+\_\+extra\+\_\+redshiftwindows}}
+\index{num\+\_\+extra\+\_\+redshiftwindows@{num\+\_\+extra\+\_\+redshiftwindows}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{num\+\_\+extra\+\_\+redshiftwindows}{num\_extra\_redshiftwindows}}
+{\footnotesize\ttfamily integer modelparams\+::num\+\_\+extra\+\_\+redshiftwindows = 0}
+
+
+
+Referenced by cambmain\+::getsourcemem().
+
+\mbox{\Hypertarget{namespacemodelparams_a6617a935c25965a12d1cfd1f3a2a3e12}\label{namespacemodelparams_a6617a935c25965a12d1cfd1f3a2a3e12}} 
+\index{modelparams@{modelparams}!num\+\_\+redshiftwindows@{num\+\_\+redshiftwindows}}
+\index{num\+\_\+redshiftwindows@{num\+\_\+redshiftwindows}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{num\+\_\+redshiftwindows}{num\_redshiftwindows}}
+{\footnotesize\ttfamily integer modelparams\+::num\+\_\+redshiftwindows = 0}
+
+
+
+Referenced by cambmain\+::calclimberscalcls(), cambmain\+::calcscalcls(), cambmain\+::cmbmain(), cambmain\+::getlimbertransfers(), cambmain\+::getsourcemem(), modeldata\+::init\+\_\+cls(), modeldata\+::init\+\_\+limber(), and cambmain\+::interpolatecls().
+
+\mbox{\Hypertarget{namespacemodelparams_a84817ace19c07faa219c6c62dbcabb87}\label{namespacemodelparams_a84817ace19c07faa219c6c62dbcabb87}} 
+\index{modelparams@{modelparams}!omegadgc@{omegadgc}}
+\index{omegadgc@{omegadgc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{omegadgc}{omegadgc}}
+{\footnotesize\ttfamily real(dl) modelparams\+::omegadgc}
+
+
+
+Referenced by cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespacemodelparams_a1945ea0e00217f55d85995eeae03eb18}\label{namespacemodelparams_a1945ea0e00217f55d85995eeae03eb18}} 
+\index{modelparams@{modelparams}!omegakflat@{omegakflat}}
+\index{omegakflat@{omegakflat}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{omegakflat}{omegakflat}}
+{\footnotesize\ttfamily real(dl), parameter modelparams\+::omegakflat = 5e-\/7\+\_\+dl}
+
+
+
+Referenced by cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespacemodelparams_a08fb4afbafc2828da55e9684f24d8d6f}\label{namespacemodelparams_a08fb4afbafc2828da55e9684f24d8d6f}} 
+\index{modelparams@{modelparams}!outnone@{outnone}}
+\index{outnone@{outnone}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{outnone}{outnone}}
+{\footnotesize\ttfamily integer, parameter modelparams\+::outnone =1}
+
+
+
+Referenced by camb\+::camb\+\_\+setdefparams(), and calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams().
+
+\mbox{\Hypertarget{namespacemodelparams_aa59993fb52b4f0010f0587e10f27b792}\label{namespacemodelparams_aa59993fb52b4f0010f0587e10f27b792}} 
+\index{modelparams@{modelparams}!output\+\_\+file\+\_\+headers@{output\+\_\+file\+\_\+headers}}
+\index{output\+\_\+file\+\_\+headers@{output\+\_\+file\+\_\+headers}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{output\+\_\+file\+\_\+headers}{output\_file\_headers}}
+{\footnotesize\ttfamily logical modelparams\+::output\+\_\+file\+\_\+headers = .true.}
+
+
+
+Referenced by modeldata\+::open\+\_\+file\+\_\+header().
+
+\mbox{\Hypertarget{namespacemodelparams_abb77cb9ffb6e4c47f4bbb5817f675840}\label{namespacemodelparams_abb77cb9ffb6e4c47f4bbb5817f675840}} 
+\index{modelparams@{modelparams}!outputdenominator@{outputdenominator}}
+\index{outputdenominator@{outputdenominator}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{outputdenominator}{outputdenominator}}
+{\footnotesize\ttfamily real(dl), parameter modelparams\+::outputdenominator =twopi}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calclimberscalcls(), cambmain\+::calcscalcls(), cambmain\+::calcscalcls2(), cambmain\+::calctenscls(), cambmain\+::calcveccls(), lensing\+::corrfuncflatsky(), and lensing\+::corrfuncfullskyimpl().
+
+\mbox{\Hypertarget{namespacemodelparams_adc3b09efaf8a6d37303ccd19e27ae6e3}\label{namespacemodelparams_adc3b09efaf8a6d37303ccd19e27ae6e3}} 
+\index{modelparams@{modelparams}!scale@{scale}}
+\index{scale@{scale}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily real(dl) modelparams\+::scale}
+
+
+
+Referenced by lensing\+::badharmonic(), cambparams\+\_\+set(), cambmain\+::cmbmain(), cambmain\+::dorangeint(), cambmain\+::dorangeinttensor(), and lvalues\+::initlval().
+
+\mbox{\Hypertarget{namespacemodelparams_a1385cd79ec8a583c0e723a87e6dd5a78}\label{namespacemodelparams_a1385cd79ec8a583c0e723a87e6dd5a78}} 
+\index{modelparams@{modelparams}!spl\+\_\+large@{spl\+\_\+large}}
+\index{spl\+\_\+large@{spl\+\_\+large}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{spl\+\_\+large}{spl\_large}}
+{\footnotesize\ttfamily real(dl), parameter modelparams\+::spl\+\_\+large =1.e40\+\_\+dl}
+
+
+
+Referenced by spherbessels\+::generatebessels(), lensing\+::getbessels(), cambmain\+::initsourceinterpolation(), cambmain\+::interpolatesources(), and cambmain\+::makenonlinearsources().
+
+\mbox{\Hypertarget{namespacemodelparams_a9d0fd2e2f02494b8ed27d6c924d7c494}\label{namespacemodelparams_a9d0fd2e2f02494b8ed27d6c924d7c494}} 
+\index{modelparams@{modelparams}!tau\+\_\+maxvis@{tau\+\_\+maxvis}}
+\index{tau\+\_\+maxvis@{tau\+\_\+maxvis}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{tau\+\_\+maxvis}{tau\_maxvis}}
+{\footnotesize\ttfamily real(dl) modelparams\+::tau\+\_\+maxvis}
+
+
+
+Referenced by dtauda(), cambmain\+::getlimbertransfers(), thermodata\+::inithermo(), cambmain\+::initvars(), gaugeinterface\+::output(), and gaugeinterface\+::setuptensorarrayindices().
+
+\mbox{\Hypertarget{namespacemodelparams_a914411aec3209257f74b174bae6b2a10}\label{namespacemodelparams_a914411aec3209257f74b174bae6b2a10}} 
+\index{modelparams@{modelparams}!taurend@{taurend}}
+\index{taurend@{taurend}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{taurend}{taurend}}
+{\footnotesize\ttfamily real(dl) modelparams\+::taurend}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), and thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_aa2deb415a6c7c9f406093a8c6853d01c}\label{namespacemodelparams_aa2deb415a6c7c9f406093a8c6853d01c}} 
+\index{modelparams@{modelparams}!taurst@{taurst}}
+\index{taurst@{taurst}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{taurst}{taurst}}
+{\footnotesize\ttfamily real(dl) modelparams\+::taurst}
+
+
+
+Referenced by thermodata\+::inithermo(), cambmain\+::inittransfer(), and cambmain\+::setkvaluesforsources().
+
+\mbox{\Hypertarget{namespacemodelparams_a81091ac7021dd731decc138dc9886329}\label{namespacemodelparams_a81091ac7021dd731decc138dc9886329}} 
+\index{modelparams@{modelparams}!thermoderivedparams@{thermoderivedparams}}
+\index{thermoderivedparams@{thermoderivedparams}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{thermoderivedparams}{thermoderivedparams}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacemodelparams_a3763c4095d154f01def46dfce33faffd}{nthermo\+\_\+derived}}) modelparams\+::thermoderivedparams}
+
+
+
+Referenced by thermodata\+::inithermo().
+
+\mbox{\Hypertarget{namespacemodelparams_a33c1b20cf097d69a5c7c3dfda3dab4ab}\label{namespacemodelparams_a33c1b20cf097d69a5c7c3dfda3dab4ab}} 
+\index{modelparams@{modelparams}!threadnum@{threadnum}}
+\index{threadnum@{threadnum}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{threadnum}{threadnum}}
+{\footnotesize\ttfamily integer modelparams\+::threadnum = 0}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance(), and calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams().
+
+\mbox{\Hypertarget{namespacemodelparams_ab62c122a08bce8a2c161066a3e0f83cd}\label{namespacemodelparams_ab62c122a08bce8a2c161066a3e0f83cd}} 
+\index{modelparams@{modelparams}!timesteps@{timesteps}}
+\index{timesteps@{timesteps}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{timesteps}{timesteps}}
+{\footnotesize\ttfamily type(regions) modelparams\+::timesteps}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambmain\+::calctensorsources(), cambmain\+::calcvectorsources(), cambmain\+::doflatintegration(), cambmain\+::dorangeint(), cambmain\+::dorangeinttensor(), cambmain\+::getlimbertransfers(), cambmain\+::getsourcemem(), thermodata\+::inithermo(), cambmain\+::initsourceinterpolation(), cambmain\+::integratesourcesbessels(), cambmain\+::integrationvars\+\_\+init(), cambmain\+::interpolatesources(), cambmain\+::makenonlinearsources(), and cambmain\+::sourcetotransfers().
+
+\mbox{\Hypertarget{namespacemodelparams_aa0d6cc3ee9273208296f9f9ee8ce821f}\label{namespacemodelparams_aa0d6cc3ee9273208296f9f9ee8ce821f}} 
+\index{modelparams@{modelparams}!tol@{tol}}
+\index{tol@{tol}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{tol}{tol}}
+{\footnotesize\ttfamily real(dl), parameter modelparams\+::tol =1.\+0d-\/4}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambmain\+::calctensorsources(), cambmain\+::calcvectorsources(), deltatime(), gaugeinterface\+::deltatimemaxed(), dtauda(), handles\+::getoutputevolutionfork(), and cambmain\+::gettransfer().
+
+\mbox{\Hypertarget{namespacemodelparams_a11a5af696bd0ff15b97767839562048e}\label{namespacemodelparams_a11a5af696bd0ff15b97767839562048e}} 
+\index{modelparams@{modelparams}!use\+\_\+spline\+\_\+template@{use\+\_\+spline\+\_\+template}}
+\index{use\+\_\+spline\+\_\+template@{use\+\_\+spline\+\_\+template}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{use\+\_\+spline\+\_\+template}{use\_spline\_template}}
+{\footnotesize\ttfamily logical modelparams\+::use\+\_\+spline\+\_\+template = .true.}
+
+
+
+Referenced by lvalues\+::initlval(), and lvalues\+::interpolateclarrtemplated().
+
+\mbox{\Hypertarget{namespacemodelparams_ae4691876bb5eed2cdd64ae8eca39dc32}\label{namespacemodelparams_ae4691876bb5eed2cdd64ae8eca39dc32}} 
+\index{modelparams@{modelparams}!version@{version}}
+\index{version@{version}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter modelparams\+::version = \textquotesingle{}Nov16\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemodelparams_ad94fb2bc6179da9e6382c136f6c94bfe}\label{namespacemodelparams_ad94fb2bc6179da9e6382c136f6c94bfe}} 
+\index{modelparams@{modelparams}!wdgc@{wdgc}}
+\index{wdgc@{wdgc}!modelparams@{modelparams}}
+\subsubsection{\texorpdfstring{wdgc}{wdgc}}
+{\footnotesize\ttfamily real(dl) modelparams\+::wdgc}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambparams\+\_\+set(), and dtauda().
+

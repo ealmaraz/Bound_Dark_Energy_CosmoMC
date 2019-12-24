@@ -1,0 +1,131 @@
+\hypertarget{structgeneralsetup_1_1tsetup}{}\section{generalsetup\+:\+:tsetup Type Reference}
+\label{structgeneralsetup_1_1tsetup}\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a2649e13ea2dd7fddb28ccbf243952795}{init}} =$>$ T\+Setup\+\_\+\+Init
+\item 
+procedure \mbox{\hyperlink{structgeneralsetup_1_1tsetup_ab601a2418f474b3e93d3752bd595f3ba}{readparams}} =$>$ T\+Setup\+\_\+\+Read\+Params
+\item 
+procedure \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a8763a98a993f13722d651acd8bfb1c3c}{doneinitialize}} =$>$ T\+Setup\+\_\+\+Done\+Initialize
+\item 
+procedure \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a7d48edee45d81de97ab375054a869fa0}{getminimizer}} =$>$ T\+Setup\+\_\+\+Get\+Minimizer
+\item 
+procedure \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a4e0a414600bd6e049424184ec39cc2fa}{dosampling}} =$>$ T\+Setup\+\_\+\+Do\+Sampling
+\item 
+procedure \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a1b2f852d7122a643819a08fee3328454}{dotests}} =$>$ T\+Setup\+\_\+\+Do\+Tests
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{structgeneralsetup_1_1tsetup_ad3d58a4fce868cd773ea454f5afb35f9}{action}} = action\+\_\+\+M\+C\+MC
+\item 
+integer \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a725c9db92f823aa7352f2cc7a214e731}{sampling\+\_\+method}} = sampling\+\_\+metropolis
+\item 
+integer \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a6364311b2a6a5654e3d0746ff9de1596}{samples}}
+\item 
+class(tgeneralconfig), allocatable \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a9597fbc6c2c1fcec8abfa82f7a3300ff}{config}}
+\item 
+class(tlikecalculator), allocatable \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a1d284ac97bdecfedabea0fd1e9dd96a3}{likecalculator}}
+\item 
+class(tsamplecollector), allocatable \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a1e63c0aaf6f63e2574d0f363295cf185}{samplecollector}}
+\item 
+class(tsamplingalgorithm), allocatable \mbox{\hyperlink{structgeneralsetup_1_1tsetup_a646d2a8444a296a5cc35c1bce832b3ba}{samplingalgorithm}}
+\item 
+class(timportancesampler), allocatable \mbox{\hyperlink{structgeneralsetup_1_1tsetup_acb83c5be990d6f2c5154dbbd1f87d50c}{importancesampler}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a8763a98a993f13722d651acd8bfb1c3c}\label{structgeneralsetup_1_1tsetup_a8763a98a993f13722d651acd8bfb1c3c}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!doneinitialize@{doneinitialize}}
+\index{doneinitialize@{doneinitialize}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{doneinitialize()}{doneinitialize()}}
+{\footnotesize\ttfamily procedure generalsetup\+::tsetup\+::doneinitialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a4e0a414600bd6e049424184ec39cc2fa}\label{structgeneralsetup_1_1tsetup_a4e0a414600bd6e049424184ec39cc2fa}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!dosampling@{dosampling}}
+\index{dosampling@{dosampling}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{dosampling()}{dosampling()}}
+{\footnotesize\ttfamily procedure generalsetup\+::tsetup\+::dosampling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a1b2f852d7122a643819a08fee3328454}\label{structgeneralsetup_1_1tsetup_a1b2f852d7122a643819a08fee3328454}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!dotests@{dotests}}
+\index{dotests@{dotests}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{dotests()}{dotests()}}
+{\footnotesize\ttfamily procedure generalsetup\+::tsetup\+::dotests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a7d48edee45d81de97ab375054a869fa0}\label{structgeneralsetup_1_1tsetup_a7d48edee45d81de97ab375054a869fa0}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!getminimizer@{getminimizer}}
+\index{getminimizer@{getminimizer}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{getminimizer()}{getminimizer()}}
+{\footnotesize\ttfamily procedure generalsetup\+::tsetup\+::getminimizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a2649e13ea2dd7fddb28ccbf243952795}\label{structgeneralsetup_1_1tsetup_a2649e13ea2dd7fddb28ccbf243952795}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!init@{init}}
+\index{init@{init}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily procedure generalsetup\+::tsetup\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_ab601a2418f474b3e93d3752bd595f3ba}\label{structgeneralsetup_1_1tsetup_ab601a2418f474b3e93d3752bd595f3ba}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!readparams@{readparams}}
+\index{readparams@{readparams}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{readparams()}{readparams()}}
+{\footnotesize\ttfamily procedure generalsetup\+::tsetup\+::readparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_ad3d58a4fce868cd773ea454f5afb35f9}\label{structgeneralsetup_1_1tsetup_ad3d58a4fce868cd773ea454f5afb35f9}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!action@{action}}
+\index{action@{action}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily integer generalsetup\+::tsetup\+::action = action\+\_\+\+M\+C\+MC}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a9597fbc6c2c1fcec8abfa82f7a3300ff}\label{structgeneralsetup_1_1tsetup_a9597fbc6c2c1fcec8abfa82f7a3300ff}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!config@{config}}
+\index{config@{config}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily class(tgeneralconfig), allocatable generalsetup\+::tsetup\+::config}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_acb83c5be990d6f2c5154dbbd1f87d50c}\label{structgeneralsetup_1_1tsetup_acb83c5be990d6f2c5154dbbd1f87d50c}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!importancesampler@{importancesampler}}
+\index{importancesampler@{importancesampler}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{importancesampler}{importancesampler}}
+{\footnotesize\ttfamily class(timportancesampler), allocatable generalsetup\+::tsetup\+::importancesampler}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a1d284ac97bdecfedabea0fd1e9dd96a3}\label{structgeneralsetup_1_1tsetup_a1d284ac97bdecfedabea0fd1e9dd96a3}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!likecalculator@{likecalculator}}
+\index{likecalculator@{likecalculator}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{likecalculator}{likecalculator}}
+{\footnotesize\ttfamily class(tlikecalculator), allocatable generalsetup\+::tsetup\+::likecalculator}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a1e63c0aaf6f63e2574d0f363295cf185}\label{structgeneralsetup_1_1tsetup_a1e63c0aaf6f63e2574d0f363295cf185}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!samplecollector@{samplecollector}}
+\index{samplecollector@{samplecollector}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{samplecollector}{samplecollector}}
+{\footnotesize\ttfamily class(tsamplecollector), allocatable generalsetup\+::tsetup\+::samplecollector}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a6364311b2a6a5654e3d0746ff9de1596}\label{structgeneralsetup_1_1tsetup_a6364311b2a6a5654e3d0746ff9de1596}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!samples@{samples}}
+\index{samples@{samples}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{samples}{samples}}
+{\footnotesize\ttfamily integer generalsetup\+::tsetup\+::samples}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a725c9db92f823aa7352f2cc7a214e731}\label{structgeneralsetup_1_1tsetup_a725c9db92f823aa7352f2cc7a214e731}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!sampling\+\_\+method@{sampling\+\_\+method}}
+\index{sampling\+\_\+method@{sampling\+\_\+method}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{sampling\+\_\+method}{sampling\_method}}
+{\footnotesize\ttfamily integer generalsetup\+::tsetup\+::sampling\+\_\+method = sampling\+\_\+metropolis}
+
+\mbox{\Hypertarget{structgeneralsetup_1_1tsetup_a646d2a8444a296a5cc35c1bce832b3ba}\label{structgeneralsetup_1_1tsetup_a646d2a8444a296a5cc35c1bce832b3ba}} 
+\index{generalsetup\+::tsetup@{generalsetup\+::tsetup}!samplingalgorithm@{samplingalgorithm}}
+\index{samplingalgorithm@{samplingalgorithm}!generalsetup\+::tsetup@{generalsetup\+::tsetup}}
+\subsubsection{\texorpdfstring{samplingalgorithm}{samplingalgorithm}}
+{\footnotesize\ttfamily class(tsamplingalgorithm), allocatable generalsetup\+::tsetup\+::samplingalgorithm}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{GeneralSetup_8f90}{General\+Setup.\+f90}}\end{DoxyCompactItemize}

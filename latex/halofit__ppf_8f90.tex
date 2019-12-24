@@ -1,0 +1,245 @@
+\hypertarget{halofit__ppf_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/halofit\+\_\+ppf.f90 File Reference}
+\label{halofit__ppf_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/halofit\+\_\+ppf.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/halofit\+\_\+ppf.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{nonlinear\+::hm\+\_\+cosmology}}
+\item 
+type \mbox{\hyperlink{structnonlinear_1_1hm__tables}{nonlinear\+::hm\+\_\+tables}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacenonlinear}{nonlinear}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacenonlinear_ada72232da7963dc507bfa2f4d346e7ec}{nonlinear\+::nonlinear\+\_\+readparams}} (Ini)
+\item 
+subroutine, public \mbox{\hyperlink{namespacenonlinear_a0ed6b8f43af3b8a2cb369df5c247ca1f}{nonlinear\+::nonlinear\+\_\+getnonlinratios}} (C\+A\+M\+B\+\_\+\+Pk)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a76e8738685b7ce5757290a6441d5e850}{nonlinear\+::halofit}} (rk, rn, rncur, rknl, plin, pnl, pq, ph)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_acf30963fec3b82503de7d079f4091461}{nonlinear\+::wint}} (C\+A\+M\+B\+\_\+\+Pk, itf, r, sig, d1, d2)
+\item 
+real(dl) function \mbox{\hyperlink{namespacenonlinear_a114a4d8047f3679297cc7b1c216d6517}{nonlinear\+::omega\+\_\+m}} (aa, om\+\_\+m0, om\+\_\+v0, wval, waval)
+\item 
+real(dl) function \mbox{\hyperlink{namespacenonlinear_ab10a9f1bd96361d1619be7e609ce6cb5}{nonlinear\+::omega\+\_\+v}} (aa, om\+\_\+m0, om\+\_\+v0, wval, waval)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_acf9ab8f72085502eea51c43dcf5ad67e}{nonlinear\+::hmcode}} (C\+A\+M\+B\+\_\+\+Pk)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a73fccef372213a59eed00701677d1cdf}{nonlinear\+::delta\+\_\+v}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a927f840ecd0f2086eefba9d7220e3279}{nonlinear\+::delta\+\_\+c}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a96b424e6fa8e55242e57bbd2e607a70d}{nonlinear\+::eta}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a0e7bfac54def3a760a789b01501ee54b}{nonlinear\+::kstar}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a8a288f085ec2814b9d936eaff5987c9a}{nonlinear\+::as}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_aea62820c73faaebffe8f3a0dce00a711}{nonlinear\+::fdamp}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a31039036014feacf6b5001228cbecf2d}{nonlinear\+::alpha}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a9fdd5c2093c44b1f49fdaafaa3e568da}{nonlinear\+::r\+\_\+nl}} (lut)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a8b11cb79c822afc15ee5506a6b79e786}{nonlinear\+::halomod}} (k, z, p1h, p2h, pfull, plin, lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a6ac027990c6d758a7c5420da7001dfc7}{nonlinear\+::fill\+\_\+table}} (min, max, arr, n)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_af44943bd607e88cf910383917ce03826}{nonlinear\+::fill\+\_\+plintab}} (iz, cosm, C\+A\+M\+B\+\_\+\+PK)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a71f404d2d1de4ad126d2e43eea191621}{nonlinear\+::tcb\+\_\+tcbnu\+\_\+ratio}} (k, z, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a44e107b52cde4df598539a1ed12f252a}{nonlinear\+::assign\+\_\+hm\+\_\+cosmology}} (cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a819e3b1efc1572f5e75eb5f2b415b4b4}{nonlinear\+::initialise\+\_\+hm\+\_\+cosmology}} (iz, cosm, C\+A\+M\+B\+\_\+\+PK)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ac9ae18bd4ed466f0f8287e5c4757bec9}{nonlinear\+::allocate\+\_\+lut}} (lut)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a9a42cb3acfe84c2c6ea9f085b357bdd1}{nonlinear\+::deallocate\+\_\+lut}} (lut)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_af025b4b6e2a711cea66352e50ea6de97}{nonlinear\+::halomod\+\_\+init}} (z, lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_abd2adda1e3c0e77617e1142893c4aa71}{nonlinear\+::write\+\_\+parameters}} (z, lut, cosm)
+\item 
+pure real function \mbox{\hyperlink{namespacenonlinear_af71d6d6d99de458db1a669744d7b1088}{nonlinear\+::radius\+\_\+m}} (m, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a94503cd59bd5a206379a0c13afe89ffc}{nonlinear\+::neff}} (lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a9559196d503174393cf74ce857984216}{nonlinear\+::conc\+\_\+bull}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a2ccd15402588e67b26abc93ccf910de6}{nonlinear\+::grow\+\_\+int}} (b, acc, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a53b6da6e807b30b0078e77b9900c33b6}{nonlinear\+::zcoll\+\_\+bull}} (z, cosm, lut)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a164bc94a32486b7a39cab9d1d3ddbafb}{nonlinear\+::mass\+\_\+r}} (r, cosm)
+\item 
+pure real function \mbox{\hyperlink{namespacenonlinear_a8d293985858b08d5e5c5bbdcdc9d4280}{nonlinear\+::cosmic\+\_\+density}} (cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad7792185b1262569016446c4cba41606}{nonlinear\+::find\+\_\+pk}} (k, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad2f542da0cba1686588e83dec8ac7617}{nonlinear\+::p\+\_\+lin}} (k, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_adbb028d781be22805e7c1468b4e795a8}{nonlinear\+::p\+\_\+2h}} (k, z, plin, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a6734815086cf4dca34d8677f1d763e3f}{nonlinear\+::p\+\_\+1h}} (k, z, lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a0ec694303c1335ceb97e09d20f0ceb94}{nonlinear\+::fill\+\_\+sigtab}} (cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a66f93056c25bc48a5cfb206e596b47ad}{nonlinear\+::sigma\+\_\+v}} (R, z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a5ecb478e809d6e8e185d11dea143cd69}{nonlinear\+::sigma}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a2b1a2fe15822f8bfcf88ca9de9060e85}{nonlinear\+::sigmac}} (r, z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a96a394ea7d173aec659a73ff09f548c6}{nonlinear\+::wk\+\_\+tophat}} (x)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ab7465123b12f301a0d4d5a80c8b35ab5}{nonlinear\+::inttab}} (x, y, n, iorder)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a752ac5f748fd7d780ac59ee3a8b4d267}{nonlinear\+::sigma\+\_\+integrand}} (t, R, f, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a2a0c300b39b9de3d6b00be6369b59944}{nonlinear\+::f\+\_\+rapid}} (r)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad4ec869211d722d92d942360f0619e6e}{nonlinear\+::sigint0}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ac0dc62ceea1e6ba2e1b7a08a420d934e}{nonlinear\+::sigint1}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a7f3d1c8e1e8b16f59cf8a1d0b6cd5499}{nonlinear\+::sigint2}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a35d90b214ebbc4ed47ee2a0b00533081}{nonlinear\+::win}} (k, rv, c)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad0e2241407de1974edb07a5990f12ba3}{nonlinear\+::winnfw}} (k, rv, c)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_acce5a3564ba00c26a8a5674ab63d5b73}{nonlinear\+::mass}} (c)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a236c113538d97686a8f8e286b29bc073}{nonlinear\+::gnu}} (nu)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a5eea788fe3f505d256438cee66af3240}{nonlinear\+::gst}} (nu)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a82f340c9a9b18e3f45b2ddbe518cebba}{nonlinear\+::hubble2}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a316db4addf8f1f544ab3c08ba97fbeb9}{nonlinear\+::x\+\_\+de}} (a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_acb781fcdfe31fdfcd54337c5fc827fb2}{nonlinear\+::w\+\_\+de\+\_\+hm}} (a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ac515b61587eefa54d1ebc904d0ef78b6}{nonlinear\+::omega\+\_\+m\+\_\+hm}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a1870caf0d38a1c6617ca3ef8de2f6947}{nonlinear\+::grow}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ae44a5c4f7412d42923e10f9a241d2e74}{nonlinear\+::dispint}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a6171546fb42a0d5c085c3ee5c8662e0b}{nonlinear\+::si}} (x)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a723581002925fb14e73f4d80ce6ee6e5}{nonlinear\+::ci}} (x)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_aaa7e906c253a54ffb73bab9e5dfd1397}{nonlinear\+::derivative\+\_\+table}} (x, xin, yin, n, iorder, imeth)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a553c7b86e3fd7c044f3fcef5b77c0a3f}{nonlinear\+::find}} (x, xin, yin, n, iorder, imeth)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a9982a6cac80109ad36dd796e77f372de}{nonlinear\+::table\+\_\+integer}} (x, xtab, n, imeth)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a623980d65535bc78bbcf5eb8f701ac42}{nonlinear\+::linear\+\_\+table\+\_\+integer}} (x, xtab, n)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a210b83a28f6523e35c1b2314bd38ba10}{nonlinear\+::search\+\_\+int}} (x, xtab, n)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a0241839029c1aa4d429fb9a516577921}{nonlinear\+::int\+\_\+split}} (x, xtab, n)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a5754454991f9dfb61c4251267c2d175d}{nonlinear\+::fit\+\_\+line}} (a1, a0, x1, y1, x2, y2)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ade72d40a60522b6b609687fbe7e9ddbb}{nonlinear\+::fit\+\_\+quadratic}} (a2, a1, a0, x1, y1, x2, y2, x3, y3)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ad34b8f5e3284fe90bf1e2d39ad027cc1}{nonlinear\+::fit\+\_\+cubic}} (a, b, c, d, x1, y1, x2, y2, x3, y3, x4, y4)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ac344cab10a5226c8ef0147ff8f96767a}{nonlinear\+::reverse}} (arry, n)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_af9e22f2a04a3c5dc0f45fcd96c9b28cb}{nonlinear\+::fill\+\_\+growtab}} (cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a26b787bf515ef27795b9dbbed39b2e34}{nonlinear\+::ode\+\_\+growth}} (x, v, t, kk, ti, tf, xi, vi, acc, imeth, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_aa6814235c0bd98fe3c05073b03b16fac}{nonlinear\+::fv}} (d, v, k, a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a7f8c8180d41c0771e383f7edaa516803}{nonlinear\+::fd}} (d, v, k, a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ab5e5d4cd8639004a33671b83480474cd}{nonlinear\+::ah}} (z, cosm)
+\item 
+subroutine \mbox{\hyperlink{halofit__ppf_8f90_aa86a98d6430a2409729002ab053ce60c}{nonlinear\+\_\+getratios}} (C\+A\+M\+B\+\_\+\+Pk)
+\item 
+subroutine \mbox{\hyperlink{halofit__ppf_8f90_a2fbb625d05e4aaceec0f8f5ca560af10}{nonlinear\+\_\+getratios\+\_\+all}} (C\+A\+M\+B\+\_\+\+Pk)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real, parameter, public \mbox{\hyperlink{namespacenonlinear_a432119e2fd5a90bc8447a4f87c530660}{nonlinear\+::min\+\_\+kh\+\_\+nonlinear}} = 0.\+005
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_aabc1c1c2e5484d59aa19897c2312d66e}{nonlinear\+::om\+\_\+m}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a5fffe9648c0924743701abc9674d3472}{nonlinear\+::om\+\_\+v}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a41cbc8f2a7d3a4a7133a330e7a96f32f}{nonlinear\+::fnu}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a95578ad235632d8fd2cc109867cdf329}{nonlinear\+::omm0}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a340583ce0b342fc665e8dac4abd41d30}{nonlinear\+::acur}}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a7df6fbf986bfffb1410f611a9d9da8d8}{nonlinear\+::halofit\+\_\+original}} = 1
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a60a8667a6b76aac6cb917e86e5e813bf}{nonlinear\+::halofit\+\_\+bird}} =2
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_af6d944f360abde474ac917e61cc9a10a}{nonlinear\+::halofit\+\_\+peacock}} =3
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_aac3355efc27ec1212dfc7d494c94b8bd}{nonlinear\+::halofit\+\_\+takahashi}} =4
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a321ebd41ef62b8c5f49c902695c97100}{nonlinear\+::halofit\+\_\+mead}} =5
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_ac93879b4e408404c04347ff8ba8e170c}{nonlinear\+::halofit\+\_\+halomodel}} =6
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a17d0a06b4737dd11deb01679dd462d0d}{nonlinear\+::halofit\+\_\+default}} = halofit\+\_\+takahashi
+\item 
+integer, public \mbox{\hyperlink{namespacenonlinear_a1f7f92360f1ca05ad5bc378c6f48c4e2}{nonlinear\+::halofit\+\_\+version}} = halofit\+\_\+default
+\item 
+integer \mbox{\hyperlink{namespacenonlinear_a4a5afbc21c01819b53e73cca3ae9c9db}{nonlinear\+::imead}}
+\item 
+integer \mbox{\hyperlink{namespacenonlinear_aaffe0db71a291d9ca3d9e8315757f6c0}{nonlinear\+::ihm}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{halofit__ppf_8f90_aa86a98d6430a2409729002ab053ce60c}\label{halofit__ppf_8f90_aa86a98d6430a2409729002ab053ce60c}} 
+\index{halofit\+\_\+ppf.\+f90@{halofit\+\_\+ppf.\+f90}!nonlinear\+\_\+getratios@{nonlinear\+\_\+getratios}}
+\index{nonlinear\+\_\+getratios@{nonlinear\+\_\+getratios}!halofit\+\_\+ppf.\+f90@{halofit\+\_\+ppf.\+f90}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+getratios()}{nonlinear\_getratios()}}
+{\footnotesize\ttfamily subroutine nonlinear\+\_\+getratios (\begin{DoxyParamCaption}\item[{type(matterpowerdata)}]{C\+A\+M\+B\+\_\+\+Pk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References nonlinear\+::nonlinear\+\_\+getnonlinratios().
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnlandratios(), transfer\+::matterpowerdata\+\_\+makenonlinear(), lrggettheory\+::transfer\+\_\+getmatterpowerandnw(), transfer\+::transfer\+\_\+getmatterpowerd(), and transfer\+::transfer\+\_\+getunsplinednonlinearpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{halofit__ppf_8f90_aa86a98d6430a2409729002ab053ce60c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{halofit__ppf_8f90_aa86a98d6430a2409729002ab053ce60c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{halofit__ppf_8f90_a2fbb625d05e4aaceec0f8f5ca560af10}\label{halofit__ppf_8f90_a2fbb625d05e4aaceec0f8f5ca560af10}} 
+\index{halofit\+\_\+ppf.\+f90@{halofit\+\_\+ppf.\+f90}!nonlinear\+\_\+getratios\+\_\+all@{nonlinear\+\_\+getratios\+\_\+all}}
+\index{nonlinear\+\_\+getratios\+\_\+all@{nonlinear\+\_\+getratios\+\_\+all}!halofit\+\_\+ppf.\+f90@{halofit\+\_\+ppf.\+f90}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+getratios\+\_\+all()}{nonlinear\_getratios\_all()}}
+{\footnotesize\ttfamily subroutine nonlinear\+\_\+getratios\+\_\+all (\begin{DoxyParamCaption}\item[{type(matterpowerdata)}]{C\+A\+M\+B\+\_\+\+Pk }\end{DoxyParamCaption})}
+

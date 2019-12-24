@@ -1,0 +1,7 @@
+<map id="stringutils::doubletostr" name="stringutils::doubletostr">
+<area shape="rect" id="node2" href="$namespacestringutils.html#a9ee073baf898c055562e20577ad27013" title="stringutils::singletostr" alt="" coords="205,31,352,57"/>
+<area shape="rect" id="node3" href="$namespacestringutils.html#af68508e2bb36d836c0f94f476f728cb3" title="stringutils::numcat" alt="" coords="401,31,530,57"/>
+<area shape="rect" id="node4" href="$namespacestringutils.html#a19e683b9de4f769c4fe0afc48a7b45d0" title="stringutils::concat" alt="" coords="579,31,704,57"/>
+<area shape="rect" id="node5" href="$namespacestringutils.html#a921ef80710acba9d901b45479ddae08d" title="stringutils::stringappend" alt="" coords="752,5,912,32"/>
+<area shape="rect" id="node6" href="$namespacestringutils.html#a8308d148fc2d1fd7e23aea926bfd837f" title="stringutils::inttostr" alt="" coords="961,31,1087,57"/>
+</map>

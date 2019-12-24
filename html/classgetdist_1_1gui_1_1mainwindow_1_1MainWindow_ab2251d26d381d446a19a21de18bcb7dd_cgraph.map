@@ -1,0 +1,14 @@
+<map id="getdist.gui.mainwindow.MainWindow.plotSettingsChanged" name="getdist.gui.mainwindow.MainWindow.plotSettingsChanged">
+<area shape="rect" id="node2" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aa4d50e481a279bfc236264d54e794696" title="getdist.gui.mainwindow.Main\lWindow.errorReport" alt="" coords="489,5,679,46"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ae498c95f48e909b62f663f16d824e941" title="getdist.gui.mainwindow.Main\lWindow.plotData" alt="" coords="249,187,439,229"/>
+<area shape="rect" id="node3" href="$namespacestringutils.html#a29f32cf04e0c44fc8ee8dfa9819b915d" title="stringutils::join" alt="" coords="771,41,877,68"/>
+<area shape="rect" id="node4" href="$namespacestringutils.html#ac5e67eb0a4de77625ac1447804e1f934" title="stringutils::stringtrimmed" alt="" coords="968,41,1133,68"/>
+<area shape="rect" id="node5" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="1181,41,1331,68"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#abdbfb43927d31864cd840b416d281df1" title="getdist.gui.mainwindow.Main\lWindow.checkedRootNames" alt="" coords="488,122,680,163"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a149bcf1e24828e673910fe008a7e458d" title="getdist.gui.mainwindow.Main\lWindow.closePlots" alt="" coords="489,187,679,229"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a9f988a9217e030de892f370248a94481" title="getdist.gui.mainwindow.Main\lWindow.getXParams" alt="" coords="489,253,679,294"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a5a49bcf9798a91781b81e59086d05e61" title="getdist.gui.mainwindow.Main\lWindow.getYParams" alt="" coords="489,318,679,359"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a8d131b0b8b9945bd609acb00f21eb74f" title="getdist.gui.mainwindow.Main\lWindow.showMessage" alt="" coords="489,383,679,425"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ae40013ba1fe1b4e96660b96f63fe1c8a" title="getdist.gui.mainwindow.Main\lWindow.updatePlot" alt="" coords="489,449,679,490"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a6a538cbf9dfa41511637abcdabad7f23" title="getdist.gui.mainwindow.Main\lWindow.getCheckedParams" alt="" coords="729,285,919,326"/>
+</map>

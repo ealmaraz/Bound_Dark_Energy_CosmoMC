@@ -1,0 +1,183 @@
+\hypertarget{classgetdist_1_1types_1_1BestFit}{}\section{getdist.\+types.\+Best\+Fit Class Reference}
+\label{classgetdist_1_1types_1_1BestFit}\index{getdist.\+types.\+Best\+Fit@{getdist.\+types.\+Best\+Fit}}
+
+
+Inheritance diagram for getdist.\+types.\+Best\+Fit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classgetdist_1_1types_1_1BestFit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+types.\+Best\+Fit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classgetdist_1_1types_1_1BestFit__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_aa7ed592ec07bd8fe4d9a6de635a6364c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, file\+Name=None, set\+Param\+Name\+File=None, want\+\_\+fixed=False)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a56fe1c70a831f06b20dda685074ebdc6}{get\+Column\+Labels}} (self, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a1f93055bc0ccff2dcf47aa1b671b1eac}{load\+From\+File}} (self, filename, want\+\_\+fixed=False)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a60ea86249e13c8869609065b5fc89228}{sorted\+Chi\+Squareds}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a54c4939e00eb6427284774a238fc61de}{chi\+Square\+For\+Kind\+Name}} (self, kind, \mbox{\hyperlink{classgetdist_1_1paramnames_1_1ParamList_aea1705e69ca01b937e118b44e468510a}{name}})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a1799944c35791bd7878e1776383f85c6}{tex\+Values}} (self, formatter, p, kwargs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a55aeaf0af24610e27b143aa4f959e2ab}{weight}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a28cc70877c8a1616051400ddbec10e52}{log\+Like}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1BestFit_a516ce3fe6ffe560c6919a55a69bacf24}{chi\+Squareds}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Class holding the result of a likelihood minimization, inheriting from :class:`ParamResults`
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_aa7ed592ec07bd8fe4d9a6de635a6364c}\label{classgetdist_1_1types_1_1BestFit_aa7ed592ec07bd8fe4d9a6de635a6364c}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Best\+Fit.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+Name = {\ttfamily None},  }\item[{}]{set\+Param\+Name\+File = {\ttfamily None},  }\item[{}]{want\+\_\+fixed = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param fileName: text file to load from, assumed to be in CosmoMC's .minimum format
+:param setParamNameFile: optional name of .paramnames file listing preferred parameter labels for the parameters
+:param want_fixed:  whether to include values of parameters that are not allowed to vary
+\end{DoxyVerb}
+ 
+
+References getdist.\+parampriors.\+Param\+Bounds.\+load\+From\+File(), getdist.\+covmat.\+Cov\+Mat.\+load\+From\+File(), C\+M\+Blikes.\+Cls\+Array.\+load\+From\+File(), getdist.\+paramnames.\+Param\+Names.\+load\+From\+File(), getdist.\+types.\+Best\+Fit.\+load\+From\+File(), and getdist.\+paramnames.\+Param\+List.\+set\+Labels\+And\+Derived\+From\+Param\+Names().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1BestFit_aa7ed592ec07bd8fe4d9a6de635a6364c_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a54c4939e00eb6427284774a238fc61de}\label{classgetdist_1_1types_1_1BestFit_a54c4939e00eb6427284774a238fc61de}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!chi\+Square\+For\+Kind\+Name@{chi\+Square\+For\+Kind\+Name}}
+\index{chi\+Square\+For\+Kind\+Name@{chi\+Square\+For\+Kind\+Name}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{chi\+Square\+For\+Kind\+Name()}{chiSquareForKindName()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Best\+Fit.\+chi\+Square\+For\+Kind\+Name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{kind,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Best\+Fit.\+chi\+Squareds.
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a56fe1c70a831f06b20dda685074ebdc6}\label{classgetdist_1_1types_1_1BestFit_a56fe1c70a831f06b20dda685074ebdc6}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!get\+Column\+Labels@{get\+Column\+Labels}}
+\index{get\+Column\+Labels@{get\+Column\+Labels}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{get\+Column\+Labels()}{getColumnLabels()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Best\+Fit.\+get\+Column\+Labels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a1f93055bc0ccff2dcf47aa1b671b1eac}\label{classgetdist_1_1types_1_1BestFit_a1f93055bc0ccff2dcf47aa1b671b1eac}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Best\+Fit.\+load\+From\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{want\+\_\+fixed = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+paramnames.\+Param\+List.\+file\+List().
+
+
+
+Referenced by getdist.\+types.\+Best\+Fit.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1BestFit_a1f93055bc0ccff2dcf47aa1b671b1eac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1BestFit_a1f93055bc0ccff2dcf47aa1b671b1eac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a60ea86249e13c8869609065b5fc89228}\label{classgetdist_1_1types_1_1BestFit_a60ea86249e13c8869609065b5fc89228}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!sorted\+Chi\+Squareds@{sorted\+Chi\+Squareds}}
+\index{sorted\+Chi\+Squareds@{sorted\+Chi\+Squareds}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{sorted\+Chi\+Squareds()}{sortedChiSquareds()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Best\+Fit.\+sorted\+Chi\+Squareds (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Best\+Fit.\+chi\+Squareds.
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a1799944c35791bd7878e1776383f85c6}\label{classgetdist_1_1types_1_1BestFit_a1799944c35791bd7878e1776383f85c6}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!tex\+Values@{tex\+Values}}
+\index{tex\+Values@{tex\+Values}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{tex\+Values()}{texValues()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Best\+Fit.\+tex\+Values (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{formatter,  }\item[{}]{p,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+paramnames.\+Param\+List.\+par\+With\+Name().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1BestFit_a1799944c35791bd7878e1776383f85c6_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a516ce3fe6ffe560c6919a55a69bacf24}\label{classgetdist_1_1types_1_1BestFit_a516ce3fe6ffe560c6919a55a69bacf24}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!chi\+Squareds@{chi\+Squareds}}
+\index{chi\+Squareds@{chi\+Squareds}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{chi\+Squareds}{chiSquareds}}
+{\footnotesize\ttfamily getdist.\+types.\+Best\+Fit.\+chi\+Squareds}
+
+
+
+Referenced by getdist.\+types.\+Best\+Fit.\+chi\+Square\+For\+Kind\+Name(), and getdist.\+types.\+Best\+Fit.\+sorted\+Chi\+Squareds().
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a28cc70877c8a1616051400ddbec10e52}\label{classgetdist_1_1types_1_1BestFit_a28cc70877c8a1616051400ddbec10e52}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!log\+Like@{log\+Like}}
+\index{log\+Like@{log\+Like}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{log\+Like}{logLike}}
+{\footnotesize\ttfamily getdist.\+types.\+Best\+Fit.\+log\+Like}
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1BestFit_a55aeaf0af24610e27b143aa4f959e2ab}\label{classgetdist_1_1types_1_1BestFit_a55aeaf0af24610e27b143aa4f959e2ab}} 
+\index{getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}!weight@{weight}}
+\index{weight@{weight}!getdist\+::types\+::\+Best\+Fit@{getdist\+::types\+::\+Best\+Fit}}
+\subsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily getdist.\+types.\+Best\+Fit.\+weight}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{types_8py}{types.\+py}}\end{DoxyCompactItemize}

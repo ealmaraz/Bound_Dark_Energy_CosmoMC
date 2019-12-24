@@ -1,0 +1,873 @@
+\hypertarget{namespacesettings}{}\section{settings Module Reference}
+\label{namespacesettings}\index{settings@{settings}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structsettings_1_1tnamekeyinifile}{tnamekeyinifile}}
+\item 
+type \mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a10f55aa94b2ab604c1c3769a46fc6981}{initializeglobalsettingdefaults}}
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a3747d2293e80aacbc1e756c2d26fc75f}{dostop}} (S, abort)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a6535550ffec6e7b81fcb60e053ea87b6}{tsettingini\+\_\+failstop}} (this)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_a3b2429bfa74ea486689b09597adc9791}{tsettingini\+\_\+replacedirs}} (this, inname, A\+Dir)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_a9fe4c031e947a169af96d96be88df87b}{tsettingini\+\_\+readrelativefilename}} (this, key, A\+Dir, Not\+Found\+Fail)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_aa7bf4212045f11786b51f9cf5fe34ffb}{tsettingini\+\_\+readfilename}} (this, key, A\+Dir, Not\+Found\+Fail, relative)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_ad76733b3c1bf3cec0d9401ce6d924a38}{tsettingini\+\_\+tagvaluesforname}} (this, name, Out\+List, filename)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a25f07dfd89b1bd5d8754f0c08c0077ef}{tsettingini\+\_\+settingvaluesfortagname}} (this, name, tag, Out\+List, filename)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacesettings_a5cc488a2d56e898983e233e99a14cee0}{tnamekeyinifile\+\_\+namedkey}} (this, Key, Name)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_a7530516bc4d95e285559b9952d6f0dc2}{checkparamchangef}} (F)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_abd4643446df7076be97337eb9aa2f2e9}{checkparamchange}}
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_aae1de2bfeb89f23588e7f18024be2a44}{timer}} (Msg, start)
+\item 
+subroutine \mbox{\hyperlink{namespacesettings_afa3df86ab753e05244ab370242ab2e5a}{doabort}} (S)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}} = K\+I\+ND(1.\+0)
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_aa6d55f83efe636882451ee1240bf4929}{mpi\+\_\+real\+\_\+mcp}} = M\+P\+I\+\_\+\+R\+E\+AL
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a3d81f31b9e0eef8de19fb9b016043af7}{time\+\_\+dp}} = K\+I\+ND(1.d0)
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a57710b73441b5ec0babcaa48cd333055}{pi}} =3.\+14159265358979323846264338328d0
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a22fb9d779d16c940a845d5da795ef6ec}{twopi}} =2$\ast$\mbox{\hyperlink{namespacesettings_a57710b73441b5ec0babcaa48cd333055}{pi}}
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_ad4683f1ccdfb64cdf9aa5643ce991cd5}{fourpi}} =4$\ast$\mbox{\hyperlink{namespacesettings_a57710b73441b5ec0babcaa48cd333055}{pi}}
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a54504c6d9151b9990bf3f15deeaa139b}{root2}} = 1.\+41421356237309504880168872421d0
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a46452645879c3ed6edc6b31e79786d63}{sqrt2}} = \mbox{\hyperlink{namespacesettings_a54504c6d9151b9990bf3f15deeaa139b}{root2}}
+\item 
+double precision, parameter \mbox{\hyperlink{namespacesettings_a9020a6ca0bbe74043ff8103f9f8ece1d}{log2}} = 0.\+693147180559945309417232121458d0
+\item 
+real, parameter \mbox{\hyperlink{namespacesettings_a6fe3b2dcac06d9e51592e885f64ace1d}{pi\+\_\+r}} = 3.\+141592653
+\item 
+real, parameter \mbox{\hyperlink{namespacesettings_a87b6f8cb970e358fc23b950e8db62257}{twopi\+\_\+r}} = 2$\ast$\mbox{\hyperlink{namespacesettings_a6fe3b2dcac06d9e51592e885f64ace1d}{pi\+\_\+r}}
+\item 
+real, parameter \mbox{\hyperlink{namespacesettings_a84f03a75cdf655bea4a1568443921c37}{fourpi\+\_\+r}} = \mbox{\hyperlink{namespacesettings_a87b6f8cb970e358fc23b950e8db62257}{twopi\+\_\+r}}$\ast$2
+\item 
+real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}), parameter \mbox{\hyperlink{namespacesettings_a9aec23a6e1d47760b93c79084ddacd3c}{const\+\_\+c}} = 2.\+99792458e8\+\_\+mcp
+\item 
+logical \mbox{\hyperlink{namespacesettings_ae20cda2e95f0e537dcbca3b63cb9bb0f}{use\+\_\+fast\+\_\+slow}} = .false.
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacesettings_a572023d0201bee3f5560de0fdc96dc4e}{cosmomc\+\_\+version}} = \textquotesingle{}Nov2016\textquotesingle{}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a493eb241cf271ca0ba4da755bc6b13d1}{chisq\+\_\+label}}
+\item 
+real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}) \mbox{\hyperlink{namespacesettings_a815a186f7293c7e58833ae29fee76454}{accuracylevel}} = 1
+\item 
+logical \mbox{\hyperlink{namespacesettings_ae38825eb811eae327d68db37b75023aa}{flush\+\_\+write}} = .true.
+\item 
+logical \mbox{\hyperlink{namespacesettings_ac176aa2a57ff28bd3d05a0a2f2b4defa}{new\+\_\+chains}} = .true.
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a23df6252cfd71721b764c455de43905a}{max\+\_\+likelihood\+\_\+functions}} = 50
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a4d2d308b7b3d47f91cd40d6c735b4d99}{max\+\_\+data\+\_\+params}} = 200
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a7884cd47680ca4079d2177f93eb41772}{max\+\_\+theory\+\_\+params}} = 50
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_ab891b6a835eb8706eb0477db68a2c351}{max\+\_\+num\+\_\+params}} = \mbox{\hyperlink{namespacesettings_a7884cd47680ca4079d2177f93eb41772}{max\+\_\+theory\+\_\+params}} + \mbox{\hyperlink{namespacesettings_a4d2d308b7b3d47f91cd40d6c735b4d99}{max\+\_\+data\+\_\+params}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a7fbe5e0e8194b33c8990365eafe20bed}{sampling\+\_\+metropolis}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a3122cb465205f6e3dfbcca05cd8c4d0c}{sampling\+\_\+slice}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_af8673aadd88b8cfe802aeb29376ec2a6}{sampling\+\_\+fastslice}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_af39c7332606eeaed1affbeb9715b903e}{sampling\+\_\+slowgrid}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_ab692e79a9d756d1ebf42dba033da3c9b}{sampling\+\_\+multicanonical}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a88e45b9a2ab5447d2cb82b74672906de}{sampling\+\_\+wang\+\_\+landau}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_a9cd020650f7e83b9fda45b3bfdda34bf}{sampling\+\_\+fast\+\_\+dragging}} = 7
+\item 
+integer \mbox{\hyperlink{namespacesettings_a01e6691ce72977baf15dd20434012f65}{sampling\+\_\+method}} = \mbox{\hyperlink{namespacesettings_a7fbe5e0e8194b33c8990365eafe20bed}{sampling\+\_\+metropolis}}
+\item 
+real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}) \mbox{\hyperlink{namespacesettings_ab8364bc8c9e772b73f258e33676806ec}{dragging\+\_\+steps}} = 3.\+\_\+mcp
+\item 
+logical \mbox{\hyperlink{namespacesettings_af46cd3e56cf132b962ba2a208f29b04f}{generic\+\_\+mcmc}} = .false.
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a2deacc581b6841445fd044dab25ef389}{datadir}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a464bacc2f6a7b48655e92110d990d457}{localdir}}
+\item 
+type(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}}), save \mbox{\hyperlink{namespacesettings_a7f5934d4eca8e396a1c744c7fa88bcba}{customparams}}
+\item 
+logical \mbox{\hyperlink{namespacesettings_a4acafe693ea8cedb2044a2ce90c9469f}{stop\+\_\+on\+\_\+error}} = .true.
+\item 
+integer \mbox{\hyperlink{namespacesettings_a362078e6b11a6c4f0eff6aee65cf046a}{num\+\_\+theory\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a80a8fe2bea1b08d8109b2cfcb09cb02c}{index\+\_\+data}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a56f153f87bcbfcf9717c0efc77c20fb8}{index\+\_\+semislow}} =-\/1
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesettings_a2d59bb48a1012143991ce9093fc76be5}{params\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a4faf08502e49a2f851b29d8f7d5fb71d}{num\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_ace1e5374df8682e0f85b1b7bcc21451c}{num\+\_\+params\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a588b630a77c6cf16ccd63096b5ac4507}{num\+\_\+data\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a004f5c3efc3e9d33a1a4526f5a20785b}{num\+\_\+threads}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesettings_a8b396bca0192e0a92363a9cf6b942542}{instance}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesettings_a9cb321eeb7d7d329d5d99cba2595330d}{mpichains}} = 1
+\item 
+integer \mbox{\hyperlink{namespacesettings_ad6fd77f9480fb92754b6f5890017e594}{mpirank}} = 0
+\item 
+real(\mbox{\hyperlink{namespacesettings_a3d81f31b9e0eef8de19fb9b016043af7}{time\+\_\+dp}}) \mbox{\hyperlink{namespacesettings_afe15c9b4b37c62135a2e5d12810b92bc}{mpirun\+\_\+start\+\_\+time}}
+\item 
+logical \mbox{\hyperlink{namespacesettings_ae0817081d233f3c5d76fad556a766afb}{checkpoint}} = .false.
+\item 
+integer \mbox{\hyperlink{namespacesettings_a8d398d8d6e0a5435eb847608d0147f12}{output\+\_\+lines}} = 0
+\item 
+type(ttextfile), save \mbox{\hyperlink{namespacesettings_a45cb647c4940062ae812ef3a374e5e2f}{chainoutfile}} = T\+Text\+File(Real\+Format=\textquotesingle{}($\ast$(E16.\+7))\textquotesingle{})
+\item 
+type(ttextfile), save \mbox{\hyperlink{namespacesettings_abf81803341f16be48aa42058423f085b}{logfile}}
+\item 
+integer \mbox{\hyperlink{namespacesettings_a34e44606ac3e84f06e2696f74542f664}{feedback}} = 0
+\item 
+real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}), parameter \mbox{\hyperlink{namespacesettings_a057b984bb501467c33dbcc3ffc3a34d3}{logzero}} = 1e30\+\_\+mcp
+\item 
+character(len=1024) \mbox{\hyperlink{namespacesettings_ae3545d47de8db723b192e3bc79f95e99}{filechangeini}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len=1024) \mbox{\hyperlink{namespacesettings_aa364554c9b5868156913823eaa6b5185}{filechangeiniall}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_aa942779910692a37fbc12dd25f62877e}{baseroot}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacesettings_a4a3bc0d40d0532bc2f7f2cc87170068a}{rootname}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesettings_af5b1a69ec3d96be977d23b1e59e7d36e}{stdout}} = output\+\_\+unit
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacesettings_abd4643446df7076be97337eb9aa2f2e9}\label{namespacesettings_abd4643446df7076be97337eb9aa2f2e9}} 
+\index{settings@{settings}!checkparamchange@{checkparamchange}}
+\index{checkparamchange@{checkparamchange}!settings@{settings}}
+\subsubsection{\texorpdfstring{checkparamchange()}{checkparamchange()}}
+{\footnotesize\ttfamily subroutine settings\+::checkparamchange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References checkparamchangef(), filechangeini, and filechangeiniall.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesettings_abd4643446df7076be97337eb9aa2f2e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_a7530516bc4d95e285559b9952d6f0dc2}\label{namespacesettings_a7530516bc4d95e285559b9952d6f0dc2}} 
+\index{settings@{settings}!checkparamchangef@{checkparamchangef}}
+\index{checkparamchangef@{checkparamchangef}!settings@{settings}}
+\subsubsection{\texorpdfstring{checkparamchangef()}{checkparamchangef()}}
+{\footnotesize\ttfamily subroutine settings\+::checkparamchangef (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{F }\end{DoxyParamCaption})}
+
+
+
+References feedback, fileutils\+::file, filechangeini, mpiutils\+::mpistop(), and num\+\_\+threads.
+
+
+
+Referenced by checkparamchange().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesettings_a7530516bc4d95e285559b9952d6f0dc2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesettings_a7530516bc4d95e285559b9952d6f0dc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_afa3df86ab753e05244ab370242ab2e5a}\label{namespacesettings_afa3df86ab753e05244ab370242ab2e5a}} 
+\index{settings@{settings}!doabort@{doabort}}
+\index{doabort@{doabort}!settings@{settings}}
+\subsubsection{\texorpdfstring{doabort()}{doabort()}}
+{\footnotesize\ttfamily subroutine settings\+::doabort (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in), optional}]{S }\end{DoxyParamCaption})}
+
+
+
+Referenced by estcovmatmodule\+::gethess(), estcovmatmodule\+::placegrid(), and baseparameters\+::tbaseparameters\+\_\+paramerror().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesettings_afa3df86ab753e05244ab370242ab2e5a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_a3747d2293e80aacbc1e756c2d26fc75f}\label{namespacesettings_a3747d2293e80aacbc1e756c2d26fc75f}} 
+\index{settings@{settings}!dostop@{dostop}}
+\index{dostop@{dostop}!settings@{settings}}
+\subsubsection{\texorpdfstring{dostop()}{dostop()}}
+{\footnotesize\ttfamily subroutine settings\+::dostop (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in), optional}]{S,  }\item[{logical, intent(in), optional}]{abort }\end{DoxyParamCaption})}
+
+
+
+References chainoutfile, feedback, mpirank, and mpirun\+\_\+start\+\_\+time.
+
+\mbox{\Hypertarget{namespacesettings_a10f55aa94b2ab604c1c3769a46fc6981}\label{namespacesettings_a10f55aa94b2ab604c1c3769a46fc6981}} 
+\index{settings@{settings}!initializeglobalsettingdefaults@{initializeglobalsettingdefaults}}
+\index{initializeglobalsettingdefaults@{initializeglobalsettingdefaults}!settings@{settings}}
+\subsubsection{\texorpdfstring{initializeglobalsettingdefaults()}{initializeglobalsettingdefaults()}}
+{\footnotesize\ttfamily subroutine settings\+::initializeglobalsettingdefaults (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References chisq\+\_\+label, datadir, and localdir.
+
+\mbox{\Hypertarget{namespacesettings_aae1de2bfeb89f23588e7f18024be2a44}\label{namespacesettings_aae1de2bfeb89f23588e7f18024be2a44}} 
+\index{settings@{settings}!timer@{timer}}
+\index{timer@{timer}!settings@{settings}}
+\subsubsection{\texorpdfstring{timer()}{timer()}}
+{\footnotesize\ttfamily subroutine settings\+::timer (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in), optional}]{Msg,  }\item[{real(\mbox{\hyperlink{namespacesettings_a3d81f31b9e0eef8de19fb9b016043af7}{time\+\_\+dp}}), optional}]{start }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::timertime().
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata(), and calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{namespacesettings_aae1de2bfeb89f23588e7f18024be2a44_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{namespacesettings_aae1de2bfeb89f23588e7f18024be2a44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_a5cc488a2d56e898983e233e99a14cee0}\label{namespacesettings_a5cc488a2d56e898983e233e99a14cee0}} 
+\index{settings@{settings}!tnamekeyinifile\+\_\+namedkey@{tnamekeyinifile\+\_\+namedkey}}
+\index{tnamekeyinifile\+\_\+namedkey@{tnamekeyinifile\+\_\+namedkey}!settings@{settings}}
+\subsubsection{\texorpdfstring{tnamekeyinifile\+\_\+namedkey()}{tnamekeyinifile\_namedkey()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable settings\+::tnamekeyinifile\+\_\+namedkey (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsettings_1_1tnamekeyinifile}{tnamekeyinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{character(len=$\ast$), intent(in)}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesettings_a6535550ffec6e7b81fcb60e053ea87b6}\label{namespacesettings_a6535550ffec6e7b81fcb60e053ea87b6}} 
+\index{settings@{settings}!tsettingini\+\_\+failstop@{tsettingini\+\_\+failstop}}
+\index{tsettingini\+\_\+failstop@{tsettingini\+\_\+failstop}!settings@{settings}}
+\subsubsection{\texorpdfstring{tsettingini\+\_\+failstop()}{tsettingini\_failstop()}}
+{\footnotesize\ttfamily subroutine settings\+::tsettingini\+\_\+failstop (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacesettings_a6535550ffec6e7b81fcb60e053ea87b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_aa7bf4212045f11786b51f9cf5fe34ffb}\label{namespacesettings_aa7bf4212045f11786b51f9cf5fe34ffb}} 
+\index{settings@{settings}!tsettingini\+\_\+readfilename@{tsettingini\+\_\+readfilename}}
+\index{tsettingini\+\_\+readfilename@{tsettingini\+\_\+readfilename}!settings@{settings}}
+\subsubsection{\texorpdfstring{tsettingini\+\_\+readfilename()}{tsettingini\_readfilename()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable settings\+::tsettingini\+\_\+readfilename (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{key,  }\item[{character(len=$\ast$), intent(in), optional}]{A\+Dir,  }\item[{logical, optional}]{Not\+Found\+Fail,  }\item[{logical, optional}]{relative }\end{DoxyParamCaption})}
+
+
+
+References customparams, miscutils\+::defaultfalse(), fileutils\+::file, and stringutils\+::stringreplace().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacesettings_aa7bf4212045f11786b51f9cf5fe34ffb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_a9fe4c031e947a169af96d96be88df87b}\label{namespacesettings_a9fe4c031e947a169af96d96be88df87b}} 
+\index{settings@{settings}!tsettingini\+\_\+readrelativefilename@{tsettingini\+\_\+readrelativefilename}}
+\index{tsettingini\+\_\+readrelativefilename@{tsettingini\+\_\+readrelativefilename}!settings@{settings}}
+\subsubsection{\texorpdfstring{tsettingini\+\_\+readrelativefilename()}{tsettingini\_readrelativefilename()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable settings\+::tsettingini\+\_\+readrelativefilename (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{key,  }\item[{character(len=$\ast$), intent(in), optional}]{A\+Dir,  }\item[{logical, optional}]{Not\+Found\+Fail }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesettings_a3b2429bfa74ea486689b09597adc9791}\label{namespacesettings_a3b2429bfa74ea486689b09597adc9791}} 
+\index{settings@{settings}!tsettingini\+\_\+replacedirs@{tsettingini\+\_\+replacedirs}}
+\index{tsettingini\+\_\+replacedirs@{tsettingini\+\_\+replacedirs}!settings@{settings}}
+\subsubsection{\texorpdfstring{tsettingini\+\_\+replacedirs()}{tsettingini\_replacedirs()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable settings\+::tsettingini\+\_\+replacedirs (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{this,  }\item[{character(len=$\ast$)}]{inname,  }\item[{character(len=$\ast$), intent(in), optional}]{A\+Dir }\end{DoxyParamCaption})}
+
+
+
+References datadir, fileutils\+::file, localdir, and stringutils\+::stringreplace().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacesettings_a3b2429bfa74ea486689b09597adc9791_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_a25f07dfd89b1bd5d8754f0c08c0077ef}\label{namespacesettings_a25f07dfd89b1bd5d8754f0c08c0077ef}} 
+\index{settings@{settings}!tsettingini\+\_\+settingvaluesfortagname@{tsettingini\+\_\+settingvaluesfortagname}}
+\index{tsettingini\+\_\+settingvaluesfortagname@{tsettingini\+\_\+settingvaluesfortagname}!settings@{settings}}
+\subsubsection{\texorpdfstring{tsettingini\+\_\+settingvaluesfortagname()}{tsettingini\_settingvaluesfortagname()}}
+{\footnotesize\ttfamily subroutine settings\+::tsettingini\+\_\+settingvaluesfortagname (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{name,  }\item[{character(len=$\ast$), intent(in)}]{tag,  }\item[{class(tnamevaluelist)}]{Out\+List,  }\item[{logical, intent(in), optional}]{filename }\end{DoxyParamCaption})}
+
+
+
+References miscutils\+::defaultfalse(), and stringutils\+::stringstarts().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesettings_a25f07dfd89b1bd5d8754f0c08c0077ef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesettings_ad76733b3c1bf3cec0d9401ce6d924a38}\label{namespacesettings_ad76733b3c1bf3cec0d9401ce6d924a38}} 
+\index{settings@{settings}!tsettingini\+\_\+tagvaluesforname@{tsettingini\+\_\+tagvaluesforname}}
+\index{tsettingini\+\_\+tagvaluesforname@{tsettingini\+\_\+tagvaluesforname}!settings@{settings}}
+\subsubsection{\texorpdfstring{tsettingini\+\_\+tagvaluesforname()}{tsettingini\_tagvaluesforname()}}
+{\footnotesize\ttfamily subroutine settings\+::tsettingini\+\_\+tagvaluesforname (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{name,  }\item[{class(tnamevaluelist)}]{Out\+List,  }\item[{logical, intent(in), optional}]{filename }\end{DoxyParamCaption})}
+
+
+
+References miscutils\+::defaultfalse(), and stringutils\+::stringstarts().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacesettings_ad76733b3c1bf3cec0d9401ce6d924a38_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesettings_a815a186f7293c7e58833ae29fee76454}\label{namespacesettings_a815a186f7293c7e58833ae29fee76454}} 
+\index{settings@{settings}!accuracylevel@{accuracylevel}}
+\index{accuracylevel@{accuracylevel}!settings@{settings}}
+\subsubsection{\texorpdfstring{accuracylevel}{accuracylevel}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}) settings\+::accuracylevel = 1}
+
+\mbox{\Hypertarget{namespacesettings_aa942779910692a37fbc12dd25f62877e}\label{namespacesettings_aa942779910692a37fbc12dd25f62877e}} 
+\index{settings@{settings}!baseroot@{baseroot}}
+\index{baseroot@{baseroot}!settings@{settings}}
+\subsubsection{\texorpdfstring{baseroot}{baseroot}}
+{\footnotesize\ttfamily character(len=\+:), allocatable settings\+::baseroot}
+
+
+
+Referenced by importancesampling\+::timportancesampler\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacesettings_a45cb647c4940062ae812ef3a374e5e2f}\label{namespacesettings_a45cb647c4940062ae812ef3a374e5e2f}} 
+\index{settings@{settings}!chainoutfile@{chainoutfile}}
+\index{chainoutfile@{chainoutfile}!settings@{settings}}
+\subsubsection{\texorpdfstring{chainoutfile}{chainoutfile}}
+{\footnotesize\ttfamily type(ttextfile), save settings\+::chainoutfile = T\+Text\+File(Real\+Format=\textquotesingle{}($\ast$(E16.\+7))\textquotesingle{})}
+
+
+
+Referenced by dostop(), and importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_ae0817081d233f3c5d76fad556a766afb}\label{namespacesettings_ae0817081d233f3c5d76fad556a766afb}} 
+\index{settings@{settings}!checkpoint@{checkpoint}}
+\index{checkpoint@{checkpoint}!settings@{settings}}
+\subsubsection{\texorpdfstring{checkpoint}{checkpoint}}
+{\footnotesize\ttfamily logical settings\+::checkpoint = .false.}
+
+\mbox{\Hypertarget{namespacesettings_a493eb241cf271ca0ba4da755bc6b13d1}\label{namespacesettings_a493eb241cf271ca0ba4da755bc6b13d1}} 
+\index{settings@{settings}!chisq\+\_\+label@{chisq\+\_\+label}}
+\index{chisq\+\_\+label@{chisq\+\_\+label}!settings@{settings}}
+\subsubsection{\texorpdfstring{chisq\+\_\+label}{chisq\_label}}
+{\footnotesize\ttfamily character(len=\+:), allocatable settings\+::chisq\+\_\+label}
+
+
+
+Referenced by initializeglobalsettingdefaults().
+
+\mbox{\Hypertarget{namespacesettings_a9aec23a6e1d47760b93c79084ddacd3c}\label{namespacesettings_a9aec23a6e1d47760b93c79084ddacd3c}} 
+\index{settings@{settings}!const\+\_\+c@{const\+\_\+c}}
+\index{const\+\_\+c@{const\+\_\+c}!settings@{settings}}
+\subsubsection{\texorpdfstring{const\+\_\+c}{const\_c}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}), parameter settings\+::const\+\_\+c = 2.\+99792458e8\+\_\+mcp}
+
+
+
+Referenced by bao\+::acoustic(), calculator\+\_\+camb\+::cambcalc\+\_\+setderived(), wl\+::get\+\_\+convergence(), and calculator\+\_\+cosmology\+::hofz\+\_\+hunit().
+
+\mbox{\Hypertarget{namespacesettings_a572023d0201bee3f5560de0fdc96dc4e}\label{namespacesettings_a572023d0201bee3f5560de0fdc96dc4e}} 
+\index{settings@{settings}!cosmomc\+\_\+version@{cosmomc\+\_\+version}}
+\index{cosmomc\+\_\+version@{cosmomc\+\_\+version}!settings@{settings}}
+\subsubsection{\texorpdfstring{cosmomc\+\_\+version}{cosmomc\_version}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter settings\+::cosmomc\+\_\+version = \textquotesingle{}Nov2016\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacesettings_a7f5934d4eca8e396a1c744c7fa88bcba}\label{namespacesettings_a7f5934d4eca8e396a1c744c7fa88bcba}} 
+\index{settings@{settings}!customparams@{customparams}}
+\index{customparams@{customparams}!settings@{settings}}
+\subsubsection{\texorpdfstring{customparams}{customparams}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}}), save settings\+::customparams}
+
+
+
+Referenced by tsettingini\+\_\+readfilename().
+
+\mbox{\Hypertarget{namespacesettings_a2deacc581b6841445fd044dab25ef389}\label{namespacesettings_a2deacc581b6841445fd044dab25ef389}} 
+\index{settings@{settings}!datadir@{datadir}}
+\index{datadir@{datadir}!settings@{settings}}
+\subsubsection{\texorpdfstring{datadir}{datadir}}
+{\footnotesize\ttfamily character(len=\+:), allocatable settings\+::datadir}
+
+
+
+Referenced by bbn\+::bbn\+\_\+init(), wigglezinfo\+::gigglezinfo\+\_\+init(), initializeglobalsettingdefaults(), jla\+::jlalikelihood\+\_\+add(), jla\+::read\+\_\+jla\+\_\+dataset(), snls\+::read\+\_\+snls\+\_\+dataset(), snls\+::snlslikelihood\+\_\+add(), szcounts\+::szlikelihood\+\_\+add(), and tsettingini\+\_\+replacedirs().
+
+\mbox{\Hypertarget{namespacesettings_ab8364bc8c9e772b73f258e33676806ec}\label{namespacesettings_ab8364bc8c9e772b73f258e33676806ec}} 
+\index{settings@{settings}!dragging\+\_\+steps@{dragging\+\_\+steps}}
+\index{dragging\+\_\+steps@{dragging\+\_\+steps}!settings@{settings}}
+\subsubsection{\texorpdfstring{dragging\+\_\+steps}{dragging\_steps}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}) settings\+::dragging\+\_\+steps = 3.\+\_\+mcp}
+
+\mbox{\Hypertarget{namespacesettings_a34e44606ac3e84f06e2696f74542f664}\label{namespacesettings_a34e44606ac3e84f06e2696f74542f664}} 
+\index{settings@{settings}!feedback@{feedback}}
+\index{feedback@{feedback}!settings@{settings}}
+\subsubsection{\texorpdfstring{feedback}{feedback}}
+{\footnotesize\ttfamily integer settings\+::feedback = 0}
+
+
+
+Referenced by bao\+::bao\+\_\+lnlike(), bao\+::bao\+\_\+readini(), bao\+::baolikelihood\+\_\+add(), bbn\+::bbn\+\_\+init(), calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata(), calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance(), checkparamchangef(), cliklike\+::clik\+\_\+likeinit(), cliklike\+::clik\+\_\+lnlike(), cliklike\+::clik\+\_\+readparams(), dostop(), estcovmatmodule\+::estcovmat(), estcovmatmodule\+::gethess(), estcovmatmodule\+::getstepsfordchisq1(), jla\+::jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+::jla\+\_\+lnlike(), jla\+::jla\+\_\+prep(), jla\+::jlalikelihood\+\_\+add(), mcsamples\+::makesinglesamples(), mpk\+::mpk\+\_\+lnlike(), mpk\+::mpk\+\_\+readini(), mpk\+::mpklikelihood\+\_\+add(), calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata(), estcovmatmodule\+::placegrid(), jla\+::read\+\_\+cov\+\_\+matrix(), snls\+::read\+\_\+cov\+\_\+matrix(), jla\+::read\+\_\+jla\+\_\+dataset(), snls\+::read\+\_\+snls\+\_\+dataset(), wigglez\+::readwigglezmatrices(), snls\+::snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+::snls\+\_\+lnlike(), snls\+::snls\+\_\+prep(), cosmologytypes\+::tcosmotheorysettings\+\_\+initforlikelihoods(), importancesampling\+::timportancesampler\+\_\+importancesample(), wigglez\+::wigglez\+\_\+lnlike(), wigglez\+::wigglez\+\_\+readini(), wigglez\+::wigglezlikelihood\+\_\+add(), wl\+::wl\+\_\+readini(), and wl\+::wllikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesettings_ae3545d47de8db723b192e3bc79f95e99}\label{namespacesettings_ae3545d47de8db723b192e3bc79f95e99}} 
+\index{settings@{settings}!filechangeini@{filechangeini}}
+\index{filechangeini@{filechangeini}!settings@{settings}}
+\subsubsection{\texorpdfstring{filechangeini}{filechangeini}}
+{\footnotesize\ttfamily character (len =1024) settings\+::filechangeini = \textquotesingle{}\textquotesingle{}}
+
+
+
+Referenced by checkparamchange(), and checkparamchangef().
+
+\mbox{\Hypertarget{namespacesettings_aa364554c9b5868156913823eaa6b5185}\label{namespacesettings_aa364554c9b5868156913823eaa6b5185}} 
+\index{settings@{settings}!filechangeiniall@{filechangeiniall}}
+\index{filechangeiniall@{filechangeiniall}!settings@{settings}}
+\subsubsection{\texorpdfstring{filechangeiniall}{filechangeiniall}}
+{\footnotesize\ttfamily character (len =1024) settings\+::filechangeiniall = \textquotesingle{}\textquotesingle{}}
+
+
+
+Referenced by checkparamchange().
+
+\mbox{\Hypertarget{namespacesettings_ae38825eb811eae327d68db37b75023aa}\label{namespacesettings_ae38825eb811eae327d68db37b75023aa}} 
+\index{settings@{settings}!flush\+\_\+write@{flush\+\_\+write}}
+\index{flush\+\_\+write@{flush\+\_\+write}!settings@{settings}}
+\subsubsection{\texorpdfstring{flush\+\_\+write}{flush\_write}}
+{\footnotesize\ttfamily logical settings\+::flush\+\_\+write = .true.}
+
+
+
+Referenced by io\+::io\+\_\+outputchainrow(), parampointset\+::paramset\+\_\+writemodel(), and importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_ad4683f1ccdfb64cdf9aa5643ce991cd5}\label{namespacesettings_ad4683f1ccdfb64cdf9aa5643ce991cd5}} 
+\index{settings@{settings}!fourpi@{fourpi}}
+\index{fourpi@{fourpi}!settings@{settings}}
+\subsubsection{\texorpdfstring{fourpi}{fourpi}}
+{\footnotesize\ttfamily double precision, parameter settings\+::fourpi =4$\ast$\mbox{\hyperlink{namespacesettings_a57710b73441b5ec0babcaa48cd333055}{pi}}}
+
+\mbox{\Hypertarget{namespacesettings_a84f03a75cdf655bea4a1568443921c37}\label{namespacesettings_a84f03a75cdf655bea4a1568443921c37}} 
+\index{settings@{settings}!fourpi\+\_\+r@{fourpi\+\_\+r}}
+\index{fourpi\+\_\+r@{fourpi\+\_\+r}!settings@{settings}}
+\subsubsection{\texorpdfstring{fourpi\+\_\+r}{fourpi\_r}}
+{\footnotesize\ttfamily real, parameter settings\+::fourpi\+\_\+r = \mbox{\hyperlink{namespacesettings_a87b6f8cb970e358fc23b950e8db62257}{twopi\+\_\+r}}$\ast$2}
+
+\mbox{\Hypertarget{namespacesettings_af46cd3e56cf132b962ba2a208f29b04f}\label{namespacesettings_af46cd3e56cf132b962ba2a208f29b04f}} 
+\index{settings@{settings}!generic\+\_\+mcmc@{generic\+\_\+mcmc}}
+\index{generic\+\_\+mcmc@{generic\+\_\+mcmc}!settings@{settings}}
+\subsubsection{\texorpdfstring{generic\+\_\+mcmc}{generic\_mcmc}}
+{\footnotesize\ttfamily logical settings\+::generic\+\_\+mcmc = .false.}
+
+\mbox{\Hypertarget{namespacesettings_a80a8fe2bea1b08d8109b2cfcb09cb02c}\label{namespacesettings_a80a8fe2bea1b08d8109b2cfcb09cb02c}} 
+\index{settings@{settings}!index\+\_\+data@{index\+\_\+data}}
+\index{index\+\_\+data@{index\+\_\+data}!settings@{settings}}
+\subsubsection{\texorpdfstring{index\+\_\+data}{index\_data}}
+{\footnotesize\ttfamily integer settings\+::index\+\_\+data}
+
+\mbox{\Hypertarget{namespacesettings_a56f153f87bcbfcf9717c0efc77c20fb8}\label{namespacesettings_a56f153f87bcbfcf9717c0efc77c20fb8}} 
+\index{settings@{settings}!index\+\_\+semislow@{index\+\_\+semislow}}
+\index{index\+\_\+semislow@{index\+\_\+semislow}!settings@{settings}}
+\subsubsection{\texorpdfstring{index\+\_\+semislow}{index\_semislow}}
+{\footnotesize\ttfamily integer settings\+::index\+\_\+semislow =-\/1}
+
+
+
+Referenced by cosmologytypes\+::tcosmologyparameterization\+\_\+setnumbers().
+
+\mbox{\Hypertarget{namespacesettings_a8b396bca0192e0a92363a9cf6b942542}\label{namespacesettings_a8b396bca0192e0a92363a9cf6b942542}} 
+\index{settings@{settings}!instance@{instance}}
+\index{instance@{instance}!settings@{settings}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily integer settings\+::instance = 0}
+
+
+
+Referenced by importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_a464bacc2f6a7b48655e92110d990d457}\label{namespacesettings_a464bacc2f6a7b48655e92110d990d457}} 
+\index{settings@{settings}!localdir@{localdir}}
+\index{localdir@{localdir}!settings@{settings}}
+\subsubsection{\texorpdfstring{localdir}{localdir}}
+{\footnotesize\ttfamily character(len=\+:), allocatable settings\+::localdir}
+
+
+
+Referenced by initializeglobalsettingdefaults(), and tsettingini\+\_\+replacedirs().
+
+\mbox{\Hypertarget{namespacesettings_a9020a6ca0bbe74043ff8103f9f8ece1d}\label{namespacesettings_a9020a6ca0bbe74043ff8103f9f8ece1d}} 
+\index{settings@{settings}!log2@{log2}}
+\index{log2@{log2}!settings@{settings}}
+\subsubsection{\texorpdfstring{log2}{log2}}
+{\footnotesize\ttfamily double precision, parameter settings\+::log2 = 0.\+693147180559945309417232121458d0}
+
+\mbox{\Hypertarget{namespacesettings_abf81803341f16be48aa42058423f085b}\label{namespacesettings_abf81803341f16be48aa42058423f085b}} 
+\index{settings@{settings}!logfile@{logfile}}
+\index{logfile@{logfile}!settings@{settings}}
+\subsubsection{\texorpdfstring{logfile}{logfile}}
+{\footnotesize\ttfamily type(ttextfile), save settings\+::logfile}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata().
+
+\mbox{\Hypertarget{namespacesettings_a057b984bb501467c33dbcc3ffc3a34d3}\label{namespacesettings_a057b984bb501467c33dbcc3ffc3a34d3}} 
+\index{settings@{settings}!logzero@{logzero}}
+\index{logzero@{logzero}!settings@{settings}}
+\subsubsection{\texorpdfstring{logzero}{logzero}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacesettings_a341fa0fe410054f78630c33e118669bf}{mcp}}), parameter settings\+::logzero = 1e30\+\_\+mcp}
+
+
+
+Referenced by bao\+::bao\+\_\+dr1x\+\_\+loglike(), bao\+::bao\+\_\+mgs\+\_\+loglike(), mcsamples\+::get1ddensity(), estcovmatmodule\+::gethess(), jla\+::jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+::jla\+\_\+lnlike(), mpk\+::mpk\+\_\+lnlike(), estcovmatmodule\+::placegrid(), snls\+::snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+::snls\+\_\+lnlike(), szcounts\+::szcc\+\_\+cash(), importancesampling\+::timportancesampler\+\_\+importancesample(), and wigglez\+::wigglez\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacesettings_a4d2d308b7b3d47f91cd40d6c735b4d99}\label{namespacesettings_a4d2d308b7b3d47f91cd40d6c735b4d99}} 
+\index{settings@{settings}!max\+\_\+data\+\_\+params@{max\+\_\+data\+\_\+params}}
+\index{max\+\_\+data\+\_\+params@{max\+\_\+data\+\_\+params}!settings@{settings}}
+\subsubsection{\texorpdfstring{max\+\_\+data\+\_\+params}{max\_data\_params}}
+{\footnotesize\ttfamily integer, parameter settings\+::max\+\_\+data\+\_\+params = 200}
+
+\mbox{\Hypertarget{namespacesettings_a23df6252cfd71721b764c455de43905a}\label{namespacesettings_a23df6252cfd71721b764c455de43905a}} 
+\index{settings@{settings}!max\+\_\+likelihood\+\_\+functions@{max\+\_\+likelihood\+\_\+functions}}
+\index{max\+\_\+likelihood\+\_\+functions@{max\+\_\+likelihood\+\_\+functions}!settings@{settings}}
+\subsubsection{\texorpdfstring{max\+\_\+likelihood\+\_\+functions}{max\_likelihood\_functions}}
+{\footnotesize\ttfamily integer, parameter settings\+::max\+\_\+likelihood\+\_\+functions = 50}
+
+\mbox{\Hypertarget{namespacesettings_ab891b6a835eb8706eb0477db68a2c351}\label{namespacesettings_ab891b6a835eb8706eb0477db68a2c351}} 
+\index{settings@{settings}!max\+\_\+num\+\_\+params@{max\+\_\+num\+\_\+params}}
+\index{max\+\_\+num\+\_\+params@{max\+\_\+num\+\_\+params}!settings@{settings}}
+\subsubsection{\texorpdfstring{max\+\_\+num\+\_\+params}{max\_num\_params}}
+{\footnotesize\ttfamily integer, parameter settings\+::max\+\_\+num\+\_\+params = \mbox{\hyperlink{namespacesettings_a7884cd47680ca4079d2177f93eb41772}{max\+\_\+theory\+\_\+params}} + \mbox{\hyperlink{namespacesettings_a4d2d308b7b3d47f91cd40d6c735b4d99}{max\+\_\+data\+\_\+params}}}
+
+\mbox{\Hypertarget{namespacesettings_a7884cd47680ca4079d2177f93eb41772}\label{namespacesettings_a7884cd47680ca4079d2177f93eb41772}} 
+\index{settings@{settings}!max\+\_\+theory\+\_\+params@{max\+\_\+theory\+\_\+params}}
+\index{max\+\_\+theory\+\_\+params@{max\+\_\+theory\+\_\+params}!settings@{settings}}
+\subsubsection{\texorpdfstring{max\+\_\+theory\+\_\+params}{max\_theory\_params}}
+{\footnotesize\ttfamily integer, parameter settings\+::max\+\_\+theory\+\_\+params = 50}
+
+\mbox{\Hypertarget{namespacesettings_a341fa0fe410054f78630c33e118669bf}\label{namespacesettings_a341fa0fe410054f78630c33e118669bf}} 
+\index{settings@{settings}!mcp@{mcp}}
+\index{mcp@{mcp}!settings@{settings}}
+\subsubsection{\texorpdfstring{mcp}{mcp}}
+{\footnotesize\ttfamily integer parameter settings\+::mcp = K\+I\+ND(1.\+0)}
+
+
+
+Referenced by parampointset\+::paramset\+\_\+readmodel(), and parampointset\+::paramset\+\_\+writemodel().
+
+\mbox{\Hypertarget{namespacesettings_aa6d55f83efe636882451ee1240bf4929}\label{namespacesettings_aa6d55f83efe636882451ee1240bf4929}} 
+\index{settings@{settings}!mpi\+\_\+real\+\_\+mcp@{mpi\+\_\+real\+\_\+mcp}}
+\index{mpi\+\_\+real\+\_\+mcp@{mpi\+\_\+real\+\_\+mcp}!settings@{settings}}
+\subsubsection{\texorpdfstring{mpi\+\_\+real\+\_\+mcp}{mpi\_real\_mcp}}
+{\footnotesize\ttfamily integer parameter settings\+::mpi\+\_\+real\+\_\+mcp = M\+P\+I\+\_\+\+R\+E\+AL}
+
+
+
+Referenced by cmblikes\+::readcovmat(), and importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_a9cb321eeb7d7d329d5d99cba2595330d}\label{namespacesettings_a9cb321eeb7d7d329d5d99cba2595330d}} 
+\index{settings@{settings}!mpichains@{mpichains}}
+\index{mpichains@{mpichains}!settings@{settings}}
+\subsubsection{\texorpdfstring{mpichains}{mpichains}}
+{\footnotesize\ttfamily integer settings\+::mpichains = 1}
+
+
+
+Referenced by importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_ad6fd77f9480fb92754b6f5890017e594}\label{namespacesettings_ad6fd77f9480fb92754b6f5890017e594}} 
+\index{settings@{settings}!mpirank@{mpirank}}
+\index{mpirank@{mpirank}!settings@{settings}}
+\subsubsection{\texorpdfstring{mpirank}{mpirank}}
+{\footnotesize\ttfamily integer settings\+::mpirank = 0}
+
+
+
+Referenced by bao\+::bao\+\_\+readini(), cliklike\+::clik\+\_\+likeinit(), cliklike\+::clik\+\_\+readparams(), dostop(), cosmologytypes\+::tcosmotheorysettings\+\_\+initforlikelihoods(), and importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_afe15c9b4b37c62135a2e5d12810b92bc}\label{namespacesettings_afe15c9b4b37c62135a2e5d12810b92bc}} 
+\index{settings@{settings}!mpirun\+\_\+start\+\_\+time@{mpirun\+\_\+start\+\_\+time}}
+\index{mpirun\+\_\+start\+\_\+time@{mpirun\+\_\+start\+\_\+time}!settings@{settings}}
+\subsubsection{\texorpdfstring{mpirun\+\_\+start\+\_\+time}{mpirun\_start\_time}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacesettings_a3d81f31b9e0eef8de19fb9b016043af7}{time\+\_\+dp}}) settings\+::mpirun\+\_\+start\+\_\+time}
+
+
+
+Referenced by dostop().
+
+\mbox{\Hypertarget{namespacesettings_ac176aa2a57ff28bd3d05a0a2f2b4defa}\label{namespacesettings_ac176aa2a57ff28bd3d05a0a2f2b4defa}} 
+\index{settings@{settings}!new\+\_\+chains@{new\+\_\+chains}}
+\index{new\+\_\+chains@{new\+\_\+chains}!settings@{settings}}
+\subsubsection{\texorpdfstring{new\+\_\+chains}{new\_chains}}
+{\footnotesize\ttfamily logical settings\+::new\+\_\+chains = .true.}
+
+
+
+Referenced by cosmotheory\+::tcosmotheorypredictions\+\_\+writetheory().
+
+\mbox{\Hypertarget{namespacesettings_a588b630a77c6cf16ccd63096b5ac4507}\label{namespacesettings_a588b630a77c6cf16ccd63096b5ac4507}} 
+\index{settings@{settings}!num\+\_\+data\+\_\+params@{num\+\_\+data\+\_\+params}}
+\index{num\+\_\+data\+\_\+params@{num\+\_\+data\+\_\+params}!settings@{settings}}
+\subsubsection{\texorpdfstring{num\+\_\+data\+\_\+params}{num\_data\_params}}
+{\footnotesize\ttfamily integer settings\+::num\+\_\+data\+\_\+params}
+
+
+
+Referenced by baseparameters\+::tbaseparameters\+\_\+initializeusedparams().
+
+\mbox{\Hypertarget{namespacesettings_a4faf08502e49a2f851b29d8f7d5fb71d}\label{namespacesettings_a4faf08502e49a2f851b29d8f7d5fb71d}} 
+\index{settings@{settings}!num\+\_\+params@{num\+\_\+params}}
+\index{num\+\_\+params@{num\+\_\+params}!settings@{settings}}
+\subsubsection{\texorpdfstring{num\+\_\+params}{num\_params}}
+{\footnotesize\ttfamily integer settings\+::num\+\_\+params}
+
+
+
+Referenced by io\+::io\+\_\+readproposematrix(), parampointset\+::paramset\+\_\+readmodel(), baseparameters\+::tbaseparameters\+\_\+initializeusedparams(), baseparameters\+::tbaseparameters\+\_\+readparams(), and importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_ace1e5374df8682e0f85b1b7bcc21451c}\label{namespacesettings_ace1e5374df8682e0f85b1b7bcc21451c}} 
+\index{settings@{settings}!num\+\_\+params\+\_\+used@{num\+\_\+params\+\_\+used}}
+\index{num\+\_\+params\+\_\+used@{num\+\_\+params\+\_\+used}!settings@{settings}}
+\subsubsection{\texorpdfstring{num\+\_\+params\+\_\+used}{num\_params\_used}}
+{\footnotesize\ttfamily integer settings\+::num\+\_\+params\+\_\+used}
+
+
+
+Referenced by estcovmatmodule\+::estcovmat(), parampointset\+::paramset\+\_\+readmodel(), parampointset\+::paramset\+\_\+writemodel(), baseparameters\+::tbaseparameters\+\_\+readparams(), and baseparameters\+::tbaseparameters\+\_\+setstartpositions().
+
+\mbox{\Hypertarget{namespacesettings_a362078e6b11a6c4f0eff6aee65cf046a}\label{namespacesettings_a362078e6b11a6c4f0eff6aee65cf046a}} 
+\index{settings@{settings}!num\+\_\+theory\+\_\+params@{num\+\_\+theory\+\_\+params}}
+\index{num\+\_\+theory\+\_\+params@{num\+\_\+theory\+\_\+params}!settings@{settings}}
+\subsubsection{\texorpdfstring{num\+\_\+theory\+\_\+params}{num\_theory\_params}}
+{\footnotesize\ttfamily integer settings\+::num\+\_\+theory\+\_\+params}
+
+
+
+Referenced by io\+::io\+\_\+readproposematrix(), baseparameters\+::tbaseparameters\+\_\+initializeusedparams(), and cosmologytypes\+::tcosmologyparameterization\+\_\+setnumbers().
+
+\mbox{\Hypertarget{namespacesettings_a004f5c3efc3e9d33a1a4526f5a20785b}\label{namespacesettings_a004f5c3efc3e9d33a1a4526f5a20785b}} 
+\index{settings@{settings}!num\+\_\+threads@{num\+\_\+threads}}
+\index{num\+\_\+threads@{num\+\_\+threads}!settings@{settings}}
+\subsubsection{\texorpdfstring{num\+\_\+threads}{num\_threads}}
+{\footnotesize\ttfamily integer settings\+::num\+\_\+threads = 0}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata(), calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance(), and checkparamchangef().
+
+\mbox{\Hypertarget{namespacesettings_a8d398d8d6e0a5435eb847608d0147f12}\label{namespacesettings_a8d398d8d6e0a5435eb847608d0147f12}} 
+\index{settings@{settings}!output\+\_\+lines@{output\+\_\+lines}}
+\index{output\+\_\+lines@{output\+\_\+lines}!settings@{settings}}
+\subsubsection{\texorpdfstring{output\+\_\+lines}{output\_lines}}
+{\footnotesize\ttfamily integer settings\+::output\+\_\+lines = 0}
+
+
+
+Referenced by baseparameters\+::tbaseparameters\+\_\+initializeusedparams().
+
+\mbox{\Hypertarget{namespacesettings_a2d59bb48a1012143991ce9093fc76be5}\label{namespacesettings_a2d59bb48a1012143991ce9093fc76be5}} 
+\index{settings@{settings}!params\+\_\+used@{params\+\_\+used}}
+\index{params\+\_\+used@{params\+\_\+used}!settings@{settings}}
+\subsubsection{\texorpdfstring{params\+\_\+used}{params\_used}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable settings\+::params\+\_\+used}
+
+
+
+Referenced by estcovmatmodule\+::estcovmat(), estcovmatmodule\+::gethess(), estcovmatmodule\+::getstepsfordchisq1(), propose\+::init(), io\+::io\+\_\+readchainrow(), parampointset\+::paramset\+\_\+readmodel(), parampointset\+::paramset\+\_\+writemodel(), baseparameters\+::tbaseparameters\+\_\+readparams(), baseparameters\+::tbaseparameters\+\_\+setstartpositions(), and importancesampling\+::timportancesampler\+\_\+importancesample().
+
+\mbox{\Hypertarget{namespacesettings_a57710b73441b5ec0babcaa48cd333055}\label{namespacesettings_a57710b73441b5ec0babcaa48cd333055}} 
+\index{settings@{settings}!pi@{pi}}
+\index{pi@{pi}!settings@{settings}}
+\subsubsection{\texorpdfstring{pi}{pi}}
+{\footnotesize\ttfamily double precision, parameter settings\+::pi =3.\+14159265358979323846264338328d0}
+
+
+
+Referenced by wl\+::get\+\_\+convergence().
+
+\mbox{\Hypertarget{namespacesettings_a6fe3b2dcac06d9e51592e885f64ace1d}\label{namespacesettings_a6fe3b2dcac06d9e51592e885f64ace1d}} 
+\index{settings@{settings}!pi\+\_\+r@{pi\+\_\+r}}
+\index{pi\+\_\+r@{pi\+\_\+r}!settings@{settings}}
+\subsubsection{\texorpdfstring{pi\+\_\+r}{pi\_r}}
+{\footnotesize\ttfamily real, parameter settings\+::pi\+\_\+r = 3.\+141592653}
+
+\mbox{\Hypertarget{namespacesettings_a54504c6d9151b9990bf3f15deeaa139b}\label{namespacesettings_a54504c6d9151b9990bf3f15deeaa139b}} 
+\index{settings@{settings}!root2@{root2}}
+\index{root2@{root2}!settings@{settings}}
+\subsubsection{\texorpdfstring{root2}{root2}}
+{\footnotesize\ttfamily double precision, parameter settings\+::root2 = 1.\+41421356237309504880168872421d0}
+
+\mbox{\Hypertarget{namespacesettings_a4a3bc0d40d0532bc2f7f2cc87170068a}\label{namespacesettings_a4a3bc0d40d0532bc2f7f2cc87170068a}} 
+\index{settings@{settings}!rootname@{rootname}}
+\index{rootname@{rootname}!settings@{settings}}
+\subsubsection{\texorpdfstring{rootname}{rootname}}
+{\footnotesize\ttfamily character(len=\+:), allocatable settings\+::rootname}
+
+
+
+Referenced by mcsamples\+::get1ddensity(), getdist(), and mcsamples\+::makesinglesamples().
+
+\mbox{\Hypertarget{namespacesettings_a9cd020650f7e83b9fda45b3bfdda34bf}\label{namespacesettings_a9cd020650f7e83b9fda45b3bfdda34bf}} 
+\index{settings@{settings}!sampling\+\_\+fast\+\_\+dragging@{sampling\+\_\+fast\+\_\+dragging}}
+\index{sampling\+\_\+fast\+\_\+dragging@{sampling\+\_\+fast\+\_\+dragging}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+fast\+\_\+dragging}{sampling\_fast\_dragging}}
+{\footnotesize\ttfamily integer, parameter settings\+::sampling\+\_\+fast\+\_\+dragging = 7}
+
+\mbox{\Hypertarget{namespacesettings_af8673aadd88b8cfe802aeb29376ec2a6}\label{namespacesettings_af8673aadd88b8cfe802aeb29376ec2a6}} 
+\index{settings@{settings}!sampling\+\_\+fastslice@{sampling\+\_\+fastslice}}
+\index{sampling\+\_\+fastslice@{sampling\+\_\+fastslice}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+fastslice}{sampling\_fastslice}}
+{\footnotesize\ttfamily integer, parameter settings\+::sampling\+\_\+fastslice =3}
+
+\mbox{\Hypertarget{namespacesettings_a01e6691ce72977baf15dd20434012f65}\label{namespacesettings_a01e6691ce72977baf15dd20434012f65}} 
+\index{settings@{settings}!sampling\+\_\+method@{sampling\+\_\+method}}
+\index{sampling\+\_\+method@{sampling\+\_\+method}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+method}{sampling\_method}}
+{\footnotesize\ttfamily integer settings\+::sampling\+\_\+method = \mbox{\hyperlink{namespacesettings_a7fbe5e0e8194b33c8990365eafe20bed}{sampling\+\_\+metropolis}}}
+
+\mbox{\Hypertarget{namespacesettings_a7fbe5e0e8194b33c8990365eafe20bed}\label{namespacesettings_a7fbe5e0e8194b33c8990365eafe20bed}} 
+\index{settings@{settings}!sampling\+\_\+metropolis@{sampling\+\_\+metropolis}}
+\index{sampling\+\_\+metropolis@{sampling\+\_\+metropolis}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+metropolis}{sampling\_metropolis}}
+{\footnotesize\ttfamily integer, parameter settings\+::sampling\+\_\+metropolis = 1}
+
+\mbox{\Hypertarget{namespacesettings_ab692e79a9d756d1ebf42dba033da3c9b}\label{namespacesettings_ab692e79a9d756d1ebf42dba033da3c9b}} 
+\index{settings@{settings}!sampling\+\_\+multicanonical@{sampling\+\_\+multicanonical}}
+\index{sampling\+\_\+multicanonical@{sampling\+\_\+multicanonical}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+multicanonical}{sampling\_multicanonical}}
+{\footnotesize\ttfamily integer, parameter settings\+::sampling\+\_\+multicanonical = 5}
+
+\mbox{\Hypertarget{namespacesettings_a3122cb465205f6e3dfbcca05cd8c4d0c}\label{namespacesettings_a3122cb465205f6e3dfbcca05cd8c4d0c}} 
+\index{settings@{settings}!sampling\+\_\+slice@{sampling\+\_\+slice}}
+\index{sampling\+\_\+slice@{sampling\+\_\+slice}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+slice}{sampling\_slice}}
+{\footnotesize\ttfamily integer, parameter settings\+::sampling\+\_\+slice = 2}
+
+\mbox{\Hypertarget{namespacesettings_af39c7332606eeaed1affbeb9715b903e}\label{namespacesettings_af39c7332606eeaed1affbeb9715b903e}} 
+\index{settings@{settings}!sampling\+\_\+slowgrid@{sampling\+\_\+slowgrid}}
+\index{sampling\+\_\+slowgrid@{sampling\+\_\+slowgrid}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+slowgrid}{sampling\_slowgrid}}
+{\footnotesize\ttfamily integer, parameter settings\+::sampling\+\_\+slowgrid = 4}
+
+\mbox{\Hypertarget{namespacesettings_a88e45b9a2ab5447d2cb82b74672906de}\label{namespacesettings_a88e45b9a2ab5447d2cb82b74672906de}} 
+\index{settings@{settings}!sampling\+\_\+wang\+\_\+landau@{sampling\+\_\+wang\+\_\+landau}}
+\index{sampling\+\_\+wang\+\_\+landau@{sampling\+\_\+wang\+\_\+landau}!settings@{settings}}
+\subsubsection{\texorpdfstring{sampling\+\_\+wang\+\_\+landau}{sampling\_wang\_landau}}
+{\footnotesize\ttfamily integer, parameter settings\+::sampling\+\_\+wang\+\_\+landau = 6}
+
+\mbox{\Hypertarget{namespacesettings_a46452645879c3ed6edc6b31e79786d63}\label{namespacesettings_a46452645879c3ed6edc6b31e79786d63}} 
+\index{settings@{settings}!sqrt2@{sqrt2}}
+\index{sqrt2@{sqrt2}!settings@{settings}}
+\subsubsection{\texorpdfstring{sqrt2}{sqrt2}}
+{\footnotesize\ttfamily double precision, parameter settings\+::sqrt2 = \mbox{\hyperlink{namespacesettings_a54504c6d9151b9990bf3f15deeaa139b}{root2}}}
+
+\mbox{\Hypertarget{namespacesettings_af5b1a69ec3d96be977d23b1e59e7d36e}\label{namespacesettings_af5b1a69ec3d96be977d23b1e59e7d36e}} 
+\index{settings@{settings}!stdout@{stdout}}
+\index{stdout@{stdout}!settings@{settings}}
+\subsubsection{\texorpdfstring{stdout}{stdout}}
+{\footnotesize\ttfamily integer, parameter settings\+::stdout = output\+\_\+unit}
+
+
+
+Referenced by getdist().
+
+\mbox{\Hypertarget{namespacesettings_a4acafe693ea8cedb2044a2ce90c9469f}\label{namespacesettings_a4acafe693ea8cedb2044a2ce90c9469f}} 
+\index{settings@{settings}!stop\+\_\+on\+\_\+error@{stop\+\_\+on\+\_\+error}}
+\index{stop\+\_\+on\+\_\+error@{stop\+\_\+on\+\_\+error}!settings@{settings}}
+\subsubsection{\texorpdfstring{stop\+\_\+on\+\_\+error}{stop\_on\_error}}
+{\footnotesize\ttfamily logical settings\+::stop\+\_\+on\+\_\+error = .true.}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata().
+
+\mbox{\Hypertarget{namespacesettings_a3d81f31b9e0eef8de19fb9b016043af7}\label{namespacesettings_a3d81f31b9e0eef8de19fb9b016043af7}} 
+\index{settings@{settings}!time\+\_\+dp@{time\+\_\+dp}}
+\index{time\+\_\+dp@{time\+\_\+dp}!settings@{settings}}
+\subsubsection{\texorpdfstring{time\+\_\+dp}{time\_dp}}
+{\footnotesize\ttfamily integer, parameter settings\+::time\+\_\+dp = K\+I\+ND(1.d0)}
+
+\mbox{\Hypertarget{namespacesettings_a22fb9d779d16c940a845d5da795ef6ec}\label{namespacesettings_a22fb9d779d16c940a845d5da795ef6ec}} 
+\index{settings@{settings}!twopi@{twopi}}
+\index{twopi@{twopi}!settings@{settings}}
+\subsubsection{\texorpdfstring{twopi}{twopi}}
+{\footnotesize\ttfamily double precision, parameter settings\+::twopi =2$\ast$\mbox{\hyperlink{namespacesettings_a57710b73441b5ec0babcaa48cd333055}{pi}}}
+
+\mbox{\Hypertarget{namespacesettings_a87b6f8cb970e358fc23b950e8db62257}\label{namespacesettings_a87b6f8cb970e358fc23b950e8db62257}} 
+\index{settings@{settings}!twopi\+\_\+r@{twopi\+\_\+r}}
+\index{twopi\+\_\+r@{twopi\+\_\+r}!settings@{settings}}
+\subsubsection{\texorpdfstring{twopi\+\_\+r}{twopi\_r}}
+{\footnotesize\ttfamily real, parameter settings\+::twopi\+\_\+r = 2$\ast$\mbox{\hyperlink{namespacesettings_a6fe3b2dcac06d9e51592e885f64ace1d}{pi\+\_\+r}}}
+
+\mbox{\Hypertarget{namespacesettings_ae20cda2e95f0e537dcbca3b63cb9bb0f}\label{namespacesettings_ae20cda2e95f0e537dcbca3b63cb9bb0f}} 
+\index{settings@{settings}!use\+\_\+fast\+\_\+slow@{use\+\_\+fast\+\_\+slow}}
+\index{use\+\_\+fast\+\_\+slow@{use\+\_\+fast\+\_\+slow}!settings@{settings}}
+\subsubsection{\texorpdfstring{use\+\_\+fast\+\_\+slow}{use\_fast\_slow}}
+{\footnotesize\ttfamily logical settings\+::use\+\_\+fast\+\_\+slow = .false.}
+

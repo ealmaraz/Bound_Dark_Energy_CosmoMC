@@ -1,0 +1,150 @@
+\hypertarget{namespacepower__sz}{}\section{power\+\_\+sz Module Reference}
+\label{namespacepower__sz}\index{power\+\_\+sz@{power\+\_\+sz}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacepower__sz_aba87ceb74647bba3404b96101f438d35}{inigrowth}}
+\item 
+real(dl) function \mbox{\hyperlink{namespacepower__sz_aa30236046bbf63ea0304f440bef4964d}{delta}} (z)
+\item 
+subroutine \mbox{\hyperlink{namespacepower__sz_adf64f1eb16e70afa359a6b084d2219d4}{ddelta}} (dummyr, n, a, y, yprime)
+\item 
+real(dl) function \mbox{\hyperlink{namespacepower__sz_ad0eb7df0cb325285d971ac5aa7c80754}{growint}} (a)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) \mbox{\hyperlink{namespacepower__sz_a9c2a55f8b77bacfff31fc7792410a4cc}{normsig8}}
+\item 
+real(dl) \mbox{\hyperlink{namespacepower__sz_ad00d03b01e9af9747a7013d7ea680a25}{normgrowth}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacepower__sz_adf64f1eb16e70afa359a6b084d2219d4}\label{namespacepower__sz_adf64f1eb16e70afa359a6b084d2219d4}} 
+\index{power\+\_\+sz@{power\+\_\+sz}!ddelta@{ddelta}}
+\index{ddelta@{ddelta}!power\+\_\+sz@{power\+\_\+sz}}
+\subsubsection{\texorpdfstring{ddelta()}{ddelta()}}
+{\footnotesize\ttfamily subroutine power\+\_\+sz\+::ddelta (\begin{DoxyParamCaption}\item[{real, intent(in)}]{dummyr,  }\item[{integer, intent(in)}]{n,  }\item[{real(dl), intent(in)}]{a,  }\item[{real(dl), dimension(n)}]{y,  }\item[{real(dl), dimension(n)}]{yprime }\end{DoxyParamCaption})}
+
+
+
+References cosmology\+::cosmopar, cosmology\+::omegade(), cosmology\+::omegak(), and cosmology\+::omegam().
+
+
+
+Referenced by delta().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepower__sz_adf64f1eb16e70afa359a6b084d2219d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepower__sz_adf64f1eb16e70afa359a6b084d2219d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepower__sz_aa30236046bbf63ea0304f440bef4964d}\label{namespacepower__sz_aa30236046bbf63ea0304f440bef4964d}} 
+\index{power\+\_\+sz@{power\+\_\+sz}!delta@{delta}}
+\index{delta@{delta}!power\+\_\+sz@{power\+\_\+sz}}
+\subsubsection{\texorpdfstring{delta()}{delta()}}
+{\footnotesize\ttfamily real(dl) function power\+\_\+sz\+::delta (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{z }\end{DoxyParamCaption})}
+
+
+
+References cosmology\+::cosmopar, ddelta(), dverk(), growint(), normgrowth, and rombint().
+
+
+
+Referenced by numbercounts\+::get\+\_\+grid(), and inigrowth().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepower__sz_aa30236046bbf63ea0304f440bef4964d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepower__sz_aa30236046bbf63ea0304f440bef4964d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepower__sz_ad0eb7df0cb325285d971ac5aa7c80754}\label{namespacepower__sz_ad0eb7df0cb325285d971ac5aa7c80754}} 
+\index{power\+\_\+sz@{power\+\_\+sz}!growint@{growint}}
+\index{growint@{growint}!power\+\_\+sz@{power\+\_\+sz}}
+\subsubsection{\texorpdfstring{growint()}{growint()}}
+{\footnotesize\ttfamily real(dl) function power\+\_\+sz\+::growint (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})}
+
+
+
+References cosmology\+::cosmopar, and cosmology\+::omegam().
+
+
+
+Referenced by delta().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepower__sz_ad0eb7df0cb325285d971ac5aa7c80754_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepower__sz_ad0eb7df0cb325285d971ac5aa7c80754_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepower__sz_aba87ceb74647bba3404b96101f438d35}\label{namespacepower__sz_aba87ceb74647bba3404b96101f438d35}} 
+\index{power\+\_\+sz@{power\+\_\+sz}!inigrowth@{inigrowth}}
+\index{inigrowth@{inigrowth}!power\+\_\+sz@{power\+\_\+sz}}
+\subsubsection{\texorpdfstring{inigrowth()}{inigrowth()}}
+{\footnotesize\ttfamily subroutine power\+\_\+sz\+::inigrowth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References delta(), and normgrowth.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepower__sz_aba87ceb74647bba3404b96101f438d35_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepower__sz_ad00d03b01e9af9747a7013d7ea680a25}\label{namespacepower__sz_ad00d03b01e9af9747a7013d7ea680a25}} 
+\index{power\+\_\+sz@{power\+\_\+sz}!normgrowth@{normgrowth}}
+\index{normgrowth@{normgrowth}!power\+\_\+sz@{power\+\_\+sz}}
+\subsubsection{\texorpdfstring{normgrowth}{normgrowth}}
+{\footnotesize\ttfamily real(dl) power\+\_\+sz\+::normgrowth}
+
+
+
+Referenced by delta(), and inigrowth().
+
+\mbox{\Hypertarget{namespacepower__sz_a9c2a55f8b77bacfff31fc7792410a4cc}\label{namespacepower__sz_a9c2a55f8b77bacfff31fc7792410a4cc}} 
+\index{power\+\_\+sz@{power\+\_\+sz}!normsig8@{normsig8}}
+\index{normsig8@{normsig8}!power\+\_\+sz@{power\+\_\+sz}}
+\subsubsection{\texorpdfstring{normsig8}{normsig8}}
+{\footnotesize\ttfamily real(dl) power\+\_\+sz\+::normsig8}
+

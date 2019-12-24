@@ -1,0 +1,155 @@
+\hypertarget{namespacewl}{}\section{wl Module Reference}
+\label{namespacewl}\index{wl@{wl}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structwl_1_1wllikelihood}{wllikelihood}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacewl_a622c1e8033fcc6aa3474f2fd57263f4b}{wllikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacewl_ae5eb8a620a32ecf00fb98f6d7f2e5573}{wl\+\_\+readini}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacewl_ae6b71112cf916069d3fc83f99af9168c}{wl\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacewl_a1238699402e6cd69190706ee7bf42356}{get\+\_\+convergence}} (this, C\+MB, Theory, xi)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacewl_afc642e4e15f4400cf7729c68be5aa85d}{nlmax}} = 65
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewl_a3359e7d1e42c8d0976460988d6f1f095}{dlnl}} = 0.\+2d0
+\item 
+real(mcp) \mbox{\hyperlink{namespacewl_a1747377f03b9869d4c2736ecc5c83300}{dlntheta}} = 0.\+25d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewl_af91a3d13d635d84de880af213be86336}{dx}} = 0.\+02d0
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacewl_a908028e399897f9b001a61a6f78b6349}{xstop}} = 200.\+0d0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacewl_a1238699402e6cd69190706ee7bf42356}\label{namespacewl_a1238699402e6cd69190706ee7bf42356}} 
+\index{wl@{wl}!get\+\_\+convergence@{get\+\_\+convergence}}
+\index{get\+\_\+convergence@{get\+\_\+convergence}!wl@{wl}}
+\subsubsection{\texorpdfstring{get\+\_\+convergence()}{get\_convergence()}}
+{\footnotesize\ttfamily subroutine wl\+::get\+\_\+convergence (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structwl_1_1wllikelihood}{wllikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:), intent(out)}]{xi }\end{DoxyParamCaption})}
+
+
+
+References settings\+::const\+\_\+c, dlnl, dlntheta, dx, nlmax, settings\+::pi, and xstop.
+
+\mbox{\Hypertarget{namespacewl_ae6b71112cf916069d3fc83f99af9168c}\label{namespacewl_ae6b71112cf916069d3fc83f99af9168c}} 
+\index{wl@{wl}!wl\+\_\+lnlike@{wl\+\_\+lnlike}}
+\index{wl\+\_\+lnlike@{wl\+\_\+lnlike}!wl@{wl}}
+\subsubsection{\texorpdfstring{wl\+\_\+lnlike()}{wl\_lnlike()}}
+{\footnotesize\ttfamily real(mcp) function wl\+::wl\+\_\+lnlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structwl_1_1wllikelihood}{wllikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})}
+
+
+
+References matrixutils\+::matrix\+\_\+quadform().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewl_ae6b71112cf916069d3fc83f99af9168c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewl_ae5eb8a620a32ecf00fb98f6d7f2e5573}\label{namespacewl_ae5eb8a620a32ecf00fb98f6d7f2e5573}} 
+\index{wl@{wl}!wl\+\_\+readini@{wl\+\_\+readini}}
+\index{wl\+\_\+readini@{wl\+\_\+readini}!wl@{wl}}
+\subsubsection{\texorpdfstring{wl\+\_\+readini()}{wl\_readini()}}
+{\footnotesize\ttfamily subroutine wl\+::wl\+\_\+readini (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structwl_1_1wllikelihood}{wllikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::feedback, and matrixutils\+::matrix\+\_\+inverse().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacewl_ae5eb8a620a32ecf00fb98f6d7f2e5573_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacewl_a622c1e8033fcc6aa3474f2fd57263f4b}\label{namespacewl_a622c1e8033fcc6aa3474f2fd57263f4b}} 
+\index{wl@{wl}!wllikelihood\+\_\+add@{wllikelihood\+\_\+add}}
+\index{wllikelihood\+\_\+add@{wllikelihood\+\_\+add}!wl@{wl}}
+\subsubsection{\texorpdfstring{wllikelihood\+\_\+add()}{wllikelihood\_add()}}
+{\footnotesize\ttfamily subroutine, public wl\+::wllikelihood\+\_\+add (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References settings\+::feedback.
+
+
+
+Referenced by datalikelihoodlist\+::setdatalikelihoods().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacewl_a622c1e8033fcc6aa3474f2fd57263f4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacewl_a3359e7d1e42c8d0976460988d6f1f095}\label{namespacewl_a3359e7d1e42c8d0976460988d6f1f095}} 
+\index{wl@{wl}!dlnl@{dlnl}}
+\index{dlnl@{dlnl}!wl@{wl}}
+\subsubsection{\texorpdfstring{dlnl}{dlnl}}
+{\footnotesize\ttfamily real(mcp), parameter wl\+::dlnl = 0.\+2d0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by get\+\_\+convergence().
+
+\mbox{\Hypertarget{namespacewl_a1747377f03b9869d4c2736ecc5c83300}\label{namespacewl_a1747377f03b9869d4c2736ecc5c83300}} 
+\index{wl@{wl}!dlntheta@{dlntheta}}
+\index{dlntheta@{dlntheta}!wl@{wl}}
+\subsubsection{\texorpdfstring{dlntheta}{dlntheta}}
+{\footnotesize\ttfamily real(mcp) wl\+::dlntheta = 0.\+25d0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by get\+\_\+convergence().
+
+\mbox{\Hypertarget{namespacewl_af91a3d13d635d84de880af213be86336}\label{namespacewl_af91a3d13d635d84de880af213be86336}} 
+\index{wl@{wl}!dx@{dx}}
+\index{dx@{dx}!wl@{wl}}
+\subsubsection{\texorpdfstring{dx}{dx}}
+{\footnotesize\ttfamily real(mcp), parameter wl\+::dx = 0.\+02d0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by get\+\_\+convergence().
+
+\mbox{\Hypertarget{namespacewl_afc642e4e15f4400cf7729c68be5aa85d}\label{namespacewl_afc642e4e15f4400cf7729c68be5aa85d}} 
+\index{wl@{wl}!nlmax@{nlmax}}
+\index{nlmax@{nlmax}!wl@{wl}}
+\subsubsection{\texorpdfstring{nlmax}{nlmax}}
+{\footnotesize\ttfamily integer, parameter wl\+::nlmax = 65\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by get\+\_\+convergence().
+
+\mbox{\Hypertarget{namespacewl_a908028e399897f9b001a61a6f78b6349}\label{namespacewl_a908028e399897f9b001a61a6f78b6349}} 
+\index{wl@{wl}!xstop@{xstop}}
+\index{xstop@{xstop}!wl@{wl}}
+\subsubsection{\texorpdfstring{xstop}{xstop}}
+{\footnotesize\ttfamily real(mcp), parameter wl\+::xstop = 200.\+0d0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by get\+\_\+convergence().
+

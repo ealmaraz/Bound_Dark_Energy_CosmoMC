@@ -1,0 +1,951 @@
+\hypertarget{namespacejla}{}\section{jla Module Reference}
+\label{namespacejla}\index{jla@{jla}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structjla_1_1jlalikelihood}{jlalikelihood}}
+\item 
+type \mbox{\hyperlink{structjla_1_1supernova}{supernova}}
+\item 
+type \mbox{\hyperlink{structjla_1_1supernova__absdist}{supernova\+\_\+absdist}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_a76279ec95aebe74a01796fb5d2734d94}{jlalikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_a2b7997e55b705956940cd1729f2a6e93}{count\+\_\+lines}} (lun, lines, noncommentlines)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_ae2ea921f1a8597682a71a793dc11bbe7}{read\+\_\+cov\+\_\+matrix}} (filename, mat, n)
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_aadb5af8cc4301188cd29adc8b94a5bb0}{read\+\_\+jla\+\_\+lc\+\_\+data}} (lun, nlines, nnoncommentlines, \mbox{\hyperlink{namespacejla_a9e2b90e3f1e2fbd40d61e0ad31bb2684}{sndata}})
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_ad1ad5e96f9f9f225249edadd8b348012}{read\+\_\+jla\+\_\+absdist\+\_\+data}} (lun, nlines, nnoncommentlines, \mbox{\hyperlink{namespacejla_ac714ae18a12d4b4a726b05c017fd1e92}{snabsdist}})
+\item 
+subroutine, private \mbox{\hyperlink{namespacejla_af2e3afa13e8cf5731d6cf06c1ddaf31a}{match\+\_\+jla\+\_\+absdist\+\_\+indices}} (\mbox{\hyperlink{namespacejla_a9e2b90e3f1e2fbd40d61e0ad31bb2684}{sndata}}, \mbox{\hyperlink{namespacejla_ac714ae18a12d4b4a726b05c017fd1e92}{snabsdist}})
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_a3a08d66a30f511b1a63b006b9c1fac53}{read\+\_\+jla\+\_\+dataset}} (filename)
+\item 
+subroutine \mbox{\hyperlink{namespacejla_a212c8dceda3061fd0e44c6a2834a4196}{invert\+\_\+covariance\+\_\+matrix}} (invcovmat, alpha, beta, status)
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_a840bbaee909bef635242328944cb1a14}{jla\+\_\+prep}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacejla_abe626bf6278990fc57f73440426b3740}{jla\+\_\+cleanup}}
+\item 
+real(mcp) function \mbox{\hyperlink{namespacejla_aaf4f263910da5f17d55cd63613847567}{jla\+\_\+alpha\+\_\+beta\+\_\+like}} (alpha, beta, \mbox{\hyperlink{namespacejla_a488389e4c0ef651c499c3c48d6bee7ef}{lumdists}})
+\item 
+real(mcp) function, public \mbox{\hyperlink{namespacejla_a9a536b5f47c5314d3099af7ca66ec027}{jla\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacejla_af9daaf320a7953866d9f29f7f569fbe4}{jla\+\_\+marginalize}} = .false.
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacejla_a9dc22edc44b8361f9204d217df48cd90}{jla\+\_\+marge\+\_\+grid}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacejla_a1b7511f05dabf960a434da4444f44b88}{alpha\+\_\+grid}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacejla_a105d58f143e8da2dc75625cfaeed54e7}{beta\+\_\+grid}}
+\item 
+integer \mbox{\hyperlink{namespacejla_abdf521613e95b6b0873dc07e2182f08c}{jla\+\_\+marge\+\_\+steps}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{namespacejla_a1b8ab5c356e2c83f267f757196a4a1d2}{jla\+\_\+step\+\_\+width\+\_\+alpha}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacejla_adbfc26690b5ccc65be262cc876cb3bc0}{jla\+\_\+step\+\_\+width\+\_\+beta}}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacejla_a4556268c3d45127055caae2fcea446fc}{jla\+\_\+alpha\+\_\+center}} = 0.\+14
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacejla_a9a9c2c6948ab744eed4e350dad8715bc}{jla\+\_\+beta\+\_\+center}} = 3.\+123
+\item 
+integer \mbox{\hyperlink{namespacejla_a11ab12ec846d481127e505fb14a88ab3}{jla\+\_\+int\+\_\+points}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}} = mcp
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacejla_a9facfef6576a64d9e5b180caec42ea7d}{jla\+\_\+version}} = \textquotesingle{}December\+\_\+2013\textquotesingle{}
+\item 
+logical, parameter \mbox{\hyperlink{namespacejla_a5032684691d0e984e5aa1cbdc55795f7}{allow\+\_\+inv\+\_\+cache}} = .false.
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private \mbox{\hyperlink{namespacejla_a3f2ed7b8048c2f4dd93374020335944f}{inv\+\_\+twopi}} = 1.\+0\+\_\+dl / twopi
+\item 
+character, parameter, private \mbox{\hyperlink{namespacejla_ae9dda5d2cfb1fec80f10dea135ea407e}{uplo}} = \textquotesingle{}U\textquotesingle{}
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacejla_a15038ba72bb06d328f2c43f0d0dd5a53}{max\+\_\+idisp\+\_\+datasets}} = 10
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacejla_a211c3f57dbbc51d6959058d935cc0fb6}{snnamelen}} = 12
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private \mbox{\hyperlink{namespacejla_ac0c65fbeb2a567849038727459759c29}{h0cfac}} = 5$\ast$L\+O\+G10( 100.\+0/299792.\+458 )
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private \mbox{\hyperlink{namespacejla_a0298c9010520a99e272978ce5f61a83a}{alphatol}} = 1\+E-\/10\+\_\+dl
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private \mbox{\hyperlink{namespacejla_a5ef48a10dbf7795c2f5d30b11434bbd4}{betatol}} = 1\+E-\/10\+\_\+dl
+\item 
+character(len=30), private \mbox{\hyperlink{namespacejla_a344f6058fc2504417d29ec6990051554}{name}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private \mbox{\hyperlink{namespacejla_a5f4aaf92cb5a44de1cce93628083b789}{pecz}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\mbox{\hyperlink{namespacejla_a15038ba72bb06d328f2c43f0d0dd5a53}{max\+\_\+idisp\+\_\+datasets}}) \mbox{\hyperlink{namespacejla_a20678b08d3fa64ee1a64c9ff41d1cdf9}{intrinsicdisp}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a6aade81a34ccb4e5795d2141aeace91d}{twoscriptmfit}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a340aa04c1acf8e62ad8fe9261de0ad91}{has\+\_\+thirdvar}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private \mbox{\hyperlink{namespacejla_af11758b53916846ed4875f3664797cb4}{scriptmcut}}
+\item 
+integer, public \mbox{\hyperlink{namespacejla_aff413afd9288880fbc89d3a1f24f60eb}{nsn}}
+\item 
+type(\mbox{\hyperlink{structjla_1_1supernova}{supernova}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_a9e2b90e3f1e2fbd40d61e0ad31bb2684}{sndata}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_aa01e50e6176267ba591eec0a0f61bfa2}{pre\+\_\+vars}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_af953b413735d88b2fb4acce3a491e092}{a1}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_a4745bbeba0b176717566b37123f5a538}{a2}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_ab5b550ee0d2130dd40e4e517860a32e3}{diag\+\_\+errors}} = .T\+R\+U\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a59c3668ae4a232ee84a102f4ea2515c1}{has\+\_\+mag\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a41c379420fdf30a15f9f79533c2e9172}{has\+\_\+stretch\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a5f77e309102810deed32022b4986fcd7}{has\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a5b83e1587462131ae02f6c91ac9831f3}{has\+\_\+mag\+\_\+stretch\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_aab6bb8e29688907bcdf528d8aeb19f04}{has\+\_\+mag\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a32dbd6f4ba90d52437050c67650569cc}{has\+\_\+stretch\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a337800de4314f7309ac0d0fb2f7a0278}{alphabeta\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a268b540e94d941747a6f2a4ae9db5fc6}{mag\+\_\+covmat}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a7244bc3fbb6a94e6d1fe9d0e1fbaaef8}{stretch\+\_\+covmat}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a3b95b3e7a5ea31feba90bf7c9b9e8fc6}{colour\+\_\+covmat}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a6d4dd0b09a0e00323bc4f74df2235901}{mag\+\_\+stretch\+\_\+covmat}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a0eab7a6fccee7c07f28748c3bcb2c260}{mag\+\_\+colour\+\_\+covmat}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacejla_a22070c0614b05ee2b305729eddeb3d9d}{stretch\+\_\+colour\+\_\+covmat}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a2eb95509fe329afa263dcfa2727d6b41}{has\+\_\+absdist}} = .F\+A\+L\+S\+E.
+\item 
+integer, private \mbox{\hyperlink{namespacejla_ac196ce11e9bc46a1f0f7190de071358a}{nabsdist}} = 0
+\item 
+type(\mbox{\hyperlink{structjla_1_1supernova__absdist}{supernova\+\_\+absdist}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_ac714ae18a12d4b4a726b05c017fd1e92}{snabsdist}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacejla_a488389e4c0ef651c499c3c48d6bee7ef}{lumdists}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private \mbox{\hyperlink{namespacejla_ade47fc5cee67934ebf1deb3f971e55ba}{alpha\+\_\+prev}}
+\item 
+real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private \mbox{\hyperlink{namespacejla_a6ce045a151cda5e7f1d37adeac58eb4d}{beta\+\_\+prev}}
+\item 
+logical, private \mbox{\hyperlink{namespacejla_a7e32750158b057376c58db729873f935}{first\+\_\+inversion}}
+\item 
+logical, public \mbox{\hyperlink{namespacejla_a408c4f01bb785e06e2a2555aa770e090}{jla\+\_\+read}} = .F\+A\+L\+S\+E.
+\item 
+logical, public \mbox{\hyperlink{namespacejla_a8a48484fda3925329cb345d9b671b56b}{jla\+\_\+prepped}} = .F\+A\+L\+S\+E.
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacejla_a2b7997e55b705956940cd1729f2a6e93}\label{namespacejla_a2b7997e55b705956940cd1729f2a6e93}} 
+\index{jla@{jla}!count\+\_\+lines@{count\+\_\+lines}}
+\index{count\+\_\+lines@{count\+\_\+lines}!jla@{jla}}
+\subsubsection{\texorpdfstring{count\+\_\+lines()}{count\_lines()}}
+{\footnotesize\ttfamily subroutine, private jla\+::count\+\_\+lines (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lun,  }\item[{integer, intent(out)}]{lines,  }\item[{integer, intent(out)}]{noncommentlines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+jla\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_a2b7997e55b705956940cd1729f2a6e93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_a212c8dceda3061fd0e44c6a2834a4196}\label{namespacejla_a212c8dceda3061fd0e44c6a2834a4196}} 
+\index{jla@{jla}!invert\+\_\+covariance\+\_\+matrix@{invert\+\_\+covariance\+\_\+matrix}}
+\index{invert\+\_\+covariance\+\_\+matrix@{invert\+\_\+covariance\+\_\+matrix}!jla@{jla}}
+\subsubsection{\texorpdfstring{invert\+\_\+covariance\+\_\+matrix()}{invert\_covariance\_matrix()}}
+{\footnotesize\ttfamily subroutine jla\+::invert\+\_\+covariance\+\_\+matrix (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:)}]{invcovmat,  }\item[{real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), intent(in)}]{alpha,  }\item[{real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), intent(in)}]{beta,  }\item[{integer, intent(inout)}]{status }\end{DoxyParamCaption})}
+
+
+
+References allow\+\_\+inv\+\_\+cache, alpha\+\_\+prev, alphabeta\+\_\+covmat, alphatol, beta\+\_\+prev, betatol, colour\+\_\+covmat, diag\+\_\+errors, first\+\_\+inversion, has\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+covmat, has\+\_\+mag\+\_\+stretch\+\_\+covmat, has\+\_\+stretch\+\_\+colour\+\_\+covmat, has\+\_\+stretch\+\_\+covmat, mag\+\_\+colour\+\_\+covmat, mag\+\_\+covmat, mag\+\_\+stretch\+\_\+covmat, nsn, pre\+\_\+vars, sndata, stretch\+\_\+colour\+\_\+covmat, stretch\+\_\+covmat, and uplo.
+
+
+
+Referenced by jla\+\_\+alpha\+\_\+beta\+\_\+like().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_a212c8dceda3061fd0e44c6a2834a4196_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_aaf4f263910da5f17d55cd63613847567}\label{namespacejla_aaf4f263910da5f17d55cd63613847567}} 
+\index{jla@{jla}!jla\+\_\+alpha\+\_\+beta\+\_\+like@{jla\+\_\+alpha\+\_\+beta\+\_\+like}}
+\index{jla\+\_\+alpha\+\_\+beta\+\_\+like@{jla\+\_\+alpha\+\_\+beta\+\_\+like}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+alpha\+\_\+beta\+\_\+like()}{jla\_alpha\_beta\_like()}}
+{\footnotesize\ttfamily real(mcp) function jla\+::jla\+\_\+alpha\+\_\+beta\+\_\+like (\begin{DoxyParamCaption}\item[{real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}})}]{alpha,  }\item[{real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}})}]{beta,  }\item[{real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\mbox{\hyperlink{namespacejla_aff413afd9288880fbc89d3a1f24f60eb}{nsn}})}]{lumdists }\end{DoxyParamCaption})}
+
+
+
+References a1, a2, diag\+\_\+errors, settings\+::feedback, inv\+\_\+twopi, invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+marginalize, settings\+::logzero, lumdists, nsn, pre\+\_\+vars, sndata, twoscriptmfit, and uplo.
+
+
+
+Referenced by jla\+\_\+lnlike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacejla_aaf4f263910da5f17d55cd63613847567_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{namespacejla_aaf4f263910da5f17d55cd63613847567_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_abe626bf6278990fc57f73440426b3740}\label{namespacejla_abe626bf6278990fc57f73440426b3740}} 
+\index{jla@{jla}!jla\+\_\+cleanup@{jla\+\_\+cleanup}}
+\index{jla\+\_\+cleanup@{jla\+\_\+cleanup}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+cleanup()}{jla\_cleanup()}}
+{\footnotesize\ttfamily subroutine, public jla\+::jla\+\_\+cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References a1, a2, colour\+\_\+covmat, jla\+\_\+prepped, lumdists, mag\+\_\+colour\+\_\+covmat, mag\+\_\+covmat, mag\+\_\+stretch\+\_\+covmat, pre\+\_\+vars, snabsdist, sndata, stretch\+\_\+colour\+\_\+covmat, and stretch\+\_\+covmat.
+
+\mbox{\Hypertarget{namespacejla_a9a536b5f47c5314d3099af7ca66ec027}\label{namespacejla_a9a536b5f47c5314d3099af7ca66ec027}} 
+\index{jla@{jla}!jla\+\_\+lnlike@{jla\+\_\+lnlike}}
+\index{jla\+\_\+lnlike@{jla\+\_\+lnlike}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+lnlike()}{jla\_lnlike()}}
+{\footnotesize\ttfamily real(mcp) function, public jla\+::jla\+\_\+lnlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structjla_1_1jlalikelihood}{jlalikelihood}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})}
+
+
+
+References alpha\+\_\+grid, beta\+\_\+grid, settings\+::feedback, has\+\_\+absdist, jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+int\+\_\+points, jla\+\_\+marge\+\_\+grid, jla\+\_\+marginalize, jla\+\_\+prepped, jla\+\_\+read, jla\+\_\+step\+\_\+width\+\_\+alpha, jla\+\_\+step\+\_\+width\+\_\+beta, settings\+::logzero, lumdists, nabsdist, nsn, snabsdist, and sndata.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_a9a536b5f47c5314d3099af7ca66ec027_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_a840bbaee909bef635242328944cb1a14}\label{namespacejla_a840bbaee909bef635242328944cb1a14}} 
+\index{jla@{jla}!jla\+\_\+prep@{jla\+\_\+prep}}
+\index{jla\+\_\+prep@{jla\+\_\+prep}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+prep()}{jla\_prep()}}
+{\footnotesize\ttfamily subroutine, public jla\+::jla\+\_\+prep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References a1, a2, settings\+::feedback, first\+\_\+inversion, intrinsicdisp, jla\+\_\+prepped, jla\+\_\+read, lumdists, max\+\_\+idisp\+\_\+datasets, nsn, pecz, pre\+\_\+vars, scriptmcut, sndata, and twoscriptmfit.
+
+
+
+Referenced by jlalikelihood\+\_\+add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_a840bbaee909bef635242328944cb1a14_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_a76279ec95aebe74a01796fb5d2734d94}\label{namespacejla_a76279ec95aebe74a01796fb5d2734d94}} 
+\index{jla@{jla}!jlalikelihood\+\_\+add@{jlalikelihood\+\_\+add}}
+\index{jlalikelihood\+\_\+add@{jlalikelihood\+\_\+add}!jla@{jla}}
+\subsubsection{\texorpdfstring{jlalikelihood\+\_\+add()}{jlalikelihood\_add()}}
+{\footnotesize\ttfamily subroutine, public jla\+::jlalikelihood\+\_\+add (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(tinifile)}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References alpha\+\_\+grid, beta\+\_\+grid, settings\+::datadir, settings\+::feedback, jla\+\_\+alpha\+\_\+center, jla\+\_\+beta\+\_\+center, jla\+\_\+int\+\_\+points, jla\+\_\+marge\+\_\+grid, jla\+\_\+marge\+\_\+steps, jla\+\_\+marginalize, jla\+\_\+prep(), jla\+\_\+step\+\_\+width\+\_\+alpha, jla\+\_\+step\+\_\+width\+\_\+beta, jla\+\_\+version, and read\+\_\+jla\+\_\+dataset().
+
+
+
+Referenced by snovae\+::snlikelihood\+\_\+add().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_a76279ec95aebe74a01796fb5d2734d94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_a76279ec95aebe74a01796fb5d2734d94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_af2e3afa13e8cf5731d6cf06c1ddaf31a}\label{namespacejla_af2e3afa13e8cf5731d6cf06c1ddaf31a}} 
+\index{jla@{jla}!match\+\_\+jla\+\_\+absdist\+\_\+indices@{match\+\_\+jla\+\_\+absdist\+\_\+indices}}
+\index{match\+\_\+jla\+\_\+absdist\+\_\+indices@{match\+\_\+jla\+\_\+absdist\+\_\+indices}!jla@{jla}}
+\subsubsection{\texorpdfstring{match\+\_\+jla\+\_\+absdist\+\_\+indices()}{match\_jla\_absdist\_indices()}}
+{\footnotesize\ttfamily subroutine, private jla\+::match\+\_\+jla\+\_\+absdist\+\_\+indices (\begin{DoxyParamCaption}\item[{type( \mbox{\hyperlink{structjla_1_1supernova}{supernova}} ), dimension(\+:), intent(inout)}]{sndata,  }\item[{type( \mbox{\hyperlink{structjla_1_1supernova__absdist}{supernova\+\_\+absdist}} ), dimension(\+:), intent(inout)}]{snabsdist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References nabsdist, nsn, snabsdist, and sndata.
+
+
+
+Referenced by read\+\_\+jla\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_af2e3afa13e8cf5731d6cf06c1ddaf31a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_ae2ea921f1a8597682a71a793dc11bbe7}\label{namespacejla_ae2ea921f1a8597682a71a793dc11bbe7}} 
+\index{jla@{jla}!read\+\_\+cov\+\_\+matrix@{read\+\_\+cov\+\_\+matrix}}
+\index{read\+\_\+cov\+\_\+matrix@{read\+\_\+cov\+\_\+matrix}!jla@{jla}}
+\subsubsection{\texorpdfstring{read\+\_\+cov\+\_\+matrix()}{read\_cov\_matrix()}}
+{\footnotesize\ttfamily subroutine, private jla\+::read\+\_\+cov\+\_\+matrix (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{filename,  }\item[{real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(n,n), intent(out)}]{mat,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::feedback.
+
+
+
+Referenced by read\+\_\+jla\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_ae2ea921f1a8597682a71a793dc11bbe7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_ad1ad5e96f9f9f225249edadd8b348012}\label{namespacejla_ad1ad5e96f9f9f225249edadd8b348012}} 
+\index{jla@{jla}!read\+\_\+jla\+\_\+absdist\+\_\+data@{read\+\_\+jla\+\_\+absdist\+\_\+data}}
+\index{read\+\_\+jla\+\_\+absdist\+\_\+data@{read\+\_\+jla\+\_\+absdist\+\_\+data}!jla@{jla}}
+\subsubsection{\texorpdfstring{read\+\_\+jla\+\_\+absdist\+\_\+data()}{read\_jla\_absdist\_data()}}
+{\footnotesize\ttfamily subroutine, private jla\+::read\+\_\+jla\+\_\+absdist\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lun,  }\item[{integer, intent(in)}]{nlines,  }\item[{integer, intent(in)}]{nnoncommentlines,  }\item[{type(\mbox{\hyperlink{structjla_1_1supernova__absdist}{supernova\+\_\+absdist}}), dimension(nnoncommentlines), intent(out)}]{snabsdist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References snabsdist.
+
+
+
+Referenced by read\+\_\+jla\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_ad1ad5e96f9f9f225249edadd8b348012_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_a3a08d66a30f511b1a63b006b9c1fac53}\label{namespacejla_a3a08d66a30f511b1a63b006b9c1fac53}} 
+\index{jla@{jla}!read\+\_\+jla\+\_\+dataset@{read\+\_\+jla\+\_\+dataset}}
+\index{read\+\_\+jla\+\_\+dataset@{read\+\_\+jla\+\_\+dataset}!jla@{jla}}
+\subsubsection{\texorpdfstring{read\+\_\+jla\+\_\+dataset()}{read\_jla\_dataset()}}
+{\footnotesize\ttfamily subroutine, public jla\+::read\+\_\+jla\+\_\+dataset (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{filename }\end{DoxyParamCaption})}
+
+
+
+References alphabeta\+\_\+covmat, colour\+\_\+covmat, count\+\_\+lines(), settings\+::datadir, diag\+\_\+errors, settings\+::feedback, first\+\_\+inversion, has\+\_\+absdist, has\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+covmat, has\+\_\+mag\+\_\+stretch\+\_\+covmat, has\+\_\+stretch\+\_\+colour\+\_\+covmat, has\+\_\+stretch\+\_\+covmat, has\+\_\+thirdvar, intrinsicdisp, jla\+\_\+prepped, jla\+\_\+read, mag\+\_\+colour\+\_\+covmat, mag\+\_\+covmat, mag\+\_\+stretch\+\_\+covmat, match\+\_\+jla\+\_\+absdist\+\_\+indices(), max\+\_\+idisp\+\_\+datasets, nabsdist, name, nsn, pecz, read\+\_\+cov\+\_\+matrix(), read\+\_\+jla\+\_\+absdist\+\_\+data(), read\+\_\+jla\+\_\+lc\+\_\+data(), scriptmcut, snabsdist, sndata, stretch\+\_\+colour\+\_\+covmat, stretch\+\_\+covmat, and twoscriptmfit.
+
+
+
+Referenced by jlalikelihood\+\_\+add().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacejla_a3a08d66a30f511b1a63b006b9c1fac53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_a3a08d66a30f511b1a63b006b9c1fac53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacejla_aadb5af8cc4301188cd29adc8b94a5bb0}\label{namespacejla_aadb5af8cc4301188cd29adc8b94a5bb0}} 
+\index{jla@{jla}!read\+\_\+jla\+\_\+lc\+\_\+data@{read\+\_\+jla\+\_\+lc\+\_\+data}}
+\index{read\+\_\+jla\+\_\+lc\+\_\+data@{read\+\_\+jla\+\_\+lc\+\_\+data}!jla@{jla}}
+\subsubsection{\texorpdfstring{read\+\_\+jla\+\_\+lc\+\_\+data()}{read\_jla\_lc\_data()}}
+{\footnotesize\ttfamily subroutine, private jla\+::read\+\_\+jla\+\_\+lc\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lun,  }\item[{integer, intent(in)}]{nlines,  }\item[{integer, intent(in)}]{nnoncommentlines,  }\item[{type(\mbox{\hyperlink{structjla_1_1supernova}{supernova}}), dimension(nnoncommentlines), intent(out)}]{sndata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References has\+\_\+thirdvar, and sndata.
+
+
+
+Referenced by read\+\_\+jla\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacejla_aadb5af8cc4301188cd29adc8b94a5bb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacejla_af953b413735d88b2fb4acce3a491e092}\label{namespacejla_af953b413735d88b2fb4acce3a491e092}} 
+\index{jla@{jla}!a1@{a1}}
+\index{a1@{a1}!jla@{jla}}
+\subsubsection{\texorpdfstring{a1}{a1}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private jla\+::a1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+cleanup(), and jla\+\_\+prep().
+
+\mbox{\Hypertarget{namespacejla_a4745bbeba0b176717566b37123f5a538}\label{namespacejla_a4745bbeba0b176717566b37123f5a538}} 
+\index{jla@{jla}!a2@{a2}}
+\index{a2@{a2}!jla@{jla}}
+\subsubsection{\texorpdfstring{a2}{a2}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private jla\+::a2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+cleanup(), and jla\+\_\+prep().
+
+\mbox{\Hypertarget{namespacejla_a5032684691d0e984e5aa1cbdc55795f7}\label{namespacejla_a5032684691d0e984e5aa1cbdc55795f7}} 
+\index{jla@{jla}!allow\+\_\+inv\+\_\+cache@{allow\+\_\+inv\+\_\+cache}}
+\index{allow\+\_\+inv\+\_\+cache@{allow\+\_\+inv\+\_\+cache}!jla@{jla}}
+\subsubsection{\texorpdfstring{allow\+\_\+inv\+\_\+cache}{allow\_inv\_cache}}
+{\footnotesize\ttfamily logical, parameter jla\+::allow\+\_\+inv\+\_\+cache = .false.}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacejla_a1b7511f05dabf960a434da4444f44b88}\label{namespacejla_a1b7511f05dabf960a434da4444f44b88}} 
+\index{jla@{jla}!alpha\+\_\+grid@{alpha\+\_\+grid}}
+\index{alpha\+\_\+grid@{alpha\+\_\+grid}!jla@{jla}}
+\subsubsection{\texorpdfstring{alpha\+\_\+grid}{alpha\_grid}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable jla\+::alpha\+\_\+grid}
+
+
+
+Referenced by jla\+\_\+lnlike(), and jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_ade47fc5cee67934ebf1deb3f971e55ba}\label{namespacejla_ade47fc5cee67934ebf1deb3f971e55ba}} 
+\index{jla@{jla}!alpha\+\_\+prev@{alpha\+\_\+prev}}
+\index{alpha\+\_\+prev@{alpha\+\_\+prev}!jla@{jla}}
+\subsubsection{\texorpdfstring{alpha\+\_\+prev}{alpha\_prev}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private jla\+::alpha\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacejla_a337800de4314f7309ac0d0fb2f7a0278}\label{namespacejla_a337800de4314f7309ac0d0fb2f7a0278}} 
+\index{jla@{jla}!alphabeta\+\_\+covmat@{alphabeta\+\_\+covmat}}
+\index{alphabeta\+\_\+covmat@{alphabeta\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{alphabeta\+\_\+covmat}{alphabeta\_covmat}}
+{\footnotesize\ttfamily logical, private jla\+::alphabeta\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a0298c9010520a99e272978ce5f61a83a}\label{namespacejla_a0298c9010520a99e272978ce5f61a83a}} 
+\index{jla@{jla}!alphatol@{alphatol}}
+\index{alphatol@{alphatol}!jla@{jla}}
+\subsubsection{\texorpdfstring{alphatol}{alphatol}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private jla\+::alphatol = 1\+E-\/10\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacejla_a105d58f143e8da2dc75625cfaeed54e7}\label{namespacejla_a105d58f143e8da2dc75625cfaeed54e7}} 
+\index{jla@{jla}!beta\+\_\+grid@{beta\+\_\+grid}}
+\index{beta\+\_\+grid@{beta\+\_\+grid}!jla@{jla}}
+\subsubsection{\texorpdfstring{beta\+\_\+grid}{beta\_grid}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable jla\+::beta\+\_\+grid}
+
+
+
+Referenced by jla\+\_\+lnlike(), and jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_a6ce045a151cda5e7f1d37adeac58eb4d}\label{namespacejla_a6ce045a151cda5e7f1d37adeac58eb4d}} 
+\index{jla@{jla}!beta\+\_\+prev@{beta\+\_\+prev}}
+\index{beta\+\_\+prev@{beta\+\_\+prev}!jla@{jla}}
+\subsubsection{\texorpdfstring{beta\+\_\+prev}{beta\_prev}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private jla\+::beta\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacejla_a5ef48a10dbf7795c2f5d30b11434bbd4}\label{namespacejla_a5ef48a10dbf7795c2f5d30b11434bbd4}} 
+\index{jla@{jla}!betatol@{betatol}}
+\index{betatol@{betatol}!jla@{jla}}
+\subsubsection{\texorpdfstring{betatol}{betatol}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private jla\+::betatol = 1\+E-\/10\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacejla_a3b95b3e7a5ea31feba90bf7c9b9e8fc6}\label{namespacejla_a3b95b3e7a5ea31feba90bf7c9b9e8fc6}} 
+\index{jla@{jla}!colour\+\_\+covmat@{colour\+\_\+covmat}}
+\index{colour\+\_\+covmat@{colour\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{colour\+\_\+covmat}{colour\_covmat}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private jla\+::colour\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+cleanup(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_ab5b550ee0d2130dd40e4e517860a32e3}\label{namespacejla_ab5b550ee0d2130dd40e4e517860a32e3}} 
+\index{jla@{jla}!diag\+\_\+errors@{diag\+\_\+errors}}
+\index{diag\+\_\+errors@{diag\+\_\+errors}!jla@{jla}}
+\subsubsection{\texorpdfstring{diag\+\_\+errors}{diag\_errors}}
+{\footnotesize\ttfamily logical, private jla\+::diag\+\_\+errors = .T\+R\+U\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+alpha\+\_\+beta\+\_\+like(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a3aa6435b4e08f1d532390186ac608741}\label{namespacejla_a3aa6435b4e08f1d532390186ac608741}} 
+\index{jla@{jla}!dl@{dl}}
+\index{dl@{dl}!jla@{jla}}
+\subsubsection{\texorpdfstring{dl}{dl}}
+{\footnotesize\ttfamily integer, parameter jla\+::dl = mcp}
+
+\mbox{\Hypertarget{namespacejla_a7e32750158b057376c58db729873f935}\label{namespacejla_a7e32750158b057376c58db729873f935}} 
+\index{jla@{jla}!first\+\_\+inversion@{first\+\_\+inversion}}
+\index{first\+\_\+inversion@{first\+\_\+inversion}!jla@{jla}}
+\subsubsection{\texorpdfstring{first\+\_\+inversion}{first\_inversion}}
+{\footnotesize\ttfamily logical, private jla\+::first\+\_\+inversion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_ac0c65fbeb2a567849038727459759c29}\label{namespacejla_ac0c65fbeb2a567849038727459759c29}} 
+\index{jla@{jla}!h0cfac@{h0cfac}}
+\index{h0cfac@{h0cfac}!jla@{jla}}
+\subsubsection{\texorpdfstring{h0cfac}{h0cfac}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private jla\+::h0cfac = 5$\ast$L\+O\+G10( 100.\+0/299792.\+458 )\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacejla_a2eb95509fe329afa263dcfa2727d6b41}\label{namespacejla_a2eb95509fe329afa263dcfa2727d6b41}} 
+\index{jla@{jla}!has\+\_\+absdist@{has\+\_\+absdist}}
+\index{has\+\_\+absdist@{has\+\_\+absdist}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+absdist}{has\_absdist}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+absdist = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+lnlike(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a5f77e309102810deed32022b4986fcd7}\label{namespacejla_a5f77e309102810deed32022b4986fcd7}} 
+\index{jla@{jla}!has\+\_\+colour\+\_\+covmat@{has\+\_\+colour\+\_\+covmat}}
+\index{has\+\_\+colour\+\_\+covmat@{has\+\_\+colour\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+colour\+\_\+covmat}{has\_colour\_covmat}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+colour\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_aab6bb8e29688907bcdf528d8aeb19f04}\label{namespacejla_aab6bb8e29688907bcdf528d8aeb19f04}} 
+\index{jla@{jla}!has\+\_\+mag\+\_\+colour\+\_\+covmat@{has\+\_\+mag\+\_\+colour\+\_\+covmat}}
+\index{has\+\_\+mag\+\_\+colour\+\_\+covmat@{has\+\_\+mag\+\_\+colour\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+mag\+\_\+colour\+\_\+covmat}{has\_mag\_colour\_covmat}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+mag\+\_\+colour\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a59c3668ae4a232ee84a102f4ea2515c1}\label{namespacejla_a59c3668ae4a232ee84a102f4ea2515c1}} 
+\index{jla@{jla}!has\+\_\+mag\+\_\+covmat@{has\+\_\+mag\+\_\+covmat}}
+\index{has\+\_\+mag\+\_\+covmat@{has\+\_\+mag\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+mag\+\_\+covmat}{has\_mag\_covmat}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+mag\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a5b83e1587462131ae02f6c91ac9831f3}\label{namespacejla_a5b83e1587462131ae02f6c91ac9831f3}} 
+\index{jla@{jla}!has\+\_\+mag\+\_\+stretch\+\_\+covmat@{has\+\_\+mag\+\_\+stretch\+\_\+covmat}}
+\index{has\+\_\+mag\+\_\+stretch\+\_\+covmat@{has\+\_\+mag\+\_\+stretch\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+mag\+\_\+stretch\+\_\+covmat}{has\_mag\_stretch\_covmat}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+mag\+\_\+stretch\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a32dbd6f4ba90d52437050c67650569cc}\label{namespacejla_a32dbd6f4ba90d52437050c67650569cc}} 
+\index{jla@{jla}!has\+\_\+stretch\+\_\+colour\+\_\+covmat@{has\+\_\+stretch\+\_\+colour\+\_\+covmat}}
+\index{has\+\_\+stretch\+\_\+colour\+\_\+covmat@{has\+\_\+stretch\+\_\+colour\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+stretch\+\_\+colour\+\_\+covmat}{has\_stretch\_colour\_covmat}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+stretch\+\_\+colour\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a41c379420fdf30a15f9f79533c2e9172}\label{namespacejla_a41c379420fdf30a15f9f79533c2e9172}} 
+\index{jla@{jla}!has\+\_\+stretch\+\_\+covmat@{has\+\_\+stretch\+\_\+covmat}}
+\index{has\+\_\+stretch\+\_\+covmat@{has\+\_\+stretch\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+stretch\+\_\+covmat}{has\_stretch\_covmat}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+stretch\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a340aa04c1acf8e62ad8fe9261de0ad91}\label{namespacejla_a340aa04c1acf8e62ad8fe9261de0ad91}} 
+\index{jla@{jla}!has\+\_\+thirdvar@{has\+\_\+thirdvar}}
+\index{has\+\_\+thirdvar@{has\+\_\+thirdvar}!jla@{jla}}
+\subsubsection{\texorpdfstring{has\+\_\+thirdvar}{has\_thirdvar}}
+{\footnotesize\ttfamily logical, private jla\+::has\+\_\+thirdvar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+jla\+\_\+dataset(), and read\+\_\+jla\+\_\+lc\+\_\+data().
+
+\mbox{\Hypertarget{namespacejla_a20678b08d3fa64ee1a64c9ff41d1cdf9}\label{namespacejla_a20678b08d3fa64ee1a64c9ff41d1cdf9}} 
+\index{jla@{jla}!intrinsicdisp@{intrinsicdisp}}
+\index{intrinsicdisp@{intrinsicdisp}!jla@{jla}}
+\subsubsection{\texorpdfstring{intrinsicdisp}{intrinsicdisp}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension( \mbox{\hyperlink{namespacejla_a15038ba72bb06d328f2c43f0d0dd5a53}{max\+\_\+idisp\+\_\+datasets}} ) jla\+::intrinsicdisp}
+
+
+
+Referenced by jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a3f2ed7b8048c2f4dd93374020335944f}\label{namespacejla_a3f2ed7b8048c2f4dd93374020335944f}} 
+\index{jla@{jla}!inv\+\_\+twopi@{inv\+\_\+twopi}}
+\index{inv\+\_\+twopi@{inv\+\_\+twopi}!jla@{jla}}
+\subsubsection{\texorpdfstring{inv\+\_\+twopi}{inv\_twopi}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), parameter, private jla\+::inv\+\_\+twopi = 1.\+0\+\_\+dl / twopi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+alpha\+\_\+beta\+\_\+like().
+
+\mbox{\Hypertarget{namespacejla_a4556268c3d45127055caae2fcea446fc}\label{namespacejla_a4556268c3d45127055caae2fcea446fc}} 
+\index{jla@{jla}!jla\+\_\+alpha\+\_\+center@{jla\+\_\+alpha\+\_\+center}}
+\index{jla\+\_\+alpha\+\_\+center@{jla\+\_\+alpha\+\_\+center}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+alpha\+\_\+center}{jla\_alpha\_center}}
+{\footnotesize\ttfamily real(mcp), parameter jla\+::jla\+\_\+alpha\+\_\+center = 0.\+14}
+
+
+
+Referenced by jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_a9a9c2c6948ab744eed4e350dad8715bc}\label{namespacejla_a9a9c2c6948ab744eed4e350dad8715bc}} 
+\index{jla@{jla}!jla\+\_\+beta\+\_\+center@{jla\+\_\+beta\+\_\+center}}
+\index{jla\+\_\+beta\+\_\+center@{jla\+\_\+beta\+\_\+center}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+beta\+\_\+center}{jla\_beta\_center}}
+{\footnotesize\ttfamily real(mcp), parameter jla\+::jla\+\_\+beta\+\_\+center = 3.\+123}
+
+
+
+Referenced by jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_a11ab12ec846d481127e505fb14a88ab3}\label{namespacejla_a11ab12ec846d481127e505fb14a88ab3}} 
+\index{jla@{jla}!jla\+\_\+int\+\_\+points@{jla\+\_\+int\+\_\+points}}
+\index{jla\+\_\+int\+\_\+points@{jla\+\_\+int\+\_\+points}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+int\+\_\+points}{jla\_int\_points}}
+{\footnotesize\ttfamily integer jla\+::jla\+\_\+int\+\_\+points = 1}
+
+
+
+Referenced by jla\+\_\+lnlike(), and jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_a9dc22edc44b8361f9204d217df48cd90}\label{namespacejla_a9dc22edc44b8361f9204d217df48cd90}} 
+\index{jla@{jla}!jla\+\_\+marge\+\_\+grid@{jla\+\_\+marge\+\_\+grid}}
+\index{jla\+\_\+marge\+\_\+grid@{jla\+\_\+marge\+\_\+grid}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+marge\+\_\+grid}{jla\_marge\_grid}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable jla\+::jla\+\_\+marge\+\_\+grid}
+
+
+
+Referenced by jla\+\_\+lnlike(), and jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_abdf521613e95b6b0873dc07e2182f08c}\label{namespacejla_abdf521613e95b6b0873dc07e2182f08c}} 
+\index{jla@{jla}!jla\+\_\+marge\+\_\+steps@{jla\+\_\+marge\+\_\+steps}}
+\index{jla\+\_\+marge\+\_\+steps@{jla\+\_\+marge\+\_\+steps}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+marge\+\_\+steps}{jla\_marge\_steps}}
+{\footnotesize\ttfamily integer jla\+::jla\+\_\+marge\+\_\+steps = 0}
+
+
+
+Referenced by jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_af9daaf320a7953866d9f29f7f569fbe4}\label{namespacejla_af9daaf320a7953866d9f29f7f569fbe4}} 
+\index{jla@{jla}!jla\+\_\+marginalize@{jla\+\_\+marginalize}}
+\index{jla\+\_\+marginalize@{jla\+\_\+marginalize}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+marginalize}{jla\_marginalize}}
+{\footnotesize\ttfamily logical jla\+::jla\+\_\+marginalize = .false.}
+
+
+
+Referenced by jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+lnlike(), and jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_a8a48484fda3925329cb345d9b671b56b}\label{namespacejla_a8a48484fda3925329cb345d9b671b56b}} 
+\index{jla@{jla}!jla\+\_\+prepped@{jla\+\_\+prepped}}
+\index{jla\+\_\+prepped@{jla\+\_\+prepped}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+prepped}{jla\_prepped}}
+{\footnotesize\ttfamily logical, public jla\+::jla\+\_\+prepped = .F\+A\+L\+S\+E.}
+
+
+
+Referenced by jla\+\_\+cleanup(), jla\+\_\+lnlike(), jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a408c4f01bb785e06e2a2555aa770e090}\label{namespacejla_a408c4f01bb785e06e2a2555aa770e090}} 
+\index{jla@{jla}!jla\+\_\+read@{jla\+\_\+read}}
+\index{jla\+\_\+read@{jla\+\_\+read}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+read}{jla\_read}}
+{\footnotesize\ttfamily logical, public jla\+::jla\+\_\+read = .F\+A\+L\+S\+E.}
+
+
+
+Referenced by jla\+\_\+lnlike(), jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a1b8ab5c356e2c83f267f757196a4a1d2}\label{namespacejla_a1b8ab5c356e2c83f267f757196a4a1d2}} 
+\index{jla@{jla}!jla\+\_\+step\+\_\+width\+\_\+alpha@{jla\+\_\+step\+\_\+width\+\_\+alpha}}
+\index{jla\+\_\+step\+\_\+width\+\_\+alpha@{jla\+\_\+step\+\_\+width\+\_\+alpha}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+step\+\_\+width\+\_\+alpha}{jla\_step\_width\_alpha}}
+{\footnotesize\ttfamily real(mcp) jla\+::jla\+\_\+step\+\_\+width\+\_\+alpha}
+
+
+
+Referenced by jla\+\_\+lnlike(), and jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_adbfc26690b5ccc65be262cc876cb3bc0}\label{namespacejla_adbfc26690b5ccc65be262cc876cb3bc0}} 
+\index{jla@{jla}!jla\+\_\+step\+\_\+width\+\_\+beta@{jla\+\_\+step\+\_\+width\+\_\+beta}}
+\index{jla\+\_\+step\+\_\+width\+\_\+beta@{jla\+\_\+step\+\_\+width\+\_\+beta}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+step\+\_\+width\+\_\+beta}{jla\_step\_width\_beta}}
+{\footnotesize\ttfamily real(mcp) jla\+::jla\+\_\+step\+\_\+width\+\_\+beta}
+
+
+
+Referenced by jla\+\_\+lnlike(), and jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_a9facfef6576a64d9e5b180caec42ea7d}\label{namespacejla_a9facfef6576a64d9e5b180caec42ea7d}} 
+\index{jla@{jla}!jla\+\_\+version@{jla\+\_\+version}}
+\index{jla\+\_\+version@{jla\+\_\+version}!jla@{jla}}
+\subsubsection{\texorpdfstring{jla\+\_\+version}{jla\_version}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter jla\+::jla\+\_\+version = \textquotesingle{}December\+\_\+2013\textquotesingle{}}
+
+
+
+Referenced by jlalikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacejla_a488389e4c0ef651c499c3c48d6bee7ef}\label{namespacejla_a488389e4c0ef651c499c3c48d6bee7ef}} 
+\index{jla@{jla}!lumdists@{lumdists}}
+\index{lumdists@{lumdists}!jla@{jla}}
+\subsubsection{\texorpdfstring{lumdists}{lumdists}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private jla\+::lumdists\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+cleanup(), jla\+\_\+lnlike(), and jla\+\_\+prep().
+
+\mbox{\Hypertarget{namespacejla_a0eab7a6fccee7c07f28748c3bcb2c260}\label{namespacejla_a0eab7a6fccee7c07f28748c3bcb2c260}} 
+\index{jla@{jla}!mag\+\_\+colour\+\_\+covmat@{mag\+\_\+colour\+\_\+covmat}}
+\index{mag\+\_\+colour\+\_\+covmat@{mag\+\_\+colour\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{mag\+\_\+colour\+\_\+covmat}{mag\_colour\_covmat}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private jla\+::mag\+\_\+colour\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+cleanup(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a268b540e94d941747a6f2a4ae9db5fc6}\label{namespacejla_a268b540e94d941747a6f2a4ae9db5fc6}} 
+\index{jla@{jla}!mag\+\_\+covmat@{mag\+\_\+covmat}}
+\index{mag\+\_\+covmat@{mag\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{mag\+\_\+covmat}{mag\_covmat}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private jla\+::mag\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+cleanup(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a6d4dd0b09a0e00323bc4f74df2235901}\label{namespacejla_a6d4dd0b09a0e00323bc4f74df2235901}} 
+\index{jla@{jla}!mag\+\_\+stretch\+\_\+covmat@{mag\+\_\+stretch\+\_\+covmat}}
+\index{mag\+\_\+stretch\+\_\+covmat@{mag\+\_\+stretch\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{mag\+\_\+stretch\+\_\+covmat}{mag\_stretch\_covmat}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private jla\+::mag\+\_\+stretch\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+cleanup(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a15038ba72bb06d328f2c43f0d0dd5a53}\label{namespacejla_a15038ba72bb06d328f2c43f0d0dd5a53}} 
+\index{jla@{jla}!max\+\_\+idisp\+\_\+datasets@{max\+\_\+idisp\+\_\+datasets}}
+\index{max\+\_\+idisp\+\_\+datasets@{max\+\_\+idisp\+\_\+datasets}!jla@{jla}}
+\subsubsection{\texorpdfstring{max\+\_\+idisp\+\_\+datasets}{max\_idisp\_datasets}}
+{\footnotesize\ttfamily integer, parameter, private jla\+::max\+\_\+idisp\+\_\+datasets = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_ac196ce11e9bc46a1f0f7190de071358a}\label{namespacejla_ac196ce11e9bc46a1f0f7190de071358a}} 
+\index{jla@{jla}!nabsdist@{nabsdist}}
+\index{nabsdist@{nabsdist}!jla@{jla}}
+\subsubsection{\texorpdfstring{nabsdist}{nabsdist}}
+{\footnotesize\ttfamily integer, private jla\+::nabsdist = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+lnlike(), match\+\_\+jla\+\_\+absdist\+\_\+indices(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a344f6058fc2504417d29ec6990051554}\label{namespacejla_a344f6058fc2504417d29ec6990051554}} 
+\index{jla@{jla}!name@{name}}
+\index{name@{name}!jla@{jla}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily character(len=30), private jla\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_aff413afd9288880fbc89d3a1f24f60eb}\label{namespacejla_aff413afd9288880fbc89d3a1f24f60eb}} 
+\index{jla@{jla}!nsn@{nsn}}
+\index{nsn@{nsn}!jla@{jla}}
+\subsubsection{\texorpdfstring{nsn}{nsn}}
+{\footnotesize\ttfamily integer, public jla\+::nsn}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+lnlike(), jla\+\_\+prep(), match\+\_\+jla\+\_\+absdist\+\_\+indices(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a5f4aaf92cb5a44de1cce93628083b789}\label{namespacejla_a5f4aaf92cb5a44de1cce93628083b789}} 
+\index{jla@{jla}!pecz@{pecz}}
+\index{pecz@{pecz}!jla@{jla}}
+\subsubsection{\texorpdfstring{pecz}{pecz}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private jla\+::pecz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_aa01e50e6176267ba591eec0a0f61bfa2}\label{namespacejla_aa01e50e6176267ba591eec0a0f61bfa2}} 
+\index{jla@{jla}!pre\+\_\+vars@{pre\+\_\+vars}}
+\index{pre\+\_\+vars@{pre\+\_\+vars}!jla@{jla}}
+\subsubsection{\texorpdfstring{pre\+\_\+vars}{pre\_vars}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:), allocatable, private jla\+::pre\+\_\+vars\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+cleanup(), and jla\+\_\+prep().
+
+\mbox{\Hypertarget{namespacejla_af11758b53916846ed4875f3664797cb4}\label{namespacejla_af11758b53916846ed4875f3664797cb4}} 
+\index{jla@{jla}!scriptmcut@{scriptmcut}}
+\index{scriptmcut@{scriptmcut}!jla@{jla}}
+\subsubsection{\texorpdfstring{scriptmcut}{scriptmcut}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), private jla\+::scriptmcut\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_ac714ae18a12d4b4a726b05c017fd1e92}\label{namespacejla_ac714ae18a12d4b4a726b05c017fd1e92}} 
+\index{jla@{jla}!snabsdist@{snabsdist}}
+\index{snabsdist@{snabsdist}!jla@{jla}}
+\subsubsection{\texorpdfstring{snabsdist}{snabsdist}}
+{\footnotesize\ttfamily type( \mbox{\hyperlink{structjla_1_1supernova__absdist}{supernova\+\_\+absdist}} ), dimension(\+:), allocatable, private jla\+::snabsdist\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+cleanup(), jla\+\_\+lnlike(), match\+\_\+jla\+\_\+absdist\+\_\+indices(), read\+\_\+jla\+\_\+absdist\+\_\+data(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a9e2b90e3f1e2fbd40d61e0ad31bb2684}\label{namespacejla_a9e2b90e3f1e2fbd40d61e0ad31bb2684}} 
+\index{jla@{jla}!sndata@{sndata}}
+\index{sndata@{sndata}!jla@{jla}}
+\subsubsection{\texorpdfstring{sndata}{sndata}}
+{\footnotesize\ttfamily type( \mbox{\hyperlink{structjla_1_1supernova}{supernova}} ), dimension(\+:), allocatable, private jla\+::sndata\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+cleanup(), jla\+\_\+lnlike(), jla\+\_\+prep(), match\+\_\+jla\+\_\+absdist\+\_\+indices(), read\+\_\+jla\+\_\+dataset(), and read\+\_\+jla\+\_\+lc\+\_\+data().
+
+\mbox{\Hypertarget{namespacejla_a211c3f57dbbc51d6959058d935cc0fb6}\label{namespacejla_a211c3f57dbbc51d6959058d935cc0fb6}} 
+\index{jla@{jla}!snnamelen@{snnamelen}}
+\index{snnamelen@{snnamelen}!jla@{jla}}
+\subsubsection{\texorpdfstring{snnamelen}{snnamelen}}
+{\footnotesize\ttfamily integer, parameter, private jla\+::snnamelen = 12\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacejla_a22070c0614b05ee2b305729eddeb3d9d}\label{namespacejla_a22070c0614b05ee2b305729eddeb3d9d}} 
+\index{jla@{jla}!stretch\+\_\+colour\+\_\+covmat@{stretch\+\_\+colour\+\_\+covmat}}
+\index{stretch\+\_\+colour\+\_\+covmat@{stretch\+\_\+colour\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{stretch\+\_\+colour\+\_\+covmat}{stretch\_colour\_covmat}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private jla\+::stretch\+\_\+colour\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+cleanup(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a7244bc3fbb6a94e6d1fe9d0e1fbaaef8}\label{namespacejla_a7244bc3fbb6a94e6d1fe9d0e1fbaaef8}} 
+\index{jla@{jla}!stretch\+\_\+covmat@{stretch\+\_\+covmat}}
+\index{stretch\+\_\+covmat@{stretch\+\_\+covmat}!jla@{jla}}
+\subsubsection{\texorpdfstring{stretch\+\_\+covmat}{stretch\_covmat}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacejla_a3aa6435b4e08f1d532390186ac608741}{dl}}), dimension(\+:,\+:), allocatable, private jla\+::stretch\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), jla\+\_\+cleanup(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_a6aade81a34ccb4e5795d2141aeace91d}\label{namespacejla_a6aade81a34ccb4e5795d2141aeace91d}} 
+\index{jla@{jla}!twoscriptmfit@{twoscriptmfit}}
+\index{twoscriptmfit@{twoscriptmfit}!jla@{jla}}
+\subsubsection{\texorpdfstring{twoscriptmfit}{twoscriptmfit}}
+{\footnotesize\ttfamily logical, private jla\+::twoscriptmfit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by jla\+\_\+alpha\+\_\+beta\+\_\+like(), jla\+\_\+prep(), and read\+\_\+jla\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacejla_ae9dda5d2cfb1fec80f10dea135ea407e}\label{namespacejla_ae9dda5d2cfb1fec80f10dea135ea407e}} 
+\index{jla@{jla}!uplo@{uplo}}
+\index{uplo@{uplo}!jla@{jla}}
+\subsubsection{\texorpdfstring{uplo}{uplo}}
+{\footnotesize\ttfamily character, parameter, private jla\+::uplo = \textquotesingle{}U\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and jla\+\_\+alpha\+\_\+beta\+\_\+like().
+

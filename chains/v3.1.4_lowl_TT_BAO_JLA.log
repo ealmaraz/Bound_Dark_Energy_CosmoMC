@@ -1,0 +1,107 @@
+ Number of MPI processes:           8
+ file_root:v3.1.4_lowl_TT_BAO_JLA
+ Random seeds: 18235,   356 rand_inst:   2
+ Random seeds: 18635,   356 rand_inst:   6
+ Random seeds: 18336,   356 rand_inst:   3
+ Random seeds: 18436,   356 rand_inst:   4
+ Random seeds: 18736,   356 rand_inst:   7
+ Random seeds: 18537,   356 rand_inst:   5
+ Random seeds: 18838,   356 rand_inst:   8
+ Random seeds: 18143,   356 rand_inst:   1
+----
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+   TT from l=0 to l=          29
+----
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+   TT from l=0 to l=          29
+----
+----
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+   TT from l=0 to l=          29
+----
+----
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+   TT from l=0 to l=          29
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+----
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+   TT from l=0 to l=          29
+   TT from l=0 to l=          29
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+   TT from l=0 to l=          29
+----
+clik version 6dc2a8cf3965
+  gibbs_gauss 1478fb2d-28fa-49ac-a8ae-677dbdc3600a
+Checking likelihood './data/clik/low_l/commander/commander_rc2_v1.1_l2_29_B.clik' on test data. got -7.32304 expected -7.32304 (diff -2.52096e-10)
+----
+   TT from l=0 to l=          29
+----
+clik version 6dc2a8cf3965
+  smica
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68135e-09)
+----
+   TT from l=0 to l=        2508
+----
+clik version 6dc2a8cf3965
+  smica
+----
+clik version 6dc2a8cf3965
+  smica
+----
+clik version 6dc2a8cf3965
+  smica
+----
+clik version 6dc2a8cf3965
+  smica
+----
+clik version 6dc2a8cf3965
+  smica
+----
+clik version 6dc2a8cf3965
+  smica
+----
+clik version 6dc2a8cf3965
+  smica
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68351e-09)
+----
+   TT from l=0 to l=        2508
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68135e-09)
+----
+   TT from l=0 to l=        2508
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68135e-09)
+----
+   TT from l=0 to l=        2508
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68135e-09)
+----
+   TT from l=0 to l=        2508
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68135e-09)
+----
+   TT from l=0 to l=        2508
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68135e-09)
+----
+   TT from l=0 to l=        2508
+Checking likelihood './data/clik/hi_l/plik/plik_dx11dr2_HM_v18_TT.clik' on test data. got -380.979 expected -380.979 (diff -8.68135e-09)
+----
+   TT from l=0 to l=        2508
+ Requested limit convergence achieved

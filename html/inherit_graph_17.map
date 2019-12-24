@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classcamb_1_1baseconfig_1_1CAMB__Structure.html" title="camb.baseconfig.CAMB\l_Structure" alt="" coords="129,217,293,258"/>
+<area shape="rect" id="node3" href="$classcamb_1_1camb_1_1__CAMBdata.html" title="camb.camb._CAMBdata" alt="" coords="375,5,540,32"/>
+<area shape="rect" id="node4" href="$classcamb_1_1camb_1_1__ClTransferData.html" title="camb.camb._ClTransferData" alt="" coords="362,56,553,83"/>
+<area shape="rect" id="node5" href="$classcamb_1_1camb_1_1__MatterTransferData.html" title="camb.camb._MatterTransferData" alt="" coords="350,107,565,133"/>
+<area shape="rect" id="node6" href="$classcamb_1_1initialpower_1_1InitialPowerParams.html" title="camb.initialpower.Initial\lPowerParams" alt="" coords="378,158,537,199"/>
+<area shape="rect" id="node7" href="$classcamb_1_1model_1_1CAMBparams.html" title="camb.model.CAMBparams" alt="" coords="368,224,547,251"/>
+<area shape="rect" id="node8" href="$classcamb_1_1model_1_1TransferParams.html" title="camb.model.TransferParams" alt="" coords="362,275,553,301"/>
+<area shape="rect" id="node9" href="$classcamb_1_1recombination_1_1RecombinationParams.html" title="camb.recombination.Recombination\lParams" alt="" coords="342,326,573,367"/>
+<area shape="rect" id="node10" href="$classcamb_1_1reionization_1_1ReionizationHistory.html" title="camb.reionization.Reionization\lHistory" alt="" coords="357,391,557,433"/>
+<area shape="rect" id="node11" href="$classcamb_1_1reionization_1_1ReionizationParams.html" title="camb.reionization.Reionization\lParams" alt="" coords="357,457,557,498"/>
+</map>

@@ -1,0 +1,215 @@
+\hypertarget{namespacemontecarlo}{}\section{montecarlo Module Reference}
+\label{namespacemontecarlo}\index{montecarlo@{montecarlo}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tfastdraggingsampler}{tfastdraggingsampler}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tmetropolissampler}{tmetropolissampler}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm}{tsamplingalgorithm}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a6f22bd1167c2571095e2d1610a5b6d9b}{tsamplingalgorithm\+\_\+init}} (this, Like\+Calculator, Sample\+Collector)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacemontecarlo_a7dd4e2ca3d6d99401730978c1b3a6638}{tsamplingalgorithm\+\_\+loglike}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a2c622f23ed852d71991b99be82a86450}{tsamplingalgorithm\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a78f12d9f7d6f2a3ac0d492a9b3d7ec9a}{tsamplingalgorithm\+\_\+savestate}} (this, F)
+\item 
+logical function \mbox{\hyperlink{namespacemontecarlo_a61aacaca86a2550ede828d05b6b4a00f}{tchainsampler\+\_\+metropolisaccept}} (this, Like, Cur\+Like)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_ae6147d7e7b017c36b225c6b101d896bd}{tchainsampler\+\_\+samplefrom}} (this, Cur\+Params, Cur\+Like, samples\+\_\+to\+\_\+get)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a51f39aa0229577c81fd7299edea28876}{tchainsampler\+\_\+movedone}} (this, accpt, Cur\+Params, Cur\+Like, mult, thin\+\_\+fac)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_acea9a6722742a39deefda7f94ecd49bb}{tchainsampler\+\_\+getnewsample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a828a7ad845f1b5a7f01bfb3ccc95ac32}{tchainsampler\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_ac9b47ebdfecc65b4663d59c74da8e573}{tchainsampler\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_aac962ce86a301904d17d4fad89a3f188}{tchainsampler\+\_\+setcovariance}} (this, cov)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_af71e0b87a06570ba3678ee96cd444f6e}{tchainsampler\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a0eb56d8656442c96e8f066453a7b5209}{tchainsampler\+\_\+init}} (this, Like\+Calculator, Sample\+Collector)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_ae01ead2e419d0e7cb8126beb7b6a1278}{tchainsampler\+\_\+initwithpropose}} (this, Like\+Calculator, Sample\+Collector, propose\+\_\+scale)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a8e8eb524291ad6abaafc4ec1cedaa916}{tmetropolissampler\+\_\+getnewsample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a52c8ac0f2608675d60fa454f684d0519}{tmetropolissampler\+\_\+fastparametersample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_aabc2865a5460edaf007be6dca34d3eca}{tfastdraggingsampler\+\_\+getnewsample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a80c9edc811cd8126c1af36c89008a779}{tfastdraggingsampler\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a2f05ea4c2552d9891ce8860f9befe96d}{tsamplecollector\+\_\+addnewpoint}} (this, P, like)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a23f6c5b28b5d65904c39f5a06efef97c}{tsamplecollector\+\_\+addnewweightedpoint}} (this, Cur\+Params, Cur\+Like, mult, thin\+\_\+fac)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_afee20ae5c3f0b391ff0c231302a113a0}{tsamplecollector\+\_\+readcheckpoint}} (this)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacemontecarlo_ac87b0e5ba62e656a1e0d3317a890c0d9}{eps\+\_\+1}} = 1.\+00001
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemontecarlo_acea9a6722742a39deefda7f94ecd49bb}\label{namespacemontecarlo_acea9a6722742a39deefda7f94ecd49bb}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+getnewsample@{tchainsampler\+\_\+getnewsample}}
+\index{tchainsampler\+\_\+getnewsample@{tchainsampler\+\_\+getnewsample}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+getnewsample()}{tchainsampler\_getnewsample()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+getnewsample (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{type(paramset)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{real(mcp)}]{mult }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a0eb56d8656442c96e8f066453a7b5209}\label{namespacemontecarlo_a0eb56d8656442c96e8f066453a7b5209}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+init@{tchainsampler\+\_\+init}}
+\index{tchainsampler\+\_\+init@{tchainsampler\+\_\+init}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+init()}{tchainsampler\_init()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{class(tlikecalculator), target}]{Like\+Calculator,  }\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}}), optional, target}]{Sample\+Collector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_ae01ead2e419d0e7cb8126beb7b6a1278}\label{namespacemontecarlo_ae01ead2e419d0e7cb8126beb7b6a1278}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+initwithpropose@{tchainsampler\+\_\+initwithpropose}}
+\index{tchainsampler\+\_\+initwithpropose@{tchainsampler\+\_\+initwithpropose}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+initwithpropose()}{tchainsampler\_initwithpropose()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+initwithpropose (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{class(tlikecalculator), target}]{Like\+Calculator,  }\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}}), optional, target}]{Sample\+Collector,  }\item[{real(mcp), intent(in), optional}]{propose\+\_\+scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a828a7ad845f1b5a7f01bfb3ccc95ac32}\label{namespacemontecarlo_a828a7ad845f1b5a7f01bfb3ccc95ac32}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+loadstate@{tchainsampler\+\_\+loadstate}}
+\index{tchainsampler\+\_\+loadstate@{tchainsampler\+\_\+loadstate}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+loadstate()}{tchainsampler\_loadstate()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a61aacaca86a2550ede828d05b6b4a00f}\label{namespacemontecarlo_a61aacaca86a2550ede828d05b6b4a00f}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+metropolisaccept@{tchainsampler\+\_\+metropolisaccept}}
+\index{tchainsampler\+\_\+metropolisaccept@{tchainsampler\+\_\+metropolisaccept}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+metropolisaccept()}{tchainsampler\_metropolisaccept()}}
+{\footnotesize\ttfamily logical function montecarlo\+::tchainsampler\+\_\+metropolisaccept (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{real(mcp)}]{Like,  }\item[{real(mcp)}]{Cur\+Like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References randutils\+::randexp1().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemontecarlo_a61aacaca86a2550ede828d05b6b4a00f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemontecarlo_a51f39aa0229577c81fd7299edea28876}\label{namespacemontecarlo_a51f39aa0229577c81fd7299edea28876}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+movedone@{tchainsampler\+\_\+movedone}}
+\index{tchainsampler\+\_\+movedone@{tchainsampler\+\_\+movedone}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+movedone()}{tchainsampler\_movedone()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+movedone (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{logical, intent(in)}]{accpt,  }\item[{class(tcalculationatparampoint), intent(in)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{real(mcp), intent(inout)}]{mult,  }\item[{integer, intent(in), optional}]{thin\+\_\+fac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_af71e0b87a06570ba3678ee96cd444f6e}\label{namespacemontecarlo_af71e0b87a06570ba3678ee96cd444f6e}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+readparams@{tchainsampler\+\_\+readparams}}
+\index{tchainsampler\+\_\+readparams@{tchainsampler\+\_\+readparams}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+readparams()}{tchainsampler\_readparams()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_ae6147d7e7b017c36b225c6b101d896bd}\label{namespacemontecarlo_ae6147d7e7b017c36b225c6b101d896bd}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+samplefrom@{tchainsampler\+\_\+samplefrom}}
+\index{tchainsampler\+\_\+samplefrom@{tchainsampler\+\_\+samplefrom}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+samplefrom()}{tchainsampler\_samplefrom()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+samplefrom (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{type(paramset)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{integer}]{samples\+\_\+to\+\_\+get }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_ac9b47ebdfecc65b4663d59c74da8e573}\label{namespacemontecarlo_ac9b47ebdfecc65b4663d59c74da8e573}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+savestate@{tchainsampler\+\_\+savestate}}
+\index{tchainsampler\+\_\+savestate@{tchainsampler\+\_\+savestate}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+savestate()}{tchainsampler\_savestate()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_aac962ce86a301904d17d4fad89a3f188}\label{namespacemontecarlo_aac962ce86a301904d17d4fad89a3f188}} 
+\index{montecarlo@{montecarlo}!tchainsampler\+\_\+setcovariance@{tchainsampler\+\_\+setcovariance}}
+\index{tchainsampler\+\_\+setcovariance@{tchainsampler\+\_\+setcovariance}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tchainsampler\+\_\+setcovariance()}{tchainsampler\_setcovariance()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tchainsampler\+\_\+setcovariance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{tchainsampler}})}]{this,  }\item[{real(mcp), dimension(\+:,\+:)}]{cov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_aabc2865a5460edaf007be6dca34d3eca}\label{namespacemontecarlo_aabc2865a5460edaf007be6dca34d3eca}} 
+\index{montecarlo@{montecarlo}!tfastdraggingsampler\+\_\+getnewsample@{tfastdraggingsampler\+\_\+getnewsample}}
+\index{tfastdraggingsampler\+\_\+getnewsample@{tfastdraggingsampler\+\_\+getnewsample}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tfastdraggingsampler\+\_\+getnewsample()}{tfastdraggingsampler\_getnewsample()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tfastdraggingsampler\+\_\+getnewsample (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tfastdraggingsampler}{tfastdraggingsampler}})}]{this,  }\item[{type(paramset)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{real(mcp)}]{mult }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a80c9edc811cd8126c1af36c89008a779}\label{namespacemontecarlo_a80c9edc811cd8126c1af36c89008a779}} 
+\index{montecarlo@{montecarlo}!tfastdraggingsampler\+\_\+readparams@{tfastdraggingsampler\+\_\+readparams}}
+\index{tfastdraggingsampler\+\_\+readparams@{tfastdraggingsampler\+\_\+readparams}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tfastdraggingsampler\+\_\+readparams()}{tfastdraggingsampler\_readparams()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tfastdraggingsampler\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tfastdraggingsampler}{tfastdraggingsampler}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a52c8ac0f2608675d60fa454f684d0519}\label{namespacemontecarlo_a52c8ac0f2608675d60fa454f684d0519}} 
+\index{montecarlo@{montecarlo}!tmetropolissampler\+\_\+fastparametersample@{tmetropolissampler\+\_\+fastparametersample}}
+\index{tmetropolissampler\+\_\+fastparametersample@{tmetropolissampler\+\_\+fastparametersample}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tmetropolissampler\+\_\+fastparametersample()}{tmetropolissampler\_fastparametersample()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tmetropolissampler\+\_\+fastparametersample (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tmetropolissampler}{tmetropolissampler}})}]{this,  }\item[{type(paramset)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{real(mcp)}]{mult }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a8e8eb524291ad6abaafc4ec1cedaa916}\label{namespacemontecarlo_a8e8eb524291ad6abaafc4ec1cedaa916}} 
+\index{montecarlo@{montecarlo}!tmetropolissampler\+\_\+getnewsample@{tmetropolissampler\+\_\+getnewsample}}
+\index{tmetropolissampler\+\_\+getnewsample@{tmetropolissampler\+\_\+getnewsample}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tmetropolissampler\+\_\+getnewsample()}{tmetropolissampler\_getnewsample()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tmetropolissampler\+\_\+getnewsample (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tmetropolissampler}{tmetropolissampler}})}]{this,  }\item[{type(paramset)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{real(mcp)}]{mult }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a2f05ea4c2552d9891ce8860f9befe96d}\label{namespacemontecarlo_a2f05ea4c2552d9891ce8860f9befe96d}} 
+\index{montecarlo@{montecarlo}!tsamplecollector\+\_\+addnewpoint@{tsamplecollector\+\_\+addnewpoint}}
+\index{tsamplecollector\+\_\+addnewpoint@{tsamplecollector\+\_\+addnewpoint}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tsamplecollector\+\_\+addnewpoint()}{tsamplecollector\_addnewpoint()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tsamplecollector\+\_\+addnewpoint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{real(mcp), intent(in)}]{like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a23f6c5b28b5d65904c39f5a06efef97c}\label{namespacemontecarlo_a23f6c5b28b5d65904c39f5a06efef97c}} 
+\index{montecarlo@{montecarlo}!tsamplecollector\+\_\+addnewweightedpoint@{tsamplecollector\+\_\+addnewweightedpoint}}
+\index{tsamplecollector\+\_\+addnewweightedpoint@{tsamplecollector\+\_\+addnewweightedpoint}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tsamplecollector\+\_\+addnewweightedpoint()}{tsamplecollector\_addnewweightedpoint()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tsamplecollector\+\_\+addnewweightedpoint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}})}]{this,  }\item[{class(tcalculationatparampoint), intent(in)}]{Cur\+Params,  }\item[{real(mcp)}]{Cur\+Like,  }\item[{real(mcp), intent(in)}]{mult,  }\item[{integer, intent(in), optional}]{thin\+\_\+fac }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_afee20ae5c3f0b391ff0c231302a113a0}\label{namespacemontecarlo_afee20ae5c3f0b391ff0c231302a113a0}} 
+\index{montecarlo@{montecarlo}!tsamplecollector\+\_\+readcheckpoint@{tsamplecollector\+\_\+readcheckpoint}}
+\index{tsamplecollector\+\_\+readcheckpoint@{tsamplecollector\+\_\+readcheckpoint}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tsamplecollector\+\_\+readcheckpoint()}{tsamplecollector\_readcheckpoint()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tsamplecollector\+\_\+readcheckpoint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a6f22bd1167c2571095e2d1610a5b6d9b}\label{namespacemontecarlo_a6f22bd1167c2571095e2d1610a5b6d9b}} 
+\index{montecarlo@{montecarlo}!tsamplingalgorithm\+\_\+init@{tsamplingalgorithm\+\_\+init}}
+\index{tsamplingalgorithm\+\_\+init@{tsamplingalgorithm\+\_\+init}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tsamplingalgorithm\+\_\+init()}{tsamplingalgorithm\_init()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tsamplingalgorithm\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm}{tsamplingalgorithm}})}]{this,  }\item[{class(tlikecalculator), target}]{Like\+Calculator,  }\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{tsamplecollector}}), optional, target}]{Sample\+Collector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a2c622f23ed852d71991b99be82a86450}\label{namespacemontecarlo_a2c622f23ed852d71991b99be82a86450}} 
+\index{montecarlo@{montecarlo}!tsamplingalgorithm\+\_\+loadstate@{tsamplingalgorithm\+\_\+loadstate}}
+\index{tsamplingalgorithm\+\_\+loadstate@{tsamplingalgorithm\+\_\+loadstate}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tsamplingalgorithm\+\_\+loadstate()}{tsamplingalgorithm\_loadstate()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tsamplingalgorithm\+\_\+loadstate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm}{tsamplingalgorithm}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a7dd4e2ca3d6d99401730978c1b3a6638}\label{namespacemontecarlo_a7dd4e2ca3d6d99401730978c1b3a6638}} 
+\index{montecarlo@{montecarlo}!tsamplingalgorithm\+\_\+loglike@{tsamplingalgorithm\+\_\+loglike}}
+\index{tsamplingalgorithm\+\_\+loglike@{tsamplingalgorithm\+\_\+loglike}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tsamplingalgorithm\+\_\+loglike()}{tsamplingalgorithm\_loglike()}}
+{\footnotesize\ttfamily real(mcp) function montecarlo\+::tsamplingalgorithm\+\_\+loglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm}{tsamplingalgorithm}})}]{this,  }\item[{class(paramset)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacemontecarlo_a78f12d9f7d6f2a3ac0d492a9b3d7ec9a}\label{namespacemontecarlo_a78f12d9f7d6f2a3ac0d492a9b3d7ec9a}} 
+\index{montecarlo@{montecarlo}!tsamplingalgorithm\+\_\+savestate@{tsamplingalgorithm\+\_\+savestate}}
+\index{tsamplingalgorithm\+\_\+savestate@{tsamplingalgorithm\+\_\+savestate}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{tsamplingalgorithm\+\_\+savestate()}{tsamplingalgorithm\_savestate()}}
+{\footnotesize\ttfamily subroutine montecarlo\+::tsamplingalgorithm\+\_\+savestate (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm}{tsamplingalgorithm}})}]{this,  }\item[{class(tfilestream)}]{F }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemontecarlo_ac87b0e5ba62e656a1e0d3317a890c0d9}\label{namespacemontecarlo_ac87b0e5ba62e656a1e0d3317a890c0d9}} 
+\index{montecarlo@{montecarlo}!eps\+\_\+1@{eps\+\_\+1}}
+\index{eps\+\_\+1@{eps\+\_\+1}!montecarlo@{montecarlo}}
+\subsubsection{\texorpdfstring{eps\+\_\+1}{eps\_1}}
+{\footnotesize\ttfamily real(mcp), parameter montecarlo\+::eps\+\_\+1 = 1.\+00001\hspace{0.3cm}{\ttfamily [private]}}
+

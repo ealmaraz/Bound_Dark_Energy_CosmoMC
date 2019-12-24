@@ -1,0 +1,271 @@
+\hypertarget{namespacebaseparameters}{}\section{baseparameters Module Reference}
+\label{namespacebaseparameters}\index{baseparameters@{baseparameters}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structbaseparameters_1_1paramgaussprior}{paramgaussprior}}
+\item 
+type \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}}
+\item 
+type \mbox{\hyperlink{structbaseparameters_1_1tlinearcombination}{tlinearcombination}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a86f36ece3b30fc7984f06ee4aad097bb}{tbaseparameters\+\_\+initializeusedparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a3126d9d902d7cc3f30105a9ad35e4a04}{tbaseparameters\+\_\+paramerror}} (this, str, param)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a1c41b4dbd4418bb1d16d77034504ac0b}{tbaseparameters\+\_\+setstartpositions}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_ae26154e8a07fc378e0e669659de1025a}{tbaseparameters\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a810df98da76d4ae9691fb72eb588ea34}{tbaseparameters\+\_\+readpriors}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_acc7b955531e3ac266fd197c8cc09ae50}{tbaseparameters\+\_\+setcovmat}} (this, prop\+\_\+mat)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a2d0a5594063e754beb3d8ef2b4af0522}{tbaseparameters\+\_\+readsetcovmatrix}} (this, prop\+\_\+mat, matrix, New\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a309e81ed0619c2b91456008b414cf5a9}{tbaseparameters\+\_\+outputparamnames}} (this, fname, indices, add\+\_\+derived)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a7deeecd73224be7473e92a6d48ba8909}{tbaseparameters\+\_\+outputparamranges}} (this, fname)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a7d00d4d42d3c3abcbdbc6078fffab95f}{orderindices}} (arr, n)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_ac8f2cdce695f77b0f9cc3c2e86a9c05f}{tbaseparameters\+\_\+setfastslowparams}} (this, Ini, use\+\_\+fast\+\_\+slow)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacebaseparameters_a6fa6c72334203001f2e2932139df534d}{tbaseparameters\+\_\+usedparamnameornumber}} (this, i)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_aa9a374c82230367604ae6b1c50ed3e3b}{tp\+\_\+unused}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_aec8c4b0ea0429954337dcf5fced6abf1}{tp\+\_\+slow}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_a213e8b067e9d21216fbad3fbd98ec933}{tp\+\_\+semislow}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_a4cae4f2dfd7f3b1ed425daca03b67139}{tp\+\_\+semifast}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_ac1f704b0992c1c1c9f90d320ae0c4f4b}{tp\+\_\+fast}} =4
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacebaseparameters_a1d3e10105684d9171cdfec4ccfcd331d}{slow\+\_\+tp\+\_\+max}} = \mbox{\hyperlink{namespacebaseparameters_a213e8b067e9d21216fbad3fbd98ec933}{tp\+\_\+semislow}}
+\item 
+type(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}}), save, public \mbox{\hyperlink{namespacebaseparameters_abc9ecfbbf4a5012fbc95d3fb51a1e6e3}{baseparams}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacebaseparameters_a7d00d4d42d3c3abcbdbc6078fffab95f}\label{namespacebaseparameters_a7d00d4d42d3c3abcbdbc6078fffab95f}} 
+\index{baseparameters@{baseparameters}!orderindices@{orderindices}}
+\index{orderindices@{orderindices}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{orderindices()}{orderindices()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::orderindices (\begin{DoxyParamCaption}\item[{integer, dimension(\+:)}]{arr,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References arrayutils\+::indexof().
+
+
+
+Referenced by tbaseparameters\+\_\+setfastslowparams().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebaseparameters_a7d00d4d42d3c3abcbdbc6078fffab95f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebaseparameters_a7d00d4d42d3c3abcbdbc6078fffab95f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebaseparameters_a86f36ece3b30fc7984f06ee4aad097bb}\label{namespacebaseparameters_a86f36ece3b30fc7984f06ee4aad097bb}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+initializeusedparams@{tbaseparameters\+\_\+initializeusedparams}}
+\index{tbaseparameters\+\_\+initializeusedparams@{tbaseparameters\+\_\+initializeusedparams}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+initializeusedparams()}{tbaseparameters\_initializeusedparams()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+initializeusedparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::num\+\_\+data\+\_\+params, settings\+::num\+\_\+params, settings\+::num\+\_\+theory\+\_\+params, and settings\+::output\+\_\+lines.
+
+\mbox{\Hypertarget{namespacebaseparameters_a309e81ed0619c2b91456008b414cf5a9}\label{namespacebaseparameters_a309e81ed0619c2b91456008b414cf5a9}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+outputparamnames@{tbaseparameters\+\_\+outputparamnames}}
+\index{tbaseparameters\+\_\+outputparamnames@{tbaseparameters\+\_\+outputparamnames}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+outputparamnames()}{tbaseparameters\_outputparamnames()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+outputparamnames (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{integer, dimension(\+:), intent(in), optional}]{indices,  }\item[{logical, intent(in), optional}]{add\+\_\+derived }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebaseparameters_a7deeecd73224be7473e92a6d48ba8909}\label{namespacebaseparameters_a7deeecd73224be7473e92a6d48ba8909}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+outputparamranges@{tbaseparameters\+\_\+outputparamranges}}
+\index{tbaseparameters\+\_\+outputparamranges@{tbaseparameters\+\_\+outputparamranges}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+outputparamranges()}{tbaseparameters\_outputparamranges()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+outputparamranges (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebaseparameters_a3126d9d902d7cc3f30105a9ad35e4a04}\label{namespacebaseparameters_a3126d9d902d7cc3f30105a9ad35e4a04}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+paramerror@{tbaseparameters\+\_\+paramerror}}
+\index{tbaseparameters\+\_\+paramerror@{tbaseparameters\+\_\+paramerror}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+paramerror()}{tbaseparameters\_paramerror()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+paramerror (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{str,  }\item[{integer, intent(in)}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::doabort().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebaseparameters_a3126d9d902d7cc3f30105a9ad35e4a04_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebaseparameters_ae26154e8a07fc378e0e669659de1025a}\label{namespacebaseparameters_ae26154e8a07fc378e0e669659de1025a}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+readparams@{tbaseparameters\+\_\+readparams}}
+\index{tbaseparameters\+\_\+readparams@{tbaseparameters\+\_\+readparams}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+readparams()}{tbaseparameters\_readparams()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::num\+\_\+params, settings\+::num\+\_\+params\+\_\+used, and settings\+::params\+\_\+used.
+
+\mbox{\Hypertarget{namespacebaseparameters_a810df98da76d4ae9691fb72eb588ea34}\label{namespacebaseparameters_a810df98da76d4ae9691fb72eb588ea34}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+readpriors@{tbaseparameters\+\_\+readpriors}}
+\index{tbaseparameters\+\_\+readpriors@{tbaseparameters\+\_\+readpriors}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+readpriors()}{tbaseparameters\_readpriors()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+readpriors (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebaseparameters_a2d0a5594063e754beb3d8ef2b4af0522}\label{namespacebaseparameters_a2d0a5594063e754beb3d8ef2b4af0522}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+readsetcovmatrix@{tbaseparameters\+\_\+readsetcovmatrix}}
+\index{tbaseparameters\+\_\+readsetcovmatrix@{tbaseparameters\+\_\+readsetcovmatrix}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+readsetcovmatrix()}{tbaseparameters\_readsetcovmatrix()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+readsetcovmatrix (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{prop\+\_\+mat,  }\item[{real(mcp), dimension(num\+\_\+params\+\_\+used, num\+\_\+params\+\_\+used)}]{matrix,  }\item[{logical, optional}]{New\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebaseparameters_acc7b955531e3ac266fd197c8cc09ae50}\label{namespacebaseparameters_acc7b955531e3ac266fd197c8cc09ae50}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+setcovmat@{tbaseparameters\+\_\+setcovmat}}
+\index{tbaseparameters\+\_\+setcovmat@{tbaseparameters\+\_\+setcovmat}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+setcovmat()}{tbaseparameters\_setcovmat()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+setcovmat (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{prop\+\_\+mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebaseparameters_ac8f2cdce695f77b0f9cc3c2e86a9c05f}\label{namespacebaseparameters_ac8f2cdce695f77b0f9cc3c2e86a9c05f}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+setfastslowparams@{tbaseparameters\+\_\+setfastslowparams}}
+\index{tbaseparameters\+\_\+setfastslowparams@{tbaseparameters\+\_\+setfastslowparams}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+setfastslowparams()}{tbaseparameters\_setfastslowparams()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+setfastslowparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini,  }\item[{logical, intent(in)}]{use\+\_\+fast\+\_\+slow }\end{DoxyParamCaption})}
+
+
+
+References baseparams, orderindices(), slow\+\_\+tp\+\_\+max, tp\+\_\+fast, tp\+\_\+semifast, tp\+\_\+semislow, tp\+\_\+slow, and tp\+\_\+unused.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebaseparameters_ac8f2cdce695f77b0f9cc3c2e86a9c05f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebaseparameters_a1c41b4dbd4418bb1d16d77034504ac0b}\label{namespacebaseparameters_a1c41b4dbd4418bb1d16d77034504ac0b}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+setstartpositions@{tbaseparameters\+\_\+setstartpositions}}
+\index{tbaseparameters\+\_\+setstartpositions@{tbaseparameters\+\_\+setstartpositions}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+setstartpositions()}{tbaseparameters\_setstartpositions()}}
+{\footnotesize\ttfamily subroutine baseparameters\+::tbaseparameters\+\_\+setstartpositions (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References randutils\+::gaussian1(), settings\+::num\+\_\+params\+\_\+used, and settings\+::params\+\_\+used.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebaseparameters_a1c41b4dbd4418bb1d16d77034504ac0b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebaseparameters_a6fa6c72334203001f2e2932139df534d}\label{namespacebaseparameters_a6fa6c72334203001f2e2932139df534d}} 
+\index{baseparameters@{baseparameters}!tbaseparameters\+\_\+usedparamnameornumber@{tbaseparameters\+\_\+usedparamnameornumber}}
+\index{tbaseparameters\+\_\+usedparamnameornumber@{tbaseparameters\+\_\+usedparamnameornumber}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tbaseparameters\+\_\+usedparamnameornumber()}{tbaseparameters\_usedparamnameornumber()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable baseparameters\+::tbaseparameters\+\_\+usedparamnameornumber (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacebaseparameters_abc9ecfbbf4a5012fbc95d3fb51a1e6e3}\label{namespacebaseparameters_abc9ecfbbf4a5012fbc95d3fb51a1e6e3}} 
+\index{baseparameters@{baseparameters}!baseparams@{baseparams}}
+\index{baseparams@{baseparams}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{baseparams}{baseparams}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{tbaseparameters}}), save, public baseparameters\+::baseparams}
+
+
+
+Referenced by samplecollector\+::checklimitsconverge(), estcovmatmodule\+::estcovmat(), estcovmatmodule\+::gethess(), calclike\+::getloglikebounds(), calclike\+::getlogpriors(), estcovmatmodule\+::getstepsfordchisq1(), parampointset\+::paramset\+\_\+readmodel(), parampointset\+::paramset\+\_\+writemodel(), tbaseparameters\+\_\+setfastslowparams(), samplecollector\+::tmpichaincollector\+\_\+addnewpoint(), samplecollector\+::tmpichaincollector\+\_\+readstate(), samplecollector\+::tmpichaincollector\+\_\+updatecovandcheckconverge(), generalsetup\+::tsetup\+\_\+doneinitialize(), and generalsetup\+::tsetup\+\_\+dosampling().
+
+\mbox{\Hypertarget{namespacebaseparameters_a1d3e10105684d9171cdfec4ccfcd331d}\label{namespacebaseparameters_a1d3e10105684d9171cdfec4ccfcd331d}} 
+\index{baseparameters@{baseparameters}!slow\+\_\+tp\+\_\+max@{slow\+\_\+tp\+\_\+max}}
+\index{slow\+\_\+tp\+\_\+max@{slow\+\_\+tp\+\_\+max}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{slow\+\_\+tp\+\_\+max}{slow\_tp\_max}}
+{\footnotesize\ttfamily integer, parameter, public baseparameters\+::slow\+\_\+tp\+\_\+max = \mbox{\hyperlink{namespacebaseparameters_a213e8b067e9d21216fbad3fbd98ec933}{tp\+\_\+semislow}}}
+
+
+
+Referenced by tbaseparameters\+\_\+setfastslowparams().
+
+\mbox{\Hypertarget{namespacebaseparameters_ac1f704b0992c1c1c9f90d320ae0c4f4b}\label{namespacebaseparameters_ac1f704b0992c1c1c9f90d320ae0c4f4b}} 
+\index{baseparameters@{baseparameters}!tp\+\_\+fast@{tp\+\_\+fast}}
+\index{tp\+\_\+fast@{tp\+\_\+fast}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tp\+\_\+fast}{tp\_fast}}
+{\footnotesize\ttfamily integer, parameter baseparameters\+::tp\+\_\+fast =4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tbaseparameters\+\_\+setfastslowparams().
+
+\mbox{\Hypertarget{namespacebaseparameters_a4cae4f2dfd7f3b1ed425daca03b67139}\label{namespacebaseparameters_a4cae4f2dfd7f3b1ed425daca03b67139}} 
+\index{baseparameters@{baseparameters}!tp\+\_\+semifast@{tp\+\_\+semifast}}
+\index{tp\+\_\+semifast@{tp\+\_\+semifast}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tp\+\_\+semifast}{tp\_semifast}}
+{\footnotesize\ttfamily integer, parameter baseparameters\+::tp\+\_\+semifast =3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tbaseparameters\+\_\+setfastslowparams().
+
+\mbox{\Hypertarget{namespacebaseparameters_a213e8b067e9d21216fbad3fbd98ec933}\label{namespacebaseparameters_a213e8b067e9d21216fbad3fbd98ec933}} 
+\index{baseparameters@{baseparameters}!tp\+\_\+semislow@{tp\+\_\+semislow}}
+\index{tp\+\_\+semislow@{tp\+\_\+semislow}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tp\+\_\+semislow}{tp\_semislow}}
+{\footnotesize\ttfamily integer, parameter baseparameters\+::tp\+\_\+semislow =2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tbaseparameters\+\_\+setfastslowparams().
+
+\mbox{\Hypertarget{namespacebaseparameters_aec8c4b0ea0429954337dcf5fced6abf1}\label{namespacebaseparameters_aec8c4b0ea0429954337dcf5fced6abf1}} 
+\index{baseparameters@{baseparameters}!tp\+\_\+slow@{tp\+\_\+slow}}
+\index{tp\+\_\+slow@{tp\+\_\+slow}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tp\+\_\+slow}{tp\_slow}}
+{\footnotesize\ttfamily integer, parameter baseparameters\+::tp\+\_\+slow =1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tbaseparameters\+\_\+setfastslowparams().
+
+\mbox{\Hypertarget{namespacebaseparameters_aa9a374c82230367604ae6b1c50ed3e3b}\label{namespacebaseparameters_aa9a374c82230367604ae6b1c50ed3e3b}} 
+\index{baseparameters@{baseparameters}!tp\+\_\+unused@{tp\+\_\+unused}}
+\index{tp\+\_\+unused@{tp\+\_\+unused}!baseparameters@{baseparameters}}
+\subsubsection{\texorpdfstring{tp\+\_\+unused}{tp\_unused}}
+{\footnotesize\ttfamily integer, parameter baseparameters\+::tp\+\_\+unused = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tbaseparameters\+\_\+setfastslowparams().
+

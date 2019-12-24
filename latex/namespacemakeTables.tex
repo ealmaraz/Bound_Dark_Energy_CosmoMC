@@ -1,0 +1,397 @@
+\hypertarget{namespacemakeTables}{}\section{make\+Tables Namespace Reference}
+\label{namespacemakeTables}\index{make\+Tables@{make\+Tables}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacemakeTables_abbf7a84c8c93f8d3f0e1b93072989766}{tex\+Escape\+Text}} (string)
+\item 
+def \mbox{\hyperlink{namespacemakeTables_a2969b9894fd7dee3f707de33c3c6d3ca}{get\+Table\+Lines}} (content, \mbox{\hyperlink{namespacemakeTables_ad2d53b08380c10346fc6ff9a0e12942b}{reference\+Data\+Job\+Item}}=None)
+\item 
+def \mbox{\hyperlink{namespacemakeTables_a05676f114347275725afdc58dc3656ff}{param\+Result\+Table}} (job\+Item, delta\+Chisq\+Job\+Item=None, \mbox{\hyperlink{namespacemakeTables_ad2d53b08380c10346fc6ff9a0e12942b}{reference\+Data\+Job\+Item}}=None)
+\item 
+def \mbox{\hyperlink{namespacemakeTables_a97f7aac98d97fef173d6ba74a446ec4b}{compare\+Table}} (job\+Items, titles=None)
+\item 
+def \mbox{\hyperlink{namespacemakeTables_a517bb45e1e7d60d121454c28f132a5bc}{data\+Index}} (job\+Item)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a8ad1bde4748e8305c2ce61a4ad2be6d5}{Opts}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_ae8c001a1f979481f44220b26973e49d9}{help}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a4c68a93e87904d243720fd0eaf745cab}{type}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_ae905fd0466745c7f0de3d5be4a4e028b}{int}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a39bcb1df00a479b707a2fd4e58fc17ed}{default}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a3b2f1d30c511cac7193f773834aaf3c2}{action}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a32cc6ce3ad708e122a8f8dea4705181c}{nargs}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_ab682e9d6c710896b62dc432a5790fc3b}{batch}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_ab477fc55b0cb501f409212677cc13fe5}{args}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_ada843f13aecf420802601726ae1b43c6}{block\+End\+Params}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a2862558f8e3b6ae1cf6624f2fcbfaaa1}{param\+List}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a43b05f113768d259a9749ab4b2fe65a6}{formatter}} = \mbox{\hyperlink{classplanckStyle_1_1planckStyleTableFormatter}{planck\+Style.\+planck\+Style\+Table\+Formatter}}()
+\item 
+\mbox{\hyperlink{namespacemakeTables_a35731598170459a5830e249895263c69}{items}} = Opts.\+sorted\+Paramtag\+Dict(chain\+Exist=not args.\+bestfitonly)
+\item 
+list \mbox{\hyperlink{namespacemakeTables_a149e498d0bb0bfc39a1d52bc91a52617}{limits}} = \mbox{[}1, 2, 3\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemakeTables_aef06ff64d1799caf6a88ee42ab643b11}{delta\+\_\+chisq\+\_\+paramtag}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a8faee9012fb81d39cef65b9231ca7d14}{base\+Job\+Items}} = dict()
+\item 
+\mbox{\hyperlink{namespacemakeTables_ae905fd0466745c7f0de3d5be4a4e028b}{int}} \mbox{\hyperlink{namespacemakeTables_aad31729af8c5c0c28c965a8880166c50}{is\+Base}} = 0
+\item 
+\mbox{\hyperlink{namespacemakeTables_a1cae4337555e5967aef37fdffadd4dc4}{reference\+Job\+Item}} = copy.\+deepcopy(job\+Item)
+\item 
+\mbox{\hyperlink{namespacemakeTables_a4770cc693c541fc80334bebc9be7b8d6}{param\+Name\+File}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_af874d98b6771930df20a8a81cf455ace}{loc}} = os.\+path.\+split(args.\+latex\+\_\+filename)\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a6b1920b359f514b3f7bfc090374ad85d}{limit}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a5b2a60e5426f013550a0491f01657fdb}{outfile}} = args.\+latex\+\_\+filename
+\item 
+list \mbox{\hyperlink{namespacemakeTables_ae0458d41b49c5abdeadb75f4cd0469c6}{lines}} = \mbox{[}$\,$\mbox{]}
+\item 
+string \mbox{\hyperlink{namespacemakeTables_acb89b46fcf39a44e9dc7ebe922f81f0e}{param\+Text}} = \textquotesingle{}Baseline model\textquotesingle{}
+\item 
+string \mbox{\hyperlink{namespacemakeTables_a7da11f1c70714c321f800cb70031c2ed}{section}} = \textquotesingle{}\textbackslash{}\textbackslash{}newpage\textbackslash{}\textbackslash{}section\{ \textquotesingle{} + \mbox{\hyperlink{namespacemakeTables_acb89b46fcf39a44e9dc7ebe922f81f0e}{param\+Text}} + \textquotesingle{}\}\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a3aed201db91b67fb7636cb7b0a14712e}{compares}} = Opts.\+filter\+For\+Data\+Compare(parambatch, args.\+compare)
+\item 
+list \mbox{\hyperlink{namespacemakeTables_a86cc3672f98bbfb5411b7d0fc643f57d}{these\+Items}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_ad2d53b08380c10346fc6ff9a0e12942b}{reference\+Data\+Job\+Item}} = None
+\item 
+\mbox{\hyperlink{namespacemakeTables_aa67f035fbf6ed03e40058b9fab156294}{bestfit}}
+\item 
+list \mbox{\hyperlink{namespacemakeTables_a9bdaaa58c735a7cb4ff48e801ab83303}{ref\+Items}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemakeTables_ae11ee5b088843354e9b3bdd07f463dd3}{normed\+\_\+without}}
+\item 
+list \mbox{\hyperlink{namespacemakeTables_ae8cf1b5e2c890eceafc163e69a0923b7}{orig\+Compare}} = \mbox{[}item for item in \mbox{\hyperlink{namespacemakeTables_a86cc3672f98bbfb5411b7d0fc643f57d}{these\+Items}} \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} args.\+changes\+\_\+replacing\mbox{[}0\mbox{]} in item.\+data\+\_\+set.\+names\mbox{]}
+\item 
+def \mbox{\hyperlink{namespacemakeTables_a0759ca842c69d98c6d9e341685e8bf53}{table\+Lines}} = \mbox{\hyperlink{namespacemakeTables_a05676f114347275725afdc58dc3656ff}{param\+Result\+Table}}(job\+Item, \mbox{\hyperlink{namespacemakeTables_a1cae4337555e5967aef37fdffadd4dc4}{reference\+Job\+Item}}, \mbox{\hyperlink{namespacemakeTables_ad2d53b08380c10346fc6ff9a0e12942b}{reference\+Data\+Job\+Item}})
+\item 
+\mbox{\hyperlink{namespacemakeTables_a9de2c41c96b8a31c4be31b641f2f8831}{outdir}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a2beb919bb42e482900accc9ed7481ccc}{outname}}
+\item 
+\mbox{\hyperlink{namespacemakeTables_a179f7e6a13b197ab0b1a120ee7d3a36a}{root}} = os.\+path.\+splitext(\mbox{\hyperlink{namespacemakeTables_a5b2a60e5426f013550a0491f01657fdb}{outfile}})\mbox{[}0\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacemakeTables_a072b702b01010d8b98027ffff5882ec5}{delext}} = \mbox{[}\textquotesingle{}aux\textquotesingle{}, \textquotesingle{}log\textquotesingle{}, \textquotesingle{}out\textquotesingle{}, \textquotesingle{}toc\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacemakeTables_a97f7aac98d97fef173d6ba74a446ec4b}\label{namespacemakeTables_a97f7aac98d97fef173d6ba74a446ec4b}} 
+\index{make\+Tables@{make\+Tables}!compare\+Table@{compare\+Table}}
+\index{compare\+Table@{compare\+Table}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{compare\+Table()}{compareTable()}}
+{\footnotesize\ttfamily def make\+Tables.\+compare\+Table (\begin{DoxyParamCaption}\item[{}]{job\+Items,  }\item[{}]{titles = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemakeTables_a517bb45e1e7d60d121454c28f132a5bc}\label{namespacemakeTables_a517bb45e1e7d60d121454c28f132a5bc}} 
+\index{make\+Tables@{make\+Tables}!data\+Index@{data\+Index}}
+\index{data\+Index@{data\+Index}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{data\+Index()}{dataIndex()}}
+{\footnotesize\ttfamily def make\+Tables.\+data\+Index (\begin{DoxyParamCaption}\item[{}]{job\+Item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemakeTables_a2969b9894fd7dee3f707de33c3c6d3ca}\label{namespacemakeTables_a2969b9894fd7dee3f707de33c3c6d3ca}} 
+\index{make\+Tables@{make\+Tables}!get\+Table\+Lines@{get\+Table\+Lines}}
+\index{get\+Table\+Lines@{get\+Table\+Lines}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{get\+Table\+Lines()}{getTableLines()}}
+{\footnotesize\ttfamily def make\+Tables.\+get\+Table\+Lines (\begin{DoxyParamCaption}\item[{}]{content,  }\item[{}]{reference\+Data\+Job\+Item = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Referenced by param\+Result\+Table().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemakeTables_a2969b9894fd7dee3f707de33c3c6d3ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemakeTables_a05676f114347275725afdc58dc3656ff}\label{namespacemakeTables_a05676f114347275725afdc58dc3656ff}} 
+\index{make\+Tables@{make\+Tables}!param\+Result\+Table@{param\+Result\+Table}}
+\index{param\+Result\+Table@{param\+Result\+Table}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{param\+Result\+Table()}{paramResultTable()}}
+{\footnotesize\ttfamily def make\+Tables.\+param\+Result\+Table (\begin{DoxyParamCaption}\item[{}]{job\+Item,  }\item[{}]{delta\+Chisq\+Job\+Item = {\ttfamily None},  }\item[{}]{reference\+Data\+Job\+Item = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+References get\+Table\+Lines(), stringutils.\+join(), and tex\+Escape\+Text().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemakeTables_a05676f114347275725afdc58dc3656ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemakeTables_abbf7a84c8c93f8d3f0e1b93072989766}\label{namespacemakeTables_abbf7a84c8c93f8d3f0e1b93072989766}} 
+\index{make\+Tables@{make\+Tables}!tex\+Escape\+Text@{tex\+Escape\+Text}}
+\index{tex\+Escape\+Text@{tex\+Escape\+Text}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{tex\+Escape\+Text()}{texEscapeText()}}
+{\footnotesize\ttfamily def make\+Tables.\+tex\+Escape\+Text (\begin{DoxyParamCaption}\item[{}]{string }\end{DoxyParamCaption})}
+
+
+
+Referenced by param\+Result\+Table().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemakeTables_abbf7a84c8c93f8d3f0e1b93072989766_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemakeTables_a3b2f1d30c511cac7193f773834aaf3c2}\label{namespacemakeTables_a3b2f1d30c511cac7193f773834aaf3c2}} 
+\index{make\+Tables@{make\+Tables}!action@{action}}
+\index{action@{action}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily make\+Tables.\+action}
+
+\mbox{\Hypertarget{namespacemakeTables_ab477fc55b0cb501f409212677cc13fe5}\label{namespacemakeTables_ab477fc55b0cb501f409212677cc13fe5}} 
+\index{make\+Tables@{make\+Tables}!args@{args}}
+\index{args@{args}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily make\+Tables.\+args}
+
+\mbox{\Hypertarget{namespacemakeTables_a8faee9012fb81d39cef65b9231ca7d14}\label{namespacemakeTables_a8faee9012fb81d39cef65b9231ca7d14}} 
+\index{make\+Tables@{make\+Tables}!base\+Job\+Items@{base\+Job\+Items}}
+\index{base\+Job\+Items@{base\+Job\+Items}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{base\+Job\+Items}{baseJobItems}}
+{\footnotesize\ttfamily make\+Tables.\+base\+Job\+Items = dict()}
+
+\mbox{\Hypertarget{namespacemakeTables_ab682e9d6c710896b62dc432a5790fc3b}\label{namespacemakeTables_ab682e9d6c710896b62dc432a5790fc3b}} 
+\index{make\+Tables@{make\+Tables}!batch@{batch}}
+\index{batch@{batch}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{batch}{batch}}
+{\footnotesize\ttfamily make\+Tables.\+batch}
+
+\mbox{\Hypertarget{namespacemakeTables_aa67f035fbf6ed03e40058b9fab156294}\label{namespacemakeTables_aa67f035fbf6ed03e40058b9fab156294}} 
+\index{make\+Tables@{make\+Tables}!bestfit@{bestfit}}
+\index{bestfit@{bestfit}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{bestfit}{bestfit}}
+{\footnotesize\ttfamily make\+Tables.\+bestfit}
+
+\mbox{\Hypertarget{namespacemakeTables_ada843f13aecf420802601726ae1b43c6}\label{namespacemakeTables_ada843f13aecf420802601726ae1b43c6}} 
+\index{make\+Tables@{make\+Tables}!block\+End\+Params@{block\+End\+Params}}
+\index{block\+End\+Params@{block\+End\+Params}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{block\+End\+Params}{blockEndParams}}
+{\footnotesize\ttfamily make\+Tables.\+block\+End\+Params}
+
+\mbox{\Hypertarget{namespacemakeTables_a3aed201db91b67fb7636cb7b0a14712e}\label{namespacemakeTables_a3aed201db91b67fb7636cb7b0a14712e}} 
+\index{make\+Tables@{make\+Tables}!compares@{compares}}
+\index{compares@{compares}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{compares}{compares}}
+{\footnotesize\ttfamily make\+Tables.\+compares = Opts.\+filter\+For\+Data\+Compare(parambatch, args.\+compare)}
+
+\mbox{\Hypertarget{namespacemakeTables_a39bcb1df00a479b707a2fd4e58fc17ed}\label{namespacemakeTables_a39bcb1df00a479b707a2fd4e58fc17ed}} 
+\index{make\+Tables@{make\+Tables}!default@{default}}
+\index{default@{default}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily make\+Tables.\+default}
+
+\mbox{\Hypertarget{namespacemakeTables_a072b702b01010d8b98027ffff5882ec5}\label{namespacemakeTables_a072b702b01010d8b98027ffff5882ec5}} 
+\index{make\+Tables@{make\+Tables}!delext@{delext}}
+\index{delext@{delext}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{delext}{delext}}
+{\footnotesize\ttfamily list make\+Tables.\+delext = \mbox{[}\textquotesingle{}aux\textquotesingle{}, \textquotesingle{}log\textquotesingle{}, \textquotesingle{}out\textquotesingle{}, \textquotesingle{}toc\textquotesingle{}\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakeTables_aef06ff64d1799caf6a88ee42ab643b11}\label{namespacemakeTables_aef06ff64d1799caf6a88ee42ab643b11}} 
+\index{make\+Tables@{make\+Tables}!delta\+\_\+chisq\+\_\+paramtag@{delta\+\_\+chisq\+\_\+paramtag}}
+\index{delta\+\_\+chisq\+\_\+paramtag@{delta\+\_\+chisq\+\_\+paramtag}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{delta\+\_\+chisq\+\_\+paramtag}{delta\_chisq\_paramtag}}
+{\footnotesize\ttfamily make\+Tables.\+delta\+\_\+chisq\+\_\+paramtag}
+
+\mbox{\Hypertarget{namespacemakeTables_a43b05f113768d259a9749ab4b2fe65a6}\label{namespacemakeTables_a43b05f113768d259a9749ab4b2fe65a6}} 
+\index{make\+Tables@{make\+Tables}!formatter@{formatter}}
+\index{formatter@{formatter}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{formatter}{formatter}}
+{\footnotesize\ttfamily make\+Tables.\+formatter = \mbox{\hyperlink{classplanckStyle_1_1planckStyleTableFormatter}{planck\+Style.\+planck\+Style\+Table\+Formatter}}()}
+
+\mbox{\Hypertarget{namespacemakeTables_ae8c001a1f979481f44220b26973e49d9}\label{namespacemakeTables_ae8c001a1f979481f44220b26973e49d9}} 
+\index{make\+Tables@{make\+Tables}!help@{help}}
+\index{help@{help}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily make\+Tables.\+help}
+
+\mbox{\Hypertarget{namespacemakeTables_ae905fd0466745c7f0de3d5be4a4e028b}\label{namespacemakeTables_ae905fd0466745c7f0de3d5be4a4e028b}} 
+\index{make\+Tables@{make\+Tables}!int@{int}}
+\index{int@{int}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily make\+Tables.\+int}
+
+\mbox{\Hypertarget{namespacemakeTables_aad31729af8c5c0c28c965a8880166c50}\label{namespacemakeTables_aad31729af8c5c0c28c965a8880166c50}} 
+\index{make\+Tables@{make\+Tables}!is\+Base@{is\+Base}}
+\index{is\+Base@{is\+Base}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{is\+Base}{isBase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemakeTables_ae905fd0466745c7f0de3d5be4a4e028b}{int}} make\+Tables.\+is\+Base = 0}
+
+\mbox{\Hypertarget{namespacemakeTables_a35731598170459a5830e249895263c69}\label{namespacemakeTables_a35731598170459a5830e249895263c69}} 
+\index{make\+Tables@{make\+Tables}!items@{items}}
+\index{items@{items}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily make\+Tables.\+items = Opts.\+sorted\+Paramtag\+Dict(chain\+Exist=not args.\+bestfitonly)}
+
+\mbox{\Hypertarget{namespacemakeTables_a6b1920b359f514b3f7bfc090374ad85d}\label{namespacemakeTables_a6b1920b359f514b3f7bfc090374ad85d}} 
+\index{make\+Tables@{make\+Tables}!limit@{limit}}
+\index{limit@{limit}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily make\+Tables.\+limit}
+
+\mbox{\Hypertarget{namespacemakeTables_a149e498d0bb0bfc39a1d52bc91a52617}\label{namespacemakeTables_a149e498d0bb0bfc39a1d52bc91a52617}} 
+\index{make\+Tables@{make\+Tables}!limits@{limits}}
+\index{limits@{limits}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{limits}{limits}}
+{\footnotesize\ttfamily list make\+Tables.\+limits = \mbox{[}1, 2, 3\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakeTables_ae0458d41b49c5abdeadb75f4cd0469c6}\label{namespacemakeTables_ae0458d41b49c5abdeadb75f4cd0469c6}} 
+\index{make\+Tables@{make\+Tables}!lines@{lines}}
+\index{lines@{lines}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily list make\+Tables.\+lines = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakeTables_af874d98b6771930df20a8a81cf455ace}\label{namespacemakeTables_af874d98b6771930df20a8a81cf455ace}} 
+\index{make\+Tables@{make\+Tables}!loc@{loc}}
+\index{loc@{loc}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{loc}{loc}}
+{\footnotesize\ttfamily make\+Tables.\+loc = os.\+path.\+split(args.\+latex\+\_\+filename)\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakeTables_a32cc6ce3ad708e122a8f8dea4705181c}\label{namespacemakeTables_a32cc6ce3ad708e122a8f8dea4705181c}} 
+\index{make\+Tables@{make\+Tables}!nargs@{nargs}}
+\index{nargs@{nargs}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily make\+Tables.\+nargs}
+
+\mbox{\Hypertarget{namespacemakeTables_ae11ee5b088843354e9b3bdd07f463dd3}\label{namespacemakeTables_ae11ee5b088843354e9b3bdd07f463dd3}} 
+\index{make\+Tables@{make\+Tables}!normed\+\_\+without@{normed\+\_\+without}}
+\index{normed\+\_\+without@{normed\+\_\+without}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{normed\+\_\+without}{normed\_without}}
+{\footnotesize\ttfamily make\+Tables.\+normed\+\_\+without}
+
+\mbox{\Hypertarget{namespacemakeTables_a8ad1bde4748e8305c2ce61a4ad2be6d5}\label{namespacemakeTables_a8ad1bde4748e8305c2ce61a4ad2be6d5}} 
+\index{make\+Tables@{make\+Tables}!Opts@{Opts}}
+\index{Opts@{Opts}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{Opts}{Opts}}
+{\footnotesize\ttfamily make\+Tables.\+Opts}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  batchjob\_args.batchArgs(\textcolor{stringliteral}{'Make pdf tables from latex generated from getdist outputs'}, importance=\textcolor{keyword}{True},
+2                               converge=\textcolor{keyword}{True})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacemakeTables_ae8cf1b5e2c890eceafc163e69a0923b7}\label{namespacemakeTables_ae8cf1b5e2c890eceafc163e69a0923b7}} 
+\index{make\+Tables@{make\+Tables}!orig\+Compare@{orig\+Compare}}
+\index{orig\+Compare@{orig\+Compare}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{orig\+Compare}{origCompare}}
+{\footnotesize\ttfamily list make\+Tables.\+orig\+Compare = \mbox{[}item for item in \mbox{\hyperlink{namespacemakeTables_a86cc3672f98bbfb5411b7d0fc643f57d}{these\+Items}} \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} args.\+changes\+\_\+replacing\mbox{[}0\mbox{]} in item.\+data\+\_\+set.\+names\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakeTables_a9de2c41c96b8a31c4be31b641f2f8831}\label{namespacemakeTables_a9de2c41c96b8a31c4be31b641f2f8831}} 
+\index{make\+Tables@{make\+Tables}!outdir@{outdir}}
+\index{outdir@{outdir}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{outdir}{outdir}}
+{\footnotesize\ttfamily make\+Tables.\+outdir}
+
+\mbox{\Hypertarget{namespacemakeTables_a5b2a60e5426f013550a0491f01657fdb}\label{namespacemakeTables_a5b2a60e5426f013550a0491f01657fdb}} 
+\index{make\+Tables@{make\+Tables}!outfile@{outfile}}
+\index{outfile@{outfile}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{outfile}{outfile}}
+{\footnotesize\ttfamily make\+Tables.\+outfile = args.\+latex\+\_\+filename}
+
+\mbox{\Hypertarget{namespacemakeTables_a2beb919bb42e482900accc9ed7481ccc}\label{namespacemakeTables_a2beb919bb42e482900accc9ed7481ccc}} 
+\index{make\+Tables@{make\+Tables}!outname@{outname}}
+\index{outname@{outname}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{outname}{outname}}
+{\footnotesize\ttfamily make\+Tables.\+outname}
+
+\mbox{\Hypertarget{namespacemakeTables_a2862558f8e3b6ae1cf6624f2fcbfaaa1}\label{namespacemakeTables_a2862558f8e3b6ae1cf6624f2fcbfaaa1}} 
+\index{make\+Tables@{make\+Tables}!param\+List@{param\+List}}
+\index{param\+List@{param\+List}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{param\+List}{paramList}}
+{\footnotesize\ttfamily make\+Tables.\+param\+List}
+
+\mbox{\Hypertarget{namespacemakeTables_a4770cc693c541fc80334bebc9be7b8d6}\label{namespacemakeTables_a4770cc693c541fc80334bebc9be7b8d6}} 
+\index{make\+Tables@{make\+Tables}!param\+Name\+File@{param\+Name\+File}}
+\index{param\+Name\+File@{param\+Name\+File}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{param\+Name\+File}{paramNameFile}}
+{\footnotesize\ttfamily make\+Tables.\+param\+Name\+File}
+
+\mbox{\Hypertarget{namespacemakeTables_acb89b46fcf39a44e9dc7ebe922f81f0e}\label{namespacemakeTables_acb89b46fcf39a44e9dc7ebe922f81f0e}} 
+\index{make\+Tables@{make\+Tables}!param\+Text@{param\+Text}}
+\index{param\+Text@{param\+Text}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{param\+Text}{paramText}}
+{\footnotesize\ttfamily def make\+Tables.\+param\+Text = \textquotesingle{}Baseline model\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemakeTables_ad2d53b08380c10346fc6ff9a0e12942b}\label{namespacemakeTables_ad2d53b08380c10346fc6ff9a0e12942b}} 
+\index{make\+Tables@{make\+Tables}!reference\+Data\+Job\+Item@{reference\+Data\+Job\+Item}}
+\index{reference\+Data\+Job\+Item@{reference\+Data\+Job\+Item}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{reference\+Data\+Job\+Item}{referenceDataJobItem}}
+{\footnotesize\ttfamily make\+Tables.\+reference\+Data\+Job\+Item = None}
+
+\mbox{\Hypertarget{namespacemakeTables_a1cae4337555e5967aef37fdffadd4dc4}\label{namespacemakeTables_a1cae4337555e5967aef37fdffadd4dc4}} 
+\index{make\+Tables@{make\+Tables}!reference\+Job\+Item@{reference\+Job\+Item}}
+\index{reference\+Job\+Item@{reference\+Job\+Item}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{reference\+Job\+Item}{referenceJobItem}}
+{\footnotesize\ttfamily make\+Tables.\+reference\+Job\+Item = copy.\+deepcopy(job\+Item)}
+
+\mbox{\Hypertarget{namespacemakeTables_a9bdaaa58c735a7cb4ff48e801ab83303}\label{namespacemakeTables_a9bdaaa58c735a7cb4ff48e801ab83303}} 
+\index{make\+Tables@{make\+Tables}!ref\+Items@{ref\+Items}}
+\index{ref\+Items@{ref\+Items}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{ref\+Items}{refItems}}
+{\footnotesize\ttfamily list make\+Tables.\+ref\+Items = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakeTables_a179f7e6a13b197ab0b1a120ee7d3a36a}\label{namespacemakeTables_a179f7e6a13b197ab0b1a120ee7d3a36a}} 
+\index{make\+Tables@{make\+Tables}!root@{root}}
+\index{root@{root}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily make\+Tables.\+root = os.\+path.\+splitext(\mbox{\hyperlink{namespacemakeTables_a5b2a60e5426f013550a0491f01657fdb}{outfile}})\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakeTables_a7da11f1c70714c321f800cb70031c2ed}\label{namespacemakeTables_a7da11f1c70714c321f800cb70031c2ed}} 
+\index{make\+Tables@{make\+Tables}!section@{section}}
+\index{section@{section}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{section}{section}}
+{\footnotesize\ttfamily string make\+Tables.\+section = \textquotesingle{}\textbackslash{}\textbackslash{}newpage\textbackslash{}\textbackslash{}section\{ \textquotesingle{} + \mbox{\hyperlink{namespacemakeTables_acb89b46fcf39a44e9dc7ebe922f81f0e}{param\+Text}} + \textquotesingle{}\}\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemakeTables_a0759ca842c69d98c6d9e341685e8bf53}\label{namespacemakeTables_a0759ca842c69d98c6d9e341685e8bf53}} 
+\index{make\+Tables@{make\+Tables}!table\+Lines@{table\+Lines}}
+\index{table\+Lines@{table\+Lines}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{table\+Lines}{tableLines}}
+{\footnotesize\ttfamily def make\+Tables.\+table\+Lines = \mbox{\hyperlink{namespacemakeTables_a05676f114347275725afdc58dc3656ff}{param\+Result\+Table}}(job\+Item, \mbox{\hyperlink{namespacemakeTables_a1cae4337555e5967aef37fdffadd4dc4}{reference\+Job\+Item}}, \mbox{\hyperlink{namespacemakeTables_ad2d53b08380c10346fc6ff9a0e12942b}{reference\+Data\+Job\+Item}})}
+
+\mbox{\Hypertarget{namespacemakeTables_a86cc3672f98bbfb5411b7d0fc643f57d}\label{namespacemakeTables_a86cc3672f98bbfb5411b7d0fc643f57d}} 
+\index{make\+Tables@{make\+Tables}!these\+Items@{these\+Items}}
+\index{these\+Items@{these\+Items}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{these\+Items}{theseItems}}
+{\footnotesize\ttfamily list make\+Tables.\+these\+Items}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [jobItem \textcolor{keywordflow}{for} jobItem \textcolor{keywordflow}{in} parambatch
+2                           \textcolor{keywordflow}{if} (os.path.exists(jobItem.distPath) \textcolor{keywordflow}{or} args.bestfitonly) \textcolor{keywordflow}{and} (
+3                     args.converge == 0 \textcolor{keywordflow}{or} jobItem.hasConvergeBetterThan(args.converge))]
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacemakeTables_a4c68a93e87904d243720fd0eaf745cab}\label{namespacemakeTables_a4c68a93e87904d243720fd0eaf745cab}} 
+\index{make\+Tables@{make\+Tables}!type@{type}}
+\index{type@{type}!make\+Tables@{make\+Tables}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily make\+Tables.\+type}
+

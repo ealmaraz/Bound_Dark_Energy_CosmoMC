@@ -1,0 +1,394 @@
+\hypertarget{namespacequint}{}\section{quint Module Reference}
+\label{namespacequint}\index{quint@{quint}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a90306420209b7de0bec2152dd1e024bb}{bde\+\_\+nxyl}}
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a37db272f12e135ca0061bd66bfccab65}{bde\+\_\+xylata}} (a, x, y, l)
+\item 
+subroutine \mbox{\hyperlink{namespacequint_aab2e2c5f2a7e9e56f0852539b0933259}{bde\+\_\+wde0}} (P, w\+B\+D\+E0)
+\item 
+subroutine \mbox{\hyperlink{namespacequint_aa2daf9edc78c79ba058ae4833682c9a8}{bde\+\_\+h0}} (P, H0)
+\item 
+real(dl) function \mbox{\hyperlink{namespacequint_ae1b7ac10a36d63310cbfe418b53b9684}{bde\+\_\+omegade0}} (x, y, l)
+\item 
+real(dl) function \mbox{\hyperlink{namespacequint_aeb3b6422b8cc4a091d00b74a6c2d6bf6}{vofphi}} (phi, deriv)
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a6a96dda084f9c9c3188eaa2576b9bfe2}{bde\+\_\+background}}
+\item 
+subroutine \mbox{\hyperlink{namespacequint_a4f9009a5b36a9b95e58f74d25e1bb1b7}{quint\+\_\+valsata}} (a, aphi, aphidot)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacequint_ab17aada00a312b3af2e4e191fdf3e50e}{numpoints}} = 10000
+\item 
+integer, parameter \mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}} =Num\+Points+2
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_a061343360883da6eebfdb61cdfba449c}{phi\+\_\+a}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_a8719904f4c91dac880cb839088a69ca9}{phidot\+\_\+a}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_adb002db0bc26b007d62ea6582a5fc58f}{ddphi\+\_\+a}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_a4dd7a485719c132a01ed439f30c1f866}{ddphidot\+\_\+a}}
+\item 
+real(dl) \mbox{\hyperlink{namespacequint_a7992ff4df2efe5528a1a109c6d0533db}{initial\+\_\+phi}}
+\item 
+real(dl) \mbox{\hyperlink{namespacequint_af323f47cbdf135c3f3f626b07465f347}{dn}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_a32c8893957513fe23c9798bd01dd57bd}{abde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_a772dd6340b969931fd8b4cc796e2ecee}{nbde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_ac5553ef581fd33330e83b1849b3c90ff}{xbde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_af164f7d3b20eb2e0ad7449519ada6734}{ybde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_aea928c2d627a7d5001dfe09a898d0c21}{lbde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_adc4851c280622a1d594cbcc28e15aba1}{ddxbde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_a10a79a1d7070650f6f67d1de7fa4b34a}{ddybde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) \mbox{\hyperlink{namespacequint_a64e99c9feaf4cb920180f5be428745a6}{ddlbde}}
+\item 
+real(dl) \mbox{\hyperlink{namespacequint_a0574a45f7095364017aa3ff788ea374a}{adot}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacequint_a6a96dda084f9c9c3188eaa2576b9bfe2}\label{namespacequint_a6a96dda084f9c9c3188eaa2576b9bfe2}} 
+\index{quint@{quint}!bde\+\_\+background@{bde\+\_\+background}}
+\index{bde\+\_\+background@{bde\+\_\+background}!quint@{quint}}
+\subsubsection{\texorpdfstring{bde\+\_\+background()}{bde\_background()}}
+{\footnotesize\ttfamily subroutine quint\+::bde\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References abde, modelparams\+::alphabde, ddphi\+\_\+a, ddphidot\+\_\+a, lbde, nbde, numpointsex, phi\+\_\+a, phidot\+\_\+a, spline(), vofphi(), xbde, and ybde.
+
+
+
+Referenced by init\+\_\+background().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{namespacequint_a6a96dda084f9c9c3188eaa2576b9bfe2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacequint_a6a96dda084f9c9c3188eaa2576b9bfe2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacequint_aa2daf9edc78c79ba058ae4833682c9a8}\label{namespacequint_aa2daf9edc78c79ba058ae4833682c9a8}} 
+\index{quint@{quint}!bde\+\_\+h0@{bde\+\_\+h0}}
+\index{bde\+\_\+h0@{bde\+\_\+h0}!quint@{quint}}
+\subsubsection{\texorpdfstring{bde\+\_\+h0()}{bde\_h0()}}
+{\footnotesize\ttfamily subroutine quint\+::bde\+\_\+h0 (\begin{DoxyParamCaption}\item[{type(cambparams), intent(in)}]{P,  }\item[{real(dl), intent(out)}]{H0 }\end{DoxyParamCaption})}
+
+
+
+References bde\+\_\+xylata(), constants\+::c, constants\+::c8pig\+\_\+evm2, and constants\+::ev2tompcm2.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{namespacequint_aa2daf9edc78c79ba058ae4833682c9a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacequint_a90306420209b7de0bec2152dd1e024bb}\label{namespacequint_a90306420209b7de0bec2152dd1e024bb}} 
+\index{quint@{quint}!bde\+\_\+nxyl@{bde\+\_\+nxyl}}
+\index{bde\+\_\+nxyl@{bde\+\_\+nxyl}!quint@{quint}}
+\subsubsection{\texorpdfstring{bde\+\_\+nxyl()}{bde\_nxyl()}}
+{\footnotesize\ttfamily subroutine quint\+::bde\+\_\+nxyl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References abde, ddlbde, ddxbde, ddybde, lbde, nbde, numpoints, numpointsex, spline(), xbde, and ybde.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{namespacequint_a90306420209b7de0bec2152dd1e024bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacequint_ae1b7ac10a36d63310cbfe418b53b9684}\label{namespacequint_ae1b7ac10a36d63310cbfe418b53b9684}} 
+\index{quint@{quint}!bde\+\_\+omegade0@{bde\+\_\+omegade0}}
+\index{bde\+\_\+omegade0@{bde\+\_\+omegade0}!quint@{quint}}
+\subsubsection{\texorpdfstring{bde\+\_\+omegade0()}{bde\_omegade0()}}
+{\footnotesize\ttfamily real(dl) function quint\+::bde\+\_\+omegade0 (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{x,  }\item[{real(dl), intent(in)}]{y,  }\item[{real(dl), intent(in)}]{l }\end{DoxyParamCaption})}
+
+
+
+References bde\+\_\+xylata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacequint_ae1b7ac10a36d63310cbfe418b53b9684_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacequint_aab2e2c5f2a7e9e56f0852539b0933259}\label{namespacequint_aab2e2c5f2a7e9e56f0852539b0933259}} 
+\index{quint@{quint}!bde\+\_\+wde0@{bde\+\_\+wde0}}
+\index{bde\+\_\+wde0@{bde\+\_\+wde0}!quint@{quint}}
+\subsubsection{\texorpdfstring{bde\+\_\+wde0()}{bde\_wde0()}}
+{\footnotesize\ttfamily subroutine quint\+::bde\+\_\+wde0 (\begin{DoxyParamCaption}\item[{type(cambparams), intent(in)}]{P,  }\item[{real(dl), intent(out)}]{w\+B\+D\+E0 }\end{DoxyParamCaption})}
+
+
+
+References bde\+\_\+xylata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{namespacequint_aab2e2c5f2a7e9e56f0852539b0933259_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacequint_a37db272f12e135ca0061bd66bfccab65}\label{namespacequint_a37db272f12e135ca0061bd66bfccab65}} 
+\index{quint@{quint}!bde\+\_\+xylata@{bde\+\_\+xylata}}
+\index{bde\+\_\+xylata@{bde\+\_\+xylata}!quint@{quint}}
+\subsubsection{\texorpdfstring{bde\+\_\+xylata()}{bde\_xylata()}}
+{\footnotesize\ttfamily subroutine quint\+::bde\+\_\+xylata (\begin{DoxyParamCaption}\item[{real(dl)}]{a,  }\item[{real(dl)}]{x,  }\item[{real(dl)}]{y,  }\item[{real(dl)}]{l }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::ac, ddlbde, ddxbde, ddybde, dn, lbde, numpoints, xbde, and ybde.
+
+
+
+Referenced by bde\+\_\+h0(), bde\+\_\+omegade0(), bde\+\_\+wde0(), and cosmologyparameterizations\+::tp\+\_\+paramarraytotheoryparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacequint_a37db272f12e135ca0061bd66bfccab65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacequint_a4f9009a5b36a9b95e58f74d25e1bb1b7}\label{namespacequint_a4f9009a5b36a9b95e58f74d25e1bb1b7}} 
+\index{quint@{quint}!quint\+\_\+valsata@{quint\+\_\+valsata}}
+\index{quint\+\_\+valsata@{quint\+\_\+valsata}!quint@{quint}}
+\subsubsection{\texorpdfstring{quint\+\_\+valsata()}{quint\_valsata()}}
+{\footnotesize\ttfamily subroutine quint\+::quint\+\_\+valsata (\begin{DoxyParamCaption}\item[{real(dl)}]{a,  }\item[{real(dl)}]{aphi,  }\item[{real(dl)}]{aphidot }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::ac, ddphi\+\_\+a, ddphidot\+\_\+a, dn, phi\+\_\+a, and phidot\+\_\+a.
+
+
+
+Referenced by dtauda().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{namespacequint_a4f9009a5b36a9b95e58f74d25e1bb1b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacequint_aeb3b6422b8cc4a091d00b74a6c2d6bf6}\label{namespacequint_aeb3b6422b8cc4a091d00b74a6c2d6bf6}} 
+\index{quint@{quint}!vofphi@{vofphi}}
+\index{vofphi@{vofphi}!quint@{quint}}
+\subsubsection{\texorpdfstring{vofphi()}{vofphi()}}
+{\footnotesize\ttfamily real(dl) function quint\+::vofphi (\begin{DoxyParamCaption}\item[{real(dl)}]{phi,  }\item[{integer}]{deriv }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::alphabde, and modelparams\+::norm\+\_\+pot.
+
+
+
+Referenced by bde\+\_\+background(), and dtauda().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacequint_aeb3b6422b8cc4a091d00b74a6c2d6bf6_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacequint_a32c8893957513fe23c9798bd01dd57bd}\label{namespacequint_a32c8893957513fe23c9798bd01dd57bd}} 
+\index{quint@{quint}!abde@{abde}}
+\index{abde@{abde}!quint@{quint}}
+\subsubsection{\texorpdfstring{abde}{abde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::abde}
+
+
+
+Referenced by bde\+\_\+background(), bde\+\_\+nxyl(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_a0574a45f7095364017aa3ff788ea374a}\label{namespacequint_a0574a45f7095364017aa3ff788ea374a}} 
+\index{quint@{quint}!adot@{adot}}
+\index{adot@{adot}!quint@{quint}}
+\subsubsection{\texorpdfstring{adot}{adot}}
+{\footnotesize\ttfamily real(dl) quint\+::adot}
+
+\mbox{\Hypertarget{namespacequint_a64e99c9feaf4cb920180f5be428745a6}\label{namespacequint_a64e99c9feaf4cb920180f5be428745a6}} 
+\index{quint@{quint}!ddlbde@{ddlbde}}
+\index{ddlbde@{ddlbde}!quint@{quint}}
+\subsubsection{\texorpdfstring{ddlbde}{ddlbde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::ddlbde}
+
+
+
+Referenced by bde\+\_\+nxyl(), bde\+\_\+xylata(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_adb002db0bc26b007d62ea6582a5fc58f}\label{namespacequint_adb002db0bc26b007d62ea6582a5fc58f}} 
+\index{quint@{quint}!ddphi\+\_\+a@{ddphi\+\_\+a}}
+\index{ddphi\+\_\+a@{ddphi\+\_\+a}!quint@{quint}}
+\subsubsection{\texorpdfstring{ddphi\+\_\+a}{ddphi\_a}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::ddphi\+\_\+a}
+
+
+
+Referenced by bde\+\_\+background(), and quint\+\_\+valsata().
+
+\mbox{\Hypertarget{namespacequint_a4dd7a485719c132a01ed439f30c1f866}\label{namespacequint_a4dd7a485719c132a01ed439f30c1f866}} 
+\index{quint@{quint}!ddphidot\+\_\+a@{ddphidot\+\_\+a}}
+\index{ddphidot\+\_\+a@{ddphidot\+\_\+a}!quint@{quint}}
+\subsubsection{\texorpdfstring{ddphidot\+\_\+a}{ddphidot\_a}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::ddphidot\+\_\+a}
+
+
+
+Referenced by bde\+\_\+background(), and quint\+\_\+valsata().
+
+\mbox{\Hypertarget{namespacequint_adc4851c280622a1d594cbcc28e15aba1}\label{namespacequint_adc4851c280622a1d594cbcc28e15aba1}} 
+\index{quint@{quint}!ddxbde@{ddxbde}}
+\index{ddxbde@{ddxbde}!quint@{quint}}
+\subsubsection{\texorpdfstring{ddxbde}{ddxbde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::ddxbde}
+
+
+
+Referenced by bde\+\_\+nxyl(), bde\+\_\+xylata(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_a10a79a1d7070650f6f67d1de7fa4b34a}\label{namespacequint_a10a79a1d7070650f6f67d1de7fa4b34a}} 
+\index{quint@{quint}!ddybde@{ddybde}}
+\index{ddybde@{ddybde}!quint@{quint}}
+\subsubsection{\texorpdfstring{ddybde}{ddybde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::ddybde}
+
+
+
+Referenced by bde\+\_\+nxyl(), bde\+\_\+xylata(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_af323f47cbdf135c3f3f626b07465f347}\label{namespacequint_af323f47cbdf135c3f3f626b07465f347}} 
+\index{quint@{quint}!dn@{dn}}
+\index{dn@{dn}!quint@{quint}}
+\subsubsection{\texorpdfstring{dn}{dn}}
+{\footnotesize\ttfamily real(dl) quint\+::dn}
+
+
+
+Referenced by bde\+\_\+xylata(), cosmologyparameterizations\+::cosmomc\+\_\+nxyl(), and quint\+\_\+valsata().
+
+\mbox{\Hypertarget{namespacequint_a7992ff4df2efe5528a1a109c6d0533db}\label{namespacequint_a7992ff4df2efe5528a1a109c6d0533db}} 
+\index{quint@{quint}!initial\+\_\+phi@{initial\+\_\+phi}}
+\index{initial\+\_\+phi@{initial\+\_\+phi}!quint@{quint}}
+\subsubsection{\texorpdfstring{initial\+\_\+phi}{initial\_phi}}
+{\footnotesize\ttfamily real(dl) quint\+::initial\+\_\+phi}
+
+\mbox{\Hypertarget{namespacequint_aea928c2d627a7d5001dfe09a898d0c21}\label{namespacequint_aea928c2d627a7d5001dfe09a898d0c21}} 
+\index{quint@{quint}!lbde@{lbde}}
+\index{lbde@{lbde}!quint@{quint}}
+\subsubsection{\texorpdfstring{lbde}{lbde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::lbde}
+
+
+
+Referenced by bde\+\_\+background(), bde\+\_\+nxyl(), bde\+\_\+xylata(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_a772dd6340b969931fd8b4cc796e2ecee}\label{namespacequint_a772dd6340b969931fd8b4cc796e2ecee}} 
+\index{quint@{quint}!nbde@{nbde}}
+\index{nbde@{nbde}!quint@{quint}}
+\subsubsection{\texorpdfstring{nbde}{nbde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::nbde}
+
+
+
+Referenced by bde\+\_\+background(), bde\+\_\+nxyl(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_ab17aada00a312b3af2e4e191fdf3e50e}\label{namespacequint_ab17aada00a312b3af2e4e191fdf3e50e}} 
+\index{quint@{quint}!numpoints@{numpoints}}
+\index{numpoints@{numpoints}!quint@{quint}}
+\subsubsection{\texorpdfstring{numpoints}{numpoints}}
+{\footnotesize\ttfamily integer parameter quint\+::numpoints = 10000}
+
+
+
+Referenced by bde\+\_\+nxyl(), bde\+\_\+xylata(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}\label{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}} 
+\index{quint@{quint}!numpointsex@{numpointsex}}
+\index{numpointsex@{numpointsex}!quint@{quint}}
+\subsubsection{\texorpdfstring{numpointsex}{numpointsex}}
+{\footnotesize\ttfamily integer parameter quint\+::numpointsex =Num\+Points+2}
+
+
+
+Referenced by bde\+\_\+background(), bde\+\_\+nxyl(), and cosmologyparameterizations\+::cosmomc\+\_\+nxyl().
+
+\mbox{\Hypertarget{namespacequint_a061343360883da6eebfdb61cdfba449c}\label{namespacequint_a061343360883da6eebfdb61cdfba449c}} 
+\index{quint@{quint}!phi\+\_\+a@{phi\+\_\+a}}
+\index{phi\+\_\+a@{phi\+\_\+a}!quint@{quint}}
+\subsubsection{\texorpdfstring{phi\+\_\+a}{phi\_a}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::phi\+\_\+a}
+
+
+
+Referenced by bde\+\_\+background(), and quint\+\_\+valsata().
+
+\mbox{\Hypertarget{namespacequint_a8719904f4c91dac880cb839088a69ca9}\label{namespacequint_a8719904f4c91dac880cb839088a69ca9}} 
+\index{quint@{quint}!phidot\+\_\+a@{phidot\+\_\+a}}
+\index{phidot\+\_\+a@{phidot\+\_\+a}!quint@{quint}}
+\subsubsection{\texorpdfstring{phidot\+\_\+a}{phidot\_a}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::phidot\+\_\+a}
+
+
+
+Referenced by bde\+\_\+background(), and quint\+\_\+valsata().
+
+\mbox{\Hypertarget{namespacequint_ac5553ef581fd33330e83b1849b3c90ff}\label{namespacequint_ac5553ef581fd33330e83b1849b3c90ff}} 
+\index{quint@{quint}!xbde@{xbde}}
+\index{xbde@{xbde}!quint@{quint}}
+\subsubsection{\texorpdfstring{xbde}{xbde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::xbde}
+
+
+
+Referenced by bde\+\_\+background(), bde\+\_\+nxyl(), bde\+\_\+xylata(), cosmologyparameterizations\+::cosmomc\+\_\+nxyl(), and cosmologyparameterizations\+::tp\+\_\+paramarraytotheoryparams().
+
+\mbox{\Hypertarget{namespacequint_af164f7d3b20eb2e0ad7449519ada6734}\label{namespacequint_af164f7d3b20eb2e0ad7449519ada6734}} 
+\index{quint@{quint}!ybde@{ybde}}
+\index{ybde@{ybde}!quint@{quint}}
+\subsubsection{\texorpdfstring{ybde}{ybde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacequint_a8388814d2fb6e0f54431a7257a8f86a9}{numpointsex}}) quint\+::ybde}
+
+
+
+Referenced by bde\+\_\+background(), bde\+\_\+nxyl(), bde\+\_\+xylata(), cosmologyparameterizations\+::cosmomc\+\_\+nxyl(), and cosmologyparameterizations\+::tp\+\_\+paramarraytotheoryparams().
+

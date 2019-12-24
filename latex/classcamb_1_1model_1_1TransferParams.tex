@@ -1,0 +1,73 @@
+\hypertarget{classcamb_1_1model_1_1TransferParams}{}\section{camb.\+model.\+Transfer\+Params Class Reference}
+\label{classcamb_1_1model_1_1TransferParams}\index{camb.\+model.\+Transfer\+Params@{camb.\+model.\+Transfer\+Params}}
+
+
+Inheritance diagram for camb.\+model.\+Transfer\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classcamb_1_1model_1_1TransferParams__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camb.\+model.\+Transfer\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classcamb_1_1model_1_1TransferParams__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classcamb_1_1model_1_1TransferParams_a9aac715894231a1a01bc7a4c716b2357}{\+\_\+fields\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Object storing parameters for the matter power spectrum calculation. PK variables are for setting main outputs.
+Other entries are used internally, e.g. for sampling to get correct non-linear corrections and lensing.
+
+:ivar high_precision: True for more accuracy
+:ivar kmax: k_max to output
+:ivar k_per_logint: number of points per log k interval. If zero, set an irregular optimized spacing.
+:ivar PK_num_redshifts: number of redshifts to calculate
+:ivar PK_redshifts: redshifts to output for the matter transfer and power\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcamb_1_1model_1_1TransferParams_a9aac715894231a1a01bc7a4c716b2357}\label{classcamb_1_1model_1_1TransferParams_a9aac715894231a1a01bc7a4c716b2357}} 
+\index{camb\+::model\+::\+Transfer\+Params@{camb\+::model\+::\+Transfer\+Params}!\+\_\+fields\+\_\+@{\+\_\+fields\+\_\+}}
+\index{\+\_\+fields\+\_\+@{\+\_\+fields\+\_\+}!camb\+::model\+::\+Transfer\+Params@{camb\+::model\+::\+Transfer\+Params}}
+\subsubsection{\texorpdfstring{\+\_\+fields\+\_\+}{\_fields\_}}
+{\footnotesize\ttfamily list camb.\+model.\+Transfer\+Params.\+\_\+fields\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        (\textcolor{stringliteral}{"high\_precision"}, c\_int),  \textcolor{comment}{# logical}
+        (\textcolor{stringliteral}{"num\_redshifts"}, c\_int),
+        (\textcolor{stringliteral}{"kmax"}, c\_double),
+        (\textcolor{stringliteral}{"k\_per\_logint"}, c\_int),
+        (\textcolor{stringliteral}{"redshifts"}, c\_double * max\_transfer\_redshifts),
+        (\textcolor{stringliteral}{"PK\_redshifts"}, c\_double * max\_transfer\_redshifts),
+        (\textcolor{stringliteral}{"NLL\_redshifts"}, c\_double * max\_transfer\_redshifts),
+        (\textcolor{stringliteral}{"PK\_redshifts\_index"}, c\_int * max\_transfer\_redshifts),
+        (\textcolor{stringliteral}{"NLL\_redshifts\_index"}, c\_int * max\_transfer\_redshifts),
+        (\textcolor{stringliteral}{"PK\_num\_redshifts"}, c\_int),
+        (\textcolor{stringliteral}{"NLL\_num\_redshifts"}, c\_int)
+    ]
+\end{DoxyCode}
+
+
+Referenced by camb.\+baseconfig.\+C\+A\+M\+B\+\_\+\+Structure.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/pycamb/camb/\mbox{\hyperlink{model_8py}{model.\+py}}\end{DoxyCompactItemize}

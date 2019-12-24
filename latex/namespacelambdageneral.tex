@@ -1,0 +1,414 @@
+\hypertarget{namespacelambdageneral}{}\section{lambdageneral Module Reference}
+\label{namespacelambdageneral}\index{lambdageneral@{lambdageneral}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacelambdageneral_a780328d728ca15af725d6f53b2fa54d1}{darkenergy\+\_\+readparams}} (Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacelambdageneral_ad21de3de68d0d0e75156e818dd8b49e1}{setddwa}}
+\item 
+real(dl) function \mbox{\hyperlink{namespacelambdageneral_a5025e65d45f07326ea66833cbab495d3}{w\+\_\+de}} (a)
+\item 
+real(dl) function \mbox{\hyperlink{namespacelambdageneral_a446a7b395384f258ea37364624b12206}{drdlna\+\_\+de}} (al)
+\item 
+subroutine \mbox{\hyperlink{namespacelambdageneral_ac5a1ca91bd76eaf1d2f8e05944b798d6}{interpolrde}}
+\item 
+real(dl) function \mbox{\hyperlink{namespacelambdageneral_a07db6feea7db4bda2dd9465dafa7895f}{grho\+\_\+de}} (a)
+\item 
+subroutine \mbox{\hyperlink{namespacelambdageneral_ac223e519da99aef58a91fb3932b7c438}{cubicsplint}} (xa, ya, y2a, n, x, y)
+\item 
+subroutine \mbox{\hyperlink{namespacelambdageneral_a2e52a5cb604fe6d314c2bdbfc3d6b723}{setcgammappf}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) \mbox{\hyperlink{namespacelambdageneral_aa974593ba987c77d2bf09655570fab6a}{w\+\_\+lam}} = -\/1\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacelambdageneral_a5df860ac945ff458c8f809a63ea3987f}{cs2\+\_\+lam}} = 1\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelambdageneral_a175aaf4fc2698fa3d615510feb82f3ee}{wa\+\_\+ppf}} = 0.\+\_\+dl
+\item 
+logical \mbox{\hyperlink{namespacelambdageneral_aaccd65e521dd501c9ee6c8e77a95ffef}{w\+\_\+perturb}} = .true.
+\item 
+logical \mbox{\hyperlink{namespacelambdageneral_a089643a9b64fa595564ae2a20a525c0a}{quintessence}} = .true.
+\item 
+logical \mbox{\hyperlink{namespacelambdageneral_af7e90af593ee4c5594024dff73234360}{use\+\_\+tabulated\+\_\+w}} = .false.
+\item 
+real(dl) \mbox{\hyperlink{namespacelambdageneral_a85e391fa1c34171d68cc178f0d0b9d8a}{c\+\_\+gamma\+\_\+ppf}} = 0.\+4\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}{nwmax}} = 5000
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}{nde}} = 2000
+\item 
+integer \mbox{\hyperlink{namespacelambdageneral_ab52783406de69e4d228acb0d9fefc1c6}{nw\+\_\+ppf}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}{nwmax}}) \mbox{\hyperlink{namespacelambdageneral_a7e860fa5106918f839ea3f7f76862f56}{w\+\_\+ppf}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}{nwmax}}) \mbox{\hyperlink{namespacelambdageneral_a01ecf8d62de8dba202404c6c64743084}{a\+\_\+ppf}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}{nwmax}}), private \mbox{\hyperlink{namespacelambdageneral_abf25efe08b2d793e499129d1bbd0ad61}{ddw\+\_\+ppf}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}{nde}}), private \mbox{\hyperlink{namespacelambdageneral_addbcd4776d6d01e9839013990b02fd91}{rde}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}{nde}}), private \mbox{\hyperlink{namespacelambdageneral_a3c9598fcf92daa2c3f6715e256e50c98}{ade}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}{nde}}), private \mbox{\hyperlink{namespacelambdageneral_a4076e8b34d8ff5774ed58d456c862c14}{ddrde}}
+\item 
+real(dl), parameter, private \mbox{\hyperlink{namespacelambdageneral_a45e4f8d95a544fe1221e6ff186d9f4b9}{amin}} = 1.d-\/9
+\item 
+logical \mbox{\hyperlink{namespacelambdageneral_a8ac10c80c54ab03dde5512cfa1baf5d2}{is\+\_\+cosmological\+\_\+constant}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacelambdageneral_ac223e519da99aef58a91fb3932b7c438}\label{namespacelambdageneral_ac223e519da99aef58a91fb3932b7c438}} 
+\index{lambdageneral@{lambdageneral}!cubicsplint@{cubicsplint}}
+\index{cubicsplint@{cubicsplint}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{cubicsplint()}{cubicsplint()}}
+{\footnotesize\ttfamily subroutine lambdageneral\+::cubicsplint (\begin{DoxyParamCaption}\item[{}]{xa,  }\item[{}]{ya,  }\item[{}]{y2a,  }\item[{integer}]{n,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+
+
+Referenced by grho\+\_\+de(), and w\+\_\+de().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_ac223e519da99aef58a91fb3932b7c438_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelambdageneral_a780328d728ca15af725d6f53b2fa54d1}\label{namespacelambdageneral_a780328d728ca15af725d6f53b2fa54d1}} 
+\index{lambdageneral@{lambdageneral}!darkenergy\+\_\+readparams@{darkenergy\+\_\+readparams}}
+\index{darkenergy\+\_\+readparams@{darkenergy\+\_\+readparams}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{darkenergy\+\_\+readparams()}{darkenergy\_readparams()}}
+{\footnotesize\ttfamily subroutine lambdageneral\+::darkenergy\+\_\+readparams (\begin{DoxyParamCaption}\item[{type(tinifile)}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References cs2\+\_\+lam, inifile\+::ini\+\_\+read\+\_\+double\+\_\+file(), and w\+\_\+lam.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_a780328d728ca15af725d6f53b2fa54d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelambdageneral_a446a7b395384f258ea37364624b12206}\label{namespacelambdageneral_a446a7b395384f258ea37364624b12206}} 
+\index{lambdageneral@{lambdageneral}!drdlna\+\_\+de@{drdlna\+\_\+de}}
+\index{drdlna\+\_\+de@{drdlna\+\_\+de}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{drdlna\+\_\+de()}{drdlna\_de()}}
+{\footnotesize\ttfamily real(dl) function lambdageneral\+::drdlna\+\_\+de (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{al }\end{DoxyParamCaption})}
+
+
+
+References w\+\_\+de().
+
+
+
+Referenced by interpolrde().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_a446a7b395384f258ea37364624b12206_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_a446a7b395384f258ea37364624b12206_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelambdageneral_a07db6feea7db4bda2dd9465dafa7895f}\label{namespacelambdageneral_a07db6feea7db4bda2dd9465dafa7895f}} 
+\index{lambdageneral@{lambdageneral}!grho\+\_\+de@{grho\+\_\+de}}
+\index{grho\+\_\+de@{grho\+\_\+de}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{grho\+\_\+de()}{grho\_de()}}
+{\footnotesize\ttfamily real(dl) function lambdageneral\+::grho\+\_\+de (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})}
+
+
+
+References ade, amin, cubicsplint(), ddrde, modelparams\+::grhov, nde, rde, use\+\_\+tabulated\+\_\+w, w\+\_\+de(), and wa\+\_\+ppf.
+
+
+
+Referenced by dtauda().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_a07db6feea7db4bda2dd9465dafa7895f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{namespacelambdageneral_a07db6feea7db4bda2dd9465dafa7895f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelambdageneral_ac5a1ca91bd76eaf1d2f8e05944b798d6}\label{namespacelambdageneral_ac5a1ca91bd76eaf1d2f8e05944b798d6}} 
+\index{lambdageneral@{lambdageneral}!interpolrde@{interpolrde}}
+\index{interpolrde@{interpolrde}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{interpolrde()}{interpolrde()}}
+{\footnotesize\ttfamily subroutine lambdageneral\+::interpolrde (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ade, amin, ddrde, drdlna\+\_\+de(), nde, rde, and spline().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_ac5a1ca91bd76eaf1d2f8e05944b798d6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelambdageneral_a2e52a5cb604fe6d314c2bdbfc3d6b723}\label{namespacelambdageneral_a2e52a5cb604fe6d314c2bdbfc3d6b723}} 
+\index{lambdageneral@{lambdageneral}!setcgammappf@{setcgammappf}}
+\index{setcgammappf@{setcgammappf}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{setcgammappf()}{setcgammappf()}}
+{\footnotesize\ttfamily subroutine lambdageneral\+::setcgammappf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References c\+\_\+gamma\+\_\+ppf.
+
+\mbox{\Hypertarget{namespacelambdageneral_ad21de3de68d0d0e75156e818dd8b49e1}\label{namespacelambdageneral_ad21de3de68d0d0e75156e818dd8b49e1}} 
+\index{lambdageneral@{lambdageneral}!setddwa@{setddwa}}
+\index{setddwa@{setddwa}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{setddwa()}{setddwa()}}
+{\footnotesize\ttfamily subroutine lambdageneral\+::setddwa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References a\+\_\+ppf, ddw\+\_\+ppf, nw\+\_\+ppf, spline(), and w\+\_\+ppf.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{namespacelambdageneral_ad21de3de68d0d0e75156e818dd8b49e1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelambdageneral_a5025e65d45f07326ea66833cbab495d3}\label{namespacelambdageneral_a5025e65d45f07326ea66833cbab495d3}} 
+\index{lambdageneral@{lambdageneral}!w\+\_\+de@{w\+\_\+de}}
+\index{w\+\_\+de@{w\+\_\+de}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{w\+\_\+de()}{w\_de()}}
+{\footnotesize\ttfamily real(dl) function lambdageneral\+::w\+\_\+de (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})}
+
+
+
+References a\+\_\+ppf, cubicsplint(), ddw\+\_\+ppf, nw\+\_\+ppf, use\+\_\+tabulated\+\_\+w, w\+\_\+ppf, and wa\+\_\+ppf.
+
+
+
+Referenced by drdlna\+\_\+de(), and grho\+\_\+de().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_a5025e65d45f07326ea66833cbab495d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelambdageneral_a5025e65d45f07326ea66833cbab495d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacelambdageneral_a01ecf8d62de8dba202404c6c64743084}\label{namespacelambdageneral_a01ecf8d62de8dba202404c6c64743084}} 
+\index{lambdageneral@{lambdageneral}!a\+\_\+ppf@{a\+\_\+ppf}}
+\index{a\+\_\+ppf@{a\+\_\+ppf}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{a\+\_\+ppf}{a\_ppf}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}{nwmax}}) lambdageneral\+::a\+\_\+ppf}
+
+
+
+Referenced by setddwa(), and w\+\_\+de().
+
+\mbox{\Hypertarget{namespacelambdageneral_a3c9598fcf92daa2c3f6715e256e50c98}\label{namespacelambdageneral_a3c9598fcf92daa2c3f6715e256e50c98}} 
+\index{lambdageneral@{lambdageneral}!ade@{ade}}
+\index{ade@{ade}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{ade}{ade}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}{nde}}), private lambdageneral\+::ade\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by grho\+\_\+de(), and interpolrde().
+
+\mbox{\Hypertarget{namespacelambdageneral_a45e4f8d95a544fe1221e6ff186d9f4b9}\label{namespacelambdageneral_a45e4f8d95a544fe1221e6ff186d9f4b9}} 
+\index{lambdageneral@{lambdageneral}!amin@{amin}}
+\index{amin@{amin}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{amin}{amin}}
+{\footnotesize\ttfamily real(dl), parameter, private lambdageneral\+::amin = 1.d-\/9\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by grho\+\_\+de(), and interpolrde().
+
+\mbox{\Hypertarget{namespacelambdageneral_a85e391fa1c34171d68cc178f0d0b9d8a}\label{namespacelambdageneral_a85e391fa1c34171d68cc178f0d0b9d8a}} 
+\index{lambdageneral@{lambdageneral}!c\+\_\+gamma\+\_\+ppf@{c\+\_\+gamma\+\_\+ppf}}
+\index{c\+\_\+gamma\+\_\+ppf@{c\+\_\+gamma\+\_\+ppf}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{c\+\_\+gamma\+\_\+ppf}{c\_gamma\_ppf}}
+{\footnotesize\ttfamily real(dl) lambdageneral\+::c\+\_\+gamma\+\_\+ppf = 0.\+4\+\_\+dl}
+
+
+
+Referenced by setcgammappf().
+
+\mbox{\Hypertarget{namespacelambdageneral_a5df860ac945ff458c8f809a63ea3987f}\label{namespacelambdageneral_a5df860ac945ff458c8f809a63ea3987f}} 
+\index{lambdageneral@{lambdageneral}!cs2\+\_\+lam@{cs2\+\_\+lam}}
+\index{cs2\+\_\+lam@{cs2\+\_\+lam}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{cs2\+\_\+lam}{cs2\_lam}}
+{\footnotesize\ttfamily real(dl) lambdageneral\+::cs2\+\_\+lam = 1\+\_\+dl}
+
+
+
+Referenced by darkenergy\+\_\+readparams(), gaugeinterface\+::derivs(), and dtauda().
+
+\mbox{\Hypertarget{namespacelambdageneral_a4076e8b34d8ff5774ed58d456c862c14}\label{namespacelambdageneral_a4076e8b34d8ff5774ed58d456c862c14}} 
+\index{lambdageneral@{lambdageneral}!ddrde@{ddrde}}
+\index{ddrde@{ddrde}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{ddrde}{ddrde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}{nde}}), private lambdageneral\+::ddrde\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by grho\+\_\+de(), and interpolrde().
+
+\mbox{\Hypertarget{namespacelambdageneral_abf25efe08b2d793e499129d1bbd0ad61}\label{namespacelambdageneral_abf25efe08b2d793e499129d1bbd0ad61}} 
+\index{lambdageneral@{lambdageneral}!ddw\+\_\+ppf@{ddw\+\_\+ppf}}
+\index{ddw\+\_\+ppf@{ddw\+\_\+ppf}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{ddw\+\_\+ppf}{ddw\_ppf}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}{nwmax}}), private lambdageneral\+::ddw\+\_\+ppf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by setddwa(), and w\+\_\+de().
+
+\mbox{\Hypertarget{namespacelambdageneral_a8ac10c80c54ab03dde5512cfa1baf5d2}\label{namespacelambdageneral_a8ac10c80c54ab03dde5512cfa1baf5d2}} 
+\index{lambdageneral@{lambdageneral}!is\+\_\+cosmological\+\_\+constant@{is\+\_\+cosmological\+\_\+constant}}
+\index{is\+\_\+cosmological\+\_\+constant@{is\+\_\+cosmological\+\_\+constant}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{is\+\_\+cosmological\+\_\+constant}{is\_cosmological\_constant}}
+{\footnotesize\ttfamily logical lambdageneral\+::is\+\_\+cosmological\+\_\+constant}
+
+
+
+Referenced by dtauda(), and init\+\_\+background().
+
+\mbox{\Hypertarget{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}\label{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}} 
+\index{lambdageneral@{lambdageneral}!nde@{nde}}
+\index{nde@{nde}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{nde}{nde}}
+{\footnotesize\ttfamily integer, parameter, private lambdageneral\+::nde = 2000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by grho\+\_\+de(), and interpolrde().
+
+\mbox{\Hypertarget{namespacelambdageneral_ab52783406de69e4d228acb0d9fefc1c6}\label{namespacelambdageneral_ab52783406de69e4d228acb0d9fefc1c6}} 
+\index{lambdageneral@{lambdageneral}!nw\+\_\+ppf@{nw\+\_\+ppf}}
+\index{nw\+\_\+ppf@{nw\+\_\+ppf}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{nw\+\_\+ppf}{nw\_ppf}}
+{\footnotesize\ttfamily integer lambdageneral\+::nw\+\_\+ppf}
+
+
+
+Referenced by setddwa(), and w\+\_\+de().
+
+\mbox{\Hypertarget{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}\label{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}} 
+\index{lambdageneral@{lambdageneral}!nwmax@{nwmax}}
+\index{nwmax@{nwmax}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{nwmax}{nwmax}}
+{\footnotesize\ttfamily integer, parameter lambdageneral\+::nwmax = 5000}
+
+\mbox{\Hypertarget{namespacelambdageneral_a089643a9b64fa595564ae2a20a525c0a}\label{namespacelambdageneral_a089643a9b64fa595564ae2a20a525c0a}} 
+\index{lambdageneral@{lambdageneral}!quintessence@{quintessence}}
+\index{quintessence@{quintessence}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{quintessence}{quintessence}}
+{\footnotesize\ttfamily logical lambdageneral\+::quintessence = .true.}
+
+
+
+Referenced by dtauda().
+
+\mbox{\Hypertarget{namespacelambdageneral_addbcd4776d6d01e9839013990b02fd91}\label{namespacelambdageneral_addbcd4776d6d01e9839013990b02fd91}} 
+\index{lambdageneral@{lambdageneral}!rde@{rde}}
+\index{rde@{rde}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{rde}{rde}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_ae21da0c8fff86159b789dee9579bd7d5}{nde}}), private lambdageneral\+::rde\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by grho\+\_\+de(), and interpolrde().
+
+\mbox{\Hypertarget{namespacelambdageneral_af7e90af593ee4c5594024dff73234360}\label{namespacelambdageneral_af7e90af593ee4c5594024dff73234360}} 
+\index{lambdageneral@{lambdageneral}!use\+\_\+tabulated\+\_\+w@{use\+\_\+tabulated\+\_\+w}}
+\index{use\+\_\+tabulated\+\_\+w@{use\+\_\+tabulated\+\_\+w}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{use\+\_\+tabulated\+\_\+w}{use\_tabulated\_w}}
+{\footnotesize\ttfamily logical lambdageneral\+::use\+\_\+tabulated\+\_\+w = .false.}
+
+
+
+Referenced by grho\+\_\+de(), init\+\_\+background(), and w\+\_\+de().
+
+\mbox{\Hypertarget{namespacelambdageneral_aa974593ba987c77d2bf09655570fab6a}\label{namespacelambdageneral_aa974593ba987c77d2bf09655570fab6a}} 
+\index{lambdageneral@{lambdageneral}!w\+\_\+lam@{w\+\_\+lam}}
+\index{w\+\_\+lam@{w\+\_\+lam}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{w\+\_\+lam}{w\_lam}}
+{\footnotesize\ttfamily real(dl) lambdageneral\+::w\+\_\+lam = -\/1\+\_\+dl}
+
+
+
+Referenced by nonlinear\+::assign\+\_\+hm\+\_\+cosmology(), calculator\+\_\+camb\+::cambcalc\+\_\+cmbtocamb(), gaugeinterface\+::copyscalarvariablearray(), darkenergy\+\_\+readparams(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), gaugeinterface\+::derivsv(), dtauda(), nonlinear\+::halofit(), init\+\_\+background(), gaugeinterface\+::initial(), nonlinear\+::nonlinear\+\_\+getnonlinratios(), gaugeinterface\+::output(), and gaugeinterface\+::setupscalararrayindices().
+
+\mbox{\Hypertarget{namespacelambdageneral_aaccd65e521dd501c9ee6c8e77a95ffef}\label{namespacelambdageneral_aaccd65e521dd501c9ee6c8e77a95ffef}} 
+\index{lambdageneral@{lambdageneral}!w\+\_\+perturb@{w\+\_\+perturb}}
+\index{w\+\_\+perturb@{w\+\_\+perturb}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{w\+\_\+perturb}{w\_perturb}}
+{\footnotesize\ttfamily logical lambdageneral\+::w\+\_\+perturb = .true.}
+
+
+
+Referenced by gaugeinterface\+::copyscalarvariablearray(), gaugeinterface\+::derivs(), dtauda(), gaugeinterface\+::initial(), gaugeinterface\+::output(), and gaugeinterface\+::setupscalararrayindices().
+
+\mbox{\Hypertarget{namespacelambdageneral_a7e860fa5106918f839ea3f7f76862f56}\label{namespacelambdageneral_a7e860fa5106918f839ea3f7f76862f56}} 
+\index{lambdageneral@{lambdageneral}!w\+\_\+ppf@{w\+\_\+ppf}}
+\index{w\+\_\+ppf@{w\+\_\+ppf}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{w\+\_\+ppf}{w\_ppf}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacelambdageneral_a72ab4fcacd74a66fe577794d5294864b}{nwmax}}) lambdageneral\+::w\+\_\+ppf}
+
+
+
+Referenced by setddwa(), and w\+\_\+de().
+
+\mbox{\Hypertarget{namespacelambdageneral_a175aaf4fc2698fa3d615510feb82f3ee}\label{namespacelambdageneral_a175aaf4fc2698fa3d615510feb82f3ee}} 
+\index{lambdageneral@{lambdageneral}!wa\+\_\+ppf@{wa\+\_\+ppf}}
+\index{wa\+\_\+ppf@{wa\+\_\+ppf}!lambdageneral@{lambdageneral}}
+\subsubsection{\texorpdfstring{wa\+\_\+ppf}{wa\_ppf}}
+{\footnotesize\ttfamily real(dl) lambdageneral\+::wa\+\_\+ppf = 0.\+\_\+dl}
+
+
+
+Referenced by nonlinear\+::assign\+\_\+hm\+\_\+cosmology(), calculator\+\_\+camb\+::cambcalc\+\_\+cmbtocamb(), grho\+\_\+de(), nonlinear\+::halofit(), init\+\_\+background(), nonlinear\+::nonlinear\+\_\+getnonlinratios(), and w\+\_\+de().
+

@@ -1,0 +1,180 @@
+\hypertarget{subroutines_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/subroutines.f90 File Reference}
+\label{subroutines_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/subroutines.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/subroutines.\+f90}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{subroutines_8f90_ac08193bbb8f878a435cf0e52c491ad9c}{splder}} (y, dy, n, g)
+\item 
+subroutine \mbox{\hyperlink{subroutines_8f90_a67a919c1c3599a4f59a5a4865a4488e4}{splini}} (g, n)
+\item 
+real(dl) function \mbox{\hyperlink{subroutines_8f90_a9b3be772ea91c10f9c682519e5e8bf1d}{rombint2}} (f, a, b, tol, maxit, minsteps)
+\item 
+real(dl) function \mbox{\hyperlink{subroutines_8f90_ae1c8377d1cc1f765f031ecc37070dc7a}{rombint}} (f, a, b, tol)
+\item 
+real(dl) function \mbox{\hyperlink{subroutines_8f90_a5f7d81c89595cb6ea60a221b1d9da0f5}{rombint\+\_\+obj}} (obj, f, a, b, tol, maxit)
+\item 
+subroutine \mbox{\hyperlink{subroutines_8f90_af4fbf8a987590628c9a9d08152ce9e08}{spline}} (x, y, n, d11, d1n, d2)
+\item 
+subroutine \mbox{\hyperlink{subroutines_8f90_a481cbd4b768cbe245fdfe71380927e5a}{spline\+\_\+deriv}} (x, y, y2, y1, n)
+\item 
+subroutine \mbox{\hyperlink{subroutines_8f90_a810dcbf1c971281d698fb5f043322c5f}{spline\+\_\+integrate}} (x, y, y2, yint, n)
+\item 
+subroutine \mbox{\hyperlink{subroutines_8f90_a5cc3dda624e58340fa2d833b839c3b95}{splint}} (y, z, n)
+\item 
+subroutine \mbox{\hyperlink{subroutines_8f90_a35d319f194cbb52b3ee563ece3266ad5}{dverk}} (EV, n, fcn, x, y, xend, tol, ind, c, nw, w)
+\item 
+real(dl) function \mbox{\hyperlink{subroutines_8f90_adc95564e859204ebffa9612a6fcf337a}{newton\+\_\+raphson}} (xxl, xxh, funcs, param, param2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{subroutines_8f90_a35d319f194cbb52b3ee563ece3266ad5}\label{subroutines_8f90_a35d319f194cbb52b3ee563ece3266ad5}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!dverk@{dverk}}
+\index{dverk@{dverk}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{dverk()}{dverk()}}
+{\footnotesize\ttfamily subroutine dverk (\begin{DoxyParamCaption}\item[{real}]{EV,  }\item[{integer}]{n,  }\item[{external}]{fcn,  }\item[{real(dl)}]{x,  }\item[{real(dl), dimension(n)}]{y,  }\item[{real(dl)}]{xend,  }\item[{real(dl)}]{tol,  }\item[{integer}]{ind,  }\item[{real(dl), dimension($\ast$)}]{c,  }\item[{integer}]{nw,  }\item[{real(dl), dimension(nw,9)}]{w }\end{DoxyParamCaption})}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambmain\+::calcvectorsources(), power\+\_\+sz\+::delta(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvetens(), gaugeinterface\+::gaugeinterface\+\_\+scalev(), and recombination\+::recombination\+\_\+init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{subroutines_8f90_a35d319f194cbb52b3ee563ece3266ad5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{subroutines_8f90_adc95564e859204ebffa9612a6fcf337a}\label{subroutines_8f90_adc95564e859204ebffa9612a6fcf337a}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!newton\+\_\+raphson@{newton\+\_\+raphson}}
+\index{newton\+\_\+raphson@{newton\+\_\+raphson}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{newton\+\_\+raphson()}{newton\_raphson()}}
+{\footnotesize\ttfamily real(dl) function newton\+\_\+raphson (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{xxl,  }\item[{real(dl), intent(in)}]{xxh,  }\item[{external}]{funcs,  }\item[{real(dl), intent(in)}]{param,  }\item[{real(dl), intent(in)}]{param2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{subroutines_8f90_ae1c8377d1cc1f765f031ecc37070dc7a}\label{subroutines_8f90_ae1c8377d1cc1f765f031ecc37070dc7a}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!rombint@{rombint}}
+\index{rombint@{rombint}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{rombint()}{rombint()}}
+{\footnotesize\ttfamily real(dl) function rombint (\begin{DoxyParamCaption}\item[{external}]{f,  }\item[{real(dl), intent(in)}]{a,  }\item[{real(dl), intent(in)}]{b,  }\item[{real(dl), intent(in)}]{tol }\end{DoxyParamCaption})}
+
+
+
+Referenced by power\+\_\+sz\+::delta(), thermodata\+::inithermo(), and cosmology\+::r().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{subroutines_8f90_ae1c8377d1cc1f765f031ecc37070dc7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{subroutines_8f90_a9b3be772ea91c10f9c682519e5e8bf1d}\label{subroutines_8f90_a9b3be772ea91c10f9c682519e5e8bf1d}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!rombint2@{rombint2}}
+\index{rombint2@{rombint2}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{rombint2()}{rombint2()}}
+{\footnotesize\ttfamily real(dl) function rombint2 (\begin{DoxyParamCaption}\item[{external}]{f,  }\item[{real(dl), intent(in)}]{a,  }\item[{real(dl), intent(in)}]{b,  }\item[{real(dl), intent(in)}]{tol,  }\item[{integer, intent(in)}]{maxit,  }\item[{integer, intent(in)}]{minsteps }\end{DoxyParamCaption})}
+
+
+
+Referenced by thermodata\+::dragoptdepth(), and thermodata\+::optdepth().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{subroutines_8f90_a9b3be772ea91c10f9c682519e5e8bf1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{subroutines_8f90_a5f7d81c89595cb6ea60a221b1d9da0f5}\label{subroutines_8f90_a5f7d81c89595cb6ea60a221b1d9da0f5}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!rombint\+\_\+obj@{rombint\+\_\+obj}}
+\index{rombint\+\_\+obj@{rombint\+\_\+obj}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{rombint\+\_\+obj()}{rombint\_obj()}}
+{\footnotesize\ttfamily real(dl) function rombint\+\_\+obj (\begin{DoxyParamCaption}\item[{real}]{obj,  }\item[{external}]{f,  }\item[{real(dl), intent(in)}]{a,  }\item[{real(dl), intent(in)}]{b,  }\item[{real(dl), intent(in)}]{tol,  }\item[{integer, intent(in), optional}]{maxit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{subroutines_8f90_ac08193bbb8f878a435cf0e52c491ad9c}\label{subroutines_8f90_ac08193bbb8f878a435cf0e52c491ad9c}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!splder@{splder}}
+\index{splder@{splder}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{splder()}{splder()}}
+{\footnotesize\ttfamily subroutine splder (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(in)}]{y,  }\item[{real(dl), dimension(n), intent(out)}]{dy,  }\item[{integer, intent(in)}]{n,  }\item[{real(dl), dimension(n), intent(in)}]{g }\end{DoxyParamCaption})}
+
+
+
+Referenced by thermodata\+::getbackgroundevolution(), thermodata\+::inithermo(), and massivenu\+::nu\+\_\+init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{subroutines_8f90_ac08193bbb8f878a435cf0e52c491ad9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{subroutines_8f90_af4fbf8a987590628c9a9d08152ce9e08}\label{subroutines_8f90_af4fbf8a987590628c9a9d08152ce9e08}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!spline@{spline}}
+\index{spline@{spline}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{spline()}{spline()}}
+{\footnotesize\ttfamily subroutine spline (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(in)}]{x,  }\item[{real(dl), dimension(n), intent(in)}]{y,  }\item[{integer, intent(in)}]{n,  }\item[{real(dl), intent(in)}]{d11,  }\item[{real(dl), intent(in)}]{d1n,  }\item[{real(dl), dimension(n), intent(out)}]{d2 }\end{DoxyParamCaption})}
+
+
+
+Referenced by quint\+::bde\+\_\+background(), quint\+::bde\+\_\+nxyl(), lensing\+::corrfuncfullskyimpl(), cosmologyparameterizations\+::cosmomc\+\_\+nxyl(), samples\+::density1d\+\_\+initspline(), spherbessels\+::generatebessels(), lensing\+::getbessels(), cambmain\+::initsourceinterpolation(), lvalues\+::interpolateclarr(), cambmain\+::interpolatesources(), lambdageneral\+::interpolrde(), recombination\+::kappa\+\_\+hh\+\_\+21cm(), recombination\+::kappa\+\_\+ph\+\_\+21cm(), cambmain\+::makenonlinearsources(), transfer\+::matterpowerdata\+\_\+getsplines(), recombination\+::recombination\+\_\+init(), lambdageneral\+::setddwa(), interpolation\+::tcubicspline\+\_\+initinterp(), lrggettheory\+::transfer\+\_\+getmatterpowerandnw(), and transfer\+::transfer\+\_\+getmatterpowerd().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{subroutines_8f90_af4fbf8a987590628c9a9d08152ce9e08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{subroutines_8f90_a481cbd4b768cbe245fdfe71380927e5a}\label{subroutines_8f90_a481cbd4b768cbe245fdfe71380927e5a}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!spline\+\_\+deriv@{spline\+\_\+deriv}}
+\index{spline\+\_\+deriv@{spline\+\_\+deriv}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{spline\+\_\+deriv()}{spline\_deriv()}}
+{\footnotesize\ttfamily subroutine spline\+\_\+deriv (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(in)}]{x,  }\item[{real(dl), dimension(n), intent(in)}]{y,  }\item[{real(dl), dimension(n), intent(in)}]{y2,  }\item[{real(dl), dimension(n), intent(out)}]{y1,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{subroutines_8f90_a810dcbf1c971281d698fb5f043322c5f}\label{subroutines_8f90_a810dcbf1c971281d698fb5f043322c5f}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!spline\+\_\+integrate@{spline\+\_\+integrate}}
+\index{spline\+\_\+integrate@{spline\+\_\+integrate}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{spline\+\_\+integrate()}{spline\_integrate()}}
+{\footnotesize\ttfamily subroutine spline\+\_\+integrate (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(in)}]{x,  }\item[{real(dl), dimension(n), intent(in)}]{y,  }\item[{real(dl), dimension(n), intent(in)}]{y2,  }\item[{real(dl), dimension(n), intent(out)}]{yint,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{subroutines_8f90_a67a919c1c3599a4f59a5a4865a4488e4}\label{subroutines_8f90_a67a919c1c3599a4f59a5a4865a4488e4}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!splini@{splini}}
+\index{splini@{splini}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{splini()}{splini()}}
+{\footnotesize\ttfamily subroutine splini (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(out)}]{g,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+Referenced by thermodata\+::getbackgroundevolution(), thermodata\+::inithermo(), and massivenu\+::nu\+\_\+init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{subroutines_8f90_a67a919c1c3599a4f59a5a4865a4488e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{subroutines_8f90_a5cc3dda624e58340fa2d833b839c3b95}\label{subroutines_8f90_a5cc3dda624e58340fa2d833b839c3b95}} 
+\index{subroutines.\+f90@{subroutines.\+f90}!splint@{splint}}
+\index{splint@{splint}!subroutines.\+f90@{subroutines.\+f90}}
+\subsubsection{\texorpdfstring{splint()}{splint()}}
+{\footnotesize\ttfamily subroutine splint (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(in)}]{y,  }\item[{real(dl), intent(out)}]{z,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+Referenced by massivenu\+::nurhopres().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{subroutines_8f90_a5cc3dda624e58340fa2d833b839c3b95_icgraph}
+\end{center}
+\end{figure}

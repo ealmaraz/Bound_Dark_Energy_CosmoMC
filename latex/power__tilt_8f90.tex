@@ -1,0 +1,44 @@
+\hypertarget{power__tilt_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/power\+\_\+tilt.f90 File Reference}
+\label{power__tilt_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/power\+\_\+tilt.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/power\+\_\+tilt.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structinitialpower_1_1initialpowerparams}{initialpower\+::initialpowerparams}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceinitialpower}{initialpower}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespaceinitialpower_a0af6f4d15e7cc386f038c557a83256e1}{initialpower\+::setdefpowerparams}} (AP)
+\item 
+subroutine, public \mbox{\hyperlink{namespaceinitialpower_aa7485ddfdf405ed8912c8070fef8af62}{initialpower\+::initializepowers}} (A\+Param\+Set, acurv)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespaceinitialpower_a2263ec918226f30880a9efbedf684be8}{initialpower\+::scalarpower}} (k, ix)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespaceinitialpower_aa1fdc1f3bcc69e61d7f690fa3ffd7f02}{initialpower\+::tensorpower}} (k, ix)
+\item 
+integer function, public \mbox{\hyperlink{namespaceinitialpower_a44d725f2b2b68cb9ea810423c9b4d8c4}{initialpower\+::power\+\_\+descript}} (in, Scal, Tens, Keys, Vals)
+\item 
+subroutine, public \mbox{\hyperlink{namespaceinitialpower_aad1ed45315709769eb35a28cbc8731f1}{initialpower\+::initialpower\+\_\+readparams}} (Init\+Power, Ini, Want\+Tensors)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len= $\ast$), parameter, public \mbox{\hyperlink{namespaceinitialpower_a5397e53840b8c5aa10ab09fcd8cb23b4}{initialpower\+::power\+\_\+name}} = \textquotesingle{}power\+\_\+tilt\textquotesingle{}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a9749c023ff83f7ffa2677dc578379c10}{initialpower\+::nnmax}} = 5
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a08c3c750bc5c8657967d99b3f0b9585e}{initialpower\+::tensor\+\_\+param\+\_\+indeptilt}} =1
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a610fa4412cca71c3692bd468cd0df5ec}{initialpower\+::tensor\+\_\+param\+\_\+rpivot}} = 2
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceinitialpower_a1ab75aba3a08150a1e0c54913880e1be}{initialpower\+::tensor\+\_\+param\+\_\+at}} = 3
+\item 
+real(dl) \mbox{\hyperlink{namespaceinitialpower_a3a06e0904c8fdd21de5ce19490bb177b}{initialpower\+::curv}}
+\item 
+type(initialpowerparams), save \mbox{\hyperlink{namespaceinitialpower_ace8ec05c677782ea3843bc3e85b6f42d}{initialpower\+::p}}
+\end{DoxyCompactItemize}

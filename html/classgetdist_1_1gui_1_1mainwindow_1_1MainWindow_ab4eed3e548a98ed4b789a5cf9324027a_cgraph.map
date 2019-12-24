@@ -1,0 +1,27 @@
+<map id="getdist.gui.mainwindow.MainWindow.openDirectory" name="getdist.gui.mainwindow.MainWindow.openDirectory">
+<area shape="rect" id="node2" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a8e87ee33947bf720fec739d5de9dd99c" title="getdist.gui.mainwindow.Main\lWindow._readGridChains" alt="" coords="779,193,970,234"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aa66e5484958005c6d6dfd988a05ac83a" title="getdist.gui.mainwindow.Main\lWindow._resetGridData" alt="" coords="1019,5,1210,46"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a385cc81f23347ee51f9ee4454a676074" title="getdist.gui.mainwindow.Main\lWindow.getPlotter" alt="" coords="1019,253,1210,294"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a2577966dbd8821764a2880b0883cd0c6" title="getdist.gui.mainwindow.Main\lWindow._updateComboBoxRootname" alt="" coords="246,370,490,411"/>
+<area shape="rect" id="node19" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aa4d50e481a279bfc236264d54e794696" title="getdist.gui.mainwindow.Main\lWindow.errorReport" alt="" coords="1019,467,1210,509"/>
+<area shape="rect" id="node23" href="$namespacegetdist_1_1mcsamples.html#a19b6bbf020742d555e81b6a8bf1475e4" title="getdist.mcsamples.GetChain\lRootFiles" alt="" coords="273,487,463,529"/>
+<area shape="rect" id="node24" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aa0388a3f86e2f94a313715182b9cc2ac" title="getdist.gui.mainwindow.Main\lWindow.getDirectories" alt="" coords="539,546,730,587"/>
+<area shape="rect" id="node25" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ad54b990be48269b8e9375dac2a68ee9c" title="getdist.gui.mainwindow.Main\lWindow.saveDirectories" alt="" coords="273,605,463,646"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a3e7c9caefe4a820ec6d2f2d1cf7a41c8" title="getdist.gui.mainwindow.Main\lWindow._resetPlotData" alt="" coords="1019,135,1210,177"/>
+<area shape="rect" id="node5" href="$namespaceobjectlists.html#af7dd3c43a123562bc92cf38d6ed508cd" title="objectlists::clear" alt="" coords="1560,227,1677,253"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aceae6c103872070c2383fffa54ee75e9" title="getdist.gui.mainwindow.Main\lWindow.setParamTag" alt="" coords="1019,70,1210,111"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ae2ff20b5ea04f3dbb46a6e6e447e34d7" title="getdist.gui.mainwindow.Main\lWindow.setRootname" alt="" coords="539,370,730,411"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#acffec8bd5390cacd428e909ef4cfa449" title="getdist.gui.mainwindow.Main\lWindow.newRootItem" alt="" coords="779,370,970,411"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a77a47206bb3e2ecb4dbac87af2f85f6e" title="getdist.gui.mainwindow.Main\lWindow._updateParameters" alt="" coords="1019,402,1210,443"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a70759462a72f7fb41af9c795b0318346" title="getdist.gui.mainwindow.Main\lWindow._updateComboBoxColor" alt="" coords="1259,303,1474,345"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a4136dbf5a3f107c064a7b5a58c4dcdb7" title="getdist.gui.mainwindow.Main\lWindow._updateListParameters" alt="" coords="1263,369,1470,410"/>
+<area shape="rect" id="node14" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#abdbfb43927d31864cd840b416d281df1" title="getdist.gui.mainwindow.Main\lWindow.checkedRootNames" alt="" coords="1271,499,1463,541"/>
+<area shape="rect" id="node15" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aff268010fdbaa0abe118cf5a3b50849f" title="getdist.gui.mainwindow.Main\lWindow.getSamples" alt="" coords="1271,630,1462,671"/>
+<area shape="rect" id="node16" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a9f988a9217e030de892f370248a94481" title="getdist.gui.mainwindow.Main\lWindow.getXParams" alt="" coords="1271,434,1462,475"/>
+<area shape="rect" id="node18" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a5a49bcf9798a91781b81e59086d05e61" title="getdist.gui.mainwindow.Main\lWindow.getYParams" alt="" coords="1271,565,1462,606"/>
+<area shape="rect" id="node17" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a6a538cbf9dfa41511637abcdabad7f23" title="getdist.gui.mainwindow.Main\lWindow.getCheckedParams" alt="" coords="1523,499,1714,541"/>
+<area shape="rect" id="node20" href="$namespacestringutils.html#a29f32cf04e0c44fc8ee8dfa9819b915d" title="stringutils::join" alt="" coords="1313,696,1420,723"/>
+<area shape="rect" id="node21" href="$namespacestringutils.html#ac5e67eb0a4de77625ac1447804e1f934" title="stringutils::stringtrimmed" alt="" coords="1536,696,1701,723"/>
+<area shape="rect" id="node22" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="1763,696,1912,723"/>
+<area shape="rect" id="node26" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a3b46ccf380b69cea6f4f95ba9ec4ed4d" title="getdist.gui.mainwindow.Main\lWindow.getSettings" alt="" coords="539,611,730,653"/>
+</map>

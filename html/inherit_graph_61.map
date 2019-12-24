@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogMargeStats.html" title="getdist.gui.mainwindow.Dialog\lMargeStats" alt="" coords="123,5,322,46"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogSettings.html" title="getdist.gui.mainwindow.Dialog\lSettings" alt="" coords="123,70,322,111"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogTextOutput.html" title="getdist.gui.mainwindow.Dialog\lTextOutput" alt="" coords="123,201,322,242"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogConfigSettings.html" title="getdist.gui.mainwindow.Dialog\lConfigSettings" alt="" coords="385,5,583,46"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogPlotSettings.html" title="getdist.gui.mainwindow.Dialog\lPlotSettings" alt="" coords="385,70,583,111"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogConvergeStats.html" title="getdist.gui.mainwindow.Dialog\lConvergeStats" alt="" coords="385,135,583,177"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogLikeStats.html" title="getdist.gui.mainwindow.Dialog\lLikeStats" alt="" coords="385,201,583,242"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogParamTables.html" title="getdist.gui.mainwindow.Dialog\lParamTables" alt="" coords="385,266,583,307"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogPCA.html" title="getdist.gui.mainwindow.DialogPCA" alt="" coords="371,332,597,359"/>
+</map>

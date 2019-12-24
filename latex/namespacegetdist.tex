@@ -1,0 +1,159 @@
+\hypertarget{namespacegetdist}{}\section{getdist Namespace Reference}
+\label{namespacegetdist}\index{getdist@{getdist}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1chains}{chains}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1convolve}{convolve}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1covcomb}{covcomb}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1covmat}{covmat}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1covscale}{covscale}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1densities}{densities}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1gaussian__mixtures}{gaussian\+\_\+mixtures}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1gui}{gui}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1inifile}{inifile}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1kde__bandwidth}{kde\+\_\+bandwidth}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1mcsamples}{mcsamples}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1paramnames}{paramnames}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1parampriors}{parampriors}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1plots}{plots}}
+\item 
+ \mbox{\hyperlink{namespacegetdist_1_1types}{types}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegetdist_af1887c8e2da86996dd314d3cecb257dc}{get\+\_\+defaults\+\_\+file}} (name=\textquotesingle{}analysis\+\_\+defaults.\+ini\textquotesingle{})
+\item 
+def \mbox{\hyperlink{namespacegetdist_afff37f2d5a620eda2304d8daa72351c0}{set\+\_\+logging}} (log)
+\item 
+def \mbox{\hyperlink{namespacegetdist_ae1cef30c152a1bd4e44ee539fd21c3db}{get\+\_\+config}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacegetdist_a963a563622eb870a0443ed41523d5b52}{\+\_\+\+\_\+author\+\_\+\+\_\+}} = \textquotesingle{}Antony Lewis\textquotesingle{}
+\item 
+string \mbox{\hyperlink{namespacegetdist_a672826807c8312f67fde2bdfd46599a5}{\+\_\+\+\_\+version\+\_\+\+\_\+}} = \char`\"{}0.\+2.\+6\char`\"{}
+\item 
+def \mbox{\hyperlink{namespacegetdist_a5c99c0ba26cb1f3808d81c76b8de4c91}{config\+\_\+ini}} = \mbox{\hyperlink{namespacegetdist_ae1cef30c152a1bd4e44ee539fd21c3db}{get\+\_\+config}}()
+\item 
+def \mbox{\hyperlink{namespacegetdist_a2ed5e7cfdf637a19ad09e719c419963a}{default\+\_\+grid\+\_\+root}} = config\+\_\+ini.\+string(\textquotesingle{}default\+\_\+grid\+\_\+root\textquotesingle{}, \textquotesingle{}\textquotesingle{})
+\item 
+def \mbox{\hyperlink{namespacegetdist_abe320c8ae9dc34e1322e80f98e24bebf}{output\+\_\+base\+\_\+dir}} = config\+\_\+ini.\+string(\textquotesingle{}output\+\_\+base\+\_\+dir\textquotesingle{}, \textquotesingle{}\textquotesingle{})
+\item 
+def \mbox{\hyperlink{namespacegetdist_a14c15d42e852457cae74a89c50446ecb}{cache\+\_\+dir}} = config\+\_\+ini.\+string(\textquotesingle{}cache\+\_\+dir\textquotesingle{}, \textquotesingle{}\textquotesingle{})
+\item 
+def \mbox{\hyperlink{namespacegetdist_a4940be008227154f9cd2c59d05256103}{default\+\_\+getdist\+\_\+settings}} = config\+\_\+ini.\+string(\textquotesingle{}default\+\_\+getdist\+\_\+settings\textquotesingle{}, \mbox{\hyperlink{namespacegetdist_af1887c8e2da86996dd314d3cecb257dc}{get\+\_\+defaults\+\_\+file}}())
+\item 
+def \mbox{\hyperlink{namespacegetdist_a5d4be353cd53f5baa773acef0b256264}{distparam\+\_\+template}} = config\+\_\+ini.\+string(\textquotesingle{}distparam\+\_\+template\textquotesingle{}, \mbox{\hyperlink{namespacegetdist_af1887c8e2da86996dd314d3cecb257dc}{get\+\_\+defaults\+\_\+file}}(\textquotesingle{}distparam\+\_\+template.\+ini\textquotesingle{}))
+\item 
+def \mbox{\hyperlink{namespacegetdist_a9a0a7b564c5c7f59a2f57263aa8a923b}{use\+\_\+plot\+\_\+data}} = config\+\_\+ini.\+bool(\textquotesingle{}use\+\_\+plot\+\_\+data\textquotesingle{}, False)
+\item 
+def \mbox{\hyperlink{namespacegetdist_a41e32cd823783b6abcda710f3eeeb0d0}{default\+\_\+plot\+\_\+output}} = config\+\_\+ini.\+string(\textquotesingle{}default\+\_\+plot\+\_\+output\textquotesingle{}, \textquotesingle{}pdf\textquotesingle{})
+\item 
+def \mbox{\hyperlink{namespacegetdist_a2cfb6d100005a1aebc5b4e380888ee07}{loglevel}} = config\+\_\+ini.\+string(\textquotesingle{}logging\textquotesingle{}, \textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegetdist_ae1cef30c152a1bd4e44ee539fd21c3db}\label{namespacegetdist_ae1cef30c152a1bd4e44ee539fd21c3db}} 
+\index{getdist@{getdist}!get\+\_\+config@{get\+\_\+config}}
+\index{get\+\_\+config@{get\+\_\+config}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{get\+\_\+config()}{get\_config()}}
+{\footnotesize\ttfamily def getdist.\+get\+\_\+config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegetdist_af1887c8e2da86996dd314d3cecb257dc}\label{namespacegetdist_af1887c8e2da86996dd314d3cecb257dc}} 
+\index{getdist@{getdist}!get\+\_\+defaults\+\_\+file@{get\+\_\+defaults\+\_\+file}}
+\index{get\+\_\+defaults\+\_\+file@{get\+\_\+defaults\+\_\+file}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{get\+\_\+defaults\+\_\+file()}{get\_defaults\_file()}}
+{\footnotesize\ttfamily def getdist.\+get\+\_\+defaults\+\_\+file (\begin{DoxyParamCaption}\item[{}]{name = {\ttfamily \textquotesingle{}analysis\+\_\+defaults.ini\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegetdist_afff37f2d5a620eda2304d8daa72351c0}\label{namespacegetdist_afff37f2d5a620eda2304d8daa72351c0}} 
+\index{getdist@{getdist}!set\+\_\+logging@{set\+\_\+logging}}
+\index{set\+\_\+logging@{set\+\_\+logging}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{set\+\_\+logging()}{set\_logging()}}
+{\footnotesize\ttfamily def getdist.\+set\+\_\+logging (\begin{DoxyParamCaption}\item[{}]{log }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegetdist_a963a563622eb870a0443ed41523d5b52}\label{namespacegetdist_a963a563622eb870a0443ed41523d5b52}} 
+\index{getdist@{getdist}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+author\+\_\+\+\_\+}{\_\_author\_\_}}
+{\footnotesize\ttfamily string getdist.\+\_\+\+\_\+author\+\_\+\+\_\+ = \textquotesingle{}Antony Lewis\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegetdist_a672826807c8312f67fde2bdfd46599a5}\label{namespacegetdist_a672826807c8312f67fde2bdfd46599a5}} 
+\index{getdist@{getdist}!\+\_\+\+\_\+version\+\_\+\+\_\+@{\+\_\+\+\_\+version\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+version\+\_\+\+\_\+@{\+\_\+\+\_\+version\+\_\+\+\_\+}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+version\+\_\+\+\_\+}{\_\_version\_\_}}
+{\footnotesize\ttfamily string getdist.\+\_\+\+\_\+version\+\_\+\+\_\+ = \char`\"{}0.\+2.\+6\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegetdist_a14c15d42e852457cae74a89c50446ecb}\label{namespacegetdist_a14c15d42e852457cae74a89c50446ecb}} 
+\index{getdist@{getdist}!cache\+\_\+dir@{cache\+\_\+dir}}
+\index{cache\+\_\+dir@{cache\+\_\+dir}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{cache\+\_\+dir}{cache\_dir}}
+{\footnotesize\ttfamily def getdist.\+cache\+\_\+dir = config\+\_\+ini.\+string(\textquotesingle{}cache\+\_\+dir\textquotesingle{}, \textquotesingle{}\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegetdist_a5c99c0ba26cb1f3808d81c76b8de4c91}\label{namespacegetdist_a5c99c0ba26cb1f3808d81c76b8de4c91}} 
+\index{getdist@{getdist}!config\+\_\+ini@{config\+\_\+ini}}
+\index{config\+\_\+ini@{config\+\_\+ini}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{config\+\_\+ini}{config\_ini}}
+{\footnotesize\ttfamily def getdist.\+config\+\_\+ini = \mbox{\hyperlink{namespacegetdist_ae1cef30c152a1bd4e44ee539fd21c3db}{get\+\_\+config}}()}
+
+\mbox{\Hypertarget{namespacegetdist_a4940be008227154f9cd2c59d05256103}\label{namespacegetdist_a4940be008227154f9cd2c59d05256103}} 
+\index{getdist@{getdist}!default\+\_\+getdist\+\_\+settings@{default\+\_\+getdist\+\_\+settings}}
+\index{default\+\_\+getdist\+\_\+settings@{default\+\_\+getdist\+\_\+settings}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{default\+\_\+getdist\+\_\+settings}{default\_getdist\_settings}}
+{\footnotesize\ttfamily def getdist.\+default\+\_\+getdist\+\_\+settings = config\+\_\+ini.\+string(\textquotesingle{}default\+\_\+getdist\+\_\+settings\textquotesingle{}, \mbox{\hyperlink{namespacegetdist_af1887c8e2da86996dd314d3cecb257dc}{get\+\_\+defaults\+\_\+file}}())}
+
+\mbox{\Hypertarget{namespacegetdist_a2ed5e7cfdf637a19ad09e719c419963a}\label{namespacegetdist_a2ed5e7cfdf637a19ad09e719c419963a}} 
+\index{getdist@{getdist}!default\+\_\+grid\+\_\+root@{default\+\_\+grid\+\_\+root}}
+\index{default\+\_\+grid\+\_\+root@{default\+\_\+grid\+\_\+root}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{default\+\_\+grid\+\_\+root}{default\_grid\_root}}
+{\footnotesize\ttfamily def getdist.\+default\+\_\+grid\+\_\+root = config\+\_\+ini.\+string(\textquotesingle{}default\+\_\+grid\+\_\+root\textquotesingle{}, \textquotesingle{}\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegetdist_a41e32cd823783b6abcda710f3eeeb0d0}\label{namespacegetdist_a41e32cd823783b6abcda710f3eeeb0d0}} 
+\index{getdist@{getdist}!default\+\_\+plot\+\_\+output@{default\+\_\+plot\+\_\+output}}
+\index{default\+\_\+plot\+\_\+output@{default\+\_\+plot\+\_\+output}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{default\+\_\+plot\+\_\+output}{default\_plot\_output}}
+{\footnotesize\ttfamily def getdist.\+default\+\_\+plot\+\_\+output = config\+\_\+ini.\+string(\textquotesingle{}default\+\_\+plot\+\_\+output\textquotesingle{}, \textquotesingle{}pdf\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegetdist_a5d4be353cd53f5baa773acef0b256264}\label{namespacegetdist_a5d4be353cd53f5baa773acef0b256264}} 
+\index{getdist@{getdist}!distparam\+\_\+template@{distparam\+\_\+template}}
+\index{distparam\+\_\+template@{distparam\+\_\+template}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{distparam\+\_\+template}{distparam\_template}}
+{\footnotesize\ttfamily def getdist.\+distparam\+\_\+template = config\+\_\+ini.\+string(\textquotesingle{}distparam\+\_\+template\textquotesingle{}, \mbox{\hyperlink{namespacegetdist_af1887c8e2da86996dd314d3cecb257dc}{get\+\_\+defaults\+\_\+file}}(\textquotesingle{}distparam\+\_\+template.\+ini\textquotesingle{}))}
+
+\mbox{\Hypertarget{namespacegetdist_a2cfb6d100005a1aebc5b4e380888ee07}\label{namespacegetdist_a2cfb6d100005a1aebc5b4e380888ee07}} 
+\index{getdist@{getdist}!loglevel@{loglevel}}
+\index{loglevel@{loglevel}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{loglevel}{loglevel}}
+{\footnotesize\ttfamily def getdist.\+loglevel = config\+\_\+ini.\+string(\textquotesingle{}logging\textquotesingle{}, \textquotesingle{}\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegetdist_abe320c8ae9dc34e1322e80f98e24bebf}\label{namespacegetdist_abe320c8ae9dc34e1322e80f98e24bebf}} 
+\index{getdist@{getdist}!output\+\_\+base\+\_\+dir@{output\+\_\+base\+\_\+dir}}
+\index{output\+\_\+base\+\_\+dir@{output\+\_\+base\+\_\+dir}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{output\+\_\+base\+\_\+dir}{output\_base\_dir}}
+{\footnotesize\ttfamily def getdist.\+output\+\_\+base\+\_\+dir = config\+\_\+ini.\+string(\textquotesingle{}output\+\_\+base\+\_\+dir\textquotesingle{}, \textquotesingle{}\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacegetdist_a9a0a7b564c5c7f59a2f57263aa8a923b}\label{namespacegetdist_a9a0a7b564c5c7f59a2f57263aa8a923b}} 
+\index{getdist@{getdist}!use\+\_\+plot\+\_\+data@{use\+\_\+plot\+\_\+data}}
+\index{use\+\_\+plot\+\_\+data@{use\+\_\+plot\+\_\+data}!getdist@{getdist}}
+\subsubsection{\texorpdfstring{use\+\_\+plot\+\_\+data}{use\_plot\_data}}
+{\footnotesize\ttfamily def getdist.\+use\+\_\+plot\+\_\+data = config\+\_\+ini.\+bool(\textquotesingle{}use\+\_\+plot\+\_\+data\textquotesingle{}, False)}
+

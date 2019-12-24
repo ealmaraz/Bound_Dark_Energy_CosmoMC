@@ -1,0 +1,449 @@
+\hypertarget{namespacegeneraltypes}{}\section{generaltypes Module Reference}
+\label{namespacegeneraltypes}\index{generaltypes@{generaltypes}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1genericparameterization}{genericparameterization}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1int__arr}{int\+\_\+arr}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tcheckpointable}{tcheckpointable}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tconfigclass}{tconfigclass}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tobjectwithparams}{tobjectwithparams}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tparameterization}{tparameterization}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{ttheorycalculator}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheoryintermediatecache}{ttheoryintermediatecache}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheoryparams}{ttheoryparams}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a416bb37c1c9b61ae49640747ff4b7630}{paramarraytotheoryparams}} (this, Params, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a3ebde3fdac358126f25e067d6b223de1}{tparameterization\+\_\+initialize}} (this, Ini, Names, Default\+Name, Config)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacegeneraltypes_ad583eb4db9430c5b495f21cc9863017d}{tparameterization\+\_\+nonbaseparameterpriors}} (this, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_afd268eae09678643a72d0b3ed8da568a}{tparameterization\+\_\+calcderivedparams}} (this, P, Theory, derived)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a21288f1eff4120ed86e9b0bfce3eed50}{tparameterization\+\_\+newtheoryparams}} (this, Theory\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a445b06716a45b37bc3100a23b2742d2e}{ttheorypredictions\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ace116f1d7f9e8a3fdff59a6c376273e3}{tcalculationatparampoint\+\_\+clear}} (this, Keep)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a4807ce873100fa001203158f5ed66fbd}{tcalculationatparampoint\+\_\+acceptreject}} (this, Trial, accpt)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a2a8909b75d213ee335199e2fd1769711}{tcalculationatparampoint\+\_\+writeparams}} (this, Config, mult, like)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a6ae308a4d8fb255fd1e15dc6a8911931}{writemodel}} (this, F, like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a9fdd457b58418041f9a4639dd76570db}{readmodel}} (this, F, has\+\_\+likes, mult, like, error)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a890f7aa63579a54ec8ca5a3a8d19a607}{ttheoryintermediatecache\+\_\+clear}} (Info)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aa79e01f130bcebe63ffce5dffb17950c}{ttheorycalculator\+\_\+initforlikelihoods}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a207649e7d9a305b79b0016f9e5aae2d9}{ttheorycalculator\+\_\+readimportanceparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a46caf82f82aed371c7f69a0168e9167b}{ttheorycalculator\+\_\+gettheoryforimportance}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a79e614b9322bb431dd5c0cf1abde00ca}{ttheorycalculator\+\_\+versiontraceoutput}} (this, Read\+Values)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_af10543377b813170c5ba69fe2ebfdd44}{ttheorycalculator\+\_\+errornotimplemented}} (this, S)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aa6c88f0919f7ac7fa030824300d48018}{ttheorycalculator\+\_\+error}} (this, S)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a55eb95d894b131cff41c56b99c9f87cc}{tconfigclass\+\_\+initconfig}} (this, Config)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ab4499296c04e7fca434f77eecbccea27}{tconfigclass\+\_\+initwithparams}} (this, Ini, Config)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a739d15405356622a778b42627a1d39d4}{writetheory}} (this, F, first)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aaa999beeb15e5412eba1146d1250b25f}{readtheory}} (this, F, first)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a845e7a28effceab63f5aed42a4bf066a}{writetextdata}} (this, fnameroot)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a9ebf4d67be70717d4385bd575cc2300f}{tgeneralconfig\+\_\+settheoryparameterization}} (this, Ini, Names, default\+Param)
+\item 
+logical function \mbox{\hyperlink{namespacegeneraltypes_a86a26412494e782acd18ef23abfc46b4}{tgeneralconfig\+\_\+setparameterizationname}} (this, nametag, Ini, Names)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a510e50b9adaf980266f3c8160135f409}{tgeneralconfig\+\_\+newtheory}} (this, Theory)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ad67421d900a21e6dc1a5d34ea7bc77fe}{tgeneralconfig\+\_\+initforlikelihoods}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ad37138d6b09c9e6feda0357b1c94e85a}{tcheckpointable\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aebd5d13abc4092b06e3e6164880ee11a}{tobjectwithparams\+\_\+readparams}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacegeneraltypes_a44032002cc7bece9f328a839b5830b5d}{tdatalikelihood\+\_\+getloglike}} (this, Params, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a077299298ffed6e9dea751a27ca45507}{tdatalikelihood\+\_\+writelikelihooddata}} (this, Theory, Data\+Params, root)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_abae245dbb211bd2f44ed4267e47206de}{tdatalikelihood\+\_\+initconfig}} (this, Config)
+\item 
+real(mcp) function, dimension(this\%nuisance\+\_\+params\%num\+\_\+derived) \mbox{\hyperlink{namespacegeneraltypes_a6bb9fb37002b4265a3a4f438c4b045fa}{tdatalikelihood\+\_\+derivedparameters}} (this, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aaea05ea7158416ca57ed2178bdac9431}{tdatalikelihood\+\_\+loadparamnames}} (this, fname)
+\item 
+logical function \mbox{\hyperlink{namespacegeneraltypes_a07c63d132f04e331ccb42e8f96080129}{tdatalikelihood\+\_\+checkconflicts}} (this, full\+\_\+list)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacegeneraltypes_a6578bd73fe17b7b10bb5740695d0fb5f}{tdatalikelihood\+\_\+gettag}} (this)
+\item 
+class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}}) function, pointer \mbox{\hyperlink{namespacegeneraltypes_aaebd3447ba557d8cc1c3f2b5ca98456d}{likelihooditem}} (L, i)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a26624f9233a06ac3e62f6bdb2ad416f8}{writelikelihoodcontribs}} (L, aunit, likelihoods)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_af94e150476d45f72d492e761a2d02ab5}{writedataforlikelihoods}} (L, P, Theory, fileroot)
+\item 
+integer function \mbox{\hyperlink{namespacegeneraltypes_aa824e634d28fc4010383a833af894aee}{comparelikes}} (this, R1, R2)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_af520b2d286223bb2ce63b94b5c1349b6}{addnuisanceparameters}} (L, Names)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a67700a58507d793526ec1958d512cf71}{addoutputlikelihoodparams}} (L, Names)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a6d294b5c4431a0f7a6537529c66b98f1}{checkallconflicts}} (L)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a785618fc9b8db45522432952253e93a6}{addlikelihoodderivedparams}} (L, P, Theory, derived, Likelihoods, log\+Like)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a99af409a28645f773f5a94f32df68365}{outputdescription}} (L, fname)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{likenamelen}} = 80
+\item 
+integer, parameter \mbox{\hyperlink{namespacegeneraltypes_aa0157fd48eed0fc43695836a0c19e1f0}{liketaglen}} = 20
+\item 
+type(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}}), target, save, public \mbox{\hyperlink{namespacegeneraltypes_a2e2a79dda657e0a8910f724be0015ed5}{datalikelihoods}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacegeneraltypes_a785618fc9b8db45522432952253e93a6}\label{namespacegeneraltypes_a785618fc9b8db45522432952253e93a6}} 
+\index{generaltypes@{generaltypes}!addlikelihoodderivedparams@{addlikelihoodderivedparams}}
+\index{addlikelihoodderivedparams@{addlikelihoodderivedparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{addlikelihoodderivedparams()}{addlikelihoodderivedparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::addlikelihoodderivedparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}}), allocatable}]{Theory,  }\item[{real(mcp), dimension(\+:), allocatable}]{derived,  }\item[{real(mcp), dimension(\+:), intent(in), optional}]{Likelihoods,  }\item[{real(mcp), intent(in), optional}]{log\+Like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_af520b2d286223bb2ce63b94b5c1349b6}\label{namespacegeneraltypes_af520b2d286223bb2ce63b94b5c1349b6}} 
+\index{generaltypes@{generaltypes}!addnuisanceparameters@{addnuisanceparameters}}
+\index{addnuisanceparameters@{addnuisanceparameters}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{addnuisanceparameters()}{addnuisanceparameters()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::addnuisanceparameters (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L,  }\item[{type(tparamnames)}]{Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a67700a58507d793526ec1958d512cf71}\label{namespacegeneraltypes_a67700a58507d793526ec1958d512cf71}} 
+\index{generaltypes@{generaltypes}!addoutputlikelihoodparams@{addoutputlikelihoodparams}}
+\index{addoutputlikelihoodparams@{addoutputlikelihoodparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{addoutputlikelihoodparams()}{addoutputlikelihoodparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::addoutputlikelihoodparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L,  }\item[{type(tparamnames)}]{Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a6d294b5c4431a0f7a6537529c66b98f1}\label{namespacegeneraltypes_a6d294b5c4431a0f7a6537529c66b98f1}} 
+\index{generaltypes@{generaltypes}!checkallconflicts@{checkallconflicts}}
+\index{checkallconflicts@{checkallconflicts}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{checkallconflicts()}{checkallconflicts()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::checkallconflicts (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aa824e634d28fc4010383a833af894aee}\label{namespacegeneraltypes_aa824e634d28fc4010383a833af894aee}} 
+\index{generaltypes@{generaltypes}!comparelikes@{comparelikes}}
+\index{comparelikes@{comparelikes}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{comparelikes()}{comparelikes()}}
+{\footnotesize\ttfamily integer function generaltypes\+::comparelikes (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{this,  }\item[{class($\ast$)}]{R1,  }\item[{class($\ast$)}]{R2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aaebd3447ba557d8cc1c3f2b5ca98456d}\label{namespacegeneraltypes_aaebd3447ba557d8cc1c3f2b5ca98456d}} 
+\index{generaltypes@{generaltypes}!likelihooditem@{likelihooditem}}
+\index{likelihooditem@{likelihooditem}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{likelihooditem()}{likelihooditem()}}
+{\footnotesize\ttfamily class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}}) function, pointer generaltypes\+::likelihooditem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a99af409a28645f773f5a94f32df68365}\label{namespacegeneraltypes_a99af409a28645f773f5a94f32df68365}} 
+\index{generaltypes@{generaltypes}!outputdescription@{outputdescription}}
+\index{outputdescription@{outputdescription}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{outputdescription()}{outputdescription()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::outputdescription (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L,  }\item[{character(len=$\ast$), intent(in)}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a416bb37c1c9b61ae49640747ff4b7630}\label{namespacegeneraltypes_a416bb37c1c9b61ae49640747ff4b7630}} 
+\index{generaltypes@{generaltypes}!paramarraytotheoryparams@{paramarraytotheoryparams}}
+\index{paramarraytotheoryparams@{paramarraytotheoryparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{paramarraytotheoryparams()}{paramarraytotheoryparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::paramarraytotheoryparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tparameterization}{tparameterization}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{Params,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryparams}{ttheoryparams}}), target}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a9fdd457b58418041f9a4639dd76570db}\label{namespacegeneraltypes_a9fdd457b58418041f9a4639dd76570db}} 
+\index{generaltypes@{generaltypes}!readmodel@{readmodel}}
+\index{readmodel@{readmodel}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{readmodel()}{readmodel()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::readmodel (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{logical, dimension(\+:), intent(out)}]{has\+\_\+likes,  }\item[{real(mcp), intent(out)}]{mult,  }\item[{real(mcp), intent(out)}]{like,  }\item[{integer, intent(out)}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aaa999beeb15e5412eba1146d1250b25f}\label{namespacegeneraltypes_aaa999beeb15e5412eba1146d1250b25f}} 
+\index{generaltypes@{generaltypes}!readtheory@{readtheory}}
+\index{readtheory@{readtheory}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{readtheory()}{readtheory()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::readtheory (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{logical, intent(in)}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a4807ce873100fa001203158f5ed66fbd}\label{namespacegeneraltypes_a4807ce873100fa001203158f5ed66fbd}} 
+\index{generaltypes@{generaltypes}!tcalculationatparampoint\+\_\+acceptreject@{tcalculationatparampoint\+\_\+acceptreject}}
+\index{tcalculationatparampoint\+\_\+acceptreject@{tcalculationatparampoint\+\_\+acceptreject}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tcalculationatparampoint\+\_\+acceptreject()}{tcalculationatparampoint\_acceptreject()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tcalculationatparampoint\+\_\+acceptreject (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}})}]{Trial,  }\item[{logical, intent(in)}]{accpt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_ace116f1d7f9e8a3fdff59a6c376273e3}\label{namespacegeneraltypes_ace116f1d7f9e8a3fdff59a6c376273e3}} 
+\index{generaltypes@{generaltypes}!tcalculationatparampoint\+\_\+clear@{tcalculationatparampoint\+\_\+clear}}
+\index{tcalculationatparampoint\+\_\+clear@{tcalculationatparampoint\+\_\+clear}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tcalculationatparampoint\+\_\+clear()}{tcalculationatparampoint\_clear()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tcalculationatparampoint\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}})}]{Keep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a2a8909b75d213ee335199e2fd1769711}\label{namespacegeneraltypes_a2a8909b75d213ee335199e2fd1769711}} 
+\index{generaltypes@{generaltypes}!tcalculationatparampoint\+\_\+writeparams@{tcalculationatparampoint\+\_\+writeparams}}
+\index{tcalculationatparampoint\+\_\+writeparams@{tcalculationatparampoint\+\_\+writeparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tcalculationatparampoint\+\_\+writeparams()}{tcalculationatparampoint\_writeparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tcalculationatparampoint\+\_\+writeparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}})}]{Config,  }\item[{real(mcp), intent(in)}]{mult,  }\item[{real(mcp), intent(in)}]{like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References datalikelihoods, and io\+::io\+\_\+outputchainrow().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegeneraltypes_a2a8909b75d213ee335199e2fd1769711_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegeneraltypes_ad37138d6b09c9e6feda0357b1c94e85a}\label{namespacegeneraltypes_ad37138d6b09c9e6feda0357b1c94e85a}} 
+\index{generaltypes@{generaltypes}!tcheckpointable\+\_\+readparams@{tcheckpointable\+\_\+readparams}}
+\index{tcheckpointable\+\_\+readparams@{tcheckpointable\+\_\+readparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tcheckpointable\+\_\+readparams()}{tcheckpointable\_readparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tcheckpointable\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcheckpointable}{tcheckpointable}})}]{this,  }\item[{class(tsettingini)}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a55eb95d894b131cff41c56b99c9f87cc}\label{namespacegeneraltypes_a55eb95d894b131cff41c56b99c9f87cc}} 
+\index{generaltypes@{generaltypes}!tconfigclass\+\_\+initconfig@{tconfigclass\+\_\+initconfig}}
+\index{tconfigclass\+\_\+initconfig@{tconfigclass\+\_\+initconfig}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tconfigclass\+\_\+initconfig()}{tconfigclass\_initconfig()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tconfigclass\+\_\+initconfig (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tconfigclass}{tconfigclass}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}}), target}]{Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_ab4499296c04e7fca434f77eecbccea27}\label{namespacegeneraltypes_ab4499296c04e7fca434f77eecbccea27}} 
+\index{generaltypes@{generaltypes}!tconfigclass\+\_\+initwithparams@{tconfigclass\+\_\+initwithparams}}
+\index{tconfigclass\+\_\+initwithparams@{tconfigclass\+\_\+initwithparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tconfigclass\+\_\+initwithparams()}{tconfigclass\_initwithparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tconfigclass\+\_\+initwithparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tconfigclass}{tconfigclass}})}]{this,  }\item[{class(tsettingini)}]{Ini,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}}), target}]{Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a07c63d132f04e331ccb42e8f96080129}\label{namespacegeneraltypes_a07c63d132f04e331ccb42e8f96080129}} 
+\index{generaltypes@{generaltypes}!tdatalikelihood\+\_\+checkconflicts@{tdatalikelihood\+\_\+checkconflicts}}
+\index{tdatalikelihood\+\_\+checkconflicts@{tdatalikelihood\+\_\+checkconflicts}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tdatalikelihood\+\_\+checkconflicts()}{tdatalikelihood\_checkconflicts()}}
+{\footnotesize\ttfamily logical function generaltypes\+::tdatalikelihood\+\_\+checkconflicts (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{full\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a6bb9fb37002b4265a3a4f438c4b045fa}\label{namespacegeneraltypes_a6bb9fb37002b4265a3a4f438c4b045fa}} 
+\index{generaltypes@{generaltypes}!tdatalikelihood\+\_\+derivedparameters@{tdatalikelihood\+\_\+derivedparameters}}
+\index{tdatalikelihood\+\_\+derivedparameters@{tdatalikelihood\+\_\+derivedparameters}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tdatalikelihood\+\_\+derivedparameters()}{tdatalikelihood\_derivedparameters()}}
+{\footnotesize\ttfamily real(mcp) function, dimension(this\%nuisance\+\_\+params\%num\+\_\+derived) generaltypes\+::tdatalikelihood\+\_\+derivedparameters (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a44032002cc7bece9f328a839b5830b5d}\label{namespacegeneraltypes_a44032002cc7bece9f328a839b5830b5d}} 
+\index{generaltypes@{generaltypes}!tdatalikelihood\+\_\+getloglike@{tdatalikelihood\+\_\+getloglike}}
+\index{tdatalikelihood\+\_\+getloglike@{tdatalikelihood\+\_\+getloglike}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tdatalikelihood\+\_\+getloglike()}{tdatalikelihood\_getloglike()}}
+{\footnotesize\ttfamily real(mcp) function generaltypes\+::tdatalikelihood\+\_\+getloglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryparams}{ttheoryparams}})}]{Params,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a6578bd73fe17b7b10bb5740695d0fb5f}\label{namespacegeneraltypes_a6578bd73fe17b7b10bb5740695d0fb5f}} 
+\index{generaltypes@{generaltypes}!tdatalikelihood\+\_\+gettag@{tdatalikelihood\+\_\+gettag}}
+\index{tdatalikelihood\+\_\+gettag@{tdatalikelihood\+\_\+gettag}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tdatalikelihood\+\_\+gettag()}{tdatalikelihood\_gettag()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable generaltypes\+::tdatalikelihood\+\_\+gettag (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_abae245dbb211bd2f44ed4267e47206de}\label{namespacegeneraltypes_abae245dbb211bd2f44ed4267e47206de}} 
+\index{generaltypes@{generaltypes}!tdatalikelihood\+\_\+initconfig@{tdatalikelihood\+\_\+initconfig}}
+\index{tdatalikelihood\+\_\+initconfig@{tdatalikelihood\+\_\+initconfig}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tdatalikelihood\+\_\+initconfig()}{tdatalikelihood\_initconfig()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tdatalikelihood\+\_\+initconfig (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}}), target}]{Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aaea05ea7158416ca57ed2178bdac9431}\label{namespacegeneraltypes_aaea05ea7158416ca57ed2178bdac9431}} 
+\index{generaltypes@{generaltypes}!tdatalikelihood\+\_\+loadparamnames@{tdatalikelihood\+\_\+loadparamnames}}
+\index{tdatalikelihood\+\_\+loadparamnames@{tdatalikelihood\+\_\+loadparamnames}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tdatalikelihood\+\_\+loadparamnames()}{tdatalikelihood\_loadparamnames()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tdatalikelihood\+\_\+loadparamnames (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a077299298ffed6e9dea751a27ca45507}\label{namespacegeneraltypes_a077299298ffed6e9dea751a27ca45507}} 
+\index{generaltypes@{generaltypes}!tdatalikelihood\+\_\+writelikelihooddata@{tdatalikelihood\+\_\+writelikelihooddata}}
+\index{tdatalikelihood\+\_\+writelikelihooddata@{tdatalikelihood\+\_\+writelikelihooddata}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tdatalikelihood\+\_\+writelikelihooddata()}{tdatalikelihood\_writelikelihooddata()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tdatalikelihood\+\_\+writelikelihooddata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{tdatalikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{Theory,  }\item[{real(mcp), dimension(\+:), intent(in)}]{Data\+Params,  }\item[{character(len=$\ast$), intent(in)}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_ad67421d900a21e6dc1a5d34ea7bc77fe}\label{namespacegeneraltypes_ad67421d900a21e6dc1a5d34ea7bc77fe}} 
+\index{generaltypes@{generaltypes}!tgeneralconfig\+\_\+initforlikelihoods@{tgeneralconfig\+\_\+initforlikelihoods}}
+\index{tgeneralconfig\+\_\+initforlikelihoods@{tgeneralconfig\+\_\+initforlikelihoods}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tgeneralconfig\+\_\+initforlikelihoods()}{tgeneralconfig\_initforlikelihoods()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tgeneralconfig\+\_\+initforlikelihoods (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References datalikelihoods.
+
+\mbox{\Hypertarget{namespacegeneraltypes_a510e50b9adaf980266f3c8160135f409}\label{namespacegeneraltypes_a510e50b9adaf980266f3c8160135f409}} 
+\index{generaltypes@{generaltypes}!tgeneralconfig\+\_\+newtheory@{tgeneralconfig\+\_\+newtheory}}
+\index{tgeneralconfig\+\_\+newtheory@{tgeneralconfig\+\_\+newtheory}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tgeneralconfig\+\_\+newtheory()}{tgeneralconfig\_newtheory()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tgeneralconfig\+\_\+newtheory (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}}), allocatable}]{Theory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a86a26412494e782acd18ef23abfc46b4}\label{namespacegeneraltypes_a86a26412494e782acd18ef23abfc46b4}} 
+\index{generaltypes@{generaltypes}!tgeneralconfig\+\_\+setparameterizationname@{tgeneralconfig\+\_\+setparameterizationname}}
+\index{tgeneralconfig\+\_\+setparameterizationname@{tgeneralconfig\+\_\+setparameterizationname}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tgeneralconfig\+\_\+setparameterizationname()}{tgeneralconfig\_setparameterizationname()}}
+{\footnotesize\ttfamily logical function generaltypes\+::tgeneralconfig\+\_\+setparameterizationname (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{nametag,  }\item[{class(tsettingini)}]{Ini,  }\item[{class(tparamnames)}]{Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a9ebf4d67be70717d4385bd575cc2300f}\label{namespacegeneraltypes_a9ebf4d67be70717d4385bd575cc2300f}} 
+\index{generaltypes@{generaltypes}!tgeneralconfig\+\_\+settheoryparameterization@{tgeneralconfig\+\_\+settheoryparameterization}}
+\index{tgeneralconfig\+\_\+settheoryparameterization@{tgeneralconfig\+\_\+settheoryparameterization}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tgeneralconfig\+\_\+settheoryparameterization()}{tgeneralconfig\_settheoryparameterization()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tgeneralconfig\+\_\+settheoryparameterization (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}})}]{this,  }\item[{class(tsettingini)}]{Ini,  }\item[{class(tparamnames)}]{Names,  }\item[{character(len=$\ast$), intent(in)}]{default\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aebd5d13abc4092b06e3e6164880ee11a}\label{namespacegeneraltypes_aebd5d13abc4092b06e3e6164880ee11a}} 
+\index{generaltypes@{generaltypes}!tobjectwithparams\+\_\+readparams@{tobjectwithparams\+\_\+readparams}}
+\index{tobjectwithparams\+\_\+readparams@{tobjectwithparams\+\_\+readparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tobjectwithparams\+\_\+readparams()}{tobjectwithparams\_readparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tobjectwithparams\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tobjectwithparams}{tobjectwithparams}})}]{this,  }\item[{class(tsettingini)}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_afd268eae09678643a72d0b3ed8da568a}\label{namespacegeneraltypes_afd268eae09678643a72d0b3ed8da568a}} 
+\index{generaltypes@{generaltypes}!tparameterization\+\_\+calcderivedparams@{tparameterization\+\_\+calcderivedparams}}
+\index{tparameterization\+\_\+calcderivedparams@{tparameterization\+\_\+calcderivedparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tparameterization\+\_\+calcderivedparams()}{tparameterization\_calcderivedparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tparameterization\+\_\+calcderivedparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tparameterization}{tparameterization}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}}), allocatable}]{Theory,  }\item[{real(mcp), dimension(\+:), allocatable}]{derived }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a3ebde3fdac358126f25e067d6b223de1}\label{namespacegeneraltypes_a3ebde3fdac358126f25e067d6b223de1}} 
+\index{generaltypes@{generaltypes}!tparameterization\+\_\+initialize@{tparameterization\+\_\+initialize}}
+\index{tparameterization\+\_\+initialize@{tparameterization\+\_\+initialize}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tparameterization\+\_\+initialize()}{tparameterization\_initialize()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tparameterization\+\_\+initialize (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tparameterization}{tparameterization}})}]{this,  }\item[{class(tsettingini)}]{Ini,  }\item[{class(tparamnames)}]{Names,  }\item[{character(len=$\ast$), intent(in)}]{Default\+Name,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{tgeneralconfig}}), target}]{Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a21288f1eff4120ed86e9b0bfce3eed50}\label{namespacegeneraltypes_a21288f1eff4120ed86e9b0bfce3eed50}} 
+\index{generaltypes@{generaltypes}!tparameterization\+\_\+newtheoryparams@{tparameterization\+\_\+newtheoryparams}}
+\index{tparameterization\+\_\+newtheoryparams@{tparameterization\+\_\+newtheoryparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tparameterization\+\_\+newtheoryparams()}{tparameterization\_newtheoryparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::tparameterization\+\_\+newtheoryparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tparameterization}{tparameterization}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryparams}{ttheoryparams}}), allocatable}]{Theory\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_ad583eb4db9430c5b495f21cc9863017d}\label{namespacegeneraltypes_ad583eb4db9430c5b495f21cc9863017d}} 
+\index{generaltypes@{generaltypes}!tparameterization\+\_\+nonbaseparameterpriors@{tparameterization\+\_\+nonbaseparameterpriors}}
+\index{tparameterization\+\_\+nonbaseparameterpriors@{tparameterization\+\_\+nonbaseparameterpriors}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{tparameterization\+\_\+nonbaseparameterpriors()}{tparameterization\_nonbaseparameterpriors()}}
+{\footnotesize\ttfamily real(mcp) function generaltypes\+::tparameterization\+\_\+nonbaseparameterpriors (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tparameterization}{tparameterization}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryparams}{ttheoryparams}})}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aa6c88f0919f7ac7fa030824300d48018}\label{namespacegeneraltypes_aa6c88f0919f7ac7fa030824300d48018}} 
+\index{generaltypes@{generaltypes}!ttheorycalculator\+\_\+error@{ttheorycalculator\+\_\+error}}
+\index{ttheorycalculator\+\_\+error@{ttheorycalculator\+\_\+error}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheorycalculator\+\_\+error()}{ttheorycalculator\_error()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheorycalculator\+\_\+error (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{ttheorycalculator}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_af10543377b813170c5ba69fe2ebfdd44}\label{namespacegeneraltypes_af10543377b813170c5ba69fe2ebfdd44}} 
+\index{generaltypes@{generaltypes}!ttheorycalculator\+\_\+errornotimplemented@{ttheorycalculator\+\_\+errornotimplemented}}
+\index{ttheorycalculator\+\_\+errornotimplemented@{ttheorycalculator\+\_\+errornotimplemented}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheorycalculator\+\_\+errornotimplemented()}{ttheorycalculator\_errornotimplemented()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheorycalculator\+\_\+errornotimplemented (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{ttheorycalculator}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a46caf82f82aed371c7f69a0168e9167b}\label{namespacegeneraltypes_a46caf82f82aed371c7f69a0168e9167b}} 
+\index{generaltypes@{generaltypes}!ttheorycalculator\+\_\+gettheoryforimportance@{ttheorycalculator\+\_\+gettheoryforimportance}}
+\index{ttheorycalculator\+\_\+gettheoryforimportance@{ttheorycalculator\+\_\+gettheoryforimportance}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheorycalculator\+\_\+gettheoryforimportance()}{ttheorycalculator\_gettheoryforimportance()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheorycalculator\+\_\+gettheoryforimportance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{ttheorycalculator}})}]{this,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryparams}{ttheoryparams}})}]{C\+MB,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aa79e01f130bcebe63ffce5dffb17950c}\label{namespacegeneraltypes_aa79e01f130bcebe63ffce5dffb17950c}} 
+\index{generaltypes@{generaltypes}!ttheorycalculator\+\_\+initforlikelihoods@{ttheorycalculator\+\_\+initforlikelihoods}}
+\index{ttheorycalculator\+\_\+initforlikelihoods@{ttheorycalculator\+\_\+initforlikelihoods}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheorycalculator\+\_\+initforlikelihoods()}{ttheorycalculator\_initforlikelihoods()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheorycalculator\+\_\+initforlikelihoods (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{ttheorycalculator}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a207649e7d9a305b79b0016f9e5aae2d9}\label{namespacegeneraltypes_a207649e7d9a305b79b0016f9e5aae2d9}} 
+\index{generaltypes@{generaltypes}!ttheorycalculator\+\_\+readimportanceparams@{ttheorycalculator\+\_\+readimportanceparams}}
+\index{ttheorycalculator\+\_\+readimportanceparams@{ttheorycalculator\+\_\+readimportanceparams}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheorycalculator\+\_\+readimportanceparams()}{ttheorycalculator\_readimportanceparams()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheorycalculator\+\_\+readimportanceparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{ttheorycalculator}})}]{this,  }\item[{class(tsettingini)}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a79e614b9322bb431dd5c0cf1abde00ca}\label{namespacegeneraltypes_a79e614b9322bb431dd5c0cf1abde00ca}} 
+\index{generaltypes@{generaltypes}!ttheorycalculator\+\_\+versiontraceoutput@{ttheorycalculator\+\_\+versiontraceoutput}}
+\index{ttheorycalculator\+\_\+versiontraceoutput@{ttheorycalculator\+\_\+versiontraceoutput}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheorycalculator\+\_\+versiontraceoutput()}{ttheorycalculator\_versiontraceoutput()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheorycalculator\+\_\+versiontraceoutput (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{ttheorycalculator}})}]{this,  }\item[{class(tnamevaluelist)}]{Read\+Values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a890f7aa63579a54ec8ca5a3a8d19a607}\label{namespacegeneraltypes_a890f7aa63579a54ec8ca5a3a8d19a607}} 
+\index{generaltypes@{generaltypes}!ttheoryintermediatecache\+\_\+clear@{ttheoryintermediatecache\+\_\+clear}}
+\index{ttheoryintermediatecache\+\_\+clear@{ttheoryintermediatecache\+\_\+clear}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheoryintermediatecache\+\_\+clear()}{ttheoryintermediatecache\_clear()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheoryintermediatecache\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryintermediatecache}{ttheoryintermediatecache}})}]{Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a445b06716a45b37bc3100a23b2742d2e}\label{namespacegeneraltypes_a445b06716a45b37bc3100a23b2742d2e}} 
+\index{generaltypes@{generaltypes}!ttheorypredictions\+\_\+clear@{ttheorypredictions\+\_\+clear}}
+\index{ttheorypredictions\+\_\+clear@{ttheorypredictions\+\_\+clear}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{ttheorypredictions\+\_\+clear()}{ttheorypredictions\_clear()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::ttheorypredictions\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_af94e150476d45f72d492e761a2d02ab5}\label{namespacegeneraltypes_af94e150476d45f72d492e761a2d02ab5}} 
+\index{generaltypes@{generaltypes}!writedataforlikelihoods@{writedataforlikelihoods}}
+\index{writedataforlikelihoods@{writedataforlikelihoods}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{writedataforlikelihoods()}{writedataforlikelihoods()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::writedataforlikelihoods (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L,  }\item[{real(mcp), dimension(\+:), intent(in)}]{P,  }\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}}), intent(in)}]{Theory,  }\item[{character(len=$\ast$), intent(in)}]{fileroot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a26624f9233a06ac3e62f6bdb2ad416f8}\label{namespacegeneraltypes_a26624f9233a06ac3e62f6bdb2ad416f8}} 
+\index{generaltypes@{generaltypes}!writelikelihoodcontribs@{writelikelihoodcontribs}}
+\index{writelikelihoodcontribs@{writelikelihoodcontribs}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{writelikelihoodcontribs()}{writelikelihoodcontribs()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::writelikelihoodcontribs (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}})}]{L,  }\item[{integer, intent(in)}]{aunit,  }\item[{real(mcp), dimension($\ast$), intent(in)}]{likelihoods }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a6ae308a4d8fb255fd1e15dc6a8911931}\label{namespacegeneraltypes_a6ae308a4d8fb255fd1e15dc6a8911931}} 
+\index{generaltypes@{generaltypes}!writemodel@{writemodel}}
+\index{writemodel@{writemodel}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{writemodel()}{writemodel()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::writemodel (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{tcalculationatparampoint}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{real(mcp), intent(in)}]{like,  }\item[{real(mcp), intent(in)}]{mult }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a845e7a28effceab63f5aed42a4bf066a}\label{namespacegeneraltypes_a845e7a28effceab63f5aed42a4bf066a}} 
+\index{generaltypes@{generaltypes}!writetextdata@{writetextdata}}
+\index{writetextdata@{writetextdata}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{writetextdata()}{writetextdata()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::writetextdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fnameroot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacegeneraltypes_a739d15405356622a778b42627a1d39d4}\label{namespacegeneraltypes_a739d15405356622a778b42627a1d39d4}} 
+\index{generaltypes@{generaltypes}!writetheory@{writetheory}}
+\index{writetheory@{writetheory}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{writetheory()}{writetheory()}}
+{\footnotesize\ttfamily subroutine generaltypes\+::writetheory (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{logical, intent(in)}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegeneraltypes_a2e2a79dda657e0a8910f724be0015ed5}\label{namespacegeneraltypes_a2e2a79dda657e0a8910f724be0015ed5}} 
+\index{generaltypes@{generaltypes}!datalikelihoods@{datalikelihoods}}
+\index{datalikelihoods@{datalikelihoods}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{datalikelihoods}{datalikelihoods}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{tlikelihoodlist}}), target, save, public generaltypes\+::datalikelihoods}
+
+
+
+Referenced by cosmologytypes\+::initialize\+\_\+cmbsettings(), cosmologytypes\+::initialize\+\_\+pksettings(), parampointset\+::paramset\+\_\+readmodel(), parampointset\+::paramset\+\_\+writemodel(), tcalculationatparampoint\+\_\+writeparams(), cosmologytypes\+::tcosmologyparameterization\+\_\+setnumbers(), cosmologytypes\+::tcosmotheorysettings\+\_\+initforlikelihoods(), tgeneralconfig\+\_\+initforlikelihoods(), and generalsetup\+::tsetup\+\_\+dotests().
+
+\mbox{\Hypertarget{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}\label{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}} 
+\index{generaltypes@{generaltypes}!likenamelen@{likenamelen}}
+\index{likenamelen@{likenamelen}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{likenamelen}{likenamelen}}
+{\footnotesize\ttfamily integer, parameter, public generaltypes\+::likenamelen = 80}
+
+\mbox{\Hypertarget{namespacegeneraltypes_aa0157fd48eed0fc43695836a0c19e1f0}\label{namespacegeneraltypes_aa0157fd48eed0fc43695836a0c19e1f0}} 
+\index{generaltypes@{generaltypes}!liketaglen@{liketaglen}}
+\index{liketaglen@{liketaglen}!generaltypes@{generaltypes}}
+\subsubsection{\texorpdfstring{liketaglen}{liketaglen}}
+{\footnotesize\ttfamily integer, parameter generaltypes\+::liketaglen = 20\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,7 @@
+<map id="iniobjects::tinifile::read" name="iniobjects::tinifile::read">
+<area shape="rect" id="node2" href="$namespaceiniobjects.html#a5e063b545af508f22c652618784a4106" title="iniobjects::ini_read\l_double_change" alt="" coords="173,5,304,46"/>
+<area shape="rect" id="node3" href="$namespaceiniobjects.html#a67f08b5a06f2f74225f692955a712320" title="iniobjects::ini_read\l_int_change" alt="" coords="173,70,304,111"/>
+<area shape="rect" id="node4" href="$namespaceiniobjects.html#a21e68c5f321b32ea2f6086c05c89af1a" title="iniobjects::ini_read\l_logical_change" alt="" coords="173,135,304,177"/>
+<area shape="rect" id="node5" href="$namespaceiniobjects.html#ab840810b30c65a67b6834782fe064f34" title="iniobjects::ini_read\l_real_change" alt="" coords="173,201,304,242"/>
+<area shape="rect" id="node6" href="$namespaceiniobjects.html#a6770561ba1885823e0a1d5d341cb7fa5" title="iniobjects::ini_read\l_string_change" alt="" coords="173,266,304,307"/>
+</map>

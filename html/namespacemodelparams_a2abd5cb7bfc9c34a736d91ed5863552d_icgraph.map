@@ -1,0 +1,17 @@
+<map id="modelparams::gettesttime" name="modelparams::gettesttime">
+<area shape="rect" id="node2" href="$namespacelensing.html#a68242ee3fa839802f6aed94e9f8dcf73" title="lensing::badharmonic" alt="" coords="462,111,607,137"/>
+<area shape="rect" id="node13" href="$namespacecambmain.html#a8863977991a108f96a26fc99e8c5e129" title="cambmain::cmbmain" alt="" coords="662,60,805,87"/>
+<area shape="rect" id="node14" href="$namespacelensing.html#aa3cc70dd58b493d3192e97f675ffa909" title="lensing::corrfuncflatsky" alt="" coords="239,212,396,239"/>
+<area shape="rect" id="node15" href="$namespacelensing.html#ae3afbc47d14796e30a26538f38a726dd" title="lensing::corrfuncfullskyimpl" alt="" coords="227,161,407,188"/>
+<area shape="rect" id="node3" href="$namespacelensing.html#a71d315283bcce7fb9626733365bf43e6" title="lensing::lens_cls" alt="" coords="674,161,793,188"/>
+<area shape="rect" id="node4" href="$namespacecamb.html#af6f4c73133d3de79ac10db3c4b2d0650" title="camb::camb_getresults" alt="" coords="877,60,1035,87"/>
+<area shape="rect" id="node11" href="$namespacecamb.html#a9fb2095034057d44dc9526dd02d60064" title="camb::camb_transferstopowers" alt="" coords="853,165,1059,192"/>
+<area shape="rect" id="node5" href="$namespacecamb.html#ae587b573e03da5811edb59806305b2cd" title="camb::camb_gettransfers" alt="" coords="1112,107,1283,133"/>
+<area shape="rect" id="node9" href="$sigma8_8f90.html#a6f015dab88d5e09a9b144633d51f8911" title="getsigma8" alt="" coords="1156,5,1239,32"/>
+<area shape="rect" id="node10" href="$tester_8f90.html#abb1af5b22eb90cec23fca42accb63245" title="tester" alt="" coords="1170,56,1225,83"/>
+<area shape="rect" id="node6" href="$namespacecalculator__camb.html#a9e8887a3ae9da2bb092aac4285234df4" title="calculator_camb::cambcalc\l_getnewtransferdata" alt="" coords="1349,113,1531,154"/>
+<area shape="rect" id="node7" href="$namespacecalculator__camb.html#a46bd33ed008e289fb5cb08f6feb86419" title="calculator_camb::cambcalc\l_gettheoryforimportance" alt="" coords="1349,191,1531,233"/>
+<area shape="rect" id="node8" href="$namespacehandles.html#a386ee0a28e6860d14047f052c918ca43" title="handles::cambdata_gettransfers" alt="" coords="1336,61,1544,88"/>
+<area shape="rect" id="node12" href="$namespacecalculator__camb.html#ad7195d220a7f5bc77479225b47d91d17" title="calculator_camb::cambcalc\l_getnewpowerdata" alt="" coords="1107,158,1288,199"/>
+<area shape="rect" id="node16" href="$namespacelensing.html#a18ba748aa475681b240cdd9be79dd809" title="lensing::corrfuncfullsky" alt="" coords="457,161,613,188"/>
+</map>

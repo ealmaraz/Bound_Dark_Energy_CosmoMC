@@ -1,0 +1,60 @@
+\hypertarget{Calculator__Cosmology_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Calculator\+\_\+\+Cosmology.f90 File Reference}
+\label{Calculator__Cosmology_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Calculator\+\_\+\+Cosmology.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Calculator\+\_\+\+Cosmology.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologyimportanceoptions}{calculator\+\_\+cosmology\+::tcosmologyimportanceoptions}}
+\item 
+type \mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{calculator\+\_\+cosmology\+::tcosmologycalculator}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacecalculator__cosmology}{calculator\+\_\+cosmology}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a8df979f2a96e1c2b9624e105619464c2}{calculator\+\_\+cosmology\+::tcosmologycalculator\+\_\+readimportanceparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a9b28cf77b06f92cdf1260e0a1f8a72c1}{calculator\+\_\+cosmology\+::getnewbackgrounddata}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_aabddd5a422eef22f8d13c1df292cc749}{calculator\+\_\+cosmology\+::setparamsforbackground}} (this, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a8f03c8f23e837020c788389a8ffb4be3}{calculator\+\_\+cosmology\+::setbackgroundtheorydata}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a96e555c628aadff1d707242e238d09f8}{calculator\+\_\+cosmology\+::getnewtransferdata}} (this, C\+MB, Info, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a456c87c218951defda2a9bcf4f23abb8}{calculator\+\_\+cosmology\+::getnewpowerdata}} (this, C\+MB, Info, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a98a6aa3eeac24c242c935e0740b470d8}{calculator\+\_\+cosmology\+::gettheoryforimportance}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a520171f2409b797206b45a9b2f25ac22}{calculator\+\_\+cosmology\+::getcosmotheoryforimportance}} (this, C\+MB, Theory, error)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a9907b8c61d20213e8026443a5043530f}{calculator\+\_\+cosmology\+::getopticaldepth}} (this, C\+MB)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a3f26a3af3732dbfea7715d565b44a385}{calculator\+\_\+cosmology\+::getzrefromtau}} (this, C\+MB, tau)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a6178a84302763ba24c2283bf6e8e5b2b}{calculator\+\_\+cosmology\+::cmbtotheta}} (this, C\+MB)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_ab4785ac8ce58853984614bac368590aa}{calculator\+\_\+cosmology\+::bao\+\_\+d\+\_\+v}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a703b9e272151719cca42f7d37d7d403f}{calculator\+\_\+cosmology\+::angulardiameterdistance}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a56ce70cf463f7c6df9c6d59a9459b993}{calculator\+\_\+cosmology\+::comovingradialdistance}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a3a138f6f81a4341d3017e38fce77b905}{calculator\+\_\+cosmology\+::angulardiameterdistance2}} (this, z1, z2)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a0b1cc6537ad803bf83a690a40c4e1550}{calculator\+\_\+cosmology\+::luminositydistance}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a04681553ca8acc12385e91c6b720105a}{calculator\+\_\+cosmology\+::hofz}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_aabad31ec70f213aae297f0c1d31880fc}{calculator\+\_\+cosmology\+::hofz\+\_\+hunit}} (this, z)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), parameter, public \mbox{\hyperlink{namespacecalculator__cosmology_a9199e46da0bd753de17a9be358823ee0}{calculator\+\_\+cosmology\+::neutrino\+\_\+mass\+\_\+fac}} = 94.\+07\+\_\+mcp
+\item 
+real(mcp), parameter, public \mbox{\hyperlink{namespacecalculator__cosmology_a807c6e74e20e797dcbf2cd848b181a95}{calculator\+\_\+cosmology\+::standard\+\_\+neutrino\+\_\+neff}} = 3.\+046\+\_\+mcp
+\end{DoxyCompactItemize}

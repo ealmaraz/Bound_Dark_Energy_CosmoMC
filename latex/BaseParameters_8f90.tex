@@ -1,0 +1,60 @@
+\hypertarget{BaseParameters_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Base\+Parameters.f90 File Reference}
+\label{BaseParameters_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Base\+Parameters.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Base\+Parameters.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structbaseparameters_1_1paramgaussprior}{baseparameters\+::paramgaussprior}}
+\item 
+type \mbox{\hyperlink{structbaseparameters_1_1tlinearcombination}{baseparameters\+::tlinearcombination}}
+\item 
+type \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters}{baseparameters\+::tbaseparameters}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacebaseparameters}{baseparameters}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a86f36ece3b30fc7984f06ee4aad097bb}{baseparameters\+::tbaseparameters\+\_\+initializeusedparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a3126d9d902d7cc3f30105a9ad35e4a04}{baseparameters\+::tbaseparameters\+\_\+paramerror}} (this, str, param)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a1c41b4dbd4418bb1d16d77034504ac0b}{baseparameters\+::tbaseparameters\+\_\+setstartpositions}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_ae26154e8a07fc378e0e669659de1025a}{baseparameters\+::tbaseparameters\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a810df98da76d4ae9691fb72eb588ea34}{baseparameters\+::tbaseparameters\+\_\+readpriors}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_acc7b955531e3ac266fd197c8cc09ae50}{baseparameters\+::tbaseparameters\+\_\+setcovmat}} (this, prop\+\_\+mat)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a2d0a5594063e754beb3d8ef2b4af0522}{baseparameters\+::tbaseparameters\+\_\+readsetcovmatrix}} (this, prop\+\_\+mat, matrix, New\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a309e81ed0619c2b91456008b414cf5a9}{baseparameters\+::tbaseparameters\+\_\+outputparamnames}} (this, fname, indices, add\+\_\+derived)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a7deeecd73224be7473e92a6d48ba8909}{baseparameters\+::tbaseparameters\+\_\+outputparamranges}} (this, fname)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_a7d00d4d42d3c3abcbdbc6078fffab95f}{baseparameters\+::orderindices}} (arr, n)
+\item 
+subroutine \mbox{\hyperlink{namespacebaseparameters_ac8f2cdce695f77b0f9cc3c2e86a9c05f}{baseparameters\+::tbaseparameters\+\_\+setfastslowparams}} (this, Ini, use\+\_\+fast\+\_\+slow)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacebaseparameters_a6fa6c72334203001f2e2932139df534d}{baseparameters\+::tbaseparameters\+\_\+usedparamnameornumber}} (this, i)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_aa9a374c82230367604ae6b1c50ed3e3b}{baseparameters\+::tp\+\_\+unused}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_aec8c4b0ea0429954337dcf5fced6abf1}{baseparameters\+::tp\+\_\+slow}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_a213e8b067e9d21216fbad3fbd98ec933}{baseparameters\+::tp\+\_\+semislow}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_a4cae4f2dfd7f3b1ed425daca03b67139}{baseparameters\+::tp\+\_\+semifast}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacebaseparameters_ac1f704b0992c1c1c9f90d320ae0c4f4b}{baseparameters\+::tp\+\_\+fast}} =4
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacebaseparameters_a1d3e10105684d9171cdfec4ccfcd331d}{baseparameters\+::slow\+\_\+tp\+\_\+max}} = tp\+\_\+semislow
+\item 
+type(tbaseparameters), save, public \mbox{\hyperlink{namespacebaseparameters_abc9ecfbbf4a5012fbc95d3fb51a1e6e3}{baseparameters\+::baseparams}}
+\end{DoxyCompactItemize}

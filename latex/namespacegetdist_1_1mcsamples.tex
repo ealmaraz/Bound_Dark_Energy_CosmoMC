@@ -1,0 +1,111 @@
+\hypertarget{namespacegetdist_1_1mcsamples}{}\section{getdist.\+mcsamples Namespace Reference}
+\label{namespacegetdist_1_1mcsamples}\index{getdist.\+mcsamples@{getdist.\+mcsamples}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1mcsamples_1_1Kernel1D}{Kernel1D}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1mcsamples_1_1MCSamples}{M\+C\+Samples}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1mcsamples_1_1MCSamplesError}{M\+C\+Samples\+Error}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1mcsamples_1_1ParamError}{Param\+Error}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1mcsamples_1_1SettingError}{Setting\+Error}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1mcsamples_a66a8bc2e3ca8236e828441cbf5db2cba}{load\+M\+C\+Samples}} (file\+\_\+root, ini=None, job\+Item=None, no\+\_\+cache=False, settings=\{\}, dist\+\_\+settings=\{\})
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1mcsamples_a19b6bbf020742d555e81b6a8bf1475e4}{Get\+Chain\+Root\+Files}} (rootdir)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1mcsamples_a16f039cf1d6900bbbf3885c3f4182f81}{Get\+Root\+File\+Name}} (rootdir)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacegetdist_1_1mcsamples_ac1aa58e9a915f4b3a863dae838ef8e5a}{pickle\+\_\+version}} = 21
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1mcsamples_a19b6bbf020742d555e81b6a8bf1475e4}\label{namespacegetdist_1_1mcsamples_a19b6bbf020742d555e81b6a8bf1475e4}} 
+\index{getdist\+::mcsamples@{getdist\+::mcsamples}!Get\+Chain\+Root\+Files@{Get\+Chain\+Root\+Files}}
+\index{Get\+Chain\+Root\+Files@{Get\+Chain\+Root\+Files}!getdist\+::mcsamples@{getdist\+::mcsamples}}
+\subsubsection{\texorpdfstring{Get\+Chain\+Root\+Files()}{GetChainRootFiles()}}
+{\footnotesize\ttfamily def getdist.\+mcsamples.\+Get\+Chain\+Root\+Files (\begin{DoxyParamCaption}\item[{}]{rootdir }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the root names of all chain files in a directory.
+
+:param rootdir: The root directory to check
+:return:  The root names
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+gui.\+mainwindow.\+Main\+Window.\+open\+Directory().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegetdist_1_1mcsamples_a19b6bbf020742d555e81b6a8bf1475e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegetdist_1_1mcsamples_a16f039cf1d6900bbbf3885c3f4182f81}\label{namespacegetdist_1_1mcsamples_a16f039cf1d6900bbbf3885c3f4182f81}} 
+\index{getdist\+::mcsamples@{getdist\+::mcsamples}!Get\+Root\+File\+Name@{Get\+Root\+File\+Name}}
+\index{Get\+Root\+File\+Name@{Get\+Root\+File\+Name}!getdist\+::mcsamples@{getdist\+::mcsamples}}
+\subsubsection{\texorpdfstring{Get\+Root\+File\+Name()}{GetRootFileName()}}
+{\footnotesize\ttfamily def getdist.\+mcsamples.\+Get\+Root\+File\+Name (\begin{DoxyParamCaption}\item[{}]{rootdir }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the root name of chains in given directory (assuming only one set of chain files).
+
+:param rootdir: The directory to check
+:return: The root file name.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegetdist_1_1mcsamples_a66a8bc2e3ca8236e828441cbf5db2cba}\label{namespacegetdist_1_1mcsamples_a66a8bc2e3ca8236e828441cbf5db2cba}} 
+\index{getdist\+::mcsamples@{getdist\+::mcsamples}!load\+M\+C\+Samples@{load\+M\+C\+Samples}}
+\index{load\+M\+C\+Samples@{load\+M\+C\+Samples}!getdist\+::mcsamples@{getdist\+::mcsamples}}
+\subsubsection{\texorpdfstring{load\+M\+C\+Samples()}{loadMCSamples()}}
+{\footnotesize\ttfamily def getdist.\+mcsamples.\+load\+M\+C\+Samples (\begin{DoxyParamCaption}\item[{}]{file\+\_\+root,  }\item[{}]{ini = {\ttfamily None},  }\item[{}]{job\+Item = {\ttfamily None},  }\item[{}]{no\+\_\+cache = {\ttfamily False},  }\item[{}]{settings = {\ttfamily \{\}},  }\item[{}]{dist\+\_\+settings = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads a set of samples from a file or files.
+
+Sample files are plain text (*file_root.txt*) or a set of files (*file_root_1.txt*, *file_root_2.txt*, etc.).
+
+Auxiliary files **file_root.paramnames** gives the parameter names
+and (optionally) **file_root.ranges** gives hard prior parameter ranges.
+
+For a description of the various analysis settings and default values see
+`analysis_defaults.ini <http://getdist.readthedocs.org/en/latest/analysis_settings.html>`_.
+
+:param file_root: The root name of the files to read (no extension)
+:param ini: The name of a .ini file with analysis settings to use
+:param jobItem: an optional grid jobItem instance for a CosmoMC grid output
+:param no_cache: Indicates whether or not we should cached loaded samples in a pickle
+:param settings: dictionary of analysis settings to override defaults
+:param dist_settings: (old) alias for settings
+:return: The :class:`MCSamples` instance
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root(), and getdist\+\_\+tests.\+getdist\+\_\+test.\+Get\+Dist\+File\+Test.\+test\+File\+Load\+Plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegetdist_1_1mcsamples_a66a8bc2e3ca8236e828441cbf5db2cba_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1mcsamples_ac1aa58e9a915f4b3a863dae838ef8e5a}\label{namespacegetdist_1_1mcsamples_ac1aa58e9a915f4b3a863dae838ef8e5a}} 
+\index{getdist\+::mcsamples@{getdist\+::mcsamples}!pickle\+\_\+version@{pickle\+\_\+version}}
+\index{pickle\+\_\+version@{pickle\+\_\+version}!getdist\+::mcsamples@{getdist\+::mcsamples}}
+\subsubsection{\texorpdfstring{pickle\+\_\+version}{pickle\_version}}
+{\footnotesize\ttfamily int getdist.\+mcsamples.\+pickle\+\_\+version = 21}
+

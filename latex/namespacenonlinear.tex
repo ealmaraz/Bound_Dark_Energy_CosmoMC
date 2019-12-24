@@ -1,0 +1,2257 @@
+\hypertarget{namespacenonlinear}{}\section{nonlinear Module Reference}
+\label{namespacenonlinear}\index{nonlinear@{nonlinear}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}
+\item 
+type \mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacenonlinear_ada72232da7963dc507bfa2f4d346e7ec}{nonlinear\+\_\+readparams}} (Ini)
+\item 
+subroutine, public \mbox{\hyperlink{namespacenonlinear_a0ed6b8f43af3b8a2cb369df5c247ca1f}{nonlinear\+\_\+getnonlinratios}} (C\+A\+M\+B\+\_\+\+Pk)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a76e8738685b7ce5757290a6441d5e850}{halofit}} (rk, rn, rncur, rknl, plin, pnl, pq, ph)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_acf30963fec3b82503de7d079f4091461}{wint}} (C\+A\+M\+B\+\_\+\+Pk, itf, r, sig, d1, d2)
+\item 
+real(dl) function \mbox{\hyperlink{namespacenonlinear_a114a4d8047f3679297cc7b1c216d6517}{omega\+\_\+m}} (aa, om\+\_\+m0, om\+\_\+v0, wval, waval)
+\item 
+real(dl) function \mbox{\hyperlink{namespacenonlinear_ab10a9f1bd96361d1619be7e609ce6cb5}{omega\+\_\+v}} (aa, om\+\_\+m0, om\+\_\+v0, wval, waval)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_acf9ab8f72085502eea51c43dcf5ad67e}{hmcode}} (C\+A\+M\+B\+\_\+\+Pk)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a73fccef372213a59eed00701677d1cdf}{delta\+\_\+v}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a927f840ecd0f2086eefba9d7220e3279}{delta\+\_\+c}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a96b424e6fa8e55242e57bbd2e607a70d}{eta}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a0e7bfac54def3a760a789b01501ee54b}{kstar}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a8a288f085ec2814b9d936eaff5987c9a}{as}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_aea62820c73faaebffe8f3a0dce00a711}{fdamp}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a31039036014feacf6b5001228cbecf2d}{alpha}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a9fdd5c2093c44b1f49fdaafaa3e568da}{r\+\_\+nl}} (lut)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a8b11cb79c822afc15ee5506a6b79e786}{halomod}} (k, z, p1h, p2h, pfull, plin, lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a6ac027990c6d758a7c5420da7001dfc7}{fill\+\_\+table}} (min, max, arr, n)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_af44943bd607e88cf910383917ce03826}{fill\+\_\+plintab}} (iz, cosm, C\+A\+M\+B\+\_\+\+PK)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a71f404d2d1de4ad126d2e43eea191621}{tcb\+\_\+tcbnu\+\_\+ratio}} (k, z, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a44e107b52cde4df598539a1ed12f252a}{assign\+\_\+hm\+\_\+cosmology}} (cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a819e3b1efc1572f5e75eb5f2b415b4b4}{initialise\+\_\+hm\+\_\+cosmology}} (iz, cosm, C\+A\+M\+B\+\_\+\+PK)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ac9ae18bd4ed466f0f8287e5c4757bec9}{allocate\+\_\+lut}} (lut)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a9a42cb3acfe84c2c6ea9f085b357bdd1}{deallocate\+\_\+lut}} (lut)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_af025b4b6e2a711cea66352e50ea6de97}{halomod\+\_\+init}} (z, lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_abd2adda1e3c0e77617e1142893c4aa71}{write\+\_\+parameters}} (z, lut, cosm)
+\item 
+pure real function \mbox{\hyperlink{namespacenonlinear_af71d6d6d99de458db1a669744d7b1088}{radius\+\_\+m}} (m, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a94503cd59bd5a206379a0c13afe89ffc}{neff}} (lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a9559196d503174393cf74ce857984216}{conc\+\_\+bull}} (z, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a2ccd15402588e67b26abc93ccf910de6}{grow\+\_\+int}} (b, acc, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a53b6da6e807b30b0078e77b9900c33b6}{zcoll\+\_\+bull}} (z, cosm, lut)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a164bc94a32486b7a39cab9d1d3ddbafb}{mass\+\_\+r}} (r, cosm)
+\item 
+pure real function \mbox{\hyperlink{namespacenonlinear_a8d293985858b08d5e5c5bbdcdc9d4280}{cosmic\+\_\+density}} (cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad7792185b1262569016446c4cba41606}{find\+\_\+pk}} (k, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad2f542da0cba1686588e83dec8ac7617}{p\+\_\+lin}} (k, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_adbb028d781be22805e7c1468b4e795a8}{p\+\_\+2h}} (k, z, plin, lut, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a6734815086cf4dca34d8677f1d763e3f}{p\+\_\+1h}} (k, z, lut, cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a0ec694303c1335ceb97e09d20f0ceb94}{fill\+\_\+sigtab}} (cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a66f93056c25bc48a5cfb206e596b47ad}{sigma\+\_\+v}} (R, z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a5ecb478e809d6e8e185d11dea143cd69}{sigma}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a2b1a2fe15822f8bfcf88ca9de9060e85}{sigmac}} (r, z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a96a394ea7d173aec659a73ff09f548c6}{wk\+\_\+tophat}} (x)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ab7465123b12f301a0d4d5a80c8b35ab5}{inttab}} (x, y, n, iorder)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a752ac5f748fd7d780ac59ee3a8b4d267}{sigma\+\_\+integrand}} (t, R, f, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a2a0c300b39b9de3d6b00be6369b59944}{f\+\_\+rapid}} (r)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad4ec869211d722d92d942360f0619e6e}{sigint0}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ac0dc62ceea1e6ba2e1b7a08a420d934e}{sigint1}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a7f3d1c8e1e8b16f59cf8a1d0b6cd5499}{sigint2}} (r, z, itype, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a35d90b214ebbc4ed47ee2a0b00533081}{win}} (k, rv, c)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ad0e2241407de1974edb07a5990f12ba3}{winnfw}} (k, rv, c)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_acce5a3564ba00c26a8a5674ab63d5b73}{mass}} (c)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a236c113538d97686a8f8e286b29bc073}{gnu}} (nu)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a5eea788fe3f505d256438cee66af3240}{gst}} (nu)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a82f340c9a9b18e3f45b2ddbe518cebba}{hubble2}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a316db4addf8f1f544ab3c08ba97fbeb9}{x\+\_\+de}} (a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_acb781fcdfe31fdfcd54337c5fc827fb2}{w\+\_\+de\+\_\+hm}} (a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ac515b61587eefa54d1ebc904d0ef78b6}{omega\+\_\+m\+\_\+hm}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a1870caf0d38a1c6617ca3ef8de2f6947}{grow}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ae44a5c4f7412d42923e10f9a241d2e74}{dispint}} (z, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a6171546fb42a0d5c085c3ee5c8662e0b}{si}} (x)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a723581002925fb14e73f4d80ce6ee6e5}{ci}} (x)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_aaa7e906c253a54ffb73bab9e5dfd1397}{derivative\+\_\+table}} (x, xin, yin, n, iorder, imeth)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a553c7b86e3fd7c044f3fcef5b77c0a3f}{find}} (x, xin, yin, n, iorder, imeth)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a9982a6cac80109ad36dd796e77f372de}{table\+\_\+integer}} (x, xtab, n, imeth)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a623980d65535bc78bbcf5eb8f701ac42}{linear\+\_\+table\+\_\+integer}} (x, xtab, n)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a210b83a28f6523e35c1b2314bd38ba10}{search\+\_\+int}} (x, xtab, n)
+\item 
+integer function \mbox{\hyperlink{namespacenonlinear_a0241839029c1aa4d429fb9a516577921}{int\+\_\+split}} (x, xtab, n)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a5754454991f9dfb61c4251267c2d175d}{fit\+\_\+line}} (a1, a0, x1, y1, x2, y2)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ade72d40a60522b6b609687fbe7e9ddbb}{fit\+\_\+quadratic}} (a2, a1, a0, x1, y1, x2, y2, x3, y3)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ad34b8f5e3284fe90bf1e2d39ad027cc1}{fit\+\_\+cubic}} (a, b, c, d, x1, y1, x2, y2, x3, y3, x4, y4)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_ac344cab10a5226c8ef0147ff8f96767a}{reverse}} (arry, n)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_af9e22f2a04a3c5dc0f45fcd96c9b28cb}{fill\+\_\+growtab}} (cosm)
+\item 
+subroutine \mbox{\hyperlink{namespacenonlinear_a26b787bf515ef27795b9dbbed39b2e34}{ode\+\_\+growth}} (x, v, t, kk, ti, tf, xi, vi, acc, imeth, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_aa6814235c0bd98fe3c05073b03b16fac}{fv}} (d, v, k, a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_a7f8c8180d41c0771e383f7edaa516803}{fd}} (d, v, k, a, cosm)
+\item 
+real function \mbox{\hyperlink{namespacenonlinear_ab5e5d4cd8639004a33671b83480474cd}{ah}} (z, cosm)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real, parameter, public \mbox{\hyperlink{namespacenonlinear_a432119e2fd5a90bc8447a4f87c530660}{min\+\_\+kh\+\_\+nonlinear}} = 0.\+005
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_aabc1c1c2e5484d59aa19897c2312d66e}{om\+\_\+m}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a5fffe9648c0924743701abc9674d3472}{om\+\_\+v}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a41cbc8f2a7d3a4a7133a330e7a96f32f}{fnu}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a95578ad235632d8fd2cc109867cdf329}{omm0}}
+\item 
+real(dl) \mbox{\hyperlink{namespacenonlinear_a340583ce0b342fc665e8dac4abd41d30}{acur}}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a7df6fbf986bfffb1410f611a9d9da8d8}{halofit\+\_\+original}} = 1
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a60a8667a6b76aac6cb917e86e5e813bf}{halofit\+\_\+bird}} =2
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_af6d944f360abde474ac917e61cc9a10a}{halofit\+\_\+peacock}} =3
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_aac3355efc27ec1212dfc7d494c94b8bd}{halofit\+\_\+takahashi}} =4
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a321ebd41ef62b8c5f49c902695c97100}{halofit\+\_\+mead}} =5
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_ac93879b4e408404c04347ff8ba8e170c}{halofit\+\_\+halomodel}} =6
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacenonlinear_a17d0a06b4737dd11deb01679dd462d0d}{halofit\+\_\+default}} = \mbox{\hyperlink{namespacenonlinear_aac3355efc27ec1212dfc7d494c94b8bd}{halofit\+\_\+takahashi}}
+\item 
+integer, public \mbox{\hyperlink{namespacenonlinear_a1f7f92360f1ca05ad5bc378c6f48c4e2}{halofit\+\_\+version}} = \mbox{\hyperlink{namespacenonlinear_a17d0a06b4737dd11deb01679dd462d0d}{halofit\+\_\+default}}
+\item 
+integer \mbox{\hyperlink{namespacenonlinear_a4a5afbc21c01819b53e73cca3ae9c9db}{imead}}
+\item 
+integer \mbox{\hyperlink{namespacenonlinear_aaffe0db71a291d9ca3d9e8315757f6c0}{ihm}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacenonlinear_ab5e5d4cd8639004a33671b83480474cd}\label{namespacenonlinear_ab5e5d4cd8639004a33671b83480474cd}} 
+\index{nonlinear@{nonlinear}!ah@{ah}}
+\index{ah@{ah}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{ah()}{ah()}}
+{\footnotesize\ttfamily real function nonlinear\+::ah (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References w\+\_\+de\+\_\+hm(), and x\+\_\+de().
+
+
+
+Referenced by fv().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{namespacenonlinear_ab5e5d4cd8639004a33671b83480474cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ab5e5d4cd8639004a33671b83480474cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ac9ae18bd4ed466f0f8287e5c4757bec9}\label{namespacenonlinear_ac9ae18bd4ed466f0f8287e5c4757bec9}} 
+\index{nonlinear@{nonlinear}!allocate\+\_\+lut@{allocate\+\_\+lut}}
+\index{allocate\+\_\+lut@{allocate\+\_\+lut}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{allocate\+\_\+lut()}{allocate\_lut()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::allocate\+\_\+lut (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}})}]{lut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ac9ae18bd4ed466f0f8287e5c4757bec9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a31039036014feacf6b5001228cbecf2d}\label{namespacenonlinear_a31039036014feacf6b5001228cbecf2d}} 
+\index{nonlinear@{nonlinear}!alpha@{alpha}}
+\index{alpha@{alpha}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{alpha()}{alpha()}}
+{\footnotesize\ttfamily real function nonlinear\+::alpha (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References imead.
+
+
+
+Referenced by f\+\_\+rapid(), halomod(), sigma\+\_\+v(), and write\+\_\+parameters().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a31039036014feacf6b5001228cbecf2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a8a288f085ec2814b9d936eaff5987c9a}\label{namespacenonlinear_a8a288f085ec2814b9d936eaff5987c9a}} 
+\index{nonlinear@{nonlinear}!as@{as}}
+\index{as@{as}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily real function nonlinear\+::as (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References imead.
+
+
+
+Referenced by conc\+\_\+bull(), and write\+\_\+parameters().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a8a288f085ec2814b9d936eaff5987c9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a44e107b52cde4df598539a1ed12f252a}\label{namespacenonlinear_a44e107b52cde4df598539a1ed12f252a}} 
+\index{nonlinear@{nonlinear}!assign\+\_\+hm\+\_\+cosmology@{assign\+\_\+hm\+\_\+cosmology}}
+\index{assign\+\_\+hm\+\_\+cosmology@{assign\+\_\+hm\+\_\+cosmology}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{assign\+\_\+hm\+\_\+cosmology()}{assign\_hm\_cosmology()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::assign\+\_\+hm\+\_\+cosmology (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::cp, ihm, lambdageneral\+::w\+\_\+lam, and lambdageneral\+::wa\+\_\+ppf.
+
+
+
+Referenced by hmcode().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a44e107b52cde4df598539a1ed12f252a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a723581002925fb14e73f4d80ce6ee6e5}\label{namespacenonlinear_a723581002925fb14e73f4d80ce6ee6e5}} 
+\index{nonlinear@{nonlinear}!ci@{ci}}
+\index{ci@{ci}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{ci()}{ci()}}
+{\footnotesize\ttfamily real function nonlinear\+::ci (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by winnfw().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a723581002925fb14e73f4d80ce6ee6e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a9559196d503174393cf74ce857984216}\label{namespacenonlinear_a9559196d503174393cf74ce857984216}} 
+\index{nonlinear@{nonlinear}!conc\+\_\+bull@{conc\+\_\+bull}}
+\index{conc\+\_\+bull@{conc\+\_\+bull}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{conc\+\_\+bull()}{conc\_bull()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::conc\+\_\+bull (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}})}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References as(), grow(), grow\+\_\+int(), and zcoll\+\_\+bull().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a9559196d503174393cf74ce857984216_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a9559196d503174393cf74ce857984216_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a8d293985858b08d5e5c5bbdcdc9d4280}\label{namespacenonlinear_a8d293985858b08d5e5c5bbdcdc9d4280}} 
+\index{nonlinear@{nonlinear}!cosmic\+\_\+density@{cosmic\+\_\+density}}
+\index{cosmic\+\_\+density@{cosmic\+\_\+density}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{cosmic\+\_\+density()}{cosmic\_density()}}
+{\footnotesize\ttfamily pure real function nonlinear\+::cosmic\+\_\+density (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by mass\+\_\+r(), and radius\+\_\+m().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a8d293985858b08d5e5c5bbdcdc9d4280_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a9a42cb3acfe84c2c6ea9f085b357bdd1}\label{namespacenonlinear_a9a42cb3acfe84c2c6ea9f085b357bdd1}} 
+\index{nonlinear@{nonlinear}!deallocate\+\_\+lut@{deallocate\+\_\+lut}}
+\index{deallocate\+\_\+lut@{deallocate\+\_\+lut}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{deallocate\+\_\+lut()}{deallocate\_lut()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::deallocate\+\_\+lut (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}})}]{lut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a9a42cb3acfe84c2c6ea9f085b357bdd1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a927f840ecd0f2086eefba9d7220e3279}\label{namespacenonlinear_a927f840ecd0f2086eefba9d7220e3279}} 
+\index{nonlinear@{nonlinear}!delta\+\_\+c@{delta\+\_\+c}}
+\index{delta\+\_\+c@{delta\+\_\+c}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{delta\+\_\+c()}{delta\_c()}}
+{\footnotesize\ttfamily real function nonlinear\+::delta\+\_\+c (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References imead, and omega\+\_\+m\+\_\+hm().
+
+
+
+Referenced by halomod\+\_\+init(), write\+\_\+parameters(), and zcoll\+\_\+bull().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a927f840ecd0f2086eefba9d7220e3279_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a927f840ecd0f2086eefba9d7220e3279_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a73fccef372213a59eed00701677d1cdf}\label{namespacenonlinear_a73fccef372213a59eed00701677d1cdf}} 
+\index{nonlinear@{nonlinear}!delta\+\_\+v@{delta\+\_\+v}}
+\index{delta\+\_\+v@{delta\+\_\+v}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{delta\+\_\+v()}{delta\_v()}}
+{\footnotesize\ttfamily real function nonlinear\+::delta\+\_\+v (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References imead, and omega\+\_\+m\+\_\+hm().
+
+
+
+Referenced by halomod\+\_\+init(), p\+\_\+1h(), and write\+\_\+parameters().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a73fccef372213a59eed00701677d1cdf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a73fccef372213a59eed00701677d1cdf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_aaa7e906c253a54ffb73bab9e5dfd1397}\label{namespacenonlinear_aaa7e906c253a54ffb73bab9e5dfd1397}} 
+\index{nonlinear@{nonlinear}!derivative\+\_\+table@{derivative\+\_\+table}}
+\index{derivative\+\_\+table@{derivative\+\_\+table}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{derivative\+\_\+table()}{derivative\_table()}}
+{\footnotesize\ttfamily real function nonlinear\+::derivative\+\_\+table (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x,  }\item[{real, dimension(n), intent(in)}]{xin,  }\item[{real, dimension(n), intent(in)}]{yin,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{iorder,  }\item[{integer, intent(in)}]{imeth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fit\+\_\+cubic(), fit\+\_\+line(), fit\+\_\+quadratic(), reverse(), and table\+\_\+integer().
+
+
+
+Referenced by neff().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_aaa7e906c253a54ffb73bab9e5dfd1397_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_aaa7e906c253a54ffb73bab9e5dfd1397_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ae44a5c4f7412d42923e10f9a241d2e74}\label{namespacenonlinear_ae44a5c4f7412d42923e10f9a241d2e74}} 
+\index{nonlinear@{nonlinear}!dispint@{dispint}}
+\index{dispint@{dispint}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{dispint()}{dispint()}}
+{\footnotesize\ttfamily real function nonlinear\+::dispint (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References p\+\_\+lin().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ae44a5c4f7412d42923e10f9a241d2e74_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ae44a5c4f7412d42923e10f9a241d2e74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a96b424e6fa8e55242e57bbd2e607a70d}\label{namespacenonlinear_a96b424e6fa8e55242e57bbd2e607a70d}} 
+\index{nonlinear@{nonlinear}!eta@{eta}}
+\index{eta@{eta}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{eta()}{eta()}}
+{\footnotesize\ttfamily real function nonlinear\+::eta (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References imead.
+
+
+
+Referenced by p\+\_\+1h(), and write\+\_\+parameters().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a96b424e6fa8e55242e57bbd2e607a70d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a2a0c300b39b9de3d6b00be6369b59944}\label{namespacenonlinear_a2a0c300b39b9de3d6b00be6369b59944}} 
+\index{nonlinear@{nonlinear}!f\+\_\+rapid@{f\+\_\+rapid}}
+\index{f\+\_\+rapid@{f\+\_\+rapid}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{f\+\_\+rapid()}{f\_rapid()}}
+{\footnotesize\ttfamily real function nonlinear\+::f\+\_\+rapid (\begin{DoxyParamCaption}\item[{real, intent(in)}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References alpha().
+
+
+
+Referenced by sigint0().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{namespacenonlinear_a2a0c300b39b9de3d6b00be6369b59944_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a2a0c300b39b9de3d6b00be6369b59944_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a7f8c8180d41c0771e383f7edaa516803}\label{namespacenonlinear_a7f8c8180d41c0771e383f7edaa516803}} 
+\index{nonlinear@{nonlinear}!fd@{fd}}
+\index{fd@{fd}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fd()}{fd()}}
+{\footnotesize\ttfamily real function nonlinear\+::fd (\begin{DoxyParamCaption}\item[{real, intent(in)}]{d,  }\item[{real, intent(in)}]{v,  }\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{a,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ode\+\_\+growth().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a7f8c8180d41c0771e383f7edaa516803_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_aea62820c73faaebffe8f3a0dce00a711}\label{namespacenonlinear_aea62820c73faaebffe8f3a0dce00a711}} 
+\index{nonlinear@{nonlinear}!fdamp@{fdamp}}
+\index{fdamp@{fdamp}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fdamp()}{fdamp()}}
+{\footnotesize\ttfamily real function nonlinear\+::fdamp (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References imead.
+
+
+
+Referenced by p\+\_\+2h(), and write\+\_\+parameters().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_aea62820c73faaebffe8f3a0dce00a711_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_af9e22f2a04a3c5dc0f45fcd96c9b28cb}\label{namespacenonlinear_af9e22f2a04a3c5dc0f45fcd96c9b28cb}} 
+\index{nonlinear@{nonlinear}!fill\+\_\+growtab@{fill\+\_\+growtab}}
+\index{fill\+\_\+growtab@{fill\+\_\+growtab}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fill\+\_\+growtab()}{fill\_growtab()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::fill\+\_\+growtab (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References find(), ihm, and ode\+\_\+growth().
+
+
+
+Referenced by hmcode().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_af9e22f2a04a3c5dc0f45fcd96c9b28cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_af9e22f2a04a3c5dc0f45fcd96c9b28cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_af44943bd607e88cf910383917ce03826}\label{namespacenonlinear_af44943bd607e88cf910383917ce03826}} 
+\index{nonlinear@{nonlinear}!fill\+\_\+plintab@{fill\+\_\+plintab}}
+\index{fill\+\_\+plintab@{fill\+\_\+plintab}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fill\+\_\+plintab()}{fill\_plintab()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::fill\+\_\+plintab (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iz,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm,  }\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}}), intent(in)}]{C\+A\+M\+B\+\_\+\+PK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fill\+\_\+table(), grow(), ihm, transfer\+::matterpowerdata\+\_\+k(), sigma(), and tcb\+\_\+tcbnu\+\_\+ratio().
+
+
+
+Referenced by initialise\+\_\+hm\+\_\+cosmology().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_af44943bd607e88cf910383917ce03826_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_af44943bd607e88cf910383917ce03826_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a0ec694303c1335ceb97e09d20f0ceb94}\label{namespacenonlinear_a0ec694303c1335ceb97e09d20f0ceb94}} 
+\index{nonlinear@{nonlinear}!fill\+\_\+sigtab@{fill\+\_\+sigtab}}
+\index{fill\+\_\+sigtab@{fill\+\_\+sigtab}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fill\+\_\+sigtab()}{fill\_sigtab()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::fill\+\_\+sigtab (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ihm, and sigma().
+
+
+
+Referenced by initialise\+\_\+hm\+\_\+cosmology().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a0ec694303c1335ceb97e09d20f0ceb94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a0ec694303c1335ceb97e09d20f0ceb94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a6ac027990c6d758a7c5420da7001dfc7}\label{namespacenonlinear_a6ac027990c6d758a7c5420da7001dfc7}} 
+\index{nonlinear@{nonlinear}!fill\+\_\+table@{fill\+\_\+table}}
+\index{fill\+\_\+table@{fill\+\_\+table}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fill\+\_\+table()}{fill\_table()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::fill\+\_\+table (\begin{DoxyParamCaption}\item[{real, intent(in)}]{min,  }\item[{real, intent(in)}]{max,  }\item[{real, dimension(\+:), allocatable}]{arr,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fill\+\_\+plintab().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a6ac027990c6d758a7c5420da7001dfc7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a553c7b86e3fd7c044f3fcef5b77c0a3f}\label{namespacenonlinear_a553c7b86e3fd7c044f3fcef5b77c0a3f}} 
+\index{nonlinear@{nonlinear}!find@{find}}
+\index{find@{find}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily real function nonlinear\+::find (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x,  }\item[{real, dimension(n), intent(in)}]{xin,  }\item[{real, dimension(n), intent(in)}]{yin,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{iorder,  }\item[{integer, intent(in)}]{imeth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fit\+\_\+cubic(), fit\+\_\+line(), fit\+\_\+quadratic(), reverse(), and table\+\_\+integer().
+
+
+
+Referenced by fill\+\_\+growtab(), find\+\_\+pk(), grow(), r\+\_\+nl(), sigmac(), and zcoll\+\_\+bull().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a553c7b86e3fd7c044f3fcef5b77c0a3f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a553c7b86e3fd7c044f3fcef5b77c0a3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ad7792185b1262569016446c4cba41606}\label{namespacenonlinear_ad7792185b1262569016446c4cba41606}} 
+\index{nonlinear@{nonlinear}!find\+\_\+pk@{find\+\_\+pk}}
+\index{find\+\_\+pk@{find\+\_\+pk}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{find\+\_\+pk()}{find\_pk()}}
+{\footnotesize\ttfamily real function nonlinear\+::find\+\_\+pk (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{integer, intent(in)}]{itype,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References find().
+
+
+
+Referenced by p\+\_\+lin().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad7792185b1262569016446c4cba41606_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad7792185b1262569016446c4cba41606_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ad34b8f5e3284fe90bf1e2d39ad027cc1}\label{namespacenonlinear_ad34b8f5e3284fe90bf1e2d39ad027cc1}} 
+\index{nonlinear@{nonlinear}!fit\+\_\+cubic@{fit\+\_\+cubic}}
+\index{fit\+\_\+cubic@{fit\+\_\+cubic}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fit\+\_\+cubic()}{fit\_cubic()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::fit\+\_\+cubic (\begin{DoxyParamCaption}\item[{real, intent(out)}]{a,  }\item[{real, intent(out)}]{b,  }\item[{real, intent(out)}]{c,  }\item[{real, intent(out)}]{d,  }\item[{real, intent(in)}]{x1,  }\item[{real, intent(in)}]{y1,  }\item[{real, intent(in)}]{x2,  }\item[{real, intent(in)}]{y2,  }\item[{real, intent(in)}]{x3,  }\item[{real, intent(in)}]{y3,  }\item[{real, intent(in)}]{x4,  }\item[{real, intent(in)}]{y4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by derivative\+\_\+table(), find(), and inttab().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad34b8f5e3284fe90bf1e2d39ad027cc1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a5754454991f9dfb61c4251267c2d175d}\label{namespacenonlinear_a5754454991f9dfb61c4251267c2d175d}} 
+\index{nonlinear@{nonlinear}!fit\+\_\+line@{fit\+\_\+line}}
+\index{fit\+\_\+line@{fit\+\_\+line}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fit\+\_\+line()}{fit\_line()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::fit\+\_\+line (\begin{DoxyParamCaption}\item[{real, intent(out)}]{a1,  }\item[{real, intent(out)}]{a0,  }\item[{real, intent(in)}]{x1,  }\item[{real, intent(in)}]{y1,  }\item[{real, intent(in)}]{x2,  }\item[{real, intent(in)}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by derivative\+\_\+table(), and find().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a5754454991f9dfb61c4251267c2d175d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ade72d40a60522b6b609687fbe7e9ddbb}\label{namespacenonlinear_ade72d40a60522b6b609687fbe7e9ddbb}} 
+\index{nonlinear@{nonlinear}!fit\+\_\+quadratic@{fit\+\_\+quadratic}}
+\index{fit\+\_\+quadratic@{fit\+\_\+quadratic}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fit\+\_\+quadratic()}{fit\_quadratic()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::fit\+\_\+quadratic (\begin{DoxyParamCaption}\item[{real, intent(out)}]{a2,  }\item[{real, intent(out)}]{a1,  }\item[{real, intent(out)}]{a0,  }\item[{real, intent(in)}]{x1,  }\item[{real, intent(in)}]{y1,  }\item[{real, intent(in)}]{x2,  }\item[{real, intent(in)}]{y2,  }\item[{real, intent(in)}]{x3,  }\item[{real, intent(in)}]{y3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by derivative\+\_\+table(), find(), and inttab().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ade72d40a60522b6b609687fbe7e9ddbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_aa6814235c0bd98fe3c05073b03b16fac}\label{namespacenonlinear_aa6814235c0bd98fe3c05073b03b16fac}} 
+\index{nonlinear@{nonlinear}!fv@{fv}}
+\index{fv@{fv}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fv()}{fv()}}
+{\footnotesize\ttfamily real function nonlinear\+::fv (\begin{DoxyParamCaption}\item[{real, intent(in)}]{d,  }\item[{real, intent(in)}]{v,  }\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{a,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ah(), hubble2(), and omega\+\_\+m\+\_\+hm().
+
+
+
+Referenced by ode\+\_\+growth().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_aa6814235c0bd98fe3c05073b03b16fac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_aa6814235c0bd98fe3c05073b03b16fac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a236c113538d97686a8f8e286b29bc073}\label{namespacenonlinear_a236c113538d97686a8f8e286b29bc073}} 
+\index{nonlinear@{nonlinear}!gnu@{gnu}}
+\index{gnu@{gnu}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{gnu()}{gnu()}}
+{\footnotesize\ttfamily real function nonlinear\+::gnu (\begin{DoxyParamCaption}\item[{real, intent(in)}]{nu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References gst().
+
+
+
+Referenced by p\+\_\+1h().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{namespacenonlinear_a236c113538d97686a8f8e286b29bc073_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a236c113538d97686a8f8e286b29bc073_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a1870caf0d38a1c6617ca3ef8de2f6947}\label{namespacenonlinear_a1870caf0d38a1c6617ca3ef8de2f6947}} 
+\index{nonlinear@{nonlinear}!grow@{grow}}
+\index{grow@{grow}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{grow()}{grow()}}
+{\footnotesize\ttfamily real function nonlinear\+::grow (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References find().
+
+
+
+Referenced by conc\+\_\+bull(), fill\+\_\+plintab(), p\+\_\+lin(), sigmac(), and zcoll\+\_\+bull().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a1870caf0d38a1c6617ca3ef8de2f6947_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a1870caf0d38a1c6617ca3ef8de2f6947_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a2ccd15402588e67b26abc93ccf910de6}\label{namespacenonlinear_a2ccd15402588e67b26abc93ccf910de6}} 
+\index{nonlinear@{nonlinear}!grow\+\_\+int@{grow\+\_\+int}}
+\index{grow\+\_\+int@{grow\+\_\+int}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{grow\+\_\+int()}{grow\_int()}}
+{\footnotesize\ttfamily real function nonlinear\+::grow\+\_\+int (\begin{DoxyParamCaption}\item[{real}]{b,  }\item[{real}]{acc,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References omega\+\_\+m\+\_\+hm().
+
+
+
+Referenced by conc\+\_\+bull().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a2ccd15402588e67b26abc93ccf910de6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a2ccd15402588e67b26abc93ccf910de6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a5eea788fe3f505d256438cee66af3240}\label{namespacenonlinear_a5eea788fe3f505d256438cee66af3240}} 
+\index{nonlinear@{nonlinear}!gst@{gst}}
+\index{gst@{gst}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{gst()}{gst()}}
+{\footnotesize\ttfamily real function nonlinear\+::gst (\begin{DoxyParamCaption}\item[{real, intent(in)}]{nu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by gnu().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a5eea788fe3f505d256438cee66af3240_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a76e8738685b7ce5757290a6441d5e850}\label{namespacenonlinear_a76e8738685b7ce5757290a6441d5e850}} 
+\index{nonlinear@{nonlinear}!halofit@{halofit}}
+\index{halofit@{halofit}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit()}{halofit()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::halofit (\begin{DoxyParamCaption}\item[{real(dl)}]{rk,  }\item[{real(dl)}]{rn,  }\item[{real(dl)}]{rncur,  }\item[{real(dl)}]{rknl,  }\item[{real(dl)}]{plin,  }\item[{real(dl)}]{pnl,  }\item[{real(dl)}]{pq,  }\item[{real(dl)}]{ph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References acur, fnu, halofit\+\_\+bird, halofit\+\_\+original, halofit\+\_\+peacock, halofit\+\_\+takahashi, halofit\+\_\+version, om\+\_\+m, om\+\_\+v, lambdageneral\+::w\+\_\+lam, and lambdageneral\+::wa\+\_\+ppf.
+
+
+
+Referenced by nonlinear\+\_\+getnonlinratios().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a76e8738685b7ce5757290a6441d5e850_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a8b11cb79c822afc15ee5506a6b79e786}\label{namespacenonlinear_a8b11cb79c822afc15ee5506a6b79e786}} 
+\index{nonlinear@{nonlinear}!halomod@{halomod}}
+\index{halomod@{halomod}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halomod()}{halomod()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::halomod (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{z,  }\item[{real, intent(out)}]{p1h,  }\item[{real, intent(out)}]{p2h,  }\item[{real, intent(out)}]{pfull,  }\item[{real, intent(in)}]{plin,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References alpha(), p\+\_\+1h(), and p\+\_\+2h().
+
+
+
+Referenced by hmcode().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a8b11cb79c822afc15ee5506a6b79e786_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a8b11cb79c822afc15ee5506a6b79e786_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_af025b4b6e2a711cea66352e50ea6de97}\label{namespacenonlinear_af025b4b6e2a711cea66352e50ea6de97}} 
+\index{nonlinear@{nonlinear}!halomod\+\_\+init@{halomod\+\_\+init}}
+\index{halomod\+\_\+init@{halomod\+\_\+init}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halomod\+\_\+init()}{halomod\_init()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::halomod\+\_\+init (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}})}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References allocate\+\_\+lut(), conc\+\_\+bull(), deallocate\+\_\+lut(), delta\+\_\+c(), delta\+\_\+v(), dispint(), ihm, neff(), r\+\_\+nl(), radius\+\_\+m(), sigma(), sigma\+\_\+v(), sigmac(), and write\+\_\+parameters().
+
+
+
+Referenced by hmcode().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_af025b4b6e2a711cea66352e50ea6de97_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_af025b4b6e2a711cea66352e50ea6de97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_acf9ab8f72085502eea51c43dcf5ad67e}\label{namespacenonlinear_acf9ab8f72085502eea51c43dcf5ad67e}} 
+\index{nonlinear@{nonlinear}!hmcode@{hmcode}}
+\index{hmcode@{hmcode}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{hmcode()}{hmcode()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::hmcode (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{C\+A\+M\+B\+\_\+\+Pk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References assign\+\_\+hm\+\_\+cosmology(), fill\+\_\+growtab(), halofit\+\_\+halomodel, halofit\+\_\+mead, halofit\+\_\+version, halomod(), halomod\+\_\+init(), ihm, imead, initialise\+\_\+hm\+\_\+cosmology(), and p\+\_\+lin().
+
+
+
+Referenced by nonlinear\+\_\+getnonlinratios().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_acf9ab8f72085502eea51c43dcf5ad67e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_acf9ab8f72085502eea51c43dcf5ad67e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a82f340c9a9b18e3f45b2ddbe518cebba}\label{namespacenonlinear_a82f340c9a9b18e3f45b2ddbe518cebba}} 
+\index{nonlinear@{nonlinear}!hubble2@{hubble2}}
+\index{hubble2@{hubble2}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{hubble2()}{hubble2()}}
+{\footnotesize\ttfamily real function nonlinear\+::hubble2 (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References om\+\_\+m, om\+\_\+v, and x\+\_\+de().
+
+
+
+Referenced by fv(), and omega\+\_\+m\+\_\+hm().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{namespacenonlinear_a82f340c9a9b18e3f45b2ddbe518cebba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a82f340c9a9b18e3f45b2ddbe518cebba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a819e3b1efc1572f5e75eb5f2b415b4b4}\label{namespacenonlinear_a819e3b1efc1572f5e75eb5f2b415b4b4}} 
+\index{nonlinear@{nonlinear}!initialise\+\_\+hm\+\_\+cosmology@{initialise\+\_\+hm\+\_\+cosmology}}
+\index{initialise\+\_\+hm\+\_\+cosmology@{initialise\+\_\+hm\+\_\+cosmology}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{initialise\+\_\+hm\+\_\+cosmology()}{initialise\_hm\_cosmology()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::initialise\+\_\+hm\+\_\+cosmology (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iz,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm,  }\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}}), intent(in)}]{C\+A\+M\+B\+\_\+\+PK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fill\+\_\+plintab(), and fill\+\_\+sigtab().
+
+
+
+Referenced by hmcode().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a819e3b1efc1572f5e75eb5f2b415b4b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a819e3b1efc1572f5e75eb5f2b415b4b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a0241839029c1aa4d429fb9a516577921}\label{namespacenonlinear_a0241839029c1aa4d429fb9a516577921}} 
+\index{nonlinear@{nonlinear}!int\+\_\+split@{int\+\_\+split}}
+\index{int\+\_\+split@{int\+\_\+split}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{int\+\_\+split()}{int\_split()}}
+{\footnotesize\ttfamily integer function nonlinear\+::int\+\_\+split (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x,  }\item[{real, dimension(n), intent(in)}]{xtab,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by table\+\_\+integer().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a0241839029c1aa4d429fb9a516577921_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ab7465123b12f301a0d4d5a80c8b35ab5}\label{namespacenonlinear_ab7465123b12f301a0d4d5a80c8b35ab5}} 
+\index{nonlinear@{nonlinear}!inttab@{inttab}}
+\index{inttab@{inttab}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{inttab()}{inttab()}}
+{\footnotesize\ttfamily real function nonlinear\+::inttab (\begin{DoxyParamCaption}\item[{real, dimension(n), intent(in)}]{x,  }\item[{real, dimension(n), intent(in)}]{y,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{iorder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fit\+\_\+cubic(), and fit\+\_\+quadratic().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacenonlinear_ab7465123b12f301a0d4d5a80c8b35ab5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a0e7bfac54def3a760a789b01501ee54b}\label{namespacenonlinear_a0e7bfac54def3a760a789b01501ee54b}} 
+\index{nonlinear@{nonlinear}!kstar@{kstar}}
+\index{kstar@{kstar}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{kstar()}{kstar()}}
+{\footnotesize\ttfamily real function nonlinear\+::kstar (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References imead.
+
+
+
+Referenced by p\+\_\+1h(), and write\+\_\+parameters().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a0e7bfac54def3a760a789b01501ee54b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a623980d65535bc78bbcf5eb8f701ac42}\label{namespacenonlinear_a623980d65535bc78bbcf5eb8f701ac42}} 
+\index{nonlinear@{nonlinear}!linear\+\_\+table\+\_\+integer@{linear\+\_\+table\+\_\+integer}}
+\index{linear\+\_\+table\+\_\+integer@{linear\+\_\+table\+\_\+integer}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{linear\+\_\+table\+\_\+integer()}{linear\_table\_integer()}}
+{\footnotesize\ttfamily integer function nonlinear\+::linear\+\_\+table\+\_\+integer (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x,  }\item[{real, dimension(n), intent(in)}]{xtab,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by table\+\_\+integer().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a623980d65535bc78bbcf5eb8f701ac42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_acce5a3564ba00c26a8a5674ab63d5b73}\label{namespacenonlinear_acce5a3564ba00c26a8a5674ab63d5b73}} 
+\index{nonlinear@{nonlinear}!mass@{mass}}
+\index{mass@{mass}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{mass()}{mass()}}
+{\footnotesize\ttfamily real function nonlinear\+::mass (\begin{DoxyParamCaption}\item[{real, intent(in)}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by winnfw().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_acce5a3564ba00c26a8a5674ab63d5b73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a164bc94a32486b7a39cab9d1d3ddbafb}\label{namespacenonlinear_a164bc94a32486b7a39cab9d1d3ddbafb}} 
+\index{nonlinear@{nonlinear}!mass\+\_\+r@{mass\+\_\+r}}
+\index{mass\+\_\+r@{mass\+\_\+r}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{mass\+\_\+r()}{mass\_r()}}
+{\footnotesize\ttfamily real function nonlinear\+::mass\+\_\+r (\begin{DoxyParamCaption}\item[{real}]{r,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmic\+\_\+density().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacenonlinear_a164bc94a32486b7a39cab9d1d3ddbafb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a94503cd59bd5a206379a0c13afe89ffc}\label{namespacenonlinear_a94503cd59bd5a206379a0c13afe89ffc}} 
+\index{nonlinear@{nonlinear}!neff@{neff}}
+\index{neff@{neff}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{neff()}{neff()}}
+{\footnotesize\ttfamily real function nonlinear\+::neff (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References derivative\+\_\+table().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a94503cd59bd5a206379a0c13afe89ffc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a94503cd59bd5a206379a0c13afe89ffc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a0ed6b8f43af3b8a2cb369df5c247ca1f}\label{namespacenonlinear_a0ed6b8f43af3b8a2cb369df5c247ca1f}} 
+\index{nonlinear@{nonlinear}!nonlinear\+\_\+getnonlinratios@{nonlinear\+\_\+getnonlinratios}}
+\index{nonlinear\+\_\+getnonlinratios@{nonlinear\+\_\+getnonlinratios}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+getnonlinratios()}{nonlinear\_getnonlinratios()}}
+{\footnotesize\ttfamily subroutine, public nonlinear\+::nonlinear\+\_\+getnonlinratios (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{C\+A\+M\+B\+\_\+\+Pk }\end{DoxyParamCaption})}
+
+
+
+References acur, modelparams\+::cp, fnu, halofit(), halofit\+\_\+halomodel, halofit\+\_\+mead, halofit\+\_\+version, hmcode(), transfer\+::matterpowerdata\+\_\+k(), min\+\_\+kh\+\_\+nonlinear, om\+\_\+m, om\+\_\+v, omega\+\_\+m(), omega\+\_\+v(), omm0, lambdageneral\+::w\+\_\+lam, lambdageneral\+::wa\+\_\+ppf, and wint().
+
+
+
+Referenced by cambmain\+::makenonlinearsources(), and nonlinear\+\_\+getratios().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a0ed6b8f43af3b8a2cb369df5c247ca1f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a0ed6b8f43af3b8a2cb369df5c247ca1f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ada72232da7963dc507bfa2f4d346e7ec}\label{namespacenonlinear_ada72232da7963dc507bfa2f4d346e7ec}} 
+\index{nonlinear@{nonlinear}!nonlinear\+\_\+readparams@{nonlinear\+\_\+readparams}}
+\index{nonlinear\+\_\+readparams@{nonlinear\+\_\+readparams}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{nonlinear\+\_\+readparams()}{nonlinear\_readparams()}}
+{\footnotesize\ttfamily subroutine, public nonlinear\+::nonlinear\+\_\+readparams (\begin{DoxyParamCaption}\item[{type(tinifile)}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References halofit\+\_\+default, halofit\+\_\+version, and inifile\+::ini\+\_\+read\+\_\+int\+\_\+file().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ada72232da7963dc507bfa2f4d346e7ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a26b787bf515ef27795b9dbbed39b2e34}\label{namespacenonlinear_a26b787bf515ef27795b9dbbed39b2e34}} 
+\index{nonlinear@{nonlinear}!ode\+\_\+growth@{ode\+\_\+growth}}
+\index{ode\+\_\+growth@{ode\+\_\+growth}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{ode\+\_\+growth()}{ode\_growth()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::ode\+\_\+growth (\begin{DoxyParamCaption}\item[{real, dimension(\+:), allocatable}]{x,  }\item[{real, dimension(\+:), allocatable}]{v,  }\item[{real, dimension(\+:), allocatable}]{t,  }\item[{real}]{kk,  }\item[{real}]{ti,  }\item[{real}]{tf,  }\item[{real}]{xi,  }\item[{real}]{vi,  }\item[{real}]{acc,  }\item[{integer}]{imeth,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fd(), and fv().
+
+
+
+Referenced by fill\+\_\+growtab().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a26b787bf515ef27795b9dbbed39b2e34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a26b787bf515ef27795b9dbbed39b2e34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a114a4d8047f3679297cc7b1c216d6517}\label{namespacenonlinear_a114a4d8047f3679297cc7b1c216d6517}} 
+\index{nonlinear@{nonlinear}!omega\+\_\+m@{omega\+\_\+m}}
+\index{omega\+\_\+m@{omega\+\_\+m}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{omega\+\_\+m()}{omega\_m()}}
+{\footnotesize\ttfamily real(dl) function nonlinear\+::omega\+\_\+m (\begin{DoxyParamCaption}\item[{real(dl)}]{aa,  }\item[{real(dl)}]{om\+\_\+m0,  }\item[{real(dl)}]{om\+\_\+v0,  }\item[{real(dl)}]{wval,  }\item[{real(dl)}]{waval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nonlinear\+\_\+getnonlinratios().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a114a4d8047f3679297cc7b1c216d6517_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ac515b61587eefa54d1ebc904d0ef78b6}\label{namespacenonlinear_ac515b61587eefa54d1ebc904d0ef78b6}} 
+\index{nonlinear@{nonlinear}!omega\+\_\+m\+\_\+hm@{omega\+\_\+m\+\_\+hm}}
+\index{omega\+\_\+m\+\_\+hm@{omega\+\_\+m\+\_\+hm}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{omega\+\_\+m\+\_\+hm()}{omega\_m\_hm()}}
+{\footnotesize\ttfamily real function nonlinear\+::omega\+\_\+m\+\_\+hm (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References hubble2(), and om\+\_\+m.
+
+
+
+Referenced by delta\+\_\+c(), delta\+\_\+v(), fv(), and grow\+\_\+int().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ac515b61587eefa54d1ebc904d0ef78b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ac515b61587eefa54d1ebc904d0ef78b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ab10a9f1bd96361d1619be7e609ce6cb5}\label{namespacenonlinear_ab10a9f1bd96361d1619be7e609ce6cb5}} 
+\index{nonlinear@{nonlinear}!omega\+\_\+v@{omega\+\_\+v}}
+\index{omega\+\_\+v@{omega\+\_\+v}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{omega\+\_\+v()}{omega\_v()}}
+{\footnotesize\ttfamily real(dl) function nonlinear\+::omega\+\_\+v (\begin{DoxyParamCaption}\item[{real(dl)}]{aa,  }\item[{real(dl)}]{om\+\_\+m0,  }\item[{real(dl)}]{om\+\_\+v0,  }\item[{real(dl)}]{wval,  }\item[{real(dl)}]{waval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nonlinear\+\_\+getnonlinratios().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ab10a9f1bd96361d1619be7e609ce6cb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a6734815086cf4dca34d8677f1d763e3f}\label{namespacenonlinear_a6734815086cf4dca34d8677f1d763e3f}} 
+\index{nonlinear@{nonlinear}!p\+\_\+1h@{p\+\_\+1h}}
+\index{p\+\_\+1h@{p\+\_\+1h}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{p\+\_\+1h()}{p\_1h()}}
+{\footnotesize\ttfamily real function nonlinear\+::p\+\_\+1h (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References delta\+\_\+v(), eta(), gnu(), kstar(), and win().
+
+
+
+Referenced by halomod().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a6734815086cf4dca34d8677f1d763e3f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a6734815086cf4dca34d8677f1d763e3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_adbb028d781be22805e7c1468b4e795a8}\label{namespacenonlinear_adbb028d781be22805e7c1468b4e795a8}} 
+\index{nonlinear@{nonlinear}!p\+\_\+2h@{p\+\_\+2h}}
+\index{p\+\_\+2h@{p\+\_\+2h}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{p\+\_\+2h()}{p\_2h()}}
+{\footnotesize\ttfamily real function nonlinear\+::p\+\_\+2h (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{z,  }\item[{real, intent(in)}]{plin,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fdamp(), and imead.
+
+
+
+Referenced by halomod().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{namespacenonlinear_adbb028d781be22805e7c1468b4e795a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_adbb028d781be22805e7c1468b4e795a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ad2f542da0cba1686588e83dec8ac7617}\label{namespacenonlinear_ad2f542da0cba1686588e83dec8ac7617}} 
+\index{nonlinear@{nonlinear}!p\+\_\+lin@{p\+\_\+lin}}
+\index{p\+\_\+lin@{p\+\_\+lin}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{p\+\_\+lin()}{p\_lin()}}
+{\footnotesize\ttfamily real function nonlinear\+::p\+\_\+lin (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{z,  }\item[{integer, intent(in)}]{itype,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References find\+\_\+pk(), and grow().
+
+
+
+Referenced by dispint(), hmcode(), sigint1(), sigint2(), sigma\+\_\+integrand(), and sigma\+\_\+v().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad2f542da0cba1686588e83dec8ac7617_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad2f542da0cba1686588e83dec8ac7617_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a9fdd5c2093c44b1f49fdaafaa3e568da}\label{namespacenonlinear_a9fdd5c2093c44b1f49fdaafaa3e568da}} 
+\index{nonlinear@{nonlinear}!r\+\_\+nl@{r\+\_\+nl}}
+\index{r\+\_\+nl@{r\+\_\+nl}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{r\+\_\+nl()}{r\_nl()}}
+{\footnotesize\ttfamily real function nonlinear\+::r\+\_\+nl (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References find().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a9fdd5c2093c44b1f49fdaafaa3e568da_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a9fdd5c2093c44b1f49fdaafaa3e568da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_af71d6d6d99de458db1a669744d7b1088}\label{namespacenonlinear_af71d6d6d99de458db1a669744d7b1088}} 
+\index{nonlinear@{nonlinear}!radius\+\_\+m@{radius\+\_\+m}}
+\index{radius\+\_\+m@{radius\+\_\+m}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{radius\+\_\+m()}{radius\_m()}}
+{\footnotesize\ttfamily pure real function nonlinear\+::radius\+\_\+m (\begin{DoxyParamCaption}\item[{real, intent(in)}]{m,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmic\+\_\+density().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacenonlinear_af71d6d6d99de458db1a669744d7b1088_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_af71d6d6d99de458db1a669744d7b1088_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ac344cab10a5226c8ef0147ff8f96767a}\label{namespacenonlinear_ac344cab10a5226c8ef0147ff8f96767a}} 
+\index{nonlinear@{nonlinear}!reverse@{reverse}}
+\index{reverse@{reverse}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{reverse()}{reverse()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::reverse (\begin{DoxyParamCaption}\item[{real, dimension(n), intent(inout)}]{arry,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter\+::add\+\_\+legend(), derivative\+\_\+table(), and find().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ac344cab10a5226c8ef0147ff8f96767a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a210b83a28f6523e35c1b2314bd38ba10}\label{namespacenonlinear_a210b83a28f6523e35c1b2314bd38ba10}} 
+\index{nonlinear@{nonlinear}!search\+\_\+int@{search\+\_\+int}}
+\index{search\+\_\+int@{search\+\_\+int}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{search\+\_\+int()}{search\_int()}}
+{\footnotesize\ttfamily integer function nonlinear\+::search\+\_\+int (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x,  }\item[{real, dimension(n), intent(in)}]{xtab,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by table\+\_\+integer().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a210b83a28f6523e35c1b2314bd38ba10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a6171546fb42a0d5c085c3ee5c8662e0b}\label{namespacenonlinear_a6171546fb42a0d5c085c3ee5c8662e0b}} 
+\index{nonlinear@{nonlinear}!si@{si}}
+\index{si@{si}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{si()}{si()}}
+{\footnotesize\ttfamily real function nonlinear\+::si (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by winnfw().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a6171546fb42a0d5c085c3ee5c8662e0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ad4ec869211d722d92d942360f0619e6e}\label{namespacenonlinear_ad4ec869211d722d92d942360f0619e6e}} 
+\index{nonlinear@{nonlinear}!sigint0@{sigint0}}
+\index{sigint0@{sigint0}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{sigint0()}{sigint0()}}
+{\footnotesize\ttfamily real function nonlinear\+::sigint0 (\begin{DoxyParamCaption}\item[{real, intent(in)}]{r,  }\item[{real, intent(in)}]{z,  }\item[{integer, intent(in)}]{itype,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References f\+\_\+rapid(), and sigma\+\_\+integrand().
+
+
+
+Referenced by sigma().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad4ec869211d722d92d942360f0619e6e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad4ec869211d722d92d942360f0619e6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ac0dc62ceea1e6ba2e1b7a08a420d934e}\label{namespacenonlinear_ac0dc62ceea1e6ba2e1b7a08a420d934e}} 
+\index{nonlinear@{nonlinear}!sigint1@{sigint1}}
+\index{sigint1@{sigint1}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{sigint1()}{sigint1()}}
+{\footnotesize\ttfamily real function nonlinear\+::sigint1 (\begin{DoxyParamCaption}\item[{real, intent(in)}]{r,  }\item[{real, intent(in)}]{z,  }\item[{integer, intent(in)}]{itype,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References p\+\_\+lin(), and wk\+\_\+tophat().
+
+
+
+Referenced by sigma().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ac0dc62ceea1e6ba2e1b7a08a420d934e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ac0dc62ceea1e6ba2e1b7a08a420d934e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a7f3d1c8e1e8b16f59cf8a1d0b6cd5499}\label{namespacenonlinear_a7f3d1c8e1e8b16f59cf8a1d0b6cd5499}} 
+\index{nonlinear@{nonlinear}!sigint2@{sigint2}}
+\index{sigint2@{sigint2}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{sigint2()}{sigint2()}}
+{\footnotesize\ttfamily real function nonlinear\+::sigint2 (\begin{DoxyParamCaption}\item[{real, intent(in)}]{r,  }\item[{real, intent(in)}]{z,  }\item[{integer, intent(in)}]{itype,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References p\+\_\+lin(), and wk\+\_\+tophat().
+
+
+
+Referenced by sigma().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a7f3d1c8e1e8b16f59cf8a1d0b6cd5499_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a7f3d1c8e1e8b16f59cf8a1d0b6cd5499_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a5ecb478e809d6e8e185d11dea143cd69}\label{namespacenonlinear_a5ecb478e809d6e8e185d11dea143cd69}} 
+\index{nonlinear@{nonlinear}!sigma@{sigma}}
+\index{sigma@{sigma}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{sigma()}{sigma()}}
+{\footnotesize\ttfamily real function nonlinear\+::sigma (\begin{DoxyParamCaption}\item[{real, intent(in)}]{r,  }\item[{real, intent(in)}]{z,  }\item[{integer, intent(in)}]{itype,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References sigint0(), sigint1(), and sigint2().
+
+
+
+Referenced by fill\+\_\+plintab(), fill\+\_\+sigtab(), and halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a5ecb478e809d6e8e185d11dea143cd69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a5ecb478e809d6e8e185d11dea143cd69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a752ac5f748fd7d780ac59ee3a8b4d267}\label{namespacenonlinear_a752ac5f748fd7d780ac59ee3a8b4d267}} 
+\index{nonlinear@{nonlinear}!sigma\+\_\+integrand@{sigma\+\_\+integrand}}
+\index{sigma\+\_\+integrand@{sigma\+\_\+integrand}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{sigma\+\_\+integrand()}{sigma\_integrand()}}
+{\footnotesize\ttfamily real function nonlinear\+::sigma\+\_\+integrand (\begin{DoxyParamCaption}\item[{real, intent(in)}]{t,  }\item[{real, intent(in)}]{R,  }\item[{}]{f,  }\item[{real, intent(in)}]{z,  }\item[{integer, intent(in)}]{itype,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References p\+\_\+lin(), and wk\+\_\+tophat().
+
+
+
+Referenced by sigint0().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a752ac5f748fd7d780ac59ee3a8b4d267_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a752ac5f748fd7d780ac59ee3a8b4d267_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a66f93056c25bc48a5cfb206e596b47ad}\label{namespacenonlinear_a66f93056c25bc48a5cfb206e596b47ad}} 
+\index{nonlinear@{nonlinear}!sigma\+\_\+v@{sigma\+\_\+v}}
+\index{sigma\+\_\+v@{sigma\+\_\+v}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{sigma\+\_\+v()}{sigma\_v()}}
+{\footnotesize\ttfamily real function nonlinear\+::sigma\+\_\+v (\begin{DoxyParamCaption}\item[{real, intent(in)}]{R,  }\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References alpha(), p\+\_\+lin(), and wk\+\_\+tophat().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a66f93056c25bc48a5cfb206e596b47ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a66f93056c25bc48a5cfb206e596b47ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a2b1a2fe15822f8bfcf88ca9de9060e85}\label{namespacenonlinear_a2b1a2fe15822f8bfcf88ca9de9060e85}} 
+\index{nonlinear@{nonlinear}!sigmac@{sigmac}}
+\index{sigmac@{sigmac}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{sigmac()}{sigmac()}}
+{\footnotesize\ttfamily real function nonlinear\+::sigmac (\begin{DoxyParamCaption}\item[{real, intent(in)}]{r,  }\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References find(), and grow().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a2b1a2fe15822f8bfcf88ca9de9060e85_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a2b1a2fe15822f8bfcf88ca9de9060e85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a9982a6cac80109ad36dd796e77f372de}\label{namespacenonlinear_a9982a6cac80109ad36dd796e77f372de}} 
+\index{nonlinear@{nonlinear}!table\+\_\+integer@{table\+\_\+integer}}
+\index{table\+\_\+integer@{table\+\_\+integer}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{table\+\_\+integer()}{table\_integer()}}
+{\footnotesize\ttfamily integer function nonlinear\+::table\+\_\+integer (\begin{DoxyParamCaption}\item[{real, intent(in)}]{x,  }\item[{real, dimension(n), intent(in)}]{xtab,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{imeth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References int\+\_\+split(), linear\+\_\+table\+\_\+integer(), and search\+\_\+int().
+
+
+
+Referenced by derivative\+\_\+table(), and find().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacenonlinear_a9982a6cac80109ad36dd796e77f372de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a9982a6cac80109ad36dd796e77f372de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a71f404d2d1de4ad126d2e43eea191621}\label{namespacenonlinear_a71f404d2d1de4ad126d2e43eea191621}} 
+\index{nonlinear@{nonlinear}!tcb\+\_\+tcbnu\+\_\+ratio@{tcb\+\_\+tcbnu\+\_\+ratio}}
+\index{tcb\+\_\+tcbnu\+\_\+ratio@{tcb\+\_\+tcbnu\+\_\+ratio}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{tcb\+\_\+tcbnu\+\_\+ratio()}{tcb\_tcbnu\_ratio()}}
+{\footnotesize\ttfamily real function nonlinear\+::tcb\+\_\+tcbnu\+\_\+ratio (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fill\+\_\+plintab().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a71f404d2d1de4ad126d2e43eea191621_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_acb781fcdfe31fdfcd54337c5fc827fb2}\label{namespacenonlinear_acb781fcdfe31fdfcd54337c5fc827fb2}} 
+\index{nonlinear@{nonlinear}!w\+\_\+de\+\_\+hm@{w\+\_\+de\+\_\+hm}}
+\index{w\+\_\+de\+\_\+hm@{w\+\_\+de\+\_\+hm}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{w\+\_\+de\+\_\+hm()}{w\_de\_hm()}}
+{\footnotesize\ttfamily real function nonlinear\+::w\+\_\+de\+\_\+hm (\begin{DoxyParamCaption}\item[{real, intent(in)}]{a,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ah().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_acb781fcdfe31fdfcd54337c5fc827fb2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a35d90b214ebbc4ed47ee2a0b00533081}\label{namespacenonlinear_a35d90b214ebbc4ed47ee2a0b00533081}} 
+\index{nonlinear@{nonlinear}!win@{win}}
+\index{win@{win}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily real function nonlinear\+::win (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{rv,  }\item[{real, intent(in)}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References winnfw().
+
+
+
+Referenced by p\+\_\+1h().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a35d90b214ebbc4ed47ee2a0b00533081_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a35d90b214ebbc4ed47ee2a0b00533081_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_ad0e2241407de1974edb07a5990f12ba3}\label{namespacenonlinear_ad0e2241407de1974edb07a5990f12ba3}} 
+\index{nonlinear@{nonlinear}!winnfw@{winnfw}}
+\index{winnfw@{winnfw}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{winnfw()}{winnfw()}}
+{\footnotesize\ttfamily real function nonlinear\+::winnfw (\begin{DoxyParamCaption}\item[{real, intent(in)}]{k,  }\item[{real, intent(in)}]{rv,  }\item[{real, intent(in)}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ci(), mass(), and si().
+
+
+
+Referenced by win().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{namespacenonlinear_ad0e2241407de1974edb07a5990f12ba3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_ad0e2241407de1974edb07a5990f12ba3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_acf30963fec3b82503de7d079f4091461}\label{namespacenonlinear_acf30963fec3b82503de7d079f4091461}} 
+\index{nonlinear@{nonlinear}!wint@{wint}}
+\index{wint@{wint}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{wint()}{wint()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::wint (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structtransfer_1_1matterpowerdata}{matterpowerdata}})}]{C\+A\+M\+B\+\_\+\+Pk,  }\item[{integer, intent(in)}]{itf,  }\item[{real(dl)}]{r,  }\item[{real(dl)}]{sig,  }\item[{real(dl)}]{d1,  }\item[{real(dl)}]{d2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References transfer\+::matterpowerdata\+\_\+k().
+
+
+
+Referenced by nonlinear\+\_\+getnonlinratios().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacenonlinear_acf30963fec3b82503de7d079f4091461_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_acf30963fec3b82503de7d079f4091461_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a96a394ea7d173aec659a73ff09f548c6}\label{namespacenonlinear_a96a394ea7d173aec659a73ff09f548c6}} 
+\index{nonlinear@{nonlinear}!wk\+\_\+tophat@{wk\+\_\+tophat}}
+\index{wk\+\_\+tophat@{wk\+\_\+tophat}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{wk\+\_\+tophat()}{wk\_tophat()}}
+{\footnotesize\ttfamily real function nonlinear\+::wk\+\_\+tophat (\begin{DoxyParamCaption}\item[{real}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by sigint1(), sigint2(), sigma\+\_\+integrand(), and sigma\+\_\+v().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a96a394ea7d173aec659a73ff09f548c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_abd2adda1e3c0e77617e1142893c4aa71}\label{namespacenonlinear_abd2adda1e3c0e77617e1142893c4aa71}} 
+\index{nonlinear@{nonlinear}!write\+\_\+parameters@{write\+\_\+parameters}}
+\index{write\+\_\+parameters@{write\+\_\+parameters}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{write\+\_\+parameters()}{write\_parameters()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::write\+\_\+parameters (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}}), intent(in)}]{lut,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References alpha(), as(), delta\+\_\+c(), delta\+\_\+v(), eta(), fdamp(), ihm, and kstar().
+
+
+
+Referenced by halomod\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_abd2adda1e3c0e77617e1142893c4aa71_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_abd2adda1e3c0e77617e1142893c4aa71_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a316db4addf8f1f544ab3c08ba97fbeb9}\label{namespacenonlinear_a316db4addf8f1f544ab3c08ba97fbeb9}} 
+\index{nonlinear@{nonlinear}!x\+\_\+de@{x\+\_\+de}}
+\index{x\+\_\+de@{x\+\_\+de}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{x\+\_\+de()}{x\_de()}}
+{\footnotesize\ttfamily real function nonlinear\+::x\+\_\+de (\begin{DoxyParamCaption}\item[{real, intent(in)}]{a,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}}), intent(in)}]{cosm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ah(), and hubble2().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a316db4addf8f1f544ab3c08ba97fbeb9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenonlinear_a53b6da6e807b30b0078e77b9900c33b6}\label{namespacenonlinear_a53b6da6e807b30b0078e77b9900c33b6}} 
+\index{nonlinear@{nonlinear}!zcoll\+\_\+bull@{zcoll\+\_\+bull}}
+\index{zcoll\+\_\+bull@{zcoll\+\_\+bull}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{zcoll\+\_\+bull()}{zcoll\_bull()}}
+{\footnotesize\ttfamily subroutine nonlinear\+::zcoll\+\_\+bull (\begin{DoxyParamCaption}\item[{real, intent(in)}]{z,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__cosmology}{hm\+\_\+cosmology}})}]{cosm,  }\item[{type(\mbox{\hyperlink{structnonlinear_1_1hm__tables}{hm\+\_\+tables}})}]{lut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References delta\+\_\+c(), find(), and grow().
+
+
+
+Referenced by conc\+\_\+bull().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a53b6da6e807b30b0078e77b9900c33b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenonlinear_a53b6da6e807b30b0078e77b9900c33b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacenonlinear_a340583ce0b342fc665e8dac4abd41d30}\label{namespacenonlinear_a340583ce0b342fc665e8dac4abd41d30}} 
+\index{nonlinear@{nonlinear}!acur@{acur}}
+\index{acur@{acur}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{acur}{acur}}
+{\footnotesize\ttfamily real(dl) nonlinear\+::acur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by halofit(), and nonlinear\+\_\+getnonlinratios().
+
+\mbox{\Hypertarget{namespacenonlinear_a41cbc8f2a7d3a4a7133a330e7a96f32f}\label{namespacenonlinear_a41cbc8f2a7d3a4a7133a330e7a96f32f}} 
+\index{nonlinear@{nonlinear}!fnu@{fnu}}
+\index{fnu@{fnu}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{fnu}{fnu}}
+{\footnotesize\ttfamily real(dl) nonlinear\+::fnu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by halofit(), and nonlinear\+\_\+getnonlinratios().
+
+\mbox{\Hypertarget{namespacenonlinear_a60a8667a6b76aac6cb917e86e5e813bf}\label{namespacenonlinear_a60a8667a6b76aac6cb917e86e5e813bf}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+bird@{halofit\+\_\+bird}}
+\index{halofit\+\_\+bird@{halofit\+\_\+bird}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+bird}{halofit\_bird}}
+{\footnotesize\ttfamily integer, parameter, public nonlinear\+::halofit\+\_\+bird =2}
+
+
+
+Referenced by halofit().
+
+\mbox{\Hypertarget{namespacenonlinear_a17d0a06b4737dd11deb01679dd462d0d}\label{namespacenonlinear_a17d0a06b4737dd11deb01679dd462d0d}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+default@{halofit\+\_\+default}}
+\index{halofit\+\_\+default@{halofit\+\_\+default}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+default}{halofit\_default}}
+{\footnotesize\ttfamily integer, parameter, public nonlinear\+::halofit\+\_\+default = \mbox{\hyperlink{namespacenonlinear_aac3355efc27ec1212dfc7d494c94b8bd}{halofit\+\_\+takahashi}}}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+readparams(), and nonlinear\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacenonlinear_ac93879b4e408404c04347ff8ba8e170c}\label{namespacenonlinear_ac93879b4e408404c04347ff8ba8e170c}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+halomodel@{halofit\+\_\+halomodel}}
+\index{halofit\+\_\+halomodel@{halofit\+\_\+halomodel}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+halomodel}{halofit\_halomodel}}
+{\footnotesize\ttfamily integer, parameter, public nonlinear\+::halofit\+\_\+halomodel =6}
+
+
+
+Referenced by hmcode(), and nonlinear\+\_\+getnonlinratios().
+
+\mbox{\Hypertarget{namespacenonlinear_a321ebd41ef62b8c5f49c902695c97100}\label{namespacenonlinear_a321ebd41ef62b8c5f49c902695c97100}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+mead@{halofit\+\_\+mead}}
+\index{halofit\+\_\+mead@{halofit\+\_\+mead}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+mead}{halofit\_mead}}
+{\footnotesize\ttfamily integer, parameter, public nonlinear\+::halofit\+\_\+mead =5}
+
+
+
+Referenced by hmcode(), and nonlinear\+\_\+getnonlinratios().
+
+\mbox{\Hypertarget{namespacenonlinear_a7df6fbf986bfffb1410f611a9d9da8d8}\label{namespacenonlinear_a7df6fbf986bfffb1410f611a9d9da8d8}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+original@{halofit\+\_\+original}}
+\index{halofit\+\_\+original@{halofit\+\_\+original}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+original}{halofit\_original}}
+{\footnotesize\ttfamily integer, parameter, public nonlinear\+::halofit\+\_\+original = 1}
+
+
+
+Referenced by halofit().
+
+\mbox{\Hypertarget{namespacenonlinear_af6d944f360abde474ac917e61cc9a10a}\label{namespacenonlinear_af6d944f360abde474ac917e61cc9a10a}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+peacock@{halofit\+\_\+peacock}}
+\index{halofit\+\_\+peacock@{halofit\+\_\+peacock}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+peacock}{halofit\_peacock}}
+{\footnotesize\ttfamily integer, parameter, public nonlinear\+::halofit\+\_\+peacock =3}
+
+
+
+Referenced by halofit().
+
+\mbox{\Hypertarget{namespacenonlinear_aac3355efc27ec1212dfc7d494c94b8bd}\label{namespacenonlinear_aac3355efc27ec1212dfc7d494c94b8bd}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+takahashi@{halofit\+\_\+takahashi}}
+\index{halofit\+\_\+takahashi@{halofit\+\_\+takahashi}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+takahashi}{halofit\_takahashi}}
+{\footnotesize\ttfamily integer, parameter, public nonlinear\+::halofit\+\_\+takahashi =4}
+
+
+
+Referenced by halofit().
+
+\mbox{\Hypertarget{namespacenonlinear_a1f7f92360f1ca05ad5bc378c6f48c4e2}\label{namespacenonlinear_a1f7f92360f1ca05ad5bc378c6f48c4e2}} 
+\index{nonlinear@{nonlinear}!halofit\+\_\+version@{halofit\+\_\+version}}
+\index{halofit\+\_\+version@{halofit\+\_\+version}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{halofit\+\_\+version}{halofit\_version}}
+{\footnotesize\ttfamily integer, public nonlinear\+::halofit\+\_\+version = \mbox{\hyperlink{namespacenonlinear_a17d0a06b4737dd11deb01679dd462d0d}{halofit\+\_\+default}}}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+readparams(), halofit(), hmcode(), nonlinear\+\_\+getnonlinratios(), and nonlinear\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacenonlinear_aaffe0db71a291d9ca3d9e8315757f6c0}\label{namespacenonlinear_aaffe0db71a291d9ca3d9e8315757f6c0}} 
+\index{nonlinear@{nonlinear}!ihm@{ihm}}
+\index{ihm@{ihm}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{ihm}{ihm}}
+{\footnotesize\ttfamily integer nonlinear\+::ihm\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by assign\+\_\+hm\+\_\+cosmology(), fill\+\_\+growtab(), fill\+\_\+plintab(), fill\+\_\+sigtab(), halomod\+\_\+init(), hmcode(), and write\+\_\+parameters().
+
+\mbox{\Hypertarget{namespacenonlinear_a4a5afbc21c01819b53e73cca3ae9c9db}\label{namespacenonlinear_a4a5afbc21c01819b53e73cca3ae9c9db}} 
+\index{nonlinear@{nonlinear}!imead@{imead}}
+\index{imead@{imead}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{imead}{imead}}
+{\footnotesize\ttfamily integer nonlinear\+::imead\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by alpha(), as(), delta\+\_\+c(), delta\+\_\+v(), eta(), fdamp(), hmcode(), kstar(), and p\+\_\+2h().
+
+\mbox{\Hypertarget{namespacenonlinear_a432119e2fd5a90bc8447a4f87c530660}\label{namespacenonlinear_a432119e2fd5a90bc8447a4f87c530660}} 
+\index{nonlinear@{nonlinear}!min\+\_\+kh\+\_\+nonlinear@{min\+\_\+kh\+\_\+nonlinear}}
+\index{min\+\_\+kh\+\_\+nonlinear@{min\+\_\+kh\+\_\+nonlinear}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{min\+\_\+kh\+\_\+nonlinear}{min\_kh\_nonlinear}}
+{\footnotesize\ttfamily real, parameter, public nonlinear\+::min\+\_\+kh\+\_\+nonlinear = 0.\+005}
+
+
+
+Referenced by cambmain\+::makenonlinearsources(), and nonlinear\+\_\+getnonlinratios().
+
+\mbox{\Hypertarget{namespacenonlinear_aabc1c1c2e5484d59aa19897c2312d66e}\label{namespacenonlinear_aabc1c1c2e5484d59aa19897c2312d66e}} 
+\index{nonlinear@{nonlinear}!om\+\_\+m@{om\+\_\+m}}
+\index{om\+\_\+m@{om\+\_\+m}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{om\+\_\+m}{om\_m}}
+{\footnotesize\ttfamily real(dl) nonlinear\+::om\+\_\+m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by halofit(), hubble2(), nonlinear\+\_\+getnonlinratios(), and omega\+\_\+m\+\_\+hm().
+
+\mbox{\Hypertarget{namespacenonlinear_a5fffe9648c0924743701abc9674d3472}\label{namespacenonlinear_a5fffe9648c0924743701abc9674d3472}} 
+\index{nonlinear@{nonlinear}!om\+\_\+v@{om\+\_\+v}}
+\index{om\+\_\+v@{om\+\_\+v}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{om\+\_\+v}{om\_v}}
+{\footnotesize\ttfamily real(dl) nonlinear\+::om\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by halofit(), hubble2(), and nonlinear\+\_\+getnonlinratios().
+
+\mbox{\Hypertarget{namespacenonlinear_a95578ad235632d8fd2cc109867cdf329}\label{namespacenonlinear_a95578ad235632d8fd2cc109867cdf329}} 
+\index{nonlinear@{nonlinear}!omm0@{omm0}}
+\index{omm0@{omm0}!nonlinear@{nonlinear}}
+\subsubsection{\texorpdfstring{omm0}{omm0}}
+{\footnotesize\ttfamily real(dl) nonlinear\+::omm0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nonlinear\+\_\+getnonlinratios().
+

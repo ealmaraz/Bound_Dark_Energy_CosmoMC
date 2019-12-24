@@ -1,0 +1,144 @@
+\hypertarget{Interpolation_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Interpolation.f90 File Reference}
+\label{Interpolation_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Interpolation.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Interpolation.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tinterpolator}{interpolation\+::tinterpolator}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d}{interpolation\+::tinterpolator1d}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tspline1d}{interpolation\+::tspline1d}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tcubicspline}{interpolation\+::tcubicspline}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tregularcubicspline}{interpolation\+::tregularcubicspline}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tlogregularcubicspline}{interpolation\+::tlogregularcubicspline}}
+\item 
+type \mbox{\hyperlink{structinterpolation_1_1tinterpgrid2d}{interpolation\+::tinterpgrid2d}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceinterpolation}{interpolation}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a83d34895f7c29f6feb60dee74108123a}{interpolation\+::tinterpolator\+\_\+firstuse}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a6dbf131728b481585c45c2564ba688b3}{interpolation\+::tinterpolator\+\_\+error}} (this, S, v1, v2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_abbd84288df284345da697e10533c07a7}{interpolation\+::tinterpolator1d\+\_\+firstuse}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ab07350cec2d065eb2972b8dcabc45545}{interpolation\+::tinterpolator1d\+\_\+initinterp}} (this, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a9c0d111d38654ca08fd15e627d8f8ad3}{interpolation\+::tinterpolator1d\+\_\+initforsize}} (this, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a3842ef3937aaef204100599321d0b91f}{interpolation\+::tinterpolator1d\+\_\+clear}} (this)
+\item 
+real(sp\+\_\+acc) function \mbox{\hyperlink{namespaceinterpolation_a4bc299324720bbb5a8bce547f3f10c2e}{interpolation\+::tinterpolator1d\+\_\+value}} (this, x, error)
+\item 
+real(sp\+\_\+acc) function \mbox{\hyperlink{namespaceinterpolation_a8b3767144728c4ff1d5564b16b2b2e97}{interpolation\+::tinterpolator1d\+\_\+intvalue}} (this, x, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a08169c4a9ace8a6318b3853d0bd9c084}{interpolation\+::tinterpolator1d\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2e4b0cd2e1a31f06c7202669b574df13}{interpolation\+::tinterpolator1d\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a54d9bd9ab88b402805329a4dbad1bc3d}{interpolation\+::tspline1d\+\_\+findnext}} (this, x, llo, xlo, xhi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ac80c6bb26b81ce989cad9b77fcbd66ab}{interpolation\+::tspline1d\+\_\+findvalue}} (this, x, llo, xlo, xhi, error)
+\item 
+real(sp\+\_\+acc) function \mbox{\hyperlink{namespaceinterpolation_a7a675d7e22aea0d85c1c2241ee6c221f}{interpolation\+::tspline1d\+\_\+value}} (this, x, error)
+\item 
+real(sp\+\_\+acc) function \mbox{\hyperlink{namespaceinterpolation_aec275a9deb7e4578d9d8c310b0dea093}{interpolation\+::tspline1d\+\_\+derivative}} (this, x, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a1bb0d4fae1b5125618e2e9f67669bd3c}{interpolation\+::tspline1d\+\_\+arrayvalue}} (this, x, y, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aa9eedb8594564e9a0e57ee8a5282837a}{interpolation\+::tspline1d\+\_\+intrangevalue}} (this, xmin, xmax, y, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ab31f5a781a449692250e4a0ab0ec432c}{interpolation\+::tspline1d\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a7f58be276bbe7b10b95a7e156a4bc0b8}{interpolation\+::tcubicspline\+\_\+initforsize}} (this, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a36b9a543d32de4944ae9289358f15a5a}{interpolation\+::tcubicspline\+\_\+init}} (this, Xarr, values, n, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aa6887491230c995c13b123b7847269ec}{interpolation\+::tcubicspline\+\_\+initint}} (this, Xarr, values, n, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a141de3ad802bf42f3810c24e47e31310}{interpolation\+::tcubicspline\+\_\+initinterp}} (this, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a89e495ca87c6f696d6aac646fd227f03}{interpolation\+::tcubicspline\+\_\+initfromfile}} (this, Filename, xcol, ycol)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aef383fa49a233bca20a6cd742319df7e}{interpolation\+::tcubicspline\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a953dc25c7196a60416148edc8944b39e}{interpolation\+::tcubicspline\+\_\+free}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2ffb9d3c161ab80ba29f5256b039ea57}{interpolation\+::tcubicspline\+\_\+findnext}} (this, x, llo, xlo, xhi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_abaeaf4f39b2dbd78b28a5e1802475739}{interpolation\+::tcubicspline\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a45a1312a778961c9e5f843e2602c83ac}{interpolation\+::tcubicspline\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ad48c755482d305cc69ce002d8d57eb5e}{interpolation\+::tregularcubicspline\+\_\+init}} (this, xmin, xmax, n, values, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a771257f70f21fe027a53de95c8e6454d}{interpolation\+::tregularcubicspline\+\_\+initinterp}} (this, End1, End2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a48194743476e43ec9aa03c02aab39655}{interpolation\+::tregularcubicspline\+\_\+findnext}} (this, x, llo, xlo, xhi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a5fa8f1fc11b994b0bae323cbe4bd5512}{interpolation\+::tregularcubicspline\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a387cdc39d5949cc2aa2e5c6f483ea76c}{interpolation\+::tregularcubicspline\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aa2be88d51742c20455f21df95d3cb51d}{interpolation\+::tlogregularcubicspline\+\_\+init}} (this, xmin, xmax, n, values, End1, End2)
+\item 
+real(sp\+\_\+acc) function \mbox{\hyperlink{namespaceinterpolation_a7268d0f57d8b03233c2f2b56ac6fdc52}{interpolation\+::tlogregularcubicspline\+\_\+value}} (this, x, error)
+\item 
+real(sp\+\_\+acc) function \mbox{\hyperlink{namespaceinterpolation_ac23315fe4c5bc33742774f63869508b4}{interpolation\+::tlogregularcubicspline\+\_\+derivative}} (this, x, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a5701eba38ba9b96476493a39580ebe38}{interpolation\+::spline}} (x, y, n, d11, d1n, d2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2864cd829f018329811e906e0b258b6c}{interpolation\+::regular\+\_\+spline}} (delta, y, n, d11, d1n, d2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a7bde4bd21a717432ca0927ec3f2393ee}{interpolation\+::tinterpgrid2d\+\_\+initinterp}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_af4593e1e65b9137fa491cdaf9d0682a8}{interpolation\+::tinterpgrid2d\+\_\+init}} (this, x, y, z)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aba9a8e8e9bf241c6a561b243f3e92620}{interpolation\+::tinterpgrid2d\+\_\+initfrommatrixtextfile}} (this, Filename, colvals, rowvals)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a3420758fce41c1a63122fd3d35b973eb}{interpolation\+::tinterpgrid2d\+\_\+initfrommatrixbinaryfile}} (this, Filename, colvals, rowvals)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_aad92c485265e298041ddb85fdc576ca1}{interpolation\+::tinterpgrid2d\+\_\+initfromfile}} (this, Filename, xcol, ycol, zcol)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a830b760c24924ee524054ca9f712d972}{interpolation\+::tinterpgrid2d\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a05968790c56ace3a6aff6f9b81d35b0c}{interpolation\+::tinterpgrid2d\+\_\+free}} (this)
+\item 
+real(gi) function \mbox{\hyperlink{namespaceinterpolation_a77feb149313f842af954a528b8bff58e}{interpolation\+::tinterpgrid2d\+\_\+value}} (this, x, y, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ad36dce10ba7587405b8862f7bea68d33}{interpolation\+::tinterpgrid2d\+\_\+values}} (this, nip, x, y, z, error)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a44b1a5e85b19c58f04e2f7e3483cbb3f}{interpolation\+::rgbi3p}} (Wk, md, nxd, nyd, xd, yd, zd, nip, xi, yi, zi, ier)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a1e2786e4f0a0a9dd065f757b66de84fd}{interpolation\+::rgsf3p}} (wk, md, nxd, nyd, xd, yd, zd, nxi, xi, nyi, yi, zi, ier)
+\item 
+real(gi) function \mbox{\hyperlink{namespaceinterpolation_a1046109eeab848ab2641b54b30004885}{interpolation\+::z2f}} (xx1, xx2, zz0, zz1)
+\item 
+real(gi) function \mbox{\hyperlink{namespaceinterpolation_aa80e5ef1a8e693b3c094f26f166cebf2}{interpolation\+::z3f}} (xx1, xx2, xx3, zz0, zz1, zz2)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a20aedcecd7b269f068dfe4fcce012458}{interpolation\+::rgpd3p}} (nxd, nyd, xd, yd, zd, pdd)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_a2ddceaba83710295f2263bfbe4aa6924}{interpolation\+::rglctn}} (nxd, nyd, xd, yd, nip, xi, yi, inxi, inyi)
+\item 
+subroutine \mbox{\hyperlink{namespaceinterpolation_ab2d80355a943b73b1de2cef700693500}{interpolation\+::rgplnl}} (nxd, nyd, xd, yd, zd, pdd, nip, xi, yi, inxi, inyi, zi)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{interpolation\+::sp\+\_\+acc}} = K\+I\+ND(1.\+0)
+\item 
+real(sp\+\_\+acc), parameter, public \mbox{\hyperlink{namespaceinterpolation_a3f75fda9aed3d08991097b0d7c8fc70f}{interpolation\+::spline\+\_\+dangle}} =1.e30\+\_\+sp\+\_\+acc
+\item 
+integer, parameter \mbox{\hyperlink{namespaceinterpolation_a7242dea48715e8170bae81efe12c64be}{interpolation\+::gi}} = sp\+\_\+acc
+\item 
+integer, parameter \mbox{\hyperlink{namespaceinterpolation_a49ff5214fde353c8438a404922ce5989}{interpolation\+::interpolation\+\_\+version}} = 1
+\end{DoxyCompactItemize}

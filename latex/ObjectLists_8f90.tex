@@ -1,0 +1,142 @@
+\hypertarget{ObjectLists_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Object\+Lists.f90 File Reference}
+\label{ObjectLists_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Object\+Lists.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Object\+Lists.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1object__pointer}{objectlists\+::object\+\_\+pointer}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1object__array__pointer}{objectlists\+::object\+\_\+array\+\_\+pointer}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tsaveloadstateobject}{objectlists\+::tsaveloadstateobject}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tobjectlist}{objectlists\+::tobjectlist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1townedintrinsiclist}{objectlists\+::townedintrinsiclist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1trealcomparelist}{objectlists\+::trealcomparelist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1treallist}{objectlists\+::treallist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1trealarraylist}{objectlists\+::trealarraylist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tintegerarraylist}{objectlists\+::tintegerarraylist}}
+\item 
+type \mbox{\hyperlink{structobjectlists_1_1tstringlist}{objectlists\+::tstringlist}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceobjectlists}{objectlists}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a48fc8838b5a4a323447fdd309cb70d4c}{objectlists\+::loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a0524c4d9e51cce87cd2864352d116374}{objectlists\+::savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_af7dd3c43a123562bc92cf38d6ed508cd}{objectlists\+::clear}} (this, items\+Only)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ad1d73743c5898bdaac2a79a9ade2342c}{objectlists\+::finalize}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a36abcb049579dcfaee4f3d38cf09b5d1}{objectlists\+::error}} (this, msg)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a36d198e7276f781aed81d70840e2f9da}{objectlists\+::additem}} (this, C, Object)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a20f8947e7e2c99268f61a292e215f144}{objectlists\+::additempointer}} (this, C, Object)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a2487c78e7548dc0d57e860dc447fc9f2}{objectlists\+::addcopy}} (this, C, Object)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a4fc2d0e75594a82db02035609ddab0d5}{objectlists\+::assignpointers}} (this, L2, ixmin, ixmax)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a302ff79b4cac76b93d93d5ab7ea9abc4}{objectlists\+::deltasize}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a3f4c3dd9be50ae77b46cec13a3345fad}{objectlists\+::setcapacity}} (this, C)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a180e000881c5eca28ea4c77daec5d47b}{objectlists\+::freeitem}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a8110526567f8e6cf9fda3be8654005ad}{objectlists\+::deleteitem}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ac82708b7b56f4fca7c7e55d43a84ad84}{objectlists\+::deleterange}} (this, i1, i2)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_aff0d8c1f6bf740fa33ba6c02cca08daf}{objectlists\+::addarray}} (this, P)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_aff0608d072ab891a55072d2afde0b978}{objectlists\+::checkindex}} (this, i)
+\item 
+class($\ast$) function, dimension(\+:), pointer \mbox{\hyperlink{namespaceobjectlists_a72ee9292ce07a71798b7b6ac5b3cb6c3}{objectlists\+::arrayitem}} (this, i)
+\item 
+class($\ast$) function, pointer \mbox{\hyperlink{namespaceobjectlists_aef8a1d27db060a7e7289e5ee3849ce21}{objectlists\+::arrayitemindex}} (this, i, j)
+\item 
+class($\ast$) function, pointer \mbox{\hyperlink{namespaceobjectlists_a9a1de7415648fec93d3d27e8b3ad053f}{objectlists\+::tobjectlist\+\_\+object}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_abbc4a249efcc68f87936eb7e93ecffaf}{objectlists\+::savebinary}} (this, fid)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a68cfe6fa523fb21df53a6f58e5fb498e}{objectlists\+::readbinary}} (this, fid)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a48d7726bdf69ff2b7cb84d89d12af19d}{objectlists\+::thin}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_afbb87b678b2aa36260efbc57bb11a45b}{objectlists\+::swap}} (this, i, j)
+\item 
+recursive subroutine \mbox{\hyperlink{namespaceobjectlists_a663520be1986351d7c16a9fccb40b6e8}{objectlists\+::quicksortarr}} (this, Lin, R, index)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_af5166a7a14ff75eca5eda21a454fe2a2}{objectlists\+::sortarr}} (this, index)
+\item 
+recursive subroutine \mbox{\hyperlink{namespaceobjectlists_a3000970aec60eac0c74b465332a4fca2}{objectlists\+::quicksort}} (this, Lin, R)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ab62cea139392ebee550346a3f36a8448}{objectlists\+::sort}} (this)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a05b2014389dbbc09da541c24912141f8}{objectlists\+::compare}} (this, R1, R2)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_af660367ba45ff04c784f5ea3c01560ea}{objectlists\+::removeduplicates}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a5bd3b270e5c0f08c54a0a72838aa7b95}{objectlists\+::tobjectlist\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a198a78c4eeeccbbfa31216f589beda86}{objectlists\+::tobjectlist\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a7b384ff8ee40c65239ebe5c1a7d239ff}{objectlists\+::townedintrinsiclist\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ab634ab92805c172a136d35becaf7601b}{objectlists\+::townedintrinsiclist\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a8a73104aaeee3be757486f8ed7ecf1af}{objectlists\+::townedintrinsiclist\+\_\+additem}} (this, C, Object)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_ac923fbeb64f1caebb0cd581988e43978}{objectlists\+::comparereal}} (this, R1, R2)
+\item 
+real(list\+\_\+prec) function \mbox{\hyperlink{namespaceobjectlists_a7f2de098afb2605d8dccf08bd7daca10}{objectlists\+::treallist\+\_\+item}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_ae3cae7b25174f6f119f19e9c5f44dc44}{objectlists\+::treallist\+\_\+addarrayitems}} (this, A)
+\item 
+real(kind=list\+\_\+prec) function, dimension(this\%count) \mbox{\hyperlink{namespaceobjectlists_a06b8548c6daa95a52c2c3d2a3fe587dc}{objectlists\+::treallist\+\_\+asarray}} (this)
+\item 
+real(list\+\_\+prec) function, dimension(\+:), pointer \mbox{\hyperlink{namespaceobjectlists_afec6c1eefcdae12eeddeb762eb1e24eb}{objectlists\+::trealarraylist\+\_\+item}} (this, i)
+\item 
+real(list\+\_\+prec) function \mbox{\hyperlink{namespaceobjectlists_a12e74f409aae2d6481803ca8e3348d2f}{objectlists\+::trealarraylist\+\_\+value}} (this, i, j)
+\item 
+integer function, dimension(\+:), pointer \mbox{\hyperlink{namespaceobjectlists_af82a464969f9660d2a7214413b8fe757}{objectlists\+::tintegerarraylist\+\_\+item}} (this, i)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_ab4bb3c50d65c18a798906fa87ad4a651}{objectlists\+::tintegerarraylist\+\_\+value}} (this, i, j)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceobjectlists_ab724d2c89c530b6df64385c55bdc6377}{objectlists\+::tstringlist\+\_\+item}} (this, i)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceobjectlists_a8003d8e93e59241bcea25f30d0b95b5a}{objectlists\+::tstringlist\+\_\+valueof}} (this, key)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a2c19308a10df8614e054244fe735e6d1}{objectlists\+::tstringlist\+\_\+setfromstring}} (this, S, valid\+\_\+chars\+\_\+in)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_adea8776aebb466be94d770772a73f756}{objectlists\+::tstringlist\+\_\+readcolumnsgetarray}} (this, filename, array)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a926298e78fd013f34f503ab38a3bc496}{objectlists\+::tstringlist\+\_\+indexof}} (this, S)
+\item 
+character function \mbox{\hyperlink{namespaceobjectlists_abe1b434a57e0d690b22c8410ca9cfff0}{objectlists\+::tstringlist\+\_\+charat}} (this, i, j)
+\item 
+integer function \mbox{\hyperlink{namespaceobjectlists_a2050ccdefc2f19e1dbc8fac3a91d51d0}{objectlists\+::tstringlist\+\_\+compare}} (this, R1, R2)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a1735569cf51270522157e13dfdcedcc3}{objectlists\+::writeitems}} (this, unit)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a4891ff4be9767fe63e6223924e02c450}{objectlists\+::additems}} (this, List, nodups)
+\item 
+subroutine \mbox{\hyperlink{namespaceobjectlists_a53c9a728110b79f25cc56f9b63554deb}{objectlists\+::tstringlist\+\_\+addfromfile}} (this, fname, nodups)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceobjectlists_a9d176bc6347eefeceba8cb520c6be81c}{objectlists\+::list\+\_\+prec}} = Kind(1.\+0)
+\end{DoxyCompactItemize}

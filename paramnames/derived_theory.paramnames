@@ -1,0 +1,161 @@
+age*          {\rm{Age}}/{\rm{Gyr}}
+zstar*        z_*
+rstar*        r_*
+thetastar*    100\theta_*
+DAstar*       D_{\rm{A}}/{\rm{Gpc}}
+zdrag*        z_{\rm{drag}}
+rdrag*        r_{\rm{drag}}
+kd*           k_{\rm D}
+thetad*       100\theta_{\rm{D}}
+zeq*          z_{\rm{eq}}
+keq*          k_{\rm{eq}}
+thetaeq*      100\theta_{\rm{eq}}
+thetarseq*    100\theta_{\rm{s,eq}}
+rsDv0001*     r_{\rm{drag}}/D_V(0.001)  #erick30.11.19 some extra parameters at selected z's
+Hubble0001*   H(0.001) #now in km/s/Mpc
+DA0001*       D_A(0.001)
+FAP0001*      F_{\rm AP}(0.001)
+rsDv0106*     r_{\rm{drag}}/D_V(0.106)
+Hubble0106*   H(0.106) #now in km/s/Mpc
+DA0106*       D_A(0.106)
+FAP0106*      F_{\rm AP}(0.106)
+rsDv015*      r_{\rm{drag}}/D_V(0.15)
+Hubble015*    H(0.15) #now in km/s/Mpc
+DA015*        D_A(0.15)
+FAP015*       F_{\rm AP}(0.15)
+rsDv02*       r_{\rm{drag}}/D_V(0.2)
+Hubble02*     H(0.2) #now in km/s/Mpc
+DA02*         D_A(0.2)
+FAP02*        F_{\rm AP}(0.2)
+rsDv032*      r_{\rm{drag}}/D_V(0.32)
+Hubble032*    H(0.32) #now in km/s/Mpc
+DA032*        D_A(0.32)
+FAP032*       F_{\rm AP}(0.32)
+rsDv04*       r_{\rm{drag}}/D_V(0.4)
+Hubble04*     H(0.4) #now in km/s/Mpc
+DA04*         D_A(0.4)
+FAP04*        F_{\rm AP}(0.4)
+rsDv05*       r_{\rm{drag}}/D_V(0.5)
+Hubble05*     H(0.5) #now in km/s/Mpc
+DA05*         D_A(0.5)
+FAP05*        F_{\rm AP}(0.5)
+rsDv057*      r_{\rm{drag}}/D_V(0.57)
+Hubble057*    H(0.57) #now in km/s/Mpc
+DA057*        D_A(0.57)
+FAP057*       F_{\rm AP}(0.57)
+rsDv07*       r_{\rm{drag}}/D_V(0.7)
+Hubble07*     H(0.7) #now in km/s/Mpc
+DA07*         D_A(0.7)
+FAP07*        F_{\rm AP}(0.7)
+rsDv08*       r_{\rm{drag}}/D_V(0.8)
+Hubble08*     H(0.8) #now in km/s/Mpc
+DA08*         D_A(0.8)
+FAP08*        F_{\rm AP}(0.8)
+rsDv09*       r_{\rm{drag}}/D_V(0.9)
+Hubble09*     H(0.9) #now in km/s/Mpc
+DA09*         D_A(0.9)
+FAP09*        F_{\rm AP}(0.9)
+rsDv1*        r_{\rm{drag}}/D_V(1)
+Hubble1*      H(1) #now in km/s/Mpc
+DA1*          D_A(1)
+FAP1*         F_{\rm AP}(1)
+rsDv11*       r_{\rm{drag}}/D_V(1.1)
+Hubble11*     H(1.1) #now in km/s/Mpc
+DA11*         D_A(1.1)
+FAP11*        F_{\rm AP}(1.1)
+rsDv12*       r_{\rm{drag}}/D_V(1.2)
+Hubble12*     H(1.2) #now in km/s/Mpc
+DA12*         D_A(1.2)
+FAP12*        F_{\rm AP}(1.2)
+rsDv13*       r_{\rm{drag}}/D_V(1.3)
+Hubble13*     H(1.3) #now in km/s/Mpc
+DA13*         D_A(1.3)
+FAP13*        F_{\rm AP}(1.3)
+rsDv14*       r_{\rm{drag}}/D_V(1.4)
+Hubble14*     H(1.4) #now in km/s/Mpc
+DA14*         D_A(1.4)
+FAP14*        F_{\rm AP}(1.4)
+rsDv15*       r_{\rm{drag}}/D_V(1.5)
+Hubble15*     H(1.5) #now in km/s/Mpc
+DA15*         D_A(1.5)
+FAP15*        F_{\rm AP}(1.5)
+rsDv16*       r_{\rm{drag}}/D_V(1.6)
+Hubble16*     H(1.6) #now in km/s/Mpc
+DA16*         D_A(1.6)
+FAP16*        F_{\rm AP}(1.6)
+rsDv17*       r_{\rm{drag}}/D_V(1.7)
+Hubble17*     H(1.7) #now in km/s/Mpc
+DA17*         D_A(1.7)
+FAP17*        F_{\rm AP}(1.7)
+rsDv18*       r_{\rm{drag}}/D_V(1.8)
+Hubble18*     H(1.8) #now in km/s/Mpc
+DA18*         D_A(1.8)
+FAP18*        F_{\rm AP}(1.8)
+rsDv19*       r_{\rm{drag}}/D_V(1.9)
+Hubble19*     H(1.9) #now in km/s/Mpc
+DA19*         D_A(1.9)
+FAP19*        F_{\rm AP}(1.9)
+rsDv2*        r_{\rm{drag}}/D_V(2)
+Hubble2*      H(2) #now in km/s/Mpc
+DA2*          D_A(2)
+FAP2*         F_{\rm AP}(2)
+rsDv21*       r_{\rm{drag}}/D_V(2.1)
+Hubble21*     H(2.1) #now in km/s/Mpc
+DA21*         D_A(2.1)
+FAP21*        F_{\rm AP}(2.1)
+rsDv22*       r_{\rm{drag}}/D_V(2.2)
+Hubble22*     H(2.2) #now in km/s/Mpc
+DA22*         D_A(2.2)
+FAP22*        F_{\rm AP}(2.2)
+rsDv23*       r_{\rm{drag}}/D_V(2.3)
+Hubble23*     H(2.3) #now in km/s/Mpc
+DA23*         D_A(2.3)
+FAP23*        F_{\rm AP}(2.3)
+rsDv24*       r_{\rm{drag}}/D_V(2.4)
+Hubble24*     H(2.4) #now in km/s/Mpc
+DA24*         D_A(2.4)
+FAP24*        F_{\rm AP}(2.4)
+rsDv25*       r_{\rm{drag}}/D_V(2.5)
+Hubble25*     H(2.5) #now in km/s/Mpc
+DA25*         D_A(2.5)
+FAP25*        F_{\rm AP}(2.5)
+rsDv26*       r_{\rm{drag}}/D_V(2.6)
+Hubble26*     H(2.6) #now in km/s/Mpc
+DA26*         D_A(2.6)
+FAP26*        F_{\rm AP}(2.6)
+rsDv27*       r_{\rm{drag}}/D_V(2.7)
+Hubble27*     H(2.7) #now in km/s/Mpc
+DA27*         D_A(2.7)
+FAP27*        F_{\rm AP}(2.7)
+rsDv28*       r_{\rm{drag}}/D_V(2.8)
+Hubble28*     H(2.8) #now in km/s/Mpc
+DA28*         D_A(2.8)
+FAP28*        F_{\rm AP}(2.8)
+rsDv29*       r_{\rm{drag}}/D_V(2.9)
+Hubble29*     H(2.9) #now in km/s/Mpc
+DA29*         D_A(2.9)
+FAP29*        F_{\rm AP}(2.9)
+rsDv3*        r_{\rm{drag}}/D_V(3)
+Hubble3*      H(3) #now in km/s/Mpc
+DA3*          D_A(3)
+FAP3*         F_{\rm AP}(3)
+rsDv31*       r_{\rm{drag}}/D_V(3.1)
+Hubble31*     H(3.1) #now in km/s/Mpc
+DA31*         D_A(3.1)
+FAP31*        F_{\rm AP}(3.1)
+rsDv32*       r_{\rm{drag}}/D_V(3.2)
+Hubble32*     H(3.2) #now in km/s/Mpc
+DA32*         D_A(3.2)
+FAP32*        F_{\rm AP}(3.2)
+rsDv33*       r_{\rm{drag}}/D_V(3.3)
+Hubble33*     H(3.3) #now in km/s/Mpc
+DA33*         D_A(3.3)
+FAP33*        F_{\rm AP}(3.3)
+rsDv34*       r_{\rm{drag}}/D_V(3.4)
+Hubble34*     H(3.4) #now in km/s/Mpc
+DA34*         D_A(3.4)
+FAP34*        F_{\rm AP}(3.4)
+rsDv35*       r_{\rm{drag}}/D_V(3.5)
+Hubble35*     H(3.5) #now in km/s/Mpc
+DA35*         D_A(3.5)
+FAP35*        F_{\rm AP}(3.5)

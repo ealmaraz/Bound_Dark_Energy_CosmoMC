@@ -1,0 +1,75 @@
+\hypertarget{calclike_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/calclike.f90 File Reference}
+\label{calclike_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/calclike.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/calclike.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1tlikecalculator}{calclike\+::tlikecalculator}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1tgenericlikecalculator}{calclike\+::tgenericlikecalculator}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1ttheorylikecalculator}{calclike\+::ttheorylikecalculator}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1tlikelihooduser}{calclike\+::tlikelihooduser}}
+\item 
+type \mbox{\hyperlink{structcalclike_1_1ttheorylikelihooduser}{calclike\+::ttheorylikelihooduser}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacecalclike}{calclike}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a36076b04960c7a7230a45fc468f9f0d6}{calclike\+::addlike}} (this, Current\+Like, Like\+To\+Add)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_adb9f063355d18b2a50d8e0d3c061324b}{calclike\+::addliketemp}} (this, Current\+Like, Like\+To\+Add)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_ae4302a1d96dcdf7816b3d66125504644}{calclike\+::getloglikebounds}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_ae8f9437d9cf6441647020ac8e419e424}{calclike\+::getlogpriors}} (this, P)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a1a9de6819dc2b41653d5bf9a36bd66a1}{calclike\+::getloglike}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a7f2306f2a9d2d0135d6f4852f6ed3bc2}{calclike\+::getloglikemain}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_af377ac1f0746c42a430094fe73246012}{calclike\+::tlikecalculator\+\_\+readparams}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_adb41feb15d07d744bace1629aea8a5d3}{calclike\+::tlikecalculator\+\_\+testlikelihoodfunction}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a5158b85ddca7d8f1b417a813bb7fe849}{calclike\+::tlikecalculator\+\_\+writeperformancestats}} (this, unit)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a7348b373c8c9138f0c694ad9969fcb66}{calclike\+::tlikecalculator\+\_\+writeparamshumantext}} (this, aunit, P, Log\+Like, weight)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_afd9d4013e29fb891f656598d4b5e1b73}{calclike\+::tlikecalculator\+\_\+writeparamshumantextfile}} (this, fname, P, Log\+Like, weight)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a4be845214aaba0f4348b66c67401f78b}{calclike\+::tlikecalculator\+\_\+writeparampointtextdata}} (this, output\+\_\+root, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_ab9a99016f525f639358a942fb9885cc7}{calclike\+::generic\+\_\+getloglikemain}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_ab9d66863dbce892dbee08483d9cdac50}{calclike\+::theorylike\+\_\+settheoryparams}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a3823367d787d17f15e903222232f4b94}{calclike\+::theorylike\+\_\+setnewtheoryresults}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a141801e2c0e794a0411104bca9bb6809}{calclike\+::theorylike\+\_\+getloglikemain}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_adffdc491632ae303d023f5e1b704eba4}{calclike\+::theorylike\+\_\+checkpriorcuts}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a27e62cb96ad63d0285283d1eb8dcec0c}{calclike\+::theorylike\+\_\+getloglikepost}} (this, Params, do\+\_\+like)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_a81e2854f62abdf354c1f03fc29c05d1c}{calclike\+::theorylike\+\_\+loglikewiththeoryset}} (this, likelihood\+\_\+mask)
+\item 
+logical function \mbox{\hyperlink{namespacecalclike_ae7eb4423ffdbadbf2df406b9d3331346}{calclike\+::theorylike\+\_\+calculaterequiredtheorychanges}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_ab2d52ca5a668e5072ed6d10c161a5e88}{calclike\+::theorylike\+\_\+gettheoryforlike}} (this, Like)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_ab57c11043f079701db0baf858bf6315a}{calclike\+::theorylike\+\_\+gettheoryforimportance}} (this, Params, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_adb244129926744248e4e4f8883384b5c}{calclike\+::theorylike\+\_\+updatetheoryforlikelihoods}} (this, Params)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalclike_adb2986867dcdb441b12b98cdd46cc5b5}{calclike\+::theorylike\+\_\+testlikelihoodfunction}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_a5c185d1a702fe31d3d1204d919b338da}{calclike\+::ttheorylike\+\_\+writeparamshumantext}} (this, aunit, P, Log\+Like, weight)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike_acb1cb4737fc9ec3a805214e87b444b00}{calclike\+::ttheorylike\+\_\+writeparampointtextdata}} (this, output\+\_\+root, Params)
+\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+<map id="plot_directive.plot_directive" name="plot_directive.plot_directive">
+<area shape="rect" id="node2" href="$namespaceplot__directive.html#a978468d13700c2d59e021ffcd98820b5" title="plot_directive.run" alt="" coords="179,279,301,305"/>
+<area shape="rect" id="node3" href="$namespacestringutils.html#a29f32cf04e0c44fc8ee8dfa9819b915d" title="stringutils::join" alt="" coords="785,9,892,36"/>
+<area shape="rect" id="node6" href="$namespaceplot__directive.html#ac5b52bd431613c97ce90c1f63d8ddec6" title="plot_directive.contains\l_doctest" alt="" coords="763,271,915,313"/>
+<area shape="rect" id="node7" href="$namespaceplot__directive.html#a659cae721da23d794cb3967690a166db" title="plot_directive.render\l_figures" alt="" coords="360,162,499,203"/>
+<area shape="rect" id="node12" href="$namespaceplot__directive.html#a572890d21d60caee16537894928e5c31" title="plot_directive.format\l_template" alt="" coords="359,330,499,371"/>
+<area shape="rect" id="node13" href="$namespaceplot__directive.html#aa899adfc2219ac7af0aa9ae176a2c11b" title="plot_directive.unescape\l_doctest" alt="" coords="350,395,509,437"/>
+<area shape="rect" id="node4" href="$namespacestringutils.html#ac5e67eb0a4de77625ac1447804e1f934" title="stringutils::stringtrimmed" alt="" coords="963,9,1128,36"/>
+<area shape="rect" id="node5" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="1176,9,1325,36"/>
+<area shape="rect" id="node8" href="$namespaceplot__directive.html#afda02d52fee93a95c4b928b0d4b250aa" title="plot_directive.split\l_code_at_show" alt="" coords="573,31,699,73"/>
+<area shape="rect" id="node9" href="$namespaceplot__directive.html#a91977c55a2c1fa1266cce25e1e724321" title="plot_directive.out\l_of_date" alt="" coords="575,97,697,138"/>
+<area shape="rect" id="node10" href="$namespaceplot__directive.html#a7577e8f3efd148dc69bb0e39d030c103" title="plot_directive.clear\l_state" alt="" coords="571,162,701,203"/>
+<area shape="rect" id="node11" href="$namespaceplot__directive.html#a469169f4fbfd6b8948d1a02bcd9eb85c" title="plot_directive.run_code" alt="" coords="558,228,714,255"/>
+</map>

@@ -1,0 +1,739 @@
+\hypertarget{namespacerecombination}{}\section{recombination Module Reference}
+\label{namespacerecombination}\index{recombination@{recombination}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structrecombination_1_1recombinationparams}{recombinationparams}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_a30d82e415adca06a256aae1be85e72a1}{recombination\+\_\+readparams}} (R, Ini)
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_aafff8339a994ad18b5b4187d9d4faa40}{recombination\+\_\+setdefparams}} (R)
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_aaaea2371b700336e16f08b64b6dd44d9}{recombination\+\_\+validate}} (R, OK)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a8d7b99ebe97a13f83da41d8d9b8215e2}{recombination\+\_\+tm}} (a)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_ae89b19e4ef4ab84e9724ee4a4d2435fc}{recombination\+\_\+ts}} (a)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a64de24be26a98919cba0095322731263}{recombination\+\_\+xe}} (a)
+\item 
+subroutine, public \mbox{\hyperlink{namespacerecombination_ac2325c42e3b77187a31f6810929de147}{recombination\+\_\+init}} (Recomb, OmegaC, OmegaB, Omegan, Omegav, h0inp, tcmb, yp, nnu)
+\item 
+subroutine \mbox{\hyperlink{namespacerecombination_a7c190d70dfd56d14181b4ae8535dcd4d}{get\+\_\+init}} (z, x\+\_\+\+H0, x\+\_\+\+He0, x0)
+\item 
+subroutine \mbox{\hyperlink{namespacerecombination_a5f644f40f1384d3dd16e675369854f63}{ion}} (Recomb, Ndim, z, Y, f)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a7445052618f5f8ed0d793a58eb66c768}{ddeltaxe\+\_\+dtau}} (a, Delta\+\_\+xe, Delta\+\_\+nH, Delta\+\_\+\+Tm, hdot, kvb)
+\item 
+real(dl) function \mbox{\hyperlink{namespacerecombination_abd7e507e301ec237a76ea22d6a6be0eb}{polevl}} (x, coef, N)
+\item 
+real(dl) function \mbox{\hyperlink{namespacerecombination_aae74849488f7c602dd70b57a9e9782f2}{derivpolevl}} (x, coef, N)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a6456c5ea7f228fa74eba8e54de9eded5}{kappa\+\_\+hh\+\_\+21cm}} (T, deriv)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_ad379abd3309c2fd3f5cacb8b614b80a5}{kappa\+\_\+eh\+\_\+21cm}} (T, deriv)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacerecombination_a27e7c8f022215a5bb27a45d2b5db20bb}{kappa\+\_\+ph\+\_\+21cm}} (T, deriv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a59aa3ea34247a93b4f4c11b5ca93c97c}{zinitial}} = 1e4\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a6c83801bcb6009615d1c1103da95f91f}{zfinal}} =0.\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}} =10000
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a7f3dac9960d3b472a93e5cf800eb1538}{delta\+\_\+z}} = (\mbox{\hyperlink{namespacerecombination_a59aa3ea34247a93b4f4c11b5ca93c97c}{zinitial}}-\/\mbox{\hyperlink{namespacerecombination_a6c83801bcb6009615d1c1103da95f91f}{zfinal}})/Nz
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecombination_a517d5a67e1e61e62f788768cb427edd2}{recfast\+\_\+heswitch\+\_\+default}} = 6
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_ae732fad2453ab4c2e0a7ba4c6e5cca43}{recfast\+\_\+fudge\+\_\+he\+\_\+default}} = 0.\+86\+\_\+dl
+\item 
+logical, parameter \mbox{\hyperlink{namespacerecombination_ab3f90d31e547798b3aa3fc1403d556fb}{recfast\+\_\+hswitch\+\_\+default}} = .true.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a198e64f2c7a763d928e647b4e1de4be9}{recfast\+\_\+fudge\+\_\+default}} = 1.\+14\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_afe0b5ce72921eaef12df437e7c994273}{recfast\+\_\+fudge\+\_\+default2}} = 1.\+105d0 + 0.\+02d0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a3656f16a64eb43f2c0cc9ede42d7739e}{agauss1}} = -\/0.\+14\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_ac630e24e5948bae78946e725278366d0}{agauss2}} = 0.\+079\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_aa4dbcaadd19727bcb40044d8bd9cd923}{zgauss1}} = 7.\+28\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a61e4b85fa7e6dbab34fdcc71cbf2ac51}{zgauss2}} = 6.\+73\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_ab96e636bde8533901e6404afddd90371}{wgauss1}} = 0.\+18\+D0
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_ae8e9ce09a4cbc8282433bb03744dee31}{wgauss2}} = 0.\+33\+D0
+\item 
+character(len= $\ast$), parameter, public \mbox{\hyperlink{namespacerecombination_aaaa9430d72f4f49786d010958342bc72}{recombination\+\_\+name}} = \textquotesingle{}Recfast\+\_\+1.\+5.\+2\textquotesingle{}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) \mbox{\hyperlink{namespacerecombination_ace51a9fec7f3c178e99caf82c7cc6de0}{zrec}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) \mbox{\hyperlink{namespacerecombination_a43d25f6d69d2b60682ef49868e8f70cd}{xrec}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) \mbox{\hyperlink{namespacerecombination_a34b4e0fe310c9f5d1705a2e78983d9fa}{dxrec}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) \mbox{\hyperlink{namespacerecombination_aa13c7a29f1e2c1bb0db8f0f4e6c4cbaa}{tsrec}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) \mbox{\hyperlink{namespacerecombination_a05ee59d76dcf3b0345da845ed7980073}{dtsrec}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) \mbox{\hyperlink{namespacerecombination_a49d87db76377445504ec6505faa4da09}{tmrec}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) \mbox{\hyperlink{namespacerecombination_a56809fd170a698f38efdc76471379237}{dtmrec}}
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacerecombination_a9f9ad56161c0922d8b742775d30db0dd}{do21cm\+\_\+mina}} = 1/(1+900.)
+\item 
+logical, parameter \mbox{\hyperlink{namespacerecombination_ab91e25d9cc8fed5d1aa39540e9f90c59}{evolve\+\_\+ts}} = .false.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_a78245c71ab308bd902e38d4505ff4554}{do21cm\+\_\+minev}} = 1/(1+400.)
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacerecombination_ac87df6d66d9a2c678cf5712166b0307a}{b01}} = 3$\ast$B10
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a9c154008489ae26b92e9e4b41df00e80}{nnow}}
+\item 
+real(dl) \mbox{\hyperlink{namespacerecombination_a0bcf491993bc386ebe7e2f6fafe228a3}{fhe}}
+\item 
+logical, public \mbox{\hyperlink{namespacerecombination_a7789f3edc0804a55e6ad9e9ad4450848}{do21cm}} = .false.
+\item 
+logical, public \mbox{\hyperlink{namespacerecombination_ae0472591a7f5d7f85297b5123245e4a5}{dotmattspin}} = .false.
+\item 
+real(dl), public \mbox{\hyperlink{namespacerecombination_a846415ba803734dc947b1f45e5e7f5ce}{recombination\+\_\+saha\+\_\+z}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacerecombination_af55a05267a423d23ad90deef0980c751}{recombination\+\_\+saha\+\_\+tau}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacerecombination_a7445052618f5f8ed0d793a58eb66c768}\label{namespacerecombination_a7445052618f5f8ed0d793a58eb66c768}} 
+\index{recombination@{recombination}!ddeltaxe\+\_\+dtau@{ddeltaxe\+\_\+dtau}}
+\index{ddeltaxe\+\_\+dtau@{ddeltaxe\+\_\+dtau}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{ddeltaxe\+\_\+dtau()}{ddeltaxe\_dtau()}}
+{\footnotesize\ttfamily real(dl) function, public recombination\+::ddeltaxe\+\_\+dtau (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a,  }\item[{real(dl), intent(in)}]{Delta\+\_\+xe,  }\item[{real(dl), intent(in)}]{Delta\+\_\+nH,  }\item[{real(dl), intent(in)}]{Delta\+\_\+\+Tm,  }\item[{real(dl), intent(in)}]{hdot,  }\item[{real(dl), intent(in)}]{kvb }\end{DoxyParamCaption})}
+
+
+
+References recdata\+::cb1, recdata\+::cdb, recdata\+::ck, recdata\+::cl, recdata\+::cr, dtauda(), fhe, recdata\+::fu, recdata\+::lambda, constants\+::mpc\+\_\+in\+\_\+sec, nnow, recombination\+\_\+tm(), recombination\+\_\+xe(), and recdata\+::tnow.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a7445052618f5f8ed0d793a58eb66c768_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_aae74849488f7c602dd70b57a9e9782f2}\label{namespacerecombination_aae74849488f7c602dd70b57a9e9782f2}} 
+\index{recombination@{recombination}!derivpolevl@{derivpolevl}}
+\index{derivpolevl@{derivpolevl}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{derivpolevl()}{derivpolevl()}}
+{\footnotesize\ttfamily real(dl) function recombination\+::derivpolevl (\begin{DoxyParamCaption}\item[{real(dl)}]{x,  }\item[{real(dl), dimension(n+1)}]{coef,  }\item[{integer}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by kappa\+\_\+eh\+\_\+21cm().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_aae74849488f7c602dd70b57a9e9782f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_a7c190d70dfd56d14181b4ae8535dcd4d}\label{namespacerecombination_a7c190d70dfd56d14181b4ae8535dcd4d}} 
+\index{recombination@{recombination}!get\+\_\+init@{get\+\_\+init}}
+\index{get\+\_\+init@{get\+\_\+init}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{get\+\_\+init()}{get\_init()}}
+{\footnotesize\ttfamily subroutine recombination\+::get\+\_\+init (\begin{DoxyParamCaption}\item[{real(dl)}]{z,  }\item[{real(dl)}]{x\+\_\+\+H0,  }\item[{real(dl)}]{x\+\_\+\+He0,  }\item[{real(dl)}]{x0 }\end{DoxyParamCaption})}
+
+
+
+References recdata\+::cb1, recdata\+::cb1\+\_\+he1, recdata\+::cb1\+\_\+he2, recdata\+::cr, fhe, nnow, and recdata\+::tnow.
+
+
+
+Referenced by recombination\+\_\+init().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a7c190d70dfd56d14181b4ae8535dcd4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_a5f644f40f1384d3dd16e675369854f63}\label{namespacerecombination_a5f644f40f1384d3dd16e675369854f63}} 
+\index{recombination@{recombination}!ion@{ion}}
+\index{ion@{ion}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{ion()}{ion()}}
+{\footnotesize\ttfamily subroutine recombination\+::ion (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structrecombination_1_1recombinationparams}{recombinationparams}})}]{Recomb,  }\item[{integer}]{Ndim,  }\item[{real(dl)}]{z,  }\item[{real(dl), dimension(ndim)}]{Y,  }\item[{real(dl), dimension(ndim)}]{f }\end{DoxyParamCaption})}
+
+
+
+References constants\+::a10, recdata\+::a2p\+\_\+s, recdata\+::a2p\+\_\+t, agauss1, agauss2, recdata\+::bfact, constants\+::c, recdata\+::cdb, recdata\+::cdb\+\_\+he, recdata\+::ck, recdata\+::ck\+\_\+he, recdata\+::cl, recdata\+::cl\+\_\+he, recdata\+::cr, recdata\+::ct, do21cm, do21cm\+\_\+minev, evolve\+\_\+ts, fhe, recdata\+::fu, recdata\+::h\+\_\+frac, constants\+::h\+\_\+p, recdata\+::ho, constants\+::k\+\_\+b, kappa\+\_\+eh\+\_\+21cm(), kappa\+\_\+hh\+\_\+21cm(), recdata\+::l\+\_\+he2st\+\_\+ion, recdata\+::l\+\_\+he\+\_\+2p, recdata\+::l\+\_\+he\+\_\+2pt, recdata\+::l\+\_\+he\+\_\+2st, recdata\+::lambda, recdata\+::lambda\+\_\+he, constants\+::m\+\_\+h, constants\+::mpc\+\_\+in\+\_\+sec, nnow, recdata\+::not4, recdata\+::omegak, recdata\+::omegat, recombination\+\_\+saha\+\_\+z, recdata\+::sigma\+\_\+he\+\_\+2ps, recdata\+::sigma\+\_\+he\+\_\+2pt, constants\+::t\+\_\+21cm, recdata\+::tnow, wgauss1, wgauss2, recdata\+::z\+\_\+eq, zgauss1, and zgauss2.
+
+
+
+Referenced by recombination\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a5f644f40f1384d3dd16e675369854f63_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a5f644f40f1384d3dd16e675369854f63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_ad379abd3309c2fd3f5cacb8b614b80a5}\label{namespacerecombination_ad379abd3309c2fd3f5cacb8b614b80a5}} 
+\index{recombination@{recombination}!kappa\+\_\+eh\+\_\+21cm@{kappa\+\_\+eh\+\_\+21cm}}
+\index{kappa\+\_\+eh\+\_\+21cm@{kappa\+\_\+eh\+\_\+21cm}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{kappa\+\_\+eh\+\_\+21cm()}{kappa\_eh\_21cm()}}
+{\footnotesize\ttfamily real(dl) function, public recombination\+::kappa\+\_\+eh\+\_\+21cm (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{T,  }\item[{logical, intent(in)}]{deriv }\end{DoxyParamCaption})}
+
+
+
+References derivpolevl(), and polevl().
+
+
+
+Referenced by ion(), and recombination\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_ad379abd3309c2fd3f5cacb8b614b80a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_ad379abd3309c2fd3f5cacb8b614b80a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_a6456c5ea7f228fa74eba8e54de9eded5}\label{namespacerecombination_a6456c5ea7f228fa74eba8e54de9eded5}} 
+\index{recombination@{recombination}!kappa\+\_\+hh\+\_\+21cm@{kappa\+\_\+hh\+\_\+21cm}}
+\index{kappa\+\_\+hh\+\_\+21cm@{kappa\+\_\+hh\+\_\+21cm}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{kappa\+\_\+hh\+\_\+21cm()}{kappa\_hh\_21cm()}}
+{\footnotesize\ttfamily real(dl) function, public recombination\+::kappa\+\_\+hh\+\_\+21cm (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{T,  }\item[{logical, intent(in)}]{deriv }\end{DoxyParamCaption})}
+
+
+
+References spline().
+
+
+
+Referenced by ion(), and recombination\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{namespacerecombination_a6456c5ea7f228fa74eba8e54de9eded5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a6456c5ea7f228fa74eba8e54de9eded5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_a27e7c8f022215a5bb27a45d2b5db20bb}\label{namespacerecombination_a27e7c8f022215a5bb27a45d2b5db20bb}} 
+\index{recombination@{recombination}!kappa\+\_\+ph\+\_\+21cm@{kappa\+\_\+ph\+\_\+21cm}}
+\index{kappa\+\_\+ph\+\_\+21cm@{kappa\+\_\+ph\+\_\+21cm}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{kappa\+\_\+ph\+\_\+21cm()}{kappa\_ph\_21cm()}}
+{\footnotesize\ttfamily real(dl) function, public recombination\+::kappa\+\_\+ph\+\_\+21cm (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{T,  }\item[{logical, intent(in)}]{deriv }\end{DoxyParamCaption})}
+
+
+
+References spline().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{namespacerecombination_a27e7c8f022215a5bb27a45d2b5db20bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_abd7e507e301ec237a76ea22d6a6be0eb}\label{namespacerecombination_abd7e507e301ec237a76ea22d6a6be0eb}} 
+\index{recombination@{recombination}!polevl@{polevl}}
+\index{polevl@{polevl}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{polevl()}{polevl()}}
+{\footnotesize\ttfamily real(dl) function recombination\+::polevl (\begin{DoxyParamCaption}\item[{real(dl)}]{x,  }\item[{real(dl), dimension(n+1)}]{coef,  }\item[{integer}]{N }\end{DoxyParamCaption})}
+
+
+
+Referenced by kappa\+\_\+eh\+\_\+21cm().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_abd7e507e301ec237a76ea22d6a6be0eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_ac2325c42e3b77187a31f6810929de147}\label{namespacerecombination_ac2325c42e3b77187a31f6810929de147}} 
+\index{recombination@{recombination}!recombination\+\_\+init@{recombination\+\_\+init}}
+\index{recombination\+\_\+init@{recombination\+\_\+init}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+init()}{recombination\_init()}}
+{\footnotesize\ttfamily subroutine, public recombination\+::recombination\+\_\+init (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structrecombination_1_1recombinationparams}{recombinationparams}})}]{Recomb,  }\item[{real(dl), intent(in)}]{OmegaC,  }\item[{real(dl), intent(in)}]{OmegaB,  }\item[{real(dl), intent(in)}]{Omegan,  }\item[{real(dl), intent(in)}]{Omegav,  }\item[{real(dl), intent(in)}]{h0inp,  }\item[{real(dl)}]{tcmb,  }\item[{real(dl), intent(in)}]{yp,  }\item[{real(dl), intent(in), optional}]{nnu }\end{DoxyParamCaption})}
+
+
+
+References constants\+::a10, constants\+::a\+\_\+rad, recdata\+::bfact, recdata\+::bigh, constants\+::c, recdata\+::cb1, recdata\+::cb1\+\_\+he1, recdata\+::cb1\+\_\+he2, recdata\+::cdb, recdata\+::cdb\+\_\+he, recdata\+::ck, recdata\+::ck\+\_\+he, recdata\+::cl, recdata\+::cl\+\_\+he, constants\+::compton\+\_\+ct, recdata\+::cr, recdata\+::ct, recdata\+::deltab, recdata\+::deltab\+\_\+he, do21cm, do21cm\+\_\+minev, dotmattspin, dtauda(), dtmrec, dtsrec, dverk(), dxrec, evolve\+\_\+ts, fhe, recdata\+::fu, constants\+::g, get\+\_\+init(), recdata\+::h\+\_\+frac, constants\+::h\+\_\+p, recdata\+::ho, ion(), constants\+::k\+\_\+b, kappa\+\_\+eh\+\_\+21cm(), kappa\+\_\+hh\+\_\+21cm(), recdata\+::l\+\_\+h\+\_\+alpha, recdata\+::l\+\_\+h\+\_\+ion, recdata\+::l\+\_\+he1\+\_\+ion, recdata\+::l\+\_\+he2\+\_\+ion, recdata\+::l\+\_\+he\+\_\+2p, recdata\+::l\+\_\+he\+\_\+2s, recdata\+::lalpha, recdata\+::lalpha\+\_\+he, constants\+::line21\+\_\+const, constants\+::m\+\_\+e, constants\+::m\+\_\+h, constants\+::mpc\+\_\+in\+\_\+sec, recdata\+::mu\+\_\+h, recdata\+::mu\+\_\+t, recdata\+::n\+\_\+eq, nnow, recdata\+::not4, nz, recdata\+::omegak, recdata\+::omegat, recombination\+\_\+saha\+\_\+z, spline(), constants\+::t\+\_\+21cm, tmrec, recdata\+::tnow, tsrec, xrec, recdata\+::z\+\_\+eq, zinitial, and zrec.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_ac2325c42e3b77187a31f6810929de147_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_a30d82e415adca06a256aae1be85e72a1}\label{namespacerecombination_a30d82e415adca06a256aae1be85e72a1}} 
+\index{recombination@{recombination}!recombination\+\_\+readparams@{recombination\+\_\+readparams}}
+\index{recombination\+\_\+readparams@{recombination\+\_\+readparams}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+readparams()}{recombination\_readparams()}}
+{\footnotesize\ttfamily subroutine, public recombination\+::recombination\+\_\+readparams (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structrecombination_1_1recombinationparams}{recombinationparams}})}]{R,  }\item[{type(tinifile)}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References agauss1, agauss2, inifile\+::ini\+\_\+read\+\_\+double\+\_\+file(), inifile\+::ini\+\_\+read\+\_\+int\+\_\+file(), inifile\+::ini\+\_\+read\+\_\+logical\+\_\+file(), recfast\+\_\+fudge\+\_\+default, recfast\+\_\+fudge\+\_\+default2, recfast\+\_\+fudge\+\_\+he\+\_\+default, recfast\+\_\+heswitch\+\_\+default, recfast\+\_\+hswitch\+\_\+default, wgauss1, wgauss2, zgauss1, and zgauss2.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a30d82e415adca06a256aae1be85e72a1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_aafff8339a994ad18b5b4187d9d4faa40}\label{namespacerecombination_aafff8339a994ad18b5b4187d9d4faa40}} 
+\index{recombination@{recombination}!recombination\+\_\+setdefparams@{recombination\+\_\+setdefparams}}
+\index{recombination\+\_\+setdefparams@{recombination\+\_\+setdefparams}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+setdefparams()}{recombination\_setdefparams()}}
+{\footnotesize\ttfamily subroutine, public recombination\+::recombination\+\_\+setdefparams (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structrecombination_1_1recombinationparams}{recombinationparams}})}]{R }\end{DoxyParamCaption})}
+
+
+
+References recfast\+\_\+fudge\+\_\+default, recfast\+\_\+fudge\+\_\+default2, recfast\+\_\+fudge\+\_\+he\+\_\+default, recfast\+\_\+heswitch\+\_\+default, and recfast\+\_\+hswitch\+\_\+default.
+
+
+
+Referenced by camb\+::camb\+\_\+setdefparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_aafff8339a994ad18b5b4187d9d4faa40_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_a8d7b99ebe97a13f83da41d8d9b8215e2}\label{namespacerecombination_a8d7b99ebe97a13f83da41d8d9b8215e2}} 
+\index{recombination@{recombination}!recombination\+\_\+tm@{recombination\+\_\+tm}}
+\index{recombination\+\_\+tm@{recombination\+\_\+tm}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+tm()}{recombination\_tm()}}
+{\footnotesize\ttfamily real(dl) function, public recombination\+::recombination\+\_\+tm (\begin{DoxyParamCaption}\item[{real(dl)}]{a }\end{DoxyParamCaption})}
+
+
+
+References delta\+\_\+z, dotmattspin, dtmrec, nz, tmrec, recdata\+::tnow, zinitial, and zrec.
+
+
+
+Referenced by ddeltaxe\+\_\+dtau().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a8d7b99ebe97a13f83da41d8d9b8215e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_ae89b19e4ef4ab84e9724ee4a4d2435fc}\label{namespacerecombination_ae89b19e4ef4ab84e9724ee4a4d2435fc}} 
+\index{recombination@{recombination}!recombination\+\_\+ts@{recombination\+\_\+ts}}
+\index{recombination\+\_\+ts@{recombination\+\_\+ts}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+ts()}{recombination\_ts()}}
+{\footnotesize\ttfamily real(dl) function, public recombination\+::recombination\+\_\+ts (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})}
+
+
+
+References delta\+\_\+z, dtsrec, nz, tsrec, zinitial, and zrec.
+
+\mbox{\Hypertarget{namespacerecombination_aaaea2371b700336e16f08b64b6dd44d9}\label{namespacerecombination_aaaea2371b700336e16f08b64b6dd44d9}} 
+\index{recombination@{recombination}!recombination\+\_\+validate@{recombination\+\_\+validate}}
+\index{recombination\+\_\+validate@{recombination\+\_\+validate}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+validate()}{recombination\_validate()}}
+{\footnotesize\ttfamily subroutine, public recombination\+::recombination\+\_\+validate (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structrecombination_1_1recombinationparams}{recombinationparams}}), intent(in)}]{R,  }\item[{logical, intent(inout)}]{OK }\end{DoxyParamCaption})}
+
+
+
+Referenced by camb\+::camb\+\_\+validateparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_aaaea2371b700336e16f08b64b6dd44d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerecombination_a64de24be26a98919cba0095322731263}\label{namespacerecombination_a64de24be26a98919cba0095322731263}} 
+\index{recombination@{recombination}!recombination\+\_\+xe@{recombination\+\_\+xe}}
+\index{recombination\+\_\+xe@{recombination\+\_\+xe}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+xe()}{recombination\_xe()}}
+{\footnotesize\ttfamily real(dl) function, public recombination\+::recombination\+\_\+xe (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})}
+
+
+
+References delta\+\_\+z, dxrec, nz, xrec, zinitial, and zrec.
+
+
+
+Referenced by ddeltaxe\+\_\+dtau().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerecombination_a64de24be26a98919cba0095322731263_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacerecombination_a3656f16a64eb43f2c0cc9ede42d7739e}\label{namespacerecombination_a3656f16a64eb43f2c0cc9ede42d7739e}} 
+\index{recombination@{recombination}!agauss1@{agauss1}}
+\index{agauss1@{agauss1}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{agauss1}{agauss1}}
+{\footnotesize\ttfamily real(dl) recombination\+::agauss1 = -\/0.\+14\+D0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacerecombination_ac630e24e5948bae78946e725278366d0}\label{namespacerecombination_ac630e24e5948bae78946e725278366d0}} 
+\index{recombination@{recombination}!agauss2@{agauss2}}
+\index{agauss2@{agauss2}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{agauss2}{agauss2}}
+{\footnotesize\ttfamily real(dl) recombination\+::agauss2 = 0.\+079\+D0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacerecombination_ac87df6d66d9a2c678cf5712166b0307a}\label{namespacerecombination_ac87df6d66d9a2c678cf5712166b0307a}} 
+\index{recombination@{recombination}!b01@{b01}}
+\index{b01@{b01}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{b01}{b01}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::b01 = 3$\ast$B10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacerecombination_a7f3dac9960d3b472a93e5cf800eb1538}\label{namespacerecombination_a7f3dac9960d3b472a93e5cf800eb1538}} 
+\index{recombination@{recombination}!delta\+\_\+z@{delta\+\_\+z}}
+\index{delta\+\_\+z@{delta\+\_\+z}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{delta\+\_\+z}{delta\_z}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::delta\+\_\+z = (\mbox{\hyperlink{namespacerecombination_a59aa3ea34247a93b4f4c11b5ca93c97c}{zinitial}}-\/\mbox{\hyperlink{namespacerecombination_a6c83801bcb6009615d1c1103da95f91f}{zfinal}})/Nz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+tm(), recombination\+\_\+ts(), and recombination\+\_\+xe().
+
+\mbox{\Hypertarget{namespacerecombination_a7789f3edc0804a55e6ad9e9ad4450848}\label{namespacerecombination_a7789f3edc0804a55e6ad9e9ad4450848}} 
+\index{recombination@{recombination}!do21cm@{do21cm}}
+\index{do21cm@{do21cm}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{do21cm}{do21cm}}
+{\footnotesize\ttfamily logical, public recombination\+::do21cm = .false.}
+
+
+
+Referenced by ion(), and recombination\+\_\+init().
+
+\mbox{\Hypertarget{namespacerecombination_a9f9ad56161c0922d8b742775d30db0dd}\label{namespacerecombination_a9f9ad56161c0922d8b742775d30db0dd}} 
+\index{recombination@{recombination}!do21cm\+\_\+mina@{do21cm\+\_\+mina}}
+\index{do21cm\+\_\+mina@{do21cm\+\_\+mina}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{do21cm\+\_\+mina}{do21cm\_mina}}
+{\footnotesize\ttfamily real(dl), parameter, public recombination\+::do21cm\+\_\+mina = 1/(1+900.)}
+
+\mbox{\Hypertarget{namespacerecombination_a78245c71ab308bd902e38d4505ff4554}\label{namespacerecombination_a78245c71ab308bd902e38d4505ff4554}} 
+\index{recombination@{recombination}!do21cm\+\_\+minev@{do21cm\+\_\+minev}}
+\index{do21cm\+\_\+minev@{do21cm\+\_\+minev}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{do21cm\+\_\+minev}{do21cm\_minev}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::do21cm\+\_\+minev = 1/(1+400.)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+init().
+
+\mbox{\Hypertarget{namespacerecombination_ae0472591a7f5d7f85297b5123245e4a5}\label{namespacerecombination_ae0472591a7f5d7f85297b5123245e4a5}} 
+\index{recombination@{recombination}!dotmattspin@{dotmattspin}}
+\index{dotmattspin@{dotmattspin}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{dotmattspin}{dotmattspin}}
+{\footnotesize\ttfamily logical, public recombination\+::dotmattspin = .false.}
+
+
+
+Referenced by recombination\+\_\+init(), and recombination\+\_\+tm().
+
+\mbox{\Hypertarget{namespacerecombination_a56809fd170a698f38efdc76471379237}\label{namespacerecombination_a56809fd170a698f38efdc76471379237}} 
+\index{recombination@{recombination}!dtmrec@{dtmrec}}
+\index{dtmrec@{dtmrec}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{dtmrec}{dtmrec}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) recombination\+::dtmrec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), and recombination\+\_\+tm().
+
+\mbox{\Hypertarget{namespacerecombination_a05ee59d76dcf3b0345da845ed7980073}\label{namespacerecombination_a05ee59d76dcf3b0345da845ed7980073}} 
+\index{recombination@{recombination}!dtsrec@{dtsrec}}
+\index{dtsrec@{dtsrec}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{dtsrec}{dtsrec}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) recombination\+::dtsrec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), and recombination\+\_\+ts().
+
+\mbox{\Hypertarget{namespacerecombination_a34b4e0fe310c9f5d1705a2e78983d9fa}\label{namespacerecombination_a34b4e0fe310c9f5d1705a2e78983d9fa}} 
+\index{recombination@{recombination}!dxrec@{dxrec}}
+\index{dxrec@{dxrec}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{dxrec}{dxrec}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) recombination\+::dxrec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), and recombination\+\_\+xe().
+
+\mbox{\Hypertarget{namespacerecombination_ab91e25d9cc8fed5d1aa39540e9f90c59}\label{namespacerecombination_ab91e25d9cc8fed5d1aa39540e9f90c59}} 
+\index{recombination@{recombination}!evolve\+\_\+ts@{evolve\+\_\+ts}}
+\index{evolve\+\_\+ts@{evolve\+\_\+ts}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{evolve\+\_\+ts}{evolve\_ts}}
+{\footnotesize\ttfamily logical, parameter recombination\+::evolve\+\_\+ts = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+init().
+
+\mbox{\Hypertarget{namespacerecombination_a0bcf491993bc386ebe7e2f6fafe228a3}\label{namespacerecombination_a0bcf491993bc386ebe7e2f6fafe228a3}} 
+\index{recombination@{recombination}!fhe@{fhe}}
+\index{fhe@{fhe}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{fhe}{fhe}}
+{\footnotesize\ttfamily real(dl) recombination\+::fhe\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ddeltaxe\+\_\+dtau(), get\+\_\+init(), ion(), and recombination\+\_\+init().
+
+\mbox{\Hypertarget{namespacerecombination_a9c154008489ae26b92e9e4b41df00e80}\label{namespacerecombination_a9c154008489ae26b92e9e4b41df00e80}} 
+\index{recombination@{recombination}!nnow@{nnow}}
+\index{nnow@{nnow}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{nnow}{nnow}}
+{\footnotesize\ttfamily real(dl) recombination\+::nnow\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ddeltaxe\+\_\+dtau(), get\+\_\+init(), ion(), and recombination\+\_\+init().
+
+\mbox{\Hypertarget{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}\label{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}} 
+\index{recombination@{recombination}!nz@{nz}}
+\index{nz@{nz}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{nz}{nz}}
+{\footnotesize\ttfamily integer, parameter recombination\+::nz =10000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), recombination\+\_\+tm(), recombination\+\_\+ts(), and recombination\+\_\+xe().
+
+\mbox{\Hypertarget{namespacerecombination_a198e64f2c7a763d928e647b4e1de4be9}\label{namespacerecombination_a198e64f2c7a763d928e647b4e1de4be9}} 
+\index{recombination@{recombination}!recfast\+\_\+fudge\+\_\+default@{recfast\+\_\+fudge\+\_\+default}}
+\index{recfast\+\_\+fudge\+\_\+default@{recfast\+\_\+fudge\+\_\+default}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recfast\+\_\+fudge\+\_\+default}{recfast\_fudge\_default}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::recfast\+\_\+fudge\+\_\+default = 1.\+14\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+readparams(), and recombination\+\_\+setdefparams().
+
+\mbox{\Hypertarget{namespacerecombination_afe0b5ce72921eaef12df437e7c994273}\label{namespacerecombination_afe0b5ce72921eaef12df437e7c994273}} 
+\index{recombination@{recombination}!recfast\+\_\+fudge\+\_\+default2@{recfast\+\_\+fudge\+\_\+default2}}
+\index{recfast\+\_\+fudge\+\_\+default2@{recfast\+\_\+fudge\+\_\+default2}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recfast\+\_\+fudge\+\_\+default2}{recfast\_fudge\_default2}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::recfast\+\_\+fudge\+\_\+default2 = 1.\+105d0 + 0.\+02d0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+readparams(), and recombination\+\_\+setdefparams().
+
+\mbox{\Hypertarget{namespacerecombination_ae732fad2453ab4c2e0a7ba4c6e5cca43}\label{namespacerecombination_ae732fad2453ab4c2e0a7ba4c6e5cca43}} 
+\index{recombination@{recombination}!recfast\+\_\+fudge\+\_\+he\+\_\+default@{recfast\+\_\+fudge\+\_\+he\+\_\+default}}
+\index{recfast\+\_\+fudge\+\_\+he\+\_\+default@{recfast\+\_\+fudge\+\_\+he\+\_\+default}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recfast\+\_\+fudge\+\_\+he\+\_\+default}{recfast\_fudge\_he\_default}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::recfast\+\_\+fudge\+\_\+he\+\_\+default = 0.\+86\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+readparams(), and recombination\+\_\+setdefparams().
+
+\mbox{\Hypertarget{namespacerecombination_a517d5a67e1e61e62f788768cb427edd2}\label{namespacerecombination_a517d5a67e1e61e62f788768cb427edd2}} 
+\index{recombination@{recombination}!recfast\+\_\+heswitch\+\_\+default@{recfast\+\_\+heswitch\+\_\+default}}
+\index{recfast\+\_\+heswitch\+\_\+default@{recfast\+\_\+heswitch\+\_\+default}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recfast\+\_\+heswitch\+\_\+default}{recfast\_heswitch\_default}}
+{\footnotesize\ttfamily integer, parameter recombination\+::recfast\+\_\+heswitch\+\_\+default = 6\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+readparams(), and recombination\+\_\+setdefparams().
+
+\mbox{\Hypertarget{namespacerecombination_ab3f90d31e547798b3aa3fc1403d556fb}\label{namespacerecombination_ab3f90d31e547798b3aa3fc1403d556fb}} 
+\index{recombination@{recombination}!recfast\+\_\+hswitch\+\_\+default@{recfast\+\_\+hswitch\+\_\+default}}
+\index{recfast\+\_\+hswitch\+\_\+default@{recfast\+\_\+hswitch\+\_\+default}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recfast\+\_\+hswitch\+\_\+default}{recfast\_hswitch\_default}}
+{\footnotesize\ttfamily logical, parameter recombination\+::recfast\+\_\+hswitch\+\_\+default = .true.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+readparams(), and recombination\+\_\+setdefparams().
+
+\mbox{\Hypertarget{namespacerecombination_aaaa9430d72f4f49786d010958342bc72}\label{namespacerecombination_aaaa9430d72f4f49786d010958342bc72}} 
+\index{recombination@{recombination}!recombination\+\_\+name@{recombination\+\_\+name}}
+\index{recombination\+\_\+name@{recombination\+\_\+name}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+name}{recombination\_name}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter, public recombination\+::recombination\+\_\+name = \textquotesingle{}Recfast\+\_\+1.\+5.\+2\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacerecombination_af55a05267a423d23ad90deef0980c751}\label{namespacerecombination_af55a05267a423d23ad90deef0980c751}} 
+\index{recombination@{recombination}!recombination\+\_\+saha\+\_\+tau@{recombination\+\_\+saha\+\_\+tau}}
+\index{recombination\+\_\+saha\+\_\+tau@{recombination\+\_\+saha\+\_\+tau}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+saha\+\_\+tau}{recombination\_saha\_tau}}
+{\footnotesize\ttfamily real(dl), public recombination\+::recombination\+\_\+saha\+\_\+tau}
+
+\mbox{\Hypertarget{namespacerecombination_a846415ba803734dc947b1f45e5e7f5ce}\label{namespacerecombination_a846415ba803734dc947b1f45e5e7f5ce}} 
+\index{recombination@{recombination}!recombination\+\_\+saha\+\_\+z@{recombination\+\_\+saha\+\_\+z}}
+\index{recombination\+\_\+saha\+\_\+z@{recombination\+\_\+saha\+\_\+z}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{recombination\+\_\+saha\+\_\+z}{recombination\_saha\_z}}
+{\footnotesize\ttfamily real(dl), public recombination\+::recombination\+\_\+saha\+\_\+z}
+
+
+
+Referenced by ion(), and recombination\+\_\+init().
+
+\mbox{\Hypertarget{namespacerecombination_a49d87db76377445504ec6505faa4da09}\label{namespacerecombination_a49d87db76377445504ec6505faa4da09}} 
+\index{recombination@{recombination}!tmrec@{tmrec}}
+\index{tmrec@{tmrec}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{tmrec}{tmrec}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) recombination\+::tmrec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), and recombination\+\_\+tm().
+
+\mbox{\Hypertarget{namespacerecombination_aa13c7a29f1e2c1bb0db8f0f4e6c4cbaa}\label{namespacerecombination_aa13c7a29f1e2c1bb0db8f0f4e6c4cbaa}} 
+\index{recombination@{recombination}!tsrec@{tsrec}}
+\index{tsrec@{tsrec}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{tsrec}{tsrec}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) recombination\+::tsrec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), and recombination\+\_\+ts().
+
+\mbox{\Hypertarget{namespacerecombination_ab96e636bde8533901e6404afddd90371}\label{namespacerecombination_ab96e636bde8533901e6404afddd90371}} 
+\index{recombination@{recombination}!wgauss1@{wgauss1}}
+\index{wgauss1@{wgauss1}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{wgauss1}{wgauss1}}
+{\footnotesize\ttfamily real(dl) recombination\+::wgauss1 = 0.\+18\+D0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacerecombination_ae8e9ce09a4cbc8282433bb03744dee31}\label{namespacerecombination_ae8e9ce09a4cbc8282433bb03744dee31}} 
+\index{recombination@{recombination}!wgauss2@{wgauss2}}
+\index{wgauss2@{wgauss2}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{wgauss2}{wgauss2}}
+{\footnotesize\ttfamily real(dl) recombination\+::wgauss2 = 0.\+33\+D0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacerecombination_a43d25f6d69d2b60682ef49868e8f70cd}\label{namespacerecombination_a43d25f6d69d2b60682ef49868e8f70cd}} 
+\index{recombination@{recombination}!xrec@{xrec}}
+\index{xrec@{xrec}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{xrec}{xrec}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) recombination\+::xrec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), and recombination\+\_\+xe().
+
+\mbox{\Hypertarget{namespacerecombination_a6c83801bcb6009615d1c1103da95f91f}\label{namespacerecombination_a6c83801bcb6009615d1c1103da95f91f}} 
+\index{recombination@{recombination}!zfinal@{zfinal}}
+\index{zfinal@{zfinal}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{zfinal}{zfinal}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::zfinal =0.\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacerecombination_aa4dbcaadd19727bcb40044d8bd9cd923}\label{namespacerecombination_aa4dbcaadd19727bcb40044d8bd9cd923}} 
+\index{recombination@{recombination}!zgauss1@{zgauss1}}
+\index{zgauss1@{zgauss1}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{zgauss1}{zgauss1}}
+{\footnotesize\ttfamily real(dl) recombination\+::zgauss1 = 7.\+28\+D0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacerecombination_a61e4b85fa7e6dbab34fdcc71cbf2ac51}\label{namespacerecombination_a61e4b85fa7e6dbab34fdcc71cbf2ac51}} 
+\index{recombination@{recombination}!zgauss2@{zgauss2}}
+\index{zgauss2@{zgauss2}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{zgauss2}{zgauss2}}
+{\footnotesize\ttfamily real(dl) recombination\+::zgauss2 = 6.\+73\+D0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by ion(), and recombination\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacerecombination_a59aa3ea34247a93b4f4c11b5ca93c97c}\label{namespacerecombination_a59aa3ea34247a93b4f4c11b5ca93c97c}} 
+\index{recombination@{recombination}!zinitial@{zinitial}}
+\index{zinitial@{zinitial}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{zinitial}{zinitial}}
+{\footnotesize\ttfamily real(dl), parameter recombination\+::zinitial = 1e4\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), recombination\+\_\+tm(), recombination\+\_\+ts(), and recombination\+\_\+xe().
+
+\mbox{\Hypertarget{namespacerecombination_ace51a9fec7f3c178e99caf82c7cc6de0}\label{namespacerecombination_ace51a9fec7f3c178e99caf82c7cc6de0}} 
+\index{recombination@{recombination}!zrec@{zrec}}
+\index{zrec@{zrec}!recombination@{recombination}}
+\subsubsection{\texorpdfstring{zrec}{zrec}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacerecombination_a2ebf98b22953bfe18fb372dd8e330d3e}{nz}}) recombination\+::zrec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by recombination\+\_\+init(), recombination\+\_\+tm(), recombination\+\_\+ts(), and recombination\+\_\+xe().
+

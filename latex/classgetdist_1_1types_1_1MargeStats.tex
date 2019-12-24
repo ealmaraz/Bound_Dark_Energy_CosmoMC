@@ -1,0 +1,256 @@
+\hypertarget{classgetdist_1_1types_1_1MargeStats}{}\section{getdist.\+types.\+Marge\+Stats Class Reference}
+\label{classgetdist_1_1types_1_1MargeStats}\index{getdist.\+types.\+Marge\+Stats@{getdist.\+types.\+Marge\+Stats}}
+
+
+Inheritance diagram for getdist.\+types.\+Marge\+Stats\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classgetdist_1_1types_1_1MargeStats__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+types.\+Marge\+Stats\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classgetdist_1_1types_1_1MargeStats__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_a9192b3334c2fc85bbe5fec3ca93af501}{load\+From\+File}} (self, filename)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_a2ddab13aed8fe2159f0a4d742bdad5c9}{header\+Line}} (self, inc\+\_\+limits=False)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_ae9efeba91d3389c8a961b100fda0ec1c}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_aaab0b35dae558f300d311c2baaf1237c}{add\+Best\+Fit}} (self, bf)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_a08ede992eb83354249dfd689e1f3d9bf}{limit\+Text}} (self, limit)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_a739268ba287cfaad79b4ba5039e832e8}{get\+Column\+Labels}} (self, limit=2)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_af205f6fbc53eabcc4c0138def3b93d30}{tex\+Values}} (self, formatter, p, limit=2, ref\+Results=None, shift\+Sigma\+\_\+indep=False, shift\+Sigma\+\_\+subset=False)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_ad142a853feed3abbaf5cf0091738cd25}{limits}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_aa7e7220cfe462787b27c03ccad196465}{has\+Best\+Fit}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_aaaff41d01ed24c08ade7120b76cfa48c}{log\+Like}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1types_1_1MargeStats_ab9f94797de11f4e1b82446417f86c114}{names}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Stores marginalized 1D parameter statistics, including mean, variance and confidence limits,
+inheriting from :class:`ParamResults`. 
+
+Values are stored as attributes of the :class:`~.paramnames.ParamInfo` objects stored in self.names.
+Use *par= margeStats.parWithName('xxx')* to get the :class:`~.paramnames.ParamInfo` for parameter *xxx*; 
+Values stored are:
+
+- *par.mean*: parameter mean
+- *par.err*: standard deviation
+- *limits*: list of :class:`~.types.ParamLimit` objects for the stored number of marginalized limits
+ 
+For example to get the first and second lower limits (default 68% and 95%) for parameter *xxx*::
+
+     print(margeStats.names.parWithName('xxx').limits[0].lower)
+     print(margeStats.names.parWithName('xxx').limits[1].lower)
+     
+See  :class:`~.types.ParamLimit` for details of limits.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_ae9efeba91d3389c8a961b100fda0ec1c}\label{classgetdist_1_1types_1_1MargeStats_ae9efeba91d3389c8a961b100fda0ec1c}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Marge\+Stats.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Marge\+Stats.\+header\+Line(), stringutils.\+join(), getdist.\+types.\+Marge\+Stats.\+limits, paramnames\+::tbaseparamnames.\+name, iniobjects\+::tnamevalue.\+name, baseparameters\+::tlinearcombination.\+name, inifile\+::tnamevalue.\+name, getdist.\+paramnames.\+Param\+Info.\+name, generaltypes\+::tdatalikelihood.\+name, jla\+::supernova.\+name, snls\+::supernova.\+name, paramgrid.\+batchjob.\+job\+Item.\+name, jla\+::supernova\+\_\+absdist.\+name, snls\+::supernova\+\_\+absdist.\+name, getdist.\+paramnames.\+Param\+List.\+name(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+names, and getdist.\+paramnames.\+Param\+List.\+names.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1MargeStats_ae9efeba91d3389c8a961b100fda0ec1c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_aaab0b35dae558f300d311c2baaf1237c}\label{classgetdist_1_1types_1_1MargeStats_aaab0b35dae558f300d311c2baaf1237c}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!add\+Best\+Fit@{add\+Best\+Fit}}
+\index{add\+Best\+Fit@{add\+Best\+Fit}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{add\+Best\+Fit()}{addBestFit()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Marge\+Stats.\+add\+Best\+Fit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{bf }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Marge\+Stats.\+has\+Best\+Fit.
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_a739268ba287cfaad79b4ba5039e832e8}\label{classgetdist_1_1types_1_1MargeStats_a739268ba287cfaad79b4ba5039e832e8}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!get\+Column\+Labels@{get\+Column\+Labels}}
+\index{get\+Column\+Labels@{get\+Column\+Labels}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{get\+Column\+Labels()}{getColumnLabels()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Marge\+Stats.\+get\+Column\+Labels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{limit = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Marge\+Stats.\+has\+Best\+Fit, and getdist.\+types.\+Marge\+Stats.\+limit\+Text().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1MargeStats_a739268ba287cfaad79b4ba5039e832e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_a2ddab13aed8fe2159f0a4d742bdad5c9}\label{classgetdist_1_1types_1_1MargeStats_a2ddab13aed8fe2159f0a4d742bdad5c9}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!header\+Line@{header\+Line}}
+\index{header\+Line@{header\+Line}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{header\+Line()}{headerLine()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Marge\+Stats.\+header\+Line (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{inc\+\_\+limits = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Marge\+Stats.\+limits, and getdist.\+paramnames.\+Param\+List.\+par\+Format().
+
+
+
+Referenced by getdist.\+types.\+Marge\+Stats.\+\_\+\+\_\+str\+\_\+\+\_\+(), and getdist.\+types.\+Like\+Stats.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1MargeStats_a2ddab13aed8fe2159f0a4d742bdad5c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1MargeStats_a2ddab13aed8fe2159f0a4d742bdad5c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_a08ede992eb83354249dfd689e1f3d9bf}\label{classgetdist_1_1types_1_1MargeStats_a08ede992eb83354249dfd689e1f3d9bf}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!limit\+Text@{limit\+Text}}
+\index{limit\+Text@{limit\+Text}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{limit\+Text()}{limitText()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Marge\+Stats.\+limit\+Text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{limit }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Marge\+Stats.\+limits.
+
+
+
+Referenced by getdist.\+types.\+Marge\+Stats.\+get\+Column\+Labels().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1MargeStats_a08ede992eb83354249dfd689e1f3d9bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_a9192b3334c2fc85bbe5fec3ca93af501}\label{classgetdist_1_1types_1_1MargeStats_a9192b3334c2fc85bbe5fec3ca93af501}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Marge\+Stats.\+load\+From\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load from a plain text file
+
+:param filename: file to load from
+\end{DoxyVerb}
+ 
+
+References getdist.\+paramnames.\+Param\+List.\+file\+List().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1MargeStats_a9192b3334c2fc85bbe5fec3ca93af501_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_af205f6fbc53eabcc4c0138def3b93d30}\label{classgetdist_1_1types_1_1MargeStats_af205f6fbc53eabcc4c0138def3b93d30}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!tex\+Values@{tex\+Values}}
+\index{tex\+Values@{tex\+Values}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{tex\+Values()}{texValues()}}
+{\footnotesize\ttfamily def getdist.\+types.\+Marge\+Stats.\+tex\+Values (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{formatter,  }\item[{}]{p,  }\item[{}]{limit = {\ttfamily 2},  }\item[{}]{ref\+Results = {\ttfamily None},  }\item[{}]{shift\+Sigma\+\_\+indep = {\ttfamily False},  }\item[{}]{shift\+Sigma\+\_\+subset = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+types.\+Marge\+Stats.\+has\+Best\+Fit, and getdist.\+paramnames.\+Param\+List.\+par\+With\+Name().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1types_1_1MargeStats_af205f6fbc53eabcc4c0138def3b93d30_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_aa7e7220cfe462787b27c03ccad196465}\label{classgetdist_1_1types_1_1MargeStats_aa7e7220cfe462787b27c03ccad196465}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!has\+Best\+Fit@{has\+Best\+Fit}}
+\index{has\+Best\+Fit@{has\+Best\+Fit}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{has\+Best\+Fit}{hasBestFit}}
+{\footnotesize\ttfamily getdist.\+types.\+Marge\+Stats.\+has\+Best\+Fit}
+
+
+
+Referenced by getdist.\+types.\+Marge\+Stats.\+add\+Best\+Fit(), getdist.\+types.\+Marge\+Stats.\+get\+Column\+Labels(), and getdist.\+types.\+Marge\+Stats.\+tex\+Values().
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_ad142a853feed3abbaf5cf0091738cd25}\label{classgetdist_1_1types_1_1MargeStats_ad142a853feed3abbaf5cf0091738cd25}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!limits@{limits}}
+\index{limits@{limits}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{limits}{limits}}
+{\footnotesize\ttfamily getdist.\+types.\+Marge\+Stats.\+limits}
+
+
+
+Referenced by getdist.\+types.\+Marge\+Stats.\+\_\+\+\_\+str\+\_\+\+\_\+(), getdist.\+types.\+Marge\+Stats.\+header\+Line(), and getdist.\+types.\+Marge\+Stats.\+limit\+Text().
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_aaaff41d01ed24c08ade7120b76cfa48c}\label{classgetdist_1_1types_1_1MargeStats_aaaff41d01ed24c08ade7120b76cfa48c}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!log\+Like@{log\+Like}}
+\index{log\+Like@{log\+Like}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{log\+Like}{logLike}}
+{\footnotesize\ttfamily getdist.\+types.\+Marge\+Stats.\+log\+Like}
+
+\mbox{\Hypertarget{classgetdist_1_1types_1_1MargeStats_ab9f94797de11f4e1b82446417f86c114}\label{classgetdist_1_1types_1_1MargeStats_ab9f94797de11f4e1b82446417f86c114}} 
+\index{getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}!names@{names}}
+\index{names@{names}!getdist\+::types\+::\+Marge\+Stats@{getdist\+::types\+::\+Marge\+Stats}}
+\subsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily getdist.\+types.\+Marge\+Stats.\+names}
+
+
+
+Referenced by paramgrid.\+batchjob.\+data\+Set.\+add(), paramgrid.\+batchjob.\+data\+Set.\+has\+All(), paramgrid.\+batchjob.\+data\+Set.\+has\+Name(), paramgrid.\+batchjob.\+data\+Set.\+names\+Replacing(), and paramgrid.\+batchjob.\+data\+Set.\+tag\+Replacing().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{types_8py}{types.\+py}}\end{DoxyCompactItemize}

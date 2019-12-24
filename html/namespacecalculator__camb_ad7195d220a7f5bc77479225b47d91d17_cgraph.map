@@ -1,0 +1,32 @@
+<map id="calculator_camb::cambcalc_getnewpowerdata" name="calculator_camb::cambcalc_getnewpowerdata">
+<area shape="rect" id="node2" href="$namespacecamb.html#a9fb2095034057d44dc9526dd02d60064" title="camb::camb_transferstopowers" alt="" coords="235,309,440,336"/>
+<area shape="rect" id="node3" href="$namespaceinitialpower.html#aa7485ddfdf405ed8912c8070fef8af62" title="initialpower::initializepowers" alt="" coords="488,208,672,235"/>
+<area shape="rect" id="node4" href="$namespacecambmain.html#a15c0f01f07762c709f8f718935153d7a" title="cambmain::cltransfertocl" alt="" coords="497,259,663,285"/>
+<area shape="rect" id="node20" href="$namespacelensing.html#a71d315283bcce7fb9626733365bf43e6" title="lensing::lens_cls" alt="" coords="769,487,887,513"/>
+<area shape="rect" id="node30" href="$namespacetransfer.html#a94b4673ba4b74ac5aef785afde714446" title="transfer::transfer\l_get_sigmas" alt="" coords="521,513,639,554"/>
+<area shape="rect" id="node5" href="$namespacecambmain.html#ad3f7f4af84395bc4648bcc82e81e8861" title="cambmain::calclimberscalcls" alt="" coords="1009,259,1199,285"/>
+<area shape="rect" id="node7" href="$namespacecambmain.html#a8b2cc98e7553a77d720caca21f5ae8e5" title="cambmain::calcscalcls" alt="" coords="1027,309,1181,336"/>
+<area shape="rect" id="node8" href="$namespacecambmain.html#a709092859c794b6298b580be81ff9a90" title="cambmain::calcveccls" alt="" coords="752,360,904,387"/>
+<area shape="rect" id="node9" href="$namespacecambmain.html#a5fb4d38dca7390cd662572152b12f7d0" title="cambmain::getinitpowerarrayvec" alt="" coords="723,107,933,133"/>
+<area shape="rect" id="node10" href="$namespacecambmain.html#a412610e13dd6e264ce9d9ac33e0fbc1f" title="cambmain::calctenscls" alt="" coords="750,5,906,32"/>
+<area shape="rect" id="node11" href="$namespacecambmain.html#af4005843871d59b0973861e895fdb0d3" title="cambmain::getinitpowerarraytens" alt="" coords="721,208,935,235"/>
+<area shape="rect" id="node13" href="$namespacemodeldata.html#a3b4fcde7e9343acbea6dd3d7b52aba10" title="modeldata::init_cls" alt="" coords="763,56,893,83"/>
+<area shape="rect" id="node15" href="$namespacecambmain.html#a411e6e866cbb05f2ba3f7164f8e04a67" title="cambmain::interpolatecls" alt="" coords="745,411,911,437"/>
+<area shape="rect" id="node19" href="$namespacemodeldata.html#aec1c8c9bdd2a65d1f5eec6cb91f7afa1" title="modeldata::normalizeclsatl" alt="" coords="739,157,917,184"/>
+<area shape="rect" id="node6" href="$namespaceinitialpower.html#a2263ec918226f30880a9efbedf684be8" title="initialpower::scalarpower" alt="" coords="1280,233,1445,260"/>
+<area shape="rect" id="node12" href="$namespaceinitialpower.html#aa1fdc1f3bcc69e61d7f690fa3ffd7f02" title="initialpower::tensorpower" alt="" coords="1021,208,1187,235"/>
+<area shape="rect" id="node14" href="$namespacemodeldata.html#a031eb48cced394c893960d706797a651" title="modeldata::checkloadedhighltemplate" alt="" coords="984,56,1224,83"/>
+<area shape="rect" id="node16" href="$namespacelvalues.html#a0aa80e0b1f26674e19df96ec0d9c199e" title="lvalues::interpolateclarrtemplated" alt="" coords="997,411,1211,437"/>
+<area shape="rect" id="node17" href="$namespacelvalues.html#a62105cb97d67654d96481cbb8fe54240" title="lvalues::interpolateclarr" alt="" coords="1285,411,1441,437"/>
+<area shape="rect" id="node18" href="$subroutines_8f90.html#af4fbf8a987590628c9a9d08152ce9e08" title="spline" alt="" coords="1560,563,1616,589"/>
+<area shape="rect" id="node21" href="$namespacelvalues.html#aae4ab5512d16abd3d2f2857fe806e012" title="lvalues::initlval" alt="" coords="1050,613,1158,640"/>
+<area shape="rect" id="node22" href="$namespacelensing.html#a18ba748aa475681b240cdd9be79dd809" title="lensing::corrfuncfullsky" alt="" coords="1026,512,1182,539"/>
+<area shape="rect" id="node25" href="$namespacelensing.html#aa3cc70dd58b493d3192e97f675ffa909" title="lensing::corrfuncflatsky" alt="" coords="1025,563,1183,589"/>
+<area shape="rect" id="node29" href="$namespacelensing.html#a68242ee3fa839802f6aed94e9f8dcf73" title="lensing::badharmonic" alt="" coords="1031,461,1177,488"/>
+<area shape="rect" id="node23" href="$namespacelensing.html#ae3afbc47d14796e30a26538f38a726dd" title="lensing::corrfuncfullskyimpl" alt="" coords="1273,563,1453,589"/>
+<area shape="rect" id="node24" href="$namespacemodelparams.html#a2abd5cb7bfc9c34a736d91ed5863552d" title="modelparams::gettesttime" alt="" coords="1501,512,1675,539"/>
+<area shape="rect" id="node26" href="$namespacelensing.html#a208c6bffe402d39685fb2f4509de310c" title="lensing::getbessels" alt="" coords="1295,613,1430,640"/>
+<area shape="rect" id="node27" href="$namespacelensing.html#a8fca1155759235e997ecc5ebcb8273bc" title="lensing::bessj0" alt="" coords="1533,664,1643,691"/>
+<area shape="rect" id="node28" href="$namespacelensing.html#a53ac785c7d5c53f22122c476b62c4368" title="lensing::bessj" alt="" coords="1537,613,1639,640"/>
+<area shape="rect" id="node31" href="$namespacetransfer.html#a0b068265a029b16713e45ff26d8e6794" title="transfer::transfer\l_get_sigmar" alt="" coords="769,538,887,579"/>
+</map>

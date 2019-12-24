@@ -1,0 +1,6 @@
+<map id="iniobjects::ini_open" name="iniobjects::ini_open">
+<area shape="rect" id="node2" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="188,5,337,32"/>
+<area shape="rect" id="node3" href="$namespacefileutils.html#ad8e0926f0aaad2fd9464ad5e4bc01db0" title="fileutils::error" alt="" coords="214,56,311,83"/>
+<area shape="rect" id="node5" href="$namespacestringutils.html#a83f80ac2eecd8ff5e8fd18faba396ec9" title="stringutils::stringstarts" alt="" coords="187,107,338,133"/>
+<area shape="rect" id="node4" href="$namespacempiutils.html#a23720e4e8b635dab4b67172618aa77e5" title="mpiutils::mpistop" alt="" coords="387,56,509,83"/>
+</map>

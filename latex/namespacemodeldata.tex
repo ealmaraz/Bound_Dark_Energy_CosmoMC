@@ -1,0 +1,629 @@
+\hypertarget{namespacemodeldata}{}\section{modeldata Module Reference}
+\label{namespacemodeldata}\index{modeldata@{modeldata}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}}
+\item 
+type \mbox{\hyperlink{structmodeldata_1_1limberrec}{limberrec}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_aafb7870d44b0d4146bad72673d70223f}{init\+\_\+cltransfer}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_af9818c2b8e3f5e17f6d1a309726fc12e}{init\+\_\+limber}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a2d6ecb98a3edf71d3e3ed3ee1ffb82d1}{free\+\_\+cltransfer}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a89ab0d30547c35685982ecf01d7145bd}{free\+\_\+limber}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a031eb48cced394c893960d706797a651}{checkloadedhighltemplate}}
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a3b4fcde7e9343acbea6dd3d7b52aba10}{init\+\_\+cls}}
+\item 
+integer function \mbox{\hyperlink{namespacemodeldata_abab5acd24b50e4d884e84682fed17a52}{open\+\_\+file\+\_\+header}} (filename, Col1, Columns, n)
+\item 
+character(len=5) function \mbox{\hyperlink{namespacemodeldata_af3439e8b84f5875f131343636aa8adee}{scalar\+\_\+fieldname}} (i)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_ace30b2a5cf368aaadfbdaf70dcc20a9e}{output\+\_\+cl\+\_\+files}} (Scal\+File, Scal\+Cov\+File, Tens\+File, Tot\+File, Lens\+File, Lens\+Tot\+File, factor)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a3db0a7cfe521f110aeef7aaa900d1843}{output\+\_\+lens\+\_\+pot\+\_\+files}} (Lens\+Pot\+File, factor)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a307b673f582637ddd1d7c8557429e040}{output\+\_\+veccl\+\_\+files}} (Vec\+File, factor)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_aec1c8c9bdd2a65d1f5eec6cb91f7afa1}{normalizeclsatl}} (lnorm)
+\item 
+subroutine \mbox{\hyperlink{namespacemodeldata_a4a66d258c52f2b7639e92ce04f7047ff}{modeldata\+\_\+free}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}}), target, save \mbox{\hyperlink{namespacemodeldata_a34bd8af8076e850aa1bd0bd9979be120}{ctransscal}}
+\item 
+type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}}), target, save \mbox{\hyperlink{namespacemodeldata_a432da70b3966012f72663b1b37c5f44d}{ctranstens}}
+\item 
+type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}}), target, save \mbox{\hyperlink{namespacemodeldata_ad30179531817ef1d8f3c57eeb179702d}{ctransvec}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_ab144c0dde977b1695db87bc0a2eb3906}{c\+\_\+temp}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a1697c6436c81028fc5378aa20c691bc6}{c\+\_\+e}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a3b2071eab09222beb5e8e06ccd8764f3}{c\+\_\+cross}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_ae74d57bf66536040e60bd4e100a29a78}{c\+\_\+phi}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a55f3705dd9a17416caa44b692f8bd38c}{c\+\_\+phitemp}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a0b2ffa13b78be0e1097e0696f61b3d67}{c\+\_\+phie}} =6
+\item 
+integer \mbox{\hyperlink{namespacemodeldata_a775752af289f0f86e09da60b795fd542}{c\+\_\+last}} = C\+\_\+\+PhiE
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a0852164e9866929946aab4fdf78ca2b2}{ct\+\_\+temp}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a5fa8e9929dddc8461255d21037ce5817}{ct\+\_\+e}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_ae2b16c12d10fc3ad1bf9b8bcda35fa19}{ct\+\_\+b}} = 3
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a76668d6bad37db06c7b9a47cdeba14dc}{ct\+\_\+cross}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}} = 12
+\item 
+character(len=\mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}}), dimension(\mbox{\hyperlink{namespacemodeldata_a0b2ffa13b78be0e1097e0696f61b3d67}{c\+\_\+phie}}), parameter \mbox{\hyperlink{namespacemodeldata_a5d4df179847dfc001c062789b178f4d1}{c\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}TE\textquotesingle{},\textquotesingle{}PP\textquotesingle{},\textquotesingle{}TP\textquotesingle{},\textquotesingle{}EP\textquotesingle{}\mbox{]}
+\item 
+character(len=\mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}}), dimension(\mbox{\hyperlink{namespacemodeldata_a76668d6bad37db06c7b9a47cdeba14dc}{ct\+\_\+cross}}), parameter \mbox{\hyperlink{namespacemodeldata_add55f08ccdcc65479fca4cd2858b420d}{ct\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}BB\textquotesingle{},\textquotesingle{}TE\textquotesingle{}\mbox{]}
+\item 
+character(len=\mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}}), dimension(7), parameter \mbox{\hyperlink{namespacemodeldata_ac4a0361c6d9a7692c9cbf7a08dc43e49}{lens\+\_\+pot\+\_\+name\+\_\+tags}} = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}BB\textquotesingle{},\textquotesingle{}TE\textquotesingle{},\textquotesingle{}PP\textquotesingle{},\textquotesingle{}TP\textquotesingle{},\textquotesingle{}EP\textquotesingle{}\mbox{]}
+\item 
+logical \mbox{\hyperlink{namespacemodeldata_a446d6a37d3ee5445c94a5f0d5470021a}{has\+\_\+cl\+\_\+2d\+\_\+array}} = .false.
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_a1d7527074ae8035793a2d9cf5cb4a8e8}{cl\+\_\+scalar}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_a3108cab8cb9fec5823d887825efd266d}{cl\+\_\+tensor}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_ab8016bbfb187a558b12d8a9c17f6b85c}{cl\+\_\+vector}}
+\item 
+real(dl), dimension(\+:,\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_a24816a1c9914f5b5567b61ed37aa320b}{cl\+\_\+scalar\+\_\+array}}
+\item 
+integer \mbox{\hyperlink{namespacemodeldata_a538b61c12ebffc4e237d03392898a395}{lmax\+\_\+lensed}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacemodeldata_aa6168a25119bd0a5064f367267954562}{cl\+\_\+lensed}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemodeldata_a031eb48cced394c893960d706797a651}\label{namespacemodeldata_a031eb48cced394c893960d706797a651}} 
+\index{modeldata@{modeldata}!checkloadedhighltemplate@{checkloadedhighltemplate}}
+\index{checkloadedhighltemplate@{checkloadedhighltemplate}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{checkloadedhighltemplate()}{checkloadedhighltemplate()}}
+{\footnotesize\ttfamily subroutine modeldata\+::checkloadedhighltemplate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References c\+\_\+cross, c\+\_\+e, c\+\_\+phi, c\+\_\+temp, modelparams\+::fileio\+\_\+unit, modelparams\+::highl\+\_\+cl\+\_\+template, modelparams\+::highl\+\_\+unlensed\+\_\+cl\+\_\+template, modelparams\+::lmax\+\_\+extrap\+\_\+highl, and modelparams\+::lmin.
+
+
+
+Referenced by init\+\_\+cls().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a031eb48cced394c893960d706797a651_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_a2d6ecb98a3edf71d3e3ed3ee1ffb82d1}\label{namespacemodeldata_a2d6ecb98a3edf71d3e3ed3ee1ffb82d1}} 
+\index{modeldata@{modeldata}!free\+\_\+cltransfer@{free\+\_\+cltransfer}}
+\index{free\+\_\+cltransfer@{free\+\_\+cltransfer}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{free\+\_\+cltransfer()}{free\_cltransfer()}}
+{\footnotesize\ttfamily subroutine modeldata\+::free\+\_\+cltransfer (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}})}]{C\+Trans }\end{DoxyParamCaption})}
+
+
+
+References free\+\_\+limber().
+
+
+
+Referenced by camb\+::camb\+\_\+freecambdata(), camb\+::camb\+\_\+gettransfers(), and modeldata\+\_\+free().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a2d6ecb98a3edf71d3e3ed3ee1ffb82d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a2d6ecb98a3edf71d3e3ed3ee1ffb82d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_a89ab0d30547c35685982ecf01d7145bd}\label{namespacemodeldata_a89ab0d30547c35685982ecf01d7145bd}} 
+\index{modeldata@{modeldata}!free\+\_\+limber@{free\+\_\+limber}}
+\index{free\+\_\+limber@{free\+\_\+limber}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{free\+\_\+limber()}{free\_limber()}}
+{\footnotesize\ttfamily subroutine modeldata\+::free\+\_\+limber (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}})}]{C\+Trans }\end{DoxyParamCaption})}
+
+
+
+Referenced by free\+\_\+cltransfer().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a89ab0d30547c35685982ecf01d7145bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_a3b4fcde7e9343acbea6dd3d7b52aba10}\label{namespacemodeldata_a3b4fcde7e9343acbea6dd3d7b52aba10}} 
+\index{modeldata@{modeldata}!init\+\_\+cls@{init\+\_\+cls}}
+\index{init\+\_\+cls@{init\+\_\+cls}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{init\+\_\+cls()}{init\_cls()}}
+{\footnotesize\ttfamily subroutine modeldata\+::init\+\_\+cls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References c\+\_\+last, c\+\_\+temp, checkloadedhighltemplate(), cl\+\_\+scalar, cl\+\_\+scalar\+\_\+array, cl\+\_\+tensor, cl\+\_\+vector, modelparams\+::cp, ct\+\_\+cross, ct\+\_\+temp, has\+\_\+cl\+\_\+2d\+\_\+array, modelparams\+::lmin, and modelparams\+::num\+\_\+redshiftwindows.
+
+
+
+Referenced by cambmain\+::cltransfertocl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a3b4fcde7e9343acbea6dd3d7b52aba10_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a3b4fcde7e9343acbea6dd3d7b52aba10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_aafb7870d44b0d4146bad72673d70223f}\label{namespacemodeldata_aafb7870d44b0d4146bad72673d70223f}} 
+\index{modeldata@{modeldata}!init\+\_\+cltransfer@{init\+\_\+cltransfer}}
+\index{init\+\_\+cltransfer@{init\+\_\+cltransfer}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{init\+\_\+cltransfer()}{init\_cltransfer()}}
+{\footnotesize\ttfamily subroutine modeldata\+::init\+\_\+cltransfer (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}})}]{C\+Trans }\end{DoxyParamCaption})}
+
+
+
+Referenced by cambmain\+::setkvaluesforint().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_aafb7870d44b0d4146bad72673d70223f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_af9818c2b8e3f5e17f6d1a309726fc12e}\label{namespacemodeldata_af9818c2b8e3f5e17f6d1a309726fc12e}} 
+\index{modeldata@{modeldata}!init\+\_\+limber@{init\+\_\+limber}}
+\index{init\+\_\+limber@{init\+\_\+limber}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{init\+\_\+limber()}{init\_limber()}}
+{\footnotesize\ttfamily subroutine modeldata\+::init\+\_\+limber (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}})}]{C\+Trans }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::limber\+\_\+phiphi, and modelparams\+::num\+\_\+redshiftwindows.
+
+
+
+Referenced by cambmain\+::getlimbertransfers().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_af9818c2b8e3f5e17f6d1a309726fc12e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_a4a66d258c52f2b7639e92ce04f7047ff}\label{namespacemodeldata_a4a66d258c52f2b7639e92ce04f7047ff}} 
+\index{modeldata@{modeldata}!modeldata\+\_\+free@{modeldata\+\_\+free}}
+\index{modeldata\+\_\+free@{modeldata\+\_\+free}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{modeldata\+\_\+free()}{modeldata\_free()}}
+{\footnotesize\ttfamily subroutine modeldata\+::modeldata\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References cl\+\_\+lensed, cl\+\_\+scalar, cl\+\_\+scalar\+\_\+array, cl\+\_\+tensor, cl\+\_\+vector, ctransscal, ctranstens, ctransvec, and free\+\_\+cltransfer().
+
+
+
+Referenced by camb\+::camb\+\_\+cleanup().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a4a66d258c52f2b7639e92ce04f7047ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_a4a66d258c52f2b7639e92ce04f7047ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_aec1c8c9bdd2a65d1f5eec6cb91f7afa1}\label{namespacemodeldata_aec1c8c9bdd2a65d1f5eec6cb91f7afa1}} 
+\index{modeldata@{modeldata}!normalizeclsatl@{normalizeclsatl}}
+\index{normalizeclsatl@{normalizeclsatl}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{normalizeclsatl()}{normalizeclsatl()}}
+{\footnotesize\ttfamily subroutine modeldata\+::normalizeclsatl (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lnorm }\end{DoxyParamCaption})}
+
+
+
+References c\+\_\+cross, c\+\_\+temp, cl\+\_\+scalar, cl\+\_\+tensor, modelparams\+::cp, ct\+\_\+cross, ct\+\_\+temp, and modelparams\+::lmin.
+
+
+
+Referenced by cambmain\+::cltransfertocl().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_aec1c8c9bdd2a65d1f5eec6cb91f7afa1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_abab5acd24b50e4d884e84682fed17a52}\label{namespacemodeldata_abab5acd24b50e4d884e84682fed17a52}} 
+\index{modeldata@{modeldata}!open\+\_\+file\+\_\+header@{open\+\_\+file\+\_\+header}}
+\index{open\+\_\+file\+\_\+header@{open\+\_\+file\+\_\+header}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{open\+\_\+file\+\_\+header()}{open\_file\_header()}}
+{\footnotesize\ttfamily integer function modeldata\+::open\+\_\+file\+\_\+header (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{filename,  }\item[{character(len=$\ast$), intent(in)}]{Col1,  }\item[{character(len=\mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}}), dimension(\+:), intent(in)}]{Columns,  }\item[{integer, intent(in), optional}]{n }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::output\+\_\+file\+\_\+headers.
+
+
+
+Referenced by output\+\_\+cl\+\_\+files(), output\+\_\+lens\+\_\+pot\+\_\+files(), output\+\_\+veccl\+\_\+files(), transfer\+::transfer\+\_\+savematterpower(), and transfer\+::transfer\+\_\+savetofiles().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacemodeldata_abab5acd24b50e4d884e84682fed17a52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_ace30b2a5cf368aaadfbdaf70dcc20a9e}\label{namespacemodeldata_ace30b2a5cf368aaadfbdaf70dcc20a9e}} 
+\index{modeldata@{modeldata}!output\+\_\+cl\+\_\+files@{output\+\_\+cl\+\_\+files}}
+\index{output\+\_\+cl\+\_\+files@{output\+\_\+cl\+\_\+files}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{output\+\_\+cl\+\_\+files()}{output\_cl\_files()}}
+{\footnotesize\ttfamily subroutine modeldata\+::output\+\_\+cl\+\_\+files (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{Scal\+File,  }\item[{character(len=$\ast$)}]{Scal\+Cov\+File,  }\item[{character(len=$\ast$)}]{Tens\+File,  }\item[{character(len=$\ast$)}]{Tot\+File,  }\item[{character(len=$\ast$)}]{Lens\+File,  }\item[{character(len=$\ast$)}]{Lens\+Tot\+File,  }\item[{real(dl), intent(in), optional}]{factor }\end{DoxyParamCaption})}
+
+
+
+References c\+\_\+cross, c\+\_\+e, c\+\_\+last, c\+\_\+name\+\_\+tags, c\+\_\+phitemp, c\+\_\+temp, cl\+\_\+lensed, cl\+\_\+scalar, cl\+\_\+scalar\+\_\+array, cl\+\_\+tensor, modelparams\+::cp, ct\+\_\+b, ct\+\_\+cross, ct\+\_\+name\+\_\+tags, ct\+\_\+temp, ctransscal, has\+\_\+cl\+\_\+2d\+\_\+array, lmax\+\_\+lensed, modelparams\+::lmin, open\+\_\+file\+\_\+header(), and scalar\+\_\+fieldname().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_ace30b2a5cf368aaadfbdaf70dcc20a9e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_a3db0a7cfe521f110aeef7aaa900d1843}\label{namespacemodeldata_a3db0a7cfe521f110aeef7aaa900d1843}} 
+\index{modeldata@{modeldata}!output\+\_\+lens\+\_\+pot\+\_\+files@{output\+\_\+lens\+\_\+pot\+\_\+files}}
+\index{output\+\_\+lens\+\_\+pot\+\_\+files@{output\+\_\+lens\+\_\+pot\+\_\+files}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{output\+\_\+lens\+\_\+pot\+\_\+files()}{output\_lens\_pot\_files()}}
+{\footnotesize\ttfamily subroutine modeldata\+::output\+\_\+lens\+\_\+pot\+\_\+files (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{Lens\+Pot\+File,  }\item[{real(dl), intent(in), optional}]{factor }\end{DoxyParamCaption})}
+
+
+
+References c\+\_\+cross, c\+\_\+e, c\+\_\+phi, c\+\_\+temp, cl\+\_\+scalar, cl\+\_\+tensor, modelparams\+::cp, ct\+\_\+b, ct\+\_\+cross, ct\+\_\+e, ct\+\_\+temp, lens\+\_\+pot\+\_\+name\+\_\+tags, modelparams\+::lmin, and open\+\_\+file\+\_\+header().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacemodeldata_a3db0a7cfe521f110aeef7aaa900d1843_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_a307b673f582637ddd1d7c8557429e040}\label{namespacemodeldata_a307b673f582637ddd1d7c8557429e040}} 
+\index{modeldata@{modeldata}!output\+\_\+veccl\+\_\+files@{output\+\_\+veccl\+\_\+files}}
+\index{output\+\_\+veccl\+\_\+files@{output\+\_\+veccl\+\_\+files}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{output\+\_\+veccl\+\_\+files()}{output\_veccl\_files()}}
+{\footnotesize\ttfamily subroutine modeldata\+::output\+\_\+veccl\+\_\+files (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{Vec\+File,  }\item[{real(dl), intent(in), optional}]{factor }\end{DoxyParamCaption})}
+
+
+
+References cl\+\_\+vector, modelparams\+::cp, ct\+\_\+cross, ct\+\_\+name\+\_\+tags, ct\+\_\+temp, modelparams\+::lmin, and open\+\_\+file\+\_\+header().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacemodeldata_a307b673f582637ddd1d7c8557429e040_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemodeldata_af3439e8b84f5875f131343636aa8adee}\label{namespacemodeldata_af3439e8b84f5875f131343636aa8adee}} 
+\index{modeldata@{modeldata}!scalar\+\_\+fieldname@{scalar\+\_\+fieldname}}
+\index{scalar\+\_\+fieldname@{scalar\+\_\+fieldname}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{scalar\+\_\+fieldname()}{scalar\_fieldname()}}
+{\footnotesize\ttfamily character(len=5) function modeldata\+::scalar\+\_\+fieldname (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+
+
+Referenced by output\+\_\+cl\+\_\+files().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemodeldata_af3439e8b84f5875f131343636aa8adee_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemodeldata_a3b2071eab09222beb5e8e06ccd8764f3}\label{namespacemodeldata_a3b2071eab09222beb5e8e06ccd8764f3}} 
+\index{modeldata@{modeldata}!c\+\_\+cross@{c\+\_\+cross}}
+\index{c\+\_\+cross@{c\+\_\+cross}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+cross}{c\_cross}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::c\+\_\+cross =3}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calcscalcls(), cambmain\+::calcscalcls2(), camb\+::camb\+\_\+getcls(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), checkloadedhighltemplate(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), cambmain\+::getsourcemem(), normalizeclsatl(), output\+\_\+cl\+\_\+files(), and output\+\_\+lens\+\_\+pot\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a1697c6436c81028fc5378aa20c691bc6}\label{namespacemodeldata_a1697c6436c81028fc5378aa20c691bc6}} 
+\index{modeldata@{modeldata}!c\+\_\+e@{c\+\_\+e}}
+\index{c\+\_\+e@{c\+\_\+e}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+e}{c\_e}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::c\+\_\+e = 2}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calcscalcls(), cambmain\+::calcscalcls2(), camb\+::camb\+\_\+getcls(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), checkloadedhighltemplate(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), output\+\_\+cl\+\_\+files(), output\+\_\+lens\+\_\+pot\+\_\+files(), and calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata().
+
+\mbox{\Hypertarget{namespacemodeldata_a775752af289f0f86e09da60b795fd542}\label{namespacemodeldata_a775752af289f0f86e09da60b795fd542}} 
+\index{modeldata@{modeldata}!c\+\_\+last@{c\+\_\+last}}
+\index{c\+\_\+last@{c\+\_\+last}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+last}{c\_last}}
+{\footnotesize\ttfamily integer modeldata\+::c\+\_\+last = C\+\_\+\+PhiE}
+
+
+
+Referenced by cambmain\+::calcscalcls2(), cambmain\+::cltransfertocl(), cambmain\+::getsourcemem(), init\+\_\+cls(), cambmain\+::interpolatecls(), and output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a5d4df179847dfc001c062789b178f4d1}\label{namespacemodeldata_a5d4df179847dfc001c062789b178f4d1}} 
+\index{modeldata@{modeldata}!c\+\_\+name\+\_\+tags@{c\+\_\+name\+\_\+tags}}
+\index{c\+\_\+name\+\_\+tags@{c\+\_\+name\+\_\+tags}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+name\+\_\+tags}{c\_name\_tags}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}}), dimension(\mbox{\hyperlink{namespacemodeldata_a0b2ffa13b78be0e1097e0696f61b3d67}{c\+\_\+phie}}), parameter modeldata\+::c\+\_\+name\+\_\+tags = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}TE\textquotesingle{},\textquotesingle{}PP\textquotesingle{},\textquotesingle{}TP\textquotesingle{},\textquotesingle{}EP\textquotesingle{}\mbox{]}}
+
+
+
+Referenced by output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_ae74d57bf66536040e60bd4e100a29a78}\label{namespacemodeldata_ae74d57bf66536040e60bd4e100a29a78}} 
+\index{modeldata@{modeldata}!c\+\_\+phi@{c\+\_\+phi}}
+\index{c\+\_\+phi@{c\+\_\+phi}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+phi}{c\_phi}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::c\+\_\+phi = 4}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calclimberscalcls(), cambmain\+::calcscalcls(), checkloadedhighltemplate(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), and output\+\_\+lens\+\_\+pot\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a0b2ffa13b78be0e1097e0696f61b3d67}\label{namespacemodeldata_a0b2ffa13b78be0e1097e0696f61b3d67}} 
+\index{modeldata@{modeldata}!c\+\_\+phie@{c\+\_\+phie}}
+\index{c\+\_\+phie@{c\+\_\+phie}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+phie}{c\_phie}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::c\+\_\+phie =6}
+
+
+
+Referenced by cambmain\+::calcscalcls(), and cambmain\+::getsourcemem().
+
+\mbox{\Hypertarget{namespacemodeldata_a55f3705dd9a17416caa44b692f8bd38c}\label{namespacemodeldata_a55f3705dd9a17416caa44b692f8bd38c}} 
+\index{modeldata@{modeldata}!c\+\_\+phitemp@{c\+\_\+phitemp}}
+\index{c\+\_\+phitemp@{c\+\_\+phitemp}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+phitemp}{c\_phitemp}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::c\+\_\+phitemp = 5}
+
+
+
+Referenced by cambmain\+::calcscalcls(), and output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_ab144c0dde977b1695db87bc0a2eb3906}\label{namespacemodeldata_ab144c0dde977b1695db87bc0a2eb3906}} 
+\index{modeldata@{modeldata}!c\+\_\+temp@{c\+\_\+temp}}
+\index{c\+\_\+temp@{c\+\_\+temp}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{c\+\_\+temp}{c\_temp}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::c\+\_\+temp = 1}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calcscalcls(), cambmain\+::calcscalcls2(), camb\+::camb\+\_\+getcls(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), checkloadedhighltemplate(), cambmain\+::cltransfertocl(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), init\+\_\+cls(), cambmain\+::interpolatecls(), normalizeclsatl(), output\+\_\+cl\+\_\+files(), output\+\_\+lens\+\_\+pot\+\_\+files(), and calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata().
+
+\mbox{\Hypertarget{namespacemodeldata_aa6168a25119bd0a5064f367267954562}\label{namespacemodeldata_aa6168a25119bd0a5064f367267954562}} 
+\index{modeldata@{modeldata}!cl\+\_\+lensed@{cl\+\_\+lensed}}
+\index{cl\+\_\+lensed@{cl\+\_\+lensed}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{cl\+\_\+lensed}{cl\_lensed}}
+{\footnotesize\ttfamily real(dl), dimension (\+:,\+:,\+:), allocatable modeldata\+::cl\+\_\+lensed}
+
+
+
+Referenced by lensing\+::badharmonic(), camb\+::camb\+\_\+getcls(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), modeldata\+\_\+free(), and output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a1d7527074ae8035793a2d9cf5cb4a8e8}\label{namespacemodeldata_a1d7527074ae8035793a2d9cf5cb4a8e8}} 
+\index{modeldata@{modeldata}!cl\+\_\+scalar@{cl\+\_\+scalar}}
+\index{cl\+\_\+scalar@{cl\+\_\+scalar}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{cl\+\_\+scalar}{cl\_scalar}}
+{\footnotesize\ttfamily real(dl), dimension (\+:,\+:,\+:), allocatable modeldata\+::cl\+\_\+scalar}
+
+
+
+Referenced by lensing\+::badharmonic(), camb\+::camb\+\_\+getcls(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), init\+\_\+cls(), cambmain\+::interpolatecls(), modeldata\+\_\+free(), normalizeclsatl(), output\+\_\+cl\+\_\+files(), and output\+\_\+lens\+\_\+pot\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a24816a1c9914f5b5567b61ed37aa320b}\label{namespacemodeldata_a24816a1c9914f5b5567b61ed37aa320b}} 
+\index{modeldata@{modeldata}!cl\+\_\+scalar\+\_\+array@{cl\+\_\+scalar\+\_\+array}}
+\index{cl\+\_\+scalar\+\_\+array@{cl\+\_\+scalar\+\_\+array}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{cl\+\_\+scalar\+\_\+array}{cl\_scalar\_array}}
+{\footnotesize\ttfamily real(dl), dimension (\+:,\+:,\+:,\+:), allocatable modeldata\+::cl\+\_\+scalar\+\_\+array}
+
+
+
+Referenced by init\+\_\+cls(), cambmain\+::interpolatecls(), modeldata\+\_\+free(), and output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a3108cab8cb9fec5823d887825efd266d}\label{namespacemodeldata_a3108cab8cb9fec5823d887825efd266d}} 
+\index{modeldata@{modeldata}!cl\+\_\+tensor@{cl\+\_\+tensor}}
+\index{cl\+\_\+tensor@{cl\+\_\+tensor}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{cl\+\_\+tensor}{cl\_tensor}}
+{\footnotesize\ttfamily real(dl), dimension (\+:,\+:,\+:), allocatable modeldata\+::cl\+\_\+tensor}
+
+
+
+Referenced by lensing\+::badharmonic(), camb\+::camb\+\_\+getcls(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), init\+\_\+cls(), cambmain\+::interpolatecls(), modeldata\+\_\+free(), normalizeclsatl(), output\+\_\+cl\+\_\+files(), and output\+\_\+lens\+\_\+pot\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_ab8016bbfb187a558b12d8a9c17f6b85c}\label{namespacemodeldata_ab8016bbfb187a558b12d8a9c17f6b85c}} 
+\index{modeldata@{modeldata}!cl\+\_\+vector@{cl\+\_\+vector}}
+\index{cl\+\_\+vector@{cl\+\_\+vector}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{cl\+\_\+vector}{cl\_vector}}
+{\footnotesize\ttfamily real(dl), dimension (\+:,\+:,\+:), allocatable modeldata\+::cl\+\_\+vector}
+
+
+
+Referenced by init\+\_\+cls(), cambmain\+::interpolatecls(), modeldata\+\_\+free(), and output\+\_\+veccl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_ae2b16c12d10fc3ad1bf9b8bcda35fa19}\label{namespacemodeldata_ae2b16c12d10fc3ad1bf9b8bcda35fa19}} 
+\index{modeldata@{modeldata}!ct\+\_\+b@{ct\+\_\+b}}
+\index{ct\+\_\+b@{ct\+\_\+b}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ct\+\_\+b}{ct\_b}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::ct\+\_\+b = 3}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calctenscls(), cambmain\+::calctensorsources(), cambmain\+::calcveccls(), cambmain\+::calcvectorsources(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), output\+\_\+cl\+\_\+files(), output\+\_\+lens\+\_\+pot\+\_\+files(), and calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata().
+
+\mbox{\Hypertarget{namespacemodeldata_a76668d6bad37db06c7b9a47cdeba14dc}\label{namespacemodeldata_a76668d6bad37db06c7b9a47cdeba14dc}} 
+\index{modeldata@{modeldata}!ct\+\_\+cross@{ct\+\_\+cross}}
+\index{ct\+\_\+cross@{ct\+\_\+cross}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ct\+\_\+cross}{ct\_cross}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::ct\+\_\+cross = 4}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calctenscls(), cambmain\+::calcveccls(), camb\+::camb\+\_\+getcls(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), cambmain\+::cltransfertocl(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), init\+\_\+cls(), cambmain\+::interpolatecls(), normalizeclsatl(), output\+\_\+cl\+\_\+files(), output\+\_\+lens\+\_\+pot\+\_\+files(), output\+\_\+veccl\+\_\+files(), and calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata().
+
+\mbox{\Hypertarget{namespacemodeldata_a5fa8e9929dddc8461255d21037ce5817}\label{namespacemodeldata_a5fa8e9929dddc8461255d21037ce5817}} 
+\index{modeldata@{modeldata}!ct\+\_\+e@{ct\+\_\+e}}
+\index{ct\+\_\+e@{ct\+\_\+e}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ct\+\_\+e}{ct\_e}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::ct\+\_\+e = 2}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calctenscls(), cambmain\+::calctensorsources(), cambmain\+::calcveccls(), cambmain\+::calcvectorsources(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), and output\+\_\+lens\+\_\+pot\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_add55f08ccdcc65479fca4cd2858b420d}\label{namespacemodeldata_add55f08ccdcc65479fca4cd2858b420d}} 
+\index{modeldata@{modeldata}!ct\+\_\+name\+\_\+tags@{ct\+\_\+name\+\_\+tags}}
+\index{ct\+\_\+name\+\_\+tags@{ct\+\_\+name\+\_\+tags}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ct\+\_\+name\+\_\+tags}{ct\_name\_tags}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}}), dimension(\mbox{\hyperlink{namespacemodeldata_a76668d6bad37db06c7b9a47cdeba14dc}{ct\+\_\+cross}}), parameter modeldata\+::ct\+\_\+name\+\_\+tags = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}BB\textquotesingle{},\textquotesingle{}TE\textquotesingle{}\mbox{]}}
+
+
+
+Referenced by output\+\_\+cl\+\_\+files(), and output\+\_\+veccl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a0852164e9866929946aab4fdf78ca2b2}\label{namespacemodeldata_a0852164e9866929946aab4fdf78ca2b2}} 
+\index{modeldata@{modeldata}!ct\+\_\+temp@{ct\+\_\+temp}}
+\index{ct\+\_\+temp@{ct\+\_\+temp}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ct\+\_\+temp}{ct\_temp}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::ct\+\_\+temp =1}
+
+
+
+Referenced by lensing\+::badharmonic(), cambmain\+::calctenscls(), cambmain\+::calctensorsources(), cambmain\+::calcveccls(), cambmain\+::calcvectorsources(), camb\+::camb\+\_\+getcls(), cambmain\+::cltransfertocl(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), init\+\_\+cls(), cambmain\+::interpolatecls(), normalizeclsatl(), output\+\_\+cl\+\_\+files(), output\+\_\+lens\+\_\+pot\+\_\+files(), and output\+\_\+veccl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a34bd8af8076e850aa1bd0bd9979be120}\label{namespacemodeldata_a34bd8af8076e850aa1bd0bd9979be120}} 
+\index{modeldata@{modeldata}!ctransscal@{ctransscal}}
+\index{ctransscal@{ctransscal}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ctransscal}{ctransscal}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}}), target, save modeldata\+::ctransscal}
+
+
+
+Referenced by camb\+::camb\+\_\+getresults(), camb\+::camb\+\_\+gettransfers(), cambmain\+::cmbmain(), dtauda(), cambmain\+::interpolatecls(), modeldata\+\_\+free(), and output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a432da70b3966012f72663b1b37c5f44d}\label{namespacemodeldata_a432da70b3966012f72663b1b37c5f44d}} 
+\index{modeldata@{modeldata}!ctranstens@{ctranstens}}
+\index{ctranstens@{ctranstens}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ctranstens}{ctranstens}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}}), target, save modeldata\+::ctranstens}
+
+
+
+Referenced by camb\+::camb\+\_\+gettransfers(), cambmain\+::cmbmain(), and modeldata\+\_\+free().
+
+\mbox{\Hypertarget{namespacemodeldata_ad30179531817ef1d8f3c57eeb179702d}\label{namespacemodeldata_ad30179531817ef1d8f3c57eeb179702d}} 
+\index{modeldata@{modeldata}!ctransvec@{ctransvec}}
+\index{ctransvec@{ctransvec}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{ctransvec}{ctransvec}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structmodeldata_1_1cltransferdata}{cltransferdata}}), target, save modeldata\+::ctransvec}
+
+
+
+Referenced by camb\+::camb\+\_\+gettransfers(), cambmain\+::cmbmain(), and modeldata\+\_\+free().
+
+\mbox{\Hypertarget{namespacemodeldata_a446d6a37d3ee5445c94a5f0d5470021a}\label{namespacemodeldata_a446d6a37d3ee5445c94a5f0d5470021a}} 
+\index{modeldata@{modeldata}!has\+\_\+cl\+\_\+2d\+\_\+array@{has\+\_\+cl\+\_\+2d\+\_\+array}}
+\index{has\+\_\+cl\+\_\+2d\+\_\+array@{has\+\_\+cl\+\_\+2d\+\_\+array}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{has\+\_\+cl\+\_\+2d\+\_\+array}{has\_cl\_2d\_array}}
+{\footnotesize\ttfamily logical modeldata\+::has\+\_\+cl\+\_\+2d\+\_\+array = .false.}
+
+
+
+Referenced by cambmain\+::calclimberscalcls(), cambmain\+::calcscalcls(), cambmain\+::cltransfertocl(), init\+\_\+cls(), cambmain\+::interpolatecls(), and output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_ac4a0361c6d9a7692c9cbf7a08dc43e49}\label{namespacemodeldata_ac4a0361c6d9a7692c9cbf7a08dc43e49}} 
+\index{modeldata@{modeldata}!lens\+\_\+pot\+\_\+name\+\_\+tags@{lens\+\_\+pot\+\_\+name\+\_\+tags}}
+\index{lens\+\_\+pot\+\_\+name\+\_\+tags@{lens\+\_\+pot\+\_\+name\+\_\+tags}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{lens\+\_\+pot\+\_\+name\+\_\+tags}{lens\_pot\_name\_tags}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}{name\+\_\+tag\+\_\+len}}), dimension(7), parameter modeldata\+::lens\+\_\+pot\+\_\+name\+\_\+tags = \mbox{[}\textquotesingle{}TT\textquotesingle{},\textquotesingle{}EE\textquotesingle{},\textquotesingle{}BB\textquotesingle{},\textquotesingle{}TE\textquotesingle{},\textquotesingle{}PP\textquotesingle{},\textquotesingle{}TP\textquotesingle{},\textquotesingle{}EP\textquotesingle{}\mbox{]}}
+
+
+
+Referenced by output\+\_\+lens\+\_\+pot\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a538b61c12ebffc4e237d03392898a395}\label{namespacemodeldata_a538b61c12ebffc4e237d03392898a395}} 
+\index{modeldata@{modeldata}!lmax\+\_\+lensed@{lmax\+\_\+lensed}}
+\index{lmax\+\_\+lensed@{lmax\+\_\+lensed}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{lmax\+\_\+lensed}{lmax\_lensed}}
+{\footnotesize\ttfamily integer modeldata\+::lmax\+\_\+lensed}
+
+
+
+Referenced by lensing\+::badharmonic(), camb\+::camb\+\_\+getcls(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), and output\+\_\+cl\+\_\+files().
+
+\mbox{\Hypertarget{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}\label{namespacemodeldata_a2ead755d89390eb003edcde34ebf2c99}} 
+\index{modeldata@{modeldata}!name\+\_\+tag\+\_\+len@{name\+\_\+tag\+\_\+len}}
+\index{name\+\_\+tag\+\_\+len@{name\+\_\+tag\+\_\+len}!modeldata@{modeldata}}
+\subsubsection{\texorpdfstring{name\+\_\+tag\+\_\+len}{name\_tag\_len}}
+{\footnotesize\ttfamily integer, parameter modeldata\+::name\+\_\+tag\+\_\+len = 12}
+

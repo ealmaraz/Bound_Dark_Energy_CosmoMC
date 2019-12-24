@@ -1,0 +1,2525 @@
+\hypertarget{classgetdist_1_1plots_1_1GetDistPlotter}{}\section{getdist.\+plots.\+Get\+Dist\+Plotter Class Reference}
+\label{classgetdist_1_1plots_1_1GetDistPlotter}\index{getdist.\+plots.\+Get\+Dist\+Plotter@{getdist.\+plots.\+Get\+Dist\+Plotter}}
+
+
+Inheritance diagram for getdist.\+plots.\+Get\+Dist\+Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classgetdist_1_1plots_1_1GetDistPlotter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+plots.\+Get\+Dist\+Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classgetdist_1_1plots_1_1GetDistPlotter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a1d102ce35be5934c0f9e3d170939f1f9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ad66ca82b7ceada3d0534123ac7d9c9b0}{plot\+\_\+data}}=None, \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a3bc2351d55e030f62382f5451d72f6dc}{chain\+\_\+dir}}=None, \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a6957d39a91cc48beffc359eae83aa214}{settings}}=None, analysis\+\_\+settings=None, mcsamples=True)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a844cb0d8b1f652daf9b23267a470636c}{new\+Plot}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_af4832303ee4e0106314557a329153201}{show\+\_\+all\+\_\+settings}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a556fd9e8f1a884ef8673cf58e64572af}{param\+Names\+For\+Root}} (self, root)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a199664f84496268527d58072eebcd724}{param\+Bounds\+For\+Root}} (self, root)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a2c75c431ff53d33697077671d1da1396}{add\+\_\+1d}} (self, root, param, plotno=0, normalized=False, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_aa778142d973eb5a21663b564743b77d6}{add\+\_\+2d\+\_\+density\+\_\+contours}} (self, density, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a0a51d5af908d2dc06b0e26d5bad61e89}{add\+\_\+2d\+\_\+contours}} (self, root, param1=None, param2=None, plotno=0, of=None, cols=None, contour\+\_\+levels=None, add\+\_\+legend\+\_\+proxy=True, param\+\_\+pair=None, density=None, alpha=None, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a717cc70fba7ccf459cc880e6069f964b}{add\+\_\+2d\+\_\+shading}} (self, root, param1, param2, colormap=None, density=None, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a4a4a4bee3e0232eb2089b2f9b0006909}{plot\+\_\+2d}} (self, roots, param1=None, param2=None, param\+\_\+pair=None, shaded=False, add\+\_\+legend\+\_\+proxy=True, line\+\_\+offset=0, proxy\+\_\+root\+\_\+exclude=\mbox{[}$\,$\mbox{]}, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a91bd8b0085aa1366a6cb6e8d329da5c4}{add\+\_\+x\+\_\+marker}} (self, marker, color=None, \mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}=None, lw=None, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a5839922c9cf43552f633678119f6f6de}{add\+\_\+y\+\_\+marker}} (self, marker, color=None, \mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}=None, lw=None, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_aea02dc90ffea867b3c35d641451309ce}{add\+\_\+x\+\_\+bands}} (self, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}, sigma, color=\textquotesingle{}gray\textquotesingle{}, ax=None, alpha1=0.\+15, alpha2=0.\+1, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ad7176db0b45488015840ae2e1a87162c}{add\+\_\+y\+\_\+bands}} (self, y, sigma, color=\textquotesingle{}gray\textquotesingle{}, ax=None, alpha1=0.\+15, alpha2=0.\+1, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_afc478614168ba111f0ec1bba56bdb692}{set\+Axes}} (self, params=\mbox{[}$\,$\mbox{]}, lims=None, do\+\_\+xlabel=True, do\+\_\+ylabel=True, no\+\_\+label\+\_\+no\+\_\+numbers=False, pos=None, prune=None, color\+\_\+label\+\_\+in\+\_\+axes=False, ax=None, other\+\_\+args)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a307e4b542216e36e71550a6d34a36f49}{set\+\_\+xlabel}} (self, param, ax=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ae83a5b69313acacabeb99940a25c1004}{set\+\_\+ylabel}} (self, param, ax=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_aab253c97064f41256595e20f5388f86c}{plot\+\_\+1d}} (self, roots, param, marker=None, marker\+\_\+color=None, label\+\_\+right=False, no\+\_\+ylabel=False, no\+\_\+ytick=False, no\+\_\+zero=False, normalized=False, param\+\_\+renames=\{\}, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a07ead3d7a1afc0b7b944292e92342084}{make\+\_\+figure}} (self, nplot=1, nx=None, ny=None, xstretch=1.\+0, ystretch=1.\+0)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a0b580d3d50c53c534fa8c1a6cefea4d0}{get\+\_\+param\+\_\+array}} (self, root, params=None, renames=\{\})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a9f6d27f2345ccb87720770ddb81258d5}{param\+\_\+latex\+\_\+label}} (self, root, name, label\+Params=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ac9e49994c54fdfa9120acddc2c19c352}{add\+\_\+legend}} (self, legend\+\_\+labels, legend\+\_\+loc=None, line\+\_\+offset=0, legend\+\_\+ncol=None, colored\+\_\+text=False, figure=False, ax=None, label\+\_\+order=None, align\+\_\+right=False, fontsize=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a2ab4d56845a5abefe27c2d5d62bfb680}{finish\+\_\+plot}} (self, legend\+\_\+labels=None, legend\+\_\+loc=None, line\+\_\+offset=0, legend\+\_\+ncol=None, label\+\_\+order=None, no\+\_\+gap=False, no\+\_\+extra\+\_\+legend\+\_\+space=False, no\+\_\+tight=False)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a7cd2a179b15d78d19f07760d0ba698a1}{plots\+\_\+1d}} (self, roots, params=None, legend\+\_\+labels=None, legend\+\_\+ncol=None, label\+\_\+order=None, nx=None, param\+List=None, roots\+\_\+per\+\_\+param=False, share\+\_\+y=None, markers=None, xlims=None, param\+\_\+renames=\{\}, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a0e610a87566737a4b66974d2d721caaa}{plots\+\_\+2d}} (self, roots, param1=None, params2=None, param\+\_\+pairs=None, nx=None, legend\+\_\+labels=None, legend\+\_\+ncol=None, label\+\_\+order=None, filled=False, shaded=False, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a003f6bc9220702f977aaaa73c64b1cb3}{plots\+\_\+2d\+\_\+triplets}} (self, root\+\_\+params\+\_\+triplets, nx=None, filled=False, x\+\_\+lim=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a92380ecaa3180adba902208e5d646329}{triangle\+\_\+plot}} (self, roots, params=None, legend\+\_\+labels=None, plot\+\_\+3d\+\_\+with\+\_\+param=None, filled=False, shaded=False, contour\+\_\+args=None, contour\+\_\+colors=None, contour\+\_\+ls=None, contour\+\_\+lws=None, line\+\_\+args=None, label\+\_\+order=None, legend\+\_\+ncol=None, legend\+\_\+loc=None, upper\+\_\+roots=None, upper\+\_\+kwargs=\{\}, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a814e233ab36c48c3a3a34d4c837d4251}{rectangle\+\_\+plot}} (self, xparams, yparams, yroots=None, roots=None, plot\+\_\+roots=None, plot\+\_\+texts=None, xmarkers=None, ymarkers=None, marker\+\_\+args=\{\}, param\+\_\+limits=\{\}, legend\+\_\+labels=None, legend\+\_\+ncol=None, label\+\_\+order=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a695a45a9dff3c9be3b44d4b652dfc2df}{rotate\+\_\+yticklabels}} (self, ax=None, rotation=90)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a624c60e696a6309dc60b7f67a168d65a}{add\+\_\+colorbar}} (self, param, orientation=\textquotesingle{}vertical\textquotesingle{}, mappable=None, ax=None, ax\+\_\+args)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ad52c370b78987bc4e2f67dd242c89e0a}{add\+\_\+line}} (self, xdata, ydata, zorder=0, color=None, \mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}}=None, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ae418e1e11ac0e54cec213eb7b1e8cec9}{add\+\_\+colorbar\+\_\+label}} (self, cb, param, label\+\_\+rotation=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a3f9f0b8a62a5e803e002da9b1c40e248}{add\+\_\+2d\+\_\+scatter}} (self, root, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}, y, color=\textquotesingle{}k\textquotesingle{}, alpha=1, extra\+\_\+thin=1, scatter\+\_\+size=None, ax=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_aef375df68dd9f9b2c7fa0b08ae851579}{add\+\_\+3d\+\_\+scatter}} (self, root, params, color\+\_\+bar=True, alpha=1, extra\+\_\+thin=1, scatter\+\_\+size=None, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a20064a0721aea40476598a5a3a20df01}{plot\+\_\+2d\+\_\+scatter}} (self, roots, param1, param2, color=\textquotesingle{}k\textquotesingle{}, line\+\_\+offset=0, add\+\_\+legend\+\_\+proxy=True, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a47d2f31e3d3cb751152be571a867a503}{plot\+\_\+3d}} (self, roots, params=None, params\+\_\+for\+\_\+plots=None, color\+\_\+bar=True, line\+\_\+offset=0, add\+\_\+legend\+\_\+proxy=True, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a331da209c29a04929d2e5fb97fc1e8bb}{plots\+\_\+3d}} (self, roots, param\+\_\+sets, nx=None, legend\+\_\+labels=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ad8246050feeaf02dc737682fc5b41292}{plots\+\_\+3d\+\_\+z}} (self, roots, param\+\_\+x, param\+\_\+y, param\+\_\+z=None, max\+\_\+z=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a3508bf76855c92e7e9129377b76ee390}{add\+\_\+text}} (self, text\+\_\+label, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}=0.\+95, y=0.\+06, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_af147d1c8013996cd850d66e5c2b82df7}{add\+\_\+text\+\_\+left}} (self, text\+\_\+label, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}=0.\+05, y=0.\+06, ax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ab620b89a8337904ff357c316f040aa53}{export}} (self, fname=None, adir=None, watermark=None, tag=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a3bc2351d55e030f62382f5451d72f6dc}{chain\+\_\+dir}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a6957d39a91cc48beffc359eae83aa214}{settings}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ad66ca82b7ceada3d0534123ac7d9c9b0}{plot\+\_\+data}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a54543d5a03405a48e98f2e362e076d38}{sample\+Analyser}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_abe4bfeba74e370efb5f917d93b6f29d7}{extra\+\_\+artists}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a4804e7a414652e94c2068fcf37aa9a22}{contours\+\_\+added}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a15cec9e6591043203af4eaee1563de93}{lines\+\_\+added}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ac3d6a8fd5733360b19be6f1b51fb2bf5}{param\+\_\+name\+\_\+sets}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a0328978f170538ac5d4e2546a0275d11}{param\+\_\+bounds\+\_\+sets}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a30fb82076ac316341e377dffd32dacde}{fig}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a0b8e4309cad0221a75a7debe7078729a}{subplots}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a38321592270c7c25a09f85f18e5bdbf3}{plot\+\_\+col}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ac0745694a94d98e3d169596c10d4e372}{plot\+\_\+row}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_af31518e8f85d144c2eac3034b8ba41a7}{legend}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a16ae03a3c9df59a727cddf1d5043ed67}{last\+\_\+scatter}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_af51d48b35537e9a723ba8f3024e73ed2}{last\+\_\+colorbar}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a3611eb8b23f9f095922b216ead8d83ce}{\+\_\+get\+\_\+plot\+\_\+args}} (self, plotno, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_abde32f397bb48f38fb3a99ec754c6487}{\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls}} (self, \mbox{\hyperlink{plotTT_8m_aac1113e50f7f1460beeaeeba69f63701}{ls}})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a3077b1755957ea13d90faa18e84af3d0}{\+\_\+get\+\_\+default\+\_\+ls}} (self, plotno=0)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a919928e323c1253b5e2687ad41b331df}{\+\_\+get\+\_\+line\+\_\+styles}} (self, plotno, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_afe806ee81dad4b9d7c3f2c5e55846b95}{\+\_\+get\+\_\+color}} (self, plotno, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ac59e8aaef9e884dfd9fe405a57673dbe}{\+\_\+get\+\_\+linestyle}} (self, plotno, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a5814b23cb1d375a904161d0a7b2b78b9}{\+\_\+get\+\_\+alpha2D}} (self, plotno, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a578f829c6d10c20eb150703b876f0411}{\+\_\+check\+\_\+param\+\_\+ranges}} (self, root, name, xmin, xmax)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_adc50adc1d2b8ceff5c95ea31a9e886a1}{\+\_\+update\+Limit}} (self, bounds, curbounds)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_aa39ae5fcf55546a48cc27bc838ca04ff}{\+\_\+update\+Limits}} (self, res, xlims, ylims, do\+Resize=True)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a7a9e50f1885013fa6dbe70242e1f8fa3}{\+\_\+make\+\_\+line\+\_\+args}} (self, nroots, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_af3c4b93770391c350949913b5f3eeaa8}{\+\_\+make\+\_\+contour\+\_\+args}} (self, nroots, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ab90583e444bd0707e6a4a632cd41ce8c}{\+\_\+set\+\_\+locator}} (self, axis, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}=False, prune=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a437576fb88e47274ce1c2574581daf2c}{\+\_\+set\+Axis\+Properties}} (self, axis, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}, prune=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a0baa9ed916992d8216ca3cc0ddf4eb4a}{\+\_\+check\+\_\+param}} (self, root, param, renames=\{\})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a1fb43f7fb0857fd242270c3b67b30eb4}{\+\_\+escape\+Latex}} (self, text)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ad7bb533b92ff93733da80a76c65ae47e}{\+\_\+root\+Display\+Name}} (self, root, \mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a2dd109cafefa1d1d8f3078208c79c4a6}{\+\_\+default\+\_\+legend\+\_\+labels}} (self, legend\+\_\+labels, roots)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_aa9058a1f333a84c5d0c7b8f5c5a83da3}{\+\_\+subplot}} (self, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}, y, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_ab193e6cfc6a0ea34b119fe7d1f3aee54}{\+\_\+subplot\+\_\+number}} (self, \mbox{\hyperlink{plotTT_8m_a3359ed5f123e10953f77a90207beaa1b}{i}})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a0f88fbf39ce5aa636bcb33ba1aaf26dd}{\+\_\+space\+Ticks}} (self, axis, expand=True)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a1f1a9291eabe11286d6687a482558397}{\+\_\+make\+Param\+Object}} (self, names, samples)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1GetDistPlotter_a63da566e8c3acdfff3865ae29e73ba4d}{\+\_\+param\+Name\+List\+From\+File}} (self, fname)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Main class for making plots from one or more sets of samples.
+
+:ivar settings: a :class:`GetDistPlotSettings` instance with settings
+:ivar subplots: a 2D array of :class:`~matplotlib:matplotlib.axes.Axes` for subplots
+:ivar sampleAnalyser: a :class:`MCSampleAnalysis` instance for getting :class:`~.mcsamples.MCSamples` 
+     and derived data from a given root name tag (e.g. sampleAnalyser.samplesForRoot('rootname'))
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a1d102ce35be5934c0f9e3d170939f1f9}\label{classgetdist_1_1plots_1_1GetDistPlotter_a1d102ce35be5934c0f9e3d170939f1f9}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plot\+\_\+data = {\ttfamily None},  }\item[{}]{chain\+\_\+dir = {\ttfamily None},  }\item[{}]{settings = {\ttfamily None},  }\item[{}]{analysis\+\_\+settings = {\ttfamily None},  }\item[{}]{mcsamples = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param plot_data: (deprecated) directory name if you have pre-computed plot_data/ directory from GetDist; None by default
+:param chain_dir: Set this to a directory or grid root to search for chains (can also be a list of such, searched in order)
+:param analysis_settings: The settings to be used by :class:`MCSampleAnalysis` when analysing samples
+:param mcsamples: if True defaults to current method of using :class:`MCSampleAnalysis` instance to analyse chains on demand
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a0baa9ed916992d8216ca3cc0ddf4eb4a}\label{classgetdist_1_1plots_1_1GetDistPlotter_a0baa9ed916992d8216ca3cc0ddf4eb4a}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+check\+\_\+param@{\+\_\+check\+\_\+param}}
+\index{\+\_\+check\+\_\+param@{\+\_\+check\+\_\+param}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+check\+\_\+param()}{\_check\_param()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{param,  }\item[{}]{renames = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Get :class:`~.paramnames.ParamInfo` for given name for samples with specified root
+
+:param root: The root name of the samples
+:param param: The parameter name (or :class:`~.paramnames.ParamInfo`)
+:param renames: optional dictionary mapping input names and equivalent names used by the samples
+:return: a :class:`~.paramnames.ParamInfo` instance, or None if name not found
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Names\+For\+Root().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+latex\+\_\+label(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0baa9ed916992d8216ca3cc0ddf4eb4a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0baa9ed916992d8216ca3cc0ddf4eb4a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a578f829c6d10c20eb150703b876f0411}\label{classgetdist_1_1plots_1_1GetDistPlotter_a578f829c6d10c20eb150703b876f0411}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+check\+\_\+param\+\_\+ranges@{\+\_\+check\+\_\+param\+\_\+ranges}}
+\index{\+\_\+check\+\_\+param\+\_\+ranges@{\+\_\+check\+\_\+param\+\_\+ranges}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+check\+\_\+param\+\_\+ranges()}{\_check\_param\_ranges()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param\+\_\+ranges (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{name,  }\item[{}]{xmin,  }\item[{}]{xmax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Checks The upper and lower bounds are not outside hard priors
+
+:param root: The root file to use.
+:param name: The param name to check.
+:param xmin: The lower bound
+:param xmax: The upper bound
+:return: The bounds (highest lower limit, and lowest upper limit)
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Bounds\+For\+Root().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a578f829c6d10c20eb150703b876f0411_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a578f829c6d10c20eb150703b876f0411_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a2dd109cafefa1d1d8f3078208c79c4a6}\label{classgetdist_1_1plots_1_1GetDistPlotter_a2dd109cafefa1d1d8f3078208c79c4a6}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+default\+\_\+legend\+\_\+labels@{\+\_\+default\+\_\+legend\+\_\+labels}}
+\index{\+\_\+default\+\_\+legend\+\_\+labels@{\+\_\+default\+\_\+legend\+\_\+labels}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+default\+\_\+legend\+\_\+labels()}{\_default\_legend\_labels()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{legend\+\_\+labels,  }\item[{}]{roots }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Returns default legend labels, based on name tags of samples
+
+:param legend_labels: The current legend labels.
+:param roots: The root names of the samples
+:return: A list of labels
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+root\+Display\+Name(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a2dd109cafefa1d1d8f3078208c79c4a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a2dd109cafefa1d1d8f3078208c79c4a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a1fb43f7fb0857fd242270c3b67b30eb4}\label{classgetdist_1_1plots_1_1GetDistPlotter_a1fb43f7fb0857fd242270c3b67b30eb4}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+escape\+Latex@{\+\_\+escape\+Latex}}
+\index{\+\_\+escape\+Latex@{\+\_\+escape\+Latex}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+escape\+Latex()}{\_escapeLatex()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+escape\+Latex (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+root\+Display\+Name(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+export().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a1fb43f7fb0857fd242270c3b67b30eb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a5814b23cb1d375a904161d0a7b2b78b9}\label{classgetdist_1_1plots_1_1GetDistPlotter_a5814b23cb1d375a904161d0a7b2b78b9}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+get\+\_\+alpha2D@{\+\_\+get\+\_\+alpha2D}}
+\index{\+\_\+get\+\_\+alpha2D@{\+\_\+get\+\_\+alpha2D}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+alpha2\+D()}{\_get\_alpha2D()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+alpha2D (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plotno,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Get the alpha for the given 2D contour added to plot
+
+:param plotno:  The index of contours added to the plot
+:param kwargs: arguments for :func:`~GetDistPlotter._get_line_styles`,
+    These may also include: filled
+:return: The alpha for the given plot contours
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+plot\+\_\+args(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a5814b23cb1d375a904161d0a7b2b78b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a5814b23cb1d375a904161d0a7b2b78b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_afe806ee81dad4b9d7c3f2c5e55846b95}\label{classgetdist_1_1plots_1_1GetDistPlotter_afe806ee81dad4b9d7c3f2c5e55846b95}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+get\+\_\+color@{\+\_\+get\+\_\+color}}
+\index{\+\_\+get\+\_\+color@{\+\_\+get\+\_\+color}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+color()}{\_get\_color()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plotno,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Get the color for the given line number
+
+:param plotno: line number added to plot
+:param kwargs: arguments for :func:`~GetDistPlotter._get_line_styles`
+:return: The color.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_afe806ee81dad4b9d7c3f2c5e55846b95_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_abde32f397bb48f38fb3a99ec754c6487}\label{classgetdist_1_1plots_1_1GetDistPlotter_abde32f397bb48f38fb3a99ec754c6487}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls@{\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls}}
+\index{\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls@{\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls()}{\_get\_dashes\_for\_ls()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Gets the dash style for the given line style.
+
+:param ls: The line style
+:return: The dash style.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_abde32f397bb48f38fb3a99ec754c6487_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a3077b1755957ea13d90faa18e84af3d0}\label{classgetdist_1_1plots_1_1GetDistPlotter_a3077b1755957ea13d90faa18e84af3d0}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+get\+\_\+default\+\_\+ls@{\+\_\+get\+\_\+default\+\_\+ls}}
+\index{\+\_\+get\+\_\+default\+\_\+ls@{\+\_\+get\+\_\+default\+\_\+ls}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+default\+\_\+ls()}{\_get\_default\_ls()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+default\+\_\+ls (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plotno = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Get default line style.
+
+:param plotno: The number of the line added to the plot to get the style of.
+:return: The default line style.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a3077b1755957ea13d90faa18e84af3d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a919928e323c1253b5e2687ad41b331df}\label{classgetdist_1_1plots_1_1GetDistPlotter_a919928e323c1253b5e2687ad41b331df}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+get\+\_\+line\+\_\+styles@{\+\_\+get\+\_\+line\+\_\+styles}}
+\index{\+\_\+get\+\_\+line\+\_\+styles@{\+\_\+get\+\_\+line\+\_\+styles}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+line\+\_\+styles()}{\_get\_line\_styles()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plotno,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Gets the styles of the line for the given line added to a plot
+
+:param plotno: The number of the line added to the plot.
+:param kwargs: Params for :func:`~GetDistPlotter._get_plot_args`.
+:return: dict with ls, dashes, lw and color set appropriately 
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+default\+\_\+ls(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+plot\+\_\+args(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+color(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+linestyle(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+legend().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a919928e323c1253b5e2687ad41b331df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a919928e323c1253b5e2687ad41b331df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ac59e8aaef9e884dfd9fe405a57673dbe}\label{classgetdist_1_1plots_1_1GetDistPlotter_ac59e8aaef9e884dfd9fe405a57673dbe}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+get\+\_\+linestyle@{\+\_\+get\+\_\+linestyle}}
+\index{\+\_\+get\+\_\+linestyle@{\+\_\+get\+\_\+linestyle}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+linestyle()}{\_get\_linestyle()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+linestyle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plotno,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Get line style for given plot line number.
+
+:param plotno: line number added to plot
+:param kwargs: arguments for :func:`~GetDistPlotter._get_line_styles`
+:return: The line style for the given plot line.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ac59e8aaef9e884dfd9fe405a57673dbe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a3611eb8b23f9f095922b216ead8d83ce}\label{classgetdist_1_1plots_1_1GetDistPlotter_a3611eb8b23f9f095922b216ead8d83ce}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+get\+\_\+plot\+\_\+args@{\+\_\+get\+\_\+plot\+\_\+args}}
+\index{\+\_\+get\+\_\+plot\+\_\+args@{\+\_\+get\+\_\+plot\+\_\+args}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+get\+\_\+plot\+\_\+args()}{\_get\_plot\_args()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+plot\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plotno,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Get plot arguments for the given plot line number
+
+:param plotno: The index of the line added to a plot
+:param kwargs: optional settings to override in the current ones
+:return: The updated dict of arguments.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+alpha2\+D(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a3611eb8b23f9f095922b216ead8d83ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_af3c4b93770391c350949913b5f3eeaa8}\label{classgetdist_1_1plots_1_1GetDistPlotter_af3c4b93770391c350949913b5f3eeaa8}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+make\+\_\+contour\+\_\+args@{\+\_\+make\+\_\+contour\+\_\+args}}
+\index{\+\_\+make\+\_\+contour\+\_\+args@{\+\_\+make\+\_\+contour\+\_\+args}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+make\+\_\+contour\+\_\+args()}{\_make\_contour\_args()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+contour\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nroots,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+line\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), and copy\+Grid\+Files.\+zip.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_af3c4b93770391c350949913b5f3eeaa8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_af3c4b93770391c350949913b5f3eeaa8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a7a9e50f1885013fa6dbe70242e1f8fa3}\label{classgetdist_1_1plots_1_1GetDistPlotter_a7a9e50f1885013fa6dbe70242e1f8fa3}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+make\+\_\+line\+\_\+args@{\+\_\+make\+\_\+line\+\_\+args}}
+\index{\+\_\+make\+\_\+line\+\_\+args@{\+\_\+make\+\_\+line\+\_\+args}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+make\+\_\+line\+\_\+args()}{\_make\_line\_args()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+line\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nroots,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+contour\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a7a9e50f1885013fa6dbe70242e1f8fa3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a1f1a9291eabe11286d6687a482558397}\label{classgetdist_1_1plots_1_1GetDistPlotter_a1f1a9291eabe11286d6687a482558397}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+make\+Param\+Object@{\+\_\+make\+Param\+Object}}
+\index{\+\_\+make\+Param\+Object@{\+\_\+make\+Param\+Object}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+make\+Param\+Object()}{\_makeParamObject()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+Param\+Object (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{names,  }\item[{}]{samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+3d\+\_\+scatter().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a1f1a9291eabe11286d6687a482558397_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a63da566e8c3acdfff3865ae29e73ba4d}\label{classgetdist_1_1plots_1_1GetDistPlotter_a63da566e8c3acdfff3865ae29e73ba4d}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+param\+Name\+List\+From\+File@{\+\_\+param\+Name\+List\+From\+File}}
+\index{\+\_\+param\+Name\+List\+From\+File@{\+\_\+param\+Name\+List\+From\+File}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+param\+Name\+List\+From\+File()}{\_paramNameListFromFile()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+param\+Name\+List\+From\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Reads param names for a file.
+
+:param fname: The file to read
+:return: A list of param names
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a63da566e8c3acdfff3865ae29e73ba4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ad7bb533b92ff93733da80a76c65ae47e}\label{classgetdist_1_1plots_1_1GetDistPlotter_ad7bb533b92ff93733da80a76c65ae47e}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+root\+Display\+Name@{\+\_\+root\+Display\+Name}}
+\index{\+\_\+root\+Display\+Name@{\+\_\+root\+Display\+Name}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+root\+Display\+Name()}{\_rootDisplayName()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+root\+Display\+Name (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+escape\+Latex().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ad7bb533b92ff93733da80a76c65ae47e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ad7bb533b92ff93733da80a76c65ae47e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ab90583e444bd0707e6a4a632cd41ce8c}\label{classgetdist_1_1plots_1_1GetDistPlotter_ab90583e444bd0707e6a4a632cd41ce8c}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+set\+\_\+locator@{\+\_\+set\+\_\+locator}}
+\index{\+\_\+set\+\_\+locator@{\+\_\+set\+\_\+locator}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+set\+\_\+locator()}{\_set\_locator()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+\_\+locator (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axis,  }\item[{}]{x = {\ttfamily False},  }\item[{}]{prune = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Set the locator for ticks
+
+:param axis: The axis instance
+:param x: True if x axis, False for y axis
+:param prune: Parameter for MaxNLocator constructor,  ['lower' | 'upper' | 'both' | None]
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+Axis\+Properties().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ab90583e444bd0707e6a4a632cd41ce8c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a437576fb88e47274ce1c2574581daf2c}\label{classgetdist_1_1plots_1_1GetDistPlotter_a437576fb88e47274ce1c2574581daf2c}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+set\+Axis\+Properties@{\+\_\+set\+Axis\+Properties}}
+\index{\+\_\+set\+Axis\+Properties@{\+\_\+set\+Axis\+Properties}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+set\+Axis\+Properties()}{\_setAxisProperties()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+Axis\+Properties (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axis,  }\item[{}]{x,  }\item[{}]{prune = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Sets axis properties.
+
+:param axis: The axis to set properties to.
+:param x: True if x axis, False for y axis
+:param prune: Parameter for MaxNLocator constructor, ,  ['lower' | 'upper' | 'both' | None]
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+\_\+locator(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a437576fb88e47274ce1c2574581daf2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a437576fb88e47274ce1c2574581daf2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a0f88fbf39ce5aa636bcb33ba1aaf26dd}\label{classgetdist_1_1plots_1_1GetDistPlotter_a0f88fbf39ce5aa636bcb33ba1aaf26dd}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+space\+Ticks@{\+\_\+space\+Ticks}}
+\index{\+\_\+space\+Ticks@{\+\_\+space\+Ticks}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+space\+Ticks()}{\_spaceTicks()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+space\+Ticks (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{axis,  }\item[{}]{expand = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Space the axis ticks so there are none near the edges (which are likely to overlap on packed subplots)
+
+:param axis: axis instance
+:param expand: if True, increase axis range so existing ticks are safely not near edgel
+        otherwise remove end ticks
+:return: list of tick values
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings, and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0f88fbf39ce5aa636bcb33ba1aaf26dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0f88fbf39ce5aa636bcb33ba1aaf26dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_aa9058a1f333a84c5d0c7b8f5c5a83da3}\label{classgetdist_1_1plots_1_1GetDistPlotter_aa9058a1f333a84c5d0c7b8f5c5a83da3}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+subplot@{\+\_\+subplot}}
+\index{\+\_\+subplot@{\+\_\+subplot}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+subplot()}{\_subplot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Create a subplot with given parameters.
+
+:param x: x location in the subplot grid
+:param y: y location in the subplot grid
+:param kwargs: arguments for :func:`~matplotlib:matplotlib.pyplot.subplot`
+:return: an :class:`~matplotlib:matplotlib.axes.Axes` instance for the subplot axes
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+col, getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+row, and getdist.\+plots.\+Get\+Dist\+Plotter.\+subplots.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aa9058a1f333a84c5d0c7b8f5c5a83da3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ab193e6cfc6a0ea34b119fe7d1f3aee54}\label{classgetdist_1_1plots_1_1GetDistPlotter_ab193e6cfc6a0ea34b119fe7d1f3aee54}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+subplot\+\_\+number@{\+\_\+subplot\+\_\+number}}
+\index{\+\_\+subplot\+\_\+number@{\+\_\+subplot\+\_\+number}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+subplot\+\_\+number()}{\_subplot\_number()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Create a subplot with given index.
+
+:param i: index of the subplot
+:return: an :class:`~matplotlib:matplotlib.axes.Axes` instance for the subplot axes
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+col, getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+row, and getdist.\+plots.\+Get\+Dist\+Plotter.\+subplots.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d\+\_\+triplets(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ab193e6cfc6a0ea34b119fe7d1f3aee54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_adc50adc1d2b8ceff5c95ea31a9e886a1}\label{classgetdist_1_1plots_1_1GetDistPlotter_adc50adc1d2b8ceff5c95ea31a9e886a1}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+update\+Limit@{\+\_\+update\+Limit}}
+\index{\+\_\+update\+Limit@{\+\_\+update\+Limit}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+update\+Limit()}{\_updateLimit()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limit (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{bounds,  }\item[{}]{curbounds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}Calculates the merge of two upper and lower limits, so result encloses both ranges
+
+:param bounds:  bounds to update
+:param curbounds:  bounds to add
+:return: The new limits
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limits(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_adc50adc1d2b8ceff5c95ea31a9e886a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_aa39ae5fcf55546a48cc27bc838ca04ff}\label{classgetdist_1_1plots_1_1GetDistPlotter_aa39ae5fcf55546a48cc27bc838ca04ff}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!\+\_\+update\+Limits@{\+\_\+update\+Limits}}
+\index{\+\_\+update\+Limits@{\+\_\+update\+Limits}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{\+\_\+update\+Limits()}{\_updateLimits()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limits (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{res,  }\item[{}]{xlims,  }\item[{}]{ylims,  }\item[{}]{do\+Resize = {\ttfamily True} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}update 2D limits with new x and y limits (expanded unless doResize is False)
+
+:param res: The current limits
+:param xlims: The new lims for x
+:param ylims: The new lims for y.
+:param doResize: True if should resize, False otherwise.
+:return: The newly calculated limits.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limit().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aa39ae5fcf55546a48cc27bc838ca04ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aa39ae5fcf55546a48cc27bc838ca04ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a2c75c431ff53d33697077671d1da1396}\label{classgetdist_1_1plots_1_1GetDistPlotter_a2c75c431ff53d33697077671d1da1396}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+1d@{add\+\_\+1d}}
+\index{add\+\_\+1d@{add\+\_\+1d}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+1d()}{add\_1d()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+1d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{param,  }\item[{}]{plotno = {\ttfamily 0},  }\item[{}]{normalized = {\ttfamily False},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Low-level function to add a 1D marginalized density line to a plot
+
+:param root: The root name of the samples
+:param param: The parameter name
+:param plotno: The index of the line being added to the plot
+:param normalized: True if areas under lines should match, False if normalized to unit maximum
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:param kwargs: arguments for :func:`~matplotlib:matplotlib.pyplot.plot`
+:return: min, max for the plotted density
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles(), getdist.\+plots.\+Get\+Dist\+Plotter.\+lines\+\_\+added, getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser, and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a2c75c431ff53d33697077671d1da1396_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a2c75c431ff53d33697077671d1da1396_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a0a51d5af908d2dc06b0e26d5bad61e89}\label{classgetdist_1_1plots_1_1GetDistPlotter_a0a51d5af908d2dc06b0e26d5bad61e89}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+2d\+\_\+contours@{add\+\_\+2d\+\_\+contours}}
+\index{add\+\_\+2d\+\_\+contours@{add\+\_\+2d\+\_\+contours}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+2d\+\_\+contours()}{add\_2d\_contours()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{param1 = {\ttfamily None},  }\item[{}]{param2 = {\ttfamily None},  }\item[{}]{plotno = {\ttfamily 0},  }\item[{}]{of = {\ttfamily None},  }\item[{}]{cols = {\ttfamily None},  }\item[{}]{contour\+\_\+levels = {\ttfamily None},  }\item[{}]{add\+\_\+legend\+\_\+proxy = {\ttfamily True},  }\item[{}]{param\+\_\+pair = {\ttfamily None},  }\item[{}]{density = {\ttfamily None},  }\item[{}]{alpha = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Low-level function to add 2D contours to plot for samples with given root name and parameters
+
+:param root: The root name of samples to use
+:param param1: x parameter
+:param param2: y parameter
+:param plotno: The index of the contour lines being added
+:param of: the total number of contours being added (this is line plotno of of)
+:param cols: optional list of colors to use for contours, by default uses default for this plotno
+:param contour_levels: levels at which to plot the contours, by default given by contours array in the analysis settings
+:param add_legend_proxy: True if should add a proxy to the legend of this plot.
+:param param_pair: an [x,y] parameter name pair if you prefer to provide this rather than param1 and param2
+:param density: optional :class:`~.densities.Density2D` to plot rather than that computed automatically from the samples
+:param alpha: alpha for the contours added
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:param kwargs: optional keyword arguments:
+
+       - **filled**: True to make filled contours
+       - **color**: top color to automatically make paling contour colours for a filled plot
+       - kwargs for :func:`~matplotlib:matplotlib.pyplot.contour` and :func:`~matplotlib:matplotlib.pyplot.contourf`
+:return: bounds (from :meth:`~.densities.GridDensity.bounds`) for the 2D density plotted
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+alpha2\+D(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+plot\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+contours\+\_\+added, getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), chain\+Peek.\+index, getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser, and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+density\+\_\+contours(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0a51d5af908d2dc06b0e26d5bad61e89_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0a51d5af908d2dc06b0e26d5bad61e89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_aa778142d973eb5a21663b564743b77d6}\label{classgetdist_1_1plots_1_1GetDistPlotter_aa778142d973eb5a21663b564743b77d6}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+2d\+\_\+density\+\_\+contours@{add\+\_\+2d\+\_\+density\+\_\+contours}}
+\index{add\+\_\+2d\+\_\+density\+\_\+contours@{add\+\_\+2d\+\_\+density\+\_\+contours}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+2d\+\_\+density\+\_\+contours()}{add\_2d\_density\_contours()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+density\+\_\+contours (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{density,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Low-level function to add 2D contours to a plot using provided density
+
+:param density: a :class:`.densities.Density2D` instance
+:param kwargs: arguments for :func:`~GetDistPlotter.add_2d_contours`
+:return: bounds (from :func:`.~densities.GridDensity.bounds`) of density
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aa778142d973eb5a21663b564743b77d6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a3f9f0b8a62a5e803e002da9b1c40e248}\label{classgetdist_1_1plots_1_1GetDistPlotter_a3f9f0b8a62a5e803e002da9b1c40e248}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+2d\+\_\+scatter@{add\+\_\+2d\+\_\+scatter}}
+\index{add\+\_\+2d\+\_\+scatter@{add\+\_\+2d\+\_\+scatter}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+2d\+\_\+scatter()}{add\_2d\_scatter()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+scatter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{color = {\ttfamily \textquotesingle{}k\textquotesingle{}},  }\item[{}]{alpha = {\ttfamily 1},  }\item[{}]{extra\+\_\+thin = {\ttfamily 1},  }\item[{}]{scatter\+\_\+size = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Low-level function to adds a 2D sample scatter plot to the current axes (or ax if specified).
+
+:param root: The root name of the samples to use
+:param param1: name of x parameter
+:param param2: name of y parameter
+:param color: color to plot the samples
+:param alpha: The alpha to use.
+:param extra_thin: thin the weight one samples by this additional factor before plotting
+:param scatter_size: point size (default: settings.scatter_size)
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:return: (xmin, xmax), (ymin, ymax) bounds for the axes.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+3d\+\_\+scatter().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a3f9f0b8a62a5e803e002da9b1c40e248_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a717cc70fba7ccf459cc880e6069f964b}\label{classgetdist_1_1plots_1_1GetDistPlotter_a717cc70fba7ccf459cc880e6069f964b}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+2d\+\_\+shading@{add\+\_\+2d\+\_\+shading}}
+\index{add\+\_\+2d\+\_\+shading@{add\+\_\+2d\+\_\+shading}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+2d\+\_\+shading()}{add\_2d\_shading()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+shading (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{param1,  }\item[{}]{param2,  }\item[{}]{colormap = {\ttfamily None},  }\item[{}]{density = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Low-level function to add 2D density shading to the given plot.
+
+:param root: The root name of samples to use
+:param param1: x parameter
+:param param2: y parameter
+:param colormap: color map, default to settings.colormap (see :class:`GetDistPlotSettings`)
+:param density: optional user-provided :class:`~.densities.Density2D` to plot rather than
+        the auto-generated density from the samples
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:param kwargs: keyword arguments for :func:`~matplotlib:matplotlib.pyplot.contourf`
+\end{DoxyVerb}
+ 
+
+References C\+A\+M\+B\+\_\+test\+\_\+files.\+float, getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser, and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a717cc70fba7ccf459cc880e6069f964b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a717cc70fba7ccf459cc880e6069f964b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_aef375df68dd9f9b2c7fa0b08ae851579}\label{classgetdist_1_1plots_1_1GetDistPlotter_aef375df68dd9f9b2c7fa0b08ae851579}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+3d\+\_\+scatter@{add\+\_\+3d\+\_\+scatter}}
+\index{add\+\_\+3d\+\_\+scatter@{add\+\_\+3d\+\_\+scatter}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+3d\+\_\+scatter()}{add\_3d\_scatter()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+3d\+\_\+scatter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{params,  }\item[{}]{color\+\_\+bar = {\ttfamily True},  }\item[{}]{alpha = {\ttfamily 1},  }\item[{}]{extra\+\_\+thin = {\ttfamily 1},  }\item[{}]{scatter\+\_\+size = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Low-level function to add a 3D scatter plot to the current axes (or ax if specified).
+
+:param root: The root name of the samples to use
+:param params:  list of parameters to plot
+:param color_bar: True to add a colorbar for the plotted scatter color
+:param alpha: The alpha to use.
+:param extra_thin: thin the weight one samples by this additional factor before plotting
+:param scatter_size: point size (default: settings.scatter_size)
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:param kwargs: arguments for :func:`~GetDistPlotter.add_colorbar`
+:return: (xmin, xmax), (ymin, ymax) bounds for the axes.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+Param\+Object(), getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Names\+For\+Root(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+scatter(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aef375df68dd9f9b2c7fa0b08ae851579_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aef375df68dd9f9b2c7fa0b08ae851579_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a624c60e696a6309dc60b7f67a168d65a}\label{classgetdist_1_1plots_1_1GetDistPlotter_a624c60e696a6309dc60b7f67a168d65a}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+colorbar@{add\+\_\+colorbar}}
+\index{add\+\_\+colorbar@{add\+\_\+colorbar}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+colorbar()}{add\_colorbar()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{param,  }\item[{}]{orientation = {\ttfamily \textquotesingle{}vertical\textquotesingle{}},  }\item[{}]{mappable = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{ax\+\_\+args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a color bar to the given plot.
+
+:param param: a :class:`~.paramnames.ParamInfo` with label for the parameter the color bar is describing
+:param orientation: The orientation of the color bar (default: 'vertical')
+:param mappable: the thing to color, defaults to current scatter
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:param ax_args: extra arguments -
+
+       **color_label_in_axes** - if True, label is not added (insert as text label in plot instead)
+:return: The new :class:`~matplotlib:matplotlib.colorbar.Colorbar` instance
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar\+\_\+label(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rotate\+\_\+yticklabels(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a624c60e696a6309dc60b7f67a168d65a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ae418e1e11ac0e54cec213eb7b1e8cec9}\label{classgetdist_1_1plots_1_1GetDistPlotter_ae418e1e11ac0e54cec213eb7b1e8cec9}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+colorbar\+\_\+label@{add\+\_\+colorbar\+\_\+label}}
+\index{add\+\_\+colorbar\+\_\+label@{add\+\_\+colorbar\+\_\+label}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+colorbar\+\_\+label()}{add\_colorbar\_label()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar\+\_\+label (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cb,  }\item[{}]{param,  }\item[{}]{label\+\_\+rotation = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a color bar label.
+
+:param cb: a :class:`~matplotlib:matplotlib.colorbar.Colorbar` instance
+:param param: a :class:`~.paramnames.ParamInfo` with label for the plotted parameter
+:param label_rotation: If set rotates the label (degrees)
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ae418e1e11ac0e54cec213eb7b1e8cec9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ac9e49994c54fdfa9120acddc2c19c352}\label{classgetdist_1_1plots_1_1GetDistPlotter_ac9e49994c54fdfa9120acddc2c19c352}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+legend@{add\+\_\+legend}}
+\index{add\+\_\+legend@{add\+\_\+legend}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+legend()}{add\_legend()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+legend (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{legend\+\_\+labels,  }\item[{}]{legend\+\_\+loc = {\ttfamily None},  }\item[{}]{line\+\_\+offset = {\ttfamily 0},  }\item[{}]{legend\+\_\+ncol = {\ttfamily None},  }\item[{}]{colored\+\_\+text = {\ttfamily False},  }\item[{}]{figure = {\ttfamily False},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{label\+\_\+order = {\ttfamily None},  }\item[{}]{align\+\_\+right = {\ttfamily False},  }\item[{}]{fontsize = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a legend to the axes or figure.
+
+:param legend_labels: The labels
+:param legend_loc: The legend location, default from settings
+:param line_offset: The offset of plotted lines to label (e.g. 1 to not label first line)
+:param legend_ncol: The number of columns in the legend, defaults to 1 
+:param colored_text: 
+             - True: legend labels are colored to match the lines/contours
+             - False: colored lines/boxes are drawn before black labels
+:param figure: True if legend is for the figure rather than the selected axes 
+:param ax: if figure == False, the :class:`~matplotlib:matplotlib.axes.Axes` instance to use; defaults to current axes. 
+:param label_order: minus one to show legends in reverse order that lines were added, or a list giving specific order of line indices 
+:param align_right: True to align legend text at the right
+:param fontsize: The size of the font, default from settings
+:return: a :class:`matplotlib:matplotlib.legend.Legend` instance
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles(), getdist.\+plots.\+Get\+Dist\+Plotter.\+contours\+\_\+added, getdist.\+plots.\+Get\+Dist\+Plotter.\+lines\+\_\+added, nonlinear.\+reverse(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+latex\+\_\+label().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ac9e49994c54fdfa9120acddc2c19c352_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ac9e49994c54fdfa9120acddc2c19c352_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ad52c370b78987bc4e2f67dd242c89e0a}\label{classgetdist_1_1plots_1_1GetDistPlotter_ad52c370b78987bc4e2f67dd242c89e0a}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+line@{add\+\_\+line}}
+\index{add\+\_\+line@{add\+\_\+line}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+line()}{add\_line()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{xdata,  }\item[{}]{ydata,  }\item[{}]{zorder = {\ttfamily 0},  }\item[{}]{color = {\ttfamily None},  }\item[{}]{ls = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a line to the given axes, using :class:`~matplotlib:matplotlib.lines.Line2D`
+
+:param xdata: pair of x coordinates
+:param ydata: pair of y coordinates
+:param zorder: Z-order for Line2D
+:param color: The color of the line, uses settings.axis_marker_color by default
+:param ls: The line style to be used, uses settings.axis_marker_ls by default
+:param ax: the :class:`~matplotlib:matplotlib.axes.Axes` instance to use, defaults to current axes
+:param kwargs:  Additional arguments for :class:`~matplotlib:matplotlib.lines.Line2D`
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a3508bf76855c92e7e9129377b76ee390}\label{classgetdist_1_1plots_1_1GetDistPlotter_a3508bf76855c92e7e9129377b76ee390}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+text@{add\+\_\+text}}
+\index{add\+\_\+text@{add\+\_\+text}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+text()}{add\_text()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text\+\_\+label,  }\item[{}]{x = {\ttfamily 0.95},  }\item[{}]{y = {\ttfamily 0.06},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add text to given axis.
+
+:param text_label: The label to add.
+:param x: The x coordinate of where to add the label
+:param y: The y coordinate of where to add the label.
+:param ax: the :class:`~matplotlib:matplotlib.axes.Axes` instance to use, 
+   index or [x,y] coordinate of subplot to use, or default to current axes.
+:param kwargs: keyword arguments for :func:`~matplotlib:matplotlib.pyplot.text` 
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+fig, and getdist.\+plots.\+Get\+Dist\+Plotter.\+subplots.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text\+\_\+left(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a3508bf76855c92e7e9129377b76ee390_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_af147d1c8013996cd850d66e5c2b82df7}\label{classgetdist_1_1plots_1_1GetDistPlotter_af147d1c8013996cd850d66e5c2b82df7}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+text\+\_\+left@{add\+\_\+text\+\_\+left}}
+\index{add\+\_\+text\+\_\+left@{add\+\_\+text\+\_\+left}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+text\+\_\+left()}{add\_text\_left()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text\+\_\+left (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text\+\_\+label,  }\item[{}]{x = {\ttfamily 0.05},  }\item[{}]{y = {\ttfamily 0.06},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add text to the left, Wraps add_text.
+
+:param text_label: The label to add.
+:param x: The x coordinate of where to add the label
+:param y: The y coordinate of where to add the label.
+:param ax: the :class:`~matplotlib:matplotlib.axes.Axes` instance to use, defaults to current axes.
+:param kwargs: keyword arguments for :func:`~matplotlib:matplotlib.pyplot.text` 
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_af147d1c8013996cd850d66e5c2b82df7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_af147d1c8013996cd850d66e5c2b82df7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_aea02dc90ffea867b3c35d641451309ce}\label{classgetdist_1_1plots_1_1GetDistPlotter_aea02dc90ffea867b3c35d641451309ce}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+x\+\_\+bands@{add\+\_\+x\+\_\+bands}}
+\index{add\+\_\+x\+\_\+bands@{add\+\_\+x\+\_\+bands}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+x\+\_\+bands()}{add\_x\_bands()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+x\+\_\+bands (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{sigma,  }\item[{}]{color = {\ttfamily \textquotesingle{}gray\textquotesingle{}},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{alpha1 = {\ttfamily 0.15},  }\item[{}]{alpha2 = {\ttfamily 0.1},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds vertical shaded bands showing one and two sigma ranges.
+
+:param x: central x value for bands
+:param sigma: 1 sigma error on x
+:param color: The base color to use
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add the bands to (defaults to current plot)
+:param alpha1: alpha for the 1 sigma band; note this is drawn on top of the 2 sigma band. Set to zero if you only want 2 sigma band
+:param alpha2: alpha for the 2 sigma band. Set to zero if you only want 1 sigma band
+:param kwargs: optional keyword arguments for :func:`~matplotlib:matplotlib.pyplot.axvspan`
+
+.. plot::
+   :include-source:
+   
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=2, nMCSamples=2)
+    g = plots.getSinglePlotter(width_inch=4)
+    g.plot_2d([samples1, samples2], ['x0','x1'], filled=False);
+    g.add_x_bands(0, 1)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a91bd8b0085aa1366a6cb6e8d329da5c4}\label{classgetdist_1_1plots_1_1GetDistPlotter_a91bd8b0085aa1366a6cb6e8d329da5c4}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+x\+\_\+marker@{add\+\_\+x\+\_\+marker}}
+\index{add\+\_\+x\+\_\+marker@{add\+\_\+x\+\_\+marker}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+x\+\_\+marker()}{add\_x\_marker()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+x\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{marker,  }\item[{}]{color = {\ttfamily None},  }\item[{}]{ls = {\ttfamily None},  }\item[{}]{lw = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a vertical line marking some x value. Optional arguments can override default settings.
+
+:param marker: The x coordinate of the location the marker line
+:param color: optional color of the marker
+:param ls: optional line style of the marker
+:param lw: optional line width
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:param kwargs: additional arguments to pass to :func:`~matplotlib:matplotlib.pyplot.axvline`
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a91bd8b0085aa1366a6cb6e8d329da5c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ad7176db0b45488015840ae2e1a87162c}\label{classgetdist_1_1plots_1_1GetDistPlotter_ad7176db0b45488015840ae2e1a87162c}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+y\+\_\+bands@{add\+\_\+y\+\_\+bands}}
+\index{add\+\_\+y\+\_\+bands@{add\+\_\+y\+\_\+bands}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+y\+\_\+bands()}{add\_y\_bands()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+y\+\_\+bands (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{y,  }\item[{}]{sigma,  }\item[{}]{color = {\ttfamily \textquotesingle{}gray\textquotesingle{}},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{alpha1 = {\ttfamily 0.15},  }\item[{}]{alpha2 = {\ttfamily 0.1},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds horizontal shaded bands showing one and two sigma ranges.
+
+:param y: central y value for bands
+:param sigma: 1 sigma error on y
+:param color: The base color to use
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add the bands to (defaults to current plot)
+:param alpha1: alpha for the 1 sigma band; note this is drawn on top of the 2 sigma band. Set to zero if you only want 2 sigma band
+:param alpha2: alpha for the 2 sigma band. Set to zero if you only want 1 sigma band
+:param kwargs: optional keyword arguments for :func:`~matplotlib:matplotlib.pyplot.axhspan`
+
+.. plot::
+   :include-source:
+   
+    from getdist import plots, gaussian_mixtures
+    samples= gaussian_mixtures.randomTestMCSamples(ndim=2, nMCSamples=1)
+    g = plots.getSinglePlotter(width_inch=4)
+    g.plot_2d(samples, ['x0','x1'], filled=True);
+    g.add_y_bands(0, 1)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a5839922c9cf43552f633678119f6f6de}\label{classgetdist_1_1plots_1_1GetDistPlotter_a5839922c9cf43552f633678119f6f6de}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!add\+\_\+y\+\_\+marker@{add\+\_\+y\+\_\+marker}}
+\index{add\+\_\+y\+\_\+marker@{add\+\_\+y\+\_\+marker}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{add\+\_\+y\+\_\+marker()}{add\_y\_marker()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+y\+\_\+marker (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{marker,  }\item[{}]{color = {\ttfamily None},  }\item[{}]{ls = {\ttfamily None},  }\item[{}]{lw = {\ttfamily None},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a horizontal line marking some y value. Optional arguments can override default settings.
+
+:param marker: The y coordinate of the location the marker line
+:param color: optional color of the marker
+:param ls: optional line style of the marker
+:param lw: optional line width.
+:param ax: optional :class:`~matplotlib:matplotlib.axes.Axes` instance to add to (defaults to current plot)
+:param kwargs: additional arguments to pass to :func:`~matplotlib:matplotlib.pyplot.axhline`
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a5839922c9cf43552f633678119f6f6de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ab620b89a8337904ff357c316f040aa53}\label{classgetdist_1_1plots_1_1GetDistPlotter_ab620b89a8337904ff357c316f040aa53}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!export@{export}}
+\index{export@{export}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+export (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{fname = {\ttfamily None},  }\item[{}]{adir = {\ttfamily None},  }\item[{}]{watermark = {\ttfamily None},  }\item[{}]{tag = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Exports given figure to a file. If the filename is not specified, saves to a file with the same
+name as the calling script (useful for plot scripts where the script name matches the output figure).
+
+:param fname: The filename to export to. The extension (.pdf, .png, etc) determines the file type
+:param adir: The directory to save to
+:param watermark: a watermark text, e.g. to make the plot with some pre-final version number
+:param tag: A suffix to add to the filename.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+escape\+Latex(), getdist.\+plots.\+Get\+Dist\+Plotter.\+extra\+\_\+artists, and getdist.\+plots.\+Get\+Dist\+Plotter.\+fig.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ab620b89a8337904ff357c316f040aa53_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a2ab4d56845a5abefe27c2d5d62bfb680}\label{classgetdist_1_1plots_1_1GetDistPlotter_a2ab4d56845a5abefe27c2d5d62bfb680}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!finish\+\_\+plot@{finish\+\_\+plot}}
+\index{finish\+\_\+plot@{finish\+\_\+plot}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{finish\+\_\+plot()}{finish\_plot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{legend\+\_\+labels = {\ttfamily None},  }\item[{}]{legend\+\_\+loc = {\ttfamily None},  }\item[{}]{line\+\_\+offset = {\ttfamily 0},  }\item[{}]{legend\+\_\+ncol = {\ttfamily None},  }\item[{}]{label\+\_\+order = {\ttfamily None},  }\item[{}]{no\+\_\+gap = {\ttfamily False},  }\item[{}]{no\+\_\+extra\+\_\+legend\+\_\+space = {\ttfamily False},  }\item[{}]{no\+\_\+tight = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finish the current plot, adjusting subplot spacing and adding legend
+
+:param legend_labels: The labels
+:param legend_loc: The legend location, default from settings
+:param line_offset: The offset of plotted lines to label (e.g. 1 to not label first line)
+:param legend_ncol: The number of columns in the legend, defaults to 1 
+:param label_order: minus one to show legends in reverse order that lines were added, or a list giving specific order of line indices 
+:param no_gap: True if should leave no subplot padding in tight_layout
+:param no_extra_legend_space: True to prevent making additional space above subplots for the legend
+:param no_tight: don't use :func:`~matplotlib:matplotlib.pyplot.tight_layout` to adjust subplot positions
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+legend(), getdist.\+plots.\+Get\+Dist\+Plotter.\+extra\+\_\+artists, getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+row, and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d\+\_\+triplets(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a2ab4d56845a5abefe27c2d5d62bfb680_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a2ab4d56845a5abefe27c2d5d62bfb680_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a0b580d3d50c53c534fa8c1a6cefea4d0}\label{classgetdist_1_1plots_1_1GetDistPlotter_a0b580d3d50c53c534fa8c1a6cefea4d0}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!get\+\_\+param\+\_\+array@{get\+\_\+param\+\_\+array}}
+\index{get\+\_\+param\+\_\+array@{get\+\_\+param\+\_\+array}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{get\+\_\+param\+\_\+array()}{get\_param\_array()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{params = {\ttfamily None},  }\item[{}]{renames = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets an array of :class:`~.paramnames.ParamInfo` for named params
+
+:param root: The root name of the samples to use
+:param params: the parameter names (if not specified, get all)
+:param renames: optional dictionary mapping input names and equivalent names used by the samples
+:return: list of :class:`~.paramnames.ParamInfo` instances for the parameters
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Names\+For\+Root().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+shading(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+3d\+\_\+scatter(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d\+\_\+z(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0b580d3d50c53c534fa8c1a6cefea4d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0b580d3d50c53c534fa8c1a6cefea4d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a07ead3d7a1afc0b7b944292e92342084}\label{classgetdist_1_1plots_1_1GetDistPlotter_a07ead3d7a1afc0b7b944292e92342084}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!make\+\_\+figure@{make\+\_\+figure}}
+\index{make\+\_\+figure@{make\+\_\+figure}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{make\+\_\+figure()}{make\_figure()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{nplot = {\ttfamily 1},  }\item[{}]{nx = {\ttfamily None},  }\item[{}]{ny = {\ttfamily None},  }\item[{}]{xstretch = {\ttfamily 1.0},  }\item[{}]{ystretch = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes a new figure.
+
+:param nplot: number of subplots
+:param nx: number of subplots in each row
+:param ny: number of subplots in each column
+:param xstretch: The parameter of how much to stretch the width, 1 is default
+:param ystretch: The parameter of how much to stretch the height, 1 is default
+:return: The plot_col, plot_row numbers of subplots for the figure
+\end{DoxyVerb}
+ 
+
+References C\+A\+M\+B\+\_\+test\+\_\+files.\+int, getdist.\+plots.\+Sample\+Analysis\+Get\+Dist.\+new\+Plot(), getdist.\+plots.\+M\+C\+Sample\+Analysis.\+new\+Plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+new\+Plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+col.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d\+\_\+triplets(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a07ead3d7a1afc0b7b944292e92342084_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a07ead3d7a1afc0b7b944292e92342084_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a844cb0d8b1f652daf9b23267a470636c}\label{classgetdist_1_1plots_1_1GetDistPlotter_a844cb0d8b1f652daf9b23267a470636c}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!new\+Plot@{new\+Plot}}
+\index{new\+Plot@{new\+Plot}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{new\+Plot()}{newPlot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+new\+Plot (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resets the given plotter to make a new empty plot.
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a844cb0d8b1f652daf9b23267a470636c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a9f6d27f2345ccb87720770ddb81258d5}\label{classgetdist_1_1plots_1_1GetDistPlotter_a9f6d27f2345ccb87720770ddb81258d5}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!param\+\_\+latex\+\_\+label@{param\+\_\+latex\+\_\+label}}
+\index{param\+\_\+latex\+\_\+label@{param\+\_\+latex\+\_\+label}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{param\+\_\+latex\+\_\+label()}{param\_latex\_label()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+latex\+\_\+label (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{name,  }\item[{}]{label\+Params = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the latex label for given parameter.
+
+:param root: root name of the samples having the parameter (or :class:`~.mcsamples.MCSamples` instance)
+:param name:  The param name
+:param labelParams: optional name of .paramnames file to override parameter name labels
+:return: The latex label
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+legend(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a9f6d27f2345ccb87720770ddb81258d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a199664f84496268527d58072eebcd724}\label{classgetdist_1_1plots_1_1GetDistPlotter_a199664f84496268527d58072eebcd724}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!param\+Bounds\+For\+Root@{param\+Bounds\+For\+Root}}
+\index{param\+Bounds\+For\+Root@{param\+Bounds\+For\+Root}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{param\+Bounds\+For\+Root()}{paramBoundsForRoot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Bounds\+For\+Root (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get any hard prior bounds for the parameters with root file name
+
+:param root: The root name to be used
+:return: object with getUpper() and getLower() bounds functions
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+bounds\+\_\+sets, and getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param\+\_\+ranges().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a199664f84496268527d58072eebcd724_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a556fd9e8f1a884ef8673cf58e64572af}\label{classgetdist_1_1plots_1_1GetDistPlotter_a556fd9e8f1a884ef8673cf58e64572af}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!param\+Names\+For\+Root@{param\+Names\+For\+Root}}
+\index{param\+Names\+For\+Root@{param\+Names\+For\+Root}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{param\+Names\+For\+Root()}{paramNamesForRoot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Names\+For\+Root (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the parameter names and labels :class:`~.paramnames.ParamNames` instance for the given root name
+
+:param root: The root name of the samples.
+:return: :class:`~.paramnames.ParamNames` instance
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+name\+\_\+sets, getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser, and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+3d\+\_\+scatter(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a556fd9e8f1a884ef8673cf58e64572af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_aab253c97064f41256595e20f5388f86c}\label{classgetdist_1_1plots_1_1GetDistPlotter_aab253c97064f41256595e20f5388f86c}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plot\+\_\+1d@{plot\+\_\+1d}}
+\index{plot\+\_\+1d@{plot\+\_\+1d}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plot\+\_\+1d()}{plot\_1d()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{param,  }\item[{}]{marker = {\ttfamily None},  }\item[{}]{marker\+\_\+color = {\ttfamily None},  }\item[{}]{label\+\_\+right = {\ttfamily False},  }\item[{}]{no\+\_\+ylabel = {\ttfamily False},  }\item[{}]{no\+\_\+ytick = {\ttfamily False},  }\item[{}]{no\+\_\+zero = {\ttfamily False},  }\item[{}]{normalized = {\ttfamily False},  }\item[{}]{param\+\_\+renames = {\ttfamily \{\}},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a single 1D plot with marginalized density lines.
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param param: the parameter name to plot
+:param marker: If set, places a marker at given coordinate.
+:param marker_color: If set, sets the marker color.
+:param label_right: If True, label the y axis on the right rather than the left
+:param no_ylabel: If True excludes the label on the y axis
+:param no_ytick: If True show no y ticks
+:param no_zero: If true does not show tick label at zero on y axis
+:param normalized: plot normalized densities (if False, densities normalized to peak at 1)
+:param param_renames: optional dictionary mapping input parameter names to equivalent names used by the samples
+:param kwargs: additional optional keyword arguments:
+
+* **lims**: optional limits for x range of the plot [xmin, xmax]
+* **ls** : list of line styles for the different lines plotted 
+* **colors**: list of colors for the different lines plotted 
+* **lws**: list of line widths for the different lines plotted
+* **alphas**: list of alphas for the different lines plotted 
+* **line_args**: a list of dictionaries with settings for each set of lines
+* arguments for :func:`~GetDistPlotter.setAxes`
+
+.. plot::
+   :include-source:
+
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=2, nMCSamples=2)
+    g = plots.getSinglePlotter(width_inch=4)
+    g.plot_1d([samples1, samples2], 'x0', marker=0)
+
+.. plot::
+   :include-source:
+
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=2, nMCSamples=2)
+    g = plots.getSinglePlotter(width_inch=3)
+    g.plot_1d([samples1, samples2], 'x0', normalized=True, colors=['green','black'])\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param\+\_\+ranges(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+line\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limit(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+x\+\_\+marker(), getdist.\+plots.\+Get\+Dist\+Plotter.\+fig, getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+ylabel(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aab253c97064f41256595e20f5388f86c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_aab253c97064f41256595e20f5388f86c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a4a4a4bee3e0232eb2089b2f9b0006909}\label{classgetdist_1_1plots_1_1GetDistPlotter_a4a4a4bee3e0232eb2089b2f9b0006909}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plot\+\_\+2d@{plot\+\_\+2d}}
+\index{plot\+\_\+2d@{plot\+\_\+2d}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plot\+\_\+2d()}{plot\_2d()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{param1 = {\ttfamily None},  }\item[{}]{param2 = {\ttfamily None},  }\item[{}]{param\+\_\+pair = {\ttfamily None},  }\item[{}]{shaded = {\ttfamily False},  }\item[{}]{add\+\_\+legend\+\_\+proxy = {\ttfamily True},  }\item[{}]{line\+\_\+offset = {\ttfamily 0},  }\item[{}]{proxy\+\_\+root\+\_\+exclude = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a single 2D line, contour or filled plot.
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param param1: x parameter name
+:param param2:  y parameter name
+:param param_pair: An [x,y] pair of params; can be set instead of param1 and param2
+:param shaded: True if plot should be a shaded density plot (for the first samples plotted)
+:param add_legend_proxy: True if should add to the legend proxy
+:param line_offset: line_offset if not adding first contours to plot
+:param proxy_root_exclude: any root names not to include when adding to the legend proxy
+:param kwargs: additional optional arguments:
+
+* **filled**: True for filled contours
+* **lims**: list of limits for the plot [xmin, xmax, ymin, ymax]
+* **ls** : list of line styles for the different sample contours plotted 
+* **colors**: list of colors for the different sample contours plotted 
+* **lws**: list of line widths for the different sample contours plotted
+* **alphas**: list of alphas for the different sample contours plotted 
+* **line_args**: a list of dictionaries with settings for each set of contours
+* arguments for :func:`~GetDistPlotter.setAxes`
+:return: The xbounds, ybounds of the plot.
+
+.. plot::
+   :include-source:
+   
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=4, nMCSamples=2)
+    g = plots.getSinglePlotter(width_inch = 4)
+    g.plot_2d([samples1,samples2], 'x1', 'x2', filled=True);\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param\+\_\+ranges(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+contour\+\_\+args(), getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+update\+Limits(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limits(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+shading(), getdist.\+plots.\+Get\+Dist\+Plotter.\+fig, getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+contour\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d\+\_\+triplets(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a4a4a4bee3e0232eb2089b2f9b0006909_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a4a4a4bee3e0232eb2089b2f9b0006909_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a20064a0721aea40476598a5a3a20df01}\label{classgetdist_1_1plots_1_1GetDistPlotter_a20064a0721aea40476598a5a3a20df01}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plot\+\_\+2d\+\_\+scatter@{plot\+\_\+2d\+\_\+scatter}}
+\index{plot\+\_\+2d\+\_\+scatter@{plot\+\_\+2d\+\_\+scatter}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plot\+\_\+2d\+\_\+scatter()}{plot\_2d\_scatter()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d\+\_\+scatter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{param1,  }\item[{}]{param2,  }\item[{}]{color = {\ttfamily \textquotesingle{}k\textquotesingle{}},  }\item[{}]{line\+\_\+offset = {\ttfamily 0},  }\item[{}]{add\+\_\+legend\+\_\+proxy = {\ttfamily True},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a 2D sample scatter plot.
+
+If roots is a list of more than one, additional densities are plotted as contour lines. 
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param param1: name of x parameter
+:param param2: name of y parameter
+:param color: color to plot the samples
+:param line_offset: The line index offset for added contours
+:param add_legend_proxy: True if should add a legend proxy
+:param kwargs: additional optional arguments:
+
+* **filled**: True for filled contours for second and later items in roots
+* **lims**: limits for the plot [xmin, xmax, ymin, ymax]
+* **ls** : list of line styles for the different sample contours plotted 
+* **colors**: list of colors for the different sample contours plotted 
+* **lws**: list of linewidths for the different sample contours plotted
+* **alphas**: list of alphas for the different sample contours plotted 
+* **line_args**: a list of dict with settings for contours from each root
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a20064a0721aea40476598a5a3a20df01_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a47d2f31e3d3cb751152be571a867a503}\label{classgetdist_1_1plots_1_1GetDistPlotter_a47d2f31e3d3cb751152be571a867a503}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plot\+\_\+3d@{plot\+\_\+3d}}
+\index{plot\+\_\+3d@{plot\+\_\+3d}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plot\+\_\+3d()}{plot\_3d()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{params = {\ttfamily None},  }\item[{}]{params\+\_\+for\+\_\+plots = {\ttfamily None},  }\item[{}]{color\+\_\+bar = {\ttfamily True},  }\item[{}]{line\+\_\+offset = {\ttfamily 0},  }\item[{}]{add\+\_\+legend\+\_\+proxy = {\ttfamily True},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a 2D scatter plot colored by the value of a third parameter (a 3D plot).
+
+If roots is a list of more than one, additional densities are plotted as contour lines. 
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param params: list with the three parameter names to plot (x, y, color)
+:param params_for_plots: list of parameter triplets to plot for each root plotted; more general alternative to params
+:param color_bar: True if should include a color bar
+:param line_offset: The line index offset for added contours
+:param add_legend_proxy: True if should add a legend proxy
+:param kwargs: additional optional arguments:
+
+* **filled**: True for filled contours for second and later items in roots
+* **lims**: limits for the plot [xmin, xmax, ymin, ymax]
+* **ls** : list of line styles for the different sample contours plotted 
+* **colors**: list of colors for the different sample contours plotted 
+* **lws**: list of linewidths for the different sample contours plotted
+* **alphas**: list of alphas for the different sample contours plotted 
+* **line_args**: a list of dict with settings for contours from each root
+* arguments for :func:`~GetDistPlotter.add_colorbar`
+
+.. plot::
+   :include-source:
+   
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=3, nMCSamples=2)
+    g = plots.getSinglePlotter(width_inch=4)
+    g.plot_3d([samples1, samples2], ['x0','x1','x2']);
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param\+\_\+ranges(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+contour\+\_\+args(), getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+update\+Limits(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limits(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+3d\+\_\+scatter(), getdist.\+plots.\+Get\+Dist\+Plotter.\+fig, getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes(), and copy\+Grid\+Files.\+zip.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d\+\_\+scatter(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a47d2f31e3d3cb751152be571a867a503_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a47d2f31e3d3cb751152be571a867a503_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a7cd2a179b15d78d19f07760d0ba698a1}\label{classgetdist_1_1plots_1_1GetDistPlotter_a7cd2a179b15d78d19f07760d0ba698a1}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plots\+\_\+1d@{plots\+\_\+1d}}
+\index{plots\+\_\+1d@{plots\+\_\+1d}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plots\+\_\+1d()}{plots\_1d()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{params = {\ttfamily None},  }\item[{}]{legend\+\_\+labels = {\ttfamily None},  }\item[{}]{legend\+\_\+ncol = {\ttfamily None},  }\item[{}]{label\+\_\+order = {\ttfamily None},  }\item[{}]{nx = {\ttfamily None},  }\item[{}]{param\+List = {\ttfamily None},  }\item[{}]{roots\+\_\+per\+\_\+param = {\ttfamily False},  }\item[{}]{share\+\_\+y = {\ttfamily None},  }\item[{}]{markers = {\ttfamily None},  }\item[{}]{xlims = {\ttfamily None},  }\item[{}]{param\+\_\+renames = {\ttfamily \{\}},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make an array of 1D marginalized density subplots 
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param params: list of names of parameters to plot
+:param legend_labels: list of legend labels
+:param legend_ncol: Number of columns for the legend.
+:param label_order: minus one to show legends in reverse order that lines were added, or a list giving specific order of line indices 
+:param nx: number of subplots per row 
+:param paramList: name of .paramnames file listing specific subset of parameters to plot
+:param roots_per_param: True to use a different set of samples for each parameter: 
+      plots param[i] using roots[i] (where roots[i] is the list of sample root names to use for plotting parameter i). 
+      This is useful for example for  plotting one-parameter extensions of a baseline model, each with various data combinations.
+:param share_y: True for subplots to share a common y axis with no horizontal space between subplots
+:param markers: optional dict giving vertical markers index by parameter, or a list of marker values for each parameter plotted
+:param xlims: list of [min,max] limits for the range of each parameter plot
+:param param_renames: optional dictionary holding mapping between input names and equivalent names used in the samples.
+:param kwargs: optional keyword arguments for :func:`~GetDistPlotter.plot_1d`
+:return: The plot_col, plot_row subplot dimensions of the new figure
+
+.. plot::
+   :include-source: 
+
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=4, nMCSamples=2)
+    g = plots.getSubplotPlotter()
+    g.plots_1d([samples1, samples2], ['x0', 'x1', 'x2'], nx=3, share_y=True, legend_ncol =2,
+         markers={'x1':0}, colors=['red', 'green'], ls=['--', '-.'])\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+param\+Name\+List\+From\+File(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+space\+Ticks(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number(), getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+col, getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+settings, and copy\+Grid\+Files.\+zip.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a7cd2a179b15d78d19f07760d0ba698a1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a7cd2a179b15d78d19f07760d0ba698a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a0e610a87566737a4b66974d2d721caaa}\label{classgetdist_1_1plots_1_1GetDistPlotter_a0e610a87566737a4b66974d2d721caaa}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plots\+\_\+2d@{plots\+\_\+2d}}
+\index{plots\+\_\+2d@{plots\+\_\+2d}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plots\+\_\+2d()}{plots\_2d()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{param1 = {\ttfamily None},  }\item[{}]{params2 = {\ttfamily None},  }\item[{}]{param\+\_\+pairs = {\ttfamily None},  }\item[{}]{nx = {\ttfamily None},  }\item[{}]{legend\+\_\+labels = {\ttfamily None},  }\item[{}]{legend\+\_\+ncol = {\ttfamily None},  }\item[{}]{label\+\_\+order = {\ttfamily None},  }\item[{}]{filled = {\ttfamily False},  }\item[{}]{shaded = {\ttfamily False},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make an array of 2D line, filled or contour plots.
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of either of these) for the samples to plot
+:param param1: x parameter to plot
+:param params2: list of y parameters to plot against x
+:param param_pairs: list of [x,y] parameter pairs to plot; either specify param1, param2, or param_pairs
+:param nx: number of subplots per row
+:param legend_labels: The labels used for the legend.
+:param legend_ncol: The amount of columns in the legend.
+:param label_order: minus one to show legends in reverse order that lines were added, or a list giving specific order of line indices 
+:param filled: True to plot filled contours
+:param shaded: True to shade by the density for the first root plotted
+:param kwargs: optional keyword arguments for :func:`~GetDistPlotter.plot_2d`
+:return: The plot_col, plot_row subplot dimensions of the new figure
+
+.. plot::
+   :include-source: 
+
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=4, nMCSamples=2)
+    g = plots.getSubplotPlotter(subplot_size=4)
+    g.settings.legend_frac_subplot_margin = 0.05
+    g.plots_2d([samples1, samples2], param_pairs=[['x0', 'x1'], ['x1', 'x2']], 
+                    nx=2, legend_ncol=2, colors=['blue', 'red'])
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number(), getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0e610a87566737a4b66974d2d721caaa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a0e610a87566737a4b66974d2d721caaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a003f6bc9220702f977aaaa73c64b1cb3}\label{classgetdist_1_1plots_1_1GetDistPlotter_a003f6bc9220702f977aaaa73c64b1cb3}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plots\+\_\+2d\+\_\+triplets@{plots\+\_\+2d\+\_\+triplets}}
+\index{plots\+\_\+2d\+\_\+triplets@{plots\+\_\+2d\+\_\+triplets}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plots\+\_\+2d\+\_\+triplets()}{plots\_2d\_triplets()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+2d\+\_\+triplets (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root\+\_\+params\+\_\+triplets,  }\item[{}]{nx = {\ttfamily None},  }\item[{}]{filled = {\ttfamily False},  }\item[{}]{x\+\_\+lim = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates an array of 2D plots, where each plot uses different samples, x and y parameters
+
+:param root_params_triplets: a list of (root, x, y) giving sample root names, and x and y parameter names to plot in each subplot
+:param nx: number of subplots per row
+:param filled:  True for filled contours
+:param x_lim: limits for all the x axes.
+:return: The plot_col, plot_row subplot dimensions of the new figure
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number(), getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a003f6bc9220702f977aaaa73c64b1cb3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a331da209c29a04929d2e5fb97fc1e8bb}\label{classgetdist_1_1plots_1_1GetDistPlotter_a331da209c29a04929d2e5fb97fc1e8bb}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plots\+\_\+3d@{plots\+\_\+3d}}
+\index{plots\+\_\+3d@{plots\+\_\+3d}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plots\+\_\+3d()}{plots\_3d()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{param\+\_\+sets,  }\item[{}]{nx = {\ttfamily None},  }\item[{}]{legend\+\_\+labels = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create multiple 3D subplots 
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param param_sets: A list of triplets of parameter names to plot [(x,y, color), (x2,y2,color2)..]
+:param nx: number of subplots per row
+:param legend_labels: list of legend labels
+:param kwargs: keyword arguments for  :func:`~GetDistPlotter.plot_3d`
+:return: The plot_col, plot_row subplot dimensions of the new figure
+
+.. plot::
+   :include-source:
+   
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=5, nMCSamples=2)
+    g = plots.getSubplotPlotter(subplot_size=4)
+    g.plots_3d([samples1, samples2], [['x0', 'x1', 'x2'], ['x3', 'x4', 'x2']], nx=2);
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number(), getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d().
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d\+\_\+z().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a331da209c29a04929d2e5fb97fc1e8bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a331da209c29a04929d2e5fb97fc1e8bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ad8246050feeaf02dc737682fc5b41292}\label{classgetdist_1_1plots_1_1GetDistPlotter_ad8246050feeaf02dc737682fc5b41292}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plots\+\_\+3d\+\_\+z@{plots\+\_\+3d\+\_\+z}}
+\index{plots\+\_\+3d\+\_\+z@{plots\+\_\+3d\+\_\+z}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plots\+\_\+3d\+\_\+z()}{plots\_3d\_z()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d\+\_\+z (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{param\+\_\+x,  }\item[{}]{param\+\_\+y,  }\item[{}]{param\+\_\+z = {\ttfamily None},  }\item[{}]{max\+\_\+z = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make set of sample scatter subplots of param_x against param_y, each coloured by values of parameters in param_z (all if None).
+Any second or more samples in root are shown as contours
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param param_x: x parameter name
+:param param_y: y parameter name
+:param param_z: list of parameter to names to color samples in each subplot (default: all)
+:param max_z: The maximum number of z parameters we should use.
+:param kwargs: keyword arguments for :func:`~GetDistPlotter.plot_3d`
+:return: The plot_col, plot_row subplot dimensions of the new figure
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+make\+List(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+3d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ad8246050feeaf02dc737682fc5b41292_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a814e233ab36c48c3a3a34d4c837d4251}\label{classgetdist_1_1plots_1_1GetDistPlotter_a814e233ab36c48c3a3a34d4c837d4251}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!rectangle\+\_\+plot@{rectangle\+\_\+plot}}
+\index{rectangle\+\_\+plot@{rectangle\+\_\+plot}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{rectangle\+\_\+plot()}{rectangle\_plot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{xparams,  }\item[{}]{yparams,  }\item[{}]{yroots = {\ttfamily None},  }\item[{}]{roots = {\ttfamily None},  }\item[{}]{plot\+\_\+roots = {\ttfamily None},  }\item[{}]{plot\+\_\+texts = {\ttfamily None},  }\item[{}]{xmarkers = {\ttfamily None},  }\item[{}]{ymarkers = {\ttfamily None},  }\item[{}]{marker\+\_\+args = {\ttfamily \{\}},  }\item[{}]{param\+\_\+limits = {\ttfamily \{\}},  }\item[{}]{legend\+\_\+labels = {\ttfamily None},  }\item[{}]{legend\+\_\+ncol = {\ttfamily None},  }\item[{}]{label\+\_\+order = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a grid of 2D plots.
+
+A rectangle plot shows all x parameters plotted againts all y parameters in a grid of subplots with no spacing.
+
+Set roots to use the same set of roots for every plot in the rectangle, or set
+yroots (list of list of roots) to use different set of roots for each row of the plot; alternatively
+plot_roots allows you to specify explicitly (via list of list of list of roots) the set of roots for each individual subplot
+
+:param xparams: list of parameters for the x axes
+:param yparams: list of parameters for the y axes
+:param yroots: (list of list of roots) allows use of different set of root names for each row of the plot;
+       set either roots or yroots
+:param roots: list of root names or :class:`~.mcsamples.MCSamples` instances. 
+Uses the same set of roots for every plot in the rectangle; set either roots or yroots.
+:param plot_roots: Allows you to specify (via list of list of list of roots) the set of roots for each individual subplot
+:param plot_texts: a 2D array (or list of lists) of a text label to put in each subplot (use a None entry to skip one)
+:param xmarkers: list of markers for the x axis
+:param ymarkers: list of markers for the y axis
+:param marker_args: arguments for :func:`~GetDistPlotter.add_x_marker` and :func:`~GetDistPlotter.add_y_marker`
+:param param_limits: a dictionary holding a mapping from parameter names to axis limits for that parameter
+:param legend_labels: list of labels for the legend
+:param legend_ncol: The number of columns for the legend
+:param label_order: minus one to show legends in reverse order that lines were added, or a list giving specific order of line indices 
+:param kwargs: arguments for :func:`~GetDistPlotter.plot_2d`.
+:return: the 2D list of :class:`~matplotlib:matplotlib.axes.Axes` created
+
+.. plot::
+   :include-source: 
+
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=4, nMCSamples=2)
+    g = plots.getSubplotPlotter()
+    g.rectangle_plot(['x0','x1'], ['x2','x3'], roots = [samples1, samples2], filled=True)
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+space\+Ticks(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot(), getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+update\+Limits(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+update\+Limits(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text\+\_\+left(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+x\+\_\+marker(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+y\+\_\+marker(), getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), and copy\+Grid\+Files.\+zip.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a814e233ab36c48c3a3a34d4c837d4251_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a814e233ab36c48c3a3a34d4c837d4251_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a695a45a9dff3c9be3b44d4b652dfc2df}\label{classgetdist_1_1plots_1_1GetDistPlotter_a695a45a9dff3c9be3b44d4b652dfc2df}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!rotate\+\_\+yticklabels@{rotate\+\_\+yticklabels}}
+\index{rotate\+\_\+yticklabels@{rotate\+\_\+yticklabels}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{rotate\+\_\+yticklabels()}{rotate\_yticklabels()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+rotate\+\_\+yticklabels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{rotation = {\ttfamily 90} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rotates the y-tick labels by given rotation (degrees)
+
+:param ax: the :class:`~matplotlib:matplotlib.axes.Axes` instance to use, defaults to current axes.
+:param rotation: How much to rotate in degrees.
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a695a45a9dff3c9be3b44d4b652dfc2df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a307e4b542216e36e71550a6d34a36f49}\label{classgetdist_1_1plots_1_1GetDistPlotter_a307e4b542216e36e71550a6d34a36f49}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!set\+\_\+xlabel@{set\+\_\+xlabel}}
+\index{set\+\_\+xlabel@{set\+\_\+xlabel}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{set\+\_\+xlabel()}{set\_xlabel()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+xlabel (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{param,  }\item[{}]{ax = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the label for the x axis.
+
+:param param: the :class:`~.paramnames.ParamInfo` for the x axis parameter
+:param ax: the :class:`~matplotlib:matplotlib.axes.Axes` instance to use, defaults to current axes.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a307e4b542216e36e71550a6d34a36f49_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ae83a5b69313acacabeb99940a25c1004}\label{classgetdist_1_1plots_1_1GetDistPlotter_ae83a5b69313acacabeb99940a25c1004}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!set\+\_\+ylabel@{set\+\_\+ylabel}}
+\index{set\+\_\+ylabel@{set\+\_\+ylabel}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{set\+\_\+ylabel()}{set\_ylabel()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+ylabel (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{param,  }\item[{}]{ax = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets the label for the y axis.
+
+:param param: the :class:`~.paramnames.ParamInfo` for the y axis parameter
+:param ax: the :class:`~matplotlib:matplotlib.axes.Axes` instance to use, defaults to current axes.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ae83a5b69313acacabeb99940a25c1004_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_ae83a5b69313acacabeb99940a25c1004_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_afc478614168ba111f0ec1bba56bdb692}\label{classgetdist_1_1plots_1_1GetDistPlotter_afc478614168ba111f0ec1bba56bdb692}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!set\+Axes@{set\+Axes}}
+\index{set\+Axes@{set\+Axes}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{set\+Axes()}{setAxes()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{params = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{lims = {\ttfamily None},  }\item[{}]{do\+\_\+xlabel = {\ttfamily True},  }\item[{}]{do\+\_\+ylabel = {\ttfamily True},  }\item[{}]{no\+\_\+label\+\_\+no\+\_\+numbers = {\ttfamily False},  }\item[{}]{pos = {\ttfamily None},  }\item[{}]{prune = {\ttfamily None},  }\item[{}]{color\+\_\+label\+\_\+in\+\_\+axes = {\ttfamily False},  }\item[{}]{ax = {\ttfamily None},  }\item[{}]{other\+\_\+args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the axis labels and ticks, and various styles. Do not usually need to call this directly.
+
+:param params: [x,y] list of the :class:`~.paramnames.ParamInfo` for the x and y parameters to use for labels
+:param lims: optional [xmin, xmax, ymin, ymax] to fix specific limits for the axes
+:param do_xlabel: True if should include label for x axis.
+:param do_ylabel: True if should include label for y axis.
+:param no_label_no_numbers: True to hide tick labels
+:param pos: optional position of the axes ['left' | 'bottom' | 'width' | 'height']
+:param prune: Parameter for MaxNLocator constructor,  ['lower' | 'upper' | 'both' | None]
+:param color_label_in_axes: If True, and params has at last three entries, puts text in the axis to label the third parameter
+:param ax: the :class:`~matplotlib:matplotlib.axes.Axes` instance to use, defaults to current axes.
+:param other_args: Not used, just quietly ignore so that setAxes can be passed general kwargs
+:return: an :class:`~matplotlib:matplotlib.axes.Axes` instance
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+Axis\+Properties(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+xlabel(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+ylabel(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+Axis\+Properties(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_afc478614168ba111f0ec1bba56bdb692_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_afc478614168ba111f0ec1bba56bdb692_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_af4832303ee4e0106314557a329153201}\label{classgetdist_1_1plots_1_1GetDistPlotter_af4832303ee4e0106314557a329153201}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!show\+\_\+all\+\_\+settings@{show\+\_\+all\+\_\+settings}}
+\index{show\+\_\+all\+\_\+settings@{show\+\_\+all\+\_\+settings}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{show\+\_\+all\+\_\+settings()}{show\_all\_settings()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+show\+\_\+all\+\_\+settings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prints settings and library versions
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+settings.
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a92380ecaa3180adba902208e5d646329}\label{classgetdist_1_1plots_1_1GetDistPlotter_a92380ecaa3180adba902208e5d646329}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!triangle\+\_\+plot@{triangle\+\_\+plot}}
+\index{triangle\+\_\+plot@{triangle\+\_\+plot}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{triangle\+\_\+plot()}{triangle\_plot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots,  }\item[{}]{params = {\ttfamily None},  }\item[{}]{legend\+\_\+labels = {\ttfamily None},  }\item[{}]{plot\+\_\+3d\+\_\+with\+\_\+param = {\ttfamily None},  }\item[{}]{filled = {\ttfamily False},  }\item[{}]{shaded = {\ttfamily False},  }\item[{}]{contour\+\_\+args = {\ttfamily None},  }\item[{}]{contour\+\_\+colors = {\ttfamily None},  }\item[{}]{contour\+\_\+ls = {\ttfamily None},  }\item[{}]{contour\+\_\+lws = {\ttfamily None},  }\item[{}]{line\+\_\+args = {\ttfamily None},  }\item[{}]{label\+\_\+order = {\ttfamily None},  }\item[{}]{legend\+\_\+ncol = {\ttfamily None},  }\item[{}]{legend\+\_\+loc = {\ttfamily None},  }\item[{}]{upper\+\_\+roots = {\ttfamily None},  }\item[{}]{upper\+\_\+kwargs = {\ttfamily \{\}},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a trianglular array of 1D and 2D plots. 
+
+A triangle plot is an array of subplots with 1D plots along the diagonal, and 2D plots in the lower corner.
+The upper triangle can also be used by setting upper_roots.
+
+:param roots: root name or :class:`~.mcsamples.MCSamples` instance (or list of any of either of these) for the samples to plot
+:param params: list of parameters to plot (default: all, can also use glob patterns to match groups of parameters)
+:param legend_labels: list of legend labels
+:param plot_3d_with_param: for the 2D plots, make sample scatter plot, with samples colored by this parameter name (to make a '3D' plot)
+:param filled: True for filled contours
+:param shaded: plot shaded density for first root (cannot be used with filled)
+:param contour_args: optional dict (or list of dict) with arguments for each 2D plot (e.g. specifying color, alpha,etc)
+:param contour_colors: list of colors for plotting contours (for each root)
+:param contour_ls: list of Line styles for contours (for each root)
+:param contour_lws: list of Line widths for contours (for each root)
+:param line_args: dict (or list of dict) with arguments for each 2D plot (e.g. specifying ls, lw, color, etc)
+:param label_order: minus one to show legends in reverse order that lines were added, or a list giving specific order of line indices 
+:param legend_ncol: The number of columns for the legend
+:param legend_loc: The location for the legend
+:param upper_roots: set to fill the upper triangle with subplots using this list of sample root names 
+             (TODO: this needs some work to easily work without a lot of tweaking)
+:param upper_kwargs: list of dict for arguments when making upper-triangle 2D plots
+:param kwargs: optional keyword arguments for :func:`~GetDistPlotter.plot_2d` or :func:`~GetDistPlotter.plot_3d` (lower triangle only)
+
+.. plot::
+   :include-source: 
+
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=4, nMCSamples=2)
+    g = plots.getSubplotPlotter()
+    g.triangle_plot([samples1, samples2], filled=True, legend_labels = ['Contour 1', 'Contour 2'])
+
+.. plot::
+   :include-source: 
+
+    from getdist import plots, gaussian_mixtures
+    samples1, samples2 = gaussian_mixtures.randomTestMCSamples(ndim=4, nMCSamples=2)
+    g = plots.getSubplotPlotter()
+    g.triangle_plot([samples1, samples2], ['x0','x1','x2'], plot_3d_with_param='x3')\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+check\+\_\+param(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+default\+\_\+legend\+\_\+labels(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+contour\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+line\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+Axis\+Properties(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+space\+Ticks(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar\+\_\+label(), getdist.\+plots.\+Get\+Dist\+Plotter.\+fig, getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+get\+\_\+param\+\_\+array(), getdist.\+plots.\+Get\+Dist\+Plotter.\+last\+\_\+scatter, getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+plots.\+make\+List(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+ylabel(), getdist.\+plots.\+Get\+Dist\+Plotter.\+settings, getdist.\+plots.\+Get\+Dist\+Plotter.\+subplots, and copy\+Grid\+Files.\+zip.
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+space\+Ticks().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a92380ecaa3180adba902208e5d646329_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1GetDistPlotter_a92380ecaa3180adba902208e5d646329_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a3bc2351d55e030f62382f5451d72f6dc}\label{classgetdist_1_1plots_1_1GetDistPlotter_a3bc2351d55e030f62382f5451d72f6dc}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!chain\+\_\+dir@{chain\+\_\+dir}}
+\index{chain\+\_\+dir@{chain\+\_\+dir}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{chain\+\_\+dir}{chain\_dir}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+chain\+\_\+dir}
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a4804e7a414652e94c2068fcf37aa9a22}\label{classgetdist_1_1plots_1_1GetDistPlotter_a4804e7a414652e94c2068fcf37aa9a22}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!contours\+\_\+added@{contours\+\_\+added}}
+\index{contours\+\_\+added@{contours\+\_\+added}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{contours\+\_\+added}{contours\_added}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+contours\+\_\+added}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+legend().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_abe4bfeba74e370efb5f917d93b6f29d7}\label{classgetdist_1_1plots_1_1GetDistPlotter_abe4bfeba74e370efb5f917d93b6f29d7}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!extra\+\_\+artists@{extra\+\_\+artists}}
+\index{extra\+\_\+artists@{extra\+\_\+artists}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{extra\+\_\+artists}{extra\_artists}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+extra\+\_\+artists}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+export(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a30fb82076ac316341e377dffd32dacde}\label{classgetdist_1_1plots_1_1GetDistPlotter_a30fb82076ac316341e377dffd32dacde}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!fig@{fig}}
+\index{fig@{fig}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{fig}{fig}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+fig}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text(), getdist.\+plots.\+Get\+Dist\+Plotter.\+export(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_af51d48b35537e9a723ba8f3024e73ed2}\label{classgetdist_1_1plots_1_1GetDistPlotter_af51d48b35537e9a723ba8f3024e73ed2}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!last\+\_\+colorbar@{last\+\_\+colorbar}}
+\index{last\+\_\+colorbar@{last\+\_\+colorbar}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{last\+\_\+colorbar}{last\_colorbar}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+last\+\_\+colorbar}
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a16ae03a3c9df59a727cddf1d5043ed67}\label{classgetdist_1_1plots_1_1GetDistPlotter_a16ae03a3c9df59a727cddf1d5043ed67}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!last\+\_\+scatter@{last\+\_\+scatter}}
+\index{last\+\_\+scatter@{last\+\_\+scatter}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{last\+\_\+scatter}{last\_scatter}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+last\+\_\+scatter}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_af31518e8f85d144c2eac3034b8ba41a7}\label{classgetdist_1_1plots_1_1GetDistPlotter_af31518e8f85d144c2eac3034b8ba41a7}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!legend@{legend}}
+\index{legend@{legend}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{legend}{legend}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+legend}
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a15cec9e6591043203af4eaee1563de93}\label{classgetdist_1_1plots_1_1GetDistPlotter_a15cec9e6591043203af4eaee1563de93}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!lines\+\_\+added@{lines\+\_\+added}}
+\index{lines\+\_\+added@{lines\+\_\+added}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{lines\+\_\+added}{lines\_added}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+lines\+\_\+added}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+1d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+legend().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a0328978f170538ac5d4e2546a0275d11}\label{classgetdist_1_1plots_1_1GetDistPlotter_a0328978f170538ac5d4e2546a0275d11}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!param\+\_\+bounds\+\_\+sets@{param\+\_\+bounds\+\_\+sets}}
+\index{param\+\_\+bounds\+\_\+sets@{param\+\_\+bounds\+\_\+sets}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{param\+\_\+bounds\+\_\+sets}{param\_bounds\_sets}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+bounds\+\_\+sets}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Bounds\+For\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ac3d6a8fd5733360b19be6f1b51fb2bf5}\label{classgetdist_1_1plots_1_1GetDistPlotter_ac3d6a8fd5733360b19be6f1b51fb2bf5}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!param\+\_\+name\+\_\+sets@{param\+\_\+name\+\_\+sets}}
+\index{param\+\_\+name\+\_\+sets@{param\+\_\+name\+\_\+sets}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{param\+\_\+name\+\_\+sets}{param\_name\_sets}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+name\+\_\+sets}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Names\+For\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a38321592270c7c25a09f85f18e5bdbf3}\label{classgetdist_1_1plots_1_1GetDistPlotter_a38321592270c7c25a09f85f18e5bdbf3}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plot\+\_\+col@{plot\+\_\+col}}
+\index{plot\+\_\+col@{plot\+\_\+col}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plot\+\_\+col}{plot\_col}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+col}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ad66ca82b7ceada3d0534123ac7d9c9b0}\label{classgetdist_1_1plots_1_1GetDistPlotter_ad66ca82b7ceada3d0534123ac7d9c9b0}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plot\+\_\+data@{plot\+\_\+data}}
+\index{plot\+\_\+data@{plot\+\_\+data}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plot\+\_\+data}{plot\_data}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+data}
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_ac0745694a94d98e3d169596c10d4e372}\label{classgetdist_1_1plots_1_1GetDistPlotter_ac0745694a94d98e3d169596c10d4e372}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!plot\+\_\+row@{plot\+\_\+row}}
+\index{plot\+\_\+row@{plot\+\_\+row}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{plot\+\_\+row}{plot\_row}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+row}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a54543d5a03405a48e98f2e362e076d38}\label{classgetdist_1_1plots_1_1GetDistPlotter_a54543d5a03405a48e98f2e362e076d38}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!sample\+Analyser@{sample\+Analyser}}
+\index{sample\+Analyser@{sample\+Analyser}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{sample\+Analyser}{sampleAnalyser}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+sample\+Analyser}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+shading(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+3d\+\_\+scatter(), getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+\_\+latex\+\_\+label(), getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Bounds\+For\+Root(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Names\+For\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a6957d39a91cc48beffc359eae83aa214}\label{classgetdist_1_1plots_1_1GetDistPlotter_a6957d39a91cc48beffc359eae83aa214}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!settings@{settings}}
+\index{settings@{settings}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+settings}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+alpha2\+D(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+dashes\+\_\+for\+\_\+ls(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+default\+\_\+ls(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+line\+\_\+styles(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+get\+\_\+plot\+\_\+args(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+\_\+locator(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+set\+Axis\+Properties(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+space\+Ticks(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+contours(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+shading(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+colorbar\+\_\+label(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+legend(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+line(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+x\+\_\+marker(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+y\+\_\+marker(), getdist.\+plots.\+Get\+Dist\+Plotter.\+finish\+\_\+plot(), planck\+Style.\+planck\+Plotter.\+get\+Job\+Item(), getdist.\+plots.\+Get\+Dist\+Plotter.\+param\+Names\+For\+Root(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+xlabel(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+\_\+ylabel(), getdist.\+plots.\+Get\+Dist\+Plotter.\+set\+Axes(), getdist.\+plots.\+Get\+Dist\+Plotter.\+show\+\_\+all\+\_\+settings(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1GetDistPlotter_a0b8e4309cad0221a75a7debe7078729a}\label{classgetdist_1_1plots_1_1GetDistPlotter_a0b8e4309cad0221a75a7debe7078729a}} 
+\index{getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}!subplots@{subplots}}
+\index{subplots@{subplots}!getdist\+::plots\+::\+Get\+Dist\+Plotter@{getdist\+::plots\+::\+Get\+Dist\+Plotter}}
+\subsubsection{\texorpdfstring{subplots}{subplots}}
+{\footnotesize\ttfamily getdist.\+plots.\+Get\+Dist\+Plotter.\+subplots}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+subplot\+\_\+number(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+text(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{plots_8py}{plots.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,219 @@
+\hypertarget{namespacepowell__constrainedoptimize}{}\section{powell\+\_\+constrainedoptimize Module Reference}
+\label{namespacepowell__constrainedoptimize}\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structpowell__constrainedoptimize_1_1tbobyqa}{tbobyqa}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(\mbox{\hyperlink{namespacepowell__constrainedoptimize_a18207be3e2f370a42332601cfccca22e}{powell\+\_\+co\+\_\+prec}}) function \mbox{\hyperlink{namespacepowell__constrainedoptimize_ae7f7153e98c2ba47f65f71c04dfdc6b6}{funkk}} (this, n, X)
+\item 
+logical function \mbox{\hyperlink{namespacepowell__constrainedoptimize_a18b806fe9f14b759021a23344e46743a}{bobyqa}} (this, N, N\+PT, X, XL, XU, R\+H\+O\+B\+EG, R\+H\+O\+E\+ND, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN)
+\item 
+logical function \mbox{\hyperlink{namespacepowell__constrainedoptimize_a7c19fea82c74411b0aa5dc322b397049}{bobyqb}} (this, N, N\+PT, X, XL, XU, R\+H\+O\+B\+EG, R\+H\+O\+E\+ND, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN, X\+B\+A\+SE, X\+PT, F\+V\+AL, X\+O\+PT, G\+O\+PT, HQ, PQ, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, X\+N\+EW, X\+A\+LT, D, V\+L\+AG, W)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_ad592264ce63370c7014ab5883330e26d}{altmov}} (N, N\+PT, X\+PT, X\+O\+PT, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, K\+O\+PT, K\+N\+EW, A\+D\+E\+LT, X\+N\+EW, X\+A\+LT, A\+L\+P\+HA, C\+A\+U\+C\+HY, G\+L\+AG, H\+C\+OL, W)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8e5256bd13e2e03b0e1dda0e1ff3ef1f}{prelim}} (this, N, N\+PT, X, XL, XU, R\+H\+O\+B\+EG, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN, X\+B\+A\+SE, X\+PT, F\+V\+AL, G\+O\+PT, HQ, PQ, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, NF, K\+O\+PT)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_a2a5e8cfa32743f237ece75e1b4d00469}{rescue}} (this, N, N\+PT, XL, XU, I\+P\+R\+I\+NT, M\+A\+X\+F\+UN, X\+B\+A\+SE, X\+PT, F\+V\+AL, X\+O\+PT, G\+O\+PT, HQ, PQ, B\+M\+AT, Z\+M\+AT, N\+D\+IM, SL, SU, NF, D\+E\+L\+TA, K\+O\+PT, V\+L\+AG, P\+T\+S\+A\+UX, P\+T\+S\+ID, W)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8d96126f07f9d909b52d61690eaa4c80}{trsbox}} (N, N\+PT, X\+PT, X\+O\+PT, G\+O\+PT, HQ, PQ, SL, SU, D\+E\+L\+TA, X\+N\+EW, D, G\+N\+EW, X\+B\+DI, S, HS, H\+R\+ED, D\+SQ, C\+R\+V\+M\+IN)
+\item 
+subroutine \mbox{\hyperlink{namespacepowell__constrainedoptimize_aea17c033c10b38991c1484dfd380b3b1}{update}} (N, N\+PT, B\+M\+AT, Z\+M\+AT, N\+D\+IM, V\+L\+AG, B\+E\+TA, D\+E\+N\+OM, K\+N\+EW, W)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}} = K\+I\+ND(1.d0)
+\item 
+integer, parameter \mbox{\hyperlink{namespacepowell__constrainedoptimize_a09e82bbc40fa02c9929d47a2d1c56bdb}{func\+\_\+dp}} = \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacepowell__constrainedoptimize_a18207be3e2f370a42332601cfccca22e}{powell\+\_\+co\+\_\+prec}} = \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_ad592264ce63370c7014ab5883330e26d}\label{namespacepowell__constrainedoptimize_ad592264ce63370c7014ab5883330e26d}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!altmov@{altmov}}
+\index{altmov@{altmov}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{altmov()}{altmov()}}
+{\footnotesize\ttfamily subroutine powell\+\_\+constrainedoptimize\+::altmov (\begin{DoxyParamCaption}\item[{}]{N,  }\item[{}]{N\+PT,  }\item[{dimension(npt,$\ast$)}]{X\+PT,  }\item[{dimension($\ast$)}]{X\+O\+PT,  }\item[{dimension(ndim,$\ast$)}]{B\+M\+AT,  }\item[{dimension(npt,$\ast$)}]{Z\+M\+AT,  }\item[{}]{N\+D\+IM,  }\item[{dimension($\ast$)}]{SL,  }\item[{dimension($\ast$)}]{SU,  }\item[{}]{K\+O\+PT,  }\item[{}]{K\+N\+EW,  }\item[{}]{A\+D\+E\+LT,  }\item[{dimension($\ast$)}]{X\+N\+EW,  }\item[{dimension($\ast$)}]{X\+A\+LT,  }\item[{}]{A\+L\+P\+HA,  }\item[{}]{C\+A\+U\+C\+HY,  }\item[{dimension($\ast$)}]{G\+L\+AG,  }\item[{dimension($\ast$)}]{H\+C\+OL,  }\item[{dimension($\ast$)}]{W }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bobyqb().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_ad592264ce63370c7014ab5883330e26d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a18b806fe9f14b759021a23344e46743a}\label{namespacepowell__constrainedoptimize_a18b806fe9f14b759021a23344e46743a}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!bobyqa@{bobyqa}}
+\index{bobyqa@{bobyqa}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{bobyqa()}{bobyqa()}}
+{\footnotesize\ttfamily logical function powell\+\_\+constrainedoptimize\+::bobyqa (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpowell__constrainedoptimize_1_1tbobyqa}{tbobyqa}})}]{this,  }\item[{integer, intent(in)}]{N,  }\item[{integer, intent(in)}]{N\+PT,  }\item[{real(\mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}}), dimension($\ast$)}]{X,  }\item[{real(\mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}}), dimension($\ast$)}]{XL,  }\item[{real(\mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}}), dimension($\ast$)}]{XU,  }\item[{}]{R\+H\+O\+B\+EG,  }\item[{}]{R\+H\+O\+E\+ND,  }\item[{integer, intent(in)}]{I\+P\+R\+I\+NT,  }\item[{integer, intent(in)}]{M\+A\+X\+F\+UN }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References bobyqb().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_a18b806fe9f14b759021a23344e46743a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a7c19fea82c74411b0aa5dc322b397049}\label{namespacepowell__constrainedoptimize_a7c19fea82c74411b0aa5dc322b397049}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!bobyqb@{bobyqb}}
+\index{bobyqb@{bobyqb}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{bobyqb()}{bobyqb()}}
+{\footnotesize\ttfamily logical function powell\+\_\+constrainedoptimize\+::bobyqb (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpowell__constrainedoptimize_1_1tbobyqa}{tbobyqa}})}]{this,  }\item[{}]{N,  }\item[{}]{N\+PT,  }\item[{dimension($\ast$)}]{X,  }\item[{dimension($\ast$)}]{XL,  }\item[{dimension($\ast$)}]{XU,  }\item[{}]{R\+H\+O\+B\+EG,  }\item[{}]{R\+H\+O\+E\+ND,  }\item[{}]{I\+P\+R\+I\+NT,  }\item[{}]{M\+A\+X\+F\+UN,  }\item[{dimension($\ast$)}]{X\+B\+A\+SE,  }\item[{dimension(npt,$\ast$)}]{X\+PT,  }\item[{dimension($\ast$)}]{F\+V\+AL,  }\item[{dimension($\ast$)}]{X\+O\+PT,  }\item[{dimension($\ast$)}]{G\+O\+PT,  }\item[{dimension($\ast$)}]{HQ,  }\item[{dimension($\ast$)}]{PQ,  }\item[{dimension(ndim,$\ast$)}]{B\+M\+AT,  }\item[{dimension(npt,$\ast$)}]{Z\+M\+AT,  }\item[{}]{N\+D\+IM,  }\item[{dimension($\ast$)}]{SL,  }\item[{dimension($\ast$)}]{SU,  }\item[{dimension($\ast$)}]{X\+N\+EW,  }\item[{dimension($\ast$)}]{X\+A\+LT,  }\item[{dimension($\ast$)}]{D,  }\item[{dimension($\ast$)}]{V\+L\+AG,  }\item[{dimension($\ast$)}]{W }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References altmov(), prelim(), rescue(), trsbox(), and update().
+
+
+
+Referenced by bobyqa().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_a7c19fea82c74411b0aa5dc322b397049_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_a7c19fea82c74411b0aa5dc322b397049_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_ae7f7153e98c2ba47f65f71c04dfdc6b6}\label{namespacepowell__constrainedoptimize_ae7f7153e98c2ba47f65f71c04dfdc6b6}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!funkk@{funkk}}
+\index{funkk@{funkk}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{funkk()}{funkk()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacepowell__constrainedoptimize_a18207be3e2f370a42332601cfccca22e}{powell\+\_\+co\+\_\+prec}}) function powell\+\_\+constrainedoptimize\+::funkk (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpowell__constrainedoptimize_1_1tbobyqa}{tbobyqa}})}]{this,  }\item[{integer, intent(in)}]{n,  }\item[{real(\mbox{\hyperlink{namespacepowell__constrainedoptimize_a18207be3e2f370a42332601cfccca22e}{powell\+\_\+co\+\_\+prec}}), dimension(n)}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a8e5256bd13e2e03b0e1dda0e1ff3ef1f}\label{namespacepowell__constrainedoptimize_a8e5256bd13e2e03b0e1dda0e1ff3ef1f}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!prelim@{prelim}}
+\index{prelim@{prelim}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{prelim()}{prelim()}}
+{\footnotesize\ttfamily subroutine powell\+\_\+constrainedoptimize\+::prelim (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpowell__constrainedoptimize_1_1tbobyqa}{tbobyqa}})}]{this,  }\item[{}]{N,  }\item[{}]{N\+PT,  }\item[{dimension($\ast$)}]{X,  }\item[{dimension($\ast$)}]{XL,  }\item[{dimension($\ast$)}]{XU,  }\item[{}]{R\+H\+O\+B\+EG,  }\item[{}]{I\+P\+R\+I\+NT,  }\item[{}]{M\+A\+X\+F\+UN,  }\item[{dimension($\ast$)}]{X\+B\+A\+SE,  }\item[{dimension(npt,$\ast$)}]{X\+PT,  }\item[{dimension($\ast$)}]{F\+V\+AL,  }\item[{dimension($\ast$)}]{G\+O\+PT,  }\item[{dimension($\ast$)}]{HQ,  }\item[{dimension($\ast$)}]{PQ,  }\item[{dimension(ndim,$\ast$)}]{B\+M\+AT,  }\item[{dimension(npt,$\ast$)}]{Z\+M\+AT,  }\item[{}]{N\+D\+IM,  }\item[{dimension($\ast$)}]{SL,  }\item[{dimension($\ast$)}]{SU,  }\item[{}]{NF,  }\item[{}]{K\+O\+PT }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bobyqb().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_a8e5256bd13e2e03b0e1dda0e1ff3ef1f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a2a5e8cfa32743f237ece75e1b4d00469}\label{namespacepowell__constrainedoptimize_a2a5e8cfa32743f237ece75e1b4d00469}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!rescue@{rescue}}
+\index{rescue@{rescue}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{rescue()}{rescue()}}
+{\footnotesize\ttfamily subroutine powell\+\_\+constrainedoptimize\+::rescue (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structpowell__constrainedoptimize_1_1tbobyqa}{tbobyqa}})}]{this,  }\item[{}]{N,  }\item[{}]{N\+PT,  }\item[{dimension($\ast$)}]{XL,  }\item[{dimension($\ast$)}]{XU,  }\item[{}]{I\+P\+R\+I\+NT,  }\item[{}]{M\+A\+X\+F\+UN,  }\item[{dimension($\ast$)}]{X\+B\+A\+SE,  }\item[{dimension(npt,$\ast$)}]{X\+PT,  }\item[{dimension($\ast$)}]{F\+V\+AL,  }\item[{dimension($\ast$)}]{X\+O\+PT,  }\item[{dimension($\ast$)}]{G\+O\+PT,  }\item[{dimension($\ast$)}]{HQ,  }\item[{dimension($\ast$)}]{PQ,  }\item[{dimension(ndim,$\ast$)}]{B\+M\+AT,  }\item[{dimension(npt,$\ast$)}]{Z\+M\+AT,  }\item[{}]{N\+D\+IM,  }\item[{dimension($\ast$)}]{SL,  }\item[{dimension($\ast$)}]{SU,  }\item[{}]{NF,  }\item[{}]{D\+E\+L\+TA,  }\item[{}]{K\+O\+PT,  }\item[{dimension($\ast$)}]{V\+L\+AG,  }\item[{dimension(2,$\ast$)}]{P\+T\+S\+A\+UX,  }\item[{dimension($\ast$)}]{P\+T\+S\+ID,  }\item[{dimension($\ast$)}]{W }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References update().
+
+
+
+Referenced by bobyqb().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_a2a5e8cfa32743f237ece75e1b4d00469_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_a2a5e8cfa32743f237ece75e1b4d00469_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a8d96126f07f9d909b52d61690eaa4c80}\label{namespacepowell__constrainedoptimize_a8d96126f07f9d909b52d61690eaa4c80}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!trsbox@{trsbox}}
+\index{trsbox@{trsbox}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{trsbox()}{trsbox()}}
+{\footnotesize\ttfamily subroutine powell\+\_\+constrainedoptimize\+::trsbox (\begin{DoxyParamCaption}\item[{}]{N,  }\item[{}]{N\+PT,  }\item[{dimension(npt,$\ast$)}]{X\+PT,  }\item[{dimension($\ast$)}]{X\+O\+PT,  }\item[{dimension($\ast$)}]{G\+O\+PT,  }\item[{dimension($\ast$)}]{HQ,  }\item[{dimension($\ast$)}]{PQ,  }\item[{dimension($\ast$)}]{SL,  }\item[{dimension($\ast$)}]{SU,  }\item[{}]{D\+E\+L\+TA,  }\item[{dimension($\ast$)}]{X\+N\+EW,  }\item[{dimension($\ast$)}]{D,  }\item[{dimension($\ast$)}]{G\+N\+EW,  }\item[{dimension($\ast$)}]{X\+B\+DI,  }\item[{dimension($\ast$)}]{S,  }\item[{dimension($\ast$)}]{HS,  }\item[{dimension($\ast$)}]{H\+R\+ED,  }\item[{}]{D\+SQ,  }\item[{}]{C\+R\+V\+M\+IN }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bobyqb().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_a8d96126f07f9d909b52d61690eaa4c80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_aea17c033c10b38991c1484dfd380b3b1}\label{namespacepowell__constrainedoptimize_aea17c033c10b38991c1484dfd380b3b1}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!update@{update}}
+\index{update@{update}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily subroutine powell\+\_\+constrainedoptimize\+::update (\begin{DoxyParamCaption}\item[{}]{N,  }\item[{}]{N\+PT,  }\item[{dimension(ndim,$\ast$)}]{B\+M\+AT,  }\item[{dimension(npt,$\ast$)}]{Z\+M\+AT,  }\item[{}]{N\+D\+IM,  }\item[{dimension($\ast$)}]{V\+L\+AG,  }\item[{}]{B\+E\+TA,  }\item[{}]{D\+E\+N\+OM,  }\item[{}]{K\+N\+EW,  }\item[{dimension($\ast$)}]{W }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by paramgrid.\+batchjob.\+data\+Set\+::add(), bobyqb(), and rescue().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacepowell__constrainedoptimize_aea17c033c10b38991c1484dfd380b3b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}\label{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!dp@{dp}}
+\index{dp@{dp}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{dp}{dp}}
+{\footnotesize\ttfamily integer, parameter powell\+\_\+constrainedoptimize\+::dp = K\+I\+ND(1.d0)\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a09e82bbc40fa02c9929d47a2d1c56bdb}\label{namespacepowell__constrainedoptimize_a09e82bbc40fa02c9929d47a2d1c56bdb}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!func\+\_\+dp@{func\+\_\+dp}}
+\index{func\+\_\+dp@{func\+\_\+dp}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{func\+\_\+dp}{func\_dp}}
+{\footnotesize\ttfamily integer, parameter powell\+\_\+constrainedoptimize\+::func\+\_\+dp = \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacepowell__constrainedoptimize_a18207be3e2f370a42332601cfccca22e}\label{namespacepowell__constrainedoptimize_a18207be3e2f370a42332601cfccca22e}} 
+\index{powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}!powell\+\_\+co\+\_\+prec@{powell\+\_\+co\+\_\+prec}}
+\index{powell\+\_\+co\+\_\+prec@{powell\+\_\+co\+\_\+prec}!powell\+\_\+constrainedoptimize@{powell\+\_\+constrainedoptimize}}
+\subsubsection{\texorpdfstring{powell\+\_\+co\+\_\+prec}{powell\_co\_prec}}
+{\footnotesize\ttfamily integer, parameter, public powell\+\_\+constrainedoptimize\+::powell\+\_\+co\+\_\+prec = \mbox{\hyperlink{namespacepowell__constrainedoptimize_a8a0275c8eca26a533d0e5d9aef7b9eaa}{dp}}}
+
+
+
+Referenced by powell\+\_\+constrainedoptimize\+::tbobyqa\+::bobyqa().
+

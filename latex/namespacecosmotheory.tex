@@ -1,0 +1,101 @@
+\hypertarget{namespacecosmotheory}{}\section{cosmotheory Module Reference}
+\label{namespacecosmotheory}\index{cosmotheory@{cosmotheory}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypk}{tcosmotheorypk}}
+\item 
+type \mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}}
+\item 
+type \mbox{\hyperlink{structcosmotheory_1_1tskypowerspectrum}{tskypowerspectrum}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecosmotheory_a6c9071e7ff33914f7d9957dcf8790938}{powerat}} (PK, k, z)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_a9f04a404c1ca817b4a8ff9046f85bea6}{freepk}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_a605ce5a8433255f2dffd34cc83381994}{clarray}} (this, cl, i, j)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_a98c26fbec9089b69336f49452bf55c94}{clsatl}} (this, L, cl, max\+\_\+ix\+\_\+out)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_aa5b006674819db6a4859e0e709fbd275}{writetextcls}} (this, aname)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_a4ff659fbb6df4ea03d45ef993ec6dd32}{tcosmotheorypredictions\+\_\+writetheory}} (this, F, first)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_a6d0d95c32ef1d72829beee8c549606d9}{tcosmotheorypredictions\+\_\+allocateforsettings}} (this, Settings)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_aef1a661d37d1e130bced884acc9ea1bd}{tcosmotheorypredictions\+\_\+readtheory}} (this, F, first)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmotheory_a10b74bbd756437c4b81eb4130afae354}{tcosmotheorypredictions\+\_\+writetextdata}} (this, fnameroot)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecosmotheory_a605ce5a8433255f2dffd34cc83381994}\label{namespacecosmotheory_a605ce5a8433255f2dffd34cc83381994}} 
+\index{cosmotheory@{cosmotheory}!clarray@{clarray}}
+\index{clarray@{clarray}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{clarray()}{clarray()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::clarray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this,  }\item[{real(mcp), dimension(1\+:)}]{cl,  }\item[{integer}]{i,  }\item[{integer}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecosmotheory_a98c26fbec9089b69336f49452bf55c94}\label{namespacecosmotheory_a98c26fbec9089b69336f49452bf55c94}} 
+\index{cosmotheory@{cosmotheory}!clsatl@{clsatl}}
+\index{clsatl@{clsatl}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{clsatl()}{clsatl()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::clsatl (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this,  }\item[{integer, intent(in)}]{L,  }\item[{real(mcp), dimension(\+:)}]{cl,  }\item[{integer, intent(in), optional}]{max\+\_\+ix\+\_\+out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecosmotheory_a9f04a404c1ca817b4a8ff9046f85bea6}\label{namespacecosmotheory_a9f04a404c1ca817b4a8ff9046f85bea6}} 
+\index{cosmotheory@{cosmotheory}!freepk@{freepk}}
+\index{freepk@{freepk}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{freepk()}{freepk()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::freepk (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecosmotheory_a6c9071e7ff33914f7d9957dcf8790938}\label{namespacecosmotheory_a6c9071e7ff33914f7d9957dcf8790938}} 
+\index{cosmotheory@{cosmotheory}!powerat@{powerat}}
+\index{powerat@{powerat}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{powerat()}{powerat()}}
+{\footnotesize\ttfamily real(mcp) function cosmotheory\+::powerat (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypk}{tcosmotheorypk}})}]{PK,  }\item[{real(mcp), intent(in)}]{k,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecosmotheory_a6d0d95c32ef1d72829beee8c549606d9}\label{namespacecosmotheory_a6d0d95c32ef1d72829beee8c549606d9}} 
+\index{cosmotheory@{cosmotheory}!tcosmotheorypredictions\+\_\+allocateforsettings@{tcosmotheorypredictions\+\_\+allocateforsettings}}
+\index{tcosmotheorypredictions\+\_\+allocateforsettings@{tcosmotheorypredictions\+\_\+allocateforsettings}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{tcosmotheorypredictions\+\_\+allocateforsettings()}{tcosmotheorypredictions\_allocateforsettings()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::tcosmotheorypredictions\+\_\+allocateforsettings (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this,  }\item[{class(tcosmotheorysettings)}]{Settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecosmotheory_aef1a661d37d1e130bced884acc9ea1bd}\label{namespacecosmotheory_aef1a661d37d1e130bced884acc9ea1bd}} 
+\index{cosmotheory@{cosmotheory}!tcosmotheorypredictions\+\_\+readtheory@{tcosmotheorypredictions\+\_\+readtheory}}
+\index{tcosmotheorypredictions\+\_\+readtheory@{tcosmotheorypredictions\+\_\+readtheory}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{tcosmotheorypredictions\+\_\+readtheory()}{tcosmotheorypredictions\_readtheory()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::tcosmotheorypredictions\+\_\+readtheory (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{logical, intent(in)}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings.
+
+\mbox{\Hypertarget{namespacecosmotheory_a10b74bbd756437c4b81eb4130afae354}\label{namespacecosmotheory_a10b74bbd756437c4b81eb4130afae354}} 
+\index{cosmotheory@{cosmotheory}!tcosmotheorypredictions\+\_\+writetextdata@{tcosmotheorypredictions\+\_\+writetextdata}}
+\index{tcosmotheorypredictions\+\_\+writetextdata@{tcosmotheorypredictions\+\_\+writetextdata}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{tcosmotheorypredictions\+\_\+writetextdata()}{tcosmotheorypredictions\_writetextdata()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::tcosmotheorypredictions\+\_\+writetextdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fnameroot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecosmotheory_a4ff659fbb6df4ea03d45ef993ec6dd32}\label{namespacecosmotheory_a4ff659fbb6df4ea03d45ef993ec6dd32}} 
+\index{cosmotheory@{cosmotheory}!tcosmotheorypredictions\+\_\+writetheory@{tcosmotheorypredictions\+\_\+writetheory}}
+\index{tcosmotheorypredictions\+\_\+writetheory@{tcosmotheorypredictions\+\_\+writetheory}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{tcosmotheorypredictions\+\_\+writetheory()}{tcosmotheorypredictions\_writetheory()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::tcosmotheorypredictions\+\_\+writetheory (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{logical, intent(in)}]{first }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings, and settings\+::new\+\_\+chains.
+
+\mbox{\Hypertarget{namespacecosmotheory_aa5b006674819db6a4859e0e709fbd275}\label{namespacecosmotheory_aa5b006674819db6a4859e0e709fbd275}} 
+\index{cosmotheory@{cosmotheory}!writetextcls@{writetextcls}}
+\index{writetextcls@{writetextcls}!cosmotheory@{cosmotheory}}
+\subsubsection{\texorpdfstring{writetextcls()}{writetextcls()}}
+{\footnotesize\ttfamily subroutine cosmotheory\+::writetextcls (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmotheory_1_1tcosmotheorypredictions}{tcosmotheorypredictions}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cmb\+\_\+cl\+\_\+fields, and cosmologytypes\+::cosmosettings.
+

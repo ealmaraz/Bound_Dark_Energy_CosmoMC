@@ -1,0 +1,110 @@
+\hypertarget{namespaceerrors}{}\section{errors Module Reference}
+\label{namespaceerrors}\index{errors@{errors}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceerrors_a318b5ebaf7fbc154515be2da7e932943}{globalerror}} (message, id)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespaceerrors_a72cd38a036b5cc55888b987007b85249}{global\+\_\+error\+\_\+flag}} =0
+\item 
+character(len=1024) \mbox{\hyperlink{namespaceerrors_abab090a06678767efd048592898c9a59}{global\+\_\+error\+\_\+message}} = \textquotesingle{}\textquotesingle{}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceerrors_af0216e646e10d4fb6e16b7689e064c0c}{error\+\_\+reionization}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespaceerrors_a55a475464d72722fbbec043e76f4032e}{error\+\_\+recombination}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespaceerrors_a6e8381a408cbe8e72b8ed0473d558c68}{error\+\_\+inital\+\_\+power}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespaceerrors_a157310f82f1d3896291c10265618ba56}{error\+\_\+evolution}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespaceerrors_a3f1716926bd8afa933e82e1a8bcdd413}{error\+\_\+unsupported\+\_\+params}} =5
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceerrors_a318b5ebaf7fbc154515be2da7e932943}\label{namespaceerrors_a318b5ebaf7fbc154515be2da7e932943}} 
+\index{errors@{errors}!globalerror@{globalerror}}
+\index{globalerror@{globalerror}!errors@{errors}}
+\subsubsection{\texorpdfstring{globalerror()}{globalerror()}}
+{\footnotesize\ttfamily subroutine errors\+::globalerror (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in), optional}]{message,  }\item[{integer, intent(in), optional}]{id }\end{DoxyParamCaption})}
+
+
+
+References global\+\_\+error\+\_\+flag, and global\+\_\+error\+\_\+message.
+
+
+
+Referenced by modelparams\+::cambparams\+\_\+set(), dtauda(), and gaugeinterface\+::gaugeinterface\+\_\+scalev().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceerrors_a318b5ebaf7fbc154515be2da7e932943_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceerrors_a157310f82f1d3896291c10265618ba56}\label{namespaceerrors_a157310f82f1d3896291c10265618ba56}} 
+\index{errors@{errors}!error\+\_\+evolution@{error\+\_\+evolution}}
+\index{error\+\_\+evolution@{error\+\_\+evolution}!errors@{errors}}
+\subsubsection{\texorpdfstring{error\+\_\+evolution}{error\_evolution}}
+{\footnotesize\ttfamily integer, parameter errors\+::error\+\_\+evolution =4}
+
+
+
+Referenced by dtauda(), and gaugeinterface\+::gaugeinterface\+\_\+scalev().
+
+\mbox{\Hypertarget{namespaceerrors_a6e8381a408cbe8e72b8ed0473d558c68}\label{namespaceerrors_a6e8381a408cbe8e72b8ed0473d558c68}} 
+\index{errors@{errors}!error\+\_\+inital\+\_\+power@{error\+\_\+inital\+\_\+power}}
+\index{error\+\_\+inital\+\_\+power@{error\+\_\+inital\+\_\+power}!errors@{errors}}
+\subsubsection{\texorpdfstring{error\+\_\+inital\+\_\+power}{error\_inital\_power}}
+{\footnotesize\ttfamily integer, parameter errors\+::error\+\_\+inital\+\_\+power =3}
+
+\mbox{\Hypertarget{namespaceerrors_a55a475464d72722fbbec043e76f4032e}\label{namespaceerrors_a55a475464d72722fbbec043e76f4032e}} 
+\index{errors@{errors}!error\+\_\+recombination@{error\+\_\+recombination}}
+\index{error\+\_\+recombination@{error\+\_\+recombination}!errors@{errors}}
+\subsubsection{\texorpdfstring{error\+\_\+recombination}{error\_recombination}}
+{\footnotesize\ttfamily integer, parameter errors\+::error\+\_\+recombination =2}
+
+\mbox{\Hypertarget{namespaceerrors_af0216e646e10d4fb6e16b7689e064c0c}\label{namespaceerrors_af0216e646e10d4fb6e16b7689e064c0c}} 
+\index{errors@{errors}!error\+\_\+reionization@{error\+\_\+reionization}}
+\index{error\+\_\+reionization@{error\+\_\+reionization}!errors@{errors}}
+\subsubsection{\texorpdfstring{error\+\_\+reionization}{error\_reionization}}
+{\footnotesize\ttfamily integer, parameter errors\+::error\+\_\+reionization =1}
+
+\mbox{\Hypertarget{namespaceerrors_a3f1716926bd8afa933e82e1a8bcdd413}\label{namespaceerrors_a3f1716926bd8afa933e82e1a8bcdd413}} 
+\index{errors@{errors}!error\+\_\+unsupported\+\_\+params@{error\+\_\+unsupported\+\_\+params}}
+\index{error\+\_\+unsupported\+\_\+params@{error\+\_\+unsupported\+\_\+params}!errors@{errors}}
+\subsubsection{\texorpdfstring{error\+\_\+unsupported\+\_\+params}{error\_unsupported\_params}}
+{\footnotesize\ttfamily integer, parameter errors\+::error\+\_\+unsupported\+\_\+params =5}
+
+
+
+Referenced by modelparams\+::cambparams\+\_\+set().
+
+\mbox{\Hypertarget{namespaceerrors_a72cd38a036b5cc55888b987007b85249}\label{namespaceerrors_a72cd38a036b5cc55888b987007b85249}} 
+\index{errors@{errors}!global\+\_\+error\+\_\+flag@{global\+\_\+error\+\_\+flag}}
+\index{global\+\_\+error\+\_\+flag@{global\+\_\+error\+\_\+flag}!errors@{errors}}
+\subsubsection{\texorpdfstring{global\+\_\+error\+\_\+flag}{global\_error\_flag}}
+{\footnotesize\ttfamily integer errors\+::global\+\_\+error\+\_\+flag =0}
+
+
+
+Referenced by cambmain\+::calcscalarsources(), cambmain\+::calcscalcls(), cambmain\+::calcscalcls2(), camb\+::camb\+\_\+getresults(), calculator\+\_\+camb\+::cambcalc\+\_\+getnewpowerdata(), calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance(), calculator\+\_\+camb\+::cambcalc\+\_\+setbackgroundtheorydata(), modelparams\+::cambparams\+\_\+set(), cambmain\+::cltransfertocl(), cambmain\+::cmbmain(), cambmain\+::dosourcek(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), cambmain\+::getinitpowerarraytens(), cambmain\+::getinitpowerarrayvec(), cambmain\+::gettransfer(), globalerror(), cambmain\+::initvars(), transfer\+::transfer\+\_\+get\+\_\+sigma8(), transfer\+::transfer\+\_\+get\+\_\+sigmas(), transfer\+::transfer\+\_\+getmatterpowerd(), and transfer\+::transfer\+\_\+getmatterpowerdata().
+
+\mbox{\Hypertarget{namespaceerrors_abab090a06678767efd048592898c9a59}\label{namespaceerrors_abab090a06678767efd048592898c9a59}} 
+\index{errors@{errors}!global\+\_\+error\+\_\+message@{global\+\_\+error\+\_\+message}}
+\index{global\+\_\+error\+\_\+message@{global\+\_\+error\+\_\+message}!errors@{errors}}
+\subsubsection{\texorpdfstring{global\+\_\+error\+\_\+message}{global\_error\_message}}
+{\footnotesize\ttfamily character(len=1024) errors\+::global\+\_\+error\+\_\+message = \textquotesingle{}\textquotesingle{}}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+getnewtransferdata(), and globalerror().
+

@@ -1,0 +1,62 @@
+\hypertarget{ObjectParamNames_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Object\+Param\+Names.f90 File Reference}
+\label{ObjectParamNames_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Object\+Param\+Names.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Object\+Param\+Names.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structparamnames_1_1tbaseparamnames}{paramnames\+::tbaseparamnames}}
+\item 
+type \mbox{\hyperlink{structparamnames_1_1tparamnames}{paramnames\+::tparamnames}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceparamnames}{paramnames}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+logical function \mbox{\hyperlink{namespaceparamnames_a6d210fed8da76c1fe28e96b8c0724666}{paramnames\+::paramnames\+\_\+parseline}} (this, In\+Line, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a3e5401d3e44bed7bfdeed12938fa58fa}{paramnames\+::paramnames\+\_\+alloc}} (this, n)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a0abbaf0b2bcd5b60c2d7c16746b07934}{paramnames\+::paramnames\+\_\+dealloc}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a1e5be5e1dda784956ba3a9d7985e7f15}{paramnames\+::paramnames\+\_\+init}} (this, filename)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a00d55ae57c0418d420115dfef427565f}{paramnames\+::paramnames\+\_\+assignitem}} (this, Names2, n, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a962b36a1c8121b164c4206bdc3223ea7}{paramnames\+::paramnames\+\_\+addfile}} (this, filename, check\+\_\+duplicates)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a6f6eda35d34074cc502b9beddae16e62}{paramnames\+::paramnames\+\_\+add}} (this, Names, check\+\_\+duplicates)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a84f661e30d02319c827007cbbe6b587c}{paramnames\+::paramnames\+\_\+setlabels}} (this, filename)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a14599044d57b0e3f49f29352409664d9}{paramnames\+::paramnames\+\_\+setunnamed}} (this, nparams, prefix)
+\item 
+integer function \mbox{\hyperlink{namespaceparamnames_a5c76e741768703cbbdcc06df7508eb55}{paramnames\+::paramnames\+\_\+index}} (this, name)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_a67f4dfa5bf287848c1f621644fd7d32b}{paramnames\+::paramnames\+\_\+label}} (this, name)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_a05a1562d6920ecef38e54e88dc6aa7a3}{paramnames\+::paramnames\+\_\+name}} (this, ix)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a1f770d70e7cc5a35f6a617f5ae2f4c07}{paramnames\+::paramnames\+\_\+readindices}} (this, In\+Line, params, num, unknown\+\_\+value)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_a16117a38b771ac05b4b1655b1f2d78a8}{paramnames\+::paramnames\+\_\+asstring}} (this, i, want\+\_\+comment)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_a48fa130be264dd406bc64dc0c5c7c448}{paramnames\+::paramnames\+\_\+writefile}} (this, fname, indices, add\+\_\+derived)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_aeeea5572332bd77485fd7e18d1461e56}{paramnames\+::paramnames\+\_\+nameornumber}} (this, ix, tag\+\_\+derived)
+\item 
+integer function \mbox{\hyperlink{namespaceparamnames_a656b7952494a591736f80bb066f04db2}{paramnames\+::paramnames\+\_\+maxnamelen}} (this)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceparamnames_ad3d4b6760fe5b48b0754c2d2f7f0b909}{paramnames\+::paramnames\+\_\+readiniforparam}} (this, Ini, Key, param)
+\item 
+logical function \mbox{\hyperlink{namespaceparamnames_aaf4fee3bb682c36fab9b19c05bf98069}{paramnames\+::paramnames\+\_\+hasreadiniforparam}} (this, Ini, Key, param)
+\item 
+subroutine \mbox{\hyperlink{namespaceparamnames_ad8c375d5eebfce2aba8f0b4de825f220}{paramnames\+::paramnames\+\_\+addderivedrange}} (this, Name, Mn, Mx)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceparamnames_a4be152acd9c1eea95bdadaf3e5493495}{paramnames\+::paramnames\+\_\+maxlen}} = 128
+\end{DoxyCompactItemize}

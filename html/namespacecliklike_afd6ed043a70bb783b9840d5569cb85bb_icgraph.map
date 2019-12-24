@@ -1,0 +1,6 @@
+<map id="cliklike::clik_readparams" name="cliklike::clik_readparams">
+<area shape="rect" id="node2" href="$structcliklike_1_1cliklensinglikelihood.html#ac4a38b9586c81e8e9c036b3891e5f5c3" title="cliklike::cliklensinglikelihood\l::clik_likeinit" alt="" coords="238,5,423,46"/>
+<area shape="rect" id="node3" href="$namespacecmblikelihoods.html#a6b235ad1e7fa8ebc5304542f01584617" title="cmblikelihoods::cmblikelihood_add" alt="" coords="219,71,442,97"/>
+<area shape="rect" id="node4" href="$structcmblikelihoods_1_1twmaplikelihood.html#a4b40206256593e631259053a1ce173e0" title="cmblikelihoods::twmaplikelihood\l::loglike" alt="" coords="491,30,701,71"/>
+<area shape="rect" id="node5" href="$namespacedatalikelihoodlist.html#ada6561e1822bb1effcfc8bfaa373cc6b" title="datalikelihoodlist\l::setdatalikelihoods" alt="" coords="529,95,663,137"/>
+</map>

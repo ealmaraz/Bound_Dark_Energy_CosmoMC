@@ -1,0 +1,8 @@
+<map id="mpiutils::timertime" name="mpiutils::timertime">
+<area shape="rect" id="node2" href="$namespacesettings.html#aae1de2bfeb89f23588e7f18024be2a44" title="settings::timer" alt="" coords="215,44,321,71"/>
+<area shape="rect" id="node5" href="$namespacempiutils.html#af115575f9cb5cff0693d705e9f6b4704" title="mpiutils::ttimer_start" alt="" coords="197,95,339,121"/>
+<area shape="rect" id="node6" href="$namespacempiutils.html#a45301d4a23c7b66f94ef24ded2062d8d" title="mpiutils::ttimer_time" alt="" coords="198,145,338,172"/>
+<area shape="rect" id="node7" href="$namespacempiutils.html#aec296fa19d748cab235ef01a63cdc289" title="mpiutils::ttimer_writetime" alt="" coords="184,196,352,223"/>
+<area shape="rect" id="node3" href="$namespacecalculator__camb.html#a9e8887a3ae9da2bb092aac4285234df4" title="calculator_camb::cambcalc\l_getnewtransferdata" alt="" coords="400,5,581,46"/>
+<area shape="rect" id="node4" href="$namespacecalculator__camb.html#a46bd33ed008e289fb5cb08f6feb86419" title="calculator_camb::cambcalc\l_gettheoryforimportance" alt="" coords="400,70,581,111"/>
+</map>

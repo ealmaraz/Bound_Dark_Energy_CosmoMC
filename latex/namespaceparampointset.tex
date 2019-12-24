@@ -1,0 +1,57 @@
+\hypertarget{namespaceparampointset}{}\section{parampointset Module Reference}
+\label{namespaceparampointset}\index{parampointset@{parampointset}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structparampointset_1_1paramset}{paramset}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceparampointset_a4403c38deb2c08ca00d3629b211eaeae}{freeparams}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceparampointset_ab3c28fc8a1787822aeec7c139ae0ff5a}{paramset\+\_\+writemodel}} (this, F, like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespaceparampointset_a41f49e842311c3c0441a2e7a36914a40}{paramset\+\_\+readmodel}} (this, F, has\+\_\+likes, mult, like, error)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceparampointset_a4403c38deb2c08ca00d3629b211eaeae}\label{namespaceparampointset_a4403c38deb2c08ca00d3629b211eaeae}} 
+\index{parampointset@{parampointset}!freeparams@{freeparams}}
+\index{freeparams@{freeparams}!parampointset@{parampointset}}
+\subsubsection{\texorpdfstring{freeparams()}{freeparams()}}
+{\footnotesize\ttfamily subroutine parampointset\+::freeparams (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structparampointset_1_1paramset}{paramset}})}]{this }\end{DoxyParamCaption})}
+
+
+
+Referenced by parampointset\+::paramset\+::freeparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceparampointset_a4403c38deb2c08ca00d3629b211eaeae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceparampointset_a41f49e842311c3c0441a2e7a36914a40}\label{namespaceparampointset_a41f49e842311c3c0441a2e7a36914a40}} 
+\index{parampointset@{parampointset}!paramset\+\_\+readmodel@{paramset\+\_\+readmodel}}
+\index{paramset\+\_\+readmodel@{paramset\+\_\+readmodel}!parampointset@{parampointset}}
+\subsubsection{\texorpdfstring{paramset\+\_\+readmodel()}{paramset\_readmodel()}}
+{\footnotesize\ttfamily subroutine parampointset\+::paramset\+\_\+readmodel (\begin{DoxyParamCaption}\item[{class (\mbox{\hyperlink{structparampointset_1_1paramset}{paramset}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{logical, dimension(\+:), intent(out)}]{has\+\_\+likes,  }\item[{real(mcp), intent(out)}]{mult,  }\item[{real(mcp), intent(out)}]{like,  }\item[{integer, intent(out)}]{error }\end{DoxyParamCaption})}
+
+
+
+References baseparameters\+::baseparams, generaltypes\+::datalikelihoods, settings\+::mcp, settings\+::num\+\_\+params, settings\+::num\+\_\+params\+\_\+used, and settings\+::params\+\_\+used.
+
+\mbox{\Hypertarget{namespaceparampointset_ab3c28fc8a1787822aeec7c139ae0ff5a}\label{namespaceparampointset_ab3c28fc8a1787822aeec7c139ae0ff5a}} 
+\index{parampointset@{parampointset}!paramset\+\_\+writemodel@{paramset\+\_\+writemodel}}
+\index{paramset\+\_\+writemodel@{paramset\+\_\+writemodel}!parampointset@{parampointset}}
+\subsubsection{\texorpdfstring{paramset\+\_\+writemodel()}{paramset\_writemodel()}}
+{\footnotesize\ttfamily subroutine parampointset\+::paramset\+\_\+writemodel (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structparampointset_1_1paramset}{paramset}})}]{this,  }\item[{class(tfilestream)}]{F,  }\item[{real(mcp), intent(in)}]{like,  }\item[{real(mcp), intent(in)}]{mult }\end{DoxyParamCaption})}
+
+
+
+References baseparameters\+::baseparams, generaltypes\+::datalikelihoods, settings\+::flush\+\_\+write, settings\+::mcp, settings\+::num\+\_\+params\+\_\+used, and settings\+::params\+\_\+used.
+

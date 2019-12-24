@@ -1,0 +1,9 @@
+<map id="getdist.densities.GridDensity.normalize" name="getdist.densities.GridDensity.normalize">
+<area shape="rect" id="node2" href="$classgetdist_1_1densities_1_1Density1D.html#a843a026a18dc4edf2ea12ee731e68c79" title="getdist.densities.Density1\lD.norm_integral" alt="" coords="328,5,501,46"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1densities_1_1Density2D.html#a626cf46833a5a5df4fdb42a0b7d2510c" title="getdist.densities.Density2\lD.norm_integral" alt="" coords="328,70,501,111"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1densities_1_1DensityND.html#a6967eace9747b5521051c675036db2d8" title="getdist.densities.Density\lND.norm_integral" alt="" coords="331,135,498,177"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1densities_1_1GridDensity.html#a846e4c6346b0b839fbec49eab7570b3e" title="getdist.densities.GridDensity.setP" alt="" coords="304,201,525,228"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1densities_1_1Density1D.html#a6422563b78860b3e11f080eed5b0ccfd" title="getdist.densities.Density1\lD.integrate" alt="" coords="573,37,747,78"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1densities_1_1Density2D.html#a1867261071c004cd1b4b438a627a0264" title="getdist.densities.Density2\lD.integrate" alt="" coords="573,102,747,143"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1densities_1_1DensityND.html#a3fb464e026c38d7c6d6b7ae399f6ebfa" title="getdist.densities.Density\lND.integrate" alt="" coords="577,167,743,209"/>
+</map>

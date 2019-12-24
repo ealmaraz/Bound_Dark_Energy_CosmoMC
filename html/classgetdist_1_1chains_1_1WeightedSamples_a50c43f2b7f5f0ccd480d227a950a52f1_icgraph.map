@@ -1,0 +1,21 @@
+<map id="getdist.chains.WeightedSamples._setCov" name="getdist.chains.WeightedSamples._setCov">
+<area shape="rect" id="node2" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a8bdc8f5cf4d672d27a2c2d64eb2c8cc8" title="getdist.chains.WeightedSamples.getCov" alt="" coords="272,77,531,104"/>
+<area shape="rect" id="node20" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#aff509a0c9efdb8ea56bc44cf7d11c328" title="getdist.mcsamples.MCSamples.update\lBaseStatistics" alt="" coords="276,129,527,170"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a1485368ae83e8f0586697c6080fd1025" title="getdist.chains.WeightedSamples.get\lCorrelationMatrix" alt="" coords="579,38,813,79"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a3445486ce2813000c1306234fb2dd6f3" title="getdist.mcsamples.MCSamples.get\lAutoBandwidth2D" alt="" coords="581,103,811,145"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a29a520ddd47facaf90753bb81f638696" title="getdist.mcsamples.MCSamples.write\lCorrelationMatrix" alt="" coords="861,5,1101,46"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a591064d13448b148006ce8246ad4446f" title="getdist.mcsamples.MCSamples.get2\lDDensityGridData" alt="" coords="863,70,1100,111"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a0987c9312d821d6916322667f208ebcf" title="getdist.mcsamples.MCSamples.get2\lDDensity" alt="" coords="1151,5,1388,46"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a23206744ace06726c8026481294f3f63" title="getdist.mcsamples.MCSamples.write\lScriptPlots2D" alt="" coords="1149,70,1389,111"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a658aa2c258861d420985ec8065481efa" title="getdist.mcsamples.MCSamples.write\lScriptPlots1D" alt="" coords="1437,70,1677,111"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a0e632352cb52bb4c05cb060427fcb0bc" title="getdist.mcsamples.MCSamples.get\lAutoBandwidth1D" alt="" coords="866,135,1097,177"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a53dc1a5889467700091389070326f0c9" title="getdist.mcsamples.MCSamples.get1\lDDensityGridData" alt="" coords="1151,135,1388,177"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a67d8f66e8c759cac71fc3c0562faa74d" title="getdist.mcsamples.MCSamples.get1\lDDensity" alt="" coords="1439,135,1676,177"/>
+<area shape="rect" id="node15" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ae22105031ef07db6d65ce05fef3b15e8" title="getdist.mcsamples.MCSamples.\l_setDensitiesandMarge1D" alt="" coords="1987,165,2199,206"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a1d4ac9d66e1401a3a2e082cd18393f2b" title="getdist.mcsamples.MCSamples.\l_getScaleForParam" alt="" coords="1726,70,1938,111"/>
+<area shape="rect" id="node14" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a90a8cf01a23a304a6e5fe07db7a74e1a" title="getdist.mcsamples.MCSamples.\l_setMargeLimits" alt="" coords="1726,135,1938,177"/>
+<area shape="rect" id="node16" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ac23f96add8b4fc35b7dd3a922fae119f" title="getdist.mcsamples.MCSamples.get\lMargeStats" alt="" coords="2249,165,2479,206"/>
+<area shape="rect" id="node17" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a2faa89318b77f8c9a09eec976272f54c" title="getdist.mcsamples.MCSamples.get\lTable" alt="" coords="2529,131,2759,173"/>
+<area shape="rect" id="node18" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#aa4fc7b33808a24cb90238f2b24500899" title="getdist.mcsamples.MCSamples.get\lLatex" alt="" coords="2529,197,2759,238"/>
+<area shape="rect" id="node19" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ad03ae7e378ba02de8fcecb16934b9e65" title="getdist.mcsamples.MCSamples.get\lInlineLatex" alt="" coords="2809,197,3039,238"/>
+</map>

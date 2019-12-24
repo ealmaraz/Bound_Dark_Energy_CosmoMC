@@ -1,0 +1,825 @@
+\hypertarget{namespacecamb_1_1camb}{}\section{camb.\+camb Namespace Reference}
+\label{namespacecamb_1_1camb}\index{camb.\+camb@{camb.\+camb}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcamb_1_1camb_1_1__CAMBdata}{\+\_\+\+C\+A\+M\+Bdata}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1camb_1_1__ClTransferData}{\+\_\+\+Cl\+Transfer\+Data}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1camb_1_1__MatterTransferData}{\+\_\+\+Matter\+Transfer\+Data}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1camb_1_1CAMBdata}{C\+A\+M\+Bdata}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1camb_1_1ClTransferData}{Cl\+Transfer\+Data}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1camb_1_1MatterTransferData}{Matter\+Transfer\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a3fc09103ab47ddd43da617de78b850d7}{set\+\_\+feedback\+\_\+level}} (level=1)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_aee6dc5a42e1609d556dd05ae86af78ab}{set\+\_\+default\+\_\+params}} (P)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_aa47148183bb7f90330a1e2f01b1063ff}{fortran\+\_\+array}} (c\+\_\+pointer, shape, dtype=np.\+float64, order=\textquotesingle{}F\textquotesingle{}, own\+\_\+data=True)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a1278c06959fade5c036b95daa28b8b11}{set\+\_\+z\+\_\+outputs}} (z\+\_\+outputs)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a7e83f6bc935783f6948a0e9c4a9d9ed1}{get\+\_\+results}} (params)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a460a9d6f9f2c11ad461f4dc26186372d}{get\+\_\+transfer\+\_\+functions}} (params)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_af70bd70f702022b4caa64e9891b30435}{get\+\_\+background}} (params, no\+\_\+thermo=False)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_af6991964b3a277d691e0197b9d715c11}{get\+\_\+age}} (params)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a7c5ffb7470d6adb95c92208185c5487b}{get\+\_\+zre\+\_\+from\+\_\+tau}} (params, tau)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a7ec5678be1930724bb5a1a179d51ae89}{cleanup}} ()
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a79ab5665516443404a5fefc3a350b568}{set\+\_\+params}} (cp=None, verbose=False, params)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1camb_a1418924a33e3086804b351674832636c}{get\+\_\+matter\+\_\+power\+\_\+interpolator}} (params, zmin=0, zmax=10, nz\+\_\+step=100, zs=None, kmax=10, nonlinear=True, var1=None, var2=None, hubble\+\_\+units=True, k\+\_\+hunit=True, return\+\_\+z\+\_\+k=False, k\+\_\+per\+\_\+logint=None, log\+\_\+interp=True)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a46c7b4fa92f12fb863c881ba88e35a8e}{Feedback\+Level}} = dll\+\_\+import(c\+\_\+int, \char`\"{}modelparams\char`\"{}, \char`\"{}feedbacklevel\char`\"{})
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_aec5b3dae7749fd62cdb87c9933d69b06}{value}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a9e194516acd41f6579011e26d65a6d73}{int\+\_\+arg}} = P\+O\+I\+N\+T\+ER(c\+\_\+int)
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a44bc6eb27388b576f6c26774a6ebe166}{d\+\_\+arg}} = P\+O\+I\+N\+T\+ER(\mbox{\hyperlink{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}{c\+\_\+double}})
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_aaccb5cdabc7a4aff9696405380103e7e}{numpy\+\_\+2d}} = ndpointer(\mbox{\hyperlink{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}{c\+\_\+double}}, \mbox{\hyperlink{namespacecamb_1_1camb_aa84470703add02037beda61ea31c02e9}{flags}}=\textquotesingle{}C\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US\textquotesingle{}, \mbox{\hyperlink{namespacecamb_1_1camb_a1ab298aa884f117a7e6b56a81f694806}{ndim}}=2)
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a3d113b2f49bb7733dfa37b76ea4da9b0}{numpy\+\_\+1d}} = ndpointer(\mbox{\hyperlink{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}{c\+\_\+double}}, \mbox{\hyperlink{namespacecamb_1_1camb_aa84470703add02037beda61ea31c02e9}{flags}}=\textquotesingle{}C\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a9de9875d8abacf901661b8054198a43e}{C\+A\+M\+Bdata\+\_\+new}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+new
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_ae5d9b68b413cd817263baf430603735e}{argtypes}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_ae2649e23085c98f0925a9737b32b9059}{C\+A\+M\+Bdata\+\_\+free}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+free
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_af4210155d6c19ae51ec7eeab62193b0f}{C\+A\+M\+Bdata\+\_\+getparams}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getparams
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a8989230d759d722a2d755aa0d9402540}{C\+A\+M\+Bdata\+\_\+setparams}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+setparams
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a2f678b52b4292fa87d1c3a234b60d70a}{C\+A\+M\+Bdata\+\_\+gettransfers}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+gettransfers
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a007debd6eaa7dfaa6b646e1d52d44e23}{restype}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a7e017c1b578bba9b94140ca43426bb97}{C\+A\+M\+Bdata\+\_\+transferstopowers}} = camblib.\+\_\+\+\_\+camb\+\_\+\+M\+O\+D\+\_\+camb\+\_\+transferstopowers
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a22e1da190a23d558f4889e9086503080}{C\+A\+M\+Bdata\+\_\+mattertransferdata}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+mattertransferdata
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_aafbbcf3b194b67954e5dca258bfdc4f3}{C\+A\+M\+Bdata\+\_\+cltransferdata}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+cltransferdata
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a73c96cbd1b5bd209e914b2761c6660ff}{C\+A\+M\+B\+\_\+\+Set\+Tot\+Cls}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+settotcls
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a83f8a655acb58351b83ce3ab0a1f7323}{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Cls}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setunlensedcls
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a9d1d6551068d7ebe8094b48009909460}{C\+A\+M\+B\+\_\+\+Set\+Lens\+Potential\+Cls}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setlenspotentialcls
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a8f43a2cd701774298a2aae8a8a1555ec}{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scal\+Cls}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setunlensedscalcls
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a7c8683b7064e1efa3ed6ccdda9f0e7c8}{C\+A\+M\+B\+\_\+\+Set\+Lensed\+Scal\+Cls}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setlensedscalcls
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a605dac3da7894bf4ae7c1d601cecb992}{C\+A\+M\+B\+\_\+\+Set\+Tensor\+Cls}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+settensorcls
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a18bd5059fd4e3231b2666adc00d1a943}{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scalar\+Array}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setunlensedscalararray
+\item 
+list \mbox{\hyperlink{namespacecamb_1_1camb_a95c9caf61a082f47bb7a766bf503e601}{\+\_\+set\+\_\+cl\+\_\+args}} = \mbox{[}P\+O\+I\+N\+T\+ER(c\+\_\+int), \mbox{\hyperlink{namespacecamb_1_1camb_a3d113b2f49bb7733dfa37b76ea4da9b0}{numpy\+\_\+1d}}, \mbox{\hyperlink{namespacecamb_1_1camb_a9e194516acd41f6579011e26d65a6d73}{int\+\_\+arg}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a80a10f91d36048f57e81460f37e6d427}{C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setbackgroundoutputs\+\_\+z
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a432459b4f0dfc0b730e0d45df8f00768}{C\+A\+M\+B\+\_\+\+Get\+Background\+Outputs}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getbackgroundoutputs
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_aa431a5cd751bd35f7a2c43709be691ad}{C\+A\+M\+B\+\_\+\+Get\+Num\+Background\+Outputs}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getnumbackgroundoutputs
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_abccf0c9bc3a9f4aa615ead2675fef679}{C\+A\+M\+B\+\_\+\+Get\+Age}} = camblib.\+\_\+\+\_\+camb\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getage
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_ae0fae3fa009c3c9a5f8c6b337b82680e}{C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau}} = camblib.\+\_\+\+\_\+camb\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getzrefromtau
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_abdb9d21c561161d480452cffa7450a0f}{C\+A\+M\+B\+\_\+\+Set\+Params\+For\+Background}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+setparamsforbackground
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a0f92c05c3c1ec332202aae9ae947fd85}{C\+A\+M\+B\+\_\+\+Calc\+Background\+Theory}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+calcbackgroundtheory
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_ac6119aa339302145f81e871c06583a84}{C\+A\+M\+Bdata\+\_\+\+Get\+Linear\+Matter\+Power}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getlinearmatterpower
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a04fbbbbce39ff55d403fcd8494fd0cc1}{C\+A\+M\+Bdata\+\_\+\+Get\+Non\+Linear\+Matter\+Power}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getnonlinearmatterpower
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a6c6612d982dd6455879101c1e6752736}{C\+A\+M\+Bdata\+\_\+\+Get\+Matter\+Power}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getmatterpower
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a4089502e6db5671063cf1e4d22cebd3c}{Angular\+Diameter\+Distance}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+angulardiameterdistance
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a38b17660129624fb7bbbbee57c1a6b6c}{argtyes}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a8e8fd82e8855eca13007a51b88d44efd}{Angular\+Diameter\+Distance\+Arr}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+angulardiameterdistancearr
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a28ac341c9b0c5ad2bb723636dc20d4b5}{Angular\+Diameter\+Distance2}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+angulardiameterdistance2
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_abea45cf46d041a2594299ddef0e2fee2}{Comoving\+Radial\+Distance}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+comovingradialdistance
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a03f52f2e7698d22d7b202f45ef067413}{Time\+Ofz\+Arr}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+timeofzarr
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a9062190a9faad2f801c6ef81b9143ae4}{Hofz}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+hofz
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a0d78e19381b7a6fb313de6fccfe2821a}{Delta\+Physical\+Time\+Gyr}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+deltaphysicaltimegyr
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a66e26cbf3357d7c21808dc7af9d2f01f}{Delta\+Time}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+deltatime
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a4fe51e1298e6523912383946cb843e5a}{Cosmomc\+Theta}} = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+cosmomctheta
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_ac9db1375b942cb06a077ed82375666e2}{C\+A\+M\+B\+\_\+\+Time\+Evolution}} = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+timeevolution
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}{c\+\_\+double}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_aa84470703add02037beda61ea31c02e9}{flags}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a1ab298aa884f117a7e6b56a81f694806}{ndim}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1camb_a5b8aeb14d2331907199edb107b6cf588}{C\+A\+M\+B\+\_\+\+Background\+Evolution}} = camblib.\+\_\+\+\_\+thermodata\+\_\+\+M\+O\+D\+\_\+getbackgroundevolution
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacecamb_1_1camb_a7ec5678be1930724bb5a1a179d51ae89}\label{namespacecamb_1_1camb_a7ec5678be1930724bb5a1a179d51ae89}} 
+\index{camb\+::camb@{camb\+::camb}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily def camb.\+camb.\+cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_aa47148183bb7f90330a1e2f01b1063ff}\label{namespacecamb_1_1camb_aa47148183bb7f90330a1e2f01b1063ff}} 
+\index{camb\+::camb@{camb\+::camb}!fortran\+\_\+array@{fortran\+\_\+array}}
+\index{fortran\+\_\+array@{fortran\+\_\+array}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{fortran\+\_\+array()}{fortran\_array()}}
+{\footnotesize\ttfamily def camb.\+camb.\+fortran\+\_\+array (\begin{DoxyParamCaption}\item[{}]{c\+\_\+pointer,  }\item[{}]{shape,  }\item[{}]{dtype = {\ttfamily np.float64},  }\item[{}]{order = {\ttfamily \textquotesingle{}F\textquotesingle{}},  }\item[{}]{own\+\_\+data = {\ttfamily True} }\end{DoxyParamCaption})}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+cmb\+\_\+transfer\+\_\+data(), and camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+matter\+\_\+transfer\+\_\+data().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_1_1camb_aa47148183bb7f90330a1e2f01b1063ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_1_1camb_af6991964b3a277d691e0197b9d715c11}\label{namespacecamb_1_1camb_af6991964b3a277d691e0197b9d715c11}} 
+\index{camb\+::camb@{camb\+::camb}!get\+\_\+age@{get\+\_\+age}}
+\index{get\+\_\+age@{get\+\_\+age}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{get\+\_\+age()}{get\_age()}}
+{\footnotesize\ttfamily def camb.\+camb.\+get\+\_\+age (\begin{DoxyParamCaption}\item[{}]{params }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get age of universe for given set of parameters
+
+:param params:  :class:`.model.CAMBparams` instance
+:return: age of universe in gigayears
+\end{DoxyVerb}
+ 
+
+References camb.\+camb.\+C\+A\+M\+B\+\_\+\+Get\+Age.
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_af70bd70f702022b4caa64e9891b30435}\label{namespacecamb_1_1camb_af70bd70f702022b4caa64e9891b30435}} 
+\index{camb\+::camb@{camb\+::camb}!get\+\_\+background@{get\+\_\+background}}
+\index{get\+\_\+background@{get\+\_\+background}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{get\+\_\+background()}{get\_background()}}
+{\footnotesize\ttfamily def camb.\+camb.\+get\+\_\+background (\begin{DoxyParamCaption}\item[{}]{params,  }\item[{}]{no\+\_\+thermo = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate background cosmology for specified parameters and return :class:`CAMBdata`, ready to get derived
+ parameters and use background functions like angular_diameter_distance.
+
+:param params: :class:`.model.CAMBparams` instance
+:params no_thermo: Use calc_background_no_thermo instead
+:return: :class:`CAMBdata` instance
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecamb_1_1camb_a1418924a33e3086804b351674832636c}\label{namespacecamb_1_1camb_a1418924a33e3086804b351674832636c}} 
+\index{camb\+::camb@{camb\+::camb}!get\+\_\+matter\+\_\+power\+\_\+interpolator@{get\+\_\+matter\+\_\+power\+\_\+interpolator}}
+\index{get\+\_\+matter\+\_\+power\+\_\+interpolator@{get\+\_\+matter\+\_\+power\+\_\+interpolator}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{get\+\_\+matter\+\_\+power\+\_\+interpolator()}{get\_matter\_power\_interpolator()}}
+{\footnotesize\ttfamily def camb.\+camb.\+get\+\_\+matter\+\_\+power\+\_\+interpolator (\begin{DoxyParamCaption}\item[{}]{params,  }\item[{}]{zmin = {\ttfamily 0},  }\item[{}]{zmax = {\ttfamily 10},  }\item[{}]{nz\+\_\+step = {\ttfamily 100},  }\item[{}]{zs = {\ttfamily None},  }\item[{}]{kmax = {\ttfamily 10},  }\item[{}]{nonlinear = {\ttfamily True},  }\item[{}]{var1 = {\ttfamily None},  }\item[{}]{var2 = {\ttfamily None},  }\item[{}]{hubble\+\_\+units = {\ttfamily True},  }\item[{}]{k\+\_\+hunit = {\ttfamily True},  }\item[{}]{return\+\_\+z\+\_\+k = {\ttfamily False},  }\item[{}]{k\+\_\+per\+\_\+logint = {\ttfamily None},  }\item[{}]{log\+\_\+interp = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a 2D spline interpolation object to evaluate matter power spectrum as function of z and k/h
+e.g.
+  PK = get_matter_power_evaluator(params)
+  print 'Power spectrum at z=0.5, k/h=0.1 is %s (Mpc/h)^{-3} '%(PK.P(0.5, 0.1))
+
+:param params: :class:`.model.CAMBparams` instance
+:param zmin: minimum z (use 0 or smaller than you want for good interpolation)
+:param zmax: maximum z (use larger than you want for good interpolation)
+:param nz_step: number of steps to sample in z (default max allowed is 100)
+:param zs: instead of zmin,zmax, nz_step, can specific explicit array of z values to spline from
+:param kmax: maximum k
+:param nonlinear: include non-linear correction from halo model
+:param var1: variable i (index, or name of variable; default delta_tot)
+:param var2: variable j (index, or name of variable; default delta_tot)
+:param hubble_units: if true, output power spectrum in (Mpc/h)^{-3} units, otherwise Mpc^{-3}
+:param k_hunit: if true, matter power is a function of k/h, if false, just k (both Mpc^{-1} units)
+:param return_z_k: if true, return interpolator, z, k where z, k are the grid used
+:param log_interp: if true, interpolate log of power spectrum (unless any values are negative in which case ignored)
+:return: kh, z, PK, where kz an z are arrays of k/h and z respectively, and PK[i,j] is value at z[i], (k/h)[j]
+
+:return: RectBivariateSpline object PK, that can be called with PK(z,log(kh)) to get log matter power values
+\end{DoxyVerb}
+ 
+
+References camb.\+camb.\+get\+\_\+results().
+
+
+
+Referenced by camb.\+camb.\+set\+\_\+params().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_1_1camb_a1418924a33e3086804b351674832636c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_1_1camb_a1418924a33e3086804b351674832636c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_1_1camb_a7e83f6bc935783f6948a0e9c4a9d9ed1}\label{namespacecamb_1_1camb_a7e83f6bc935783f6948a0e9c4a9d9ed1}} 
+\index{camb\+::camb@{camb\+::camb}!get\+\_\+results@{get\+\_\+results}}
+\index{get\+\_\+results@{get\+\_\+results}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{get\+\_\+results()}{get\_results()}}
+{\footnotesize\ttfamily def camb.\+camb.\+get\+\_\+results (\begin{DoxyParamCaption}\item[{}]{params }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate results for specified parameters and return :class:`CAMBdata` instance for getting results.
+
+:param params: :class:`.model.CAMBparams` instance
+:return: :class:`CAMBdata` instance
+\end{DoxyVerb}
+ 
+
+Referenced by camb.\+camb.\+get\+\_\+matter\+\_\+power\+\_\+interpolator().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_1_1camb_a7e83f6bc935783f6948a0e9c4a9d9ed1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_1_1camb_a460a9d6f9f2c11ad461f4dc26186372d}\label{namespacecamb_1_1camb_a460a9d6f9f2c11ad461f4dc26186372d}} 
+\index{camb\+::camb@{camb\+::camb}!get\+\_\+transfer\+\_\+functions@{get\+\_\+transfer\+\_\+functions}}
+\index{get\+\_\+transfer\+\_\+functions@{get\+\_\+transfer\+\_\+functions}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{get\+\_\+transfer\+\_\+functions()}{get\_transfer\_functions()}}
+{\footnotesize\ttfamily def camb.\+camb.\+get\+\_\+transfer\+\_\+functions (\begin{DoxyParamCaption}\item[{}]{params }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate transfer functions for specified parameters and return :class:`CAMBdata` instance for getting results
+and subsequently calculating power spectra.
+
+:param params: :class:`.model.CAMBparams` instance
+:return: :class:`CAMBdata` instance
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecamb_1_1camb_a7c5ffb7470d6adb95c92208185c5487b}\label{namespacecamb_1_1camb_a7c5ffb7470d6adb95c92208185c5487b}} 
+\index{camb\+::camb@{camb\+::camb}!get\+\_\+zre\+\_\+from\+\_\+tau@{get\+\_\+zre\+\_\+from\+\_\+tau}}
+\index{get\+\_\+zre\+\_\+from\+\_\+tau@{get\+\_\+zre\+\_\+from\+\_\+tau}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{get\+\_\+zre\+\_\+from\+\_\+tau()}{get\_zre\_from\_tau()}}
+{\footnotesize\ttfamily def camb.\+camb.\+get\+\_\+zre\+\_\+from\+\_\+tau (\begin{DoxyParamCaption}\item[{}]{params,  }\item[{}]{tau }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get reionization redshift given optical depth tau
+
+:param params: :class:`.model.CAMBparams` instance
+:param tau: optical depth
+:return: reionization redshift
+\end{DoxyVerb}
+ 
+
+References camb.\+camb.\+c\+\_\+double, and camb.\+camb.\+C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau.
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_aee6dc5a42e1609d556dd05ae86af78ab}\label{namespacecamb_1_1camb_aee6dc5a42e1609d556dd05ae86af78ab}} 
+\index{camb\+::camb@{camb\+::camb}!set\+\_\+default\+\_\+params@{set\+\_\+default\+\_\+params}}
+\index{set\+\_\+default\+\_\+params@{set\+\_\+default\+\_\+params}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{set\+\_\+default\+\_\+params()}{set\_default\_params()}}
+{\footnotesize\ttfamily def camb.\+camb.\+set\+\_\+default\+\_\+params (\begin{DoxyParamCaption}\item[{}]{P }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set default values for all parameters
+:param P: :class:`.model.CAMBparams`
+:return: P
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecamb_1_1camb_a3fc09103ab47ddd43da617de78b850d7}\label{namespacecamb_1_1camb_a3fc09103ab47ddd43da617de78b850d7}} 
+\index{camb\+::camb@{camb\+::camb}!set\+\_\+feedback\+\_\+level@{set\+\_\+feedback\+\_\+level}}
+\index{set\+\_\+feedback\+\_\+level@{set\+\_\+feedback\+\_\+level}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{set\+\_\+feedback\+\_\+level()}{set\_feedback\_level()}}
+{\footnotesize\ttfamily def camb.\+camb.\+set\+\_\+feedback\+\_\+level (\begin{DoxyParamCaption}\item[{}]{level = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the feedback level for internal CAMB calls
+:param level:  zero for nothing, >1 for more
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecamb_1_1camb_a79ab5665516443404a5fefc3a350b568}\label{namespacecamb_1_1camb_a79ab5665516443404a5fefc3a350b568}} 
+\index{camb\+::camb@{camb\+::camb}!set\+\_\+params@{set\+\_\+params}}
+\index{set\+\_\+params@{set\+\_\+params}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{set\+\_\+params()}{set\_params()}}
+{\footnotesize\ttfamily def camb.\+camb.\+set\+\_\+params (\begin{DoxyParamCaption}\item[{}]{cp = {\ttfamily None},  }\item[{}]{verbose = {\ttfamily False},  }\item[{}]{params }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set all CAMB parameters at once, including parameters which are part of the 
+CAMBparams structure, as well as global parameters.
+
+E.g. 
+
+cp = camb.set_params(ns=1, omch2=0.1, ALens=1.2, lmax=2000)
+
+This is equivalent to:
+
+cp = model.CAMBparams()
+cp.set_cosmology(omch2=0.1)
+cp.set_for_lmax(lmax=2000)
+cp.InitPower.set_params(ns=1)
+lensing.ALens.value = 1.2
+
+
+:param **params: the values of the parameters
+:param cp: use this CAMBparams instead of creating a new one
+:param verbose: print out the equivalent set of commands \end{DoxyVerb}
+ 
+
+References camb.\+camb.\+get\+\_\+matter\+\_\+power\+\_\+interpolator(), and set().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_1_1camb_a79ab5665516443404a5fefc3a350b568_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_1_1camb_a1278c06959fade5c036b95daa28b8b11}\label{namespacecamb_1_1camb_a1278c06959fade5c036b95daa28b8b11}} 
+\index{camb\+::camb@{camb\+::camb}!set\+\_\+z\+\_\+outputs@{set\+\_\+z\+\_\+outputs}}
+\index{set\+\_\+z\+\_\+outputs@{set\+\_\+z\+\_\+outputs}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{set\+\_\+z\+\_\+outputs()}{set\_z\_outputs()}}
+{\footnotesize\ttfamily def camb.\+camb.\+set\+\_\+z\+\_\+outputs (\begin{DoxyParamCaption}\item[{}]{z\+\_\+outputs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the redshifts for calculating BAO parameters at
+:param z_outputs: array of redshifts
+\end{DoxyVerb}
+ 
+
+References camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z.
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+\+B\+A\+O().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_1_1camb_a1278c06959fade5c036b95daa28b8b11_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecamb_1_1camb_a95c9caf61a082f47bb7a766bf503e601}\label{namespacecamb_1_1camb_a95c9caf61a082f47bb7a766bf503e601}} 
+\index{camb\+::camb@{camb\+::camb}!\+\_\+set\+\_\+cl\+\_\+args@{\+\_\+set\+\_\+cl\+\_\+args}}
+\index{\+\_\+set\+\_\+cl\+\_\+args@{\+\_\+set\+\_\+cl\+\_\+args}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{\+\_\+set\+\_\+cl\+\_\+args}{\_set\_cl\_args}}
+{\footnotesize\ttfamily list camb.\+camb.\+\_\+set\+\_\+cl\+\_\+args = \mbox{[}P\+O\+I\+N\+T\+ER(c\+\_\+int), \mbox{\hyperlink{namespacecamb_1_1camb_a3d113b2f49bb7733dfa37b76ea4da9b0}{numpy\+\_\+1d}}, \mbox{\hyperlink{namespacecamb_1_1camb_a9e194516acd41f6579011e26d65a6d73}{int\+\_\+arg}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a4089502e6db5671063cf1e4d22cebd3c}\label{namespacecamb_1_1camb_a4089502e6db5671063cf1e4d22cebd3c}} 
+\index{camb\+::camb@{camb\+::camb}!Angular\+Diameter\+Distance@{Angular\+Diameter\+Distance}}
+\index{Angular\+Diameter\+Distance@{Angular\+Diameter\+Distance}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Angular\+Diameter\+Distance}{AngularDiameterDistance}}
+{\footnotesize\ttfamily camb.\+camb.\+Angular\+Diameter\+Distance = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+angulardiameterdistance}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+angular\+\_\+diameter\+\_\+distance().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a28ac341c9b0c5ad2bb723636dc20d4b5}\label{namespacecamb_1_1camb_a28ac341c9b0c5ad2bb723636dc20d4b5}} 
+\index{camb\+::camb@{camb\+::camb}!Angular\+Diameter\+Distance2@{Angular\+Diameter\+Distance2}}
+\index{Angular\+Diameter\+Distance2@{Angular\+Diameter\+Distance2}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Angular\+Diameter\+Distance2}{AngularDiameterDistance2}}
+{\footnotesize\ttfamily camb.\+camb.\+Angular\+Diameter\+Distance2 = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+angulardiameterdistance2}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+angular\+\_\+diameter\+\_\+distance2().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a8e8fd82e8855eca13007a51b88d44efd}\label{namespacecamb_1_1camb_a8e8fd82e8855eca13007a51b88d44efd}} 
+\index{camb\+::camb@{camb\+::camb}!Angular\+Diameter\+Distance\+Arr@{Angular\+Diameter\+Distance\+Arr}}
+\index{Angular\+Diameter\+Distance\+Arr@{Angular\+Diameter\+Distance\+Arr}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Angular\+Diameter\+Distance\+Arr}{AngularDiameterDistanceArr}}
+{\footnotesize\ttfamily camb.\+camb.\+Angular\+Diameter\+Distance\+Arr = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+angulardiameterdistancearr}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+angular\+\_\+diameter\+\_\+distance().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a38b17660129624fb7bbbbee57c1a6b6c}\label{namespacecamb_1_1camb_a38b17660129624fb7bbbbee57c1a6b6c}} 
+\index{camb\+::camb@{camb\+::camb}!argtyes@{argtyes}}
+\index{argtyes@{argtyes}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{argtyes}{argtyes}}
+{\footnotesize\ttfamily camb.\+camb.\+argtyes}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_ae5d9b68b413cd817263baf430603735e}\label{namespacecamb_1_1camb_ae5d9b68b413cd817263baf430603735e}} 
+\index{camb\+::camb@{camb\+::camb}!argtypes@{argtypes}}
+\index{argtypes@{argtypes}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{argtypes}{argtypes}}
+{\footnotesize\ttfamily camb.\+camb.\+argtypes}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}\label{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}} 
+\index{camb\+::camb@{camb\+::camb}!c\+\_\+double@{c\+\_\+double}}
+\index{c\+\_\+double@{c\+\_\+double}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{c\+\_\+double}{c\_double}}
+{\footnotesize\ttfamily camb.\+camb.\+c\+\_\+double}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+angular\+\_\+diameter\+\_\+distance(), camb.\+camb.\+C\+A\+M\+Bdata.\+angular\+\_\+diameter\+\_\+distance2(), camb.\+camb.\+C\+A\+M\+Bdata.\+comoving\+\_\+radial\+\_\+distance(), camb.\+camb.\+C\+A\+M\+Bdata.\+conformal\+\_\+time\+\_\+a1\+\_\+a2(), camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+matter\+\_\+power\+\_\+spectrum(), camb.\+camb.\+get\+\_\+zre\+\_\+from\+\_\+tau(), camb.\+camb.\+C\+A\+M\+Bdata.\+h\+\_\+of\+\_\+z(), and camb.\+camb.\+C\+A\+M\+Bdata.\+physical\+\_\+time\+\_\+a1\+\_\+a2().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a5b8aeb14d2331907199edb107b6cf588}\label{namespacecamb_1_1camb_a5b8aeb14d2331907199edb107b6cf588}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Background\+Evolution@{C\+A\+M\+B\+\_\+\+Background\+Evolution}}
+\index{C\+A\+M\+B\+\_\+\+Background\+Evolution@{C\+A\+M\+B\+\_\+\+Background\+Evolution}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Background\+Evolution}{CAMB\_BackgroundEvolution}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Background\+Evolution = camblib.\+\_\+\+\_\+thermodata\+\_\+\+M\+O\+D\+\_\+getbackgroundevolution}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+background\+\_\+time\+\_\+evolution().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a0f92c05c3c1ec332202aae9ae947fd85}\label{namespacecamb_1_1camb_a0f92c05c3c1ec332202aae9ae947fd85}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Calc\+Background\+Theory@{C\+A\+M\+B\+\_\+\+Calc\+Background\+Theory}}
+\index{C\+A\+M\+B\+\_\+\+Calc\+Background\+Theory@{C\+A\+M\+B\+\_\+\+Calc\+Background\+Theory}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Calc\+Background\+Theory}{CAMB\_CalcBackgroundTheory}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Calc\+Background\+Theory = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+calcbackgroundtheory}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+calc\+\_\+background().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_abccf0c9bc3a9f4aa615ead2675fef679}\label{namespacecamb_1_1camb_abccf0c9bc3a9f4aa615ead2675fef679}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Get\+Age@{C\+A\+M\+B\+\_\+\+Get\+Age}}
+\index{C\+A\+M\+B\+\_\+\+Get\+Age@{C\+A\+M\+B\+\_\+\+Get\+Age}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Get\+Age}{CAMB\_GetAge}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Get\+Age = camblib.\+\_\+\+\_\+camb\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getage}
+
+
+
+Referenced by camb.\+camb.\+get\+\_\+age().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a432459b4f0dfc0b730e0d45df8f00768}\label{namespacecamb_1_1camb_a432459b4f0dfc0b730e0d45df8f00768}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Get\+Background\+Outputs@{C\+A\+M\+B\+\_\+\+Get\+Background\+Outputs}}
+\index{C\+A\+M\+B\+\_\+\+Get\+Background\+Outputs@{C\+A\+M\+B\+\_\+\+Get\+Background\+Outputs}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Get\+Background\+Outputs}{CAMB\_GetBackgroundOutputs}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Get\+Background\+Outputs = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getbackgroundoutputs}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+background\+\_\+outputs().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_aa431a5cd751bd35f7a2c43709be691ad}\label{namespacecamb_1_1camb_aa431a5cd751bd35f7a2c43709be691ad}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Get\+Num\+Background\+Outputs@{C\+A\+M\+B\+\_\+\+Get\+Num\+Background\+Outputs}}
+\index{C\+A\+M\+B\+\_\+\+Get\+Num\+Background\+Outputs@{C\+A\+M\+B\+\_\+\+Get\+Num\+Background\+Outputs}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Get\+Num\+Background\+Outputs}{CAMB\_GetNumBackgroundOutputs}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Get\+Num\+Background\+Outputs = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getnumbackgroundoutputs}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+background\+\_\+outputs().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_ae0fae3fa009c3c9a5f8c6b337b82680e}\label{namespacecamb_1_1camb_ae0fae3fa009c3c9a5f8c6b337b82680e}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau@{C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau}}
+\index{C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau@{C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau}{CAMB\_GetZreFromTau}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Get\+Zre\+From\+Tau = camblib.\+\_\+\+\_\+camb\+\_\+\+M\+O\+D\+\_\+camb\+\_\+getzrefromtau}
+
+
+
+Referenced by camb.\+camb.\+get\+\_\+zre\+\_\+from\+\_\+tau().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a80a10f91d36048f57e81460f37e6d427}\label{namespacecamb_1_1camb_a80a10f91d36048f57e81460f37e6d427}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z@{C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z@{C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z}{CAMB\_SetBackgroundOutputs\_z}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Background\+Outputs\+\_\+z = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setbackgroundoutputs\+\_\+z}
+
+
+
+Referenced by camb.\+camb.\+set\+\_\+z\+\_\+outputs().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a7c8683b7064e1efa3ed6ccdda9f0e7c8}\label{namespacecamb_1_1camb_a7c8683b7064e1efa3ed6ccdda9f0e7c8}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Lensed\+Scal\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Lensed\+Scal\+Cls}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Lensed\+Scal\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Lensed\+Scal\+Cls}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Lensed\+Scal\+Cls}{CAMB\_SetLensedScalCls}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Lensed\+Scal\+Cls = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setlensedscalcls}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+lensed\+\_\+scalar\+\_\+cls().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a9d1d6551068d7ebe8094b48009909460}\label{namespacecamb_1_1camb_a9d1d6551068d7ebe8094b48009909460}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Lens\+Potential\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Lens\+Potential\+Cls}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Lens\+Potential\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Lens\+Potential\+Cls}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Lens\+Potential\+Cls}{CAMB\_SetLensPotentialCls}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Lens\+Potential\+Cls = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setlenspotentialcls}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+lens\+\_\+potential\+\_\+cls().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_abdb9d21c561161d480452cffa7450a0f}\label{namespacecamb_1_1camb_abdb9d21c561161d480452cffa7450a0f}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Params\+For\+Background@{C\+A\+M\+B\+\_\+\+Set\+Params\+For\+Background}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Params\+For\+Background@{C\+A\+M\+B\+\_\+\+Set\+Params\+For\+Background}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Params\+For\+Background}{CAMB\_SetParamsForBackground}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Params\+For\+Background = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+setparamsforbackground}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+calc\+\_\+background\+\_\+no\+\_\+thermo().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a605dac3da7894bf4ae7c1d601cecb992}\label{namespacecamb_1_1camb_a605dac3da7894bf4ae7c1d601cecb992}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Tensor\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Tensor\+Cls}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Tensor\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Tensor\+Cls}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Tensor\+Cls}{CAMB\_SetTensorCls}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Tensor\+Cls = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+settensorcls}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+tensor\+\_\+cls().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a73c96cbd1b5bd209e914b2761c6660ff}\label{namespacecamb_1_1camb_a73c96cbd1b5bd209e914b2761c6660ff}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Tot\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Tot\+Cls}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Tot\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Tot\+Cls}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Tot\+Cls}{CAMB\_SetTotCls}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Tot\+Cls = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+settotcls}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+total\+\_\+cls().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a83f8a655acb58351b83ce3ab0a1f7323}\label{namespacecamb_1_1camb_a83f8a655acb58351b83ce3ab0a1f7323}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Cls}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Cls}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Cls}{CAMB\_SetUnlensedCls}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Cls = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setunlensedcls}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a18bd5059fd4e3231b2666adc00d1a943}\label{namespacecamb_1_1camb_a18bd5059fd4e3231b2666adc00d1a943}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scalar\+Array@{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scalar\+Array}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scalar\+Array@{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scalar\+Array}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scalar\+Array}{CAMB\_SetUnlensedScalarArray}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scalar\+Array = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setunlensedscalararray}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+unlensed\+\_\+scalar\+\_\+array\+\_\+cls().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a8f43a2cd701774298a2aae8a8a1555ec}\label{namespacecamb_1_1camb_a8f43a2cd701774298a2aae8a8a1555ec}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scal\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scal\+Cls}}
+\index{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scal\+Cls@{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scal\+Cls}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scal\+Cls}{CAMB\_SetUnlensedScalCls}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Set\+Unlensed\+Scal\+Cls = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+setunlensedscalcls}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+unlensed\+\_\+scalar\+\_\+cls().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_ac9db1375b942cb06a077ed82375666e2}\label{namespacecamb_1_1camb_ac9db1375b942cb06a077ed82375666e2}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+B\+\_\+\+Time\+Evolution@{C\+A\+M\+B\+\_\+\+Time\+Evolution}}
+\index{C\+A\+M\+B\+\_\+\+Time\+Evolution@{C\+A\+M\+B\+\_\+\+Time\+Evolution}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+B\+\_\+\+Time\+Evolution}{CAMB\_TimeEvolution}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+B\+\_\+\+Time\+Evolution = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+camb\+\_\+timeevolution}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+time\+\_\+evolution().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_aafbbcf3b194b67954e5dca258bfdc4f3}\label{namespacecamb_1_1camb_aafbbcf3b194b67954e5dca258bfdc4f3}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+cltransferdata@{C\+A\+M\+Bdata\+\_\+cltransferdata}}
+\index{C\+A\+M\+Bdata\+\_\+cltransferdata@{C\+A\+M\+Bdata\+\_\+cltransferdata}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+cltransferdata}{CAMBdata\_cltransferdata}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+cltransferdata = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+cltransferdata}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+cmb\+\_\+transfer\+\_\+data().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_ae2649e23085c98f0925a9737b32b9059}\label{namespacecamb_1_1camb_ae2649e23085c98f0925a9737b32b9059}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+free@{C\+A\+M\+Bdata\+\_\+free}}
+\index{C\+A\+M\+Bdata\+\_\+free@{C\+A\+M\+Bdata\+\_\+free}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+free}{CAMBdata\_free}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+free = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+free}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+free().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_ac6119aa339302145f81e871c06583a84}\label{namespacecamb_1_1camb_ac6119aa339302145f81e871c06583a84}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+\+Get\+Linear\+Matter\+Power@{C\+A\+M\+Bdata\+\_\+\+Get\+Linear\+Matter\+Power}}
+\index{C\+A\+M\+Bdata\+\_\+\+Get\+Linear\+Matter\+Power@{C\+A\+M\+Bdata\+\_\+\+Get\+Linear\+Matter\+Power}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+\+Get\+Linear\+Matter\+Power}{CAMBdata\_GetLinearMatterPower}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+\+Get\+Linear\+Matter\+Power = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getlinearmatterpower}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+linear\+\_\+matter\+\_\+power\+\_\+spectrum().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a6c6612d982dd6455879101c1e6752736}\label{namespacecamb_1_1camb_a6c6612d982dd6455879101c1e6752736}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+\+Get\+Matter\+Power@{C\+A\+M\+Bdata\+\_\+\+Get\+Matter\+Power}}
+\index{C\+A\+M\+Bdata\+\_\+\+Get\+Matter\+Power@{C\+A\+M\+Bdata\+\_\+\+Get\+Matter\+Power}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+\+Get\+Matter\+Power}{CAMBdata\_GetMatterPower}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+\+Get\+Matter\+Power = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getmatterpower}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+matter\+\_\+power\+\_\+spectrum().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a04fbbbbce39ff55d403fcd8494fd0cc1}\label{namespacecamb_1_1camb_a04fbbbbce39ff55d403fcd8494fd0cc1}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+\+Get\+Non\+Linear\+Matter\+Power@{C\+A\+M\+Bdata\+\_\+\+Get\+Non\+Linear\+Matter\+Power}}
+\index{C\+A\+M\+Bdata\+\_\+\+Get\+Non\+Linear\+Matter\+Power@{C\+A\+M\+Bdata\+\_\+\+Get\+Non\+Linear\+Matter\+Power}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+\+Get\+Non\+Linear\+Matter\+Power}{CAMBdata\_GetNonLinearMatterPower}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+\+Get\+Non\+Linear\+Matter\+Power = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getnonlinearmatterpower}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+linear\+\_\+matter\+\_\+power\+\_\+spectrum().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_af4210155d6c19ae51ec7eeab62193b0f}\label{namespacecamb_1_1camb_af4210155d6c19ae51ec7eeab62193b0f}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+getparams@{C\+A\+M\+Bdata\+\_\+getparams}}
+\index{C\+A\+M\+Bdata\+\_\+getparams@{C\+A\+M\+Bdata\+\_\+getparams}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+getparams}{CAMBdata\_getparams}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+getparams = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+getparams}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+params().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a2f678b52b4292fa87d1c3a234b60d70a}\label{namespacecamb_1_1camb_a2f678b52b4292fa87d1c3a234b60d70a}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+gettransfers@{C\+A\+M\+Bdata\+\_\+gettransfers}}
+\index{C\+A\+M\+Bdata\+\_\+gettransfers@{C\+A\+M\+Bdata\+\_\+gettransfers}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+gettransfers}{CAMBdata\_gettransfers}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+gettransfers = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+gettransfers}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+calc\+\_\+transfers().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a22e1da190a23d558f4889e9086503080}\label{namespacecamb_1_1camb_a22e1da190a23d558f4889e9086503080}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+mattertransferdata@{C\+A\+M\+Bdata\+\_\+mattertransferdata}}
+\index{C\+A\+M\+Bdata\+\_\+mattertransferdata@{C\+A\+M\+Bdata\+\_\+mattertransferdata}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+mattertransferdata}{CAMBdata\_mattertransferdata}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+mattertransferdata = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+mattertransferdata}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+matter\+\_\+transfer\+\_\+data().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a9de9875d8abacf901661b8054198a43e}\label{namespacecamb_1_1camb_a9de9875d8abacf901661b8054198a43e}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+new@{C\+A\+M\+Bdata\+\_\+new}}
+\index{C\+A\+M\+Bdata\+\_\+new@{C\+A\+M\+Bdata\+\_\+new}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+new}{CAMBdata\_new}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+new = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+new}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a8989230d759d722a2d755aa0d9402540}\label{namespacecamb_1_1camb_a8989230d759d722a2d755aa0d9402540}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+setparams@{C\+A\+M\+Bdata\+\_\+setparams}}
+\index{C\+A\+M\+Bdata\+\_\+setparams@{C\+A\+M\+Bdata\+\_\+setparams}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+setparams}{CAMBdata\_setparams}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+setparams = camblib.\+\_\+\+\_\+handles\+\_\+\+M\+O\+D\+\_\+cambdata\+\_\+setparams}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+set\+\_\+params().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a7e017c1b578bba9b94140ca43426bb97}\label{namespacecamb_1_1camb_a7e017c1b578bba9b94140ca43426bb97}} 
+\index{camb\+::camb@{camb\+::camb}!C\+A\+M\+Bdata\+\_\+transferstopowers@{C\+A\+M\+Bdata\+\_\+transferstopowers}}
+\index{C\+A\+M\+Bdata\+\_\+transferstopowers@{C\+A\+M\+Bdata\+\_\+transferstopowers}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{C\+A\+M\+Bdata\+\_\+transferstopowers}{CAMBdata\_transferstopowers}}
+{\footnotesize\ttfamily camb.\+camb.\+C\+A\+M\+Bdata\+\_\+transferstopowers = camblib.\+\_\+\+\_\+camb\+\_\+\+M\+O\+D\+\_\+camb\+\_\+transferstopowers}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+calc\+\_\+power\+\_\+spectra(), and camb.\+camb.\+C\+A\+M\+Bdata.\+power\+\_\+spectra\+\_\+from\+\_\+transfer().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_abea45cf46d041a2594299ddef0e2fee2}\label{namespacecamb_1_1camb_abea45cf46d041a2594299ddef0e2fee2}} 
+\index{camb\+::camb@{camb\+::camb}!Comoving\+Radial\+Distance@{Comoving\+Radial\+Distance}}
+\index{Comoving\+Radial\+Distance@{Comoving\+Radial\+Distance}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Comoving\+Radial\+Distance}{ComovingRadialDistance}}
+{\footnotesize\ttfamily camb.\+camb.\+Comoving\+Radial\+Distance = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+comovingradialdistance}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+comoving\+\_\+radial\+\_\+distance().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a4fe51e1298e6523912383946cb843e5a}\label{namespacecamb_1_1camb_a4fe51e1298e6523912383946cb843e5a}} 
+\index{camb\+::camb@{camb\+::camb}!Cosmomc\+Theta@{Cosmomc\+Theta}}
+\index{Cosmomc\+Theta@{Cosmomc\+Theta}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Cosmomc\+Theta}{CosmomcTheta}}
+{\footnotesize\ttfamily camb.\+camb.\+Cosmomc\+Theta = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+cosmomctheta}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+cosmomc\+\_\+theta().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a44bc6eb27388b576f6c26774a6ebe166}\label{namespacecamb_1_1camb_a44bc6eb27388b576f6c26774a6ebe166}} 
+\index{camb\+::camb@{camb\+::camb}!d\+\_\+arg@{d\+\_\+arg}}
+\index{d\+\_\+arg@{d\+\_\+arg}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{d\+\_\+arg}{d\_arg}}
+{\footnotesize\ttfamily camb.\+camb.\+d\+\_\+arg = P\+O\+I\+N\+T\+ER(\mbox{\hyperlink{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}{c\+\_\+double}})}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a0d78e19381b7a6fb313de6fccfe2821a}\label{namespacecamb_1_1camb_a0d78e19381b7a6fb313de6fccfe2821a}} 
+\index{camb\+::camb@{camb\+::camb}!Delta\+Physical\+Time\+Gyr@{Delta\+Physical\+Time\+Gyr}}
+\index{Delta\+Physical\+Time\+Gyr@{Delta\+Physical\+Time\+Gyr}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Delta\+Physical\+Time\+Gyr}{DeltaPhysicalTimeGyr}}
+{\footnotesize\ttfamily camb.\+camb.\+Delta\+Physical\+Time\+Gyr = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+deltaphysicaltimegyr}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+physical\+\_\+time\+\_\+a1\+\_\+a2().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a66e26cbf3357d7c21808dc7af9d2f01f}\label{namespacecamb_1_1camb_a66e26cbf3357d7c21808dc7af9d2f01f}} 
+\index{camb\+::camb@{camb\+::camb}!Delta\+Time@{Delta\+Time}}
+\index{Delta\+Time@{Delta\+Time}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Delta\+Time}{DeltaTime}}
+{\footnotesize\ttfamily camb.\+camb.\+Delta\+Time = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+deltatime}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+conformal\+\_\+time\+\_\+a1\+\_\+a2().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a46c7b4fa92f12fb863c881ba88e35a8e}\label{namespacecamb_1_1camb_a46c7b4fa92f12fb863c881ba88e35a8e}} 
+\index{camb\+::camb@{camb\+::camb}!Feedback\+Level@{Feedback\+Level}}
+\index{Feedback\+Level@{Feedback\+Level}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Feedback\+Level}{FeedbackLevel}}
+{\footnotesize\ttfamily camb.\+camb.\+Feedback\+Level = dll\+\_\+import(c\+\_\+int, \char`\"{}modelparams\char`\"{}, \char`\"{}feedbacklevel\char`\"{})}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_aa84470703add02037beda61ea31c02e9}\label{namespacecamb_1_1camb_aa84470703add02037beda61ea31c02e9}} 
+\index{camb\+::camb@{camb\+::camb}!flags@{flags}}
+\index{flags@{flags}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily camb.\+camb.\+flags}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a9062190a9faad2f801c6ef81b9143ae4}\label{namespacecamb_1_1camb_a9062190a9faad2f801c6ef81b9143ae4}} 
+\index{camb\+::camb@{camb\+::camb}!Hofz@{Hofz}}
+\index{Hofz@{Hofz}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Hofz}{Hofz}}
+{\footnotesize\ttfamily camb.\+camb.\+Hofz = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+hofz}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+h\+\_\+of\+\_\+z().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a9e194516acd41f6579011e26d65a6d73}\label{namespacecamb_1_1camb_a9e194516acd41f6579011e26d65a6d73}} 
+\index{camb\+::camb@{camb\+::camb}!int\+\_\+arg@{int\+\_\+arg}}
+\index{int\+\_\+arg@{int\+\_\+arg}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{int\+\_\+arg}{int\_arg}}
+{\footnotesize\ttfamily camb.\+camb.\+int\+\_\+arg = P\+O\+I\+N\+T\+ER(c\+\_\+int)}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a1ab298aa884f117a7e6b56a81f694806}\label{namespacecamb_1_1camb_a1ab298aa884f117a7e6b56a81f694806}} 
+\index{camb\+::camb@{camb\+::camb}!ndim@{ndim}}
+\index{ndim@{ndim}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{ndim}{ndim}}
+{\footnotesize\ttfamily camb.\+camb.\+ndim}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a3d113b2f49bb7733dfa37b76ea4da9b0}\label{namespacecamb_1_1camb_a3d113b2f49bb7733dfa37b76ea4da9b0}} 
+\index{camb\+::camb@{camb\+::camb}!numpy\+\_\+1d@{numpy\+\_\+1d}}
+\index{numpy\+\_\+1d@{numpy\+\_\+1d}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{numpy\+\_\+1d}{numpy\_1d}}
+{\footnotesize\ttfamily camb.\+camb.\+numpy\+\_\+1d = ndpointer(\mbox{\hyperlink{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}{c\+\_\+double}}, \mbox{\hyperlink{namespacecamb_1_1camb_aa84470703add02037beda61ea31c02e9}{flags}}=\textquotesingle{}C\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_aaccb5cdabc7a4aff9696405380103e7e}\label{namespacecamb_1_1camb_aaccb5cdabc7a4aff9696405380103e7e}} 
+\index{camb\+::camb@{camb\+::camb}!numpy\+\_\+2d@{numpy\+\_\+2d}}
+\index{numpy\+\_\+2d@{numpy\+\_\+2d}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{numpy\+\_\+2d}{numpy\_2d}}
+{\footnotesize\ttfamily camb.\+camb.\+numpy\+\_\+2d = ndpointer(\mbox{\hyperlink{namespacecamb_1_1camb_a9bb9b4d27cefdc5b8d0c9ecf508462cf}{c\+\_\+double}}, \mbox{\hyperlink{namespacecamb_1_1camb_aa84470703add02037beda61ea31c02e9}{flags}}=\textquotesingle{}C\+\_\+\+C\+O\+N\+T\+I\+G\+U\+O\+US\textquotesingle{}, \mbox{\hyperlink{namespacecamb_1_1camb_a1ab298aa884f117a7e6b56a81f694806}{ndim}}=2)}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a007debd6eaa7dfaa6b646e1d52d44e23}\label{namespacecamb_1_1camb_a007debd6eaa7dfaa6b646e1d52d44e23}} 
+\index{camb\+::camb@{camb\+::camb}!restype@{restype}}
+\index{restype@{restype}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{restype}{restype}}
+{\footnotesize\ttfamily camb.\+camb.\+restype}
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_a03f52f2e7698d22d7b202f45ef067413}\label{namespacecamb_1_1camb_a03f52f2e7698d22d7b202f45ef067413}} 
+\index{camb\+::camb@{camb\+::camb}!Time\+Ofz\+Arr@{Time\+Ofz\+Arr}}
+\index{Time\+Ofz\+Arr@{Time\+Ofz\+Arr}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{Time\+Ofz\+Arr}{TimeOfzArr}}
+{\footnotesize\ttfamily camb.\+camb.\+Time\+Ofz\+Arr = camblib.\+\_\+\+\_\+modelparams\+\_\+\+M\+O\+D\+\_\+timeofzarr}
+
+
+
+Referenced by camb.\+camb.\+C\+A\+M\+Bdata.\+conformal\+\_\+time().
+
+\mbox{\Hypertarget{namespacecamb_1_1camb_aec5b3dae7749fd62cdb87c9933d69b06}\label{namespacecamb_1_1camb_aec5b3dae7749fd62cdb87c9933d69b06}} 
+\index{camb\+::camb@{camb\+::camb}!value@{value}}
+\index{value@{value}!camb\+::camb@{camb\+::camb}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily camb.\+camb.\+value}
+
+
+
+Referenced by getdist.\+gui.\+mainwindow.\+Main\+Window.\+re\+Load().
+

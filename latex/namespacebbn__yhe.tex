@@ -1,0 +1,458 @@
+\hypertarget{namespacebbn__yhe}{}\section{bbn\+\_\+yhe Namespace Reference}
+\label{namespacebbn__yhe}\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_a38c5abbad8fad900f60f86b5038cf0e8}{yhe\+\_\+to\+\_\+yp\+B\+BN}} (Yp)
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_a207fd25c1dedf810f926879ba5899d38}{add\+Yp\+Fit}} (samples)
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_ab07e92f80f62d425303d08e5e8fe604d}{add\+Yp\+Fit\+Roots}} (\mbox{\hyperlink{namespacebbn__yhe_ab2add45031a3e0b76e777d91fd6eff67}{roots}})
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_a0ae2fc2b1719f17ae48ec9dee3de6728}{yp\+B\+BN}} (omegab, dneff, taun=880.\+3)
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_a3e9988b282cca4d66a7481dbf9676939}{dh\+\_\+fit}} (omegab, dneff, taun=880.\+3)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_a06123892f977e5e00eb0e7bcf6866dbb}{sigma\+\_\+yp\+\_\+theo}} = 0.\+0003
+\item 
+int \mbox{\hyperlink{namespacebbn__yhe_a3aa1ae9b0ed6bd135e4fc002b7eca1a9}{num\+\_\+ob}} = 50
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_aa005d4473664db0db345095282beb1ef}{ob\+\_\+min}} = 0.\+018
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_a7ad9cbb8dc27628c6fbf6296bba963ca}{ob\+\_\+max}} = 0.\+026
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_a624706ed018b5d06d3e1ceea58a08e12}{yp\+\_\+min}} = 0.\+15
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_a1b95d70c9d6b84360f839ed708b14c72}{yp\+\_\+max}} = 0.\+35
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_a9d5e61e6f78e3497a8c5fce8daedf276}{aver\+\_\+mean}} = 0.\+2465
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_af08345da95d7b1ecff384b5ca5648a03}{aver\+\_\+sigma}} = 0.\+0097
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_ad00e51b24c6c009e64a8baa0f0b51ad8}{sere\+\_\+minus}} = 0.\+294
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_a8c95d448cd274ce585cfaf255bd4ff1b}{sere\+\_\+plus}} = \mbox{\hyperlink{namespacebbn__yhe_a1b95d70c9d6b84360f839ed708b14c72}{yp\+\_\+max}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a0189ca7d3d30cadc352fe3c5f419d73a}{sere\+\_\+b}} = np.\+zeros(2, dtype=\textquotesingle{}float\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a113b4f8c034ac6ea013657ba051687e1}{sere\+\_\+y1}} = np.\+zeros(2, dtype=\textquotesingle{}float\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a5df6de601295fe7e1b92a79b727ccbc3}{sere\+\_\+y2}} = np.\+zeros(2, dtype=\textquotesingle{}float\textquotesingle{})
+\item 
+list \mbox{\hyperlink{namespacebbn__yhe_a90f26535b1262c9980ba8f8dea539709}{labels}} = \mbox{[}s.\+defplanck, s.\+defplanck + \char`\"{}+B\+AO\char`\"{}, s.\+planckall\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacebbn__yhe_a063490560da67d4aa74baa317b66577a}{datatag}} = \mbox{[}s.\+defdata, s.\+defdata + \textquotesingle{}\+\_\+\+B\+AO\textquotesingle{}, s.\+defdata\+\_\+all\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a28ea3e3cf2288f549b58603f5a80dd23}{g}} = s.\+get\+Single\+Plotter()
+\begin{DoxyCompactList}\small\item\em ombh2 -\/\+Yhe \#\#\#\#\#\#\#\#\#\#\#\#\# \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacebbn__yhe_a68a4915540c5ddfdf951a7612c20358d}{colors}} = g.\+settings.\+solid\+\_\+colors\mbox{[}3\+:0\+:-\/1\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a8da3e95ccabe26e7b02faafa8d0c7d0a}{bbn\+\_\+b}} = np.\+arange(\mbox{\hyperlink{namespacebbn__yhe_aa005d4473664db0db345095282beb1ef}{ob\+\_\+min}}, \mbox{\hyperlink{namespacebbn__yhe_a7ad9cbb8dc27628c6fbf6296bba963ca}{ob\+\_\+max}} + 0.\+1, (\mbox{\hyperlink{namespacebbn__yhe_a7ad9cbb8dc27628c6fbf6296bba963ca}{ob\+\_\+max}} -\/ \mbox{\hyperlink{namespacebbn__yhe_aa005d4473664db0db345095282beb1ef}{ob\+\_\+min}}) / \mbox{\hyperlink{namespacebbn__yhe_a3aa1ae9b0ed6bd135e4fc002b7eca1a9}{num\+\_\+ob}})
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_a28b53c029dcb7310ef25c077dbf59bab}{bbn\+\_\+y}} = \mbox{\hyperlink{namespacebbn__yhe_a0ae2fc2b1719f17ae48ec9dee3de6728}{yp\+B\+BN}}(\mbox{\hyperlink{namespacebbn__yhe_a8da3e95ccabe26e7b02faafa8d0c7d0a}{bbn\+\_\+b}}, 0)
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_a3f8a67b91f6391a7bd8ea269672ac615}{bbn\+\_\+y1}} = \mbox{\hyperlink{namespacebbn__yhe_a28b53c029dcb7310ef25c077dbf59bab}{bbn\+\_\+y}} -\/ \mbox{\hyperlink{namespacebbn__yhe_a06123892f977e5e00eb0e7bcf6866dbb}{sigma\+\_\+yp\+\_\+theo}}
+\item 
+def \mbox{\hyperlink{namespacebbn__yhe_ae522afab9400241fb8bc86962e60e9b5}{bbn\+\_\+y2}} = \mbox{\hyperlink{namespacebbn__yhe_a28b53c029dcb7310ef25c077dbf59bab}{bbn\+\_\+y}} + \mbox{\hyperlink{namespacebbn__yhe_a06123892f977e5e00eb0e7bcf6866dbb}{sigma\+\_\+yp\+\_\+theo}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_adaa6abf83a5db41a605b66fcf1072747}{xlim}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_aee3ed9037ad3216e40a5e87b91d33f27}{alpha}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a5febb2e61726249209662394b5d95858}{color}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_af98c0d13e6e8393dac53d8e115f2c906}{linestyle}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a3bb9da91cb045382b8f944eb5c8e14fe}{fontsize}}
+\item 
+list \mbox{\hyperlink{namespacebbn__yhe_ab2add45031a3e0b76e777d91fd6eff67}{roots}} = \mbox{[}g.\+get\+Root(\textquotesingle{}yhe\textquotesingle{}, d) for d in \mbox{\hyperlink{namespacebbn__yhe_a063490560da67d4aa74baa317b66577a}{datatag}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_ac2c1a41c88f2f983a89e6f3af095d520}{legend\+\_\+fontsize}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a27906639887f7d86e9893c3c8c102f9b}{filled}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a6d53cb6d1d4b9038a14d5b038ef4b4ff}{True}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a8fb3d2af891fa129948db45632d05b4c}{lims}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_aadedc8e6798c93b5bf445f5d1bd0c19f}{legend\+\_\+loc}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a49bc13f65125eafd22fc160f104e8444}{colored\+\_\+text}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a3123808ee1e6304665a2980e073efed9}{xy}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a24e8c7a1ae7d3b9a225c19f2a79cf681}{xycoords}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a26224bf035e3019da5ed20ac3aece4e8}{xytext}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_ad9e6a1e307d4e22bacaa587397fa346e}{textcoords}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a4e580183b4dd2ab4042be13ffec6c525}{arrowprops}}
+\item 
+float \mbox{\hyperlink{namespacebbn__yhe_a12d17f1eceb939479da944d753f67417}{N\+\_\+min}} = 0.\+01
+\item 
+int \mbox{\hyperlink{namespacebbn__yhe_a97d4d46b2f4aad7933899daacdfa4e8d}{N\+\_\+max}} = 5
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a0974f7b16b7e2bc7419b63acb59f5a68}{Neff}} = np.\+arange(\mbox{\hyperlink{namespacebbn__yhe_a12d17f1eceb939479da944d753f67417}{N\+\_\+min}}, \mbox{\hyperlink{namespacebbn__yhe_a97d4d46b2f4aad7933899daacdfa4e8d}{N\+\_\+max}} + 0.\+1, 0.\+1)
+\item 
+list \mbox{\hyperlink{namespacebbn__yhe_aaa4728644822d8c49e68fadd68ede623}{Nrange}} = \mbox{[}\mbox{\hyperlink{namespacebbn__yhe_a12d17f1eceb939479da944d753f67417}{N\+\_\+min}}, \mbox{\hyperlink{namespacebbn__yhe_a97d4d46b2f4aad7933899daacdfa4e8d}{N\+\_\+max}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_af0aeb2348a1c9932c656174611593164}{False}}
+\item 
+\mbox{\hyperlink{namespacebbn__yhe_a77232bd6b32ee374dbd5504aaba84b10}{tag}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebbn__yhe_a207fd25c1dedf810f926879ba5899d38}\label{namespacebbn__yhe_a207fd25c1dedf810f926879ba5899d38}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!add\+Yp\+Fit@{add\+Yp\+Fit}}
+\index{add\+Yp\+Fit@{add\+Yp\+Fit}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{add\+Yp\+Fit()}{addYpFit()}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+add\+Yp\+Fit (\begin{DoxyParamCaption}\item[{}]{samples }\end{DoxyParamCaption})}
+
+
+
+References yhe\+\_\+to\+\_\+yp\+B\+B\+N().
+
+
+
+Referenced by add\+Yp\+Fit\+Roots().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacebbn__yhe_a207fd25c1dedf810f926879ba5899d38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacebbn__yhe_a207fd25c1dedf810f926879ba5899d38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebbn__yhe_ab07e92f80f62d425303d08e5e8fe604d}\label{namespacebbn__yhe_ab07e92f80f62d425303d08e5e8fe604d}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!add\+Yp\+Fit\+Roots@{add\+Yp\+Fit\+Roots}}
+\index{add\+Yp\+Fit\+Roots@{add\+Yp\+Fit\+Roots}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{add\+Yp\+Fit\+Roots()}{addYpFitRoots()}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+add\+Yp\+Fit\+Roots (\begin{DoxyParamCaption}\item[{}]{roots }\end{DoxyParamCaption})}
+
+
+
+References add\+Yp\+Fit().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebbn__yhe_ab07e92f80f62d425303d08e5e8fe604d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebbn__yhe_a3e9988b282cca4d66a7481dbf9676939}\label{namespacebbn__yhe_a3e9988b282cca4d66a7481dbf9676939}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!dh\+\_\+fit@{dh\+\_\+fit}}
+\index{dh\+\_\+fit@{dh\+\_\+fit}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{dh\+\_\+fit()}{dh\_fit()}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+dh\+\_\+fit (\begin{DoxyParamCaption}\item[{}]{omegab,  }\item[{}]{dneff,  }\item[{}]{taun = {\ttfamily 880.3} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a38c5abbad8fad900f60f86b5038cf0e8}\label{namespacebbn__yhe_a38c5abbad8fad900f60f86b5038cf0e8}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!yhe\+\_\+to\+\_\+yp\+B\+BN@{yhe\+\_\+to\+\_\+yp\+B\+BN}}
+\index{yhe\+\_\+to\+\_\+yp\+B\+BN@{yhe\+\_\+to\+\_\+yp\+B\+BN}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{yhe\+\_\+to\+\_\+yp\+B\+B\+N()}{yhe\_to\_ypBBN()}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+yhe\+\_\+to\+\_\+yp\+B\+BN (\begin{DoxyParamCaption}\item[{}]{Yp }\end{DoxyParamCaption})}
+
+
+
+Referenced by add\+Yp\+Fit().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebbn__yhe_a38c5abbad8fad900f60f86b5038cf0e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebbn__yhe_a0ae2fc2b1719f17ae48ec9dee3de6728}\label{namespacebbn__yhe_a0ae2fc2b1719f17ae48ec9dee3de6728}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!yp\+B\+BN@{yp\+B\+BN}}
+\index{yp\+B\+BN@{yp\+B\+BN}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{yp\+B\+B\+N()}{ypBBN()}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+yp\+B\+BN (\begin{DoxyParamCaption}\item[{}]{omegab,  }\item[{}]{dneff,  }\item[{}]{taun = {\ttfamily 880.3} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacebbn__yhe_aee3ed9037ad3216e40a5e87b91d33f27}\label{namespacebbn__yhe_aee3ed9037ad3216e40a5e87b91d33f27}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!alpha@{alpha}}
+\index{alpha@{alpha}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+alpha}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a4e580183b4dd2ab4042be13ffec6c525}\label{namespacebbn__yhe_a4e580183b4dd2ab4042be13ffec6c525}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!arrowprops@{arrowprops}}
+\index{arrowprops@{arrowprops}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{arrowprops}{arrowprops}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+arrowprops}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a9d5e61e6f78e3497a8c5fce8daedf276}\label{namespacebbn__yhe_a9d5e61e6f78e3497a8c5fce8daedf276}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!aver\+\_\+mean@{aver\+\_\+mean}}
+\index{aver\+\_\+mean@{aver\+\_\+mean}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{aver\+\_\+mean}{aver\_mean}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+aver\+\_\+mean = 0.\+2465}
+
+\mbox{\Hypertarget{namespacebbn__yhe_af08345da95d7b1ecff384b5ca5648a03}\label{namespacebbn__yhe_af08345da95d7b1ecff384b5ca5648a03}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!aver\+\_\+sigma@{aver\+\_\+sigma}}
+\index{aver\+\_\+sigma@{aver\+\_\+sigma}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{aver\+\_\+sigma}{aver\_sigma}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+aver\+\_\+sigma = 0.\+0097}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a8da3e95ccabe26e7b02faafa8d0c7d0a}\label{namespacebbn__yhe_a8da3e95ccabe26e7b02faafa8d0c7d0a}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!bbn\+\_\+b@{bbn\+\_\+b}}
+\index{bbn\+\_\+b@{bbn\+\_\+b}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{bbn\+\_\+b}{bbn\_b}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+bbn\+\_\+b = np.\+arange(\mbox{\hyperlink{namespacebbn__yhe_aa005d4473664db0db345095282beb1ef}{ob\+\_\+min}}, \mbox{\hyperlink{namespacebbn__yhe_a7ad9cbb8dc27628c6fbf6296bba963ca}{ob\+\_\+max}} + 0.\+1, (\mbox{\hyperlink{namespacebbn__yhe_a7ad9cbb8dc27628c6fbf6296bba963ca}{ob\+\_\+max}} -\/ \mbox{\hyperlink{namespacebbn__yhe_aa005d4473664db0db345095282beb1ef}{ob\+\_\+min}}) / \mbox{\hyperlink{namespacebbn__yhe_a3aa1ae9b0ed6bd135e4fc002b7eca1a9}{num\+\_\+ob}})}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a28b53c029dcb7310ef25c077dbf59bab}\label{namespacebbn__yhe_a28b53c029dcb7310ef25c077dbf59bab}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!bbn\+\_\+y@{bbn\+\_\+y}}
+\index{bbn\+\_\+y@{bbn\+\_\+y}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{bbn\+\_\+y}{bbn\_y}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+bbn\+\_\+y = \mbox{\hyperlink{namespacebbn__yhe_a0ae2fc2b1719f17ae48ec9dee3de6728}{yp\+B\+BN}}(\mbox{\hyperlink{namespacebbn__yhe_a8da3e95ccabe26e7b02faafa8d0c7d0a}{bbn\+\_\+b}}, 0)}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a3f8a67b91f6391a7bd8ea269672ac615}\label{namespacebbn__yhe_a3f8a67b91f6391a7bd8ea269672ac615}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!bbn\+\_\+y1@{bbn\+\_\+y1}}
+\index{bbn\+\_\+y1@{bbn\+\_\+y1}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{bbn\+\_\+y1}{bbn\_y1}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+bbn\+\_\+y1 = \mbox{\hyperlink{namespacebbn__yhe_a28b53c029dcb7310ef25c077dbf59bab}{bbn\+\_\+y}} -\/ \mbox{\hyperlink{namespacebbn__yhe_a06123892f977e5e00eb0e7bcf6866dbb}{sigma\+\_\+yp\+\_\+theo}}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_ae522afab9400241fb8bc86962e60e9b5}\label{namespacebbn__yhe_ae522afab9400241fb8bc86962e60e9b5}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!bbn\+\_\+y2@{bbn\+\_\+y2}}
+\index{bbn\+\_\+y2@{bbn\+\_\+y2}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{bbn\+\_\+y2}{bbn\_y2}}
+{\footnotesize\ttfamily def bbn\+\_\+yhe.\+bbn\+\_\+y2 = \mbox{\hyperlink{namespacebbn__yhe_a28b53c029dcb7310ef25c077dbf59bab}{bbn\+\_\+y}} + \mbox{\hyperlink{namespacebbn__yhe_a06123892f977e5e00eb0e7bcf6866dbb}{sigma\+\_\+yp\+\_\+theo}}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a5febb2e61726249209662394b5d95858}\label{namespacebbn__yhe_a5febb2e61726249209662394b5d95858}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!color@{color}}
+\index{color@{color}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+color}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a49bc13f65125eafd22fc160f104e8444}\label{namespacebbn__yhe_a49bc13f65125eafd22fc160f104e8444}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!colored\+\_\+text@{colored\+\_\+text}}
+\index{colored\+\_\+text@{colored\+\_\+text}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{colored\+\_\+text}{colored\_text}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+colored\+\_\+text}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a68a4915540c5ddfdf951a7612c20358d}\label{namespacebbn__yhe_a68a4915540c5ddfdf951a7612c20358d}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!colors@{colors}}
+\index{colors@{colors}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+colors = g.\+settings.\+solid\+\_\+colors\mbox{[}3\+:0\+:-\/1\mbox{]}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a063490560da67d4aa74baa317b66577a}\label{namespacebbn__yhe_a063490560da67d4aa74baa317b66577a}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!datatag@{datatag}}
+\index{datatag@{datatag}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{datatag}{datatag}}
+{\footnotesize\ttfamily list bbn\+\_\+yhe.\+datatag = \mbox{[}s.\+defdata, s.\+defdata + \textquotesingle{}\+\_\+\+B\+AO\textquotesingle{}, s.\+defdata\+\_\+all\mbox{]}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_af0aeb2348a1c9932c656174611593164}\label{namespacebbn__yhe_af0aeb2348a1c9932c656174611593164}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!False@{False}}
+\index{False@{False}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{False}{False}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+False}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a27906639887f7d86e9893c3c8c102f9b}\label{namespacebbn__yhe_a27906639887f7d86e9893c3c8c102f9b}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!filled@{filled}}
+\index{filled@{filled}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{filled}{filled}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+filled}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a3bb9da91cb045382b8f944eb5c8e14fe}\label{namespacebbn__yhe_a3bb9da91cb045382b8f944eb5c8e14fe}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!fontsize@{fontsize}}
+\index{fontsize@{fontsize}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{fontsize}{fontsize}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+fontsize}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a28ea3e3cf2288f549b58603f5a80dd23}\label{namespacebbn__yhe_a28ea3e3cf2288f549b58603f5a80dd23}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!g@{g}}
+\index{g@{g}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+g = s.\+get\+Single\+Plotter()}
+
+
+
+ombh2 -\/\+Yhe \#\#\#\#\#\#\#\#\#\#\#\#\# 
+
+Neff -\/\+Yhe \#\#\#\#\#\#\#\#\#\#\#\#\#. \mbox{\Hypertarget{namespacebbn__yhe_a90f26535b1262c9980ba8f8dea539709}\label{namespacebbn__yhe_a90f26535b1262c9980ba8f8dea539709}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!labels@{labels}}
+\index{labels@{labels}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+labels = \mbox{[}s.\+defplanck, s.\+defplanck + \char`\"{}+B\+AO\char`\"{}, s.\+planckall\mbox{]}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_ac2c1a41c88f2f983a89e6f3af095d520}\label{namespacebbn__yhe_ac2c1a41c88f2f983a89e6f3af095d520}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!legend\+\_\+fontsize@{legend\+\_\+fontsize}}
+\index{legend\+\_\+fontsize@{legend\+\_\+fontsize}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{legend\+\_\+fontsize}{legend\_fontsize}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+legend\+\_\+fontsize}
+
+\mbox{\Hypertarget{namespacebbn__yhe_aadedc8e6798c93b5bf445f5d1bd0c19f}\label{namespacebbn__yhe_aadedc8e6798c93b5bf445f5d1bd0c19f}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!legend\+\_\+loc@{legend\+\_\+loc}}
+\index{legend\+\_\+loc@{legend\+\_\+loc}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{legend\+\_\+loc}{legend\_loc}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+legend\+\_\+loc}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a8fb3d2af891fa129948db45632d05b4c}\label{namespacebbn__yhe_a8fb3d2af891fa129948db45632d05b4c}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!lims@{lims}}
+\index{lims@{lims}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{lims}{lims}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+lims}
+
+\mbox{\Hypertarget{namespacebbn__yhe_af98c0d13e6e8393dac53d8e115f2c906}\label{namespacebbn__yhe_af98c0d13e6e8393dac53d8e115f2c906}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!linestyle@{linestyle}}
+\index{linestyle@{linestyle}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{linestyle}{linestyle}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+linestyle}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a97d4d46b2f4aad7933899daacdfa4e8d}\label{namespacebbn__yhe_a97d4d46b2f4aad7933899daacdfa4e8d}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!N\+\_\+max@{N\+\_\+max}}
+\index{N\+\_\+max@{N\+\_\+max}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{N\+\_\+max}{N\_max}}
+{\footnotesize\ttfamily int bbn\+\_\+yhe.\+N\+\_\+max = 5}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a12d17f1eceb939479da944d753f67417}\label{namespacebbn__yhe_a12d17f1eceb939479da944d753f67417}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!N\+\_\+min@{N\+\_\+min}}
+\index{N\+\_\+min@{N\+\_\+min}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{N\+\_\+min}{N\_min}}
+{\footnotesize\ttfamily float bbn\+\_\+yhe.\+N\+\_\+min = 0.\+01}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a0974f7b16b7e2bc7419b63acb59f5a68}\label{namespacebbn__yhe_a0974f7b16b7e2bc7419b63acb59f5a68}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!Neff@{Neff}}
+\index{Neff@{Neff}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{Neff}{Neff}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+Neff = np.\+arange(\mbox{\hyperlink{namespacebbn__yhe_a12d17f1eceb939479da944d753f67417}{N\+\_\+min}}, \mbox{\hyperlink{namespacebbn__yhe_a97d4d46b2f4aad7933899daacdfa4e8d}{N\+\_\+max}} + 0.\+1, 0.\+1)}
+
+\mbox{\Hypertarget{namespacebbn__yhe_aaa4728644822d8c49e68fadd68ede623}\label{namespacebbn__yhe_aaa4728644822d8c49e68fadd68ede623}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!Nrange@{Nrange}}
+\index{Nrange@{Nrange}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{Nrange}{Nrange}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+Nrange = \mbox{[}\mbox{\hyperlink{namespacebbn__yhe_a12d17f1eceb939479da944d753f67417}{N\+\_\+min}}, \mbox{\hyperlink{namespacebbn__yhe_a97d4d46b2f4aad7933899daacdfa4e8d}{N\+\_\+max}}\mbox{]}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a3aa1ae9b0ed6bd135e4fc002b7eca1a9}\label{namespacebbn__yhe_a3aa1ae9b0ed6bd135e4fc002b7eca1a9}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!num\+\_\+ob@{num\+\_\+ob}}
+\index{num\+\_\+ob@{num\+\_\+ob}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{num\+\_\+ob}{num\_ob}}
+{\footnotesize\ttfamily int bbn\+\_\+yhe.\+num\+\_\+ob = 50}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a7ad9cbb8dc27628c6fbf6296bba963ca}\label{namespacebbn__yhe_a7ad9cbb8dc27628c6fbf6296bba963ca}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!ob\+\_\+max@{ob\+\_\+max}}
+\index{ob\+\_\+max@{ob\+\_\+max}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{ob\+\_\+max}{ob\_max}}
+{\footnotesize\ttfamily float bbn\+\_\+yhe.\+ob\+\_\+max = 0.\+026}
+
+\mbox{\Hypertarget{namespacebbn__yhe_aa005d4473664db0db345095282beb1ef}\label{namespacebbn__yhe_aa005d4473664db0db345095282beb1ef}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!ob\+\_\+min@{ob\+\_\+min}}
+\index{ob\+\_\+min@{ob\+\_\+min}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{ob\+\_\+min}{ob\_min}}
+{\footnotesize\ttfamily float bbn\+\_\+yhe.\+ob\+\_\+min = 0.\+018}
+
+\mbox{\Hypertarget{namespacebbn__yhe_ab2add45031a3e0b76e777d91fd6eff67}\label{namespacebbn__yhe_ab2add45031a3e0b76e777d91fd6eff67}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!roots@{roots}}
+\index{roots@{roots}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{roots}{roots}}
+{\footnotesize\ttfamily list bbn\+\_\+yhe.\+roots = \mbox{[}g.\+get\+Root(\textquotesingle{}yhe\textquotesingle{}, d) for d in \mbox{\hyperlink{namespacebbn__yhe_a063490560da67d4aa74baa317b66577a}{datatag}}\mbox{]}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a0189ca7d3d30cadc352fe3c5f419d73a}\label{namespacebbn__yhe_a0189ca7d3d30cadc352fe3c5f419d73a}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!sere\+\_\+b@{sere\+\_\+b}}
+\index{sere\+\_\+b@{sere\+\_\+b}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{sere\+\_\+b}{sere\_b}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+sere\+\_\+b = np.\+zeros(2, dtype=\textquotesingle{}float\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacebbn__yhe_ad00e51b24c6c009e64a8baa0f0b51ad8}\label{namespacebbn__yhe_ad00e51b24c6c009e64a8baa0f0b51ad8}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!sere\+\_\+minus@{sere\+\_\+minus}}
+\index{sere\+\_\+minus@{sere\+\_\+minus}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{sere\+\_\+minus}{sere\_minus}}
+{\footnotesize\ttfamily float bbn\+\_\+yhe.\+sere\+\_\+minus = 0.\+294}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a8c95d448cd274ce585cfaf255bd4ff1b}\label{namespacebbn__yhe_a8c95d448cd274ce585cfaf255bd4ff1b}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!sere\+\_\+plus@{sere\+\_\+plus}}
+\index{sere\+\_\+plus@{sere\+\_\+plus}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{sere\+\_\+plus}{sere\_plus}}
+{\footnotesize\ttfamily float bbn\+\_\+yhe.\+sere\+\_\+plus = \mbox{\hyperlink{namespacebbn__yhe_a1b95d70c9d6b84360f839ed708b14c72}{yp\+\_\+max}}}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a113b4f8c034ac6ea013657ba051687e1}\label{namespacebbn__yhe_a113b4f8c034ac6ea013657ba051687e1}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!sere\+\_\+y1@{sere\+\_\+y1}}
+\index{sere\+\_\+y1@{sere\+\_\+y1}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{sere\+\_\+y1}{sere\_y1}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+sere\+\_\+y1 = np.\+zeros(2, dtype=\textquotesingle{}float\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a5df6de601295fe7e1b92a79b727ccbc3}\label{namespacebbn__yhe_a5df6de601295fe7e1b92a79b727ccbc3}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!sere\+\_\+y2@{sere\+\_\+y2}}
+\index{sere\+\_\+y2@{sere\+\_\+y2}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{sere\+\_\+y2}{sere\_y2}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+sere\+\_\+y2 = np.\+zeros(2, dtype=\textquotesingle{}float\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a06123892f977e5e00eb0e7bcf6866dbb}\label{namespacebbn__yhe_a06123892f977e5e00eb0e7bcf6866dbb}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!sigma\+\_\+yp\+\_\+theo@{sigma\+\_\+yp\+\_\+theo}}
+\index{sigma\+\_\+yp\+\_\+theo@{sigma\+\_\+yp\+\_\+theo}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{sigma\+\_\+yp\+\_\+theo}{sigma\_yp\_theo}}
+{\footnotesize\ttfamily float bbn\+\_\+yhe.\+sigma\+\_\+yp\+\_\+theo = 0.\+0003}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a77232bd6b32ee374dbd5504aaba84b10}\label{namespacebbn__yhe_a77232bd6b32ee374dbd5504aaba84b10}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!tag@{tag}}
+\index{tag@{tag}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+tag}
+
+\mbox{\Hypertarget{namespacebbn__yhe_ad9e6a1e307d4e22bacaa587397fa346e}\label{namespacebbn__yhe_ad9e6a1e307d4e22bacaa587397fa346e}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!textcoords@{textcoords}}
+\index{textcoords@{textcoords}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{textcoords}{textcoords}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+textcoords}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a6d53cb6d1d4b9038a14d5b038ef4b4ff}\label{namespacebbn__yhe_a6d53cb6d1d4b9038a14d5b038ef4b4ff}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!True@{True}}
+\index{True@{True}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{True}{True}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+True}
+
+\mbox{\Hypertarget{namespacebbn__yhe_adaa6abf83a5db41a605b66fcf1072747}\label{namespacebbn__yhe_adaa6abf83a5db41a605b66fcf1072747}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!xlim@{xlim}}
+\index{xlim@{xlim}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{xlim}{xlim}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+xlim}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a3123808ee1e6304665a2980e073efed9}\label{namespacebbn__yhe_a3123808ee1e6304665a2980e073efed9}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!xy@{xy}}
+\index{xy@{xy}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{xy}{xy}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+xy}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a24e8c7a1ae7d3b9a225c19f2a79cf681}\label{namespacebbn__yhe_a24e8c7a1ae7d3b9a225c19f2a79cf681}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!xycoords@{xycoords}}
+\index{xycoords@{xycoords}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{xycoords}{xycoords}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+xycoords}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a26224bf035e3019da5ed20ac3aece4e8}\label{namespacebbn__yhe_a26224bf035e3019da5ed20ac3aece4e8}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!xytext@{xytext}}
+\index{xytext@{xytext}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{xytext}{xytext}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+xytext}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a1b95d70c9d6b84360f839ed708b14c72}\label{namespacebbn__yhe_a1b95d70c9d6b84360f839ed708b14c72}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!yp\+\_\+max@{yp\+\_\+max}}
+\index{yp\+\_\+max@{yp\+\_\+max}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{yp\+\_\+max}{yp\_max}}
+{\footnotesize\ttfamily bbn\+\_\+yhe.\+yp\+\_\+max = 0.\+35}
+
+\mbox{\Hypertarget{namespacebbn__yhe_a624706ed018b5d06d3e1ceea58a08e12}\label{namespacebbn__yhe_a624706ed018b5d06d3e1ceea58a08e12}} 
+\index{bbn\+\_\+yhe@{bbn\+\_\+yhe}!yp\+\_\+min@{yp\+\_\+min}}
+\index{yp\+\_\+min@{yp\+\_\+min}!bbn\+\_\+yhe@{bbn\+\_\+yhe}}
+\subsubsection{\texorpdfstring{yp\+\_\+min}{yp\_min}}
+{\footnotesize\ttfamily float bbn\+\_\+yhe.\+yp\+\_\+min = 0.\+15}
+

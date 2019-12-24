@@ -1,0 +1,8 @@
+<map id="matrixutils::matrix_quadform" name="matrixutils::matrix_quadform">
+<area shape="rect" id="node2" href="$namespacematrixutils.html#a4bcc2b4fc8b6f2fee0c142c280851c73" title="matrixutils::matrix\l_mulvecsymm" alt="" coords="182,54,309,95"/>
+<area shape="rect" id="node7" href="$namespacematrixutils.html#a14ec6bb3e63d084752f528c47653f7d7" title="matrixutils::matrix\l_vecdot" alt="" coords="182,119,309,161"/>
+<area shape="rect" id="node3" href="$namespacematrixutils.html#aeb25ca6b661aed4516c029f0cd6003bc" title="matrixutils::matrix_end" alt="" coords="357,5,512,32"/>
+<area shape="rect" id="node5" href="$namespacematrixutils.html#a24fd4fc8dbd7eee3c9176c3f9ca634eb" title="matrixutils::matrix\l_start" alt="" coords="371,57,498,98"/>
+<area shape="rect" id="node6" href="$namespacempiutils.html#a23720e4e8b635dab4b67172618aa77e5" title="mpiutils::mpistop" alt="" coords="374,124,495,151"/>
+<area shape="rect" id="node4" href="$namespacematrixutils.html#a969773017c47f3dc8dfb2a18e5bc5fbd" title="matrixutils::getmatrixtime" alt="" coords="561,35,730,61"/>
+</map>

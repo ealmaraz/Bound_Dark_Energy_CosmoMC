@@ -1,0 +1,20 @@
+<map id="getdist.plots.GetDistPlotter.add_text" name="getdist.plots.GetDistPlotter.add_text">
+<area shape="rect" id="node2" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#af147d1c8013996cd850d66e5c2b82df7" title="getdist.plots.GetDistPlotter.add\l_text_left" alt="" coords="301,71,507,112"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#afc478614168ba111f0ec1bba56bdb692" title="getdist.plots.GetDistPlotter.setAxes" alt="" coords="288,270,520,297"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a814e233ab36c48c3a3a34d4c837d4251" title="getdist.plots.GetDistPlotter.rectangle_plot" alt="" coords="1118,45,1383,72"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a92380ecaa3180adba902208e5d646329" title="getdist.plots.GetDistPlotter.triangle_plot" alt="" coords="1433,209,1687,236"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a0f88fbf39ce5aa636bcb33ba1aaf26dd" title="getdist.plots.GetDistPlotter.\l_spaceTicks" alt="" coords="1736,172,1920,214"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a7cd2a179b15d78d19f07760d0ba698a1" title="getdist.plots.GetDistPlotter.plots_1d" alt="" coords="1969,184,2202,210"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a2dd109cafefa1d1d8f3078208c79c4a6" title="getdist.plots.GetDistPlotter.\l_default_legend_labels" alt="" coords="2251,176,2435,218"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a0e610a87566737a4b66974d2d721caaa" title="getdist.plots.GetDistPlotter.plots_2d" alt="" coords="2483,125,2717,152"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a331da209c29a04929d2e5fb97fc1e8bb" title="getdist.plots.GetDistPlotter.plots_3d" alt="" coords="2483,341,2717,368"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#ad8246050feeaf02dc737682fc5b41292" title="getdist.plots.GetDistPlotter.plots_3d_z" alt="" coords="2766,341,3013,368"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a4a4a4bee3e0232eb2089b2f9b0006909" title="getdist.plots.GetDistPlotter.plot_2d" alt="" coords="568,154,795,181"/>
+<area shape="rect" id="node14" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a47d2f31e3d3cb751152be571a867a503" title="getdist.plots.GetDistPlotter.plot_3d" alt="" coords="1137,436,1364,462"/>
+<area shape="rect" id="node17" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a437576fb88e47274ce1c2574581daf2c" title="getdist.plots.GetDistPlotter.\l_setAxisProperties" alt="" coords="589,263,773,304"/>
+<area shape="rect" id="node18" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#aab253c97064f41256595e20f5388f86c" title="getdist.plots.GetDistPlotter.plot_1d" alt="" coords="843,329,1069,356"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#af3c4b93770391c350949913b5f3eeaa8" title="getdist.plots.GetDistPlotter.\l_make_contour_args" alt="" coords="864,212,1048,254"/>
+<area shape="rect" id="node16" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a003f6bc9220702f977aaaa73c64b1cb3" title="getdist.plots.GetDistPlotter.plots\l_2d_triplets" alt="" coords="850,147,1062,188"/>
+<area shape="rect" id="node15" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#a20064a0721aea40476598a5a3a20df01" title="getdist.plots.GetDistPlotter.plot\l_2d_scatter" alt="" coords="1457,432,1663,474"/>
+<area shape="rect" id="node19" href="$classgetdist_1_1plots_1_1GetDistPlotter.html#ae83a5b69313acacabeb99940a25c1004" title="getdist.plots.GetDistPlotter.set\l_ylabel" alt="" coords="1149,319,1352,360"/>
+</map>

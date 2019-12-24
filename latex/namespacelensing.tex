@@ -1,0 +1,522 @@
+\hypertarget{namespacelensing}{}\section{lensing Module Reference}
+\label{namespacelensing}\index{lensing@{lensing}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacelensing_a71d315283bcce7fb9626733365bf43e6}{lens\+\_\+cls}}
+\item 
+subroutine \mbox{\hyperlink{namespacelensing_a18ba748aa475681b240cdd9be79dd809}{corrfuncfullsky}}
+\item 
+subroutine \mbox{\hyperlink{namespacelensing_ae3afbc47d14796e30a26538f38a726dd}{corrfuncfullskyimpl}} (lmax)
+\item 
+subroutine \mbox{\hyperlink{namespacelensing_aa3cc70dd58b493d3192e97f675ffa909}{corrfuncflatsky}}
+\item 
+subroutine \mbox{\hyperlink{namespacelensing_a68242ee3fa839802f6aed94e9f8dcf73}{badharmonic}}
+\item 
+subroutine \mbox{\hyperlink{namespacelensing_a208c6bffe402d39685fb2f4509de310c}{getbessels}} (Max\+Arg)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacelensing_a8fca1155759235e997ecc5ebcb8273bc}{bessj0}} (x)
+\item 
+real(dl) function \mbox{\hyperlink{namespacelensing_a53ac785c7d5c53f22122c476b62c4368}{bessj}} (n, x)
+\item 
+double precision function \mbox{\hyperlink{namespacelensing_a19d7fd08c1d4dc42d7e7aad518d14c7a}{bessi0}} (X)
+\item 
+double precision function \mbox{\hyperlink{namespacelensing_a2474483511401e2796af7b20caf6796d}{bessi1}} (X)
+\item 
+double precision function, public \mbox{\hyperlink{namespacelensing_a6849d58625a3e2cf0a2a22371141eb4a}{bessi}} (N, X)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacelensing_a7f44051d5173429e3e2261d44e4b47f8}{lensing\+\_\+method\+\_\+curv\+\_\+corr}} =1
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacelensing_a8104e288b73af5ec7004643639d08798}{lensing\+\_\+method\+\_\+flat\+\_\+corr}} =2
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacelensing_a0af93cd038a1a553e2edc7e49c39f4d9}{lensing\+\_\+method\+\_\+harmonic}} =3
+\item 
+integer, public \mbox{\hyperlink{namespacelensing_a3710bc1b92b6fd87d6e8c1256f0a46bb}{lensing\+\_\+method}} = \mbox{\hyperlink{namespacelensing_a7f44051d5173429e3e2261d44e4b47f8}{lensing\+\_\+method\+\_\+curv\+\_\+corr}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacelensing_a3a5d51bfc096d14582dbf48fc094ffee}{alens\+\_\+fiducial}} = 0.\+\_\+dl
+\item 
+logical, public \mbox{\hyperlink{namespacelensing_acdb3e1d4390cc8b027cd17aeb1669c93}{lensing\+\_\+includes\+\_\+tensors}} = .false.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelensing_a4f43eba14b18981f0f0bff9a117122fe}{dbessel}} = 0.\+05\+\_\+dl
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_aedcd5bd61cd6f457b30a9197a6a8c49c}{bess0}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_aaa35de68ce5b9c6b986ebdf536468c80}{ddbess0}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_a2d7ff26f68bd68d466d651f07fd262fd}{bess2}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_a18c643c5ab84df5ac5f56ee6d426ffa7}{ddbess2}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_a835b869aac1268a3e5f6dea95667740b}{bess4}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_a1f5bffd45d988c4c941031621cd0c266}{ddbess4}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_aba411bd5dd31565120f85d0a89b71ba5}{bess6}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_aae19084149f8642419ba2ae3f6b82b76}{ddbess6}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacelensing_ae086e70cafd6706bebf9c49e4faa88e5}{lensed\+\_\+convolution\+\_\+margin}} = 100
+\item 
+integer \mbox{\hyperlink{namespacelensing_aa8604328cfd9ca10730507837b4867fe}{lmax\+\_\+donelnfa}} = 0
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacelensing_aa64764c9338c8a6fc4f30497223a0b67}{lnfa}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacelensing_a68242ee3fa839802f6aed94e9f8dcf73}\label{namespacelensing_a68242ee3fa839802f6aed94e9f8dcf73}} 
+\index{lensing@{lensing}!badharmonic@{badharmonic}}
+\index{badharmonic@{badharmonic}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{badharmonic()}{badharmonic()}}
+{\footnotesize\ttfamily subroutine lensing\+::badharmonic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modeldata\+::c\+\_\+cross, modeldata\+::c\+\_\+e, modeldata\+::c\+\_\+phi, modeldata\+::c\+\_\+temp, modeldata\+::cl\+\_\+lensed, modeldata\+::cl\+\_\+scalar, modeldata\+::cl\+\_\+tensor, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+e, modeldata\+::ct\+\_\+temp, modelparams\+::debugmsgs, modelparams\+::feedbacklevel, modelparams\+::gettesttime(), lvalues\+::interpolateclarr(), lensing\+\_\+includes\+\_\+tensors, lmax\+\_\+donelnfa, modeldata\+::lmax\+\_\+lensed, lnfa, modelparams\+::outputdenominator, and modelparams\+::scale.
+
+
+
+Referenced by lens\+\_\+cls().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a68242ee3fa839802f6aed94e9f8dcf73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a68242ee3fa839802f6aed94e9f8dcf73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a6849d58625a3e2cf0a2a22371141eb4a}\label{namespacelensing_a6849d58625a3e2cf0a2a22371141eb4a}} 
+\index{lensing@{lensing}!bessi@{bessi}}
+\index{bessi@{bessi}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bessi()}{bessi()}}
+{\footnotesize\ttfamily double precision function, public lensing\+::bessi (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{N,  }\item[{double precision}]{X }\end{DoxyParamCaption})}
+
+
+
+References bessi0(), and bessi1().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{namespacelensing_a6849d58625a3e2cf0a2a22371141eb4a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a19d7fd08c1d4dc42d7e7aad518d14c7a}\label{namespacelensing_a19d7fd08c1d4dc42d7e7aad518d14c7a}} 
+\index{lensing@{lensing}!bessi0@{bessi0}}
+\index{bessi0@{bessi0}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bessi0()}{bessi0()}}
+{\footnotesize\ttfamily double precision function lensing\+::bessi0 (\begin{DoxyParamCaption}\item[{double precision}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bessi().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{namespacelensing_a19d7fd08c1d4dc42d7e7aad518d14c7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a2474483511401e2796af7b20caf6796d}\label{namespacelensing_a2474483511401e2796af7b20caf6796d}} 
+\index{lensing@{lensing}!bessi1@{bessi1}}
+\index{bessi1@{bessi1}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bessi1()}{bessi1()}}
+{\footnotesize\ttfamily double precision function lensing\+::bessi1 (\begin{DoxyParamCaption}\item[{double precision}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by bessi().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{namespacelensing_a2474483511401e2796af7b20caf6796d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a53ac785c7d5c53f22122c476b62c4368}\label{namespacelensing_a53ac785c7d5c53f22122c476b62c4368}} 
+\index{lensing@{lensing}!bessj@{bessj}}
+\index{bessj@{bessj}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bessj()}{bessj()}}
+{\footnotesize\ttfamily real(dl) function lensing\+::bessj (\begin{DoxyParamCaption}\item[{integer}]{n,  }\item[{real(dl)}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getbessels().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a53ac785c7d5c53f22122c476b62c4368_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a8fca1155759235e997ecc5ebcb8273bc}\label{namespacelensing_a8fca1155759235e997ecc5ebcb8273bc}} 
+\index{lensing@{lensing}!bessj0@{bessj0}}
+\index{bessj0@{bessj0}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bessj0()}{bessj0()}}
+{\footnotesize\ttfamily real(dl) function, public lensing\+::bessj0 (\begin{DoxyParamCaption}\item[{real(dl)}]{x }\end{DoxyParamCaption})}
+
+
+
+Referenced by getbessels().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a8fca1155759235e997ecc5ebcb8273bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_aa3cc70dd58b493d3192e97f675ffa909}\label{namespacelensing_aa3cc70dd58b493d3192e97f675ffa909}} 
+\index{lensing@{lensing}!corrfuncflatsky@{corrfuncflatsky}}
+\index{corrfuncflatsky@{corrfuncflatsky}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{corrfuncflatsky()}{corrfuncflatsky()}}
+{\footnotesize\ttfamily subroutine lensing\+::corrfuncflatsky (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, bess0, bess2, bess4, bess6, modeldata\+::c\+\_\+cross, modeldata\+::c\+\_\+e, modeldata\+::c\+\_\+phi, modeldata\+::c\+\_\+temp, modeldata\+::cl\+\_\+lensed, modeldata\+::cl\+\_\+scalar, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+e, modeldata\+::ct\+\_\+temp, dbessel, ddbess0, ddbess2, ddbess4, ddbess6, modelparams\+::debugmsgs, getbessels(), modelparams\+::gettesttime(), lensing\+\_\+includes\+\_\+tensors, modeldata\+::lmax\+\_\+lensed, lvalues\+::lsamp, and modelparams\+::outputdenominator.
+
+
+
+Referenced by lens\+\_\+cls().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_aa3cc70dd58b493d3192e97f675ffa909_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_aa3cc70dd58b493d3192e97f675ffa909_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a18ba748aa475681b240cdd9be79dd809}\label{namespacelensing_a18ba748aa475681b240cdd9be79dd809}} 
+\index{lensing@{lensing}!corrfuncfullsky@{corrfuncfullsky}}
+\index{corrfuncfullsky@{corrfuncfullsky}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{corrfuncfullsky()}{corrfuncfullsky()}}
+{\footnotesize\ttfamily subroutine lensing\+::corrfuncfullsky (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References corrfuncfullskyimpl(), modelparams\+::cp, modelparams\+::highaccuracydefault, lensed\+\_\+convolution\+\_\+margin, and modelparams\+::lmax\+\_\+extrap\+\_\+highl.
+
+
+
+Referenced by lens\+\_\+cls().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a18ba748aa475681b240cdd9be79dd809_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a18ba748aa475681b240cdd9be79dd809_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_ae3afbc47d14796e30a26538f38a726dd}\label{namespacelensing_ae3afbc47d14796e30a26538f38a726dd}} 
+\index{lensing@{lensing}!corrfuncfullskyimpl@{corrfuncfullskyimpl}}
+\index{corrfuncfullskyimpl@{corrfuncfullskyimpl}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{corrfuncfullskyimpl()}{corrfuncfullskyimpl()}}
+{\footnotesize\ttfamily subroutine lensing\+::corrfuncfullskyimpl (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, alens\+\_\+fiducial, modeldata\+::c\+\_\+cross, modeldata\+::c\+\_\+e, modeldata\+::c\+\_\+phi, modeldata\+::c\+\_\+temp, modeldata\+::cl\+\_\+lensed, modeldata\+::cl\+\_\+scalar, modelparams\+::cp, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+e, modeldata\+::ct\+\_\+temp, modelparams\+::debugmsgs, modelparams\+::gettesttime(), modelparams\+::highl\+\_\+cl\+\_\+template, lensed\+\_\+convolution\+\_\+margin, lensing\+\_\+includes\+\_\+tensors, modeldata\+::lmax\+\_\+lensed, lvalues\+::lsamp, modelparams\+::outputdenominator, and spline().
+
+
+
+Referenced by corrfuncfullsky().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_ae3afbc47d14796e30a26538f38a726dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_ae3afbc47d14796e30a26538f38a726dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a208c6bffe402d39685fb2f4509de310c}\label{namespacelensing_a208c6bffe402d39685fb2f4509de310c}} 
+\index{lensing@{lensing}!getbessels@{getbessels}}
+\index{getbessels@{getbessels}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{getbessels()}{getbessels()}}
+{\footnotesize\ttfamily subroutine lensing\+::getbessels (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{Max\+Arg }\end{DoxyParamCaption})}
+
+
+
+References bess0, bess2, bess4, bess6, bessj(), bessj0(), dbessel, ddbess0, ddbess2, ddbess4, ddbess6, modelparams\+::spl\+\_\+large, and spline().
+
+
+
+Referenced by corrfuncflatsky().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{namespacelensing_a208c6bffe402d39685fb2f4509de310c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a208c6bffe402d39685fb2f4509de310c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelensing_a71d315283bcce7fb9626733365bf43e6}\label{namespacelensing_a71d315283bcce7fb9626733365bf43e6}} 
+\index{lensing@{lensing}!lens\+\_\+cls@{lens\+\_\+cls}}
+\index{lens\+\_\+cls@{lens\+\_\+cls}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lens\+\_\+cls()}{lens\_cls()}}
+{\footnotesize\ttfamily subroutine, public lensing\+::lens\+\_\+cls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References badharmonic(), corrfuncflatsky(), corrfuncfullsky(), modelparams\+::cp, lvalues\+::initlval(), lensing\+\_\+method, lensing\+\_\+method\+\_\+curv\+\_\+corr, lensing\+\_\+method\+\_\+flat\+\_\+corr, lensing\+\_\+method\+\_\+harmonic, and lvalues\+::lsamp.
+
+
+
+Referenced by camb\+::camb\+\_\+getresults(), and camb\+::camb\+\_\+transferstopowers().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a71d315283bcce7fb9626733365bf43e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelensing_a71d315283bcce7fb9626733365bf43e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacelensing_a3a5d51bfc096d14582dbf48fc094ffee}\label{namespacelensing_a3a5d51bfc096d14582dbf48fc094ffee}} 
+\index{lensing@{lensing}!alens\+\_\+fiducial@{alens\+\_\+fiducial}}
+\index{alens\+\_\+fiducial@{alens\+\_\+fiducial}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{alens\+\_\+fiducial}{alens\_fiducial}}
+{\footnotesize\ttfamily real(dl), public lensing\+::alens\+\_\+fiducial = 0.\+\_\+dl}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+cmbtocamb(), and corrfuncfullskyimpl().
+
+\mbox{\Hypertarget{namespacelensing_aedcd5bd61cd6f457b30a9197a6a8c49c}\label{namespacelensing_aedcd5bd61cd6f457b30a9197a6a8c49c}} 
+\index{lensing@{lensing}!bess0@{bess0}}
+\index{bess0@{bess0}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bess0}{bess0}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::bess0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_a2d7ff26f68bd68d466d651f07fd262fd}\label{namespacelensing_a2d7ff26f68bd68d466d651f07fd262fd}} 
+\index{lensing@{lensing}!bess2@{bess2}}
+\index{bess2@{bess2}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bess2}{bess2}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::bess2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_a835b869aac1268a3e5f6dea95667740b}\label{namespacelensing_a835b869aac1268a3e5f6dea95667740b}} 
+\index{lensing@{lensing}!bess4@{bess4}}
+\index{bess4@{bess4}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bess4}{bess4}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::bess4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_aba411bd5dd31565120f85d0a89b71ba5}\label{namespacelensing_aba411bd5dd31565120f85d0a89b71ba5}} 
+\index{lensing@{lensing}!bess6@{bess6}}
+\index{bess6@{bess6}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{bess6}{bess6}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::bess6\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_a4f43eba14b18981f0f0bff9a117122fe}\label{namespacelensing_a4f43eba14b18981f0f0bff9a117122fe}} 
+\index{lensing@{lensing}!dbessel@{dbessel}}
+\index{dbessel@{dbessel}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{dbessel}{dbessel}}
+{\footnotesize\ttfamily real(dl), parameter lensing\+::dbessel = 0.\+05\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_aaa35de68ce5b9c6b986ebdf536468c80}\label{namespacelensing_aaa35de68ce5b9c6b986ebdf536468c80}} 
+\index{lensing@{lensing}!ddbess0@{ddbess0}}
+\index{ddbess0@{ddbess0}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{ddbess0}{ddbess0}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::ddbess0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_a18c643c5ab84df5ac5f56ee6d426ffa7}\label{namespacelensing_a18c643c5ab84df5ac5f56ee6d426ffa7}} 
+\index{lensing@{lensing}!ddbess2@{ddbess2}}
+\index{ddbess2@{ddbess2}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{ddbess2}{ddbess2}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::ddbess2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_a1f5bffd45d988c4c941031621cd0c266}\label{namespacelensing_a1f5bffd45d988c4c941031621cd0c266}} 
+\index{lensing@{lensing}!ddbess4@{ddbess4}}
+\index{ddbess4@{ddbess4}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{ddbess4}{ddbess4}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::ddbess4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_aae19084149f8642419ba2ae3f6b82b76}\label{namespacelensing_aae19084149f8642419ba2ae3f6b82b76}} 
+\index{lensing@{lensing}!ddbess6@{ddbess6}}
+\index{ddbess6@{ddbess6}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{ddbess6}{ddbess6}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::ddbess6\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncflatsky(), and getbessels().
+
+\mbox{\Hypertarget{namespacelensing_ae086e70cafd6706bebf9c49e4faa88e5}\label{namespacelensing_ae086e70cafd6706bebf9c49e4faa88e5}} 
+\index{lensing@{lensing}!lensed\+\_\+convolution\+\_\+margin@{lensed\+\_\+convolution\+\_\+margin}}
+\index{lensed\+\_\+convolution\+\_\+margin@{lensed\+\_\+convolution\+\_\+margin}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lensed\+\_\+convolution\+\_\+margin}{lensed\_convolution\_margin}}
+{\footnotesize\ttfamily integer, parameter lensing\+::lensed\+\_\+convolution\+\_\+margin = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by corrfuncfullsky(), and corrfuncfullskyimpl().
+
+\mbox{\Hypertarget{namespacelensing_acdb3e1d4390cc8b027cd17aeb1669c93}\label{namespacelensing_acdb3e1d4390cc8b027cd17aeb1669c93}} 
+\index{lensing@{lensing}!lensing\+\_\+includes\+\_\+tensors@{lensing\+\_\+includes\+\_\+tensors}}
+\index{lensing\+\_\+includes\+\_\+tensors@{lensing\+\_\+includes\+\_\+tensors}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lensing\+\_\+includes\+\_\+tensors}{lensing\_includes\_tensors}}
+{\footnotesize\ttfamily logical, public lensing\+::lensing\+\_\+includes\+\_\+tensors = .false.}
+
+
+
+Referenced by badharmonic(), calculator\+\_\+camb\+::cambcalc\+\_\+initcambparams(), corrfuncflatsky(), and corrfuncfullskyimpl().
+
+\mbox{\Hypertarget{namespacelensing_a3710bc1b92b6fd87d6e8c1256f0a46bb}\label{namespacelensing_a3710bc1b92b6fd87d6e8c1256f0a46bb}} 
+\index{lensing@{lensing}!lensing\+\_\+method@{lensing\+\_\+method}}
+\index{lensing\+\_\+method@{lensing\+\_\+method}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lensing\+\_\+method}{lensing\_method}}
+{\footnotesize\ttfamily integer, public lensing\+::lensing\+\_\+method = \mbox{\hyperlink{namespacelensing_a7f44051d5173429e3e2261d44e4b47f8}{lensing\+\_\+method\+\_\+curv\+\_\+corr}}}
+
+
+
+Referenced by lens\+\_\+cls().
+
+\mbox{\Hypertarget{namespacelensing_a7f44051d5173429e3e2261d44e4b47f8}\label{namespacelensing_a7f44051d5173429e3e2261d44e4b47f8}} 
+\index{lensing@{lensing}!lensing\+\_\+method\+\_\+curv\+\_\+corr@{lensing\+\_\+method\+\_\+curv\+\_\+corr}}
+\index{lensing\+\_\+method\+\_\+curv\+\_\+corr@{lensing\+\_\+method\+\_\+curv\+\_\+corr}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lensing\+\_\+method\+\_\+curv\+\_\+corr}{lensing\_method\_curv\_corr}}
+{\footnotesize\ttfamily integer, parameter, public lensing\+::lensing\+\_\+method\+\_\+curv\+\_\+corr =1}
+
+
+
+Referenced by lens\+\_\+cls().
+
+\mbox{\Hypertarget{namespacelensing_a8104e288b73af5ec7004643639d08798}\label{namespacelensing_a8104e288b73af5ec7004643639d08798}} 
+\index{lensing@{lensing}!lensing\+\_\+method\+\_\+flat\+\_\+corr@{lensing\+\_\+method\+\_\+flat\+\_\+corr}}
+\index{lensing\+\_\+method\+\_\+flat\+\_\+corr@{lensing\+\_\+method\+\_\+flat\+\_\+corr}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lensing\+\_\+method\+\_\+flat\+\_\+corr}{lensing\_method\_flat\_corr}}
+{\footnotesize\ttfamily integer, parameter, public lensing\+::lensing\+\_\+method\+\_\+flat\+\_\+corr =2}
+
+
+
+Referenced by lens\+\_\+cls().
+
+\mbox{\Hypertarget{namespacelensing_a0af93cd038a1a553e2edc7e49c39f4d9}\label{namespacelensing_a0af93cd038a1a553e2edc7e49c39f4d9}} 
+\index{lensing@{lensing}!lensing\+\_\+method\+\_\+harmonic@{lensing\+\_\+method\+\_\+harmonic}}
+\index{lensing\+\_\+method\+\_\+harmonic@{lensing\+\_\+method\+\_\+harmonic}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lensing\+\_\+method\+\_\+harmonic}{lensing\_method\_harmonic}}
+{\footnotesize\ttfamily integer, parameter, public lensing\+::lensing\+\_\+method\+\_\+harmonic =3}
+
+
+
+Referenced by lens\+\_\+cls().
+
+\mbox{\Hypertarget{namespacelensing_aa8604328cfd9ca10730507837b4867fe}\label{namespacelensing_aa8604328cfd9ca10730507837b4867fe}} 
+\index{lensing@{lensing}!lmax\+\_\+donelnfa@{lmax\+\_\+donelnfa}}
+\index{lmax\+\_\+donelnfa@{lmax\+\_\+donelnfa}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lmax\+\_\+donelnfa}{lmax\_donelnfa}}
+{\footnotesize\ttfamily integer lensing\+::lmax\+\_\+donelnfa = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by badharmonic().
+
+\mbox{\Hypertarget{namespacelensing_aa64764c9338c8a6fc4f30497223a0b67}\label{namespacelensing_aa64764c9338c8a6fc4f30497223a0b67}} 
+\index{lensing@{lensing}!lnfa@{lnfa}}
+\index{lnfa@{lnfa}!lensing@{lensing}}
+\subsubsection{\texorpdfstring{lnfa}{lnfa}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable lensing\+::lnfa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by badharmonic().
+

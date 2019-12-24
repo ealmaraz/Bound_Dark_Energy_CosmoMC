@@ -1,0 +1,15 @@
+<map id="gaugeinterface::deltatimemaxed" name="gaugeinterface::deltatimemaxed">
+<area shape="rect" id="node2" href="$equations__bde__v3_8f90.html#a1c228811398a4401bb57d778911a13df" title="dtauda" alt="" coords="343,27,404,53"/>
+<area shape="rect" id="node3" href="$namespacegaugeinterface.html#a59182efb978c657918dd88675b2ab0ef" title="gaugeinterface::gaugeinterface_init" alt="" coords="261,77,485,104"/>
+<area shape="rect" id="node4" href="$namespacecambmain.html#a890ea024560967d80a83e411a34368ed" title="cambmain::initvars" alt="" coords="534,77,666,104"/>
+<area shape="rect" id="node5" href="$namespacecalculator__camb.html#a04c53e5b4763297e232978e627153a17" title="calculator_camb::cambcalc\l_setbackgroundtheorydata" alt="" coords="757,11,939,53"/>
+<area shape="rect" id="node6" href="$namespacehandles.html#a2c10aa9ff66a25677588584f3fc4f2a3" title="handles::cambdata_calcbackgroundtheory" alt="" coords="715,77,981,104"/>
+<area shape="rect" id="node7" href="$namespacecambmain.html#a8863977991a108f96a26fc99e8c5e129" title="cambmain::cmbmain" alt="" coords="777,128,919,155"/>
+<area shape="rect" id="node8" href="$namespacecamb.html#af6f4c73133d3de79ac10db3c4b2d0650" title="camb::camb_getresults" alt="" coords="1030,128,1189,155"/>
+<area shape="rect" id="node9" href="$namespacecamb.html#ae587b573e03da5811edb59806305b2cd" title="camb::camb_gettransfers" alt="" coords="1237,77,1408,104"/>
+<area shape="rect" id="node13" href="$sigma8_8f90.html#a6f015dab88d5e09a9b144633d51f8911" title="getsigma8" alt="" coords="1281,128,1364,155"/>
+<area shape="rect" id="node14" href="$tester_8f90.html#abb1af5b22eb90cec23fca42accb63245" title="tester" alt="" coords="1295,179,1350,205"/>
+<area shape="rect" id="node10" href="$namespacecalculator__camb.html#a9e8887a3ae9da2bb092aac4285234df4" title="calculator_camb::cambcalc\l_getnewtransferdata" alt="" coords="1469,5,1651,46"/>
+<area shape="rect" id="node11" href="$namespacecalculator__camb.html#a46bd33ed008e289fb5cb08f6feb86419" title="calculator_camb::cambcalc\l_gettheoryforimportance" alt="" coords="1469,70,1651,111"/>
+<area shape="rect" id="node12" href="$namespacehandles.html#a386ee0a28e6860d14047f052c918ca43" title="handles::cambdata_gettransfers" alt="" coords="1456,136,1664,163"/>
+</map>

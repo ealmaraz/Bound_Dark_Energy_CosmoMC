@@ -1,0 +1,13 @@
+<map id="snovae::snlikelihood_add" name="snovae::snlikelihood_add">
+<area shape="rect" id="node2" href="$namespacejla.html#a76279ec95aebe74a01796fb5d2734d94" title="jla::jlalikelihood_add" alt="" coords="247,123,385,149"/>
+<area shape="rect" id="node10" href="$namespacesnls.html#a93456d40d3b103bc17faf5bafac66d76" title="snls::snlslikelihood_add" alt="" coords="236,173,396,200"/>
+<area shape="rect" id="node12" href="$namespaceunion2.html#a1a2bf6931cf4fb87b54c8c327d598f48" title="union2::union2likelihood_add" alt="" coords="222,224,410,251"/>
+<area shape="rect" id="node3" href="$namespacejla.html#a840bbaee909bef635242328944cb1a14" title="jla::jla_prep" alt="" coords="484,72,572,99"/>
+<area shape="rect" id="node4" href="$namespacejla.html#a3a08d66a30f511b1a63b006b9c1fac53" title="jla::read_jla_dataset" alt="" coords="459,123,597,149"/>
+<area shape="rect" id="node5" href="$namespacejla.html#a2b7997e55b705956940cd1729f2a6e93" title="jla::count_lines" alt="" coords="676,5,785,32"/>
+<area shape="rect" id="node6" href="$namespacejla.html#af2e3afa13e8cf5731d6cf06c1ddaf31a" title="jla::match_jla_absdist\l_indices" alt="" coords="657,57,805,98"/>
+<area shape="rect" id="node7" href="$namespacejla.html#ae2ea921f1a8597682a71a793dc11bbe7" title="jla::read_cov_matrix" alt="" coords="661,123,800,149"/>
+<area shape="rect" id="node8" href="$namespacejla.html#ad1ad5e96f9f9f225249edadd8b348012" title="jla::read_jla_absdist_data" alt="" coords="646,173,815,200"/>
+<area shape="rect" id="node9" href="$namespacejla.html#aadb5af8cc4301188cd29adc8b94a5bb0" title="jla::read_jla_lc_data" alt="" coords="662,224,799,251"/>
+<area shape="rect" id="node11" href="$namespacesnls.html#aa7659f323fe80a70e09e7c1b3257cf5b" title="snls::snls_prep" alt="" coords="473,173,583,200"/>
+</map>

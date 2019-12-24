@@ -1,0 +1,443 @@
+\hypertarget{namespacehandles}{}\section{handles Module Reference}
+\label{namespacehandles}\index{handles@{handles}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structhandles_1_1c__cltransferdata}{c\+\_\+cltransferdata}}
+\item 
+type \mbox{\hyperlink{structhandles_1_1c__mattertransferdata}{c\+\_\+mattertransferdata}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a4de5423ef5a8e284a0571c62a0144917}{cambdata\+\_\+new}} (handle)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ab179d576d5e788ddc19e8a8c841aeade}{cambdata\+\_\+free}} (cptr)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a133fee834b72f96e030cb55f3c47d961}{cambdata\+\_\+setparams}} (data, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a564998825329a378540701dda7e31957}{cambdata\+\_\+getparams}} (data, handle)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a386ee0a28e6860d14047f052c918ca43}{cambdata\+\_\+gettransfers}} (data, Params, onlytransfer)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a4bdaf08397a5abc493ea901b3a53ece5}{cambdata\+\_\+setparamsforbackground}} (data, P)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a2c10aa9ff66a25677588584f3fc4f2a3}{cambdata\+\_\+calcbackgroundtheory}} (data, P)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a98c230a0efe726b878c7efc4e95f6574}{cambdata\+\_\+mattertransferdata}} (data, c\+Data)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ab0bb10def620b06fb617f4704d9342d9}{cambdata\+\_\+cltransferdata}} (data, c\+Data, i)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_abfc0adee06cc42379adb5fee674a9611}{convert\+\_\+cltransferdata}} (data, c\+Data)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_accd4416ff2222813d3f9784504d7e5d8}{cambdata\+\_\+getlinearmatterpower}} (data, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a26542fd10068a2b3d57617a97f935286}{cambdata\+\_\+getnonlinearmatterpower}} (data, PK, var1, var2, hubble\+\_\+units)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a77db4a8f3a15895102aa6f7c7e49d5f8}{cambdata\+\_\+getmatterpower}} (data, outpower, minkh, dlnkh, npoints, var1, var2)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a8cc3e1b0936fd89aca15f4cead25ad9c}{camb\+\_\+setinitialpower}} (Params, P)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_aa9ec681801ce104b28add54fd9ee3d16}{camb\+\_\+settotcls}} (lmax, tot\+\_\+scalar\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a275c2c9c895b79f63eef42b7fe81c842}{camb\+\_\+setunlensedcls}} (lmax, unlensed\+\_\+cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ae3fb31c2363d57d05718b6cb9bc6bf5d}{camb\+\_\+setlenspotentialcls}} (lmax, cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a8a98a8d5a48c920afe02832367244648}{camb\+\_\+setunlensedscalcls}} (lmax, scalar\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a670ac8cb259c4983bc0cb16b053252b7}{camb\+\_\+setlensedscalcls}} (lmax, lensed\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a85a90c13c4ff2c1dc02dd5b6c6c8da9d}{camb\+\_\+settensorcls}} (lmax, tensor\+\_\+\+Cls, in)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_ad9c5c14a68ab016e4b976c1f3f665779}{camb\+\_\+setunlensedscalararray}} (lmax, Scalar\+Array, in, n)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a4f9beee6e16e46b574ad807258bca56c}{camb\+\_\+setbackgroundoutputs\+\_\+z}} (redshifts, n)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a67c4066d5a6fa655910d3dc0fc295419}{camb\+\_\+getnumbackgroundoutputs}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a8c6d226c983d217554ce7208a52f6684}{camb\+\_\+getbackgroundoutputs}} (outputs, n)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_a9622707d668c5bb52a241302010db94f}{set\+\_\+cls\+\_\+template}} (cls\+\_\+template)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a694425016cc091db331b30804819bca8}{camb\+\_\+primordialpower}} (Params, k, powers, n, i)
+\item 
+subroutine \mbox{\hyperlink{namespacehandles_abde0c82099eadde40e5f09d895ec6ebb}{getoutputevolutionfork}} (EV, times, outputs)
+\item 
+integer function \mbox{\hyperlink{namespacehandles_a0d801cc8883d8e64021e9a4703f5ac63}{camb\+\_\+timeevolution}} (nq, q, ntimes, times, noutputs, outputs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacehandles_a8c6d226c983d217554ce7208a52f6684}\label{namespacehandles_a8c6d226c983d217554ce7208a52f6684}} 
+\index{handles@{handles}!camb\+\_\+getbackgroundoutputs@{camb\+\_\+getbackgroundoutputs}}
+\index{camb\+\_\+getbackgroundoutputs@{camb\+\_\+getbackgroundoutputs}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+getbackgroundoutputs()}{camb\_getbackgroundoutputs()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+getbackgroundoutputs (\begin{DoxyParamCaption}\item[{real(dl), dimension(4,n), intent(out)}]{outputs,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::backgroundoutputs, and constants\+::c.
+
+\mbox{\Hypertarget{namespacehandles_a67c4066d5a6fa655910d3dc0fc295419}\label{namespacehandles_a67c4066d5a6fa655910d3dc0fc295419}} 
+\index{handles@{handles}!camb\+\_\+getnumbackgroundoutputs@{camb\+\_\+getnumbackgroundoutputs}}
+\index{camb\+\_\+getnumbackgroundoutputs@{camb\+\_\+getnumbackgroundoutputs}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+getnumbackgroundoutputs()}{camb\_getnumbackgroundoutputs()}}
+{\footnotesize\ttfamily integer function handles\+::camb\+\_\+getnumbackgroundoutputs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::backgroundoutputs.
+
+\mbox{\Hypertarget{namespacehandles_a694425016cc091db331b30804819bca8}\label{namespacehandles_a694425016cc091db331b30804819bca8}} 
+\index{handles@{handles}!camb\+\_\+primordialpower@{camb\+\_\+primordialpower}}
+\index{camb\+\_\+primordialpower@{camb\+\_\+primordialpower}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+primordialpower()}{camb\_primordialpower()}}
+{\footnotesize\ttfamily integer function handles\+::camb\+\_\+primordialpower (\begin{DoxyParamCaption}\item[{type(cambparams)}]{Params,  }\item[{real(dl), dimension(n), intent(in)}]{k,  }\item[{real(dl), dimension(n), intent(out)}]{powers,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+
+
+References constants\+::c.
+
+\mbox{\Hypertarget{namespacehandles_a4f9beee6e16e46b574ad807258bca56c}\label{namespacehandles_a4f9beee6e16e46b574ad807258bca56c}} 
+\index{handles@{handles}!camb\+\_\+setbackgroundoutputs\+\_\+z@{camb\+\_\+setbackgroundoutputs\+\_\+z}}
+\index{camb\+\_\+setbackgroundoutputs\+\_\+z@{camb\+\_\+setbackgroundoutputs\+\_\+z}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+setbackgroundoutputs\+\_\+z()}{camb\_setbackgroundoutputs\_z()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+setbackgroundoutputs\+\_\+z (\begin{DoxyParamCaption}\item[{real(dl), dimension(n), intent(in)}]{redshifts,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::backgroundoutputs.
+
+\mbox{\Hypertarget{namespacehandles_a8cc3e1b0936fd89aca15f4cead25ad9c}\label{namespacehandles_a8cc3e1b0936fd89aca15f4cead25ad9c}} 
+\index{handles@{handles}!camb\+\_\+setinitialpower@{camb\+\_\+setinitialpower}}
+\index{camb\+\_\+setinitialpower@{camb\+\_\+setinitialpower}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+setinitialpower()}{camb\_setinitialpower()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+setinitialpower (\begin{DoxyParamCaption}\item[{type(cambparams)}]{Params,  }\item[{type(initialpowerparams)}]{P }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacehandles_a670ac8cb259c4983bc0cb16b053252b7}\label{namespacehandles_a670ac8cb259c4983bc0cb16b053252b7}} 
+\index{handles@{handles}!camb\+\_\+setlensedscalcls@{camb\+\_\+setlensedscalcls}}
+\index{camb\+\_\+setlensedscalcls@{camb\+\_\+setlensedscalcls}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+setlensedscalcls()}{camb\_setlensedscalcls()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+setlensedscalcls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax,  }\item[{real(dl), dimension(4, 0\+:lmax), intent(out)}]{lensed\+\_\+\+Cls,  }\item[{integer, intent(in)}]{in }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and modelparams\+::lmin.
+
+\mbox{\Hypertarget{namespacehandles_ae3fb31c2363d57d05718b6cb9bc6bf5d}\label{namespacehandles_ae3fb31c2363d57d05718b6cb9bc6bf5d}} 
+\index{handles@{handles}!camb\+\_\+setlenspotentialcls@{camb\+\_\+setlenspotentialcls}}
+\index{camb\+\_\+setlenspotentialcls@{camb\+\_\+setlenspotentialcls}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+setlenspotentialcls()}{camb\_setlenspotentialcls()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+setlenspotentialcls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax,  }\item[{real(dl), dimension(3, 0\+:lmax), intent(out)}]{cls,  }\item[{integer, intent(in)}]{in }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and modelparams\+::lmin.
+
+\mbox{\Hypertarget{namespacehandles_a85a90c13c4ff2c1dc02dd5b6c6c8da9d}\label{namespacehandles_a85a90c13c4ff2c1dc02dd5b6c6c8da9d}} 
+\index{handles@{handles}!camb\+\_\+settensorcls@{camb\+\_\+settensorcls}}
+\index{camb\+\_\+settensorcls@{camb\+\_\+settensorcls}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+settensorcls()}{camb\_settensorcls()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+settensorcls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax,  }\item[{real(dl), dimension(4, 0\+:lmax), intent(out)}]{tensor\+\_\+\+Cls,  }\item[{integer, intent(in)}]{in }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and modelparams\+::lmin.
+
+\mbox{\Hypertarget{namespacehandles_aa9ec681801ce104b28add54fd9ee3d16}\label{namespacehandles_aa9ec681801ce104b28add54fd9ee3d16}} 
+\index{handles@{handles}!camb\+\_\+settotcls@{camb\+\_\+settotcls}}
+\index{camb\+\_\+settotcls@{camb\+\_\+settotcls}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+settotcls()}{camb\_settotcls()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+settotcls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax,  }\item[{real(dl), dimension(4, 0\+:lmax), intent(out)}]{tot\+\_\+scalar\+\_\+\+Cls,  }\item[{integer, intent(in)}]{in }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and modelparams\+::lmin.
+
+\mbox{\Hypertarget{namespacehandles_a275c2c9c895b79f63eef42b7fe81c842}\label{namespacehandles_a275c2c9c895b79f63eef42b7fe81c842}} 
+\index{handles@{handles}!camb\+\_\+setunlensedcls@{camb\+\_\+setunlensedcls}}
+\index{camb\+\_\+setunlensedcls@{camb\+\_\+setunlensedcls}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+setunlensedcls()}{camb\_setunlensedcls()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+setunlensedcls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax,  }\item[{real(dl), dimension(4,0\+:lmax), intent(out)}]{unlensed\+\_\+cls,  }\item[{integer, intent(in)}]{in }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and modelparams\+::lmin.
+
+\mbox{\Hypertarget{namespacehandles_ad9c5c14a68ab016e4b976c1f3f665779}\label{namespacehandles_ad9c5c14a68ab016e4b976c1f3f665779}} 
+\index{handles@{handles}!camb\+\_\+setunlensedscalararray@{camb\+\_\+setunlensedscalararray}}
+\index{camb\+\_\+setunlensedscalararray@{camb\+\_\+setunlensedscalararray}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+setunlensedscalararray()}{camb\_setunlensedscalararray()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+setunlensedscalararray (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax,  }\item[{real(dl), dimension(n, n, 0\+:lmax), intent(out)}]{Scalar\+Array,  }\item[{integer, intent(in)}]{in,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and modelparams\+::lmin.
+
+\mbox{\Hypertarget{namespacehandles_a8a98a8d5a48c920afe02832367244648}\label{namespacehandles_a8a98a8d5a48c920afe02832367244648}} 
+\index{handles@{handles}!camb\+\_\+setunlensedscalcls@{camb\+\_\+setunlensedscalcls}}
+\index{camb\+\_\+setunlensedscalcls@{camb\+\_\+setunlensedscalcls}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+setunlensedscalcls()}{camb\_setunlensedscalcls()}}
+{\footnotesize\ttfamily subroutine handles\+::camb\+\_\+setunlensedscalcls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lmax,  }\item[{real(dl), dimension(4, 0\+:lmax), intent(out)}]{scalar\+\_\+\+Cls,  }\item[{integer, intent(in)}]{in }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, and modelparams\+::lmin.
+
+\mbox{\Hypertarget{namespacehandles_a0d801cc8883d8e64021e9a4703f5ac63}\label{namespacehandles_a0d801cc8883d8e64021e9a4703f5ac63}} 
+\index{handles@{handles}!camb\+\_\+timeevolution@{camb\+\_\+timeevolution}}
+\index{camb\+\_\+timeevolution@{camb\+\_\+timeevolution}!handles@{handles}}
+\subsubsection{\texorpdfstring{camb\+\_\+timeevolution()}{camb\_timeevolution()}}
+{\footnotesize\ttfamily integer function handles\+::camb\+\_\+timeevolution (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nq,  }\item[{real(dl), dimension(nq), intent(in)}]{q,  }\item[{integer, intent(in)}]{ntimes,  }\item[{real(dl), dimension(ntimes), intent(in)}]{times,  }\item[{integer, intent(in)}]{noutputs,  }\item[{real(dl), dimension(transfer\+\_\+max+8, ntimes, nq), intent(out)}]{outputs }\end{DoxyParamCaption})}
+
+
+
+References getoutputevolutionfork().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_a0d801cc8883d8e64021e9a4703f5ac63_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_a2c10aa9ff66a25677588584f3fc4f2a3}\label{namespacehandles_a2c10aa9ff66a25677588584f3fc4f2a3}} 
+\index{handles@{handles}!cambdata\+\_\+calcbackgroundtheory@{cambdata\+\_\+calcbackgroundtheory}}
+\index{cambdata\+\_\+calcbackgroundtheory@{cambdata\+\_\+calcbackgroundtheory}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+calcbackgroundtheory()}{cambdata\_calcbackgroundtheory()}}
+{\footnotesize\ttfamily integer function handles\+::cambdata\+\_\+calcbackgroundtheory (\begin{DoxyParamCaption}\item[{type (cambdata)}]{data,  }\item[{type(cambparams)}]{P }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cambparams\+\_\+set(), and cambmain\+::initvars().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_a2c10aa9ff66a25677588584f3fc4f2a3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_ab0bb10def620b06fb617f4704d9342d9}\label{namespacehandles_ab0bb10def620b06fb617f4704d9342d9}} 
+\index{handles@{handles}!cambdata\+\_\+cltransferdata@{cambdata\+\_\+cltransferdata}}
+\index{cambdata\+\_\+cltransferdata@{cambdata\+\_\+cltransferdata}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+cltransferdata()}{cambdata\_cltransferdata()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+cltransferdata (\begin{DoxyParamCaption}\item[{type(cambdata), target}]{data,  }\item[{type(\mbox{\hyperlink{structhandles_1_1c__cltransferdata}{c\+\_\+cltransferdata}})}]{c\+Data,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+
+
+References convert\+\_\+cltransferdata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_ab0bb10def620b06fb617f4704d9342d9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_ab179d576d5e788ddc19e8a8c841aeade}\label{namespacehandles_ab179d576d5e788ddc19e8a8c841aeade}} 
+\index{handles@{handles}!cambdata\+\_\+free@{cambdata\+\_\+free}}
+\index{cambdata\+\_\+free@{cambdata\+\_\+free}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+free()}{cambdata\_free()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+free (\begin{DoxyParamCaption}\item[{type(c\+\_\+ptr)}]{cptr }\end{DoxyParamCaption})}
+
+
+
+References camb\+::camb\+\_\+freecambdata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_ab179d576d5e788ddc19e8a8c841aeade_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_accd4416ff2222813d3f9784504d7e5d8}\label{namespacehandles_accd4416ff2222813d3f9784504d7e5d8}} 
+\index{handles@{handles}!cambdata\+\_\+getlinearmatterpower@{cambdata\+\_\+getlinearmatterpower}}
+\index{cambdata\+\_\+getlinearmatterpower@{cambdata\+\_\+getlinearmatterpower}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+getlinearmatterpower()}{cambdata\_getlinearmatterpower()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+getlinearmatterpower (\begin{DoxyParamCaption}\item[{type(cambdata)}]{data,  }\item[{real(dl), dimension(data\%mtrans\%num\+\_\+q\+\_\+trans,data\%params\%transfer\%pk\+\_\+num\+\_\+redshifts)}]{PK,  }\item[{integer, intent(in)}]{var1,  }\item[{integer, intent(in)}]{var2,  }\item[{logical}]{hubble\+\_\+units }\end{DoxyParamCaption})}
+
+
+
+References transfer\+::transfer\+\_\+getunsplinedpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_accd4416ff2222813d3f9784504d7e5d8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_a77db4a8f3a15895102aa6f7c7e49d5f8}\label{namespacehandles_a77db4a8f3a15895102aa6f7c7e49d5f8}} 
+\index{handles@{handles}!cambdata\+\_\+getmatterpower@{cambdata\+\_\+getmatterpower}}
+\index{cambdata\+\_\+getmatterpower@{cambdata\+\_\+getmatterpower}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+getmatterpower()}{cambdata\_getmatterpower()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+getmatterpower (\begin{DoxyParamCaption}\item[{type(cambdata)}]{data,  }\item[{real(dl), dimension(npoints,data\%params\%transfer\%pk\+\_\+num\+\_\+redshifts), intent(out)}]{outpower,  }\item[{real(dl), intent(in)}]{minkh,  }\item[{real(dl), intent(in)}]{dlnkh,  }\item[{integer, intent(in)}]{npoints,  }\item[{integer, intent(in)}]{var1,  }\item[{integer, intent(in)}]{var2 }\end{DoxyParamCaption})}
+
+
+
+References transfer\+::transfer\+\_\+getmatterpowerd().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_a77db4a8f3a15895102aa6f7c7e49d5f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_a26542fd10068a2b3d57617a97f935286}\label{namespacehandles_a26542fd10068a2b3d57617a97f935286}} 
+\index{handles@{handles}!cambdata\+\_\+getnonlinearmatterpower@{cambdata\+\_\+getnonlinearmatterpower}}
+\index{cambdata\+\_\+getnonlinearmatterpower@{cambdata\+\_\+getnonlinearmatterpower}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+getnonlinearmatterpower()}{cambdata\_getnonlinearmatterpower()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+getnonlinearmatterpower (\begin{DoxyParamCaption}\item[{type(cambdata)}]{data,  }\item[{real(dl), dimension(data\%mtrans\%num\+\_\+q\+\_\+trans,data\%params\%transfer\%pk\+\_\+num\+\_\+redshifts)}]{PK,  }\item[{integer, intent(in)}]{var1,  }\item[{integer, intent(in)}]{var2,  }\item[{logical}]{hubble\+\_\+units }\end{DoxyParamCaption})}
+
+
+
+References transfer\+::transfer\+\_\+getunsplinednonlinearpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_a26542fd10068a2b3d57617a97f935286_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_a564998825329a378540701dda7e31957}\label{namespacehandles_a564998825329a378540701dda7e31957}} 
+\index{handles@{handles}!cambdata\+\_\+getparams@{cambdata\+\_\+getparams}}
+\index{cambdata\+\_\+getparams@{cambdata\+\_\+getparams}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+getparams()}{cambdata\_getparams()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+getparams (\begin{DoxyParamCaption}\item[{type (cambdata), target}]{data,  }\item[{type(c\+\_\+ptr), intent(out)}]{handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacehandles_a386ee0a28e6860d14047f052c918ca43}\label{namespacehandles_a386ee0a28e6860d14047f052c918ca43}} 
+\index{handles@{handles}!cambdata\+\_\+gettransfers@{cambdata\+\_\+gettransfers}}
+\index{cambdata\+\_\+gettransfers@{cambdata\+\_\+gettransfers}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+gettransfers()}{cambdata\_gettransfers()}}
+{\footnotesize\ttfamily integer function handles\+::cambdata\+\_\+gettransfers (\begin{DoxyParamCaption}\item[{type (cambdata)}]{data,  }\item[{type(cambparams)}]{Params,  }\item[{logical(kind=c\+\_\+bool)}]{onlytransfer }\end{DoxyParamCaption})}
+
+
+
+References camb\+::camb\+\_\+gettransfers(), modelparams\+::nonlinear\+\_\+both, modelparams\+::nonlinear\+\_\+lens, transfer\+::transfer\+\_\+setfornonlinearlensing(), and transfer\+::transfer\+\_\+sortandindexredshifts().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_a386ee0a28e6860d14047f052c918ca43_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_a98c230a0efe726b878c7efc4e95f6574}\label{namespacehandles_a98c230a0efe726b878c7efc4e95f6574}} 
+\index{handles@{handles}!cambdata\+\_\+mattertransferdata@{cambdata\+\_\+mattertransferdata}}
+\index{cambdata\+\_\+mattertransferdata@{cambdata\+\_\+mattertransferdata}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+mattertransferdata()}{cambdata\_mattertransferdata()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+mattertransferdata (\begin{DoxyParamCaption}\item[{type(cambdata), target}]{data,  }\item[{type(\mbox{\hyperlink{structhandles_1_1c__mattertransferdata}{c\+\_\+mattertransferdata}})}]{c\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacehandles_a4de5423ef5a8e284a0571c62a0144917}\label{namespacehandles_a4de5423ef5a8e284a0571c62a0144917}} 
+\index{handles@{handles}!cambdata\+\_\+new@{cambdata\+\_\+new}}
+\index{cambdata\+\_\+new@{cambdata\+\_\+new}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+new()}{cambdata\_new()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+new (\begin{DoxyParamCaption}\item[{type(c\+\_\+ptr), intent(out)}]{handle }\end{DoxyParamCaption})}
+
+
+
+References camb\+::camb\+\_\+initcambdata(), and camb\+::camb\+\_\+setdefparams().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_a4de5423ef5a8e284a0571c62a0144917_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_a133fee834b72f96e030cb55f3c47d961}\label{namespacehandles_a133fee834b72f96e030cb55f3c47d961}} 
+\index{handles@{handles}!cambdata\+\_\+setparams@{cambdata\+\_\+setparams}}
+\index{cambdata\+\_\+setparams@{cambdata\+\_\+setparams}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+setparams()}{cambdata\_setparams()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+setparams (\begin{DoxyParamCaption}\item[{type (cambdata), target}]{data,  }\item[{type(cambparams)}]{Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacehandles_a4bdaf08397a5abc493ea901b3a53ece5}\label{namespacehandles_a4bdaf08397a5abc493ea901b3a53ece5}} 
+\index{handles@{handles}!cambdata\+\_\+setparamsforbackground@{cambdata\+\_\+setparamsforbackground}}
+\index{cambdata\+\_\+setparamsforbackground@{cambdata\+\_\+setparamsforbackground}!handles@{handles}}
+\subsubsection{\texorpdfstring{cambdata\+\_\+setparamsforbackground()}{cambdata\_setparamsforbackground()}}
+{\footnotesize\ttfamily subroutine handles\+::cambdata\+\_\+setparamsforbackground (\begin{DoxyParamCaption}\item[{type (cambdata)}]{data,  }\item[{type(cambparams)}]{P }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cambparams\+\_\+set().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_a4bdaf08397a5abc493ea901b3a53ece5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_abfc0adee06cc42379adb5fee674a9611}\label{namespacehandles_abfc0adee06cc42379adb5fee674a9611}} 
+\index{handles@{handles}!convert\+\_\+cltransferdata@{convert\+\_\+cltransferdata}}
+\index{convert\+\_\+cltransferdata@{convert\+\_\+cltransferdata}!handles@{handles}}
+\subsubsection{\texorpdfstring{convert\+\_\+cltransferdata()}{convert\_cltransferdata()}}
+{\footnotesize\ttfamily subroutine handles\+::convert\+\_\+cltransferdata (\begin{DoxyParamCaption}\item[{type(cltransferdata), target}]{data,  }\item[{type(\mbox{\hyperlink{structhandles_1_1c__cltransferdata}{c\+\_\+cltransferdata}})}]{c\+Data }\end{DoxyParamCaption})}
+
+
+
+Referenced by cambdata\+\_\+cltransferdata().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_abfc0adee06cc42379adb5fee674a9611_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_abde0c82099eadde40e5f09d895ec6ebb}\label{namespacehandles_abde0c82099eadde40e5f09d895ec6ebb}} 
+\index{handles@{handles}!getoutputevolutionfork@{getoutputevolutionfork}}
+\index{getoutputevolutionfork@{getoutputevolutionfork}!handles@{handles}}
+\subsubsection{\texorpdfstring{getoutputevolutionfork()}{getoutputevolutionfork()}}
+{\footnotesize\ttfamily subroutine handles\+::getoutputevolutionfork (\begin{DoxyParamCaption}\item[{type(evolutionvars)}]{EV,  }\item[{real(dl), dimension(\+:), intent(in)}]{times,  }\item[{real(dl), dimension(\+:,\+:,\+:), intent(out)}]{outputs }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, cambmain\+::gettaustart(), modelparams\+::grhob, modelparams\+::grhoc, and modelparams\+::tol.
+
+
+
+Referenced by camb\+\_\+timeevolution().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_abde0c82099eadde40e5f09d895ec6ebb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehandles_abde0c82099eadde40e5f09d895ec6ebb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacehandles_a9622707d668c5bb52a241302010db94f}\label{namespacehandles_a9622707d668c5bb52a241302010db94f}} 
+\index{handles@{handles}!set\+\_\+cls\+\_\+template@{set\+\_\+cls\+\_\+template}}
+\index{set\+\_\+cls\+\_\+template@{set\+\_\+cls\+\_\+template}!handles@{handles}}
+\subsubsection{\texorpdfstring{set\+\_\+cls\+\_\+template()}{set\_cls\_template()}}
+{\footnotesize\ttfamily subroutine handles\+::set\+\_\+cls\+\_\+template (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{cls\+\_\+template }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::highl\+\_\+unlensed\+\_\+cl\+\_\+template.
+

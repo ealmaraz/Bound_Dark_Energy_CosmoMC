@@ -1,0 +1,919 @@
+\hypertarget{namespacesnls}{}\section{snls Module Reference}
+\label{namespacesnls}\index{snls@{snls}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structsnls_1_1snlslikelihood}{snlslikelihood}}
+\item 
+type \mbox{\hyperlink{structsnls_1_1supernova}{supernova}}
+\item 
+type \mbox{\hyperlink{structsnls_1_1supernova__absdist}{supernova\+\_\+absdist}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacesnls_a93456d40d3b103bc17faf5bafac66d76}{snlslikelihood\+\_\+add}} (Like\+List, Ini)
+\item 
+subroutine, private \mbox{\hyperlink{namespacesnls_a956019aee61f8e8b602d1b4edb635909}{count\+\_\+lines}} (lun, lines, noncommentlines)
+\item 
+subroutine, private \mbox{\hyperlink{namespacesnls_a7ebffb6abfd2942fbb0304d2ba6a234a}{read\+\_\+cov\+\_\+matrix}} (filename, mat, n)
+\item 
+subroutine, private \mbox{\hyperlink{namespacesnls_a7f1db3cfd4fe644d65ae48d23062420a}{read\+\_\+snls\+\_\+lc\+\_\+data}} (lun, nlines, nnoncommentlines, \mbox{\hyperlink{namespacesnls_ad60f7a857849e3df34947a9a90a53f38}{sndata}})
+\item 
+subroutine, private \mbox{\hyperlink{namespacesnls_aac6e7755970b914ec53a7e7f2c6ad529}{read\+\_\+snls\+\_\+absdist\+\_\+data}} (lun, nlines, nnoncommentlines, \mbox{\hyperlink{namespacesnls_aa9cb8d9344c2bfe3a01327e48ae3aaf1}{snabsdist}})
+\item 
+subroutine, private \mbox{\hyperlink{namespacesnls_afabbfedccf34ae3b625359e7b29e67eb}{match\+\_\+snls\+\_\+absdist\+\_\+indices}} (\mbox{\hyperlink{namespacesnls_ad60f7a857849e3df34947a9a90a53f38}{sndata}}, \mbox{\hyperlink{namespacesnls_aa9cb8d9344c2bfe3a01327e48ae3aaf1}{snabsdist}})
+\item 
+subroutine \mbox{\hyperlink{namespacesnls_ae4b5fd7439c0c4620a5d9369c2782c9a}{read\+\_\+snls\+\_\+dataset}} (this, ini)
+\item 
+subroutine \mbox{\hyperlink{namespacesnls_a46f1f0ddbecf69ac1dbfa16bfd6af020}{invert\+\_\+covariance\+\_\+matrix}} (invcovmat, alpha, beta, status)
+\item 
+subroutine \mbox{\hyperlink{namespacesnls_aa7659f323fe80a70e09e7c1b3257cf5b}{snls\+\_\+prep}}
+\item 
+subroutine \mbox{\hyperlink{namespacesnls_aceae969ecb486792f081d6533244fd09}{snls\+\_\+cleanup}}
+\item 
+real(mcp) function \mbox{\hyperlink{namespacesnls_a31b64210643b2a6f625a1925f01c1194}{snls\+\_\+alpha\+\_\+beta\+\_\+like}} (alpha, beta, \mbox{\hyperlink{namespacesnls_a5cc70993d1d6e6f59706685f982260ee}{lumdists}})
+\item 
+real(mcp) function \mbox{\hyperlink{namespacesnls_a9983ad3e174e1ba1d0b862b463a8df40}{snls\+\_\+lnlike}} (this, C\+MB, Theory, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacesnls_a06db14b2b9d3e226db5ba7a2a90617de}{snls\+\_\+marginalize}} = .false.
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacesnls_a0314289992414e577228e51eb768cb77}{snls\+\_\+marge\+\_\+grid}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacesnls_ac4adeb5ed9cc6b1ff8d81eb5c3f7614f}{alpha\+\_\+grid}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{namespacesnls_a56411cdf57a0e9358f977a9dc70b1715}{beta\+\_\+grid}}
+\item 
+integer \mbox{\hyperlink{namespacesnls_ad2d9ca2fa23ca065ff997f4b15114c53}{snls\+\_\+marge\+\_\+steps}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{namespacesnls_a3a7f05d5e17b5868642de17a8d101626}{snls\+\_\+step\+\_\+width}}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacesnls_a153b2cafcd96b5cf2ea20c31595180a0}{snls\+\_\+alpha\+\_\+center}} = 1.\+442
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacesnls_a82f9e1a099b4e59c715b4fef3c8171cc}{snls\+\_\+beta\+\_\+center}} = 3.\+262
+\item 
+integer \mbox{\hyperlink{namespacesnls_acf460aba70488a6ee73c575ab0e9d865}{snls\+\_\+int\+\_\+points}} = 1
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacesnls_a919a8bb686436d27901e5de9a8880f26}{snls\+\_\+version}} = \textquotesingle{}April\+\_\+2012\textquotesingle{}
+\item 
+logical, parameter \mbox{\hyperlink{namespacesnls_a8df88425e6d587341a52687ef62d81ae}{allow\+\_\+inv\+\_\+cache}} = .false.
+\item 
+real(mcp), parameter, private \mbox{\hyperlink{namespacesnls_af91b609e54e5ac91712f0bb5303b5652}{inv\+\_\+twopi}} = 1.\+0\+\_\+mcp / twopi
+\item 
+character, parameter, private \mbox{\hyperlink{namespacesnls_a770d0a9cd7d82539ec94f8d27bb13c53}{uplo}} = \textquotesingle{}U\textquotesingle{}
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacesnls_a82d4a9b322c284cf9bba27e6c86cb4f9}{max\+\_\+idisp\+\_\+datasets}} = 10
+\item 
+integer, parameter, private \mbox{\hyperlink{namespacesnls_a0985d8ccb89aafea09ab6de4c78c5600}{snnamelen}} = 12
+\item 
+real(mcp), parameter, private \mbox{\hyperlink{namespacesnls_ae1879f7b41dc92841a8396c15ed20751}{h0cfac}} = 5$\ast$L\+O\+G10( 100.\+0/299792.\+458 )
+\item 
+real(mcp), parameter, private \mbox{\hyperlink{namespacesnls_a0788c80251a81d3072f95cb12143388d}{alphatol}} = 1\+E-\/10\+\_\+mcp
+\item 
+real(mcp), parameter, private \mbox{\hyperlink{namespacesnls_a2e0b3cead11bfcbc6a35da642d41c977}{betatol}} = 1\+E-\/10\+\_\+mcp
+\item 
+character(len=30), private \mbox{\hyperlink{namespacesnls_a33bba3eb52cb06fe4ca4b1beb737c7f4}{name}}
+\item 
+real(mcp), private \mbox{\hyperlink{namespacesnls_a01a9c6e8b04129b6a2c1b9bbd4cd6cc9}{pecz}}
+\item 
+real(mcp), dimension(\mbox{\hyperlink{namespacesnls_a82d4a9b322c284cf9bba27e6c86cb4f9}{max\+\_\+idisp\+\_\+datasets}}) \mbox{\hyperlink{namespacesnls_aea5409adea753b625ccfc1d60e5705d5}{intrinsicdisp}}
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_aa5648511eb2e907f92a3a833acaafd98}{twoscriptmfit}}
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_a62af67a93e31f94478aa58343fe5c04d}{has\+\_\+thirdvar}}
+\item 
+real(mcp), private \mbox{\hyperlink{namespacesnls_ac747536aeed92aaeab54e9366afeefd2}{scriptmcut}}
+\item 
+integer, public \mbox{\hyperlink{namespacesnls_abc05ea854fb8f639d617703ff33dcf41}{nsn}}
+\item 
+type(\mbox{\hyperlink{structsnls_1_1supernova}{supernova}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacesnls_ad60f7a857849e3df34947a9a90a53f38}{sndata}}
+\item 
+real(mcp), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a3a2029fb54b5f14f48f328a2b9cf9d98}{pre\+\_\+vars}}
+\item 
+real(mcp), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a7a5b5ef85de03b3345f24e542dccf2fe}{a1}}
+\item 
+real(mcp), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a6472548375e64b614a5e7cae1b635b59}{a2}}
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_ae0c3dc7f2e96ed1de4ff8dfcc81195e9}{diag\+\_\+errors}} = .T\+R\+U\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_aa8d535884df485fb5762eb12ad31da9a}{has\+\_\+mag\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_ae63c79b57efec7300a23d6437079ddae}{has\+\_\+stretch\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_aa953f2792677b7c901fc89bebdd40c36}{has\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_ae787ac7d0741e06d7699e05e691c1fac}{has\+\_\+mag\+\_\+stretch\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_a3557a6ed568984b4640e4128088cbf19}{has\+\_\+mag\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_a72767d5a50117b705a1dcb971e24462d}{has\+\_\+stretch\+\_\+colour\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_ab8a52f43b875f3858fb98da0194a2cb8}{alphabeta\+\_\+covmat}} = .F\+A\+L\+S\+E.
+\item 
+real(mcp), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a0dc9a08e398ee49bd864a8d88d95f195}{mag\+\_\+covmat}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a56f3f501856e1777e0bb4960509f5d85}{stretch\+\_\+covmat}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacesnls_afed063275d19022044504128d8238e76}{colour\+\_\+covmat}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a5ed1dbc069e004d9de1dd21d5c7786bc}{mag\+\_\+stretch\+\_\+covmat}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a0579d76af88ce5be98b90af1b8d09b20}{mag\+\_\+colour\+\_\+covmat}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable, private \mbox{\hyperlink{namespacesnls_ad9f9a58ffeb62ad8e3c79c1c06f4fc1f}{stretch\+\_\+colour\+\_\+covmat}}
+\item 
+logical, private \mbox{\hyperlink{namespacesnls_ac58c726d5874a3387309a8b805bfecee}{has\+\_\+absdist}} = .F\+A\+L\+S\+E.
+\item 
+integer, private \mbox{\hyperlink{namespacesnls_afec63a8af55bb2bb06acac7b19c0fc4c}{nabsdist}} = 0
+\item 
+type(\mbox{\hyperlink{structsnls_1_1supernova__absdist}{supernova\+\_\+absdist}}), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacesnls_aa9cb8d9344c2bfe3a01327e48ae3aaf1}{snabsdist}}
+\item 
+real(mcp), dimension(\+:), allocatable, private \mbox{\hyperlink{namespacesnls_a5cc70993d1d6e6f59706685f982260ee}{lumdists}}
+\item 
+real(mcp), private \mbox{\hyperlink{namespacesnls_a0037badcbc89a4f561b14d59f08c7d48}{alpha\+\_\+prev}}
+\item 
+real(mcp), private \mbox{\hyperlink{namespacesnls_ad81e06277b2382bce10042fab9dcea40}{beta\+\_\+prev}}
+\item 
+logical \mbox{\hyperlink{namespacesnls_a40ca845281c24a135e23e1a160610163}{first\+\_\+inversion}}
+\item 
+logical \mbox{\hyperlink{namespacesnls_af9f3dc6698168f334d7e5066c0a1e9e5}{snls\+\_\+read}} = .F\+A\+L\+S\+E.
+\item 
+logical \mbox{\hyperlink{namespacesnls_ae512c41362a8967df80f9101ef7e5fd3}{snls\+\_\+prepped}} = .F\+A\+L\+S\+E.
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacesnls_a956019aee61f8e8b602d1b4edb635909}\label{namespacesnls_a956019aee61f8e8b602d1b4edb635909}} 
+\index{snls@{snls}!count\+\_\+lines@{count\+\_\+lines}}
+\index{count\+\_\+lines@{count\+\_\+lines}!snls@{snls}}
+\subsubsection{\texorpdfstring{count\+\_\+lines()}{count\_lines()}}
+{\footnotesize\ttfamily subroutine, private snls\+::count\+\_\+lines (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lun,  }\item[{integer, intent(out)}]{lines,  }\item[{integer, intent(out)}]{noncommentlines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespacesnls_a956019aee61f8e8b602d1b4edb635909_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_a46f1f0ddbecf69ac1dbfa16bfd6af020}\label{namespacesnls_a46f1f0ddbecf69ac1dbfa16bfd6af020}} 
+\index{snls@{snls}!invert\+\_\+covariance\+\_\+matrix@{invert\+\_\+covariance\+\_\+matrix}}
+\index{invert\+\_\+covariance\+\_\+matrix@{invert\+\_\+covariance\+\_\+matrix}!snls@{snls}}
+\subsubsection{\texorpdfstring{invert\+\_\+covariance\+\_\+matrix()}{invert\_covariance\_matrix()}}
+{\footnotesize\ttfamily subroutine snls\+::invert\+\_\+covariance\+\_\+matrix (\begin{DoxyParamCaption}\item[{real(mcp), dimension(\+:,\+:)}]{invcovmat,  }\item[{real(mcp), intent(in)}]{alpha,  }\item[{real(mcp), intent(in)}]{beta,  }\item[{integer, intent(inout)}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References allow\+\_\+inv\+\_\+cache, alpha\+\_\+prev, alphabeta\+\_\+covmat, alphatol, beta\+\_\+prev, betatol, colour\+\_\+covmat, diag\+\_\+errors, first\+\_\+inversion, has\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+covmat, has\+\_\+mag\+\_\+stretch\+\_\+covmat, has\+\_\+stretch\+\_\+colour\+\_\+covmat, has\+\_\+stretch\+\_\+covmat, mag\+\_\+colour\+\_\+covmat, mag\+\_\+covmat, mag\+\_\+stretch\+\_\+covmat, nsn, pre\+\_\+vars, sndata, stretch\+\_\+colour\+\_\+covmat, stretch\+\_\+covmat, and uplo.
+
+
+
+Referenced by snls\+\_\+alpha\+\_\+beta\+\_\+like().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_a46f1f0ddbecf69ac1dbfa16bfd6af020_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_afabbfedccf34ae3b625359e7b29e67eb}\label{namespacesnls_afabbfedccf34ae3b625359e7b29e67eb}} 
+\index{snls@{snls}!match\+\_\+snls\+\_\+absdist\+\_\+indices@{match\+\_\+snls\+\_\+absdist\+\_\+indices}}
+\index{match\+\_\+snls\+\_\+absdist\+\_\+indices@{match\+\_\+snls\+\_\+absdist\+\_\+indices}!snls@{snls}}
+\subsubsection{\texorpdfstring{match\+\_\+snls\+\_\+absdist\+\_\+indices()}{match\_snls\_absdist\_indices()}}
+{\footnotesize\ttfamily subroutine, private snls\+::match\+\_\+snls\+\_\+absdist\+\_\+indices (\begin{DoxyParamCaption}\item[{type( \mbox{\hyperlink{structsnls_1_1supernova}{supernova}} ), dimension(\+:), intent(inout)}]{sndata,  }\item[{type( \mbox{\hyperlink{structsnls_1_1supernova__absdist}{supernova\+\_\+absdist}} ), dimension(\+:), intent(inout)}]{snabsdist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References nabsdist, nsn, snabsdist, and sndata.
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_afabbfedccf34ae3b625359e7b29e67eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_a7ebffb6abfd2942fbb0304d2ba6a234a}\label{namespacesnls_a7ebffb6abfd2942fbb0304d2ba6a234a}} 
+\index{snls@{snls}!read\+\_\+cov\+\_\+matrix@{read\+\_\+cov\+\_\+matrix}}
+\index{read\+\_\+cov\+\_\+matrix@{read\+\_\+cov\+\_\+matrix}!snls@{snls}}
+\subsubsection{\texorpdfstring{read\+\_\+cov\+\_\+matrix()}{read\_cov\_matrix()}}
+{\footnotesize\ttfamily subroutine, private snls\+::read\+\_\+cov\+\_\+matrix (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{filename,  }\item[{real(mcp), dimension(n,n), intent(out)}]{mat,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::feedback.
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_a7ebffb6abfd2942fbb0304d2ba6a234a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_aac6e7755970b914ec53a7e7f2c6ad529}\label{namespacesnls_aac6e7755970b914ec53a7e7f2c6ad529}} 
+\index{snls@{snls}!read\+\_\+snls\+\_\+absdist\+\_\+data@{read\+\_\+snls\+\_\+absdist\+\_\+data}}
+\index{read\+\_\+snls\+\_\+absdist\+\_\+data@{read\+\_\+snls\+\_\+absdist\+\_\+data}!snls@{snls}}
+\subsubsection{\texorpdfstring{read\+\_\+snls\+\_\+absdist\+\_\+data()}{read\_snls\_absdist\_data()}}
+{\footnotesize\ttfamily subroutine, private snls\+::read\+\_\+snls\+\_\+absdist\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lun,  }\item[{integer, intent(in)}]{nlines,  }\item[{integer, intent(in)}]{nnoncommentlines,  }\item[{type(\mbox{\hyperlink{structsnls_1_1supernova__absdist}{supernova\+\_\+absdist}}), dimension(nnoncommentlines), intent(out)}]{snabsdist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References snabsdist.
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_aac6e7755970b914ec53a7e7f2c6ad529_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_ae4b5fd7439c0c4620a5d9369c2782c9a}\label{namespacesnls_ae4b5fd7439c0c4620a5d9369c2782c9a}} 
+\index{snls@{snls}!read\+\_\+snls\+\_\+dataset@{read\+\_\+snls\+\_\+dataset}}
+\index{read\+\_\+snls\+\_\+dataset@{read\+\_\+snls\+\_\+dataset}!snls@{snls}}
+\subsubsection{\texorpdfstring{read\+\_\+snls\+\_\+dataset()}{read\_snls\_dataset()}}
+{\footnotesize\ttfamily subroutine snls\+::read\+\_\+snls\+\_\+dataset (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsnls_1_1snlslikelihood}{snlslikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References alphabeta\+\_\+covmat, colour\+\_\+covmat, count\+\_\+lines(), settings\+::datadir, diag\+\_\+errors, settings\+::feedback, first\+\_\+inversion, has\+\_\+absdist, has\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+colour\+\_\+covmat, has\+\_\+mag\+\_\+covmat, has\+\_\+mag\+\_\+stretch\+\_\+covmat, has\+\_\+stretch\+\_\+colour\+\_\+covmat, has\+\_\+stretch\+\_\+covmat, has\+\_\+thirdvar, intrinsicdisp, mag\+\_\+colour\+\_\+covmat, mag\+\_\+covmat, mag\+\_\+stretch\+\_\+covmat, match\+\_\+snls\+\_\+absdist\+\_\+indices(), max\+\_\+idisp\+\_\+datasets, nabsdist, name, nsn, pecz, read\+\_\+cov\+\_\+matrix(), read\+\_\+snls\+\_\+absdist\+\_\+data(), read\+\_\+snls\+\_\+lc\+\_\+data(), scriptmcut, snabsdist, sndata, snls\+\_\+prepped, snls\+\_\+read, stretch\+\_\+colour\+\_\+covmat, stretch\+\_\+covmat, and twoscriptmfit.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_ae4b5fd7439c0c4620a5d9369c2782c9a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_a7f1db3cfd4fe644d65ae48d23062420a}\label{namespacesnls_a7f1db3cfd4fe644d65ae48d23062420a}} 
+\index{snls@{snls}!read\+\_\+snls\+\_\+lc\+\_\+data@{read\+\_\+snls\+\_\+lc\+\_\+data}}
+\index{read\+\_\+snls\+\_\+lc\+\_\+data@{read\+\_\+snls\+\_\+lc\+\_\+data}!snls@{snls}}
+\subsubsection{\texorpdfstring{read\+\_\+snls\+\_\+lc\+\_\+data()}{read\_snls\_lc\_data()}}
+{\footnotesize\ttfamily subroutine, private snls\+::read\+\_\+snls\+\_\+lc\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{lun,  }\item[{integer, intent(in)}]{nlines,  }\item[{integer, intent(in)}]{nnoncommentlines,  }\item[{type(\mbox{\hyperlink{structsnls_1_1supernova}{supernova}}), dimension(nnoncommentlines), intent(out)}]{sndata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References has\+\_\+thirdvar, and sndata.
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_a7f1db3cfd4fe644d65ae48d23062420a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_a31b64210643b2a6f625a1925f01c1194}\label{namespacesnls_a31b64210643b2a6f625a1925f01c1194}} 
+\index{snls@{snls}!snls\+\_\+alpha\+\_\+beta\+\_\+like@{snls\+\_\+alpha\+\_\+beta\+\_\+like}}
+\index{snls\+\_\+alpha\+\_\+beta\+\_\+like@{snls\+\_\+alpha\+\_\+beta\+\_\+like}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+alpha\+\_\+beta\+\_\+like()}{snls\_alpha\_beta\_like()}}
+{\footnotesize\ttfamily real(mcp) function snls\+::snls\+\_\+alpha\+\_\+beta\+\_\+like (\begin{DoxyParamCaption}\item[{real(mcp)}]{alpha,  }\item[{real(mcp)}]{beta,  }\item[{real(mcp), dimension(\mbox{\hyperlink{namespacesnls_abc05ea854fb8f639d617703ff33dcf41}{nsn}})}]{lumdists }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References a1, a2, diag\+\_\+errors, settings\+::feedback, inv\+\_\+twopi, invert\+\_\+covariance\+\_\+matrix(), settings\+::logzero, lumdists, nsn, pre\+\_\+vars, sndata, snls\+\_\+marginalize, twoscriptmfit, and uplo.
+
+
+
+Referenced by snls\+\_\+lnlike().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_a31b64210643b2a6f625a1925f01c1194_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacesnls_a31b64210643b2a6f625a1925f01c1194_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_aceae969ecb486792f081d6533244fd09}\label{namespacesnls_aceae969ecb486792f081d6533244fd09}} 
+\index{snls@{snls}!snls\+\_\+cleanup@{snls\+\_\+cleanup}}
+\index{snls\+\_\+cleanup@{snls\+\_\+cleanup}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+cleanup()}{snls\_cleanup()}}
+{\footnotesize\ttfamily subroutine snls\+::snls\+\_\+cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References a1, a2, colour\+\_\+covmat, lumdists, mag\+\_\+colour\+\_\+covmat, mag\+\_\+covmat, mag\+\_\+stretch\+\_\+covmat, pre\+\_\+vars, snabsdist, sndata, snls\+\_\+prepped, stretch\+\_\+colour\+\_\+covmat, and stretch\+\_\+covmat.
+
+\mbox{\Hypertarget{namespacesnls_a9983ad3e174e1ba1d0b862b463a8df40}\label{namespacesnls_a9983ad3e174e1ba1d0b862b463a8df40}} 
+\index{snls@{snls}!snls\+\_\+lnlike@{snls\+\_\+lnlike}}
+\index{snls\+\_\+lnlike@{snls\+\_\+lnlike}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+lnlike()}{snls\_lnlike()}}
+{\footnotesize\ttfamily real(mcp) function snls\+::snls\+\_\+lnlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structsnls_1_1snlslikelihood}{snlslikelihood}})}]{this,  }\item[{class (cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References alpha\+\_\+grid, beta\+\_\+grid, settings\+::feedback, has\+\_\+absdist, settings\+::logzero, lumdists, nabsdist, nsn, snabsdist, sndata, snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+int\+\_\+points, snls\+\_\+marge\+\_\+grid, snls\+\_\+marginalize, snls\+\_\+prepped, snls\+\_\+read, and snls\+\_\+step\+\_\+width.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_a9983ad3e174e1ba1d0b862b463a8df40_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_aa7659f323fe80a70e09e7c1b3257cf5b}\label{namespacesnls_aa7659f323fe80a70e09e7c1b3257cf5b}} 
+\index{snls@{snls}!snls\+\_\+prep@{snls\+\_\+prep}}
+\index{snls\+\_\+prep@{snls\+\_\+prep}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+prep()}{snls\_prep()}}
+{\footnotesize\ttfamily subroutine snls\+::snls\+\_\+prep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References a1, a2, settings\+::feedback, first\+\_\+inversion, intrinsicdisp, lumdists, nsn, pecz, pre\+\_\+vars, scriptmcut, sndata, snls\+\_\+prepped, snls\+\_\+read, and twoscriptmfit.
+
+
+
+Referenced by snlslikelihood\+\_\+add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_aa7659f323fe80a70e09e7c1b3257cf5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacesnls_a93456d40d3b103bc17faf5bafac66d76}\label{namespacesnls_a93456d40d3b103bc17faf5bafac66d76}} 
+\index{snls@{snls}!snlslikelihood\+\_\+add@{snlslikelihood\+\_\+add}}
+\index{snlslikelihood\+\_\+add@{snlslikelihood\+\_\+add}!snls@{snls}}
+\subsubsection{\texorpdfstring{snlslikelihood\+\_\+add()}{snlslikelihood\_add()}}
+{\footnotesize\ttfamily subroutine, public snls\+::snlslikelihood\+\_\+add (\begin{DoxyParamCaption}\item[{class(tlikelihoodlist)}]{Like\+List,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References alpha\+\_\+grid, beta\+\_\+grid, settings\+::datadir, snls\+\_\+alpha\+\_\+center, snls\+\_\+beta\+\_\+center, snls\+\_\+int\+\_\+points, snls\+\_\+marge\+\_\+grid, snls\+\_\+marge\+\_\+steps, snls\+\_\+marginalize, snls\+\_\+prep(), snls\+\_\+step\+\_\+width, and snls\+\_\+version.
+
+
+
+Referenced by snovae\+::snlikelihood\+\_\+add().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacesnls_a93456d40d3b103bc17faf5bafac66d76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacesnls_a93456d40d3b103bc17faf5bafac66d76_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesnls_a7a5b5ef85de03b3345f24e542dccf2fe}\label{namespacesnls_a7a5b5ef85de03b3345f24e542dccf2fe}} 
+\index{snls@{snls}!a1@{a1}}
+\index{a1@{a1}!snls@{snls}}
+\subsubsection{\texorpdfstring{a1}{a1}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable, private snls\+::a1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+cleanup(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a6472548375e64b614a5e7cae1b635b59}\label{namespacesnls_a6472548375e64b614a5e7cae1b635b59}} 
+\index{snls@{snls}!a2@{a2}}
+\index{a2@{a2}!snls@{snls}}
+\subsubsection{\texorpdfstring{a2}{a2}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable, private snls\+::a2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+cleanup(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a8df88425e6d587341a52687ef62d81ae}\label{namespacesnls_a8df88425e6d587341a52687ef62d81ae}} 
+\index{snls@{snls}!allow\+\_\+inv\+\_\+cache@{allow\+\_\+inv\+\_\+cache}}
+\index{allow\+\_\+inv\+\_\+cache@{allow\+\_\+inv\+\_\+cache}!snls@{snls}}
+\subsubsection{\texorpdfstring{allow\+\_\+inv\+\_\+cache}{allow\_inv\_cache}}
+{\footnotesize\ttfamily logical, parameter snls\+::allow\+\_\+inv\+\_\+cache = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacesnls_ac4adeb5ed9cc6b1ff8d81eb5c3f7614f}\label{namespacesnls_ac4adeb5ed9cc6b1ff8d81eb5c3f7614f}} 
+\index{snls@{snls}!alpha\+\_\+grid@{alpha\+\_\+grid}}
+\index{alpha\+\_\+grid@{alpha\+\_\+grid}!snls@{snls}}
+\subsubsection{\texorpdfstring{alpha\+\_\+grid}{alpha\_grid}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable snls\+::alpha\+\_\+grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+lnlike(), and snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_a0037badcbc89a4f561b14d59f08c7d48}\label{namespacesnls_a0037badcbc89a4f561b14d59f08c7d48}} 
+\index{snls@{snls}!alpha\+\_\+prev@{alpha\+\_\+prev}}
+\index{alpha\+\_\+prev@{alpha\+\_\+prev}!snls@{snls}}
+\subsubsection{\texorpdfstring{alpha\+\_\+prev}{alpha\_prev}}
+{\footnotesize\ttfamily real(mcp), private snls\+::alpha\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacesnls_ab8a52f43b875f3858fb98da0194a2cb8}\label{namespacesnls_ab8a52f43b875f3858fb98da0194a2cb8}} 
+\index{snls@{snls}!alphabeta\+\_\+covmat@{alphabeta\+\_\+covmat}}
+\index{alphabeta\+\_\+covmat@{alphabeta\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{alphabeta\+\_\+covmat}{alphabeta\_covmat}}
+{\footnotesize\ttfamily logical, private snls\+::alphabeta\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_a0788c80251a81d3072f95cb12143388d}\label{namespacesnls_a0788c80251a81d3072f95cb12143388d}} 
+\index{snls@{snls}!alphatol@{alphatol}}
+\index{alphatol@{alphatol}!snls@{snls}}
+\subsubsection{\texorpdfstring{alphatol}{alphatol}}
+{\footnotesize\ttfamily real(mcp), parameter, private snls\+::alphatol = 1\+E-\/10\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacesnls_a56411cdf57a0e9358f977a9dc70b1715}\label{namespacesnls_a56411cdf57a0e9358f977a9dc70b1715}} 
+\index{snls@{snls}!beta\+\_\+grid@{beta\+\_\+grid}}
+\index{beta\+\_\+grid@{beta\+\_\+grid}!snls@{snls}}
+\subsubsection{\texorpdfstring{beta\+\_\+grid}{beta\_grid}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable snls\+::beta\+\_\+grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+lnlike(), and snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_ad81e06277b2382bce10042fab9dcea40}\label{namespacesnls_ad81e06277b2382bce10042fab9dcea40}} 
+\index{snls@{snls}!beta\+\_\+prev@{beta\+\_\+prev}}
+\index{beta\+\_\+prev@{beta\+\_\+prev}!snls@{snls}}
+\subsubsection{\texorpdfstring{beta\+\_\+prev}{beta\_prev}}
+{\footnotesize\ttfamily real(mcp), private snls\+::beta\+\_\+prev\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacesnls_a2e0b3cead11bfcbc6a35da642d41c977}\label{namespacesnls_a2e0b3cead11bfcbc6a35da642d41c977}} 
+\index{snls@{snls}!betatol@{betatol}}
+\index{betatol@{betatol}!snls@{snls}}
+\subsubsection{\texorpdfstring{betatol}{betatol}}
+{\footnotesize\ttfamily real(mcp), parameter, private snls\+::betatol = 1\+E-\/10\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix().
+
+\mbox{\Hypertarget{namespacesnls_afed063275d19022044504128d8238e76}\label{namespacesnls_afed063275d19022044504128d8238e76}} 
+\index{snls@{snls}!colour\+\_\+covmat@{colour\+\_\+covmat}}
+\index{colour\+\_\+covmat@{colour\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{colour\+\_\+covmat}{colour\_covmat}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable, private snls\+::colour\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+cleanup().
+
+\mbox{\Hypertarget{namespacesnls_ae0c3dc7f2e96ed1de4ff8dfcc81195e9}\label{namespacesnls_ae0c3dc7f2e96ed1de4ff8dfcc81195e9}} 
+\index{snls@{snls}!diag\+\_\+errors@{diag\+\_\+errors}}
+\index{diag\+\_\+errors@{diag\+\_\+errors}!snls@{snls}}
+\subsubsection{\texorpdfstring{diag\+\_\+errors}{diag\_errors}}
+{\footnotesize\ttfamily logical, private snls\+::diag\+\_\+errors = .T\+R\+U\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+alpha\+\_\+beta\+\_\+like().
+
+\mbox{\Hypertarget{namespacesnls_a40ca845281c24a135e23e1a160610163}\label{namespacesnls_a40ca845281c24a135e23e1a160610163}} 
+\index{snls@{snls}!first\+\_\+inversion@{first\+\_\+inversion}}
+\index{first\+\_\+inversion@{first\+\_\+inversion}!snls@{snls}}
+\subsubsection{\texorpdfstring{first\+\_\+inversion}{first\_inversion}}
+{\footnotesize\ttfamily logical snls\+::first\+\_\+inversion\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_ae1879f7b41dc92841a8396c15ed20751}\label{namespacesnls_ae1879f7b41dc92841a8396c15ed20751}} 
+\index{snls@{snls}!h0cfac@{h0cfac}}
+\index{h0cfac@{h0cfac}!snls@{snls}}
+\subsubsection{\texorpdfstring{h0cfac}{h0cfac}}
+{\footnotesize\ttfamily real(mcp), parameter, private snls\+::h0cfac = 5$\ast$L\+O\+G10( 100.\+0/299792.\+458 )\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacesnls_ac58c726d5874a3387309a8b805bfecee}\label{namespacesnls_ac58c726d5874a3387309a8b805bfecee}} 
+\index{snls@{snls}!has\+\_\+absdist@{has\+\_\+absdist}}
+\index{has\+\_\+absdist@{has\+\_\+absdist}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+absdist}{has\_absdist}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+absdist = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), and snls\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacesnls_aa953f2792677b7c901fc89bebdd40c36}\label{namespacesnls_aa953f2792677b7c901fc89bebdd40c36}} 
+\index{snls@{snls}!has\+\_\+colour\+\_\+covmat@{has\+\_\+colour\+\_\+covmat}}
+\index{has\+\_\+colour\+\_\+covmat@{has\+\_\+colour\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+colour\+\_\+covmat}{has\_colour\_covmat}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+colour\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_a3557a6ed568984b4640e4128088cbf19}\label{namespacesnls_a3557a6ed568984b4640e4128088cbf19}} 
+\index{snls@{snls}!has\+\_\+mag\+\_\+colour\+\_\+covmat@{has\+\_\+mag\+\_\+colour\+\_\+covmat}}
+\index{has\+\_\+mag\+\_\+colour\+\_\+covmat@{has\+\_\+mag\+\_\+colour\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+mag\+\_\+colour\+\_\+covmat}{has\_mag\_colour\_covmat}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+mag\+\_\+colour\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_aa8d535884df485fb5762eb12ad31da9a}\label{namespacesnls_aa8d535884df485fb5762eb12ad31da9a}} 
+\index{snls@{snls}!has\+\_\+mag\+\_\+covmat@{has\+\_\+mag\+\_\+covmat}}
+\index{has\+\_\+mag\+\_\+covmat@{has\+\_\+mag\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+mag\+\_\+covmat}{has\_mag\_covmat}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+mag\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_ae787ac7d0741e06d7699e05e691c1fac}\label{namespacesnls_ae787ac7d0741e06d7699e05e691c1fac}} 
+\index{snls@{snls}!has\+\_\+mag\+\_\+stretch\+\_\+covmat@{has\+\_\+mag\+\_\+stretch\+\_\+covmat}}
+\index{has\+\_\+mag\+\_\+stretch\+\_\+covmat@{has\+\_\+mag\+\_\+stretch\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+mag\+\_\+stretch\+\_\+covmat}{has\_mag\_stretch\_covmat}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+mag\+\_\+stretch\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_a72767d5a50117b705a1dcb971e24462d}\label{namespacesnls_a72767d5a50117b705a1dcb971e24462d}} 
+\index{snls@{snls}!has\+\_\+stretch\+\_\+colour\+\_\+covmat@{has\+\_\+stretch\+\_\+colour\+\_\+covmat}}
+\index{has\+\_\+stretch\+\_\+colour\+\_\+covmat@{has\+\_\+stretch\+\_\+colour\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+stretch\+\_\+colour\+\_\+covmat}{has\_stretch\_colour\_covmat}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+stretch\+\_\+colour\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_ae63c79b57efec7300a23d6437079ddae}\label{namespacesnls_ae63c79b57efec7300a23d6437079ddae}} 
+\index{snls@{snls}!has\+\_\+stretch\+\_\+covmat@{has\+\_\+stretch\+\_\+covmat}}
+\index{has\+\_\+stretch\+\_\+covmat@{has\+\_\+stretch\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+stretch\+\_\+covmat}{has\_stretch\_covmat}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+stretch\+\_\+covmat = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_a62af67a93e31f94478aa58343fe5c04d}\label{namespacesnls_a62af67a93e31f94478aa58343fe5c04d}} 
+\index{snls@{snls}!has\+\_\+thirdvar@{has\+\_\+thirdvar}}
+\index{has\+\_\+thirdvar@{has\+\_\+thirdvar}!snls@{snls}}
+\subsubsection{\texorpdfstring{has\+\_\+thirdvar}{has\_thirdvar}}
+{\footnotesize\ttfamily logical, private snls\+::has\+\_\+thirdvar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), and read\+\_\+snls\+\_\+lc\+\_\+data().
+
+\mbox{\Hypertarget{namespacesnls_aea5409adea753b625ccfc1d60e5705d5}\label{namespacesnls_aea5409adea753b625ccfc1d60e5705d5}} 
+\index{snls@{snls}!intrinsicdisp@{intrinsicdisp}}
+\index{intrinsicdisp@{intrinsicdisp}!snls@{snls}}
+\subsubsection{\texorpdfstring{intrinsicdisp}{intrinsicdisp}}
+{\footnotesize\ttfamily real(mcp), dimension( \mbox{\hyperlink{namespacesnls_a82d4a9b322c284cf9bba27e6c86cb4f9}{max\+\_\+idisp\+\_\+datasets}} ) snls\+::intrinsicdisp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_af91b609e54e5ac91712f0bb5303b5652}\label{namespacesnls_af91b609e54e5ac91712f0bb5303b5652}} 
+\index{snls@{snls}!inv\+\_\+twopi@{inv\+\_\+twopi}}
+\index{inv\+\_\+twopi@{inv\+\_\+twopi}!snls@{snls}}
+\subsubsection{\texorpdfstring{inv\+\_\+twopi}{inv\_twopi}}
+{\footnotesize\ttfamily real(mcp), parameter, private snls\+::inv\+\_\+twopi = 1.\+0\+\_\+mcp / twopi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+alpha\+\_\+beta\+\_\+like().
+
+\mbox{\Hypertarget{namespacesnls_a5cc70993d1d6e6f59706685f982260ee}\label{namespacesnls_a5cc70993d1d6e6f59706685f982260ee}} 
+\index{snls@{snls}!lumdists@{lumdists}}
+\index{lumdists@{lumdists}!snls@{snls}}
+\subsubsection{\texorpdfstring{lumdists}{lumdists}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable, private snls\+::lumdists\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+cleanup(), snls\+\_\+lnlike(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a0579d76af88ce5be98b90af1b8d09b20}\label{namespacesnls_a0579d76af88ce5be98b90af1b8d09b20}} 
+\index{snls@{snls}!mag\+\_\+colour\+\_\+covmat@{mag\+\_\+colour\+\_\+covmat}}
+\index{mag\+\_\+colour\+\_\+covmat@{mag\+\_\+colour\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{mag\+\_\+colour\+\_\+covmat}{mag\_colour\_covmat}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable, private snls\+::mag\+\_\+colour\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+cleanup().
+
+\mbox{\Hypertarget{namespacesnls_a0dc9a08e398ee49bd864a8d88d95f195}\label{namespacesnls_a0dc9a08e398ee49bd864a8d88d95f195}} 
+\index{snls@{snls}!mag\+\_\+covmat@{mag\+\_\+covmat}}
+\index{mag\+\_\+covmat@{mag\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{mag\+\_\+covmat}{mag\_covmat}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable, private snls\+::mag\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+cleanup().
+
+\mbox{\Hypertarget{namespacesnls_a5ed1dbc069e004d9de1dd21d5c7786bc}\label{namespacesnls_a5ed1dbc069e004d9de1dd21d5c7786bc}} 
+\index{snls@{snls}!mag\+\_\+stretch\+\_\+covmat@{mag\+\_\+stretch\+\_\+covmat}}
+\index{mag\+\_\+stretch\+\_\+covmat@{mag\+\_\+stretch\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{mag\+\_\+stretch\+\_\+covmat}{mag\_stretch\_covmat}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable, private snls\+::mag\+\_\+stretch\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+cleanup().
+
+\mbox{\Hypertarget{namespacesnls_a82d4a9b322c284cf9bba27e6c86cb4f9}\label{namespacesnls_a82d4a9b322c284cf9bba27e6c86cb4f9}} 
+\index{snls@{snls}!max\+\_\+idisp\+\_\+datasets@{max\+\_\+idisp\+\_\+datasets}}
+\index{max\+\_\+idisp\+\_\+datasets@{max\+\_\+idisp\+\_\+datasets}!snls@{snls}}
+\subsubsection{\texorpdfstring{max\+\_\+idisp\+\_\+datasets}{max\_idisp\_datasets}}
+{\footnotesize\ttfamily integer, parameter, private snls\+::max\+\_\+idisp\+\_\+datasets = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_afec63a8af55bb2bb06acac7b19c0fc4c}\label{namespacesnls_afec63a8af55bb2bb06acac7b19c0fc4c}} 
+\index{snls@{snls}!nabsdist@{nabsdist}}
+\index{nabsdist@{nabsdist}!snls@{snls}}
+\subsubsection{\texorpdfstring{nabsdist}{nabsdist}}
+{\footnotesize\ttfamily integer, private snls\+::nabsdist = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by match\+\_\+snls\+\_\+absdist\+\_\+indices(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacesnls_a33bba3eb52cb06fe4ca4b1beb737c7f4}\label{namespacesnls_a33bba3eb52cb06fe4ca4b1beb737c7f4}} 
+\index{snls@{snls}!name@{name}}
+\index{name@{name}!snls@{snls}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily character(len=30), private snls\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset().
+
+\mbox{\Hypertarget{namespacesnls_abc05ea854fb8f639d617703ff33dcf41}\label{namespacesnls_abc05ea854fb8f639d617703ff33dcf41}} 
+\index{snls@{snls}!nsn@{nsn}}
+\index{nsn@{nsn}!snls@{snls}}
+\subsubsection{\texorpdfstring{nsn}{nsn}}
+{\footnotesize\ttfamily integer, public snls\+::nsn}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), match\+\_\+snls\+\_\+absdist\+\_\+indices(), read\+\_\+snls\+\_\+dataset(), snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+lnlike(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a01a9c6e8b04129b6a2c1b9bbd4cd6cc9}\label{namespacesnls_a01a9c6e8b04129b6a2c1b9bbd4cd6cc9}} 
+\index{snls@{snls}!pecz@{pecz}}
+\index{pecz@{pecz}!snls@{snls}}
+\subsubsection{\texorpdfstring{pecz}{pecz}}
+{\footnotesize\ttfamily real(mcp), private snls\+::pecz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a3a2029fb54b5f14f48f328a2b9cf9d98}\label{namespacesnls_a3a2029fb54b5f14f48f328a2b9cf9d98}} 
+\index{snls@{snls}!pre\+\_\+vars@{pre\+\_\+vars}}
+\index{pre\+\_\+vars@{pre\+\_\+vars}!snls@{snls}}
+\subsubsection{\texorpdfstring{pre\+\_\+vars}{pre\_vars}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable, private snls\+::pre\+\_\+vars\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+cleanup(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_ac747536aeed92aaeab54e9366afeefd2}\label{namespacesnls_ac747536aeed92aaeab54e9366afeefd2}} 
+\index{snls@{snls}!scriptmcut@{scriptmcut}}
+\index{scriptmcut@{scriptmcut}!snls@{snls}}
+\subsubsection{\texorpdfstring{scriptmcut}{scriptmcut}}
+{\footnotesize\ttfamily real(mcp), private snls\+::scriptmcut\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_aa9cb8d9344c2bfe3a01327e48ae3aaf1}\label{namespacesnls_aa9cb8d9344c2bfe3a01327e48ae3aaf1}} 
+\index{snls@{snls}!snabsdist@{snabsdist}}
+\index{snabsdist@{snabsdist}!snls@{snls}}
+\subsubsection{\texorpdfstring{snabsdist}{snabsdist}}
+{\footnotesize\ttfamily type( \mbox{\hyperlink{structsnls_1_1supernova__absdist}{supernova\+\_\+absdist}} ), dimension(\+:), allocatable, private snls\+::snabsdist\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by match\+\_\+snls\+\_\+absdist\+\_\+indices(), read\+\_\+snls\+\_\+absdist\+\_\+data(), read\+\_\+snls\+\_\+dataset(), snls\+\_\+cleanup(), and snls\+\_\+lnlike().
+
+\mbox{\Hypertarget{namespacesnls_ad60f7a857849e3df34947a9a90a53f38}\label{namespacesnls_ad60f7a857849e3df34947a9a90a53f38}} 
+\index{snls@{snls}!sndata@{sndata}}
+\index{sndata@{sndata}!snls@{snls}}
+\subsubsection{\texorpdfstring{sndata}{sndata}}
+{\footnotesize\ttfamily type( \mbox{\hyperlink{structsnls_1_1supernova}{supernova}} ), dimension(\+:), allocatable, private snls\+::sndata\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), match\+\_\+snls\+\_\+absdist\+\_\+indices(), read\+\_\+snls\+\_\+dataset(), read\+\_\+snls\+\_\+lc\+\_\+data(), snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+cleanup(), snls\+\_\+lnlike(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a153b2cafcd96b5cf2ea20c31595180a0}\label{namespacesnls_a153b2cafcd96b5cf2ea20c31595180a0}} 
+\index{snls@{snls}!snls\+\_\+alpha\+\_\+center@{snls\+\_\+alpha\+\_\+center}}
+\index{snls\+\_\+alpha\+\_\+center@{snls\+\_\+alpha\+\_\+center}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+alpha\+\_\+center}{snls\_alpha\_center}}
+{\footnotesize\ttfamily real(mcp), parameter snls\+::snls\+\_\+alpha\+\_\+center = 1.\+442\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_a82f9e1a099b4e59c715b4fef3c8171cc}\label{namespacesnls_a82f9e1a099b4e59c715b4fef3c8171cc}} 
+\index{snls@{snls}!snls\+\_\+beta\+\_\+center@{snls\+\_\+beta\+\_\+center}}
+\index{snls\+\_\+beta\+\_\+center@{snls\+\_\+beta\+\_\+center}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+beta\+\_\+center}{snls\_beta\_center}}
+{\footnotesize\ttfamily real(mcp), parameter snls\+::snls\+\_\+beta\+\_\+center = 3.\+262\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_acf460aba70488a6ee73c575ab0e9d865}\label{namespacesnls_acf460aba70488a6ee73c575ab0e9d865}} 
+\index{snls@{snls}!snls\+\_\+int\+\_\+points@{snls\+\_\+int\+\_\+points}}
+\index{snls\+\_\+int\+\_\+points@{snls\+\_\+int\+\_\+points}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+int\+\_\+points}{snls\_int\_points}}
+{\footnotesize\ttfamily integer snls\+::snls\+\_\+int\+\_\+points = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+lnlike(), and snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_a0314289992414e577228e51eb768cb77}\label{namespacesnls_a0314289992414e577228e51eb768cb77}} 
+\index{snls@{snls}!snls\+\_\+marge\+\_\+grid@{snls\+\_\+marge\+\_\+grid}}
+\index{snls\+\_\+marge\+\_\+grid@{snls\+\_\+marge\+\_\+grid}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+marge\+\_\+grid}{snls\_marge\_grid}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable snls\+::snls\+\_\+marge\+\_\+grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+lnlike(), and snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_ad2d9ca2fa23ca065ff997f4b15114c53}\label{namespacesnls_ad2d9ca2fa23ca065ff997f4b15114c53}} 
+\index{snls@{snls}!snls\+\_\+marge\+\_\+steps@{snls\+\_\+marge\+\_\+steps}}
+\index{snls\+\_\+marge\+\_\+steps@{snls\+\_\+marge\+\_\+steps}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+marge\+\_\+steps}{snls\_marge\_steps}}
+{\footnotesize\ttfamily integer snls\+::snls\+\_\+marge\+\_\+steps = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_a06db14b2b9d3e226db5ba7a2a90617de}\label{namespacesnls_a06db14b2b9d3e226db5ba7a2a90617de}} 
+\index{snls@{snls}!snls\+\_\+marginalize@{snls\+\_\+marginalize}}
+\index{snls\+\_\+marginalize@{snls\+\_\+marginalize}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+marginalize}{snls\_marginalize}}
+{\footnotesize\ttfamily logical snls\+::snls\+\_\+marginalize = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+alpha\+\_\+beta\+\_\+like(), snls\+\_\+lnlike(), and snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_ae512c41362a8967df80f9101ef7e5fd3}\label{namespacesnls_ae512c41362a8967df80f9101ef7e5fd3}} 
+\index{snls@{snls}!snls\+\_\+prepped@{snls\+\_\+prepped}}
+\index{snls\+\_\+prepped@{snls\+\_\+prepped}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+prepped}{snls\_prepped}}
+{\footnotesize\ttfamily logical snls\+::snls\+\_\+prepped = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), snls\+\_\+cleanup(), snls\+\_\+lnlike(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_af9f3dc6698168f334d7e5066c0a1e9e5}\label{namespacesnls_af9f3dc6698168f334d7e5066c0a1e9e5}} 
+\index{snls@{snls}!snls\+\_\+read@{snls\+\_\+read}}
+\index{snls\+\_\+read@{snls\+\_\+read}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+read}{snls\_read}}
+{\footnotesize\ttfamily logical snls\+::snls\+\_\+read = .F\+A\+L\+S\+E.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), snls\+\_\+lnlike(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a3a7f05d5e17b5868642de17a8d101626}\label{namespacesnls_a3a7f05d5e17b5868642de17a8d101626}} 
+\index{snls@{snls}!snls\+\_\+step\+\_\+width@{snls\+\_\+step\+\_\+width}}
+\index{snls\+\_\+step\+\_\+width@{snls\+\_\+step\+\_\+width}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+step\+\_\+width}{snls\_step\_width}}
+{\footnotesize\ttfamily real(mcp) snls\+::snls\+\_\+step\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snls\+\_\+lnlike(), and snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_a919a8bb686436d27901e5de9a8880f26}\label{namespacesnls_a919a8bb686436d27901e5de9a8880f26}} 
+\index{snls@{snls}!snls\+\_\+version@{snls\+\_\+version}}
+\index{snls\+\_\+version@{snls\+\_\+version}!snls@{snls}}
+\subsubsection{\texorpdfstring{snls\+\_\+version}{snls\_version}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter snls\+::snls\+\_\+version = \textquotesingle{}April\+\_\+2012\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by snlslikelihood\+\_\+add().
+
+\mbox{\Hypertarget{namespacesnls_a0985d8ccb89aafea09ab6de4c78c5600}\label{namespacesnls_a0985d8ccb89aafea09ab6de4c78c5600}} 
+\index{snls@{snls}!snnamelen@{snnamelen}}
+\index{snnamelen@{snnamelen}!snls@{snls}}
+\subsubsection{\texorpdfstring{snnamelen}{snnamelen}}
+{\footnotesize\ttfamily integer, parameter, private snls\+::snnamelen = 12\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacesnls_ad9f9a58ffeb62ad8e3c79c1c06f4fc1f}\label{namespacesnls_ad9f9a58ffeb62ad8e3c79c1c06f4fc1f}} 
+\index{snls@{snls}!stretch\+\_\+colour\+\_\+covmat@{stretch\+\_\+colour\+\_\+covmat}}
+\index{stretch\+\_\+colour\+\_\+covmat@{stretch\+\_\+colour\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{stretch\+\_\+colour\+\_\+covmat}{stretch\_colour\_covmat}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable, private snls\+::stretch\+\_\+colour\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+cleanup().
+
+\mbox{\Hypertarget{namespacesnls_a56f3f501856e1777e0bb4960509f5d85}\label{namespacesnls_a56f3f501856e1777e0bb4960509f5d85}} 
+\index{snls@{snls}!stretch\+\_\+covmat@{stretch\+\_\+covmat}}
+\index{stretch\+\_\+covmat@{stretch\+\_\+covmat}!snls@{snls}}
+\subsubsection{\texorpdfstring{stretch\+\_\+covmat}{stretch\_covmat}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable, private snls\+::stretch\+\_\+covmat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), read\+\_\+snls\+\_\+dataset(), and snls\+\_\+cleanup().
+
+\mbox{\Hypertarget{namespacesnls_aa5648511eb2e907f92a3a833acaafd98}\label{namespacesnls_aa5648511eb2e907f92a3a833acaafd98}} 
+\index{snls@{snls}!twoscriptmfit@{twoscriptmfit}}
+\index{twoscriptmfit@{twoscriptmfit}!snls@{snls}}
+\subsubsection{\texorpdfstring{twoscriptmfit}{twoscriptmfit}}
+{\footnotesize\ttfamily logical, private snls\+::twoscriptmfit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by read\+\_\+snls\+\_\+dataset(), snls\+\_\+alpha\+\_\+beta\+\_\+like(), and snls\+\_\+prep().
+
+\mbox{\Hypertarget{namespacesnls_a770d0a9cd7d82539ec94f8d27bb13c53}\label{namespacesnls_a770d0a9cd7d82539ec94f8d27bb13c53}} 
+\index{snls@{snls}!uplo@{uplo}}
+\index{uplo@{uplo}!snls@{snls}}
+\subsubsection{\texorpdfstring{uplo}{uplo}}
+{\footnotesize\ttfamily character, parameter, private snls\+::uplo = \textquotesingle{}U\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by invert\+\_\+covariance\+\_\+matrix(), and snls\+\_\+alpha\+\_\+beta\+\_\+like().
+

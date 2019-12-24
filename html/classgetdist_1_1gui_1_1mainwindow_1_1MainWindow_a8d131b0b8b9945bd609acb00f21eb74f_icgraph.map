@@ -1,0 +1,11 @@
+<map id="getdist.gui.mainwindow.MainWindow.showMessage" name="getdist.gui.mainwindow.MainWindow.showMessage">
+<area shape="rect" id="node2" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a4949f535773d57d42fce84ee2755afc8" title="getdist.gui.mainwindow.Main\lWindow.createStatusBar" alt="" coords="246,5,437,46"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ae498c95f48e909b62f663f16d824e941" title="getdist.gui.mainwindow.Main\lWindow.plotData" alt="" coords="246,70,437,111"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#acf1bc04cb32ad1a78b92673311609c7c" title="getdist.gui.mainwindow.Main\lWindow.plotData2" alt="" coords="246,135,437,177"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a4c0ed0535d70f1a3587c83d3ab38465e" title="getdist.gui.mainwindow.Main\lWindow.showConvergeStats" alt="" coords="246,201,437,242"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ab2bfcd95456dc31098dd7aeb11530a09" title="getdist.gui.mainwindow.Main\lWindow.showMargeStats" alt="" coords="246,266,437,307"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#add82606cde0404943c1e1030451e586c" title="getdist.gui.mainwindow.Main\lWindow.showParamTable" alt="" coords="246,331,437,373"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a2ce9349444008527443bc8891a5b8a44" title="getdist.gui.mainwindow.Main\lWindow.showPCA" alt="" coords="246,397,437,438"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ab2251d26d381d446a19a21de18bcb7dd" title="getdist.gui.mainwindow.Main\lWindow.plotSettingsChanged" alt="" coords="485,38,680,79"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ac0c692080d7ff6956628ce458bea4c6b" title="getdist.gui.mainwindow.Main\lWindow.settingsChanged" alt="" coords="487,103,678,145"/>
+</map>

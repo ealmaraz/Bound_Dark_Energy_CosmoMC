@@ -1,0 +1,12 @@
+<map id="recombination::recombination_init" name="recombination::recombination_init">
+<area shape="rect" id="node2" href="$equations_8f90.html#a1c228811398a4401bb57d778911a13df" title="dtauda" alt="" coords="316,5,377,32"/>
+<area shape="rect" id="node4" href="$subroutines_8f90.html#a35d319f194cbb52b3ee563ece3266ad5" title="dverk" alt="" coords="319,56,374,83"/>
+<area shape="rect" id="node5" href="$namespacerecombination.html#a7c190d70dfd56d14181b4ae8535dcd4d" title="recombination::get_init" alt="" coords="270,107,423,133"/>
+<area shape="rect" id="node6" href="$namespacerecombination.html#a5f644f40f1384d3dd16e675369854f63" title="recombination::ion" alt="" coords="283,208,411,235"/>
+<area shape="rect" id="node7" href="$namespacerecombination.html#ad379abd3309c2fd3f5cacb8b614b80a5" title="recombination::kappa\l_eh_21cm" alt="" coords="472,163,619,205"/>
+<area shape="rect" id="node10" href="$namespacerecombination.html#a6456c5ea7f228fa74eba8e54de9eded5" title="recombination::kappa\l_hh_21cm" alt="" coords="472,243,619,285"/>
+<area shape="rect" id="node11" href="$subroutines_8f90.html#af4fbf8a987590628c9a9d08152ce9e08" title="spline" alt="" coords="725,271,781,297"/>
+<area shape="rect" id="node3" href="$namespacemassivenu.html#a5e5e907b67a43f82b29065f75a696ae5" title="massivenu::nu_rho" alt="" coords="479,5,611,32"/>
+<area shape="rect" id="node8" href="$namespacerecombination.html#aae74849488f7c602dd70b57a9e9782f2" title="recombination::derivpolevl" alt="" coords="667,151,840,177"/>
+<area shape="rect" id="node9" href="$namespacerecombination.html#abd7e507e301ec237a76ea22d6a6be0eb" title="recombination::polevl" alt="" coords="681,201,826,228"/>
+</map>

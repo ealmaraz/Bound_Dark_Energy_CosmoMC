@@ -1,0 +1,209 @@
+\hypertarget{structinterpolation_1_1tinterpolator1d}{}\section{interpolation\+:\+:tinterpolator1d Type Reference}
+\label{structinterpolation_1_1tinterpolator1d}\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+
+
+Inheritance diagram for interpolation\+:\+:tinterpolator1d\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{structinterpolation_1_1tinterpolator1d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for interpolation\+:\+:tinterpolator1d\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{structinterpolation_1_1tinterpolator1d__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_aa58f19807ce210a1d45d3c3a56ee2633}{clear}} =$>$ T\+Interpolator1\+D\+\_\+\+Clear
+\item 
+procedure \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a0cdf6e011498f0534bf443bf2fbfb3dd}{firstuse}} =$>$ T\+Interpolator1\+D\+\_\+\+First\+Use
+\item 
+procedure \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a4ebef5573d1b7bbcb512e482961dfc43}{loadstate}} =$>$ T\+Interpolator1\+D\+\_\+\+Load\+State
+\item 
+procedure \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a3062dd1ef35bcc32d4f595f19b06c95b}{savestate}} =$>$ T\+Interpolator1\+D\+\_\+\+Save\+State
+\item 
+procedure \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a55e61e0b9dc3dddf10f99abd23f94ff4}{initforsize}} =$>$ T\+Interpolator1\+D\+\_\+\+Init\+For\+Size
+\item 
+procedure \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_acbc4b887acf64342c64ade922c1447ad}{initinterp}} =$>$ Get\+Value, T\+Interpolator1\+D\+\_\+\+Int\+Value
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_ae24270e99e0ad73aeb6332a61122a69f}{xmin\+\_\+interp}}
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a32bdb3dfdb0c3888f0600933db548496}{xmax\+\_\+interp}}
+\item 
+integer \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a7b78bf0b7a736b1b8b2b4be3ab9ae949}{n}} = 0
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(\+:), allocatable \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a67112a921a96fb5327431ead574a0032}{f}}
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a16e2a53e2f762a89e921b47c09b5efab}{fraction\+\_\+tol}} = 1.e-\/5\+\_\+sp\+\_\+acc
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a89bb04409d4b0eb2641a386d37405664}{start\+\_\+bc}} = S\+P\+L\+I\+N\+E\+\_\+\+D\+A\+N\+G\+LE
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a103246ea154b2ac29b65f270e078e3a7}{end\+\_\+bc}} = S\+P\+L\+I\+N\+E\+\_\+\+D\+A\+N\+G\+LE
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure, private \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a07c4f3b0afea2911b57b6c900387e5cf}{tinterpolator1d\+\_\+intvalue}}
+\item 
+procedure, private \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_acd1e46c03d808d5748b98eae2915225f}{getvalue}} =$>$ T\+Interpolator1\+D\+\_\+\+Value
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), private \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a16eb5d297adcaeef8c35603f9b4e7ff1}{xmin\+\_\+check}}
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), private \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a6b80c4f338a55a46a5db056a34eff99b}{xmax\+\_\+check}}
+\item 
+real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), private \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_a776cfd3e7443d53bb727d640d4164ff0}{xend\+\_\+tol\+\_\+interp}}
+\item 
+integer, private \mbox{\hyperlink{structinterpolation_1_1tinterpolator1d_af5f033f653cea315a7e53cd8cb748845}{read\+\_\+version}} = Interpolation\+\_\+version
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_aa58f19807ce210a1d45d3c3a56ee2633}\label{structinterpolation_1_1tinterpolator1d_aa58f19807ce210a1d45d3c3a56ee2633}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!clear@{clear}}
+\index{clear@{clear}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily procedure interpolation\+::tinterpolator1d\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a0cdf6e011498f0534bf443bf2fbfb3dd}\label{structinterpolation_1_1tinterpolator1d_a0cdf6e011498f0534bf443bf2fbfb3dd}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!firstuse@{firstuse}}
+\index{firstuse@{firstuse}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{firstuse()}{firstuse()}}
+{\footnotesize\ttfamily procedure interpolation\+::tinterpolator1d\+::firstuse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_acd1e46c03d808d5748b98eae2915225f}\label{structinterpolation_1_1tinterpolator1d_acd1e46c03d808d5748b98eae2915225f}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!getvalue@{getvalue}}
+\index{getvalue@{getvalue}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{getvalue()}{getvalue()}}
+{\footnotesize\ttfamily procedure, private interpolation\+::tinterpolator1d\+::getvalue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a55e61e0b9dc3dddf10f99abd23f94ff4}\label{structinterpolation_1_1tinterpolator1d_a55e61e0b9dc3dddf10f99abd23f94ff4}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!initforsize@{initforsize}}
+\index{initforsize@{initforsize}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{initforsize()}{initforsize()}}
+{\footnotesize\ttfamily procedure interpolation\+::tinterpolator1d\+::initforsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_acbc4b887acf64342c64ade922c1447ad}\label{structinterpolation_1_1tinterpolator1d_acbc4b887acf64342c64ade922c1447ad}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!initinterp@{initinterp}}
+\index{initinterp@{initinterp}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{initinterp()}{initinterp()}}
+{\footnotesize\ttfamily procedure interpolation\+::tinterpolator1d\+::initinterp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References interpolation\+::tinterpolator1d\+\_\+intvalue().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structinterpolation_1_1tinterpolator1d_acbc4b887acf64342c64ade922c1447ad_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a4ebef5573d1b7bbcb512e482961dfc43}\label{structinterpolation_1_1tinterpolator1d_a4ebef5573d1b7bbcb512e482961dfc43}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!loadstate@{loadstate}}
+\index{loadstate@{loadstate}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{loadstate()}{loadstate()}}
+{\footnotesize\ttfamily procedure interpolation\+::tinterpolator1d\+::loadstate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a3062dd1ef35bcc32d4f595f19b06c95b}\label{structinterpolation_1_1tinterpolator1d_a3062dd1ef35bcc32d4f595f19b06c95b}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!savestate@{savestate}}
+\index{savestate@{savestate}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{savestate()}{savestate()}}
+{\footnotesize\ttfamily procedure interpolation\+::tinterpolator1d\+::savestate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a07c4f3b0afea2911b57b6c900387e5cf}\label{structinterpolation_1_1tinterpolator1d_a07c4f3b0afea2911b57b6c900387e5cf}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!tinterpolator1d\+\_\+intvalue@{tinterpolator1d\+\_\+intvalue}}
+\index{tinterpolator1d\+\_\+intvalue@{tinterpolator1d\+\_\+intvalue}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{tinterpolator1d\+\_\+intvalue()}{tinterpolator1d\_intvalue()}}
+{\footnotesize\ttfamily procedure, private interpolation\+::tinterpolator1d\+::tinterpolator1d\+\_\+intvalue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a103246ea154b2ac29b65f270e078e3a7}\label{structinterpolation_1_1tinterpolator1d_a103246ea154b2ac29b65f270e078e3a7}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!end\+\_\+bc@{end\+\_\+bc}}
+\index{end\+\_\+bc@{end\+\_\+bc}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{end\+\_\+bc}{end\_bc}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) interpolation\+::tinterpolator1d\+::end\+\_\+bc = S\+P\+L\+I\+N\+E\+\_\+\+D\+A\+N\+G\+LE}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a67112a921a96fb5327431ead574a0032}\label{structinterpolation_1_1tinterpolator1d_a67112a921a96fb5327431ead574a0032}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!f@{f}}
+\index{f@{f}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), dimension(\+:), allocatable interpolation\+::tinterpolator1d\+::f}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a16e2a53e2f762a89e921b47c09b5efab}\label{structinterpolation_1_1tinterpolator1d_a16e2a53e2f762a89e921b47c09b5efab}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!fraction\+\_\+tol@{fraction\+\_\+tol}}
+\index{fraction\+\_\+tol@{fraction\+\_\+tol}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{fraction\+\_\+tol}{fraction\_tol}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) interpolation\+::tinterpolator1d\+::fraction\+\_\+tol = 1.e-\/5\+\_\+sp\+\_\+acc}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a7b78bf0b7a736b1b8b2b4be3ab9ae949}\label{structinterpolation_1_1tinterpolator1d_a7b78bf0b7a736b1b8b2b4be3ab9ae949}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!n@{n}}
+\index{n@{n}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily integer interpolation\+::tinterpolator1d\+::n = 0}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_af5f033f653cea315a7e53cd8cb748845}\label{structinterpolation_1_1tinterpolator1d_af5f033f653cea315a7e53cd8cb748845}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!read\+\_\+version@{read\+\_\+version}}
+\index{read\+\_\+version@{read\+\_\+version}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{read\+\_\+version}{read\_version}}
+{\footnotesize\ttfamily integer, private interpolation\+::tinterpolator1d\+::read\+\_\+version = Interpolation\+\_\+version\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a89bb04409d4b0eb2641a386d37405664}\label{structinterpolation_1_1tinterpolator1d_a89bb04409d4b0eb2641a386d37405664}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!start\+\_\+bc@{start\+\_\+bc}}
+\index{start\+\_\+bc@{start\+\_\+bc}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{start\+\_\+bc}{start\_bc}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) interpolation\+::tinterpolator1d\+::start\+\_\+bc = S\+P\+L\+I\+N\+E\+\_\+\+D\+A\+N\+G\+LE}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a776cfd3e7443d53bb727d640d4164ff0}\label{structinterpolation_1_1tinterpolator1d_a776cfd3e7443d53bb727d640d4164ff0}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!xend\+\_\+tol\+\_\+interp@{xend\+\_\+tol\+\_\+interp}}
+\index{xend\+\_\+tol\+\_\+interp@{xend\+\_\+tol\+\_\+interp}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{xend\+\_\+tol\+\_\+interp}{xend\_tol\_interp}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), private interpolation\+::tinterpolator1d\+::xend\+\_\+tol\+\_\+interp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a6b80c4f338a55a46a5db056a34eff99b}\label{structinterpolation_1_1tinterpolator1d_a6b80c4f338a55a46a5db056a34eff99b}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!xmax\+\_\+check@{xmax\+\_\+check}}
+\index{xmax\+\_\+check@{xmax\+\_\+check}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{xmax\+\_\+check}{xmax\_check}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), private interpolation\+::tinterpolator1d\+::xmax\+\_\+check\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a32bdb3dfdb0c3888f0600933db548496}\label{structinterpolation_1_1tinterpolator1d_a32bdb3dfdb0c3888f0600933db548496}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!xmax\+\_\+interp@{xmax\+\_\+interp}}
+\index{xmax\+\_\+interp@{xmax\+\_\+interp}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{xmax\+\_\+interp}{xmax\_interp}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) interpolation\+::tinterpolator1d\+::xmax\+\_\+interp}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_a16eb5d297adcaeef8c35603f9b4e7ff1}\label{structinterpolation_1_1tinterpolator1d_a16eb5d297adcaeef8c35603f9b4e7ff1}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!xmin\+\_\+check@{xmin\+\_\+check}}
+\index{xmin\+\_\+check@{xmin\+\_\+check}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{xmin\+\_\+check}{xmin\_check}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}), private interpolation\+::tinterpolator1d\+::xmin\+\_\+check\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structinterpolation_1_1tinterpolator1d_ae24270e99e0ad73aeb6332a61122a69f}\label{structinterpolation_1_1tinterpolator1d_ae24270e99e0ad73aeb6332a61122a69f}} 
+\index{interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}!xmin\+\_\+interp@{xmin\+\_\+interp}}
+\index{xmin\+\_\+interp@{xmin\+\_\+interp}!interpolation\+::tinterpolator1d@{interpolation\+::tinterpolator1d}}
+\subsubsection{\texorpdfstring{xmin\+\_\+interp}{xmin\_interp}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespaceinterpolation_af72aa9a05feb8ef90b2d26e4a013abf3}{sp\+\_\+acc}}) interpolation\+::tinterpolator1d\+::xmin\+\_\+interp}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{Interpolation_8f90}{Interpolation.\+f90}}\end{DoxyCompactItemize}

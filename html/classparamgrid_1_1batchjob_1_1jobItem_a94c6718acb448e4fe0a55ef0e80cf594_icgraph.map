@@ -1,0 +1,11 @@
+<map id="paramgrid.batchjob.jobItem.chainName" name="paramgrid.batchjob.jobItem.chainName">
+<area shape="rect" id="node2" href="$classparamgrid_1_1batchjob_1_1jobItem.html#af221a166a73199e5228a24546e014f87" title="paramgrid.batchjob.jobItem.chain\lExists" alt="" coords="307,135,522,177"/>
+<area shape="rect" id="node4" href="$classparamgrid_1_1batchjob_1_1jobItem.html#a80e05d711d7f3324d6a8a71fd2442592" title="paramgrid.batchjob.jobItem.chain\lNames" alt="" coords="575,5,790,46"/>
+<area shape="rect" id="node9" href="$classparamgrid_1_1batchjob_1_1jobItem.html#a6c477e458924df69f4d638a39e37a56c" title="paramgrid.batchjob.jobItem.chain\lFileDate" alt="" coords="307,201,522,242"/>
+<area shape="rect" id="node10" href="$classparamgrid_1_1batchjob_1_1jobItem.html#ad8f3e85e06dcdd714b54e5280232445f" title="paramgrid.batchjob.jobItem.chains\lDodgy" alt="" coords="304,266,525,307"/>
+<area shape="rect" id="node3" href="$classparamgrid_1_1batchjob_1_1jobItem.html#a2aebd345765a90efdbcb15062b09e5ac" title="paramgrid.batchjob.jobItem.all\lChainExists" alt="" coords="585,70,781,111"/>
+<area shape="rect" id="node5" href="$classparamgrid_1_1batchjob_1_1jobItem.html#a34d9ff5d01cecc89dcd1ce1a2d71a63e" title="paramgrid.batchjob.jobItem.get\lDistNeedsUpdate" alt="" coords="582,135,783,177"/>
+<area shape="rect" id="node6" href="$classparamgrid_1_1batchjob_1_1jobItem.html#ac1129b5a9cac47d4044440c6f03eca75" title="paramgrid.batchjob.jobItem.not\lRunning" alt="" coords="582,266,783,307"/>
+<area shape="rect" id="node8" href="$classparamgrid_1_1batchjob_1_1jobItem.html#a324b9ccf7caf3955d49e423da96c6c8c" title="paramgrid.batchjob.jobItem.parent\lChanged" alt="" coords="573,201,792,242"/>
+<area shape="rect" id="node7" href="$classparamgrid_1_1batchjob_1_1jobItem.html#af5ab04f9c7520cac86ab2182b265979e" title="paramgrid.batchjob.jobItem.chain\lFinished" alt="" coords="841,234,1055,275"/>
+</map>

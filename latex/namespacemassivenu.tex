@@ -1,0 +1,422 @@
+\hypertarget{namespacemassivenu}{}\section{massivenu Module Reference}
+\label{namespacemassivenu}\index{massivenu@{massivenu}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_a872d62098a8fc9b6d372d05bc210c428}{sum\+\_\+mnu\+\_\+for\+\_\+m1}} (summnu, dsummnu, m1, targ, sgn)
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_acf78f8f20c4f8c680d7f239aaffbc826}{nu\+\_\+init}}
+\item 
+subroutine \mbox{\hyperlink{namespacemassivenu_ae38eedf1b14513e212f542f0afcb8a7f}{nurhopres}} (am, rhonu, pnu)
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_a30a55d3fc963ae76797cb114a3bd8818}{nu\+\_\+background}} (am, rhonu, pnu)
+\item 
+subroutine, public \mbox{\hyperlink{namespacemassivenu_a5e5e907b67a43f82b29065f75a696ae5}{nu\+\_\+rho}} (am, rhonu)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacemassivenu_a095ca5fb68fcb4e3b808e4dcf0f2f34d}{nu\+\_\+drho}} (am, adotoa, rhonu)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacemassivenu_a70abc43ce18c77a19a2a5a3577cdca33}{const}} = 7.\+\_\+dl/120$\ast$pi$\ast$$\ast$4
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a63b8c9d69523c7f853ffbcc4d48fda0e}{const2}} = 5.\+\_\+dl/7/pi$\ast$$\ast$2
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a51e0c61eba59c96a5b43e2d0c8eacd6f}{zeta3}} = 1.\+2020569031595942853997\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_aee270302c33f3b6976ed226a553b26cf}{zeta5}} = 1.\+0369277551433699263313\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a7d96619046ccc740edb22a9588426c34}{zeta7}} = 1.\+0083492773819228268397\+\_\+dl
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacemassivenu_a12e889efae466257e45a8341a9f6150e}{neutrino\+\_\+mass\+\_\+fac}} = 94.\+07\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacemassivenu_a25f2b3dce3fcea3371981c04a2ebd80c}{nrhopn}} =2000
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a78f8e34c3e80b51195c21fdaa07761b1}{am\+\_\+min}} = 0.\+01\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a41419034ccb5dbf62c14483531ca5fb1}{am\+\_\+max}} = 600.\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a3d0cea67f62f7fd30ce0c991b6215a9b}{am\+\_\+minp}} =\mbox{\hyperlink{namespacemassivenu_a78f8e34c3e80b51195c21fdaa07761b1}{am\+\_\+min}}$\ast$1.\+1
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacemassivenu_a70711a9642331142a38cd93e15ae874a}{am\+\_\+maxp}} =\mbox{\hyperlink{namespacemassivenu_a41419034ccb5dbf62c14483531ca5fb1}{am\+\_\+max}}$\ast$0.\+9
+\item 
+real(dl) \mbox{\hyperlink{namespacemassivenu_a0bc7918cccdf1d31a74fd0b7c68f6249}{dlnam}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a17286610cbb3be4f5e2e6cb9207cd3d3}{r1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a1776e9b553839aa3e0328f3104c8def6}{p1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a73078a1de4febfc2142d1518a0045e06}{dr1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a2bf645ad1caf3996fa724d4351b0b5a8}{dp1}}
+\item 
+real(dl), dimension(\+:), allocatable \mbox{\hyperlink{namespacemassivenu_a9d5815d7727b8913cba78eb9fb6d002c}{ddr1}}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}{nqmax0}} =80
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}{nqmax0}}), public \mbox{\hyperlink{namespacemassivenu_a12570e51825f5cec04f3e7d1fffa7702}{nu\+\_\+q}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}{nqmax0}}), public \mbox{\hyperlink{namespacemassivenu_addf94ab5a9d895ca27a259f651853eb0}{nu\+\_\+int\+\_\+kernel}}
+\item 
+integer, public \mbox{\hyperlink{namespacemassivenu_a95412d3036cd184190c2157292ec7732}{nqmax}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemassivenu_a30a55d3fc963ae76797cb114a3bd8818}\label{namespacemassivenu_a30a55d3fc963ae76797cb114a3bd8818}} 
+\index{massivenu@{massivenu}!nu\+\_\+background@{nu\+\_\+background}}
+\index{nu\+\_\+background@{nu\+\_\+background}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nu\+\_\+background()}{nu\_background()}}
+{\footnotesize\ttfamily subroutine, public massivenu\+::nu\+\_\+background (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{am,  }\item[{real(dl), intent(out)}]{rhonu,  }\item[{real(dl), intent(out)}]{pnu }\end{DoxyParamCaption})}
+
+
+
+References am\+\_\+maxp, am\+\_\+min, am\+\_\+minp, const, const2, dlnam, dp1, dr1, p1, r1, zeta3, zeta5, and zeta7.
+
+
+
+Referenced by dtauda(), gaugeinterface\+::massivenuvars(), gaugeinterface\+::massivenuvarsout(), and gaugeinterface\+::switchtomassivenuapprox().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassivenu_a30a55d3fc963ae76797cb114a3bd8818_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemassivenu_a095ca5fb68fcb4e3b808e4dcf0f2f34d}\label{namespacemassivenu_a095ca5fb68fcb4e3b808e4dcf0f2f34d}} 
+\index{massivenu@{massivenu}!nu\+\_\+drho@{nu\+\_\+drho}}
+\index{nu\+\_\+drho@{nu\+\_\+drho}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nu\+\_\+drho()}{nu\_drho()}}
+{\footnotesize\ttfamily real(dl) function, public massivenu\+::nu\+\_\+drho (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{am,  }\item[{real(dl)}]{adotoa,  }\item[{real(dl)}]{rhonu }\end{DoxyParamCaption})}
+
+
+
+References am\+\_\+maxp, am\+\_\+min, am\+\_\+minp, const, const2, ddr1, dlnam, dr1, zeta3, and zeta5.
+
+
+
+Referenced by dtauda(), and gaugeinterface\+::massivenuvarsout().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassivenu_a095ca5fb68fcb4e3b808e4dcf0f2f34d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemassivenu_acf78f8f20c4f8c680d7f239aaffbc826}\label{namespacemassivenu_acf78f8f20c4f8c680d7f239aaffbc826}} 
+\index{massivenu@{massivenu}!nu\+\_\+init@{nu\+\_\+init}}
+\index{nu\+\_\+init@{nu\+\_\+init}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nu\+\_\+init()}{nu\_init()}}
+{\footnotesize\ttfamily subroutine, public massivenu\+::nu\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, am\+\_\+max, am\+\_\+min, const, modelparams\+::cp, ddr1, dlnam, dp1, dr1, modelparams\+::grhom, modelparams\+::grhor, nqmax, nqmax0, nrhopn, nu\+\_\+int\+\_\+kernel, modelparams\+::nu\+\_\+masses, nu\+\_\+q, nurhopres(), p1, r1, splder(), splini(), and zeta3.
+
+
+
+Referenced by init\+\_\+massive\+\_\+nu().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassivenu_acf78f8f20c4f8c680d7f239aaffbc826_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassivenu_acf78f8f20c4f8c680d7f239aaffbc826_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemassivenu_a5e5e907b67a43f82b29065f75a696ae5}\label{namespacemassivenu_a5e5e907b67a43f82b29065f75a696ae5}} 
+\index{massivenu@{massivenu}!nu\+\_\+rho@{nu\+\_\+rho}}
+\index{nu\+\_\+rho@{nu\+\_\+rho}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nu\+\_\+rho()}{nu\_rho()}}
+{\footnotesize\ttfamily subroutine, public massivenu\+::nu\+\_\+rho (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{am,  }\item[{real(dl), intent(out)}]{rhonu }\end{DoxyParamCaption})}
+
+
+
+References am\+\_\+maxp, am\+\_\+min, am\+\_\+minp, const, const2, dlnam, dr1, r1, zeta3, and zeta5.
+
+
+
+Referenced by gaugeinterface\+::derivst(), and dtauda().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassivenu_a5e5e907b67a43f82b29065f75a696ae5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemassivenu_ae38eedf1b14513e212f542f0afcb8a7f}\label{namespacemassivenu_ae38eedf1b14513e212f542f0afcb8a7f}} 
+\index{massivenu@{massivenu}!nurhopres@{nurhopres}}
+\index{nurhopres@{nurhopres}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nurhopres()}{nurhopres()}}
+{\footnotesize\ttfamily subroutine massivenu\+::nurhopres (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{am,  }\item[{real(dl), intent(out)}]{rhonu,  }\item[{real(dl), intent(out)}]{pnu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References const, and splint().
+
+
+
+Referenced by nu\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{namespacemassivenu_ae38eedf1b14513e212f542f0afcb8a7f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassivenu_ae38eedf1b14513e212f542f0afcb8a7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemassivenu_a872d62098a8fc9b6d372d05bc210c428}\label{namespacemassivenu_a872d62098a8fc9b6d372d05bc210c428}} 
+\index{massivenu@{massivenu}!sum\+\_\+mnu\+\_\+for\+\_\+m1@{sum\+\_\+mnu\+\_\+for\+\_\+m1}}
+\index{sum\+\_\+mnu\+\_\+for\+\_\+m1@{sum\+\_\+mnu\+\_\+for\+\_\+m1}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{sum\+\_\+mnu\+\_\+for\+\_\+m1()}{sum\_mnu\_for\_m1()}}
+{\footnotesize\ttfamily subroutine, public massivenu\+::sum\+\_\+mnu\+\_\+for\+\_\+m1 (\begin{DoxyParamCaption}\item[{real(dl), intent(out)}]{summnu,  }\item[{real(dl), intent(out)}]{dsummnu,  }\item[{real(dl), intent(in)}]{m1,  }\item[{real(dl), intent(in)}]{targ,  }\item[{real(dl), intent(in)}]{sgn }\end{DoxyParamCaption})}
+
+
+
+References constants\+::delta\+\_\+mnu21, and constants\+::delta\+\_\+mnu31.
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+cmbtocamb().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemassivenu_a872d62098a8fc9b6d372d05bc210c428_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemassivenu_a41419034ccb5dbf62c14483531ca5fb1}\label{namespacemassivenu_a41419034ccb5dbf62c14483531ca5fb1}} 
+\index{massivenu@{massivenu}!am\+\_\+max@{am\+\_\+max}}
+\index{am\+\_\+max@{am\+\_\+max}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{am\+\_\+max}{am\_max}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::am\+\_\+max = 600.\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemassivenu_a70711a9642331142a38cd93e15ae874a}\label{namespacemassivenu_a70711a9642331142a38cd93e15ae874a}} 
+\index{massivenu@{massivenu}!am\+\_\+maxp@{am\+\_\+maxp}}
+\index{am\+\_\+maxp@{am\+\_\+maxp}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{am\+\_\+maxp}{am\_maxp}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::am\+\_\+maxp =\mbox{\hyperlink{namespacemassivenu_a41419034ccb5dbf62c14483531ca5fb1}{am\+\_\+max}}$\ast$0.\+9\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a78f8e34c3e80b51195c21fdaa07761b1}\label{namespacemassivenu_a78f8e34c3e80b51195c21fdaa07761b1}} 
+\index{massivenu@{massivenu}!am\+\_\+min@{am\+\_\+min}}
+\index{am\+\_\+min@{am\+\_\+min}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{am\+\_\+min}{am\_min}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::am\+\_\+min = 0.\+01\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), nu\+\_\+init(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a3d0cea67f62f7fd30ce0c991b6215a9b}\label{namespacemassivenu_a3d0cea67f62f7fd30ce0c991b6215a9b}} 
+\index{massivenu@{massivenu}!am\+\_\+minp@{am\+\_\+minp}}
+\index{am\+\_\+minp@{am\+\_\+minp}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{am\+\_\+minp}{am\_minp}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::am\+\_\+minp =\mbox{\hyperlink{namespacemassivenu_a78f8e34c3e80b51195c21fdaa07761b1}{am\+\_\+min}}$\ast$1.\+1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a70abc43ce18c77a19a2a5a3577cdca33}\label{namespacemassivenu_a70abc43ce18c77a19a2a5a3577cdca33}} 
+\index{massivenu@{massivenu}!const@{const}}
+\index{const@{const}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily real(dl), parameter, public massivenu\+::const = 7.\+\_\+dl/120$\ast$pi$\ast$$\ast$4}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), nu\+\_\+init(), nu\+\_\+rho(), and nurhopres().
+
+\mbox{\Hypertarget{namespacemassivenu_a63b8c9d69523c7f853ffbcc4d48fda0e}\label{namespacemassivenu_a63b8c9d69523c7f853ffbcc4d48fda0e}} 
+\index{massivenu@{massivenu}!const2@{const2}}
+\index{const2@{const2}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{const2}{const2}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::const2 = 5.\+\_\+dl/7/pi$\ast$$\ast$2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a9d5815d7727b8913cba78eb9fb6d002c}\label{namespacemassivenu_a9d5815d7727b8913cba78eb9fb6d002c}} 
+\index{massivenu@{massivenu}!ddr1@{ddr1}}
+\index{ddr1@{ddr1}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{ddr1}{ddr1}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable massivenu\+::ddr1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+drho(), and nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemassivenu_a0bc7918cccdf1d31a74fd0b7c68f6249}\label{namespacemassivenu_a0bc7918cccdf1d31a74fd0b7c68f6249}} 
+\index{massivenu@{massivenu}!dlnam@{dlnam}}
+\index{dlnam@{dlnam}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{dlnam}{dlnam}}
+{\footnotesize\ttfamily real(dl) massivenu\+::dlnam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), nu\+\_\+init(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a2bf645ad1caf3996fa724d4351b0b5a8}\label{namespacemassivenu_a2bf645ad1caf3996fa724d4351b0b5a8}} 
+\index{massivenu@{massivenu}!dp1@{dp1}}
+\index{dp1@{dp1}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{dp1}{dp1}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable massivenu\+::dp1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), and nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemassivenu_a73078a1de4febfc2142d1518a0045e06}\label{namespacemassivenu_a73078a1de4febfc2142d1518a0045e06}} 
+\index{massivenu@{massivenu}!dr1@{dr1}}
+\index{dr1@{dr1}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{dr1}{dr1}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable massivenu\+::dr1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), nu\+\_\+init(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a12e889efae466257e45a8341a9f6150e}\label{namespacemassivenu_a12e889efae466257e45a8341a9f6150e}} 
+\index{massivenu@{massivenu}!neutrino\+\_\+mass\+\_\+fac@{neutrino\+\_\+mass\+\_\+fac}}
+\index{neutrino\+\_\+mass\+\_\+fac@{neutrino\+\_\+mass\+\_\+fac}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{neutrino\+\_\+mass\+\_\+fac}{neutrino\_mass\_fac}}
+{\footnotesize\ttfamily real(dl), parameter, public massivenu\+::neutrino\+\_\+mass\+\_\+fac = 94.\+07\+\_\+dl}
+
+\mbox{\Hypertarget{namespacemassivenu_a95412d3036cd184190c2157292ec7732}\label{namespacemassivenu_a95412d3036cd184190c2157292ec7732}} 
+\index{massivenu@{massivenu}!nqmax@{nqmax}}
+\index{nqmax@{nqmax}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nqmax}{nqmax}}
+{\footnotesize\ttfamily integer, public massivenu\+::nqmax}
+
+
+
+Referenced by gaugeinterface\+::copytensorvariablearray(), gaugeinterface\+::derivst(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), gaugeinterface\+::gaugeinterface\+\_\+init(), gaugeinterface\+::getnumeqns(), gaugeinterface\+::next\+\_\+nu\+\_\+nq(), nu\+\_\+init(), gaugeinterface\+::nu\+\_\+integrate\+\_\+l012(), gaugeinterface\+::nu\+\_\+intvsq(), gaugeinterface\+::nu\+\_\+pi(), gaugeinterface\+::nu\+\_\+pinudot(), gaugeinterface\+::setupscalararrayindices(), and gaugeinterface\+::setuptensorarrayindices().
+
+\mbox{\Hypertarget{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}\label{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}} 
+\index{massivenu@{massivenu}!nqmax0@{nqmax0}}
+\index{nqmax0@{nqmax0}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nqmax0}{nqmax0}}
+{\footnotesize\ttfamily integer, parameter, public massivenu\+::nqmax0 =80}
+
+
+
+Referenced by nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemassivenu_a25f2b3dce3fcea3371981c04a2ebd80c}\label{namespacemassivenu_a25f2b3dce3fcea3371981c04a2ebd80c}} 
+\index{massivenu@{massivenu}!nrhopn@{nrhopn}}
+\index{nrhopn@{nrhopn}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nrhopn}{nrhopn}}
+{\footnotesize\ttfamily integer, parameter massivenu\+::nrhopn =2000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemassivenu_addf94ab5a9d895ca27a259f651853eb0}\label{namespacemassivenu_addf94ab5a9d895ca27a259f651853eb0}} 
+\index{massivenu@{massivenu}!nu\+\_\+int\+\_\+kernel@{nu\+\_\+int\+\_\+kernel}}
+\index{nu\+\_\+int\+\_\+kernel@{nu\+\_\+int\+\_\+kernel}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nu\+\_\+int\+\_\+kernel}{nu\_int\_kernel}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}{nqmax0}}), public massivenu\+::nu\+\_\+int\+\_\+kernel}
+
+
+
+Referenced by dtauda(), nu\+\_\+init(), gaugeinterface\+::nu\+\_\+integrate\+\_\+l012(), gaugeinterface\+::nu\+\_\+intvsq(), gaugeinterface\+::nu\+\_\+pi(), and gaugeinterface\+::nu\+\_\+pinudot().
+
+\mbox{\Hypertarget{namespacemassivenu_a12570e51825f5cec04f3e7d1fffa7702}\label{namespacemassivenu_a12570e51825f5cec04f3e7d1fffa7702}} 
+\index{massivenu@{massivenu}!nu\+\_\+q@{nu\+\_\+q}}
+\index{nu\+\_\+q@{nu\+\_\+q}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{nu\+\_\+q}{nu\_q}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacemassivenu_ae4e7d71c09007f613d462d593de26cca}{nqmax0}}), public massivenu\+::nu\+\_\+q}
+
+
+
+Referenced by gaugeinterface\+::copyscalarvariablearray(), gaugeinterface\+::derivs(), gaugeinterface\+::derivst(), dtauda(), gaugeinterface\+::gaugeinterface\+\_\+init(), gaugeinterface\+::getnumeqns(), gaugeinterface\+::next\+\_\+nu\+\_\+nq(), nu\+\_\+init(), gaugeinterface\+::nu\+\_\+integrate\+\_\+l012(), gaugeinterface\+::nu\+\_\+intvsq(), gaugeinterface\+::nu\+\_\+pi(), and gaugeinterface\+::nu\+\_\+pinudot().
+
+\mbox{\Hypertarget{namespacemassivenu_a1776e9b553839aa3e0328f3104c8def6}\label{namespacemassivenu_a1776e9b553839aa3e0328f3104c8def6}} 
+\index{massivenu@{massivenu}!p1@{p1}}
+\index{p1@{p1}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable massivenu\+::p1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), and nu\+\_\+init().
+
+\mbox{\Hypertarget{namespacemassivenu_a17286610cbb3be4f5e2e6cb9207cd3d3}\label{namespacemassivenu_a17286610cbb3be4f5e2e6cb9207cd3d3}} 
+\index{massivenu@{massivenu}!r1@{r1}}
+\index{r1@{r1}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{r1}{r1}}
+{\footnotesize\ttfamily real(dl), dimension(\+:), allocatable massivenu\+::r1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+init(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a51e0c61eba59c96a5b43e2d0c8eacd6f}\label{namespacemassivenu_a51e0c61eba59c96a5b43e2d0c8eacd6f}} 
+\index{massivenu@{massivenu}!zeta3@{zeta3}}
+\index{zeta3@{zeta3}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{zeta3}{zeta3}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::zeta3 = 1.\+2020569031595942853997\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), nu\+\_\+init(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_aee270302c33f3b6976ed226a553b26cf}\label{namespacemassivenu_aee270302c33f3b6976ed226a553b26cf}} 
+\index{massivenu@{massivenu}!zeta5@{zeta5}}
+\index{zeta5@{zeta5}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{zeta5}{zeta5}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::zeta5 = 1.\+0369277551433699263313\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background(), nu\+\_\+drho(), and nu\+\_\+rho().
+
+\mbox{\Hypertarget{namespacemassivenu_a7d96619046ccc740edb22a9588426c34}\label{namespacemassivenu_a7d96619046ccc740edb22a9588426c34}} 
+\index{massivenu@{massivenu}!zeta7@{zeta7}}
+\index{zeta7@{zeta7}!massivenu@{massivenu}}
+\subsubsection{\texorpdfstring{zeta7}{zeta7}}
+{\footnotesize\ttfamily real(dl), parameter massivenu\+::zeta7 = 1.\+0083492773819228268397\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by nu\+\_\+background().
+

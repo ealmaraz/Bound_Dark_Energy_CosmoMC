@@ -1,0 +1,8 @@
+<map id="inifile::tnamevaluelist_init" name="inifile::tnamevaluelist_init">
+<area shape="rect" id="node2" href="$namespaceinifile.html#a02e6bd0abca420cf13df98658ac047ba" title="inifile::ini_open" alt="" coords="623,5,731,32"/>
+<area shape="rect" id="node3" href="$namespaceinifile.html#a18f4ff3cc821f6e027b4aefa829f4b41" title="inifile::ini_open_file" alt="" coords="439,31,571,57"/>
+<area shape="rect" id="node4" href="$namespaceinifile.html#aaece0286cd984aadae94bf1212d74f9f" title="inifile::ini_open_fromlines" alt="" coords="221,81,389,108"/>
+<area shape="rect" id="node5" href="$namespaceinifile.html#a06106a843a985f0a3a97ecff6fb2b339" title="inifile::tnamevaluelist\l_clear" alt="" coords="233,133,377,174"/>
+<area shape="rect" id="node6" href="$namespaceinifile.html#a3e8c87d124e33f36146deccd416a2cc1" title="inifile::ini_close_file" alt="" coords="438,140,573,167"/>
+<area shape="rect" id="node7" href="$namespaceinifile.html#a78d82ad0d3252c4a2d546ee63b37b9b4" title="inifile::ini_close" alt="" coords="622,140,733,167"/>
+</map>

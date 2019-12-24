@@ -1,0 +1,285 @@
+\hypertarget{structbaseparameters_1_1tbaseparameters}{}\section{baseparameters\+:\+:tbaseparameters Type Reference}
+\label{structbaseparameters_1_1tbaseparameters}\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+
+
+Collaboration diagram for baseparameters\+:\+:tbaseparameters\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbaseparameters_1_1tbaseparameters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_aca7a089b5e45454160bc5f3184ffc56a}{paramerror}} =$>$ T\+Base\+Parameters\+\_\+\+Param\+Error
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a159171f4b3b907e3973de8e09ab9587a}{setstartpositions}} =$>$ T\+Base\+Parameters\+\_\+\+Set\+Start\+Positions
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a6952b1390938299feddf6ccfcccd75ee}{readparams}} =$>$ T\+Base\+Parameters\+\_\+\+Read\+Params
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_af7c87f88a0da5f459e828c2f80c9851c}{readpriors}} =$>$ T\+Base\+Parameters\+\_\+\+Read\+Priors
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a45828c232b83ddd1364da43032ac3c9c}{readsetcovmatrix}} =$>$ T\+Base\+Parameters\+\_\+\+Read\+Set\+Cov\+Matrix
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a500c52b94b8ede52110e99c6e9209869}{initializeusedparams}} =$>$ T\+Base\+Parameters\+\_\+\+Initialize\+Used\+Params
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_acf5f801ce60d6160702b2fa10fc7ed92}{outputparamranges}} =$>$ T\+Base\+Parameters\+\_\+\+Output\+Param\+Ranges
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a6895c7e5ac51f54cebab9ef86c1f2776}{outputparamnames}} =$>$ T\+Base\+Parameters\+\_\+\+Output\+Param\+Names
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a8b0c782b4e709bc856ebaf55f56bca48}{setfastslowparams}} =$>$ T\+Base\+Parameters\+\_\+\+Set\+Fast\+Slow\+Params
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_af1c7ec23fd39d2ea7d9abb2a904fe6ad}{usedparamnameornumber}} =$>$ T\+Base\+Parameters\+\_\+\+Used\+Param\+Name\+Or\+Number
+\item 
+procedure \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_ad2e7517b618450734e1540863aea2667}{setcovmat}} =$>$ T\+Base\+Parameters\+\_\+\+Set\+Covmat
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a03edbb9eb12946b364f24c9fde359887}{use\+\_\+fast\+\_\+slow}} = .false.
+\item 
+integer \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_aea569b0790a0fd47f415137eb410b3ab}{num\+\_\+fast}}
+\item 
+integer \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a9fa87897d0b371baa9cf954626b93512}{num\+\_\+slow}}
+\item 
+integer \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a2eadbaa69916bc50f9f8cd8fae949f5b}{num\+\_\+semi\+\_\+fast}}
+\item 
+integer \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a48b3e7585ff14e04e4ca3f5ce4fe7653}{num\+\_\+semi\+\_\+slow}}
+\item 
+logical \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a7d16842a3fc0856b9159e0717061c840}{include\+\_\+fixed\+\_\+parameter\+\_\+priors}} = .false.
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a46311af23307d56932eb5c536083f01e}{pmin}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a0cb6100175169243a0f630ff21d41d0d}{pmax}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a94fed3ee3d5afa99ea4567605cec4184}{startwidth}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_affb888977c879d2e14ddac4b0e1effce}{pwidth}}
+\item 
+real(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a4fb55a55646ccf89b8434eb96a55482c}{center}}
+\item 
+logical(mcp), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_aadeb3ac71c7a8996a127785d5f127543}{varying}}
+\item 
+logical \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a6f68ade3ffd95c20f2922650698e9e5b}{block\+\_\+semi\+\_\+fast}} = .true.
+\item 
+logical \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a0c9c386d0aa35b69fd30a185219b3840}{block\+\_\+fast\+\_\+likelihood\+\_\+params}} = .true.
+\item 
+type(\mbox{\hyperlink{structbaseparameters_1_1paramgaussprior}{paramgaussprior}}) \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a6039cd0a2eeaf706dd7eabb87bce3133}{gausspriors}}
+\item 
+type(\mbox{\hyperlink{structbaseparameters_1_1tlinearcombination}{tlinearcombination}}), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a785d299554c439728b005ef55d49ec91}{linearcombinations}}
+\item 
+type(int\+\_\+arr), dimension(\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a7491e16e8171d06591833c239c4a4cd9}{param\+\_\+blocks}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a7316c5929ddb13a72a69ae5f9a65e17e}{covariance\+\_\+estimate}}
+\item 
+logical \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_afd3f88f27524e3c98763296792f3f811}{covariance\+\_\+is\+\_\+diagonal}}
+\item 
+logical \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_a2fd504075c8cd30d6158dc303ecf54c9}{covariance\+\_\+has\+\_\+new}}
+\item 
+type(tparamnames) \mbox{\hyperlink{structbaseparameters_1_1tbaseparameters_ac70780d0409c47f2a0bb6d8d31ec39e1}{namemapping}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a500c52b94b8ede52110e99c6e9209869}\label{structbaseparameters_1_1tbaseparameters_a500c52b94b8ede52110e99c6e9209869}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!initializeusedparams@{initializeusedparams}}
+\index{initializeusedparams@{initializeusedparams}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{initializeusedparams()}{initializeusedparams()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::initializeusedparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a6895c7e5ac51f54cebab9ef86c1f2776}\label{structbaseparameters_1_1tbaseparameters_a6895c7e5ac51f54cebab9ef86c1f2776}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!outputparamnames@{outputparamnames}}
+\index{outputparamnames@{outputparamnames}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{outputparamnames()}{outputparamnames()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::outputparamnames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_acf5f801ce60d6160702b2fa10fc7ed92}\label{structbaseparameters_1_1tbaseparameters_acf5f801ce60d6160702b2fa10fc7ed92}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!outputparamranges@{outputparamranges}}
+\index{outputparamranges@{outputparamranges}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{outputparamranges()}{outputparamranges()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::outputparamranges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_aca7a089b5e45454160bc5f3184ffc56a}\label{structbaseparameters_1_1tbaseparameters_aca7a089b5e45454160bc5f3184ffc56a}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!paramerror@{paramerror}}
+\index{paramerror@{paramerror}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{paramerror()}{paramerror()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::paramerror (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a6952b1390938299feddf6ccfcccd75ee}\label{structbaseparameters_1_1tbaseparameters_a6952b1390938299feddf6ccfcccd75ee}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!readparams@{readparams}}
+\index{readparams@{readparams}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{readparams()}{readparams()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::readparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_af7c87f88a0da5f459e828c2f80c9851c}\label{structbaseparameters_1_1tbaseparameters_af7c87f88a0da5f459e828c2f80c9851c}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!readpriors@{readpriors}}
+\index{readpriors@{readpriors}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{readpriors()}{readpriors()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::readpriors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a45828c232b83ddd1364da43032ac3c9c}\label{structbaseparameters_1_1tbaseparameters_a45828c232b83ddd1364da43032ac3c9c}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!readsetcovmatrix@{readsetcovmatrix}}
+\index{readsetcovmatrix@{readsetcovmatrix}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{readsetcovmatrix()}{readsetcovmatrix()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::readsetcovmatrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_ad2e7517b618450734e1540863aea2667}\label{structbaseparameters_1_1tbaseparameters_ad2e7517b618450734e1540863aea2667}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!setcovmat@{setcovmat}}
+\index{setcovmat@{setcovmat}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{setcovmat()}{setcovmat()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::setcovmat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a8b0c782b4e709bc856ebaf55f56bca48}\label{structbaseparameters_1_1tbaseparameters_a8b0c782b4e709bc856ebaf55f56bca48}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!setfastslowparams@{setfastslowparams}}
+\index{setfastslowparams@{setfastslowparams}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{setfastslowparams()}{setfastslowparams()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::setfastslowparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a159171f4b3b907e3973de8e09ab9587a}\label{structbaseparameters_1_1tbaseparameters_a159171f4b3b907e3973de8e09ab9587a}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!setstartpositions@{setstartpositions}}
+\index{setstartpositions@{setstartpositions}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{setstartpositions()}{setstartpositions()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::setstartpositions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_af1c7ec23fd39d2ea7d9abb2a904fe6ad}\label{structbaseparameters_1_1tbaseparameters_af1c7ec23fd39d2ea7d9abb2a904fe6ad}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!usedparamnameornumber@{usedparamnameornumber}}
+\index{usedparamnameornumber@{usedparamnameornumber}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{usedparamnameornumber()}{usedparamnameornumber()}}
+{\footnotesize\ttfamily procedure baseparameters\+::tbaseparameters\+::usedparamnameornumber (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a0c9c386d0aa35b69fd30a185219b3840}\label{structbaseparameters_1_1tbaseparameters_a0c9c386d0aa35b69fd30a185219b3840}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!block\+\_\+fast\+\_\+likelihood\+\_\+params@{block\+\_\+fast\+\_\+likelihood\+\_\+params}}
+\index{block\+\_\+fast\+\_\+likelihood\+\_\+params@{block\+\_\+fast\+\_\+likelihood\+\_\+params}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{block\+\_\+fast\+\_\+likelihood\+\_\+params}{block\_fast\_likelihood\_params}}
+{\footnotesize\ttfamily logical baseparameters\+::tbaseparameters\+::block\+\_\+fast\+\_\+likelihood\+\_\+params = .true.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a6f68ade3ffd95c20f2922650698e9e5b}\label{structbaseparameters_1_1tbaseparameters_a6f68ade3ffd95c20f2922650698e9e5b}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!block\+\_\+semi\+\_\+fast@{block\+\_\+semi\+\_\+fast}}
+\index{block\+\_\+semi\+\_\+fast@{block\+\_\+semi\+\_\+fast}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{block\+\_\+semi\+\_\+fast}{block\_semi\_fast}}
+{\footnotesize\ttfamily logical baseparameters\+::tbaseparameters\+::block\+\_\+semi\+\_\+fast = .true.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a4fb55a55646ccf89b8434eb96a55482c}\label{structbaseparameters_1_1tbaseparameters_a4fb55a55646ccf89b8434eb96a55482c}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!center@{center}}
+\index{center@{center}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::center\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a7316c5929ddb13a72a69ae5f9a65e17e}\label{structbaseparameters_1_1tbaseparameters_a7316c5929ddb13a72a69ae5f9a65e17e}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!covariance\+\_\+estimate@{covariance\+\_\+estimate}}
+\index{covariance\+\_\+estimate@{covariance\+\_\+estimate}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{covariance\+\_\+estimate}{covariance\_estimate}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:,\+:), allocatable baseparameters\+::tbaseparameters\+::covariance\+\_\+estimate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a2fd504075c8cd30d6158dc303ecf54c9}\label{structbaseparameters_1_1tbaseparameters_a2fd504075c8cd30d6158dc303ecf54c9}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!covariance\+\_\+has\+\_\+new@{covariance\+\_\+has\+\_\+new}}
+\index{covariance\+\_\+has\+\_\+new@{covariance\+\_\+has\+\_\+new}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{covariance\+\_\+has\+\_\+new}{covariance\_has\_new}}
+{\footnotesize\ttfamily logical baseparameters\+::tbaseparameters\+::covariance\+\_\+has\+\_\+new\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_afd3f88f27524e3c98763296792f3f811}\label{structbaseparameters_1_1tbaseparameters_afd3f88f27524e3c98763296792f3f811}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!covariance\+\_\+is\+\_\+diagonal@{covariance\+\_\+is\+\_\+diagonal}}
+\index{covariance\+\_\+is\+\_\+diagonal@{covariance\+\_\+is\+\_\+diagonal}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{covariance\+\_\+is\+\_\+diagonal}{covariance\_is\_diagonal}}
+{\footnotesize\ttfamily logical baseparameters\+::tbaseparameters\+::covariance\+\_\+is\+\_\+diagonal\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a6039cd0a2eeaf706dd7eabb87bce3133}\label{structbaseparameters_1_1tbaseparameters_a6039cd0a2eeaf706dd7eabb87bce3133}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!gausspriors@{gausspriors}}
+\index{gausspriors@{gausspriors}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{gausspriors}{gausspriors}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structbaseparameters_1_1paramgaussprior}{paramgaussprior}}) baseparameters\+::tbaseparameters\+::gausspriors\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a7d16842a3fc0856b9159e0717061c840}\label{structbaseparameters_1_1tbaseparameters_a7d16842a3fc0856b9159e0717061c840}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!include\+\_\+fixed\+\_\+parameter\+\_\+priors@{include\+\_\+fixed\+\_\+parameter\+\_\+priors}}
+\index{include\+\_\+fixed\+\_\+parameter\+\_\+priors@{include\+\_\+fixed\+\_\+parameter\+\_\+priors}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{include\+\_\+fixed\+\_\+parameter\+\_\+priors}{include\_fixed\_parameter\_priors}}
+{\footnotesize\ttfamily logical baseparameters\+::tbaseparameters\+::include\+\_\+fixed\+\_\+parameter\+\_\+priors = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a785d299554c439728b005ef55d49ec91}\label{structbaseparameters_1_1tbaseparameters_a785d299554c439728b005ef55d49ec91}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!linearcombinations@{linearcombinations}}
+\index{linearcombinations@{linearcombinations}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{linearcombinations}{linearcombinations}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structbaseparameters_1_1tlinearcombination}{tlinearcombination}}), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::linearcombinations\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_ac70780d0409c47f2a0bb6d8d31ec39e1}\label{structbaseparameters_1_1tbaseparameters_ac70780d0409c47f2a0bb6d8d31ec39e1}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!namemapping@{namemapping}}
+\index{namemapping@{namemapping}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{namemapping}{namemapping}}
+{\footnotesize\ttfamily type(tparamnames) baseparameters\+::tbaseparameters\+::namemapping\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_aea569b0790a0fd47f415137eb410b3ab}\label{structbaseparameters_1_1tbaseparameters_aea569b0790a0fd47f415137eb410b3ab}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!num\+\_\+fast@{num\+\_\+fast}}
+\index{num\+\_\+fast@{num\+\_\+fast}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{num\+\_\+fast}{num\_fast}}
+{\footnotesize\ttfamily integer baseparameters\+::tbaseparameters\+::num\+\_\+fast\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a2eadbaa69916bc50f9f8cd8fae949f5b}\label{structbaseparameters_1_1tbaseparameters_a2eadbaa69916bc50f9f8cd8fae949f5b}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!num\+\_\+semi\+\_\+fast@{num\+\_\+semi\+\_\+fast}}
+\index{num\+\_\+semi\+\_\+fast@{num\+\_\+semi\+\_\+fast}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{num\+\_\+semi\+\_\+fast}{num\_semi\_fast}}
+{\footnotesize\ttfamily integer baseparameters\+::tbaseparameters\+::num\+\_\+semi\+\_\+fast\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a48b3e7585ff14e04e4ca3f5ce4fe7653}\label{structbaseparameters_1_1tbaseparameters_a48b3e7585ff14e04e4ca3f5ce4fe7653}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!num\+\_\+semi\+\_\+slow@{num\+\_\+semi\+\_\+slow}}
+\index{num\+\_\+semi\+\_\+slow@{num\+\_\+semi\+\_\+slow}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{num\+\_\+semi\+\_\+slow}{num\_semi\_slow}}
+{\footnotesize\ttfamily integer baseparameters\+::tbaseparameters\+::num\+\_\+semi\+\_\+slow\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a9fa87897d0b371baa9cf954626b93512}\label{structbaseparameters_1_1tbaseparameters_a9fa87897d0b371baa9cf954626b93512}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!num\+\_\+slow@{num\+\_\+slow}}
+\index{num\+\_\+slow@{num\+\_\+slow}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{num\+\_\+slow}{num\_slow}}
+{\footnotesize\ttfamily integer baseparameters\+::tbaseparameters\+::num\+\_\+slow\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a7491e16e8171d06591833c239c4a4cd9}\label{structbaseparameters_1_1tbaseparameters_a7491e16e8171d06591833c239c4a4cd9}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!param\+\_\+blocks@{param\+\_\+blocks}}
+\index{param\+\_\+blocks@{param\+\_\+blocks}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{param\+\_\+blocks}{param\_blocks}}
+{\footnotesize\ttfamily type(int\+\_\+arr), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::param\+\_\+blocks\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a0cb6100175169243a0f630ff21d41d0d}\label{structbaseparameters_1_1tbaseparameters_a0cb6100175169243a0f630ff21d41d0d}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!pmax@{pmax}}
+\index{pmax@{pmax}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{pmax}{pmax}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::pmax\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a46311af23307d56932eb5c536083f01e}\label{structbaseparameters_1_1tbaseparameters_a46311af23307d56932eb5c536083f01e}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!pmin@{pmin}}
+\index{pmin@{pmin}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{pmin}{pmin}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::pmin\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_affb888977c879d2e14ddac4b0e1effce}\label{structbaseparameters_1_1tbaseparameters_affb888977c879d2e14ddac4b0e1effce}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!pwidth@{pwidth}}
+\index{pwidth@{pwidth}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{pwidth}{pwidth}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::pwidth\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a94fed3ee3d5afa99ea4567605cec4184}\label{structbaseparameters_1_1tbaseparameters_a94fed3ee3d5afa99ea4567605cec4184}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!startwidth@{startwidth}}
+\index{startwidth@{startwidth}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{startwidth}{startwidth}}
+{\footnotesize\ttfamily real(mcp), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::startwidth\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_a03edbb9eb12946b364f24c9fde359887}\label{structbaseparameters_1_1tbaseparameters_a03edbb9eb12946b364f24c9fde359887}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!use\+\_\+fast\+\_\+slow@{use\+\_\+fast\+\_\+slow}}
+\index{use\+\_\+fast\+\_\+slow@{use\+\_\+fast\+\_\+slow}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{use\+\_\+fast\+\_\+slow}{use\_fast\_slow}}
+{\footnotesize\ttfamily logical baseparameters\+::tbaseparameters\+::use\+\_\+fast\+\_\+slow = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structbaseparameters_1_1tbaseparameters_aadeb3ac71c7a8996a127785d5f127543}\label{structbaseparameters_1_1tbaseparameters_aadeb3ac71c7a8996a127785d5f127543}} 
+\index{baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}!varying@{varying}}
+\index{varying@{varying}!baseparameters\+::tbaseparameters@{baseparameters\+::tbaseparameters}}
+\subsubsection{\texorpdfstring{varying}{varying}}
+{\footnotesize\ttfamily logical(mcp), dimension(\+:), allocatable baseparameters\+::tbaseparameters\+::varying\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{BaseParameters_8f90}{Base\+Parameters.\+f90}}\end{DoxyCompactItemize}

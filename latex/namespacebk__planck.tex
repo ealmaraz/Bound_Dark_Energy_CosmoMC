@@ -1,0 +1,145 @@
+\hypertarget{namespacebk__planck}{}\section{bk\+\_\+planck Module Reference}
+\label{namespacebk__planck}\index{bk\+\_\+planck@{bk\+\_\+planck}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structbk__planck_1_1tbandpass}{tbandpass}}
+\item 
+type \mbox{\hyperlink{structbk__planck_1_1tbk__planck}{tbk\+\_\+planck}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacebk__planck_a854764740d5b45a861a35309dcc7ab96}{tbk\+\_\+planck\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacebk__planck_a073f30d6055fdd0e28e842201c1e9fdf}{tbk\+\_\+planck\+\_\+read\+\_\+bandpass}} (this, fname, Bandpass)
+\item 
+subroutine \mbox{\hyperlink{namespacebk__planck_a532e314297951fce385bff0bc57f81c3}{dustscaling}} (beta, Tdust, bandpass, nu0, fdust)
+\item 
+subroutine \mbox{\hyperlink{namespacebk__planck_ae4ec8dfb07864a47b4f431f0be309608}{syncscaling}} (beta, bandpass, nu0, fsync)
+\item 
+subroutine \mbox{\hyperlink{namespacebk__planck_af94e4192bd2f4c8746e6e1108e87a0f0}{tbk\+\_\+planck\+\_\+addforegrounds}} (this, Cls, Data\+Params)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacebk__planck_aed63f60182fa590d070ff874aff39d1e}{t\+\_\+cmb}} = 2.\+7255\+\_\+mcp
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacebk__planck_a2be53d116cb947e12107471bd0b14abd}{h}} = 6.\+62606957e-\/34\+\_\+mcp
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacebk__planck_a92bf968defaa02497d39c2f228710c04}{kb}} = 1.\+3806488e-\/23\+\_\+mcp
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacebk__planck_a3b81f62eff019d7f94b2a4ca37efdf91}{ghz\+\_\+kelvin}} = \mbox{\hyperlink{namespacebk__planck_a2be53d116cb947e12107471bd0b14abd}{h}}/kB$\ast$1e9\+\_\+mcp
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacebk__planck_a532e314297951fce385bff0bc57f81c3}\label{namespacebk__planck_a532e314297951fce385bff0bc57f81c3}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!dustscaling@{dustscaling}}
+\index{dustscaling@{dustscaling}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{dustscaling()}{dustscaling()}}
+{\footnotesize\ttfamily subroutine bk\+\_\+planck\+::dustscaling (\begin{DoxyParamCaption}\item[{real(mcp), intent(in)}]{beta,  }\item[{real(mcp), intent(in)}]{Tdust,  }\item[{type(\mbox{\hyperlink{structbk__planck_1_1tbandpass}{tbandpass}}), intent(in)}]{bandpass,  }\item[{real(mcp), intent(in)}]{nu0,  }\item[{real(mcp), intent(out)}]{fdust }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ghz\+\_\+kelvin.
+
+
+
+Referenced by tbk\+\_\+planck\+\_\+addforegrounds().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacebk__planck_a532e314297951fce385bff0bc57f81c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebk__planck_ae4ec8dfb07864a47b4f431f0be309608}\label{namespacebk__planck_ae4ec8dfb07864a47b4f431f0be309608}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!syncscaling@{syncscaling}}
+\index{syncscaling@{syncscaling}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{syncscaling()}{syncscaling()}}
+{\footnotesize\ttfamily subroutine bk\+\_\+planck\+::syncscaling (\begin{DoxyParamCaption}\item[{real(mcp), intent(in)}]{beta,  }\item[{type(\mbox{\hyperlink{structbk__planck_1_1tbandpass}{tbandpass}}), intent(in)}]{bandpass,  }\item[{real(mcp), intent(in)}]{nu0,  }\item[{real(mcp), intent(out)}]{fsync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tbk\+\_\+planck\+\_\+addforegrounds().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebk__planck_ae4ec8dfb07864a47b4f431f0be309608_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebk__planck_af94e4192bd2f4c8746e6e1108e87a0f0}\label{namespacebk__planck_af94e4192bd2f4c8746e6e1108e87a0f0}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!tbk\+\_\+planck\+\_\+addforegrounds@{tbk\+\_\+planck\+\_\+addforegrounds}}
+\index{tbk\+\_\+planck\+\_\+addforegrounds@{tbk\+\_\+planck\+\_\+addforegrounds}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{tbk\+\_\+planck\+\_\+addforegrounds()}{tbk\_planck\_addforegrounds()}}
+{\footnotesize\ttfamily subroutine bk\+\_\+planck\+::tbk\+\_\+planck\+\_\+addforegrounds (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbk__planck_1_1tbk__planck}{tbk\+\_\+planck}})}]{this,  }\item[{class(tmapcrosspowerspectrum), dimension(\+:,\+:), intent(inout), target}]{Cls,  }\item[{real(mcp), dimension(\+:), intent(in)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References dustscaling(), and syncscaling().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacebk__planck_af94e4192bd2f4c8746e6e1108e87a0f0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacebk__planck_a073f30d6055fdd0e28e842201c1e9fdf}\label{namespacebk__planck_a073f30d6055fdd0e28e842201c1e9fdf}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!tbk\+\_\+planck\+\_\+read\+\_\+bandpass@{tbk\+\_\+planck\+\_\+read\+\_\+bandpass}}
+\index{tbk\+\_\+planck\+\_\+read\+\_\+bandpass@{tbk\+\_\+planck\+\_\+read\+\_\+bandpass}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{tbk\+\_\+planck\+\_\+read\+\_\+bandpass()}{tbk\_planck\_read\_bandpass()}}
+{\footnotesize\ttfamily subroutine bk\+\_\+planck\+::tbk\+\_\+planck\+\_\+read\+\_\+bandpass (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbk__planck_1_1tbk__planck}{tbk\+\_\+planck}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{fname,  }\item[{type(\mbox{\hyperlink{structbk__planck_1_1tbandpass}{tbandpass}}), target}]{Bandpass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fileutils\+::file, ghz\+\_\+kelvin, and t\+\_\+cmb.
+
+\mbox{\Hypertarget{namespacebk__planck_a854764740d5b45a861a35309dcc7ab96}\label{namespacebk__planck_a854764740d5b45a861a35309dcc7ab96}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!tbk\+\_\+planck\+\_\+readini@{tbk\+\_\+planck\+\_\+readini}}
+\index{tbk\+\_\+planck\+\_\+readini@{tbk\+\_\+planck\+\_\+readini}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{tbk\+\_\+planck\+\_\+readini()}{tbk\_planck\_readini()}}
+{\footnotesize\ttfamily subroutine bk\+\_\+planck\+::tbk\+\_\+planck\+\_\+readini (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structbk__planck_1_1tbk__planck}{tbk\+\_\+planck}})}]{this,  }\item[{class(tsettingini)}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacebk__planck_a3b81f62eff019d7f94b2a4ca37efdf91}\label{namespacebk__planck_a3b81f62eff019d7f94b2a4ca37efdf91}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!ghz\+\_\+kelvin@{ghz\+\_\+kelvin}}
+\index{ghz\+\_\+kelvin@{ghz\+\_\+kelvin}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{ghz\+\_\+kelvin}{ghz\_kelvin}}
+{\footnotesize\ttfamily real(mcp), parameter bk\+\_\+planck\+::ghz\+\_\+kelvin = \mbox{\hyperlink{namespacebk__planck_a2be53d116cb947e12107471bd0b14abd}{h}}/kB$\ast$1e9\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dustscaling(), and tbk\+\_\+planck\+\_\+read\+\_\+bandpass().
+
+\mbox{\Hypertarget{namespacebk__planck_a2be53d116cb947e12107471bd0b14abd}\label{namespacebk__planck_a2be53d116cb947e12107471bd0b14abd}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!h@{h}}
+\index{h@{h}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily real(mcp), parameter bk\+\_\+planck\+::h = 6.\+62606957e-\/34\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebk__planck_a92bf968defaa02497d39c2f228710c04}\label{namespacebk__planck_a92bf968defaa02497d39c2f228710c04}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!kb@{kb}}
+\index{kb@{kb}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{kb}{kb}}
+{\footnotesize\ttfamily real(mcp), parameter bk\+\_\+planck\+::kb = 1.\+3806488e-\/23\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacebk__planck_aed63f60182fa590d070ff874aff39d1e}\label{namespacebk__planck_aed63f60182fa590d070ff874aff39d1e}} 
+\index{bk\+\_\+planck@{bk\+\_\+planck}!t\+\_\+cmb@{t\+\_\+cmb}}
+\index{t\+\_\+cmb@{t\+\_\+cmb}!bk\+\_\+planck@{bk\+\_\+planck}}
+\subsubsection{\texorpdfstring{t\+\_\+cmb}{t\_cmb}}
+{\footnotesize\ttfamily real(mcp), parameter bk\+\_\+planck\+::t\+\_\+cmb = 2.\+7255\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tbk\+\_\+planck\+\_\+read\+\_\+bandpass().
+

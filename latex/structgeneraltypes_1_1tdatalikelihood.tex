@@ -1,0 +1,195 @@
+\hypertarget{structgeneraltypes_1_1tdatalikelihood}{}\section{generaltypes\+:\+:tdatalikelihood Type Reference}
+\label{structgeneraltypes_1_1tdatalikelihood}\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+
+
+Inheritance diagram for generaltypes\+:\+:tdatalikelihood\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{structgeneraltypes_1_1tdatalikelihood__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for generaltypes\+:\+:tdatalikelihood\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{structgeneraltypes_1_1tdatalikelihood__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a19dcb969d365a7167d4e8bdcfb6765b3}{initconfig}} =$>$ T\+Data\+Likelihood\+\_\+\+Init\+Config
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a0812781171300de30c3b47f35f23ff91}{getloglike}} =$>$ T\+Data\+Likelihood\+\_\+\+Get\+Log\+Like
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_ae8df99bad2813c0d9c8b07a6db89b1ad}{writelikelihooddata}} =$>$ T\+Data\+Likelihood\+\_\+\+Write\+Likelihood\+Data
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a8a8739608a0ee0e108846488d3c993bf}{derivedparameters}} =$>$ T\+Data\+Likelihood\+\_\+derived\+Parameters
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_aa68a70bba0a78b894700d8835a2d0ead}{loadparamnames}} =$>$ T\+Data\+Likelihood\+\_\+load\+Param\+Names
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a93194c3b57610c0642904aec30d2fc27}{checkconflicts}} =$>$ T\+Data\+Likelihood\+\_\+check\+Conflicts
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a7a19d3a27845260b609816e9ca018f2a}{gettag}} =$>$ T\+Data\+Likelihood\+\_\+\+Get\+Tag
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a9ec1130646897e847fefe2bdc33f549e}{speed}} = 0
+\item 
+character(len=\mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{likenamelen}}) \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_ab116947c45b89221591d5ede47a88522}{name}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a267cb471268d2fbce4e36abc77751b30}{tag}}
+\item 
+character(len=\mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{likenamelen}}) \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a0864aa3fa5fb45a440171d4fbedfbc94}{likelihoodtype}} = \textquotesingle{}\textquotesingle{}
+\item 
+character(len=\mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{likenamelen}}) \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a06e1ceca8ba822d79c38cb6d1a69e713}{version}} = \textquotesingle{}\textquotesingle{}
+\item 
+type(tparamnames) \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a475e871dbdc4f34a717ddcc153a32f4d}{nuisance\+\_\+params}}
+\item 
+integer \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a7e2c79db0298a96c5886c54f0023a35f}{original\+\_\+index}} = 0
+\item 
+logical, dimension(max\+\_\+num\+\_\+params) \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a31df3556a5b4e809db64c667a96c0a6a}{dependent\+\_\+params}} = .false.
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_a4e71a4a9b58247133b1d716228bfedaf}{nuisance\+\_\+indices}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_ab00e4ac6941c90872fd2e0af0658cd7f}{derived\+\_\+indices}}
+\item 
+integer \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_ad5daa1643479fdecdc657ff6bbcab529}{new\+\_\+param\+\_\+block\+\_\+start}}
+\item 
+integer \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood_aed3138c35b09b82656877e812a1314db}{new\+\_\+params}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a93194c3b57610c0642904aec30d2fc27}\label{structgeneraltypes_1_1tdatalikelihood_a93194c3b57610c0642904aec30d2fc27}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!checkconflicts@{checkconflicts}}
+\index{checkconflicts@{checkconflicts}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{checkconflicts()}{checkconflicts()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tdatalikelihood\+::checkconflicts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a8a8739608a0ee0e108846488d3c993bf}\label{structgeneraltypes_1_1tdatalikelihood_a8a8739608a0ee0e108846488d3c993bf}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!derivedparameters@{derivedparameters}}
+\index{derivedparameters@{derivedparameters}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{derivedparameters()}{derivedparameters()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tdatalikelihood\+::derivedparameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a0812781171300de30c3b47f35f23ff91}\label{structgeneraltypes_1_1tdatalikelihood_a0812781171300de30c3b47f35f23ff91}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!getloglike@{getloglike}}
+\index{getloglike@{getloglike}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{getloglike()}{getloglike()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tdatalikelihood\+::getloglike (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a7a19d3a27845260b609816e9ca018f2a}\label{structgeneraltypes_1_1tdatalikelihood_a7a19d3a27845260b609816e9ca018f2a}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!gettag@{gettag}}
+\index{gettag@{gettag}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{gettag()}{gettag()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tdatalikelihood\+::gettag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a19dcb969d365a7167d4e8bdcfb6765b3}\label{structgeneraltypes_1_1tdatalikelihood_a19dcb969d365a7167d4e8bdcfb6765b3}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!initconfig@{initconfig}}
+\index{initconfig@{initconfig}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{initconfig()}{initconfig()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tdatalikelihood\+::initconfig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_aa68a70bba0a78b894700d8835a2d0ead}\label{structgeneraltypes_1_1tdatalikelihood_aa68a70bba0a78b894700d8835a2d0ead}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!loadparamnames@{loadparamnames}}
+\index{loadparamnames@{loadparamnames}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{loadparamnames()}{loadparamnames()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tdatalikelihood\+::loadparamnames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_ae8df99bad2813c0d9c8b07a6db89b1ad}\label{structgeneraltypes_1_1tdatalikelihood_ae8df99bad2813c0d9c8b07a6db89b1ad}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!writelikelihooddata@{writelikelihooddata}}
+\index{writelikelihooddata@{writelikelihooddata}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{writelikelihooddata()}{writelikelihooddata()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tdatalikelihood\+::writelikelihooddata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a31df3556a5b4e809db64c667a96c0a6a}\label{structgeneraltypes_1_1tdatalikelihood_a31df3556a5b4e809db64c667a96c0a6a}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!dependent\+\_\+params@{dependent\+\_\+params}}
+\index{dependent\+\_\+params@{dependent\+\_\+params}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{dependent\+\_\+params}{dependent\_params}}
+{\footnotesize\ttfamily logical, dimension(max\+\_\+num\+\_\+params) generaltypes\+::tdatalikelihood\+::dependent\+\_\+params = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_ab00e4ac6941c90872fd2e0af0658cd7f}\label{structgeneraltypes_1_1tdatalikelihood_ab00e4ac6941c90872fd2e0af0658cd7f}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!derived\+\_\+indices@{derived\+\_\+indices}}
+\index{derived\+\_\+indices@{derived\+\_\+indices}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{derived\+\_\+indices}{derived\_indices}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable generaltypes\+::tdatalikelihood\+::derived\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a0864aa3fa5fb45a440171d4fbedfbc94}\label{structgeneraltypes_1_1tdatalikelihood_a0864aa3fa5fb45a440171d4fbedfbc94}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!likelihoodtype@{likelihoodtype}}
+\index{likelihoodtype@{likelihoodtype}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{likelihoodtype}{likelihoodtype}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{likenamelen}}) generaltypes\+::tdatalikelihood\+::likelihoodtype = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_ab116947c45b89221591d5ede47a88522}\label{structgeneraltypes_1_1tdatalikelihood_ab116947c45b89221591d5ede47a88522}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!name@{name}}
+\index{name@{name}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{likenamelen}}) generaltypes\+::tdatalikelihood\+::name = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+types.\+Marge\+Stats\+::\+\_\+\+\_\+str\+\_\+\+\_\+(), and getdist.\+types.\+Like\+Stats\+::\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_ad5daa1643479fdecdc657ff6bbcab529}\label{structgeneraltypes_1_1tdatalikelihood_ad5daa1643479fdecdc657ff6bbcab529}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!new\+\_\+param\+\_\+block\+\_\+start@{new\+\_\+param\+\_\+block\+\_\+start}}
+\index{new\+\_\+param\+\_\+block\+\_\+start@{new\+\_\+param\+\_\+block\+\_\+start}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{new\+\_\+param\+\_\+block\+\_\+start}{new\_param\_block\_start}}
+{\footnotesize\ttfamily integer generaltypes\+::tdatalikelihood\+::new\+\_\+param\+\_\+block\+\_\+start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_aed3138c35b09b82656877e812a1314db}\label{structgeneraltypes_1_1tdatalikelihood_aed3138c35b09b82656877e812a1314db}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!new\+\_\+params@{new\+\_\+params}}
+\index{new\+\_\+params@{new\+\_\+params}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{new\+\_\+params}{new\_params}}
+{\footnotesize\ttfamily integer generaltypes\+::tdatalikelihood\+::new\+\_\+params\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a4e71a4a9b58247133b1d716228bfedaf}\label{structgeneraltypes_1_1tdatalikelihood_a4e71a4a9b58247133b1d716228bfedaf}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!nuisance\+\_\+indices@{nuisance\+\_\+indices}}
+\index{nuisance\+\_\+indices@{nuisance\+\_\+indices}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{nuisance\+\_\+indices}{nuisance\_indices}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable generaltypes\+::tdatalikelihood\+::nuisance\+\_\+indices\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a475e871dbdc4f34a717ddcc153a32f4d}\label{structgeneraltypes_1_1tdatalikelihood_a475e871dbdc4f34a717ddcc153a32f4d}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!nuisance\+\_\+params@{nuisance\+\_\+params}}
+\index{nuisance\+\_\+params@{nuisance\+\_\+params}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{nuisance\+\_\+params}{nuisance\_params}}
+{\footnotesize\ttfamily type(tparamnames) generaltypes\+::tdatalikelihood\+::nuisance\+\_\+params\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a7e2c79db0298a96c5886c54f0023a35f}\label{structgeneraltypes_1_1tdatalikelihood_a7e2c79db0298a96c5886c54f0023a35f}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!original\+\_\+index@{original\+\_\+index}}
+\index{original\+\_\+index@{original\+\_\+index}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{original\+\_\+index}{original\_index}}
+{\footnotesize\ttfamily integer generaltypes\+::tdatalikelihood\+::original\+\_\+index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a9ec1130646897e847fefe2bdc33f549e}\label{structgeneraltypes_1_1tdatalikelihood_a9ec1130646897e847fefe2bdc33f549e}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!speed@{speed}}
+\index{speed@{speed}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily integer generaltypes\+::tdatalikelihood\+::speed = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a267cb471268d2fbce4e36abc77751b30}\label{structgeneraltypes_1_1tdatalikelihood_a267cb471268d2fbce4e36abc77751b30}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!tag@{tag}}
+\index{tag@{tag}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily character(len=\+:), allocatable generaltypes\+::tdatalikelihood\+::tag\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tdatalikelihood_a06e1ceca8ba822d79c38cb6d1a69e713}\label{structgeneraltypes_1_1tdatalikelihood_a06e1ceca8ba822d79c38cb6d1a69e713}} 
+\index{generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}!version@{version}}
+\index{version@{version}!generaltypes\+::tdatalikelihood@{generaltypes\+::tdatalikelihood}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily character(len=\mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{likenamelen}}) generaltypes\+::tdatalikelihood\+::version = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{GeneralTypes_8f90}{General\+Types.\+f90}}\end{DoxyCompactItemize}

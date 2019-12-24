@@ -1,0 +1,1131 @@
+\hypertarget{namespacegaugeinterface}{}\section{gaugeinterface Module Reference}
+\label{namespacegaugeinterface}\index{gaugeinterface@{gaugeinterface}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac02938234bdca8dcd23649b1abb34ab3}{gaugeinterface\+\_\+scalev}} (EV, y, tau, tauend, tol1, ind, c, w)
+\item 
+integer function \mbox{\hyperlink{namespacegaugeinterface_ae317d979138ff46a65c14f787c0d749c}{next\+\_\+nu\+\_\+nq}} (nq)
+\item 
+recursive subroutine \mbox{\hyperlink{namespacegaugeinterface_a11f5c8bd6a22537e4a85362dc8dbf3af}{gaugeinterface\+\_\+evolvescal}} (EV, tau, y, tauend, tol1, ind, c, w)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a048447959e15ae6dd9e887a61e135d0c}{gaugeinterface\+\_\+evolvetens}} (EV, tau, y, tauend, tol1, ind, c, w)
+\item 
+real(dl) function \mbox{\hyperlink{namespacegaugeinterface_aaf1e4804f8b140406e78f53f199433fa}{deltatimemaxed}} (a1, a2, tol)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a59182efb978c657918dd88675b2ab0ef}{gaugeinterface\+\_\+init}}
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a50a72debb65475527ccc7e76af616083}{setupscalararrayindices}} (EV, max\+\_\+num\+\_\+eqns)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a8565dc876beb9e4339c005a72333f31f}{copyscalarvariablearray}} (y, yout, EV, E\+Vout)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a21f6d1e93445d43fc8247f57dce52716}{setuptensorarrayindices}} (EV, maxeq)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ab306d2378bd6f559471a11afc145621c}{copytensorvariablearray}} (y, yout, EV, E\+Vout)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ad273d68dadb4d4fcc10422fed213ca25}{getnumeqns}} (EV)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac7f67b6e2bc871b4eb1a6d3453f796a3}{switchtomassivenuapprox}} (EV, y, nu\+\_\+i)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac756539212eaeba8021159b26d1d2881}{massivenuvarsout}} (EV, y, yprime, a, grho, gpres, dgrho, dgq, dgpi, gdpi\+\_\+diff, pidot\+\_\+sum, clxnu\+\_\+all)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aaf5da349a1adc87f4c62f51f1e0c0371}{nu\+\_\+integrate\+\_\+l012}} (EV, y, a, nu\+\_\+i, drhonu, fnu, dpnu, pinu)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_acba44d8f8f824999640418908be29b9b}{nu\+\_\+pinudot}} (EV, y, ydot, a, adotoa, nu\+\_\+i, pinudot)
+\item 
+real(dl) function \mbox{\hyperlink{namespacegaugeinterface_a33373e2888fd46e2c443d7e8c2785639}{nu\+\_\+pi}} (EV, y, a, nu\+\_\+i)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a2e8822823d298cb0912b5ec22ea4a6ff}{nu\+\_\+intvsq}} (EV, y, a, nu\+\_\+i, G11, G30)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ae4228ed9cfb9382025eb84617b0ed091}{massivenuvars}} (EV, y, a, grho, gpres, dgrho, dgq, wnu\+\_\+arr)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac370c67bc9750bf5749a69531fe3ffc1}{output}} (EV, y, j, tau, sources)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a5235d59ec77fa4b3a41d9754c8e447ca}{outputt}} (EV, yt, n, j, tau, dt, dte, dtb)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ad9126befa5df67da981345f6230fede4}{outputv}} (EV, yv, n, j, tau, dt, dte, dtb)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aa05aaad2bec1907778ea8eae3a7ba521}{initial}} (EV, y, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_afbc0a211756e4b923725483b6c961e75}{initialt}} (EV, yt, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aeed464df3ecab21d57bcb789fe3b1a22}{initialv}} (EV, yv, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ae920635485c908177072c6cad0d49f59}{outtransf}} (EV, y, tau, Arr)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a1d317261c83f3b5e84fe401ac2436d44}{derivs}} (EV, n, tau, ay, ayprime)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a25ee0c9e055aabce6b7eb205e65f9804}{derivsv}} (EV, n, tau, yv, yvprime)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ab2ff4cd74364457862a7ff44fb2ca978}{derivst}} (EV, n, tau, ayt, aytprime)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacegaugeinterface_a7ad176ccd8e025b00d5ae35428c6f894}{eqns\+\_\+name}} = \textquotesingle{}gauge\+\_\+inv\textquotesingle{}
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a4ec8e34555b9492e02f9ca7793b37b7a}{basic\+\_\+num\+\_\+eqns}} = 5
+\item 
+logical \mbox{\hyperlink{namespacegaugeinterface_a48d8dc2750f4cecf3337b6f6dd2d736b}{dotensorneutrinos}} = .true.
+\item 
+logical \mbox{\hyperlink{namespacegaugeinterface_a1c86dc449a45192d8e9e999627a3f511}{dolateradtruncation}} = .true.
+\item 
+logical, parameter \mbox{\hyperlink{namespacegaugeinterface_af060fa6622bea0f389dc0965bee8d67f}{second\+\_\+order\+\_\+tightcoupling}} = .true.
+\item 
+real(dl) \mbox{\hyperlink{namespacegaugeinterface_aaa26844a2740bc664b3c821e92dc6b52}{magnetic}} = 0.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacegaugeinterface_ae547cea1b332095dd0c9b5a6c24466ae}{vec\+\_\+sig0}} = 1.\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}} = 256
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_ac5567a8b42e51ba563113652958ea70b}{initial\+\_\+adiabatic}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_aab102b09528270be73847e43bc4ea5ab}{initial\+\_\+iso\+\_\+cdm}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_aa3aaa16f51217e9cada87f670d1a2ae6}{initial\+\_\+iso\+\_\+baryon}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_adbaabf824bb924de7518b623ffd8c9e3}{initial\+\_\+iso\+\_\+neutrino}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a47175df2f7681cf8e8a2a7e2cb94952a}{initial\+\_\+iso\+\_\+neutrino\+\_\+vel}} =5
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a540c4e4d2e1dea17aeb55e137acb0218}{initial\+\_\+vector}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a4c1f07aacc342a123210732254937539}{initial\+\_\+nummodes}} = \mbox{\hyperlink{namespacegaugeinterface_a47175df2f7681cf8e8a2a7e2cb94952a}{initial\+\_\+iso\+\_\+neutrino\+\_\+vel}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) \mbox{\hyperlink{namespacegaugeinterface_a6e217a5a543d2b9517624820de0e3338}{polfac}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) \mbox{\hyperlink{namespacegaugeinterface_ad67d0af8f042d5a80e3890d8a794be5f}{denl}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) \mbox{\hyperlink{namespacegaugeinterface_adc490d2cf60b4b4224f782920c48141a}{vecfac}}
+\item 
+real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) \mbox{\hyperlink{namespacegaugeinterface_ae0aebf1ba68b305cd9abbe8bf79353d9}{vecfacpol}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacegaugeinterface_ac46c357baba62f4aeaaec10b492d6e80}{ep0}} =1.\+0d-\/2
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a55cb8dcd9b184efebb1f82f7dbd5bf19}{lmaxnu\+\_\+high\+\_\+ktau}} =4
+\item 
+real(dl) \mbox{\hyperlink{namespacegaugeinterface_a7958da73f55e60b6e679c0a7f70ec822}{epsw}}
+\item 
+real(dl), dimension(nqmax0+1, max\+\_\+nu) \mbox{\hyperlink{namespacegaugeinterface_a041cc4df547c2fb25f42679b34de4891}{nu\+\_\+tau\+\_\+notmassless}}
+\item 
+real(dl), dimension(max\+\_\+nu) \mbox{\hyperlink{namespacegaugeinterface_aa6ec574b0c9183eb8881d0ed0376740c}{nu\+\_\+tau\+\_\+nonrelativistic}}
+\item 
+real(dl), dimension(max\+\_\+nu) \mbox{\hyperlink{namespacegaugeinterface_aecf1aff36254ca033f48a9a0bcf5416c}{nu\+\_\+tau\+\_\+massive}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacegaugeinterface_a8565dc876beb9e4339c005a72333f31f}\label{namespacegaugeinterface_a8565dc876beb9e4339c005a72333f31f}} 
+\index{gaugeinterface@{gaugeinterface}!copyscalarvariablearray@{copyscalarvariablearray}}
+\index{copyscalarvariablearray@{copyscalarvariablearray}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{copyscalarvariablearray()}{copyscalarvariablearray()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::copyscalarvariablearray (\begin{DoxyParamCaption}\item[{real(dl), dimension(ev\%nvar), intent(in)}]{y,  }\item[{real(dl), dimension(evout\%nvar), intent(out)}]{yout,  }\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{E\+Vout }\end{DoxyParamCaption})}
+
+
+
+References basic\+\_\+num\+\_\+eqns, modelparams\+::cp, modelparams\+::nu\+\_\+masses, massivenu\+::nu\+\_\+q, lambdageneral\+::w\+\_\+lam, and lambdageneral\+::w\+\_\+perturb.
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+evolvescal(), and switchtomassivenuapprox().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a8565dc876beb9e4339c005a72333f31f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ab306d2378bd6f559471a11afc145621c}\label{namespacegaugeinterface_ab306d2378bd6f559471a11afc145621c}} 
+\index{gaugeinterface@{gaugeinterface}!copytensorvariablearray@{copytensorvariablearray}}
+\index{copytensorvariablearray@{copytensorvariablearray}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{copytensorvariablearray()}{copytensorvariablearray()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::copytensorvariablearray (\begin{DoxyParamCaption}\item[{real(dl), dimension(ev\%nvart), intent(in)}]{y,  }\item[{real(dl), dimension(evout\%nvart), intent(out)}]{yout,  }\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{E\+Vout }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, dotensorneutrinos, and massivenu\+::nqmax.
+
+
+
+Referenced by dtauda(), and gaugeinterface\+\_\+evolvetens().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ab306d2378bd6f559471a11afc145621c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_aaf1e4804f8b140406e78f53f199433fa}\label{namespacegaugeinterface_aaf1e4804f8b140406e78f53f199433fa}} 
+\index{gaugeinterface@{gaugeinterface}!deltatimemaxed@{deltatimemaxed}}
+\index{deltatimemaxed@{deltatimemaxed}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{deltatimemaxed()}{deltatimemaxed()}}
+{\footnotesize\ttfamily real(dl) function gaugeinterface\+::deltatimemaxed (\begin{DoxyParamCaption}\item[{real(dl)}]{a1,  }\item[{real(dl)}]{a2,  }\item[{real(dl), optional}]{tol }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::deltatime(), and modelparams\+::tol.
+
+
+
+Referenced by dtauda(), and gaugeinterface\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_aaf1e4804f8b140406e78f53f199433fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_aaf1e4804f8b140406e78f53f199433fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a1d317261c83f3b5e84fe401ac2436d44}\label{namespacegaugeinterface_a1d317261c83f3b5e84fe401ac2436d44}} 
+\index{gaugeinterface@{gaugeinterface}!derivs@{derivs}}
+\index{derivs@{derivs}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{derivs()}{derivs()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::derivs (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{integer}]{n,  }\item[{real(dl)}]{tau,  }\item[{real(dl), dimension(n)}]{ay,  }\item[{real(dl), dimension(n)}]{ayprime }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, lambdageneral\+::cs2\+\_\+lam, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhok, modelparams\+::grhornomass, modelparams\+::grhov, massivenuvars(), massivenuvarsout(), modelparams\+::nu\+\_\+masses, massivenu\+::nu\+\_\+q, second\+\_\+order\+\_\+tightcoupling, modelparams\+::tanfunc(), thermodata\+::thermo(), transfer\+::transfer\+\_\+b, transfer\+::transfer\+\_\+cdm, transfer\+::transfer\+\_\+g, transfer\+::transfer\+\_\+kh, transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+baryon, transfer\+::transfer\+\_\+newt\+\_\+vel\+\_\+cdm, transfer\+::transfer\+\_\+nonu, transfer\+::transfer\+\_\+nu, transfer\+::transfer\+\_\+r, transfer\+::transfer\+\_\+tot, transfer\+::transfer\+\_\+tot\+\_\+de, transfer\+::transfer\+\_\+vel\+\_\+baryon\+\_\+cdm, transfer\+::transfer\+\_\+weyl, lambdageneral\+::w\+\_\+lam, and lambdageneral\+::w\+\_\+perturb.
+
+
+
+Referenced by cambmain\+::calcscalarsources(), dtauda(), gaugeinterface\+\_\+scalev(), output(), and outtransf().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a1d317261c83f3b5e84fe401ac2436d44_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a1d317261c83f3b5e84fe401ac2436d44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ab2ff4cd74364457862a7ff44fb2ca978}\label{namespacegaugeinterface_ab2ff4cd74364457862a7ff44fb2ca978}} 
+\index{gaugeinterface@{gaugeinterface}!derivst@{derivst}}
+\index{derivst@{derivst}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{derivst()}{derivst()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::derivst (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{integer}]{n,  }\item[{real(dl)}]{tau,  }\item[{real(dl), dimension(n), target}]{ayt,  }\item[{real(dl), dimension(n), target}]{aytprime }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, dotensorneutrinos, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhok, modelparams\+::grhormass, modelparams\+::grhornomass, modelparams\+::grhov, massivenu\+::nqmax, modelparams\+::nu\+\_\+masses, nu\+\_\+pi(), massivenu\+::nu\+\_\+q, massivenu\+::nu\+\_\+rho(), modelparams\+::tanfunc(), thermodata\+::thermo(), and lambdageneral\+::w\+\_\+lam.
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+evolvetens(), and outputt().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacegaugeinterface_ab2ff4cd74364457862a7ff44fb2ca978_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ab2ff4cd74364457862a7ff44fb2ca978_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a25ee0c9e055aabce6b7eb205e65f9804}\label{namespacegaugeinterface_a25ee0c9e055aabce6b7eb205e65f9804}} 
+\index{gaugeinterface@{gaugeinterface}!derivsv@{derivsv}}
+\index{derivsv@{derivsv}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{derivsv()}{derivsv()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::derivsv (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{integer}]{n,  }\item[{real(dl)}]{tau,  }\item[{real(dl), dimension(n), target}]{yv,  }\item[{real(dl), dimension(n), target}]{yvprime }\end{DoxyParamCaption})}
+
+
+
+References denl, ep0, epsw, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhornomass, modelparams\+::grhov, magnetic, thermodata\+::thermo(), vecfac, vecfacpol, and lambdageneral\+::w\+\_\+lam.
+
+
+
+Referenced by cambmain\+::calcvectorsources(), dtauda(), and outputv().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacegaugeinterface_a25ee0c9e055aabce6b7eb205e65f9804_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a25ee0c9e055aabce6b7eb205e65f9804_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a11f5c8bd6a22537e4a85362dc8dbf3af}\label{namespacegaugeinterface_a11f5c8bd6a22537e4a85362dc8dbf3af}} 
+\index{gaugeinterface@{gaugeinterface}!gaugeinterface\+\_\+evolvescal@{gaugeinterface\+\_\+evolvescal}}
+\index{gaugeinterface\+\_\+evolvescal@{gaugeinterface\+\_\+evolvescal}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{gaugeinterface\+\_\+evolvescal()}{gaugeinterface\_evolvescal()}}
+{\footnotesize\ttfamily recursive subroutine gaugeinterface\+::gaugeinterface\+\_\+evolvescal (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl)}]{tau,  }\item[{real(dl), dimension(ev\%nvar)}]{y,  }\item[{real(dl)}]{tauend,  }\item[{real(dl)}]{tol1,  }\item[{integer}]{ind,  }\item[{real(dl), dimension(24)}]{c,  }\item[{real(dl), dimension(ev\%nvar,9)}]{w }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, copyscalarvariablearray(), modelparams\+::cp, thermodata\+::cs2, dolateradtruncation, gaugeinterface\+\_\+scalev(), errors\+::global\+\_\+error\+\_\+flag, thermodata\+::matter\+\_\+verydom\+\_\+tau, next\+\_\+nu\+\_\+nq(), massivenu\+::nqmax, nu\+\_\+tau\+\_\+nonrelativistic, nu\+\_\+tau\+\_\+notmassless, modelparams\+::nu\+\_\+trunc, second\+\_\+order\+\_\+tightcoupling, setupscalararrayindices(), switchtomassivenuapprox(), modelparams\+::taurend, and thermodata\+::thermo().
+
+
+
+Referenced by cambmain\+::calcscalarsources(), dtauda(), and cambmain\+::gettransfer().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a11f5c8bd6a22537e4a85362dc8dbf3af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a11f5c8bd6a22537e4a85362dc8dbf3af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a048447959e15ae6dd9e887a61e135d0c}\label{namespacegaugeinterface_a048447959e15ae6dd9e887a61e135d0c}} 
+\index{gaugeinterface@{gaugeinterface}!gaugeinterface\+\_\+evolvetens@{gaugeinterface\+\_\+evolvetens}}
+\index{gaugeinterface\+\_\+evolvetens@{gaugeinterface\+\_\+evolvetens}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{gaugeinterface\+\_\+evolvetens()}{gaugeinterface\_evolvetens()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::gaugeinterface\+\_\+evolvetens (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl)}]{tau,  }\item[{real(dl), dimension(ev\%nvart)}]{y,  }\item[{real(dl)}]{tauend,  }\item[{real(dl)}]{tol1,  }\item[{integer}]{ind,  }\item[{real(dl), dimension(24)}]{c,  }\item[{real(dl), dimension(ev\%nvart,9)}]{w }\end{DoxyParamCaption})}
+
+
+
+References copytensorvariablearray(), derivst(), dverk(), setuptensorarrayindices(), and thermodata\+::thermo().
+
+
+
+Referenced by cambmain\+::calctensorsources().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a048447959e15ae6dd9e887a61e135d0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a048447959e15ae6dd9e887a61e135d0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a59182efb978c657918dd88675b2ab0ef}\label{namespacegaugeinterface_a59182efb978c657918dd88675b2ab0ef}} 
+\index{gaugeinterface@{gaugeinterface}!gaugeinterface\+\_\+init@{gaugeinterface\+\_\+init}}
+\index{gaugeinterface\+\_\+init@{gaugeinterface\+\_\+init}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{gaugeinterface\+\_\+init()}{gaugeinterface\_init()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::gaugeinterface\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, modelparams\+::deltatime(), deltatimemaxed(), denl, epsw, modelparams\+::laccuracyboost, max\+\_\+l\+\_\+evolve, massivenu\+::nqmax, modelparams\+::nu\+\_\+masses, massivenu\+::nu\+\_\+q, nu\+\_\+tau\+\_\+massive, nu\+\_\+tau\+\_\+nonrelativistic, nu\+\_\+tau\+\_\+notmassless, polfac, vecfac, and vecfacpol.
+
+
+
+Referenced by cambmain\+::initvars().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a59182efb978c657918dd88675b2ab0ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a59182efb978c657918dd88675b2ab0ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ac02938234bdca8dcd23649b1abb34ab3}\label{namespacegaugeinterface_ac02938234bdca8dcd23649b1abb34ab3}} 
+\index{gaugeinterface@{gaugeinterface}!gaugeinterface\+\_\+scalev@{gaugeinterface\+\_\+scalev}}
+\index{gaugeinterface\+\_\+scalev@{gaugeinterface\+\_\+scalev}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{gaugeinterface\+\_\+scalev()}{gaugeinterface\_scalev()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::gaugeinterface\+\_\+scalev (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar)}]{y,  }\item[{real(dl)}]{tau,  }\item[{real(dl)}]{tauend,  }\item[{real(dl)}]{tol1,  }\item[{integer}]{ind,  }\item[{real(dl), dimension(24)}]{c,  }\item[{real(dl), dimension(ev\%nvar,9)}]{w }\end{DoxyParamCaption})}
+
+
+
+References derivs(), dverk(), errors\+::error\+\_\+evolution, and errors\+::globalerror().
+
+
+
+Referenced by dtauda(), and gaugeinterface\+\_\+evolvescal().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac02938234bdca8dcd23649b1abb34ab3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac02938234bdca8dcd23649b1abb34ab3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ad273d68dadb4d4fcc10422fed213ca25}\label{namespacegaugeinterface_ad273d68dadb4d4fcc10422fed213ca25}} 
+\index{gaugeinterface@{gaugeinterface}!getnumeqns@{getnumeqns}}
+\index{getnumeqns@{getnumeqns}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{getnumeqns()}{getnumeqns()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::getnumeqns (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::adotrad, modelparams\+::cp, dotensorneutrinos, modelparams\+::highaccuracydefault, modelparams\+::l0max, modelparams\+::laccuracyboost, max\+\_\+l\+\_\+evolve, massivenu\+::nqmax, modelparams\+::nu\+\_\+best, modelparams\+::nu\+\_\+masses, massivenu\+::nu\+\_\+q, modelparams\+::nu\+\_\+trunc, setupscalararrayindices(), and setuptensorarrayindices().
+
+
+
+Referenced by cambmain\+::dosourcek(), and cambmain\+::transferout().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ad273d68dadb4d4fcc10422fed213ca25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ad273d68dadb4d4fcc10422fed213ca25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_aa05aaad2bec1907778ea8eae3a7ba521}\label{namespacegaugeinterface_aa05aaad2bec1907778ea8eae3a7ba521}} 
+\index{gaugeinterface@{gaugeinterface}!initial@{initial}}
+\index{initial@{initial}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial()}{initial()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::initial (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar)}]{y,  }\item[{real(dl)}]{tau }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::adotrad, modelparams\+::cp, modelparams\+::deltatime(), denl, ep0, epsw, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhormass, modelparams\+::grhornomass, modelparams\+::highaccuracydefault, initial\+\_\+adiabatic, initial\+\_\+nummodes, initial\+\_\+vector, modelparams\+::laccuracyboost, modelparams\+::nu\+\_\+masses, nu\+\_\+tau\+\_\+massive, polfac, second\+\_\+order\+\_\+tightcoupling, thermodata\+::thermo\+\_\+opacitytotime(), thermodata\+::tight\+\_\+tau, lambdageneral\+::w\+\_\+lam, and lambdageneral\+::w\+\_\+perturb.
+
+
+
+Referenced by cambmain\+::calcscalarsources(), and cambmain\+::gettransfer().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacegaugeinterface_aa05aaad2bec1907778ea8eae3a7ba521_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_aa05aaad2bec1907778ea8eae3a7ba521_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_afbc0a211756e4b923725483b6c961e75}\label{namespacegaugeinterface_afbc0a211756e4b923725483b6c961e75}} 
+\index{gaugeinterface@{gaugeinterface}!initialt@{initialt}}
+\index{initialt@{initialt}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initialt()}{initialt()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::initialt (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvart)}]{yt,  }\item[{real(dl)}]{tau }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::adotrad, modelparams\+::cp, denl, dotensorneutrinos, ep0, epsw, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhormass, modelparams\+::grhornomass, thermodata\+::thermo\+\_\+opacitytotime(), and thermodata\+::tight\+\_\+tau.
+
+
+
+Referenced by cambmain\+::calctensorsources().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacegaugeinterface_afbc0a211756e4b923725483b6c961e75_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_afbc0a211756e4b923725483b6c961e75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_aeed464df3ecab21d57bcb789fe3b1a22}\label{namespacegaugeinterface_aeed464df3ecab21d57bcb789fe3b1a22}} 
+\index{gaugeinterface@{gaugeinterface}!initialv@{initialv}}
+\index{initialv@{initialv}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initialv()}{initialv()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::initialv (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvarv)}]{yv,  }\item[{real(dl)}]{tau }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::adotrad, modelparams\+::cp, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhornomass, magnetic, and vec\+\_\+sig0.
+
+
+
+Referenced by cambmain\+::calcvectorsources().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_aeed464df3ecab21d57bcb789fe3b1a22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ae4228ed9cfb9382025eb84617b0ed091}\label{namespacegaugeinterface_ae4228ed9cfb9382025eb84617b0ed091}} 
+\index{gaugeinterface@{gaugeinterface}!massivenuvars@{massivenuvars}}
+\index{massivenuvars@{massivenuvars}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{massivenuvars()}{massivenuvars()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::massivenuvars (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar)}]{y,  }\item[{real(dl)}]{a,  }\item[{real(dl)}]{grho,  }\item[{real(dl)}]{gpres,  }\item[{real(dl)}]{dgrho,  }\item[{real(dl)}]{dgq,  }\item[{real(dl), dimension(max\+\_\+nu), intent(out), optional}]{wnu\+\_\+arr }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, modelparams\+::grhormass, massivenu\+::nu\+\_\+background(), nu\+\_\+integrate\+\_\+l012(), and modelparams\+::nu\+\_\+masses.
+
+
+
+Referenced by derivs(), and dtauda().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ae4228ed9cfb9382025eb84617b0ed091_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ae4228ed9cfb9382025eb84617b0ed091_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ac756539212eaeba8021159b26d1d2881}\label{namespacegaugeinterface_ac756539212eaeba8021159b26d1d2881}} 
+\index{gaugeinterface@{gaugeinterface}!massivenuvarsout@{massivenuvarsout}}
+\index{massivenuvarsout@{massivenuvarsout}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{massivenuvarsout()}{massivenuvarsout()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::massivenuvarsout (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar)}]{y,  }\item[{real(dl), dimension(ev\%nvar)}]{yprime,  }\item[{real(dl)}]{a,  }\item[{real(dl), optional}]{grho,  }\item[{real(dl), optional}]{gpres,  }\item[{real(dl), optional}]{dgrho,  }\item[{real(dl), optional}]{dgq,  }\item[{real(dl), optional}]{dgpi,  }\item[{real(dl), optional}]{gdpi\+\_\+diff,  }\item[{real(dl), optional}]{pidot\+\_\+sum,  }\item[{real(dl), optional}]{clxnu\+\_\+all }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, modelparams\+::grhormass, massivenu\+::nu\+\_\+background(), massivenu\+::nu\+\_\+drho(), nu\+\_\+integrate\+\_\+l012(), modelparams\+::nu\+\_\+masses, and nu\+\_\+pinudot().
+
+
+
+Referenced by derivs(), dtauda(), and output().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac756539212eaeba8021159b26d1d2881_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac756539212eaeba8021159b26d1d2881_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ae317d979138ff46a65c14f787c0d749c}\label{namespacegaugeinterface_ae317d979138ff46a65c14f787c0d749c}} 
+\index{gaugeinterface@{gaugeinterface}!next\+\_\+nu\+\_\+nq@{next\+\_\+nu\+\_\+nq}}
+\index{next\+\_\+nu\+\_\+nq@{next\+\_\+nu\+\_\+nq}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{next\+\_\+nu\+\_\+nq()}{next\_nu\_nq()}}
+{\footnotesize\ttfamily integer function gaugeinterface\+::next\+\_\+nu\+\_\+nq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nq }\end{DoxyParamCaption})}
+
+
+
+References massivenu\+::nqmax, and massivenu\+::nu\+\_\+q.
+
+
+
+Referenced by dtauda(), and gaugeinterface\+\_\+evolvescal().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ae317d979138ff46a65c14f787c0d749c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_aaf5da349a1adc87f4c62f51f1e0c0371}\label{namespacegaugeinterface_aaf5da349a1adc87f4c62f51f1e0c0371}} 
+\index{gaugeinterface@{gaugeinterface}!nu\+\_\+integrate\+\_\+l012@{nu\+\_\+integrate\+\_\+l012}}
+\index{nu\+\_\+integrate\+\_\+l012@{nu\+\_\+integrate\+\_\+l012}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{nu\+\_\+integrate\+\_\+l012()}{nu\_integrate\_l012()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::nu\+\_\+integrate\+\_\+l012 (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar), intent(in)}]{y,  }\item[{real(dl), intent(in)}]{a,  }\item[{integer, intent(in)}]{nu\+\_\+i,  }\item[{real(dl), intent(out)}]{drhonu,  }\item[{real(dl), intent(out)}]{fnu,  }\item[{real(dl), intent(out), optional}]{dpnu,  }\item[{real(dl), intent(out), optional}]{pinu }\end{DoxyParamCaption})}
+
+
+
+References massivenu\+::nqmax, massivenu\+::nu\+\_\+int\+\_\+kernel, modelparams\+::nu\+\_\+masses, and massivenu\+::nu\+\_\+q.
+
+
+
+Referenced by dtauda(), massivenuvars(), massivenuvarsout(), and switchtomassivenuapprox().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_aaf5da349a1adc87f4c62f51f1e0c0371_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a2e8822823d298cb0912b5ec22ea4a6ff}\label{namespacegaugeinterface_a2e8822823d298cb0912b5ec22ea4a6ff}} 
+\index{gaugeinterface@{gaugeinterface}!nu\+\_\+intvsq@{nu\+\_\+intvsq}}
+\index{nu\+\_\+intvsq@{nu\+\_\+intvsq}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{nu\+\_\+intvsq()}{nu\_intvsq()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::nu\+\_\+intvsq (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar), intent(in)}]{y,  }\item[{real(dl), intent(in)}]{a,  }\item[{integer, intent(in)}]{nu\+\_\+i,  }\item[{real(dl), intent(out)}]{G11,  }\item[{real(dl), intent(out)}]{G30 }\end{DoxyParamCaption})}
+
+
+
+References massivenu\+::nqmax, massivenu\+::nu\+\_\+int\+\_\+kernel, modelparams\+::nu\+\_\+masses, and massivenu\+::nu\+\_\+q.
+
+
+
+Referenced by dtauda(), and switchtomassivenuapprox().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a2e8822823d298cb0912b5ec22ea4a6ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a33373e2888fd46e2c443d7e8c2785639}\label{namespacegaugeinterface_a33373e2888fd46e2c443d7e8c2785639}} 
+\index{gaugeinterface@{gaugeinterface}!nu\+\_\+pi@{nu\+\_\+pi}}
+\index{nu\+\_\+pi@{nu\+\_\+pi}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{nu\+\_\+pi()}{nu\_pi()}}
+{\footnotesize\ttfamily real(dl) function gaugeinterface\+::nu\+\_\+pi (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvart), intent(in)}]{y,  }\item[{real(dl), intent(in)}]{a,  }\item[{integer, intent(in)}]{nu\+\_\+i }\end{DoxyParamCaption})}
+
+
+
+References massivenu\+::nqmax, massivenu\+::nu\+\_\+int\+\_\+kernel, modelparams\+::nu\+\_\+masses, and massivenu\+::nu\+\_\+q.
+
+
+
+Referenced by derivst(), and dtauda().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a33373e2888fd46e2c443d7e8c2785639_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_acba44d8f8f824999640418908be29b9b}\label{namespacegaugeinterface_acba44d8f8f824999640418908be29b9b}} 
+\index{gaugeinterface@{gaugeinterface}!nu\+\_\+pinudot@{nu\+\_\+pinudot}}
+\index{nu\+\_\+pinudot@{nu\+\_\+pinudot}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{nu\+\_\+pinudot()}{nu\_pinudot()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::nu\+\_\+pinudot (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar), intent(in)}]{y,  }\item[{real(dl), dimension(ev\%nvar), intent(in)}]{ydot,  }\item[{real(dl), intent(in)}]{a,  }\item[{real(dl), intent(in)}]{adotoa,  }\item[{integer, intent(in)}]{nu\+\_\+i,  }\item[{real(dl)}]{pinudot }\end{DoxyParamCaption})}
+
+
+
+References massivenu\+::nqmax, massivenu\+::nu\+\_\+int\+\_\+kernel, modelparams\+::nu\+\_\+masses, and massivenu\+::nu\+\_\+q.
+
+
+
+Referenced by dtauda(), and massivenuvarsout().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_acba44d8f8f824999640418908be29b9b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ac370c67bc9750bf5749a69531fe3ffc1}\label{namespacegaugeinterface_ac370c67bc9750bf5749a69531fe3ffc1}} 
+\index{gaugeinterface@{gaugeinterface}!output@{output}}
+\index{output@{output}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::output (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar), target}]{y,  }\item[{integer}]{j,  }\item[{real(dl)}]{tau,  }\item[{real(dl), dimension(ctransscal\%numsources)}]{sources }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, thermodata\+::ddvis, derivs(), thermodata\+::dopac, thermodata\+::dvis, thermodata\+::expmmu, modelparams\+::f\+\_\+k(), modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhok, modelparams\+::grhornomass, modelparams\+::grhov, massivenuvarsout(), thermodata\+::opac, modelparams\+::rofchi(), second\+\_\+order\+\_\+tightcoupling, modelparams\+::tau\+\_\+maxvis, thermodata\+::vis, lambdageneral\+::w\+\_\+lam, and lambdageneral\+::w\+\_\+perturb.
+
+
+
+Referenced by cambmain\+::calcscalarsources().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac370c67bc9750bf5749a69531fe3ffc1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac370c67bc9750bf5749a69531fe3ffc1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a5235d59ec77fa4b3a41d9754c8e447ca}\label{namespacegaugeinterface_a5235d59ec77fa4b3a41d9754c8e447ca}} 
+\index{gaugeinterface@{gaugeinterface}!outputt@{outputt}}
+\index{outputt@{outputt}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{outputt()}{outputt()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::outputt (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(n), target}]{yt,  }\item[{integer}]{n,  }\item[{integer}]{j,  }\item[{real(dl)}]{tau,  }\item[{real(dl)}]{dt,  }\item[{real(dl)}]{dte,  }\item[{real(dl)}]{dtb }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cosfunc(), modelparams\+::cp, thermodata\+::ddvis, derivst(), thermodata\+::dopac, thermodata\+::dvis, thermodata\+::expmmu, thermodata\+::opac, modelparams\+::rofchi(), and thermodata\+::vis.
+
+
+
+Referenced by cambmain\+::calctensorsources().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a5235d59ec77fa4b3a41d9754c8e447ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a5235d59ec77fa4b3a41d9754c8e447ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ad9126befa5df67da981345f6230fede4}\label{namespacegaugeinterface_ad9126befa5df67da981345f6230fede4}} 
+\index{gaugeinterface@{gaugeinterface}!outputv@{outputv}}
+\index{outputv@{outputv}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{outputv()}{outputv()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::outputv (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(n), target}]{yv,  }\item[{integer}]{n,  }\item[{integer}]{j,  }\item[{real(dl)}]{tau,  }\item[{real(dl)}]{dt,  }\item[{real(dl)}]{dte,  }\item[{real(dl)}]{dtb }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, derivsv(), thermodata\+::dvis, thermodata\+::expmmu, and thermodata\+::vis.
+
+
+
+Referenced by cambmain\+::calcvectorsources().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ad9126befa5df67da981345f6230fede4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ad9126befa5df67da981345f6230fede4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ae920635485c908177072c6cad0d49f59}\label{namespacegaugeinterface_ae920635485c908177072c6cad0d49f59}} 
+\index{gaugeinterface@{gaugeinterface}!outtransf@{outtransf}}
+\index{outtransf@{outtransf}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{outtransf()}{outtransf()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::outtransf (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar)}]{y,  }\item[{real(dl), intent(in)}]{tau,  }\item[{real, dimension(\+:), target}]{Arr }\end{DoxyParamCaption})}
+
+
+
+References derivs(), transfer\+::transfer\+\_\+kh, and transfer\+::transfer\+\_\+max.
+
+
+
+Referenced by cambmain\+::calcscalarsources(), and cambmain\+::gettransfer().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ae920635485c908177072c6cad0d49f59_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ae920635485c908177072c6cad0d49f59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a50a72debb65475527ccc7e76af616083}\label{namespacegaugeinterface_a50a72debb65475527ccc7e76af616083}} 
+\index{gaugeinterface@{gaugeinterface}!setupscalararrayindices@{setupscalararrayindices}}
+\index{setupscalararrayindices@{setupscalararrayindices}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{setupscalararrayindices()}{setupscalararrayindices()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::setupscalararrayindices (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{integer, intent(out), optional}]{max\+\_\+num\+\_\+eqns }\end{DoxyParamCaption})}
+
+
+
+References basic\+\_\+num\+\_\+eqns, modelparams\+::cp, modelparams\+::laccuracyboost, lmaxnu\+\_\+high\+\_\+ktau, massivenu\+::nqmax, modelparams\+::nu\+\_\+masses, nu\+\_\+tau\+\_\+nonrelativistic, lambdageneral\+::w\+\_\+lam, and lambdageneral\+::w\+\_\+perturb.
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+evolvescal(), getnumeqns(), and switchtomassivenuapprox().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a50a72debb65475527ccc7e76af616083_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_a21f6d1e93445d43fc8247f57dce52716}\label{namespacegaugeinterface_a21f6d1e93445d43fc8247f57dce52716}} 
+\index{gaugeinterface@{gaugeinterface}!setuptensorarrayindices@{setuptensorarrayindices}}
+\index{setuptensorarrayindices@{setuptensorarrayindices}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{setuptensorarrayindices()}{setuptensorarrayindices()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::setuptensorarrayindices (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{integer, intent(out), optional}]{maxeq }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, dotensorneutrinos, massivenu\+::nqmax, nu\+\_\+tau\+\_\+nonrelativistic, and modelparams\+::tau\+\_\+maxvis.
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+evolvetens(), and getnumeqns().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_a21f6d1e93445d43fc8247f57dce52716_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegaugeinterface_ac7f67b6e2bc871b4eb1a6d3453f796a3}\label{namespacegaugeinterface_ac7f67b6e2bc871b4eb1a6d3453f796a3}} 
+\index{gaugeinterface@{gaugeinterface}!switchtomassivenuapprox@{switchtomassivenuapprox}}
+\index{switchtomassivenuapprox@{switchtomassivenuapprox}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{switchtomassivenuapprox()}{switchtomassivenuapprox()}}
+{\footnotesize\ttfamily subroutine gaugeinterface\+::switchtomassivenuapprox (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{evolutionvars}})}]{EV,  }\item[{real(dl), dimension(ev\%nvar)}]{y,  }\item[{integer, intent(in)}]{nu\+\_\+i }\end{DoxyParamCaption})}
+
+
+
+References copyscalarvariablearray(), massivenu\+::nu\+\_\+background(), nu\+\_\+integrate\+\_\+l012(), nu\+\_\+intvsq(), modelparams\+::nu\+\_\+masses, and setupscalararrayindices().
+
+
+
+Referenced by dtauda(), and gaugeinterface\+\_\+evolvescal().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac7f67b6e2bc871b4eb1a6d3453f796a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegaugeinterface_ac7f67b6e2bc871b4eb1a6d3453f796a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegaugeinterface_a4ec8e34555b9492e02f9ca7793b37b7a}\label{namespacegaugeinterface_a4ec8e34555b9492e02f9ca7793b37b7a}} 
+\index{gaugeinterface@{gaugeinterface}!basic\+\_\+num\+\_\+eqns@{basic\+\_\+num\+\_\+eqns}}
+\index{basic\+\_\+num\+\_\+eqns@{basic\+\_\+num\+\_\+eqns}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{basic\+\_\+num\+\_\+eqns}{basic\_num\_eqns}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::basic\+\_\+num\+\_\+eqns = 5}
+
+
+
+Referenced by copyscalarvariablearray(), dtauda(), and setupscalararrayindices().
+
+\mbox{\Hypertarget{namespacegaugeinterface_ad67d0af8f042d5a80e3890d8a794be5f}\label{namespacegaugeinterface_ad67d0af8f042d5a80e3890d8a794be5f}} 
+\index{gaugeinterface@{gaugeinterface}!denl@{denl}}
+\index{denl@{denl}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{denl}{denl}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) gaugeinterface\+::denl}
+
+
+
+Referenced by derivsv(), dtauda(), gaugeinterface\+\_\+init(), initial(), and initialt().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a1c86dc449a45192d8e9e999627a3f511}\label{namespacegaugeinterface_a1c86dc449a45192d8e9e999627a3f511}} 
+\index{gaugeinterface@{gaugeinterface}!dolateradtruncation@{dolateradtruncation}}
+\index{dolateradtruncation@{dolateradtruncation}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{dolateradtruncation}{dolateradtruncation}}
+{\footnotesize\ttfamily logical gaugeinterface\+::dolateradtruncation = .true.}
+
+
+
+Referenced by dtauda(), and gaugeinterface\+\_\+evolvescal().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a48d8dc2750f4cecf3337b6f6dd2d736b}\label{namespacegaugeinterface_a48d8dc2750f4cecf3337b6f6dd2d736b}} 
+\index{gaugeinterface@{gaugeinterface}!dotensorneutrinos@{dotensorneutrinos}}
+\index{dotensorneutrinos@{dotensorneutrinos}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{dotensorneutrinos}{dotensorneutrinos}}
+{\footnotesize\ttfamily logical gaugeinterface\+::dotensorneutrinos = .true.}
+
+
+
+Referenced by copytensorvariablearray(), derivst(), dtauda(), getnumeqns(), initialt(), and setuptensorarrayindices().
+
+\mbox{\Hypertarget{namespacegaugeinterface_ac46c357baba62f4aeaaec10b492d6e80}\label{namespacegaugeinterface_ac46c357baba62f4aeaaec10b492d6e80}} 
+\index{gaugeinterface@{gaugeinterface}!ep0@{ep0}}
+\index{ep0@{ep0}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{ep0}{ep0}}
+{\footnotesize\ttfamily real(dl), parameter gaugeinterface\+::ep0 =1.\+0d-\/2}
+
+
+
+Referenced by derivsv(), dtauda(), initial(), and initialt().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a7958da73f55e60b6e679c0a7f70ec822}\label{namespacegaugeinterface_a7958da73f55e60b6e679c0a7f70ec822}} 
+\index{gaugeinterface@{gaugeinterface}!epsw@{epsw}}
+\index{epsw@{epsw}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{epsw}{epsw}}
+{\footnotesize\ttfamily real(dl) gaugeinterface\+::epsw}
+
+
+
+Referenced by derivsv(), dtauda(), gaugeinterface\+\_\+init(), initial(), and initialt().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a7ad176ccd8e025b00d5ae35428c6f894}\label{namespacegaugeinterface_a7ad176ccd8e025b00d5ae35428c6f894}} 
+\index{gaugeinterface@{gaugeinterface}!eqns\+\_\+name@{eqns\+\_\+name}}
+\index{eqns\+\_\+name@{eqns\+\_\+name}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{eqns\+\_\+name}{eqns\_name}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter gaugeinterface\+::eqns\+\_\+name = \textquotesingle{}gauge\+\_\+inv\textquotesingle{}}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+versiontraceoutput(), and calculator\+\_\+pico\+::pico\+\_\+versiontraceoutput().
+
+\mbox{\Hypertarget{namespacegaugeinterface_ac5567a8b42e51ba563113652958ea70b}\label{namespacegaugeinterface_ac5567a8b42e51ba563113652958ea70b}} 
+\index{gaugeinterface@{gaugeinterface}!initial\+\_\+adiabatic@{initial\+\_\+adiabatic}}
+\index{initial\+\_\+adiabatic@{initial\+\_\+adiabatic}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial\+\_\+adiabatic}{initial\_adiabatic}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::initial\+\_\+adiabatic =1}
+
+
+
+Referenced by camb\+::camb\+\_\+setdefparams(), dtauda(), and initial().
+
+\mbox{\Hypertarget{namespacegaugeinterface_aa3aaa16f51217e9cada87f670d1a2ae6}\label{namespacegaugeinterface_aa3aaa16f51217e9cada87f670d1a2ae6}} 
+\index{gaugeinterface@{gaugeinterface}!initial\+\_\+iso\+\_\+baryon@{initial\+\_\+iso\+\_\+baryon}}
+\index{initial\+\_\+iso\+\_\+baryon@{initial\+\_\+iso\+\_\+baryon}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial\+\_\+iso\+\_\+baryon}{initial\_iso\_baryon}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::initial\+\_\+iso\+\_\+baryon =3}
+
+
+
+Referenced by dtauda().
+
+\mbox{\Hypertarget{namespacegaugeinterface_aab102b09528270be73847e43bc4ea5ab}\label{namespacegaugeinterface_aab102b09528270be73847e43bc4ea5ab}} 
+\index{gaugeinterface@{gaugeinterface}!initial\+\_\+iso\+\_\+cdm@{initial\+\_\+iso\+\_\+cdm}}
+\index{initial\+\_\+iso\+\_\+cdm@{initial\+\_\+iso\+\_\+cdm}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial\+\_\+iso\+\_\+cdm}{initial\_iso\_cdm}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::initial\+\_\+iso\+\_\+cdm =2}
+
+\mbox{\Hypertarget{namespacegaugeinterface_adbaabf824bb924de7518b623ffd8c9e3}\label{namespacegaugeinterface_adbaabf824bb924de7518b623ffd8c9e3}} 
+\index{gaugeinterface@{gaugeinterface}!initial\+\_\+iso\+\_\+neutrino@{initial\+\_\+iso\+\_\+neutrino}}
+\index{initial\+\_\+iso\+\_\+neutrino@{initial\+\_\+iso\+\_\+neutrino}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial\+\_\+iso\+\_\+neutrino}{initial\_iso\_neutrino}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::initial\+\_\+iso\+\_\+neutrino =4}
+
+
+
+Referenced by dtauda().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a47175df2f7681cf8e8a2a7e2cb94952a}\label{namespacegaugeinterface_a47175df2f7681cf8e8a2a7e2cb94952a}} 
+\index{gaugeinterface@{gaugeinterface}!initial\+\_\+iso\+\_\+neutrino\+\_\+vel@{initial\+\_\+iso\+\_\+neutrino\+\_\+vel}}
+\index{initial\+\_\+iso\+\_\+neutrino\+\_\+vel@{initial\+\_\+iso\+\_\+neutrino\+\_\+vel}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial\+\_\+iso\+\_\+neutrino\+\_\+vel}{initial\_iso\_neutrino\_vel}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::initial\+\_\+iso\+\_\+neutrino\+\_\+vel =5}
+
+
+
+Referenced by dtauda().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a4c1f07aacc342a123210732254937539}\label{namespacegaugeinterface_a4c1f07aacc342a123210732254937539}} 
+\index{gaugeinterface@{gaugeinterface}!initial\+\_\+nummodes@{initial\+\_\+nummodes}}
+\index{initial\+\_\+nummodes@{initial\+\_\+nummodes}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial\+\_\+nummodes}{initial\_nummodes}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::initial\+\_\+nummodes = \mbox{\hyperlink{namespacegaugeinterface_a47175df2f7681cf8e8a2a7e2cb94952a}{initial\+\_\+iso\+\_\+neutrino\+\_\+vel}}}
+
+
+
+Referenced by dtauda(), and initial().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a540c4e4d2e1dea17aeb55e137acb0218}\label{namespacegaugeinterface_a540c4e4d2e1dea17aeb55e137acb0218}} 
+\index{gaugeinterface@{gaugeinterface}!initial\+\_\+vector@{initial\+\_\+vector}}
+\index{initial\+\_\+vector@{initial\+\_\+vector}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{initial\+\_\+vector}{initial\_vector}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::initial\+\_\+vector = 0}
+
+
+
+Referenced by dtauda(), and initial().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a55cb8dcd9b184efebb1f82f7dbd5bf19}\label{namespacegaugeinterface_a55cb8dcd9b184efebb1f82f7dbd5bf19}} 
+\index{gaugeinterface@{gaugeinterface}!lmaxnu\+\_\+high\+\_\+ktau@{lmaxnu\+\_\+high\+\_\+ktau}}
+\index{lmaxnu\+\_\+high\+\_\+ktau@{lmaxnu\+\_\+high\+\_\+ktau}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{lmaxnu\+\_\+high\+\_\+ktau}{lmaxnu\_high\_ktau}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::lmaxnu\+\_\+high\+\_\+ktau =4}
+
+
+
+Referenced by dtauda(), and setupscalararrayindices().
+
+\mbox{\Hypertarget{namespacegaugeinterface_aaa26844a2740bc664b3c821e92dc6b52}\label{namespacegaugeinterface_aaa26844a2740bc664b3c821e92dc6b52}} 
+\index{gaugeinterface@{gaugeinterface}!magnetic@{magnetic}}
+\index{magnetic@{magnetic}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{magnetic}{magnetic}}
+{\footnotesize\ttfamily real(dl) gaugeinterface\+::magnetic = 0.\+\_\+dl}
+
+
+
+Referenced by derivsv(), dtauda(), and initialv().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}\label{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}} 
+\index{gaugeinterface@{gaugeinterface}!max\+\_\+l\+\_\+evolve@{max\+\_\+l\+\_\+evolve}}
+\index{max\+\_\+l\+\_\+evolve@{max\+\_\+l\+\_\+evolve}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{max\+\_\+l\+\_\+evolve}{max\_l\_evolve}}
+{\footnotesize\ttfamily integer parameter gaugeinterface\+::max\+\_\+l\+\_\+evolve = 256}
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+init(), and getnumeqns().
+
+\mbox{\Hypertarget{namespacegaugeinterface_aecf1aff36254ca033f48a9a0bcf5416c}\label{namespacegaugeinterface_aecf1aff36254ca033f48a9a0bcf5416c}} 
+\index{gaugeinterface@{gaugeinterface}!nu\+\_\+tau\+\_\+massive@{nu\+\_\+tau\+\_\+massive}}
+\index{nu\+\_\+tau\+\_\+massive@{nu\+\_\+tau\+\_\+massive}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{nu\+\_\+tau\+\_\+massive}{nu\_tau\_massive}}
+{\footnotesize\ttfamily real(dl), dimension(max\+\_\+nu) gaugeinterface\+::nu\+\_\+tau\+\_\+massive}
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+init(), and initial().
+
+\mbox{\Hypertarget{namespacegaugeinterface_aa6ec574b0c9183eb8881d0ed0376740c}\label{namespacegaugeinterface_aa6ec574b0c9183eb8881d0ed0376740c}} 
+\index{gaugeinterface@{gaugeinterface}!nu\+\_\+tau\+\_\+nonrelativistic@{nu\+\_\+tau\+\_\+nonrelativistic}}
+\index{nu\+\_\+tau\+\_\+nonrelativistic@{nu\+\_\+tau\+\_\+nonrelativistic}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{nu\+\_\+tau\+\_\+nonrelativistic}{nu\_tau\_nonrelativistic}}
+{\footnotesize\ttfamily real(dl), dimension(max\+\_\+nu) gaugeinterface\+::nu\+\_\+tau\+\_\+nonrelativistic}
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+evolvescal(), gaugeinterface\+\_\+init(), setupscalararrayindices(), and setuptensorarrayindices().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a041cc4df547c2fb25f42679b34de4891}\label{namespacegaugeinterface_a041cc4df547c2fb25f42679b34de4891}} 
+\index{gaugeinterface@{gaugeinterface}!nu\+\_\+tau\+\_\+notmassless@{nu\+\_\+tau\+\_\+notmassless}}
+\index{nu\+\_\+tau\+\_\+notmassless@{nu\+\_\+tau\+\_\+notmassless}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{nu\+\_\+tau\+\_\+notmassless}{nu\_tau\_notmassless}}
+{\footnotesize\ttfamily real(dl), dimension(nqmax0+1,max\+\_\+nu) gaugeinterface\+::nu\+\_\+tau\+\_\+notmassless}
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+evolvescal(), and gaugeinterface\+\_\+init().
+
+\mbox{\Hypertarget{namespacegaugeinterface_a6e217a5a543d2b9517624820de0e3338}\label{namespacegaugeinterface_a6e217a5a543d2b9517624820de0e3338}} 
+\index{gaugeinterface@{gaugeinterface}!polfac@{polfac}}
+\index{polfac@{polfac}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{polfac}{polfac}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) gaugeinterface\+::polfac}
+
+
+
+Referenced by dtauda(), gaugeinterface\+\_\+init(), and initial().
+
+\mbox{\Hypertarget{namespacegaugeinterface_af060fa6622bea0f389dc0965bee8d67f}\label{namespacegaugeinterface_af060fa6622bea0f389dc0965bee8d67f}} 
+\index{gaugeinterface@{gaugeinterface}!second\+\_\+order\+\_\+tightcoupling@{second\+\_\+order\+\_\+tightcoupling}}
+\index{second\+\_\+order\+\_\+tightcoupling@{second\+\_\+order\+\_\+tightcoupling}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{second\+\_\+order\+\_\+tightcoupling}{second\_order\_tightcoupling}}
+{\footnotesize\ttfamily logical parameter gaugeinterface\+::second\+\_\+order\+\_\+tightcoupling = .true.}
+
+
+
+Referenced by derivs(), dtauda(), gaugeinterface\+\_\+evolvescal(), initial(), and output().
+
+\mbox{\Hypertarget{namespacegaugeinterface_ae547cea1b332095dd0c9b5a6c24466ae}\label{namespacegaugeinterface_ae547cea1b332095dd0c9b5a6c24466ae}} 
+\index{gaugeinterface@{gaugeinterface}!vec\+\_\+sig0@{vec\+\_\+sig0}}
+\index{vec\+\_\+sig0@{vec\+\_\+sig0}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{vec\+\_\+sig0}{vec\_sig0}}
+{\footnotesize\ttfamily real(dl) gaugeinterface\+::vec\+\_\+sig0 = 1.\+\_\+dl}
+
+
+
+Referenced by dtauda(), and initialv().
+
+\mbox{\Hypertarget{namespacegaugeinterface_adc490d2cf60b4b4224f782920c48141a}\label{namespacegaugeinterface_adc490d2cf60b4b4224f782920c48141a}} 
+\index{gaugeinterface@{gaugeinterface}!vecfac@{vecfac}}
+\index{vecfac@{vecfac}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{vecfac}{vecfac}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) gaugeinterface\+::vecfac}
+
+
+
+Referenced by derivsv(), dtauda(), and gaugeinterface\+\_\+init().
+
+\mbox{\Hypertarget{namespacegaugeinterface_ae0aebf1ba68b305cd9abbe8bf79353d9}\label{namespacegaugeinterface_ae0aebf1ba68b305cd9abbe8bf79353d9}} 
+\index{gaugeinterface@{gaugeinterface}!vecfacpol@{vecfacpol}}
+\index{vecfacpol@{vecfacpol}!gaugeinterface@{gaugeinterface}}
+\subsubsection{\texorpdfstring{vecfacpol}{vecfacpol}}
+{\footnotesize\ttfamily real(dl), dimension(\mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{max\+\_\+l\+\_\+evolve}}) gaugeinterface\+::vecfacpol}
+
+
+
+Referenced by derivsv(), dtauda(), and gaugeinterface\+\_\+init().
+

@@ -1,0 +1,182 @@
+\hypertarget{Matrix__utils__new_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Matrix\+\_\+utils\+\_\+new.f90 File Reference}
+\label{Matrix__utils__new_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Matrix\+\_\+utils\+\_\+new.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Matrix\+\_\+utils\+\_\+new.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmatrixutils_1_1tmatrixtype}{matrixutils\+::tmatrixtype}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacematrixutils}{matrixutils}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real function \mbox{\hyperlink{namespacematrixutils_a969773017c47f3dc8dfb2a18e5bc5fbd}{matrixutils\+::getmatrixtime}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a24fd4fc8dbd7eee3c9176c3f9ca634eb}{matrixutils\+::matrix\+\_\+start}} (Name)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aeb25ca6b661aed4516c029f0cd6003bc}{matrixutils\+::matrix\+\_\+end}} (Name)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a88175f31021d0939c32287595d3f5630}{matrixutils\+::matrix\+\_\+writefilerow}} (aunit, vec, n)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af21f52b4eeb7fc47bb9cd5e35cc1ebc8}{matrixutils\+::matrix\+\_\+write}} (aname, mat, forcetable, commentline)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aa5eb3cbf41718ad7ccb335e642a29174}{matrixutils\+::matrix\+\_\+write\+\_\+double}} (aname, mat, forcetable)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a5897a3508757971da56e07e3cdab7f0a}{matrixutils\+::matrix\+\_\+write\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ac49e65871c4266da9c687b474d1908d8}{matrixutils\+::matrixsym\+\_\+write\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_acbfa12c533184738072f7f9a35e7cfc7}{matrixutils\+::matrixsym\+\_\+write\+\_\+binary\+\_\+single}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a122e85102b3eac4266a8031c62de9bbf}{matrixutils\+::matrix\+\_\+writevec}} (aname, vec)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a311afaea7a3204cc1b47a2adb7bebe63}{matrixutils\+::matrix\+\_\+read\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7572f4e0a0c8b958126d5d3c8b46f16a}{matrixutils\+::matrixsym\+\_\+read\+\_\+binary}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a592726195f2a952a006391bde92cd2b0}{matrixutils\+::matrixsym\+\_\+read\+\_\+binary\+\_\+single}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ac778ea47bab010c70f3d6f00838e4668}{matrixutils\+::matrix\+\_\+read}} (aname, mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a6c4f5774cfa213609562eb2a5dfeca92}{matrixutils\+::matrix\+\_\+readsingle}} (aname, mat)
+\item 
+real(dm) function, dimension(n) \mbox{\hyperlink{namespacematrixutils_a6b563974ed42131dcdd0b7c5e009fb33}{matrixutils\+::matrix\+\_\+diag}} (M, n)
+\item 
+integer function \mbox{\hyperlink{namespacematrixutils_af41b3d5784e02032b5e22a16d76eca49}{matrixutils\+::ilaenv\+\_\+wrap}} (i, S1, S2, a, b, c, d)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aa94ed3ad0cf6b18002c5f8ca9cd8b948}{matrixutils\+::matrix\+\_\+diagonalize}} (M, diag, n)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a03b181040e90fb7d7693f10d0716a04f}{matrixutils\+::matrix\+\_\+diagonalize\+\_\+dc}} (M, diag, n)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a76928f01b83f388ddb51ee3e256cd3a5}{matrixutils\+::matrix\+\_\+root}} (M, n, pow)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a1f7b4399f422b8532d242374454b9e03}{matrixutils\+::matrix\+\_\+diagonalize\+\_\+partial}} (M, diag, n, emin, emax, nfound)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a30f09f7f2856414c7cfdc635a108039a}{matrixutils\+::matrix\+\_\+cdiagonalize\+\_\+partial}} (M, diag, n, emin, emax, nfound)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a29011a04a13e1b49c36d226591b3e5a4}{matrixutils\+::matrix\+\_\+cdiagonalize}} (M, diag, n)
+\item 
+complex(dm) function \mbox{\hyperlink{namespacematrixutils_af3bd404fd6685b9f8d2863bb4a3c06e4}{matrixutils\+::matrix\+\_\+ctrace}} (M)
+\item 
+real(dm) function \mbox{\hyperlink{namespacematrixutils_aba34e30d438cd387bb0f57e16d60b364}{matrixutils\+::matrix\+\_\+trace}} (M)
+\item 
+real(dm) function \mbox{\hyperlink{namespacematrixutils_a4117e3e0068005bf79a0db9745a8dde6}{matrixutils\+::matrixsym\+\_\+logdet}} (mat)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a289ea264af6294e91e4906d329ab1bca}{matrixutils\+::matrix\+\_\+crotatesymm}} (Mat, U, m, Out, triangular)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aec8c0f5500ce3fccc5a427276bbc95d2}{matrixutils\+::matrix\+\_\+rotatesymm}} (Mat, U, m, Out, triangular)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a6e5b7eb3ff08d14994be069ca192ea48}{matrixutils\+::matrix\+\_\+rotateantisymm}} (Mat, U, m, Out)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a2098ca04f94da631caf2ebcce5ad7bf9}{matrixutils\+::matrix\+\_\+cmult\+\_\+symmright}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a4389445ac98a45384153fff75a6a21af}{matrixutils\+::matrix\+\_\+cmult\+\_\+symmleft}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a623ed13db8bf49d73e233e3668d3923c}{matrixutils\+::matrix\+\_\+cmult}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a061be118f549334b7196808f5ce55245}{matrixutils\+::matrix\+\_\+multsq\+\_\+repright}} (Mat, U, a)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a5db9de44653dcfa367228c2b5a077b14}{matrixutils\+::matrix\+\_\+multtri}} (Mat, L, side)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aa6a8ab9e79a8dd522f5375ebf4a50372}{matrixutils\+::matrix\+\_\+mult}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ab4f1087b56f3198b3d84c8ebf1cdd580}{matrixutils\+::matrix\+\_\+mult\+\_\+symmleft}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a97a6a772baa3485aaddba50623e50673}{matrixutils\+::matrix\+\_\+mult\+\_\+symmright}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af451dede0e0f43908b5f8fdbd6b64717}{matrixutils\+::matrix\+\_\+cmultgen}} (Mat, m, k, U, n, Out)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a6efcf6a348628fcb3694cb23761b52ec}{matrixutils\+::matrix\+\_\+multgen}} (Mat, m, k, U, n, Out)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_afdb73dd3fe4ce57e9ba27e6d3d511376}{matrixutils\+::matrix\+\_\+cmult\+\_\+nt}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a4a084a8c031469076ac26bf4e9055109}{matrixutils\+::matrix\+\_\+mult\+\_\+nt}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7c5f8b5e283bec1dcdcc4b82abbebd47}{matrixutils\+::matrix\+\_\+cmult\+\_\+tn}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a13557cd7745827af9e6873d3dbba3a1f}{matrixutils\+::matrix\+\_\+mult\+\_\+tn}} (Mat, U, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a380ecdd4310ae2f91be911a45516df12}{matrixutils\+::matrix\+\_\+cholesky}} (M, err, zeroed)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ad7a37503ef0aeeef3585caccc253c428}{matrixutils\+::matrix\+\_\+ccholesky}} (M)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_acda49677dcf7603b255acba37dda9b92}{matrixutils\+::matrix\+\_\+choleskyrootinverse}} (M, transpose, error)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a3d8668e32abacfbeeeaaca90c120a129}{matrixutils\+::matrix\+\_\+ccholeskyrootinverse}} (M, dagger)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a663d1886940de1ea811bab15859db116}{matrixutils\+::matrix\+\_\+inverse\+\_\+chol}} (M, err)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aac7ea35062daeadd8fb4ebc86cb42e7a}{matrixutils\+::matrix\+\_\+inverse}} (M)
+\item 
+real(dm) function \mbox{\hyperlink{namespacematrixutils_a5a3ede7fff09728b5cacb5a559ab936f}{matrixutils\+::matrix\+\_\+gaussianloglike}} (Cov, d)
+\item 
+double precision function \mbox{\hyperlink{namespacematrixutils_ab48ad701f7ef749e5bea654c83ac4544}{matrixutils\+::matrix\+\_\+gaussianloglikedouble}} (Cov, d)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af319573ea9284b8ab1e745f9610b36f6}{matrixutils\+::matrix\+\_\+inverseasymm}} (M)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7960d8813f71cc715ba85ffba471dd38}{matrixutils\+::matrix\+\_\+svd}} (Mat, m, n, D, VT)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a295b572473f10f878fb8d3fc7b8d06f1}{matrixutils\+::matrix\+\_\+svd\+\_\+vt}} (Mat, m, n, D, U)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a536eb03269736dd2f4c33b0978211583}{matrixutils\+::matrix\+\_\+csvd\+\_\+vt}} (Mat, m, n, D, U)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_af38c4627b0e939eadba68b6ea264297b}{matrixutils\+::matrix\+\_\+csvd\+\_\+u}} (Mat, m, n, D, VT)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_aaca4350f2cff361fd0233962eba5fdc7}{matrixutils\+::matrix\+\_\+csvd\+\_\+allvt}} (Mat, m, n, D, VT)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ac24fa96b1159f9748d7f0ea3fbdc1199}{matrixutils\+::matrix\+\_\+diagpremul}} (D, M)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_afb220a70c7ec8bcc1eb1694588300540}{matrixutils\+::matrix\+\_\+solvesymm}} (M, a, soln)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a2662807273dfd077b6501df4d09909d9}{matrixutils\+::matrix\+\_\+solveasymm}} (M, a, soln)
+\item 
+real(dm) function \mbox{\hyperlink{namespacematrixutils_a14ec6bb3e63d084752f528c47653f7d7}{matrixutils\+::matrix\+\_\+vecdot}} (vec1, vec2)
+\item 
+real(dm) function \mbox{\hyperlink{namespacematrixutils_affa7bde611de578a07d5a1bdf612f1b2}{matrixutils\+::matrix\+\_\+quadform}} (Mat, vec)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a7192e418b9f0d6699a80da809931fed0}{matrixutils\+::matrix\+\_\+mulvec}} (Mat, vec, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a629395ae3092616dd7db4d401570ccd0}{matrixutils\+::matrix\+\_\+mulvecsingle}} (Mat, vec, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a4bcc2b4fc8b6f2fee0c142c280851c73}{matrixutils\+::matrix\+\_\+mulvecsymm}} (Mat, vec, Out, a, b)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_a83ffeb3e4788ff67e17e5f94b70bec3a}{matrixutils\+::matrix\+\_\+mulvecsymmsingle}} (Mat, vec, Out, a, b)
+\item 
+real function \mbox{\hyperlink{namespacematrixutils_a7c0b5ddd8a7ff3cd1231b2b56a63aefc}{matrixutils\+::matrix\+\_\+vecdotsingle}} (vec1, vec2)
+\item 
+subroutine \mbox{\hyperlink{namespacematrixutils_ae6aceb4eee59e9d9300a4d7139011aac}{matrixutils\+::matrix\+\_\+inversearraympi}} (Arr, nmat)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical, parameter \mbox{\hyperlink{namespacematrixutils_a5c4836d18b8e1233dd130c5dc15e30fd}{matrixutils\+::matrix\+\_\+runmsgs}} = .false.
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_a7bdc564986ea4d90f51201c75606ef3d}{matrixutils\+::dm}} = K\+I\+ND(1.\+0)
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_aacea55dcb267854e5e8df85c57122892}{matrixutils\+::mat\+\_\+f90}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_a2ff32238b426e2f5a4e9d86da72402d2}{matrixutils\+::mat\+\_\+norm}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_adc3f961dc571bc5ea1263f48e0574a79}{matrixutils\+::mat\+\_\+dc}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacematrixutils_a7a9a7ea3dbe2beeff5a5f32de5f21dc3}{matrixutils\+::matrix\+\_\+method}} = mat\+\_\+\+DC
+\item 
+real \mbox{\hyperlink{namespacematrixutils_ab55e44d02787c32fab67dd16c8ebddef}{matrixutils\+::matrix\+\_\+starttime}}
+\item 
+complex(dm), parameter \mbox{\hyperlink{namespacematrixutils_a0a58a765b3eead806d9adb27694692d8}{matrixutils\+::cone}} = (1.\+\_\+dm, 0.\+\_\+dm)
+\item 
+complex(dm), parameter \mbox{\hyperlink{namespacematrixutils_a61466f9df90b39a99a491000d4419d75}{matrixutils\+::czero}} = (0.\+\_\+dm, 0.\+\_\+dm)
+\item 
+real(dm), parameter \mbox{\hyperlink{namespacematrixutils_ad1137ea4186d00583875a1e7e08a721f}{matrixutils\+::rone}} = 1.\+\_\+dm
+\item 
+real(dm), parameter \mbox{\hyperlink{namespacematrixutils_a0047cc2c6d161d05f23b748bb5b9a70a}{matrixutils\+::rzero}} = 0.\+\_\+dm
+\item 
+real, parameter \mbox{\hyperlink{namespacematrixutils_ae2555bb8da14eb27afe68ae794a858fb}{matrixutils\+::sone}} = 1.
+\item 
+real, parameter \mbox{\hyperlink{namespacematrixutils_ac00ea25825f3cb1ff949a87fad42094f}{matrixutils\+::szero}} = 0.
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacematrixutils_a34badd98b6ee7acb8ca038472adf2912}{matrixutils\+::matrix\+\_\+io\+\_\+fmt}} = \textquotesingle{}($\ast$(1\+E17.\+7))\textquotesingle{}
+\end{DoxyCompactItemize}

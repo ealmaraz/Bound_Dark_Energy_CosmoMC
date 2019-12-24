@@ -1,0 +1,267 @@
+\hypertarget{namespacerandutils}{}\section{randutils Module Reference}
+\label{namespacerandutils}\index{randutils@{randutils}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interfacerandutils_1_1randrotation}{randrotation}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacerandutils_a6f074e631d2bdae8023911e26f56d7aa}{initrandom}} (i, i2)
+\item 
+subroutine \mbox{\hyperlink{namespacerandutils_ad5f2ab70ffa569eab34dede61e38f4a0}{randindices}} (indices, nmax, n)
+\item 
+subroutine \mbox{\hyperlink{namespacerandutils_ad86fd161689210aee49bc794d76ceda5}{randrotations}} (R, N)
+\item 
+subroutine \mbox{\hyperlink{namespacerandutils_a2231f6417e95a0e41e8f024aaa89445f}{randrotationd}} (R, N)
+\item 
+double precision function \mbox{\hyperlink{namespacerandutils_a9279fa2584213af31977f47ef3ea77e7}{gaussian1}} ()
+\item 
+double precision function \mbox{\hyperlink{namespacerandutils_a6a11e93bb549c94d47ae94f4e6ac8c49}{cauchy1}} ()
+\item 
+real function \mbox{\hyperlink{namespacerandutils_a4ab2d2d677da8e5a41e18804782dd952}{randexp1}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacerandutils_ae91e8d9448da0877857bf6ae466c210d}{rmarin}} (IJ, KL)
+\item 
+double precision function \mbox{\hyperlink{namespacerandutils_a6065ecd619b0a63bceabcecdde031a2c}{ranmar}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacerandutils_aaf067b67d4f4be83b834ee102bdd6a22}{rand\+\_\+inst}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacerandutils_a4a902df9abe9715fa91cccf15f4cfb2f}{krand}} = K\+I\+ND(1.d0)
+\item 
+integer \mbox{\hyperlink{namespacerandutils_acbcf68b5e32d0ef96da88ca3de39a454}{rand\+\_\+feedback}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacerandutils_a6a11e93bb549c94d47ae94f4e6ac8c49}\label{namespacerandutils_a6a11e93bb549c94d47ae94f4e6ac8c49}} 
+\index{randutils@{randutils}!cauchy1@{cauchy1}}
+\index{cauchy1@{cauchy1}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{cauchy1()}{cauchy1()}}
+{\footnotesize\ttfamily double precision function randutils\+::cauchy1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References gaussian1().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerandutils_a6a11e93bb549c94d47ae94f4e6ac8c49_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerandutils_a9279fa2584213af31977f47ef3ea77e7}\label{namespacerandutils_a9279fa2584213af31977f47ef3ea77e7}} 
+\index{randutils@{randutils}!gaussian1@{gaussian1}}
+\index{gaussian1@{gaussian1}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{gaussian1()}{gaussian1()}}
+{\footnotesize\ttfamily double precision function randutils\+::gaussian1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ranmar().
+
+
+
+Referenced by cauchy1(), propose\+::propose\+\_\+r(), randrotationd(), and baseparameters\+::tbaseparameters\+\_\+setstartpositions().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{namespacerandutils_a9279fa2584213af31977f47ef3ea77e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerandutils_a9279fa2584213af31977f47ef3ea77e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerandutils_a6f074e631d2bdae8023911e26f56d7aa}\label{namespacerandutils_a6f074e631d2bdae8023911e26f56d7aa}} 
+\index{randutils@{randutils}!initrandom@{initrandom}}
+\index{initrandom@{initrandom}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{initrandom()}{initrandom()}}
+{\footnotesize\ttfamily subroutine randutils\+::initrandom (\begin{DoxyParamCaption}\item[{integer, intent(in), optional}]{i,  }\item[{integer, intent(in), optional}]{i2 }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop(), rand\+\_\+feedback, rand\+\_\+inst, and rmarin().
+
+
+
+Referenced by mcsamples\+::makesinglesamples().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacerandutils_a6f074e631d2bdae8023911e26f56d7aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerandutils_a6f074e631d2bdae8023911e26f56d7aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerandutils_a4ab2d2d677da8e5a41e18804782dd952}\label{namespacerandutils_a4ab2d2d677da8e5a41e18804782dd952}} 
+\index{randutils@{randutils}!randexp1@{randexp1}}
+\index{randexp1@{randexp1}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{randexp1()}{randexp1()}}
+{\footnotesize\ttfamily real function randutils\+::randexp1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ranmar().
+
+
+
+Referenced by propose\+::propose\+\_\+r(), and montecarlo\+::tchainsampler\+\_\+metropolisaccept().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{namespacerandutils_a4ab2d2d677da8e5a41e18804782dd952_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacerandutils_a4ab2d2d677da8e5a41e18804782dd952_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerandutils_ad5f2ab70ffa569eab34dede61e38f4a0}\label{namespacerandutils_ad5f2ab70ffa569eab34dede61e38f4a0}} 
+\index{randutils@{randutils}!randindices@{randindices}}
+\index{randindices@{randindices}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{randindices()}{randindices()}}
+{\footnotesize\ttfamily subroutine randutils\+::randindices (\begin{DoxyParamCaption}\item[{integer, dimension(n)}]{indices,  }\item[{integer, intent(in)}]{nmax,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})}
+
+
+
+References mpiutils\+::mpistop(), and ranmar().
+
+
+
+Referenced by propose\+::next().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacerandutils_ad5f2ab70ffa569eab34dede61e38f4a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{namespacerandutils_ad5f2ab70ffa569eab34dede61e38f4a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerandutils_a2231f6417e95a0e41e8f024aaa89445f}\label{namespacerandutils_a2231f6417e95a0e41e8f024aaa89445f}} 
+\index{randutils@{randutils}!randrotationd@{randrotationd}}
+\index{randrotationd@{randrotationd}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{randrotationd()}{randrotationd()}}
+{\footnotesize\ttfamily subroutine randutils\+::randrotationd (\begin{DoxyParamCaption}\item[{double precision, dimension(n,n)}]{R,  }\item[{integer, intent(in)}]{N }\end{DoxyParamCaption})}
+
+
+
+References gaussian1().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerandutils_a2231f6417e95a0e41e8f024aaa89445f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerandutils_ad86fd161689210aee49bc794d76ceda5}\label{namespacerandutils_ad86fd161689210aee49bc794d76ceda5}} 
+\index{randutils@{randutils}!randrotations@{randrotations}}
+\index{randrotations@{randrotations}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{randrotations()}{randrotations()}}
+{\footnotesize\ttfamily subroutine randutils\+::randrotations (\begin{DoxyParamCaption}\item[{real, dimension(n,n)}]{R,  }\item[{integer, intent(in)}]{N }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacerandutils_a6065ecd619b0a63bceabcecdde031a2c}\label{namespacerandutils_a6065ecd619b0a63bceabcecdde031a2c}} 
+\index{randutils@{randutils}!ranmar@{ranmar}}
+\index{ranmar@{ranmar}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{ranmar()}{ranmar()}}
+{\footnotesize\ttfamily double precision function randutils\+::ranmar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by gaussian1(), mcsamples\+::makesinglesamples(), propose\+::propose\+\_\+r(), randexp1(), and randindices().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerandutils_a6065ecd619b0a63bceabcecdde031a2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacerandutils_ae91e8d9448da0877857bf6ae466c210d}\label{namespacerandutils_ae91e8d9448da0877857bf6ae466c210d}} 
+\index{randutils@{randutils}!rmarin@{rmarin}}
+\index{rmarin@{rmarin}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{rmarin()}{rmarin()}}
+{\footnotesize\ttfamily subroutine randutils\+::rmarin (\begin{DoxyParamCaption}\item[{integer}]{IJ,  }\item[{integer}]{KL }\end{DoxyParamCaption})}
+
+
+
+Referenced by initrandom().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacerandutils_ae91e8d9448da0877857bf6ae466c210d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacerandutils_a4a902df9abe9715fa91cccf15f4cfb2f}\label{namespacerandutils_a4a902df9abe9715fa91cccf15f4cfb2f}} 
+\index{randutils@{randutils}!krand@{krand}}
+\index{krand@{krand}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{krand}{krand}}
+{\footnotesize\ttfamily integer, parameter randutils\+::krand = K\+I\+ND(1.d0)}
+
+\mbox{\Hypertarget{namespacerandutils_acbcf68b5e32d0ef96da88ca3de39a454}\label{namespacerandutils_acbcf68b5e32d0ef96da88ca3de39a454}} 
+\index{randutils@{randutils}!rand\+\_\+feedback@{rand\+\_\+feedback}}
+\index{rand\+\_\+feedback@{rand\+\_\+feedback}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{rand\+\_\+feedback}{rand\_feedback}}
+{\footnotesize\ttfamily integer randutils\+::rand\+\_\+feedback = 1}
+
+
+
+Referenced by initrandom().
+
+\mbox{\Hypertarget{namespacerandutils_aaf067b67d4f4be83b834ee102bdd6a22}\label{namespacerandutils_aaf067b67d4f4be83b834ee102bdd6a22}} 
+\index{randutils@{randutils}!rand\+\_\+inst@{rand\+\_\+inst}}
+\index{rand\+\_\+inst@{rand\+\_\+inst}!randutils@{randutils}}
+\subsubsection{\texorpdfstring{rand\+\_\+inst}{rand\_inst}}
+{\footnotesize\ttfamily integer randutils\+::rand\+\_\+inst = 0}
+
+
+
+Referenced by initrandom().
+

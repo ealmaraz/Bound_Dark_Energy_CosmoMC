@@ -1,0 +1,5 @@
+<map id="getdist.gui.mainwindow.DialogSettings.getDict" name="getdist.gui.mainwindow.DialogSettings.getDict">
+<area shape="rect" id="node2" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogSettings.html#a92e4be448141585df9a341119d8d8ae6" title="getdist.gui.mainwindow.Dialog\lSettings.doUpdate" alt="" coords="254,5,453,46"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogPlotSettings.html#a12ebac55892ba88f0fdf445ca5574375" title="getdist.gui.mainwindow.Dialog\lPlotSettings.doUpdate" alt="" coords="254,70,453,111"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1gui_1_1mainwindow_1_1DialogConfigSettings.html#aae96a4d560c1f5d0bcebb1e67596b01e" title="getdist.gui.mainwindow.Dialog\lConfigSettings.doUpdate" alt="" coords="254,135,453,177"/>
+</map>

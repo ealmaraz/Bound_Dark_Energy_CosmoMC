@@ -1,0 +1,66 @@
+\hypertarget{reionization_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/reionization.f90 File Reference}
+\label{reionization_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/reionization.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/reionization.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structreionization_1_1reionizationparams}{reionization\+::reionizationparams}}
+\item 
+type \mbox{\hyperlink{structreionization_1_1reionizationhistory}{reionization\+::reionizationhistory}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacereionization}{reionization}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) function \mbox{\hyperlink{namespacereionization_a2ed4204b4a8a9400f3e0b3a8f628b584}{reionization\+::reionization\+\_\+xe}} (a, tau, xe\+\_\+recomb)
+\item 
+integer function \mbox{\hyperlink{namespacereionization_adedd398d9dbfdc65012047bdfe5b9043}{reionization\+::reionization\+\_\+timesteps}} (Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a8d8a4a4fcaa0e1adc50de9a45143d2f8}{reionization\+::reionization\+\_\+readparams}} (Reion, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_aee52456a0e9c89ddc33d45ae3d14a484}{reionization\+::reionization\+\_\+setparamsforzre}} (Reion, Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a59dc84ce6904020903bfc0ae6f864a27}{reionization\+::reionization\+\_\+init}} (Reion, Reion\+Hist, Yhe, akthom, tau0, Feedback\+Level)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_acd4c0417f4ec9bc6d5c9b6bea2b7b035}{reionization\+::reionization\+\_\+setdefparams}} (Reion)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a3b0809c8b733201a4293d2bd47d81398}{reionization\+::reionization\+\_\+validate}} (Reion, OK)
+\item 
+real(dl) function \mbox{\hyperlink{namespacereionization_a9b89486311458d0dbd526fc233ca5ba5}{reionization\+::reionization\+\_\+doptdepth\+\_\+dz}} (z)
+\item 
+real(dl) function \mbox{\hyperlink{namespacereionization_a8a3b0a917762ce13033f59ef52fad521}{reionization\+::reionization\+\_\+getoptdepth}} (Reion, Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a00f14156cc08a86c4b28e0d21bc7cd2e}{reionization\+::reionization\+\_\+zrefromoptdepth}} (Reion, Reion\+Hist)
+\item 
+subroutine \mbox{\hyperlink{namespacereionization_a13fb01c3cb03034262b0447b7527aae9}{reionization\+::reionization\+\_\+setfromoptdepth}} (Reion, Reion\+Hist)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacereionization_a0f6786ae38db76cf41888ab5184a33e3}{reionization\+::reionization\+\_\+name}} = \textquotesingle{}C\+A\+M\+B\+\_\+reionization\textquotesingle{}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacereionization_a524cb51bf4f9b20d0d3e3be38d351411}{reionization\+::reionization\+\_\+deffraction}} = -\/1.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacereionization_a277cddc498b57445702ef3b7301c1a0d}{reionization\+::reionization\+\_\+accuracyboost}} = 1.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacereionization_a55530d3d422131a11f47a02e17e4aba3}{reionization\+::rionization\+\_\+zexp}} = 1.\+5\+\_\+dl
+\item 
+logical \mbox{\hyperlink{namespacereionization_abef718177b8ea5ca6c7ee8d1c78e60c6}{reionization\+::include\+\_\+helium\+\_\+fullreion}} = .true.
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacereionization_a5631e22e02e0694f1813b80cdd6004c1}{reionization\+::reionization\+\_\+maxz}} = 50.\+\_\+dl
+\item 
+real(dl), parameter, private \mbox{\hyperlink{namespacereionization_a4d46e2413c850ed23c74c3808d8ac06b}{reionization\+::reionization\+\_\+tol}} = 1d-\/5
+\item 
+real(dl), external, private \mbox{\hyperlink{namespacereionization_a51d090041c100fe2820d487b4f95146d}{reionization\+::dtauda}}
+\item 
+real(dl), external, private \mbox{\hyperlink{namespacereionization_adb3b9c977f29d4636fa9cf724efd5979}{reionization\+::rombint}}
+\item 
+real(dl), external, private \mbox{\hyperlink{namespacereionization_a415cf31bf0d6b1564808bbf7ee0b2c85}{reionization\+::rombint2}}
+\item 
+type(reionizationparams), pointer, private \mbox{\hyperlink{namespacereionization_a3cd065cf1b3c5c33363c2d7e5d2443ba}{reionization\+::thisreion}}
+\item 
+type(reionizationhistory), pointer, private \mbox{\hyperlink{namespacereionization_afc2b645c62db796865419a767ad68a98}{reionization\+::thisreionhist}}
+\end{DoxyCompactItemize}

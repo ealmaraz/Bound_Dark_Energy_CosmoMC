@@ -1,0 +1,9 @@
+<map id="camb::camb_cleanup" name="camb::camb_cleanup">
+<area shape="rect" id="node2" href="$namespacespherbessels.html#a0abb3ebb234b8547151b14c0cdb439be" title="spherbessels::bessels_free" alt="" coords="204,5,385,32"/>
+<area shape="rect" id="node3" href="$namespacemodeldata.html#a4a66d258c52f2b7639e92ce04f7047ff" title="modeldata::modeldata_free" alt="" coords="205,56,384,83"/>
+<area shape="rect" id="node6" href="$namespacethermodata.html#a29f627a601dcc5afc90dc9ea8e4d902a" title="thermodata::thermodata_free" alt="" coords="200,107,389,133"/>
+<area shape="rect" id="node7" href="$namespacetransfer.html#a34407967277591afeb26880a4f0926dc" title="transfer::transfer_free" alt="" coords="221,157,368,184"/>
+<area shape="rect" id="node4" href="$namespacemodeldata.html#a2d6ecb98a3edf71d3e3ed3ee1ffb82d1" title="modeldata::free_cltransfer" alt="" coords="437,56,611,83"/>
+<area shape="rect" id="node5" href="$namespacemodeldata.html#a89ab0d30547c35685982ecf01d7145bd" title="modeldata::free_limber" alt="" coords="659,56,813,83"/>
+<area shape="rect" id="node8" href="$namespacetransfer.html#a0e02ff3d1ba9dd5ad8c5dcaf76987ecc" title="transfer::transfer\l_nullify" alt="" coords="465,150,583,191"/>
+</map>

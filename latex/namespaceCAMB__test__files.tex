@@ -1,0 +1,604 @@
+\hypertarget{namespaceCAMB__test__files}{}\section{C\+A\+M\+B\+\_\+test\+\_\+files Namespace Reference}
+\label{namespaceCAMB__test__files}\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCAMB__test__files_1_1ColTol}{Col\+Tol}}
+\item 
+class \mbox{\hyperlink{classCAMB__test__files_1_1Ignore}{Ignore}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a55a6c3bc344b92ad1a96f55cfc36f619}{printlog}} (text)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a64d237c051d366401dcdc40415829dca}{diffnsqrt}} (old, new, tol, c1, c2)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}{normabs}} (o, n, tol)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_af180889cae33202fe38467a5104dc783}{want\+C\+M\+B\+Tandlmaxscalarge2000}} (ini)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_ab28edef047b56aa699abc0b3212cd5fa}{want\+C\+M\+BT}} (ini)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a1aa48bd86ed68f1c0b441e871086dbfa}{run\+Script}} (fname)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_aeb8138884c3f3796f817f15a04d3bbb2}{get\+Inis}} (ini\+\_\+dir)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a58c704352d09b51b6422bbd028119e8f}{get\+Test\+Params}} ()
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_ad8e40066d0c7e67c40c354153d790106}{list\+\_\+files}} (file\+\_\+dir)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d}{output\+\_\+file\+\_\+num}} (file\+\_\+dir)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a2071b2434992a52dd7fc9c49db14d86d}{make\+Ini\+Files}} ()
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a0191b8bd66eb62d12d53cb0c2267074e}{get\+\_\+tolerance\+\_\+vector}} (filename, cols)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a79f9b0e8484d9f397e2dc4addc178620}{num\+\_\+unequal}} (filename, cmp\+Fcn)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a279603bcda2879c085f8dc09c58baa73}{customsplit}} (s)
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_ab9daec082b15ebd0f1fdbef965cb2c82}{textualcmp}} (o, n, tolerance)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a1b844d4828dfe6615651d8b42373f8f8}{parser}} = argparse.\+Argument\+Parser(description=\textquotesingle{}Run C\+A\+MB tests\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a5e8a642e477196d509273a7c1ce53a47}{help}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a51e0ffc6519b279097bc3783fc657a3f}{action}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a87d8516a02241b4fa206803719f7597a}{default}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a8edfea438971669fea3e0775bd14263a}{type}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_ae415889d382c2b3dee8dea1dd987ebb0}{float}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_ae3f939a649209ec8d0004b0dfef3210b}{int}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_adeeef79cdcea327b75fcb678864b86a4}{args}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a5fd75937aae4359cdd82917c369cbdd0}{logfile}} = None
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_acc5d4d38c68aeefa893c842c45f7b574}{coltol1}}
+\item 
+list \mbox{\hyperlink{namespaceCAMB__test__files_a325a83c6a5bc77af11b528f15bb821e0}{filetolmatrix}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_ad45bde770497a23cf5cfa89d855229d3}{prog}} = os.\+path.\+abspath(args.\+prog)
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_aab425eab53a3ec49aec1a01880b7bad7}{out\+\_\+files\+\_\+dir}} = os.\+path.\+join(args.\+ini\+\_\+dir, args.\+out\+\_\+files\+\_\+dir)
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_aa74109e69e8ed8e8a518bb379902a1a0}{def\+Cmp\+Fcn}} = \mbox{\hyperlink{plotcls_8m_aaccc9105df5383111407fd5b41255e23}{t}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_aa5f31d42250044659990e7a019e90d98}{out\+\_\+files\+\_\+dir2}} = os.\+path.\+join(args.\+ini\+\_\+dir, args.\+diff\+\_\+to)
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_af23f4e00bd78d804fe07da6c2353285c}{match}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_aa80ce7293e95f2cb3e4e1ad2b0d424fa}{mismatch}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_aed6dfae5d7772aeb01bdf0bc6ea2aff9}{errors}} = 0
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a31a287a53762589e5f0d1b752e547c4a}{len\+\_\+errors}} = len(\mbox{\hyperlink{namespaceCAMB__test__files_aed6dfae5d7772aeb01bdf0bc6ea2aff9}{errors}})
+\item 
+list \mbox{\hyperlink{namespaceCAMB__test__files_afe3806691a62f8356f9366cf3e506351}{numerical\+\_\+mismatch}} = \mbox{[}f for f in \mbox{\hyperlink{namespaceCAMB__test__files_aa80ce7293e95f2cb3e4e1ad2b0d424fa}{mismatch}} \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} \mbox{\hyperlink{namespaceCAMB__test__files_a79f9b0e8484d9f397e2dc4addc178620}{num\+\_\+unequal}}(f, \mbox{\hyperlink{namespaceCAMB__test__files_aa74109e69e8ed8e8a518bb379902a1a0}{def\+Cmp\+Fcn}})\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_ac9ad1cb649c3984eee8d4f3cc182249c}{len\+\_\+num\+\_\+mismatch}} = len(\mbox{\hyperlink{namespaceCAMB__test__files_afe3806691a62f8356f9366cf3e506351}{numerical\+\_\+mismatch}})
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_adb63f5afc156ccfe8108790fdb1f5f49}{inis}} = \mbox{\hyperlink{namespaceCAMB__test__files_a2071b2434992a52dd7fc9c49db14d86d}{make\+Ini\+Files}}()
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a830af4ed561145655ecc4f63423fd5b1}{files}} = \mbox{\hyperlink{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d}{output\+\_\+file\+\_\+num}}(\mbox{\hyperlink{namespaceCAMB__test__files_aab425eab53a3ec49aec1a01880b7bad7}{out\+\_\+files\+\_\+dir}})
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a0cace82a02e13f728b821892522caec6}{start}} = time.\+time()
+\item 
+list \mbox{\hyperlink{namespaceCAMB__test__files_aed3a631344121c3680babbd847dd4277}{error\+\_\+list}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a22e6d582c6a2f15d29d552ba79bd8f8e}{timing}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_a392636a8d8cbe4518d6774f916e88a64}{output}}
+\item 
+\mbox{\hyperlink{namespaceCAMB__test__files_aa0d4c1e1d81c9cc6e344e6858e1cef57}{return\+\_\+code}}
+\item 
+def \mbox{\hyperlink{namespaceCAMB__test__files_a168a759276e1aab6fe52615feb2e324a}{nfiles}} = \mbox{\hyperlink{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d}{output\+\_\+file\+\_\+num}}(\mbox{\hyperlink{namespaceCAMB__test__files_aab425eab53a3ec49aec1a01880b7bad7}{out\+\_\+files\+\_\+dir}})
+\item 
+string \mbox{\hyperlink{namespaceCAMB__test__files_abed78275c98420a4c677129c5a2a314c}{msg}} = \textquotesingle{}..OK, produced \%s \mbox{\hyperlink{namespaceCAMB__test__files_a830af4ed561145655ecc4f63423fd5b1}{files}} in \%.\+2fs\textquotesingle{} \% (nfiles -\/ files, timing)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a279603bcda2879c085f8dc09c58baa73}\label{namespaceCAMB__test__files_a279603bcda2879c085f8dc09c58baa73}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!customsplit@{customsplit}}
+\index{customsplit@{customsplit}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{customsplit()}{customsplit()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+customsplit (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Need to implement our own split, because for exponents of three digits
+the 'E' marking the exponent is dropped, which is not supported by python.
+:param s: The string to split.
+:return: An array containing the mantissa and the exponent, or the value, when no split was possible.
+\end{DoxyVerb}
+ 
+
+Referenced by num\+\_\+unequal(), and textualcmp().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_a279603bcda2879c085f8dc09c58baa73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a64d237c051d366401dcdc40415829dca}\label{namespaceCAMB__test__files_a64d237c051d366401dcdc40415829dca}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!diffnsqrt@{diffnsqrt}}
+\index{diffnsqrt@{diffnsqrt}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{diffnsqrt()}{diffnsqrt()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+diffnsqrt (\begin{DoxyParamCaption}\item[{}]{old,  }\item[{}]{new,  }\item[{}]{tol,  }\item[{}]{c1,  }\item[{}]{c2 }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implement |C1'x'C2_{new} - C1'x'C2_{old}| / sqrt(C1'x'C1_{old} * C2'x'C2_{old}) < tol.
+:param old: The row of the old values.
+:param new: The row of the new values.
+:param tol: The tolerance to match.
+:param c1: The name of the first component.
+:param c2: The name of the second component.
+:return: True, when |C1'x'C2_{new} - C1'x'C2_{old}| / sqrt(C1'x'C1_{old} * C2'x'C2_{old}) < tol, false else.
+:rtype : bool
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceCAMB__test__files_a0191b8bd66eb62d12d53cb0c2267074e}\label{namespaceCAMB__test__files_a0191b8bd66eb62d12d53cb0c2267074e}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!get\+\_\+tolerance\+\_\+vector@{get\+\_\+tolerance\+\_\+vector}}
+\index{get\+\_\+tolerance\+\_\+vector@{get\+\_\+tolerance\+\_\+vector}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{get\+\_\+tolerance\+\_\+vector()}{get\_tolerance\_vector()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+get\+\_\+tolerance\+\_\+vector (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{cols }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the tolerances for the given filename.
+:param filename: The name of the file to retrieve the tolerances for.
+:param cols: Gives the column names.
+:returns: False, when the file is to be Ignore()d completely;
+the vector of tolerances when a pattern in the filetolmatrix matched;
+an empty ColTol when no match was found.
+\end{DoxyVerb}
+ 
+
+Referenced by num\+\_\+unequal().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{namespaceCAMB__test__files_a0191b8bd66eb62d12d53cb0c2267074e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_aeb8138884c3f3796f817f15a04d3bbb2}\label{namespaceCAMB__test__files_aeb8138884c3f3796f817f15a04d3bbb2}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!get\+Inis@{get\+Inis}}
+\index{get\+Inis@{get\+Inis}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{get\+Inis()}{getInis()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+get\+Inis (\begin{DoxyParamCaption}\item[{}]{ini\+\_\+dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a58c704352d09b51b6422bbd028119e8f}\label{namespaceCAMB__test__files_a58c704352d09b51b6422bbd028119e8f}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!get\+Test\+Params@{get\+Test\+Params}}
+\index{get\+Test\+Params@{get\+Test\+Params}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{get\+Test\+Params()}{getTestParams()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+get\+Test\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References int, stringutils.\+join(), and copy\+Grid\+Files.\+zip.
+
+
+
+Referenced by make\+Ini\+Files().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_a58c704352d09b51b6422bbd028119e8f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_a58c704352d09b51b6422bbd028119e8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_ad8e40066d0c7e67c40c354153d790106}\label{namespaceCAMB__test__files_ad8e40066d0c7e67c40c354153d790106}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!list\+\_\+files@{list\+\_\+files}}
+\index{list\+\_\+files@{list\+\_\+files}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{list\+\_\+files()}{list\_files()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+list\+\_\+files (\begin{DoxyParamCaption}\item[{}]{file\+\_\+dir }\end{DoxyParamCaption})}
+
+
+
+Referenced by output\+\_\+file\+\_\+num().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespaceCAMB__test__files_ad8e40066d0c7e67c40c354153d790106_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a2071b2434992a52dd7fc9c49db14d86d}\label{namespaceCAMB__test__files_a2071b2434992a52dd7fc9c49db14d86d}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!make\+Ini\+Files@{make\+Ini\+Files}}
+\index{make\+Ini\+Files@{make\+Ini\+Files}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{make\+Ini\+Files()}{makeIniFiles()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+make\+Ini\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References get\+Test\+Params(), and stringutils.\+join().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_a2071b2434992a52dd7fc9c49db14d86d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}\label{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!normabs@{normabs}}
+\index{normabs@{normabs}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{normabs()}{normabs()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+normabs (\begin{DoxyParamCaption}\item[{}]{o,  }\item[{}]{n,  }\item[{}]{tol }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute |o - n| / |o| < tol
+:param o: The old value
+:param n: The new value
+:return: True when |o - n| / |o| < tol, false else
+\end{DoxyVerb}
+ 
+
+References printlog().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a79f9b0e8484d9f397e2dc4addc178620}\label{namespaceCAMB__test__files_a79f9b0e8484d9f397e2dc4addc178620}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!num\+\_\+unequal@{num\+\_\+unequal}}
+\index{num\+\_\+unequal@{num\+\_\+unequal}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{num\+\_\+unequal()}{num\_unequal()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+num\+\_\+unequal (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{cmp\+Fcn }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether two files are numerically unequal for the given compare function.
+:param filename: The base name of the files to check.
+:param cmpFcn: The default comparison function. Can be overriden by the filetolmatrix.
+:return: True, when the files do not match, false else.
+\end{DoxyVerb}
+ 
+
+References customsplit(), float, get\+\_\+tolerance\+\_\+vector(), stringutils.\+join(), printlog(), and copy\+Grid\+Files.\+zip.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_a79f9b0e8484d9f397e2dc4addc178620_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d}\label{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!output\+\_\+file\+\_\+num@{output\+\_\+file\+\_\+num}}
+\index{output\+\_\+file\+\_\+num@{output\+\_\+file\+\_\+num}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{output\+\_\+file\+\_\+num()}{output\_file\_num()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+output\+\_\+file\+\_\+num (\begin{DoxyParamCaption}\item[{}]{file\+\_\+dir }\end{DoxyParamCaption})}
+
+
+
+References list\+\_\+files().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a55a6c3bc344b92ad1a96f55cfc36f619}\label{namespaceCAMB__test__files_a55a6c3bc344b92ad1a96f55cfc36f619}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!printlog@{printlog}}
+\index{printlog@{printlog}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{printlog()}{printlog()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+printlog (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Referenced by normabs(), and num\+\_\+unequal().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_a55a6c3bc344b92ad1a96f55cfc36f619_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a1aa48bd86ed68f1c0b441e871086dbfa}\label{namespaceCAMB__test__files_a1aa48bd86ed68f1c0b441e871086dbfa}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!run\+Script@{run\+Script}}
+\index{run\+Script@{run\+Script}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{run\+Script()}{runScript()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+run\+Script (\begin{DoxyParamCaption}\item[{}]{fname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_ab9daec082b15ebd0f1fdbef965cb2c82}\label{namespaceCAMB__test__files_ab9daec082b15ebd0f1fdbef965cb2c82}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!textualcmp@{textualcmp}}
+\index{textualcmp@{textualcmp}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{textualcmp()}{textualcmp()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+textualcmp (\begin{DoxyParamCaption}\item[{}]{o,  }\item[{}]{n,  }\item[{}]{tolerance }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do a textual comparison for numbers whose exponent is zero or greater.
+The fortran code writes floating point values, with 5 significant digits
+after the comma and an exponent. I.e., for numbers with a positive
+exponent the usual comparison against a delta fails.
+:param o: The old value.
+:param n: The new value.
+:param tolerance: The allowed tolerance.
+:return: True, when |o - n| is greater then the tolerance allows, false else.
+\end{DoxyVerb}
+ 
+
+References customsplit(), float, and int.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCAMB__test__files_ab9daec082b15ebd0f1fdbef965cb2c82_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceCAMB__test__files_ab28edef047b56aa699abc0b3212cd5fa}\label{namespaceCAMB__test__files_ab28edef047b56aa699abc0b3212cd5fa}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!want\+C\+M\+BT@{want\+C\+M\+BT}}
+\index{want\+C\+M\+BT@{want\+C\+M\+BT}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{want\+C\+M\+B\+T()}{wantCMBT()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+want\+C\+M\+BT (\begin{DoxyParamCaption}\item[{}]{ini }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true when want_CMB is set.
+:param ini: The dictionary all inifile settings.
+:return: True, when want_CMB is set.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceCAMB__test__files_af180889cae33202fe38467a5104dc783}\label{namespaceCAMB__test__files_af180889cae33202fe38467a5104dc783}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!want\+C\+M\+B\+Tandlmaxscalarge2000@{want\+C\+M\+B\+Tandlmaxscalarge2000}}
+\index{want\+C\+M\+B\+Tandlmaxscalarge2000@{want\+C\+M\+B\+Tandlmaxscalarge2000}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{want\+C\+M\+B\+Tandlmaxscalarge2000()}{wantCMBTandlmaxscalarge2000()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+want\+C\+M\+B\+Tandlmaxscalarge2000 (\begin{DoxyParamCaption}\item[{}]{ini }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true when want_CMB is set in the ini file and l_max_scalar is >= 2000.
+:param ini: The dictionary all inifile settings.
+:return: True, when want_CMB and l_max_scalar >= 2000, false else.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceCAMB__test__files_a51e0ffc6519b279097bc3783fc657a3f}\label{namespaceCAMB__test__files_a51e0ffc6519b279097bc3783fc657a3f}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!action@{action}}
+\index{action@{action}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+action}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_adeeef79cdcea327b75fcb678864b86a4}\label{namespaceCAMB__test__files_adeeef79cdcea327b75fcb678864b86a4}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!args@{args}}
+\index{args@{args}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+args = parser.\+parse\+\_\+args()}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_acc5d4d38c68aeefa893c842c45f7b574}\label{namespaceCAMB__test__files_acc5d4d38c68aeefa893c842c45f7b574}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!coltol1@{coltol1}}
+\index{coltol1@{coltol1}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{coltol1}{coltol1}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+coltol1}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a87d8516a02241b4fa206803719f7597a}\label{namespaceCAMB__test__files_a87d8516a02241b4fa206803719f7597a}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!default@{default}}
+\index{default@{default}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+default}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_aa74109e69e8ed8e8a518bb379902a1a0}\label{namespaceCAMB__test__files_aa74109e69e8ed8e8a518bb379902a1a0}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!def\+Cmp\+Fcn@{def\+Cmp\+Fcn}}
+\index{def\+Cmp\+Fcn@{def\+Cmp\+Fcn}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{def\+Cmp\+Fcn}{defCmpFcn}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+def\+Cmp\+Fcn = \mbox{\hyperlink{plotcls_8m_aaccc9105df5383111407fd5b41255e23}{t}}}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_aed3a631344121c3680babbd847dd4277}\label{namespaceCAMB__test__files_aed3a631344121c3680babbd847dd4277}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!error\+\_\+list@{error\+\_\+list}}
+\index{error\+\_\+list@{error\+\_\+list}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{error\+\_\+list}{error\_list}}
+{\footnotesize\ttfamily list C\+A\+M\+B\+\_\+test\+\_\+files.\+error\+\_\+list = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_aed6dfae5d7772aeb01bdf0bc6ea2aff9}\label{namespaceCAMB__test__files_aed6dfae5d7772aeb01bdf0bc6ea2aff9}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!errors@{errors}}
+\index{errors@{errors}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceCAMB__test__files_ae3f939a649209ec8d0004b0dfef3210b}{int}} C\+A\+M\+B\+\_\+test\+\_\+files.\+errors = 0}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a830af4ed561145655ecc4f63423fd5b1}\label{namespaceCAMB__test__files_a830af4ed561145655ecc4f63423fd5b1}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!files@{files}}
+\index{files@{files}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+files = \mbox{\hyperlink{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d}{output\+\_\+file\+\_\+num}}(\mbox{\hyperlink{namespaceCAMB__test__files_aab425eab53a3ec49aec1a01880b7bad7}{out\+\_\+files\+\_\+dir}})}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a325a83c6a5bc77af11b528f15bb821e0}\label{namespaceCAMB__test__files_a325a83c6a5bc77af11b528f15bb821e0}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!filetolmatrix@{filetolmatrix}}
+\index{filetolmatrix@{filetolmatrix}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{filetolmatrix}{filetolmatrix}}
+{\footnotesize\ttfamily list C\+A\+M\+B\+\_\+test\+\_\+files.\+filetolmatrix}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  [[\textcolor{stringliteral}{"*scalCls.dat"}, Ignore()],  \textcolor{comment}{# Ignore() all scalCls.dat files.}
+2                  [\textcolor{stringliteral}{"*lensedCls.dat"}, coltol1],  \textcolor{comment}{# lensed and lenspotential files both use coltol1 given
+       above}
+3                  [\textcolor{stringliteral}{"*lensedtotCls.dat"}, coltol1],
+4                  [\textcolor{stringliteral}{"*lenspotentialCls.dat"}, coltol1],
+5                  [\textcolor{stringliteral}{"*scalCovCls.dat"}, coltol1],
+6                  [\textcolor{stringliteral}{"*tensCls.dat"}, ColTol(\{\textcolor{stringliteral}{"TE"}: (\textcolor{keyword}{True}, \textcolor{keyword}{lambda} o, n: \mbox{\hyperlink{namespaceCAMB__test__files_a64d237c051d366401dcdc40415829dca}{diffnsqrt}}(o, n, 1e-2, \textcolor{stringliteral}{'T'}, \textcolor{stringliteral}{'E'}
+      )),
+7                                           \textcolor{stringliteral}{"*"}: (\textcolor{keyword}{True}, [(0, 1e-2),
+8                                                 (600, Ignore())])\})],
+9                  [\textcolor{stringliteral}{"*matterpower.dat"}, ColTol(\{\textcolor{stringliteral}{"P"}: (\textcolor{keyword}{True}, \textcolor{keyword}{lambda} o, n: \mbox{\hyperlink{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}{normabs}}(o[\textcolor{stringliteral}{"P"}], n[\textcolor{stringliteral}{"P"}], 1e-3 \textcolor{keywordflow}{
+      if} n[\textcolor{stringliteral}{"k/h"}] < 1 \textcolor{keywordflow}{else} 3e-3)),
+10                                               \textcolor{stringliteral}{"*"}: Ignore()\})],
+11                  [\textcolor{stringliteral}{"*transfer\_out.dat"}, ColTol(\{\textcolor{stringliteral}{"baryon"}: (\textcolor{keyword}{True}, \textcolor{keyword}{lambda} o, n: 
+      \mbox{\hyperlink{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}{normabs}}(o[\textcolor{stringliteral}{"baryon"}], n[\textcolor{stringliteral}{"baryon"}], 1e-3 \textcolor{keywordflow}{if} n[\textcolor{stringliteral}{"k/h"}] < 1 \textcolor{keywordflow}{else} 3e-3)),
+12                                                \textcolor{stringliteral}{"CDM"}: (\textcolor{keyword}{True}, \textcolor{keyword}{lambda} o, n: 
+      \mbox{\hyperlink{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}{normabs}}(o[\textcolor{stringliteral}{"CDM"}], n[\textcolor{stringliteral}{"CDM"}], 1e-3 \textcolor{keywordflow}{if} n[\textcolor{stringliteral}{"k/h"}] < 1 \textcolor{keywordflow}{else} 3e-3)),
+13                                                \textcolor{stringliteral}{"v\_CDM"}: (\textcolor{keyword}{True}, \textcolor{keyword}{lambda} o, n: 
+      \mbox{\hyperlink{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}{normabs}}(o[\textcolor{stringliteral}{"v\_CDM"}], n[\textcolor{stringliteral}{"v\_CDM"}], 1e-3 \textcolor{keywordflow}{if} n[\textcolor{stringliteral}{"k/h"}] < 1 \textcolor{keywordflow}{else} 3e-3)),
+14                                                \textcolor{stringliteral}{"v\_b"}: (\textcolor{keyword}{True}, \textcolor{keyword}{lambda} o, n: 
+      \mbox{\hyperlink{namespaceCAMB__test__files_a942fd27486efa4cad8f9592101d8d6b4}{normabs}}(o[\textcolor{stringliteral}{"v\_b"}], n[\textcolor{stringliteral}{"v\_b"}], 1e-3 \textcolor{keywordflow}{if} n[\textcolor{stringliteral}{"k/h"}] < 1 \textcolor{keywordflow}{else} 3e-3)),
+15                                                \textcolor{stringliteral}{"*"}: Ignore()\})],
+16                  [\textcolor{stringliteral}{"*sharp\_cl\_*.dat"}, ColTol(\{\textcolor{stringliteral}{"CL"}: (\textcolor{keyword}{True}, 1e-3),
+17                                              \textcolor{stringliteral}{"P"}: (\textcolor{keyword}{True}, 1e-3),
+18                                              \textcolor{stringliteral}{"P\_vv"}: (\textcolor{keyword}{True}, 1e-3),
+19                                              \textcolor{stringliteral}{"*"}: Ignore()\})],
+20                  [\textcolor{stringliteral}{"*"}, ColTol(\{\textcolor{stringliteral}{"*"}: (\textcolor{keyword}{True}, args.diff\_tolerance)\})],
+21                 ]
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceCAMB__test__files_ae415889d382c2b3dee8dea1dd987ebb0}\label{namespaceCAMB__test__files_ae415889d382c2b3dee8dea1dd987ebb0}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!float@{float}}
+\index{float@{float}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+float}
+
+
+
+Referenced by getdist.\+mcsamples.\+M\+C\+Samples.\+\_\+init\+Limits(), getdist.\+plots.\+Get\+Dist\+Plotter.\+add\+\_\+2d\+\_\+shading(), paramgrid.\+batchjob.\+job\+Item.\+converge\+Stat(), getdist.\+convolve.\+convolve\+Gaussian(), getdist.\+convolve.\+convolve\+Gaussian\+D\+C\+T(), getdist.\+types.\+Number\+Formatter.\+format\+Number(), getdist.\+mcsamples.\+M\+C\+Samples.\+get2\+D\+Density\+Grid\+Data(), getdist.\+chains.\+Weighted\+Samples.\+get\+Effective\+Samples\+Gaussian\+K\+D\+E(), getdist.\+types.\+Like\+Stats.\+load\+From\+File(), planck.\+plik\+\_\+postprocess.\+main\+\_\+fg2000(), getdist.\+types.\+Number\+Formatter.\+namesig\+Figs(), num\+\_\+unequal(), getdist.\+types.\+number\+Figs(), planck.\+plik\+\_\+postprocess.\+parse\+\_\+minimumfile(), camb.\+model.\+C\+A\+M\+Bparams.\+primordial\+\_\+power(), paramgrid.\+batchjob.\+job\+Item.\+R(), bbn.\+run\+B\+B\+Nplot(), camb.\+bbn.\+run\+B\+B\+Nplot(), getdist.\+parampriors.\+Param\+Bounds.\+set\+Range(), Nxyl.\+solvr(), textualcmp(), and getdist.\+mcsamples.\+M\+C\+Samples.\+update\+Base\+Statistics().
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a5e8a642e477196d509273a7c1ce53a47}\label{namespaceCAMB__test__files_a5e8a642e477196d509273a7c1ce53a47}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!help@{help}}
+\index{help@{help}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+help}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_adb63f5afc156ccfe8108790fdb1f5f49}\label{namespaceCAMB__test__files_adb63f5afc156ccfe8108790fdb1f5f49}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!inis@{inis}}
+\index{inis@{inis}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{inis}{inis}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+inis = \mbox{\hyperlink{namespaceCAMB__test__files_a2071b2434992a52dd7fc9c49db14d86d}{make\+Ini\+Files}}()}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_ae3f939a649209ec8d0004b0dfef3210b}\label{namespaceCAMB__test__files_ae3f939a649209ec8d0004b0dfef3210b}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!int@{int}}
+\index{int@{int}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+int}
+
+
+
+Referenced by getdist.\+mcsamples.\+M\+C\+Samples.\+\_\+set\+Burn\+Options(), paramgrid.\+jobqueue.\+add\+Arguments(), camb\+Plots.\+cl\+\_\+plot(), camb\+Plots.\+Cl\+Result.\+compare\+\_\+array\+\_\+acc(), getdist.\+convolve.\+convolve\+F\+F\+Tn(), getdist.\+convolve.\+convolve\+Gaussian(), getdist.\+convolve.\+convolve\+Gaussian\+D\+C\+T(), getdist.\+convolve.\+convolve\+Gaussian\+Trunc(), paramgrid.\+jobqueue.\+delete\+Jobs(), copy\+Grid\+Files.\+do\+Copy(), getdist.\+mcsamples.\+M\+C\+Samples.\+get1\+D\+Density\+Grid\+Data(), getdist.\+mcsamples.\+M\+C\+Samples.\+get2\+D\+Density\+Grid\+Data(), getdist.\+chains.\+Weighted\+Samples.\+get\+Effective\+Samples\+Gaussian\+K\+D\+E(), getdist.\+mcsamples.\+M\+C\+Samples.\+get\+Num\+Sample\+Summary\+Text(), get\+Test\+Params(), Get\+Dist.\+main(), planck.\+plik\+\_\+postprocess.\+main\+\_\+fg2000(), getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure(), getdist.\+types.\+number\+Figs(), camb\+Plots.\+plot\+\_\+array(), getdist.\+chains.\+Weighted\+Samples.\+remove\+Burn(), plot\+\_\+directive.\+render\+\_\+figures(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+sim(), textualcmp(), getdist.\+chains.\+Weighted\+Samples.\+thin\+\_\+indices(), and camb.\+bispectrum.\+threej().
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a31a287a53762589e5f0d1b752e547c4a}\label{namespaceCAMB__test__files_a31a287a53762589e5f0d1b752e547c4a}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!len\+\_\+errors@{len\+\_\+errors}}
+\index{len\+\_\+errors@{len\+\_\+errors}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{len\+\_\+errors}{len\_errors}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+len\+\_\+errors = len(\mbox{\hyperlink{namespaceCAMB__test__files_aed6dfae5d7772aeb01bdf0bc6ea2aff9}{errors}})}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_ac9ad1cb649c3984eee8d4f3cc182249c}\label{namespaceCAMB__test__files_ac9ad1cb649c3984eee8d4f3cc182249c}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!len\+\_\+num\+\_\+mismatch@{len\+\_\+num\+\_\+mismatch}}
+\index{len\+\_\+num\+\_\+mismatch@{len\+\_\+num\+\_\+mismatch}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{len\+\_\+num\+\_\+mismatch}{len\_num\_mismatch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceCAMB__test__files_ae3f939a649209ec8d0004b0dfef3210b}{int}} C\+A\+M\+B\+\_\+test\+\_\+files.\+len\+\_\+num\+\_\+mismatch = len(\mbox{\hyperlink{namespaceCAMB__test__files_afe3806691a62f8356f9366cf3e506351}{numerical\+\_\+mismatch}})}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a5fd75937aae4359cdd82917c369cbdd0}\label{namespaceCAMB__test__files_a5fd75937aae4359cdd82917c369cbdd0}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!logfile@{logfile}}
+\index{logfile@{logfile}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{logfile}{logfile}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+logfile = None}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_af23f4e00bd78d804fe07da6c2353285c}\label{namespaceCAMB__test__files_af23f4e00bd78d804fe07da6c2353285c}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!match@{match}}
+\index{match@{match}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{match}{match}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+match}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_aa80ce7293e95f2cb3e4e1ad2b0d424fa}\label{namespaceCAMB__test__files_aa80ce7293e95f2cb3e4e1ad2b0d424fa}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!mismatch@{mismatch}}
+\index{mismatch@{mismatch}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{mismatch}{mismatch}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+mismatch}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_abed78275c98420a4c677129c5a2a314c}\label{namespaceCAMB__test__files_abed78275c98420a4c677129c5a2a314c}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!msg@{msg}}
+\index{msg@{msg}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily string C\+A\+M\+B\+\_\+test\+\_\+files.\+msg = \textquotesingle{}..OK, produced \%s \mbox{\hyperlink{namespaceCAMB__test__files_a830af4ed561145655ecc4f63423fd5b1}{files}} in \%.\+2fs\textquotesingle{} \% (nfiles -\/ files, timing)}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a168a759276e1aab6fe52615feb2e324a}\label{namespaceCAMB__test__files_a168a759276e1aab6fe52615feb2e324a}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!nfiles@{nfiles}}
+\index{nfiles@{nfiles}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{nfiles}{nfiles}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+nfiles = \mbox{\hyperlink{namespaceCAMB__test__files_a2aa5d4f5677cf5a78388238c4dc45b7d}{output\+\_\+file\+\_\+num}}(\mbox{\hyperlink{namespaceCAMB__test__files_aab425eab53a3ec49aec1a01880b7bad7}{out\+\_\+files\+\_\+dir}})}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_afe3806691a62f8356f9366cf3e506351}\label{namespaceCAMB__test__files_afe3806691a62f8356f9366cf3e506351}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!numerical\+\_\+mismatch@{numerical\+\_\+mismatch}}
+\index{numerical\+\_\+mismatch@{numerical\+\_\+mismatch}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{numerical\+\_\+mismatch}{numerical\_mismatch}}
+{\footnotesize\ttfamily list C\+A\+M\+B\+\_\+test\+\_\+files.\+numerical\+\_\+mismatch = \mbox{[}f for f in \mbox{\hyperlink{namespaceCAMB__test__files_aa80ce7293e95f2cb3e4e1ad2b0d424fa}{mismatch}} \mbox{\hyperlink{plotTT_8m_a722e57dd98d67aec0b3589ce8efff8bb}{if}} \mbox{\hyperlink{namespaceCAMB__test__files_a79f9b0e8484d9f397e2dc4addc178620}{num\+\_\+unequal}}(f, \mbox{\hyperlink{namespaceCAMB__test__files_aa74109e69e8ed8e8a518bb379902a1a0}{def\+Cmp\+Fcn}})\mbox{]}}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_aab425eab53a3ec49aec1a01880b7bad7}\label{namespaceCAMB__test__files_aab425eab53a3ec49aec1a01880b7bad7}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!out\+\_\+files\+\_\+dir@{out\+\_\+files\+\_\+dir}}
+\index{out\+\_\+files\+\_\+dir@{out\+\_\+files\+\_\+dir}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{out\+\_\+files\+\_\+dir}{out\_files\_dir}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+out\+\_\+files\+\_\+dir = os.\+path.\+join(args.\+ini\+\_\+dir, args.\+out\+\_\+files\+\_\+dir)}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_aa5f31d42250044659990e7a019e90d98}\label{namespaceCAMB__test__files_aa5f31d42250044659990e7a019e90d98}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!out\+\_\+files\+\_\+dir2@{out\+\_\+files\+\_\+dir2}}
+\index{out\+\_\+files\+\_\+dir2@{out\+\_\+files\+\_\+dir2}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{out\+\_\+files\+\_\+dir2}{out\_files\_dir2}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+out\+\_\+files\+\_\+dir2 = os.\+path.\+join(args.\+ini\+\_\+dir, args.\+diff\+\_\+to)}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a392636a8d8cbe4518d6774f916e88a64}\label{namespaceCAMB__test__files_a392636a8d8cbe4518d6774f916e88a64}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!output@{output}}
+\index{output@{output}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+output}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a1b844d4828dfe6615651d8b42373f8f8}\label{namespaceCAMB__test__files_a1b844d4828dfe6615651d8b42373f8f8}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!parser@{parser}}
+\index{parser@{parser}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+parser = argparse.\+Argument\+Parser(description=\textquotesingle{}Run C\+A\+MB tests\textquotesingle{})}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_ad45bde770497a23cf5cfa89d855229d3}\label{namespaceCAMB__test__files_ad45bde770497a23cf5cfa89d855229d3}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!prog@{prog}}
+\index{prog@{prog}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{prog}{prog}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+prog = os.\+path.\+abspath(args.\+prog)}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_aa0d4c1e1d81c9cc6e344e6858e1cef57}\label{namespaceCAMB__test__files_aa0d4c1e1d81c9cc6e344e6858e1cef57}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!return\+\_\+code@{return\+\_\+code}}
+\index{return\+\_\+code@{return\+\_\+code}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{return\+\_\+code}{return\_code}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+return\+\_\+code}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a0cace82a02e13f728b821892522caec6}\label{namespaceCAMB__test__files_a0cace82a02e13f728b821892522caec6}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!start@{start}}
+\index{start@{start}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+start = time.\+time()}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a22e6d582c6a2f15d29d552ba79bd8f8e}\label{namespaceCAMB__test__files_a22e6d582c6a2f15d29d552ba79bd8f8e}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!timing@{timing}}
+\index{timing@{timing}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{timing}{timing}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+timing}
+
+\mbox{\Hypertarget{namespaceCAMB__test__files_a8edfea438971669fea3e0775bd14263a}\label{namespaceCAMB__test__files_a8edfea438971669fea3e0775bd14263a}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}!type@{type}}
+\index{type@{type}!C\+A\+M\+B\+\_\+test\+\_\+files@{C\+A\+M\+B\+\_\+test\+\_\+files}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily C\+A\+M\+B\+\_\+test\+\_\+files.\+type}
+
+
+
+Referenced by ini\+File.\+ini\+File.\+file\+Lines(), getdist.\+inifile.\+Ini\+File.\+file\+Lines(), plot\+\_\+directive.\+render\+\_\+figures(), and getdist.\+inifile.\+Ini\+File.\+set\+Attr().
+

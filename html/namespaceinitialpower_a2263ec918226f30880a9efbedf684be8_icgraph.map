@@ -1,0 +1,19 @@
+<map id="initialpower::scalarpower" name="initialpower::scalarpower">
+<area shape="rect" id="node2" href="$namespacecambmain.html#ad3f7f4af84395bc4648bcc82e81e8861" title="cambmain::calclimberscalcls" alt="" coords="490,32,681,59"/>
+<area shape="rect" id="node14" href="$namespacecambmain.html#a8b2cc98e7553a77d720caca21f5ae8e5" title="cambmain::calcscalcls" alt="" coords="508,89,663,116"/>
+<area shape="rect" id="node15" href="$namespacecambmain.html#a89e57ae788ae9b3065000febda0566a5" title="cambmain::calcscalcls2" alt="" coords="243,127,405,153"/>
+<area shape="rect" id="node16" href="$namespacecambmain.html#a5fb4d38dca7390cd662572152b12f7d0" title="cambmain::getinitpowerarrayvec" alt="" coords="219,177,429,204"/>
+<area shape="rect" id="node17" href="$namespaceinitialpower.html#aa1fdc1f3bcc69e61d7f690fa3ffd7f02" title="initialpower::tensorpower" alt="" coords="241,228,407,255"/>
+<area shape="rect" id="node3" href="$namespacecambmain.html#a15c0f01f07762c709f8f718935153d7a" title="cambmain::cltransfertocl" alt="" coords="741,121,907,148"/>
+<area shape="rect" id="node4" href="$namespacecamb.html#a9fb2095034057d44dc9526dd02d60064" title="camb::camb_transferstopowers" alt="" coords="955,71,1160,97"/>
+<area shape="rect" id="node7" href="$namespacecambmain.html#a8863977991a108f96a26fc99e8c5e129" title="cambmain::cmbmain" alt="" coords="986,147,1129,173"/>
+<area shape="rect" id="node5" href="$namespacecalculator__camb.html#ad7195d220a7f5bc77479225b47d91d17" title="calculator_camb::cambcalc\l_getnewpowerdata" alt="" coords="1208,5,1389,46"/>
+<area shape="rect" id="node6" href="$namespacecalculator__camb.html#a46bd33ed008e289fb5cb08f6feb86419" title="calculator_camb::cambcalc\l_gettheoryforimportance" alt="" coords="1669,59,1851,101"/>
+<area shape="rect" id="node8" href="$namespacecamb.html#af6f4c73133d3de79ac10db3c4b2d0650" title="camb::camb_getresults" alt="" coords="1219,167,1378,193"/>
+<area shape="rect" id="node9" href="$namespacecamb.html#ae587b573e03da5811edb59806305b2cd" title="camb::camb_gettransfers" alt="" coords="1437,128,1608,155"/>
+<area shape="rect" id="node12" href="$sigma8_8f90.html#a6f015dab88d5e09a9b144633d51f8911" title="getsigma8" alt="" coords="1481,179,1564,205"/>
+<area shape="rect" id="node13" href="$tester_8f90.html#abb1af5b22eb90cec23fca42accb63245" title="tester" alt="" coords="1495,229,1550,256"/>
+<area shape="rect" id="node10" href="$namespacecalculator__camb.html#a9e8887a3ae9da2bb092aac4285234df4" title="calculator_camb::cambcalc\l_getnewtransferdata" alt="" coords="1669,125,1851,166"/>
+<area shape="rect" id="node11" href="$namespacehandles.html#a386ee0a28e6860d14047f052c918ca43" title="handles::cambdata_gettransfers" alt="" coords="1656,191,1864,217"/>
+<area shape="rect" id="node18" href="$namespacecambmain.html#af4005843871d59b0973861e895fdb0d3" title="cambmain::getinitpowerarraytens" alt="" coords="478,215,693,241"/>
+</map>

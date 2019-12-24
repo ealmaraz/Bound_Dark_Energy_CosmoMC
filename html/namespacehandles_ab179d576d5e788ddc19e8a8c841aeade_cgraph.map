@@ -1,0 +1,7 @@
+<map id="handles::cambdata_free" name="handles::cambdata_free">
+<area shape="rect" id="node2" href="$namespacecamb.html#a20b57e6f6098c5800cbf374d96307d13" title="camb::camb_freecambdata" alt="" coords="217,35,397,61"/>
+<area shape="rect" id="node3" href="$namespacemodeldata.html#a2d6ecb98a3edf71d3e3ed3ee1ffb82d1" title="modeldata::free_cltransfer" alt="" coords="445,8,619,35"/>
+<area shape="rect" id="node5" href="$namespacetransfer.html#a34407967277591afeb26880a4f0926dc" title="transfer::transfer_free" alt="" coords="459,60,605,87"/>
+<area shape="rect" id="node4" href="$namespacemodeldata.html#a89ab0d30547c35685982ecf01d7145bd" title="modeldata::free_limber" alt="" coords="667,5,821,32"/>
+<area shape="rect" id="node6" href="$namespacetransfer.html#a0e02ff3d1ba9dd5ad8c5dcaf76987ecc" title="transfer::transfer\l_nullify" alt="" coords="685,57,803,98"/>
+</map>

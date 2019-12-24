@@ -1,0 +1,196 @@
+\hypertarget{namespacenumbercounts}{}\section{numbercounts Module Reference}
+\label{namespacenumbercounts}\index{numbercounts@{numbercounts}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) function \mbox{\hyperlink{namespacenumbercounts_a9dd53df8344f5ed34b320cf13cd342b6}{next\+\_\+z}} (zi, binz)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_a7e87a46c1e125cb57eff635630c88506}{deltan\+\_\+yz}} (Z, Nz, L\+O\+GY, Ny, DN, D\+N2D, skyfracs, thetas, ylims, switch, qa\+\_\+ytot, erf\+\_\+list)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_ad089fdedf2c506bc8fc9dfb1ce45c024}{integrate\+\_\+m\+\_\+z}} (grid, skyfracs, compl, steps\+\_\+z, steps\+\_\+m, nsteps\+\_\+z, nsteps\+\_\+m, z1, z2, binz, dlnm, sum)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_ab1013e4cf6773ad5eef3b128285b1dff}{integrate\+\_\+m\+\_\+zq}} (grid, skyfracs, compl, steps\+\_\+z, steps\+\_\+m, nsteps\+\_\+z, nsteps\+\_\+m, z1, z2, binz, biny, dlnm, sum)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_a9147710c647a39e457fa04786c7c295d}{grid\+\_\+c\+\_\+2d}} (npatches, steps\+\_\+z, steps\+\_\+m, thetas, ylims, skyfracs, completeness, logy, qa\+\_\+ytot, erf\+\_\+list, iy)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_ab87ce14039efd094615930acc710e6b2}{grid\+\_\+c}} (npatches, steps\+\_\+z, steps\+\_\+m, thetas, ylims, skyfracs, completeness, qa\+\_\+ytot, erf\+\_\+list)
+\item 
+subroutine \mbox{\hyperlink{namespacenumbercounts_a530ce747969dd91d2b57a90d658dbb62}{get\+\_\+grid}} (nz, nm, z, lnm, grid)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacenumbercounts_a7e87a46c1e125cb57eff635630c88506}\label{namespacenumbercounts_a7e87a46c1e125cb57eff635630c88506}} 
+\index{numbercounts@{numbercounts}!deltan\+\_\+yz@{deltan\+\_\+yz}}
+\index{deltan\+\_\+yz@{deltan\+\_\+yz}!numbercounts@{numbercounts}}
+\subsubsection{\texorpdfstring{deltan\+\_\+yz()}{deltan\_yz()}}
+{\footnotesize\ttfamily subroutine numbercounts\+::deltan\+\_\+yz (\begin{DoxyParamCaption}\item[{real(dl), dimension(\+:), intent(in)}]{Z,  }\item[{integer, intent(in)}]{Nz,  }\item[{real(dl), dimension(\+:), intent(in)}]{L\+O\+GY,  }\item[{integer, intent(in)}]{Ny,  }\item[{real(dl), dimension(\+:)}]{DN,  }\item[{real(dl), dimension(\+:,\+:)}]{D\+N2D,  }\item[{real(dl), dimension(\+:), intent(in)}]{skyfracs,  }\item[{real(dl), dimension(\+:), intent(in)}]{thetas,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{ylims,  }\item[{integer, intent(in)}]{switch,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{qa\+\_\+ytot,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{erf\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+References get\+\_\+grid(), grid\+\_\+c(), grid\+\_\+c\+\_\+2d(), integrate\+\_\+m\+\_\+z(), integrate\+\_\+m\+\_\+zq(), and next\+\_\+z().
+
+
+
+Referenced by szcounts\+::szcc\+\_\+cash().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_a7e87a46c1e125cb57eff635630c88506_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_a7e87a46c1e125cb57eff635630c88506_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenumbercounts_a530ce747969dd91d2b57a90d658dbb62}\label{namespacenumbercounts_a530ce747969dd91d2b57a90d658dbb62}} 
+\index{numbercounts@{numbercounts}!get\+\_\+grid@{get\+\_\+grid}}
+\index{get\+\_\+grid@{get\+\_\+grid}!numbercounts@{numbercounts}}
+\subsubsection{\texorpdfstring{get\+\_\+grid()}{get\_grid()}}
+{\footnotesize\ttfamily subroutine numbercounts\+::get\+\_\+grid (\begin{DoxyParamCaption}\item[{integer}]{nz,  }\item[{integer}]{nm,  }\item[{real(dl), dimension(\+:)}]{z,  }\item[{real(dl), dimension(\+:)}]{lnm,  }\item[{real(dl), dimension(\+:,\+:)}]{grid }\end{DoxyParamCaption})}
+
+
+
+References power\+\_\+sz\+::delta(), and massfunction\+::dndlnm().
+
+
+
+Referenced by deltan\+\_\+yz().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_a530ce747969dd91d2b57a90d658dbb62_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_a530ce747969dd91d2b57a90d658dbb62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenumbercounts_ab87ce14039efd094615930acc710e6b2}\label{namespacenumbercounts_ab87ce14039efd094615930acc710e6b2}} 
+\index{numbercounts@{numbercounts}!grid\+\_\+c@{grid\+\_\+c}}
+\index{grid\+\_\+c@{grid\+\_\+c}!numbercounts@{numbercounts}}
+\subsubsection{\texorpdfstring{grid\+\_\+c()}{grid\_c()}}
+{\footnotesize\ttfamily subroutine numbercounts\+::grid\+\_\+c (\begin{DoxyParamCaption}\item[{integer}]{npatches,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+z,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+m,  }\item[{real(dl), dimension(\+:), intent(in)}]{thetas,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{ylims,  }\item[{real(dl), dimension(\+:), intent(in)}]{skyfracs,  }\item[{real(sp), dimension(\+:,\+:)}]{completeness,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{qa\+\_\+ytot,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{erf\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+References massobservable\+::erf\+\_\+compl(), constants\+\_\+sz\+::pi, massobservable\+::q, massobservable\+::theta500(), and massobservable\+::y500().
+
+
+
+Referenced by deltan\+\_\+yz().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_ab87ce14039efd094615930acc710e6b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_ab87ce14039efd094615930acc710e6b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenumbercounts_a9147710c647a39e457fa04786c7c295d}\label{namespacenumbercounts_a9147710c647a39e457fa04786c7c295d}} 
+\index{numbercounts@{numbercounts}!grid\+\_\+c\+\_\+2d@{grid\+\_\+c\+\_\+2d}}
+\index{grid\+\_\+c\+\_\+2d@{grid\+\_\+c\+\_\+2d}!numbercounts@{numbercounts}}
+\subsubsection{\texorpdfstring{grid\+\_\+c\+\_\+2d()}{grid\_c\_2d()}}
+{\footnotesize\ttfamily subroutine numbercounts\+::grid\+\_\+c\+\_\+2d (\begin{DoxyParamCaption}\item[{integer}]{npatches,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+z,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+m,  }\item[{real(dl), dimension(\+:), intent(in)}]{thetas,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{ylims,  }\item[{real(dl), dimension(\+:), intent(in)}]{skyfracs,  }\item[{real(sp), dimension(\+:,\+:,\+:)}]{completeness,  }\item[{real(dl), dimension(\+:), intent(in)}]{logy,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{qa\+\_\+ytot,  }\item[{real(dl), dimension(\+:,\+:), intent(in)}]{erf\+\_\+list,  }\item[{integer}]{iy }\end{DoxyParamCaption})}
+
+
+
+References massobservable\+::erf\+\_\+compl(), constants\+\_\+sz\+::pi, massobservable\+::q, massobservable\+::theta500(), and massobservable\+::y500().
+
+
+
+Referenced by deltan\+\_\+yz().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_a9147710c647a39e457fa04786c7c295d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_a9147710c647a39e457fa04786c7c295d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenumbercounts_ad089fdedf2c506bc8fc9dfb1ce45c024}\label{namespacenumbercounts_ad089fdedf2c506bc8fc9dfb1ce45c024}} 
+\index{numbercounts@{numbercounts}!integrate\+\_\+m\+\_\+z@{integrate\+\_\+m\+\_\+z}}
+\index{integrate\+\_\+m\+\_\+z@{integrate\+\_\+m\+\_\+z}!numbercounts@{numbercounts}}
+\subsubsection{\texorpdfstring{integrate\+\_\+m\+\_\+z()}{integrate\_m\_z()}}
+{\footnotesize\ttfamily subroutine numbercounts\+::integrate\+\_\+m\+\_\+z (\begin{DoxyParamCaption}\item[{real(dl), dimension(\+:,\+:), intent(in)}]{grid,  }\item[{real(dl), dimension(\+:), intent(in)}]{skyfracs,  }\item[{real (sp), dimension(\+:,\+:), intent(in)}]{compl,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+z,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+m,  }\item[{integer}]{nsteps\+\_\+z,  }\item[{integer}]{nsteps\+\_\+m,  }\item[{real(dl), intent(in)}]{z1,  }\item[{real(dl), intent(in)}]{z2,  }\item[{real(dl), intent(in)}]{binz,  }\item[{real(dl), intent(in)}]{dlnm,  }\item[{real(dl)}]{sum }\end{DoxyParamCaption})}
+
+
+
+Referenced by deltan\+\_\+yz().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_ad089fdedf2c506bc8fc9dfb1ce45c024_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenumbercounts_ab1013e4cf6773ad5eef3b128285b1dff}\label{namespacenumbercounts_ab1013e4cf6773ad5eef3b128285b1dff}} 
+\index{numbercounts@{numbercounts}!integrate\+\_\+m\+\_\+zq@{integrate\+\_\+m\+\_\+zq}}
+\index{integrate\+\_\+m\+\_\+zq@{integrate\+\_\+m\+\_\+zq}!numbercounts@{numbercounts}}
+\subsubsection{\texorpdfstring{integrate\+\_\+m\+\_\+zq()}{integrate\_m\_zq()}}
+{\footnotesize\ttfamily subroutine numbercounts\+::integrate\+\_\+m\+\_\+zq (\begin{DoxyParamCaption}\item[{real(dl), dimension(\+:,\+:), intent(in)}]{grid,  }\item[{real(dl), dimension(\+:), intent(in)}]{skyfracs,  }\item[{real (sp), dimension(\+:,\+:,\+:), intent(in)}]{compl,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+z,  }\item[{real(dl), dimension(\+:), intent(in)}]{steps\+\_\+m,  }\item[{integer}]{nsteps\+\_\+z,  }\item[{integer}]{nsteps\+\_\+m,  }\item[{real(dl), intent(in)}]{z1,  }\item[{real(dl), intent(in)}]{z2,  }\item[{real(dl), intent(in)}]{binz,  }\item[{integer}]{biny,  }\item[{real(dl), intent(in)}]{dlnm,  }\item[{real(dl)}]{sum }\end{DoxyParamCaption})}
+
+
+
+Referenced by deltan\+\_\+yz().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_ab1013e4cf6773ad5eef3b128285b1dff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacenumbercounts_a9dd53df8344f5ed34b320cf13cd342b6}\label{namespacenumbercounts_a9dd53df8344f5ed34b320cf13cd342b6}} 
+\index{numbercounts@{numbercounts}!next\+\_\+z@{next\+\_\+z}}
+\index{next\+\_\+z@{next\+\_\+z}!numbercounts@{numbercounts}}
+\subsubsection{\texorpdfstring{next\+\_\+z()}{next\_z()}}
+{\footnotesize\ttfamily real(dl) function numbercounts\+::next\+\_\+z (\begin{DoxyParamCaption}\item[{real(dl)}]{zi,  }\item[{real(dl)}]{binz }\end{DoxyParamCaption})}
+
+
+
+Referenced by deltan\+\_\+yz().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacenumbercounts_a9dd53df8344f5ed34b320cf13cd342b6_icgraph}
+\end{center}
+\end{figure}

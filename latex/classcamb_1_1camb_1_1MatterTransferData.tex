@@ -1,0 +1,75 @@
+\hypertarget{classcamb_1_1camb_1_1MatterTransferData}{}\section{camb.\+camb.\+Matter\+Transfer\+Data Class Reference}
+\label{classcamb_1_1camb_1_1MatterTransferData}\index{camb.\+camb.\+Matter\+Transfer\+Data@{camb.\+camb.\+Matter\+Transfer\+Data}}
+
+
+Inheritance diagram for camb.\+camb.\+Matter\+Transfer\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcamb_1_1camb_1_1MatterTransferData__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camb.\+camb.\+Matter\+Transfer\+Data\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcamb_1_1camb_1_1MatterTransferData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classcamb_1_1camb_1_1MatterTransferData_a6458b95625015d92c9bf21498c2edba8}{transfer\+\_\+z}} (self, name, z\+\_\+index=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}MatterTransferData is the base class for storing matter power transfer function data for various q values.
+In a flat universe q=k, in a closed universe q is quantised.
+
+To get an instance of this data, call :meth:`camb.CAMBdata.get_matter_transfer_data`
+
+:ivar nq:  number of q modes calculated
+:ivar q: array of q values calculated
+:ivar sigma_8: array of sigma8 values for each redshift for each power spectrum
+:ivar sigma2_vdelta_8: array of v-delta8 correlation, so sigma2_vdelta_8/sigma_8 can define growth
+:ivar transfer_data: numpy array T[entry, q_index, z_index] storing transfer functions for each redshift and q; entry+1 can be
+
+        - Transfer_kh = 1 (k/h)
+        - Transfer_cdm = 2 (cdm)
+        - Transfer_b = 3 (baryons)
+        - Transfer_g = 4 (photons)
+        - Transfer_r = 5 (massless neutrinos)
+        - Transfer_nu = 6 (massive neutrinos)
+        - Transfer_tot = 7 (total matter)
+        - Transfer_nonu = 8 (total matter excluding neutrinos)
+        - Transfer_tot_de = 9 (total including dark energy perturbations)
+        - Transfer_Weyl = 10 (Weyl potential)
+        - Transfer_Newt_vel_cdm = 11 (Newtonian CDM velocity)
+        - Transfer_Newt_vel_baryon = 12 (Newtonian baryon velocity)
+        - Transfer_vel_baryon_cdm = 13 (relative baryon-cdm velocity)
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamb_1_1camb_1_1MatterTransferData_a6458b95625015d92c9bf21498c2edba8}\label{classcamb_1_1camb_1_1MatterTransferData_a6458b95625015d92c9bf21498c2edba8}} 
+\index{camb\+::camb\+::\+Matter\+Transfer\+Data@{camb\+::camb\+::\+Matter\+Transfer\+Data}!transfer\+\_\+z@{transfer\+\_\+z}}
+\index{transfer\+\_\+z@{transfer\+\_\+z}!camb\+::camb\+::\+Matter\+Transfer\+Data@{camb\+::camb\+::\+Matter\+Transfer\+Data}}
+\subsubsection{\texorpdfstring{transfer\+\_\+z()}{transfer\_z()}}
+{\footnotesize\ttfamily def camb.\+camb.\+Matter\+Transfer\+Data.\+transfer\+\_\+z (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{z\+\_\+index = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get transfer function (function of q, for each q in self.q_trans) by name for given redshift index
+
+:param name:  parameter name
+:param z_index: which redshift
+:return: array of transfer function values for each calculated k
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/pycamb/camb/\mbox{\hyperlink{camb_8py}{camb.\+py}}\end{DoxyCompactItemize}

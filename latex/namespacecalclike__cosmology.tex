@@ -1,0 +1,65 @@
+\hypertarget{namespacecalclike__cosmology}{}\section{calclike\+\_\+cosmology Module Reference}
+\label{namespacecalclike__cosmology}\index{calclike\+\_\+cosmology@{calclike\+\_\+cosmology}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcalclike__cosmology_1_1tcosmolikecalculator}{tcosmolikecalculator}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike__cosmology_a86c0c49dcb09440792bc5a002f456f57}{tcosmolikecalculator\+\_\+initconfig}} (this, Config)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike__cosmology_a6f159ab28e06f381042c55c451a060a9}{cosmo\+\_\+gettheoryforlike}} (this, Like)
+\item 
+logical function \mbox{\hyperlink{namespacecalclike__cosmology_aa5acf9c357eef01f44553072f8327e5e}{cosmo\+\_\+calculaterequiredtheorychanges}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike__cosmology_a98c01c544a399527119cde828e456b4b}{cosmo\+\_\+writeperformancestats}} (this, unit)
+\item 
+subroutine \mbox{\hyperlink{namespacecalclike__cosmology_afcac4304981be0a09f45f15d9194e427}{cosmo\+\_\+updatetheoryforlikelihoods}} (this, Params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecalclike__cosmology_aa5acf9c357eef01f44553072f8327e5e}\label{namespacecalclike__cosmology_aa5acf9c357eef01f44553072f8327e5e}} 
+\index{calclike\+\_\+cosmology@{calclike\+\_\+cosmology}!cosmo\+\_\+calculaterequiredtheorychanges@{cosmo\+\_\+calculaterequiredtheorychanges}}
+\index{cosmo\+\_\+calculaterequiredtheorychanges@{cosmo\+\_\+calculaterequiredtheorychanges}!calclike\+\_\+cosmology@{calclike\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{cosmo\+\_\+calculaterequiredtheorychanges()}{cosmo\_calculaterequiredtheorychanges()}}
+{\footnotesize\ttfamily logical function calclike\+\_\+cosmology\+::cosmo\+\_\+calculaterequiredtheorychanges (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike__cosmology_1_1tcosmolikecalculator}{tcosmolikecalculator}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings, cosmologytypes\+::index\+\_\+initpower, cosmologytypes\+::num\+\_\+hard, and cosmologytypes\+::num\+\_\+initpower.
+
+\mbox{\Hypertarget{namespacecalclike__cosmology_a6f159ab28e06f381042c55c451a060a9}\label{namespacecalclike__cosmology_a6f159ab28e06f381042c55c451a060a9}} 
+\index{calclike\+\_\+cosmology@{calclike\+\_\+cosmology}!cosmo\+\_\+gettheoryforlike@{cosmo\+\_\+gettheoryforlike}}
+\index{cosmo\+\_\+gettheoryforlike@{cosmo\+\_\+gettheoryforlike}!calclike\+\_\+cosmology@{calclike\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{cosmo\+\_\+gettheoryforlike()}{cosmo\_gettheoryforlike()}}
+{\footnotesize\ttfamily subroutine calclike\+\_\+cosmology\+::cosmo\+\_\+gettheoryforlike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike__cosmology_1_1tcosmolikecalculator}{tcosmolikecalculator}})}]{this,  }\item[{class(tdatalikelihood), pointer}]{Like }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::num\+\_\+hard.
+
+\mbox{\Hypertarget{namespacecalclike__cosmology_afcac4304981be0a09f45f15d9194e427}\label{namespacecalclike__cosmology_afcac4304981be0a09f45f15d9194e427}} 
+\index{calclike\+\_\+cosmology@{calclike\+\_\+cosmology}!cosmo\+\_\+updatetheoryforlikelihoods@{cosmo\+\_\+updatetheoryforlikelihoods}}
+\index{cosmo\+\_\+updatetheoryforlikelihoods@{cosmo\+\_\+updatetheoryforlikelihoods}!calclike\+\_\+cosmology@{calclike\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{cosmo\+\_\+updatetheoryforlikelihoods()}{cosmo\_updatetheoryforlikelihoods()}}
+{\footnotesize\ttfamily subroutine calclike\+\_\+cosmology\+::cosmo\+\_\+updatetheoryforlikelihoods (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike__cosmology_1_1tcosmolikecalculator}{tcosmolikecalculator}})}]{this,  }\item[{class(tcalculationatparampoint)}]{Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings.
+
+\mbox{\Hypertarget{namespacecalclike__cosmology_a98c01c544a399527119cde828e456b4b}\label{namespacecalclike__cosmology_a98c01c544a399527119cde828e456b4b}} 
+\index{calclike\+\_\+cosmology@{calclike\+\_\+cosmology}!cosmo\+\_\+writeperformancestats@{cosmo\+\_\+writeperformancestats}}
+\index{cosmo\+\_\+writeperformancestats@{cosmo\+\_\+writeperformancestats}!calclike\+\_\+cosmology@{calclike\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{cosmo\+\_\+writeperformancestats()}{cosmo\_writeperformancestats()}}
+{\footnotesize\ttfamily subroutine calclike\+\_\+cosmology\+::cosmo\+\_\+writeperformancestats (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike__cosmology_1_1tcosmolikecalculator}{tcosmolikecalculator}})}]{this,  }\item[{integer, intent(in)}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalclike__cosmology_a86c0c49dcb09440792bc5a002f456f57}\label{namespacecalclike__cosmology_a86c0c49dcb09440792bc5a002f456f57}} 
+\index{calclike\+\_\+cosmology@{calclike\+\_\+cosmology}!tcosmolikecalculator\+\_\+initconfig@{tcosmolikecalculator\+\_\+initconfig}}
+\index{tcosmolikecalculator\+\_\+initconfig@{tcosmolikecalculator\+\_\+initconfig}!calclike\+\_\+cosmology@{calclike\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{tcosmolikecalculator\+\_\+initconfig()}{tcosmolikecalculator\_initconfig()}}
+{\footnotesize\ttfamily subroutine calclike\+\_\+cosmology\+::tcosmolikecalculator\+\_\+initconfig (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalclike__cosmology_1_1tcosmolikecalculator}{tcosmolikecalculator}})}]{this,  }\item[{class(tgeneralconfig), target}]{Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+

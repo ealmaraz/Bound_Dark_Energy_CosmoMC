@@ -1,0 +1,242 @@
+\hypertarget{namespacecopyGridFiles}{}\section{copy\+Grid\+Files Namespace Reference}
+\label{namespacecopyGridFiles}\index{copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecopyGridFiles_a18b8cfd4665b3fdafe8c9bfdf21adbc9}{file\+Matches}} (\mbox{\hyperlink{namespacecopyGridFiles_a90ae0943b4d2a4255fc89daf0ac45e6a}{f}}, name)
+\item 
+def \mbox{\hyperlink{namespacecopyGridFiles_a2a1a9125be3fe46d8b1ae0f62f56c4c8}{do\+Copy}} (source, dest, \mbox{\hyperlink{namespacecopyGridFiles_a90ae0943b4d2a4255fc89daf0ac45e6a}{f}}, has\+Burn=False)
+\item 
+def \mbox{\hyperlink{namespacecopyGridFiles_afd2344d5174f737237e0a7dde1e08248}{write\+Ini}} (ini\+Name, \mbox{\hyperlink{namespacecopyGridFiles_aacf361e6d263bcbbbe8eb0d93179c78d}{props}})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a8e32722202dac7526ba32c782748aa57}{Opts}} = batchjob\+\_\+args.\+batch\+Args(\textquotesingle{}copy or \mbox{\hyperlink{namespacecopyGridFiles_a38812b03b16820ac90fe801ed09b0a61}{zip}} chains and optionally other files\textquotesingle{}, importance=True, converge=True)
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_ad85400736dae44a4b09933cbeb74b875}{help}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_ac3fe3ebe59c8bc2f632ded074462e3fb}{action}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a506b899340aaabd1a945d540ec3bd046}{default}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a2c76f8d2dcdba216154c55449d4bbadf}{type}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a5c4237e11fcf27c3403cb75b29e1cced}{float}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_afb165627a6b92f9345e8ae5a3733df38}{nargs}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_acb6a33b9a8b9d3558fe7b99858778f48}{batch}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_adc04a6887d14595ef2a9d84f03caaad7}{args}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a38812b03b16820ac90fe801ed09b0a61}{zip}}
+\item 
+int \mbox{\hyperlink{namespacecopyGridFiles_a392878fda6c6e7da4d3c0c21fccd72e2}{size\+MB}} = 0
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a145a972869b1a7467b372117e7d1112a}{zipper}} = zipfile.\+Zip\+File(args.\+target\+\_\+dir, \textquotesingle{}w\textquotesingle{}, compression=zipfile.\+Z\+I\+P\+\_\+\+D\+E\+F\+L\+A\+T\+ED, allow\+Zip64=True)
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_adae9565fe8b5fe30d7005e3ed64f1c4f}{target\+\_\+dir}} = None
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a94f73c7fe98852530442bbf232028c40}{config\+\_\+path}} = os.\+path.\+join(batch.\+batch\+Path, \textquotesingle{}config/\textquotesingle{})
+\item 
+int \mbox{\hyperlink{namespacecopyGridFiles_a688c0eb8ecee8ba6bb75bf56aa550073}{chainfiles}} = 0
+\item 
+int \mbox{\hyperlink{namespacecopyGridFiles_afc9c926a69458cd609f13a048dda3960}{infofiles}} = 0
+\item 
+int \mbox{\hyperlink{namespacecopyGridFiles_a793dd13fa829e3a9bfde006f4f5b6602}{distfiles}} = 0
+\item 
+bool \mbox{\hyperlink{namespacecopyGridFiles_a749c2732f5782b6714bb732c2f9f5404}{done\+Properties}} = False
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_a404ccf8c4bd46a01ecd3ec35b1954dec}{outdir}} = job\+Item.\+relative\+Path
+\item 
+int \mbox{\hyperlink{namespacecopyGridFiles_a4f1dfe8eada67b327b4605f22876cdb9}{i}} = 1
+\item 
+string \mbox{\hyperlink{namespacecopyGridFiles_a90ae0943b4d2a4255fc89daf0ac45e6a}{f}} = job\+Item.\+name + \textquotesingle{}\+\_\+\%d.\+txt\textquotesingle{} \% \mbox{\hyperlink{namespacecopyGridFiles_a4f1dfe8eada67b327b4605f22876cdb9}{i}}
+\item 
+\mbox{\hyperlink{namespacecopyGridFiles_aacf361e6d263bcbbbe8eb0d93179c78d}{props}} = job\+Item.\+properties\+Ini()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacecopyGridFiles_a2a1a9125be3fe46d8b1ae0f62f56c4c8}\label{namespacecopyGridFiles_a2a1a9125be3fe46d8b1ae0f62f56c4c8}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!do\+Copy@{do\+Copy}}
+\index{do\+Copy@{do\+Copy}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{do\+Copy()}{doCopy()}}
+{\footnotesize\ttfamily def copy\+Grid\+Files.\+do\+Copy (\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{dest,  }\item[{}]{f,  }\item[{}]{has\+Burn = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+References C\+A\+M\+B\+\_\+test\+\_\+files.\+int, and stringutils.\+join().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecopyGridFiles_a2a1a9125be3fe46d8b1ae0f62f56c4c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecopyGridFiles_a18b8cfd4665b3fdafe8c9bfdf21adbc9}\label{namespacecopyGridFiles_a18b8cfd4665b3fdafe8c9bfdf21adbc9}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!file\+Matches@{file\+Matches}}
+\index{file\+Matches@{file\+Matches}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{file\+Matches()}{fileMatches()}}
+{\footnotesize\ttfamily def copy\+Grid\+Files.\+file\+Matches (\begin{DoxyParamCaption}\item[{}]{f,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_afd2344d5174f737237e0a7dde1e08248}\label{namespacecopyGridFiles_afd2344d5174f737237e0a7dde1e08248}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!write\+Ini@{write\+Ini}}
+\index{write\+Ini@{write\+Ini}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{write\+Ini()}{writeIni()}}
+{\footnotesize\ttfamily def copy\+Grid\+Files.\+write\+Ini (\begin{DoxyParamCaption}\item[{}]{ini\+Name,  }\item[{}]{props }\end{DoxyParamCaption})}
+
+
+
+References stringutils.\+join().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecopyGridFiles_afd2344d5174f737237e0a7dde1e08248_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecopyGridFiles_ac3fe3ebe59c8bc2f632ded074462e3fb}\label{namespacecopyGridFiles_ac3fe3ebe59c8bc2f632ded074462e3fb}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!action@{action}}
+\index{action@{action}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+action}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_adc04a6887d14595ef2a9d84f03caaad7}\label{namespacecopyGridFiles_adc04a6887d14595ef2a9d84f03caaad7}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!args@{args}}
+\index{args@{args}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+args}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_acb6a33b9a8b9d3558fe7b99858778f48}\label{namespacecopyGridFiles_acb6a33b9a8b9d3558fe7b99858778f48}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!batch@{batch}}
+\index{batch@{batch}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{batch}{batch}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+batch}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a688c0eb8ecee8ba6bb75bf56aa550073}\label{namespacecopyGridFiles_a688c0eb8ecee8ba6bb75bf56aa550073}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!chainfiles@{chainfiles}}
+\index{chainfiles@{chainfiles}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{chainfiles}{chainfiles}}
+{\footnotesize\ttfamily int copy\+Grid\+Files.\+chainfiles = 0}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a94f73c7fe98852530442bbf232028c40}\label{namespacecopyGridFiles_a94f73c7fe98852530442bbf232028c40}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!config\+\_\+path@{config\+\_\+path}}
+\index{config\+\_\+path@{config\+\_\+path}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{config\+\_\+path}{config\_path}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+config\+\_\+path = os.\+path.\+join(batch.\+batch\+Path, \textquotesingle{}config/\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a506b899340aaabd1a945d540ec3bd046}\label{namespacecopyGridFiles_a506b899340aaabd1a945d540ec3bd046}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!default@{default}}
+\index{default@{default}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+default}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a793dd13fa829e3a9bfde006f4f5b6602}\label{namespacecopyGridFiles_a793dd13fa829e3a9bfde006f4f5b6602}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!distfiles@{distfiles}}
+\index{distfiles@{distfiles}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{distfiles}{distfiles}}
+{\footnotesize\ttfamily int copy\+Grid\+Files.\+distfiles = 0}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a749c2732f5782b6714bb732c2f9f5404}\label{namespacecopyGridFiles_a749c2732f5782b6714bb732c2f9f5404}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!done\+Properties@{done\+Properties}}
+\index{done\+Properties@{done\+Properties}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{done\+Properties}{doneProperties}}
+{\footnotesize\ttfamily bool copy\+Grid\+Files.\+done\+Properties = False}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a90ae0943b4d2a4255fc89daf0ac45e6a}\label{namespacecopyGridFiles_a90ae0943b4d2a4255fc89daf0ac45e6a}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!f@{f}}
+\index{f@{f}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily string copy\+Grid\+Files.\+f = job\+Item.\+name + \textquotesingle{}\+\_\+\%d.\+txt\textquotesingle{} \% \mbox{\hyperlink{namespacecopyGridFiles_a4f1dfe8eada67b327b4605f22876cdb9}{i}}}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a5c4237e11fcf27c3403cb75b29e1cced}\label{namespacecopyGridFiles_a5c4237e11fcf27c3403cb75b29e1cced}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!float@{float}}
+\index{float@{float}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+float}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_ad85400736dae44a4b09933cbeb74b875}\label{namespacecopyGridFiles_ad85400736dae44a4b09933cbeb74b875}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!help@{help}}
+\index{help@{help}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+help}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a4f1dfe8eada67b327b4605f22876cdb9}\label{namespacecopyGridFiles_a4f1dfe8eada67b327b4605f22876cdb9}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!i@{i}}
+\index{i@{i}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int copy\+Grid\+Files.\+i = 1}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_afc9c926a69458cd609f13a048dda3960}\label{namespacecopyGridFiles_afc9c926a69458cd609f13a048dda3960}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!infofiles@{infofiles}}
+\index{infofiles@{infofiles}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{infofiles}{infofiles}}
+{\footnotesize\ttfamily int copy\+Grid\+Files.\+infofiles = 0}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_afb165627a6b92f9345e8ae5a3733df38}\label{namespacecopyGridFiles_afb165627a6b92f9345e8ae5a3733df38}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!nargs@{nargs}}
+\index{nargs@{nargs}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+nargs}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a8e32722202dac7526ba32c782748aa57}\label{namespacecopyGridFiles_a8e32722202dac7526ba32c782748aa57}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!Opts@{Opts}}
+\index{Opts@{Opts}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{Opts}{Opts}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+Opts = batchjob\+\_\+args.\+batch\+Args(\textquotesingle{}copy or \mbox{\hyperlink{namespacecopyGridFiles_a38812b03b16820ac90fe801ed09b0a61}{zip}} chains and optionally other files\textquotesingle{}, importance=True, converge=True)}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a404ccf8c4bd46a01ecd3ec35b1954dec}\label{namespacecopyGridFiles_a404ccf8c4bd46a01ecd3ec35b1954dec}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!outdir@{outdir}}
+\index{outdir@{outdir}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{outdir}{outdir}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+outdir = job\+Item.\+relative\+Path}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_aacf361e6d263bcbbbe8eb0d93179c78d}\label{namespacecopyGridFiles_aacf361e6d263bcbbbe8eb0d93179c78d}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!props@{props}}
+\index{props@{props}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{props}{props}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+props = job\+Item.\+properties\+Ini()}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a392878fda6c6e7da4d3c0c21fccd72e2}\label{namespacecopyGridFiles_a392878fda6c6e7da4d3c0c21fccd72e2}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!size\+MB@{size\+MB}}
+\index{size\+MB@{size\+MB}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{size\+MB}{sizeMB}}
+{\footnotesize\ttfamily int copy\+Grid\+Files.\+size\+MB = 0}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_adae9565fe8b5fe30d7005e3ed64f1c4f}\label{namespacecopyGridFiles_adae9565fe8b5fe30d7005e3ed64f1c4f}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!target\+\_\+dir@{target\+\_\+dir}}
+\index{target\+\_\+dir@{target\+\_\+dir}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{target\+\_\+dir}{target\_dir}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+target\+\_\+dir = None}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a2c76f8d2dcdba216154c55449d4bbadf}\label{namespacecopyGridFiles_a2c76f8d2dcdba216154c55449d4bbadf}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!type@{type}}
+\index{type@{type}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+type}
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a38812b03b16820ac90fe801ed09b0a61}\label{namespacecopyGridFiles_a38812b03b16820ac90fe801ed09b0a61}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!zip@{zip}}
+\index{zip@{zip}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{zip}{zip}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+zip}
+
+
+
+Referenced by getdist.\+kde\+\_\+bandwidth.\+\_\+bandwidth\+\_\+fixed\+\_\+point(), getdist.\+plots.\+Get\+Dist\+Plotter.\+\_\+make\+\_\+contour\+\_\+args(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+auto\+Ranges(), C\+M\+Blikes.\+Bin\+Windows.\+bin(), getdist\+\_\+tests.\+test\+\_\+distributions.\+compare1\+D(), getdist\+\_\+tests.\+test\+\_\+distributions.\+compare2\+D(), paramgrid.\+batchjob\+\_\+args.\+batch\+Args.\+filter\+For\+Data\+Compare(), getdist.\+mcsamples.\+M\+C\+Samples.\+get1\+D\+Density\+Grid\+Data(), camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+background\+\_\+time\+\_\+evolution(), camb.\+camb.\+C\+A\+M\+Bdata.\+get\+\_\+derived\+\_\+params(), getdist.\+densities.\+Density1\+D.\+get\+Limits(), getdist.\+mcsamples.\+M\+C\+Samples.\+get\+Raw\+N\+D\+Density\+Grid\+Data(), getdist.\+chains.\+Chains.\+get\+Separate\+Chains(), C\+A\+M\+B\+\_\+test\+\_\+files.\+get\+Test\+Params(), make\+Latex.\+make\+Snippet\+Files(), getdist.\+covmat.\+Cov\+Mat.\+merge\+Covmat\+Where\+New(), C\+A\+M\+B\+\_\+test\+\_\+files.\+num\+\_\+unequal(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+pdf(), getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+pdf(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+pdf\+\_\+marged(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), getdist\+\_\+tests.\+test\+\_\+distributions.\+plot\+\_\+compare\+\_\+method(), getdist\+\_\+tests.\+test\+\_\+distributions.\+plot\+\_\+compare\+\_\+probs\+\_\+methods(), getdist.\+gui.\+mainwindow.\+Main\+Window.\+plot\+Data(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plots\+\_\+1d(), chain\+Dump\+Plot.\+rainbow\+Line\+Plot(), getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot(), getdist.\+paramnames.\+Param\+List.\+set\+Labels(), getdist.\+densities.\+Grid\+Density.\+set\+P(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+sim(), paramgrid.\+jobqueue.\+submit\+Job(), getdist\+\_\+tests.\+test\+\_\+distributions.\+test\+Program(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+triangle\+\_\+plot().
+
+\mbox{\Hypertarget{namespacecopyGridFiles_a145a972869b1a7467b372117e7d1112a}\label{namespacecopyGridFiles_a145a972869b1a7467b372117e7d1112a}} 
+\index{copy\+Grid\+Files@{copy\+Grid\+Files}!zipper@{zipper}}
+\index{zipper@{zipper}!copy\+Grid\+Files@{copy\+Grid\+Files}}
+\subsubsection{\texorpdfstring{zipper}{zipper}}
+{\footnotesize\ttfamily copy\+Grid\+Files.\+zipper = zipfile.\+Zip\+File(args.\+target\+\_\+dir, \textquotesingle{}w\textquotesingle{}, compression=zipfile.\+Z\+I\+P\+\_\+\+D\+E\+F\+L\+A\+T\+ED, allow\+Zip64=True)}
+

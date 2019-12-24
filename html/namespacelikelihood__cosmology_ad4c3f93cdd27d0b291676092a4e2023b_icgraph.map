@@ -1,0 +1,7 @@
+<map id="likelihood_cosmology::loglike" name="likelihood_cosmology::loglike">
+<area shape="rect" id="node2" href="$namespacecmblikes.html#a97fb12e9b7c8a1059a8443b1b0423c24" title="cmblikes::cmblikes\l_loglike" alt="" coords="238,5,373,46"/>
+<area shape="rect" id="node3" href="$namespacelikelihood__cosmology.html#a28ab9c3076608cb7b1550060aa9b450b" title="likelihood_cosmology\l::getloglike" alt="" coords="232,70,379,111"/>
+<area shape="rect" id="node4" href="$namespacelikelihood__cosmology.html#a1b2ee95e5e883485f7ba0635f9a5beef" title="likelihood_cosmology\l::loglikedataparams" alt="" coords="232,135,379,177"/>
+<area shape="rect" id="node5" href="$namespacelikelihood__cosmology.html#adfac1b06d8d335f24e427fe3629f706c" title="likelihood_cosmology\l::logliketheory" alt="" coords="232,201,379,242"/>
+<area shape="rect" id="node6" href="$namespacecmblikelihoods.html#a7c01807a08609a029a41a11b39ade069" title="cmblikelihoods::twmaplikelihood\l_loglike" alt="" coords="201,266,410,307"/>
+</map>

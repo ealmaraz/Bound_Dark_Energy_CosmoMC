@@ -1,0 +1,124 @@
+\hypertarget{classgetdist_1_1paramnames_1_1ParamNames}{}\section{getdist.\+paramnames.\+Param\+Names Class Reference}
+\label{classgetdist_1_1paramnames_1_1ParamNames}\index{getdist.\+paramnames.\+Param\+Names@{getdist.\+paramnames.\+Param\+Names}}
+
+
+Inheritance diagram for getdist.\+paramnames.\+Param\+Names\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classgetdist_1_1paramnames_1_1ParamNames__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+paramnames.\+Param\+Names\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classgetdist_1_1paramnames_1_1ParamNames__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1paramnames_1_1ParamNames_a5666a4e6f847d39fcf256a099ee8d7eb}{load\+From\+File}} (self, file\+Name)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1paramnames_1_1ParamNames_aca8ef6d2cece1370e86828ebfc7b84a4}{load\+From\+Key\+Words}} (self, keyword\+Provider)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1paramnames_1_1ParamNames_a6b7a69ffaaadb8fd4c853854ef025842}{save\+Key\+Words}} (self, keyword\+Provider)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1paramnames_1_1ParamNames_a9b1371a13ae4e316ef8e4bb0ca6bdf8c}{filename\+Loaded\+From}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1paramnames_1_1ParamNames_aed2206642272e0ebb34478932a71b6c5}{names}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Holds an orders list of :class:`ParamInfo` objects describing a set of parameters, inheriting from :class:`ParamList`.
+
+Can be constructed programmatically, and also loaded and saved to a .paramnames files, which is a plain text file
+giving the names and optional label and comment for each parameter, in order.
+
+:ivar names: list of :class:`ParamInfo` objects describing each parameter
+:ivar filenameLoadedFrom: if loaded from file, the file name
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1paramnames_1_1ParamNames_a5666a4e6f847d39fcf256a099ee8d7eb}\label{classgetdist_1_1paramnames_1_1ParamNames_a5666a4e6f847d39fcf256a099ee8d7eb}} 
+\index{getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily def getdist.\+paramnames.\+Param\+Names.\+load\+From\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+Name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}loads from fileName, a plain text .paramnames file
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+types.\+Best\+Fit.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1paramnames_1_1ParamNames_a5666a4e6f847d39fcf256a099ee8d7eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1paramnames_1_1ParamNames_aca8ef6d2cece1370e86828ebfc7b84a4}\label{classgetdist_1_1paramnames_1_1ParamNames_aca8ef6d2cece1370e86828ebfc7b84a4}} 
+\index{getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}!load\+From\+Key\+Words@{load\+From\+Key\+Words}}
+\index{load\+From\+Key\+Words@{load\+From\+Key\+Words}!getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}}
+\subsubsection{\texorpdfstring{load\+From\+Key\+Words()}{loadFromKeyWords()}}
+{\footnotesize\ttfamily def getdist.\+paramnames.\+Param\+Names.\+load\+From\+Key\+Words (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{keyword\+Provider }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+names, and getdist.\+paramnames.\+Param\+List.\+names.
+
+\mbox{\Hypertarget{classgetdist_1_1paramnames_1_1ParamNames_a6b7a69ffaaadb8fd4c853854ef025842}\label{classgetdist_1_1paramnames_1_1ParamNames_a6b7a69ffaaadb8fd4c853854ef025842}} 
+\index{getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}!save\+Key\+Words@{save\+Key\+Words}}
+\index{save\+Key\+Words@{save\+Key\+Words}!getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}}
+\subsubsection{\texorpdfstring{save\+Key\+Words()}{saveKeyWords()}}
+{\footnotesize\ttfamily def getdist.\+paramnames.\+Param\+Names.\+save\+Key\+Words (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{keyword\+Provider }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+names, getdist.\+paramnames.\+Param\+List.\+names, and getdist.\+paramnames.\+Param\+List.\+num\+Derived().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1paramnames_1_1ParamNames_a6b7a69ffaaadb8fd4c853854ef025842_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1paramnames_1_1ParamNames_a9b1371a13ae4e316ef8e4bb0ca6bdf8c}\label{classgetdist_1_1paramnames_1_1ParamNames_a9b1371a13ae4e316ef8e4bb0ca6bdf8c}} 
+\index{getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}!filename\+Loaded\+From@{filename\+Loaded\+From}}
+\index{filename\+Loaded\+From@{filename\+Loaded\+From}!getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}}
+\subsubsection{\texorpdfstring{filename\+Loaded\+From}{filenameLoadedFrom}}
+{\footnotesize\ttfamily getdist.\+paramnames.\+Param\+Names.\+filename\+Loaded\+From}
+
+\mbox{\Hypertarget{classgetdist_1_1paramnames_1_1ParamNames_aed2206642272e0ebb34478932a71b6c5}\label{classgetdist_1_1paramnames_1_1ParamNames_aed2206642272e0ebb34478932a71b6c5}} 
+\index{getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}!names@{names}}
+\index{names@{names}!getdist\+::paramnames\+::\+Param\+Names@{getdist\+::paramnames\+::\+Param\+Names}}
+\subsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily getdist.\+paramnames.\+Param\+Names.\+names}
+
+
+
+Referenced by getdist.\+parampriors.\+Param\+Bounds.\+\_\+\+\_\+str\+\_\+\+\_\+(), paramgrid.\+batchjob.\+data\+Set.\+add(), paramgrid.\+batchjob.\+data\+Set.\+has\+All(), paramgrid.\+batchjob.\+data\+Set.\+has\+Name(), paramgrid.\+batchjob.\+data\+Set.\+names\+Replacing(), getdist.\+parampriors.\+Param\+Bounds.\+set\+Range(), and paramgrid.\+batchjob.\+data\+Set.\+tag\+Replacing().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{paramnames_8py}{paramnames.\+py}}\end{DoxyCompactItemize}

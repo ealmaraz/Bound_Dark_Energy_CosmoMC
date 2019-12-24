@@ -1,0 +1,439 @@
+\hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis}{}\section{getdist.\+plots.\+M\+C\+Sample\+Analysis Class Reference}
+\label{classgetdist_1_1plots_1_1MCSampleAnalysis}\index{getdist.\+plots.\+M\+C\+Sample\+Analysis@{getdist.\+plots.\+M\+C\+Sample\+Analysis}}
+
+
+Inheritance diagram for getdist.\+plots.\+M\+C\+Sample\+Analysis\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classgetdist_1_1plots_1_1MCSampleAnalysis__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+plots.\+M\+C\+Sample\+Analysis\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classgetdist_1_1plots_1_1MCSampleAnalysis__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a85dad878c7c3532d966f0d46188a8ab1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a23dbb7ae143679e678d0c82f2411d51e}{chain\+\_\+locations}}, settings=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_aa2dc5aeed2c014c5ffee3dfc92850ae9}{add\+Chain\+Dir}} (self, chain\+\_\+dir)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_aecba5996a9bd7571a2886360e9458cfe}{reset}} (self, settings=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a81c2af5210ee710151a4ea852312999c}{samples\+For\+Root}} (self, root, file\+\_\+root=None, cache=True)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_adfcdd2464aa89d7c72dbf8f4bf0a04ae}{add\+Roots}} (self, roots)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a66016ce12ceb418f0bdf2717f272e57a}{add\+Root}} (self, file\+\_\+root)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_aed1d592770a9f8dbd55af844bb55234e}{remove\+Root}} (self, file\+\_\+root)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a46a583be508db9c57da6afe4766a4279}{new\+Plot}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a84058dd5a8abce27dbe67c1a9544b139}{get\+\_\+density}} (self, root, param, likes=False)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a03533aa69a7cfeddba8e641b36b6025d}{get\+\_\+density\+\_\+grid}} (self, root, param1, param2, conts=2, likes=False)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a993420585e2d3d9625272366173756cf}{load\+\_\+single\+\_\+samples}} (self, root)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_ad38551dc8499923e02dd925ab2a0e6cf}{params\+For\+Root}} (self, root, label\+Params=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a73bb61d8e16c40ed2be4728f8cca5515}{bounds\+For\+Root}} (self, root)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a1822d8859d98c2ecae909fc49eda82fa}{chain\+\_\+dirs}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a23dbb7ae143679e678d0c82f2411d51e}{chain\+\_\+locations}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_ad8ae1e04c9f3be4b9246dd83e73551ae}{ini}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_ab59fb51c6d446e1cb3ffb9b6b2ab257f}{analysis\+\_\+settings}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a5790d00b57a55b123b63fe42c5a65006}{mcsamples}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a3c60ec48c3de0a16aa8faf0ab9ceb47e}{densities\+\_\+1D}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a6b2c5ec08aee2a0123799325008b9a64}{densities\+\_\+2D}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1plots_1_1MCSampleAnalysis_a870b19f6395bcb2ab86cbbb606bc223d}{single\+\_\+samples}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A class that loads and analyses samples, mapping root names to :class:`~.mcsamples.MCSamples` objects with caching.
+Typically accessed as the instance stored in plotter.sampleAnalyser, for example to 
+get an :class:`~.mcsamples.MCSamples` instance from a root name being used by a plotter, use plotter.sampleAnalyser.samplesForRoot(name).
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a85dad878c7c3532d966f0d46188a8ab1}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a85dad878c7c3532d966f0d46188a8ab1}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{chain\+\_\+locations,  }\item[{}]{settings = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param chain_locations: either a directory or the path of a grid of runs;
+       it can also be a list of such, which is searched in order
+:param settings: Either an :class:`~.inifile.IniFile` instance, 
+       the name of an .ini file, or a dict holding sample analysis settings.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_aa2dc5aeed2c014c5ffee3dfc92850ae9}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_aa2dc5aeed2c014c5ffee3dfc92850ae9}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!add\+Chain\+Dir@{add\+Chain\+Dir}}
+\index{add\+Chain\+Dir@{add\+Chain\+Dir}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{add\+Chain\+Dir()}{addChainDir()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Chain\+Dir (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{chain\+\_\+dir }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a new chain directory or grid path for searching for samples
+
+:param chain_dir: The directory to add
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+chain\+\_\+dirs, getdist.\+plots.\+M\+C\+Sample\+Analysis.\+chain\+\_\+locations, getdist.\+mcsamples.\+M\+C\+Samples.\+ini, getdist.\+plots.\+M\+C\+Sample\+Analysis.\+ini, and getdist.\+gui.\+mainwindow.\+Dialog\+Settings.\+ini.
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a66016ce12ceb418f0bdf2717f272e57a}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a66016ce12ceb418f0bdf2717f272e57a}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!add\+Root@{add\+Root}}
+\index{add\+Root@{add\+Root}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{add\+Root()}{addRoot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Root (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+\_\+root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a root file for some new samples
+
+:param file_root: Either a file root name including path or a :class:`RootInfo` instance
+:return: :class:`~.mcsamples.MCSamples` instance for given root file.
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root().
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Roots().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a66016ce12ceb418f0bdf2717f272e57a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a66016ce12ceb418f0bdf2717f272e57a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_adfcdd2464aa89d7c72dbf8f4bf0a04ae}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_adfcdd2464aa89d7c72dbf8f4bf0a04ae}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!add\+Roots@{add\+Roots}}
+\index{add\+Roots@{add\+Roots}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{add\+Roots()}{addRoots()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Roots (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{roots }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A wrapper for addRoot that adds multiple file roots
+
+:param roots: An iterable containing filenames or :class:`RootInfo` objects to add
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Root().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_adfcdd2464aa89d7c72dbf8f4bf0a04ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a73bb61d8e16c40ed2be4728f8cca5515}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a73bb61d8e16c40ed2be4728f8cca5515}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!bounds\+For\+Root@{bounds\+For\+Root}}
+\index{bounds\+For\+Root@{bounds\+For\+Root}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{bounds\+For\+Root()}{boundsForRoot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+bounds\+For\+Root (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns an object with getUpper and getLower to get hard prior bounds for given root name
+
+:param root: The root name to use.
+:return: object with getUpper() and getLower() functions
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a73bb61d8e16c40ed2be4728f8cca5515_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a84058dd5a8abce27dbe67c1a9544b139}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a84058dd5a8abce27dbe67c1a9544b139}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!get\+\_\+density@{get\+\_\+density}}
+\index{get\+\_\+density@{get\+\_\+density}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{get\+\_\+density()}{get\_density()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+get\+\_\+density (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{param,  }\item[{}]{likes = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get :class:`~.densities.Density1D` for given root name and parameter
+
+:param root:  The root name of the samples to use
+:param param: name of the parameter
+:param likes: whether to include mean likelihood in density.likes
+:return:  :class:`~.densities.Density1D` instance with 1D marginalized density
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a03533aa69a7cfeddba8e641b36b6025d}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a03533aa69a7cfeddba8e641b36b6025d}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!get\+\_\+density\+\_\+grid@{get\+\_\+density\+\_\+grid}}
+\index{get\+\_\+density\+\_\+grid@{get\+\_\+density\+\_\+grid}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{get\+\_\+density\+\_\+grid()}{get\_density\_grid()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+get\+\_\+density\+\_\+grid (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{param1,  }\item[{}]{param2,  }\item[{}]{conts = {\ttfamily 2},  }\item[{}]{likes = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get 2D marginalized density for given root name and parameters
+
+:param root: The root name for samples to use.
+:param param1: x parameter
+:param param2: y parameter
+:param conts: number of contour levels (up to maximum calculated using contours in analysis settings)
+:param likes: whether to include mean likelihoods
+:return: :class:`~.densities.Density2D` instance with marginalized density
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+densities\+\_\+2D, and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a03533aa69a7cfeddba8e641b36b6025d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a993420585e2d3d9625272366173756cf}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a993420585e2d3d9625272366173756cf}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!load\+\_\+single\+\_\+samples@{load\+\_\+single\+\_\+samples}}
+\index{load\+\_\+single\+\_\+samples@{load\+\_\+single\+\_\+samples}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{load\+\_\+single\+\_\+samples()}{load\_single\_samples()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+load\+\_\+single\+\_\+samples (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a set of unit weight samples for given root name, e.g. for making sample scatter plot
+
+:param root: The root name to use.
+:return: array of unit weight samples
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root(), getdist.\+plots.\+Sample\+Analysis\+Get\+Dist.\+single\+\_\+samples, and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+single\+\_\+samples.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a993420585e2d3d9625272366173756cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a46a583be508db9c57da6afe4766a4279}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a46a583be508db9c57da6afe4766a4279}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!new\+Plot@{new\+Plot}}
+\index{new\+Plot@{new\+Plot}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{new\+Plot()}{newPlot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+new\+Plot (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Referenced by getdist.\+plots.\+Get\+Dist\+Plotter.\+make\+\_\+figure().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a46a583be508db9c57da6afe4766a4279_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_ad38551dc8499923e02dd925ab2a0e6cf}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_ad38551dc8499923e02dd925ab2a0e6cf}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!params\+For\+Root@{params\+For\+Root}}
+\index{params\+For\+Root@{params\+For\+Root}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{params\+For\+Root()}{paramsForRoot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+params\+For\+Root (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{label\+Params = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a :class:`~.paramnames.ParamNames` with names and labels for parameters used by samples with a given root name.
+
+:param root: The root name of the samples to use.
+:param labelParams: optional name of .paramnames file containing labels to use for plots, overriding default
+:return: :class:`~.paramnames.ParamNames` instance
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_ad38551dc8499923e02dd925ab2a0e6cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_aed1d592770a9f8dbd55af844bb55234e}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_aed1d592770a9f8dbd55af844bb55234e}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!remove\+Root@{remove\+Root}}
+\index{remove\+Root@{remove\+Root}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{remove\+Root()}{removeRoot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+remove\+Root (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+\_\+root }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove a given root file (does not delete it)
+
+:param file_root: The file root to remove
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+densities\+\_\+1D, getdist.\+plots.\+M\+C\+Sample\+Analysis.\+densities\+\_\+2D, getdist.\+plots.\+M\+C\+Sample\+Analysis.\+mcsamples, getdist.\+plots.\+Sample\+Analysis\+Get\+Dist.\+single\+\_\+samples, and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+single\+\_\+samples.
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_aecba5996a9bd7571a2886360e9458cfe}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_aecba5996a9bd7571a2886360e9458cfe}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!reset@{reset}}
+\index{reset@{reset}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+reset (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{settings = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resets the caches, starting afresh optionally with new analysis settings
+
+:param settings: Either an :class:`~.inifile.IniFile` instance,
+       the name of an .ini file, or a dict holding sample analysis settings.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a81c2af5210ee710151a4ea852312999c}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a81c2af5210ee710151a4ea852312999c}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!samples\+For\+Root@{samples\+For\+Root}}
+\index{samples\+For\+Root@{samples\+For\+Root}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{samples\+For\+Root()}{samplesForRoot()}}
+{\footnotesize\ttfamily def getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root,  }\item[{}]{file\+\_\+root = {\ttfamily None},  }\item[{}]{cache = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets :class:`~.mcsamples.MCSamples` from root name (or just return root if it is already an MCSamples instance).
+
+:param root: The root name (without path, e.g. my_chains)
+:param file_root: optional full root path, by default searches in self.chain_dirs
+:param cache: if True, return cached object if already loaded
+:return: :class:`~.mcsamples.MCSamples` for the given root name
+\end{DoxyVerb}
+ 
+
+References getdist.\+plots.\+M\+C\+Sample\+Analysis.\+chain\+\_\+dirs, getdist.\+mcsamples.\+M\+C\+Samples.\+ini, getdist.\+plots.\+M\+C\+Sample\+Analysis.\+ini, getdist.\+gui.\+mainwindow.\+Dialog\+Settings.\+ini, getdist.\+mcsamples.\+load\+M\+C\+Samples(), and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+mcsamples.
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Root(), getdist.\+plots.\+M\+C\+Sample\+Analysis.\+bounds\+For\+Root(), getdist.\+plots.\+M\+C\+Sample\+Analysis.\+get\+\_\+density\+\_\+grid(), getdist.\+plots.\+M\+C\+Sample\+Analysis.\+load\+\_\+single\+\_\+samples(), and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+params\+For\+Root().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a81c2af5210ee710151a4ea852312999c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1plots_1_1MCSampleAnalysis_a81c2af5210ee710151a4ea852312999c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_ab59fb51c6d446e1cb3ffb9b6b2ab257f}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_ab59fb51c6d446e1cb3ffb9b6b2ab257f}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!analysis\+\_\+settings@{analysis\+\_\+settings}}
+\index{analysis\+\_\+settings@{analysis\+\_\+settings}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{analysis\+\_\+settings}{analysis\_settings}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+analysis\+\_\+settings}
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a1822d8859d98c2ecae909fc49eda82fa}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a1822d8859d98c2ecae909fc49eda82fa}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!chain\+\_\+dirs@{chain\+\_\+dirs}}
+\index{chain\+\_\+dirs@{chain\+\_\+dirs}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{chain\+\_\+dirs}{chain\_dirs}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+chain\+\_\+dirs}
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Chain\+Dir(), and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a23dbb7ae143679e678d0c82f2411d51e}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a23dbb7ae143679e678d0c82f2411d51e}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!chain\+\_\+locations@{chain\+\_\+locations}}
+\index{chain\+\_\+locations@{chain\+\_\+locations}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{chain\+\_\+locations}{chain\_locations}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+chain\+\_\+locations}
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Chain\+Dir().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a3c60ec48c3de0a16aa8faf0ab9ceb47e}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a3c60ec48c3de0a16aa8faf0ab9ceb47e}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!densities\+\_\+1D@{densities\+\_\+1D}}
+\index{densities\+\_\+1D@{densities\+\_\+1D}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{densities\+\_\+1D}{densities\_1D}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+densities\+\_\+1D}
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+remove\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a6b2c5ec08aee2a0123799325008b9a64}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a6b2c5ec08aee2a0123799325008b9a64}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!densities\+\_\+2D@{densities\+\_\+2D}}
+\index{densities\+\_\+2D@{densities\+\_\+2D}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{densities\+\_\+2D}{densities\_2D}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+densities\+\_\+2D}
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+get\+\_\+density\+\_\+grid(), and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+remove\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_ad8ae1e04c9f3be4b9246dd83e73551ae}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_ad8ae1e04c9f3be4b9246dd83e73551ae}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!ini@{ini}}
+\index{ini@{ini}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{ini}{ini}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+ini}
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+add\+Chain\+Dir(), and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a5790d00b57a55b123b63fe42c5a65006}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a5790d00b57a55b123b63fe42c5a65006}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!mcsamples@{mcsamples}}
+\index{mcsamples@{mcsamples}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{mcsamples}{mcsamples}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+mcsamples}
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+remove\+Root(), and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+samples\+For\+Root().
+
+\mbox{\Hypertarget{classgetdist_1_1plots_1_1MCSampleAnalysis_a870b19f6395bcb2ab86cbbb606bc223d}\label{classgetdist_1_1plots_1_1MCSampleAnalysis_a870b19f6395bcb2ab86cbbb606bc223d}} 
+\index{getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}!single\+\_\+samples@{single\+\_\+samples}}
+\index{single\+\_\+samples@{single\+\_\+samples}!getdist\+::plots\+::\+M\+C\+Sample\+Analysis@{getdist\+::plots\+::\+M\+C\+Sample\+Analysis}}
+\subsubsection{\texorpdfstring{single\+\_\+samples}{single\_samples}}
+{\footnotesize\ttfamily getdist.\+plots.\+M\+C\+Sample\+Analysis.\+single\+\_\+samples}
+
+
+
+Referenced by getdist.\+plots.\+M\+C\+Sample\+Analysis.\+load\+\_\+single\+\_\+samples(), and getdist.\+plots.\+M\+C\+Sample\+Analysis.\+remove\+Root().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{plots_8py}{plots.\+py}}\end{DoxyCompactItemize}

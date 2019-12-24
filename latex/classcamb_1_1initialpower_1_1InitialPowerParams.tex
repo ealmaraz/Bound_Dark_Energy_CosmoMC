@@ -1,0 +1,150 @@
+\hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams}{}\section{camb.\+initialpower.\+Initial\+Power\+Params Class Reference}
+\label{classcamb_1_1initialpower_1_1InitialPowerParams}\index{camb.\+initialpower.\+Initial\+Power\+Params@{camb.\+initialpower.\+Initial\+Power\+Params}}
+
+
+Inheritance diagram for camb.\+initialpower.\+Initial\+Power\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classcamb_1_1initialpower_1_1InitialPowerParams__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camb.\+initialpower.\+Initial\+Power\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classcamb_1_1initialpower_1_1InitialPowerParams__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classcamb_1_1initialpower_1_1InitialPowerParams_acd73daab89bb1c79e52dfd5764ff3c91}{set\+\_\+params}} (self, As=2e-\/9, ns=0.\+96, nrun=0, nrunrun=0, r=0, nt=\+None, ntrun=0, pivot\+\_\+scalar=0.\+05, pivot\+\_\+tensor=0.\+05, parameterization=tensor\+\_\+param\+\_\+rpivot)
+\item 
+def \mbox{\hyperlink{classcamb_1_1initialpower_1_1InitialPowerParams_a7b52a848ef6cbc2f6c7ce910571d0813}{has\+\_\+tensors}} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcamb_1_1initialpower_1_1InitialPowerParams_afd4cd465faad5f538b9e45a0e0e22515}{tensor\+\_\+parameterization}}
+\item 
+\mbox{\hyperlink{classcamb_1_1initialpower_1_1InitialPowerParams_a15b26e7b97622d32e2f302bea45566a0}{nn}}
+\item 
+\mbox{\hyperlink{classcamb_1_1initialpower_1_1InitialPowerParams_ac3fbb18abfbd776bbd1c6f787d72af31}{k\+\_\+0\+\_\+scalar}}
+\item 
+\mbox{\hyperlink{classcamb_1_1initialpower_1_1InitialPowerParams_a9a9e09ac537ae5a70ceadcf83ba5febe}{k\+\_\+0\+\_\+tensor}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classcamb_1_1initialpower_1_1InitialPowerParams_aed3d8d753d0648c63a0db198188dd64a}{\+\_\+fields\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Object to store parameters for the primordial power spectrum.
+Many of the internal variables are arrays, to allow calculating more than one power spectrum at one. Higher-level functions in the
+CAMB python wrapper assume only one is calculated.\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams_a7b52a848ef6cbc2f6c7ce910571d0813}\label{classcamb_1_1initialpower_1_1InitialPowerParams_a7b52a848ef6cbc2f6c7ce910571d0813}} 
+\index{camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}!has\+\_\+tensors@{has\+\_\+tensors}}
+\index{has\+\_\+tensors@{has\+\_\+tensors}!camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}}
+\subsubsection{\texorpdfstring{has\+\_\+tensors()}{has\_tensors()}}
+{\footnotesize\ttfamily def camb.\+initialpower.\+Initial\+Power\+Params.\+has\+\_\+tensors (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do these settings have non-zero tensors?
+
+:return: True of non-zero tensor amplitude
+\end{DoxyVerb}
+ 
+
+References initialpower\+::initialpowerparams.\+rat.
+
+\mbox{\Hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams_acd73daab89bb1c79e52dfd5764ff3c91}\label{classcamb_1_1initialpower_1_1InitialPowerParams_acd73daab89bb1c79e52dfd5764ff3c91}} 
+\index{camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}!set\+\_\+params@{set\+\_\+params}}
+\index{set\+\_\+params@{set\+\_\+params}!camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+params()}{set\_params()}}
+{\footnotesize\ttfamily def camb.\+initialpower.\+Initial\+Power\+Params.\+set\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{As = {\ttfamily 2e-\/9},  }\item[{}]{ns = {\ttfamily 0.96},  }\item[{}]{nrun = {\ttfamily 0},  }\item[{}]{nrunrun = {\ttfamily 0},  }\item[{}]{r = {\ttfamily 0},  }\item[{}]{nt = {\ttfamily None},  }\item[{}]{ntrun = {\ttfamily 0},  }\item[{}]{pivot\+\_\+scalar = {\ttfamily 0.05},  }\item[{}]{pivot\+\_\+tensor = {\ttfamily 0.05},  }\item[{}]{parameterization = {\ttfamily \mbox{\hyperlink{namespacecamb_1_1initialpower_a87e33284f7a24c1dc055e2518360a86a}{tensor\+\_\+param\+\_\+rpivot}}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set parameters using standard power law parameterization. If nt=None, uses inflation consistency relation.
+
+:param As: comoving curvature power at k=piveo_scalar
+:param ns: scalar spectral index
+:param nrun: running of scalar spectral index d n_s/d log k
+:param nrunrun: running of running of spectral index
+:param r: tensor to scalar ratio at pivot
+:param nt: tensor spectral index. If None, set using inflation consistency
+:param ntrun: running of tensor spectral index
+:param pivot_scalar: pivot scale for scalar spectrum
+:param pivot_tensor:  pivot scale for tensor spectrum
+:param parameterization: See CAMB notes. One of
+    - tensor_param_indeptilt = 1
+    - tensor_param_rpivot = 2
+    - tensor_param_AT = 3
+:return: self
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams_aed3d8d753d0648c63a0db198188dd64a}\label{classcamb_1_1initialpower_1_1InitialPowerParams_aed3d8d753d0648c63a0db198188dd64a}} 
+\index{camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}!\+\_\+fields\+\_\+@{\+\_\+fields\+\_\+}}
+\index{\+\_\+fields\+\_\+@{\+\_\+fields\+\_\+}!camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}}
+\subsubsection{\texorpdfstring{\+\_\+fields\+\_\+}{\_fields\_}}
+{\footnotesize\ttfamily list camb.\+initialpower.\+Initial\+Power\+Params.\+\_\+fields\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        (\textcolor{stringliteral}{"tensor\_parameterization"}, c\_int),
+        (\textcolor{stringliteral}{"nn"}, c\_int),
+        (\textcolor{stringliteral}{"an"}, c\_double * nnmax),
+        (\textcolor{stringliteral}{"n\_run"}, c\_double * nnmax),
+        (\textcolor{stringliteral}{"n\_runrun"}, c\_double * nnmax),
+        (\textcolor{stringliteral}{"ant"}, c\_double * nnmax),
+        (\textcolor{stringliteral}{"nt\_run"}, c\_double * nnmax),
+        (\textcolor{stringliteral}{"rat"}, c\_double * nnmax),
+        (\textcolor{stringliteral}{"k\_0\_scalar"}, c\_double),
+        (\textcolor{stringliteral}{"k\_0\_tensor"}, c\_double),
+        (\textcolor{stringliteral}{"ScalarPowerAmp"}, c\_double * nnmax),
+        (\textcolor{stringliteral}{"TensorPowerAmp"}, c\_double * nnmax)
+    ]
+\end{DoxyCode}
+
+
+Referenced by camb.\+baseconfig.\+C\+A\+M\+B\+\_\+\+Structure.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+\mbox{\Hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams_ac3fbb18abfbd776bbd1c6f787d72af31}\label{classcamb_1_1initialpower_1_1InitialPowerParams_ac3fbb18abfbd776bbd1c6f787d72af31}} 
+\index{camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}!k\+\_\+0\+\_\+scalar@{k\+\_\+0\+\_\+scalar}}
+\index{k\+\_\+0\+\_\+scalar@{k\+\_\+0\+\_\+scalar}!camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}}
+\subsubsection{\texorpdfstring{k\+\_\+0\+\_\+scalar}{k\_0\_scalar}}
+{\footnotesize\ttfamily camb.\+initialpower.\+Initial\+Power\+Params.\+k\+\_\+0\+\_\+scalar}
+
+\mbox{\Hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams_a9a9e09ac537ae5a70ceadcf83ba5febe}\label{classcamb_1_1initialpower_1_1InitialPowerParams_a9a9e09ac537ae5a70ceadcf83ba5febe}} 
+\index{camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}!k\+\_\+0\+\_\+tensor@{k\+\_\+0\+\_\+tensor}}
+\index{k\+\_\+0\+\_\+tensor@{k\+\_\+0\+\_\+tensor}!camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}}
+\subsubsection{\texorpdfstring{k\+\_\+0\+\_\+tensor}{k\_0\_tensor}}
+{\footnotesize\ttfamily camb.\+initialpower.\+Initial\+Power\+Params.\+k\+\_\+0\+\_\+tensor}
+
+\mbox{\Hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams_a15b26e7b97622d32e2f302bea45566a0}\label{classcamb_1_1initialpower_1_1InitialPowerParams_a15b26e7b97622d32e2f302bea45566a0}} 
+\index{camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}!nn@{nn}}
+\index{nn@{nn}!camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}}
+\subsubsection{\texorpdfstring{nn}{nn}}
+{\footnotesize\ttfamily camb.\+initialpower.\+Initial\+Power\+Params.\+nn}
+
+\mbox{\Hypertarget{classcamb_1_1initialpower_1_1InitialPowerParams_afd4cd465faad5f538b9e45a0e0e22515}\label{classcamb_1_1initialpower_1_1InitialPowerParams_afd4cd465faad5f538b9e45a0e0e22515}} 
+\index{camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}!tensor\+\_\+parameterization@{tensor\+\_\+parameterization}}
+\index{tensor\+\_\+parameterization@{tensor\+\_\+parameterization}!camb\+::initialpower\+::\+Initial\+Power\+Params@{camb\+::initialpower\+::\+Initial\+Power\+Params}}
+\subsubsection{\texorpdfstring{tensor\+\_\+parameterization}{tensor\_parameterization}}
+{\footnotesize\ttfamily camb.\+initialpower.\+Initial\+Power\+Params.\+tensor\+\_\+parameterization}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/pycamb/camb/\mbox{\hyperlink{initialpower_8py}{initialpower.\+py}}\end{DoxyCompactItemize}

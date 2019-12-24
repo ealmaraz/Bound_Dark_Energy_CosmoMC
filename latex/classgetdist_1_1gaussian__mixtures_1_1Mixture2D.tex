@@ -1,0 +1,120 @@
+\hypertarget{classgetdist_1_1gaussian__mixtures_1_1Mixture2D}{}\section{getdist.\+gaussian\+\_\+mixtures.\+Mixture2D Class Reference}
+\label{classgetdist_1_1gaussian__mixtures_1_1Mixture2D}\index{getdist.\+gaussian\+\_\+mixtures.\+Mixture2D@{getdist.\+gaussian\+\_\+mixtures.\+Mixture2D}}
+
+
+Inheritance diagram for getdist.\+gaussian\+\_\+mixtures.\+Mixture2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classgetdist_1_1gaussian__mixtures_1_1Mixture2D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+gaussian\+\_\+mixtures.\+Mixture2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classgetdist_1_1gaussian__mixtures_1_1Mixture2D__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a5c0e8c7249a06e98e239a4340efedd19}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1MixtureND_aeee57b3c06a515c91821b09866b52da3}{means}}, \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1MixtureND_a51e91169ecb626b2ca59779abeed17b7}{covs}}, \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1MixtureND_a7fbae73d771ec0e1ca1f80558ad3b08b}{weights}}=None, \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1MixtureND_a0b9e4c4e0b3529e79cfa980507f8d2ea}{lims}}=None, \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1MixtureND_ad26124d47b68d38fa8e90bc135769e6b}{names}}=\mbox{[}\textquotesingle{}\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}\textquotesingle{}, y, xmin=None, xmax=None, ymin=None, ymax=None, kwargs)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a75c659c0a74007a020773d90f324f6bc}{density2D}} (self, num\+\_\+points=1024, xmin=None, xmax=None, ymin=None, ymax=None, sigma\+\_\+max=5)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_aa5f1666d0810f7e788881d776dfd797d}{pdf}} (self, \mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}, y=None)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a605ecb70ffec33463e92a7c475acd158}{\+\_\+update\+Limits}} (self, \mbox{\hyperlink{classgetdist_1_1gaussian__mixtures_1_1MixtureND_a0b9e4c4e0b3529e79cfa980507f8d2ea}{lims}}, xmin=None, xmax=None, ymin=None, ymax=None)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Simulate from Gaussian mixture model in 2D with optional boundaries for fixed x and y ranges
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a5c0e8c7249a06e98e239a4340efedd19}\label{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a5c0e8c7249a06e98e239a4340efedd19}} 
+\index{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{means,  }\item[{}]{covs,  }\item[{}]{weights = {\ttfamily None},  }\item[{}]{lims = {\ttfamily None},  }\item[{}]{names = {\ttfamily \mbox{[}\textquotesingle{}\mbox{\hyperlink{plotTT_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}\textquotesingle{}},  }\item[{}]{y,  }\item[{}]{xmin = {\ttfamily None},  }\item[{}]{xmax = {\ttfamily None},  }\item[{}]{ymin = {\ttfamily None},  }\item[{}]{ymax = {\ttfamily None},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+update\+Limits(), and getdist.\+gaussian\+\_\+mixtures.\+make\+\_\+2\+D\+\_\+\+Cov().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a5c0e8c7249a06e98e239a4340efedd19_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a605ecb70ffec33463e92a7c475acd158}\label{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a605ecb70ffec33463e92a7c475acd158}} 
+\index{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}!\+\_\+update\+Limits@{\+\_\+update\+Limits}}
+\index{\+\_\+update\+Limits@{\+\_\+update\+Limits}!getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}}
+\subsubsection{\texorpdfstring{\+\_\+update\+Limits()}{\_updateLimits()}}
+{\footnotesize\ttfamily def getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+update\+Limits (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{lims,  }\item[{}]{xmin = {\ttfamily None},  }\item[{}]{xmax = {\ttfamily None},  }\item[{}]{ymin = {\ttfamily None},  }\item[{}]{ymax = {\ttfamily None} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+\+\_\+init\+\_\+\+\_\+(), getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+density2\+D(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+2d(), getdist.\+plots.\+Get\+Dist\+Plotter.\+plot\+\_\+3d(), and getdist.\+plots.\+Get\+Dist\+Plotter.\+rectangle\+\_\+plot().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a605ecb70ffec33463e92a7c475acd158_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a75c659c0a74007a020773d90f324f6bc}\label{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a75c659c0a74007a020773d90f324f6bc}} 
+\index{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}!density2D@{density2D}}
+\index{density2D@{density2D}!getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}}
+\subsubsection{\texorpdfstring{density2\+D()}{density2D()}}
+{\footnotesize\ttfamily def getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+density2D (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{num\+\_\+points = {\ttfamily 1024},  }\item[{}]{xmin = {\ttfamily None},  }\item[{}]{xmax = {\ttfamily None},  }\item[{}]{ymin = {\ttfamily None},  }\item[{}]{ymax = {\ttfamily None},  }\item[{}]{sigma\+\_\+max = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+\_\+update\+Limits(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+auto\+Ranges(), getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+lims, and getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+pdf().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_a75c659c0a74007a020773d90f324f6bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_aa5f1666d0810f7e788881d776dfd797d}\label{classgetdist_1_1gaussian__mixtures_1_1Mixture2D_aa5f1666d0810f7e788881d776dfd797d}} 
+\index{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}!pdf@{pdf}}
+\index{pdf@{pdf}!getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D@{getdist\+::gaussian\+\_\+mixtures\+::\+Mixture2D}}
+\subsubsection{\texorpdfstring{pdf()}{pdf()}}
+{\footnotesize\ttfamily def getdist.\+gaussian\+\_\+mixtures.\+Mixture2\+D.\+pdf (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate the PDF. Note this assumes x and y are within the boundaries (does not return zero outside)
+Result is also only normalized if no boundaries
+\end{DoxyVerb}
+ 
+
+References getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+invcovs, getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+means, getdist.\+chains.\+Weighted\+Samples.\+means, getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+norms, getdist.\+gaussian\+\_\+mixtures.\+Mixture\+N\+D.\+weights, getdist.\+chains.\+Weighted\+Samples.\+weights, getdist.\+chains.\+Chains.\+weights, and copy\+Grid\+Files.\+zip.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{gaussian__mixtures_8py}{gaussian\+\_\+mixtures.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="bao::bao_lnlike" name="bao::bao_lnlike">
+<area shape="rect" id="node2" href="$namespacematrixutils.html#affa7bde611de578a07d5a1bdf612f1b2" title="matrixutils::matrix\l_quadform" alt="" coords="163,93,290,134"/>
+<area shape="rect" id="node3" href="$namespacematrixutils.html#a4bcc2b4fc8b6f2fee0c142c280851c73" title="matrixutils::matrix\l_mulvecsymm" alt="" coords="339,59,466,101"/>
+<area shape="rect" id="node8" href="$namespacematrixutils.html#a14ec6bb3e63d084752f528c47653f7d7" title="matrixutils::matrix\l_vecdot" alt="" coords="339,125,466,166"/>
+<area shape="rect" id="node4" href="$namespacematrixutils.html#a24fd4fc8dbd7eee3c9176c3f9ca634eb" title="matrixutils::matrix\l_start" alt="" coords="529,5,655,46"/>
+<area shape="rect" id="node6" href="$namespacempiutils.html#a23720e4e8b635dab4b67172618aa77e5" title="mpiutils::mpistop" alt="" coords="531,125,653,152"/>
+<area shape="rect" id="node7" href="$namespacematrixutils.html#aeb25ca6b661aed4516c029f0cd6003bc" title="matrixutils::matrix_end" alt="" coords="515,71,669,97"/>
+<area shape="rect" id="node5" href="$namespacematrixutils.html#a969773017c47f3dc8dfb2a18e5bc5fbd" title="matrixutils::getmatrixtime" alt="" coords="718,41,887,68"/>
+</map>

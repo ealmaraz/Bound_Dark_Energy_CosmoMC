@@ -1,0 +1,67 @@
+\hypertarget{classCAMB__test__files_1_1ColTol}{}\section{C\+A\+M\+B\+\_\+test\+\_\+files.\+Col\+Tol Class Reference}
+\label{classCAMB__test__files_1_1ColTol}\index{C\+A\+M\+B\+\_\+test\+\_\+files.\+Col\+Tol@{C\+A\+M\+B\+\_\+test\+\_\+files.\+Col\+Tol}}
+
+
+Inheritance diagram for C\+A\+M\+B\+\_\+test\+\_\+files.\+Col\+Tol\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classCAMB__test__files_1_1ColTol__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+A\+M\+B\+\_\+test\+\_\+files.\+Col\+Tol\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classCAMB__test__files_1_1ColTol__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classCAMB__test__files_1_1ColTol_a97517c5957bda898ef93ffe971715f22}{\+\_\+\+\_\+missing\+\_\+\+\_\+}} (self, item)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Specify the column tolerances for all columns in a file.
+ This class is inherited from the dict class and overrides the missing
+ method to return the tolerance of the asterisk key, which is denoting
+ the tolerances for all not explicitly specified columns. The
+ tolerance for a column can be Ignore()d be using the <b>Ignore()</b> value or
+ has to be a tupple, where the first item tells whether the second is to
+ be evaluated. The first item can be a bool (value does not matter), to always
+ select the second item for evaluation, or a function accepting the
+ dictionary of inifile setting. The function then has to return true,
+ when the second item of the tupple has to be evaluated.
+ A tolerance for the |old-new| < tol can be specified by giving the
+ scalar tolerance or a function of two vectors for the second item of
+ the tupple. The first vector contains all columns of the old values
+ the second all values of the new values. The values are addressed by
+ the columns names taken from the newer file. The function has to return
+ true, when the new value is ok, false else.
+ Additionally ranges of tolerances or functions can be given as a sorted
+ list of 2-tupples. The first value is the lower bound of the column "L" for
+ which the second value/function is applicable. The lists is traversed as
+ long as "L" is smaller then the first value or the list ends. The second
+ value is then taken for the comparison. That value also can be an Ignore()
+ object, denoting that the value is to always accepted.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCAMB__test__files_1_1ColTol_a97517c5957bda898ef93ffe971715f22}\label{classCAMB__test__files_1_1ColTol_a97517c5957bda898ef93ffe971715f22}} 
+\index{C\+A\+M\+B\+\_\+test\+\_\+files\+::\+Col\+Tol@{C\+A\+M\+B\+\_\+test\+\_\+files\+::\+Col\+Tol}!\+\_\+\+\_\+missing\+\_\+\+\_\+@{\+\_\+\+\_\+missing\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+missing\+\_\+\+\_\+@{\+\_\+\+\_\+missing\+\_\+\+\_\+}!C\+A\+M\+B\+\_\+test\+\_\+files\+::\+Col\+Tol@{C\+A\+M\+B\+\_\+test\+\_\+files\+::\+Col\+Tol}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+missing\+\_\+\+\_\+()}{\_\_missing\_\_()}}
+{\footnotesize\ttfamily def C\+A\+M\+B\+\_\+test\+\_\+files.\+Col\+Tol.\+\_\+\+\_\+missing\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{item }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/python/\mbox{\hyperlink{CAMB__test__files_8py}{C\+A\+M\+B\+\_\+test\+\_\+files.\+py}}\end{DoxyCompactItemize}

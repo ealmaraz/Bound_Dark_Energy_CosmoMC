@@ -1,0 +1,120 @@
+\hypertarget{IniObjects_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Ini\+Objects.f90 File Reference}
+\label{IniObjects_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Ini\+Objects.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Ini\+Objects.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tnamevalue}{iniobjects\+::tnamevalue}}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tnamevalue__pointer}{iniobjects\+::tnamevalue\+\_\+pointer}}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{iniobjects\+::tnamevaluelist}}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tinifile}{iniobjects\+::tinifile}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceiniobjects}{iniobjects}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_aaa5d8364fae58e251714849bb64e5124}{iniobjects\+::tnamevaluelist\+\_\+init}} (this, ignore\+Duplicates)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a5f3c26a113f5171e6bdf68705ced9854}{iniobjects\+::tnamevaluelist\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_aaa465cf37dfe148879b8073a289ab2f8}{iniobjects\+::tnamevaluelist\+\_\+free}} (this)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_a885480cca0257f187dfcd491a588ce52}{iniobjects\+::tnamevaluelist\+\_\+valueof}} (this, A\+Name)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_a4f92f7df639bb521266ea3f6be8dbc47}{iniobjects\+::tnamevaluelist\+\_\+name}} (this, i)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_a61f8d01755e0bc000c0c8ca3eba8e43a}{iniobjects\+::tnamevaluelist\+\_\+value}} (this, i)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_af6bb8b086a07d911f23b9d408dd89a2e}{iniobjects\+::tnamevaluelist\+\_\+indexof}} (this, A\+Name)
+\item 
+logical function \mbox{\hyperlink{namespaceiniobjects_ae95e15db4e04c8026f9193252ebe48e6}{iniobjects\+::tnamevaluelist\+\_\+haskey}} (this, A\+Name)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a96ec4d817cb41567afeefde7d8c0c7ec}{iniobjects\+::tnamevaluelist\+\_\+override}} (this, Settings, only\+\_\+if\+\_\+exists)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a0bf091b688bae891c20047d3b5bfca2a}{iniobjects\+::tnamevaluelist\+\_\+add}} (this, A\+Name, A\+Value, only\+\_\+if\+\_\+undefined)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a4ede9664ab0d5e4d00d1983e70c64322}{iniobjects\+::tnamevaluelist\+\_\+addreal}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a8214934f23a7801b7ec3c3f6da452aac}{iniobjects\+::tnamevaluelist\+\_\+adddouble}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a4c60c5afba93a368d2e832c9adbf6964}{iniobjects\+::tnamevaluelist\+\_\+addint}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a73327dd98a8e02b51bff94237d0cad1d}{iniobjects\+::tnamevaluelist\+\_\+addlogical}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a42d39e0fcf188dab68646beac2c1fa50}{iniobjects\+::tnamevaluelist\+\_\+setcapacity}} (this, C)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a7846fce943c898567326478e49f7741f}{iniobjects\+::tnamevaluelist\+\_\+delete}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a0e1ea28af24ea8496e138262c1da71f0}{iniobjects\+::tnamevaluelist\+\_\+failstop}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a24c1905bc9b561d8eeb12877f6a8cca3}{iniobjects\+::tnamevaluelist\+\_\+error}} (this, Msg, Key)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a872a852d7d01ebf31f03d17592e7fd31}{iniobjects\+::ini\+\_\+emptycheckdefault}} (this, Key, Default)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_a3f10c54af4bf829a3e62436354908f1e}{iniobjects\+::ini\+\_\+expandenvironment}} (this, In\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a7b4567ba50cfd79f25f01c2a2b311e6b}{iniobjects\+::ini\+\_\+namevalue\+\_\+addline}} (this, A\+In\+Line, only\+\_\+if\+\_\+undefined)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_a292876b02309b0dec55346a08b3b2cdd}{iniobjects\+::ini\+\_\+resolvelinkedfile}} (this, name, thisfilename)
+\item 
+recursive subroutine \mbox{\hyperlink{namespaceiniobjects_a74dae844438b97709e8a7fb1c44d87e9}{iniobjects\+::ini\+\_\+open}} (this, filename, error, slash\+\_\+comments, append, only\+\_\+if\+\_\+undefined)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_acc50d404fe26696d6c641fabb4ae033f}{iniobjects\+::ini\+\_\+open\+\_\+fromlines}} (this, Lines, Num\+Lines, slash\+\_\+comments)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a54b6f011847c6047fd2e0dfbe9d9314d}{iniobjects\+::ini\+\_\+close}} (this)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_af8362fa0f894e89d84f084ec08dca575}{iniobjects\+::ini\+\_\+read\+\_\+string}} (this, Key, Not\+Found\+Fail)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_a7a7f7950cdd1ae3e2c9e977fb7ce87a7}{iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+default}} (this, Key, Default, Allow\+Blank, Env\+Default)
+\item 
+logical function \mbox{\hyperlink{namespaceiniobjects_aef66a5c954f63ad0935b093198bfde8a}{iniobjects\+::ini\+\_\+testequal}} (this, Key, value, Empty\+OK)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_aaf02b1dc48d8287253cf7bf134cc3a73}{iniobjects\+::ini\+\_\+key\+\_\+to\+\_\+arraykey}} (this, Key, index)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_ad97700ba84c737601d0ad383c27f1af4}{iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+array}} (this, Key, index, Not\+Found\+Fail)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_a83bc292e9738adde7e94413ff8fb38d7}{iniobjects\+::ini\+\_\+read\+\_\+int\+\_\+array}} (this, Key, index, Default)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_aca470402b1c4d58754217c0095202c84}{iniobjects\+::ini\+\_\+read\+\_\+int}} (this, Key, Default, min, max, OK)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_a64b8c91a4222e931e13741a44ef55497}{iniobjects\+::ini\+\_\+enumerationvalue}} (this, S, Names)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_a6dcfc3786b1d30b745d72bd0ec892ba4}{iniobjects\+::ini\+\_\+read\+\_\+enumeration}} (this, Key, Names, Default)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_abd02c75afc73274d508c0c1eb3cecca5}{iniobjects\+::ini\+\_\+read\+\_\+enumeration\+\_\+list}} (this, Key, Names, Enums, nvalues, max\+\_\+enums, Default)
+\item 
+double precision function \mbox{\hyperlink{namespaceiniobjects_ac283e4d44c96fe341620c0ca70e55adb}{iniobjects\+::ini\+\_\+read\+\_\+double}} (this, Key, Default, min, max)
+\item 
+double precision function \mbox{\hyperlink{namespaceiniobjects_a9d2368de438cf3dd261c801000672239}{iniobjects\+::ini\+\_\+read\+\_\+double\+\_\+array}} (this, Key, index, Default, min, max)
+\item 
+real function \mbox{\hyperlink{namespaceiniobjects_a512c72d9b421e7832a796993523deaf4}{iniobjects\+::ini\+\_\+read\+\_\+real}} (this, Key, Default, min, max)
+\item 
+real function \mbox{\hyperlink{namespaceiniobjects_ac6b89cdbdb8074900386085ded996bc7}{iniobjects\+::ini\+\_\+read\+\_\+real\+\_\+array}} (this, Key, index, Default, min, max)
+\item 
+logical function \mbox{\hyperlink{namespaceiniobjects_a5eb68a820a33b02e0b7edec1bcf632f3}{iniobjects\+::ini\+\_\+read\+\_\+logical}} (this, Key, Default)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a3c4c3ca8183b5dcca8af9d4b19808462}{iniobjects\+::ini\+\_\+savereadvalues}} (this, afile)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a67f08b5a06f2f74225f692955a712320}{iniobjects\+::ini\+\_\+read\+\_\+int\+\_\+change}} (this, Key, Current, min, max)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a5e063b545af508f22c652618784a4106}{iniobjects\+::ini\+\_\+read\+\_\+double\+\_\+change}} (this, Key, Current, min, max)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_ab840810b30c65a67b6834782fe064f34}{iniobjects\+::ini\+\_\+read\+\_\+real\+\_\+change}} (this, Key, Current, min, max)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a21e68c5f321b32ea2f6086c05c89af1a}{iniobjects\+::ini\+\_\+read\+\_\+logical\+\_\+change}} (this, Key, Current)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a6770561ba1885823e0a1d5d341cb7fa5}{iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+change}} (this, Key, Current)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len=0), target \mbox{\hyperlink{namespaceiniobjects_a09461a87d61c35db5d0ad8895baae8dd}{iniobjects\+::empty\+\_\+string}} = \textquotesingle{}\textquotesingle{}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceiniobjects_ad4e84129fd47c679fb1fcdd444d9fc84}{iniobjects\+::ini\+\_\+enumeration\+\_\+len}} = 64
+\end{DoxyCompactItemize}

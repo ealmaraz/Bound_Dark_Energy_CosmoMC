@@ -1,0 +1,11 @@
+<map id="getdist.types.BestFit.__init__" name="getdist.types.BestFit.__init__">
+<area shape="rect" id="node2" href="$classgetdist_1_1parampriors_1_1ParamBounds.html#af30cba6cd32f1bd0532c223b9eb8546b" title="getdist.parampriors.Param\lBounds.loadFromFile" alt="" coords="219,5,394,46"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1covmat_1_1CovMat.html#abfc622cd1affb70314b55774500ef495" title="getdist.covmat.CovMat.load\lFromFile" alt="" coords="213,70,400,111"/>
+<area shape="rect" id="node4" href="$classCMBlikes_1_1ClsArray.html#a8d5595682cfd2e5f4db3d726d50f4505" title="CMBlikes.ClsArray.loadFromFile" alt="" coords="200,136,413,163"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1paramnames_1_1ParamNames.html#a5666a4e6f847d39fcf256a099ee8d7eb" title="getdist.paramnames.Param\lNames.loadFromFile" alt="" coords="215,187,398,229"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1types_1_1BestFit.html#a1f93055bc0ccff2dcf47aa1b671b1eac" title="getdist.types.BestFit.load\lFromFile" alt="" coords="221,253,392,294"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1paramnames_1_1ParamList.html#a1c0f1ff83138b0ff5a99c21d43314888" title="getdist.paramnames.Param\lList.setLabelsAndDerivedFrom\lParamNames" alt="" coords="206,317,407,373"/>
+<area shape="rect" id="node5" href="$namespaceCMBlikes.html#a1466915350fd7dc3528979f6e8649244" title="CMBlikes.readWithHeader" alt="" coords="465,136,642,163"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1paramnames_1_1ParamList.html#a96e124851867f3679768756bb4dbd4c3" title="getdist.paramnames.Param\lList.fileList" alt="" coords="462,253,645,294"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1paramnames_1_1ParamList.html#a700a5bd1076df5b7a3fd00a102325175" title="getdist.paramnames.Param\lList.parWithName" alt="" coords="462,325,645,366"/>
+</map>

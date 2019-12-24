@@ -1,0 +1,27 @@
+<map id="rombint" name="rombint">
+<area shape="rect" id="node2" href="$namespacepower__sz.html#aa30236046bbf63ea0304f440bef4964d" title="power_sz::delta" alt="" coords="137,44,252,71"/>
+<area shape="rect" id="node8" href="$namespacethermodata.html#a6d995eb9ad9f563fec198222c168e097" title="thermodata::inithermo" alt="" coords="121,184,269,211"/>
+<area shape="rect" id="node20" href="$namespacecosmology.html#a5acb8c4886ff7017542c3c1ec551f357" title="cosmology::r" alt="" coords="146,108,243,135"/>
+<area shape="rect" id="node3" href="$namespacepower__sz.html#aba87ceb74647bba3404b96101f438d35" title="power_sz::inigrowth" alt="" coords="317,44,456,71"/>
+<area shape="rect" id="node4" href="$namespacenumbercounts.html#a530ce747969dd91d2b57a90d658dbb62" title="numbercounts::get_grid" alt="" coords="823,5,982,32"/>
+<area shape="rect" id="node5" href="$namespacenumbercounts.html#a7e87a46c1e125cb57eff635630c88506" title="numbercounts::deltan_yz" alt="" coords="1036,80,1204,107"/>
+<area shape="rect" id="node6" href="$namespaceszcounts.html#abc28ab0b8d2db0b6f91aa9b99cac694f" title="szcounts::szcc_cash" alt="" coords="1284,76,1431,103"/>
+<area shape="rect" id="node7" href="$structszcounts_1_1szlikelihood.html#a665a08ba872cde55b79b81117d63c8d2" title="szcounts::szlikelihood\l::loglike" alt="" coords="1510,69,1661,110"/>
+<area shape="rect" id="node9" href="$namespacecambmain.html#a890ea024560967d80a83e411a34368ed" title="cambmain::initvars" alt="" coords="321,196,453,223"/>
+<area shape="rect" id="node10" href="$namespacehandles.html#a2c10aa9ff66a25677588584f3fc4f2a3" title="handles::cambdata_calcbackgroundtheory" alt="" coords="504,184,771,211"/>
+<area shape="rect" id="node11" href="$namespacecambmain.html#a8863977991a108f96a26fc99e8c5e129" title="cambmain::cmbmain" alt="" coords="566,235,709,261"/>
+<area shape="rect" id="node19" href="$namespacecalculator__camb.html#a04c53e5b4763297e232978e627153a17" title="calculator_camb::cambcalc\l_setbackgroundtheorydata" alt="" coords="547,286,728,327"/>
+<area shape="rect" id="node12" href="$namespacecamb.html#af6f4c73133d3de79ac10db3c4b2d0650" title="camb::camb_getresults" alt="" coords="823,235,982,261"/>
+<area shape="rect" id="node13" href="$namespacecamb.html#ae587b573e03da5811edb59806305b2cd" title="camb::camb_gettransfers" alt="" coords="1035,184,1205,211"/>
+<area shape="rect" id="node17" href="$sigma8_8f90.html#a6f015dab88d5e09a9b144633d51f8911" title="getsigma8" alt="" coords="1079,235,1161,261"/>
+<area shape="rect" id="node18" href="$tester_8f90.html#abb1af5b22eb90cec23fca42accb63245" title="tester" alt="" coords="1093,285,1147,312"/>
+<area shape="rect" id="node14" href="$namespacehandles.html#a386ee0a28e6860d14047f052c918ca43" title="handles::cambdata_gettransfers" alt="" coords="1253,127,1461,153"/>
+<area shape="rect" id="node15" href="$namespacecalculator__camb.html#a9e8887a3ae9da2bb092aac4285234df4" title="calculator_camb::cambcalc\l_getnewtransferdata" alt="" coords="1267,178,1448,219"/>
+<area shape="rect" id="node16" href="$namespacecalculator__camb.html#a46bd33ed008e289fb5cb08f6feb86419" title="calculator_camb::cambcalc\l_gettheoryforimportance" alt="" coords="1267,243,1448,285"/>
+<area shape="rect" id="node21" href="$namespacecosmology.html#a17233f8902b8f4b3f66ff1bfb3406c05" title="cosmology::da" alt="" coords="333,145,440,172"/>
+<area shape="rect" id="node26" href="$namespacecosmology.html#a38a12dc082adc18d1fc8a043bd39405c" title="cosmology::dvdzdo" alt="" coords="319,95,454,121"/>
+<area shape="rect" id="node22" href="$namespacemassobservable.html#a4be614d859b3c2e06a7674a7af153ff5" title="massobservable::theta500" alt="" coords="550,83,725,109"/>
+<area shape="rect" id="node25" href="$namespacemassobservable.html#a4eca145d43dd43892e21b73f42ace63e" title="massobservable::y500" alt="" coords="561,133,714,160"/>
+<area shape="rect" id="node23" href="$namespacenumbercounts.html#a9147710c647a39e457fa04786c7c295d" title="numbercounts::grid_c_2d" alt="" coords="819,132,987,159"/>
+<area shape="rect" id="node24" href="$namespacenumbercounts.html#ab87ce14039efd094615930acc710e6b2" title="numbercounts::grid_c" alt="" coords="829,81,976,108"/>
+</map>

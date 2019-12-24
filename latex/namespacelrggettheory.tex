@@ -1,0 +1,186 @@
+\hypertarget{namespacelrggettheory}{}\section{lrggettheory Module Reference}
+\label{namespacelrggettheory}\index{lrggettheory@{lrggettheory}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacelrggettheory_abd8f5f818ab0125d9088ce80da0ca469}{transfer\+\_\+getmatterpowerandnw}} (M\+Trans, outpower, itf, in, minkh, dlnkh, npoints, \mbox{\hyperlink{namespacelrggettheory_a32295c6e11071f61c6311cac0eec283b}{kmindata}}, getabstransferscale, outpowernw, outpowerrationwhalofit)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_ad88af273771f3d0810522480b47f084e}{anear}} = 0.\+809717d0
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a48262968a1e96ae340aba94f24aec1b5}{amid}} = 0.\+745156d0
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_aa16430b41b5ca2ad21489fad80db335e}{afar}} = 0.\+70373d0
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a61f36f4870164e55af7c3e7124dc2051}{z0}} = 0.\+0d0
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a8019779a854e5df4d48c67aa0458a991}{znear}} = 0.\+235d0
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_adc42a24b86f4427b3cfcd22912853cfa}{zmid}} = 0.\+342d0
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a8666fd6c319e844d505b0506d3615396}{zfar}} = 0.\+421d0
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a60e1f4a4277039bd2beed6d16a68cdb8}{sigma2baonear}} = 86.\+9988
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a790fd2fc4eb449f6186182aba3193ffc}{sigma2baomid}} = 85.\+1374
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a0b413a1881bdf3f3a733ca712582fad3}{sigma2baofar}} = 84.\+5958
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a9e12f939a877e873665d4c49aa5f2ba9}{zeffdr7}} = 0.\+312782
+\item 
+real(dl), dimension(4) \mbox{\hyperlink{namespacelrggettheory_a51576c1d8204fb297c9cde00f78c0a35}{transferscalefid}}
+\item 
+real(dl), dimension(4) \mbox{\hyperlink{namespacelrggettheory_a8538d769c081d503ae250aa4ddfa538c}{powerscaletoz0}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelrggettheory_a32295c6e11071f61c6311cac0eec283b}{kmindata}} = 0.\+02
+\item 
+integer \mbox{\hyperlink{namespacelrggettheory_a39a758c0ae68d61dcd4eea5015d41452}{iz0lrg}}
+\item 
+integer \mbox{\hyperlink{namespacelrggettheory_aa624d661acd194fa705994f91f5ab639}{iznearlrg}}
+\item 
+integer \mbox{\hyperlink{namespacelrggettheory_ae25e82fd80684bfff1b6eda6a260d2fc}{izmidlrg}}
+\item 
+integer \mbox{\hyperlink{namespacelrggettheory_aa2ed4be471b8ee09ea67a2cf685a7f08}{izfarlrg}}
+\item 
+logical \mbox{\hyperlink{namespacelrggettheory_acc2389105d05edd7e5efbf830641adb7}{use\+\_\+dr7lrg}} = .false.
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacelrggettheory_abd8f5f818ab0125d9088ce80da0ca469}\label{namespacelrggettheory_abd8f5f818ab0125d9088ce80da0ca469}} 
+\index{lrggettheory@{lrggettheory}!transfer\+\_\+getmatterpowerandnw@{transfer\+\_\+getmatterpowerandnw}}
+\index{transfer\+\_\+getmatterpowerandnw@{transfer\+\_\+getmatterpowerandnw}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{transfer\+\_\+getmatterpowerandnw()}{transfer\_getmatterpowerandnw()}}
+{\footnotesize\ttfamily subroutine lrggettheory\+::transfer\+\_\+getmatterpowerandnw (\begin{DoxyParamCaption}\item[{type(mattertransferdata), intent(in)}]{M\+Trans,  }\item[{real, dimension(npoints), intent(out)}]{outpower,  }\item[{integer, intent(in)}]{itf,  }\item[{integer, intent(in)}]{in,  }\item[{real, intent(in)}]{minkh,  }\item[{real, intent(in)}]{dlnkh,  }\item[{integer, intent(in)}]{npoints,  }\item[{real(dl), intent(in)}]{kmindata,  }\item[{real(dl), intent(out)}]{getabstransferscale,  }\item[{real, dimension(npoints), intent(out)}]{outpowernw,  }\item[{real, dimension(npoints), intent(out)}]{outpowerrationwhalofit }\end{DoxyParamCaption})}
+
+
+
+References transfer\+::matterpowerdata\+\_\+free(), nonlinear\+\_\+getratios(), spline(), transfer\+::transfer\+\_\+getmatterpowerdata(), transfer\+::transfer\+\_\+kh, transfer\+::transfer\+\_\+max, transfer\+::transfer\+\_\+power\+\_\+var, and transfer\+::transfer\+\_\+tot.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelrggettheory_abd8f5f818ab0125d9088ce80da0ca469_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacelrggettheory_aa16430b41b5ca2ad21489fad80db335e}\label{namespacelrggettheory_aa16430b41b5ca2ad21489fad80db335e}} 
+\index{lrggettheory@{lrggettheory}!afar@{afar}}
+\index{afar@{afar}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{afar}{afar}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::afar = 0.\+70373d0}
+
+\mbox{\Hypertarget{namespacelrggettheory_a48262968a1e96ae340aba94f24aec1b5}\label{namespacelrggettheory_a48262968a1e96ae340aba94f24aec1b5}} 
+\index{lrggettheory@{lrggettheory}!amid@{amid}}
+\index{amid@{amid}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{amid}{amid}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::amid = 0.\+745156d0}
+
+\mbox{\Hypertarget{namespacelrggettheory_ad88af273771f3d0810522480b47f084e}\label{namespacelrggettheory_ad88af273771f3d0810522480b47f084e}} 
+\index{lrggettheory@{lrggettheory}!anear@{anear}}
+\index{anear@{anear}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{anear}{anear}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::anear = 0.\+809717d0}
+
+\mbox{\Hypertarget{namespacelrggettheory_a39a758c0ae68d61dcd4eea5015d41452}\label{namespacelrggettheory_a39a758c0ae68d61dcd4eea5015d41452}} 
+\index{lrggettheory@{lrggettheory}!iz0lrg@{iz0lrg}}
+\index{iz0lrg@{iz0lrg}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{iz0lrg}{iz0lrg}}
+{\footnotesize\ttfamily integer lrggettheory\+::iz0lrg}
+
+\mbox{\Hypertarget{namespacelrggettheory_aa2ed4be471b8ee09ea67a2cf685a7f08}\label{namespacelrggettheory_aa2ed4be471b8ee09ea67a2cf685a7f08}} 
+\index{lrggettheory@{lrggettheory}!izfarlrg@{izfarlrg}}
+\index{izfarlrg@{izfarlrg}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{izfarlrg}{izfarlrg}}
+{\footnotesize\ttfamily integer lrggettheory\+::izfarlrg}
+
+\mbox{\Hypertarget{namespacelrggettheory_ae25e82fd80684bfff1b6eda6a260d2fc}\label{namespacelrggettheory_ae25e82fd80684bfff1b6eda6a260d2fc}} 
+\index{lrggettheory@{lrggettheory}!izmidlrg@{izmidlrg}}
+\index{izmidlrg@{izmidlrg}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{izmidlrg}{izmidlrg}}
+{\footnotesize\ttfamily integer lrggettheory\+::izmidlrg}
+
+\mbox{\Hypertarget{namespacelrggettheory_aa624d661acd194fa705994f91f5ab639}\label{namespacelrggettheory_aa624d661acd194fa705994f91f5ab639}} 
+\index{lrggettheory@{lrggettheory}!iznearlrg@{iznearlrg}}
+\index{iznearlrg@{iznearlrg}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{iznearlrg}{iznearlrg}}
+{\footnotesize\ttfamily integer lrggettheory\+::iznearlrg}
+
+\mbox{\Hypertarget{namespacelrggettheory_a32295c6e11071f61c6311cac0eec283b}\label{namespacelrggettheory_a32295c6e11071f61c6311cac0eec283b}} 
+\index{lrggettheory@{lrggettheory}!kmindata@{kmindata}}
+\index{kmindata@{kmindata}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{kmindata}{kmindata}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::kmindata = 0.\+02}
+
+\mbox{\Hypertarget{namespacelrggettheory_a8538d769c081d503ae250aa4ddfa538c}\label{namespacelrggettheory_a8538d769c081d503ae250aa4ddfa538c}} 
+\index{lrggettheory@{lrggettheory}!powerscaletoz0@{powerscaletoz0}}
+\index{powerscaletoz0@{powerscaletoz0}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{powerscaletoz0}{powerscaletoz0}}
+{\footnotesize\ttfamily real(dl), dimension(4) lrggettheory\+::powerscaletoz0}
+
+\mbox{\Hypertarget{namespacelrggettheory_a0b413a1881bdf3f3a733ca712582fad3}\label{namespacelrggettheory_a0b413a1881bdf3f3a733ca712582fad3}} 
+\index{lrggettheory@{lrggettheory}!sigma2baofar@{sigma2baofar}}
+\index{sigma2baofar@{sigma2baofar}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{sigma2baofar}{sigma2baofar}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::sigma2baofar = 84.\+5958}
+
+\mbox{\Hypertarget{namespacelrggettheory_a790fd2fc4eb449f6186182aba3193ffc}\label{namespacelrggettheory_a790fd2fc4eb449f6186182aba3193ffc}} 
+\index{lrggettheory@{lrggettheory}!sigma2baomid@{sigma2baomid}}
+\index{sigma2baomid@{sigma2baomid}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{sigma2baomid}{sigma2baomid}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::sigma2baomid = 85.\+1374}
+
+\mbox{\Hypertarget{namespacelrggettheory_a60e1f4a4277039bd2beed6d16a68cdb8}\label{namespacelrggettheory_a60e1f4a4277039bd2beed6d16a68cdb8}} 
+\index{lrggettheory@{lrggettheory}!sigma2baonear@{sigma2baonear}}
+\index{sigma2baonear@{sigma2baonear}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{sigma2baonear}{sigma2baonear}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::sigma2baonear = 86.\+9988}
+
+\mbox{\Hypertarget{namespacelrggettheory_a51576c1d8204fb297c9cde00f78c0a35}\label{namespacelrggettheory_a51576c1d8204fb297c9cde00f78c0a35}} 
+\index{lrggettheory@{lrggettheory}!transferscalefid@{transferscalefid}}
+\index{transferscalefid@{transferscalefid}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{transferscalefid}{transferscalefid}}
+{\footnotesize\ttfamily real(dl), dimension(4) lrggettheory\+::transferscalefid}
+
+\mbox{\Hypertarget{namespacelrggettheory_acc2389105d05edd7e5efbf830641adb7}\label{namespacelrggettheory_acc2389105d05edd7e5efbf830641adb7}} 
+\index{lrggettheory@{lrggettheory}!use\+\_\+dr7lrg@{use\+\_\+dr7lrg}}
+\index{use\+\_\+dr7lrg@{use\+\_\+dr7lrg}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{use\+\_\+dr7lrg}{use\_dr7lrg}}
+{\footnotesize\ttfamily logical lrggettheory\+::use\+\_\+dr7lrg = .false.}
+
+\mbox{\Hypertarget{namespacelrggettheory_a61f36f4870164e55af7c3e7124dc2051}\label{namespacelrggettheory_a61f36f4870164e55af7c3e7124dc2051}} 
+\index{lrggettheory@{lrggettheory}!z0@{z0}}
+\index{z0@{z0}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{z0}{z0}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::z0 = 0.\+0d0}
+
+\mbox{\Hypertarget{namespacelrggettheory_a9e12f939a877e873665d4c49aa5f2ba9}\label{namespacelrggettheory_a9e12f939a877e873665d4c49aa5f2ba9}} 
+\index{lrggettheory@{lrggettheory}!zeffdr7@{zeffdr7}}
+\index{zeffdr7@{zeffdr7}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{zeffdr7}{zeffdr7}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::zeffdr7 = 0.\+312782}
+
+\mbox{\Hypertarget{namespacelrggettheory_a8666fd6c319e844d505b0506d3615396}\label{namespacelrggettheory_a8666fd6c319e844d505b0506d3615396}} 
+\index{lrggettheory@{lrggettheory}!zfar@{zfar}}
+\index{zfar@{zfar}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{zfar}{zfar}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::zfar = 0.\+421d0}
+
+\mbox{\Hypertarget{namespacelrggettheory_adc42a24b86f4427b3cfcd22912853cfa}\label{namespacelrggettheory_adc42a24b86f4427b3cfcd22912853cfa}} 
+\index{lrggettheory@{lrggettheory}!zmid@{zmid}}
+\index{zmid@{zmid}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{zmid}{zmid}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::zmid = 0.\+342d0}
+
+\mbox{\Hypertarget{namespacelrggettheory_a8019779a854e5df4d48c67aa0458a991}\label{namespacelrggettheory_a8019779a854e5df4d48c67aa0458a991}} 
+\index{lrggettheory@{lrggettheory}!znear@{znear}}
+\index{znear@{znear}!lrggettheory@{lrggettheory}}
+\subsubsection{\texorpdfstring{znear}{znear}}
+{\footnotesize\ttfamily real(dl), parameter lrggettheory\+::znear = 0.\+235d0}
+

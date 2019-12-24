@@ -1,0 +1,151 @@
+\hypertarget{namespacelvalues}{}\section{lvalues Module Reference}
+\label{namespacelvalues}\index{lvalues@{lvalues}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structlvalues_1_1lsamples}{lsamples}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+integer function \mbox{\hyperlink{namespacelvalues_ae29d1934474229125b75e4a609f4e81e}{lvalues\+\_\+indexof}} (l\+Set, l)
+\item 
+subroutine \mbox{\hyperlink{namespacelvalues_aae4ab5512d16abd3d2f2857fe806e012}{initlval}} (l\+Set, max\+\_\+l)
+\item 
+subroutine \mbox{\hyperlink{namespacelvalues_a62105cb97d67654d96481cbb8fe54240}{interpolateclarr}} (l\+Set, i\+Cl, all\+\_\+\+Cl, max\+\_\+ind)
+\item 
+subroutine \mbox{\hyperlink{namespacelvalues_a0aa80e0b1f26674e19df96ec0d9c199e}{interpolateclarrtemplated}} (l\+Set, i\+Cl, all\+\_\+\+Cl, max\+\_\+ind, template\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+type(\mbox{\hyperlink{structlvalues_1_1lsamples}{lsamples}}) \mbox{\hyperlink{namespacelvalues_ae00efa8263b3dcff6d82e34d4102a808}{lsamp}}
+\item 
+logical \mbox{\hyperlink{namespacelvalues_afe164d781a115f4ab472604a3b522c6d}{log\+\_\+lvalues}} = .false.
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacelvalues_aae4ab5512d16abd3d2f2857fe806e012}\label{namespacelvalues_aae4ab5512d16abd3d2f2857fe806e012}} 
+\index{lvalues@{lvalues}!initlval@{initlval}}
+\index{initlval@{initlval}!lvalues@{lvalues}}
+\subsubsection{\texorpdfstring{initlval()}{initlval()}}
+{\footnotesize\ttfamily subroutine lvalues\+::initlval (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structlvalues_1_1lsamples}{lsamples}})}]{l\+Set,  }\item[{integer, intent(in)}]{max\+\_\+l }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, modelparams\+::highaccuracydefault, modelparams\+::lmin, log\+\_\+lvalues, modelparams\+::lsampleboost, modelparams\+::scale, and modelparams\+::use\+\_\+spline\+\_\+template.
+
+
+
+Referenced by cambmain\+::cmbmain(), and lensing\+::lens\+\_\+cls().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelvalues_aae4ab5512d16abd3d2f2857fe806e012_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelvalues_a62105cb97d67654d96481cbb8fe54240}\label{namespacelvalues_a62105cb97d67654d96481cbb8fe54240}} 
+\index{lvalues@{lvalues}!interpolateclarr@{interpolateclarr}}
+\index{interpolateclarr@{interpolateclarr}!lvalues@{lvalues}}
+\subsubsection{\texorpdfstring{interpolateclarr()}{interpolateclarr()}}
+{\footnotesize\ttfamily subroutine lvalues\+::interpolateclarr (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structlvalues_1_1lsamples}{lsamples}}), intent(in)}]{l\+Set,  }\item[{real(dl), dimension($\ast$), intent(in)}]{i\+Cl,  }\item[{real(dl), dimension(lmin\+:$\ast$), intent(out)}]{all\+\_\+\+Cl,  }\item[{integer, intent(in)}]{max\+\_\+ind }\end{DoxyParamCaption})}
+
+
+
+References spline().
+
+
+
+Referenced by lensing\+::badharmonic(), interpolateclarrtemplated(), and cambmain\+::interpolatecls().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{namespacelvalues_a62105cb97d67654d96481cbb8fe54240_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelvalues_a62105cb97d67654d96481cbb8fe54240_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelvalues_a0aa80e0b1f26674e19df96ec0d9c199e}\label{namespacelvalues_a0aa80e0b1f26674e19df96ec0d9c199e}} 
+\index{lvalues@{lvalues}!interpolateclarrtemplated@{interpolateclarrtemplated}}
+\index{interpolateclarrtemplated@{interpolateclarrtemplated}!lvalues@{lvalues}}
+\subsubsection{\texorpdfstring{interpolateclarrtemplated()}{interpolateclarrtemplated()}}
+{\footnotesize\ttfamily subroutine lvalues\+::interpolateclarrtemplated (\begin{DoxyParamCaption}\item[{type (\mbox{\hyperlink{structlvalues_1_1lsamples}{lsamples}}), intent(in)}]{l\+Set,  }\item[{real(dl), dimension($\ast$), intent(in)}]{i\+Cl,  }\item[{real(dl), dimension(lmin\+:$\ast$), intent(out)}]{all\+\_\+\+Cl,  }\item[{integer, intent(in)}]{max\+\_\+ind,  }\item[{integer, intent(in), optional}]{template\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::highl\+\_\+cl\+\_\+template, interpolateclarr(), modelparams\+::lmax\+\_\+extrap\+\_\+highl, and modelparams\+::use\+\_\+spline\+\_\+template.
+
+
+
+Referenced by cambmain\+::interpolatecls().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelvalues_a0aa80e0b1f26674e19df96ec0d9c199e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelvalues_a0aa80e0b1f26674e19df96ec0d9c199e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacelvalues_ae29d1934474229125b75e4a609f4e81e}\label{namespacelvalues_ae29d1934474229125b75e4a609f4e81e}} 
+\index{lvalues@{lvalues}!lvalues\+\_\+indexof@{lvalues\+\_\+indexof}}
+\index{lvalues\+\_\+indexof@{lvalues\+\_\+indexof}!lvalues@{lvalues}}
+\subsubsection{\texorpdfstring{lvalues\+\_\+indexof()}{lvalues\_indexof()}}
+{\footnotesize\ttfamily integer function lvalues\+::lvalues\+\_\+indexof (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structlvalues_1_1lsamples}{lsamples}})}]{l\+Set,  }\item[{integer, intent(in)}]{l }\end{DoxyParamCaption})}
+
+
+
+Referenced by cambmain\+::getlimbertransfers().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacelvalues_ae29d1934474229125b75e4a609f4e81e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacelvalues_afe164d781a115f4ab472604a3b522c6d}\label{namespacelvalues_afe164d781a115f4ab472604a3b522c6d}} 
+\index{lvalues@{lvalues}!log\+\_\+lvalues@{log\+\_\+lvalues}}
+\index{log\+\_\+lvalues@{log\+\_\+lvalues}!lvalues@{lvalues}}
+\subsubsection{\texorpdfstring{log\+\_\+lvalues}{log\_lvalues}}
+{\footnotesize\ttfamily logical lvalues\+::log\+\_\+lvalues = .false.}
+
+
+
+Referenced by initlval().
+
+\mbox{\Hypertarget{namespacelvalues_ae00efa8263b3dcff6d82e34d4102a808}\label{namespacelvalues_ae00efa8263b3dcff6d82e34d4102a808}} 
+\index{lvalues@{lvalues}!lsamp@{lsamp}}
+\index{lsamp@{lsamp}!lvalues@{lvalues}}
+\subsubsection{\texorpdfstring{lsamp}{lsamp}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structlvalues_1_1lsamples}{lsamples}}) lvalues\+::lsamp}
+
+
+
+Referenced by cambmain\+::cltransfertocl(), cambmain\+::cmbmain(), lensing\+::corrfuncflatsky(), lensing\+::corrfuncfullskyimpl(), cambmain\+::doflatintegration(), cambmain\+::dosourceintegration(), spherbessels\+::generatebessels(), spherbessels\+::initspherbessels(), cambmain\+::integratesourcesbessels(), and lensing\+::lens\+\_\+cls().
+

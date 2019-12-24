@@ -1,0 +1,35 @@
+<map id="getdist.mcsamples.MCSamples.get1DDensity" name="getdist.mcsamples.MCSamples.get1DDensity">
+<area shape="rect" id="node2" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a53dc1a5889467700091389070326f0c9" title="getdist.mcsamples.MCSamples.get1\lDDensityGridData" alt="" coords="291,331,528,373"/>
+<area shape="rect" id="node33" href="$classgetdist_1_1chains_1_1Chains.html#a2707ea98f828744379464c54a693d906" title="getdist.chains.Chains.update\lBaseStatistics" alt="" coords="314,426,505,467"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a6ffc3541b4b059fe621867360b2701fd" title="getdist.mcsamples.MCSamples.\l_parAndNumber" alt="" coords="586,298,798,339"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a6b6dd422ba0e76f758c0ac875ea6ad74" title="getdist.mcsamples.MCSamples.\l_initParamRanges" alt="" coords="586,429,798,470"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a857a2912d26818c22998c9480ffb4019" title="getdist.mcsamples.MCSamples.\l_binSamples" alt="" coords="586,363,798,405"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a0e632352cb52bb4c05cb060427fcb0bc" title="getdist.mcsamples.MCSamples.get\lAutoBandwidth1D" alt="" coords="577,233,807,274"/>
+<area shape="rect" id="node31" href="$namespacegetdist_1_1convolve.html#afcf448b1f8993227af712ca2b0c8399c" title="getdist.convolve.convolve1D" alt="" coords="877,161,1067,188"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ab6b6a1e603f89d1266dd7d2f5e6ae51c" title="getdist.mcsamples.MCSamples.\l_initParam" alt="" coords="866,546,1078,587"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1chains_1_1WeightedSamples.html#aafea7daa99724b91392e41c4157a29a0" title="getdist.chains.WeightedSamples.confidence" alt="" coords="1136,600,1416,627"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1chains_1_1WeightedSamples.html#af09edaafcc644533d7c24107f2daec81" title="getdist.chains.WeightedSamples.init\lParamConfidenceData" alt="" coords="1464,557,1699,598"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a97daf2e7045ad90ef4ff8030b9d65740" title="getdist.chains.WeightedSamples.\l_makeParamvec" alt="" coords="3587,363,3805,405"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#ab2849686882a2194c2e3c67e722cde18" title="getdist.mcsamples.MCSamples.\l_get1DNeff" alt="" coords="1170,209,1382,250"/>
+<area shape="rect" id="node25" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a3445486ce2813000c1306234fb2dd6f3" title="getdist.mcsamples.MCSamples.get\lAutoBandwidth2D" alt="" coords="857,267,1087,309"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1chains_1_1WeightedSamples.html#acc6bb1ecddcbbfa0f9db00442ccc380b" title="getdist.chains.WeightedSamples.get\lEffectiveSamplesGaussianKDE" alt="" coords="1464,194,1699,235"/>
+<area shape="rect" id="node13" href="$classgetdist_1_1chains_1_1WeightedSamples.html#adb6da75221743f7a05286cbb2b2685b0" title="getdist.chains.WeightedSamples.get_norm" alt="" coords="3253,244,3523,271"/>
+<area shape="rect" id="node14" href="$classgetdist_1_1chains_1_1WeightedSamples.html#ab8aaeca64fdb6cd42357a45118901526" title="getdist.chains.WeightedSamples.get\lCorrelationLength" alt="" coords="1747,194,1981,235"/>
+<area shape="rect" id="node24" href="$classgetdist_1_1chains_1_1WeightedSamples.html#aeaa6411b75fd033e7ad9761cdcbc28cf" title="getdist.chains.WeightedSamples.std" alt="" coords="1747,260,1981,287"/>
+<area shape="rect" id="node15" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a3635437a603d5c30394f83039c821859" title="getdist.chains.WeightedSamples.get\lAutocorrelation" alt="" coords="2032,194,2267,235"/>
+<area shape="rect" id="node16" href="$namespacegetdist_1_1convolve.html#af6628a68c41ddfddec7944d891a31800" title="getdist.convolve.autoConvolve" alt="" coords="2342,41,2543,68"/>
+<area shape="rect" id="node18" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a4a7ffc36e87801cb74f9ec78896c220b" title="getdist.chains.WeightedSamples.mean_diff" alt="" coords="2616,371,2891,397"/>
+<area shape="rect" id="node23" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a0ee200487592ebb5723da33f43724e4f" title="getdist.chains.WeightedSamples.var" alt="" coords="2325,244,2560,271"/>
+<area shape="rect" id="node17" href="$namespacegetdist_1_1convolve.html#a72c0a4c9c2b191a6df8a1b6d327545b7" title="getdist.convolve.nearest\lFFTnumber" alt="" coords="2671,5,2835,46"/>
+<area shape="rect" id="node19" href="$classgetdist_1_1chains_1_1WeightedSamples.html#aa5d70ded54742f3296cd856a8a1fa185" title="getdist.chains.WeightedSamples.get\lMeans" alt="" coords="2947,447,3181,489"/>
+<area shape="rect" id="node21" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a72a6f011746d852ea089302d90f59159" title="getdist.chains.WeightedSamples.mean" alt="" coords="2939,345,3189,372"/>
+<area shape="rect" id="node20" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a977e6b59952fb92233a9e2d330c984ad" title="getdist.chains.WeightedSamples.set\lMeans" alt="" coords="3271,473,3505,514"/>
+<area shape="rect" id="node22" href="$classgetdist_1_1chains_1_1WeightedSamples.html#afdeb6d07f1db505f36fe0ca0052528ac" title="getdist.chains.WeightedSamples.weighted_sum" alt="" coords="3237,345,3539,372"/>
+<area shape="rect" id="node26" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a8bdc8f5cf4d672d27a2c2d64eb2c8cc8" title="getdist.chains.WeightedSamples.getCov" alt="" coords="1147,275,1405,301"/>
+<area shape="rect" id="node30" href="$classgetdist_1_1mcsamples_1_1MCSamples.html#a0da5ffb0dd8b41cea131a5cb8fd9202f" title="getdist.mcsamples.MCSamples.\l_make2Dhist" alt="" coords="1170,326,1382,367"/>
+<area shape="rect" id="node27" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a50c43f2b7f5f0ccd480d227a950a52f1" title="getdist.chains.WeightedSamples.\l_setCov" alt="" coords="1755,325,1973,366"/>
+<area shape="rect" id="node28" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a61a1250aa6f6292f59f2e24e9df364f0" title="getdist.chains.WeightedSamples.cov" alt="" coords="2030,345,2269,372"/>
+<area shape="rect" id="node29" href="$classgetdist_1_1chains_1_1WeightedSamples.html#a22eba6159f13f1185d7359885a6e927c" title="getdist.chains.WeightedSamples.mean\l_diffs" alt="" coords="2318,397,2567,438"/>
+<area shape="rect" id="node32" href="$namespacegetdist_1_1convolve.html#af08ac2f6f2680fe66589162631d5d9ba" title="getdist.convolve.convolveFFT" alt="" coords="2051,16,2248,43"/>
+<area shape="rect" id="node34" href="$classgetdist_1_1chains_1_1WeightedSamples.html#ad18581999b99b52a6e0e7a5b587e0208" title="getdist.chains.WeightedSamples.getVars" alt="" coords="2622,501,2885,528"/>
+</map>

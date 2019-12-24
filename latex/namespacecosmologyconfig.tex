@@ -1,0 +1,67 @@
+\hypertarget{namespacecosmologyconfig}{}\section{cosmologyconfig Module Reference}
+\label{namespacecosmologyconfig}\index{cosmologyconfig@{cosmologyconfig}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcosmologyconfig_1_1tcosmologyconfig}{tcosmologyconfig}}
+\item 
+type \mbox{\hyperlink{structcosmologyconfig_1_1tcosmologysetup}{tcosmologysetup}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyconfig_acdea2393465448c7d709df546d6d23cf}{tcosmologyconfig\+\_\+readparams}} (this, Ini)
+\item 
+logical function \mbox{\hyperlink{namespacecosmologyconfig_ab003a3843b0310a9aeb90e5598343458}{tcosmologyconfig\+\_\+setparameterizationname}} (this, nametag, Ini, Names)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyconfig_a06fe1484d890d220a81bc2f26abb6ee1}{tcosmologyconfig\+\_\+newtheory}} (this, Theory)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyconfig_ab9b94813d4a8b98fea14ab45b476326e}{tcosmologyconfig\+\_\+initforlikelihoods}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyconfig_a68dc4f75f02efd7cb4460a7dec05f508}{tcosmologysetup\+\_\+init}} (this)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecosmologyconfig_ab9b94813d4a8b98fea14ab45b476326e}\label{namespacecosmologyconfig_ab9b94813d4a8b98fea14ab45b476326e}} 
+\index{cosmologyconfig@{cosmologyconfig}!tcosmologyconfig\+\_\+initforlikelihoods@{tcosmologyconfig\+\_\+initforlikelihoods}}
+\index{tcosmologyconfig\+\_\+initforlikelihoods@{tcosmologyconfig\+\_\+initforlikelihoods}!cosmologyconfig@{cosmologyconfig}}
+\subsubsection{\texorpdfstring{tcosmologyconfig\+\_\+initforlikelihoods()}{tcosmologyconfig\_initforlikelihoods()}}
+{\footnotesize\ttfamily subroutine cosmologyconfig\+::tcosmologyconfig\+\_\+initforlikelihoods (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyconfig_1_1tcosmologyconfig}{tcosmologyconfig}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings.
+
+\mbox{\Hypertarget{namespacecosmologyconfig_a06fe1484d890d220a81bc2f26abb6ee1}\label{namespacecosmologyconfig_a06fe1484d890d220a81bc2f26abb6ee1}} 
+\index{cosmologyconfig@{cosmologyconfig}!tcosmologyconfig\+\_\+newtheory@{tcosmologyconfig\+\_\+newtheory}}
+\index{tcosmologyconfig\+\_\+newtheory@{tcosmologyconfig\+\_\+newtheory}!cosmologyconfig@{cosmologyconfig}}
+\subsubsection{\texorpdfstring{tcosmologyconfig\+\_\+newtheory()}{tcosmologyconfig\_newtheory()}}
+{\footnotesize\ttfamily subroutine cosmologyconfig\+::tcosmologyconfig\+\_\+newtheory (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyconfig_1_1tcosmologyconfig}{tcosmologyconfig}})}]{this,  }\item[{class(ttheorypredictions), allocatable}]{Theory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings.
+
+\mbox{\Hypertarget{namespacecosmologyconfig_acdea2393465448c7d709df546d6d23cf}\label{namespacecosmologyconfig_acdea2393465448c7d709df546d6d23cf}} 
+\index{cosmologyconfig@{cosmologyconfig}!tcosmologyconfig\+\_\+readparams@{tcosmologyconfig\+\_\+readparams}}
+\index{tcosmologyconfig\+\_\+readparams@{tcosmologyconfig\+\_\+readparams}!cosmologyconfig@{cosmologyconfig}}
+\subsubsection{\texorpdfstring{tcosmologyconfig\+\_\+readparams()}{tcosmologyconfig\_readparams()}}
+{\footnotesize\ttfamily subroutine cosmologyconfig\+::tcosmologyconfig\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyconfig_1_1tcosmologyconfig}{tcosmologyconfig}})}]{this,  }\item[{class(tsettingini)}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings.
+
+\mbox{\Hypertarget{namespacecosmologyconfig_ab003a3843b0310a9aeb90e5598343458}\label{namespacecosmologyconfig_ab003a3843b0310a9aeb90e5598343458}} 
+\index{cosmologyconfig@{cosmologyconfig}!tcosmologyconfig\+\_\+setparameterizationname@{tcosmologyconfig\+\_\+setparameterizationname}}
+\index{tcosmologyconfig\+\_\+setparameterizationname@{tcosmologyconfig\+\_\+setparameterizationname}!cosmologyconfig@{cosmologyconfig}}
+\subsubsection{\texorpdfstring{tcosmologyconfig\+\_\+setparameterizationname()}{tcosmologyconfig\_setparameterizationname()}}
+{\footnotesize\ttfamily logical function cosmologyconfig\+::tcosmologyconfig\+\_\+setparameterizationname (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyconfig_1_1tcosmologyconfig}{tcosmologyconfig}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{nametag,  }\item[{class(tsettingini)}]{Ini,  }\item[{class(tparamnames)}]{Names }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecosmologyconfig_a68dc4f75f02efd7cb4460a7dec05f508}\label{namespacecosmologyconfig_a68dc4f75f02efd7cb4460a7dec05f508}} 
+\index{cosmologyconfig@{cosmologyconfig}!tcosmologysetup\+\_\+init@{tcosmologysetup\+\_\+init}}
+\index{tcosmologysetup\+\_\+init@{tcosmologysetup\+\_\+init}!cosmologyconfig@{cosmologyconfig}}
+\subsubsection{\texorpdfstring{tcosmologysetup\+\_\+init()}{tcosmologysetup\_init()}}
+{\footnotesize\ttfamily subroutine cosmologyconfig\+::tcosmologysetup\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyconfig_1_1tcosmologysetup}{tcosmologysetup}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+

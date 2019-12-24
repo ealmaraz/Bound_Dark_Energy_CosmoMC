@@ -1,0 +1,193 @@
+\hypertarget{namespacecalculator__cosmology}{}\section{calculator\+\_\+cosmology Module Reference}
+\label{namespacecalculator__cosmology}\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}}
+\item 
+type \mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologyimportanceoptions}{tcosmologyimportanceoptions}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a8df979f2a96e1c2b9624e105619464c2}{tcosmologycalculator\+\_\+readimportanceparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a9b28cf77b06f92cdf1260e0a1f8a72c1}{getnewbackgrounddata}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_aabddd5a422eef22f8d13c1df292cc749}{setparamsforbackground}} (this, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a8f03c8f23e837020c788389a8ffb4be3}{setbackgroundtheorydata}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a96e555c628aadff1d707242e238d09f8}{getnewtransferdata}} (this, C\+MB, Info, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a456c87c218951defda2a9bcf4f23abb8}{getnewpowerdata}} (this, C\+MB, Info, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a98a6aa3eeac24c242c935e0740b470d8}{gettheoryforimportance}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecalculator__cosmology_a520171f2409b797206b45a9b2f25ac22}{getcosmotheoryforimportance}} (this, C\+MB, Theory, error)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a9907b8c61d20213e8026443a5043530f}{getopticaldepth}} (this, C\+MB)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a3f26a3af3732dbfea7715d565b44a385}{getzrefromtau}} (this, C\+MB, tau)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a6178a84302763ba24c2283bf6e8e5b2b}{cmbtotheta}} (this, C\+MB)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_ab4785ac8ce58853984614bac368590aa}{bao\+\_\+d\+\_\+v}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a703b9e272151719cca42f7d37d7d403f}{angulardiameterdistance}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a56ce70cf463f7c6df9c6d59a9459b993}{comovingradialdistance}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a3a138f6f81a4341d3017e38fce77b905}{angulardiameterdistance2}} (this, z1, z2)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a0b1cc6537ad803bf83a690a40c4e1550}{luminositydistance}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_a04681553ca8acc12385e91c6b720105a}{hofz}} (this, z)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecalculator__cosmology_aabad31ec70f213aae297f0c1d31880fc}{hofz\+\_\+hunit}} (this, z)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), parameter, public \mbox{\hyperlink{namespacecalculator__cosmology_a9199e46da0bd753de17a9be358823ee0}{neutrino\+\_\+mass\+\_\+fac}} = 94.\+07\+\_\+mcp
+\item 
+real(mcp), parameter, public \mbox{\hyperlink{namespacecalculator__cosmology_a807c6e74e20e797dcbf2cd848b181a95}{standard\+\_\+neutrino\+\_\+neff}} = 3.\+046\+\_\+mcp
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecalculator__cosmology_a703b9e272151719cca42f7d37d7d403f}\label{namespacecalculator__cosmology_a703b9e272151719cca42f7d37d7d403f}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!angulardiameterdistance@{angulardiameterdistance}}
+\index{angulardiameterdistance@{angulardiameterdistance}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{angulardiameterdistance()}{angulardiameterdistance()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::angulardiameterdistance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a3a138f6f81a4341d3017e38fce77b905}\label{namespacecalculator__cosmology_a3a138f6f81a4341d3017e38fce77b905}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!angulardiameterdistance2@{angulardiameterdistance2}}
+\index{angulardiameterdistance2@{angulardiameterdistance2}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{angulardiameterdistance2()}{angulardiameterdistance2()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::angulardiameterdistance2 (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{real(mcp), intent(in)}]{z1,  }\item[{real(mcp), intent(in)}]{z2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_ab4785ac8ce58853984614bac368590aa}\label{namespacecalculator__cosmology_ab4785ac8ce58853984614bac368590aa}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!bao\+\_\+d\+\_\+v@{bao\+\_\+d\+\_\+v}}
+\index{bao\+\_\+d\+\_\+v@{bao\+\_\+d\+\_\+v}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{bao\+\_\+d\+\_\+v()}{bao\_d\_v()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::bao\+\_\+d\+\_\+v (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a6178a84302763ba24c2283bf6e8e5b2b}\label{namespacecalculator__cosmology_a6178a84302763ba24c2283bf6e8e5b2b}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!cmbtotheta@{cmbtotheta}}
+\index{cmbtotheta@{cmbtotheta}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{cmbtotheta()}{cmbtotheta()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::cmbtotheta (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a56ce70cf463f7c6df9c6d59a9459b993}\label{namespacecalculator__cosmology_a56ce70cf463f7c6df9c6d59a9459b993}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!comovingradialdistance@{comovingradialdistance}}
+\index{comovingradialdistance@{comovingradialdistance}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{comovingradialdistance()}{comovingradialdistance()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::comovingradialdistance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a520171f2409b797206b45a9b2f25ac22}\label{namespacecalculator__cosmology_a520171f2409b797206b45a9b2f25ac22}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!getcosmotheoryforimportance@{getcosmotheoryforimportance}}
+\index{getcosmotheoryforimportance@{getcosmotheoryforimportance}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{getcosmotheoryforimportance()}{getcosmotheoryforimportance()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::getcosmotheoryforimportance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a9b28cf77b06f92cdf1260e0a1f8a72c1}\label{namespacecalculator__cosmology_a9b28cf77b06f92cdf1260e0a1f8a72c1}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!getnewbackgrounddata@{getnewbackgrounddata}}
+\index{getnewbackgrounddata@{getnewbackgrounddata}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{getnewbackgrounddata()}{getnewbackgrounddata()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::getnewbackgrounddata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a456c87c218951defda2a9bcf4f23abb8}\label{namespacecalculator__cosmology_a456c87c218951defda2a9bcf4f23abb8}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!getnewpowerdata@{getnewpowerdata}}
+\index{getnewpowerdata@{getnewpowerdata}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{getnewpowerdata()}{getnewpowerdata()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::getnewpowerdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(ttheoryintermediatecache), pointer}]{Info,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a96e555c628aadff1d707242e238d09f8}\label{namespacecalculator__cosmology_a96e555c628aadff1d707242e238d09f8}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!getnewtransferdata@{getnewtransferdata}}
+\index{getnewtransferdata@{getnewtransferdata}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{getnewtransferdata()}{getnewtransferdata()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::getnewtransferdata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(ttheoryintermediatecache), pointer}]{Info,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a9907b8c61d20213e8026443a5043530f}\label{namespacecalculator__cosmology_a9907b8c61d20213e8026443a5043530f}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!getopticaldepth@{getopticaldepth}}
+\index{getopticaldepth@{getopticaldepth}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{getopticaldepth()}{getopticaldepth()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::getopticaldepth (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a98a6aa3eeac24c242c935e0740b470d8}\label{namespacecalculator__cosmology_a98a6aa3eeac24c242c935e0740b470d8}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!gettheoryforimportance@{gettheoryforimportance}}
+\index{gettheoryforimportance@{gettheoryforimportance}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{gettheoryforimportance()}{gettheoryforimportance()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::gettheoryforimportance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(ttheoryparams)}]{C\+MB,  }\item[{class(ttheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a3f26a3af3732dbfea7715d565b44a385}\label{namespacecalculator__cosmology_a3f26a3af3732dbfea7715d565b44a385}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!getzrefromtau@{getzrefromtau}}
+\index{getzrefromtau@{getzrefromtau}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{getzrefromtau()}{getzrefromtau()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::getzrefromtau (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{real(mcp), intent(in)}]{tau }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a04681553ca8acc12385e91c6b720105a}\label{namespacecalculator__cosmology_a04681553ca8acc12385e91c6b720105a}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!hofz@{hofz}}
+\index{hofz@{hofz}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{hofz()}{hofz()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::hofz (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_aabad31ec70f213aae297f0c1d31880fc}\label{namespacecalculator__cosmology_aabad31ec70f213aae297f0c1d31880fc}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!hofz\+\_\+hunit@{hofz\+\_\+hunit}}
+\index{hofz\+\_\+hunit@{hofz\+\_\+hunit}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{hofz\+\_\+hunit()}{hofz\_hunit()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::hofz\+\_\+hunit (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References settings\+::const\+\_\+c.
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a0b1cc6537ad803bf83a690a40c4e1550}\label{namespacecalculator__cosmology_a0b1cc6537ad803bf83a690a40c4e1550}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!luminositydistance@{luminositydistance}}
+\index{luminositydistance@{luminositydistance}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{luminositydistance()}{luminositydistance()}}
+{\footnotesize\ttfamily real(mcp) function calculator\+\_\+cosmology\+::luminositydistance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{real(mcp), intent(in)}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a8f03c8f23e837020c788389a8ffb4be3}\label{namespacecalculator__cosmology_a8f03c8f23e837020c788389a8ffb4be3}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!setbackgroundtheorydata@{setbackgroundtheorydata}}
+\index{setbackgroundtheorydata@{setbackgroundtheorydata}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{setbackgroundtheorydata()}{setbackgroundtheorydata()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::setbackgroundtheorydata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{integer}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_aabddd5a422eef22f8d13c1df292cc749}\label{namespacecalculator__cosmology_aabddd5a422eef22f8d13c1df292cc749}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!setparamsforbackground@{setparamsforbackground}}
+\index{setparamsforbackground@{setparamsforbackground}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{setparamsforbackground()}{setparamsforbackground()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::setparamsforbackground (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(cmbparams)}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a8df979f2a96e1c2b9624e105619464c2}\label{namespacecalculator__cosmology_a8df979f2a96e1c2b9624e105619464c2}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!tcosmologycalculator\+\_\+readimportanceparams@{tcosmologycalculator\+\_\+readimportanceparams}}
+\index{tcosmologycalculator\+\_\+readimportanceparams@{tcosmologycalculator\+\_\+readimportanceparams}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{tcosmologycalculator\+\_\+readimportanceparams()}{tcosmologycalculator\_readimportanceparams()}}
+{\footnotesize\ttfamily subroutine calculator\+\_\+cosmology\+::tcosmologycalculator\+\_\+readimportanceparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcalculator__cosmology_1_1tcosmologycalculator}{tcosmologycalculator}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecalculator__cosmology_a9199e46da0bd753de17a9be358823ee0}\label{namespacecalculator__cosmology_a9199e46da0bd753de17a9be358823ee0}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!neutrino\+\_\+mass\+\_\+fac@{neutrino\+\_\+mass\+\_\+fac}}
+\index{neutrino\+\_\+mass\+\_\+fac@{neutrino\+\_\+mass\+\_\+fac}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{neutrino\+\_\+mass\+\_\+fac}{neutrino\_mass\_fac}}
+{\footnotesize\ttfamily real(mcp), parameter, public calculator\+\_\+cosmology\+::neutrino\+\_\+mass\+\_\+fac = 94.\+07\+\_\+mcp}
+
+
+
+Referenced by cosmologyparameterizations\+::bk\+\_\+paramarraytotheoryparams(), calculator\+\_\+cosmology\+::tcosmologycalculator\+::readimportanceparams(), cosmologyparameterizations\+::setforh(), and cosmologyparameterizations\+::tp\+\_\+nonbaseparameterpriors().
+
+\mbox{\Hypertarget{namespacecalculator__cosmology_a807c6e74e20e797dcbf2cd848b181a95}\label{namespacecalculator__cosmology_a807c6e74e20e797dcbf2cd848b181a95}} 
+\index{calculator\+\_\+cosmology@{calculator\+\_\+cosmology}!standard\+\_\+neutrino\+\_\+neff@{standard\+\_\+neutrino\+\_\+neff}}
+\index{standard\+\_\+neutrino\+\_\+neff@{standard\+\_\+neutrino\+\_\+neff}!calculator\+\_\+cosmology@{calculator\+\_\+cosmology}}
+\subsubsection{\texorpdfstring{standard\+\_\+neutrino\+\_\+neff}{standard\_neutrino\_neff}}
+{\footnotesize\ttfamily real(mcp), parameter, public calculator\+\_\+cosmology\+::standard\+\_\+neutrino\+\_\+neff = 3.\+046\+\_\+mcp}
+
+
+
+Referenced by elementabundances\+::abundance\+\_\+lnlike(), cosmologyparameterizations\+::bk\+\_\+paramarraytotheoryparams(), calculator\+\_\+cosmology\+::tcosmologycalculator\+::readimportanceparams(), cosmologyparameterizations\+::setforh(), and cosmologyparameterizations\+::tp\+\_\+nonbaseparameterpriors().
+

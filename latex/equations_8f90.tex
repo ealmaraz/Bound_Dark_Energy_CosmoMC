@@ -1,0 +1,215 @@
+\hypertarget{equations_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/camb/equations.f90 File Reference}
+\label{equations_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/equations.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/equations.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structgaugeinterface_1_1evolutionvars}{gaugeinterface\+::evolutionvars}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacelambdageneral}{lambdageneral}}
+\item 
+module \mbox{\hyperlink{namespacegaugeinterface}{gaugeinterface}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacelambdageneral_a780328d728ca15af725d6f53b2fa54d1}{lambdageneral\+::darkenergy\+\_\+readparams}} (Ini)
+\item 
+real(dl) function \mbox{\hyperlink{equations_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6}{getomegak}} ()
+\item 
+subroutine \mbox{\hyperlink{equations_8f90_a47540f6082acc64c78a1daac45637fd6}{init\+\_\+background}}
+\item 
+real(dl) function \mbox{\hyperlink{equations_8f90_a1c228811398a4401bb57d778911a13df}{dtauda}} (a)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac02938234bdca8dcd23649b1abb34ab3}{gaugeinterface\+::gaugeinterface\+\_\+scalev}} (EV, y, tau, tauend, tol1, ind, c, w)
+\item 
+integer function \mbox{\hyperlink{namespacegaugeinterface_ae317d979138ff46a65c14f787c0d749c}{gaugeinterface\+::next\+\_\+nu\+\_\+nq}} (nq)
+\item 
+recursive subroutine \mbox{\hyperlink{namespacegaugeinterface_a11f5c8bd6a22537e4a85362dc8dbf3af}{gaugeinterface\+::gaugeinterface\+\_\+evolvescal}} (EV, tau, y, tauend, tol1, ind, c, w)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a048447959e15ae6dd9e887a61e135d0c}{gaugeinterface\+::gaugeinterface\+\_\+evolvetens}} (EV, tau, y, tauend, tol1, ind, c, w)
+\item 
+real(dl) function \mbox{\hyperlink{namespacegaugeinterface_aaf1e4804f8b140406e78f53f199433fa}{gaugeinterface\+::deltatimemaxed}} (a1, a2, tol)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a59182efb978c657918dd88675b2ab0ef}{gaugeinterface\+::gaugeinterface\+\_\+init}}
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a50a72debb65475527ccc7e76af616083}{gaugeinterface\+::setupscalararrayindices}} (EV, max\+\_\+num\+\_\+eqns)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a8565dc876beb9e4339c005a72333f31f}{gaugeinterface\+::copyscalarvariablearray}} (y, yout, EV, E\+Vout)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a21f6d1e93445d43fc8247f57dce52716}{gaugeinterface\+::setuptensorarrayindices}} (EV, maxeq)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ab306d2378bd6f559471a11afc145621c}{gaugeinterface\+::copytensorvariablearray}} (y, yout, EV, E\+Vout)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ad273d68dadb4d4fcc10422fed213ca25}{gaugeinterface\+::getnumeqns}} (EV)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac7f67b6e2bc871b4eb1a6d3453f796a3}{gaugeinterface\+::switchtomassivenuapprox}} (EV, y, nu\+\_\+i)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac756539212eaeba8021159b26d1d2881}{gaugeinterface\+::massivenuvarsout}} (EV, y, yprime, a, grho, gpres, dgrho, dgq, dgpi, gdpi\+\_\+diff, pidot\+\_\+sum, clxnu\+\_\+all)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aaf5da349a1adc87f4c62f51f1e0c0371}{gaugeinterface\+::nu\+\_\+integrate\+\_\+l012}} (EV, y, a, nu\+\_\+i, drhonu, fnu, dpnu, pinu)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_acba44d8f8f824999640418908be29b9b}{gaugeinterface\+::nu\+\_\+pinudot}} (EV, y, ydot, a, adotoa, nu\+\_\+i, pinudot)
+\item 
+real(dl) function \mbox{\hyperlink{namespacegaugeinterface_a33373e2888fd46e2c443d7e8c2785639}{gaugeinterface\+::nu\+\_\+pi}} (EV, y, a, nu\+\_\+i)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a2e8822823d298cb0912b5ec22ea4a6ff}{gaugeinterface\+::nu\+\_\+intvsq}} (EV, y, a, nu\+\_\+i, G11, G30)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ae4228ed9cfb9382025eb84617b0ed091}{gaugeinterface\+::massivenuvars}} (EV, y, a, grho, gpres, dgrho, dgq, wnu\+\_\+arr)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ac370c67bc9750bf5749a69531fe3ffc1}{gaugeinterface\+::output}} (EV, y, j, tau, sources)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a5235d59ec77fa4b3a41d9754c8e447ca}{gaugeinterface\+::outputt}} (EV, yt, n, j, tau, dt, dte, dtb)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ad9126befa5df67da981345f6230fede4}{gaugeinterface\+::outputv}} (EV, yv, n, j, tau, dt, dte, dtb)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aa05aaad2bec1907778ea8eae3a7ba521}{gaugeinterface\+::initial}} (EV, y, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_afbc0a211756e4b923725483b6c961e75}{gaugeinterface\+::initialt}} (EV, yt, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_aeed464df3ecab21d57bcb789fe3b1a22}{gaugeinterface\+::initialv}} (EV, yv, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ae920635485c908177072c6cad0d49f59}{gaugeinterface\+::outtransf}} (EV, y, tau, Arr)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a1d317261c83f3b5e84fe401ac2436d44}{gaugeinterface\+::derivs}} (EV, n, tau, ay, ayprime)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_a25ee0c9e055aabce6b7eb205e65f9804}{gaugeinterface\+::derivsv}} (EV, n, tau, yv, yvprime)
+\item 
+subroutine \mbox{\hyperlink{namespacegaugeinterface_ab2ff4cd74364457862a7ff44fb2ca978}{gaugeinterface\+::derivst}} (EV, n, tau, ayt, aytprime)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl) \mbox{\hyperlink{namespacelambdageneral_aa974593ba987c77d2bf09655570fab6a}{lambdageneral\+::w\+\_\+lam}} = -\/1\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacelambdageneral_a5df860ac945ff458c8f809a63ea3987f}{lambdageneral\+::cs2\+\_\+lam}} = 1\+\_\+dl
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacelambdageneral_a175aaf4fc2698fa3d615510feb82f3ee}{lambdageneral\+::wa\+\_\+ppf}} = 0.\+\_\+dl
+\item 
+logical \mbox{\hyperlink{namespacelambdageneral_aaccd65e521dd501c9ee6c8e77a95ffef}{lambdageneral\+::w\+\_\+perturb}} = .true.
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacegaugeinterface_a7ad176ccd8e025b00d5ae35428c6f894}{gaugeinterface\+::eqns\+\_\+name}} = \textquotesingle{}gauge\+\_\+inv\textquotesingle{}
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a4ec8e34555b9492e02f9ca7793b37b7a}{gaugeinterface\+::basic\+\_\+num\+\_\+eqns}} = 5
+\item 
+logical \mbox{\hyperlink{namespacegaugeinterface_a48d8dc2750f4cecf3337b6f6dd2d736b}{gaugeinterface\+::dotensorneutrinos}} = .true.
+\item 
+logical \mbox{\hyperlink{namespacegaugeinterface_a1c86dc449a45192d8e9e999627a3f511}{gaugeinterface\+::dolateradtruncation}} = .true.
+\item 
+logical, parameter \mbox{\hyperlink{namespacegaugeinterface_af060fa6622bea0f389dc0965bee8d67f}{gaugeinterface\+::second\+\_\+order\+\_\+tightcoupling}} = .true.
+\item 
+real(dl) \mbox{\hyperlink{namespacegaugeinterface_aaa26844a2740bc664b3c821e92dc6b52}{gaugeinterface\+::magnetic}} = 0.\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacegaugeinterface_ae547cea1b332095dd0c9b5a6c24466ae}{gaugeinterface\+::vec\+\_\+sig0}} = 1.\+\_\+dl
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a965f8caba9ba282e718281110e274b04}{gaugeinterface\+::max\+\_\+l\+\_\+evolve}} = 256
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_ac5567a8b42e51ba563113652958ea70b}{gaugeinterface\+::initial\+\_\+adiabatic}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_aab102b09528270be73847e43bc4ea5ab}{gaugeinterface\+::initial\+\_\+iso\+\_\+cdm}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_aa3aaa16f51217e9cada87f670d1a2ae6}{gaugeinterface\+::initial\+\_\+iso\+\_\+baryon}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_adbaabf824bb924de7518b623ffd8c9e3}{gaugeinterface\+::initial\+\_\+iso\+\_\+neutrino}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a47175df2f7681cf8e8a2a7e2cb94952a}{gaugeinterface\+::initial\+\_\+iso\+\_\+neutrino\+\_\+vel}} =5
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a540c4e4d2e1dea17aeb55e137acb0218}{gaugeinterface\+::initial\+\_\+vector}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a4c1f07aacc342a123210732254937539}{gaugeinterface\+::initial\+\_\+nummodes}} = initial\+\_\+iso\+\_\+neutrino\+\_\+vel
+\item 
+real(dl), dimension(max\+\_\+l\+\_\+evolve) \mbox{\hyperlink{namespacegaugeinterface_a6e217a5a543d2b9517624820de0e3338}{gaugeinterface\+::polfac}}
+\item 
+real(dl), dimension(max\+\_\+l\+\_\+evolve) \mbox{\hyperlink{namespacegaugeinterface_ad67d0af8f042d5a80e3890d8a794be5f}{gaugeinterface\+::denl}}
+\item 
+real(dl), dimension(max\+\_\+l\+\_\+evolve) \mbox{\hyperlink{namespacegaugeinterface_adc490d2cf60b4b4224f782920c48141a}{gaugeinterface\+::vecfac}}
+\item 
+real(dl), dimension(max\+\_\+l\+\_\+evolve) \mbox{\hyperlink{namespacegaugeinterface_ae0aebf1ba68b305cd9abbe8bf79353d9}{gaugeinterface\+::vecfacpol}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacegaugeinterface_ac46c357baba62f4aeaaec10b492d6e80}{gaugeinterface\+::ep0}} =1.\+0d-\/2
+\item 
+integer, parameter \mbox{\hyperlink{namespacegaugeinterface_a55cb8dcd9b184efebb1f82f7dbd5bf19}{gaugeinterface\+::lmaxnu\+\_\+high\+\_\+ktau}} =4
+\item 
+real(dl) \mbox{\hyperlink{namespacegaugeinterface_a7958da73f55e60b6e679c0a7f70ec822}{gaugeinterface\+::epsw}}
+\item 
+real(dl), dimension(nqmax0+1, max\+\_\+nu) \mbox{\hyperlink{namespacegaugeinterface_a041cc4df547c2fb25f42679b34de4891}{gaugeinterface\+::nu\+\_\+tau\+\_\+notmassless}}
+\item 
+real(dl), dimension(max\+\_\+nu) \mbox{\hyperlink{namespacegaugeinterface_aa6ec574b0c9183eb8881d0ed0376740c}{gaugeinterface\+::nu\+\_\+tau\+\_\+nonrelativistic}}
+\item 
+real(dl), dimension(max\+\_\+nu) \mbox{\hyperlink{namespacegaugeinterface_aecf1aff36254ca033f48a9a0bcf5416c}{gaugeinterface\+::nu\+\_\+tau\+\_\+massive}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{equations_8f90_a1c228811398a4401bb57d778911a13df}\label{equations_8f90_a1c228811398a4401bb57d778911a13df}} 
+\index{equations.\+f90@{equations.\+f90}!dtauda@{dtauda}}
+\index{dtauda@{dtauda}!equations.\+f90@{equations.\+f90}}
+\subsubsection{\texorpdfstring{dtauda()}{dtauda()}}
+{\footnotesize\ttfamily real(dl) function dtauda (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{a }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhog, modelparams\+::grhok, modelparams\+::grhormass, modelparams\+::grhornomass, modelparams\+::grhov, modelparams\+::nu\+\_\+masses, massivenu\+::nu\+\_\+rho(), and lambdageneral\+::w\+\_\+lam.
+
+
+
+Referenced by thermodata\+::ddamping\+\_\+da(), recombination\+::ddeltaxe\+\_\+dtau(), thermodata\+::ddragoptdepth\+\_\+dz(), thermodata\+::doptdepth\+\_\+dz(), dtauda(), thermodata\+::inithermo(), and recombination\+::recombination\+\_\+init().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{equations_8f90_a1c228811398a4401bb57d778911a13df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{equations_8f90_a1c228811398a4401bb57d778911a13df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{equations_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6}\label{equations_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6}} 
+\index{equations.\+f90@{equations.\+f90}!getomegak@{getomegak}}
+\index{getomegak@{getomegak}!equations.\+f90@{equations.\+f90}}
+\subsubsection{\texorpdfstring{getomegak()}{getomegak()}}
+{\footnotesize\ttfamily real(dl) function getomegak (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::cp.
+
+
+
+Referenced by getomegak().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{equations_8f90_a2c95a3b42a68aa87a21097ce3ff8bbe6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{equations_8f90_a47540f6082acc64c78a1daac45637fd6}\label{equations_8f90_a47540f6082acc64c78a1daac45637fd6}} 
+\index{equations.\+f90@{equations.\+f90}!init\+\_\+background@{init\+\_\+background}}
+\index{init\+\_\+background@{init\+\_\+background}!equations.\+f90@{equations.\+f90}}
+\subsubsection{\texorpdfstring{init\+\_\+background()}{init\_background()}}
+{\footnotesize\ttfamily subroutine init\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by modelparams\+::cambparams\+\_\+set().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{equations_8f90_a47540f6082acc64c78a1daac45637fd6_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,17 @@
+<map id="getdist.gui.mainwindow.MainWindow.setRootname" name="getdist.gui.mainwindow.MainWindow.setRootname">
+<area shape="rect" id="node2" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#acffec8bd5390cacd428e909ef4cfa449" title="getdist.gui.mainwindow.Main\lWindow.newRootItem" alt="" coords="246,327,437,369"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a77a47206bb3e2ecb4dbac87af2f85f6e" title="getdist.gui.mainwindow.Main\lWindow._updateParameters" alt="" coords="486,201,677,242"/>
+<area shape="rect" id="node12" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aa4d50e481a279bfc236264d54e794696" title="getdist.gui.mainwindow.Main\lWindow.errorReport" alt="" coords="486,327,677,369"/>
+<area shape="rect" id="node16" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a385cc81f23347ee51f9ee4454a676074" title="getdist.gui.mainwindow.Main\lWindow.getPlotter" alt="" coords="486,393,677,434"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a70759462a72f7fb41af9c795b0318346" title="getdist.gui.mainwindow.Main\lWindow._updateComboBoxColor" alt="" coords="726,5,941,46"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a4136dbf5a3f107c064a7b5a58c4dcdb7" title="getdist.gui.mainwindow.Main\lWindow._updateListParameters" alt="" coords="730,70,937,111"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#abdbfb43927d31864cd840b416d281df1" title="getdist.gui.mainwindow.Main\lWindow.checkedRootNames" alt="" coords="737,135,929,177"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aff268010fdbaa0abe118cf5a3b50849f" title="getdist.gui.mainwindow.Main\lWindow.getSamples" alt="" coords="738,201,929,242"/>
+<area shape="rect" id="node9" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a9f988a9217e030de892f370248a94481" title="getdist.gui.mainwindow.Main\lWindow.getXParams" alt="" coords="738,266,929,307"/>
+<area shape="rect" id="node11" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a5a49bcf9798a91781b81e59086d05e61" title="getdist.gui.mainwindow.Main\lWindow.getYParams" alt="" coords="738,331,929,373"/>
+<area shape="rect" id="node5" href="$namespaceobjectlists.html#af7dd3c43a123562bc92cf38d6ed508cd" title="objectlists::clear" alt="" coords="1027,12,1144,39"/>
+<area shape="rect" id="node10" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a6a538cbf9dfa41511637abcdabad7f23" title="getdist.gui.mainwindow.Main\lWindow.getCheckedParams" alt="" coords="990,299,1181,341"/>
+<area shape="rect" id="node13" href="$namespacestringutils.html#a29f32cf04e0c44fc8ee8dfa9819b915d" title="stringutils::join" alt="" coords="780,397,887,424"/>
+<area shape="rect" id="node14" href="$namespacestringutils.html#ac5e67eb0a4de77625ac1447804e1f934" title="stringutils::stringtrimmed" alt="" coords="1003,397,1168,424"/>
+<area shape="rect" id="node15" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="1229,397,1379,424"/>
+</map>

@@ -1,0 +1,215 @@
+\hypertarget{structimportancesampling_1_1timportancesampler}{}\section{importancesampling\+:\+:timportancesampler Type Reference}
+\label{structimportancesampling_1_1timportancesampler}\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+
+
+Inheritance diagram for importancesampling\+:\+:timportancesampler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structimportancesampling_1_1timportancesampler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for importancesampling\+:\+:timportancesampler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structimportancesampling_1_1timportancesampler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a268b0ac5bdba201170d4e08abf9308f3}{readparams}} =$>$ T\+Importance\+Sampler\+\_\+\+Read\+Params
+\item 
+procedure \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a75f7f0a6088d1c1038abb066339625fb}{init}} =$>$ T\+Importance\+Sampler\+\_\+\+Init
+\item 
+procedure \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_aa53cd8f18fcfcca8033c75840ec6cba6}{importancesample}} =$>$ T\+Importance\+Sampler\+\_\+\+Importance\+Sample
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a52c68d4f1b96631a9f40ee8a0ae01dc9}{redo\+\_\+likelihoods}}
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a69060f3953c263c0d2400878abfb1a49}{redo\+\_\+theory}}
+\item 
+real(mcp) \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a857cc53c9b9a7ed891c84b7449c0a2f6}{redo\+\_\+skip}} = 100
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a813d3483eb23813919b6cf686703c5d1}{redo\+\_\+datafile}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_aab50bd71d93cf44c368c375f050c6634}{redo\+\_\+outroot}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_aa6c74b7f86f0ba6ee504fe4bede40b61}{redo\+\_\+like\+\_\+name}}
+\item 
+real(mcp) \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a0e028b142db90a536d370b3259ef7568}{redo\+\_\+likeoffset}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a6a27c90271c4663b7144bc24e833400f}{redo\+\_\+temperature}} = 1
+\item 
+integer \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_afd6ba4435906fa859e4a06529d687d20}{redo\+\_\+thin}} = 1
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a53b49fb636469b3b90c334f889965015}{redo\+\_\+change\+\_\+like\+\_\+only}} = .false.
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a9e65cbe2a2bb930a8015db74b8f63f2e}{redo\+\_\+nochange}} = .false.
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a291e6ba39f0d39650df6cc5dbc434245}{redo\+\_\+add}} = .false.
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_af4f9ca70f0e44b1f45c06196dc2a57c2}{redo\+\_\+from\+\_\+text}} = .false.
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_ae178262e62748517e5b64847c50df630}{redo\+\_\+no\+\_\+new\+\_\+data}} = .false.
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a6ae991a6cc8d7f31c4b64731974d7b8c}{redo\+\_\+output\+\_\+txt\+\_\+theory}} = .false.
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_add80ef01d2ac594972b745d44295af29}{redo\+\_\+output\+\_\+txt\+\_\+root}}
+\item 
+logical \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a41d971e7484129bb82f98ce539b1dc6f}{redo\+\_\+auto\+\_\+likescale}} = .true.
+\item 
+real(mcp) \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a5e9411d5c2505f056138b147c55ef614}{redo\+\_\+max\+\_\+loglike\+\_\+diff}} = 10
+\item 
+integer \mbox{\hyperlink{structimportancesampling_1_1timportancesampler_a414e2e311d3a02982a89d75c0aed173a}{redo\+\_\+auto\+\_\+likescale\+\_\+count}} = 5
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_aa53cd8f18fcfcca8033c75840ec6cba6}\label{structimportancesampling_1_1timportancesampler_aa53cd8f18fcfcca8033c75840ec6cba6}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!importancesample@{importancesample}}
+\index{importancesample@{importancesample}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{importancesample()}{importancesample()}}
+{\footnotesize\ttfamily procedure importancesampling\+::timportancesampler\+::importancesample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a75f7f0a6088d1c1038abb066339625fb}\label{structimportancesampling_1_1timportancesampler_a75f7f0a6088d1c1038abb066339625fb}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!init@{init}}
+\index{init@{init}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily procedure importancesampling\+::timportancesampler\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a268b0ac5bdba201170d4e08abf9308f3}\label{structimportancesampling_1_1timportancesampler_a268b0ac5bdba201170d4e08abf9308f3}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!readparams@{readparams}}
+\index{readparams@{readparams}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{readparams()}{readparams()}}
+{\footnotesize\ttfamily procedure importancesampling\+::timportancesampler\+::readparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a291e6ba39f0d39650df6cc5dbc434245}\label{structimportancesampling_1_1timportancesampler_a291e6ba39f0d39650df6cc5dbc434245}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+add@{redo\+\_\+add}}
+\index{redo\+\_\+add@{redo\+\_\+add}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+add}{redo\_add}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+add = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a41d971e7484129bb82f98ce539b1dc6f}\label{structimportancesampling_1_1timportancesampler_a41d971e7484129bb82f98ce539b1dc6f}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+auto\+\_\+likescale@{redo\+\_\+auto\+\_\+likescale}}
+\index{redo\+\_\+auto\+\_\+likescale@{redo\+\_\+auto\+\_\+likescale}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+auto\+\_\+likescale}{redo\_auto\_likescale}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+auto\+\_\+likescale = .true.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a414e2e311d3a02982a89d75c0aed173a}\label{structimportancesampling_1_1timportancesampler_a414e2e311d3a02982a89d75c0aed173a}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+auto\+\_\+likescale\+\_\+count@{redo\+\_\+auto\+\_\+likescale\+\_\+count}}
+\index{redo\+\_\+auto\+\_\+likescale\+\_\+count@{redo\+\_\+auto\+\_\+likescale\+\_\+count}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+auto\+\_\+likescale\+\_\+count}{redo\_auto\_likescale\_count}}
+{\footnotesize\ttfamily integer importancesampling\+::timportancesampler\+::redo\+\_\+auto\+\_\+likescale\+\_\+count = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a53b49fb636469b3b90c334f889965015}\label{structimportancesampling_1_1timportancesampler_a53b49fb636469b3b90c334f889965015}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+change\+\_\+like\+\_\+only@{redo\+\_\+change\+\_\+like\+\_\+only}}
+\index{redo\+\_\+change\+\_\+like\+\_\+only@{redo\+\_\+change\+\_\+like\+\_\+only}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+change\+\_\+like\+\_\+only}{redo\_change\_like\_only}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+change\+\_\+like\+\_\+only = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a813d3483eb23813919b6cf686703c5d1}\label{structimportancesampling_1_1timportancesampler_a813d3483eb23813919b6cf686703c5d1}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+datafile@{redo\+\_\+datafile}}
+\index{redo\+\_\+datafile@{redo\+\_\+datafile}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+datafile}{redo\_datafile}}
+{\footnotesize\ttfamily character(len=\+:), allocatable importancesampling\+::timportancesampler\+::redo\+\_\+datafile\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_af4f9ca70f0e44b1f45c06196dc2a57c2}\label{structimportancesampling_1_1timportancesampler_af4f9ca70f0e44b1f45c06196dc2a57c2}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+from\+\_\+text@{redo\+\_\+from\+\_\+text}}
+\index{redo\+\_\+from\+\_\+text@{redo\+\_\+from\+\_\+text}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+from\+\_\+text}{redo\_from\_text}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+from\+\_\+text = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_aa6c74b7f86f0ba6ee504fe4bede40b61}\label{structimportancesampling_1_1timportancesampler_aa6c74b7f86f0ba6ee504fe4bede40b61}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+like\+\_\+name@{redo\+\_\+like\+\_\+name}}
+\index{redo\+\_\+like\+\_\+name@{redo\+\_\+like\+\_\+name}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+like\+\_\+name}{redo\_like\_name}}
+{\footnotesize\ttfamily character(len=\+:), allocatable importancesampling\+::timportancesampler\+::redo\+\_\+like\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a52c68d4f1b96631a9f40ee8a0ae01dc9}\label{structimportancesampling_1_1timportancesampler_a52c68d4f1b96631a9f40ee8a0ae01dc9}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+likelihoods@{redo\+\_\+likelihoods}}
+\index{redo\+\_\+likelihoods@{redo\+\_\+likelihoods}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+likelihoods}{redo\_likelihoods}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+likelihoods\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a0e028b142db90a536d370b3259ef7568}\label{structimportancesampling_1_1timportancesampler_a0e028b142db90a536d370b3259ef7568}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+likeoffset@{redo\+\_\+likeoffset}}
+\index{redo\+\_\+likeoffset@{redo\+\_\+likeoffset}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+likeoffset}{redo\_likeoffset}}
+{\footnotesize\ttfamily real(mcp) importancesampling\+::timportancesampler\+::redo\+\_\+likeoffset = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a5e9411d5c2505f056138b147c55ef614}\label{structimportancesampling_1_1timportancesampler_a5e9411d5c2505f056138b147c55ef614}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+max\+\_\+loglike\+\_\+diff@{redo\+\_\+max\+\_\+loglike\+\_\+diff}}
+\index{redo\+\_\+max\+\_\+loglike\+\_\+diff@{redo\+\_\+max\+\_\+loglike\+\_\+diff}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+max\+\_\+loglike\+\_\+diff}{redo\_max\_loglike\_diff}}
+{\footnotesize\ttfamily real(mcp) importancesampling\+::timportancesampler\+::redo\+\_\+max\+\_\+loglike\+\_\+diff = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_ae178262e62748517e5b64847c50df630}\label{structimportancesampling_1_1timportancesampler_ae178262e62748517e5b64847c50df630}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+no\+\_\+new\+\_\+data@{redo\+\_\+no\+\_\+new\+\_\+data}}
+\index{redo\+\_\+no\+\_\+new\+\_\+data@{redo\+\_\+no\+\_\+new\+\_\+data}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+no\+\_\+new\+\_\+data}{redo\_no\_new\_data}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+no\+\_\+new\+\_\+data = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a9e65cbe2a2bb930a8015db74b8f63f2e}\label{structimportancesampling_1_1timportancesampler_a9e65cbe2a2bb930a8015db74b8f63f2e}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+nochange@{redo\+\_\+nochange}}
+\index{redo\+\_\+nochange@{redo\+\_\+nochange}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+nochange}{redo\_nochange}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+nochange = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_add80ef01d2ac594972b745d44295af29}\label{structimportancesampling_1_1timportancesampler_add80ef01d2ac594972b745d44295af29}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+output\+\_\+txt\+\_\+root@{redo\+\_\+output\+\_\+txt\+\_\+root}}
+\index{redo\+\_\+output\+\_\+txt\+\_\+root@{redo\+\_\+output\+\_\+txt\+\_\+root}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+output\+\_\+txt\+\_\+root}{redo\_output\_txt\_root}}
+{\footnotesize\ttfamily character(len=\+:), allocatable importancesampling\+::timportancesampler\+::redo\+\_\+output\+\_\+txt\+\_\+root\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a6ae991a6cc8d7f31c4b64731974d7b8c}\label{structimportancesampling_1_1timportancesampler_a6ae991a6cc8d7f31c4b64731974d7b8c}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+output\+\_\+txt\+\_\+theory@{redo\+\_\+output\+\_\+txt\+\_\+theory}}
+\index{redo\+\_\+output\+\_\+txt\+\_\+theory@{redo\+\_\+output\+\_\+txt\+\_\+theory}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+output\+\_\+txt\+\_\+theory}{redo\_output\_txt\_theory}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+output\+\_\+txt\+\_\+theory = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_aab50bd71d93cf44c368c375f050c6634}\label{structimportancesampling_1_1timportancesampler_aab50bd71d93cf44c368c375f050c6634}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+outroot@{redo\+\_\+outroot}}
+\index{redo\+\_\+outroot@{redo\+\_\+outroot}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+outroot}{redo\_outroot}}
+{\footnotesize\ttfamily character(len=\+:), allocatable importancesampling\+::timportancesampler\+::redo\+\_\+outroot\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a857cc53c9b9a7ed891c84b7449c0a2f6}\label{structimportancesampling_1_1timportancesampler_a857cc53c9b9a7ed891c84b7449c0a2f6}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+skip@{redo\+\_\+skip}}
+\index{redo\+\_\+skip@{redo\+\_\+skip}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+skip}{redo\_skip}}
+{\footnotesize\ttfamily real(mcp) importancesampling\+::timportancesampler\+::redo\+\_\+skip = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a6a27c90271c4663b7144bc24e833400f}\label{structimportancesampling_1_1timportancesampler_a6a27c90271c4663b7144bc24e833400f}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+temperature@{redo\+\_\+temperature}}
+\index{redo\+\_\+temperature@{redo\+\_\+temperature}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+temperature}{redo\_temperature}}
+{\footnotesize\ttfamily real(mcp) importancesampling\+::timportancesampler\+::redo\+\_\+temperature = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_a69060f3953c263c0d2400878abfb1a49}\label{structimportancesampling_1_1timportancesampler_a69060f3953c263c0d2400878abfb1a49}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+theory@{redo\+\_\+theory}}
+\index{redo\+\_\+theory@{redo\+\_\+theory}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+theory}{redo\_theory}}
+{\footnotesize\ttfamily logical importancesampling\+::timportancesampler\+::redo\+\_\+theory\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structimportancesampling_1_1timportancesampler_afd6ba4435906fa859e4a06529d687d20}\label{structimportancesampling_1_1timportancesampler_afd6ba4435906fa859e4a06529d687d20}} 
+\index{importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}!redo\+\_\+thin@{redo\+\_\+thin}}
+\index{redo\+\_\+thin@{redo\+\_\+thin}!importancesampling\+::timportancesampler@{importancesampling\+::timportancesampler}}
+\subsubsection{\texorpdfstring{redo\+\_\+thin}{redo\_thin}}
+{\footnotesize\ttfamily integer importancesampling\+::timportancesampler\+::redo\+\_\+thin = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{ImportanceSampling_8f90}{Importance\+Sampling.\+f90}}\end{DoxyCompactItemize}

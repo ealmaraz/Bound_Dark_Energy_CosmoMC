@@ -1,0 +1,1331 @@
+\hypertarget{namespacefileutils}{}\section{fileutils Module Reference}
+\label{namespacefileutils}\index{fileutils@{fileutils}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structfileutils_1_1tbinaryfile}{tbinaryfile}}
+\item 
+type \mbox{\hyperlink{structfileutils_1_1tfile}{tfile}}
+\item 
+type \mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}}
+\item 
+type \mbox{\hyperlink{structfileutils_1_1tsequentialfile}{tsequentialfile}}
+\item 
+type \mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_a7eed5e57dbe4803901c5cb2d33f32e66}{fileexists}} (aname)
+\item 
+integer(\mbox{\hyperlink{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}{file\+\_\+size\+\_\+int}}) function \mbox{\hyperlink{namespacefileutils_a7e3025ea32fc9f426d78cd5dab68e470}{filesize}} (name)
+\item 
+integer function \mbox{\hyperlink{namespacefileutils_a16fc3d0615e1fa05eed9d70c7f6c8861}{txtnumbercolumns}} (In\+Line)
+\item 
+integer function \mbox{\hyperlink{namespacefileutils_a704f148cd0ca7af88eec65d167460683}{txtcolumns}} (In\+Line)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ab29c958b3ef2154cee501206eeeab071}{setdefaultmodes}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_aae5dfea33ac7521267fc2bd055c532e7}{tsequentialfile\+\_\+setdefaultmodes}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a40d911d4c6f3119ad169ba092b5d8131}{ttextfile\+\_\+setdefaultmodes}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_af19fea352f8dfa2014baece1a62940f4}{checkopen}} (this, for\+Write)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_ab874a71428e21012e34c256de9cf461d}{opened}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ad8e0926f0aaad2fd9464ad5e4bc01db0}{error}} (this, msg, errormsg)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a92f8878926ad7488d2cdaf82a8d09d6a}{tfilestream\+\_\+close}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a5c9784aa40b01ea30ef204e7aeb9db9e}{tfilestream\+\_\+free}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_aed117908fc58fe14559073780dce043b}{tfilestream\+\_\+flush}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a0c1819d96b0ed98d4ae2ebd441d5810f}{tfilestream\+\_\+rewind}} (this)
+\item 
+integer(\mbox{\hyperlink{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}{file\+\_\+size\+\_\+int}}) function \mbox{\hyperlink{namespacefileutils_a3ee651544233289579c63ab2ffa3f6ce}{tfilestream\+\_\+position}} (this)
+\item 
+integer(\mbox{\hyperlink{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}{file\+\_\+size\+\_\+int}}) function \mbox{\hyperlink{namespacefileutils_ab4722eb4f85ef9a9326342dfcad3f0cc}{tfilestream\+\_\+size}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a9b6ffe40088ad819c1e793b2bc91b01e}{tfilestream\+\_\+open}} (this, aname, errormsg, status)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ae08cbb1a056e184eeab9c6a6a2181f24}{tfilestream\+\_\+openfile}} (this, aname, mode, errormsg, forwrite, append, status)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a40850ce0c16a35137a51f9e4316d2599}{createfile}} (this, aname, errormsg)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ae16c8e138a245fc238bc5e6d29b3415b}{createopenfile}} (this, aname, append, errormsg)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a436d1ea1bb13200971bcbef4e268f503}{readstringsub}} (this, S, OK)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_a8b83c2f06ad952435c760ce789a1b01e}{readstringfunc}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a520a8d58db5cabd4d1fcaf5fbf9eeb94}{readitemsub}} (this, R, OK)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_a34cb445c075820131b56989e563c773c}{readitemfunc}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a77d1826f1c337fc426cfbc7a8d2b642a}{readarray}} (this, R, n, OK)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_a25c117441044cad4593a6e88245d59d2}{readarrayfunc}} (this, R, n)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_abe905cf8167e2a6f36f2ddfcec24b6ad}{readarray2func}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a1decdb16477082bdf6b48d9feb1accf7}{readarray2}} (this, R, OK)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a9d5d97346bddaa16024b5482cc1ce7cb}{readsizedarray\+\_\+r}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ab663b9fbd43f12bd0ad8fdda4c1ff85e}{readsizedarray\+\_\+d}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a767a096f95f5ccbb1c02deb7d926032b}{readsizedarray\+\_\+i}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a7fd8e6d80f0ccadb1d773d86d8871816}{readsizedarray2\+\_\+r}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a0057e2b91f8c173074b68aadbe1d3e92}{readsizedarray2\+\_\+d}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_acd15bd801738b538b71b3216aaab95cc}{readsizedarray2\+\_\+i}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a57cd0a2cbc7978f19baaebb111cdbe1d}{writeitemsub}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_afe12625f20868804aae9ff245b783baf}{writetrim}} (this, S)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a416e6d6a5f7a1dfc3da764788ecaac59}{writesizedarray1}} (this, R, n)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_aae72a2f6c28cf65ba7b21cd90f399eeb}{writesizedarray2}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_adf43b426efd6b01f81b673d3db3cd8d8}{writeoneandarray}} (this, I, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_af7dad8ef48af586cc127b552cadeb999}{writearray}} (this, R, n)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_aa3569bb8cce3d65a6a7e820571bba597}{writearray2}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a0a2890041ec846715c0990fc468b6be1}{writeitems}} (this, S1, S2, S3, S4, S5, S6)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_add4cb070c36870fe26122c8b1802894b}{readitems}} (this, S1, S2, S3, S4, S5, S6, OK)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_affa8ee4edc46a1fcbc9da79877e80724}{readline}} (this, In\+Line, trimmed)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_a8adc28c1f4192183517beb41ccec4287}{readlineskipemptyandcomments}} (this, In\+Line, comment)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_ada6e0a7d8b00d257b6902c5741d737bd}{readnextcontentline}} (this, filename, In\+Line)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_ae9b000065603bdcdab84740b77c43983}{skiplines}} (this, n)
+\item 
+integer function \mbox{\hyperlink{namespacefileutils_a91600ec19776dc37a388c71d74c6e0bf}{columns}} (this)
+\item 
+integer function \mbox{\hyperlink{namespacefileutils_a55dce72f20c256d70de9529936f7ebd8}{lines}} (this, nocomments)
+\item 
+character(3) function \mbox{\hyperlink{namespacefileutils_a8114041129cdfa75aa9d0c0195ff8da1}{defaultadvance}} (this, advance)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ae2a0937c572a3a07540ac002f8a620cd}{newline}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a4db10f3a8145e0e4d26416a1718a0c13}{writeleftaligned}} (this, Form, str)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_acb35071046eb5e751ef36740cc5464f9}{writeinlineitems}} (this, S1, S2, S3, S4, S5, S6)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a081a95c89cd56409865919dc2230a9f3}{writeitemstxt}} (this, S1, S2, S3, S4, S5, S6)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_af26bec360e1e147d731d1265d3b3e689}{writeinlineitem}} (this, str, form)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a421b7722f368ba1dbf80589c8f944804}{writeinlinearray}} (this, str, form, n)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a0b6a6b2a921c679e8226e4c2b11775d0}{ttextfile\+\_\+writeitem}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a8df98772000e2733576f361e197fa37a}{ttextfile\+\_\+writearray}} (this, R, n)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a8673cc2b2bcfe0639966d2789c1bbade}{ttextfile\+\_\+writeoneandarray}} (this, I, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ab3c52d3927403448ae70cbb4596db4af}{writeitemtxt}} (this, str, form, advance)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a94187e504a2d61ed06c891f18cab95e4}{writearraytxt}} (this, str, form, advance, number)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a35a5634d3290863e76dddffcf9ac63e2}{writearray2txt}} (this, R)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a1b72d4facdf945b9ab5d8cf747100c96}{writetrimtxt}} (this, S)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a01a3ab096e4a99267bda3254c773e55b}{writeinlinetrim}} (this, string)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a1917cefee39a500fd5987b5165c97d8a}{readarray2txt}} (this, R, OK)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a66242f0b2d2b3f96d182f76f5e616c7d}{readitemtxt}} (this, R, OK)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a580904418c96464193ec145fd077c14b}{readarraytxt}} (this, R, n, OK)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ade8cd999a137d0402f901977ef1441c0}{readstringtxt}} (this, S, OK)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a0c8c6f2ca823e9e6d8a31d4002347730}{writeformat}} (this, formatst, i1, i2, i3, i4, i5, i6, i7, i8)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_ae11b16645a03a608941045fd5b9d2d8a}{topcommentline}} (aname)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_ae232e4522b4ac06686734f7d1d457d21}{lasttopcomment}} (aname)
+\item 
+integer function \mbox{\hyperlink{namespacefileutils_aef4950c08afd7c3cd6edffdb879a81f3}{txtfilecolumns}} (aname)
+\item 
+integer function \mbox{\hyperlink{namespacefileutils_a2b9938e7b58f8d85091546603d9e8f08}{txtfilelines}} (aname)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_ae3e1c820dd72fbdae478ed44d5cd065c}{lastfileline}} (aname)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_a325f66a61f2de7872003adf25ec2bfbd}{charisslash}} (C)
+\item 
+logical function \mbox{\hyperlink{namespacefileutils_a89b6c0a1ef1dc72e17a37f50a71a98ed}{isfullpath}} (aname)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_a5debf7f081524e507253598ba943ad1a}{extractfilepath}} (aname)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_a58b75841484f583d4f7da47c8fa217b6}{extractfileext}} (aname)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_a3a05468f7b2b38570ebb0f21256d2bfb}{extractfilename}} (aname, no\+\_\+ext, all\+\_\+ext)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_a54603adc7cf7864b6f4fe0e3d2b951d3}{changefileext}} (aname, ext)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_a61ab2a304f35a84f39731548b11393a2}{checktrailingslash}} (aname)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacefileutils_abc59cd6627541557f05e51e8571b77d6}{file\+\_\+join}} (path, aname)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a4123c8130fff81627f5a0bdd7674d6f7}{deletefile}} (aname)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ab6b6b5446754f42206e21485cb75e539}{readtextvector}} (aname, vec, n)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_abd621ad851fccd7a5f79146e2841c380}{writetextvector}} (aname, vec, n, fmt)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a9620c143afd6e00aa410fb9e0f5bad25}{writetextmatrix}} (aname, mat, m, n, fmt)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_a34de05bb4524587b63bb0eb4bebd6e4a}{readtextmatrix}} (aname, mat, inm, inn)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_aefd4b6f83e21fff9ab97894279daaecb}{loadtxt\+\_\+2d}} (aname, mat, m, n, comment)
+\item 
+subroutine \mbox{\hyperlink{namespacefileutils_ac5c5aa9cef807fcc118234407f98b422}{loadtxt\+\_\+1d}} (aname, vec, n, comment)
+\item 
+type(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}}) function \mbox{\hyperlink{namespacefileutils_a64381cf183dd4f3ab198ebe7d87b1745}{createtextfile}} (fname)
+\item 
+type(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}}) function \mbox{\hyperlink{namespacefileutils_a12160238f4fcdecaed130c680db7405a}{opentextfile}} (fname)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}{file\+\_\+size\+\_\+int}} = K\+I\+ND(I\+N\+T64)
+\item 
+type(\mbox{\hyperlink{structfileutils_1_1tfile}{tfile}}), save, public \mbox{\hyperlink{namespacefileutils_a7a95a2141243385ca3ee3909016380ab}{file}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacefileutils_a54603adc7cf7864b6f4fe0e3d2b951d3}\label{namespacefileutils_a54603adc7cf7864b6f4fe0e3d2b951d3}} 
+\index{fileutils@{fileutils}!changefileext@{changefileext}}
+\index{changefileext@{changefileext}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{changefileext()}{changefileext()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::changefileext (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{character(len=$\ast$), intent(in)}]{ext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a325f66a61f2de7872003adf25ec2bfbd}\label{namespacefileutils_a325f66a61f2de7872003adf25ec2bfbd}} 
+\index{fileutils@{fileutils}!charisslash@{charisslash}}
+\index{charisslash@{charisslash}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{charisslash()}{charisslash()}}
+{\footnotesize\ttfamily logical function fileutils\+::charisslash (\begin{DoxyParamCaption}\item[{character, intent(in)}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by checktrailingslash(), extractfileext(), extractfilename(), extractfilepath(), and isfullpath().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacefileutils_a325f66a61f2de7872003adf25ec2bfbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_af19fea352f8dfa2014baece1a62940f4}\label{namespacefileutils_af19fea352f8dfa2014baece1a62940f4}} 
+\index{fileutils@{fileutils}!checkopen@{checkopen}}
+\index{checkopen@{checkopen}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{checkopen()}{checkopen()}}
+{\footnotesize\ttfamily subroutine fileutils\+::checkopen (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{logical, intent(in), optional}]{for\+Write }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacefileutils_af19fea352f8dfa2014baece1a62940f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a61ab2a304f35a84f39731548b11393a2}\label{namespacefileutils_a61ab2a304f35a84f39731548b11393a2}} 
+\index{fileutils@{fileutils}!checktrailingslash@{checktrailingslash}}
+\index{checktrailingslash@{checktrailingslash}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{checktrailingslash()}{checktrailingslash()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::checktrailingslash (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References charisslash().
+
+
+
+Referenced by file\+\_\+join().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacefileutils_a61ab2a304f35a84f39731548b11393a2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacefileutils_a61ab2a304f35a84f39731548b11393a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a91600ec19776dc37a388c71d74c6e0bf}\label{namespacefileutils_a91600ec19776dc37a388c71d74c6e0bf}} 
+\index{fileutils@{fileutils}!columns@{columns}}
+\index{columns@{columns}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{columns()}{columns()}}
+{\footnotesize\ttfamily integer function fileutils\+::columns (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References file.
+
+\mbox{\Hypertarget{namespacefileutils_a40850ce0c16a35137a51f9e4316d2599}\label{namespacefileutils_a40850ce0c16a35137a51f9e4316d2599}} 
+\index{fileutils@{fileutils}!createfile@{createfile}}
+\index{createfile@{createfile}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{createfile()}{createfile()}}
+{\footnotesize\ttfamily subroutine fileutils\+::createfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{character(len=$\ast$), intent(in), optional}]{errormsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ae16c8e138a245fc238bc5e6d29b3415b}\label{namespacefileutils_ae16c8e138a245fc238bc5e6d29b3415b}} 
+\index{fileutils@{fileutils}!createopenfile@{createopenfile}}
+\index{createopenfile@{createopenfile}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{createopenfile()}{createopenfile()}}
+{\footnotesize\ttfamily subroutine fileutils\+::createopenfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{logical, intent(in), optional}]{append,  }\item[{character(len=$\ast$), intent(in), optional}]{errormsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a64381cf183dd4f3ab198ebe7d87b1745}\label{namespacefileutils_a64381cf183dd4f3ab198ebe7d87b1745}} 
+\index{fileutils@{fileutils}!createtextfile@{createtextfile}}
+\index{createtextfile@{createtextfile}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{createtextfile()}{createtextfile()}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}}) function fileutils\+::createtextfile (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a8114041129cdfa75aa9d0c0195ff8da1}\label{namespacefileutils_a8114041129cdfa75aa9d0c0195ff8da1}} 
+\index{fileutils@{fileutils}!defaultadvance@{defaultadvance}}
+\index{defaultadvance@{defaultadvance}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{defaultadvance()}{defaultadvance()}}
+{\footnotesize\ttfamily character(3) function fileutils\+::defaultadvance (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{logical, intent(in), optional}]{advance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a4123c8130fff81627f5a0bdd7674d6f7}\label{namespacefileutils_a4123c8130fff81627f5a0bdd7674d6f7}} 
+\index{fileutils@{fileutils}!deletefile@{deletefile}}
+\index{deletefile@{deletefile}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{deletefile()}{deletefile()}}
+{\footnotesize\ttfamily subroutine fileutils\+::deletefile (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References file, and fileexists().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{namespacefileutils_a4123c8130fff81627f5a0bdd7674d6f7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_ad8e0926f0aaad2fd9464ad5e4bc01db0}\label{namespacefileutils_ad8e0926f0aaad2fd9464ad5e4bc01db0}} 
+\index{fileutils@{fileutils}!error@{error}}
+\index{error@{error}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily subroutine fileutils\+::error (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{msg,  }\item[{character(len=$\ast$), intent(in), optional}]{errormsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References mpiutils\+::mpistop().
+
+
+
+Referenced by iniobjects\+::ini\+\_\+open(), interpolation\+::tinterpgrid2d\+\_\+value(), interpolation\+::tlogregularcubicspline\+\_\+derivative(), interpolation\+::tlogregularcubicspline\+\_\+value(), interpolation\+::tspline1d\+\_\+derivative(), and interpolation\+::tspline1d\+\_\+value().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{namespacefileutils_ad8e0926f0aaad2fd9464ad5e4bc01db0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacefileutils_ad8e0926f0aaad2fd9464ad5e4bc01db0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a58b75841484f583d4f7da47c8fa217b6}\label{namespacefileutils_a58b75841484f583d4f7da47c8fa217b6}} 
+\index{fileutils@{fileutils}!extractfileext@{extractfileext}}
+\index{extractfileext@{extractfileext}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{extractfileext()}{extractfileext()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::extractfileext (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References charisslash().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacefileutils_a58b75841484f583d4f7da47c8fa217b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a3a05468f7b2b38570ebb0f21256d2bfb}\label{namespacefileutils_a3a05468f7b2b38570ebb0f21256d2bfb}} 
+\index{fileutils@{fileutils}!extractfilename@{extractfilename}}
+\index{extractfilename@{extractfilename}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{extractfilename()}{extractfilename()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::extractfilename (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{logical, intent(in), optional}]{no\+\_\+ext,  }\item[{logical, intent(in), optional}]{all\+\_\+ext }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References charisslash(), and miscutils\+::defaultfalse().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacefileutils_a3a05468f7b2b38570ebb0f21256d2bfb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a5debf7f081524e507253598ba943ad1a}\label{namespacefileutils_a5debf7f081524e507253598ba943ad1a}} 
+\index{fileutils@{fileutils}!extractfilepath@{extractfilepath}}
+\index{extractfilepath@{extractfilepath}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{extractfilepath()}{extractfilepath()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::extractfilepath (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References charisslash().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespacefileutils_a5debf7f081524e507253598ba943ad1a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_abc59cd6627541557f05e51e8571b77d6}\label{namespacefileutils_abc59cd6627541557f05e51e8571b77d6}} 
+\index{fileutils@{fileutils}!file\+\_\+join@{file\+\_\+join}}
+\index{file\+\_\+join@{file\+\_\+join}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{file\+\_\+join()}{file\_join()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::file\+\_\+join (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{path,  }\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References checktrailingslash().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacefileutils_abc59cd6627541557f05e51e8571b77d6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a7eed5e57dbe4803901c5cb2d33f32e66}\label{namespacefileutils_a7eed5e57dbe4803901c5cb2d33f32e66}} 
+\index{fileutils@{fileutils}!fileexists@{fileexists}}
+\index{fileexists@{fileexists}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{fileexists()}{fileexists()}}
+{\footnotesize\ttfamily logical function fileutils\+::fileexists (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References file.
+
+
+
+Referenced by deletefile(), and tfilestream\+\_\+openfile().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacefileutils_a7eed5e57dbe4803901c5cb2d33f32e66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a7e3025ea32fc9f426d78cd5dab68e470}\label{namespacefileutils_a7e3025ea32fc9f426d78cd5dab68e470}} 
+\index{fileutils@{fileutils}!filesize@{filesize}}
+\index{filesize@{filesize}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{filesize()}{filesize()}}
+{\footnotesize\ttfamily integer(\mbox{\hyperlink{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}{file\+\_\+size\+\_\+int}}) function fileutils\+::filesize (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References file.
+
+\mbox{\Hypertarget{namespacefileutils_a89b6c0a1ef1dc72e17a37f50a71a98ed}\label{namespacefileutils_a89b6c0a1ef1dc72e17a37f50a71a98ed}} 
+\index{fileutils@{fileutils}!isfullpath@{isfullpath}}
+\index{isfullpath@{isfullpath}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{isfullpath()}{isfullpath()}}
+{\footnotesize\ttfamily logical function fileutils\+::isfullpath (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References charisslash().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacefileutils_a89b6c0a1ef1dc72e17a37f50a71a98ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_ae3e1c820dd72fbdae478ed44d5cd065c}\label{namespacefileutils_ae3e1c820dd72fbdae478ed44d5cd065c}} 
+\index{fileutils@{fileutils}!lastfileline@{lastfileline}}
+\index{lastfileline@{lastfileline}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{lastfileline()}{lastfileline()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::lastfileline (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ae232e4522b4ac06686734f7d1d457d21}\label{namespacefileutils_ae232e4522b4ac06686734f7d1d457d21}} 
+\index{fileutils@{fileutils}!lasttopcomment@{lasttopcomment}}
+\index{lasttopcomment@{lasttopcomment}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{lasttopcomment()}{lasttopcomment()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::lasttopcomment (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a55dce72f20c256d70de9529936f7ebd8}\label{namespacefileutils_a55dce72f20c256d70de9529936f7ebd8}} 
+\index{fileutils@{fileutils}!lines@{lines}}
+\index{lines@{lines}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{lines()}{lines()}}
+{\footnotesize\ttfamily integer function fileutils\+::lines (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{logical, intent(in), optional}]{nocomments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaulttrue().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{namespacefileutils_a55dce72f20c256d70de9529936f7ebd8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_ac5c5aa9cef807fcc118234407f98b422}\label{namespacefileutils_ac5c5aa9cef807fcc118234407f98b422}} 
+\index{fileutils@{fileutils}!loadtxt\+\_\+1d@{loadtxt\+\_\+1d}}
+\index{loadtxt\+\_\+1d@{loadtxt\+\_\+1d}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{loadtxt\+\_\+1d()}{loadtxt\_1d()}}
+{\footnotesize\ttfamily subroutine fileutils\+::loadtxt\+\_\+1d (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(kind(1.d0)), dimension(\+:), allocatable}]{vec,  }\item[{integer, intent(out), optional}]{n,  }\item[{character(len=\+:), intent(out), optional, allocatable}]{comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfile\+::loadtxt().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacefileutils_ac5c5aa9cef807fcc118234407f98b422_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_aefd4b6f83e21fff9ab97894279daaecb}\label{namespacefileutils_aefd4b6f83e21fff9ab97894279daaecb}} 
+\index{fileutils@{fileutils}!loadtxt\+\_\+2d@{loadtxt\+\_\+2d}}
+\index{loadtxt\+\_\+2d@{loadtxt\+\_\+2d}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{loadtxt\+\_\+2d()}{loadtxt\_2d()}}
+{\footnotesize\ttfamily subroutine fileutils\+::loadtxt\+\_\+2d (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(kind(1.d0)), dimension(\+:,\+:), allocatable}]{mat,  }\item[{integer, intent(out), optional}]{m,  }\item[{integer, intent(out), optional}]{n,  }\item[{character(len=\+:), intent(out), optional, allocatable}]{comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfile\+::loadtxt().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacefileutils_aefd4b6f83e21fff9ab97894279daaecb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_ae2a0937c572a3a07540ac002f8a620cd}\label{namespacefileutils_ae2a0937c572a3a07540ac002f8a620cd}} 
+\index{fileutils@{fileutils}!newline@{newline}}
+\index{newline@{newline}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{newline()}{newline()}}
+{\footnotesize\ttfamily subroutine fileutils\+::newline (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ab874a71428e21012e34c256de9cf461d}\label{namespacefileutils_ab874a71428e21012e34c256de9cf461d}} 
+\index{fileutils@{fileutils}!opened@{opened}}
+\index{opened@{opened}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{opened()}{opened()}}
+{\footnotesize\ttfamily logical function fileutils\+::opened (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a12160238f4fcdecaed130c680db7405a}\label{namespacefileutils_a12160238f4fcdecaed130c680db7405a}} 
+\index{fileutils@{fileutils}!opentextfile@{opentextfile}}
+\index{opentextfile@{opentextfile}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{opentextfile()}{opentextfile()}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}}) function fileutils\+::opentextfile (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a77d1826f1c337fc426cfbc7a8d2b642a}\label{namespacefileutils_a77d1826f1c337fc426cfbc7a8d2b642a}} 
+\index{fileutils@{fileutils}!readarray@{readarray}}
+\index{readarray@{readarray}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readarray()}{readarray()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readarray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(1\+:)}]{R,  }\item[{integer, intent(in), optional}]{n,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{namespacefileutils_a77d1826f1c337fc426cfbc7a8d2b642a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a1decdb16477082bdf6b48d9feb1accf7}\label{namespacefileutils_a1decdb16477082bdf6b48d9feb1accf7}} 
+\index{fileutils@{fileutils}!readarray2@{readarray2}}
+\index{readarray2@{readarray2}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readarray2()}{readarray2()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readarray2 (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(\+:,\+:)}]{R,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{namespacefileutils_a1decdb16477082bdf6b48d9feb1accf7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_abe905cf8167e2a6f36f2ddfcec24b6ad}\label{namespacefileutils_abe905cf8167e2a6f36f2ddfcec24b6ad}} 
+\index{fileutils@{fileutils}!readarray2func@{readarray2func}}
+\index{readarray2func@{readarray2func}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readarray2func()}{readarray2func()}}
+{\footnotesize\ttfamily logical function fileutils\+::readarray2func (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(\+:,\+:)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readitem().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{namespacefileutils_abe905cf8167e2a6f36f2ddfcec24b6ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a1917cefee39a500fd5987b5165c97d8a}\label{namespacefileutils_a1917cefee39a500fd5987b5165c97d8a}} 
+\index{fileutils@{fileutils}!readarray2txt@{readarray2txt}}
+\index{readarray2txt@{readarray2txt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readarray2txt()}{readarray2txt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readarray2txt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), dimension(\+:,\+:)}]{R,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a25c117441044cad4593a6e88245d59d2}\label{namespacefileutils_a25c117441044cad4593a6e88245d59d2}} 
+\index{fileutils@{fileutils}!readarrayfunc@{readarrayfunc}}
+\index{readarrayfunc@{readarrayfunc}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readarrayfunc()}{readarrayfunc()}}
+{\footnotesize\ttfamily logical function fileutils\+::readarrayfunc (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(1\+:)}]{R,  }\item[{integer, intent(in), optional}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readitem().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacefileutils_a25c117441044cad4593a6e88245d59d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a580904418c96464193ec145fd077c14b}\label{namespacefileutils_a580904418c96464193ec145fd077c14b}} 
+\index{fileutils@{fileutils}!readarraytxt@{readarraytxt}}
+\index{readarraytxt@{readarraytxt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readarraytxt()}{readarraytxt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readarraytxt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), dimension(1\+:)}]{R,  }\item[{integer, intent(in), optional}]{n,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a34cb445c075820131b56989e563c773c}\label{namespacefileutils_a34cb445c075820131b56989e563c773c}} 
+\index{fileutils@{fileutils}!readitemfunc@{readitemfunc}}
+\index{readitemfunc@{readitemfunc}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readitemfunc()}{readitemfunc()}}
+{\footnotesize\ttfamily logical function fileutils\+::readitemfunc (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), intent(out)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readitem().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespacefileutils_a34cb445c075820131b56989e563c773c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_add4cb070c36870fe26122c8b1802894b}\label{namespacefileutils_add4cb070c36870fe26122c8b1802894b}} 
+\index{fileutils@{fileutils}!readitems@{readitems}}
+\index{readitems@{readitems}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readitems()}{readitems()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readitems (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$)}]{S1,  }\item[{class($\ast$), optional}]{S2,  }\item[{class($\ast$), optional}]{S3,  }\item[{class($\ast$), optional}]{S4,  }\item[{class($\ast$), optional}]{S5,  }\item[{class($\ast$), optional}]{S6,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaulttrue().
+
+
+
+Referenced by fileutils\+::tfilestream\+::read().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacefileutils_add4cb070c36870fe26122c8b1802894b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacefileutils_add4cb070c36870fe26122c8b1802894b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a520a8d58db5cabd4d1fcaf5fbf9eeb94}\label{namespacefileutils_a520a8d58db5cabd4d1fcaf5fbf9eeb94}} 
+\index{fileutils@{fileutils}!readitemsub@{readitemsub}}
+\index{readitemsub@{readitemsub}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readitemsub()}{readitemsub()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readitemsub (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), intent(out)}]{R,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a66242f0b2d2b3f96d182f76f5e616c7d}\label{namespacefileutils_a66242f0b2d2b3f96d182f76f5e616c7d}} 
+\index{fileutils@{fileutils}!readitemtxt@{readitemtxt}}
+\index{readitemtxt@{readitemtxt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readitemtxt()}{readitemtxt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readitemtxt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), intent(out)}]{R,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_affa8ee4edc46a1fcbc9da79877e80724}\label{namespacefileutils_affa8ee4edc46a1fcbc9da79877e80724}} 
+\index{fileutils@{fileutils}!readline@{readline}}
+\index{readline@{readline}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily logical function fileutils\+::readline (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=\+:), optional, allocatable}]{In\+Line,  }\item[{logical, intent(in), optional}]{trimmed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References set().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{namespacefileutils_affa8ee4edc46a1fcbc9da79877e80724_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a8adc28c1f4192183517beb41ccec4287}\label{namespacefileutils_a8adc28c1f4192183517beb41ccec4287}} 
+\index{fileutils@{fileutils}!readlineskipemptyandcomments@{readlineskipemptyandcomments}}
+\index{readlineskipemptyandcomments@{readlineskipemptyandcomments}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readlineskipemptyandcomments()}{readlineskipemptyandcomments()}}
+{\footnotesize\ttfamily logical function fileutils\+::readlineskipemptyandcomments (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=\+:), allocatable}]{In\+Line,  }\item[{character(len=\+:), intent(inout), optional, allocatable}]{comment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ada6e0a7d8b00d257b6902c5741d737bd}\label{namespacefileutils_ada6e0a7d8b00d257b6902c5741d737bd}} 
+\index{fileutils@{fileutils}!readnextcontentline@{readnextcontentline}}
+\index{readnextcontentline@{readnextcontentline}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readnextcontentline()}{readnextcontentline()}}
+{\footnotesize\ttfamily logical function fileutils\+::readnextcontentline (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{filename,  }\item[{character(len=\+:), intent(out), allocatable}]{In\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a0057e2b91f8c173074b68aadbe1d3e92}\label{namespacefileutils_a0057e2b91f8c173074b68aadbe1d3e92}} 
+\index{fileutils@{fileutils}!readsizedarray2\+\_\+d@{readsizedarray2\+\_\+d}}
+\index{readsizedarray2\+\_\+d@{readsizedarray2\+\_\+d}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readsizedarray2\+\_\+d()}{readsizedarray2\_d()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readsizedarray2\+\_\+d (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{double precision, dimension(\+:,\+:), allocatable}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readsizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacefileutils_a0057e2b91f8c173074b68aadbe1d3e92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_acd15bd801738b538b71b3216aaab95cc}\label{namespacefileutils_acd15bd801738b538b71b3216aaab95cc}} 
+\index{fileutils@{fileutils}!readsizedarray2\+\_\+i@{readsizedarray2\+\_\+i}}
+\index{readsizedarray2\+\_\+i@{readsizedarray2\+\_\+i}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readsizedarray2\+\_\+i()}{readsizedarray2\_i()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readsizedarray2\+\_\+i (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{integer, dimension(\+:,\+:), allocatable}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readsizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespacefileutils_acd15bd801738b538b71b3216aaab95cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a7fd8e6d80f0ccadb1d773d86d8871816}\label{namespacefileutils_a7fd8e6d80f0ccadb1d773d86d8871816}} 
+\index{fileutils@{fileutils}!readsizedarray2\+\_\+r@{readsizedarray2\+\_\+r}}
+\index{readsizedarray2\+\_\+r@{readsizedarray2\+\_\+r}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readsizedarray2\+\_\+r()}{readsizedarray2\_r()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readsizedarray2\+\_\+r (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{real, dimension(\+:,\+:), allocatable}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readsizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespacefileutils_a7fd8e6d80f0ccadb1d773d86d8871816_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_ab663b9fbd43f12bd0ad8fdda4c1ff85e}\label{namespacefileutils_ab663b9fbd43f12bd0ad8fdda4c1ff85e}} 
+\index{fileutils@{fileutils}!readsizedarray\+\_\+d@{readsizedarray\+\_\+d}}
+\index{readsizedarray\+\_\+d@{readsizedarray\+\_\+d}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readsizedarray\+\_\+d()}{readsizedarray\_d()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readsizedarray\+\_\+d (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{double precision, dimension(\+:), allocatable}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readsizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespacefileutils_ab663b9fbd43f12bd0ad8fdda4c1ff85e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a767a096f95f5ccbb1c02deb7d926032b}\label{namespacefileutils_a767a096f95f5ccbb1c02deb7d926032b}} 
+\index{fileutils@{fileutils}!readsizedarray\+\_\+i@{readsizedarray\+\_\+i}}
+\index{readsizedarray\+\_\+i@{readsizedarray\+\_\+i}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readsizedarray\+\_\+i()}{readsizedarray\_i()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readsizedarray\+\_\+i (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{integer, dimension(\+:), allocatable}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readsizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacefileutils_a767a096f95f5ccbb1c02deb7d926032b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a9d5d97346bddaa16024b5482cc1ce7cb}\label{namespacefileutils_a9d5d97346bddaa16024b5482cc1ce7cb}} 
+\index{fileutils@{fileutils}!readsizedarray\+\_\+r@{readsizedarray\+\_\+r}}
+\index{readsizedarray\+\_\+r@{readsizedarray\+\_\+r}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readsizedarray\+\_\+r()}{readsizedarray\_r()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readsizedarray\+\_\+r (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{real, dimension(\+:), allocatable}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readsizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacefileutils_a9d5d97346bddaa16024b5482cc1ce7cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a8b83c2f06ad952435c760ce789a1b01e}\label{namespacefileutils_a8b83c2f06ad952435c760ce789a1b01e}} 
+\index{fileutils@{fileutils}!readstringfunc@{readstringfunc}}
+\index{readstringfunc@{readstringfunc}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readstringfunc()}{readstringfunc()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::readstringfunc (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readstringitem().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{namespacefileutils_a8b83c2f06ad952435c760ce789a1b01e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a436d1ea1bb13200971bcbef4e268f503}\label{namespacefileutils_a436d1ea1bb13200971bcbef4e268f503}} 
+\index{fileutils@{fileutils}!readstringsub@{readstringsub}}
+\index{readstringsub@{readstringsub}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readstringsub()}{readstringsub()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readstringsub (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{character(len=\+:), allocatable}]{S,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::readstring().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacefileutils_a436d1ea1bb13200971bcbef4e268f503_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_ade8cd999a137d0402f901977ef1441c0}\label{namespacefileutils_ade8cd999a137d0402f901977ef1441c0}} 
+\index{fileutils@{fileutils}!readstringtxt@{readstringtxt}}
+\index{readstringtxt@{readstringtxt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readstringtxt()}{readstringtxt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readstringtxt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=\+:), allocatable}]{S,  }\item[{logical, optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a34de05bb4524587b63bb0eb4bebd6e4a}\label{namespacefileutils_a34de05bb4524587b63bb0eb4bebd6e4a}} 
+\index{fileutils@{fileutils}!readtextmatrix@{readtextmatrix}}
+\index{readtextmatrix@{readtextmatrix}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readtextmatrix()}{readtextmatrix()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readtextmatrix (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{real(kind(1.d0)), dimension(\+:,\+:), intent(out)}]{mat,  }\item[{integer, intent(in), optional}]{inm,  }\item[{integer, intent(in), optional}]{inn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ab6b6b5446754f42206e21485cb75e539}\label{namespacefileutils_ab6b6b5446754f42206e21485cb75e539}} 
+\index{fileutils@{fileutils}!readtextvector@{readtextvector}}
+\index{readtextvector@{readtextvector}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{readtextvector()}{readtextvector()}}
+{\footnotesize\ttfamily subroutine fileutils\+::readtextvector (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{class($\ast$), dimension(n), intent(out)}]{vec,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ab29c958b3ef2154cee501206eeeab071}\label{namespacefileutils_ab29c958b3ef2154cee501206eeeab071}} 
+\index{fileutils@{fileutils}!setdefaultmodes@{setdefaultmodes}}
+\index{setdefaultmodes@{setdefaultmodes}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{setdefaultmodes()}{setdefaultmodes()}}
+{\footnotesize\ttfamily subroutine fileutils\+::setdefaultmodes (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ae9b000065603bdcdab84740b77c43983}\label{namespacefileutils_ae9b000065603bdcdab84740b77c43983}} 
+\index{fileutils@{fileutils}!skiplines@{skiplines}}
+\index{skiplines@{skiplines}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{skiplines()}{skiplines()}}
+{\footnotesize\ttfamily logical function fileutils\+::skiplines (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{integer, intent(in)}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a92f8878926ad7488d2cdaf82a8d09d6a}\label{namespacefileutils_a92f8878926ad7488d2cdaf82a8d09d6a}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+close@{tfilestream\+\_\+close}}
+\index{tfilestream\+\_\+close@{tfilestream\+\_\+close}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+close()}{tfilestream\_close()}}
+{\footnotesize\ttfamily subroutine fileutils\+::tfilestream\+\_\+close (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_aed117908fc58fe14559073780dce043b}\label{namespacefileutils_aed117908fc58fe14559073780dce043b}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+flush@{tfilestream\+\_\+flush}}
+\index{tfilestream\+\_\+flush@{tfilestream\+\_\+flush}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+flush()}{tfilestream\_flush()}}
+{\footnotesize\ttfamily subroutine fileutils\+::tfilestream\+\_\+flush (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a5c9784aa40b01ea30ef204e7aeb9db9e}\label{namespacefileutils_a5c9784aa40b01ea30ef204e7aeb9db9e}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+free@{tfilestream\+\_\+free}}
+\index{tfilestream\+\_\+free@{tfilestream\+\_\+free}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+free()}{tfilestream\_free()}}
+{\footnotesize\ttfamily subroutine fileutils\+::tfilestream\+\_\+free (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::tfilestream\+\_\+free().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{namespacefileutils_a5c9784aa40b01ea30ef204e7aeb9db9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a9b6ffe40088ad819c1e793b2bc91b01e}\label{namespacefileutils_a9b6ffe40088ad819c1e793b2bc91b01e}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+open@{tfilestream\+\_\+open}}
+\index{tfilestream\+\_\+open@{tfilestream\+\_\+open}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+open()}{tfilestream\_open()}}
+{\footnotesize\ttfamily subroutine fileutils\+::tfilestream\+\_\+open (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{character(len=$\ast$), intent(in), optional}]{errormsg,  }\item[{integer, intent(out), optional}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ae08cbb1a056e184eeab9c6a6a2181f24}\label{namespacefileutils_ae08cbb1a056e184eeab9c6a6a2181f24}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+openfile@{tfilestream\+\_\+openfile}}
+\index{tfilestream\+\_\+openfile@{tfilestream\+\_\+openfile}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+openfile()}{tfilestream\_openfile()}}
+{\footnotesize\ttfamily subroutine fileutils\+::tfilestream\+\_\+openfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{character(len=$\ast$), intent(in), optional}]{mode,  }\item[{character(len=$\ast$), intent(in), optional}]{errormsg,  }\item[{logical, intent(in), optional}]{forwrite,  }\item[{logical, intent(in), optional}]{append,  }\item[{integer, intent(out), optional}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse(), file, and fileexists().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacefileutils_ae08cbb1a056e184eeab9c6a6a2181f24_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a3ee651544233289579c63ab2ffa3f6ce}\label{namespacefileutils_a3ee651544233289579c63ab2ffa3f6ce}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+position@{tfilestream\+\_\+position}}
+\index{tfilestream\+\_\+position@{tfilestream\+\_\+position}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+position()}{tfilestream\_position()}}
+{\footnotesize\ttfamily integer(\mbox{\hyperlink{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}{file\+\_\+size\+\_\+int}}) function fileutils\+::tfilestream\+\_\+position (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a0c1819d96b0ed98d4ae2ebd441d5810f}\label{namespacefileutils_a0c1819d96b0ed98d4ae2ebd441d5810f}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+rewind@{tfilestream\+\_\+rewind}}
+\index{tfilestream\+\_\+rewind@{tfilestream\+\_\+rewind}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+rewind()}{tfilestream\_rewind()}}
+{\footnotesize\ttfamily subroutine fileutils\+::tfilestream\+\_\+rewind (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ab4722eb4f85ef9a9326342dfcad3f0cc}\label{namespacefileutils_ab4722eb4f85ef9a9326342dfcad3f0cc}} 
+\index{fileutils@{fileutils}!tfilestream\+\_\+size@{tfilestream\+\_\+size}}
+\index{tfilestream\+\_\+size@{tfilestream\+\_\+size}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tfilestream\+\_\+size()}{tfilestream\_size()}}
+{\footnotesize\ttfamily integer(\mbox{\hyperlink{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}{file\+\_\+size\+\_\+int}}) function fileutils\+::tfilestream\+\_\+size (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References file.
+
+\mbox{\Hypertarget{namespacefileutils_ae11b16645a03a608941045fd5b9d2d8a}\label{namespacefileutils_ae11b16645a03a608941045fd5b9d2d8a}} 
+\index{fileutils@{fileutils}!topcommentline@{topcommentline}}
+\index{topcommentline@{topcommentline}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{topcommentline()}{topcommentline()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable fileutils\+::topcommentline (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_aae5dfea33ac7521267fc2bd055c532e7}\label{namespacefileutils_aae5dfea33ac7521267fc2bd055c532e7}} 
+\index{fileutils@{fileutils}!tsequentialfile\+\_\+setdefaultmodes@{tsequentialfile\+\_\+setdefaultmodes}}
+\index{tsequentialfile\+\_\+setdefaultmodes@{tsequentialfile\+\_\+setdefaultmodes}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{tsequentialfile\+\_\+setdefaultmodes()}{tsequentialfile\_setdefaultmodes()}}
+{\footnotesize\ttfamily subroutine fileutils\+::tsequentialfile\+\_\+setdefaultmodes (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tsequentialfile}{tsequentialfile}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a40d911d4c6f3119ad169ba092b5d8131}\label{namespacefileutils_a40d911d4c6f3119ad169ba092b5d8131}} 
+\index{fileutils@{fileutils}!ttextfile\+\_\+setdefaultmodes@{ttextfile\+\_\+setdefaultmodes}}
+\index{ttextfile\+\_\+setdefaultmodes@{ttextfile\+\_\+setdefaultmodes}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{ttextfile\+\_\+setdefaultmodes()}{ttextfile\_setdefaultmodes()}}
+{\footnotesize\ttfamily subroutine fileutils\+::ttextfile\+\_\+setdefaultmodes (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a8df98772000e2733576f361e197fa37a}\label{namespacefileutils_a8df98772000e2733576f361e197fa37a}} 
+\index{fileutils@{fileutils}!ttextfile\+\_\+writearray@{ttextfile\+\_\+writearray}}
+\index{ttextfile\+\_\+writearray@{ttextfile\+\_\+writearray}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{ttextfile\+\_\+writearray()}{ttextfile\_writearray()}}
+{\footnotesize\ttfamily subroutine fileutils\+::ttextfile\+\_\+writearray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), dimension(\+:), intent(in)}]{R,  }\item[{integer, intent(in), optional}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a0b6a6b2a921c679e8226e4c2b11775d0}\label{namespacefileutils_a0b6a6b2a921c679e8226e4c2b11775d0}} 
+\index{fileutils@{fileutils}!ttextfile\+\_\+writeitem@{ttextfile\+\_\+writeitem}}
+\index{ttextfile\+\_\+writeitem@{ttextfile\+\_\+writeitem}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{ttextfile\+\_\+writeitem()}{ttextfile\_writeitem()}}
+{\footnotesize\ttfamily subroutine fileutils\+::ttextfile\+\_\+writeitem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a8673cc2b2bcfe0639966d2789c1bbade}\label{namespacefileutils_a8673cc2b2bcfe0639966d2789c1bbade}} 
+\index{fileutils@{fileutils}!ttextfile\+\_\+writeoneandarray@{ttextfile\+\_\+writeoneandarray}}
+\index{ttextfile\+\_\+writeoneandarray@{ttextfile\+\_\+writeoneandarray}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{ttextfile\+\_\+writeoneandarray()}{ttextfile\_writeoneandarray()}}
+{\footnotesize\ttfamily subroutine fileutils\+::ttextfile\+\_\+writeoneandarray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), intent(in)}]{I,  }\item[{class($\ast$), dimension(\+:), intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a704f148cd0ca7af88eec65d167460683}\label{namespacefileutils_a704f148cd0ca7af88eec65d167460683}} 
+\index{fileutils@{fileutils}!txtcolumns@{txtcolumns}}
+\index{txtcolumns@{txtcolumns}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{txtcolumns()}{txtcolumns()}}
+{\footnotesize\ttfamily integer function fileutils\+::txtcolumns (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{In\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_aef4950c08afd7c3cd6edffdb879a81f3}\label{namespacefileutils_aef4950c08afd7c3cd6edffdb879a81f3}} 
+\index{fileutils@{fileutils}!txtfilecolumns@{txtfilecolumns}}
+\index{txtfilecolumns@{txtfilecolumns}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{txtfilecolumns()}{txtfilecolumns()}}
+{\footnotesize\ttfamily integer function fileutils\+::txtfilecolumns (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a2b9938e7b58f8d85091546603d9e8f08}\label{namespacefileutils_a2b9938e7b58f8d85091546603d9e8f08}} 
+\index{fileutils@{fileutils}!txtfilelines@{txtfilelines}}
+\index{txtfilelines@{txtfilelines}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{txtfilelines()}{txtfilelines()}}
+{\footnotesize\ttfamily integer function fileutils\+::txtfilelines (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a16fc3d0615e1fa05eed9d70c7f6c8861}\label{namespacefileutils_a16fc3d0615e1fa05eed9d70c7f6c8861}} 
+\index{fileutils@{fileutils}!txtnumbercolumns@{txtnumbercolumns}}
+\index{txtnumbercolumns@{txtnumbercolumns}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{txtnumbercolumns()}{txtnumbercolumns()}}
+{\footnotesize\ttfamily integer function fileutils\+::txtnumbercolumns (\begin{DoxyParamCaption}\item[{character(len=$\ast$)}]{In\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_af7dad8ef48af586cc127b552cadeb999}\label{namespacefileutils_af7dad8ef48af586cc127b552cadeb999}} 
+\index{fileutils@{fileutils}!writearray@{writearray}}
+\index{writearray@{writearray}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writearray()}{writearray()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writearray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(1\+:), intent(in)}]{R,  }\item[{integer, intent(in), optional}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::write().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacefileutils_af7dad8ef48af586cc127b552cadeb999_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_aa3569bb8cce3d65a6a7e820571bba597}\label{namespacefileutils_aa3569bb8cce3d65a6a7e820571bba597}} 
+\index{fileutils@{fileutils}!writearray2@{writearray2}}
+\index{writearray2@{writearray2}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writearray2()}{writearray2()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writearray2 (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(\+:,\+:), intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::write().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacefileutils_aa3569bb8cce3d65a6a7e820571bba597_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a35a5634d3290863e76dddffcf9ac63e2}\label{namespacefileutils_a35a5634d3290863e76dddffcf9ac63e2}} 
+\index{fileutils@{fileutils}!writearray2txt@{writearray2txt}}
+\index{writearray2txt@{writearray2txt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writearray2txt()}{writearray2txt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writearray2txt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), dimension(\+:,\+:), intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a94187e504a2d61ed06c891f18cab95e4}\label{namespacefileutils_a94187e504a2d61ed06c891f18cab95e4}} 
+\index{fileutils@{fileutils}!writearraytxt@{writearraytxt}}
+\index{writearraytxt@{writearraytxt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writearraytxt()}{writearraytxt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writearraytxt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), dimension(\+:), intent(in)}]{str,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{logical, intent(in), optional}]{advance,  }\item[{integer, intent(in), optional}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a0c8c6f2ca823e9e6d8a31d4002347730}\label{namespacefileutils_a0c8c6f2ca823e9e6d8a31d4002347730}} 
+\index{fileutils@{fileutils}!writeformat@{writeformat}}
+\index{writeformat@{writeformat}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeformat()}{writeformat()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeformat (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{formatst,  }\item[{class($\ast$), intent(in)}]{i1,  }\item[{class($\ast$), intent(in), optional}]{i2,  }\item[{class($\ast$), intent(in), optional}]{i3,  }\item[{class($\ast$), intent(in), optional}]{i4,  }\item[{class($\ast$), intent(in), optional}]{i5,  }\item[{class($\ast$), intent(in), optional}]{i6,  }\item[{class($\ast$), intent(in), optional}]{i7,  }\item[{class($\ast$), intent(in), optional}]{i8 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::formatstring().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacefileutils_a0c8c6f2ca823e9e6d8a31d4002347730_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a421b7722f368ba1dbf80589c8f944804}\label{namespacefileutils_a421b7722f368ba1dbf80589c8f944804}} 
+\index{fileutils@{fileutils}!writeinlinearray@{writeinlinearray}}
+\index{writeinlinearray@{writeinlinearray}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeinlinearray()}{writeinlinearray()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeinlinearray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), dimension(\+:), intent(in)}]{str,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{integer, intent(in), optional}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::ttextfile\+::writeinline().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacefileutils_a421b7722f368ba1dbf80589c8f944804_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_af26bec360e1e147d731d1265d3b3e689}\label{namespacefileutils_af26bec360e1e147d731d1265d3b3e689}} 
+\index{fileutils@{fileutils}!writeinlineitem@{writeinlineitem}}
+\index{writeinlineitem@{writeinlineitem}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeinlineitem()}{writeinlineitem()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeinlineitem (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), intent(in)}]{str,  }\item[{character(len=$\ast$), intent(in), optional}]{form }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::ttextfile\+::writeinline().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacefileutils_af26bec360e1e147d731d1265d3b3e689_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_acb35071046eb5e751ef36740cc5464f9}\label{namespacefileutils_acb35071046eb5e751ef36740cc5464f9}} 
+\index{fileutils@{fileutils}!writeinlineitems@{writeinlineitems}}
+\index{writeinlineitems@{writeinlineitems}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeinlineitems()}{writeinlineitems()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeinlineitems (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), intent(in)}]{S1,  }\item[{class($\ast$), intent(in), optional}]{S2,  }\item[{class($\ast$), intent(in), optional}]{S3,  }\item[{class($\ast$), intent(in), optional}]{S4,  }\item[{class($\ast$), intent(in), optional}]{S5,  }\item[{class($\ast$), intent(in), optional}]{S6 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a01a3ab096e4a99267bda3254c773e55b}\label{namespacefileutils_a01a3ab096e4a99267bda3254c773e55b}} 
+\index{fileutils@{fileutils}!writeinlinetrim@{writeinlinetrim}}
+\index{writeinlinetrim@{writeinlinetrim}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeinlinetrim()}{writeinlinetrim()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeinlinetrim (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a0a2890041ec846715c0990fc468b6be1}\label{namespacefileutils_a0a2890041ec846715c0990fc468b6be1}} 
+\index{fileutils@{fileutils}!writeitems@{writeitems}}
+\index{writeitems@{writeitems}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeitems()}{writeitems()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeitems (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), intent(in)}]{S1,  }\item[{class($\ast$), intent(in), optional}]{S2,  }\item[{class($\ast$), intent(in), optional}]{S3,  }\item[{class($\ast$), intent(in), optional}]{S4,  }\item[{class($\ast$), intent(in), optional}]{S5,  }\item[{class($\ast$), intent(in), optional}]{S6 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::write().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{namespacefileutils_a0a2890041ec846715c0990fc468b6be1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a081a95c89cd56409865919dc2230a9f3}\label{namespacefileutils_a081a95c89cd56409865919dc2230a9f3}} 
+\index{fileutils@{fileutils}!writeitemstxt@{writeitemstxt}}
+\index{writeitemstxt@{writeitemstxt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeitemstxt()}{writeitemstxt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeitemstxt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), intent(in)}]{S1,  }\item[{class($\ast$), intent(in), optional}]{S2,  }\item[{class($\ast$), intent(in), optional}]{S3,  }\item[{class($\ast$), intent(in), optional}]{S4,  }\item[{class($\ast$), intent(in), optional}]{S5,  }\item[{class($\ast$), intent(in), optional}]{S6 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a57cd0a2cbc7978f19baaebb111cdbe1d}\label{namespacefileutils_a57cd0a2cbc7978f19baaebb111cdbe1d}} 
+\index{fileutils@{fileutils}!writeitemsub@{writeitemsub}}
+\index{writeitemsub@{writeitemsub}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeitemsub()}{writeitemsub()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeitemsub (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_ab3c52d3927403448ae70cbb4596db4af}\label{namespacefileutils_ab3c52d3927403448ae70cbb4596db4af}} 
+\index{fileutils@{fileutils}!writeitemtxt@{writeitemtxt}}
+\index{writeitemtxt@{writeitemtxt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeitemtxt()}{writeitemtxt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeitemtxt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{class($\ast$), intent(in)}]{str,  }\item[{character(len=$\ast$), intent(in), optional}]{form,  }\item[{logical, intent(in), optional}]{advance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a4db10f3a8145e0e4d26416a1718a0c13}\label{namespacefileutils_a4db10f3a8145e0e4d26416a1718a0c13}} 
+\index{fileutils@{fileutils}!writeleftaligned@{writeleftaligned}}
+\index{writeleftaligned@{writeleftaligned}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeleftaligned()}{writeleftaligned()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeleftaligned (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=$\ast$)}]{Form,  }\item[{character(len=$\ast$)}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_adf43b426efd6b01f81b673d3db3cd8d8}\label{namespacefileutils_adf43b426efd6b01f81b673d3db3cd8d8}} 
+\index{fileutils@{fileutils}!writeoneandarray@{writeoneandarray}}
+\index{writeoneandarray@{writeoneandarray}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writeoneandarray()}{writeoneandarray()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writeoneandarray (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), intent(in)}]{I,  }\item[{class($\ast$), dimension(\+:), intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::write().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespacefileutils_adf43b426efd6b01f81b673d3db3cd8d8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a416e6d6a5f7a1dfc3da764788ecaac59}\label{namespacefileutils_a416e6d6a5f7a1dfc3da764788ecaac59}} 
+\index{fileutils@{fileutils}!writesizedarray1@{writesizedarray1}}
+\index{writesizedarray1@{writesizedarray1}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writesizedarray1()}{writesizedarray1()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writesizedarray1 (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(1\+:), intent(in)}]{R,  }\item[{integer, intent(in), optional}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::writesizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacefileutils_a416e6d6a5f7a1dfc3da764788ecaac59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_aae72a2f6c28cf65ba7b21cd90f399eeb}\label{namespacefileutils_aae72a2f6c28cf65ba7b21cd90f399eeb}} 
+\index{fileutils@{fileutils}!writesizedarray2@{writesizedarray2}}
+\index{writesizedarray2@{writesizedarray2}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writesizedarray2()}{writesizedarray2()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writesizedarray2 (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{class($\ast$), dimension(\+:,\+:), intent(in)}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfilestream\+::writesizedarray().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacefileutils_aae72a2f6c28cf65ba7b21cd90f399eeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_a9620c143afd6e00aa410fb9e0f5bad25}\label{namespacefileutils_a9620c143afd6e00aa410fb9e0f5bad25}} 
+\index{fileutils@{fileutils}!writetextmatrix@{writetextmatrix}}
+\index{writetextmatrix@{writetextmatrix}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writetextmatrix()}{writetextmatrix()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writetextmatrix (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{class($\ast$), dimension(\+:,\+:), intent(in)}]{mat,  }\item[{integer, intent(in), optional}]{m,  }\item[{integer, intent(in), optional}]{n,  }\item[{character(len=$\ast$), intent(in), optional}]{fmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfile\+::savetxt().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacefileutils_a9620c143afd6e00aa410fb9e0f5bad25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_abd621ad851fccd7a5f79146e2841c380}\label{namespacefileutils_abd621ad851fccd7a5f79146e2841c380}} 
+\index{fileutils@{fileutils}!writetextvector@{writetextvector}}
+\index{writetextvector@{writetextvector}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writetextvector()}{writetextvector()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writetextvector (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in)}]{aname,  }\item[{class($\ast$), dimension(\+:), intent(in)}]{vec,  }\item[{integer, intent(in), optional}]{n,  }\item[{character(len=$\ast$), intent(in), optional}]{fmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by fileutils\+::tfile\+::savetxt().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespacefileutils_abd621ad851fccd7a5f79146e2841c380_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacefileutils_afe12625f20868804aae9ff245b783baf}\label{namespacefileutils_afe12625f20868804aae9ff245b783baf}} 
+\index{fileutils@{fileutils}!writetrim@{writetrim}}
+\index{writetrim@{writetrim}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writetrim()}{writetrim()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writetrim (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1tfilestream}{tfilestream}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacefileutils_a1b72d4facdf945b9ab5d8cf747100c96}\label{namespacefileutils_a1b72d4facdf945b9ab5d8cf747100c96}} 
+\index{fileutils@{fileutils}!writetrimtxt@{writetrimtxt}}
+\index{writetrimtxt@{writetrimtxt}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{writetrimtxt()}{writetrimtxt()}}
+{\footnotesize\ttfamily subroutine fileutils\+::writetrimtxt (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structfileutils_1_1ttextfile}{ttextfile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacefileutils_a7a95a2141243385ca3ee3909016380ab}\label{namespacefileutils_a7a95a2141243385ca3ee3909016380ab}} 
+\index{fileutils@{fileutils}!file@{file}}
+\index{file@{file}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structfileutils_1_1tfile}{tfile}}), save, public fileutils\+::file}
+
+
+
+Referenced by settings\+::checkparamchangef(), cmblikes\+::cmblikes\+\_\+readclarr(), columns(), deletefile(), fileexists(), filesize(), iniobjects\+::ini\+\_\+resolvelinkedfile(), io\+::io\+\_\+readlastchainparams(), io\+::io\+\_\+readparamnames(), io\+::io\+\_\+readproposematrix(), paramnames\+::paramnames\+\_\+init(), cmblikes\+::readbinwindows(), cmblikes\+::readcovmat(), interpolationtests\+::runinterpolationtests(), bk\+\_\+planck\+::tbk\+\_\+planck\+\_\+read\+\_\+bandpass(), tfilestream\+\_\+openfile(), tfilestream\+\_\+size(), interpolation\+::tinterpgrid2d\+\_\+initfrommatrixtextfile(), settings\+::tsettingini\+\_\+readfilename(), settings\+::tsettingini\+\_\+replacedirs(), and objectlists\+::tstringlist\+\_\+readcolumnsgetarray().
+
+\mbox{\Hypertarget{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}\label{namespacefileutils_a334ae57c14956bd4597df7a130f6e8a8}} 
+\index{fileutils@{fileutils}!file\+\_\+size\+\_\+int@{file\+\_\+size\+\_\+int}}
+\index{file\+\_\+size\+\_\+int@{file\+\_\+size\+\_\+int}!fileutils@{fileutils}}
+\subsubsection{\texorpdfstring{file\+\_\+size\+\_\+int}{file\_size\_int}}
+{\footnotesize\ttfamily integer, parameter, public fileutils\+::file\+\_\+size\+\_\+int = K\+I\+ND(I\+N\+T64)}
+

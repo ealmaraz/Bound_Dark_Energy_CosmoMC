@@ -1,0 +1,107 @@
+\hypertarget{structgeneraltypes_1_1tcalculationatparampoint}{}\section{generaltypes\+:\+:tcalculationatparampoint Type Reference}
+\label{structgeneraltypes_1_1tcalculationatparampoint}\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_a27652030ade7edd12e0ac7dcb986dd32}{clear}} =$>$ T\+Calculation\+At\+Param\+Point\+\_\+\+Clear
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_a3664d3aa6c085021bde806caae56ab5d}{writeparams}} =$>$ T\+Calculation\+At\+Param\+Point\+\_\+\+Write\+Params
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_a4b46b0e6d794fc4c30a127d715abce03}{acceptreject}} =$>$ T\+Calculation\+At\+Param\+Point\+\_\+\+Accept\+Reject
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_a9d4038931f7b01b82009db1d53d671f2}{readmodel}}
+\item 
+procedure \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_a17222b3e549f939333fc9923c0e681ee}{writemodel}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), dimension(max\+\_\+num\+\_\+params) \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_ad2c9f50c292747c27ac2ff85f7c85cd1}{p}}
+\item 
+real(mcp), dimension(max\+\_\+likelihood\+\_\+functions) \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_ad50c763a493d06d0e52e756e319d7108}{likelihoods}}
+\item 
+real(mcp), dimension(max\+\_\+num\+\_\+params) \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_ac1121c140d321db96db73ed239a54794}{lastparamarray}}
+\item 
+logical \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_a9e1654eea11b394f3055429ec0d750d8}{validinfo}} = .false.
+\item 
+class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}}), allocatable \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_af964f378f33cb31b125103d7672a3920}{theory}}
+\item 
+class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryintermediatecache}{ttheoryintermediatecache}}), pointer \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint_a7fe8c0108af2970f3e3b7dcd2b8782ed}{info}} =$>$ null()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_a4b46b0e6d794fc4c30a127d715abce03}\label{structgeneraltypes_1_1tcalculationatparampoint_a4b46b0e6d794fc4c30a127d715abce03}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!acceptreject@{acceptreject}}
+\index{acceptreject@{acceptreject}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{acceptreject()}{acceptreject()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tcalculationatparampoint\+::acceptreject (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_a27652030ade7edd12e0ac7dcb986dd32}\label{structgeneraltypes_1_1tcalculationatparampoint_a27652030ade7edd12e0ac7dcb986dd32}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!clear@{clear}}
+\index{clear@{clear}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tcalculationatparampoint\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_a9d4038931f7b01b82009db1d53d671f2}\label{structgeneraltypes_1_1tcalculationatparampoint_a9d4038931f7b01b82009db1d53d671f2}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!readmodel@{readmodel}}
+\index{readmodel@{readmodel}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{readmodel()}{readmodel()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tcalculationatparampoint\+::readmodel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_a17222b3e549f939333fc9923c0e681ee}\label{structgeneraltypes_1_1tcalculationatparampoint_a17222b3e549f939333fc9923c0e681ee}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!writemodel@{writemodel}}
+\index{writemodel@{writemodel}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{writemodel()}{writemodel()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tcalculationatparampoint\+::writemodel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_a3664d3aa6c085021bde806caae56ab5d}\label{structgeneraltypes_1_1tcalculationatparampoint_a3664d3aa6c085021bde806caae56ab5d}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!writeparams@{writeparams}}
+\index{writeparams@{writeparams}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{writeparams()}{writeparams()}}
+{\footnotesize\ttfamily procedure generaltypes\+::tcalculationatparampoint\+::writeparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_a7fe8c0108af2970f3e3b7dcd2b8782ed}\label{structgeneraltypes_1_1tcalculationatparampoint_a7fe8c0108af2970f3e3b7dcd2b8782ed}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!info@{info}}
+\index{info@{info}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily class(\mbox{\hyperlink{structgeneraltypes_1_1ttheoryintermediatecache}{ttheoryintermediatecache}}), pointer generaltypes\+::tcalculationatparampoint\+::info =$>$ null()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_ac1121c140d321db96db73ed239a54794}\label{structgeneraltypes_1_1tcalculationatparampoint_ac1121c140d321db96db73ed239a54794}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!lastparamarray@{lastparamarray}}
+\index{lastparamarray@{lastparamarray}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{lastparamarray}{lastparamarray}}
+{\footnotesize\ttfamily real(mcp), dimension(max\+\_\+num\+\_\+params) generaltypes\+::tcalculationatparampoint\+::lastparamarray\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_ad50c763a493d06d0e52e756e319d7108}\label{structgeneraltypes_1_1tcalculationatparampoint_ad50c763a493d06d0e52e756e319d7108}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!likelihoods@{likelihoods}}
+\index{likelihoods@{likelihoods}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{likelihoods}{likelihoods}}
+{\footnotesize\ttfamily real(mcp), dimension(max\+\_\+likelihood\+\_\+functions) generaltypes\+::tcalculationatparampoint\+::likelihoods\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_ad2c9f50c292747c27ac2ff85f7c85cd1}\label{structgeneraltypes_1_1tcalculationatparampoint_ad2c9f50c292747c27ac2ff85f7c85cd1}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!p@{p}}
+\index{p@{p}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily real(mcp), dimension(max\+\_\+num\+\_\+params) generaltypes\+::tcalculationatparampoint\+::p\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_af964f378f33cb31b125103d7672a3920}\label{structgeneraltypes_1_1tcalculationatparampoint_af964f378f33cb31b125103d7672a3920}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!theory@{theory}}
+\index{theory@{theory}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{theory}{theory}}
+{\footnotesize\ttfamily class(\mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{ttheorypredictions}}), allocatable generaltypes\+::tcalculationatparampoint\+::theory\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structgeneraltypes_1_1tcalculationatparampoint_a9e1654eea11b394f3055429ec0d750d8}\label{structgeneraltypes_1_1tcalculationatparampoint_a9e1654eea11b394f3055429ec0d750d8}} 
+\index{generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}!validinfo@{validinfo}}
+\index{validinfo@{validinfo}!generaltypes\+::tcalculationatparampoint@{generaltypes\+::tcalculationatparampoint}}
+\subsubsection{\texorpdfstring{validinfo}{validinfo}}
+{\footnotesize\ttfamily logical generaltypes\+::tcalculationatparampoint\+::validinfo = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{GeneralTypes_8f90}{General\+Types.\+f90}}\end{DoxyCompactItemize}

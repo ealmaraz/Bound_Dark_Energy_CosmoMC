@@ -1,0 +1,197 @@
+\hypertarget{namespacemiscutils}{}\section{miscutils Module Reference}
+\label{namespacemiscutils}\index{miscutils@{miscutils}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interfacemiscutils_1_1ifthenelse}{ifthenelse}}
+\item 
+interface \mbox{\hyperlink{interfacemiscutils_1_1isfloat}{isfloat}}
+\item 
+interface \mbox{\hyperlink{interfacemiscutils_1_1presentdefault}{presentdefault}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+logical function \mbox{\hyperlink{namespacemiscutils_a9337630be33970a7cde8995bd73c58da}{defaultfalse}} (S)
+\item 
+logical function \mbox{\hyperlink{namespacemiscutils_a3e4e42b3e3f4fbf064bb2e2b927c5604}{defaulttrue}} (S)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespacemiscutils_aa4029af2cc791ce03e15abe363b19321}{presentdefault\+\_\+s}} (default, S)
+\item 
+logical function \mbox{\hyperlink{namespacemiscutils_a990745dc5884aa0e44f6025bc182208e}{presentdefault\+\_\+l}} (default, S)
+\item 
+integer function \mbox{\hyperlink{namespacemiscutils_aed7390d30a673aa276cdcc01a48c217a}{presentdefault\+\_\+i}} (default, S)
+\item 
+real function \mbox{\hyperlink{namespacemiscutils_a7a5fc2947194e21c6a752c3897bcf7a3}{presentdefault\+\_\+r}} (default, S)
+\item 
+double precision function \mbox{\hyperlink{namespacemiscutils_a218614e15a9b43ad29ae8c404825916f}{presentdefault\+\_\+d}} (default, S)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespacemiscutils_a994af8094beca0770dd32924d0e7dbdb}{ifthenelse\+\_\+s}} (flag, either, or)
+\item 
+logical function \mbox{\hyperlink{namespacemiscutils_a87ca2142c2922c2060f891b5bd3da8bb}{ifthenelse\+\_\+l}} (flag, either, or)
+\item 
+integer function \mbox{\hyperlink{namespacemiscutils_ab0ad194bb45d05df1ffbf495275ff730}{ifthenelse\+\_\+i}} (flag, either, or)
+\item 
+real function \mbox{\hyperlink{namespacemiscutils_aa5e8165f492c8bced78208b32802202b}{ifthenelse\+\_\+r}} (flag, either, or)
+\item 
+double precision function \mbox{\hyperlink{namespacemiscutils_ae082d895d28505b733d2171cb6482378}{ifthenelse\+\_\+d}} (flag, either, or)
+\item 
+logical function \mbox{\hyperlink{namespacemiscutils_a87ddeac831600aa6b24f14468911d710}{isfloat0}} (R)
+\item 
+logical function \mbox{\hyperlink{namespacemiscutils_af3d292afdf769b0ef58f6cf1f6f0145d}{isfloat1}} (R)
+\item 
+logical function \mbox{\hyperlink{namespacemiscutils_a64a47fd498b8846f96562efdd041adf4}{isfloat2}} (R)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacemiscutils_a9337630be33970a7cde8995bd73c58da}\label{namespacemiscutils_a9337630be33970a7cde8995bd73c58da}} 
+\index{miscutils@{miscutils}!defaultfalse@{defaultfalse}}
+\index{defaultfalse@{defaultfalse}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{defaultfalse()}{defaultfalse()}}
+{\footnotesize\ttfamily logical function miscutils\+::defaultfalse (\begin{DoxyParamCaption}\item[{logical, intent(in), optional}]{S }\end{DoxyParamCaption})}
+
+
+
+Referenced by fileutils\+::checkopen(), fileutils\+::extractfilename(), stringutils\+::formatstring(), iniobjects\+::ini\+\_\+namevalue\+\_\+addline(), iniobjects\+::ini\+\_\+open(), iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+default(), paramnames\+::paramnames\+\_\+add(), paramnames\+::paramnames\+\_\+nameornumber(), stringutils\+::stringtrimmed(), fileutils\+::tfilestream\+\_\+openfile(), iniobjects\+::tnamevaluelist\+\_\+init(), iniobjects\+::tnamevaluelist\+\_\+override(), settings\+::tsettingini\+\_\+readfilename(), settings\+::tsettingini\+\_\+settingvaluesfortagname(), and settings\+::tsettingini\+\_\+tagvaluesforname().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemiscutils_a9337630be33970a7cde8995bd73c58da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemiscutils_a3e4e42b3e3f4fbf064bb2e2b927c5604}\label{namespacemiscutils_a3e4e42b3e3f4fbf064bb2e2b927c5604}} 
+\index{miscutils@{miscutils}!defaulttrue@{defaulttrue}}
+\index{defaulttrue@{defaulttrue}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{defaulttrue()}{defaulttrue()}}
+{\footnotesize\ttfamily logical function miscutils\+::defaulttrue (\begin{DoxyParamCaption}\item[{logical, intent(in), optional}]{S }\end{DoxyParamCaption})}
+
+
+
+Referenced by fileutils\+::lines(), fileutils\+::readitems(), and iniobjects\+::tnamevaluelist\+\_\+add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacemiscutils_a3e4e42b3e3f4fbf064bb2e2b927c5604_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemiscutils_ae082d895d28505b733d2171cb6482378}\label{namespacemiscutils_ae082d895d28505b733d2171cb6482378}} 
+\index{miscutils@{miscutils}!ifthenelse\+\_\+d@{ifthenelse\+\_\+d}}
+\index{ifthenelse\+\_\+d@{ifthenelse\+\_\+d}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{ifthenelse\+\_\+d()}{ifthenelse\_d()}}
+{\footnotesize\ttfamily double precision function miscutils\+::ifthenelse\+\_\+d (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{flag,  }\item[{double precision}]{either,  }\item[{double precision}]{or }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_ab0ad194bb45d05df1ffbf495275ff730}\label{namespacemiscutils_ab0ad194bb45d05df1ffbf495275ff730}} 
+\index{miscutils@{miscutils}!ifthenelse\+\_\+i@{ifthenelse\+\_\+i}}
+\index{ifthenelse\+\_\+i@{ifthenelse\+\_\+i}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{ifthenelse\+\_\+i()}{ifthenelse\_i()}}
+{\footnotesize\ttfamily integer function miscutils\+::ifthenelse\+\_\+i (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{flag,  }\item[{integer}]{either,  }\item[{integer}]{or }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_a87ca2142c2922c2060f891b5bd3da8bb}\label{namespacemiscutils_a87ca2142c2922c2060f891b5bd3da8bb}} 
+\index{miscutils@{miscutils}!ifthenelse\+\_\+l@{ifthenelse\+\_\+l}}
+\index{ifthenelse\+\_\+l@{ifthenelse\+\_\+l}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{ifthenelse\+\_\+l()}{ifthenelse\_l()}}
+{\footnotesize\ttfamily logical function miscutils\+::ifthenelse\+\_\+l (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{flag,  }\item[{logical}]{either,  }\item[{logical}]{or }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_aa5e8165f492c8bced78208b32802202b}\label{namespacemiscutils_aa5e8165f492c8bced78208b32802202b}} 
+\index{miscutils@{miscutils}!ifthenelse\+\_\+r@{ifthenelse\+\_\+r}}
+\index{ifthenelse\+\_\+r@{ifthenelse\+\_\+r}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{ifthenelse\+\_\+r()}{ifthenelse\_r()}}
+{\footnotesize\ttfamily real function miscutils\+::ifthenelse\+\_\+r (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{flag,  }\item[{real}]{either,  }\item[{real}]{or }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_a994af8094beca0770dd32924d0e7dbdb}\label{namespacemiscutils_a994af8094beca0770dd32924d0e7dbdb}} 
+\index{miscutils@{miscutils}!ifthenelse\+\_\+s@{ifthenelse\+\_\+s}}
+\index{ifthenelse\+\_\+s@{ifthenelse\+\_\+s}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{ifthenelse\+\_\+s()}{ifthenelse\_s()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer miscutils\+::ifthenelse\+\_\+s (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{flag,  }\item[{character(len=$\ast$), target}]{either,  }\item[{character(len=$\ast$), target}]{or }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_a87ddeac831600aa6b24f14468911d710}\label{namespacemiscutils_a87ddeac831600aa6b24f14468911d710}} 
+\index{miscutils@{miscutils}!isfloat0@{isfloat0}}
+\index{isfloat0@{isfloat0}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{isfloat0()}{isfloat0()}}
+{\footnotesize\ttfamily logical function miscutils\+::isfloat0 (\begin{DoxyParamCaption}\item[{class($\ast$), intent(in)}]{R }\end{DoxyParamCaption})}
+
+
+
+Referenced by isfloat1(), and isfloat2().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacemiscutils_a87ddeac831600aa6b24f14468911d710_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemiscutils_af3d292afdf769b0ef58f6cf1f6f0145d}\label{namespacemiscutils_af3d292afdf769b0ef58f6cf1f6f0145d}} 
+\index{miscutils@{miscutils}!isfloat1@{isfloat1}}
+\index{isfloat1@{isfloat1}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{isfloat1()}{isfloat1()}}
+{\footnotesize\ttfamily logical function miscutils\+::isfloat1 (\begin{DoxyParamCaption}\item[{class($\ast$), dimension(\+:), intent(in)}]{R }\end{DoxyParamCaption})}
+
+
+
+References isfloat0().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacemiscutils_af3d292afdf769b0ef58f6cf1f6f0145d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemiscutils_a64a47fd498b8846f96562efdd041adf4}\label{namespacemiscutils_a64a47fd498b8846f96562efdd041adf4}} 
+\index{miscutils@{miscutils}!isfloat2@{isfloat2}}
+\index{isfloat2@{isfloat2}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{isfloat2()}{isfloat2()}}
+{\footnotesize\ttfamily logical function miscutils\+::isfloat2 (\begin{DoxyParamCaption}\item[{class($\ast$), dimension(\+:,\+:), intent(in)}]{R }\end{DoxyParamCaption})}
+
+
+
+References isfloat0().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespacemiscutils_a64a47fd498b8846f96562efdd041adf4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacemiscutils_a218614e15a9b43ad29ae8c404825916f}\label{namespacemiscutils_a218614e15a9b43ad29ae8c404825916f}} 
+\index{miscutils@{miscutils}!presentdefault\+\_\+d@{presentdefault\+\_\+d}}
+\index{presentdefault\+\_\+d@{presentdefault\+\_\+d}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{presentdefault\+\_\+d()}{presentdefault\_d()}}
+{\footnotesize\ttfamily double precision function miscutils\+::presentdefault\+\_\+d (\begin{DoxyParamCaption}\item[{double precision, intent(in)}]{default,  }\item[{double precision, intent(in), optional}]{S }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_aed7390d30a673aa276cdcc01a48c217a}\label{namespacemiscutils_aed7390d30a673aa276cdcc01a48c217a}} 
+\index{miscutils@{miscutils}!presentdefault\+\_\+i@{presentdefault\+\_\+i}}
+\index{presentdefault\+\_\+i@{presentdefault\+\_\+i}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{presentdefault\+\_\+i()}{presentdefault\_i()}}
+{\footnotesize\ttfamily integer function miscutils\+::presentdefault\+\_\+i (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{default,  }\item[{integer, intent(in), optional}]{S }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_a990745dc5884aa0e44f6025bc182208e}\label{namespacemiscutils_a990745dc5884aa0e44f6025bc182208e}} 
+\index{miscutils@{miscutils}!presentdefault\+\_\+l@{presentdefault\+\_\+l}}
+\index{presentdefault\+\_\+l@{presentdefault\+\_\+l}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{presentdefault\+\_\+l()}{presentdefault\_l()}}
+{\footnotesize\ttfamily logical function miscutils\+::presentdefault\+\_\+l (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{default,  }\item[{logical, intent(in), optional}]{S }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_a7a5fc2947194e21c6a752c3897bcf7a3}\label{namespacemiscutils_a7a5fc2947194e21c6a752c3897bcf7a3}} 
+\index{miscutils@{miscutils}!presentdefault\+\_\+r@{presentdefault\+\_\+r}}
+\index{presentdefault\+\_\+r@{presentdefault\+\_\+r}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{presentdefault\+\_\+r()}{presentdefault\_r()}}
+{\footnotesize\ttfamily real function miscutils\+::presentdefault\+\_\+r (\begin{DoxyParamCaption}\item[{real, intent(in)}]{default,  }\item[{real, intent(in), optional}]{S }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacemiscutils_aa4029af2cc791ce03e15abe363b19321}\label{namespacemiscutils_aa4029af2cc791ce03e15abe363b19321}} 
+\index{miscutils@{miscutils}!presentdefault\+\_\+s@{presentdefault\+\_\+s}}
+\index{presentdefault\+\_\+s@{presentdefault\+\_\+s}!miscutils@{miscutils}}
+\subsubsection{\texorpdfstring{presentdefault\+\_\+s()}{presentdefault\_s()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer miscutils\+::presentdefault\+\_\+s (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in), target}]{default,  }\item[{character(len=$\ast$), intent(in), optional, target}]{S }\end{DoxyParamCaption})}
+

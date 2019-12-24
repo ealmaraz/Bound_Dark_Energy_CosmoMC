@@ -1,0 +1,6 @@
+<map id="mcsamples::makesinglesamples" name="mcsamples::makesinglesamples">
+<area shape="rect" id="node2" href="$namespacerandutils.html#a6f074e631d2bdae8023911e26f56d7aa" title="randutils::initrandom" alt="" coords="267,31,405,57"/>
+<area shape="rect" id="node5" href="$namespacerandutils.html#a6065ecd619b0a63bceabcecdde031a2c" title="randutils::ranmar" alt="" coords="277,81,395,108"/>
+<area shape="rect" id="node3" href="$namespacempiutils.html#a23720e4e8b635dab4b67172618aa77e5" title="mpiutils::mpistop" alt="" coords="454,5,575,32"/>
+<area shape="rect" id="node4" href="$namespacerandutils.html#ae91e8d9448da0877857bf6ae466c210d" title="randutils::rmarin" alt="" coords="457,56,572,83"/>
+</map>

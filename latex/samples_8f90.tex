@@ -1,0 +1,40 @@
+\hypertarget{samples_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/samples.f90 File Reference}
+\label{samples_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/samples.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/samples.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structsamples_1_1tsamplelist}{samples\+::tsamplelist}}
+\item 
+type \mbox{\hyperlink{structsamples_1_1tkernel1d}{samples\+::tkernel1d}}
+\item 
+type \mbox{\hyperlink{structsamples_1_1tdensity1d}{samples\+::tdensity1d}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacesamples}{samples}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+logical function \mbox{\hyperlink{namespacesamples_abaa5a3a56f0160fff42cc0ea3ac8a928}{samples\+::gelmanrubinevalues}} (cov, meanscov, evals, num)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a1c105487cb30dfdb9dc2944330277e78}{samples\+::tsamplelist\+\_\+confidval}} (L, ix, limfrac, ix1, ix2, Lower, Upper)
+\item 
+real(sample\+\_\+prec) function \mbox{\hyperlink{namespacesamples_afdfd2cef6249d2d52f60f3b946035016}{samples\+::density1d\+\_\+prob}} (D, x)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a81e4c9e95f7f4a62799689997c7be5e7}{samples\+::density1d\+\_\+init}} (D, n, spacing)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a106842e32d665154377f9c3bc1682b59}{samples\+::density1d\+\_\+free}} (D)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a87a98c09efa7d17b3ff7d0db04d66b73}{samples\+::density1d\+\_\+initspline}} (D)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a65a3ed5d18fe56c9dbc21e5787d86047}{samples\+::density1d\+\_\+limits}} (D, p, mn, mx, lim\+\_\+bot, lim\+\_\+top)
+\item 
+subroutine \mbox{\hyperlink{namespacesamples_a34bf342dd43e661799227d0101cee393}{samples\+::kernel1d\+\_\+init}} (this, winw, h, has\+\_\+boundary)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesamples_ab1a059d29fb6ed2517c01f6aef7713d3}{samples\+::sample\+\_\+prec}} = mcp
+\end{DoxyCompactItemize}

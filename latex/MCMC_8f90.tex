@@ -1,0 +1,70 @@
+\hypertarget{MCMC_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+M\+C\+MC.f90 File Reference}
+\label{MCMC_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+M\+C\+M\+C.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+M\+C\+M\+C.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tsamplecollector}{montecarlo\+::tsamplecollector}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tsamplingalgorithm}{montecarlo\+::tsamplingalgorithm}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tchainsampler}{montecarlo\+::tchainsampler}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tmetropolissampler}{montecarlo\+::tmetropolissampler}}
+\item 
+type \mbox{\hyperlink{structmontecarlo_1_1tfastdraggingsampler}{montecarlo\+::tfastdraggingsampler}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacemontecarlo}{montecarlo}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a6f22bd1167c2571095e2d1610a5b6d9b}{montecarlo\+::tsamplingalgorithm\+\_\+init}} (this, Like\+Calculator, Sample\+Collector)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacemontecarlo_a7dd4e2ca3d6d99401730978c1b3a6638}{montecarlo\+::tsamplingalgorithm\+\_\+loglike}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a2c622f23ed852d71991b99be82a86450}{montecarlo\+::tsamplingalgorithm\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a78f12d9f7d6f2a3ac0d492a9b3d7ec9a}{montecarlo\+::tsamplingalgorithm\+\_\+savestate}} (this, F)
+\item 
+logical function \mbox{\hyperlink{namespacemontecarlo_a61aacaca86a2550ede828d05b6b4a00f}{montecarlo\+::tchainsampler\+\_\+metropolisaccept}} (this, Like, Cur\+Like)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_ae6147d7e7b017c36b225c6b101d896bd}{montecarlo\+::tchainsampler\+\_\+samplefrom}} (this, Cur\+Params, Cur\+Like, samples\+\_\+to\+\_\+get)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a51f39aa0229577c81fd7299edea28876}{montecarlo\+::tchainsampler\+\_\+movedone}} (this, accpt, Cur\+Params, Cur\+Like, mult, thin\+\_\+fac)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_acea9a6722742a39deefda7f94ecd49bb}{montecarlo\+::tchainsampler\+\_\+getnewsample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a828a7ad845f1b5a7f01bfb3ccc95ac32}{montecarlo\+::tchainsampler\+\_\+loadstate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_ac9b47ebdfecc65b4663d59c74da8e573}{montecarlo\+::tchainsampler\+\_\+savestate}} (this, F)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_aac962ce86a301904d17d4fad89a3f188}{montecarlo\+::tchainsampler\+\_\+setcovariance}} (this, cov)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_af71e0b87a06570ba3678ee96cd444f6e}{montecarlo\+::tchainsampler\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a0eb56d8656442c96e8f066453a7b5209}{montecarlo\+::tchainsampler\+\_\+init}} (this, Like\+Calculator, Sample\+Collector)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_ae01ead2e419d0e7cb8126beb7b6a1278}{montecarlo\+::tchainsampler\+\_\+initwithpropose}} (this, Like\+Calculator, Sample\+Collector, propose\+\_\+scale)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a8e8eb524291ad6abaafc4ec1cedaa916}{montecarlo\+::tmetropolissampler\+\_\+getnewsample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a52c8ac0f2608675d60fa454f684d0519}{montecarlo\+::tmetropolissampler\+\_\+fastparametersample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_aabc2865a5460edaf007be6dca34d3eca}{montecarlo\+::tfastdraggingsampler\+\_\+getnewsample}} (this, Cur\+Params, Cur\+Like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a80c9edc811cd8126c1af36c89008a779}{montecarlo\+::tfastdraggingsampler\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a2f05ea4c2552d9891ce8860f9befe96d}{montecarlo\+::tsamplecollector\+\_\+addnewpoint}} (this, P, like)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_a23f6c5b28b5d65904c39f5a06efef97c}{montecarlo\+::tsamplecollector\+\_\+addnewweightedpoint}} (this, Cur\+Params, Cur\+Like, mult, thin\+\_\+fac)
+\item 
+subroutine \mbox{\hyperlink{namespacemontecarlo_afee20ae5c3f0b391ff0c231302a113a0}{montecarlo\+::tsamplecollector\+\_\+readcheckpoint}} (this)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacemontecarlo_ac87b0e5ba62e656a1e0d3317a890c0d9}{montecarlo\+::eps\+\_\+1}} = 1.\+00001
+\end{DoxyCompactItemize}

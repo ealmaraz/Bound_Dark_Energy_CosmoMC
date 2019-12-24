@@ -1,0 +1,110 @@
+\hypertarget{classcamb_1_1reionization_1_1ReionizationParams}{}\section{camb.\+reionization.\+Reionization\+Params Class Reference}
+\label{classcamb_1_1reionization_1_1ReionizationParams}\index{camb.\+reionization.\+Reionization\+Params@{camb.\+reionization.\+Reionization\+Params}}
+
+
+Inheritance diagram for camb.\+reionization.\+Reionization\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcamb_1_1reionization_1_1ReionizationParams__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for camb.\+reionization.\+Reionization\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classcamb_1_1reionization_1_1ReionizationParams__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classcamb_1_1reionization_1_1ReionizationParams_a9ed1e9834f60e2aa92947a7b4a151404}{set\+\_\+tau}} (self, tau, \mbox{\hyperlink{classcamb_1_1reionization_1_1ReionizationParams_abac714e2521b5c0b169e56240da98bef}{delta\+\_\+redshift}}=None)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcamb_1_1reionization_1_1ReionizationParams_a8ae74c7562f07dea4e95379d88485e2c}{use\+\_\+optical\+\_\+depth}}
+\item 
+\mbox{\hyperlink{classcamb_1_1reionization_1_1ReionizationParams_aa238325763d7f20e1fa137fcef5d0180}{optical\+\_\+depth}}
+\item 
+\mbox{\hyperlink{classcamb_1_1reionization_1_1ReionizationParams_abac714e2521b5c0b169e56240da98bef}{delta\+\_\+redshift}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classcamb_1_1reionization_1_1ReionizationParams_ac78689867e8359453ae901e9bd562e21}{\+\_\+fields\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Hold sparameters for the reionization model.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcamb_1_1reionization_1_1ReionizationParams_a9ed1e9834f60e2aa92947a7b4a151404}\label{classcamb_1_1reionization_1_1ReionizationParams_a9ed1e9834f60e2aa92947a7b4a151404}} 
+\index{camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}!set\+\_\+tau@{set\+\_\+tau}}
+\index{set\+\_\+tau@{set\+\_\+tau}!camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}}
+\subsubsection{\texorpdfstring{set\+\_\+tau()}{set\_tau()}}
+{\footnotesize\ttfamily def camb.\+reionization.\+Reionization\+Params.\+set\+\_\+tau (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tau,  }\item[{}]{delta\+\_\+redshift = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the optical depth
+:param tau: optical depth
+:param delta_redshift: delta z for reionization
+:return: self
+\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcamb_1_1reionization_1_1ReionizationParams_ac78689867e8359453ae901e9bd562e21}\label{classcamb_1_1reionization_1_1ReionizationParams_ac78689867e8359453ae901e9bd562e21}} 
+\index{camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}!\+\_\+fields\+\_\+@{\+\_\+fields\+\_\+}}
+\index{\+\_\+fields\+\_\+@{\+\_\+fields\+\_\+}!camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}}
+\subsubsection{\texorpdfstring{\+\_\+fields\+\_\+}{\_fields\_}}
+{\footnotesize\ttfamily list camb.\+reionization.\+Reionization\+Params.\+\_\+fields\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  [
+        (\textcolor{stringliteral}{"Reionization"}, c\_int),  \textcolor{comment}{# logical}
+        (\textcolor{stringliteral}{"use\_optical\_depth"}, c\_int),  \textcolor{comment}{# logical}
+        (\textcolor{stringliteral}{"redshift"}, c\_double),
+        (\textcolor{stringliteral}{"delta\_redshift"}, c\_double),
+        (\textcolor{stringliteral}{"fraction"}, c\_double),
+        (\textcolor{stringliteral}{"optical\_depth"}, c\_double),
+        (\textcolor{stringliteral}{"helium\_redshift"}, c\_double),  \textcolor{comment}{# helium\_redshift  = 3.5\_dl}
+        (\textcolor{stringliteral}{"helium\_delta\_redshift"}, c\_double),  \textcolor{comment}{# helium\_delta\_redshift  = 0.5}
+        (\textcolor{stringliteral}{"helium\_redshiftstart"}, c\_double)  \textcolor{comment}{# helium\_redshiftstart  = 5.\_dl}
+    ]
+\end{DoxyCode}
+
+
+Referenced by camb.\+baseconfig.\+C\+A\+M\+B\+\_\+\+Structure.\+\_\+\+\_\+str\+\_\+\+\_\+().
+
+\mbox{\Hypertarget{classcamb_1_1reionization_1_1ReionizationParams_abac714e2521b5c0b169e56240da98bef}\label{classcamb_1_1reionization_1_1ReionizationParams_abac714e2521b5c0b169e56240da98bef}} 
+\index{camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}!delta\+\_\+redshift@{delta\+\_\+redshift}}
+\index{delta\+\_\+redshift@{delta\+\_\+redshift}!camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}}
+\subsubsection{\texorpdfstring{delta\+\_\+redshift}{delta\_redshift}}
+{\footnotesize\ttfamily camb.\+reionization.\+Reionization\+Params.\+delta\+\_\+redshift}
+
+\mbox{\Hypertarget{classcamb_1_1reionization_1_1ReionizationParams_aa238325763d7f20e1fa137fcef5d0180}\label{classcamb_1_1reionization_1_1ReionizationParams_aa238325763d7f20e1fa137fcef5d0180}} 
+\index{camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}!optical\+\_\+depth@{optical\+\_\+depth}}
+\index{optical\+\_\+depth@{optical\+\_\+depth}!camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}}
+\subsubsection{\texorpdfstring{optical\+\_\+depth}{optical\_depth}}
+{\footnotesize\ttfamily camb.\+reionization.\+Reionization\+Params.\+optical\+\_\+depth}
+
+\mbox{\Hypertarget{classcamb_1_1reionization_1_1ReionizationParams_a8ae74c7562f07dea4e95379d88485e2c}\label{classcamb_1_1reionization_1_1ReionizationParams_a8ae74c7562f07dea4e95379d88485e2c}} 
+\index{camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}!use\+\_\+optical\+\_\+depth@{use\+\_\+optical\+\_\+depth}}
+\index{use\+\_\+optical\+\_\+depth@{use\+\_\+optical\+\_\+depth}!camb\+::reionization\+::\+Reionization\+Params@{camb\+::reionization\+::\+Reionization\+Params}}
+\subsubsection{\texorpdfstring{use\+\_\+optical\+\_\+depth}{use\_optical\_depth}}
+{\footnotesize\ttfamily camb.\+reionization.\+Reionization\+Params.\+use\+\_\+optical\+\_\+depth}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/camb/pycamb/camb/\mbox{\hyperlink{reionization_8py}{reionization.\+py}}\end{DoxyCompactItemize}

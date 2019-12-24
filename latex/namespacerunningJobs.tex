@@ -1,0 +1,143 @@
+\hypertarget{namespacerunningJobs}{}\section{running\+Jobs Namespace Reference}
+\label{namespacerunningJobs}\index{running\+Jobs@{running\+Jobs}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_af3294b73085a8cb379dd4f4a1ff77e1d}{Opts}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a67805e8e0caf8c83496d48a96a06c65c}{group}} = Opts.\+parser.\+add\+\_\+mutually\+\_\+exclusive\+\_\+group()
+\item 
+\mbox{\hyperlink{namespacerunningJobs_adb058c43d244d0c62dbb4644d85609f1}{action}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a41e81dd05c6ed4532bee5f6630160945}{batch}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a498f2bd71b059a02b3791d5460fed76c}{args}}
+\item 
+list \mbox{\hyperlink{namespacerunningJobs_ac0608775f65edaa0cff43929a4c7940c}{items}} = \mbox{[}job\+Item for job\+Item in Opts.\+filtered\+Batch\+Items()\mbox{]}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a1558158965c9e843da4e4a60ed52a80e}{batch\+Names}} = \mbox{\hyperlink{plotTT_8m_ae2445b699d1845d6abd1418ca39394c0}{set}}(\mbox{[}job\+Item.\+name for job\+Item in \mbox{\hyperlink{namespacerunningJobs_ac0608775f65edaa0cff43929a4c7940c}{items}}\mbox{]} + \mbox{[}job\+Item.\+name + \textquotesingle{}\+\_\+minimize\textquotesingle{} for job\+Item in \mbox{\hyperlink{namespacerunningJobs_ac0608775f65edaa0cff43929a4c7940c}{items}}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a677f12e80dce0689acf714d0135bd618}{ids}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a0a0a08b270feb5c19bc21bfcd276ee9f}{job\+Names}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_ac9fe5d5b9c8e3a015df8424ca0dc772a}{nameslist}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a28cc6ccb0472b73ec42776156dbff2dc}{infos}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a0125b6ae31dd325f4991b5a995cca7ec}{batch\+Path}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_adea50543919fa21638473c597ee44f38}{running}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a3f9507bb3b4cff54b761a2743acf119d}{queued}}
+\item 
+\mbox{\hyperlink{namespacerunningJobs_aa8e6c0feeb98c49fc6db0dbc51fc3fb0}{stats}} = dict()
+\item 
+\mbox{\hyperlink{namespacerunningJobs_a9e8ebb35eba20469c81d9638976487ce}{R}} = job\+Item.\+converge\+Stat()\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacerunningJobs_adb058c43d244d0c62dbb4644d85609f1}\label{namespacerunningJobs_adb058c43d244d0c62dbb4644d85609f1}} 
+\index{running\+Jobs@{running\+Jobs}!action@{action}}
+\index{action@{action}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily running\+Jobs.\+action}
+
+\mbox{\Hypertarget{namespacerunningJobs_a498f2bd71b059a02b3791d5460fed76c}\label{namespacerunningJobs_a498f2bd71b059a02b3791d5460fed76c}} 
+\index{running\+Jobs@{running\+Jobs}!args@{args}}
+\index{args@{args}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily running\+Jobs.\+args}
+
+\mbox{\Hypertarget{namespacerunningJobs_a41e81dd05c6ed4532bee5f6630160945}\label{namespacerunningJobs_a41e81dd05c6ed4532bee5f6630160945}} 
+\index{running\+Jobs@{running\+Jobs}!batch@{batch}}
+\index{batch@{batch}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{batch}{batch}}
+{\footnotesize\ttfamily running\+Jobs.\+batch}
+
+\mbox{\Hypertarget{namespacerunningJobs_a1558158965c9e843da4e4a60ed52a80e}\label{namespacerunningJobs_a1558158965c9e843da4e4a60ed52a80e}} 
+\index{running\+Jobs@{running\+Jobs}!batch\+Names@{batch\+Names}}
+\index{batch\+Names@{batch\+Names}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{batch\+Names}{batchNames}}
+{\footnotesize\ttfamily running\+Jobs.\+batch\+Names = \mbox{\hyperlink{plotTT_8m_ae2445b699d1845d6abd1418ca39394c0}{set}}(\mbox{[}job\+Item.\+name for job\+Item in \mbox{\hyperlink{namespacerunningJobs_ac0608775f65edaa0cff43929a4c7940c}{items}}\mbox{]} + \mbox{[}job\+Item.\+name + \textquotesingle{}\+\_\+minimize\textquotesingle{} for job\+Item in \mbox{\hyperlink{namespacerunningJobs_ac0608775f65edaa0cff43929a4c7940c}{items}}\mbox{]})}
+
+\mbox{\Hypertarget{namespacerunningJobs_a0125b6ae31dd325f4991b5a995cca7ec}\label{namespacerunningJobs_a0125b6ae31dd325f4991b5a995cca7ec}} 
+\index{running\+Jobs@{running\+Jobs}!batch\+Path@{batch\+Path}}
+\index{batch\+Path@{batch\+Path}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{batch\+Path}{batchPath}}
+{\footnotesize\ttfamily running\+Jobs.\+batch\+Path}
+
+\mbox{\Hypertarget{namespacerunningJobs_a67805e8e0caf8c83496d48a96a06c65c}\label{namespacerunningJobs_a67805e8e0caf8c83496d48a96a06c65c}} 
+\index{running\+Jobs@{running\+Jobs}!group@{group}}
+\index{group@{group}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{group}{group}}
+{\footnotesize\ttfamily running\+Jobs.\+group = Opts.\+parser.\+add\+\_\+mutually\+\_\+exclusive\+\_\+group()}
+
+\mbox{\Hypertarget{namespacerunningJobs_a677f12e80dce0689acf714d0135bd618}\label{namespacerunningJobs_a677f12e80dce0689acf714d0135bd618}} 
+\index{running\+Jobs@{running\+Jobs}!ids@{ids}}
+\index{ids@{ids}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily running\+Jobs.\+ids}
+
+\mbox{\Hypertarget{namespacerunningJobs_a28cc6ccb0472b73ec42776156dbff2dc}\label{namespacerunningJobs_a28cc6ccb0472b73ec42776156dbff2dc}} 
+\index{running\+Jobs@{running\+Jobs}!infos@{infos}}
+\index{infos@{infos}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{infos}{infos}}
+{\footnotesize\ttfamily running\+Jobs.\+infos}
+
+\mbox{\Hypertarget{namespacerunningJobs_ac0608775f65edaa0cff43929a4c7940c}\label{namespacerunningJobs_ac0608775f65edaa0cff43929a4c7940c}} 
+\index{running\+Jobs@{running\+Jobs}!items@{items}}
+\index{items@{items}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily list running\+Jobs.\+items = \mbox{[}job\+Item for job\+Item in Opts.\+filtered\+Batch\+Items()\mbox{]}}
+
+\mbox{\Hypertarget{namespacerunningJobs_a0a0a08b270feb5c19bc21bfcd276ee9f}\label{namespacerunningJobs_a0a0a08b270feb5c19bc21bfcd276ee9f}} 
+\index{running\+Jobs@{running\+Jobs}!job\+Names@{job\+Names}}
+\index{job\+Names@{job\+Names}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{job\+Names}{jobNames}}
+{\footnotesize\ttfamily running\+Jobs.\+job\+Names}
+
+\mbox{\Hypertarget{namespacerunningJobs_ac9fe5d5b9c8e3a015df8424ca0dc772a}\label{namespacerunningJobs_ac9fe5d5b9c8e3a015df8424ca0dc772a}} 
+\index{running\+Jobs@{running\+Jobs}!nameslist@{nameslist}}
+\index{nameslist@{nameslist}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{nameslist}{nameslist}}
+{\footnotesize\ttfamily running\+Jobs.\+nameslist}
+
+\mbox{\Hypertarget{namespacerunningJobs_af3294b73085a8cb379dd4f4a1ff77e1d}\label{namespacerunningJobs_af3294b73085a8cb379dd4f4a1ff77e1d}} 
+\index{running\+Jobs@{running\+Jobs}!Opts@{Opts}}
+\index{Opts@{Opts}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{Opts}{Opts}}
+{\footnotesize\ttfamily running\+Jobs.\+Opts}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  batchjob\_args.batchArgs(
+2     \textcolor{stringliteral}{'List details of running or queued jobs; gives job stats, then current R-1 and job/chain names'}, 
+      importance=\textcolor{keyword}{True},
+3     batchPathOptional=\textcolor{keyword}{True})
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerunningJobs_a3f9507bb3b4cff54b761a2743acf119d}\label{namespacerunningJobs_a3f9507bb3b4cff54b761a2743acf119d}} 
+\index{running\+Jobs@{running\+Jobs}!queued@{queued}}
+\index{queued@{queued}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{queued}{queued}}
+{\footnotesize\ttfamily running\+Jobs.\+queued}
+
+\mbox{\Hypertarget{namespacerunningJobs_a9e8ebb35eba20469c81d9638976487ce}\label{namespacerunningJobs_a9e8ebb35eba20469c81d9638976487ce}} 
+\index{running\+Jobs@{running\+Jobs}!R@{R}}
+\index{R@{R}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily string running\+Jobs.\+R = job\+Item.\+converge\+Stat()\mbox{[}0\mbox{]}}
+
+\mbox{\Hypertarget{namespacerunningJobs_adea50543919fa21638473c597ee44f38}\label{namespacerunningJobs_adea50543919fa21638473c597ee44f38}} 
+\index{running\+Jobs@{running\+Jobs}!running@{running}}
+\index{running@{running}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily running\+Jobs.\+running}
+
+\mbox{\Hypertarget{namespacerunningJobs_aa8e6c0feeb98c49fc6db0dbc51fc3fb0}\label{namespacerunningJobs_aa8e6c0feeb98c49fc6db0dbc51fc3fb0}} 
+\index{running\+Jobs@{running\+Jobs}!stats@{stats}}
+\index{stats@{stats}!running\+Jobs@{running\+Jobs}}
+\subsubsection{\texorpdfstring{stats}{stats}}
+{\footnotesize\ttfamily running\+Jobs.\+stats = dict()}
+

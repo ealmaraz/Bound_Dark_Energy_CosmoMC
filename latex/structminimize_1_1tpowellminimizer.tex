@@ -1,0 +1,151 @@
+\hypertarget{structminimize_1_1tpowellminimizer}{}\section{minimize\+:\+:tpowellminimizer Type Reference}
+\label{structminimize_1_1tpowellminimizer}\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+
+
+Inheritance diagram for minimize\+:\+:tpowellminimizer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{structminimize_1_1tpowellminimizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for minimize\+:\+:tpowellminimizer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{structminimize_1_1tpowellminimizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structminimize_1_1tpowellminimizer_af8bf5fbb29baeb3e0aa6ae64e33aed22}{readparams}} =$>$ T\+Powell\+Minimizer\+\_\+\+Read\+Params
+\item 
+procedure \mbox{\hyperlink{structminimize_1_1tpowellminimizer_aaf3650d665c4070ddc0177ed35b7efb9}{findbestfit}} =$>$ T\+Powell\+Minimizer\+\_\+\+Find\+Best\+Fit
+\item 
+procedure \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a194c70c653914f1ea1c10e48ba7776ce}{findbestfit\+\_\+indices}} =$>$ T\+Powell\+Minimizer\+\_\+\+Find\+Best\+Fit\+\_\+indices
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+type(\mbox{\hyperlink{structminimize_1_1tbobyqamin}{tbobyqamin}}) \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a92246f595ce268aecee1f34b492293d0}{bobyqa}}
+\item 
+real(mcp) \mbox{\hyperlink{structminimize_1_1tpowellminimizer_ad81827f7e9e0d9ef2fff1c9be6907efa}{max\+\_\+like\+\_\+radius}} = 0.\+01\+\_\+mcp
+\item 
+integer \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a93781ee274ac74f430f21a4f504da2ad}{max\+\_\+like\+\_\+iterations}} = 10000
+\item 
+integer \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a5b15717da8aeb917e89914aa656ec4c9}{minimization\+\_\+points\+\_\+factor}} = 2
+\item 
+real(mcp) \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a58aa90209171aa080f91f1b2166d8b0f}{minimize\+\_\+loglike\+\_\+tolerance}} = 1e-\/6\+\_\+mcp
+\item 
+logical \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a4b48492d67c9cad493fd0d35e7307b87}{minimize\+\_\+separate\+\_\+fast}} = .true.
+\item 
+integer \mbox{\hyperlink{structminimize_1_1tpowellminimizer_ab9bcf2dc457f9544a7494d277c7a3c06}{minimize\+\_\+mcmc\+\_\+refine\+\_\+num}} = 20
+\item 
+real(mcp) \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a796a02a9030fc574c5fc584533eb173c}{minimize\+\_\+refine\+\_\+temp}} = 0.\+01\+\_\+mcp
+\item 
+real(mcp) \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a3c8af0ddc4cef9ba411d56cd99adb5f6}{minimize\+\_\+temp\+\_\+scale\+\_\+factor}} = 5.\+\_\+mcp
+\item 
+real(mcp) \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a8f50bf0b17a2543ab12aa1bcd4fd89db}{start\+\_\+trust\+\_\+radius}} = 3.\+\_\+mcp
+\item 
+logical \mbox{\hyperlink{structminimize_1_1tpowellminimizer_a76e15252f9c6a3db6c02fcceec9a30da}{minimize\+\_\+random\+\_\+start\+\_\+pos}} = .false.
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_aaf3650d665c4070ddc0177ed35b7efb9}\label{structminimize_1_1tpowellminimizer_aaf3650d665c4070ddc0177ed35b7efb9}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!findbestfit@{findbestfit}}
+\index{findbestfit@{findbestfit}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{findbestfit()}{findbestfit()}}
+{\footnotesize\ttfamily procedure minimize\+::tpowellminimizer\+::findbestfit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a194c70c653914f1ea1c10e48ba7776ce}\label{structminimize_1_1tpowellminimizer_a194c70c653914f1ea1c10e48ba7776ce}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!findbestfit\+\_\+indices@{findbestfit\+\_\+indices}}
+\index{findbestfit\+\_\+indices@{findbestfit\+\_\+indices}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{findbestfit\+\_\+indices()}{findbestfit\_indices()}}
+{\footnotesize\ttfamily procedure minimize\+::tpowellminimizer\+::findbestfit\+\_\+indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_af8bf5fbb29baeb3e0aa6ae64e33aed22}\label{structminimize_1_1tpowellminimizer_af8bf5fbb29baeb3e0aa6ae64e33aed22}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!readparams@{readparams}}
+\index{readparams@{readparams}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{readparams()}{readparams()}}
+{\footnotesize\ttfamily procedure minimize\+::tpowellminimizer\+::readparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a92246f595ce268aecee1f34b492293d0}\label{structminimize_1_1tpowellminimizer_a92246f595ce268aecee1f34b492293d0}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!bobyqa@{bobyqa}}
+\index{bobyqa@{bobyqa}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{bobyqa}{bobyqa}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structminimize_1_1tbobyqamin}{tbobyqamin}}) minimize\+::tpowellminimizer\+::bobyqa\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a93781ee274ac74f430f21a4f504da2ad}\label{structminimize_1_1tpowellminimizer_a93781ee274ac74f430f21a4f504da2ad}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!max\+\_\+like\+\_\+iterations@{max\+\_\+like\+\_\+iterations}}
+\index{max\+\_\+like\+\_\+iterations@{max\+\_\+like\+\_\+iterations}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{max\+\_\+like\+\_\+iterations}{max\_like\_iterations}}
+{\footnotesize\ttfamily integer minimize\+::tpowellminimizer\+::max\+\_\+like\+\_\+iterations = 10000\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_ad81827f7e9e0d9ef2fff1c9be6907efa}\label{structminimize_1_1tpowellminimizer_ad81827f7e9e0d9ef2fff1c9be6907efa}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!max\+\_\+like\+\_\+radius@{max\+\_\+like\+\_\+radius}}
+\index{max\+\_\+like\+\_\+radius@{max\+\_\+like\+\_\+radius}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{max\+\_\+like\+\_\+radius}{max\_like\_radius}}
+{\footnotesize\ttfamily real(mcp) minimize\+::tpowellminimizer\+::max\+\_\+like\+\_\+radius = 0.\+01\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a5b15717da8aeb917e89914aa656ec4c9}\label{structminimize_1_1tpowellminimizer_a5b15717da8aeb917e89914aa656ec4c9}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!minimization\+\_\+points\+\_\+factor@{minimization\+\_\+points\+\_\+factor}}
+\index{minimization\+\_\+points\+\_\+factor@{minimization\+\_\+points\+\_\+factor}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{minimization\+\_\+points\+\_\+factor}{minimization\_points\_factor}}
+{\footnotesize\ttfamily integer minimize\+::tpowellminimizer\+::minimization\+\_\+points\+\_\+factor = 2\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a58aa90209171aa080f91f1b2166d8b0f}\label{structminimize_1_1tpowellminimizer_a58aa90209171aa080f91f1b2166d8b0f}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!minimize\+\_\+loglike\+\_\+tolerance@{minimize\+\_\+loglike\+\_\+tolerance}}
+\index{minimize\+\_\+loglike\+\_\+tolerance@{minimize\+\_\+loglike\+\_\+tolerance}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+loglike\+\_\+tolerance}{minimize\_loglike\_tolerance}}
+{\footnotesize\ttfamily real(mcp) minimize\+::tpowellminimizer\+::minimize\+\_\+loglike\+\_\+tolerance = 1e-\/6\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_ab9bcf2dc457f9544a7494d277c7a3c06}\label{structminimize_1_1tpowellminimizer_ab9bcf2dc457f9544a7494d277c7a3c06}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!minimize\+\_\+mcmc\+\_\+refine\+\_\+num@{minimize\+\_\+mcmc\+\_\+refine\+\_\+num}}
+\index{minimize\+\_\+mcmc\+\_\+refine\+\_\+num@{minimize\+\_\+mcmc\+\_\+refine\+\_\+num}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+mcmc\+\_\+refine\+\_\+num}{minimize\_mcmc\_refine\_num}}
+{\footnotesize\ttfamily integer minimize\+::tpowellminimizer\+::minimize\+\_\+mcmc\+\_\+refine\+\_\+num = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a76e15252f9c6a3db6c02fcceec9a30da}\label{structminimize_1_1tpowellminimizer_a76e15252f9c6a3db6c02fcceec9a30da}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!minimize\+\_\+random\+\_\+start\+\_\+pos@{minimize\+\_\+random\+\_\+start\+\_\+pos}}
+\index{minimize\+\_\+random\+\_\+start\+\_\+pos@{minimize\+\_\+random\+\_\+start\+\_\+pos}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+random\+\_\+start\+\_\+pos}{minimize\_random\_start\_pos}}
+{\footnotesize\ttfamily logical minimize\+::tpowellminimizer\+::minimize\+\_\+random\+\_\+start\+\_\+pos = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a796a02a9030fc574c5fc584533eb173c}\label{structminimize_1_1tpowellminimizer_a796a02a9030fc574c5fc584533eb173c}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!minimize\+\_\+refine\+\_\+temp@{minimize\+\_\+refine\+\_\+temp}}
+\index{minimize\+\_\+refine\+\_\+temp@{minimize\+\_\+refine\+\_\+temp}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+refine\+\_\+temp}{minimize\_refine\_temp}}
+{\footnotesize\ttfamily real(mcp) minimize\+::tpowellminimizer\+::minimize\+\_\+refine\+\_\+temp = 0.\+01\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a4b48492d67c9cad493fd0d35e7307b87}\label{structminimize_1_1tpowellminimizer_a4b48492d67c9cad493fd0d35e7307b87}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!minimize\+\_\+separate\+\_\+fast@{minimize\+\_\+separate\+\_\+fast}}
+\index{minimize\+\_\+separate\+\_\+fast@{minimize\+\_\+separate\+\_\+fast}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+separate\+\_\+fast}{minimize\_separate\_fast}}
+{\footnotesize\ttfamily logical minimize\+::tpowellminimizer\+::minimize\+\_\+separate\+\_\+fast = .true.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a3c8af0ddc4cef9ba411d56cd99adb5f6}\label{structminimize_1_1tpowellminimizer_a3c8af0ddc4cef9ba411d56cd99adb5f6}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!minimize\+\_\+temp\+\_\+scale\+\_\+factor@{minimize\+\_\+temp\+\_\+scale\+\_\+factor}}
+\index{minimize\+\_\+temp\+\_\+scale\+\_\+factor@{minimize\+\_\+temp\+\_\+scale\+\_\+factor}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{minimize\+\_\+temp\+\_\+scale\+\_\+factor}{minimize\_temp\_scale\_factor}}
+{\footnotesize\ttfamily real(mcp) minimize\+::tpowellminimizer\+::minimize\+\_\+temp\+\_\+scale\+\_\+factor = 5.\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structminimize_1_1tpowellminimizer_a8f50bf0b17a2543ab12aa1bcd4fd89db}\label{structminimize_1_1tpowellminimizer_a8f50bf0b17a2543ab12aa1bcd4fd89db}} 
+\index{minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}!start\+\_\+trust\+\_\+radius@{start\+\_\+trust\+\_\+radius}}
+\index{start\+\_\+trust\+\_\+radius@{start\+\_\+trust\+\_\+radius}!minimize\+::tpowellminimizer@{minimize\+::tpowellminimizer}}
+\subsubsection{\texorpdfstring{start\+\_\+trust\+\_\+radius}{start\_trust\_radius}}
+{\footnotesize\ttfamily real(mcp) minimize\+::tpowellminimizer\+::start\+\_\+trust\+\_\+radius = 3.\+\_\+mcp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{minimize_8f90}{minimize.\+f90}}\end{DoxyCompactItemize}

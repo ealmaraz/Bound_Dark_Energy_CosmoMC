@@ -1,0 +1,1419 @@
+\hypertarget{namespacecambmain}{}\section{cambmain Module Reference}
+\label{namespacecambmain}\index{cambmain@{cambmain}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecambmain_a8863977991a108f96a26fc99e8c5e129}{cmbmain}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecambmain_a15c0f01f07762c709f8f718935153d7a}{cltransfertocl}} (C\+TransS, C\+TransT, C\+TransV)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad3f7f4af84395bc4648bcc82e81e8861}{calclimberscalcls}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ae71666c61f08659e1870539ab6230f02}{getlimbertransfers}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad84747dc28d2ff66a818a46c3eb5f574}{sourcetotransfers}} (q\+\_\+ix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a556b6e83160b14e40cffab6e0deb6e12}{inittransfer}}
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacecambmain_affb3c10eee60a6f657ccf1c0f0abd693}{gettaustart}} (q)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a9ff2ea693941648b6f34d86e019f9613}{dosourcek}} (EV, q\+\_\+ix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af7f170a39e21214fe3b389f74dbb183d}{getsourcemem}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a47cd48fe0174b214ddc23bcdd91b6754}{freesourcemem}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacecambmain_a890ea024560967d80a83e411a34368ed}{initvars}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a63fe5ba29fa3c5116ef8bc646e7aa09c}{setkvaluesforsources}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a96c41c9fdee3e69fba450a460df25472}{setclosedkvaluesfromarr}} (R, for\+Int)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a8861dfd3252de9c7b39b9c09ee415010}{evolved}} (dum, num, tau, y, yprime)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ab6fa8682eb65308c413e6501a9b5417c}{calcscalarsources}} (EV, taustart)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad933d804e4a0a4ae8bdf2754e608458d}{calctensorsources}} (EV, taustart)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_affd6aea4c80363ff01132e154eabbb00}{calcvectorsources}} (EV, taustart)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a3411884ad6ba8d1584e9dedab9fdab81}{transferout}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ac9e5e052a53e579f43f980836baee5be}{gettransfer}} (EV, tau)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a5b302c437be8bf6d127dc65f638778c8}{makenonlinearsources}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a4af989c7e3c97477fc61f6b31dd053e7}{initsourceinterpolation}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_ad0f2dd9e839652502a6e34c32ec44e0d}{setkvaluesforint}}
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a7e1e9bb292a8b4d778e9b8d218ee4036}{interpolatesources}} (IV)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af5b8d9ce147ddcd3fb33ee015b43b284}{integrationvars\+\_\+init}} (IV)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a89b9b0f69a8f18b112b2309db4ad29c6}{dosourceintegration}} (IV)
+\item 
+logical function \mbox{\hyperlink{namespacecambmain_ad1efd57b702656e463555cccd0f1b40c}{uselimber}} (l, k)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a66b6d740c5e702807d5454979eec8cde}{doflatintegration}} (IV, llmax)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a74b9c41eb2501d8c0cc163ff7030a926}{integratesourcesbessels}} (IV, j, l, nu)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af0980e25384f7d9b2eb64435231f3aa5}{dorangeint}} (IV, chi, chi\+Disp, nstart, nend, dtau, nu, l, y1, y2, out)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af5113df414eaba3ff8913a737da72c34}{dorangeinttensor}} (IV, chi, chi\+Disp, nstart, nend, dtau, nu, l, y1, y2, out)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a5fb4d38dca7390cd662572152b12f7d0}{getinitpowerarrayvec}} (pows, ks, numks, pix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_af4005843871d59b0973861e895fdb0d3}{getinitpowerarraytens}} (pows, ks, numks, pix)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a8b2cc98e7553a77d720caca21f5ae8e5}{calcscalcls}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a89e57ae788ae9b3065000febda0566a5}{calcscalcls2}} (C\+Trans)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a412610e13dd6e264ce9d9ac33e0fbc1f}{calctenscls}} (C\+Trans, Get\+Init\+Powers)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a709092859c794b6298b580be81ff9a90}{calcveccls}} (C\+Trans, Get\+Init\+Powers)
+\item 
+subroutine \mbox{\hyperlink{namespacecambmain_a411e6e866cbb05f2ba3f7164f8e04a67}{interpolatecls}} (C\+TransS, C\+TransT, C\+TransV)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical \mbox{\hyperlink{namespacecambmain_a2ce96c9fd586b264b5601a12a8903a31}{wantlatetime}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacecambmain_a2ded9daf3b231818ba6168f15ce0c90f}{exactclosedsum}}
+\item 
+integer \mbox{\hyperlink{namespacecambmain_a7874020426cc2db0dd79451dce8e4476}{sourcenum}}
+\item 
+real(dl), dimension(0\+:max\+\_\+transfer\+\_\+redshifts) \mbox{\hyperlink{namespacecambmain_a24c75595b15c8996bc6bc65a8bcf3cad}{tautf}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a799546cf5b0652ca67395d086e02912a}{src}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a3a07a99a808d7449c0ca61a9df448594}{ddsrc}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_ae6d811821c995ff2a5bda416a8696ae7}{icl\+\_\+scalar}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a2044e91de72f6f3c0c0e2f87ab2c6a04}{icl\+\_\+vector}}
+\item 
+real(dl), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_ad09fccee49c220454529f80e65beb489}{icl\+\_\+tensor}}
+\item 
+real(dl), dimension(\+:,\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacecambmain_a34fbba5156bf16dc5e9131c1936bf47c}{icl\+\_\+array}}
+\item 
+type(regions) \mbox{\hyperlink{namespacecambmain_a5ec3a97db7f68f99f47c3b077bbe3cda}{evolve\+\_\+q}}
+\item 
+real(dl), parameter \mbox{\hyperlink{namespacecambmain_ac2494adca6c0269bd275ac6125de266c}{qmin0}} =0.\+1\+\_\+dl
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a0c8e31379dc1ff5e59d2da0bf1afcb8f}{dtaurec\+\_\+q}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a5c0dcf87d7d21c1159e4eccad5b679ef}{qmin}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_abb9b39e7c9db24515f7e239e94831b1b}{qmax}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a16f888ec18bcb88fb88b604ee1c858de}{max\+\_\+etak\+\_\+tensor}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a070e24f1ae1246e4d6b1ad8aacc87919}{max\+\_\+etak\+\_\+vector}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_ac4c24515e982e0af0ef3997027302e04}{max\+\_\+etak\+\_\+scalar}}
+\item 
+integer \mbox{\hyperlink{namespacecambmain_acb0277d55c225aee4dcfca123a3631a2}{maximum\+\_\+l}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a538fac0cbeacb9f2daa7bd638e3ca806}{maximum\+\_\+qeta}} = 3000.\+\_\+dl
+\item 
+integer \mbox{\hyperlink{namespacecambmain_a3ebcb0843a6249a58a33f83e5cf9b73b}{l\+\_\+smooth\+\_\+sample}} = 3000
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a75e3aaa48b8fb5985062a5be2f05dea8}{aid}}
+\item 
+real(dl) \mbox{\hyperlink{namespacecambmain_a926ceb33a98900b90f263443b550e391}{dmid}}
+\item 
+real(dl), public \mbox{\hyperlink{namespacecambmain_a5e84a7f00ba906908259607d54f9176f}{alens}} = 1.\+\_\+dl
+\item 
+type(cltransferdata), pointer \mbox{\hyperlink{namespacecambmain_a48fb88bbacefa24534f688f9de4ff827}{thisct}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecambmain_ad3f7f4af84395bc4648bcc82e81e8861}\label{namespacecambmain_ad3f7f4af84395bc4648bcc82e81e8861}} 
+\index{cambmain@{cambmain}!calclimberscalcls@{calclimberscalcls}}
+\index{calclimberscalcls@{calclimberscalcls}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calclimberscalcls()}{calclimberscalcls()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calclimberscalcls (\begin{DoxyParamCaption}\item[{type(cltransferdata)}]{C\+Trans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modeldata\+::c\+\_\+phi, modelparams\+::cp, modeldata\+::has\+\_\+cl\+\_\+2d\+\_\+array, icl\+\_\+array, icl\+\_\+scalar, modelparams\+::limber\+\_\+phiphi, modelparams\+::num\+\_\+redshiftwindows, modelparams\+::outputdenominator, and initialpower\+::scalarpower().
+
+
+
+Referenced by cltransfertocl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad3f7f4af84395bc4648bcc82e81e8861_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad3f7f4af84395bc4648bcc82e81e8861_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_ab6fa8682eb65308c413e6501a9b5417c}\label{namespacecambmain_ab6fa8682eb65308c413e6501a9b5417c}} 
+\index{cambmain@{cambmain}!calcscalarsources@{calcscalarsources}}
+\index{calcscalarsources@{calcscalarsources}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calcscalarsources()}{calcscalarsources()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calcscalarsources (\begin{DoxyParamCaption}\item[{type(evolutionvars)}]{EV,  }\item[{real(dl)}]{taustart }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::ac, modelparams\+::accuracyboost, aid, modelparams\+::alphabde, modelparams\+::cp, modelparams\+::debugevolution, gaugeinterface\+::derivs(), dmid, dverk(), evolved(), modelparams\+::fixq, gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), errors\+::global\+\_\+error\+\_\+flag, modelparams\+::grhob, modelparams\+::grhoc, modelparams\+::grhodgc, modelparams\+::grhog, modelparams\+::grhornomass, gaugeinterface\+::initial(), modelparams\+::lambdac, max\+\_\+etak\+\_\+scalar, transfer\+::mt, gaugeinterface\+::output(), gaugeinterface\+::outtransf(), src, modelparams\+::taurend, tautf, modelparams\+::timeofz(), modelparams\+::timesteps, modelparams\+::tol, wantlatetime, and modelparams\+::wdgc.
+
+
+
+Referenced by dosourcek().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ab6fa8682eb65308c413e6501a9b5417c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ab6fa8682eb65308c413e6501a9b5417c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a8b2cc98e7553a77d720caca21f5ae8e5}\label{namespacecambmain_a8b2cc98e7553a77d720caca21f5ae8e5}} 
+\index{cambmain@{cambmain}!calcscalcls@{calcscalcls}}
+\index{calcscalcls@{calcscalcls}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calcscalcls()}{calcscalcls()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calcscalcls (\begin{DoxyParamCaption}\item[{type(cltransferdata)}]{C\+Trans }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References alens, modeldata\+::c\+\_\+cross, modeldata\+::c\+\_\+e, modeldata\+::c\+\_\+phi, modeldata\+::c\+\_\+phie, modeldata\+::c\+\_\+phitemp, modeldata\+::c\+\_\+temp, modelparams\+::cp, errors\+::global\+\_\+error\+\_\+flag, modeldata\+::has\+\_\+cl\+\_\+2d\+\_\+array, icl\+\_\+array, icl\+\_\+scalar, modelparams\+::limber\+\_\+phiphi, modelparams\+::num\+\_\+redshiftwindows, modelparams\+::outputdenominator, and initialpower\+::scalarpower().
+
+
+
+Referenced by cltransfertocl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a8b2cc98e7553a77d720caca21f5ae8e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a8b2cc98e7553a77d720caca21f5ae8e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a89e57ae788ae9b3065000febda0566a5}\label{namespacecambmain_a89e57ae788ae9b3065000febda0566a5}} 
+\index{cambmain@{cambmain}!calcscalcls2@{calcscalcls2}}
+\index{calcscalcls2@{calcscalcls2}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calcscalcls2()}{calcscalcls2()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calcscalcls2 (\begin{DoxyParamCaption}\item[{type(cltransferdata)}]{C\+Trans }\end{DoxyParamCaption})}
+
+
+
+References modeldata\+::c\+\_\+cross, modeldata\+::c\+\_\+e, modeldata\+::c\+\_\+last, modeldata\+::c\+\_\+temp, modelparams\+::cp, errors\+::global\+\_\+error\+\_\+flag, modelparams\+::outputdenominator, and initialpower\+::scalarpower().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a89e57ae788ae9b3065000febda0566a5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a412610e13dd6e264ce9d9ac33e0fbc1f}\label{namespacecambmain_a412610e13dd6e264ce9d9ac33e0fbc1f}} 
+\index{cambmain@{cambmain}!calctenscls@{calctenscls}}
+\index{calctenscls@{calctenscls}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calctenscls()}{calctenscls()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calctenscls (\begin{DoxyParamCaption}\item[{type(cltransferdata)}]{C\+Trans,  }\item[{external}]{Get\+Init\+Powers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::cp, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+e, modeldata\+::ct\+\_\+temp, icl\+\_\+tensor, and modelparams\+::outputdenominator.
+
+
+
+Referenced by cltransfertocl().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a412610e13dd6e264ce9d9ac33e0fbc1f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_ad933d804e4a0a4ae8bdf2754e608458d}\label{namespacecambmain_ad933d804e4a0a4ae8bdf2754e608458d}} 
+\index{cambmain@{cambmain}!calctensorsources@{calctensorsources}}
+\index{calctensorsources@{calctensorsources}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calctensorsources()}{calctensorsources()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calctensorsources (\begin{DoxyParamCaption}\item[{type(evolutionvars)}]{EV,  }\item[{real(dl)}]{taustart }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+e, modeldata\+::ct\+\_\+temp, gaugeinterface\+::gaugeinterface\+\_\+evolvetens(), gaugeinterface\+::initialt(), max\+\_\+etak\+\_\+tensor, gaugeinterface\+::outputt(), sourcenum, src, modelparams\+::timesteps, and modelparams\+::tol.
+
+
+
+Referenced by dosourcek().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad933d804e4a0a4ae8bdf2754e608458d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad933d804e4a0a4ae8bdf2754e608458d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a709092859c794b6298b580be81ff9a90}\label{namespacecambmain_a709092859c794b6298b580be81ff9a90}} 
+\index{cambmain@{cambmain}!calcveccls@{calcveccls}}
+\index{calcveccls@{calcveccls}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calcveccls()}{calcveccls()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calcveccls (\begin{DoxyParamCaption}\item[{type(cltransferdata)}]{C\+Trans,  }\item[{external}]{Get\+Init\+Powers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::cp, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+e, modeldata\+::ct\+\_\+temp, icl\+\_\+vector, and modelparams\+::outputdenominator.
+
+
+
+Referenced by cltransfertocl().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a709092859c794b6298b580be81ff9a90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_affd6aea4c80363ff01132e154eabbb00}\label{namespacecambmain_affd6aea4c80363ff01132e154eabbb00}} 
+\index{cambmain@{cambmain}!calcvectorsources@{calcvectorsources}}
+\index{calcvectorsources@{calcvectorsources}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{calcvectorsources()}{calcvectorsources()}}
+{\footnotesize\ttfamily subroutine cambmain\+::calcvectorsources (\begin{DoxyParamCaption}\item[{type(evolutionvars)}]{EV,  }\item[{real(dl)}]{taustart }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, modeldata\+::ct\+\_\+b, modeldata\+::ct\+\_\+e, modeldata\+::ct\+\_\+temp, gaugeinterface\+::derivsv(), dverk(), gaugeinterface\+::initialv(), max\+\_\+etak\+\_\+vector, gaugeinterface\+::outputv(), sourcenum, src, modelparams\+::timesteps, and modelparams\+::tol.
+
+
+
+Referenced by dosourcek().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_affd6aea4c80363ff01132e154eabbb00_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_affd6aea4c80363ff01132e154eabbb00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a15c0f01f07762c709f8f718935153d7a}\label{namespacecambmain_a15c0f01f07762c709f8f718935153d7a}} 
+\index{cambmain@{cambmain}!cltransfertocl@{cltransfertocl}}
+\index{cltransfertocl@{cltransfertocl}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{cltransfertocl()}{cltransfertocl()}}
+{\footnotesize\ttfamily subroutine, public cambmain\+::cltransfertocl (\begin{DoxyParamCaption}\item[{type(cltransferdata)}]{C\+TransS,  }\item[{type(cltransferdata)}]{C\+TransT,  }\item[{type(cltransferdata)}]{C\+TransV }\end{DoxyParamCaption})}
+
+
+
+References modeldata\+::c\+\_\+last, modeldata\+::c\+\_\+temp, calclimberscalcls(), calcscalcls(), calctenscls(), calcveccls(), modelparams\+::cp, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+temp, modelparams\+::debugmsgs, modelparams\+::feedbacklevel, getinitpowerarraytens(), getinitpowerarrayvec(), errors\+::global\+\_\+error\+\_\+flag, modeldata\+::has\+\_\+cl\+\_\+2d\+\_\+array, icl\+\_\+array, icl\+\_\+scalar, icl\+\_\+tensor, icl\+\_\+vector, modeldata\+::init\+\_\+cls(), interpolatecls(), lvalues\+::lsamp, and modeldata\+::normalizeclsatl().
+
+
+
+Referenced by camb\+::camb\+\_\+transferstopowers(), and cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a15c0f01f07762c709f8f718935153d7a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a15c0f01f07762c709f8f718935153d7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a8863977991a108f96a26fc99e8c5e129}\label{namespacecambmain_a8863977991a108f96a26fc99e8c5e129}} 
+\index{cambmain@{cambmain}!cmbmain@{cmbmain}}
+\index{cmbmain@{cmbmain}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{cmbmain()}{cmbmain()}}
+{\footnotesize\ttfamily subroutine, public cambmain\+::cmbmain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References cltransfertocl(), modelparams\+::cp, modeldata\+::ctransscal, modeldata\+::ctranstens, modeldata\+::ctransvec, modelparams\+::debugmsgs, dosourcek(), evolve\+\_\+q, exactclosedsum, modelparams\+::feedbacklevel, freesourcemem(), getlimbertransfers(), getsourcemem(), modelparams\+::gettesttime(), errors\+::global\+\_\+error\+\_\+flag, initialpower\+::initializepowers(), lvalues\+::initlval(), initsourceinterpolation(), spherbessels\+::initspherbessels(), inittransfer(), initvars(), lvalues\+::lsamp, makenonlinearsources(), modelparams\+::max\+\_\+bessels\+\_\+etak, modelparams\+::max\+\_\+bessels\+\_\+l\+\_\+index, maximum\+\_\+l, maximum\+\_\+qeta, transfer\+::mt, modelparams\+::nonlinear\+\_\+both, modelparams\+::nonlinear\+\_\+lens, modelparams\+::num\+\_\+redshiftwindows, modelparams\+::scale, setkvaluesforint(), setkvaluesforsources(), sourcenum, sourcetotransfers(), thisct, transfer\+::transfer\+\_\+get\+\_\+sigmas(), transferout(), and wantlatetime.
+
+
+
+Referenced by camb\+::camb\+\_\+getresults().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacecambmain_a8863977991a108f96a26fc99e8c5e129_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a8863977991a108f96a26fc99e8c5e129_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a66b6d740c5e702807d5454979eec8cde}\label{namespacecambmain_a66b6d740c5e702807d5454979eec8cde}} 
+\index{cambmain@{cambmain}!doflatintegration@{doflatintegration}}
+\index{doflatintegration@{doflatintegration}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{doflatintegration()}{doflatintegration()}}
+{\footnotesize\ttfamily subroutine cambmain\+::doflatintegration (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}})}]{IV,  }\item[{integer}]{llmax }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, spherbessels\+::ajl, spherbessels\+::ajlpr, spherbessels\+::bessranges, modelparams\+::cp, modelparams\+::do\+\_\+bispectrum, modelparams\+::full\+\_\+bessel\+\_\+integration, modelparams\+::highaccuracydefault, lvalues\+::lsamp, modelparams\+::max\+\_\+bessels\+\_\+l\+\_\+index, thisct, modelparams\+::timesteps, uselimber(), spherbessels\+::xlimfrac, and spherbessels\+::xlimmin.
+
+
+
+Referenced by dosourceintegration().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a66b6d740c5e702807d5454979eec8cde_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a66b6d740c5e702807d5454979eec8cde_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_af0980e25384f7d9b2eb64435231f3aa5}\label{namespacecambmain_af0980e25384f7d9b2eb64435231f3aa5}} 
+\index{cambmain@{cambmain}!dorangeint@{dorangeint}}
+\index{dorangeint@{dorangeint}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{dorangeint()}{dorangeint()}}
+{\footnotesize\ttfamily subroutine cambmain\+::dorangeint (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}})}]{IV,  }\item[{real(dl)}]{chi,  }\item[{real(dl)}]{chi\+Disp,  }\item[{integer}]{nstart,  }\item[{integer}]{nend,  }\item[{real(dl)}]{dtau,  }\item[{real(dl)}]{nu,  }\item[{integer}]{l,  }\item[{real(dl)}]{y1,  }\item[{real(dl)}]{y2,  }\item[{real(dl), dimension(\mbox{\hyperlink{namespacecambmain_a7874020426cc2db0dd79451dce8e4476}{sourcenum}})}]{out }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, dtaurec\+\_\+q, modelparams\+::highaccuracydefault, modelparams\+::rofchi(), modelparams\+::scale, modelparams\+::timesteps, uselimber(), spherbessels\+::uspherbesselwithderiv(), and wantlatetime.
+
+
+
+Referenced by integratesourcesbessels().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af0980e25384f7d9b2eb64435231f3aa5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af0980e25384f7d9b2eb64435231f3aa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_af5113df414eaba3ff8913a737da72c34}\label{namespacecambmain_af5113df414eaba3ff8913a737da72c34}} 
+\index{cambmain@{cambmain}!dorangeinttensor@{dorangeinttensor}}
+\index{dorangeinttensor@{dorangeinttensor}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{dorangeinttensor()}{dorangeinttensor()}}
+{\footnotesize\ttfamily subroutine cambmain\+::dorangeinttensor (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}}), target}]{IV,  }\item[{real(dl)}]{chi,  }\item[{real(dl)}]{chi\+Disp,  }\item[{integer}]{nstart,  }\item[{integer}]{nend,  }\item[{real(dl)}]{dtau,  }\item[{real(dl)}]{nu,  }\item[{integer}]{l,  }\item[{real(dl)}]{y1,  }\item[{real(dl)}]{y2,  }\item[{real(dl), dimension(\mbox{\hyperlink{namespacecambmain_a7874020426cc2db0dd79451dce8e4476}{sourcenum}})}]{out }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, modelparams\+::rofchi(), modelparams\+::scale, modelparams\+::timesteps, and spherbessels\+::uspherbesselwithderiv().
+
+
+
+Referenced by integratesourcesbessels().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af5113df414eaba3ff8913a737da72c34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af5113df414eaba3ff8913a737da72c34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a89b9b0f69a8f18b112b2309db4ad29c6}\label{namespacecambmain_a89b9b0f69a8f18b112b2309db4ad29c6}} 
+\index{cambmain@{cambmain}!dosourceintegration@{dosourceintegration}}
+\index{dosourceintegration@{dosourceintegration}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{dosourceintegration()}{dosourceintegration()}}
+{\footnotesize\ttfamily subroutine cambmain\+::dosourceintegration (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}})}]{IV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::cp, doflatintegration(), integratesourcesbessels(), lvalues\+::lsamp, and modelparams\+::rofchi().
+
+
+
+Referenced by sourcetotransfers().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a89b9b0f69a8f18b112b2309db4ad29c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a89b9b0f69a8f18b112b2309db4ad29c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a9ff2ea693941648b6f34d86e019f9613}\label{namespacecambmain_a9ff2ea693941648b6f34d86e019f9613}} 
+\index{cambmain@{cambmain}!dosourcek@{dosourcek}}
+\index{dosourcek@{dosourcek}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{dosourcek()}{dosourcek()}}
+{\footnotesize\ttfamily subroutine cambmain\+::dosourcek (\begin{DoxyParamCaption}\item[{type(evolutionvars)}]{EV,  }\item[{integer}]{q\+\_\+ix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References calcscalarsources(), calctensorsources(), calcvectorsources(), modelparams\+::cp, evolve\+\_\+q, modelparams\+::fixq, gaugeinterface\+::getnumeqns(), gettaustart(), and errors\+::global\+\_\+error\+\_\+flag.
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a9ff2ea693941648b6f34d86e019f9613_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a9ff2ea693941648b6f34d86e019f9613_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a8861dfd3252de9c7b39b9c09ee415010}\label{namespacecambmain_a8861dfd3252de9c7b39b9c09ee415010}} 
+\index{cambmain@{cambmain}!evolved@{evolved}}
+\index{evolved@{evolved}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{evolved()}{evolved()}}
+{\footnotesize\ttfamily subroutine cambmain\+::evolved (\begin{DoxyParamCaption}\item[{real}]{dum,  }\item[{integer}]{num,  }\item[{real(dl)}]{tau,  }\item[{real(dl), dimension(num)}]{y,  }\item[{real(dl), dimension(num)}]{yprime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References aid, dmid, modelparams\+::grhob, and modelparams\+::grhoc.
+
+
+
+Referenced by calcscalarsources().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a8861dfd3252de9c7b39b9c09ee415010_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a47cd48fe0174b214ddc23bcdd91b6754}\label{namespacecambmain_a47cd48fe0174b214ddc23bcdd91b6754}} 
+\index{cambmain@{cambmain}!freesourcemem@{freesourcemem}}
+\index{freesourcemem@{freesourcemem}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{freesourcemem()}{freesourcemem()}}
+{\footnotesize\ttfamily subroutine cambmain\+::freesourcemem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References ddsrc, evolve\+\_\+q, and src.
+
+
+
+Referenced by cmbmain().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a47cd48fe0174b214ddc23bcdd91b6754_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_af4005843871d59b0973861e895fdb0d3}\label{namespacecambmain_af4005843871d59b0973861e895fdb0d3}} 
+\index{cambmain@{cambmain}!getinitpowerarraytens@{getinitpowerarraytens}}
+\index{getinitpowerarraytens@{getinitpowerarraytens}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{getinitpowerarraytens()}{getinitpowerarraytens()}}
+{\footnotesize\ttfamily subroutine cambmain\+::getinitpowerarraytens (\begin{DoxyParamCaption}\item[{real(dl), dimension(numks)}]{pows,  }\item[{real(dl), dimension(numks)}]{ks,  }\item[{integer, intent(in)}]{numks,  }\item[{integer, intent(in)}]{pix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References errors\+::global\+\_\+error\+\_\+flag, and initialpower\+::tensorpower().
+
+
+
+Referenced by cltransfertocl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af4005843871d59b0973861e895fdb0d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af4005843871d59b0973861e895fdb0d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a5fb4d38dca7390cd662572152b12f7d0}\label{namespacecambmain_a5fb4d38dca7390cd662572152b12f7d0}} 
+\index{cambmain@{cambmain}!getinitpowerarrayvec@{getinitpowerarrayvec}}
+\index{getinitpowerarrayvec@{getinitpowerarrayvec}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{getinitpowerarrayvec()}{getinitpowerarrayvec()}}
+{\footnotesize\ttfamily subroutine cambmain\+::getinitpowerarrayvec (\begin{DoxyParamCaption}\item[{real(dl), dimension(numks)}]{pows,  }\item[{real(dl), dimension(numks)}]{ks,  }\item[{integer, intent(in)}]{numks,  }\item[{integer, intent(in)}]{pix }\end{DoxyParamCaption})}
+
+
+
+References errors\+::global\+\_\+error\+\_\+flag, and initialpower\+::scalarpower().
+
+
+
+Referenced by cltransfertocl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a5fb4d38dca7390cd662572152b12f7d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a5fb4d38dca7390cd662572152b12f7d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_ae71666c61f08659e1870539ab6230f02}\label{namespacecambmain_ae71666c61f08659e1870539ab6230f02}} 
+\index{cambmain@{cambmain}!getlimbertransfers@{getlimbertransfers}}
+\index{getlimbertransfers@{getlimbertransfers}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{getlimbertransfers()}{getlimbertransfers()}}
+{\footnotesize\ttfamily subroutine cambmain\+::getlimbertransfers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, ddsrc, evolve\+\_\+q, modelparams\+::feedbacklevel, modeldata\+::init\+\_\+limber(), modelparams\+::limber\+\_\+phiphi, lvalues\+::lvalues\+\_\+indexof(), modelparams\+::max\+\_\+bessels\+\_\+etak, modelparams\+::max\+\_\+bessels\+\_\+l\+\_\+index, modelparams\+::num\+\_\+redshiftwindows, qmax, src, modelparams\+::tau\+\_\+maxvis, thisct, and modelparams\+::timesteps.
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ae71666c61f08659e1870539ab6230f02_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ae71666c61f08659e1870539ab6230f02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_af7f170a39e21214fe3b389f74dbb183d}\label{namespacecambmain_af7f170a39e21214fe3b389f74dbb183d}} 
+\index{cambmain@{cambmain}!getsourcemem@{getsourcemem}}
+\index{getsourcemem@{getsourcemem}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{getsourcemem()}{getsourcemem()}}
+{\footnotesize\ttfamily subroutine cambmain\+::getsourcemem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modeldata\+::c\+\_\+cross, modeldata\+::c\+\_\+last, modeldata\+::c\+\_\+phie, modelparams\+::cp, ddsrc, evolve\+\_\+q, modelparams\+::num\+\_\+extra\+\_\+redshiftwindows, modelparams\+::num\+\_\+redshiftwindows, sourcenum, src, modelparams\+::timesteps, and wantlatetime.
+
+
+
+Referenced by cmbmain().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af7f170a39e21214fe3b389f74dbb183d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_affb3c10eee60a6f657ccf1c0f0abd693}\label{namespacecambmain_affb3c10eee60a6f657ccf1c0f0abd693}} 
+\index{cambmain@{cambmain}!gettaustart@{gettaustart}}
+\index{gettaustart@{gettaustart}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{gettaustart()}{gettaustart()}}
+{\footnotesize\ttfamily real(dl) function, public cambmain\+::gettaustart (\begin{DoxyParamCaption}\item[{real(dl), intent(in)}]{q }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::adotrad, modelparams\+::cp, modelparams\+::fixq, and modelparams\+::nu\+\_\+masses.
+
+
+
+Referenced by dosourcek(), handles\+::getoutputevolutionfork(), initvars(), and transferout().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_affb3c10eee60a6f657ccf1c0f0abd693_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_ac9e5e052a53e579f43f980836baee5be}\label{namespacecambmain_ac9e5e052a53e579f43f980836baee5be}} 
+\index{cambmain@{cambmain}!gettransfer@{gettransfer}}
+\index{gettransfer@{gettransfer}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{gettransfer()}{gettransfer()}}
+{\footnotesize\ttfamily subroutine cambmain\+::gettransfer (\begin{DoxyParamCaption}\item[{type(evolutionvars)}]{EV,  }\item[{real(dl)}]{tau }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, gaugeinterface\+::gaugeinterface\+\_\+evolvescal(), errors\+::global\+\_\+error\+\_\+flag, gaugeinterface\+::initial(), transfer\+::mt, gaugeinterface\+::outtransf(), tautf, and modelparams\+::tol.
+
+
+
+Referenced by transferout().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ac9e5e052a53e579f43f980836baee5be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ac9e5e052a53e579f43f980836baee5be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a4af989c7e3c97477fc61f6b31dd053e7}\label{namespacecambmain_a4af989c7e3c97477fc61f6b31dd053e7}} 
+\index{cambmain@{cambmain}!initsourceinterpolation@{initsourceinterpolation}}
+\index{initsourceinterpolation@{initsourceinterpolation}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{initsourceinterpolation()}{initsourceinterpolation()}}
+{\footnotesize\ttfamily subroutine cambmain\+::initsourceinterpolation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ddsrc, evolve\+\_\+q, sourcenum, modelparams\+::spl\+\_\+large, spline(), src, and modelparams\+::timesteps.
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacecambmain_a4af989c7e3c97477fc61f6b31dd053e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a4af989c7e3c97477fc61f6b31dd053e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a556b6e83160b14e40cffab6e0deb6e12}\label{namespacecambmain_a556b6e83160b14e40cffab6e0deb6e12}} 
+\index{cambmain@{cambmain}!inittransfer@{inittransfer}}
+\index{inittransfer@{inittransfer}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{inittransfer()}{inittransfer()}}
+{\footnotesize\ttfamily subroutine cambmain\+::inittransfer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, evolve\+\_\+q, modelparams\+::highaccuracydefault, transfer\+::mt, qmin, modelparams\+::taurst, and transfer\+::transfer\+\_\+allocate().
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacecambmain_a556b6e83160b14e40cffab6e0deb6e12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a556b6e83160b14e40cffab6e0deb6e12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a890ea024560967d80a83e411a34368ed}\label{namespacecambmain_a890ea024560967d80a83e411a34368ed}} 
+\index{cambmain@{cambmain}!initvars@{initvars}}
+\index{initvars@{initvars}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{initvars()}{initvars()}}
+{\footnotesize\ttfamily subroutine, public cambmain\+::initvars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, modelparams\+::debugmsgs, modelparams\+::dtaurec, dtaurec\+\_\+q, modelparams\+::feedbacklevel, gaugeinterface\+::gaugeinterface\+\_\+init(), gettaustart(), errors\+::global\+\_\+error\+\_\+flag, thermodata\+::inithermo(), max\+\_\+etak\+\_\+scalar, max\+\_\+etak\+\_\+tensor, max\+\_\+etak\+\_\+vector, maximum\+\_\+qeta, qmax, qmin, qmin0, modelparams\+::tau\+\_\+maxvis, tautf, and modelparams\+::timeofz().
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setbackgroundtheorydata(), handles\+::cambdata\+\_\+calcbackgroundtheory(), and cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a890ea024560967d80a83e411a34368ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a890ea024560967d80a83e411a34368ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a74b9c41eb2501d8c0cc163ff7030a926}\label{namespacecambmain_a74b9c41eb2501d8c0cc163ff7030a926}} 
+\index{cambmain@{cambmain}!integratesourcesbessels@{integratesourcesbessels}}
+\index{integratesourcesbessels@{integratesourcesbessels}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{integratesourcesbessels()}{integratesourcesbessels()}}
+{\footnotesize\ttfamily subroutine cambmain\+::integratesourcesbessels (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}})}]{IV,  }\item[{integer}]{j,  }\item[{integer}]{l,  }\item[{real(dl)}]{nu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, dorangeint(), dorangeinttensor(), modelparams\+::highaccuracydefault, modelparams\+::invsinfunc(), lvalues\+::lsamp, thisct, modelparams\+::timesteps, uselimber(), and spherbessels\+::uspherbesselwithderiv().
+
+
+
+Referenced by dosourceintegration().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a74b9c41eb2501d8c0cc163ff7030a926_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a74b9c41eb2501d8c0cc163ff7030a926_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_af5b8d9ce147ddcd3fb33ee015b43b284}\label{namespacecambmain_af5b8d9ce147ddcd3fb33ee015b43b284}} 
+\index{cambmain@{cambmain}!integrationvars\+\_\+init@{integrationvars\+\_\+init}}
+\index{integrationvars\+\_\+init@{integrationvars\+\_\+init}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{integrationvars\+\_\+init()}{integrationvars\_init()}}
+{\footnotesize\ttfamily subroutine cambmain\+::integrationvars\+\_\+init (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}}), intent(inout)}]{IV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References sourcenum, and modelparams\+::timesteps.
+
+
+
+Referenced by sourcetotransfers().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_af5b8d9ce147ddcd3fb33ee015b43b284_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a411e6e866cbb05f2ba3f7164f8e04a67}\label{namespacecambmain_a411e6e866cbb05f2ba3f7164f8e04a67}} 
+\index{cambmain@{cambmain}!interpolatecls@{interpolatecls}}
+\index{interpolatecls@{interpolatecls}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{interpolatecls()}{interpolatecls()}}
+{\footnotesize\ttfamily subroutine cambmain\+::interpolatecls (\begin{DoxyParamCaption}\item[{type(cltransferdata)}]{C\+TransS,  }\item[{type(cltransferdata)}]{C\+TransT,  }\item[{type(cltransferdata)}]{C\+TransV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modeldata\+::c\+\_\+last, modeldata\+::c\+\_\+temp, modeldata\+::cl\+\_\+scalar, modeldata\+::cl\+\_\+scalar\+\_\+array, modeldata\+::cl\+\_\+tensor, modeldata\+::cl\+\_\+vector, modelparams\+::cp, modeldata\+::ct\+\_\+cross, modeldata\+::ct\+\_\+temp, modeldata\+::ctransscal, modeldata\+::has\+\_\+cl\+\_\+2d\+\_\+array, icl\+\_\+array, icl\+\_\+scalar, icl\+\_\+tensor, icl\+\_\+vector, lvalues\+::interpolateclarr(), lvalues\+::interpolateclarrtemplated(), modelparams\+::lmin, and modelparams\+::num\+\_\+redshiftwindows.
+
+
+
+Referenced by cltransfertocl().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a411e6e866cbb05f2ba3f7164f8e04a67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a411e6e866cbb05f2ba3f7164f8e04a67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a7e1e9bb292a8b4d778e9b8d218ee4036}\label{namespacecambmain_a7e1e9bb292a8b4d778e9b8d218ee4036}} 
+\index{cambmain@{cambmain}!interpolatesources@{interpolatesources}}
+\index{interpolatesources@{interpolatesources}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{interpolatesources()}{interpolatesources()}}
+{\footnotesize\ttfamily subroutine cambmain\+::interpolatesources (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structcambmain_1_1integrationvars}{integrationvars}})}]{IV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::cp, ddsrc, modelparams\+::debugevolution, evolve\+\_\+q, max\+\_\+etak\+\_\+scalar, max\+\_\+etak\+\_\+tensor, max\+\_\+etak\+\_\+vector, sourcenum, modelparams\+::spl\+\_\+large, spline(), src, modelparams\+::timesteps, and wantlatetime.
+
+
+
+Referenced by sourcetotransfers().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{namespacecambmain_a7e1e9bb292a8b4d778e9b8d218ee4036_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a7e1e9bb292a8b4d778e9b8d218ee4036_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a5b302c437be8bf6d127dc65f638778c8}\label{namespacecambmain_a5b302c437be8bf6d127dc65f638778c8}} 
+\index{cambmain@{cambmain}!makenonlinearsources@{makenonlinearsources}}
+\index{makenonlinearsources@{makenonlinearsources}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{makenonlinearsources()}{makenonlinearsources()}}
+{\footnotesize\ttfamily subroutine cambmain\+::makenonlinearsources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References evolve\+\_\+q, transfer\+::matterpowerdata\+\_\+free(), nonlinear\+::min\+\_\+kh\+\_\+nonlinear, transfer\+::mt, nonlinear\+::nonlinear\+\_\+getnonlinratios(), sourcenum, modelparams\+::spl\+\_\+large, spline(), src, tautf, modelparams\+::timesteps, and transfer\+::transfer\+\_\+getmatterpowerdata().
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a5b302c437be8bf6d127dc65f638778c8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a5b302c437be8bf6d127dc65f638778c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a96c41c9fdee3e69fba450a460df25472}\label{namespacecambmain_a96c41c9fdee3e69fba450a460df25472}} 
+\index{cambmain@{cambmain}!setclosedkvaluesfromarr@{setclosedkvaluesfromarr}}
+\index{setclosedkvaluesfromarr@{setclosedkvaluesfromarr}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{setclosedkvaluesfromarr()}{setclosedkvaluesfromarr()}}
+{\footnotesize\ttfamily subroutine cambmain\+::setclosedkvaluesfromarr (\begin{DoxyParamCaption}\item[{type(regions)}]{R,  }\item[{logical, intent(in)}]{for\+Int }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::cp.
+
+
+
+Referenced by setkvaluesforint(), and setkvaluesforsources().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a96c41c9fdee3e69fba450a460df25472_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_ad0f2dd9e839652502a6e34c32ec44e0d}\label{namespacecambmain_ad0f2dd9e839652502a6e34c32ec44e0d}} 
+\index{cambmain@{cambmain}!setkvaluesforint@{setkvaluesforint}}
+\index{setkvaluesforint@{setkvaluesforint}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{setkvaluesforint()}{setkvaluesforint()}}
+{\footnotesize\ttfamily subroutine cambmain\+::setkvaluesforint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, modelparams\+::do\+\_\+bispectrum, exactclosedsum, modelparams\+::hard\+\_\+bispectrum, modelparams\+::highaccuracydefault, modeldata\+::init\+\_\+cltransfer(), modelparams\+::max\+\_\+bessels\+\_\+etak, maximum\+\_\+l, qmax, qmin, setclosedkvaluesfromarr(), and thisct.
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad0f2dd9e839652502a6e34c32ec44e0d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad0f2dd9e839652502a6e34c32ec44e0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a63fe5ba29fa3c5116ef8bc646e7aa09c}\label{namespacecambmain_a63fe5ba29fa3c5116ef8bc646e7aa09c}} 
+\index{cambmain@{cambmain}!setkvaluesforsources@{setkvaluesforsources}}
+\index{setkvaluesforsources@{setkvaluesforsources}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{setkvaluesforsources()}{setkvaluesforsources()}}
+{\footnotesize\ttfamily subroutine cambmain\+::setkvaluesforsources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, modelparams\+::cp, evolve\+\_\+q, modelparams\+::highaccuracydefault, l\+\_\+smooth\+\_\+sample, maximum\+\_\+l, qmax, qmin, setclosedkvaluesfromarr(), and modelparams\+::taurst.
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a63fe5ba29fa3c5116ef8bc646e7aa09c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a63fe5ba29fa3c5116ef8bc646e7aa09c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_ad84747dc28d2ff66a818a46c3eb5f574}\label{namespacecambmain_ad84747dc28d2ff66a818a46c3eb5f574}} 
+\index{cambmain@{cambmain}!sourcetotransfers@{sourcetotransfers}}
+\index{sourcetotransfers@{sourcetotransfers}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{sourcetotransfers()}{sourcetotransfers()}}
+{\footnotesize\ttfamily subroutine cambmain\+::sourcetotransfers (\begin{DoxyParamCaption}\item[{integer}]{q\+\_\+ix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::cp, dosourceintegration(), integrationvars\+\_\+init(), interpolatesources(), sourcenum, thisct, and modelparams\+::timesteps.
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad84747dc28d2ff66a818a46c3eb5f574_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad84747dc28d2ff66a818a46c3eb5f574_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_a3411884ad6ba8d1584e9dedab9fdab81}\label{namespacecambmain_a3411884ad6ba8d1584e9dedab9fdab81}} 
+\index{cambmain@{cambmain}!transferout@{transferout}}
+\index{transferout@{transferout}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{transferout()}{transferout()}}
+{\footnotesize\ttfamily subroutine cambmain\+::transferout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::debugmsgs, evolve\+\_\+q, modelparams\+::feedbacklevel, gaugeinterface\+::getnumeqns(), gettaustart(), gettransfer(), and transfer\+::mt.
+
+
+
+Referenced by cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a3411884ad6ba8d1584e9dedab9fdab81_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_a3411884ad6ba8d1584e9dedab9fdab81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecambmain_ad1efd57b702656e463555cccd0f1b40c}\label{namespacecambmain_ad1efd57b702656e463555cccd0f1b40c}} 
+\index{cambmain@{cambmain}!uselimber@{uselimber}}
+\index{uselimber@{uselimber}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{uselimber()}{uselimber()}}
+{\footnotesize\ttfamily logical function cambmain\+::uselimber (\begin{DoxyParamCaption}\item[{integer}]{l,  }\item[{real(dl)}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References modelparams\+::accuracyboost.
+
+
+
+Referenced by doflatintegration(), dorangeint(), and integratesourcesbessels().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecambmain_ad1efd57b702656e463555cccd0f1b40c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecambmain_a75e3aaa48b8fb5985062a5be2f05dea8}\label{namespacecambmain_a75e3aaa48b8fb5985062a5be2f05dea8}} 
+\index{cambmain@{cambmain}!aid@{aid}}
+\index{aid@{aid}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{aid}{aid}}
+{\footnotesize\ttfamily real(dl) cambmain\+::aid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcscalarsources(), and evolved().
+
+\mbox{\Hypertarget{namespacecambmain_a5e84a7f00ba906908259607d54f9176f}\label{namespacecambmain_a5e84a7f00ba906908259607d54f9176f}} 
+\index{cambmain@{cambmain}!alens@{alens}}
+\index{alens@{alens}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{alens}{alens}}
+{\footnotesize\ttfamily real(dl), public cambmain\+::alens = 1.\+\_\+dl}
+
+
+
+Referenced by calcscalcls(), and calculator\+\_\+camb\+::cambcalc\+\_\+cmbtocamb().
+
+\mbox{\Hypertarget{namespacecambmain_a3a07a99a808d7449c0ca61a9df448594}\label{namespacecambmain_a3a07a99a808d7449c0ca61a9df448594}} 
+\index{cambmain@{cambmain}!ddsrc@{ddsrc}}
+\index{ddsrc@{ddsrc}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{ddsrc}{ddsrc}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:,\+:), allocatable cambmain\+::ddsrc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by freesourcemem(), getlimbertransfers(), getsourcemem(), initsourceinterpolation(), and interpolatesources().
+
+\mbox{\Hypertarget{namespacecambmain_a926ceb33a98900b90f263443b550e391}\label{namespacecambmain_a926ceb33a98900b90f263443b550e391}} 
+\index{cambmain@{cambmain}!dmid@{dmid}}
+\index{dmid@{dmid}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{dmid}{dmid}}
+{\footnotesize\ttfamily real(dl) cambmain\+::dmid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcscalarsources(), and evolved().
+
+\mbox{\Hypertarget{namespacecambmain_a0c8e31379dc1ff5e59d2da0bf1afcb8f}\label{namespacecambmain_a0c8e31379dc1ff5e59d2da0bf1afcb8f}} 
+\index{cambmain@{cambmain}!dtaurec\+\_\+q@{dtaurec\+\_\+q}}
+\index{dtaurec\+\_\+q@{dtaurec\+\_\+q}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{dtaurec\+\_\+q}{dtaurec\_q}}
+{\footnotesize\ttfamily real(dl) cambmain\+::dtaurec\+\_\+q\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by dorangeint(), and initvars().
+
+\mbox{\Hypertarget{namespacecambmain_a5ec3a97db7f68f99f47c3b077bbe3cda}\label{namespacecambmain_a5ec3a97db7f68f99f47c3b077bbe3cda}} 
+\index{cambmain@{cambmain}!evolve\+\_\+q@{evolve\+\_\+q}}
+\index{evolve\+\_\+q@{evolve\+\_\+q}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{evolve\+\_\+q}{evolve\_q}}
+{\footnotesize\ttfamily type(regions) cambmain\+::evolve\+\_\+q\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmbmain(), dosourcek(), freesourcemem(), getlimbertransfers(), getsourcemem(), initsourceinterpolation(), inittransfer(), interpolatesources(), makenonlinearsources(), setkvaluesforsources(), and transferout().
+
+\mbox{\Hypertarget{namespacecambmain_a2ded9daf3b231818ba6168f15ce0c90f}\label{namespacecambmain_a2ded9daf3b231818ba6168f15ce0c90f}} 
+\index{cambmain@{cambmain}!exactclosedsum@{exactclosedsum}}
+\index{exactclosedsum@{exactclosedsum}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{exactclosedsum}{exactclosedsum}}
+{\footnotesize\ttfamily logical cambmain\+::exactclosedsum\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmbmain(), and setkvaluesforint().
+
+\mbox{\Hypertarget{namespacecambmain_a34fbba5156bf16dc5e9131c1936bf47c}\label{namespacecambmain_a34fbba5156bf16dc5e9131c1936bf47c}} 
+\index{cambmain@{cambmain}!icl\+\_\+array@{icl\+\_\+array}}
+\index{icl\+\_\+array@{icl\+\_\+array}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{icl\+\_\+array}{icl\_array}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:,\+:,\+:), allocatable cambmain\+::icl\+\_\+array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calclimberscalcls(), calcscalcls(), cltransfertocl(), and interpolatecls().
+
+\mbox{\Hypertarget{namespacecambmain_ae6d811821c995ff2a5bda416a8696ae7}\label{namespacecambmain_ae6d811821c995ff2a5bda416a8696ae7}} 
+\index{cambmain@{cambmain}!icl\+\_\+scalar@{icl\+\_\+scalar}}
+\index{icl\+\_\+scalar@{icl\+\_\+scalar}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{icl\+\_\+scalar}{icl\_scalar}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:,\+:), allocatable cambmain\+::icl\+\_\+scalar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calclimberscalcls(), calcscalcls(), cltransfertocl(), and interpolatecls().
+
+\mbox{\Hypertarget{namespacecambmain_ad09fccee49c220454529f80e65beb489}\label{namespacecambmain_ad09fccee49c220454529f80e65beb489}} 
+\index{cambmain@{cambmain}!icl\+\_\+tensor@{icl\+\_\+tensor}}
+\index{icl\+\_\+tensor@{icl\+\_\+tensor}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{icl\+\_\+tensor}{icl\_tensor}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:,\+:), allocatable cambmain\+::icl\+\_\+tensor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calctenscls(), cltransfertocl(), and interpolatecls().
+
+\mbox{\Hypertarget{namespacecambmain_a2044e91de72f6f3c0c0e2f87ab2c6a04}\label{namespacecambmain_a2044e91de72f6f3c0c0e2f87ab2c6a04}} 
+\index{cambmain@{cambmain}!icl\+\_\+vector@{icl\+\_\+vector}}
+\index{icl\+\_\+vector@{icl\+\_\+vector}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{icl\+\_\+vector}{icl\_vector}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:,\+:), allocatable cambmain\+::icl\+\_\+vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcveccls(), cltransfertocl(), and interpolatecls().
+
+\mbox{\Hypertarget{namespacecambmain_a3ebcb0843a6249a58a33f83e5cf9b73b}\label{namespacecambmain_a3ebcb0843a6249a58a33f83e5cf9b73b}} 
+\index{cambmain@{cambmain}!l\+\_\+smooth\+\_\+sample@{l\+\_\+smooth\+\_\+sample}}
+\index{l\+\_\+smooth\+\_\+sample@{l\+\_\+smooth\+\_\+sample}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{l\+\_\+smooth\+\_\+sample}{l\_smooth\_sample}}
+{\footnotesize\ttfamily integer cambmain\+::l\+\_\+smooth\+\_\+sample = 3000\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by setkvaluesforsources().
+
+\mbox{\Hypertarget{namespacecambmain_ac4c24515e982e0af0ef3997027302e04}\label{namespacecambmain_ac4c24515e982e0af0ef3997027302e04}} 
+\index{cambmain@{cambmain}!max\+\_\+etak\+\_\+scalar@{max\+\_\+etak\+\_\+scalar}}
+\index{max\+\_\+etak\+\_\+scalar@{max\+\_\+etak\+\_\+scalar}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{max\+\_\+etak\+\_\+scalar}{max\_etak\_scalar}}
+{\footnotesize\ttfamily real(dl) cambmain\+::max\+\_\+etak\+\_\+scalar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcscalarsources(), initvars(), and interpolatesources().
+
+\mbox{\Hypertarget{namespacecambmain_a16f888ec18bcb88fb88b604ee1c858de}\label{namespacecambmain_a16f888ec18bcb88fb88b604ee1c858de}} 
+\index{cambmain@{cambmain}!max\+\_\+etak\+\_\+tensor@{max\+\_\+etak\+\_\+tensor}}
+\index{max\+\_\+etak\+\_\+tensor@{max\+\_\+etak\+\_\+tensor}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{max\+\_\+etak\+\_\+tensor}{max\_etak\_tensor}}
+{\footnotesize\ttfamily real(dl) cambmain\+::max\+\_\+etak\+\_\+tensor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calctensorsources(), initvars(), and interpolatesources().
+
+\mbox{\Hypertarget{namespacecambmain_a070e24f1ae1246e4d6b1ad8aacc87919}\label{namespacecambmain_a070e24f1ae1246e4d6b1ad8aacc87919}} 
+\index{cambmain@{cambmain}!max\+\_\+etak\+\_\+vector@{max\+\_\+etak\+\_\+vector}}
+\index{max\+\_\+etak\+\_\+vector@{max\+\_\+etak\+\_\+vector}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{max\+\_\+etak\+\_\+vector}{max\_etak\_vector}}
+{\footnotesize\ttfamily real(dl) cambmain\+::max\+\_\+etak\+\_\+vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcvectorsources(), initvars(), and interpolatesources().
+
+\mbox{\Hypertarget{namespacecambmain_acb0277d55c225aee4dcfca123a3631a2}\label{namespacecambmain_acb0277d55c225aee4dcfca123a3631a2}} 
+\index{cambmain@{cambmain}!maximum\+\_\+l@{maximum\+\_\+l}}
+\index{maximum\+\_\+l@{maximum\+\_\+l}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{maximum\+\_\+l}{maximum\_l}}
+{\footnotesize\ttfamily integer cambmain\+::maximum\+\_\+l\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmbmain(), setkvaluesforint(), and setkvaluesforsources().
+
+\mbox{\Hypertarget{namespacecambmain_a538fac0cbeacb9f2daa7bd638e3ca806}\label{namespacecambmain_a538fac0cbeacb9f2daa7bd638e3ca806}} 
+\index{cambmain@{cambmain}!maximum\+\_\+qeta@{maximum\+\_\+qeta}}
+\index{maximum\+\_\+qeta@{maximum\+\_\+qeta}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{maximum\+\_\+qeta}{maximum\_qeta}}
+{\footnotesize\ttfamily real(dl) cambmain\+::maximum\+\_\+qeta = 3000.\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmbmain(), and initvars().
+
+\mbox{\Hypertarget{namespacecambmain_abb9b39e7c9db24515f7e239e94831b1b}\label{namespacecambmain_abb9b39e7c9db24515f7e239e94831b1b}} 
+\index{cambmain@{cambmain}!qmax@{qmax}}
+\index{qmax@{qmax}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{qmax}{qmax}}
+{\footnotesize\ttfamily real(dl) cambmain\+::qmax\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by getlimbertransfers(), initvars(), setkvaluesforint(), and setkvaluesforsources().
+
+\mbox{\Hypertarget{namespacecambmain_a5c0dcf87d7d21c1159e4eccad5b679ef}\label{namespacecambmain_a5c0dcf87d7d21c1159e4eccad5b679ef}} 
+\index{cambmain@{cambmain}!qmin@{qmin}}
+\index{qmin@{qmin}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{qmin}{qmin}}
+{\footnotesize\ttfamily real(dl) cambmain\+::qmin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by inittransfer(), initvars(), setkvaluesforint(), and setkvaluesforsources().
+
+\mbox{\Hypertarget{namespacecambmain_ac2494adca6c0269bd275ac6125de266c}\label{namespacecambmain_ac2494adca6c0269bd275ac6125de266c}} 
+\index{cambmain@{cambmain}!qmin0@{qmin0}}
+\index{qmin0@{qmin0}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{qmin0}{qmin0}}
+{\footnotesize\ttfamily real(dl), parameter cambmain\+::qmin0 =0.\+1\+\_\+dl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by initvars().
+
+\mbox{\Hypertarget{namespacecambmain_a7874020426cc2db0dd79451dce8e4476}\label{namespacecambmain_a7874020426cc2db0dd79451dce8e4476}} 
+\index{cambmain@{cambmain}!sourcenum@{sourcenum}}
+\index{sourcenum@{sourcenum}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{sourcenum}{sourcenum}}
+{\footnotesize\ttfamily integer cambmain\+::sourcenum\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calctensorsources(), calcvectorsources(), cmbmain(), getsourcemem(), initsourceinterpolation(), integrationvars\+\_\+init(), interpolatesources(), makenonlinearsources(), and sourcetotransfers().
+
+\mbox{\Hypertarget{namespacecambmain_a799546cf5b0652ca67395d086e02912a}\label{namespacecambmain_a799546cf5b0652ca67395d086e02912a}} 
+\index{cambmain@{cambmain}!src@{src}}
+\index{src@{src}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{src}{src}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:,\+:), allocatable cambmain\+::src\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcscalarsources(), calctensorsources(), calcvectorsources(), freesourcemem(), getlimbertransfers(), getsourcemem(), initsourceinterpolation(), interpolatesources(), and makenonlinearsources().
+
+\mbox{\Hypertarget{namespacecambmain_a24c75595b15c8996bc6bc65a8bcf3cad}\label{namespacecambmain_a24c75595b15c8996bc6bc65a8bcf3cad}} 
+\index{cambmain@{cambmain}!tautf@{tautf}}
+\index{tautf@{tautf}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{tautf}{tautf}}
+{\footnotesize\ttfamily real(dl), dimension(0\+:max\+\_\+transfer\+\_\+redshifts) cambmain\+::tautf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcscalarsources(), gettransfer(), initvars(), and makenonlinearsources().
+
+\mbox{\Hypertarget{namespacecambmain_a48fb88bbacefa24534f688f9de4ff827}\label{namespacecambmain_a48fb88bbacefa24534f688f9de4ff827}} 
+\index{cambmain@{cambmain}!thisct@{thisct}}
+\index{thisct@{thisct}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{thisct}{thisct}}
+{\footnotesize\ttfamily type(cltransferdata), pointer cambmain\+::thisct\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmbmain(), doflatintegration(), getlimbertransfers(), integratesourcesbessels(), setkvaluesforint(), and sourcetotransfers().
+
+\mbox{\Hypertarget{namespacecambmain_a2ce96c9fd586b264b5601a12a8903a31}\label{namespacecambmain_a2ce96c9fd586b264b5601a12a8903a31}} 
+\index{cambmain@{cambmain}!wantlatetime@{wantlatetime}}
+\index{wantlatetime@{wantlatetime}!cambmain@{cambmain}}
+\subsubsection{\texorpdfstring{wantlatetime}{wantlatetime}}
+{\footnotesize\ttfamily logical cambmain\+::wantlatetime = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by calcscalarsources(), cmbmain(), dorangeint(), getsourcemem(), and interpolatesources().
+

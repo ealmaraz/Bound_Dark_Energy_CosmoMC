@@ -1,0 +1,641 @@
+\hypertarget{namespaceiniobjects}{}\section{iniobjects Module Reference}
+\label{namespaceiniobjects}\index{iniobjects@{iniobjects}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tnamevalue}{tnamevalue}}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tnamevalue__pointer}{tnamevalue\+\_\+pointer}}
+\item 
+type \mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_aaa5d8364fae58e251714849bb64e5124}{tnamevaluelist\+\_\+init}} (this, ignore\+Duplicates)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a5f3c26a113f5171e6bdf68705ced9854}{tnamevaluelist\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_aaa465cf37dfe148879b8073a289ab2f8}{tnamevaluelist\+\_\+free}} (this)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_a885480cca0257f187dfcd491a588ce52}{tnamevaluelist\+\_\+valueof}} (this, A\+Name)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_a4f92f7df639bb521266ea3f6be8dbc47}{tnamevaluelist\+\_\+name}} (this, i)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_a61f8d01755e0bc000c0c8ca3eba8e43a}{tnamevaluelist\+\_\+value}} (this, i)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_af6bb8b086a07d911f23b9d408dd89a2e}{tnamevaluelist\+\_\+indexof}} (this, A\+Name)
+\item 
+logical function \mbox{\hyperlink{namespaceiniobjects_ae95e15db4e04c8026f9193252ebe48e6}{tnamevaluelist\+\_\+haskey}} (this, A\+Name)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a96ec4d817cb41567afeefde7d8c0c7ec}{tnamevaluelist\+\_\+override}} (this, Settings, only\+\_\+if\+\_\+exists)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a0bf091b688bae891c20047d3b5bfca2a}{tnamevaluelist\+\_\+add}} (this, A\+Name, A\+Value, only\+\_\+if\+\_\+undefined)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a4ede9664ab0d5e4d00d1983e70c64322}{tnamevaluelist\+\_\+addreal}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a8214934f23a7801b7ec3c3f6da452aac}{tnamevaluelist\+\_\+adddouble}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a4c60c5afba93a368d2e832c9adbf6964}{tnamevaluelist\+\_\+addint}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a73327dd98a8e02b51bff94237d0cad1d}{tnamevaluelist\+\_\+addlogical}} (this, A\+Name, A\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a42d39e0fcf188dab68646beac2c1fa50}{tnamevaluelist\+\_\+setcapacity}} (this, C)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a7846fce943c898567326478e49f7741f}{tnamevaluelist\+\_\+delete}} (this, i)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a0e1ea28af24ea8496e138262c1da71f0}{tnamevaluelist\+\_\+failstop}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a24c1905bc9b561d8eeb12877f6a8cca3}{tnamevaluelist\+\_\+error}} (this, Msg, Key)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a872a852d7d01ebf31f03d17592e7fd31}{ini\+\_\+emptycheckdefault}} (this, Key, Default)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_a3f10c54af4bf829a3e62436354908f1e}{ini\+\_\+expandenvironment}} (this, In\+Value)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a7b4567ba50cfd79f25f01c2a2b311e6b}{ini\+\_\+namevalue\+\_\+addline}} (this, A\+In\+Line, only\+\_\+if\+\_\+undefined)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_a292876b02309b0dec55346a08b3b2cdd}{ini\+\_\+resolvelinkedfile}} (this, name, thisfilename)
+\item 
+recursive subroutine \mbox{\hyperlink{namespaceiniobjects_a74dae844438b97709e8a7fb1c44d87e9}{ini\+\_\+open}} (this, filename, error, slash\+\_\+comments, append, only\+\_\+if\+\_\+undefined)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_acc50d404fe26696d6c641fabb4ae033f}{ini\+\_\+open\+\_\+fromlines}} (this, Lines, Num\+Lines, slash\+\_\+comments)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a54b6f011847c6047fd2e0dfbe9d9314d}{ini\+\_\+close}} (this)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_af8362fa0f894e89d84f084ec08dca575}{ini\+\_\+read\+\_\+string}} (this, Key, Not\+Found\+Fail)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_a7a7f7950cdd1ae3e2c9e977fb7ce87a7}{ini\+\_\+read\+\_\+string\+\_\+default}} (this, Key, Default, Allow\+Blank, Env\+Default)
+\item 
+logical function \mbox{\hyperlink{namespaceiniobjects_aef66a5c954f63ad0935b093198bfde8a}{ini\+\_\+testequal}} (this, Key, value, Empty\+OK)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespaceiniobjects_aaf02b1dc48d8287253cf7bf134cc3a73}{ini\+\_\+key\+\_\+to\+\_\+arraykey}} (this, Key, index)
+\item 
+character(len=\+:) function, pointer \mbox{\hyperlink{namespaceiniobjects_ad97700ba84c737601d0ad383c27f1af4}{ini\+\_\+read\+\_\+string\+\_\+array}} (this, Key, index, Not\+Found\+Fail)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_a83bc292e9738adde7e94413ff8fb38d7}{ini\+\_\+read\+\_\+int\+\_\+array}} (this, Key, index, Default)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_aca470402b1c4d58754217c0095202c84}{ini\+\_\+read\+\_\+int}} (this, Key, Default, min, max, OK)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_a64b8c91a4222e931e13741a44ef55497}{ini\+\_\+enumerationvalue}} (this, S, Names)
+\item 
+integer function \mbox{\hyperlink{namespaceiniobjects_a6dcfc3786b1d30b745d72bd0ec892ba4}{ini\+\_\+read\+\_\+enumeration}} (this, Key, Names, Default)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_abd02c75afc73274d508c0c1eb3cecca5}{ini\+\_\+read\+\_\+enumeration\+\_\+list}} (this, Key, Names, Enums, nvalues, max\+\_\+enums, Default)
+\item 
+double precision function \mbox{\hyperlink{namespaceiniobjects_ac283e4d44c96fe341620c0ca70e55adb}{ini\+\_\+read\+\_\+double}} (this, Key, Default, min, max)
+\item 
+double precision function \mbox{\hyperlink{namespaceiniobjects_a9d2368de438cf3dd261c801000672239}{ini\+\_\+read\+\_\+double\+\_\+array}} (this, Key, index, Default, min, max)
+\item 
+real function \mbox{\hyperlink{namespaceiniobjects_a512c72d9b421e7832a796993523deaf4}{ini\+\_\+read\+\_\+real}} (this, Key, Default, min, max)
+\item 
+real function \mbox{\hyperlink{namespaceiniobjects_ac6b89cdbdb8074900386085ded996bc7}{ini\+\_\+read\+\_\+real\+\_\+array}} (this, Key, index, Default, min, max)
+\item 
+logical function \mbox{\hyperlink{namespaceiniobjects_a5eb68a820a33b02e0b7edec1bcf632f3}{ini\+\_\+read\+\_\+logical}} (this, Key, Default)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a3c4c3ca8183b5dcca8af9d4b19808462}{ini\+\_\+savereadvalues}} (this, afile)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a67f08b5a06f2f74225f692955a712320}{ini\+\_\+read\+\_\+int\+\_\+change}} (this, Key, Current, min, max)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a5e063b545af508f22c652618784a4106}{ini\+\_\+read\+\_\+double\+\_\+change}} (this, Key, Current, min, max)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_ab840810b30c65a67b6834782fe064f34}{ini\+\_\+read\+\_\+real\+\_\+change}} (this, Key, Current, min, max)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a21e68c5f321b32ea2f6086c05c89af1a}{ini\+\_\+read\+\_\+logical\+\_\+change}} (this, Key, Current)
+\item 
+subroutine \mbox{\hyperlink{namespaceiniobjects_a6770561ba1885823e0a1d5d341cb7fa5}{ini\+\_\+read\+\_\+string\+\_\+change}} (this, Key, Current)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+character(len=0), target \mbox{\hyperlink{namespaceiniobjects_a09461a87d61c35db5d0ad8895baae8dd}{empty\+\_\+string}} = \textquotesingle{}\textquotesingle{}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespaceiniobjects_ad4e84129fd47c679fb1fcdd444d9fc84}{ini\+\_\+enumeration\+\_\+len}} = 64
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespaceiniobjects_a54b6f011847c6047fd2e0dfbe9d9314d}\label{namespaceiniobjects_a54b6f011847c6047fd2e0dfbe9d9314d}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+close@{ini\+\_\+close}}
+\index{ini\+\_\+close@{ini\+\_\+close}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+close()}{ini\_close()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+close (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a872a852d7d01ebf31f03d17592e7fd31}\label{namespaceiniobjects_a872a852d7d01ebf31f03d17592e7fd31}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+emptycheckdefault@{ini\+\_\+emptycheckdefault}}
+\index{ini\+\_\+emptycheckdefault@{ini\+\_\+emptycheckdefault}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+emptycheckdefault()}{ini\_emptycheckdefault()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+emptycheckdefault (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{class($\ast$), intent(in), optional}]{Default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a64b8c91a4222e931e13741a44ef55497}\label{namespaceiniobjects_a64b8c91a4222e931e13741a44ef55497}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+enumerationvalue@{ini\+\_\+enumerationvalue}}
+\index{ini\+\_\+enumerationvalue@{ini\+\_\+enumerationvalue}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+enumerationvalue()}{ini\_enumerationvalue()}}
+{\footnotesize\ttfamily integer function iniobjects\+::ini\+\_\+enumerationvalue (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$)}]{S,  }\item[{character(len=\mbox{\hyperlink{namespaceiniobjects_ad4e84129fd47c679fb1fcdd444d9fc84}{ini\+\_\+enumeration\+\_\+len}}), dimension(\+:), intent(in)}]{Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a3f10c54af4bf829a3e62436354908f1e}\label{namespaceiniobjects_a3f10c54af4bf829a3e62436354908f1e}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+expandenvironment@{ini\+\_\+expandenvironment}}
+\index{ini\+\_\+expandenvironment@{ini\+\_\+expandenvironment}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+expandenvironment()}{ini\_expandenvironment()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable iniobjects\+::ini\+\_\+expandenvironment (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=\+:), intent(in), allocatable}]{In\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::getenvironmentvariable().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a3f10c54af4bf829a3e62436354908f1e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_aaf02b1dc48d8287253cf7bf134cc3a73}\label{namespaceiniobjects_aaf02b1dc48d8287253cf7bf134cc3a73}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+key\+\_\+to\+\_\+arraykey@{ini\+\_\+key\+\_\+to\+\_\+arraykey}}
+\index{ini\+\_\+key\+\_\+to\+\_\+arraykey@{ini\+\_\+key\+\_\+to\+\_\+arraykey}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+key\+\_\+to\+\_\+arraykey()}{ini\_key\_to\_arraykey()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable iniobjects\+::ini\+\_\+key\+\_\+to\+\_\+arraykey (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}}), intent(in)}]{this,  }\item[{character (len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in)}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a7b4567ba50cfd79f25f01c2a2b311e6b}\label{namespaceiniobjects_a7b4567ba50cfd79f25f01c2a2b311e6b}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+namevalue\+\_\+addline@{ini\+\_\+namevalue\+\_\+addline}}
+\index{ini\+\_\+namevalue\+\_\+addline@{ini\+\_\+namevalue\+\_\+addline}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+namevalue\+\_\+addline()}{ini\_namevalue\_addline()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+namevalue\+\_\+addline (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{A\+In\+Line,  }\item[{logical, intent(in), optional}]{only\+\_\+if\+\_\+undefined }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse(), and stringutils\+::stringstarts().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a7b4567ba50cfd79f25f01c2a2b311e6b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a74dae844438b97709e8a7fb1c44d87e9}\label{namespaceiniobjects_a74dae844438b97709e8a7fb1c44d87e9}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+open@{ini\+\_\+open}}
+\index{ini\+\_\+open@{ini\+\_\+open}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+open()}{ini\_open()}}
+{\footnotesize\ttfamily recursive subroutine iniobjects\+::ini\+\_\+open (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{filename,  }\item[{logical, intent(out), optional}]{error,  }\item[{logical, intent(in), optional}]{slash\+\_\+comments,  }\item[{logical, intent(in), optional}]{append,  }\item[{logical, intent(in), optional}]{only\+\_\+if\+\_\+undefined }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse(), fileutils\+::error(), and stringutils\+::stringstarts().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a74dae844438b97709e8a7fb1c44d87e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_acc50d404fe26696d6c641fabb4ae033f}\label{namespaceiniobjects_acc50d404fe26696d6c641fabb4ae033f}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+open\+\_\+fromlines@{ini\+\_\+open\+\_\+fromlines}}
+\index{ini\+\_\+open\+\_\+fromlines@{ini\+\_\+open\+\_\+fromlines}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+open\+\_\+fromlines()}{ini\_open\_fromlines()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+open\+\_\+fromlines (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), dimension(numlines), intent(in)}]{Lines,  }\item[{integer, intent(in)}]{Num\+Lines,  }\item[{logical, intent(in), optional}]{slash\+\_\+comments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_ac283e4d44c96fe341620c0ca70e55adb}\label{namespaceiniobjects_ac283e4d44c96fe341620c0ca70e55adb}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+double@{ini\+\_\+read\+\_\+double}}
+\index{ini\+\_\+read\+\_\+double@{ini\+\_\+read\+\_\+double}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+double()}{ini\_read\_double()}}
+{\footnotesize\ttfamily double precision function iniobjects\+::ini\+\_\+read\+\_\+double (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{Key,  }\item[{double precision, intent(in), optional}]{Default,  }\item[{double precision, intent(in), optional}]{min,  }\item[{double precision, intent(in), optional}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a9d2368de438cf3dd261c801000672239}\label{namespaceiniobjects_a9d2368de438cf3dd261c801000672239}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+double\+\_\+array@{ini\+\_\+read\+\_\+double\+\_\+array}}
+\index{ini\+\_\+read\+\_\+double\+\_\+array@{ini\+\_\+read\+\_\+double\+\_\+array}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+double\+\_\+array()}{ini\_read\_double\_array()}}
+{\footnotesize\ttfamily double precision function iniobjects\+::ini\+\_\+read\+\_\+double\+\_\+array (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in)}]{index,  }\item[{double precision, intent(in), optional}]{Default,  }\item[{double precision, intent(in), optional}]{min,  }\item[{double precision, intent(in), optional}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a5e063b545af508f22c652618784a4106}\label{namespaceiniobjects_a5e063b545af508f22c652618784a4106}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+double\+\_\+change@{ini\+\_\+read\+\_\+double\+\_\+change}}
+\index{ini\+\_\+read\+\_\+double\+\_\+change@{ini\+\_\+read\+\_\+double\+\_\+change}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+double\+\_\+change()}{ini\_read\_double\_change()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+read\+\_\+double\+\_\+change (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{double precision, intent(inout)}]{Current,  }\item[{double precision, intent(in), optional}]{min,  }\item[{double precision, intent(in), optional}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tinifile\+::read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespaceiniobjects_a5e063b545af508f22c652618784a4106_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a6dcfc3786b1d30b745d72bd0ec892ba4}\label{namespaceiniobjects_a6dcfc3786b1d30b745d72bd0ec892ba4}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+enumeration@{ini\+\_\+read\+\_\+enumeration}}
+\index{ini\+\_\+read\+\_\+enumeration@{ini\+\_\+read\+\_\+enumeration}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+enumeration()}{ini\_read\_enumeration()}}
+{\footnotesize\ttfamily integer function iniobjects\+::ini\+\_\+read\+\_\+enumeration (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{character(len=\mbox{\hyperlink{namespaceiniobjects_ad4e84129fd47c679fb1fcdd444d9fc84}{ini\+\_\+enumeration\+\_\+len}}), dimension(\+:), intent(in)}]{Names,  }\item[{integer, intent(in), optional}]{Default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_abd02c75afc73274d508c0c1eb3cecca5}\label{namespaceiniobjects_abd02c75afc73274d508c0c1eb3cecca5}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+enumeration\+\_\+list@{ini\+\_\+read\+\_\+enumeration\+\_\+list}}
+\index{ini\+\_\+read\+\_\+enumeration\+\_\+list@{ini\+\_\+read\+\_\+enumeration\+\_\+list}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+enumeration\+\_\+list()}{ini\_read\_enumeration\_list()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+read\+\_\+enumeration\+\_\+list (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{character(len=\mbox{\hyperlink{namespaceiniobjects_ad4e84129fd47c679fb1fcdd444d9fc84}{ini\+\_\+enumeration\+\_\+len}}), dimension(\+:), intent(in)}]{Names,  }\item[{integer, dimension(\+:), intent(out), allocatable}]{Enums,  }\item[{integer, intent(in), optional}]{nvalues,  }\item[{integer, intent(in), optional}]{max\+\_\+enums,  }\item[{character(len=$\ast$), intent(in), optional}]{Default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References stringutils\+::iswhitespace().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{namespaceiniobjects_abd02c75afc73274d508c0c1eb3cecca5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_aca470402b1c4d58754217c0095202c84}\label{namespaceiniobjects_aca470402b1c4d58754217c0095202c84}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+int@{ini\+\_\+read\+\_\+int}}
+\index{ini\+\_\+read\+\_\+int@{ini\+\_\+read\+\_\+int}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+int()}{ini\_read\_int()}}
+{\footnotesize\ttfamily integer function iniobjects\+::ini\+\_\+read\+\_\+int (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in), optional}]{Default,  }\item[{integer, intent(in), optional}]{min,  }\item[{integer, intent(in), optional}]{max,  }\item[{logical, intent(out), optional}]{OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a83bc292e9738adde7e94413ff8fb38d7}\label{namespaceiniobjects_a83bc292e9738adde7e94413ff8fb38d7}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+int\+\_\+array@{ini\+\_\+read\+\_\+int\+\_\+array}}
+\index{ini\+\_\+read\+\_\+int\+\_\+array@{ini\+\_\+read\+\_\+int\+\_\+array}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+int\+\_\+array()}{ini\_read\_int\_array()}}
+{\footnotesize\ttfamily integer function iniobjects\+::ini\+\_\+read\+\_\+int\+\_\+array (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in)}]{index,  }\item[{integer, intent(in), optional}]{Default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a67f08b5a06f2f74225f692955a712320}\label{namespaceiniobjects_a67f08b5a06f2f74225f692955a712320}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+int\+\_\+change@{ini\+\_\+read\+\_\+int\+\_\+change}}
+\index{ini\+\_\+read\+\_\+int\+\_\+change@{ini\+\_\+read\+\_\+int\+\_\+change}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+int\+\_\+change()}{ini\_read\_int\_change()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+read\+\_\+int\+\_\+change (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(inout)}]{Current,  }\item[{integer, intent(in), optional}]{min,  }\item[{integer, intent(in), optional}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tinifile\+::read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespaceiniobjects_a67f08b5a06f2f74225f692955a712320_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a5eb68a820a33b02e0b7edec1bcf632f3}\label{namespaceiniobjects_a5eb68a820a33b02e0b7edec1bcf632f3}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+logical@{ini\+\_\+read\+\_\+logical}}
+\index{ini\+\_\+read\+\_\+logical@{ini\+\_\+read\+\_\+logical}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+logical()}{ini\_read\_logical()}}
+{\footnotesize\ttfamily logical function iniobjects\+::ini\+\_\+read\+\_\+logical (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{logical, intent(in), optional}]{Default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a21e68c5f321b32ea2f6086c05c89af1a}\label{namespaceiniobjects_a21e68c5f321b32ea2f6086c05c89af1a}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+logical\+\_\+change@{ini\+\_\+read\+\_\+logical\+\_\+change}}
+\index{ini\+\_\+read\+\_\+logical\+\_\+change@{ini\+\_\+read\+\_\+logical\+\_\+change}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+logical\+\_\+change()}{ini\_read\_logical\_change()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+read\+\_\+logical\+\_\+change (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{logical, intent(inout)}]{Current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tinifile\+::read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespaceiniobjects_a21e68c5f321b32ea2f6086c05c89af1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a512c72d9b421e7832a796993523deaf4}\label{namespaceiniobjects_a512c72d9b421e7832a796993523deaf4}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+real@{ini\+\_\+read\+\_\+real}}
+\index{ini\+\_\+read\+\_\+real@{ini\+\_\+read\+\_\+real}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+real()}{ini\_read\_real()}}
+{\footnotesize\ttfamily real function iniobjects\+::ini\+\_\+read\+\_\+real (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{real, intent(in), optional}]{Default,  }\item[{real, intent(in), optional}]{min,  }\item[{real, intent(in), optional}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_ac6b89cdbdb8074900386085ded996bc7}\label{namespaceiniobjects_ac6b89cdbdb8074900386085ded996bc7}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+real\+\_\+array@{ini\+\_\+read\+\_\+real\+\_\+array}}
+\index{ini\+\_\+read\+\_\+real\+\_\+array@{ini\+\_\+read\+\_\+real\+\_\+array}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+real\+\_\+array()}{ini\_read\_real\_array()}}
+{\footnotesize\ttfamily real function iniobjects\+::ini\+\_\+read\+\_\+real\+\_\+array (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in)}]{index,  }\item[{real, intent(in), optional}]{Default,  }\item[{real, intent(in), optional}]{min,  }\item[{real, intent(in), optional}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_ab840810b30c65a67b6834782fe064f34}\label{namespaceiniobjects_ab840810b30c65a67b6834782fe064f34}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+real\+\_\+change@{ini\+\_\+read\+\_\+real\+\_\+change}}
+\index{ini\+\_\+read\+\_\+real\+\_\+change@{ini\+\_\+read\+\_\+real\+\_\+change}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+real\+\_\+change()}{ini\_read\_real\_change()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+read\+\_\+real\+\_\+change (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{real, intent(inout)}]{Current,  }\item[{real, intent(in), optional}]{min,  }\item[{real, intent(in), optional}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tinifile\+::read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespaceiniobjects_ab840810b30c65a67b6834782fe064f34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_af8362fa0f894e89d84f084ec08dca575}\label{namespaceiniobjects_af8362fa0f894e89d84f084ec08dca575}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+string@{ini\+\_\+read\+\_\+string}}
+\index{ini\+\_\+read\+\_\+string@{ini\+\_\+read\+\_\+string}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+string()}{ini\_read\_string()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer iniobjects\+::ini\+\_\+read\+\_\+string (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{Key,  }\item[{logical, intent(in), optional}]{Not\+Found\+Fail }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_ad97700ba84c737601d0ad383c27f1af4}\label{namespaceiniobjects_ad97700ba84c737601d0ad383c27f1af4}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+string\+\_\+array@{ini\+\_\+read\+\_\+string\+\_\+array}}
+\index{ini\+\_\+read\+\_\+string\+\_\+array@{ini\+\_\+read\+\_\+string\+\_\+array}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+string\+\_\+array()}{ini\_read\_string\_array()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+array (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{Key,  }\item[{integer, intent(in)}]{index,  }\item[{logical, intent(in), optional}]{Not\+Found\+Fail }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a6770561ba1885823e0a1d5d341cb7fa5}\label{namespaceiniobjects_a6770561ba1885823e0a1d5d341cb7fa5}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+string\+\_\+change@{ini\+\_\+read\+\_\+string\+\_\+change}}
+\index{ini\+\_\+read\+\_\+string\+\_\+change@{ini\+\_\+read\+\_\+string\+\_\+change}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+string\+\_\+change()}{ini\_read\_string\_change()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+change (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Key,  }\item[{character(len=\+:), intent(inout), allocatable}]{Current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tinifile\+::read().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{namespaceiniobjects_a6770561ba1885823e0a1d5d341cb7fa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a7a7f7950cdd1ae3e2c9e977fb7ce87a7}\label{namespaceiniobjects_a7a7f7950cdd1ae3e2c9e977fb7ce87a7}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+read\+\_\+string\+\_\+default@{ini\+\_\+read\+\_\+string\+\_\+default}}
+\index{ini\+\_\+read\+\_\+string\+\_\+default@{ini\+\_\+read\+\_\+string\+\_\+default}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+read\+\_\+string\+\_\+default()}{ini\_read\_string\_default()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable iniobjects\+::ini\+\_\+read\+\_\+string\+\_\+default (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{Key,  }\item[{character (len=$\ast$), intent(in), optional}]{Default,  }\item[{logical, intent(in), optional}]{Allow\+Blank,  }\item[{logical, intent(in), optional}]{Env\+Default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse(), and stringutils\+::getenvironmentvariable().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a7a7f7950cdd1ae3e2c9e977fb7ce87a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a292876b02309b0dec55346a08b3b2cdd}\label{namespaceiniobjects_a292876b02309b0dec55346a08b3b2cdd}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+resolvelinkedfile@{ini\+\_\+resolvelinkedfile}}
+\index{ini\+\_\+resolvelinkedfile@{ini\+\_\+resolvelinkedfile}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+resolvelinkedfile()}{ini\_resolvelinkedfile()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable iniobjects\+::ini\+\_\+resolvelinkedfile (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{name,  }\item[{character(len=$\ast$), intent(in)}]{thisfilename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fileutils\+::file.
+
+\mbox{\Hypertarget{namespaceiniobjects_a3c4c3ca8183b5dcca8af9d4b19808462}\label{namespaceiniobjects_a3c4c3ca8183b5dcca8af9d4b19808462}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+savereadvalues@{ini\+\_\+savereadvalues}}
+\index{ini\+\_\+savereadvalues@{ini\+\_\+savereadvalues}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+savereadvalues()}{ini\_savereadvalues()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::ini\+\_\+savereadvalues (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{afile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_aef66a5c954f63ad0935b093198bfde8a}\label{namespaceiniobjects_aef66a5c954f63ad0935b093198bfde8a}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+testequal@{ini\+\_\+testequal}}
+\index{ini\+\_\+testequal@{ini\+\_\+testequal}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+testequal()}{ini\_testequal()}}
+{\footnotesize\ttfamily logical function iniobjects\+::ini\+\_\+testequal (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tinifile}{tinifile}})}]{this,  }\item[{character (len=$\ast$), intent(in)}]{Key,  }\item[{character (len=$\ast$), intent(in)}]{value,  }\item[{logical, intent(in), optional}]{Empty\+OK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a0bf091b688bae891c20047d3b5bfca2a}\label{namespaceiniobjects_a0bf091b688bae891c20047d3b5bfca2a}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+add@{tnamevaluelist\+\_\+add}}
+\index{tnamevaluelist\+\_\+add@{tnamevaluelist\+\_\+add}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+add()}{tnamevaluelist\_add()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+add (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name,  }\item[{character(len=$\ast$), intent(in)}]{A\+Value,  }\item[{logical, intent(in), optional}]{only\+\_\+if\+\_\+undefined }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaulttrue().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a0bf091b688bae891c20047d3b5bfca2a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a8214934f23a7801b7ec3c3f6da452aac}\label{namespaceiniobjects_a8214934f23a7801b7ec3c3f6da452aac}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+adddouble@{tnamevaluelist\+\_\+adddouble}}
+\index{tnamevaluelist\+\_\+adddouble@{tnamevaluelist\+\_\+adddouble}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+adddouble()}{tnamevaluelist\_adddouble()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+adddouble (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name,  }\item[{double precision, intent(in)}]{A\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tnamevaluelist\+::add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a8214934f23a7801b7ec3c3f6da452aac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a4c60c5afba93a368d2e832c9adbf6964}\label{namespaceiniobjects_a4c60c5afba93a368d2e832c9adbf6964}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+addint@{tnamevaluelist\+\_\+addint}}
+\index{tnamevaluelist\+\_\+addint@{tnamevaluelist\+\_\+addint}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+addint()}{tnamevaluelist\_addint()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+addint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name,  }\item[{integer, intent(in)}]{A\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tnamevaluelist\+::add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a4c60c5afba93a368d2e832c9adbf6964_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a73327dd98a8e02b51bff94237d0cad1d}\label{namespaceiniobjects_a73327dd98a8e02b51bff94237d0cad1d}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+addlogical@{tnamevaluelist\+\_\+addlogical}}
+\index{tnamevaluelist\+\_\+addlogical@{tnamevaluelist\+\_\+addlogical}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+addlogical()}{tnamevaluelist\_addlogical()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+addlogical (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name,  }\item[{logical, intent(in)}]{A\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tnamevaluelist\+::add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a73327dd98a8e02b51bff94237d0cad1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a4ede9664ab0d5e4d00d1983e70c64322}\label{namespaceiniobjects_a4ede9664ab0d5e4d00d1983e70c64322}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+addreal@{tnamevaluelist\+\_\+addreal}}
+\index{tnamevaluelist\+\_\+addreal@{tnamevaluelist\+\_\+addreal}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+addreal()}{tnamevaluelist\_addreal()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+addreal (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name,  }\item[{real, intent(in)}]{A\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tnamevaluelist\+::add().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a4ede9664ab0d5e4d00d1983e70c64322_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a5f3c26a113f5171e6bdf68705ced9854}\label{namespaceiniobjects_a5f3c26a113f5171e6bdf68705ced9854}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+clear@{tnamevaluelist\+\_\+clear}}
+\index{tnamevaluelist\+\_\+clear@{tnamevaluelist\+\_\+clear}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+clear()}{tnamevaluelist\_clear()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+clear (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a7846fce943c898567326478e49f7741f}\label{namespaceiniobjects_a7846fce943c898567326478e49f7741f}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+delete@{tnamevaluelist\+\_\+delete}}
+\index{tnamevaluelist\+\_\+delete@{tnamevaluelist\+\_\+delete}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+delete()}{tnamevaluelist\_delete()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+delete (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a24c1905bc9b561d8eeb12877f6a8cca3}\label{namespaceiniobjects_a24c1905bc9b561d8eeb12877f6a8cca3}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+error@{tnamevaluelist\+\_\+error}}
+\index{tnamevaluelist\+\_\+error@{tnamevaluelist\+\_\+error}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+error()}{tnamevaluelist\_error()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+error (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{character(len=$\ast$)}]{Msg,  }\item[{character(len=$\ast$), optional}]{Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a0e1ea28af24ea8496e138262c1da71f0}\label{namespaceiniobjects_a0e1ea28af24ea8496e138262c1da71f0}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+failstop@{tnamevaluelist\+\_\+failstop}}
+\index{tnamevaluelist\+\_\+failstop@{tnamevaluelist\+\_\+failstop}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+failstop()}{tnamevaluelist\_failstop()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+failstop (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_aaa465cf37dfe148879b8073a289ab2f8}\label{namespaceiniobjects_aaa465cf37dfe148879b8073a289ab2f8}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+free@{tnamevaluelist\+\_\+free}}
+\index{tnamevaluelist\+\_\+free@{tnamevaluelist\+\_\+free}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+free()}{tnamevaluelist\_free()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+free (\begin{DoxyParamCaption}\item[{type(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by iniobjects\+::tnamevaluelist\+::tnamevaluelist\+\_\+free().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_aaa465cf37dfe148879b8073a289ab2f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_ae95e15db4e04c8026f9193252ebe48e6}\label{namespaceiniobjects_ae95e15db4e04c8026f9193252ebe48e6}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+haskey@{tnamevaluelist\+\_\+haskey}}
+\index{tnamevaluelist\+\_\+haskey@{tnamevaluelist\+\_\+haskey}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+haskey()}{tnamevaluelist\_haskey()}}
+{\footnotesize\ttfamily logical function iniobjects\+::tnamevaluelist\+\_\+haskey (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}}), intent(in)}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_af6bb8b086a07d911f23b9d408dd89a2e}\label{namespaceiniobjects_af6bb8b086a07d911f23b9d408dd89a2e}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+indexof@{tnamevaluelist\+\_\+indexof}}
+\index{tnamevaluelist\+\_\+indexof@{tnamevaluelist\+\_\+indexof}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+indexof()}{tnamevaluelist\_indexof()}}
+{\footnotesize\ttfamily integer function iniobjects\+::tnamevaluelist\+\_\+indexof (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}}), intent(in)}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_aaa5d8364fae58e251714849bb64e5124}\label{namespaceiniobjects_aaa5d8364fae58e251714849bb64e5124}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+init@{tnamevaluelist\+\_\+init}}
+\index{tnamevaluelist\+\_\+init@{tnamevaluelist\+\_\+init}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+init()}{tnamevaluelist\_init()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{logical, intent(in), optional}]{ignore\+Duplicates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_aaa5d8364fae58e251714849bb64e5124_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a4f92f7df639bb521266ea3f6be8dbc47}\label{namespaceiniobjects_a4f92f7df639bb521266ea3f6be8dbc47}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+name@{tnamevaluelist\+\_\+name}}
+\index{tnamevaluelist\+\_\+name@{tnamevaluelist\+\_\+name}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+name()}{tnamevaluelist\_name()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer iniobjects\+::tnamevaluelist\+\_\+name (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}}), intent(in)}]{this,  }\item[{integer}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a96ec4d817cb41567afeefde7d8c0c7ec}\label{namespaceiniobjects_a96ec4d817cb41567afeefde7d8c0c7ec}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+override@{tnamevaluelist\+\_\+override}}
+\index{tnamevaluelist\+\_\+override@{tnamevaluelist\+\_\+override}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+override()}{tnamevaluelist\_override()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+override (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}}), intent(in)}]{Settings,  }\item[{logical, intent(in), optional}]{only\+\_\+if\+\_\+exists }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References miscutils\+::defaultfalse().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceiniobjects_a96ec4d817cb41567afeefde7d8c0c7ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceiniobjects_a42d39e0fcf188dab68646beac2c1fa50}\label{namespaceiniobjects_a42d39e0fcf188dab68646beac2c1fa50}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+setcapacity@{tnamevaluelist\+\_\+setcapacity}}
+\index{tnamevaluelist\+\_\+setcapacity@{tnamevaluelist\+\_\+setcapacity}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+setcapacity()}{tnamevaluelist\_setcapacity()}}
+{\footnotesize\ttfamily subroutine iniobjects\+::tnamevaluelist\+\_\+setcapacity (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}})}]{this,  }\item[{integer}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a61f8d01755e0bc000c0c8ca3eba8e43a}\label{namespaceiniobjects_a61f8d01755e0bc000c0c8ca3eba8e43a}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+value@{tnamevaluelist\+\_\+value}}
+\index{tnamevaluelist\+\_\+value@{tnamevaluelist\+\_\+value}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+value()}{tnamevaluelist\_value()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer iniobjects\+::tnamevaluelist\+\_\+value (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}}), intent(in)}]{this,  }\item[{integer}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespaceiniobjects_a885480cca0257f187dfcd491a588ce52}\label{namespaceiniobjects_a885480cca0257f187dfcd491a588ce52}} 
+\index{iniobjects@{iniobjects}!tnamevaluelist\+\_\+valueof@{tnamevaluelist\+\_\+valueof}}
+\index{tnamevaluelist\+\_\+valueof@{tnamevaluelist\+\_\+valueof}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{tnamevaluelist\+\_\+valueof()}{tnamevaluelist\_valueof()}}
+{\footnotesize\ttfamily character(len=\+:) function, pointer iniobjects\+::tnamevaluelist\+\_\+valueof (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structiniobjects_1_1tnamevaluelist}{tnamevaluelist}}), intent(in)}]{this,  }\item[{character(len=$\ast$), intent(in)}]{A\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References empty\+\_\+string.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceiniobjects_a09461a87d61c35db5d0ad8895baae8dd}\label{namespaceiniobjects_a09461a87d61c35db5d0ad8895baae8dd}} 
+\index{iniobjects@{iniobjects}!empty\+\_\+string@{empty\+\_\+string}}
+\index{empty\+\_\+string@{empty\+\_\+string}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{empty\+\_\+string}{empty\_string}}
+{\footnotesize\ttfamily character(len=0), target iniobjects\+::empty\+\_\+string = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by tnamevaluelist\+\_\+valueof().
+
+\mbox{\Hypertarget{namespaceiniobjects_ad4e84129fd47c679fb1fcdd444d9fc84}\label{namespaceiniobjects_ad4e84129fd47c679fb1fcdd444d9fc84}} 
+\index{iniobjects@{iniobjects}!ini\+\_\+enumeration\+\_\+len@{ini\+\_\+enumeration\+\_\+len}}
+\index{ini\+\_\+enumeration\+\_\+len@{ini\+\_\+enumeration\+\_\+len}!iniobjects@{iniobjects}}
+\subsubsection{\texorpdfstring{ini\+\_\+enumeration\+\_\+len}{ini\_enumeration\_len}}
+{\footnotesize\ttfamily integer, parameter, public iniobjects\+::ini\+\_\+enumeration\+\_\+len = 64}
+
+
+
+Referenced by iniobjects\+::tinifile\+::read().
+

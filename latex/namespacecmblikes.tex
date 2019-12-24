@@ -1,0 +1,397 @@
+\hypertarget{namespacecmblikes}{}\section{cmblikes Module Reference}
+\label{namespacecmblikes}\index{cmblikes@{cmblikes}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tbinwindows}{tbinwindows}}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tmapcrosspowerspectrum}{tmapcrosspowerspectrum}}
+\item 
+type \mbox{\hyperlink{structcmblikes_1_1tsqmatrix}{tsqmatrix}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+integer function \mbox{\hyperlink{namespacecmblikes_a957c1b188c2225799d8fb439858c73d6}{typeindex}} (C)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_ae22eb6439b51b993d560298fa0c2ebd8}{cmblikes\+\_\+readclarr}} (this, Ini, basename, Cl, has\+Key)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a41e3ac813ae7de0d8a76ffdd669077f1}{pairstringtomapindices}} (this, S, i1, i2)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_af5bfde8e9716fa2038de9aec00e88699}{pairstringtousedmapindices}} (this, used\+\_\+index, S, i1, i2)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a6ccd97b88f377eae282aaa60c1661b49}{usestring\+\_\+to\+\_\+cols}} (this, S, cols)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_aacd5ae93afb3acb0e509842bbfeb7e4e}{usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j}} (this, S, used\+\_\+index, cl\+\_\+i\+\_\+j)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a160df8f7d35a11fb589fee16adc7675b}{mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j}} (this, order, i1, i2, i, j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacecmblikes_aed345a121b78d08d7aa703636785f56b}{cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name}} (this, i, j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacecmblikes_a44a1c6a75608d89a037ffc9ea4571aa3}{cl\+\_\+i\+\_\+j\+\_\+name}} (this, names, i, j)
+\item 
+integer function \mbox{\hyperlink{namespacecmblikes_a114579c77c600f40b2354a47106bde81}{getcolsfromorder}} (this, Order, cols)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a44827afcb3b8cf727e566cb8919f7e0e}{readbinwindows}} (this, Ini, bin\+\_\+type, bin\+Windows)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a0a856ee69d8586f1b224e56f86016346}{cmblikes\+\_\+readini}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a53d98d3cf4a8d20dca8c46be7bd33329}{readcovmat}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a94f791a78bfa0b35f813dc792796de0d}{cmblikes\+\_\+transform}} (this, C, Chat, Cf\+Half, C\+Offset)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a16be2c18f3fecf43964ef1f2995dcd4e}{matrixtoelements}} (this, M, X)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a908a9bb9c69b1ef3a8b7df6519fd4641}{matrixtoelementsint}} (this, M, X)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a2ae7731bcaed3a30ef1314fdb6c7718e}{elementstomatrix}} (this, X, M)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecmblikes_a5ece500a732974850cb05902f8df7f16}{exactchisq}} (this, C, Chat, l)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_aeac358ca50ccdbdddc8f40af418cc6e5}{getbinnedmapcls}} (this, Map\+Cls, C, bin)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a324d03e811c50f8dcc382819daa2adac}{initmapcls}} (this, Cls, nmaps, order)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a887e1b2647525630e45abcf6e96ffb13}{gettheorymapcls}} (this, Theory, Cls, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a6653a1b9a17f3c0c4d5025a40de7d134}{addforegrounds}} (this, Cls, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a3015ed6ed745619906f28edd67ff390c}{adapttheoryformaps}} (this, Cls, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a9befa7145c3914eb9bdd86699681274c}{cmblikes\+\_\+writelikelihooddata}} (this, Theory, Data\+Params, root)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecmblikes_a97fb12e9b7c8a1059a8443b1b0423c24}{cmblikes\+\_\+loglike}} (this, C\+MB, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecmblikes_a84faea71532b47138544e07bf77a7fb0}{tbinwindows\+\_\+bin}} (this, Theory\+Cls, Cls, bin)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+logical, parameter \mbox{\hyperlink{namespacecmblikes_a109d8823809382a8545c68b8598c8a06}{bin\+\_\+test}} = .false.
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacecmblikes_a55c986dc536bdd0894cd5bf2fb584f70}{cross\+\_\+separators}} = \textquotesingle{}x\textquotesingle{}
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_a9a7a0c55bde53b41f76027a48c8eb811}{tot\+\_\+theory\+\_\+fields}} = len(C\+M\+B\+\_\+\+C\+L\+\_\+\+Fields)
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_a9177762dd30aeda08fb17357714b0157}{like\+\_\+approx\+\_\+hl}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_abf83af8cd899e4118189181fe7290a44}{like\+\_\+approx\+\_\+fid\+\_\+gaussian}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacecmblikes_ae1ff0c9c884675bf7a8de01c01e5b082}{like\+\_\+approx\+\_\+fullsky\+\_\+exact}} =3
+\item 
+character(len=ini\+\_\+enumeration\+\_\+len), dimension(3), parameter, public \mbox{\hyperlink{namespacecmblikes_abc590f6fd0bd85c7afe4fed208f61b3e}{cmblikes\+\_\+like\+\_\+names}} = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}HL\textquotesingle{},\textquotesingle{}gaussian\textquotesingle{},\textquotesingle{}exact\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecmblikes_a3015ed6ed745619906f28edd67ff390c}\label{namespacecmblikes_a3015ed6ed745619906f28edd67ff390c}} 
+\index{cmblikes@{cmblikes}!adapttheoryformaps@{adapttheoryformaps}}
+\index{adapttheoryformaps@{adapttheoryformaps}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{adapttheoryformaps()}{adapttheoryformaps()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::adapttheoryformaps (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structcmblikes_1_1tmapcrosspowerspectrum}{tmapcrosspowerspectrum}}), dimension(\+:,\+:), intent(inout)}]{Cls,  }\item[{real(mcp), dimension(\+:), intent(in)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cl\+\_\+b.
+
+\mbox{\Hypertarget{namespacecmblikes_a6653a1b9a17f3c0c4d5025a40de7d134}\label{namespacecmblikes_a6653a1b9a17f3c0c4d5025a40de7d134}} 
+\index{cmblikes@{cmblikes}!addforegrounds@{addforegrounds}}
+\index{addforegrounds@{addforegrounds}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{addforegrounds()}{addforegrounds()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::addforegrounds (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structcmblikes_1_1tmapcrosspowerspectrum}{tmapcrosspowerspectrum}}), dimension(\+:,\+:), intent(inout), target}]{Cls,  }\item[{real(mcp), dimension(\+:), intent(in)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a44a1c6a75608d89a037ffc9ea4571aa3}\label{namespacecmblikes_a44a1c6a75608d89a037ffc9ea4571aa3}} 
+\index{cmblikes@{cmblikes}!cl\+\_\+i\+\_\+j\+\_\+name@{cl\+\_\+i\+\_\+j\+\_\+name}}
+\index{cl\+\_\+i\+\_\+j\+\_\+name@{cl\+\_\+i\+\_\+j\+\_\+name}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cl\+\_\+i\+\_\+j\+\_\+name()}{cl\_i\_j\_name()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable cmblikes\+::cl\+\_\+i\+\_\+j\+\_\+name (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(tstringlist), intent(in)}]{names,  }\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cross\+\_\+separators.
+
+\mbox{\Hypertarget{namespacecmblikes_aed345a121b78d08d7aa703636785f56b}\label{namespacecmblikes_aed345a121b78d08d7aa703636785f56b}} 
+\index{cmblikes@{cmblikes}!cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name@{cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name}}
+\index{cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name@{cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name()}{cl\_used\_i\_j\_name()}}
+{\footnotesize\ttfamily character(len=\+:) function, allocatable cmblikes\+::cl\+\_\+used\+\_\+i\+\_\+j\+\_\+name (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a97fb12e9b7c8a1059a8443b1b0423c24}\label{namespacecmblikes_a97fb12e9b7c8a1059a8443b1b0423c24}} 
+\index{cmblikes@{cmblikes}!cmblikes\+\_\+loglike@{cmblikes\+\_\+loglike}}
+\index{cmblikes\+\_\+loglike@{cmblikes\+\_\+loglike}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cmblikes\+\_\+loglike()}{cmblikes\_loglike()}}
+{\footnotesize\ttfamily real(mcp) function cmblikes\+::cmblikes\+\_\+loglike (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(cmbparams)}]{C\+MB,  }\item[{class(tcosmotheorypredictions), target}]{Theory,  }\item[{real(mcp), dimension(\+:)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References bin\+\_\+test, like\+\_\+approx\+\_\+fid\+\_\+gaussian, like\+\_\+approx\+\_\+fullsky\+\_\+exact, like\+\_\+approx\+\_\+hl, likelihood\+\_\+cosmology\+::loglike(), and matrixutils\+::matrix\+\_\+quadform().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikes_a97fb12e9b7c8a1059a8443b1b0423c24_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecmblikes_ae22eb6439b51b993d560298fa0c2ebd8}\label{namespacecmblikes_ae22eb6439b51b993d560298fa0c2ebd8}} 
+\index{cmblikes@{cmblikes}!cmblikes\+\_\+readclarr@{cmblikes\+\_\+readclarr}}
+\index{cmblikes\+\_\+readclarr@{cmblikes\+\_\+readclarr}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cmblikes\+\_\+readclarr()}{cmblikes\_readclarr()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::cmblikes\+\_\+readclarr (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}}), intent(in)}]{Ini,  }\item[{character(len=$\ast$), intent(in)}]{basename,  }\item[{real(mcp), dimension(\+:,\+:), intent(out), allocatable}]{Cl,  }\item[{logical, intent(inout), optional}]{has\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fileutils\+::file.
+
+\mbox{\Hypertarget{namespacecmblikes_a0a856ee69d8586f1b224e56f86016346}\label{namespacecmblikes_a0a856ee69d8586f1b224e56f86016346}} 
+\index{cmblikes@{cmblikes}!cmblikes\+\_\+readini@{cmblikes\+\_\+readini}}
+\index{cmblikes\+\_\+readini@{cmblikes\+\_\+readini}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cmblikes\+\_\+readini()}{cmblikes\_readini()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::cmblikes\+\_\+readini (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References bin\+\_\+test, cosmologytypes\+::cl\+\_\+e, cosmologytypes\+::cl\+\_\+phi, cosmologytypes\+::cl\+\_\+t, cosmologytypes\+::cmb\+\_\+cl\+\_\+fields, cmblikes\+\_\+like\+\_\+names, like\+\_\+approx\+\_\+fid\+\_\+gaussian, like\+\_\+approx\+\_\+fullsky\+\_\+exact, like\+\_\+approx\+\_\+hl, and matrixutils\+::matrix\+\_\+root().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikes_a0a856ee69d8586f1b224e56f86016346_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecmblikes_a94f791a78bfa0b35f813dc792796de0d}\label{namespacecmblikes_a94f791a78bfa0b35f813dc792796de0d}} 
+\index{cmblikes@{cmblikes}!cmblikes\+\_\+transform@{cmblikes\+\_\+transform}}
+\index{cmblikes\+\_\+transform@{cmblikes\+\_\+transform}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cmblikes\+\_\+transform()}{cmblikes\_transform()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::cmblikes\+\_\+transform (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps)}]{C,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps), intent(in)}]{Chat,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps), intent(in)}]{Cf\+Half,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps), intent(in), optional}]{C\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References matrixutils\+::matrix\+\_\+diagonalize(), and matrixutils\+::matrix\+\_\+root().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikes_a94f791a78bfa0b35f813dc792796de0d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecmblikes_a9befa7145c3914eb9bdd86699681274c}\label{namespacecmblikes_a9befa7145c3914eb9bdd86699681274c}} 
+\index{cmblikes@{cmblikes}!cmblikes\+\_\+writelikelihooddata@{cmblikes\+\_\+writelikelihooddata}}
+\index{cmblikes\+\_\+writelikelihooddata@{cmblikes\+\_\+writelikelihooddata}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cmblikes\+\_\+writelikelihooddata()}{cmblikes\_writelikelihooddata()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::cmblikes\+\_\+writelikelihooddata (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(ttheorypredictions)}]{Theory,  }\item[{real(mcp), dimension(\+:), intent(in)}]{Data\+Params,  }\item[{character(len=$\ast$), intent(in)}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a2ae7731bcaed3a30ef1314fdb6c7718e}\label{namespacecmblikes_a2ae7731bcaed3a30ef1314fdb6c7718e}} 
+\index{cmblikes@{cmblikes}!elementstomatrix@{elementstomatrix}}
+\index{elementstomatrix@{elementstomatrix}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{elementstomatrix()}{elementstomatrix()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::elementstomatrix (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{real(mcp), dimension(this\%ncl), intent(in)}]{X,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps), intent(out)}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a5ece500a732974850cb05902f8df7f16}\label{namespacecmblikes_a5ece500a732974850cb05902f8df7f16}} 
+\index{cmblikes@{cmblikes}!exactchisq@{exactchisq}}
+\index{exactchisq@{exactchisq}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{exactchisq()}{exactchisq()}}
+{\footnotesize\ttfamily real(mcp) function cmblikes\+::exactchisq (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps), intent(in)}]{C,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps), intent(in)}]{Chat,  }\item[{integer, intent(in)}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References matrixutils\+::matrix\+\_\+root(), matrixutils\+::matrix\+\_\+trace(), and matrixutils\+::matrixsym\+\_\+logdet().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikes_a5ece500a732974850cb05902f8df7f16_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecmblikes_aeac358ca50ccdbdddc8f40af418cc6e5}\label{namespacecmblikes_aeac358ca50ccdbdddc8f40af418cc6e5}} 
+\index{cmblikes@{cmblikes}!getbinnedmapcls@{getbinnedmapcls}}
+\index{getbinnedmapcls@{getbinnedmapcls}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{getbinnedmapcls()}{getbinnedmapcls()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::getbinnedmapcls (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structcmblikes_1_1tmapcrosspowerspectrum}{tmapcrosspowerspectrum}}), dimension(\+:,\+:)}]{Map\+Cls,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps)}]{C,  }\item[{integer, intent(in)}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a114579c77c600f40b2354a47106bde81}\label{namespacecmblikes_a114579c77c600f40b2354a47106bde81}} 
+\index{cmblikes@{cmblikes}!getcolsfromorder@{getcolsfromorder}}
+\index{getcolsfromorder@{getcolsfromorder}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{getcolsfromorder()}{getcolsfromorder()}}
+{\footnotesize\ttfamily integer function cmblikes\+::getcolsfromorder (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{Order,  }\item[{integer, dimension(\+:), allocatable}]{cols }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a887e1b2647525630e45abcf6e96ffb13}\label{namespacecmblikes_a887e1b2647525630e45abcf6e96ffb13}} 
+\index{cmblikes@{cmblikes}!gettheorymapcls@{gettheorymapcls}}
+\index{gettheorymapcls@{gettheorymapcls}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{gettheorymapcls()}{gettheorymapcls()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::gettheorymapcls (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}}), target}]{this,  }\item[{class(tcosmotheorypredictions)}]{Theory,  }\item[{class(\mbox{\hyperlink{structcmblikes_1_1tmapcrosspowerspectrum}{tmapcrosspowerspectrum}}), dimension(\+:,\+:), intent(out), pointer}]{Cls,  }\item[{real(mcp), dimension(\+:), intent(in)}]{Data\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a324d03e811c50f8dcc382819daa2adac}\label{namespacecmblikes_a324d03e811c50f8dcc382819daa2adac}} 
+\index{cmblikes@{cmblikes}!initmapcls@{initmapcls}}
+\index{initmapcls@{initmapcls}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{initmapcls()}{initmapcls()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::initmapcls (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structcmblikes_1_1tmapcrosspowerspectrum}{tmapcrosspowerspectrum}}), dimension(\+:,\+:), intent(out), allocatable, target}]{Cls,  }\item[{integer, intent(in)}]{nmaps,  }\item[{integer, dimension(\+:), intent(in)}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a160df8f7d35a11fb589fee16adc7675b}\label{namespacecmblikes_a160df8f7d35a11fb589fee16adc7675b}} 
+\index{cmblikes@{cmblikes}!mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j@{mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j}}
+\index{mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j@{mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j()}{mappair\_to\_theory\_i\_j()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::mappair\+\_\+to\+\_\+theory\+\_\+i\+\_\+j (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{integer, dimension(\+:), intent(in)}]{order,  }\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(out)}]{i,  }\item[{integer, intent(out)}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a16be2c18f3fecf43964ef1f2995dcd4e}\label{namespacecmblikes_a16be2c18f3fecf43964ef1f2995dcd4e}} 
+\index{cmblikes@{cmblikes}!matrixtoelements@{matrixtoelements}}
+\index{matrixtoelements@{matrixtoelements}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{matrixtoelements()}{matrixtoelements()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::matrixtoelements (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{real(mcp), dimension(this\%nmaps,this\%nmaps)}]{M,  }\item[{real(mcp), dimension(this\%ncl)}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a908a9bb9c69b1ef3a8b7df6519fd4641}\label{namespacecmblikes_a908a9bb9c69b1ef3a8b7df6519fd4641}} 
+\index{cmblikes@{cmblikes}!matrixtoelementsint@{matrixtoelementsint}}
+\index{matrixtoelementsint@{matrixtoelementsint}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{matrixtoelementsint()}{matrixtoelementsint()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::matrixtoelementsint (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{integer, dimension(this\%nmaps,this\%nmaps), intent(in)}]{M,  }\item[{integer, dimension(this\%ncl), intent(out)}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a41e3ac813ae7de0d8a76ffdd669077f1}\label{namespacecmblikes_a41e3ac813ae7de0d8a76ffdd669077f1}} 
+\index{cmblikes@{cmblikes}!pairstringtomapindices@{pairstringtomapindices}}
+\index{pairstringtomapindices@{pairstringtomapindices}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{pairstringtomapindices()}{pairstringtomapindices()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::pairstringtomapindices (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{integer, intent(out)}]{i1,  }\item[{integer, intent(out)}]{i2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cross\+\_\+separators.
+
+\mbox{\Hypertarget{namespacecmblikes_af5bfde8e9716fa2038de9aec00e88699}\label{namespacecmblikes_af5bfde8e9716fa2038de9aec00e88699}} 
+\index{cmblikes@{cmblikes}!pairstringtousedmapindices@{pairstringtousedmapindices}}
+\index{pairstringtousedmapindices@{pairstringtousedmapindices}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{pairstringtousedmapindices()}{pairstringtousedmapindices()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::pairstringtousedmapindices (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{integer, dimension(\+:), intent(in)}]{used\+\_\+index,  }\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{integer, intent(out)}]{i1,  }\item[{integer, intent(out)}]{i2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a44827afcb3b8cf727e566cb8919f7e0e}\label{namespacecmblikes_a44827afcb3b8cf727e566cb8919f7e0e}} 
+\index{cmblikes@{cmblikes}!readbinwindows@{readbinwindows}}
+\index{readbinwindows@{readbinwindows}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{readbinwindows()}{readbinwindows()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::readbinwindows (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini,  }\item[{character(len=$\ast$), intent(in)}]{bin\+\_\+type,  }\item[{class(\mbox{\hyperlink{structcmblikes_1_1tbinwindows}{tbinwindows}})}]{bin\+Windows }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fileutils\+::file.
+
+\mbox{\Hypertarget{namespacecmblikes_a53d98d3cf4a8d20dca8c46be7bd33329}\label{namespacecmblikes_a53d98d3cf4a8d20dca8c46be7bd33329}} 
+\index{cmblikes@{cmblikes}!readcovmat@{readcovmat}}
+\index{readcovmat@{readcovmat}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{readcovmat()}{readcovmat()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::readcovmat (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References fileutils\+::file, matrixutils\+::matrix\+\_\+inverse(), matrixutils\+::matrix\+\_\+read(), matrixutils\+::matrixsym\+\_\+read\+\_\+binary(), and settings\+::mpi\+\_\+real\+\_\+mcp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecmblikes_a53d98d3cf4a8d20dca8c46be7bd33329_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecmblikes_a84faea71532b47138544e07bf77a7fb0}\label{namespacecmblikes_a84faea71532b47138544e07bf77a7fb0}} 
+\index{cmblikes@{cmblikes}!tbinwindows\+\_\+bin@{tbinwindows\+\_\+bin}}
+\index{tbinwindows\+\_\+bin@{tbinwindows\+\_\+bin}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{tbinwindows\+\_\+bin()}{tbinwindows\_bin()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::tbinwindows\+\_\+bin (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tbinwindows}{tbinwindows}})}]{this,  }\item[{class(tskypowerspectrum), dimension(\+:,\+:)}]{Theory\+Cls,  }\item[{real(mcp), dimension(\+:)}]{Cls,  }\item[{integer}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a957c1b188c2225799d8fb439858c73d6}\label{namespacecmblikes_a957c1b188c2225799d8fb439858c73d6}} 
+\index{cmblikes@{cmblikes}!typeindex@{typeindex}}
+\index{typeindex@{typeindex}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{typeindex()}{typeindex()}}
+{\footnotesize\ttfamily integer function cmblikes\+::typeindex (\begin{DoxyParamCaption}\item[{character, intent(in)}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cmb\+\_\+cl\+\_\+fields.
+
+\mbox{\Hypertarget{namespacecmblikes_aacd5ae93afb3acb0e509842bbfeb7e4e}\label{namespacecmblikes_aacd5ae93afb3acb0e509842bbfeb7e4e}} 
+\index{cmblikes@{cmblikes}!usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j@{usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j}}
+\index{usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j@{usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j()}{usestring\_to\_cl\_i\_j()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::usestring\+\_\+to\+\_\+cl\+\_\+i\+\_\+j (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{integer, dimension(\+:), intent(in)}]{used\+\_\+index,  }\item[{integer, dimension(\+:,\+:), intent(out), allocatable}]{cl\+\_\+i\+\_\+j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecmblikes_a6ccd97b88f377eae282aaa60c1661b49}\label{namespacecmblikes_a6ccd97b88f377eae282aaa60c1661b49}} 
+\index{cmblikes@{cmblikes}!usestring\+\_\+to\+\_\+cols@{usestring\+\_\+to\+\_\+cols}}
+\index{usestring\+\_\+to\+\_\+cols@{usestring\+\_\+to\+\_\+cols}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{usestring\+\_\+to\+\_\+cols()}{usestring\_to\_cols()}}
+{\footnotesize\ttfamily subroutine cmblikes\+::usestring\+\_\+to\+\_\+cols (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcmblikes_1_1tcmblikes}{tcmblikes}})}]{this,  }\item[{character(len=$\ast$), intent(in)}]{S,  }\item[{integer, dimension(\+:), intent(out), allocatable}]{cols }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecmblikes_a109d8823809382a8545c68b8598c8a06}\label{namespacecmblikes_a109d8823809382a8545c68b8598c8a06}} 
+\index{cmblikes@{cmblikes}!bin\+\_\+test@{bin\+\_\+test}}
+\index{bin\+\_\+test@{bin\+\_\+test}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{bin\+\_\+test}{bin\_test}}
+{\footnotesize\ttfamily logical, parameter cmblikes\+::bin\+\_\+test = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmblikes\+\_\+loglike(), and cmblikes\+\_\+readini().
+
+\mbox{\Hypertarget{namespacecmblikes_abc590f6fd0bd85c7afe4fed208f61b3e}\label{namespacecmblikes_abc590f6fd0bd85c7afe4fed208f61b3e}} 
+\index{cmblikes@{cmblikes}!cmblikes\+\_\+like\+\_\+names@{cmblikes\+\_\+like\+\_\+names}}
+\index{cmblikes\+\_\+like\+\_\+names@{cmblikes\+\_\+like\+\_\+names}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cmblikes\+\_\+like\+\_\+names}{cmblikes\_like\_names}}
+{\footnotesize\ttfamily character(len=ini\+\_\+enumeration\+\_\+len), dimension(3), parameter, public cmblikes\+::cmblikes\+\_\+like\+\_\+names = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}HL\textquotesingle{},\textquotesingle{}gaussian\textquotesingle{},\textquotesingle{}exact\textquotesingle{}\mbox{]}}
+
+
+
+Referenced by cmblikes\+\_\+readini().
+
+\mbox{\Hypertarget{namespacecmblikes_a55c986dc536bdd0894cd5bf2fb584f70}\label{namespacecmblikes_a55c986dc536bdd0894cd5bf2fb584f70}} 
+\index{cmblikes@{cmblikes}!cross\+\_\+separators@{cross\+\_\+separators}}
+\index{cross\+\_\+separators@{cross\+\_\+separators}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{cross\+\_\+separators}{cross\_separators}}
+{\footnotesize\ttfamily character(len=$\ast$), parameter cmblikes\+::cross\+\_\+separators = \textquotesingle{}x\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cl\+\_\+i\+\_\+j\+\_\+name(), and pairstringtomapindices().
+
+\mbox{\Hypertarget{namespacecmblikes_abf83af8cd899e4118189181fe7290a44}\label{namespacecmblikes_abf83af8cd899e4118189181fe7290a44}} 
+\index{cmblikes@{cmblikes}!like\+\_\+approx\+\_\+fid\+\_\+gaussian@{like\+\_\+approx\+\_\+fid\+\_\+gaussian}}
+\index{like\+\_\+approx\+\_\+fid\+\_\+gaussian@{like\+\_\+approx\+\_\+fid\+\_\+gaussian}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{like\+\_\+approx\+\_\+fid\+\_\+gaussian}{like\_approx\_fid\_gaussian}}
+{\footnotesize\ttfamily integer, parameter cmblikes\+::like\+\_\+approx\+\_\+fid\+\_\+gaussian =2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmblikes\+\_\+loglike(), and cmblikes\+\_\+readini().
+
+\mbox{\Hypertarget{namespacecmblikes_ae1ff0c9c884675bf7a8de01c01e5b082}\label{namespacecmblikes_ae1ff0c9c884675bf7a8de01c01e5b082}} 
+\index{cmblikes@{cmblikes}!like\+\_\+approx\+\_\+fullsky\+\_\+exact@{like\+\_\+approx\+\_\+fullsky\+\_\+exact}}
+\index{like\+\_\+approx\+\_\+fullsky\+\_\+exact@{like\+\_\+approx\+\_\+fullsky\+\_\+exact}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{like\+\_\+approx\+\_\+fullsky\+\_\+exact}{like\_approx\_fullsky\_exact}}
+{\footnotesize\ttfamily integer, parameter cmblikes\+::like\+\_\+approx\+\_\+fullsky\+\_\+exact =3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmblikes\+\_\+loglike(), and cmblikes\+\_\+readini().
+
+\mbox{\Hypertarget{namespacecmblikes_a9177762dd30aeda08fb17357714b0157}\label{namespacecmblikes_a9177762dd30aeda08fb17357714b0157}} 
+\index{cmblikes@{cmblikes}!like\+\_\+approx\+\_\+hl@{like\+\_\+approx\+\_\+hl}}
+\index{like\+\_\+approx\+\_\+hl@{like\+\_\+approx\+\_\+hl}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{like\+\_\+approx\+\_\+hl}{like\_approx\_hl}}
+{\footnotesize\ttfamily integer, parameter cmblikes\+::like\+\_\+approx\+\_\+hl =1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by cmblikes\+\_\+loglike(), and cmblikes\+\_\+readini().
+
+\mbox{\Hypertarget{namespacecmblikes_a9a7a0c55bde53b41f76027a48c8eb811}\label{namespacecmblikes_a9a7a0c55bde53b41f76027a48c8eb811}} 
+\index{cmblikes@{cmblikes}!tot\+\_\+theory\+\_\+fields@{tot\+\_\+theory\+\_\+fields}}
+\index{tot\+\_\+theory\+\_\+fields@{tot\+\_\+theory\+\_\+fields}!cmblikes@{cmblikes}}
+\subsubsection{\texorpdfstring{tot\+\_\+theory\+\_\+fields}{tot\_theory\_fields}}
+{\footnotesize\ttfamily integer, parameter cmblikes\+::tot\+\_\+theory\+\_\+fields = len(C\+M\+B\+\_\+\+C\+L\+\_\+\+Fields)\hspace{0.3cm}{\ttfamily [private]}}
+

@@ -1,0 +1,495 @@
+\hypertarget{namespacecosmologytypes}{}\section{cosmologytypes Module Reference}
+\label{namespacecosmologytypes}\index{cosmologytypes@{cosmologytypes}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcosmologytypes_1_1cmbparams}{cmbparams}}
+\item 
+type \mbox{\hyperlink{structcosmologytypes_1_1tcosmologyparameterization}{tcosmologyparameterization}}
+\item 
+type \mbox{\hyperlink{structcosmologytypes_1_1tcosmologyrequirementslikelihood}{tcosmologyrequirementslikelihood}}
+\item 
+type \mbox{\hyperlink{structcosmologytypes_1_1tcosmotheoryparams}{tcosmotheoryparams}}
+\item 
+type \mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologytypes_a4dba259c0331d9c0e16d42c55c758719}{tcosmologyparameterization\+\_\+setnumbers}} (this, slow\+\_\+num, semi\+\_\+slow\+\_\+num)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologytypes_acc7e28ef33200bc007e793c27f93f5cd}{tcosmologyparameterization\+\_\+newtheoryparams}} (this, Theory\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologytypes_a1a69426bf9f630b4e02bb612ca1406ea}{tcosmotheorysettings\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologytypes_aea692fd3455be240e80ab5de081b500e}{tcosmotheorysettings\+\_\+initforlikelihoods}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologytypes_a6ff2631493b535981c446bede67a936f}{initialize\+\_\+cmbsettings}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologytypes_a8dba8960e99431585ae2fccadc339a2b}{initialize\+\_\+pksettings}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologytypes_ad425fc0ec36d3dd4e0eab7afb9a1afd8}{tcosmologyrequirementslikelihood\+\_\+initforsettings}} (this, Settings)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_ac41d8787a0c66b372de6431ec8d5d90e}{derived\+\_\+age}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_ae9b4848c3438334ab15af3a9c5e38947}{derived\+\_\+zstar}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a273d7a236ebfc592e91d30f5f1d65691}{derived\+\_\+rstar}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a3828603ab7ab791295ab034337359f18}{derived\+\_\+thetastar}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_ad7c434d95788f75aebc8ad1a2344ae22}{derived\+\_\+dastar}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a2560d826bb11395cab2b36e611467be4}{derived\+\_\+zdrag}} =6
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_abccb586a131096107b8e9d3b4e9ef8e3}{derived\+\_\+rdrag}} =7
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_aced8968e4a5258b1eb562971c4d49d5c}{derived\+\_\+kd}} =8
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a5a52bc52cd7bc22fa7f0f61ce2f7a67c}{derived\+\_\+thetad}} =9
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_ad60924495182c1a45a6d505bb18ad377}{derived\+\_\+zeq}} =10
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a4001ca23b9dc519f82acc58ca8c530b2}{derived\+\_\+keq}} =11
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a80034ea7e9b15ff769de8da4c5320653}{derived\+\_\+thetaeq}} =12
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a2475050c0f8bf96fdeea239d996693ba}{derived\+\_\+theta\+\_\+rs\+\_\+eq}} = 13
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a46466f5670050f4167e8e9fbe5416298}{as\+\_\+index}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a94ac6353d15b78b217f2ea727a13584f}{ns\+\_\+index}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_ae7086a888c94e02609c59f8c5fa2dbf1}{nrun\+\_\+index}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_ab8b99958a1c9ab51eb091e6e5aab271e}{nrunrun\+\_\+index}} =4
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a865a3713806fafe97fbe476029dc0387}{amp\+\_\+ratio\+\_\+index}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a81146d2bca96d38cce3742a77963bca3}{nt\+\_\+index}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a36ff14458bf8e280f350800fc8bd0ba7}{ntrun\+\_\+index}} = 7
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a702869d17ac6c53907a307832df04f5b}{aphiphi\+\_\+index}} = 8
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a12576036de0c90fcd196839ecf951a15}{last\+\_\+power\+\_\+index}} = Aphiphi\+\_\+index
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a777630dc8c977e6abd38f7a7cc4652b8}{max\+\_\+inipower\+\_\+params}} = 10
+\item 
+real(mcp), parameter \mbox{\hyperlink{namespacecosmologytypes_a5f2058a68678c051e4768dd4dc91203b}{cl\+\_\+norm}} = 1e-\/10\+\_\+mcp
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a6d02c6eb605923549777001d9c6144ad}{max\+\_\+derived\+\_\+parameters}} = 326
+\item 
+integer \mbox{\hyperlink{namespacecosmologytypes_a570495f7e1339d51d190e98980c9b01b}{num\+\_\+hard}}
+\item 
+integer \mbox{\hyperlink{namespacecosmologytypes_aab2abf3c84749a23d7bcd331d20deacb}{num\+\_\+initpower}}
+\item 
+integer \mbox{\hyperlink{namespacecosmologytypes_abb690edf45f7746cb6d70d0ee85c57a1}{index\+\_\+initpower}}
+\item 
+character(len=4), parameter \mbox{\hyperlink{namespacecosmologytypes_a59f0f294178f05545934eb7dd63928b6}{cmb\+\_\+cl\+\_\+fields}} = \textquotesingle{}T\+E\+BP\textquotesingle{}
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_ac77eac54651ec04a99342a063e413398}{neutrino\+\_\+hierarchy\+\_\+normal}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a61a310ab75549fa17f2c5dbd9ec7e638}{neutrino\+\_\+hierarchy\+\_\+inverted}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_add030eb1dcdea0a5221e749a63870ee2}{neutrino\+\_\+hierarchy\+\_\+degenerate}} = 3
+\item 
+character(len=ini\+\_\+enumeration\+\_\+len), dimension(3), parameter \mbox{\hyperlink{namespacecosmologytypes_a6c895faee0146a00099a99e8caa7b0b1}{neutrino\+\_\+types}} = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}normal\textquotesingle{},\textquotesingle{}inverted\textquotesingle{},\textquotesingle{}degenerate\textquotesingle{}\mbox{]}
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_abddefae1172ac2704cb3a3b22704aaa1}{cl\+\_\+t}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_aded7f72c34bf738967d5fb32e4edc1e3}{cl\+\_\+e}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a59dfbed9693b76beb42a0c48ec80b388}{cl\+\_\+b}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacecosmologytypes_a25e618d45dab8f1c5092d92e772f81d0}{cl\+\_\+phi}} =4
+\item 
+type(\mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}}), target, save \mbox{\hyperlink{namespacecosmologytypes_a6456ff7e508a263c46d00481a14d3389}{cosmosettings}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecosmologytypes_a6ff2631493b535981c446bede67a936f}\label{namespacecosmologytypes_a6ff2631493b535981c446bede67a936f}} 
+\index{cosmologytypes@{cosmologytypes}!initialize\+\_\+cmbsettings@{initialize\+\_\+cmbsettings}}
+\index{initialize\+\_\+cmbsettings@{initialize\+\_\+cmbsettings}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{initialize\+\_\+cmbsettings()}{initialize\_cmbsettings()}}
+{\footnotesize\ttfamily subroutine cosmologytypes\+::initialize\+\_\+cmbsettings (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References cl\+\_\+phi, and generaltypes\+::datalikelihoods.
+
+\mbox{\Hypertarget{namespacecosmologytypes_a8dba8960e99431585ae2fccadc339a2b}\label{namespacecosmologytypes_a8dba8960e99431585ae2fccadc339a2b}} 
+\index{cosmologytypes@{cosmologytypes}!initialize\+\_\+pksettings@{initialize\+\_\+pksettings}}
+\index{initialize\+\_\+pksettings@{initialize\+\_\+pksettings}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{initialize\+\_\+pksettings()}{initialize\_pksettings()}}
+{\footnotesize\ttfamily subroutine cosmologytypes\+::initialize\+\_\+pksettings (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References cosmosettings, and generaltypes\+::datalikelihoods.
+
+\mbox{\Hypertarget{namespacecosmologytypes_acc7e28ef33200bc007e793c27f93f5cd}\label{namespacecosmologytypes_acc7e28ef33200bc007e793c27f93f5cd}} 
+\index{cosmologytypes@{cosmologytypes}!tcosmologyparameterization\+\_\+newtheoryparams@{tcosmologyparameterization\+\_\+newtheoryparams}}
+\index{tcosmologyparameterization\+\_\+newtheoryparams@{tcosmologyparameterization\+\_\+newtheoryparams}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{tcosmologyparameterization\+\_\+newtheoryparams()}{tcosmologyparameterization\_newtheoryparams()}}
+{\footnotesize\ttfamily subroutine cosmologytypes\+::tcosmologyparameterization\+\_\+newtheoryparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmologyparameterization}{tcosmologyparameterization}})}]{this,  }\item[{class(ttheoryparams), allocatable}]{Theory\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a4dba259c0331d9c0e16d42c55c758719}\label{namespacecosmologytypes_a4dba259c0331d9c0e16d42c55c758719}} 
+\index{cosmologytypes@{cosmologytypes}!tcosmologyparameterization\+\_\+setnumbers@{tcosmologyparameterization\+\_\+setnumbers}}
+\index{tcosmologyparameterization\+\_\+setnumbers@{tcosmologyparameterization\+\_\+setnumbers}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{tcosmologyparameterization\+\_\+setnumbers()}{tcosmologyparameterization\_setnumbers()}}
+{\footnotesize\ttfamily subroutine cosmologytypes\+::tcosmologyparameterization\+\_\+setnumbers (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmologyparameterization}{tcosmologyparameterization}})}]{this,  }\item[{integer, intent(in)}]{slow\+\_\+num,  }\item[{integer, intent(in)}]{semi\+\_\+slow\+\_\+num }\end{DoxyParamCaption})}
+
+
+
+References generaltypes\+::datalikelihoods, index\+\_\+initpower, settings\+::index\+\_\+semislow, max\+\_\+inipower\+\_\+params, num\+\_\+hard, num\+\_\+initpower, and settings\+::num\+\_\+theory\+\_\+params.
+
+\mbox{\Hypertarget{namespacecosmologytypes_ad425fc0ec36d3dd4e0eab7afb9a1afd8}\label{namespacecosmologytypes_ad425fc0ec36d3dd4e0eab7afb9a1afd8}} 
+\index{cosmologytypes@{cosmologytypes}!tcosmologyrequirementslikelihood\+\_\+initforsettings@{tcosmologyrequirementslikelihood\+\_\+initforsettings}}
+\index{tcosmologyrequirementslikelihood\+\_\+initforsettings@{tcosmologyrequirementslikelihood\+\_\+initforsettings}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{tcosmologyrequirementslikelihood\+\_\+initforsettings()}{tcosmologyrequirementslikelihood\_initforsettings()}}
+{\footnotesize\ttfamily subroutine cosmologytypes\+::tcosmologyrequirementslikelihood\+\_\+initforsettings (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmologyrequirementslikelihood}{tcosmologyrequirementslikelihood}})}]{this,  }\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}})}]{Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecosmologytypes_aea692fd3455be240e80ab5de081b500e}\label{namespacecosmologytypes_aea692fd3455be240e80ab5de081b500e}} 
+\index{cosmologytypes@{cosmologytypes}!tcosmotheorysettings\+\_\+initforlikelihoods@{tcosmotheorysettings\+\_\+initforlikelihoods}}
+\index{tcosmotheorysettings\+\_\+initforlikelihoods@{tcosmotheorysettings\+\_\+initforlikelihoods}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{tcosmotheorysettings\+\_\+initforlikelihoods()}{tcosmotheorysettings\_initforlikelihoods()}}
+{\footnotesize\ttfamily subroutine cosmologytypes\+::tcosmotheorysettings\+\_\+initforlikelihoods (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References cmb\+\_\+cl\+\_\+fields, generaltypes\+::datalikelihoods, settings\+::feedback, and settings\+::mpirank.
+
+\mbox{\Hypertarget{namespacecosmologytypes_a1a69426bf9f630b4e02bb612ca1406ea}\label{namespacecosmologytypes_a1a69426bf9f630b4e02bb612ca1406ea}} 
+\index{cosmologytypes@{cosmologytypes}!tcosmotheorysettings\+\_\+readparams@{tcosmotheorysettings\+\_\+readparams}}
+\index{tcosmotheorysettings\+\_\+readparams@{tcosmotheorysettings\+\_\+readparams}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{tcosmotheorysettings\+\_\+readparams()}{tcosmotheorysettings\_readparams()}}
+{\footnotesize\ttfamily subroutine cosmologytypes\+::tcosmotheorysettings\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References neutrino\+\_\+hierarchy\+\_\+degenerate, neutrino\+\_\+hierarchy\+\_\+normal, and neutrino\+\_\+types.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecosmologytypes_a865a3713806fafe97fbe476029dc0387}\label{namespacecosmologytypes_a865a3713806fafe97fbe476029dc0387}} 
+\index{cosmologytypes@{cosmologytypes}!amp\+\_\+ratio\+\_\+index@{amp\+\_\+ratio\+\_\+index}}
+\index{amp\+\_\+ratio\+\_\+index@{amp\+\_\+ratio\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{amp\+\_\+ratio\+\_\+index}{amp\_ratio\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::amp\+\_\+ratio\+\_\+index = 5}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a702869d17ac6c53907a307832df04f5b}\label{namespacecosmologytypes_a702869d17ac6c53907a307832df04f5b}} 
+\index{cosmologytypes@{cosmologytypes}!aphiphi\+\_\+index@{aphiphi\+\_\+index}}
+\index{aphiphi\+\_\+index@{aphiphi\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{aphiphi\+\_\+index}{aphiphi\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::aphiphi\+\_\+index = 8}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a46466f5670050f4167e8e9fbe5416298}\label{namespacecosmologytypes_a46466f5670050f4167e8e9fbe5416298}} 
+\index{cosmologytypes@{cosmologytypes}!as\+\_\+index@{as\+\_\+index}}
+\index{as\+\_\+index@{as\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{as\+\_\+index}{as\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::as\+\_\+index =1}
+
+
+
+Referenced by cosmologyparameterizations\+::setfast(), and cosmologyparameterizations\+::tp\+\_\+calcderivedparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a59dfbed9693b76beb42a0c48ec80b388}\label{namespacecosmologytypes_a59dfbed9693b76beb42a0c48ec80b388}} 
+\index{cosmologytypes@{cosmologytypes}!cl\+\_\+b@{cl\+\_\+b}}
+\index{cl\+\_\+b@{cl\+\_\+b}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{cl\+\_\+b}{cl\_b}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::cl\+\_\+b =3}
+
+
+
+Referenced by cmblikes\+::adapttheoryformaps(), cliklike\+::clik\+\_\+likeinit(), and cmblikelihoods\+::twmaplikelihood\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_aded7f72c34bf738967d5fb32e4edc1e3}\label{namespacecosmologytypes_aded7f72c34bf738967d5fb32e4edc1e3}} 
+\index{cosmologytypes@{cosmologytypes}!cl\+\_\+e@{cl\+\_\+e}}
+\index{cl\+\_\+e@{cl\+\_\+e}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{cl\+\_\+e}{cl\_e}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::cl\+\_\+e =2}
+
+
+
+Referenced by cliklike\+::clik\+\_\+likeinit(), cmblikes\+::cmblikes\+\_\+readini(), and cmblikelihoods\+::twmaplikelihood\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a5f2058a68678c051e4768dd4dc91203b}\label{namespacecosmologytypes_a5f2058a68678c051e4768dd4dc91203b}} 
+\index{cosmologytypes@{cosmologytypes}!cl\+\_\+norm@{cl\+\_\+norm}}
+\index{cl\+\_\+norm@{cl\+\_\+norm}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{cl\+\_\+norm}{cl\_norm}}
+{\footnotesize\ttfamily real(mcp), parameter cosmologytypes\+::cl\+\_\+norm = 1e-\/10\+\_\+mcp}
+
+
+
+Referenced by cosmologyparameterizations\+::tp\+\_\+calcderivedparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a25e618d45dab8f1c5092d92e772f81d0}\label{namespacecosmologytypes_a25e618d45dab8f1c5092d92e772f81d0}} 
+\index{cosmologytypes@{cosmologytypes}!cl\+\_\+phi@{cl\+\_\+phi}}
+\index{cl\+\_\+phi@{cl\+\_\+phi}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{cl\+\_\+phi}{cl\_phi}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::cl\+\_\+phi =4}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), cmblikes\+::cmblikes\+\_\+readini(), and initialize\+\_\+cmbsettings().
+
+\mbox{\Hypertarget{namespacecosmologytypes_abddefae1172ac2704cb3a3b22704aaa1}\label{namespacecosmologytypes_abddefae1172ac2704cb3a3b22704aaa1}} 
+\index{cosmologytypes@{cosmologytypes}!cl\+\_\+t@{cl\+\_\+t}}
+\index{cl\+\_\+t@{cl\+\_\+t}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{cl\+\_\+t}{cl\_t}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::cl\+\_\+t = 1}
+
+
+
+Referenced by cliklike\+::clik\+\_\+likeinit(), cmblikes\+::cmblikes\+\_\+readini(), cmblikelihoods\+::readsztemplate(), and cmblikelihoods\+::twmaplikelihood\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a59f0f294178f05545934eb7dd63928b6}\label{namespacecosmologytypes_a59f0f294178f05545934eb7dd63928b6}} 
+\index{cosmologytypes@{cosmologytypes}!cmb\+\_\+cl\+\_\+fields@{cmb\+\_\+cl\+\_\+fields}}
+\index{cmb\+\_\+cl\+\_\+fields@{cmb\+\_\+cl\+\_\+fields}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{cmb\+\_\+cl\+\_\+fields}{cmb\_cl\_fields}}
+{\footnotesize\ttfamily character(len=4), parameter cosmologytypes\+::cmb\+\_\+cl\+\_\+fields = \textquotesingle{}T\+E\+BP\textquotesingle{}}
+
+
+
+Referenced by cmblikes\+::cmblikes\+\_\+readini(), tcosmotheorysettings\+\_\+initforlikelihoods(), cmblikes\+::typeindex(), and cosmotheory\+::writetextcls().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a6456ff7e508a263c46d00481a14d3389}\label{namespacecosmologytypes_a6456ff7e508a263c46d00481a14d3389}} 
+\index{cosmologytypes@{cosmologytypes}!cosmosettings@{cosmosettings}}
+\index{cosmosettings@{cosmosettings}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{cosmosettings}{cosmosettings}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structcosmologytypes_1_1tcosmotheorysettings}{tcosmotheorysettings}}), target, save cosmologytypes\+::cosmosettings}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+cmbtocamb(), calculator\+\_\+camb\+::cambcalc\+\_\+getnewpowerdata(), calculator\+\_\+camb\+::cambcalc\+\_\+gettheoryforimportance(), calculator\+\_\+camb\+::cambcalc\+\_\+setpowersfromcamb(), calclike\+\_\+cosmology\+::cosmo\+\_\+calculaterequiredtheorychanges(), calclike\+\_\+cosmology\+::cosmo\+\_\+updatetheoryforlikelihoods(), initialize\+\_\+pksettings(), calculator\+\_\+pico\+::pico\+\_\+cmbtocamb(), calculator\+\_\+pico\+::pico\+\_\+getnewpowerdata(), calculator\+\_\+pico\+::pico\+\_\+getoutputarray(), datalikelihoodlist\+::setdatalikelihoods(), cosmologyparameterizations\+::setforh(), cosmologyconfig\+::tcosmologyconfig\+\_\+initforlikelihoods(), cosmologyconfig\+::tcosmologyconfig\+\_\+newtheory(), cosmologyconfig\+::tcosmologyconfig\+\_\+readparams(), cosmotheory\+::tcosmotheorypredictions\+\_\+readtheory(), cosmotheory\+::tcosmotheorypredictions\+\_\+writetheory(), cosmologyparameterizations\+::tp\+\_\+calcderivedparams(), cosmologyparameterizations\+::tp\+\_\+init(), and cosmotheory\+::writetextcls().
+
+\mbox{\Hypertarget{namespacecosmologytypes_ac41d8787a0c66b372de6431ec8d5d90e}\label{namespacecosmologytypes_ac41d8787a0c66b372de6431ec8d5d90e}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+age@{derived\+\_\+age}}
+\index{derived\+\_\+age@{derived\+\_\+age}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+age}{derived\_age}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+age =1}
+
+\mbox{\Hypertarget{namespacecosmologytypes_ad7c434d95788f75aebc8ad1a2344ae22}\label{namespacecosmologytypes_ad7c434d95788f75aebc8ad1a2344ae22}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+dastar@{derived\+\_\+dastar}}
+\index{derived\+\_\+dastar@{derived\+\_\+dastar}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+dastar}{derived\_dastar}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+dastar = 5}
+
+\mbox{\Hypertarget{namespacecosmologytypes_aced8968e4a5258b1eb562971c4d49d5c}\label{namespacecosmologytypes_aced8968e4a5258b1eb562971c4d49d5c}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+kd@{derived\+\_\+kd}}
+\index{derived\+\_\+kd@{derived\+\_\+kd}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+kd}{derived\_kd}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+kd =8}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a4001ca23b9dc519f82acc58ca8c530b2}\label{namespacecosmologytypes_a4001ca23b9dc519f82acc58ca8c530b2}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+keq@{derived\+\_\+keq}}
+\index{derived\+\_\+keq@{derived\+\_\+keq}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+keq}{derived\_keq}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+keq =11}
+
+\mbox{\Hypertarget{namespacecosmologytypes_abccb586a131096107b8e9d3b4e9ef8e3}\label{namespacecosmologytypes_abccb586a131096107b8e9d3b4e9ef8e3}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+rdrag@{derived\+\_\+rdrag}}
+\index{derived\+\_\+rdrag@{derived\+\_\+rdrag}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+rdrag}{derived\_rdrag}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+rdrag =7}
+
+
+
+Referenced by bao\+::get\+\_\+rs\+\_\+drag().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a273d7a236ebfc592e91d30f5f1d65691}\label{namespacecosmologytypes_a273d7a236ebfc592e91d30f5f1d65691}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+rstar@{derived\+\_\+rstar}}
+\index{derived\+\_\+rstar@{derived\+\_\+rstar}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+rstar}{derived\_rstar}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+rstar =3}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a2475050c0f8bf96fdeea239d996693ba}\label{namespacecosmologytypes_a2475050c0f8bf96fdeea239d996693ba}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+theta\+\_\+rs\+\_\+eq@{derived\+\_\+theta\+\_\+rs\+\_\+eq}}
+\index{derived\+\_\+theta\+\_\+rs\+\_\+eq@{derived\+\_\+theta\+\_\+rs\+\_\+eq}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+theta\+\_\+rs\+\_\+eq}{derived\_theta\_rs\_eq}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+theta\+\_\+rs\+\_\+eq = 13}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a5a52bc52cd7bc22fa7f0f61ce2f7a67c}\label{namespacecosmologytypes_a5a52bc52cd7bc22fa7f0f61ce2f7a67c}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+thetad@{derived\+\_\+thetad}}
+\index{derived\+\_\+thetad@{derived\+\_\+thetad}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+thetad}{derived\_thetad}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+thetad =9}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a80034ea7e9b15ff769de8da4c5320653}\label{namespacecosmologytypes_a80034ea7e9b15ff769de8da4c5320653}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+thetaeq@{derived\+\_\+thetaeq}}
+\index{derived\+\_\+thetaeq@{derived\+\_\+thetaeq}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+thetaeq}{derived\_thetaeq}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+thetaeq =12}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a3828603ab7ab791295ab034337359f18}\label{namespacecosmologytypes_a3828603ab7ab791295ab034337359f18}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+thetastar@{derived\+\_\+thetastar}}
+\index{derived\+\_\+thetastar@{derived\+\_\+thetastar}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+thetastar}{derived\_thetastar}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+thetastar =4}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a2560d826bb11395cab2b36e611467be4}\label{namespacecosmologytypes_a2560d826bb11395cab2b36e611467be4}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+zdrag@{derived\+\_\+zdrag}}
+\index{derived\+\_\+zdrag@{derived\+\_\+zdrag}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+zdrag}{derived\_zdrag}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+zdrag =6}
+
+\mbox{\Hypertarget{namespacecosmologytypes_ad60924495182c1a45a6d505bb18ad377}\label{namespacecosmologytypes_ad60924495182c1a45a6d505bb18ad377}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+zeq@{derived\+\_\+zeq}}
+\index{derived\+\_\+zeq@{derived\+\_\+zeq}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+zeq}{derived\_zeq}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+zeq =10}
+
+\mbox{\Hypertarget{namespacecosmologytypes_ae9b4848c3438334ab15af3a9c5e38947}\label{namespacecosmologytypes_ae9b4848c3438334ab15af3a9c5e38947}} 
+\index{cosmologytypes@{cosmologytypes}!derived\+\_\+zstar@{derived\+\_\+zstar}}
+\index{derived\+\_\+zstar@{derived\+\_\+zstar}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{derived\+\_\+zstar}{derived\_zstar}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::derived\+\_\+zstar =2}
+
+\mbox{\Hypertarget{namespacecosmologytypes_abb690edf45f7746cb6d70d0ee85c57a1}\label{namespacecosmologytypes_abb690edf45f7746cb6d70d0ee85c57a1}} 
+\index{cosmologytypes@{cosmologytypes}!index\+\_\+initpower@{index\+\_\+initpower}}
+\index{index\+\_\+initpower@{index\+\_\+initpower}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{index\+\_\+initpower}{index\_initpower}}
+{\footnotesize\ttfamily integer cosmologytypes\+::index\+\_\+initpower}
+
+
+
+Referenced by calclike\+\_\+cosmology\+::cosmo\+\_\+calculaterequiredtheorychanges(), cosmologyparameterizations\+::setfast(), and tcosmologyparameterization\+\_\+setnumbers().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a12576036de0c90fcd196839ecf951a15}\label{namespacecosmologytypes_a12576036de0c90fcd196839ecf951a15}} 
+\index{cosmologytypes@{cosmologytypes}!last\+\_\+power\+\_\+index@{last\+\_\+power\+\_\+index}}
+\index{last\+\_\+power\+\_\+index@{last\+\_\+power\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{last\+\_\+power\+\_\+index}{last\_power\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::last\+\_\+power\+\_\+index = Aphiphi\+\_\+index}
+
+
+
+Referenced by cosmologyparameterizations\+::tp\+\_\+init().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a6d02c6eb605923549777001d9c6144ad}\label{namespacecosmologytypes_a6d02c6eb605923549777001d9c6144ad}} 
+\index{cosmologytypes@{cosmologytypes}!max\+\_\+derived\+\_\+parameters@{max\+\_\+derived\+\_\+parameters}}
+\index{max\+\_\+derived\+\_\+parameters@{max\+\_\+derived\+\_\+parameters}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{max\+\_\+derived\+\_\+parameters}{max\_derived\_parameters}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::max\+\_\+derived\+\_\+parameters = 326}
+
+
+
+Referenced by calculator\+\_\+camb\+::cambcalc\+\_\+setderived().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a777630dc8c977e6abd38f7a7cc4652b8}\label{namespacecosmologytypes_a777630dc8c977e6abd38f7a7cc4652b8}} 
+\index{cosmologytypes@{cosmologytypes}!max\+\_\+inipower\+\_\+params@{max\+\_\+inipower\+\_\+params}}
+\index{max\+\_\+inipower\+\_\+params@{max\+\_\+inipower\+\_\+params}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{max\+\_\+inipower\+\_\+params}{max\_inipower\_params}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::max\+\_\+inipower\+\_\+params = 10}
+
+
+
+Referenced by tcosmologyparameterization\+\_\+setnumbers().
+
+\mbox{\Hypertarget{namespacecosmologytypes_add030eb1dcdea0a5221e749a63870ee2}\label{namespacecosmologytypes_add030eb1dcdea0a5221e749a63870ee2}} 
+\index{cosmologytypes@{cosmologytypes}!neutrino\+\_\+hierarchy\+\_\+degenerate@{neutrino\+\_\+hierarchy\+\_\+degenerate}}
+\index{neutrino\+\_\+hierarchy\+\_\+degenerate@{neutrino\+\_\+hierarchy\+\_\+degenerate}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{neutrino\+\_\+hierarchy\+\_\+degenerate}{neutrino\_hierarchy\_degenerate}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::neutrino\+\_\+hierarchy\+\_\+degenerate = 3}
+
+
+
+Referenced by tcosmotheorysettings\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a61a310ab75549fa17f2c5dbd9ec7e638}\label{namespacecosmologytypes_a61a310ab75549fa17f2c5dbd9ec7e638}} 
+\index{cosmologytypes@{cosmologytypes}!neutrino\+\_\+hierarchy\+\_\+inverted@{neutrino\+\_\+hierarchy\+\_\+inverted}}
+\index{neutrino\+\_\+hierarchy\+\_\+inverted@{neutrino\+\_\+hierarchy\+\_\+inverted}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{neutrino\+\_\+hierarchy\+\_\+inverted}{neutrino\_hierarchy\_inverted}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::neutrino\+\_\+hierarchy\+\_\+inverted = 2}
+
+\mbox{\Hypertarget{namespacecosmologytypes_ac77eac54651ec04a99342a063e413398}\label{namespacecosmologytypes_ac77eac54651ec04a99342a063e413398}} 
+\index{cosmologytypes@{cosmologytypes}!neutrino\+\_\+hierarchy\+\_\+normal@{neutrino\+\_\+hierarchy\+\_\+normal}}
+\index{neutrino\+\_\+hierarchy\+\_\+normal@{neutrino\+\_\+hierarchy\+\_\+normal}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{neutrino\+\_\+hierarchy\+\_\+normal}{neutrino\_hierarchy\_normal}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::neutrino\+\_\+hierarchy\+\_\+normal = 1}
+
+
+
+Referenced by tcosmotheorysettings\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a6c895faee0146a00099a99e8caa7b0b1}\label{namespacecosmologytypes_a6c895faee0146a00099a99e8caa7b0b1}} 
+\index{cosmologytypes@{cosmologytypes}!neutrino\+\_\+types@{neutrino\+\_\+types}}
+\index{neutrino\+\_\+types@{neutrino\+\_\+types}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{neutrino\+\_\+types}{neutrino\_types}}
+{\footnotesize\ttfamily character(len=ini\+\_\+enumeration\+\_\+len), dimension(3), parameter cosmologytypes\+::neutrino\+\_\+types = \mbox{[}character(Ini\+\_\+\+Enumeration\+\_\+\+Len)\+::\textquotesingle{}normal\textquotesingle{},\textquotesingle{}inverted\textquotesingle{},\textquotesingle{}degenerate\textquotesingle{}\mbox{]}}
+
+
+
+Referenced by tcosmotheorysettings\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_ae7086a888c94e02609c59f8c5fa2dbf1}\label{namespacecosmologytypes_ae7086a888c94e02609c59f8c5fa2dbf1}} 
+\index{cosmologytypes@{cosmologytypes}!nrun\+\_\+index@{nrun\+\_\+index}}
+\index{nrun\+\_\+index@{nrun\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{nrun\+\_\+index}{nrun\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::nrun\+\_\+index =3}
+
+
+
+Referenced by cosmologyparameterizations\+::tp\+\_\+calcderivedparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_ab8b99958a1c9ab51eb091e6e5aab271e}\label{namespacecosmologytypes_ab8b99958a1c9ab51eb091e6e5aab271e}} 
+\index{cosmologytypes@{cosmologytypes}!nrunrun\+\_\+index@{nrunrun\+\_\+index}}
+\index{nrunrun\+\_\+index@{nrunrun\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{nrunrun\+\_\+index}{nrunrun\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::nrunrun\+\_\+index =4}
+
+
+
+Referenced by cosmologyparameterizations\+::tp\+\_\+calcderivedparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a94ac6353d15b78b217f2ea727a13584f}\label{namespacecosmologytypes_a94ac6353d15b78b217f2ea727a13584f}} 
+\index{cosmologytypes@{cosmologytypes}!ns\+\_\+index@{ns\+\_\+index}}
+\index{ns\+\_\+index@{ns\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{ns\+\_\+index}{ns\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::ns\+\_\+index =2}
+
+
+
+Referenced by szcounts\+::szcc\+\_\+cash(), and cosmologyparameterizations\+::tp\+\_\+calcderivedparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_a81146d2bca96d38cce3742a77963bca3}\label{namespacecosmologytypes_a81146d2bca96d38cce3742a77963bca3}} 
+\index{cosmologytypes@{cosmologytypes}!nt\+\_\+index@{nt\+\_\+index}}
+\index{nt\+\_\+index@{nt\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{nt\+\_\+index}{nt\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::nt\+\_\+index = 6}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a36ff14458bf8e280f350800fc8bd0ba7}\label{namespacecosmologytypes_a36ff14458bf8e280f350800fc8bd0ba7}} 
+\index{cosmologytypes@{cosmologytypes}!ntrun\+\_\+index@{ntrun\+\_\+index}}
+\index{ntrun\+\_\+index@{ntrun\+\_\+index}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{ntrun\+\_\+index}{ntrun\_index}}
+{\footnotesize\ttfamily integer, parameter cosmologytypes\+::ntrun\+\_\+index = 7}
+
+\mbox{\Hypertarget{namespacecosmologytypes_a570495f7e1339d51d190e98980c9b01b}\label{namespacecosmologytypes_a570495f7e1339d51d190e98980c9b01b}} 
+\index{cosmologytypes@{cosmologytypes}!num\+\_\+hard@{num\+\_\+hard}}
+\index{num\+\_\+hard@{num\+\_\+hard}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{num\+\_\+hard}{num\_hard}}
+{\footnotesize\ttfamily integer cosmologytypes\+::num\+\_\+hard}
+
+
+
+Referenced by calclike\+\_\+cosmology\+::cosmo\+\_\+calculaterequiredtheorychanges(), calclike\+\_\+cosmology\+::cosmo\+\_\+gettheoryforlike(), tcosmologyparameterization\+\_\+setnumbers(), and cosmologyparameterizations\+::tp\+\_\+paramarraytotheoryparams().
+
+\mbox{\Hypertarget{namespacecosmologytypes_aab2abf3c84749a23d7bcd331d20deacb}\label{namespacecosmologytypes_aab2abf3c84749a23d7bcd331d20deacb}} 
+\index{cosmologytypes@{cosmologytypes}!num\+\_\+initpower@{num\+\_\+initpower}}
+\index{num\+\_\+initpower@{num\+\_\+initpower}!cosmologytypes@{cosmologytypes}}
+\subsubsection{\texorpdfstring{num\+\_\+initpower}{num\_initpower}}
+{\footnotesize\ttfamily integer cosmologytypes\+::num\+\_\+initpower}
+
+
+
+Referenced by calclike\+\_\+cosmology\+::cosmo\+\_\+calculaterequiredtheorychanges(), cosmologyparameterizations\+::setfast(), and tcosmologyparameterization\+\_\+setnumbers().
+

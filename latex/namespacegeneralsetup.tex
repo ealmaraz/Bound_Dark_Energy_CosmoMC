@@ -1,0 +1,151 @@
+\hypertarget{namespacegeneralsetup}{}\section{generalsetup Module Reference}
+\label{namespacegeneralsetup}\index{generalsetup@{generalsetup}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacegeneralsetup_af2242426644f3fa7db9c7ca3726aeaca}{tsetup\+\_\+init}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneralsetup_a2153d54792461f99885b6bdc078cbfe8}{tsetup\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneralsetup_acfe3cccd27f6794ef55ded35c5a7e63b}{tsetup\+\_\+doneinitialize}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneralsetup_ab96236dacfcf61193bfa8604d0f82fc0}{tsetup\+\_\+getminimizer}} (this, Minimizer)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneralsetup_aa31d5951f5285c856d2291afcb518b01}{tsetup\+\_\+dosampling}} (this, Params)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneralsetup_a8fafc07faa08ebbfd2ba87e7737ac72f}{tsetup\+\_\+dotests}} (this, output\+\_\+root, paramsvals, check\+\_\+compare)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacegeneralsetup_aa1fe7f09863579dea11fff2b498ea035}{action\+\_\+mcmc}} =0
+\item 
+integer, parameter \mbox{\hyperlink{namespacegeneralsetup_a8c2cc6dc22ec2b32558f1d3f478f835b}{action\+\_\+importance}} =1
+\item 
+integer, parameter \mbox{\hyperlink{namespacegeneralsetup_a7aa42a6a8502a7f927b5eef1f7c968b7}{action\+\_\+maxlike}} =2
+\item 
+integer, parameter \mbox{\hyperlink{namespacegeneralsetup_a4e469d33113eb48f19cfd83d113bab5c}{action\+\_\+hessian}} =3
+\item 
+integer, parameter \mbox{\hyperlink{namespacegeneralsetup_a6f10f3082af438a30e6188d4b75666de}{action\+\_\+tests}} =4
+\item 
+class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}}), allocatable \mbox{\hyperlink{namespacegeneralsetup_a9910f6f4ebbc88805bed3c999d7ce459}{setup}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacegeneralsetup_acfe3cccd27f6794ef55ded35c5a7e63b}\label{namespacegeneralsetup_acfe3cccd27f6794ef55ded35c5a7e63b}} 
+\index{generalsetup@{generalsetup}!tsetup\+\_\+doneinitialize@{tsetup\+\_\+doneinitialize}}
+\index{tsetup\+\_\+doneinitialize@{tsetup\+\_\+doneinitialize}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{tsetup\+\_\+doneinitialize()}{tsetup\_doneinitialize()}}
+{\footnotesize\ttfamily subroutine generalsetup\+::tsetup\+\_\+doneinitialize (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}}), target}]{this }\end{DoxyParamCaption})}
+
+
+
+References baseparameters\+::baseparams.
+
+\mbox{\Hypertarget{namespacegeneralsetup_aa31d5951f5285c856d2291afcb518b01}\label{namespacegeneralsetup_aa31d5951f5285c856d2291afcb518b01}} 
+\index{generalsetup@{generalsetup}!tsetup\+\_\+dosampling@{tsetup\+\_\+dosampling}}
+\index{tsetup\+\_\+dosampling@{tsetup\+\_\+dosampling}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{tsetup\+\_\+dosampling()}{tsetup\_dosampling()}}
+{\footnotesize\ttfamily subroutine generalsetup\+::tsetup\+\_\+dosampling (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}}), target}]{this,  }\item[{class(paramset)}]{Params }\end{DoxyParamCaption})}
+
+
+
+References baseparameters\+::baseparams, and io\+::io\+\_\+readlastchainparams().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegeneralsetup_aa31d5951f5285c856d2291afcb518b01_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegeneralsetup_a8fafc07faa08ebbfd2ba87e7737ac72f}\label{namespacegeneralsetup_a8fafc07faa08ebbfd2ba87e7737ac72f}} 
+\index{generalsetup@{generalsetup}!tsetup\+\_\+dotests@{tsetup\+\_\+dotests}}
+\index{tsetup\+\_\+dotests@{tsetup\+\_\+dotests}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{tsetup\+\_\+dotests()}{tsetup\_dotests()}}
+{\footnotesize\ttfamily subroutine generalsetup\+::tsetup\+\_\+dotests (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}})}]{this,  }\item[{character(len=$\ast$)}]{output\+\_\+root,  }\item[{real(mcp), dimension(\+:), intent(in)}]{paramsvals,  }\item[{real(mcp), intent(in)}]{check\+\_\+compare }\end{DoxyParamCaption})}
+
+
+
+References generaltypes\+::datalikelihoods.
+
+\mbox{\Hypertarget{namespacegeneralsetup_ab96236dacfcf61193bfa8604d0f82fc0}\label{namespacegeneralsetup_ab96236dacfcf61193bfa8604d0f82fc0}} 
+\index{generalsetup@{generalsetup}!tsetup\+\_\+getminimizer@{tsetup\+\_\+getminimizer}}
+\index{tsetup\+\_\+getminimizer@{tsetup\+\_\+getminimizer}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{tsetup\+\_\+getminimizer()}{tsetup\_getminimizer()}}
+{\footnotesize\ttfamily subroutine generalsetup\+::tsetup\+\_\+getminimizer (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}}), target}]{this,  }\item[{class(\mbox{\hyperlink{structminimize_1_1tminimizer}{tminimizer}}), allocatable}]{Minimizer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegeneralsetup_af2242426644f3fa7db9c7ca3726aeaca}\label{namespacegeneralsetup_af2242426644f3fa7db9c7ca3726aeaca}} 
+\index{generalsetup@{generalsetup}!tsetup\+\_\+init@{tsetup\+\_\+init}}
+\index{tsetup\+\_\+init@{tsetup\+\_\+init}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{tsetup\+\_\+init()}{tsetup\_init()}}
+{\footnotesize\ttfamily subroutine generalsetup\+::tsetup\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}})}]{this }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacegeneralsetup_a2153d54792461f99885b6bdc078cbfe8}\label{namespacegeneralsetup_a2153d54792461f99885b6bdc078cbfe8}} 
+\index{generalsetup@{generalsetup}!tsetup\+\_\+readparams@{tsetup\+\_\+readparams}}
+\index{tsetup\+\_\+readparams@{tsetup\+\_\+readparams}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{tsetup\+\_\+readparams()}{tsetup\_readparams()}}
+{\footnotesize\ttfamily subroutine generalsetup\+::tsetup\+\_\+readparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini }\end{DoxyParamCaption})}
+
+
+
+References action\+\_\+importance, action\+\_\+mcmc, and action\+\_\+tests.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegeneralsetup_a4e469d33113eb48f19cfd83d113bab5c}\label{namespacegeneralsetup_a4e469d33113eb48f19cfd83d113bab5c}} 
+\index{generalsetup@{generalsetup}!action\+\_\+hessian@{action\+\_\+hessian}}
+\index{action\+\_\+hessian@{action\+\_\+hessian}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{action\+\_\+hessian}{action\_hessian}}
+{\footnotesize\ttfamily integer, parameter generalsetup\+::action\+\_\+hessian =3}
+
+\mbox{\Hypertarget{namespacegeneralsetup_a8c2cc6dc22ec2b32558f1d3f478f835b}\label{namespacegeneralsetup_a8c2cc6dc22ec2b32558f1d3f478f835b}} 
+\index{generalsetup@{generalsetup}!action\+\_\+importance@{action\+\_\+importance}}
+\index{action\+\_\+importance@{action\+\_\+importance}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{action\+\_\+importance}{action\_importance}}
+{\footnotesize\ttfamily integer, parameter generalsetup\+::action\+\_\+importance =1}
+
+
+
+Referenced by tsetup\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacegeneralsetup_a7aa42a6a8502a7f927b5eef1f7c968b7}\label{namespacegeneralsetup_a7aa42a6a8502a7f927b5eef1f7c968b7}} 
+\index{generalsetup@{generalsetup}!action\+\_\+maxlike@{action\+\_\+maxlike}}
+\index{action\+\_\+maxlike@{action\+\_\+maxlike}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{action\+\_\+maxlike}{action\_maxlike}}
+{\footnotesize\ttfamily integer, parameter generalsetup\+::action\+\_\+maxlike =2}
+
+\mbox{\Hypertarget{namespacegeneralsetup_aa1fe7f09863579dea11fff2b498ea035}\label{namespacegeneralsetup_aa1fe7f09863579dea11fff2b498ea035}} 
+\index{generalsetup@{generalsetup}!action\+\_\+mcmc@{action\+\_\+mcmc}}
+\index{action\+\_\+mcmc@{action\+\_\+mcmc}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{action\+\_\+mcmc}{action\_mcmc}}
+{\footnotesize\ttfamily integer, parameter generalsetup\+::action\+\_\+mcmc =0}
+
+
+
+Referenced by tsetup\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacegeneralsetup_a6f10f3082af438a30e6188d4b75666de}\label{namespacegeneralsetup_a6f10f3082af438a30e6188d4b75666de}} 
+\index{generalsetup@{generalsetup}!action\+\_\+tests@{action\+\_\+tests}}
+\index{action\+\_\+tests@{action\+\_\+tests}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{action\+\_\+tests}{action\_tests}}
+{\footnotesize\ttfamily integer, parameter generalsetup\+::action\+\_\+tests =4}
+
+
+
+Referenced by tsetup\+\_\+readparams().
+
+\mbox{\Hypertarget{namespacegeneralsetup_a9910f6f4ebbc88805bed3c999d7ce459}\label{namespacegeneralsetup_a9910f6f4ebbc88805bed3c999d7ce459}} 
+\index{generalsetup@{generalsetup}!setup@{setup}}
+\index{setup@{setup}!generalsetup@{generalsetup}}
+\subsubsection{\texorpdfstring{setup}{setup}}
+{\footnotesize\ttfamily class(\mbox{\hyperlink{structgeneralsetup_1_1tsetup}{tsetup}}), allocatable generalsetup\+::setup}
+

@@ -1,0 +1,315 @@
+\hypertarget{structsamplecollector_1_1tmpichaincollector}{}\section{samplecollector\+:\+:tmpichaincollector Type Reference}
+\label{structsamplecollector_1_1tmpichaincollector}\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+
+
+Inheritance diagram for samplecollector\+:\+:tmpichaincollector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{structsamplecollector_1_1tmpichaincollector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for samplecollector\+:\+:tmpichaincollector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{structsamplecollector_1_1tmpichaincollector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a56b7410b8b9c4eb8a632a9554e90d4ff}{savestate}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Save\+State
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a7f5ab23432b65cc6c8f6ef072f46635b}{readstate}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Read\+State
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a41ccea8027bb976be2ef4e2d3d186bf2}{writecheckpoint}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Write\+Checkpoint
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a747a0c05013ebb3888d1e2fe52282ac1}{readcheckpoint}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Read\+Checkpoint
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a43c4fe2ce78e7de2be290a07654f4303}{addnewpoint}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Add\+New\+Point
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a98d7b311e1e178a7690e71afc27316ac}{addnewweightedpoint}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Add\+New\+Weighted\+Point
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_ac62f9cbd3d3d3d1749db875d7090dd95}{updatecovandcheckconverge}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Update\+Cov\+And\+Check\+Converge
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a10b2ed8fa4ecfd4115963ff4fceeebb6}{readparams}} =$>$ T\+Mpi\+Chain\+Collector\+\_\+\+Read\+Params
+\item 
+F\+I\+N\+AL \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a12f83ab5d21b831dfdc5f8e1bff3ec85}{tmpichaincollector\+\_\+clear}}
+\item 
+\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_ace9241c4d84245f04850aefdaca46a87}{ifdef}}
+\item 
+\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a8ff2fdcc114c6b054a09b10897ed1a15}{mpi}}
+\item 
+procedure \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a72992adff709c0fa0658a8fb2e947cd6}{checklimitsconverge}}
+\item 
+\mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_abead2713a9c1d685d8015ab02f36151f}{endif}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a8a41b7373dedc00b559f11361824ac51}{sample\+\_\+num}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a8cd5c833ea8b49093204ed903704322d}{startlike}} = Log\+Zero
+\item 
+logical \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_ab324e65e5467d95b9826df91e257f11c}{burn\+\_\+done}} = .false.
+\item 
+logical \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a9d17f4f3b5f23be5c21c0c7f9f92bb44}{all\+\_\+burn}} = .false.
+\item 
+logical \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a7ef66ec27f2171abe415163e4eb3b576}{doupdates}} = .false.
+\item 
+logical \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_aebd311e488c0dddc1ec4bc4a5a114424}{flukecheck}} = .false.
+\item 
+integer \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_ab957bcc55d1fde052bddeddc806a29f8}{indep\+\_\+sample}} = 0
+\item 
+type(tbinaryfile) \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a8243bebe2cdfbac8590f7e8dce0e1f03}{outdatafile}}
+\item 
+real(mcp) \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a5a7f68919baff71a2b27d81a6a4bb466}{acc}} = 0
+\item 
+real(mcp) \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a334b0d16a61ff376cffce5a9656a8a35}{indep\+\_\+acc}} =0
+\item 
+integer \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a75f739e4d8f2b831d862160d6de9566a}{checkpoint\+\_\+burn}} = 0
+\item 
+integer \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_ac004ce25cd6ca0652ca1d15903c5b506}{checkpoint\+\_\+freq}} = 100
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a9e99cd33f2f0a92e9f33df7bb1ebd638}{req}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a4c256b66214b32d9c157a2d9aa775a06}{buf}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_ae95fcb36e2c43ed5aedd8a5a3fc58cf8}{param\+\_\+changes}}
+\item 
+logical \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a2e988206321500182b98413a4c8a7de5}{waiting}} = .false.
+\item 
+logical \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a99d7561eeb3a3b06da25205f13742be4}{done\+\_\+check}} = .false.
+\item 
+type(\mbox{\hyperlink{structsamplecollector_1_1tmpidata}{tmpidata}}) \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a0beccac8406a4ce9ee452ab2ac794309}{mpi}}
+\item 
+type(tsamplelist) \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_a3f699453270696379254decdeb714ff4}{samples}}
+\item 
+class(tchainsampler), pointer \mbox{\hyperlink{structsamplecollector_1_1tmpichaincollector_ad7759c82affb0f6d062a394b42409e5d}{sampler}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a43c4fe2ce78e7de2be290a07654f4303}\label{structsamplecollector_1_1tmpichaincollector_a43c4fe2ce78e7de2be290a07654f4303}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!addnewpoint@{addnewpoint}}
+\index{addnewpoint@{addnewpoint}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{addnewpoint()}{addnewpoint()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::addnewpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a98d7b311e1e178a7690e71afc27316ac}\label{structsamplecollector_1_1tmpichaincollector_a98d7b311e1e178a7690e71afc27316ac}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!addnewweightedpoint@{addnewweightedpoint}}
+\index{addnewweightedpoint@{addnewweightedpoint}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{addnewweightedpoint()}{addnewweightedpoint()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::addnewweightedpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a72992adff709c0fa0658a8fb2e947cd6}\label{structsamplecollector_1_1tmpichaincollector_a72992adff709c0fa0658a8fb2e947cd6}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!checklimitsconverge@{checklimitsconverge}}
+\index{checklimitsconverge@{checklimitsconverge}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{checklimitsconverge()}{checklimitsconverge()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::checklimitsconverge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_abead2713a9c1d685d8015ab02f36151f}\label{structsamplecollector_1_1tmpichaincollector_abead2713a9c1d685d8015ab02f36151f}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!endif@{endif}}
+\index{endif@{endif}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{endif()}{endif()}}
+{\footnotesize\ttfamily samplecollector\+::tmpichaincollector\+::endif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_ace9241c4d84245f04850aefdaca46a87}\label{structsamplecollector_1_1tmpichaincollector_ace9241c4d84245f04850aefdaca46a87}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!ifdef@{ifdef}}
+\index{ifdef@{ifdef}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{ifdef()}{ifdef()}}
+{\footnotesize\ttfamily samplecollector\+::tmpichaincollector\+::ifdef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a8ff2fdcc114c6b054a09b10897ed1a15}\label{structsamplecollector_1_1tmpichaincollector_a8ff2fdcc114c6b054a09b10897ed1a15}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!mpi@{mpi}}
+\index{mpi@{mpi}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{mpi()}{mpi()}}
+{\footnotesize\ttfamily samplecollector\+::tmpichaincollector\+::mpi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a747a0c05013ebb3888d1e2fe52282ac1}\label{structsamplecollector_1_1tmpichaincollector_a747a0c05013ebb3888d1e2fe52282ac1}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!readcheckpoint@{readcheckpoint}}
+\index{readcheckpoint@{readcheckpoint}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{readcheckpoint()}{readcheckpoint()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::readcheckpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a10b2ed8fa4ecfd4115963ff4fceeebb6}\label{structsamplecollector_1_1tmpichaincollector_a10b2ed8fa4ecfd4115963ff4fceeebb6}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!readparams@{readparams}}
+\index{readparams@{readparams}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{readparams()}{readparams()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::readparams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a7f5ab23432b65cc6c8f6ef072f46635b}\label{structsamplecollector_1_1tmpichaincollector_a7f5ab23432b65cc6c8f6ef072f46635b}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!readstate@{readstate}}
+\index{readstate@{readstate}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{readstate()}{readstate()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::readstate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a56b7410b8b9c4eb8a632a9554e90d4ff}\label{structsamplecollector_1_1tmpichaincollector_a56b7410b8b9c4eb8a632a9554e90d4ff}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!savestate@{savestate}}
+\index{savestate@{savestate}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{savestate()}{savestate()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::savestate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a12f83ab5d21b831dfdc5f8e1bff3ec85}\label{structsamplecollector_1_1tmpichaincollector_a12f83ab5d21b831dfdc5f8e1bff3ec85}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!tmpichaincollector\+\_\+clear@{tmpichaincollector\+\_\+clear}}
+\index{tmpichaincollector\+\_\+clear@{tmpichaincollector\+\_\+clear}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{tmpichaincollector\+\_\+clear()}{tmpichaincollector\_clear()}}
+{\footnotesize\ttfamily F\+I\+N\+AL samplecollector\+::tmpichaincollector\+::tmpichaincollector\+\_\+clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [private]}}
+
+
+
+References samplecollector\+::tmpichaincollector\+\_\+clear().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsamplecollector_1_1tmpichaincollector_a12f83ab5d21b831dfdc5f8e1bff3ec85_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_ac62f9cbd3d3d3d1749db875d7090dd95}\label{structsamplecollector_1_1tmpichaincollector_ac62f9cbd3d3d3d1749db875d7090dd95}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!updatecovandcheckconverge@{updatecovandcheckconverge}}
+\index{updatecovandcheckconverge@{updatecovandcheckconverge}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{updatecovandcheckconverge()}{updatecovandcheckconverge()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::updatecovandcheckconverge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a41ccea8027bb976be2ef4e2d3d186bf2}\label{structsamplecollector_1_1tmpichaincollector_a41ccea8027bb976be2ef4e2d3d186bf2}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!writecheckpoint@{writecheckpoint}}
+\index{writecheckpoint@{writecheckpoint}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{writecheckpoint()}{writecheckpoint()}}
+{\footnotesize\ttfamily procedure samplecollector\+::tmpichaincollector\+::writecheckpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a5a7f68919baff71a2b27d81a6a4bb466}\label{structsamplecollector_1_1tmpichaincollector_a5a7f68919baff71a2b27d81a6a4bb466}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!acc@{acc}}
+\index{acc@{acc}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{acc}{acc}}
+{\footnotesize\ttfamily real(mcp) samplecollector\+::tmpichaincollector\+::acc = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a9d17f4f3b5f23be5c21c0c7f9f92bb44}\label{structsamplecollector_1_1tmpichaincollector_a9d17f4f3b5f23be5c21c0c7f9f92bb44}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!all\+\_\+burn@{all\+\_\+burn}}
+\index{all\+\_\+burn@{all\+\_\+burn}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{all\+\_\+burn}{all\_burn}}
+{\footnotesize\ttfamily logical samplecollector\+::tmpichaincollector\+::all\+\_\+burn = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a4c256b66214b32d9c157a2d9aa775a06}\label{structsamplecollector_1_1tmpichaincollector_a4c256b66214b32d9c157a2d9aa775a06}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!buf@{buf}}
+\index{buf@{buf}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable samplecollector\+::tmpichaincollector\+::buf\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_ab324e65e5467d95b9826df91e257f11c}\label{structsamplecollector_1_1tmpichaincollector_ab324e65e5467d95b9826df91e257f11c}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!burn\+\_\+done@{burn\+\_\+done}}
+\index{burn\+\_\+done@{burn\+\_\+done}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{burn\+\_\+done}{burn\_done}}
+{\footnotesize\ttfamily logical samplecollector\+::tmpichaincollector\+::burn\+\_\+done = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a75f739e4d8f2b831d862160d6de9566a}\label{structsamplecollector_1_1tmpichaincollector_a75f739e4d8f2b831d862160d6de9566a}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!checkpoint\+\_\+burn@{checkpoint\+\_\+burn}}
+\index{checkpoint\+\_\+burn@{checkpoint\+\_\+burn}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{checkpoint\+\_\+burn}{checkpoint\_burn}}
+{\footnotesize\ttfamily integer samplecollector\+::tmpichaincollector\+::checkpoint\+\_\+burn = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_ac004ce25cd6ca0652ca1d15903c5b506}\label{structsamplecollector_1_1tmpichaincollector_ac004ce25cd6ca0652ca1d15903c5b506}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!checkpoint\+\_\+freq@{checkpoint\+\_\+freq}}
+\index{checkpoint\+\_\+freq@{checkpoint\+\_\+freq}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{checkpoint\+\_\+freq}{checkpoint\_freq}}
+{\footnotesize\ttfamily integer samplecollector\+::tmpichaincollector\+::checkpoint\+\_\+freq = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a99d7561eeb3a3b06da25205f13742be4}\label{structsamplecollector_1_1tmpichaincollector_a99d7561eeb3a3b06da25205f13742be4}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!done\+\_\+check@{done\+\_\+check}}
+\index{done\+\_\+check@{done\+\_\+check}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{done\+\_\+check}{done\_check}}
+{\footnotesize\ttfamily logical samplecollector\+::tmpichaincollector\+::done\+\_\+check = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a7ef66ec27f2171abe415163e4eb3b576}\label{structsamplecollector_1_1tmpichaincollector_a7ef66ec27f2171abe415163e4eb3b576}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!doupdates@{doupdates}}
+\index{doupdates@{doupdates}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{doupdates}{doupdates}}
+{\footnotesize\ttfamily logical samplecollector\+::tmpichaincollector\+::doupdates = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_aebd311e488c0dddc1ec4bc4a5a114424}\label{structsamplecollector_1_1tmpichaincollector_aebd311e488c0dddc1ec4bc4a5a114424}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!flukecheck@{flukecheck}}
+\index{flukecheck@{flukecheck}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{flukecheck}{flukecheck}}
+{\footnotesize\ttfamily logical samplecollector\+::tmpichaincollector\+::flukecheck = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a334b0d16a61ff376cffce5a9656a8a35}\label{structsamplecollector_1_1tmpichaincollector_a334b0d16a61ff376cffce5a9656a8a35}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!indep\+\_\+acc@{indep\+\_\+acc}}
+\index{indep\+\_\+acc@{indep\+\_\+acc}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{indep\+\_\+acc}{indep\_acc}}
+{\footnotesize\ttfamily real(mcp) samplecollector\+::tmpichaincollector\+::indep\+\_\+acc =0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_ab957bcc55d1fde052bddeddc806a29f8}\label{structsamplecollector_1_1tmpichaincollector_ab957bcc55d1fde052bddeddc806a29f8}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!indep\+\_\+sample@{indep\+\_\+sample}}
+\index{indep\+\_\+sample@{indep\+\_\+sample}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{indep\+\_\+sample}{indep\_sample}}
+{\footnotesize\ttfamily integer samplecollector\+::tmpichaincollector\+::indep\+\_\+sample = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a0beccac8406a4ce9ee452ab2ac794309}\label{structsamplecollector_1_1tmpichaincollector_a0beccac8406a4ce9ee452ab2ac794309}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!mpi@{mpi}}
+\index{mpi@{mpi}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{mpi}{mpi}}
+{\footnotesize\ttfamily type(\mbox{\hyperlink{structsamplecollector_1_1tmpidata}{tmpidata}}) samplecollector\+::tmpichaincollector\+::mpi\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a8243bebe2cdfbac8590f7e8dce0e1f03}\label{structsamplecollector_1_1tmpichaincollector_a8243bebe2cdfbac8590f7e8dce0e1f03}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!outdatafile@{outdatafile}}
+\index{outdatafile@{outdatafile}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{outdatafile}{outdatafile}}
+{\footnotesize\ttfamily type(tbinaryfile) samplecollector\+::tmpichaincollector\+::outdatafile\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_ae95fcb36e2c43ed5aedd8a5a3fc58cf8}\label{structsamplecollector_1_1tmpichaincollector_ae95fcb36e2c43ed5aedd8a5a3fc58cf8}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!param\+\_\+changes@{param\+\_\+changes}}
+\index{param\+\_\+changes@{param\+\_\+changes}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{param\+\_\+changes}{param\_changes}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable samplecollector\+::tmpichaincollector\+::param\+\_\+changes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a9e99cd33f2f0a92e9f33df7bb1ebd638}\label{structsamplecollector_1_1tmpichaincollector_a9e99cd33f2f0a92e9f33df7bb1ebd638}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!req@{req}}
+\index{req@{req}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{req}{req}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable samplecollector\+::tmpichaincollector\+::req\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a8a41b7373dedc00b559f11361824ac51}\label{structsamplecollector_1_1tmpichaincollector_a8a41b7373dedc00b559f11361824ac51}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!sample\+\_\+num@{sample\+\_\+num}}
+\index{sample\+\_\+num@{sample\+\_\+num}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{sample\+\_\+num}{sample\_num}}
+{\footnotesize\ttfamily integer samplecollector\+::tmpichaincollector\+::sample\+\_\+num = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_ad7759c82affb0f6d062a394b42409e5d}\label{structsamplecollector_1_1tmpichaincollector_ad7759c82affb0f6d062a394b42409e5d}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!sampler@{sampler}}
+\index{sampler@{sampler}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{sampler}{sampler}}
+{\footnotesize\ttfamily class(tchainsampler), pointer samplecollector\+::tmpichaincollector\+::sampler\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a3f699453270696379254decdeb714ff4}\label{structsamplecollector_1_1tmpichaincollector_a3f699453270696379254decdeb714ff4}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!samples@{samples}}
+\index{samples@{samples}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{samples}{samples}}
+{\footnotesize\ttfamily type(tsamplelist) samplecollector\+::tmpichaincollector\+::samples\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a8cd5c833ea8b49093204ed903704322d}\label{structsamplecollector_1_1tmpichaincollector_a8cd5c833ea8b49093204ed903704322d}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!startlike@{startlike}}
+\index{startlike@{startlike}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{startlike}{startlike}}
+{\footnotesize\ttfamily real(mcp) samplecollector\+::tmpichaincollector\+::startlike = Log\+Zero\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{structsamplecollector_1_1tmpichaincollector_a2e988206321500182b98413a4c8a7de5}\label{structsamplecollector_1_1tmpichaincollector_a2e988206321500182b98413a4c8a7de5}} 
+\index{samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}!waiting@{waiting}}
+\index{waiting@{waiting}!samplecollector\+::tmpichaincollector@{samplecollector\+::tmpichaincollector}}
+\subsubsection{\texorpdfstring{waiting}{waiting}}
+{\footnotesize\ttfamily logical samplecollector\+::tmpichaincollector\+::waiting = .false.\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this type was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\mbox{\hyperlink{SampleCollector_8f90}{Sample\+Collector.\+f90}}\end{DoxyCompactItemize}

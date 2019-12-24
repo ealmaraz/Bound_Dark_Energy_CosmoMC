@@ -1,0 +1,233 @@
+\hypertarget{classgetdist_1_1densities_1_1Density2D}{}\section{getdist.\+densities.\+Density2D Class Reference}
+\label{classgetdist_1_1densities_1_1Density2D}\index{getdist.\+densities.\+Density2D@{getdist.\+densities.\+Density2D}}
+
+
+Inheritance diagram for getdist.\+densities.\+Density2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classgetdist_1_1densities_1_1Density2D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for getdist.\+densities.\+Density2D\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classgetdist_1_1densities_1_1Density2D__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_ac12a300460a076fedffa0d8137fb2ba7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a9e758913645291d7152c2ef3b2b2d1dc}{x}}, \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a12719ab4e796cf011a7c17c201468ab1}{y}}, \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_aad3d52edbfbf1a94ecbd0c779bd39dc2}{P}}=None, \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a1780324a42505b8fb79887be499a0aa4}{view\+\_\+ranges}}=None)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a1867261071c004cd1b4b438a627a0264}{integrate}} (self, \mbox{\hyperlink{classgetdist_1_1densities_1_1GridDensity_aad3d52edbfbf1a94ecbd0c779bd39dc2}{P}})
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a626cf46833a5a5df4fdb42a0b7d2510c}{norm\+\_\+integral}} (self)
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a24e04a59b25556b75a32cc82272aef31}{Prob}} (self, \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a9e758913645291d7152c2ef3b2b2d1dc}{x}}, \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a12719ab4e796cf011a7c17c201468ab1}{y}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a9e758913645291d7152c2ef3b2b2d1dc}{x}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a12719ab4e796cf011a7c17c201468ab1}{y}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_abafd7e697c4e194f88c207f71ba7ad8e}{axes}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a1780324a42505b8fb79887be499a0aa4}{view\+\_\+ranges}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a22fb264fe6afdaf8a56e90b6e42e9eb4}{spacing}}
+\item 
+\mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_a22bfbf19a872f9a0e1477e1a722a2e29}{spl}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgetdist_1_1densities_1_1Density2D_abe44d1daf83c674e7b584acb50acdc58}{\+\_\+init\+Spline}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Class for 2D marginalized densities, inheriting from :class:`GridDensity` and :class:`~scipy:scipy.interpolate.RectBivariateSpline`.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_ac12a300460a076fedffa0d8137fb2ba7}\label{classgetdist_1_1densities_1_1Density2D_ac12a300460a076fedffa0d8137fb2ba7}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Density2\+D.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{P = {\ttfamily None},  }\item[{}]{view\+\_\+ranges = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param x: array of x values
+:param y: array of y values
+:param P: 2D array of density values at x, y
+:param view_ranges: optional ranges for viewing density
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_abe44d1daf83c674e7b584acb50acdc58}\label{classgetdist_1_1densities_1_1Density2D_abe44d1daf83c674e7b584acb50acdc58}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!\+\_\+init\+Spline@{\+\_\+init\+Spline}}
+\index{\+\_\+init\+Spline@{\+\_\+init\+Spline}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{\+\_\+init\+Spline()}{\_initSpline()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Density2\+D.\+\_\+init\+Spline (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References getdist.\+densities.\+Grid\+Density.\+P, getdist.\+densities.\+Density1\+D.\+x, getdist.\+densities.\+Density2\+D.\+x, and getdist.\+densities.\+Density2\+D.\+y.
+
+
+
+Referenced by getdist.\+densities.\+Density2\+D.\+Prob(), and getdist.\+densities.\+Density\+N\+D.\+Prob().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1Density2D_abe44d1daf83c674e7b584acb50acdc58_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a1867261071c004cd1b4b438a627a0264}\label{classgetdist_1_1densities_1_1Density2D_a1867261071c004cd1b4b438a627a0264}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!integrate@{integrate}}
+\index{integrate@{integrate}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{integrate()}{integrate()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Density2\+D.\+integrate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{P }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+densities.\+Density1\+D.\+spacing, and getdist.\+densities.\+Density2\+D.\+spacing.
+
+
+
+Referenced by getdist.\+densities.\+Density2\+D.\+norm\+\_\+integral(), and getdist.\+densities.\+Density\+N\+D.\+norm\+\_\+integral().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1Density2D_a1867261071c004cd1b4b438a627a0264_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a626cf46833a5a5df4fdb42a0b7d2510c}\label{classgetdist_1_1densities_1_1Density2D_a626cf46833a5a5df4fdb42a0b7d2510c}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!norm\+\_\+integral@{norm\+\_\+integral}}
+\index{norm\+\_\+integral@{norm\+\_\+integral}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{norm\+\_\+integral()}{norm\_integral()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Density2\+D.\+norm\+\_\+integral (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+References getdist.\+densities.\+Density1\+D.\+integrate(), getdist.\+densities.\+Density2\+D.\+integrate(), and getdist.\+densities.\+Grid\+Density.\+P.
+
+
+
+Referenced by getdist.\+densities.\+Grid\+Density.\+normalize().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1Density2D_a626cf46833a5a5df4fdb42a0b7d2510c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1Density2D_a626cf46833a5a5df4fdb42a0b7d2510c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a24e04a59b25556b75a32cc82272aef31}\label{classgetdist_1_1densities_1_1Density2D_a24e04a59b25556b75a32cc82272aef31}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!Prob@{Prob}}
+\index{Prob@{Prob}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{Prob()}{Prob()}}
+{\footnotesize\ttfamily def getdist.\+densities.\+Density2\+D.\+Prob (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Evaluate density at x,y using interpolation
+\end{DoxyVerb}
+ 
+
+References getdist.\+densities.\+Density1\+D.\+\_\+init\+Spline(), getdist.\+densities.\+Density2\+D.\+\_\+init\+Spline(), constants.\+ev, and getdist.\+densities.\+Grid\+Density.\+spl.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgetdist_1_1densities_1_1Density2D_a24e04a59b25556b75a32cc82272aef31_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_abafd7e697c4e194f88c207f71ba7ad8e}\label{classgetdist_1_1densities_1_1Density2D_abafd7e697c4e194f88c207f71ba7ad8e}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!axes@{axes}}
+\index{axes@{axes}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{axes}{axes}}
+{\footnotesize\ttfamily getdist.\+densities.\+Density2\+D.\+axes}
+
+
+
+Referenced by getdist.\+densities.\+Grid\+Density.\+bounds(), and getdist.\+densities.\+Grid\+Density.\+set\+P().
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a22fb264fe6afdaf8a56e90b6e42e9eb4}\label{classgetdist_1_1densities_1_1Density2D_a22fb264fe6afdaf8a56e90b6e42e9eb4}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!spacing@{spacing}}
+\index{spacing@{spacing}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{spacing}{spacing}}
+{\footnotesize\ttfamily getdist.\+densities.\+Density2\+D.\+spacing}
+
+
+
+Referenced by getdist.\+densities.\+Density2\+D.\+integrate().
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a22bfbf19a872f9a0e1477e1a722a2e29}\label{classgetdist_1_1densities_1_1Density2D_a22bfbf19a872f9a0e1477e1a722a2e29}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!spl@{spl}}
+\index{spl@{spl}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{spl}{spl}}
+{\footnotesize\ttfamily getdist.\+densities.\+Density2\+D.\+spl}
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a1780324a42505b8fb79887be499a0aa4}\label{classgetdist_1_1densities_1_1Density2D_a1780324a42505b8fb79887be499a0aa4}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!view\+\_\+ranges@{view\+\_\+ranges}}
+\index{view\+\_\+ranges@{view\+\_\+ranges}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{view\+\_\+ranges}{view\_ranges}}
+{\footnotesize\ttfamily getdist.\+densities.\+Density2\+D.\+view\+\_\+ranges}
+
+
+
+Referenced by getdist.\+densities.\+Grid\+Density.\+bounds().
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a9e758913645291d7152c2ef3b2b2d1dc}\label{classgetdist_1_1densities_1_1Density2D_a9e758913645291d7152c2ef3b2b2d1dc}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!x@{x}}
+\index{x@{x}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily getdist.\+densities.\+Density2\+D.\+x}
+
+
+
+Referenced by getdist.\+densities.\+Density2\+D.\+\_\+init\+Spline().
+
+\mbox{\Hypertarget{classgetdist_1_1densities_1_1Density2D_a12719ab4e796cf011a7c17c201468ab1}\label{classgetdist_1_1densities_1_1Density2D_a12719ab4e796cf011a7c17c201468ab1}} 
+\index{getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}!y@{y}}
+\index{y@{y}!getdist\+::densities\+::\+Density2D@{getdist\+::densities\+::\+Density2D}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily getdist.\+densities.\+Density2\+D.\+y}
+
+
+
+Referenced by getdist.\+densities.\+Density2\+D.\+\_\+init\+Spline().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ealmaraz/software/cosmomc/bde/v3.\+1/python/getdist/\mbox{\hyperlink{densities_8py}{densities.\+py}}\end{DoxyCompactItemize}

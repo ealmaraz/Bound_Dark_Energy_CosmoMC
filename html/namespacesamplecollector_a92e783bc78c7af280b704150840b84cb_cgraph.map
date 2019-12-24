@@ -1,0 +1,16 @@
+<map id="samplecollector::tmpichaincollector_updatecovandcheckconverge" name="samplecollector::tmpichaincollector_updatecovandcheckconverge">
+<area shape="rect" id="node2" href="$namespacesamplecollector.html#aedac586422a605cbd11d9c0892242684" title="samplecollector::convergestatus" alt="" coords="280,89,491,116"/>
+<area shape="rect" id="node3" href="$namespacesamples.html#abaa5a3a56f0160fff42cc0ea3ac8a928" title="samples::gelmanrubinevalues" alt="" coords="288,140,483,167"/>
+<area shape="rect" id="node4" href="$namespacematrixutils.html#acda49677dcf7603b255acba37dda9b92" title="matrixutils::matrix\l_choleskyrootinverse" alt="" coords="539,63,685,105"/>
+<area shape="rect" id="node10" href="$namespaceobjectlists.html#a36abcb049579dcfaee4f3d38cf09b5d1" title="objectlists::error" alt="" coords="555,140,669,167"/>
+<area shape="rect" id="node11" href="$namespacematrixutils.html#aa94ed3ad0cf6b18002c5f8ca9cd8b948" title="matrixutils::matrix\l_diagonalize" alt="" coords="549,213,675,254"/>
+<area shape="rect" id="node5" href="$namespacestringutils.html#a8308d148fc2d1fd7e23aea926bfd837f" title="stringutils::inttostr" alt="" coords="963,31,1090,57"/>
+<area shape="rect" id="node8" href="$namespacematrixutils.html#a380ecdd4310ae2f91be911a45516df12" title="matrixutils::matrix\l_cholesky" alt="" coords="750,53,877,94"/>
+<area shape="rect" id="node9" href="$namespacempiutils.html#a23720e4e8b635dab4b67172618aa77e5" title="mpiutils::mpistop" alt="" coords="966,119,1087,145"/>
+<area shape="rect" id="node6" href="$namespacestringutils.html#a19e683b9de4f769c4fe0afc48a7b45d0" title="stringutils::concat" alt="" coords="1160,5,1285,32"/>
+<area shape="rect" id="node7" href="$namespacestringutils.html#a921ef80710acba9d901b45479ddae08d" title="stringutils::stringappend" alt="" coords="1333,31,1493,57"/>
+<area shape="rect" id="node12" href="$namespacematrixutils.html#af41b3d5784e02032b5e22a16d76eca49" title="matrixutils::ilaenv_wrap" alt="" coords="734,220,893,247"/>
+<area shape="rect" id="node13" href="$namespacematrixutils.html#aeb25ca6b661aed4516c029f0cd6003bc" title="matrixutils::matrix_end" alt="" coords="736,271,891,297"/>
+<area shape="rect" id="node15" href="$namespacematrixutils.html#a24fd4fc8dbd7eee3c9176c3f9ca634eb" title="matrixutils::matrix\l_start" alt="" coords="750,322,877,363"/>
+<area shape="rect" id="node14" href="$namespacematrixutils.html#a969773017c47f3dc8dfb2a18e5bc5fbd" title="matrixutils::getmatrixtime" alt="" coords="942,300,1111,327"/>
+</map>

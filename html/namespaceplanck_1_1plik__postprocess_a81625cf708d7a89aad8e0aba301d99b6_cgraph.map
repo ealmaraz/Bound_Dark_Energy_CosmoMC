@@ -1,0 +1,8 @@
+<map id="planck.plik_postprocess.main_fg2000" name="planck.plik_postprocess.main_fg2000">
+<area shape="rect" id="node2" href="$namespaceplanck_1_1plik__postprocess.html#a1134321ac736e3fb7a99ad4754a563dd" title="planck.plik_postprocess.getLk" alt="" coords="249,5,447,32"/>
+<area shape="rect" id="node3" href="$namespacestringutils.html#a29f32cf04e0c44fc8ee8dfa9819b915d" title="stringutils::join" alt="" coords="295,56,401,83"/>
+<area shape="rect" id="node6" href="$namespaceplanck_1_1plik__postprocess.html#aa2e7d0756c0811893711c9aecf83baee" title="planck.plik_postprocess.parse\l_minimumfile" alt="" coords="249,107,447,149"/>
+<area shape="rect" id="node7" href="$namespaceplanck_1_1plik__postprocess.html#a7c4d0811ef982dbc43966c8a53f9f32a" title="planck.plik_postprocess.parse\l_paraname" alt="" coords="249,173,447,214"/>
+<area shape="rect" id="node4" href="$namespacestringutils.html#ac5e67eb0a4de77625ac1447804e1f934" title="stringutils::stringtrimmed" alt="" coords="496,56,661,83"/>
+<area shape="rect" id="node5" href="$namespacemiscutils.html#a9337630be33970a7cde8995bd73c58da" title="miscutils::defaultfalse" alt="" coords="709,56,859,83"/>
+</map>

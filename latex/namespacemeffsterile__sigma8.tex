@@ -1,0 +1,160 @@
+\hypertarget{namespacemeffsterile__sigma8}{}\section{meffsterile\+\_\+sigma8 Namespace Reference}
+\label{namespacemeffsterile__sigma8}\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_ac4771e1ebeb9f42dce89dde47826308c}{g}} = s.\+get\+Single\+Plotter()
+\item 
+string \mbox{\hyperlink{namespacemeffsterile__sigma8_ab507cafd80385d7c6d89d4acc4237879}{outdir}} = \textquotesingle{}\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacemeffsterile__sigma8_a88d773a1a386a843f3aacb86196b9745}{roots}} = \mbox{[}\textquotesingle{}base\+\_\+nnu\+\_\+meffsterile\+\_\+\textquotesingle{} + s.\+defdata\mbox{]}
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_aa9e2517630640d14a1fcbb0d0e92e32e}{samples}} = g.\+sample\+Analyser.\+samples\+For\+Root(\textquotesingle{}base\+\_\+nnu\+\_\+meffsterile\+\_\+\textquotesingle{} + s.\+defdata + \textquotesingle{}\+\_\+lensing\+\_\+\+B\+AO\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a7313dce6ed4212f05469d970230c63c9}{p}} = samples.\+get\+Params()
+\item 
+float \mbox{\hyperlink{namespacemeffsterile__sigma8_ab5bd05273edb5844fb300171221f7e21}{mphys}} = p.\+meffsterile / (p.\+nnu -\/ 3.\+046) $\ast$$\ast$ 0.\+75
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a08a154b2355c8c54d018e6a8f58210a9}{upper}}
+\item 
+float \mbox{\hyperlink{namespacemeffsterile__sigma8_ab1ef9b443cf37c209a09928073b114ca}{mmax}} = 1.\+7
+\item 
+float \mbox{\hyperlink{namespacemeffsterile__sigma8_a543dfdcb6935567ea0f877c0ed581d7d}{nmax}} = 4.\+49
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a8ea5ae4bdea4d8c602da2c2ced40553c}{m}} = np.\+arange(0, \mbox{\hyperlink{namespacemeffsterile__sigma8_ab1ef9b443cf37c209a09928073b114ca}{mmax}}, 0.\+01)
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a299a4336c34055d97bda4a87b6b6bebd}{N}} = np.\+arange(3.\+047, \mbox{\hyperlink{namespacemeffsterile__sigma8_a543dfdcb6935567ea0f877c0ed581d7d}{nmax}}, 0.\+01)
+\item 
+float \mbox{\hyperlink{namespacemeffsterile__sigma8_a77b27eb1e7eb6240ae57f6578b094075}{z}} = \mbox{\hyperlink{namespacemeffsterile__sigma8_a8ea5ae4bdea4d8c602da2c2ced40553c}{m}} / (\mbox{\hyperlink{namespacemeffsterile__sigma8_a299a4336c34055d97bda4a87b6b6bebd}{N}} -\/ 3.\+046) $\ast$$\ast$ 0.\+75
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a9be8a99b81f5f03d820f2297b21a3b5e}{CS}} = contour(\mbox{\hyperlink{namespacemeffsterile__sigma8_a8ea5ae4bdea4d8c602da2c2ced40553c}{m}}, \mbox{\hyperlink{namespacemeffsterile__sigma8_a299a4336c34055d97bda4a87b6b6bebd}{N}}, \mbox{\hyperlink{namespacemeffsterile__sigma8_a77b27eb1e7eb6240ae57f6578b094075}{z}}, origin=\textquotesingle{}lower\textquotesingle{}, \mbox{\hyperlink{namespacemeffsterile__sigma8_a2a791886c230da4f36eb2273cde1fe55}{levels}}=\mbox{[}0.\+5, 1, 2, 5\mbox{]}, colors=\textquotesingle{}k\textquotesingle{}, linestyles=\textquotesingle{}-\/-\/\textquotesingle{}, linewidths=0.\+3, extent=\mbox{[}0, 3, 3.\+046, \mbox{\hyperlink{namespacemeffsterile__sigma8_a543dfdcb6935567ea0f877c0ed581d7d}{nmax}}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a2a791886c230da4f36eb2273cde1fe55}{levels}}
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a0efd523453590b8f9a6c655b0871aa00}{inline}}
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a27f325b83f7ae6ab5565b93aaa4aa4aa}{True}}
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_af9e07bb93ae562d01765624d8fc26a3d}{fmt}}
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a27e7aab279d4e9bfc70b1154e47a89fb}{fontsize}}
+\item 
+\mbox{\hyperlink{namespacemeffsterile__sigma8_a477c26492698c3058522da42ad2cfa07}{color}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a477c26492698c3058522da42ad2cfa07}\label{namespacemeffsterile__sigma8_a477c26492698c3058522da42ad2cfa07}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!color@{color}}
+\index{color@{color}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+color}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a9be8a99b81f5f03d820f2297b21a3b5e}\label{namespacemeffsterile__sigma8_a9be8a99b81f5f03d820f2297b21a3b5e}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!CS@{CS}}
+\index{CS@{CS}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{CS}{CS}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+CS = contour(\mbox{\hyperlink{namespacemeffsterile__sigma8_a8ea5ae4bdea4d8c602da2c2ced40553c}{m}}, \mbox{\hyperlink{namespacemeffsterile__sigma8_a299a4336c34055d97bda4a87b6b6bebd}{N}}, \mbox{\hyperlink{namespacemeffsterile__sigma8_a77b27eb1e7eb6240ae57f6578b094075}{z}}, origin=\textquotesingle{}lower\textquotesingle{}, \mbox{\hyperlink{namespacemeffsterile__sigma8_a2a791886c230da4f36eb2273cde1fe55}{levels}}=\mbox{[}0.\+5, 1, 2, 5\mbox{]}, colors=\textquotesingle{}k\textquotesingle{}, linestyles=\textquotesingle{}-\/-\/\textquotesingle{}, linewidths=0.\+3, extent=\mbox{[}0, 3, 3.\+046, \mbox{\hyperlink{namespacemeffsterile__sigma8_a543dfdcb6935567ea0f877c0ed581d7d}{nmax}}\mbox{]})}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_af9e07bb93ae562d01765624d8fc26a3d}\label{namespacemeffsterile__sigma8_af9e07bb93ae562d01765624d8fc26a3d}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!fmt@{fmt}}
+\index{fmt@{fmt}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{fmt}{fmt}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+fmt}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a27e7aab279d4e9bfc70b1154e47a89fb}\label{namespacemeffsterile__sigma8_a27e7aab279d4e9bfc70b1154e47a89fb}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!fontsize@{fontsize}}
+\index{fontsize@{fontsize}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{fontsize}{fontsize}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+fontsize}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_ac4771e1ebeb9f42dce89dde47826308c}\label{namespacemeffsterile__sigma8_ac4771e1ebeb9f42dce89dde47826308c}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!g@{g}}
+\index{g@{g}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+g = s.\+get\+Single\+Plotter()}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a0efd523453590b8f9a6c655b0871aa00}\label{namespacemeffsterile__sigma8_a0efd523453590b8f9a6c655b0871aa00}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!inline@{inline}}
+\index{inline@{inline}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{inline}{inline}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+inline}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a2a791886c230da4f36eb2273cde1fe55}\label{namespacemeffsterile__sigma8_a2a791886c230da4f36eb2273cde1fe55}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!levels@{levels}}
+\index{levels@{levels}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{levels}{levels}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+levels}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a8ea5ae4bdea4d8c602da2c2ced40553c}\label{namespacemeffsterile__sigma8_a8ea5ae4bdea4d8c602da2c2ced40553c}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!m@{m}}
+\index{m@{m}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+m = np.\+arange(0, \mbox{\hyperlink{namespacemeffsterile__sigma8_ab1ef9b443cf37c209a09928073b114ca}{mmax}}, 0.\+01)}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_ab1ef9b443cf37c209a09928073b114ca}\label{namespacemeffsterile__sigma8_ab1ef9b443cf37c209a09928073b114ca}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!mmax@{mmax}}
+\index{mmax@{mmax}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{mmax}{mmax}}
+{\footnotesize\ttfamily float meffsterile\+\_\+sigma8.\+mmax = 1.\+7}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_ab5bd05273edb5844fb300171221f7e21}\label{namespacemeffsterile__sigma8_ab5bd05273edb5844fb300171221f7e21}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!mphys@{mphys}}
+\index{mphys@{mphys}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{mphys}{mphys}}
+{\footnotesize\ttfamily float meffsterile\+\_\+sigma8.\+mphys = p.\+meffsterile / (p.\+nnu -\/ 3.\+046) $\ast$$\ast$ 0.\+75}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a299a4336c34055d97bda4a87b6b6bebd}\label{namespacemeffsterile__sigma8_a299a4336c34055d97bda4a87b6b6bebd}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!N@{N}}
+\index{N@{N}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+N = np.\+arange(3.\+047, \mbox{\hyperlink{namespacemeffsterile__sigma8_a543dfdcb6935567ea0f877c0ed581d7d}{nmax}}, 0.\+01)}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a543dfdcb6935567ea0f877c0ed581d7d}\label{namespacemeffsterile__sigma8_a543dfdcb6935567ea0f877c0ed581d7d}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!nmax@{nmax}}
+\index{nmax@{nmax}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{nmax}{nmax}}
+{\footnotesize\ttfamily float meffsterile\+\_\+sigma8.\+nmax = 4.\+49}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_ab507cafd80385d7c6d89d4acc4237879}\label{namespacemeffsterile__sigma8_ab507cafd80385d7c6d89d4acc4237879}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!outdir@{outdir}}
+\index{outdir@{outdir}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{outdir}{outdir}}
+{\footnotesize\ttfamily string meffsterile\+\_\+sigma8.\+outdir = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a7313dce6ed4212f05469d970230c63c9}\label{namespacemeffsterile__sigma8_a7313dce6ed4212f05469d970230c63c9}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!p@{p}}
+\index{p@{p}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+p = samples.\+get\+Params()}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a88d773a1a386a843f3aacb86196b9745}\label{namespacemeffsterile__sigma8_a88d773a1a386a843f3aacb86196b9745}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!roots@{roots}}
+\index{roots@{roots}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{roots}{roots}}
+{\footnotesize\ttfamily list meffsterile\+\_\+sigma8.\+roots = \mbox{[}\textquotesingle{}base\+\_\+nnu\+\_\+meffsterile\+\_\+\textquotesingle{} + s.\+defdata\mbox{]}}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_aa9e2517630640d14a1fcbb0d0e92e32e}\label{namespacemeffsterile__sigma8_aa9e2517630640d14a1fcbb0d0e92e32e}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!samples@{samples}}
+\index{samples@{samples}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{samples}{samples}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+samples = g.\+sample\+Analyser.\+samples\+For\+Root(\textquotesingle{}base\+\_\+nnu\+\_\+meffsterile\+\_\+\textquotesingle{} + s.\+defdata + \textquotesingle{}\+\_\+lensing\+\_\+\+B\+AO\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a27f325b83f7ae6ab5565b93aaa4aa4aa}\label{namespacemeffsterile__sigma8_a27f325b83f7ae6ab5565b93aaa4aa4aa}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!True@{True}}
+\index{True@{True}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{True}{True}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+True}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a08a154b2355c8c54d018e6a8f58210a9}\label{namespacemeffsterile__sigma8_a08a154b2355c8c54d018e6a8f58210a9}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!upper@{upper}}
+\index{upper@{upper}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{upper}{upper}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+upper}
+
+\mbox{\Hypertarget{namespacemeffsterile__sigma8_a77b27eb1e7eb6240ae57f6578b094075}\label{namespacemeffsterile__sigma8_a77b27eb1e7eb6240ae57f6578b094075}} 
+\index{meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}!z@{z}}
+\index{z@{z}!meffsterile\+\_\+sigma8@{meffsterile\+\_\+sigma8}}
+\subsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily meffsterile\+\_\+sigma8.\+z = \mbox{\hyperlink{namespacemeffsterile__sigma8_a8ea5ae4bdea4d8c602da2c2ced40553c}{m}} / (\mbox{\hyperlink{namespacemeffsterile__sigma8_a299a4336c34055d97bda4a87b6b6bebd}{N}} -\/ 3.\+046) $\ast$$\ast$ 0.\+75}
+

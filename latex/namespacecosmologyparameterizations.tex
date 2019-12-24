@@ -1,0 +1,215 @@
+\hypertarget{namespacecosmologyparameterizations}{}\section{cosmologyparameterizations Module Reference}
+\label{namespacecosmologyparameterizations}\index{cosmologyparameterizations@{cosmologyparameterizations}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structcosmologyparameterizations_1_1backgroundparameterization}{backgroundparameterization}}
+\item 
+type \mbox{\hyperlink{structcosmologyparameterizations_1_1thetaparameterization}{thetaparameterization}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_aa546897820fdf873fd19e45f5fe496e3}{tp\+\_\+init}} (this, Ini, Names, Config)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecosmologyparameterizations_a7fdf867e0581b872103682d4364bc00c}{tp\+\_\+nonbaseparameterpriors}} (this, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_afad6169e49a1cd77b2d4aa147b2db537}{tp\+\_\+paramarraytotheoryparams}} (this, Params, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_ae660404b993706170ddf14a2a0904812}{cosmomc\+\_\+nxyl}} (y)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacecosmologyparameterizations_a211ef353fd86e7f656da5d1ee63e96de}{getypbbn}} (Yhe)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_aeedc92b3479b3427db06f0770e7c13c0}{tp\+\_\+calcderivedparams}} (this, P, Theory, derived)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_a125ded7f9054c23924b78956a86e21af}{setfast}} (Params, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_a4269c5d3027267744bdf4404d32a9db0}{setforh}} (Params, C\+MB, H0, wx0, thetaq, firsttime, error)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_a8bcd41b19d9c19fa07665660352182b8}{bk\+\_\+init}} (this, Ini, Names, Config)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_a24c7011e1628164c2a2742b41a0fd48e}{bk\+\_\+paramarraytotheoryparams}} (this, Params, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacecosmologyparameterizations_a70a404faf744a903a55fc6444af6863c}{bk\+\_\+calcderivedparams}} (this, P, Theory, derived)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacecosmologyparameterizations_a70a404faf744a903a55fc6444af6863c}\label{namespacecosmologyparameterizations_a70a404faf744a903a55fc6444af6863c}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!bk\+\_\+calcderivedparams@{bk\+\_\+calcderivedparams}}
+\index{bk\+\_\+calcderivedparams@{bk\+\_\+calcderivedparams}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{bk\+\_\+calcderivedparams()}{bk\_calcderivedparams()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::bk\+\_\+calcderivedparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyparameterizations_1_1backgroundparameterization}{backgroundparameterization}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{class(ttheorypredictions), allocatable}]{Theory,  }\item[{real(mcp), dimension(\+:), allocatable}]{derived }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{namespacecosmologyparameterizations_a8bcd41b19d9c19fa07665660352182b8}\label{namespacecosmologyparameterizations_a8bcd41b19d9c19fa07665660352182b8}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!bk\+\_\+init@{bk\+\_\+init}}
+\index{bk\+\_\+init@{bk\+\_\+init}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{bk\+\_\+init()}{bk\_init()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::bk\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyparameterizations_1_1backgroundparameterization}{backgroundparameterization}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini,  }\item[{class(tparamnames)}]{Names,  }\item[{class(tgeneralconfig), target}]{Config }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacecosmologyparameterizations_a24c7011e1628164c2a2742b41a0fd48e}\label{namespacecosmologyparameterizations_a24c7011e1628164c2a2742b41a0fd48e}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!bk\+\_\+paramarraytotheoryparams@{bk\+\_\+paramarraytotheoryparams}}
+\index{bk\+\_\+paramarraytotheoryparams@{bk\+\_\+paramarraytotheoryparams}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{bk\+\_\+paramarraytotheoryparams()}{bk\_paramarraytotheoryparams()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::bk\+\_\+paramarraytotheoryparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyparameterizations_1_1backgroundparameterization}{backgroundparameterization}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{Params,  }\item[{class(ttheoryparams), target}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References calculator\+\_\+cosmology\+::neutrino\+\_\+mass\+\_\+fac, and calculator\+\_\+cosmology\+::standard\+\_\+neutrino\+\_\+neff.
+
+\mbox{\Hypertarget{namespacecosmologyparameterizations_ae660404b993706170ddf14a2a0904812}\label{namespacecosmologyparameterizations_ae660404b993706170ddf14a2a0904812}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!cosmomc\+\_\+nxyl@{cosmomc\+\_\+nxyl}}
+\index{cosmomc\+\_\+nxyl@{cosmomc\+\_\+nxyl}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{cosmomc\+\_\+nxyl()}{cosmomc\_nxyl()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::cosmomc\+\_\+nxyl (\begin{DoxyParamCaption}\item[{real(mcp), dimension(6)}]{y }\end{DoxyParamCaption})}
+
+
+
+References quint\+::abde, quint\+::ddlbde, quint\+::ddxbde, quint\+::ddybde, quint\+::dn, quint\+::lbde, quint\+::nbde, quint\+::numpoints, quint\+::numpointsex, spline(), quint\+::xbde, and quint\+::ybde.
+
+
+
+Referenced by tp\+\_\+paramarraytotheoryparams().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{namespacecosmologyparameterizations_ae660404b993706170ddf14a2a0904812_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmologyparameterizations_ae660404b993706170ddf14a2a0904812_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmologyparameterizations_a211ef353fd86e7f656da5d1ee63e96de}\label{namespacecosmologyparameterizations_a211ef353fd86e7f656da5d1ee63e96de}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!getypbbn@{getypbbn}}
+\index{getypbbn@{getypbbn}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{getypbbn()}{getypbbn()}}
+{\footnotesize\ttfamily real(mcp) function cosmologyparameterizations\+::getypbbn (\begin{DoxyParamCaption}\item[{real(mcp), intent(in)}]{Yhe }\end{DoxyParamCaption})}
+
+
+
+Referenced by tp\+\_\+calcderivedparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmologyparameterizations_a211ef353fd86e7f656da5d1ee63e96de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmologyparameterizations_a125ded7f9054c23924b78956a86e21af}\label{namespacecosmologyparameterizations_a125ded7f9054c23924b78956a86e21af}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!setfast@{setfast}}
+\index{setfast@{setfast}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{setfast()}{setfast()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::setfast (\begin{DoxyParamCaption}\item[{real(mcp), dimension(num\+\_\+params)}]{Params,  }\item[{type(cmbparams)}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::as\+\_\+index, cosmologytypes\+::index\+\_\+initpower, and cosmologytypes\+::num\+\_\+initpower.
+
+
+
+Referenced by setforh(), and tp\+\_\+paramarraytotheoryparams().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmologyparameterizations_a125ded7f9054c23924b78956a86e21af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmologyparameterizations_a4269c5d3027267744bdf4404d32a9db0}\label{namespacecosmologyparameterizations_a4269c5d3027267744bdf4404d32a9db0}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!setforh@{setforh}}
+\index{setforh@{setforh}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{setforh()}{setforh()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::setforh (\begin{DoxyParamCaption}\item[{real(mcp), dimension(num\+\_\+params)}]{Params,  }\item[{type(cmbparams)}]{C\+MB,  }\item[{real(mcp)}]{H0,  }\item[{real(mcp)}]{wx0,  }\item[{real(mcp)}]{thetaq,  }\item[{logical, intent(in)}]{firsttime,  }\item[{integer, optional}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References constants\+::c, constants\+::c8pig\+\_\+evm2, constants\+::cobe\+\_\+cmbtemp, constants\+::const\+\_\+pi, cosmologytypes\+::cosmosettings, constants\+::default\+\_\+nnu, constants\+::ev, constants\+::ev2tompcm2, constants\+::gdgc, constants\+::gsmgut, constants\+::gsmm, constants\+::k\+\_\+b, calculator\+\_\+cosmology\+::neutrino\+\_\+mass\+\_\+fac, setfast(), and calculator\+\_\+cosmology\+::standard\+\_\+neutrino\+\_\+neff.
+
+
+
+Referenced by tp\+\_\+paramarraytotheoryparams().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmologyparameterizations_a4269c5d3027267744bdf4404d32a9db0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmologyparameterizations_a4269c5d3027267744bdf4404d32a9db0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmologyparameterizations_aeedc92b3479b3427db06f0770e7c13c0}\label{namespacecosmologyparameterizations_aeedc92b3479b3427db06f0770e7c13c0}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!tp\+\_\+calcderivedparams@{tp\+\_\+calcderivedparams}}
+\index{tp\+\_\+calcderivedparams@{tp\+\_\+calcderivedparams}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{tp\+\_\+calcderivedparams()}{tp\_calcderivedparams()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::tp\+\_\+calcderivedparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyparameterizations_1_1thetaparameterization}{thetaparameterization}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{P,  }\item[{class(ttheorypredictions), allocatable}]{Theory,  }\item[{real(mcp), dimension(\+:), allocatable}]{derived }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::as\+\_\+index, bbn\+::bbn\+\_\+dh, cosmologytypes\+::cl\+\_\+norm, cosmologytypes\+::cosmosettings, getypbbn(), cosmologytypes\+::nrun\+\_\+index, cosmologytypes\+::nrunrun\+\_\+index, and cosmologytypes\+::ns\+\_\+index.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmologyparameterizations_aeedc92b3479b3427db06f0770e7c13c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecosmologyparameterizations_aa546897820fdf873fd19e45f5fe496e3}\label{namespacecosmologyparameterizations_aa546897820fdf873fd19e45f5fe496e3}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!tp\+\_\+init@{tp\+\_\+init}}
+\index{tp\+\_\+init@{tp\+\_\+init}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{tp\+\_\+init()}{tp\_init()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::tp\+\_\+init (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyparameterizations_1_1thetaparameterization}{thetaparameterization}})}]{this,  }\item[{class(\mbox{\hyperlink{structsettings_1_1tsettingini}{tsettingini}})}]{Ini,  }\item[{class(tparamnames)}]{Names,  }\item[{class(tgeneralconfig), target}]{Config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References cosmologytypes\+::cosmosettings, and cosmologytypes\+::last\+\_\+power\+\_\+index.
+
+\mbox{\Hypertarget{namespacecosmologyparameterizations_a7fdf867e0581b872103682d4364bc00c}\label{namespacecosmologyparameterizations_a7fdf867e0581b872103682d4364bc00c}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!tp\+\_\+nonbaseparameterpriors@{tp\+\_\+nonbaseparameterpriors}}
+\index{tp\+\_\+nonbaseparameterpriors@{tp\+\_\+nonbaseparameterpriors}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{tp\+\_\+nonbaseparameterpriors()}{tp\_nonbaseparameterpriors()}}
+{\footnotesize\ttfamily real(mcp) function cosmologyparameterizations\+::tp\+\_\+nonbaseparameterpriors (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyparameterizations_1_1thetaparameterization}{thetaparameterization}})}]{this,  }\item[{class(ttheoryparams)}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References calculator\+\_\+cosmology\+::neutrino\+\_\+mass\+\_\+fac, and calculator\+\_\+cosmology\+::standard\+\_\+neutrino\+\_\+neff.
+
+\mbox{\Hypertarget{namespacecosmologyparameterizations_afad6169e49a1cd77b2d4aa147b2db537}\label{namespacecosmologyparameterizations_afad6169e49a1cd77b2d4aa147b2db537}} 
+\index{cosmologyparameterizations@{cosmologyparameterizations}!tp\+\_\+paramarraytotheoryparams@{tp\+\_\+paramarraytotheoryparams}}
+\index{tp\+\_\+paramarraytotheoryparams@{tp\+\_\+paramarraytotheoryparams}!cosmologyparameterizations@{cosmologyparameterizations}}
+\subsubsection{\texorpdfstring{tp\+\_\+paramarraytotheoryparams()}{tp\_paramarraytotheoryparams()}}
+{\footnotesize\ttfamily subroutine cosmologyparameterizations\+::tp\+\_\+paramarraytotheoryparams (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structcosmologyparameterizations_1_1thetaparameterization}{thetaparameterization}})}]{this,  }\item[{real(mcp), dimension(\+:)}]{Params,  }\item[{class(ttheoryparams), target}]{C\+MB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References quint\+::bde\+\_\+xylata(), constants\+::c, constants\+::c8pig\+\_\+evm2, cosmomc\+\_\+nxyl(), constants\+::ev2tompcm2, constants\+::mpl2, cosmologytypes\+::num\+\_\+hard, setfast(), setforh(), quint\+::xbde, and quint\+::ybde.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecosmologyparameterizations_afad6169e49a1cd77b2d4aa147b2db537_cgraph}
+\end{center}
+\end{figure}

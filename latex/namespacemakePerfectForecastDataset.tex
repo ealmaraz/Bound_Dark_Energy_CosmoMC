@@ -1,0 +1,168 @@
+\hypertarget{namespacemakePerfectForecastDataset}{}\section{make\+Perfect\+Forecast\+Dataset Namespace Reference}
+\label{namespacemakePerfectForecastDataset}\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacemakePerfectForecastDataset_af7e5dd18868fb897809f1a029858e619}{root}} = r\textquotesingle{}test\+\_\+lensed\+Cls\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacemakePerfectForecastDataset_a0e94e6b4c595055dc953b6d90344b2cf}{lensed\+Tot\+Cl\+File\+Root}} = os.\+path.\+join(os.\+path.\+dirname(\+\_\+\+\_\+file\+\_\+\+\_\+), \textquotesingle{}..\textquotesingle{}, \textquotesingle{}data\textquotesingle{}, \textquotesingle{}base\+\_\+plik\+H\+M\+\_\+\+T\+T\+\_\+low\+T\+E\+B.\+minimum.\+theory\+\_\+cl\textquotesingle{})
+\item 
+string \mbox{\hyperlink{namespacemakePerfectForecastDataset_a4df4d007ae9b28d5c7144ba797fe589e}{data\+Cols}} = \textquotesingle{}\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}} \mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}} \mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}} \mbox{\hyperlink{plotdiffs_8m_afe7a8c41b6fecba77f519a64a8ac08dc}{BB}} PP\textquotesingle{}
+\item 
+string \mbox{\hyperlink{namespacemakePerfectForecastDataset_af7ebda3a1c64cc6cec0a262a523b811f}{out\+Dir}} = \textquotesingle{}z\+:\textbackslash{}\textbackslash{}\textquotesingle{}
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_adf5c2024ddb72d322a72ff26899cccca}{fwhm\+\_\+arcmin}} = 5.
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_a1787b5246cb8a0c46d008fe173eef0b6}{Noise\+Var}} = 4e-\/5
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_a1136b171b178b11766a18559601b658c}{E\+Noise\+Fac}} = 4
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_a3294d7587f3aed55ad5d5b7231ac1127}{lmin}} = 2
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_ac704381699be35d3222c94d38350b547}{lmax}} = 2500
+\item 
+float \mbox{\hyperlink{namespacemakePerfectForecastDataset_a2d3677da7957f174f3869bc460087591}{fsky}} = 0.\+57
+\item 
+\mbox{\hyperlink{namespacemakePerfectForecastDataset_a41ac47e208a3788dd1b5df37582457f1}{ini}} = \mbox{\hyperlink{classgetdist_1_1inifile_1_1IniFile}{Ini\+File}}()
+\item 
+\mbox{\hyperlink{namespacemakePerfectForecastDataset_a333367b7a8e482ec7b83be682e7d7c10}{dataset}} = ini.\+params
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_aff69188f85ce4067ad5f87e6b1b4a9c9}{fwhm}} = \mbox{\hyperlink{namespacemakePerfectForecastDataset_adf5c2024ddb72d322a72ff26899cccca}{fwhm\+\_\+arcmin}} / 60
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_ab11003fb8a8c895cfe8d425639dde9cc}{xlc}} = 180 $\ast$ np.\+sqrt(8.$\ast$np.\+log(2.)) / np.\+pi
+\item 
+tuple \mbox{\hyperlink{namespacemakePerfectForecastDataset_adeabcd27069a59a0a0f602925dd8a04d}{sigma2}} = (\mbox{\hyperlink{namespacemakePerfectForecastDataset_aff69188f85ce4067ad5f87e6b1b4a9c9}{fwhm}} / \mbox{\hyperlink{namespacemakePerfectForecastDataset_ab11003fb8a8c895cfe8d425639dde9cc}{xlc}}) $\ast$$\ast$ 2
+\item 
+string \mbox{\hyperlink{namespacemakePerfectForecastDataset_ad442987d13577b78bf1e9eaa042cc199}{out\+Path}} = \textquotesingle{}\textquotesingle{}
+\item 
+string \mbox{\hyperlink{namespacemakePerfectForecastDataset_a04ad14c3351c769492bc637ac30f91eb}{out\+Root}} = \mbox{\hyperlink{namespacemakePerfectForecastDataset_af7e5dd18868fb897809f1a029858e619}{root}} + \textquotesingle{}\+\_\+exactsim\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacemakePerfectForecastDataset_a49ad231f917d0099bdc0a55e8e8c4167}{Noise\+Out}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{namespacemakePerfectForecastDataset_a1e43f7edfc6e37d5c9804b614ceb9977}{Noise\+Cl}} = l $\ast$ (l + 1.) / 2 / np.\+pi $\ast$ \mbox{\hyperlink{namespacemakePerfectForecastDataset_a1787b5246cb8a0c46d008fe173eef0b6}{Noise\+Var}} $\ast$ np.\+exp(l $\ast$ (l + 1) $\ast$ \mbox{\hyperlink{namespacemakePerfectForecastDataset_adeabcd27069a59a0a0f602925dd8a04d}{sigma2}})
+\item 
+\mbox{\hyperlink{namespacemakePerfectForecastDataset_a1b67162d688442b80ecddecd3f8cb083}{outfile}} = open(\mbox{\hyperlink{namespacemakePerfectForecastDataset_af7ebda3a1c64cc6cec0a262a523b811f}{out\+Dir}} + \mbox{\hyperlink{namespacemakePerfectForecastDataset_a04ad14c3351c769492bc637ac30f91eb}{out\+Root}} + \textquotesingle{}\+\_\+\+Noise.\+dat\textquotesingle{}, \textquotesingle{}w\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a4df4d007ae9b28d5c7144ba797fe589e}\label{namespacemakePerfectForecastDataset_a4df4d007ae9b28d5c7144ba797fe589e}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!data\+Cols@{data\+Cols}}
+\index{data\+Cols@{data\+Cols}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{data\+Cols}{dataCols}}
+{\footnotesize\ttfamily string make\+Perfect\+Forecast\+Dataset.\+data\+Cols = \textquotesingle{}\mbox{\hyperlink{plotTT_8m_a2f803268a6367d0943978eb5f84cc62e}{TT}} \mbox{\hyperlink{plotdiffs_8m_a1a5b2ac8f21dd2ac3d0605ff0b067ec4}{TE}} \mbox{\hyperlink{plotdiffs_8m_a6f96ba8525cc2f838c7d8b6888a1481b}{EE}} \mbox{\hyperlink{plotdiffs_8m_afe7a8c41b6fecba77f519a64a8ac08dc}{BB}} PP\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a333367b7a8e482ec7b83be682e7d7c10}\label{namespacemakePerfectForecastDataset_a333367b7a8e482ec7b83be682e7d7c10}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!dataset@{dataset}}
+\index{dataset@{dataset}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{dataset}{dataset}}
+{\footnotesize\ttfamily make\+Perfect\+Forecast\+Dataset.\+dataset = ini.\+params}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a1136b171b178b11766a18559601b658c}\label{namespacemakePerfectForecastDataset_a1136b171b178b11766a18559601b658c}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!E\+Noise\+Fac@{E\+Noise\+Fac}}
+\index{E\+Noise\+Fac@{E\+Noise\+Fac}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{E\+Noise\+Fac}{ENoiseFac}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+E\+Noise\+Fac = 4}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a2d3677da7957f174f3869bc460087591}\label{namespacemakePerfectForecastDataset_a2d3677da7957f174f3869bc460087591}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!fsky@{fsky}}
+\index{fsky@{fsky}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{fsky}{fsky}}
+{\footnotesize\ttfamily float make\+Perfect\+Forecast\+Dataset.\+fsky = 0.\+57}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_aff69188f85ce4067ad5f87e6b1b4a9c9}\label{namespacemakePerfectForecastDataset_aff69188f85ce4067ad5f87e6b1b4a9c9}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!fwhm@{fwhm}}
+\index{fwhm@{fwhm}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{fwhm}{fwhm}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+fwhm = \mbox{\hyperlink{namespacemakePerfectForecastDataset_adf5c2024ddb72d322a72ff26899cccca}{fwhm\+\_\+arcmin}} / 60}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_adf5c2024ddb72d322a72ff26899cccca}\label{namespacemakePerfectForecastDataset_adf5c2024ddb72d322a72ff26899cccca}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!fwhm\+\_\+arcmin@{fwhm\+\_\+arcmin}}
+\index{fwhm\+\_\+arcmin@{fwhm\+\_\+arcmin}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{fwhm\+\_\+arcmin}{fwhm\_arcmin}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+fwhm\+\_\+arcmin = 5.}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a41ac47e208a3788dd1b5df37582457f1}\label{namespacemakePerfectForecastDataset_a41ac47e208a3788dd1b5df37582457f1}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!ini@{ini}}
+\index{ini@{ini}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{ini}{ini}}
+{\footnotesize\ttfamily make\+Perfect\+Forecast\+Dataset.\+ini = \mbox{\hyperlink{classgetdist_1_1inifile_1_1IniFile}{Ini\+File}}()}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a0e94e6b4c595055dc953b6d90344b2cf}\label{namespacemakePerfectForecastDataset_a0e94e6b4c595055dc953b6d90344b2cf}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!lensed\+Tot\+Cl\+File\+Root@{lensed\+Tot\+Cl\+File\+Root}}
+\index{lensed\+Tot\+Cl\+File\+Root@{lensed\+Tot\+Cl\+File\+Root}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{lensed\+Tot\+Cl\+File\+Root}{lensedTotClFileRoot}}
+{\footnotesize\ttfamily make\+Perfect\+Forecast\+Dataset.\+lensed\+Tot\+Cl\+File\+Root = os.\+path.\+join(os.\+path.\+dirname(\+\_\+\+\_\+file\+\_\+\+\_\+), \textquotesingle{}..\textquotesingle{}, \textquotesingle{}data\textquotesingle{}, \textquotesingle{}base\+\_\+plik\+H\+M\+\_\+\+T\+T\+\_\+low\+T\+E\+B.\+minimum.\+theory\+\_\+cl\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_ac704381699be35d3222c94d38350b547}\label{namespacemakePerfectForecastDataset_ac704381699be35d3222c94d38350b547}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!lmax@{lmax}}
+\index{lmax@{lmax}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{lmax}{lmax}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+lmax = 2500}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a3294d7587f3aed55ad5d5b7231ac1127}\label{namespacemakePerfectForecastDataset_a3294d7587f3aed55ad5d5b7231ac1127}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!lmin@{lmin}}
+\index{lmin@{lmin}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{lmin}{lmin}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+lmin = 2}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a1e43f7edfc6e37d5c9804b614ceb9977}\label{namespacemakePerfectForecastDataset_a1e43f7edfc6e37d5c9804b614ceb9977}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!Noise\+Cl@{Noise\+Cl}}
+\index{Noise\+Cl@{Noise\+Cl}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{Noise\+Cl}{NoiseCl}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+Noise\+Cl = l $\ast$ (l + 1.) / 2 / np.\+pi $\ast$ \mbox{\hyperlink{namespacemakePerfectForecastDataset_a1787b5246cb8a0c46d008fe173eef0b6}{Noise\+Var}} $\ast$ np.\+exp(l $\ast$ (l + 1) $\ast$ \mbox{\hyperlink{namespacemakePerfectForecastDataset_adeabcd27069a59a0a0f602925dd8a04d}{sigma2}})}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a49ad231f917d0099bdc0a55e8e8c4167}\label{namespacemakePerfectForecastDataset_a49ad231f917d0099bdc0a55e8e8c4167}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!Noise\+Out@{Noise\+Out}}
+\index{Noise\+Out@{Noise\+Out}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{Noise\+Out}{NoiseOut}}
+{\footnotesize\ttfamily list make\+Perfect\+Forecast\+Dataset.\+Noise\+Out = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a1787b5246cb8a0c46d008fe173eef0b6}\label{namespacemakePerfectForecastDataset_a1787b5246cb8a0c46d008fe173eef0b6}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!Noise\+Var@{Noise\+Var}}
+\index{Noise\+Var@{Noise\+Var}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{Noise\+Var}{NoiseVar}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+Noise\+Var = 4e-\/5}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_af7ebda3a1c64cc6cec0a262a523b811f}\label{namespacemakePerfectForecastDataset_af7ebda3a1c64cc6cec0a262a523b811f}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!out\+Dir@{out\+Dir}}
+\index{out\+Dir@{out\+Dir}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{out\+Dir}{outDir}}
+{\footnotesize\ttfamily string make\+Perfect\+Forecast\+Dataset.\+out\+Dir = \textquotesingle{}z\+:\textbackslash{}\textbackslash{}\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a1b67162d688442b80ecddecd3f8cb083}\label{namespacemakePerfectForecastDataset_a1b67162d688442b80ecddecd3f8cb083}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!outfile@{outfile}}
+\index{outfile@{outfile}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{outfile}{outfile}}
+{\footnotesize\ttfamily make\+Perfect\+Forecast\+Dataset.\+outfile = open(\mbox{\hyperlink{namespacemakePerfectForecastDataset_af7ebda3a1c64cc6cec0a262a523b811f}{out\+Dir}} + \mbox{\hyperlink{namespacemakePerfectForecastDataset_a04ad14c3351c769492bc637ac30f91eb}{out\+Root}} + \textquotesingle{}\+\_\+\+Noise.\+dat\textquotesingle{}, \textquotesingle{}w\textquotesingle{})}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_ad442987d13577b78bf1e9eaa042cc199}\label{namespacemakePerfectForecastDataset_ad442987d13577b78bf1e9eaa042cc199}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!out\+Path@{out\+Path}}
+\index{out\+Path@{out\+Path}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{out\+Path}{outPath}}
+{\footnotesize\ttfamily string make\+Perfect\+Forecast\+Dataset.\+out\+Path = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_a04ad14c3351c769492bc637ac30f91eb}\label{namespacemakePerfectForecastDataset_a04ad14c3351c769492bc637ac30f91eb}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!out\+Root@{out\+Root}}
+\index{out\+Root@{out\+Root}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{out\+Root}{outRoot}}
+{\footnotesize\ttfamily string make\+Perfect\+Forecast\+Dataset.\+out\+Root = \mbox{\hyperlink{namespacemakePerfectForecastDataset_af7e5dd18868fb897809f1a029858e619}{root}} + \textquotesingle{}\+\_\+exactsim\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_af7e5dd18868fb897809f1a029858e619}\label{namespacemakePerfectForecastDataset_af7e5dd18868fb897809f1a029858e619}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!root@{root}}
+\index{root@{root}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily string make\+Perfect\+Forecast\+Dataset.\+root = r\textquotesingle{}test\+\_\+lensed\+Cls\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_adeabcd27069a59a0a0f602925dd8a04d}\label{namespacemakePerfectForecastDataset_adeabcd27069a59a0a0f602925dd8a04d}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!sigma2@{sigma2}}
+\index{sigma2@{sigma2}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{sigma2}{sigma2}}
+{\footnotesize\ttfamily tuple make\+Perfect\+Forecast\+Dataset.\+sigma2 = (\mbox{\hyperlink{namespacemakePerfectForecastDataset_aff69188f85ce4067ad5f87e6b1b4a9c9}{fwhm}} / \mbox{\hyperlink{namespacemakePerfectForecastDataset_ab11003fb8a8c895cfe8d425639dde9cc}{xlc}}) $\ast$$\ast$ 2}
+
+\mbox{\Hypertarget{namespacemakePerfectForecastDataset_ab11003fb8a8c895cfe8d425639dde9cc}\label{namespacemakePerfectForecastDataset_ab11003fb8a8c895cfe8d425639dde9cc}} 
+\index{make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}!xlc@{xlc}}
+\index{xlc@{xlc}!make\+Perfect\+Forecast\+Dataset@{make\+Perfect\+Forecast\+Dataset}}
+\subsubsection{\texorpdfstring{xlc}{xlc}}
+{\footnotesize\ttfamily int make\+Perfect\+Forecast\+Dataset.\+xlc = 180 $\ast$ np.\+sqrt(8.$\ast$np.\+log(2.)) / np.\+pi}
+

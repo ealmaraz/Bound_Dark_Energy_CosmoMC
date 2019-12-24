@@ -1,0 +1,263 @@
+\hypertarget{namespacempiutils}{}\section{mpiutils Module Reference}
+\label{namespacempiutils}\index{mpiutils@{mpiutils}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structmpiutils_1_1ttimer}{ttimer}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+integer function \mbox{\hyperlink{namespacempiutils_a10119a7c6a3093e9f38566d063e88364}{getmpirank}} ()
+\item 
+logical function \mbox{\hyperlink{namespacempiutils_a8c41001658ce5aafd28c17c28e215bf6}{ismainmpi}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a23720e4e8b635dab4b67172618aa77e5}{mpistop}} (Msg)
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_af717f5183b6db768a0a9517d4737805e}{mpistat}} (Mpi\+ID, Mpi\+Size)
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a81a7de07e984011ee5f1d69d403e6006}{mpiquietwait}}
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a86ebeabf362ba28efbc4eae836b533bb}{mpiwakequietwait}}
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_a09da810020699894dfe6a3da8dd985c8}{mpisharestring}} (S, from)
+\item 
+real(\mbox{\hyperlink{namespacempiutils_a29264c4652e8287096a27ca2675edc26}{ttimer\+\_\+dp}}) function \mbox{\hyperlink{namespacempiutils_a22d9c100b7422621acc997902a9856f7}{timertime}} ()
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_af115575f9cb5cff0693d705e9f6b4704}{ttimer\+\_\+start}} (this)
+\item 
+real(\mbox{\hyperlink{namespacempiutils_a29264c4652e8287096a27ca2675edc26}{ttimer\+\_\+dp}}) function \mbox{\hyperlink{namespacempiutils_a45301d4a23c7b66f94ef24ded2062d8d}{ttimer\+\_\+time}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacempiutils_aec296fa19d748cab235ef01a63cdc289}{ttimer\+\_\+writetime}} (this, Msg, start)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacempiutils_a29264c4652e8287096a27ca2675edc26}{ttimer\+\_\+dp}} = Kind(1.d0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacempiutils_a10119a7c6a3093e9f38566d063e88364}\label{namespacempiutils_a10119a7c6a3093e9f38566d063e88364}} 
+\index{mpiutils@{mpiutils}!getmpirank@{getmpirank}}
+\index{getmpirank@{getmpirank}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{getmpirank()}{getmpirank()}}
+{\footnotesize\ttfamily integer function mpiutils\+::getmpirank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References mpistop().
+
+
+
+Referenced by ismainmpi(), and mpisharestring().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{namespacempiutils_a10119a7c6a3093e9f38566d063e88364_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacempiutils_a10119a7c6a3093e9f38566d063e88364_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_a8c41001658ce5aafd28c17c28e215bf6}\label{namespacempiutils_a8c41001658ce5aafd28c17c28e215bf6}} 
+\index{mpiutils@{mpiutils}!ismainmpi@{ismainmpi}}
+\index{ismainmpi@{ismainmpi}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{ismainmpi()}{ismainmpi()}}
+{\footnotesize\ttfamily logical function mpiutils\+::ismainmpi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References getmpirank().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacempiutils_a8c41001658ce5aafd28c17c28e215bf6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_a81a7de07e984011ee5f1d69d403e6006}\label{namespacempiutils_a81a7de07e984011ee5f1d69d403e6006}} 
+\index{mpiutils@{mpiutils}!mpiquietwait@{mpiquietwait}}
+\index{mpiquietwait@{mpiquietwait}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{mpiquietwait()}{mpiquietwait()}}
+{\footnotesize\ttfamily subroutine mpiutils\+::mpiquietwait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References mpistat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacempiutils_a81a7de07e984011ee5f1d69d403e6006_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_a09da810020699894dfe6a3da8dd985c8}\label{namespacempiutils_a09da810020699894dfe6a3da8dd985c8}} 
+\index{mpiutils@{mpiutils}!mpisharestring@{mpisharestring}}
+\index{mpisharestring@{mpisharestring}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{mpisharestring()}{mpisharestring()}}
+{\footnotesize\ttfamily subroutine mpiutils\+::mpisharestring (\begin{DoxyParamCaption}\item[{character(len=\+:), allocatable}]{S,  }\item[{integer}]{from }\end{DoxyParamCaption})}
+
+
+
+References getmpirank(), and mpistop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacempiutils_a09da810020699894dfe6a3da8dd985c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_af717f5183b6db768a0a9517d4737805e}\label{namespacempiutils_af717f5183b6db768a0a9517d4737805e}} 
+\index{mpiutils@{mpiutils}!mpistat@{mpistat}}
+\index{mpistat@{mpistat}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{mpistat()}{mpistat()}}
+{\footnotesize\ttfamily subroutine mpiutils\+::mpistat (\begin{DoxyParamCaption}\item[{integer}]{Mpi\+ID,  }\item[{integer}]{Mpi\+Size }\end{DoxyParamCaption})}
+
+
+
+References mpistop().
+
+
+
+Referenced by matrixutils\+::matrix\+\_\+inversearraympi(), mpiquietwait(), and mpiwakequietwait().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{namespacempiutils_af717f5183b6db768a0a9517d4737805e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacempiutils_af717f5183b6db768a0a9517d4737805e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_a23720e4e8b635dab4b67172618aa77e5}\label{namespacempiutils_a23720e4e8b635dab4b67172618aa77e5}} 
+\index{mpiutils@{mpiutils}!mpistop@{mpistop}}
+\index{mpistop@{mpistop}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{mpistop()}{mpistop()}}
+{\footnotesize\ttfamily subroutine mpiutils\+::mpistop (\begin{DoxyParamCaption}\item[{character(len=$\ast$), intent(in), optional}]{Msg }\end{DoxyParamCaption})}
+
+
+
+Referenced by settings\+::checkparamchangef(), fileutils\+::error(), getmpirank(), randutils\+::initrandom(), matrixutils\+::matrix\+\_\+ccholesky(), matrixutils\+::matrix\+\_\+ccholeskyrootinverse(), matrixutils\+::matrix\+\_\+cdiagonalize(), matrixutils\+::matrix\+\_\+cdiagonalize\+\_\+partial(), matrixutils\+::matrix\+\_\+cholesky(), matrixutils\+::matrix\+\_\+choleskyrootinverse(), matrixutils\+::matrix\+\_\+cmult(), matrixutils\+::matrix\+\_\+cmult\+\_\+nt(), matrixutils\+::matrix\+\_\+cmult\+\_\+symmleft(), matrixutils\+::matrix\+\_\+cmult\+\_\+symmright(), matrixutils\+::matrix\+\_\+cmult\+\_\+tn(), matrixutils\+::matrix\+\_\+cmultgen(), matrixutils\+::matrix\+\_\+crotatesymm(), matrixutils\+::matrix\+\_\+csvd\+\_\+allvt(), matrixutils\+::matrix\+\_\+csvd\+\_\+u(), matrixutils\+::matrix\+\_\+csvd\+\_\+vt(), matrixutils\+::matrix\+\_\+ctrace(), matrixutils\+::matrix\+\_\+diagonalize(), matrixutils\+::matrix\+\_\+diagonalize\+\_\+dc(), matrixutils\+::matrix\+\_\+diagonalize\+\_\+partial(), matrixutils\+::matrix\+\_\+diagpremul(), matrixutils\+::matrix\+\_\+gaussianloglike(), matrixutils\+::matrix\+\_\+gaussianloglikedouble(), matrixutils\+::matrix\+\_\+inverse(), matrixutils\+::matrix\+\_\+inverse\+\_\+chol(), matrixutils\+::matrix\+\_\+inverseasymm(), matrixutils\+::matrix\+\_\+mult(), matrixutils\+::matrix\+\_\+mult\+\_\+nt(), matrixutils\+::matrix\+\_\+mult\+\_\+symmleft(), matrixutils\+::matrix\+\_\+mult\+\_\+symmright(), matrixutils\+::matrix\+\_\+mult\+\_\+tn(), matrixutils\+::matrix\+\_\+multgen(), matrixutils\+::matrix\+\_\+multsq\+\_\+repright(), matrixutils\+::matrix\+\_\+multtri(), matrixutils\+::matrix\+\_\+mulvec(), matrixutils\+::matrix\+\_\+mulvecsingle(), matrixutils\+::matrix\+\_\+mulvecsymm(), matrixutils\+::matrix\+\_\+mulvecsymmsingle(), matrixutils\+::matrix\+\_\+read(), matrixutils\+::matrix\+\_\+readsingle(), matrixutils\+::matrix\+\_\+rotateantisymm(), matrixutils\+::matrix\+\_\+rotatesymm(), matrixutils\+::matrix\+\_\+solveasymm(), matrixutils\+::matrix\+\_\+solvesymm(), matrixutils\+::matrix\+\_\+svd(), matrixutils\+::matrix\+\_\+svd\+\_\+vt(), matrixutils\+::matrix\+\_\+trace(), matrixutils\+::matrix\+\_\+vecdot(), matrixutils\+::matrix\+\_\+vecdotsingle(), matrixutils\+::matrixsym\+\_\+logdet(), matrixutils\+::matrixsym\+\_\+read\+\_\+binary(), matrixutils\+::matrixsym\+\_\+read\+\_\+binary\+\_\+single(), matrixutils\+::matrixsym\+\_\+write\+\_\+binary(), matrixutils\+::matrixsym\+\_\+write\+\_\+binary\+\_\+single(), mpisharestring(), mpistat(), paramnames\+::paramnames\+\_\+add(), paramnames\+::paramnames\+\_\+asstring(), paramnames\+::paramnames\+\_\+init(), paramnames\+::paramnames\+\_\+readindices(), randutils\+::randindices(), interpolation\+::tinterpolator\+\_\+error(), and settings\+::tsettingini\+\_\+failstop().
+
+\mbox{\Hypertarget{namespacempiutils_a86ebeabf362ba28efbc4eae836b533bb}\label{namespacempiutils_a86ebeabf362ba28efbc4eae836b533bb}} 
+\index{mpiutils@{mpiutils}!mpiwakequietwait@{mpiwakequietwait}}
+\index{mpiwakequietwait@{mpiwakequietwait}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{mpiwakequietwait()}{mpiwakequietwait()}}
+{\footnotesize\ttfamily subroutine mpiutils\+::mpiwakequietwait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References mpistat().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacempiutils_a86ebeabf362ba28efbc4eae836b533bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_a22d9c100b7422621acc997902a9856f7}\label{namespacempiutils_a22d9c100b7422621acc997902a9856f7}} 
+\index{mpiutils@{mpiutils}!timertime@{timertime}}
+\index{timertime@{timertime}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{timertime()}{timertime()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacempiutils_a29264c4652e8287096a27ca2675edc26}{ttimer\+\_\+dp}}) function mpiutils\+::timertime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Referenced by settings\+::timer(), ttimer\+\_\+start(), ttimer\+\_\+time(), and ttimer\+\_\+writetime().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacempiutils_a22d9c100b7422621acc997902a9856f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_af115575f9cb5cff0693d705e9f6b4704}\label{namespacempiutils_af115575f9cb5cff0693d705e9f6b4704}} 
+\index{mpiutils@{mpiutils}!ttimer\+\_\+start@{ttimer\+\_\+start}}
+\index{ttimer\+\_\+start@{ttimer\+\_\+start}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{ttimer\+\_\+start()}{ttimer\_start()}}
+{\footnotesize\ttfamily subroutine mpiutils\+::ttimer\+\_\+start (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmpiutils_1_1ttimer}{ttimer}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References timertime().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacempiutils_af115575f9cb5cff0693d705e9f6b4704_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_a45301d4a23c7b66f94ef24ded2062d8d}\label{namespacempiutils_a45301d4a23c7b66f94ef24ded2062d8d}} 
+\index{mpiutils@{mpiutils}!ttimer\+\_\+time@{ttimer\+\_\+time}}
+\index{ttimer\+\_\+time@{ttimer\+\_\+time}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{ttimer\+\_\+time()}{ttimer\_time()}}
+{\footnotesize\ttfamily real(\mbox{\hyperlink{namespacempiutils_a29264c4652e8287096a27ca2675edc26}{ttimer\+\_\+dp}}) function mpiutils\+::ttimer\+\_\+time (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmpiutils_1_1ttimer}{ttimer}})}]{this }\end{DoxyParamCaption})}
+
+
+
+References timertime().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacempiutils_a45301d4a23c7b66f94ef24ded2062d8d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacempiutils_aec296fa19d748cab235ef01a63cdc289}\label{namespacempiutils_aec296fa19d748cab235ef01a63cdc289}} 
+\index{mpiutils@{mpiutils}!ttimer\+\_\+writetime@{ttimer\+\_\+writetime}}
+\index{ttimer\+\_\+writetime@{ttimer\+\_\+writetime}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{ttimer\+\_\+writetime()}{ttimer\_writetime()}}
+{\footnotesize\ttfamily subroutine mpiutils\+::ttimer\+\_\+writetime (\begin{DoxyParamCaption}\item[{class(\mbox{\hyperlink{structmpiutils_1_1ttimer}{ttimer}})}]{this,  }\item[{character(len=$\ast$), intent(in), optional}]{Msg,  }\item[{real(\mbox{\hyperlink{namespacempiutils_a29264c4652e8287096a27ca2675edc26}{ttimer\+\_\+dp}}), optional}]{start }\end{DoxyParamCaption})}
+
+
+
+References timertime().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespacempiutils_aec296fa19d748cab235ef01a63cdc289_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacempiutils_a29264c4652e8287096a27ca2675edc26}\label{namespacempiutils_a29264c4652e8287096a27ca2675edc26}} 
+\index{mpiutils@{mpiutils}!ttimer\+\_\+dp@{ttimer\+\_\+dp}}
+\index{ttimer\+\_\+dp@{ttimer\+\_\+dp}!mpiutils@{mpiutils}}
+\subsubsection{\texorpdfstring{ttimer\+\_\+dp}{ttimer\_dp}}
+{\footnotesize\ttfamily integer, parameter mpiutils\+::ttimer\+\_\+dp = Kind(1.d0)}
+

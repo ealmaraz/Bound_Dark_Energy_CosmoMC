@@ -1,0 +1,12 @@
+<map id="gaugeinterface::outputv" name="gaugeinterface::outputv">
+<area shape="rect" id="node2" href="$namespacecambmain.html#affd6aea4c80363ff01132e154eabbb00" title="cambmain::calcvectorsources" alt="" coords="214,128,410,155"/>
+<area shape="rect" id="node3" href="$namespacecambmain.html#a9ff2ea693941648b6f34d86e019f9613" title="cambmain::dosourcek" alt="" coords="459,128,610,155"/>
+<area shape="rect" id="node4" href="$namespacecambmain.html#a8863977991a108f96a26fc99e8c5e129" title="cambmain::cmbmain" alt="" coords="659,128,802,155"/>
+<area shape="rect" id="node5" href="$namespacecamb.html#af6f4c73133d3de79ac10db3c4b2d0650" title="camb::camb_getresults" alt="" coords="851,128,1010,155"/>
+<area shape="rect" id="node6" href="$namespacecamb.html#ae587b573e03da5811edb59806305b2cd" title="camb::camb_gettransfers" alt="" coords="1059,77,1229,104"/>
+<area shape="rect" id="node10" href="$sigma8_8f90.html#a6f015dab88d5e09a9b144633d51f8911" title="getsigma8" alt="" coords="1103,128,1185,155"/>
+<area shape="rect" id="node11" href="$tester_8f90.html#abb1af5b22eb90cec23fca42accb63245" title="tester" alt="" coords="1117,179,1171,205"/>
+<area shape="rect" id="node7" href="$namespacecalculator__camb.html#a9e8887a3ae9da2bb092aac4285234df4" title="calculator_camb::cambcalc\l_getnewtransferdata" alt="" coords="1291,5,1472,46"/>
+<area shape="rect" id="node8" href="$namespacecalculator__camb.html#a46bd33ed008e289fb5cb08f6feb86419" title="calculator_camb::cambcalc\l_gettheoryforimportance" alt="" coords="1291,70,1472,111"/>
+<area shape="rect" id="node9" href="$namespacehandles.html#a386ee0a28e6860d14047f052c918ca43" title="handles::cambdata_gettransfers" alt="" coords="1277,136,1485,163"/>
+</map>

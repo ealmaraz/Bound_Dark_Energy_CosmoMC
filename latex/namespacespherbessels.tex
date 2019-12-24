@@ -1,0 +1,450 @@
+\hypertarget{namespacespherbessels}{}\section{spherbessels Module Reference}
+\label{namespacespherbessels}\index{spherbessels@{spherbessels}}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_ab479fd257b8fa714e8a3522ab65e11af}{initspherbessels}}
+\item 
+subroutine \mbox{\hyperlink{namespacespherbessels_a94dad04f4df289878f0e038437916427}{generatebessels}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_a0abb3ebb234b8547151b14c0cdb439be}{bessels\+\_\+free}}
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_a1619c25c91b245252b30a3da4d640050}{bjl}} (L, X, JL)
+\item 
+subroutine, public \mbox{\hyperlink{namespacespherbessels_a19f6db59afef649058999b63f9ab8f65}{uspherbesselwithderiv}} (closed, Chi, l, beta, y1, y2)
+\item 
+subroutine \mbox{\hyperlink{namespacespherbessels_a0d5dede9bff52decb1e7fb2d2df35d3a}{phi\+\_\+small\+\_\+closed\+\_\+int}} (l, beta, chi, y1, y2)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacespherbessels_ac2bed68bb6862f56c27d5a5cfc5fd94d}{phi\+\_\+recurs}} (l, K, beta, chi)
+\item 
+real(dl) function, public \mbox{\hyperlink{namespacespherbessels_ac93cf86caa7e4d63b164799492196aba}{phi\+\_\+langer}} (l, K, beta, chi)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_ae89051535f9e9606be1ab046f5a77854}{qintegral}} (sin\+\_\+K, alpha, K)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_a4a053c46f90faa3400f9619fc31cbd1d}{airy\+\_\+ai}} (x)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_afef9b0d68efd18edac5580591a39f7ba}{polevl}} (x, coef, N)
+\item 
+real(dl) function \mbox{\hyperlink{namespacespherbessels_a193e3d6761bf168624e2532123ccec2b}{p1evl}} (x, coef, N)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, public \mbox{\hyperlink{namespacespherbessels_ad90cf19f2544f8107ae70ec1b4cd64e0}{ajl}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, public \mbox{\hyperlink{namespacespherbessels_aafb6422b5aab90f84fdb3a955c129874}{ajlpr}}
+\item 
+real(dl), dimension(\+:,\+:), allocatable, public \mbox{\hyperlink{namespacespherbessels_a90a7acde21383c40c841e0a11e87526f}{ddajlpr}}
+\item 
+integer \mbox{\hyperlink{namespacespherbessels_af8cc74b859928826e087b37b4c365afa}{num\+\_\+xx}}
+\item 
+integer \mbox{\hyperlink{namespacespherbessels_acaac392a6ea328fe36eff8c422ff06ea}{kmaxfile}}
+\item 
+integer \mbox{\hyperlink{namespacespherbessels_ab9b99f417336f962381e26fc7611affa}{file\+\_\+numl}}
+\item 
+integer, dimension(lmax\+\_\+arr) \mbox{\hyperlink{namespacespherbessels_abe559ecdb38e3d5173cbf2c709b7a694}{file\+\_\+l}}
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacespherbessels_a7609b1d2bbb03aefd6c6f47a69538eed}{xlimmin}} =35.\+\_\+dl
+\item 
+real(dl), parameter, public \mbox{\hyperlink{namespacespherbessels_a07d278e5f2a51b79893a106358cb1afc}{xlimfrac}} = 0.\+05\+\_\+dl
+\item 
+type(regions), public \mbox{\hyperlink{namespacespherbessels_a3ae9c132f8c8a13f8d061492485272b8}{bessranges}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{namespacespherbessels_a4a053c46f90faa3400f9619fc31cbd1d}\label{namespacespherbessels_a4a053c46f90faa3400f9619fc31cbd1d}} 
+\index{spherbessels@{spherbessels}!airy\+\_\+ai@{airy\+\_\+ai}}
+\index{airy\+\_\+ai@{airy\+\_\+ai}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{airy\+\_\+ai()}{airy\_ai()}}
+{\footnotesize\ttfamily real(dl) function spherbessels\+::airy\+\_\+ai (\begin{DoxyParamCaption}\item[{real(dl)}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References p1evl(), and polevl().
+
+
+
+Referenced by phi\+\_\+langer().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{namespacespherbessels_a4a053c46f90faa3400f9619fc31cbd1d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a4a053c46f90faa3400f9619fc31cbd1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_a0abb3ebb234b8547151b14c0cdb439be}\label{namespacespherbessels_a0abb3ebb234b8547151b14c0cdb439be}} 
+\index{spherbessels@{spherbessels}!bessels\+\_\+free@{bessels\+\_\+free}}
+\index{bessels\+\_\+free@{bessels\+\_\+free}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{bessels\+\_\+free()}{bessels\_free()}}
+{\footnotesize\ttfamily subroutine, public spherbessels\+::bessels\+\_\+free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ajl, ajlpr, bessranges, and ddajlpr.
+
+
+
+Referenced by camb\+::camb\+\_\+cleanup().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a0abb3ebb234b8547151b14c0cdb439be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_a1619c25c91b245252b30a3da4d640050}\label{namespacespherbessels_a1619c25c91b245252b30a3da4d640050}} 
+\index{spherbessels@{spherbessels}!bjl@{bjl}}
+\index{bjl@{bjl}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{bjl()}{bjl()}}
+{\footnotesize\ttfamily subroutine, public spherbessels\+::bjl (\begin{DoxyParamCaption}\item[{integer}]{L,  }\item[{real(dl)}]{X,  }\item[{real(dl)}]{JL }\end{DoxyParamCaption})}
+
+
+
+Referenced by bjl\+\_\+external(), and generatebessels().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a1619c25c91b245252b30a3da4d640050_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_a94dad04f4df289878f0e038437916427}\label{namespacespherbessels_a94dad04f4df289878f0e038437916427}} 
+\index{spherbessels@{spherbessels}!generatebessels@{generatebessels}}
+\index{generatebessels@{generatebessels}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{generatebessels()}{generatebessels()}}
+{\footnotesize\ttfamily subroutine spherbessels\+::generatebessels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, ajl, ajlpr, bessranges, bjl(), modelparams\+::cp, ddajlpr, modelparams\+::debugmsgs, modelparams\+::do\+\_\+bispectrum, modelparams\+::feedbacklevel, file\+\_\+l, file\+\_\+numl, kmaxfile, lvalues\+::lsamp, modelparams\+::max\+\_\+bessels\+\_\+etak, modelparams\+::max\+\_\+bessels\+\_\+l\+\_\+index, num\+\_\+xx, modelparams\+::spl\+\_\+large, spline(), xlimfrac, and xlimmin.
+
+
+
+Referenced by initspherbessels().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a94dad04f4df289878f0e038437916427_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a94dad04f4df289878f0e038437916427_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_ab479fd257b8fa714e8a3522ab65e11af}\label{namespacespherbessels_ab479fd257b8fa714e8a3522ab65e11af}} 
+\index{spherbessels@{spherbessels}!initspherbessels@{initspherbessels}}
+\index{initspherbessels@{initspherbessels}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{initspherbessels()}{initspherbessels()}}
+{\footnotesize\ttfamily subroutine, public spherbessels\+::initspherbessels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ajl, modelparams\+::cp, modelparams\+::debugmsgs, modelparams\+::feedbacklevel, file\+\_\+l, file\+\_\+numl, generatebessels(), kmaxfile, lvalues\+::lsamp, and modelparams\+::max\+\_\+bessels\+\_\+etak.
+
+
+
+Referenced by cambmain\+::cmbmain().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_ab479fd257b8fa714e8a3522ab65e11af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_ab479fd257b8fa714e8a3522ab65e11af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_a193e3d6761bf168624e2532123ccec2b}\label{namespacespherbessels_a193e3d6761bf168624e2532123ccec2b}} 
+\index{spherbessels@{spherbessels}!p1evl@{p1evl}}
+\index{p1evl@{p1evl}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{p1evl()}{p1evl()}}
+{\footnotesize\ttfamily real(dl) function spherbessels\+::p1evl (\begin{DoxyParamCaption}\item[{real(dl)}]{x,  }\item[{real(dl), dimension(n)}]{coef,  }\item[{integer}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by airy\+\_\+ai().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a193e3d6761bf168624e2532123ccec2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_ac93cf86caa7e4d63b164799492196aba}\label{namespacespherbessels_ac93cf86caa7e4d63b164799492196aba}} 
+\index{spherbessels@{spherbessels}!phi\+\_\+langer@{phi\+\_\+langer}}
+\index{phi\+\_\+langer@{phi\+\_\+langer}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{phi\+\_\+langer()}{phi\_langer()}}
+{\footnotesize\ttfamily real(dl) function, public spherbessels\+::phi\+\_\+langer (\begin{DoxyParamCaption}\item[{integer}]{l,  }\item[{integer}]{K,  }\item[{real(dl)}]{beta,  }\item[{real(dl)}]{chi }\end{DoxyParamCaption})}
+
+
+
+References airy\+\_\+ai(), and qintegral().
+
+
+
+Referenced by uspherbesselwithderiv().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_ac93cf86caa7e4d63b164799492196aba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_ac93cf86caa7e4d63b164799492196aba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_ac2bed68bb6862f56c27d5a5cfc5fd94d}\label{namespacespherbessels_ac2bed68bb6862f56c27d5a5cfc5fd94d}} 
+\index{spherbessels@{spherbessels}!phi\+\_\+recurs@{phi\+\_\+recurs}}
+\index{phi\+\_\+recurs@{phi\+\_\+recurs}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{phi\+\_\+recurs()}{phi\_recurs()}}
+{\footnotesize\ttfamily real(dl) function, public spherbessels\+::phi\+\_\+recurs (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{l,  }\item[{integer, intent(in)}]{K,  }\item[{real(dl), intent(in)}]{beta,  }\item[{real(dl), intent(in)}]{chi }\end{DoxyParamCaption})}
+
+
+
+Referenced by phi\+\_\+small\+\_\+closed\+\_\+int(), and uspherbesselwithderiv().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_ac2bed68bb6862f56c27d5a5cfc5fd94d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_a0d5dede9bff52decb1e7fb2d2df35d3a}\label{namespacespherbessels_a0d5dede9bff52decb1e7fb2d2df35d3a}} 
+\index{spherbessels@{spherbessels}!phi\+\_\+small\+\_\+closed\+\_\+int@{phi\+\_\+small\+\_\+closed\+\_\+int}}
+\index{phi\+\_\+small\+\_\+closed\+\_\+int@{phi\+\_\+small\+\_\+closed\+\_\+int}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{phi\+\_\+small\+\_\+closed\+\_\+int()}{phi\_small\_closed\_int()}}
+{\footnotesize\ttfamily subroutine spherbessels\+::phi\+\_\+small\+\_\+closed\+\_\+int (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{l,  }\item[{real(dl), intent(in)}]{beta,  }\item[{real(dl), intent(in)}]{chi,  }\item[{real(dl)}]{y1,  }\item[{real(dl)}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+References phi\+\_\+recurs().
+
+
+
+Referenced by uspherbesselwithderiv().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a0d5dede9bff52decb1e7fb2d2df35d3a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a0d5dede9bff52decb1e7fb2d2df35d3a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_afef9b0d68efd18edac5580591a39f7ba}\label{namespacespherbessels_afef9b0d68efd18edac5580591a39f7ba}} 
+\index{spherbessels@{spherbessels}!polevl@{polevl}}
+\index{polevl@{polevl}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{polevl()}{polevl()}}
+{\footnotesize\ttfamily real(dl) function spherbessels\+::polevl (\begin{DoxyParamCaption}\item[{real(dl)}]{x,  }\item[{real(dl), dimension(n+1)}]{coef,  }\item[{integer}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by airy\+\_\+ai().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_afef9b0d68efd18edac5580591a39f7ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_ae89051535f9e9606be1ab046f5a77854}\label{namespacespherbessels_ae89051535f9e9606be1ab046f5a77854}} 
+\index{spherbessels@{spherbessels}!qintegral@{qintegral}}
+\index{qintegral@{qintegral}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{qintegral()}{qintegral()}}
+{\footnotesize\ttfamily real(dl) function spherbessels\+::qintegral (\begin{DoxyParamCaption}\item[{real(dl)}]{sin\+\_\+K,  }\item[{real(dl)}]{alpha,  }\item[{integer}]{K }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by phi\+\_\+langer().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_ae89051535f9e9606be1ab046f5a77854_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespherbessels_a19f6db59afef649058999b63f9ab8f65}\label{namespacespherbessels_a19f6db59afef649058999b63f9ab8f65}} 
+\index{spherbessels@{spherbessels}!uspherbesselwithderiv@{uspherbesselwithderiv}}
+\index{uspherbesselwithderiv@{uspherbesselwithderiv}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{uspherbesselwithderiv()}{uspherbesselwithderiv()}}
+{\footnotesize\ttfamily subroutine, public spherbessels\+::uspherbesselwithderiv (\begin{DoxyParamCaption}\item[{logical, intent(in)}]{closed,  }\item[{real(dl)}]{Chi,  }\item[{integer}]{l,  }\item[{real(dl)}]{beta,  }\item[{real(dl)}]{y1,  }\item[{real(dl)}]{y2 }\end{DoxyParamCaption})}
+
+
+
+References modelparams\+::accuracyboost, phi\+\_\+langer(), phi\+\_\+recurs(), and phi\+\_\+small\+\_\+closed\+\_\+int().
+
+
+
+Referenced by cambmain\+::dorangeint(), cambmain\+::dorangeinttensor(), and cambmain\+::integratesourcesbessels().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a19f6db59afef649058999b63f9ab8f65_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespherbessels_a19f6db59afef649058999b63f9ab8f65_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacespherbessels_ad90cf19f2544f8107ae70ec1b4cd64e0}\label{namespacespherbessels_ad90cf19f2544f8107ae70ec1b4cd64e0}} 
+\index{spherbessels@{spherbessels}!ajl@{ajl}}
+\index{ajl@{ajl}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{ajl}{ajl}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable, public spherbessels\+::ajl}
+
+
+
+Referenced by bessels\+\_\+free(), cambmain\+::doflatintegration(), generatebessels(), and initspherbessels().
+
+\mbox{\Hypertarget{namespacespherbessels_aafb6422b5aab90f84fdb3a955c129874}\label{namespacespherbessels_aafb6422b5aab90f84fdb3a955c129874}} 
+\index{spherbessels@{spherbessels}!ajlpr@{ajlpr}}
+\index{ajlpr@{ajlpr}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{ajlpr}{ajlpr}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable, public spherbessels\+::ajlpr}
+
+
+
+Referenced by bessels\+\_\+free(), cambmain\+::doflatintegration(), and generatebessels().
+
+\mbox{\Hypertarget{namespacespherbessels_a3ae9c132f8c8a13f8d061492485272b8}\label{namespacespherbessels_a3ae9c132f8c8a13f8d061492485272b8}} 
+\index{spherbessels@{spherbessels}!bessranges@{bessranges}}
+\index{bessranges@{bessranges}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{bessranges}{bessranges}}
+{\footnotesize\ttfamily type(regions), public spherbessels\+::bessranges}
+
+
+
+Referenced by bessels\+\_\+free(), cambmain\+::doflatintegration(), and generatebessels().
+
+\mbox{\Hypertarget{namespacespherbessels_a90a7acde21383c40c841e0a11e87526f}\label{namespacespherbessels_a90a7acde21383c40c841e0a11e87526f}} 
+\index{spherbessels@{spherbessels}!ddajlpr@{ddajlpr}}
+\index{ddajlpr@{ddajlpr}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{ddajlpr}{ddajlpr}}
+{\footnotesize\ttfamily real(dl), dimension(\+:,\+:), allocatable, public spherbessels\+::ddajlpr}
+
+
+
+Referenced by bessels\+\_\+free(), and generatebessels().
+
+\mbox{\Hypertarget{namespacespherbessels_abe559ecdb38e3d5173cbf2c709b7a694}\label{namespacespherbessels_abe559ecdb38e3d5173cbf2c709b7a694}} 
+\index{spherbessels@{spherbessels}!file\+\_\+l@{file\+\_\+l}}
+\index{file\+\_\+l@{file\+\_\+l}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{file\+\_\+l}{file\_l}}
+{\footnotesize\ttfamily integer, dimension(lmax\+\_\+arr) spherbessels\+::file\+\_\+l\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by generatebessels(), and initspherbessels().
+
+\mbox{\Hypertarget{namespacespherbessels_ab9b99f417336f962381e26fc7611affa}\label{namespacespherbessels_ab9b99f417336f962381e26fc7611affa}} 
+\index{spherbessels@{spherbessels}!file\+\_\+numl@{file\+\_\+numl}}
+\index{file\+\_\+numl@{file\+\_\+numl}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{file\+\_\+numl}{file\_numl}}
+{\footnotesize\ttfamily integer spherbessels\+::file\+\_\+numl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by generatebessels(), and initspherbessels().
+
+\mbox{\Hypertarget{namespacespherbessels_acaac392a6ea328fe36eff8c422ff06ea}\label{namespacespherbessels_acaac392a6ea328fe36eff8c422ff06ea}} 
+\index{spherbessels@{spherbessels}!kmaxfile@{kmaxfile}}
+\index{kmaxfile@{kmaxfile}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{kmaxfile}{kmaxfile}}
+{\footnotesize\ttfamily integer spherbessels\+::kmaxfile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by generatebessels(), and initspherbessels().
+
+\mbox{\Hypertarget{namespacespherbessels_af8cc74b859928826e087b37b4c365afa}\label{namespacespherbessels_af8cc74b859928826e087b37b4c365afa}} 
+\index{spherbessels@{spherbessels}!num\+\_\+xx@{num\+\_\+xx}}
+\index{num\+\_\+xx@{num\+\_\+xx}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{num\+\_\+xx}{num\_xx}}
+{\footnotesize\ttfamily integer spherbessels\+::num\+\_\+xx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by generatebessels().
+
+\mbox{\Hypertarget{namespacespherbessels_a07d278e5f2a51b79893a106358cb1afc}\label{namespacespherbessels_a07d278e5f2a51b79893a106358cb1afc}} 
+\index{spherbessels@{spherbessels}!xlimfrac@{xlimfrac}}
+\index{xlimfrac@{xlimfrac}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{xlimfrac}{xlimfrac}}
+{\footnotesize\ttfamily real(dl), parameter, public spherbessels\+::xlimfrac = 0.\+05\+\_\+dl}
+
+
+
+Referenced by cambmain\+::doflatintegration(), and generatebessels().
+
+\mbox{\Hypertarget{namespacespherbessels_a7609b1d2bbb03aefd6c6f47a69538eed}\label{namespacespherbessels_a7609b1d2bbb03aefd6c6f47a69538eed}} 
+\index{spherbessels@{spherbessels}!xlimmin@{xlimmin}}
+\index{xlimmin@{xlimmin}!spherbessels@{spherbessels}}
+\subsubsection{\texorpdfstring{xlimmin}{xlimmin}}
+{\footnotesize\ttfamily real(dl), parameter, public spherbessels\+::xlimmin =35.\+\_\+dl}
+
+
+
+Referenced by cambmain\+::doflatintegration(), and generatebessels().
+

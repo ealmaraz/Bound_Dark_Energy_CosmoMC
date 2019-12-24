@@ -1,0 +1,9 @@
+<map id="getdist.gui.mainwindow.MainWindow.getSettings" name="getdist.gui.mainwindow.MainWindow.getSettings">
+<area shape="rect" id="node2" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a7e29a3ab6b2531c8680823bd4ae26c1d" title="getdist.gui.mainwindow.Main\lWindow.readSettings" alt="" coords="246,5,437,46"/>
+<area shape="rect" id="node3" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ad64925d8336c287f82ae6e2f16d9de71" title="getdist.gui.mainwindow.Main\lWindow.reLoad" alt="" coords="726,90,917,131"/>
+<area shape="rect" id="node4" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ad54b990be48269b8e9375dac2a68ee9c" title="getdist.gui.mainwindow.Main\lWindow.saveDirectories" alt="" coords="246,147,437,189"/>
+<area shape="rect" id="node5" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#a1f82d42630833ea1995e22bc60148d27" title="getdist.gui.mainwindow.Main\lWindow.selectRootDirName" alt="" coords="726,181,917,222"/>
+<area shape="rect" id="node7" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ac5712470b76dd04c734584cbc7da1111" title="getdist.gui.mainwindow.Main\lWindow.writeSettings" alt="" coords="246,290,437,331"/>
+<area shape="rect" id="node6" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#ab4eed3e548a98ed4b789a5cf9324027a" title="getdist.gui.mainwindow.Main\lWindow.openDirectory" alt="" coords="486,122,677,163"/>
+<area shape="rect" id="node8" href="$classgetdist_1_1gui_1_1mainwindow_1_1MainWindow.html#aeb3af901563e3a12835412c7c44e9e7c" title="getdist.gui.mainwindow.Main\lWindow.closeEvent" alt="" coords="486,290,677,331"/>
+</map>

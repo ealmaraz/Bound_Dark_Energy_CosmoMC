@@ -1,0 +1,143 @@
+\hypertarget{namespacegetdist_1_1chains}{}\section{getdist.\+chains Namespace Reference}
+\label{namespacegetdist_1_1chains}\index{getdist.\+chains@{getdist.\+chains}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1chains_1_1Chains}{Chains}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1chains_1_1ParamConfidenceData}{Param\+Confidence\+Data}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1chains_1_1ParSamples}{Par\+Samples}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1chains_1_1WeightedSampleError}{Weighted\+Sample\+Error}}
+\item 
+class \mbox{\hyperlink{classgetdist_1_1chains_1_1WeightedSamples}{Weighted\+Samples}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1chains_a1ae5a71875f23ffd319d9920c10b8874}{last\+Modified}} (files)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1chains_a4b7fca3560b676d80b95f038f023bde2}{chain\+Files}} (root, chain\+\_\+indices=None, ext=\textquotesingle{}.txt\textquotesingle{}, first\+\_\+chain=0, last\+\_\+chain=-\/1, chain\+\_\+exclude=None)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1chains_a92803119cc9c25b30dfe65c226c9a2e9}{load\+Numpy\+Txt}} (fname, skiprows=None)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1chains_a5e06cfdb8cb9fcc1c441388e98b667a1}{get\+Signal\+To\+Noise}} (C, noise=None, R=None, eigs\+\_\+only=False)
+\item 
+def \mbox{\hyperlink{namespacegetdist_1_1chains_ab06bc0bb109554727a57f915baa61c36}{cov\+To\+Corr}} (cov, copy=True)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacegetdist_1_1chains_af6c91c927222cf0ba828b416f0a3d197}{print\+\_\+load\+\_\+details}} = True
+\item 
+\mbox{\hyperlink{namespacegetdist_1_1chains_a9c008d8e20a771630b81660a71ccdb81}{use\+\_\+pandas}} = Loose\+Version(pandas.\+version.\+version) $>$ Loose\+Version(\char`\"{}0.\+14.\+0\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1chains_a4b7fca3560b676d80b95f038f023bde2}\label{namespacegetdist_1_1chains_a4b7fca3560b676d80b95f038f023bde2}} 
+\index{getdist\+::chains@{getdist\+::chains}!chain\+Files@{chain\+Files}}
+\index{chain\+Files@{chain\+Files}!getdist\+::chains@{getdist\+::chains}}
+\subsubsection{\texorpdfstring{chain\+Files()}{chainFiles()}}
+{\footnotesize\ttfamily def getdist.\+chains.\+chain\+Files (\begin{DoxyParamCaption}\item[{}]{root,  }\item[{}]{chain\+\_\+indices = {\ttfamily None},  }\item[{}]{ext = {\ttfamily \textquotesingle{}.txt\textquotesingle{}},  }\item[{}]{first\+\_\+chain = {\ttfamily 0},  }\item[{}]{last\+\_\+chain = {\ttfamily -\/1},  }\item[{}]{chain\+\_\+exclude = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a list of file names for samples given a root name and optional filters
+
+:param root: Root name for files (no extension)
+:param chain_indices: If True, only indexes inside the list included, If False, includes all indexes.
+:param ext: extension for files
+:param first_chain: The first index to include.
+:param last_chain: The last index to include.
+:param chain_exclude: A list of indexes to exclude, None to include all
+:return: The list of file names
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegetdist_1_1chains_ab06bc0bb109554727a57f915baa61c36}\label{namespacegetdist_1_1chains_ab06bc0bb109554727a57f915baa61c36}} 
+\index{getdist\+::chains@{getdist\+::chains}!cov\+To\+Corr@{cov\+To\+Corr}}
+\index{cov\+To\+Corr@{cov\+To\+Corr}!getdist\+::chains@{getdist\+::chains}}
+\subsubsection{\texorpdfstring{cov\+To\+Corr()}{covToCorr()}}
+{\footnotesize\ttfamily def getdist.\+chains.\+cov\+To\+Corr (\begin{DoxyParamCaption}\item[{}]{cov,  }\item[{}]{copy = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert covariance matrix to correlation matrix
+
+:param cov: The covariance matrix to work on
+:param copy: True if we shouldn't modify the input matrix, False otherwise.
+:return: correlation matrix
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+chains.\+Weighted\+Samples.\+corr(), and getdist.\+chains.\+Weighted\+Samples.\+get\+Correlation\+Matrix().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegetdist_1_1chains_ab06bc0bb109554727a57f915baa61c36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacegetdist_1_1chains_a5e06cfdb8cb9fcc1c441388e98b667a1}\label{namespacegetdist_1_1chains_a5e06cfdb8cb9fcc1c441388e98b667a1}} 
+\index{getdist\+::chains@{getdist\+::chains}!get\+Signal\+To\+Noise@{get\+Signal\+To\+Noise}}
+\index{get\+Signal\+To\+Noise@{get\+Signal\+To\+Noise}!getdist\+::chains@{getdist\+::chains}}
+\subsubsection{\texorpdfstring{get\+Signal\+To\+Noise()}{getSignalToNoise()}}
+{\footnotesize\ttfamily def getdist.\+chains.\+get\+Signal\+To\+Noise (\begin{DoxyParamCaption}\item[{}]{C,  }\item[{}]{noise = {\ttfamily None},  }\item[{}]{R = {\ttfamily None},  }\item[{}]{eigs\+\_\+only = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns w, M, where w is the eigenvalues of the signal to noise (small means better constrained)
+
+:param C: covariance matrix
+:param noise: noise matrix
+:param R: rotation matrix, defaults to inverse of Cholesky root of the noise matrix
+:param eigs_only: only return eigenvalues
+:return: eigenvalues and matrix
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegetdist_1_1chains_a1ae5a71875f23ffd319d9920c10b8874}\label{namespacegetdist_1_1chains_a1ae5a71875f23ffd319d9920c10b8874}} 
+\index{getdist\+::chains@{getdist\+::chains}!last\+Modified@{last\+Modified}}
+\index{last\+Modified@{last\+Modified}!getdist\+::chains@{getdist\+::chains}}
+\subsubsection{\texorpdfstring{last\+Modified()}{lastModified()}}
+{\footnotesize\ttfamily def getdist.\+chains.\+last\+Modified (\begin{DoxyParamCaption}\item[{}]{files }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the the latest "last modified" time for the given list of files. Ignores files that do not exist.
+
+:param files: An iterable of file names.
+:return: The latest "last modified" time
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacegetdist_1_1chains_a92803119cc9c25b30dfe65c226c9a2e9}\label{namespacegetdist_1_1chains_a92803119cc9c25b30dfe65c226c9a2e9}} 
+\index{getdist\+::chains@{getdist\+::chains}!load\+Numpy\+Txt@{load\+Numpy\+Txt}}
+\index{load\+Numpy\+Txt@{load\+Numpy\+Txt}!getdist\+::chains@{getdist\+::chains}}
+\subsubsection{\texorpdfstring{load\+Numpy\+Txt()}{loadNumpyTxt()}}
+{\footnotesize\ttfamily def getdist.\+chains.\+load\+Numpy\+Txt (\begin{DoxyParamCaption}\item[{}]{fname,  }\item[{}]{skiprows = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Utility routine to loads numpy array from file.
+Uses faster pandas read routine if pandas is installed, or falls back to numpy's loadtxt otherwise
+  
+:param fname: The file to load
+:param skiprows: The number of rows to skip at the begging of the file
+:return: numpy array of the data values
+\end{DoxyVerb}
+ 
+
+Referenced by getdist.\+chains.\+Weighted\+Samples.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegetdist_1_1chains_a92803119cc9c25b30dfe65c226c9a2e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacegetdist_1_1chains_af6c91c927222cf0ba828b416f0a3d197}\label{namespacegetdist_1_1chains_af6c91c927222cf0ba828b416f0a3d197}} 
+\index{getdist\+::chains@{getdist\+::chains}!print\+\_\+load\+\_\+details@{print\+\_\+load\+\_\+details}}
+\index{print\+\_\+load\+\_\+details@{print\+\_\+load\+\_\+details}!getdist\+::chains@{getdist\+::chains}}
+\subsubsection{\texorpdfstring{print\+\_\+load\+\_\+details}{print\_load\_details}}
+{\footnotesize\ttfamily bool getdist.\+chains.\+print\+\_\+load\+\_\+details = True}
+
+\mbox{\Hypertarget{namespacegetdist_1_1chains_a9c008d8e20a771630b81660a71ccdb81}\label{namespacegetdist_1_1chains_a9c008d8e20a771630b81660a71ccdb81}} 
+\index{getdist\+::chains@{getdist\+::chains}!use\+\_\+pandas@{use\+\_\+pandas}}
+\index{use\+\_\+pandas@{use\+\_\+pandas}!getdist\+::chains@{getdist\+::chains}}
+\subsubsection{\texorpdfstring{use\+\_\+pandas}{use\_pandas}}
+{\footnotesize\ttfamily bool getdist.\+chains.\+use\+\_\+pandas = Loose\+Version(pandas.\+version.\+version) $>$ Loose\+Version(\char`\"{}0.\+14.\+0\char`\"{})}
+

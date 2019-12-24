@@ -1,0 +1,121 @@
+\hypertarget{namespacecamb_1_1baseconfig}{}\section{camb.\+baseconfig Namespace Reference}
+\label{namespacecamb_1_1baseconfig}\index{camb.\+baseconfig@{camb.\+baseconfig}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcamb_1_1baseconfig_1_1CAMB__Structure}{C\+A\+M\+B\+\_\+\+Structure}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1baseconfig_1_1CAMBError}{C\+A\+M\+B\+Error}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1baseconfig_1_1ifort__gfortran__loader}{ifort\+\_\+gfortran\+\_\+loader}}
+\item 
+class \mbox{\hyperlink{classcamb_1_1baseconfig_1_1Mock}{Mock}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1baseconfig_a9b1d79118c94ceaefe44393d881c3956}{dll\+\_\+import}} (tp, module, func)
+\item 
+def \mbox{\hyperlink{namespacecamb_1_1baseconfig_ab9ccfd74eee84e46eb5061d9397e368a}{set\+\_\+filelocs}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1baseconfig_ae8f1ea2a46e79a477468b0fd2d177a99}{B\+A\+S\+E\+D\+IR}} = osp.\+abspath(osp.\+dirname(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\item 
+string \mbox{\hyperlink{namespacecamb_1_1baseconfig_ad89a604599cedf48442529187fef9c80}{D\+L\+L\+N\+A\+ME}} = \textquotesingle{}cambdll.\+dll\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1baseconfig_a1607a579d676f0ac85591b4682448c59}{C\+A\+M\+BL}} = osp.\+join(\mbox{\hyperlink{namespacecamb_1_1baseconfig_ae8f1ea2a46e79a477468b0fd2d177a99}{B\+A\+S\+E\+D\+IR}}, \mbox{\hyperlink{namespacecamb_1_1baseconfig_ad89a604599cedf48442529187fef9c80}{D\+L\+L\+N\+A\+ME}})
+\item 
+\mbox{\hyperlink{namespacecamb_1_1baseconfig_a7929d68edfa88d189f12fd1c25f0448f}{mock\+\_\+load}} = os.\+environ.\+get(\textquotesingle{}R\+E\+A\+D\+T\+H\+E\+D\+O\+CS\textquotesingle{}, None)
+\item 
+\mbox{\hyperlink{namespacecamb_1_1baseconfig_a358d9edf830d88f0b129ba636e49a077}{camblib}} = ctypes.\+Library\+Loader(\mbox{\hyperlink{classcamb_1_1baseconfig_1_1ifort__gfortran__loader}{ifort\+\_\+gfortran\+\_\+loader}}).Load\+Library(\mbox{\hyperlink{namespacecamb_1_1baseconfig_a1607a579d676f0ac85591b4682448c59}{C\+A\+M\+BL}})
+\item 
+\mbox{\hyperlink{namespacecamb_1_1baseconfig_ad1eeb57f2c324b0a0486fa69bea1088e}{M\+O\+C\+K\+\_\+\+M\+O\+D\+U\+L\+ES}}
+\item 
+\mbox{\hyperlink{namespacecamb_1_1baseconfig_ac76caa9250c766ee3239467a4e1b817f}{Structure}} = object
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_a9b1d79118c94ceaefe44393d881c3956}\label{namespacecamb_1_1baseconfig_a9b1d79118c94ceaefe44393d881c3956}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!dll\+\_\+import@{dll\+\_\+import}}
+\index{dll\+\_\+import@{dll\+\_\+import}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{dll\+\_\+import()}{dll\_import()}}
+{\footnotesize\ttfamily def camb.\+baseconfig.\+dll\+\_\+import (\begin{DoxyParamCaption}\item[{}]{tp,  }\item[{}]{module,  }\item[{}]{func }\end{DoxyParamCaption})}
+
+
+
+Referenced by camb.\+model.\+C\+A\+M\+Bparams.\+set\+\_\+dark\+\_\+energy().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacecamb_1_1baseconfig_a9b1d79118c94ceaefe44393d881c3956_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_ab9ccfd74eee84e46eb5061d9397e368a}\label{namespacecamb_1_1baseconfig_ab9ccfd74eee84e46eb5061d9397e368a}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!set\+\_\+filelocs@{set\+\_\+filelocs}}
+\index{set\+\_\+filelocs@{set\+\_\+filelocs}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{set\+\_\+filelocs()}{set\_filelocs()}}
+{\footnotesize\ttfamily def camb.\+baseconfig.\+set\+\_\+filelocs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References interpolationtests.\+func().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{namespacecamb_1_1baseconfig_ab9ccfd74eee84e46eb5061d9397e368a_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_ae8f1ea2a46e79a477468b0fd2d177a99}\label{namespacecamb_1_1baseconfig_ae8f1ea2a46e79a477468b0fd2d177a99}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!B\+A\+S\+E\+D\+IR@{B\+A\+S\+E\+D\+IR}}
+\index{B\+A\+S\+E\+D\+IR@{B\+A\+S\+E\+D\+IR}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{B\+A\+S\+E\+D\+IR}{BASEDIR}}
+{\footnotesize\ttfamily camb.\+baseconfig.\+B\+A\+S\+E\+D\+IR = osp.\+abspath(osp.\+dirname(\+\_\+\+\_\+file\+\_\+\+\_\+))}
+
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_a1607a579d676f0ac85591b4682448c59}\label{namespacecamb_1_1baseconfig_a1607a579d676f0ac85591b4682448c59}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!C\+A\+M\+BL@{C\+A\+M\+BL}}
+\index{C\+A\+M\+BL@{C\+A\+M\+BL}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{C\+A\+M\+BL}{CAMBL}}
+{\footnotesize\ttfamily camb.\+baseconfig.\+C\+A\+M\+BL = osp.\+join(\mbox{\hyperlink{namespacecamb_1_1baseconfig_ae8f1ea2a46e79a477468b0fd2d177a99}{B\+A\+S\+E\+D\+IR}}, \mbox{\hyperlink{namespacecamb_1_1baseconfig_ad89a604599cedf48442529187fef9c80}{D\+L\+L\+N\+A\+ME}})}
+
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_a358d9edf830d88f0b129ba636e49a077}\label{namespacecamb_1_1baseconfig_a358d9edf830d88f0b129ba636e49a077}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!camblib@{camblib}}
+\index{camblib@{camblib}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{camblib}{camblib}}
+{\footnotesize\ttfamily camb.\+baseconfig.\+camblib = ctypes.\+Library\+Loader(\mbox{\hyperlink{classcamb_1_1baseconfig_1_1ifort__gfortran__loader}{ifort\+\_\+gfortran\+\_\+loader}}).Load\+Library(\mbox{\hyperlink{namespacecamb_1_1baseconfig_a1607a579d676f0ac85591b4682448c59}{C\+A\+M\+BL}})}
+
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_ad89a604599cedf48442529187fef9c80}\label{namespacecamb_1_1baseconfig_ad89a604599cedf48442529187fef9c80}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!D\+L\+L\+N\+A\+ME@{D\+L\+L\+N\+A\+ME}}
+\index{D\+L\+L\+N\+A\+ME@{D\+L\+L\+N\+A\+ME}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{D\+L\+L\+N\+A\+ME}{DLLNAME}}
+{\footnotesize\ttfamily string camb.\+baseconfig.\+D\+L\+L\+N\+A\+ME = \textquotesingle{}cambdll.\+dll\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_a7929d68edfa88d189f12fd1c25f0448f}\label{namespacecamb_1_1baseconfig_a7929d68edfa88d189f12fd1c25f0448f}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!mock\+\_\+load@{mock\+\_\+load}}
+\index{mock\+\_\+load@{mock\+\_\+load}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{mock\+\_\+load}{mock\_load}}
+{\footnotesize\ttfamily camb.\+baseconfig.\+mock\+\_\+load = os.\+environ.\+get(\textquotesingle{}R\+E\+A\+D\+T\+H\+E\+D\+O\+CS\textquotesingle{}, None)}
+
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_ad1eeb57f2c324b0a0486fa69bea1088e}\label{namespacecamb_1_1baseconfig_ad1eeb57f2c324b0a0486fa69bea1088e}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!M\+O\+C\+K\+\_\+\+M\+O\+D\+U\+L\+ES@{M\+O\+C\+K\+\_\+\+M\+O\+D\+U\+L\+ES}}
+\index{M\+O\+C\+K\+\_\+\+M\+O\+D\+U\+L\+ES@{M\+O\+C\+K\+\_\+\+M\+O\+D\+U\+L\+ES}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{M\+O\+C\+K\+\_\+\+M\+O\+D\+U\+L\+ES}{MOCK\_MODULES}}
+{\footnotesize\ttfamily camb.\+baseconfig.\+M\+O\+C\+K\+\_\+\+M\+O\+D\+U\+L\+ES}
+
+\mbox{\Hypertarget{namespacecamb_1_1baseconfig_ac76caa9250c766ee3239467a4e1b817f}\label{namespacecamb_1_1baseconfig_ac76caa9250c766ee3239467a4e1b817f}} 
+\index{camb\+::baseconfig@{camb\+::baseconfig}!Structure@{Structure}}
+\index{Structure@{Structure}!camb\+::baseconfig@{camb\+::baseconfig}}
+\subsubsection{\texorpdfstring{Structure}{Structure}}
+{\footnotesize\ttfamily camb.\+baseconfig.\+Structure = object}
+

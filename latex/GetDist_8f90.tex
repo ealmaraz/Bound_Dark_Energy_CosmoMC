@@ -1,0 +1,284 @@
+\hypertarget{GetDist_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+Get\+Dist.f90 File Reference}
+\label{GetDist_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Get\+Dist.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+Get\+Dist.\+f90}}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacemcsamples}{mcsamples}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_aa4af8bb5067761fcc26783a3198edb1a}{mcsamples\+::adjustpriors}}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_ac831b94ceae7c808b2656230727e6cdd}{mcsamples\+::mapparameters}} (invars)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a415388e77f0a5360c5a814c8ba0e4080}{mcsamples\+::coolchain}} (cool)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a35bad035408957649f1a00bc87bc798c}{mcsamples\+::deletezeros}}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_af00e1e65ba0440ba9f05136bb9219f55}{mcsamples\+::sortcoldata}} (bycol)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a1e8b234ac939c21f51884cab29fd0204}{mcsamples\+::makesinglesamples}} (single\+\_\+thin)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a98999c53910240226ec96e8ef0751a22}{mcsamples\+::writethindata}} (fname, cool)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_ad5ab7ed94d3a34782ce86ebc0d23e148}{mcsamples\+::thindata}} (fac, ix1, ix2)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a3b127162be572d0864c8bd49f3403a78}{mcsamples\+::getcovmatrix}}
+\item 
+integer function \mbox{\hyperlink{namespacemcsamples_ac9c93f48a6a5f4c22e5f35b060bcab20}{mcsamples\+::mostcorrelated2d}} (i1, i2, direc)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a45291f5f8d4db1ad22598222a511e67c}{mcsamples\+::getfractionindices}} (fraction\+\_\+indices, n)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacemcsamples_affe201ec04f01f217a706350334d21e4}{mcsamples\+::confidval}} (ix, limfrac, upper, ix1, ix2)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a54c3f403eb92b30ff78476abea37462c}{mcsamples\+::writes}} (S)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a72e8a848ae68643f3449e12e33334870}{mcsamples\+::pca}} (pars, n, param\+\_\+map, normparam\+\_\+num)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a4664c132197f4ef65fa541baac30f0f2}{mcsamples\+::getusedcols}}
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a4a0eac91a04d742f776ae4f8f15d919c}{mcsamples\+::doconvergetests}} (limfrac)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a9bbfd241a96107124f0af5ef8d0fbe61}{mcsamples\+::get1ddensity}} (j)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a67c86279d2ba781324578c13807fa812}{mcsamples\+::get2dplotdata}} (j, j2)
+\item 
+logical function \mbox{\hyperlink{namespacemcsamples_a12e5ebfb72dd60020dd1aef9afa7ad2e}{mcsamples\+::plotcontmatlab}} (aunit, aroot, j, j2, Do\+Shade)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_ab0762a08afdb1f7f972b966091ef0918}{mcsamples\+::matlablabel}} (i)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a6ac9a19d5b3622b2a2dea19257a37c36}{mcsamples\+::write2dplotmatlab}} (aunit, j, j2, Do\+Labelx, Do\+Labely, hide\+\_\+ticklabels)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a22e27e5c21abdb2a3d8cf2816d2f8acb}{mcsamples\+::writeplotfileinit}} (unit, sm, subplot\+\_\+size)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_aeb1af08402647e8ef9e1d8f97e774e3a}{mcsamples\+::writeplotfileexport}} (unit, tag, plot\+\_\+col, plot\+\_\+row)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_a1084f1fea1eddc1385237c666e34115b}{mcsamples\+::quoted\+\_\+param\+\_\+name}} (j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_aaed4d229224d51b97154b233f072fae9}{mcsamples\+::quoted\+\_\+param\+\_\+name\+\_\+used}} (j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_a61ce07e713757fee14a963684c25fe12}{mcsamples\+::python\+\_\+param\+\_\+array}} (params, num)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a0a903a19ac6139be1cc98a32218ec801}{mcsamples\+::write1dplotmatlab}} (aunit, j)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a7fb178ee92298048973cca975336489e}{mcsamples\+::writematlablinelabels}} (F)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a083f4a491dcb1c55ed0f61c0e4f435b1}{mcsamples\+::edgewarning}} (param)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_a8613f88e39f47c058447963d5b9f53dc}{mcsamples\+::dat\+\_\+file\+\_\+name}} (rootname, j)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacemcsamples_ab816e54fd85d1f1c125d828e843a2343}{mcsamples\+::dat\+\_\+file\+\_\+2d}} (rootname, j, j2)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_ad44656764a16d6b3b6acbbab57653252}{mcsamples\+::checkmatlabaxes}} (afile)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacemcsamples_af7511fd6eb58bcc6086256f9ecb5fe1c}{mcsamples\+::dinvnorm}} (p)
+\item 
+subroutine \mbox{\hyperlink{namespacemcsamples_a97959f867d590fadb6638910b52409bd}{mcsamples\+::getchainlikesummary}} (unit)
+\item 
+program \mbox{\hyperlink{GetDist_8f90_a78c185cfd3ac27937ede022b24ae72e9}{getdist}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+type(tparamnames), save \mbox{\hyperlink{namespacemcsamples_ab0b5f836670f80c8acfa3374709ddc9b}{mcsamples\+::namemapping}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a423ddd0f2de0560617b74a17231275e0}{mcsamples\+::gp}} = K\+I\+ND(1.d0)
+\item 
+character(len= $\ast$), parameter \mbox{\hyperlink{namespacemcsamples_a1d5c81cfc6a6d2a9f25c250cf8359142}{mcsamples\+::float\+\_\+format}} = \textquotesingle{}($\ast$(E16.\+7))\textquotesingle{}
+\item 
+real(gp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a1f7790a8989ae24a32dcef594163cfd6}{mcsamples\+::coldata}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a68af0f07bf91f81304b0a3c46c669ffc}{mcsamples\+::thin\+\_\+ix}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a868898642c4ad498fccad75315810550}{mcsamples\+::thin\+\_\+rows}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a11a673041be4c2131b8dc7a2806e6a04}{mcsamples\+::max\+\_\+rows}} = 500000
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_ae8386bad918d8af8d203683c01d5818c}{mcsamples\+::max\+\_\+cols}} = 500
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a204c829ca43df2c6d41335156e6786ee}{mcsamples\+::max\+\_\+chains}} = 100
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_aecb93fc58e3823802a4eabc86659a889}{mcsamples\+::max\+\_\+split\+\_\+tests}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacemcsamples_a878ea2f4d47feda9ed7a1701aabfb0d1}{mcsamples\+::max\+\_\+contours}} = 5
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_af8a6d674d091942c7820c37ad6795f6b}{mcsamples\+::corr\+\_\+length\+\_\+thin}} = 0
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a7cabc6db7f9125c0af7b6de3032567f1}{mcsamples\+::corr\+\_\+length\+\_\+steps}} = 15
+\item 
+type(tdensity1d) \mbox{\hyperlink{namespacemcsamples_aa7682e36ef34bef4b8112f058f435415}{mcsamples\+::density1d}}
+\item 
+integer, dimension(max\+\_\+chains) \mbox{\hyperlink{namespacemcsamples_a196c1e189b163a496c0da2fcc96bf1f4}{mcsamples\+::chain\+\_\+indices}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a19f7c9315f7bf1a0fdcc248d0e9b9757}{mcsamples\+::num\+\_\+chains\+\_\+used}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_ab3c722f8f5dd4ef38228bf41b333bf36}{mcsamples\+::bestfit\+\_\+ix}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_ad9b26e8c7b01068cd5e285b2710ffff9}{mcsamples\+::meanlike}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a084bb79be779410b498f439e52a95c5e}{mcsamples\+::maxlike}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a3bf0377c41ca6723a2a682fdec7c7cba}{mcsamples\+::nrows}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a9c7a895a8bbc32cc9ec5a4e647f93842}{mcsamples\+::ncols}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a5b2ac0e6e68dd652c494d1b7bd789f96}{mcsamples\+::num\+\_\+bins}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a2adeb191d79be31ecfbaafc674ada8d1}{mcsamples\+::num\+\_\+bins\+\_\+2d}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a1c72401a481311c1c4b5b4d7c0b4b1d8}{mcsamples\+::numsamp}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a65308a62158ea3cd86ad4582d51e8cfe}{mcsamples\+::max\+\_\+mult}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a1ccd58a9a808001ffe645de8327594a2}{mcsamples\+::mean\+\_\+mult}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a76ea49efc6873b3f02d34f24ce452d5b}{mcsamples\+::nd\+\_\+cont1}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a42ec49d9a1202d3d9f840a5ae8a62420}{mcsamples\+::nd\+\_\+cont2}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a381886fbfe1702b96dbe899d11a79daa}{mcsamples\+::nd\+\_\+limit\+\_\+top}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_af6035de97e3096d7ba8ee9ac9a2d8e1b}{mcsamples\+::nd\+\_\+limit\+\_\+bot}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_aee5291f542c82e3b053eea9aa4a22eef}{mcsamples\+::covmat\+\_\+dimension}}
+\item 
+integer, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a16ed6273b18cc5caae328b4524db8061}{mcsamples\+::colix}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_ad2594baa1bbb61af048a932e45cd4060}{mcsamples\+::num\+\_\+vars}}
+\item 
+real(mcp), dimension(2, max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a0902678bdbc7aa6ef8b8992ce0a19c5e}{mcsamples\+::prior\+\_\+ranges}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a770892813dc80f66c4a9d4af5df91a26}{mcsamples\+::mean}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_aacce77bfdf0523e8c96285821ce2a3f4}{mcsamples\+::sddev}}
+\item 
+real(mcp), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a6f7e8571ffd569f3c7538169829a9612}{mcsamples\+::corrmatrix}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a77ab102d98a4253b3213f06db7371cf9}{mcsamples\+::plot\+\_\+data\+\_\+dir}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a12247a941c9940691d984cd9596796bd}{mcsamples\+::out\+\_\+dir}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a578b65f55aa7a0d9598291d1cbd550db}{mcsamples\+::rootdirname}}
+\item 
+character(len=\+:), allocatable \mbox{\hyperlink{namespacemcsamples_a0f43faad2c6f83998962006e04268623}{mcsamples\+::in\+\_\+root}}
+\item 
+character(len=128), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_abe3835988721f0cbcb6f7c28015e95f3}{mcsamples\+::labels}}
+\item 
+character(len=128), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_ae27c34b7ef99d6a3d92c13e419fcceb1}{mcsamples\+::pname}}
+\item 
+logical, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_ae802de51bb481b085361a661c090d461}{mcsamples\+::has\+\_\+limits}}
+\item 
+logical, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a948a6bc42d1b7b001f55aeaaf2d5b3f8}{mcsamples\+::has\+\_\+limits\+\_\+top}}
+\item 
+logical, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_af020921aecf16dd5008460d6a82fdd64}{mcsamples\+::has\+\_\+limits\+\_\+bot}}
+\item 
+logical, dimension(max\+\_\+contours, max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a22f55004d2d1debc557bf626e9b2af89}{mcsamples\+::marge\+\_\+limits\+\_\+top}}
+\item 
+logical, dimension(max\+\_\+contours, max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a6c36f035fe1ec1e688afcc0ac112e425}{mcsamples\+::marge\+\_\+limits\+\_\+bot}}
+\item 
+logical, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a0233de8ae126379ac2ebc11c0981db61}{mcsamples\+::has\+\_\+markers}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_ad7bc69baf30e862c773070e99974d483}{mcsamples\+::markers}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_adb5eb76b1f11b911bf9e72be639d5226}{mcsamples\+::num\+\_\+contours}}
+\item 
+character(len=3) \mbox{\hyperlink{namespacemcsamples_ad18bd8eb2345c17a7aad3604eba3e3ad}{mcsamples\+::plot\+\_\+ext}} = \textquotesingle{}m\textquotesingle{}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a24dc02cd209419956007efc05c309274}{mcsamples\+::matlab\+\_\+version}}
+\item 
+character(len=3) \mbox{\hyperlink{namespacemcsamples_a4aac456ce5052be90e290891a61466f1}{mcsamples\+::plot\+\_\+output}} = \textquotesingle{}pdf\textquotesingle{}
+\item 
+real \mbox{\hyperlink{namespacemcsamples_a5c59bb75d9bde473650c9d04a44e6010}{mcsamples\+::subplot\+\_\+size\+\_\+inch}} = 3.\+0
+\item 
+real \mbox{\hyperlink{namespacemcsamples_a6dd34bac13f09636652e328d92707726}{mcsamples\+::subplot\+\_\+size\+\_\+inch2}}
+\item 
+real \mbox{\hyperlink{namespacemcsamples_ab97f8de1d5924a4908cb5b7953a30f16}{mcsamples\+::subplot\+\_\+size\+\_\+inch3}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_acd85fa3b4250ca366e08576bd4df6bd8}{mcsamples\+::matlab\+\_\+latex}} = .false.
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_ae4e5ef0996e111c2f91121884b99ccdc}{mcsamples\+::font\+\_\+scale}} = 1.
+\item 
+real(mcp), dimension(max\+\_\+contours) \mbox{\hyperlink{namespacemcsamples_ae745525f8fef6e02d22826cd2a5f1bcc}{mcsamples\+::contours}}
+\item 
+real(mcp), dimension(max\+\_\+contours) \mbox{\hyperlink{namespacemcsamples_a1db866dfd553051fc5cbd2c80bcd4c86}{mcsamples\+::max\+\_\+frac\+\_\+twotail}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a562ce4b67831be4911c45a4e08a6ef18}{mcsamples\+::indep\+\_\+thin}} = 0
+\item 
+integer, dimension(max\+\_\+chains) \mbox{\hyperlink{namespacemcsamples_a619b6da70c38ede6a9851a3ee89b4019}{mcsamples\+::chain\+\_\+numbers}}
+\item 
+logical, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a6269903cd9674bdcc7c4527acdddfef3}{mcsamples\+::isused}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a5bf85772fb62752a789a1d253bd6cd5a}{mcsamples\+::force\+\_\+twotail}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a68c0597751197a26086066ed961e47ef}{mcsamples\+::plot\+\_\+meanlikes}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a42f921b7349e79466c2128ebcb06e75f}{mcsamples\+::mean\+\_\+loglikes}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad55967ca18b8319069920d6d1e772bb1}{mcsamples\+::shade\+\_\+meanlikes}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad8e59e2a5de71cff7f1241b59b058291}{mcsamples\+::make\+\_\+single\+\_\+samples}}
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a39de2461adb48b31033a95a7d14666be}{mcsamples\+::single\+\_\+thin}}
+\item 
+integer, dimension(max\+\_\+cols $\ast$$\ast$2) \mbox{\hyperlink{namespacemcsamples_a1831bdf8091941b6ccbd0c3fc3df90f9}{mcsamples\+::cust2dplots}}
+\item 
+integer, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a782e4892c659b02c05a3134ad4c32bac}{mcsamples\+::ix\+\_\+min}}
+\item 
+integer, dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a6a48f0fe15a7b6bfe99092a09e22a218}{mcsamples\+::ix\+\_\+max}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a299522989433c1f723f9028e5f0460f9}{mcsamples\+::limmin}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a3454f7bb4ef6c4c43f38a3778b39f1ca}{mcsamples\+::limmax}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a99b1b2fc1a0d5d3e797fa8716a294f6a}{mcsamples\+::center}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a3c28ccd747cefdd44e51bee5809f7cf2}{mcsamples\+::param\+\_\+min}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a85c3a30e0056c5dcec952621d4782012}{mcsamples\+::param\+\_\+max}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_a1ad9378542a0d4ed8222e002f28b8a4f}{mcsamples\+::range\+\_\+min}}
+\item 
+real(mcp), dimension(max\+\_\+cols) \mbox{\hyperlink{namespacemcsamples_adb075c5195b30137b257a06000257c4a}{mcsamples\+::range\+\_\+max}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_abfadadd4fe7cc368f0f005a352298f33}{mcsamples\+::bw}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_aea44d2c9cd7dfbed7881a38450903a64}{mcsamples\+::do\+\_\+shading}}
+\item 
+type(tstringlist), save \mbox{\hyperlink{namespacemcsamples_a69983643fd9f3aed82247d3eb19d8ba0}{mcsamples\+::compareplots}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad626a7a57271fbc966f7d06ed74f68af}{mcsamples\+::prob\+\_\+label}} = .false.
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_ad6a6de60cc3e044646e884be9bdc3b67}{mcsamples\+::plots\+\_\+only}}
+\item 
+logical \mbox{\hyperlink{namespacemcsamples_a38fc836d9b47b5b811c875938d43d2c9}{mcsamples\+::no\+\_\+plots}}
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_aa4a60a69265c0e88d0f93113ca84e3bf}{mcsamples\+::smooth\+\_\+scale\+\_\+1d}} =-\/1.d0
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_a303a66c9ef1a6bf38167952d63caf780}{mcsamples\+::smooth\+\_\+scale\+\_\+2d}} = 1.d0
+\item 
+real(mcp) \mbox{\hyperlink{namespacemcsamples_ae1862ffcd750637a6e92a95ec020c591}{mcsamples\+::credible\+\_\+interval\+\_\+threshold}} = 0.\+05d0
+\item 
+integer \mbox{\hyperlink{namespacemcsamples_a72368716a8ad215156d18cf044952cdc}{mcsamples\+::boundary\+\_\+correction\+\_\+method}} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{GetDist_8f90_a78c185cfd3ac27937ede022b24ae72e9}\label{GetDist_8f90_a78c185cfd3ac27937ede022b24ae72e9}} 
+\index{Get\+Dist.\+f90@{Get\+Dist.\+f90}!getdist@{getdist}}
+\index{getdist@{getdist}!Get\+Dist.\+f90@{Get\+Dist.\+f90}}
+\subsubsection{\texorpdfstring{getdist()}{getdist()}}
+{\footnotesize\ttfamily program getdist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References mcsamples\+::adjustpriors(), mcsamples\+::bestfit\+\_\+ix, mcsamples\+::boundary\+\_\+correction\+\_\+method, mcsamples\+::bw, mcsamples\+::chain\+\_\+indices, mcsamples\+::chain\+\_\+numbers, mcsamples\+::checkmatlabaxes(), mcsamples\+::coldata, mcsamples\+::colix, mcsamples\+::compareplots, mcsamples\+::confidval(), mcsamples\+::contours, mcsamples\+::coolchain(), mcsamples\+::corr\+\_\+length\+\_\+steps, mcsamples\+::corr\+\_\+length\+\_\+thin, mcsamples\+::corrmatrix, mcsamples\+::covmat\+\_\+dimension, mcsamples\+::credible\+\_\+interval\+\_\+threshold, mcsamples\+::cust2dplots, mcsamples\+::deletezeros(), mcsamples\+::density1d, mcsamples\+::dinvnorm(), mcsamples\+::do\+\_\+shading, mcsamples\+::doconvergetests(), mcsamples\+::font\+\_\+scale, mcsamples\+::force\+\_\+twotail, mcsamples\+::get1ddensity(), mcsamples\+::get2dplotdata(), mcsamples\+::getchainlikesummary(), mcsamples\+::getcovmatrix(), mcsamples\+::getusedcols(), mcsamples\+::has\+\_\+limits\+\_\+bot, mcsamples\+::has\+\_\+limits\+\_\+top, mcsamples\+::has\+\_\+markers, mcsamples\+::in\+\_\+root, mcsamples\+::indep\+\_\+thin, io\+::io\+\_\+outputmargestats(), io\+::io\+\_\+readchainrows(), io\+::io\+\_\+readparamnames(), io\+::io\+\_\+writebounds(), mcsamples\+::isused, mcsamples\+::ix\+\_\+max, mcsamples\+::ix\+\_\+min, mcsamples\+::labels, mcsamples\+::limmax, mcsamples\+::limmin, mcsamples\+::make\+\_\+single\+\_\+samples, mcsamples\+::makesinglesamples(), mcsamples\+::mapparameters(), mcsamples\+::marge\+\_\+limits\+\_\+bot, mcsamples\+::marge\+\_\+limits\+\_\+top, mcsamples\+::markers, mcsamples\+::matlab\+\_\+latex, mcsamples\+::matlab\+\_\+version, mcsamples\+::matlablabel(), mcsamples\+::max\+\_\+chains, mcsamples\+::max\+\_\+frac\+\_\+twotail, mcsamples\+::max\+\_\+mult, mcsamples\+::max\+\_\+rows, mcsamples\+::mean, mcsamples\+::mean\+\_\+mult, mcsamples\+::namemapping, mcsamples\+::ncols, mcsamples\+::nd\+\_\+cont1, mcsamples\+::nd\+\_\+cont2, mcsamples\+::nd\+\_\+limit\+\_\+bot, mcsamples\+::nd\+\_\+limit\+\_\+top, mcsamples\+::no\+\_\+plots, mcsamples\+::nrows, mcsamples\+::num\+\_\+bins, mcsamples\+::num\+\_\+bins\+\_\+2d, mcsamples\+::num\+\_\+chains\+\_\+used, mcsamples\+::num\+\_\+contours, mcsamples\+::num\+\_\+vars, mcsamples\+::numsamp, mcsamples\+::out\+\_\+dir, mcsamples\+::pca(), mcsamples\+::plot\+\_\+data\+\_\+dir, mcsamples\+::plot\+\_\+ext, mcsamples\+::plot\+\_\+meanlikes, mcsamples\+::plot\+\_\+output, mcsamples\+::plots\+\_\+only, mcsamples\+::pname, mcsamples\+::prior\+\_\+ranges, mcsamples\+::prob\+\_\+label, mcsamples\+::python\+\_\+param\+\_\+array(), mcsamples\+::quoted\+\_\+param\+\_\+name(), mcsamples\+::quoted\+\_\+param\+\_\+name\+\_\+used(), mcsamples\+::range\+\_\+max, mcsamples\+::range\+\_\+min, mcsamples\+::rootdirname, settings\+::rootname, mcsamples\+::sddev, mcsamples\+::shade\+\_\+meanlikes, mcsamples\+::single\+\_\+thin, mcsamples\+::smooth\+\_\+scale\+\_\+1d, mcsamples\+::smooth\+\_\+scale\+\_\+2d, mcsamples\+::sortcoldata(), settings\+::stdout, mcsamples\+::subplot\+\_\+size\+\_\+inch, mcsamples\+::subplot\+\_\+size\+\_\+inch2, mcsamples\+::subplot\+\_\+size\+\_\+inch3, mcsamples\+::thindata(), mcsamples\+::write1dplotmatlab(), mcsamples\+::write2dplotmatlab(), mcsamples\+::writematlablinelabels(), mcsamples\+::writeplotfileexport(), mcsamples\+::writeplotfileinit(), and mcsamples\+::writethindata().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GetDist_8f90_a78c185cfd3ac27937ede022b24ae72e9_cgraph}
+\end{center}
+\end{figure}

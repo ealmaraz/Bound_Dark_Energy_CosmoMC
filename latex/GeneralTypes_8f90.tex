@@ -1,0 +1,140 @@
+\hypertarget{GeneralTypes_8f90}{}\section{/home/ealmaraz/software/cosmomc/bde/v3.1/source/\+General\+Types.f90 File Reference}
+\label{GeneralTypes_8f90}\index{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+General\+Types.\+f90@{/home/ealmaraz/software/cosmomc/bde/v3.\+1/source/\+General\+Types.\+f90}}
+\subsection*{Data Types}
+\begin{DoxyCompactItemize}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1int__arr}{generaltypes\+::int\+\_\+arr}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tcheckpointable}{generaltypes\+::tcheckpointable}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tobjectwithparams}{generaltypes\+::tobjectwithparams}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheoryparams}{generaltypes\+::ttheoryparams}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheoryintermediatecache}{generaltypes\+::ttheoryintermediatecache}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tgeneralconfig}{generaltypes\+::tgeneralconfig}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tconfigclass}{generaltypes\+::tconfigclass}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheorypredictions}{generaltypes\+::ttheorypredictions}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1ttheorycalculator}{generaltypes\+::ttheorycalculator}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tparameterization}{generaltypes\+::tparameterization}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1genericparameterization}{generaltypes\+::genericparameterization}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tcalculationatparampoint}{generaltypes\+::tcalculationatparampoint}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tdatalikelihood}{generaltypes\+::tdatalikelihood}}
+\item 
+type \mbox{\hyperlink{structgeneraltypes_1_1tlikelihoodlist}{generaltypes\+::tlikelihoodlist}}
+\end{DoxyCompactItemize}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacegeneraltypes}{generaltypes}}
+\end{DoxyCompactItemize}
+\subsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a416bb37c1c9b61ae49640747ff4b7630}{generaltypes\+::paramarraytotheoryparams}} (this, Params, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a3ebde3fdac358126f25e067d6b223de1}{generaltypes\+::tparameterization\+\_\+initialize}} (this, Ini, Names, Default\+Name, Config)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacegeneraltypes_ad583eb4db9430c5b495f21cc9863017d}{generaltypes\+::tparameterization\+\_\+nonbaseparameterpriors}} (this, C\+MB)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_afd268eae09678643a72d0b3ed8da568a}{generaltypes\+::tparameterization\+\_\+calcderivedparams}} (this, P, Theory, derived)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a21288f1eff4120ed86e9b0bfce3eed50}{generaltypes\+::tparameterization\+\_\+newtheoryparams}} (this, Theory\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a445b06716a45b37bc3100a23b2742d2e}{generaltypes\+::ttheorypredictions\+\_\+clear}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ace116f1d7f9e8a3fdff59a6c376273e3}{generaltypes\+::tcalculationatparampoint\+\_\+clear}} (this, Keep)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a4807ce873100fa001203158f5ed66fbd}{generaltypes\+::tcalculationatparampoint\+\_\+acceptreject}} (this, Trial, accpt)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a2a8909b75d213ee335199e2fd1769711}{generaltypes\+::tcalculationatparampoint\+\_\+writeparams}} (this, Config, mult, like)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a6ae308a4d8fb255fd1e15dc6a8911931}{generaltypes\+::writemodel}} (this, F, like, mult)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a9fdd457b58418041f9a4639dd76570db}{generaltypes\+::readmodel}} (this, F, has\+\_\+likes, mult, like, error)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a890f7aa63579a54ec8ca5a3a8d19a607}{generaltypes\+::ttheoryintermediatecache\+\_\+clear}} (Info)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aa79e01f130bcebe63ffce5dffb17950c}{generaltypes\+::ttheorycalculator\+\_\+initforlikelihoods}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a207649e7d9a305b79b0016f9e5aae2d9}{generaltypes\+::ttheorycalculator\+\_\+readimportanceparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a46caf82f82aed371c7f69a0168e9167b}{generaltypes\+::ttheorycalculator\+\_\+gettheoryforimportance}} (this, C\+MB, Theory, error)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a79e614b9322bb431dd5c0cf1abde00ca}{generaltypes\+::ttheorycalculator\+\_\+versiontraceoutput}} (this, Read\+Values)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_af10543377b813170c5ba69fe2ebfdd44}{generaltypes\+::ttheorycalculator\+\_\+errornotimplemented}} (this, S)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aa6c88f0919f7ac7fa030824300d48018}{generaltypes\+::ttheorycalculator\+\_\+error}} (this, S)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a55eb95d894b131cff41c56b99c9f87cc}{generaltypes\+::tconfigclass\+\_\+initconfig}} (this, Config)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ab4499296c04e7fca434f77eecbccea27}{generaltypes\+::tconfigclass\+\_\+initwithparams}} (this, Ini, Config)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a739d15405356622a778b42627a1d39d4}{generaltypes\+::writetheory}} (this, F, first)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aaa999beeb15e5412eba1146d1250b25f}{generaltypes\+::readtheory}} (this, F, first)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a845e7a28effceab63f5aed42a4bf066a}{generaltypes\+::writetextdata}} (this, fnameroot)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a9ebf4d67be70717d4385bd575cc2300f}{generaltypes\+::tgeneralconfig\+\_\+settheoryparameterization}} (this, Ini, Names, default\+Param)
+\item 
+logical function \mbox{\hyperlink{namespacegeneraltypes_a86a26412494e782acd18ef23abfc46b4}{generaltypes\+::tgeneralconfig\+\_\+setparameterizationname}} (this, nametag, Ini, Names)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a510e50b9adaf980266f3c8160135f409}{generaltypes\+::tgeneralconfig\+\_\+newtheory}} (this, Theory)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ad67421d900a21e6dc1a5d34ea7bc77fe}{generaltypes\+::tgeneralconfig\+\_\+initforlikelihoods}} (this)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_ad37138d6b09c9e6feda0357b1c94e85a}{generaltypes\+::tcheckpointable\+\_\+readparams}} (this, Ini)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aebd5d13abc4092b06e3e6164880ee11a}{generaltypes\+::tobjectwithparams\+\_\+readparams}} (this, Ini)
+\item 
+real(mcp) function \mbox{\hyperlink{namespacegeneraltypes_a44032002cc7bece9f328a839b5830b5d}{generaltypes\+::tdatalikelihood\+\_\+getloglike}} (this, Params, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a077299298ffed6e9dea751a27ca45507}{generaltypes\+::tdatalikelihood\+\_\+writelikelihooddata}} (this, Theory, Data\+Params, root)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_abae245dbb211bd2f44ed4267e47206de}{generaltypes\+::tdatalikelihood\+\_\+initconfig}} (this, Config)
+\item 
+real(mcp) function, dimension(this\%nuisance\+\_\+params\%num\+\_\+derived) \mbox{\hyperlink{namespacegeneraltypes_a6bb9fb37002b4265a3a4f438c4b045fa}{generaltypes\+::tdatalikelihood\+\_\+derivedparameters}} (this, Theory, Data\+Params)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_aaea05ea7158416ca57ed2178bdac9431}{generaltypes\+::tdatalikelihood\+\_\+loadparamnames}} (this, fname)
+\item 
+logical function \mbox{\hyperlink{namespacegeneraltypes_a07c63d132f04e331ccb42e8f96080129}{generaltypes\+::tdatalikelihood\+\_\+checkconflicts}} (this, full\+\_\+list)
+\item 
+character(len=\+:) function, allocatable \mbox{\hyperlink{namespacegeneraltypes_a6578bd73fe17b7b10bb5740695d0fb5f}{generaltypes\+::tdatalikelihood\+\_\+gettag}} (this)
+\item 
+class(tdatalikelihood) function, pointer \mbox{\hyperlink{namespacegeneraltypes_aaebd3447ba557d8cc1c3f2b5ca98456d}{generaltypes\+::likelihooditem}} (L, i)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a26624f9233a06ac3e62f6bdb2ad416f8}{generaltypes\+::writelikelihoodcontribs}} (L, aunit, likelihoods)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_af94e150476d45f72d492e761a2d02ab5}{generaltypes\+::writedataforlikelihoods}} (L, P, Theory, fileroot)
+\item 
+integer function \mbox{\hyperlink{namespacegeneraltypes_aa824e634d28fc4010383a833af894aee}{generaltypes\+::comparelikes}} (this, R1, R2)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_af520b2d286223bb2ce63b94b5c1349b6}{generaltypes\+::addnuisanceparameters}} (L, Names)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a67700a58507d793526ec1958d512cf71}{generaltypes\+::addoutputlikelihoodparams}} (L, Names)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a6d294b5c4431a0f7a6537529c66b98f1}{generaltypes\+::checkallconflicts}} (L)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a785618fc9b8db45522432952253e93a6}{generaltypes\+::addlikelihoodderivedparams}} (L, P, Theory, derived, Likelihoods, log\+Like)
+\item 
+subroutine \mbox{\hyperlink{namespacegeneraltypes_a99af409a28645f773f5a94f32df68365}{generaltypes\+::outputdescription}} (L, fname)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter, public \mbox{\hyperlink{namespacegeneraltypes_ace8a6f4c868858b72f97b45b87312845}{generaltypes\+::likenamelen}} = 80
+\item 
+integer, parameter \mbox{\hyperlink{namespacegeneraltypes_aa0157fd48eed0fc43695836a0c19e1f0}{generaltypes\+::liketaglen}} = 20
+\item 
+type(tlikelihoodlist), target, save, public \mbox{\hyperlink{namespacegeneraltypes_a2e2a79dda657e0a8910f724be0015ed5}{generaltypes\+::datalikelihoods}}
+\end{DoxyCompactItemize}
