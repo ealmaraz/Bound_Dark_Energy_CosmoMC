@@ -49,7 +49,9 @@ Modifications and comments are indicated by `erickdd.mm.yy`. Main modifications 
 
 See README_BDE.txt for more details.<br> 
 `$CosmoMC/chains` contains the chains leading to the results reported in [1] & [2] <br>
-`$CosmoMC/chains/bestfits` contains two best fits: `v3` corresponding to an older version of the code (also reported in [1] & [2]) and `v3.1.4`, which was computed using this version. The data used to find these constraints are: <br>
+`$CosmoMC/chains/bestfits` contains two best fits: `v3` corresponding to an older version of the code (also reported in [1] & [2]) and `v3.1.4`, which was computed using this version. We have set <img src="https://latex.codecogs.com/svg.latex?\Large&space;c" title="\Large c" /> = 1 in our analysis. <br>
+
+The data used to find the constraints are: <br>
 
 3. Ade, P. A. R. et al, <em> Astron. Astrophys. </em> **594**, A13 (2016)
 4. Betoule, M. et al, <em> Astron. Astrophys. </em> **568**, A22 (2014)
@@ -58,7 +60,7 @@ See README_BDE.txt for more details.<br>
 7. Gil-Marín, H. et al, <em> Mon. Not. R. Astron. Soc.</em> **460**, 4210-4219 (2016)
 
 ### Acknowledgments ###
-This code is built upon the CosmoMC public code (November 16 release; https://cosmologist.info/cosmomc/) and our BDE implementation in CAMB: https://github.com/ealmaraz/Bound_Dark_Energy_CAMB
+This code is built upon the CosmoMC public code (November 16 release; https://cosmologist.info/cosmomc/) and our BDE implementation in CAMB: https://github.com/ealmaraz/Bound_Dark_Energy_CAMB. The ODEPACK Fortran library is also used: https://people.sc.fsu.edu/~jburkardt/f77_src/odepack/odepack.html
 
 ### Contact ###
 For comments, suggestions, etc, feel free to contact me: erickalmaraz@gmail.com
