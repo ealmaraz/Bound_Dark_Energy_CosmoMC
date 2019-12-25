@@ -60,7 +60,7 @@ The data used to find the constraints are: <br>
 7. Gil-Marín, H. et al, <em> Mon. Not. R. Astron. Soc.</em> **460**, 4210-4219 (2016)
 
 ### Acknowledgments ###
-This code is built upon the CosmoMC public code (November 16 release; https://cosmologist.info/cosmomc/) and our BDE implementation in CAMB: https://github.com/ealmaraz/Bound_Dark_Energy_CAMB. The ODEPACK Fortran library is also used: https://people.sc.fsu.edu/~jburkardt/f77_src/odepack/odepack.html
+This code is built upon the CosmoMC public code (November 2016 release; https://cosmologist.info/cosmomc/) and our BDE implementation in CAMB: https://github.com/ealmaraz/Bound_Dark_Energy_CAMB. The ODEPACK Fortran library is also used: https://people.sc.fsu.edu/~jburkardt/f77_src/odepack/odepack.html
 
 ### Contact ###
 For comments, suggestions, etc, feel free to contact me: erickalmaraz@gmail.com
